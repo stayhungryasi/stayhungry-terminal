@@ -242,52 +242,138 @@ a.chan:hover{border-color:var(--or)}
 .chan small{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--or)}
 .chan b{font-size:15.5px}
 
-/* ===== developer view ===== */
-.dev{position:fixed;inset:0;z-index:50;background:#0B0D12;overflow:auto;font-family:var(--mono);font-size:15px;line-height:1.75;color:#C3C9D6;
-  padding:env(safe-area-inset-top,0px) max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px))}
-.dv{max-width:1120px;margin:0 auto;padding:28px 0 120px}
-.dv .box{display:inline-block;border:1px solid var(--or);border-radius:8px;padding:12px 20px;margin-bottom:6px;max-width:100%}
-.dv .box b{color:var(--or)}
-.dv .box div{white-space:pre-wrap}
-.dv .tip{color:var(--dim);margin:8px 0 0}
-.u{margin:30px 0 12px;background:#141922;border-left:3px solid var(--mute);padding:8px 14px;color:var(--ink);white-space:pre-wrap;border-radius:0 6px 6px 0}
-.u::before{content:"> ";color:var(--mute)}
-.tl{margin:6px 0 0}
-.tl .dot{color:var(--green)}
-.tl .tn{color:var(--ink);font-weight:600}
-.tl .ta{color:var(--mute)}
-.res2{color:var(--mute);padding-left:22px;white-space:pre-wrap}
-.res2::before{content:"⎿  ";color:var(--dim)}
-.say{margin:10px 0 0 0;color:var(--ink2);white-space:pre-wrap}
-.say .dot{color:var(--ink)}
-.say b{color:var(--ink)}
-.say a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line2)}
-.tbl{margin:10px 0 0 22px;overflow-x:auto}
-.tbl .r{display:grid;gap:18px;white-space:nowrap;padding:1px 0}
-.tbl .hd{color:var(--dim)}
-.blk{letter-spacing:-1px}
-.dbig{font-size:clamp(34px,6vw,64px);font-weight:600;line-height:1.1;color:var(--or);letter-spacing:-.02em;margin:8px 0 0 22px;font-variant-numeric:tabular-nums}
-.pass{color:#0B0D12;background:var(--green);padding:0 6px;font-weight:600}
-.fail{color:#0B0D12;background:var(--red);padding:0 6px;font-weight:600}
-.add{color:#7FE0A8}.del{color:#FF8A80}
-.todo{margin:10px 0 0 22px}
-.todo div{white-space:pre-wrap}
-.todo .x{color:var(--green)}.todo .r2{color:var(--gold)}.todo .n2{color:var(--dim)}
-.diff{margin:10px 0 0 22px;border:1px solid var(--line);border-radius:8px;overflow-x:auto}
-.diff div{padding:1px 12px;white-space:pre}
-.diff .da{background:#122B1E;color:#9BE8BC}.diff .dd{background:#2E1517;color:#FFB1AA}.diff .dh{background:#151A24;color:var(--mute)}
-.pr{display:flex;gap:10px;align-items:center;margin-top:34px;border:1px solid var(--line2);border-radius:8px;padding:10px 14px}
-.pr label{color:var(--or);white-space:nowrap}
-.pr input{flex:1;min-width:0;background:transparent;border:0;outline:none;color:var(--ink);font:15px var(--mono);caret-color:var(--or)}
-.pr:focus-within{border-color:var(--or)}
-.tout div{white-space:pre-wrap;word-break:break-word}
-.dstat{position:fixed;left:0;right:0;bottom:0;z-index:55;display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;
-  padding:8px max(16px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
-  background:#11151D;border-top:1px solid var(--line);font-family:var(--mono);font-size:12.5px;color:var(--mute)}
-.dstat b{color:var(--or);font-weight:600}
-.dstat button{background:none;border:1px solid var(--line2);border-radius:6px;padding:3px 10px;cursor:pointer;font:12.5px var(--mono);color:var(--ink2)}
-.dstat button:hover{border-color:var(--or)}
-.dstat a{color:var(--or);text-decoration:none}
+/* ===== developer view · code editor + AI pair ===== */
+.dev{--vb:#1F1F1F;--vs:#181818;--vl:#2B2B2B;--vt:#CCCCCC;--vd:#9D9D9D;--vn:#6E7681;--va:#0078D4;
+  position:fixed;inset:0;z-index:50;display:grid;grid-template-rows:35px minmax(0,1fr) 22px;background:var(--vb);color:var(--vt);
+  font:13px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,"Noto Sans KR","Noto Sans JP",sans-serif;overflow:hidden}
+.dev button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0;text-align:left}
+.dev svg{fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.vtitle{display:flex;align-items:center;justify-content:space-between;gap:8px;background:var(--vs);border-bottom:1px solid var(--vl);padding-left:6px;user-select:none;min-width:0}
+.vtl{display:flex;align-items:center;gap:1px;flex:1;min-width:0;overflow:hidden}
+.vlogo{font-style:normal;color:var(--or);font-size:15px;margin:0 8px 0 6px}
+.vmn{padding:3px 7px;border-radius:5px;white-space:nowrap}.vmn:hover{background:#ffffff1a}
+.vcc{flex:0 1 440px;display:flex;align-items:center;justify-content:center;gap:6px;height:24px;border:1px solid #3C3C3C;border-radius:6px;background:#242424;color:var(--vd);font-size:12.5px;min-width:0}
+.vcc svg{width:14px;height:14px}
+.vtr{flex:1;display:flex;justify-content:flex-end}
+.dev .vwc{width:46px;height:34px;display:grid;place-items:center}.dev .vwc svg{width:14px;height:14px}
+.dev .vwc:hover{background:#ffffff1a}.dev .vwc.x:hover{background:#E81123;color:#fff}
+.vbody{display:grid;grid-template-columns:48px clamp(190px,16vw,250px) minmax(0,1fr) clamp(330px,28vw,440px);min-height:0}
+.vact{background:var(--vs);border-right:1px solid var(--vl);display:flex;flex-direction:column;align-items:center}
+.vai{width:48px;height:48px;display:grid;place-items:center;color:#868686;position:relative;border-left:2px solid transparent}
+.vai.sel{color:#D7D7D7;border-left-color:var(--va)}
+.vai svg{width:24px;height:24px;stroke-width:1.5}
+.vbd{position:absolute;right:7px;bottom:9px;min-width:16px;height:16px;border-radius:8px;background:var(--va);color:#fff;font-size:9.5px;font-weight:600;display:grid;place-items:center;padding:0 4px}
+.vsp{flex:1}
+.vside{background:var(--vs);border-right:1px solid var(--vl);display:flex;flex-direction:column;min-height:0;overflow:auto}
+.vsh{height:35px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 20px;font-size:11px;letter-spacing:.04em}
+.vsec{display:flex;align-items:center;gap:2px;height:22px;font-size:11px;font-weight:700;padding-left:4px}
+.vfd,.dev .vfx{display:flex;align-items:center;gap:6px;height:22px;width:100%;padding-right:10px;white-space:nowrap}
+.dev .vfx:hover{background:#2A2D2E}.dev .vfx.sel{background:#37373D;outline:1px solid var(--va);outline-offset:-1px}
+.vfx span{flex:1;overflow:hidden;text-overflow:ellipsis}
+.vfx em{font-style:normal;font-size:11px;font-weight:600}
+.vsbot{margin-top:auto;border-top:1px solid var(--vl);padding:2px 0}
+.vch{width:16px;height:16px;flex:none}.vch.o{transform:rotate(90deg)}
+.vfi{font-style:normal;font-weight:700;font-size:9.5px;font-family:var(--mono);width:16px;text-align:center;flex:none;letter-spacing:-.5px}
+.vmain{display:grid;grid-template-rows:35px 22px minmax(0,1fr) 205px;min-width:0;min-height:0}
+.vtabs{display:flex;background:var(--vs);overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--vl)}
+.vtabs::-webkit-scrollbar{display:none}
+.dev .vtab{display:flex;align-items:center;gap:6px;padding:0 8px 0 12px;height:35px;border-right:1px solid var(--vl);color:var(--vd);white-space:nowrap;flex:none;border-top:1px solid transparent}
+.dev .vtab.sel{background:var(--vb);color:#fff;border-top-color:var(--va);margin-bottom:-1px}
+.vtab b{width:16px;font-weight:400;text-align:center;color:var(--vt)}
+@media (min-width:981px){.dev .vtab:not(.mru){display:none}}
+.vcrumb{display:flex;align-items:center;gap:6px;padding:0 18px;color:var(--vd);font-size:12.5px;white-space:nowrap;overflow:hidden}
+.vcode{overflow:auto;font:14.5px/24px var(--mono);color:var(--vt);padding:6px 0 28px;scrollbar-color:#4E4E4E transparent}
+.vln{display:grid;grid-template-columns:24px 38px minmax(0,1fr);min-width:max-content}
+.vcode.wrap .vln{min-width:0}
+.vln i{font-style:normal;color:var(--vn);text-align:right}
+.vg{text-align:center;font-size:12px}
+.vlc{white-space:pre;padding:0 24px 0 22px}
+.vcode.wrap .vlc{white-space:pre-wrap;word-break:break-word}
+.vln.cur{background:#ffffff07;box-shadow:inset 0 1px #2D2D2D,inset 0 -1px #2D2D2D}.vln.cur i{color:#CCCCCC}
+.vln.da{background:#2EA04326}.vln.da .vlc{color:#B4E9C2}
+.vln.dd{background:#F8514926}.vln.dd .vlc{color:#FFB4AE}
+.vln.dh .vlc{color:#C586C0}.vln.dm .vlc{color:#DCDCAA}
+.vlens{padding-left:84px;font:12px/20px -apple-system,"Segoe UI",system-ui,sans-serif;color:#999;white-space:nowrap}
+.dev .vlens button{color:#999}.dev .vlens button:hover{color:#4DAAFC;text-decoration:underline}
+.xk{color:#569CD6}.xc{color:#C586C0}.xs{color:#CE9178}.xn{color:#B5CEA8}.xm{color:#6A9955}.xf{color:#DCDCAA}.xp{color:#9CDCFE}.xy{color:#4EC9B0}
+.xh{color:#569CD6;font-weight:700}.xl{color:#6796E6}.xb{color:#569CD6;font-weight:700}.xq{color:#6A9955}.xu{color:#4DAAFC;text-decoration:underline}
+.vih{display:inline-block;margin-left:14px;padding:0 7px;border-radius:4px;background:#ffffff12;color:#A6A6A6;font-size:12.5px;line-height:19px;vertical-align:1px;white-space:pre}
+.vih.hot{color:#FF8A4C;background:#F2652226;font-weight:600}
+.vih.warn{color:#CCA700;background:#CCA70014}
+.vih.bad{color:#F88070;background:#F14C4C1C;font-weight:600}
+.vih.bar{background:none;letter-spacing:-1px;padding:0}
+.vwv{text-decoration:underline wavy #CCA700;text-decoration-thickness:1px;text-underline-offset:5px}
+.vsq{text-decoration:underline wavy #F14C4C;text-decoration-thickness:1px;text-underline-offset:5px}
+.vgh{color:#ffffff5a}
+.vkb{display:inline-block;margin-left:10px;font:11px/16px -apple-system,"Segoe UI",sans-serif;color:#BBB;border:1px solid #454545;border-radius:4px;padding:0 5px;vertical-align:2px}
+.vok{color:#73C991}.vno{color:#F14C4C}.vwarn{color:#CCA700}.vdim{color:var(--vd)}.vpp{color:#73C991}.vpb{color:#4DAAFC}
+.vpanel{border-top:1px solid var(--vl);display:flex;flex-direction:column;min-height:0}
+.vpt{display:flex;gap:4px;padding:0 12px;height:35px;align-items:center;flex:none;font-size:11px;letter-spacing:.04em;overflow-x:auto;scrollbar-width:none}
+.dev .vpt button{padding:5px 6px;color:var(--vd);border-bottom:1px solid transparent;white-space:nowrap}
+.dev .vpt button.sel{color:#E7E7E7;border-bottom-color:var(--va)}
+.vbdg{display:inline-block;min-width:18px;border-radius:9px;background:#616161;color:#fff;padding:0 5px;margin-left:5px;font-size:10.5px;text-align:center;letter-spacing:0}
+.vpc{flex:1;overflow:auto;padding:2px 20px 10px;font:13.5px/21px var(--mono);white-space:pre-wrap;word-break:break-word}
+.dev .vpr{display:block;width:100%;padding:2px 0;font:13.5px/21px var(--mono)}.dev .vpr:hover{background:#2A2D2E}
+.vcur{display:inline-block;width:8px;height:16px;background:#CCCCCC;vertical-align:-3px;animation:vblink 1.1s steps(1) infinite}
+@keyframes vblink{50%{opacity:0}}
+.vchat{background:var(--vs);border-left:1px solid var(--vl);display:flex;flex-direction:column;min-height:0;min-width:0}
+.vchead{height:35px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 18px;font-size:11px;letter-spacing:.04em}
+.vchi{color:var(--vd);letter-spacing:.3em}
+.vclog{flex:1;overflow:auto;padding:0 18px 12px;scrollbar-color:#4E4E4E transparent}
+.vcm{padding:14px 0 16px;border-bottom:1px solid #2B2B2B99}
+.vwho{display:flex;align-items:center;gap:8px;font-weight:600;margin-bottom:8px;color:#E7E7E7}
+.vav{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:11px;background:#3A3D41;color:#DDD;flex:none}
+.vav.ai{background:#F2652226;color:var(--or)}
+.vbody2{font-size:14px;line-height:1.65;color:var(--vt);word-break:break-word}
+.vbody2 b{color:#fff}.vbody2 a{color:#4DAAFC}.vbody2 p{margin:6px 0 0}
+.vbody2 ol{margin:6px 0 0;padding-left:20px}.vbody2 li{margin:5px 0}
+.vbody2 h3{font-size:14px;margin:14px 0 0;color:#fff}
+.vbody2 pre{font:12.5px/1.6 var(--mono);white-space:pre-wrap;margin:0;background:var(--vb);border:1px solid var(--vl);border-radius:6px;padding:8px 10px}
+.vbig{font:600 clamp(30px,2.8vw,42px)/1.15 var(--mono);color:var(--or);font-variant-numeric:tabular-nums}
+.vmut{color:var(--vd);font-size:12.5px}
+.vrefs summary{cursor:pointer;color:var(--vd);font-size:12.5px;list-style:none;display:flex;align-items:center;gap:2px}
+.vrefs summary::-webkit-details-marker{display:none}
+.vrefs[open] .vch{transform:rotate(90deg)}
+.dev .vrefs button{display:flex;gap:6px;align-items:center;font-size:12.5px;color:#4DAAFC;padding:2px 0 2px 18px}
+.vkpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:12px}
+.vkpi div{background:var(--vb);border:1px solid var(--vl);border-radius:6px;padding:6px 10px}
+.vkpi small{display:block;font:10.5px var(--mono);letter-spacing:.08em;color:var(--vd)}
+.vkpi b{font:600 22px/1.3 var(--mono)}.vkpi .vhot{border-color:#5A2A2A}.vkpi .vhot b{color:#F14C4C}
+.v52{font:600 34px/1.1 var(--mono);color:var(--or)!important}
+.vmr{display:grid;grid-template-columns:44px minmax(0,1fr) 62px;gap:8px;align-items:center;font:12.5px var(--mono);margin:6px 0}
+.vmb{display:flex;height:12px;border-radius:2px;overflow:hidden}.vmb i{display:block;height:100%}
+.vdot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px}
+.dev .vln2{color:#4DAAFC;display:inline-flex;gap:5px;align-items:center;margin:2px 8px 2px 0}
+.vcin{margin:0 12px 12px;border:1px solid #3C3C3C;border-radius:8px;background:var(--vb);padding:8px 10px;flex:none}
+.vcin:focus-within{border-color:var(--va)}
+.vctx{display:flex;gap:8px;align-items:center;font-size:12px;min-width:0}
+.vctx span{display:inline-flex;gap:4px;align-items:center;border:1px solid #3C3C3C;border-radius:4px;padding:1px 6px;white-space:nowrap}
+.vctx em{font-style:normal;color:var(--vd);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vcin input{width:100%;background:transparent;border:0;outline:none;color:#E7E7E7;font:14px/1.5 -apple-system,"Segoe UI",system-ui,"Noto Sans KR","Noto Sans JP",sans-serif;padding:8px 0 4px;caret-color:#E7E7E7}
+.vcin input::placeholder{color:#7A7A7A}
+.vcbar{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--vd)}
+.dev .vcbar button{color:#E7E7E7;width:24px;height:22px;display:grid;place-items:center;border-radius:4px}.dev .vcbar button:hover{background:#ffffff1a}
+.vcbar svg{width:15px;height:15px}
+.vstat{display:flex;justify-content:space-between;align-items:stretch;background:var(--vs);border-top:1px solid var(--vl);font-size:12px;height:22px;white-space:nowrap;overflow:hidden}
+.vsl,.vsr{display:flex;align-items:stretch;min-width:0}
+.vstat .vsl>*,.vstat .vsr>*{display:flex;align-items:center;padding:0 8px}
+.vstat .vsl>*:hover,.vstat .vsr>*:hover{background:#ffffff1f}
+.vstat .vrem{background:var(--va);color:#fff;padding:0 11px}
+.vstat a{color:var(--or);text-decoration:none}
+@media (max-width:1180px) and (min-width:981px){.vbody{grid-template-columns:48px minmax(0,1fr) 340px}.vside{display:none}.vopt{display:none!important}}
+@media (max-width:980px){
+  .dev{display:block;overflow:auto}
+  .vtitle{position:sticky;top:0;z-index:3;height:40px}.vmn{display:none}.vcc{flex:1;margin-left:4px}
+  .vbody{display:block}.vact,.vside,.vcrumb{display:none}
+  .vmain{display:block}
+  .vtabs{position:sticky;top:40px;z-index:3}
+  .vcode{font-size:12.5px;line-height:21px}.vln{min-width:0;grid-template-columns:18px 30px minmax(0,1fr)}.vlc{white-space:pre-wrap;word-break:break-word;padding:0 12px 0 12px}.vlens{padding-left:60px}
+  .vpc{max-height:250px}
+  .vchat{border-left:0;border-top:1px solid var(--vl)}
+  .vclog{overflow:visible}
+  .vstat{position:sticky;bottom:0;z-index:3;padding-bottom:env(safe-area-inset-bottom,0px);height:auto;min-height:24px;flex-wrap:wrap}.vstat .vsr{flex-wrap:wrap}.vstat .vsl>*,.vstat .vsr>*{min-height:22px}
+  .vopt{display:none!important}
+}
 
 @media (max-width:1260px){.nav{display:none}.pager{display:none}}
 @media (min-width:1261px){.pgnum{display:none}}
@@ -324,8 +410,6 @@ a.chan:hover{border-color:var(--or)}
   .summary{padding:22px 18px}.summary li{grid-template-columns:28px minmax(0,1fr)}
   .card{padding:20px}
   .handle{text-align:left}
-  .dev{font-size:13.5px}
-  .tbl{margin-left:0}
 }
 @media (prefers-reduced-motion:reduce){.pager button i{transition:none}}
 </style>
@@ -383,13 +467,24 @@ a.chan:hover{border-color:var(--or)}
 <div class="pgnum" id="pgnum" aria-hidden="true"></div>
 
 <div class="dev" id="dev" hidden>
-  <div class="dv" id="dv"></div>
-  <div class="dv" style="padding-top:0;padding-bottom:110px">
-    <div class="tout" id="tout"><div id="tlog"></div></div>
-    <form class="pr" id="tform"><label for="tin">❯</label><input id="tin" autocomplete="off" spellcheck="false"></form>
+  <div class="vtitle" id="vtitle"></div>
+  <div class="vbody">
+    <nav class="vact" id="vact" aria-hidden="true"></nav>
+    <aside class="vside" id="vside"></aside>
+    <section class="vmain">
+      <div class="vtabs" id="vtabs"></div>
+      <div class="vcrumb" id="vcrumb"></div>
+      <div class="vcode" id="vcode"></div>
+      <div class="vpanel" id="vpanel"></div>
+    </section>
+    <aside class="vchat">
+      <div class="vchead" id="vchead"></div>
+      <div class="vclog" id="tout"><div id="dv"></div><div id="tlog"></div></div>
+      <form class="vcin" id="tform"><div class="vctx" id="vctx"></div><input id="tin" autocomplete="off" spellcheck="false" aria-label="Ask asi pair"><div class="vcbar"><span>◆ asi pair ▾</span><button type="submit" aria-label="Send"><svg viewBox="0 0 16 16"><path d="M2.5 8L14 2.5 10.5 14 8 9z"/></svg></button></div></form>
+    </aside>
   </div>
+  <div class="vstat" id="dstat"></div>
 </div>
-<div class="dstat" id="dstat" hidden></div>
 
 <script>
 (function(){
@@ -615,19 +710,19 @@ const EXT={
 en:{nav10:['TODAY','BRIEF','EARNINGS','SPACEX','MIX','SCORE','RADAR','RANK','LAB','HUB'],brief_eb:'BRIEF · TODAY IN 3 LINES',brief_h1:'Three lines.',brief_h2:"That's the whole day.",mix_eb:'RESEARCH · SPACEX 3Q26 · REVENUE MIX',mix_h1:'In one year,',mix_h2:'revenue changed owners.',score_eb:'RESEARCH · SPACEX 3Q26 · SCORECARD',score_h1:'Beat on everything.',score_h2:'Except one.',next:'NEXT ↓',
  dv_back:'Reader view',dv_hint:'esc → reader view · / → prompt',dv_session:'research session',dv_tip:'Tip: this is the same data as the reader view. Type help, or press esc.',
  dv_p:["what's next on deck?","summarize today in 3 lines","list every megacap earnings date","run the crisis checks","decode SpaceX 3Q26","rank the megacaps by market cap","what are you building?"],
- dv_next:'{t} reports in',dv_found:'{n} entries · {c} confirmed · {e} estimated',dv_done:'Done. Full deck on Telegram:',dv_exit:'exit            back to the reader view'},
+ dv_next:'{t} reports in',dv_found:'{n} entries · {c} confirmed · {e} estimated',dv_done:'Done. Full deck on Telegram:',dv_exit:'exit            back to the reader view',vc_refs:'Used {n} references',vc_ph:'Ask asi pair, or type help',vc_cur:'Current file',vc_run:'Run Test',vc_view:'Open in reader view'},
 ko:{nav10:['오늘','3줄','실적','SPACEX','매출','스코어','위기','시총','실험실','허브'],brief_eb:'BRIEF · 오늘을 3줄로',brief_h1:'딱 3줄.',brief_h2:'오늘은 이게 전부다.',mix_eb:'RESEARCH · SPACEX 3Q26 · 매출 구조',mix_h1:'1년 만에',mix_h2:'주인이 바뀐 매출 구조',score_eb:'RESEARCH · SPACEX 3Q26 · 스코어카드',score_h1:'전부 이겼다.',score_h2:'단 하나만 빼고.',next:'다음 ↓',
  dv_back:'읽기 화면',dv_hint:'esc → 읽기 화면 · / → 입력창',dv_session:'리서치 세션',dv_tip:'읽기 화면과 같은 데이터입니다. help를 입력하거나 esc를 누르세요.',
  dv_p:['다음 발표 뭐야?','오늘 3줄 요약해줘','빅테크 실적 일정 전부 보여줘','위기 체크 돌려줘','SpaceX 3Q26 해부해줘','시총 순위 정리해줘','지금 뭐 만들고 있어?'],
- dv_next:'{t} 실적 발표까지',dv_found:'{n}건 · 확정 {c} · 추정 {e}',dv_done:'완료. 전체 10장은 텔레그램에:',dv_exit:'exit            읽기 화면으로'},
+ dv_next:'{t} 실적 발표까지',dv_found:'{n}건 · 확정 {c} · 추정 {e}',dv_done:'완료. 전체 10장은 텔레그램에:',dv_exit:'exit            읽기 화면으로',vc_refs:'참조 {n}개 사용',vc_ph:'asi pair에게 묻거나 help 입력',vc_cur:'현재 파일',vc_run:'테스트 실행',vc_view:'읽기 화면에서 보기'},
 es:{nav10:['HOY','RESUMEN','RESULTADOS','SPACEX','MEZCLA','MARCADOR','RADAR','RANKING','LAB','HUB'],brief_eb:'RESUMEN · HOY EN 3 LÍNEAS',brief_h1:'Tres líneas.',brief_h2:'Es todo el día.',mix_eb:'INVESTIGACIÓN · SPACEX 3T26 · MEZCLA',mix_h1:'En un año,',mix_h2:'los ingresos cambiaron de dueño.',score_eb:'INVESTIGACIÓN · SPACEX 3T26 · MARCADOR',score_h1:'Ganó en todo.',score_h2:'Menos en una.',next:'SIGUIENTE ↓',
  dv_back:'Vista de lectura',dv_hint:'esc → vista de lectura · / → escribir',dv_session:'sesión de investigación',dv_tip:'Son los mismos datos de la vista de lectura. Escribe help o pulsa esc.',
  dv_p:['¿qué sigue?','resume hoy en 3 líneas','muestra todas las fechas de resultados','corre los controles de crisis','decodifica SpaceX 3T26','ordena las megacaps por capitalización','¿qué estás construyendo?'],
- dv_next:'{t} publica en',dv_found:'{n} registros · {c} confirmados · {e} estimados',dv_done:'Listo. Las 10 tarjetas en Telegram:',dv_exit:'exit            volver a la vista de lectura'},
+ dv_next:'{t} publica en',dv_found:'{n} registros · {c} confirmados · {e} estimados',dv_done:'Listo. Las 10 tarjetas en Telegram:',dv_exit:'exit            volver a la vista de lectura',vc_refs:'Usó {n} referencias',vc_ph:'Pregunta a asi pair o escribe help',vc_cur:'Archivo actual',vc_run:'Ejecutar prueba',vc_view:'Ver en vista de lectura'},
 ja:{nav10:['今日','3行','決算','SPACEX','売上構成','スコア','レーダー','ランキング','ラボ','ハブ'],brief_eb:'BRIEF · 今日を3行で',brief_h1:'3行だけ。',brief_h2:'今日はこれで全部。',mix_eb:'RESEARCH · SPACEX 3Q26 · 売上構成',mix_h1:'1年で',mix_h2:'売上の主役が交代。',score_eb:'RESEARCH · SPACEX 3Q26 · スコアカード',score_h1:'すべて上回った。',score_h2:'ひとつを除いて。',next:'次へ ↓',
  dv_back:'閲覧ビュー',dv_hint:'esc → 閲覧ビュー · / → 入力',dv_session:'リサーチセッション',dv_tip:'閲覧ビューと同じデータです。help と入力するか esc を押してください。',
  dv_p:['次の発表は?','今日を3行で要約して','大型テックの決算日程を全部見せて','危機チェックを実行して','SpaceX 3Q26を解剖して','時価総額順に並べて','今何を作ってる?'],
- dv_next:'{t} の決算まで',dv_found:'{n}件 · 確定 {c} · 推定 {e}',dv_done:'完了。10枚すべてはTelegramで:',dv_exit:'exit            閲覧ビューに戻る'}
+ dv_next:'{t} の決算まで',dv_found:'{n}件 · 確定 {c} · 推定 {e}',dv_done:'完了。10枚すべてはTelegramで:',dv_exit:'exit            閲覧ビューに戻る',vc_refs:'{n} 件の参照を使用',vc_ph:'asi pair に質問、または help',vc_cur:'現在のファイル',vc_run:'テストを実行',vc_view:'閲覧ビューで開く'}
 };
 LANGS.forEach(c=>Object.assign(L[c],EXT[c]));
 
@@ -761,43 +856,131 @@ function go(i){i=Math.max(0,Math.min(NP-1,i));$(PAGES[i]).scrollIntoView({block:
 let io;function spy(){try{if(io)io.disconnect();io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)setCur(PAGES.indexOf(e.target.id));});},{rootMargin:'-45% 0px -50% 0px'});PAGES.forEach(s=>io.observe($(s)));}catch(e){}}
 function fits(i){const el=$(PAGES[i]);return el&&el.offsetHeight<=window.innerHeight-40;}
 
-/* ================= DEV VIEW ================= */
-const bar=(n,max,w,c)=>{const f=Math.max(1,Math.round(n/max*w));return `<span class="blk" style="color:${c}">${'█'.repeat(f)}</span><span class="blk" style="color:#262C3A">${'█'.repeat(Math.max(0,w-f))}</span>`;};
-const tool=(name,arg)=>`<div class="tl"><span class="dot">●</span> <span class="tn">${esc(name)}</span><span class="ta">(${esc(arg)})</span></div>`;
-const out=t=>`<div class="res2">${t}</div>`;
-const say=h=>`<div class="say"><span class="dot">●</span> ${h}</div>`;
+/* ================= DEV VIEW · code editor + AI pair ================= */
+const VF=[
+ {id:'today',n:'today.ts',d:'src',lg:'TypeScript',sym:'next'},
+ {id:'brief',n:'BRIEF.md',d:'',lg:'Markdown',sym:'# BRIEF'},
+ {id:'earnings',n:'earnings.ts',d:'src',lg:'TypeScript',sym:'EARNINGS'},
+ {id:'research',n:'spacex-3q26.md',d:'research',lg:'Markdown',sym:'# SpaceX 3Q26'},
+ {id:'mix',n:'revenue-mix.json',d:'research',lg:'JSON',sym:'quarters'},
+ {id:'score',n:'consensus.diff',d:'research',lg:'Diff',sym:'@@ 3Q26'},
+ {id:'radar',n:'crisis-radar.test.ts',d:'src',lg:'TypeScript',sym:"describe('crisis radar')"},
+ {id:'rank',n:'rank.py',d:'src',lg:'Python',sym:'TOP8'},
+ {id:'lab',n:'chart.test.ts',d:'lab',lg:'TypeScript',sym:"test('beat a coin flip')"},
+ {id:'hub',n:'README.md',d:'',lg:'Markdown',sym:'# Stay hungry.ASI'}];
+const VFI=id=>VF.find(f=>f.id===id)||VF[2];
+let devFile='earnings',mru=[],vpTab='term';
+const FIC={ts:['TS','#4FA6ED'],md:['M↓','#519ABA'],json:['{}','#CBCB41'],diff:['±','#E37933'],py:['py','#5FA0D8']};
+const fi=n=>{const g=FIC[n.split('.').pop()]||['·','#999'];return `<i class="vfi" style="color:${g[1]}">${g[0]}</i>`;};
+const chev=o=>`<svg class="vch${o?' o':''}" viewBox="0 0 16 16"><path d="M6 4l4 4-4 4"/></svg>`;
+const xk=x=>`<span class="xk">${x}</span>`,xc=x=>`<span class="xc">${x}</span>`,xs=x=>`<span class="xs">"${esc(x)}"</span>`,xn=x=>`<span class="xn">${x}</span>`,xm=x=>`<span class="xm">${esc(x)}</span>`,xf=x=>`<span class="xf">${x}</span>`,xp=x=>`<span class="xp">${x}</span>`;
+const ih=(x,c='')=>`<span class="vih ${c}">${x}</span>`;
+const plain=h=>String(h).replace(/(\S)<b>/g,'$1 <b>').replace(/<[^>]+>/g,'').replace(/\s+/g,' ').trim();
 const strip=h=>h.replace(/<a [^>]*>/g,'').replace(/<\/a>/g,'');
-function rDev(){
-  const t=T(),col=COL(),now=Date.now(),nx=nextEarn(now),P=t.dv_p;
-  const nC=ER.filter(e=>e.st==='c').length,nE=ER.length-nC;
-  let h=`<div class="box"><div><b>◆ asi-agent</b> v0.9 · ${esc(t.dv_session)}</div><div style="color:var(--mute)">  cwd: ~/stayhungry.asi   ·   data: earnings.json, crisis.json, research/</div></div><p class="tip">${esc(t.dv_tip)}</p>`;
-  h+=`<div class="u">${esc(P[0])}</div>`+tool('Read','data/earnings.json')+out(esc(fmt(t.dv_found,{n:ER.length,c:nC,e:nE})));
-  if(nx)h+=say(`<b>${esc(fmt(t.dv_next,{t:nx.t}))}</b>`)+`<div class="dbig" data-cd="${nx.utc}"></div>`+out(`${esc(etD().format(new Date(nx.utc)))} · ${esc(etT().format(new Date(nx.utc)))} ET · ${esc(nx.st==='e'?t.est:t.conf)}`);
-  h+=`<div class="u">${esc(P[1])}</div>`+say(t.sum.map((x,i)=>`${i+1}. ${strip(x)}`).join('\n   '));
-  const rows=ER.map(e=>{const s=erState(e,now),w=s.k==='in'?Math.max(1,Math.round((1-s.ms/(60*86400000))*20)):20;
-    return `<div class="r" style="grid-template-columns:70px 150px 120px 230px auto"><span style="color:var(--ink);font-weight:600">${e.t}</span><span>${esc(etD().format(new Date(e.utc)))}</span><span style="color:${e.st==='e'?'var(--gold)':'var(--green)'}">${e.st==='e'?'estimated ⚠':'confirmed'}</span><span>${bar(w,20,20,e.st==='e'?'#F2B33D':'#F26522')}</span><span>${esc(erLabel(e,t,now))}</span></div>`;}).join('');
-  h+=`<div class="u">${esc(P[2])}</div>`+tool('Bash','npm run earnings -- --tz=local')+`<div class="tbl"><div class="r hd" style="grid-template-columns:70px 150px 120px 230px auto"><span>TICKER</span><span>DATE (ET)</span><span>STATUS</span><span>T-MINUS</span><span></span></div>${rows}</div>`;
-  h+=`<div class="u">${esc(P[3])}</div>`+tool('Bash','npm test -- crisis-radar')+`<div class="tbl">${t.chk.map(c=>`<div class="r" style="grid-template-columns:70px minmax(260px,auto) 110px"><span class="${c[3]==='ok'?'pass':'fail'}">${c[3]==='ok'?' PASS ':' FAIL '}</span><span style="color:var(--ink)">${esc(c[0])}</span><span style="color:${c[3]==='ok'?'var(--ink)':'var(--red)'};font-weight:600">${esc(c[1])}</span></div>`).join('')}<div class="r" style="margin-top:8px"><span>Tests: <span style="color:var(--green)">3 passed</span>, <span style="color:var(--red)">1 failed</span>, 4 total · <span class="tagS">${esc(t.sample)}</span></span></div></div>`;
-  h+=`<div class="u">${esc(P[4])}</div>`+tool('Read','research/spacex-3q26.md')+out('10 cards · SpaceX 3Q26 8-K, earnings call, LSEG · Bloomberg · Visible Alpha')
-    +say(`<b>${esc(t.res_h1)} ${esc(t.res_h2)}</b>`)+`<div class="dbig">52% <span style="font-size:.4em;color:var(--ink2)">${esc(t.res_side.replace(/<[^>]+>/g,' '))}</span></div>`
-    +`<div class="tbl">${MIX.map(r=>`<div class="r" style="grid-template-columns:60px auto 90px"><span style="color:var(--ink)">${r.q}</span><span>${r.s.map((p,i)=>`<span class="blk" style="color:${SEGC[i]}">${'█'.repeat(Math.round(p/2.5))}</span>`).join('')}</span><span>${r.rev}</span></div>`).join('')}<div class="r" style="color:var(--dim)"><span><span style="color:${SEGC[0]}">█</span> ${esc(t.seg[0])}  <span style="color:${SEGC[1]}">█</span> ${esc(t.seg[1])}  <span style="color:${SEGC[2]}">█</span> ${esc(t.seg[2])}</span></div></div>`
-    +tool('Bash','git diff consensus..actual -- 3q26.json')+`<div class="diff"><div class="dh">@@ 3Q26 vs consensus @@</div>${SCORE.map(s=>s[3]>=0?`<div class="da">+ ${esc(t[s[0]].padEnd(22,' '))} ${s[1].padStart(8,' ')}  vs ${s[2].padStart(8,' ')}   +${s[3].toFixed(1)}%</div>`:`<div class="dd">- ${esc(t[s[0]].padEnd(22,' '))} ${s[1].padStart(8,' ')}  vs ${s[2].padStart(8,' ')}   ${s[3].toFixed(1)}%  ${esc(t.miss)}</div>`).join('')}</div>`
-    +say(`${esc(t.dv_done)} <a href="${TG}" target="_blank" rel="noopener">${TG}</a>`);
-  const max=MK[0].cap;
-  h+=`<div class="u">${esc(P[5])}</div>`+tool('Bash','python rank.py --top 8 --by market_cap')+`<div class="tbl"><div class="r hd" style="grid-template-columns:30px 70px 300px 70px 90px"><span>#</span><span>TICKER</span><span>MARKET CAP</span><span>$T</span><span>TODAY</span></div>${MK.map((r,i)=>`<div class="r" style="grid-template-columns:30px 70px 300px 70px 90px"><span style="color:var(--dim)">${i+1}</span><span style="color:var(--ink);font-weight:600">${r.t}</span><span>${bar(r.cap,max,30,i===0?'#F26522':'#C7CCD8')}</span><span>${r.cap.toFixed(2)}</span><span style="color:${r.c>=0?col.up:col.down};font-weight:600">${pct(r.c)}</span></div>`).join('')}<div class="r" style="margin-top:6px"><span class="tagS">${esc(t.sample)}</span></div></div>`;
-  h+=`<div class="u">${esc(P[6])}</div>`+tool('TodoRead','')+`<div class="todo">${t.hub.map(x=>x[3]==='on'?`<div class="x">☒ ${esc(x[0])} <span style="color:var(--dim)">· ${esc(x[2])}</span></div>`:x[3]==='rd'?`<div class="r2">◐ ${esc(x[0])} <span style="color:var(--dim)">· ${esc(x[2])}</span></div>`:`<div class="n2">☐ ${esc(x[0])}</div>`).join('')}</div>`
-    +tool('Bash','git log --oneline -5')+`<div class="tbl">${COMMITS.map(c=>`<div class="r" style="grid-template-columns:80px auto"><span style="color:var(--gold)">${c[0]}</span><span>${esc(c[1])}</span></div>`).join('')}</div>`;
-  $('dv').innerHTML=h;
-  $('dstat').innerHTML=`<span><b>◆ asi-agent</b> · ⎇ main · ${esc(t.dv_hint)}</span><span><a href="${TG}" target="_blank" rel="noopener">@stayhungryasi · t.me/stayhungryasi</a> · <button id="dvBack">${esc(t.dv_back)}</button></span>`;
-  $('dvBack').addEventListener('click',()=>setDev(false));
-}
-const COMMITS=[['c81f0a2','feat(dev): esc opens the agent-session view of the same data'],['5e93b17','feat(ui): 10-page snap deck, one screen per LOG'],['9b2e4c1','feat(ui): card-news design system'],['e4d17b9','feat(earnings): megacap countdown in your time zone'],['a1f9c02','feat: launch Stayhungry.ASI Terminal (en, ko, es, ja)']];
+const mdb=h=>strip(h).split(/(<b>.*?<\/b>)/).map(p=>p.startsWith('<b>')?`<b class="xb">**${esc(p.slice(3,-4))}**</b>`:esc(p.replace(/<[^>]+>/g,''))).join('');
+const when=e=>{const d=new Date(e.utc);return etD().format(d)+' '+etT().format(d);};
+const VFILES={
+ today(t,now){const nx=nextEarn(now),r=[xm('// '+t.today_eb),`${xc('import')} { ${xp('EARNINGS')} } ${xc('from')} ${xs('./earnings')};`,`${xc('import')} ${xp('crisis')} ${xc('from')} ${xs('../data/crisis.json')};`,''];
+  if(nx){r.push({h:`${xk('export const')} ${xp('next')} = { ${xp('ticker')}: ${xs(nx.t)}, ${xp('at')}: ${xs(when(nx)+' ET')} };${ih(`⏱ <span data-cd="${nx.utc}"></span>`,'hot')}`,cls:'cur'});
+   r.push(xm('//     ↑ '+fmt(t.today_h2,{t:nx.t})+' · '+(nx.st==='e'?t.est:t.conf)));}
+  r.push('',`${xk('export const')} ${xp('tiles')} = {`,
+   `  ${xp('crisis')}:  ${xn('38')},   ${xm('// '+t.m_crisis)}`,
+   `  ${xp('vix')}:     ${xn('17.4')}, ${xm('// '+t.m_vix)}`,
+   `  ${xp('buffett')}: <span class="vsq">${xn('205')}</span>,  ${xm('// '+t.m_buf)}`,
+   `};  ${xm('// '+t.sample)}`);return r;},
+ brief(t){const r=[`<span class="xh"># ${esc(t.brief_h1)} ${esc(t.brief_h2)}</span>`,''];
+  t.sum.forEach((x,i)=>r.push(`<span class="xl">${i+1}.</span> ${mdb(x)}`));
+  r.push('',`<span class="xh">## ${esc(t.cp_lbl)}</span>`,'');
+  t.cp.forEach(c=>r.push(`<span class="xl">-</span> <b class="xb">**${esc(c[0])}**</b> ${esc(c[1])} — ${esc(c[2])}`));
+  r.push('',xm('<!-- @stayhungryasi · t.me/stayhungryasi -->'));return r;},
+ earnings(t,now){const nx=nextEarn(now),r=[xm('// '+t.earn_eb+' · US Eastern'),`${xk('export const')} ${xp('EARNINGS')} = [`];
+  ER.forEach(e=>{const pad=' '.repeat(Math.max(0,5-e.t.length));
+   const at=e.st==='e'?`<span class="vwv">${xs('~'+etD().format(new Date(e.utc)))}</span>`:xs(when(e));
+   const hint=e.st==='e'?ih('⚠ '+esc(t.est),'warn'):e===nx?ih(`⏱ <span data-cd="${e.utc}"></span>`,'hot'):ih('⏱ '+esc(erLabel(e,t,now)));
+   r.push({h:`  { ${xp('t')}: ${xs(e.t)},${pad} ${xp('at')}: ${at} },${hint}`,cls:e===nx?'cur':''});});
+  r.push('];','',`${xk('export const')} ${xp('nextUp')} = <span class="vgh">EARNINGS.find(e =&gt; e.at &gt; Date.now());  // → ${nx?nx.t:'—'}</span><span class="vkb">Tab</span>`);return r;},
+ research(t){const r=[`<span class="xh"># ${esc(t.res_h1)} ${esc(t.res_h2)}</span>`,'',`<span class="xq">&gt;</span> <b class="xb">**52%**</b> ${esc(plain(t.res_side))}`,'','| metric | value | note |','|---|---|---|'];
+  (t.rc||[]).forEach(c=>r.push(`| ${esc(c[0])} | <b class="xb">**${esc(c[1])}**</b> | ${esc(c[2])} |`));
+  r.push('',esc(plain(t.res_note||'')),'',xm('<!-- SpaceX 3Q26 8-K · earnings call · LSEG · Bloomberg · Visible Alpha -->'),`${esc(t.dv_done)} <span class="xu">${TG}</span>`);return r;},
+ mix(t){const r=['{',`  ${xp('"title"')}: ${xs(t.mix_h1+' '+t.mix_h2)},`,`  ${xp('"segments"')}: [${t.seg.map(s=>xs(s)).join(', ')}],`,`  ${xp('"quarters"')}: {`];
+  MIX.forEach((m,i)=>r.push({h:`    ${xp('"'+m.q+'"')}: { ${xp('"revenue"')}: ${xs(m.rev)}, ${xp('"mix"')}: [${m.s.map(v=>xn(v)).join(', ')}] }${i<MIX.length-1?',':''}${ih(m.s.map((p,j)=>`<span style="color:${SEGC[j]}">${'█'.repeat(Math.max(1,Math.round(p/5)))}</span>`).join(''),'bar')}`,cls:i===MIX.length-1?'cur':''}));
+  r.push('  },',`  ${xp('"ai_share_3q26"')}: ${xn('0.52')}`,'}');return r;},
+ score(t){const r=[{h:'diff --git a/consensus.json b/actual.json',cls:'dm'},{h:'--- a/consensus.json',cls:'dm'},{h:'+++ b/actual.json',cls:'dm'},{h:`@@ 3Q26 · ${esc(t.score_h1)} ${esc(t.score_h2)} @@`,cls:'dh'}];
+  SCORE.forEach(s=>{const lb=esc(String(t[s[0]]).padEnd(24,' '));r.push(s[3]>=0?{h:`+ ${lb} ${s[1].padStart(8,' ')}  vs ${s[2].padStart(8,' ')}   +${s[3].toFixed(1)}%`,cls:'da'}:{h:`- ${lb} ${s[1].padStart(8,' ')}  vs ${s[2].padStart(8,' ')}   ${s[3].toFixed(1)}%  ${esc(t.miss)}`,cls:'dd'});});return r;},
+ radar(t){const ex=[['temp','toBeLessThan','40'],['vix','toBeLessThan','20'],['curve','toBeGreaterThan','0'],['buffett','toBeLessThan','140']];
+  const r=[`${xc('import')} { ${xp('describe')}, ${xp('it')}, ${xp('expect')} } ${xc('from')} ${xs('vitest')};`,`${xc('import')} ${xp('crisis')} ${xc('from')} ${xs('../data/crisis.json')};  ${xm('// '+t.sample)}`,'',
+   {h:`${xf('describe')}(${xs('crisis radar')}, () =&gt; {`,lens:`<button data-act="reader">${esc(t.vc_view)}</button>`,g:'fail'}];
+  (t.chk||[]).forEach((c,i)=>{const e=ex[i]||ex[0],ok=c[3]==='ok',call=`${xf('expect')}(${xp('crisis')}.${xp(e[0])}).${xf(e[1])}(${xn(e[2])})`;
+   r.push({h:`  ${xf('it')}(${xs(c[0])}, () =&gt; ${ok?call:`<span class="vsq">${call}</span>`});${ih(esc(c[1]),ok?'':'bad')}`,g:ok?'ok':'fail',cls:ok?'':'cur'});
+   if(!ok)r.push({h:`  ${xm('// ✕ '+c[1]+' · '+c[2])}`});});
+  r.push('});');return r;},
+ rank(t){const col=COL(),max=MK[0].cap,r=[xm('# '+t.rank_eb+' · '+t.sample),`${xp('TOP8')} = [`];
+  MK.forEach((m,i)=>r.push({h:`    (${xs(m.t)},${' '.repeat(Math.max(0,6-m.t.length))}${xn(m.cap.toFixed(2))}, <span style="color:${m.c>=0?col.up:col.down}">${m.c>=0?'+':'-'}${Math.abs(m.c).toFixed(2)}</span>),${ih(`<span style="color:${i?'#C7CCD8':'#F26522'}">${'█'.repeat(Math.max(1,Math.round(m.cap/max*16)))}</span>`,'bar')}`,cls:i===0?'cur':''}));
+  r.push(']','',`${xk('def')} ${xf('leader')}(${xp('rows')}):`,`    ${xc('return')} ${xf('max')}(${xp('rows')}, ${xp('key')}=${xk('lambda')} ${xp('r')}: ${xp('r')}[${xn('1')}])[${xn('0')}]${ih('→ "'+MK[0].t+'"')}`);return r;},
+ lab(t){return [xm('// '+t.lab_eb),xm('// '+plain(t.lab_sub)),'',`${xc('import')} { ${xp('play')} } ${xc('from')} ${xs('./candles')};`,'',
+  {h:`${xf('test')}(${xs('beat a coin flip')}, ${xk('async')} () =&gt; {`,lens:`<button data-act="play">▷ ${esc(t.vc_run)}</button> | <button data-act="play">${esc(t.vc_view)}</button>`,g:'run'},
+  `  ${xk('const')} ${xp('score')} = ${xc('await')} ${xf('play')}(${xn('10')});`,
+  {h:`  ${xf('expect')}(${xp('score')}).${xf('toBeGreaterThan')}(${xn('5')});<span class="vgh">  // ≈ 5/10 · random walk</span><span class="vkb">Tab</span>`,cls:'cur'},
+  '});'];},
+ hub(t){const r=['<span class="xh"># Stay hungry.ASI</span>','',`<span class="xh">## ${esc(t.hub_h1)} ${esc(t.hub_h2)}</span>`,'',esc(plain(t.hub_sub)),''];
+  t.hub.forEach(h=>r.push(`<span class="xl">-</span> ${h[3]==='on'?'[x]':'[ ]'} <b class="xb">**${esc(h[0])}**</b> — ${esc(h[1])} <span class="xs">\`${esc(h[2])}\`</span>`));
+  r.push('',`Telegram: <span class="xu">${TG}</span> · @stayhungryasi`);return r;}
+};
+function rCode(){const t=T(),now=Date.now(),f=VFI(devFile),ls=(VFILES[f.id]||VFILES.earnings)(t,now);let n=0,ln=1;
+  const gl={ok:'<b class="vok">✓</b>',fail:'<b class="vno">✕</b>',run:'<b class="vok">▷</b>'};
+  $('vcode').className='vcode'+(f.lg==='Markdown'?' wrap':'');
+  $('vcode').innerHTML=ls.map(l=>{const o=typeof l==='string'?{h:l}:l;n++;if(o.cls==='cur'&&ln===1)ln=n;
+    return (o.lens?`<div class="vlens">${o.lens}</div>`:'')+`<div class="vln ${o.cls||''}"><span class="vg">${gl[o.g]||''}</span><i>${n}</i><span class="vlc">${o.h||' '}</span></div>`;}).join('');
+  return ln;}
+function rSide(){const deco={earnings:['M','#E2C08D'],research:['M','#E2C08D'],score:['U','#73C991'],mix:['U','#73C991'],radar:['1','#F88070']};
+  const item=(id,pad)=>{const f=VFI(id),d=deco[id];return `<button class="vfx${id===devFile?' sel':''}" data-vf="${id}" style="padding-left:${pad}px">${fi(f.n)}<span${d?` style="color:${d[1]}"`:''}>${f.n}</span>${d?`<em style="color:${d[1]}">${d[0]}</em>`:''}</button>`;};
+  const tree=[['lab',['lab']],['research',['score','mix','research']],['src',['radar','earnings','rank','today']],['',['brief','hub']]];
+  $('vside').innerHTML=`<div class="vsh"><span>EXPLORER</span><span>···</span></div><div class="vsec">${chev(1)}STAYHUNGRY.ASI</div>`
+    +tree.map(([d,ids])=>d?`<div class="vfd" style="padding-left:12px">${chev(1)}${d}</div>`+ids.map(id=>item(id,34)).join(''):ids.map(id=>item(id,20)).join('')).join('')
+    +`<div class="vsbot"><div class="vsec">${chev(0)}OUTLINE</div><div class="vsec">${chev(0)}TIMELINE</div></div>`;}
+function vCounts(){const chk=T().chk||[];return {chk,fails:chk.filter(c=>c[3]!=='ok'),warns:ER.filter(e=>e.st==='e')};}
+function rStat(ln){const t=T(),f=VFI(devFile),{fails,warns}=vCounts();
+  $('dstat').innerHTML=`<span class="vsl"><span class="vrem">&gt;&lt;</span><span>⎇ main*</span><button data-vp="prob">⊗ ${fails.length}&nbsp;&nbsp;⚠ ${warns.length}</button></span><span class="vsr"><span class="vopt">Ln ${ln}, Col 1</span><span class="vopt">Spaces: 2</span><span class="vopt">UTF-8</span><span class="vopt">${f.lg}</span><span class="vopt">◆ asi pair</span><a href="${TG}" target="_blank" rel="noopener">@stayhungryasi · t.me/stayhungryasi</a><button data-act="reader">${esc(t.dv_back)} · esc</button></span>`;}
+function rFile(){const t=T(),f=VFI(devFile),ln=rCode();
+  $('vtabs').innerHTML=VF.map((x,i)=>{const m=mru.indexOf(x.id);return `<button class="vtab${m>=0?' mru':''}${x.id===devFile?' sel':''}" data-vf="${x.id}" style="order:${m>=0?m:10+i}">${fi(x.n)}<span>${x.n}</span><b>${x.id===devFile?'×':''}</b></button>`;}).join('');
+  $('vcrumb').innerHTML=`${f.d?`<span>${f.d}</span><span>›</span>`:''}${fi(f.n)}<span>${f.n}</span><span>›</span><span>${esc(f.sym)}</span>`;
+  $('vctx').innerHTML=`<span>${fi(f.n)}${f.n}</span><em>${esc(t.vc_cur)}</em>`;
+  rSide();rStat(ln);if(devOn())document.title=`${f.n} — stayhungry.asi`;
+  const tb=document.querySelector('.vtab.sel');if(tb&&tb.scrollIntoView&&innerWidth<=980)tb.scrollIntoView({block:'nearest',inline:'nearest'});}
+function rPanel(){const t=T(),{chk,fails,warns}=vCounts();
+  const tabs=[['prob','PROBLEMS',fails.length+warns.length],['out','OUTPUT'],['dbg','DEBUG CONSOLE'],['term','TERMINAL'],['port','PORTS']];
+  const ps=`<span class="vpp">guest@asi</span>:<span class="vpb">~/stayhungry.asi</span><span class="vdim"> (main)</span>$ `;
+  let b='';
+  if(vpTab==='prob')b=fails.map(c=>`<button class="vpr" data-vf="radar"><b class="vno">✕</b> ${esc(c[0])}: ${esc(c[1])} — ${esc(c[2])} <span class="vdim">crisis-radar.test.ts</span></button>`).join('')+warns.map(e=>`<button class="vpr" data-vf="earnings"><b class="vwarn">⚠</b> ${e.t}: ${esc(t.est)} <span class="vdim">earnings.ts</span></button>`).join('');
+  else if(vpTab==='term')b=`<div>${ps}npm test</div><div class="vdim"> RUN  src/crisis-radar.test.ts</div>`+chk.map(c=>`<div> ${c[3]==='ok'?'<b class="vok">✓</b>':'<b class="vno">✕</b>'} ${esc(c[0])}  <span class="${c[3]==='ok'?'vdim':'vno'}">${esc(c[1])}</span></div>`).join('')+`<div> Tests  <b class="vno">${fails.length} failed</b> | <b class="vok">${chk.length-fails.length} passed</b> (${chk.length})  <span class="vwarn">${esc(t.sample)}</span></div><div>${ps}<i class="vcur"></i></div>`;
+  else if(vpTab==='out')b=`<div class="vdim">[asi pair] indexed ${VF.length} files · data: earnings.json, crisis.json, research/</div><div class="vdim">[asi pair] ${ER.length} earnings dates · ${ER.length-warns.length} confirmed · ${warns.length} estimated</div>`;
+  else b='<div class="vdim">—</div>';
+  $('vpanel').innerHTML=`<div class="vpt">${tabs.map(([k,l,n])=>`<button data-vp="${k}" class="${k===vpTab?'sel':''}">${l}${n!=null?`<span class="vbdg">${n}</span>`:''}</button>`).join('')}</div><div class="vpc">${b}</div>`;}
+const msgU=x=>`<div class="vcm"><div class="vwho"><i class="vav">G</i>guest</div><div class="vbody2">${esc(x)}</div></div>`;
+const msgA=h=>`<div class="vcm"><div class="vwho"><i class="vav ai">◆</i>asi pair</div><div class="vbody2">${h}</div></div>`;
+function rChat(){const t=T(),now=Date.now(),nx=nextEarn(now),P=t.dv_p,refs=['earnings','radar','research'];
+  $('vchead').innerHTML=`<span>CHAT</span><span class="vchi">+ ↺ ···</span>`;
+  let h=msgU(P[1])+msgA(`<details class="vrefs"><summary>${chev(0)}${esc(fmt(t.vc_refs,{n:refs.length}))}</summary>${refs.map(id=>`<button data-vf="${id}">${fi(VFI(id).n)}${VFI(id).n}</button>`).join('')}</details><ol>${t.sum.map(x=>`<li>${strip(x)}</li>`).join('')}</ol>`
+    +(nx?`<h3>${esc(fmt(t.dv_next,{t:nx.t}))}</h3><div class="vbig" data-cd="${nx.utc}"></div><p class="vmut">${esc(when(nx))} ET · ${esc(nx.st==='e'?t.est:t.conf)}</p>`:'')
+    +`<div class="vkpi"><div><small>CRISIS</small><b>38</b></div><div><small>VIX</small><b>17.4</b></div><div class="vhot"><small>BUFFETT</small><b>205%</b></div></div><p class="vmut">${esc(t.sample)} · ${esc(t.src_na)}</p>`);
+  h+=msgU(P[4])+msgA(`<p><b class="v52">52%</b> ${esc(plain(t.res_side))}</p><div>${MIX.map(m=>`<div class="vmr"><span>${m.q}</span><span class="vmb">${m.s.map((p,i)=>`<i style="width:${p}%;background:${SEGC[i]}"></i>`).join('')}</span><span>${m.rev}</span></div>`).join('')}</div><p class="vmut">${t.seg.map((s,i)=>`<i class="vdot" style="background:${SEGC[i]}"></i>${esc(s)}`).join('&nbsp;&nbsp;&nbsp;')}</p><p>${esc(t.dv_done)} <a href="${TG}" target="_blank" rel="noopener">t.me/stayhungryasi</a></p>`);
+  $('dv').innerHTML=h;}
+const AIC={files:'<path d="M13 3H7.5A1.5 1.5 0 0 0 6 4.5v12A1.5 1.5 0 0 0 7.5 18h9a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M13 3v5h5"/><path d="M3 7v12.5A1.5 1.5 0 0 0 4.5 21H14"/>',search:'<circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5.5 5.5"/>',git:'<circle cx="7" cy="5" r="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="8" r="2"/><path d="M7 7v10M17 10c0 4-5 4-9 7.5"/>',run:'<path d="M8 5.5v13l10-6.5z"/>',ext:'<rect x="4" y="9" width="5.5" height="5.5"/><rect x="9.5" y="14.5" width="5.5" height="5.5"/><rect x="4" y="14.5" width="5.5" height="5.5"/><rect x="13" y="4" width="5.5" height="5.5" transform="rotate(45 15.75 6.75)"/>',chat:'<path d="M4 5.5h16v10H10l-4.5 4v-4H4z"/>',acct:'<circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c1.2-3.6 4-5 7-5s5.8 1.4 7 5"/>',gear:'<circle cx="12" cy="12" r="3"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8"/>'};
+function rFrame(){const t=T(),s=k=>`<svg viewBox="0 0 24 24">${AIC[k]}</svg>`;
+  $('vact').innerHTML=`<span class="vai sel">${s('files')}</span><span class="vai">${s('search')}</span><span class="vai">${s('git')}<b class="vbd">3</b></span><span class="vai">${s('run')}</span><span class="vai">${s('ext')}</span><span class="vai">${s('chat')}</span><span class="vsp"></span><span class="vai">${s('acct')}</span><span class="vai">${s('gear')}</span>`;
+  $('vtitle').innerHTML=`<span class="vtl"><i class="vlogo">◆</i>${['File','Edit','Selection','View','Go','Run','Terminal','Help'].map(m=>`<span class="vmn">${m}</span>`).join('')}</span><span class="vcc"><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg>stayhungry.asi</span><span class="vtr"><button class="vwc" data-act="reader" aria-label="${esc(t.dv_back)}"><svg viewBox="0 0 16 16"><path d="M3 8h10"/></svg></button><button class="vwc" tabindex="-1" aria-hidden="true"><svg viewBox="0 0 16 16"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="vwc x" data-act="reader" aria-label="${esc(t.dv_back)}"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></span>`;
+  $('tin').placeholder=t.vc_ph;}
+function rDev(){rFrame();rFile();rPanel();rChat();}
+function openFile(id){if(!VF.some(f=>f.id===id))return;devFile=id;store.set('sha-file',id);
+  if(!mru.includes(id)){mru.push(id);if(mru.length>4)mru.splice(mru.findIndex(x=>x!==id),1);}
+  rFile();tick();$('vcode').scrollTop=0;}
 const devOn=()=>!$('dev').hidden;
 let baseTitle=document.title;
-function setDev(on){
-  $('dev').hidden=!on;$('dstat').hidden=!on;document.body.classList.toggle('devon',on);store.set('sha-mode',on?'dev':'reader');
-  if(on){baseTitle=document.title;document.title='~/stayhungry.asi — asi-agent';tick();setTimeout(()=>{try{$('tin').focus({preventScroll:true});}catch(e){}},30);}
-  else{document.title=baseTitle;$('devBtn').focus({preventScroll:true});}
+function setDev(on,restore){
+  if(on){const sf=store.get('sha-file',null);openFile(restore&&sf?sf:PAGES[cur]);}
+  $('dev').hidden=!on;document.body.classList.toggle('devon',on);store.set('sha-mode',on?'dev':'reader');
+  if(on){if(!/stayhungry\.asi$/.test(document.title))baseTitle=document.title;document.title=`${VFI(devFile).n} — stayhungry.asi`;tick();if(innerWidth>980)setTimeout(()=>{try{$('tin').focus({preventScroll:true});}catch(e){}},30);}
+  else{document.title=baseTitle;go(PAGES.indexOf(devFile));$('devBtn').focus({preventScroll:true});}
 }
 $('devBtn').addEventListener('click',()=>setDev(true));
 
@@ -805,6 +988,9 @@ $('devBtn').addEventListener('click',()=>setDev(true));
 function closeMenu(){$('langMenu').hidden=true;$('langBtn').setAttribute('aria-expanded','false');}
 $('langBtn').addEventListener('click',()=>{const m=$('langMenu');m.hidden=!m.hidden;$('langBtn').setAttribute('aria-expanded',String(!m.hidden));if(!m.hidden){const b=m.querySelector('[aria-checked="true"]');b&&b.focus();}});
 document.addEventListener('click',e=>{
+  const vf=e.target.closest('[data-vf]');if(vf){openFile(vf.dataset.vf);return;}
+  const vp=e.target.closest('[data-vp]');if(vp){vpTab=vp.dataset.vp;rPanel();return;}
+  const va=e.target.closest('[data-act]');if(va){setDev(false);if(va.dataset.act==='play')go(PAGES.indexOf('lab'));return;}
   const lb=e.target.closest('[data-lang]');if(lb){setLang(lb.dataset.lang);closeMenu();return;}
   const g=e.target.closest('[data-go]');if(g){go(+g.dataset.go);return;}
   if(!e.target.closest('#langMenu')&&!e.target.closest('#langBtn'))closeMenu();
@@ -819,24 +1005,24 @@ document.addEventListener('keydown',e=>{
   else if(e.key==='Home'){e.preventDefault();go(0);}else if(e.key==='End'){e.preventDefault();go(NP-1);}
 });
 
-/* dev prompt */
-function tprint(h){const d=document.createElement('div');d.innerHTML=h;$('tlog').appendChild(d);d.scrollIntoView({block:'nearest'});}
+/* dev prompt · chat */
+function tprint(h){const d=document.createElement('div');d.innerHTML=h;$('tlog').appendChild(d);const o=$('tout');if(innerWidth>980)o.scrollTop=o.scrollHeight;else d.scrollIntoView({block:'nearest'});}
 function boot(){$('tlog').innerHTML='';}
-const alias={today:'today',home:'today',brief:'brief',summary:'brief',earnings:'earnings',earn:'earnings',research:'research',spacex:'research',mix:'mix',score:'score',radar:'radar',crisis:'radar',rank:'rank',market:'rank',lab:'lab',game:'lab',hub:'hub',projects:'hub'};
+const alias={today:'today',home:'today',brief:'brief',summary:'brief',earnings:'earnings',earn:'earnings',research:'research',spacex:'research',mix:'mix',score:'score',radar:'radar',crisis:'radar',rank:'rank',market:'rank',lab:'lab',game:'lab',hub:'hub',projects:'hub',readme:'hub'};
 $('tform').addEventListener('submit',e=>{e.preventDefault();const raw=$('tin').value.trim();$('tin').value='';if(!raw)return;
-  tprint(`<div class="u" style="margin:18px 0 6px">${esc(raw)}</div>`);const [cmd,...a]=raw.split(/\s+/),arg=(a[0]||'').toLowerCase(),t=T();
+  tprint(msgU(raw));const A=h=>tprint(msgA(h)),[cmd,...a]=raw.split(/\s+/),arg=(a[0]||'').toLowerCase(),t=T();
   switch(cmd.toLowerCase()){
-    case 'help':tprint(`<div class="say">${esc([...t.t_help.filter(l=>!/^(boss|play)/.test(l)),'play            chart.test.ts (reader view)',t.dv_exit].join('\n'))}</div>`);break;
-    case 'ls':tprint(`<div class="say">${PAGES.map(s=>`<span style="color:var(--blue)">${s}/</span>`).join('  ')}</div>`);break;
-    case 'open':case 'cd':{const id=alias[arg];if(id){setDev(false);go(PAGES.indexOf(id));}else tprint(`<div class="say" style="color:var(--red)">${esc(fmt(t.t_nofile,{f:arg||'?'}))}</div>`);break;}
-    case 'earnings':{const nx=nextEarn(Date.now());tprint(say(esc(nx?fmt(t.t_next,{t:nx.t,d:erLabel(nx,t,Date.now())}):'—')));break;}
+    case 'help':A(`<pre>${esc([...t.t_help.filter(l=>!/^(boss|play)/.test(l)),'play            chart.test.ts (reader view)',t.dv_exit].join('\n'))}</pre>`);break;
+    case 'ls':A(VF.map(f=>`<button class="vln2" data-vf="${f.id}">${fi(f.n)}${f.n}</button>`).join(''));break;
+    case 'open':case 'cd':case 'code':{const id=alias[arg]||(VF.find(f=>f.n.toLowerCase()===arg)||{}).id;if(id){openFile(id);A(esc(fmt(t.t_open,{f:VFI(id).n})));}else A(`<span class="vno">${esc(fmt(t.t_nofile,{f:arg||'?'}))}</span>`);break;}
+    case 'earnings':{const nx=nextEarn(Date.now());A(esc(nx?fmt(t.t_next,{t:nx.t,d:erLabel(nx,t,Date.now())}):'—'));break;}
     case 'play':setDev(false);go(PAGES.indexOf('lab'));break;
-    case 'lang':if(LANGS.includes(arg)){setLang(arg);}else tprint(say('lang en | ko | es | ja'));break;
+    case 'lang':if(LANGS.includes(arg)){setLang(arg);}else A('lang en | ko | es | ja');break;
     case 'exit':case 'quit':case 'reader':setDev(false);break;
     case 'clear':$('tlog').innerHTML='';break;
-    case 'whoami':tprint(say('guest · stay hungry, observe everything'));break;
-    case 'sudo':tprint(say('<span style="color:var(--gold)">nice try.</span>'));break;
-    default:tprint(`<div class="say" style="color:var(--red)">${esc(fmt(t.t_unknown,{c:cmd}))}</div>`);
+    case 'whoami':A('guest · stay hungry, observe everything');break;
+    case 'sudo':A('<span class="vwarn">nice try.</span>');break;
+    default:A(`<span class="vno">${esc(fmt(t.t_unknown,{c:cmd}))}</span>`);
   }});
 
 /* ================= GAME ================= */
@@ -872,9 +1058,9 @@ $('again').addEventListener('click',()=>{results=[];score=0;streak=0;best=0;$('r
 $('bUp').addEventListener('click',()=>answer(true));$('bDown').addEventListener('click',()=>answer(false));
 
 data=gen();renderAll();boot();newRound();
-if(location.hash==='#dev'||store.get('sha-mode','reader')==='dev')setDev(true);
+if(location.hash==='#dev'||store.get('sha-mode','reader')==='dev')setDev(true,true);
 setInterval(tick,1000);
-setInterval(()=>{rEarn();wrapPins();fit();},60000);
+setInterval(()=>{rEarn();wrapPins();fit();if(devOn()){rCode();tick();}},60000);
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
 })();
 </script>
