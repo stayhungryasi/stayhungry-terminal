@@ -1,0 +1,43 @@
+{
+  "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
+  "items": [
+    {
+      "date": "2026-10-21",
+      "commit": "HEAD",
+      "message": "Open data API, quick open (Ctrl+P), vim keys, this changelog and a few easter eggs"
+    },
+    {
+      "date": "2026-10-21",
+      "commit": "7c28146",
+      "message": "Developer view comes alive: live typing, tests in watch mode, streaming chat"
+    },
+    {
+      "date": "2026-10-21",
+      "commit": "946d7fb",
+      "message": "Editor polish: native font, minimap, terminal toolbar"
+    },
+    {
+      "date": "2026-10-21",
+      "commit": "7bea66a",
+      "message": "Esc opens a code editor with an AI pair chat"
+    },
+    {
+      "date": "2026-10-21",
+      "commit": "08e2ee8",
+      "message": "Snap deck: one screen per page"
+    },
+    {
+      "date": "2026-10-21",
+      "commit": "a3159e2",
+      "message": "Card-news design system"
+    },
+    {
+      "date": "2026-10-21",
+      "commit": "43a7564",
+      "message": "Launch in English, Korean, Spanish and Japanese"
+    }
+  ],
+  "updated": "2026-10-21",
+  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+  "disclaimer": "Not investment advice."
+}

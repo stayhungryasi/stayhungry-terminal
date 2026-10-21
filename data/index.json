@@ -1,0 +1,14 @@
+{
+  "name": "Stayhungry.ASI open data",
+  "base": "https://stayhungryasi.github.io/stayhungry-terminal/data/",
+  "endpoints": [
+    "earnings.json",
+    "crisis.json",
+    "megacaps.json",
+    "spacex-3q26.json",
+    "changelog.json"
+  ],
+  "updated": "2026-10-21",
+  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+  "disclaimer": "Not investment advice."
+}

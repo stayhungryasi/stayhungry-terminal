@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
-/* Layout: a 10-page deck. Each LOG page fills one screen and snaps, like the card-news set. Esc flips the same data into a developer view (an AI agent session in a terminal). Single dark look by design. */
+/* Layout: an 11-page card-news deck; each LOG page fills one screen and snaps. Esc flips the same data into a code-editor view with an AI pair chat, quick open (Ctrl+P), vim keys and an open data API at /data. */
 :root{
   --bg:#0A0C10; --card:#12161E; --card2:#171C26; --line:#1D2330; --line2:#2A3142; --grid:rgba(255,255,255,.028);
   --ink:#EEF0F5; --ink2:#C7CCD8; --mute:#8D95A8; --dim:#5E6679;
@@ -390,6 +390,29 @@ a.chan:hover{border-color:var(--or)}
   .vopt{display:none!important}
 }
 
+.vqo{position:absolute;top:38px;left:50%;transform:translateX(-50%);width:min(620px,92vw);z-index:60;background:#222222;border:1px solid #454545;border-radius:8px;box-shadow:0 8px 24px #000a;padding:6px}
+.vqo input{width:100%;box-sizing:border-box;background:#313131;border:1px solid var(--va);border-radius:4px;color:#E7E7E7;font:13.5px -apple-system,"Segoe UI",system-ui,sans-serif;padding:5px 8px;outline:none}
+.vql{max-height:min(380px,60vh);overflow:auto;margin-top:6px}
+.vqr{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:3px 8px;border-radius:4px;cursor:pointer;white-space:nowrap}
+.vqr span{display:flex;align-items:center;gap:6px;overflow:hidden}.vqr em{font-style:normal;color:var(--vd);font-size:12px;overflow:hidden;text-overflow:ellipsis}
+.vqr.sel{background:#04395E;outline:1px solid var(--va);outline-offset:-1px}
+.vqr:hover:not(.sel){background:#2A2D2E}
+.vvim{position:absolute;left:0;right:0;bottom:22px;height:24px;z-index:58;display:flex;align-items:center;gap:2px;padding:0 10px;background:var(--vb);border-top:1px solid var(--vl);font:14px var(--vf)}
+.vvim input{flex:1;background:transparent;border:0;outline:none;color:#E7E7E7;font:14px var(--vf);caret-color:#E7E7E7}
+.vtoast{position:absolute;right:16px;bottom:34px;z-index:59;max-width:min(440px,90vw);display:flex;align-items:flex-start;gap:10px;background:#252526;border:1px solid #454545;border-radius:6px;box-shadow:0 6px 18px #0009;padding:12px 12px 12px 14px;font-size:13px;line-height:1.5}
+.vtoast button{color:var(--vd);font-size:16px;line-height:1;margin-left:auto}
+.vnorm{color:#C5C5C5;font-family:var(--vf)}
+.logl{display:grid;gap:8px;margin-top:22px}
+.logr{display:grid;grid-template-columns:118px 92px minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 18px}
+.logr .ld{font-family:var(--mono);font-size:13px;color:var(--mute)}
+.logr .lh{font-family:var(--mono);font-size:13px;color:var(--or);text-decoration:none}
+.logr a.lh:hover{text-decoration:underline}
+.logr .lm{font-size:clamp(16px,1.6vw,19px);font-weight:800;line-height:1.35}
+.logr .ln{justify-self:start;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:#0A0C10;background:var(--or);border-radius:4px;padding:2px 7px}
+.logr.lnew{border-color:var(--or)}
+.devtip{margin-top:16px;font-family:var(--mono);font-size:14px;color:var(--ink2);border:1px dashed var(--line2);border-radius:12px;padding:12px 18px}
+.devtip b{color:var(--or)}
+@media (max-width:980px){.logr{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}.logr .lm{grid-column:1/-1;order:3}.logr .ld,.logr .lh{grid-row:1}}
 @media (max-width:1260px){.nav{display:none}.pager{display:none}}
 @media (min-width:1261px){.pgnum{display:none}}
 @media (max-width:980px){
@@ -477,6 +500,7 @@ a.chan:hover{border-color:var(--or)}
     <div id="labSrc" style="display:contents"></div>
   </section>
   <section class="page" id="hub"></section>
+  <section class="page" id="news"></section>
 </main>
 <nav class="pager" id="pager" aria-label="Page index"></nav>
 <div class="pgnum" id="pgnum" aria-hidden="true"></div>
@@ -498,9 +522,45 @@ a.chan:hover{border-color:var(--or)}
       <form class="vcin" id="tform"><div class="vctx" id="vctx"></div><input id="tin" autocomplete="off" spellcheck="false" aria-label="Ask asi pair"><div class="vcbar"><span>Ask ▾&nbsp;&nbsp;·&nbsp;&nbsp;asi-1 ▾</span><button type="submit" aria-label="Send"><svg viewBox="0 0 16 16"><path d="M2.5 8L14 2.5 10.5 14 8 9z"/></svg></button></div></form>
     </aside>
   </div>
+  <div class="vqo" id="vqo" hidden><input id="vqi" autocomplete="off" spellcheck="false" placeholder="Search files by name · type > for commands" aria-label="Quick open"><div class="vql" id="vql"></div></div>
+  <form class="vvim" id="vvim" hidden><span>:</span><input id="vvi" autocomplete="off" spellcheck="false" aria-label="vim command"></form>
+  <div class="vtoast" id="vtoast" role="status" hidden></div>
   <div class="vstat" id="dstat"></div>
 </div>
 
+<script id="sha-data">
+/* Single source for every number on the site and for the open data API (/data/*.json).
+   build.py runs apiData() with node to write the JSON files. */
+const ER=[{"t":"META","utc":"2026-10-21T20:30:00Z","st":"c"},{"t":"TSLA","utc":"2026-10-21T21:30:00Z","st":"c"},{"t":"GOOGL","utc":"2026-10-28T20:30:00Z","st":"c"},{"t":"MSFT","utc":"2026-10-28T20:00:00Z","st":"e"},{"t":"AMZN","utc":"2026-10-29T21:00:00Z","st":"c"},{"t":"AAPL","utc":"2026-11-02T22:00:00Z","st":"c"},{"t":"NVDA","utc":"2026-11-18T22:00:00Z","st":"e"},{"t":"AVGO","utc":"2026-12-10T22:00:00Z","st":"e"}];
+const MK=[{"t":"NVDA","cap":4.42,"c":2.31},{"t":"MSFT","cap":3.81,"c":0.84},{"t":"AAPL","cap":3.67,"c":-0.62},{"t":"GOOGL","cap":3.04,"c":1.12},{"t":"AMZN","cap":2.44,"c":-1.45},{"t":"AVGO","cap":1.92,"c":3.05},{"t":"META","cap":1.81,"c":0.37},{"t":"TSLA","cap":1.39,"c":-4.12}];
+const MIX=[{"q":"3Q25","rev":"$5.58B","s":[15,56,30]},{"q":"2Q26","rev":"$7.81B","s":[33,55,12]},{"q":"3Q26","rev":"$14.58B","s":[52,36,12]}];
+const SCORE=[["s_rev","$14.58B","$12.72B",14.6],["s_op","$2.79B","$2.33B",19.8],["s_ai","$7.56B","$6.47B",16.8],["s_sl","$5.25B","$4.92B",6.7],["s_sp","$1.77B","$1.4B",26.2],["s_sub","13.6M","14.2M",-4.2]];
+const RISK={"temp":38,"vix":17.4,"curve":0.42,"buffett":205,"sample":true};
+const CHANGELOG=[
+ {"d":"2026-10-21","h":"HEAD","m":{"en":"Open data API, quick open (Ctrl+P), vim keys, this changelog and a few easter eggs","ko":"오픈 데이터 API, 빠른 열기(Ctrl+P), Vim 단축키, 변경 기록, 이스터에그 추가","es":"API de datos abiertos, apertura rápida (Ctrl+P), atajos de Vim, este registro y algunas sorpresas","ja":"オープンデータAPI、クイックオープン(Ctrl+P)、Vimキー、この変更履歴、隠し要素を追加"}},
+ {"d":"2026-10-21","h":"7c28146","m":{"en":"Developer view comes alive: live typing, tests in watch mode, streaming chat","ko":"개발자 화면이 살아 움직임: 자동 타이핑, 테스트 감시 모드, 채팅 스트리밍","es":"La vista de desarrollador cobra vida: escritura en vivo, pruebas en modo watch, chat en streaming","ja":"開発者ビューが動き出す: 自動タイピング、テストのwatchモード、チャットのストリーミング"}},
+ {"d":"2026-10-21","h":"946d7fb","m":{"en":"Editor polish: native font, minimap, terminal toolbar","ko":"편집기 다듬기: 기본 글꼴, 미니맵, 터미널 도구줄","es":"Pulido del editor: fuente nativa, minimapa, barra de terminal","ja":"エディタ調整: ネイティブフォント、ミニマップ、ターミナルツールバー"}},
+ {"d":"2026-10-21","h":"7bea66a","m":{"en":"Esc opens a code editor with an AI pair chat","ko":"Esc를 누르면 AI 채팅이 붙은 코드 편집기 화면으로","es":"Esc abre un editor de código con chat de IA","ja":"EscでAIチャット付きのコードエディタが開く"}},
+ {"d":"2026-10-21","h":"08e2ee8","m":{"en":"Snap deck: one screen per page","ko":"스냅 덱: 한 페이지 = 한 화면","es":"Mazo con ajuste: una pantalla por página","ja":"スナップデッキ: 1ページ=1画面"}},
+ {"d":"2026-10-21","h":"a3159e2","m":{"en":"Card-news design system","ko":"카드뉴스 디자인 시스템","es":"Sistema de diseño de tarjetas","ja":"カードニュースのデザインシステム"}},
+ {"d":"2026-10-21","h":"43a7564","m":{"en":"Launch in English, Korean, Spanish and Japanese","ko":"영어·한국어·스페인어·일본어로 오픈","es":"Lanzamiento en inglés, coreano, español y japonés","ja":"英語・韓国語・スペイン語・日本語で公開"}}];
+const API_BASE='https://stayhungryasi.github.io/stayhungry-terminal/data/';
+function apiData(today){
+  const base={updated:today,credit:'@stayhungryasi · https://t.me/stayhungryasi',disclaimer:'Not investment advice.'};
+  const SK={s_rev:'revenue',s_op:'operating_income',s_ai:'ai_revenue',s_sl:'starlink_revenue',s_sp:'space_revenue',s_sub:'starlink_subscribers'};
+  return {
+    'index.json':Object.assign({name:'Stayhungry.ASI open data',base:API_BASE,endpoints:['earnings.json','crisis.json','megacaps.json','spacex-3q26.json','changelog.json']},base),
+    'earnings.json':Object.assign({source:'Company IR and days.to, checked 2026-10-21',timezone:'UTC',items:ER.map(e=>({ticker:e.t,at:e.utc,status:e.st==='c'?'confirmed':'estimated'}))},base),
+    'crisis.json':Object.assign({sample:true,note:'Placeholder values until breaking_bot writes this file.',temperature:RISK.temp,vix:RISK.vix,buffett_index_pct:RISK.buffett,yield_curve_10y2y:RISK.curve,
+      checks:[{id:'crisis-temperature',value:RISK.temp,pass:RISK.temp<40},{id:'vix',value:RISK.vix,pass:RISK.vix<20},{id:'yield-curve',value:RISK.curve,pass:RISK.curve>0},{id:'valuation',value:RISK.buffett,pass:RISK.buffett<140}]},base),
+    'megacaps.json':Object.assign({sample:true,unit:'USD trillions',items:MK.map((m,i)=>({rank:i+1,ticker:m.t,market_cap:m.cap,change_pct:m.c}))},base),
+    'spacex-3q26.json':Object.assign({source:'SpaceX 3Q26 8-K and earnings call; consensus from LSEG, Bloomberg, Visible Alpha',
+      revenue_mix:MIX.map(m=>({quarter:m.q,revenue:m.rev,share_pct:{ai:m.s[0],starlink:m.s[1],space:m.s[2]}})),
+      vs_consensus:SCORE.map(s=>({metric:SK[s[0]],actual:s[1],consensus:s[2],diff_pct:s[3]}))},base),
+    'changelog.json':Object.assign({repo:'https://github.com/stayhungryasi/stayhungry-terminal',items:CHANGELOG.map(c=>({date:c.d,commit:c.h,message:c.m.en}))},base)
+  };
+}
+</script>
 <script>
 (function(){
 const $=id=>document.getElementById(id);
@@ -508,14 +568,10 @@ const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 const fmt=(s,o)=>s.replace(/\{(\w+)\}/g,(_,k)=>o[k]);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 const TG='https://t.me/stayhungryasi';
-const PAGES=['today','brief','earnings','research','mix','score','radar','rank','lab','hub'];
+const PAGES=['today','brief','earnings','research','mix','score','radar','rank','lab','hub','news'];
 const NP=PAGES.length;
 
-const ER=[{t:'META',utc:'2026-10-21T20:30:00Z',st:'c'},{t:'TSLA',utc:'2026-10-21T21:30:00Z',st:'c'},{t:'GOOGL',utc:'2026-10-28T20:30:00Z',st:'c'},{t:'MSFT',utc:'2026-10-28T20:00:00Z',st:'e'},{t:'AMZN',utc:'2026-10-29T21:00:00Z',st:'c'},{t:'AAPL',utc:'2026-11-02T22:00:00Z',st:'c'},{t:'NVDA',utc:'2026-11-18T22:00:00Z',st:'e'},{t:'AVGO',utc:'2026-12-10T22:00:00Z',st:'e'}];
-const MK=[{t:'NVDA',cap:4.42,c:2.31},{t:'MSFT',cap:3.81,c:0.84},{t:'AAPL',cap:3.67,c:-0.62},{t:'GOOGL',cap:3.04,c:1.12},{t:'AMZN',cap:2.44,c:-1.45},{t:'AVGO',cap:1.92,c:3.05},{t:'META',cap:1.81,c:0.37},{t:'TSLA',cap:1.39,c:-4.12}];
-const MIX=[{q:'3Q25',rev:'$5.58B',s:[15,56,30]},{q:'2Q26',rev:'$7.81B',s:[33,55,12]},{q:'3Q26',rev:'$14.58B',s:[52,36,12]}];
 const MIXT=[[0.81,2.56,7.56,'+830%'],[3.10,4.29,5.25,'+69%'],[1.67,0.96,1.77,'+6%']];
-const SCORE=[['s_rev','$14.58B','$12.72B',14.6],['s_op','$2.79B','$2.33B',19.8],['s_ai','$7.56B','$6.47B',16.8],['s_sl','$5.25B','$4.92B',6.7],['s_sp','$1.77B','$1.4B',26.2],['s_sub','13.6M','14.2M',-4.2]];
 const SEGC=['#F26522','#2F8FDD','#2EA87A'];
 
 const L={
@@ -559,7 +615,7 @@ lab_src:'Every chart in this test is randomly generated.',
 hub_eb:'HUB · EVERY AI PROJECT, ONE PLACE',hub_h1:'What I build',hub_h2:'while the market runs.',
 hub_sub:'Each project starts as a question, gets built with AI, and ships to a channel. This is the index.',
 st:{on:'● RUNNING',rd:'◆ RESEARCH',nx:'○ NEXT'},
-hub:[['Crisis early-warning bot','Leading crisis indicators every Monday and Friday.','TELEGRAM','on'],['Buffett Index & VIX report','Valuation and fear gauge every Tuesday and Thursday.','TELEGRAM','on'],['Institutional 5% filing radar','Flags unusual buying in big-holder filings from well-known institutions.','TELEGRAM','on'],['Megacap earnings countdown','The calendar on this page, in your own time zone.','THIS SITE','on'],['Megacap Top N ranking system','Testing whether monthly market-cap rank works as a trading universe.','RESEARCH','rd'],['SpaceX overnight research agent','An agent that researches while I sleep. First task: SpaceX, the next 10 years.','RESEARCH','rd'],['ShaferwineX','English channel on SpaceX, AI, tech and crypto.','X · YOUTUBE','on'],['Live data feed for this site','Bots write JSON, this page reads it. No more sample numbers.','NEXT','nx']],
+hub:[['Crisis early-warning bot','Leading crisis indicators every Monday and Friday.','TELEGRAM','on'],['Buffett Index & VIX report','Valuation and fear gauge every Tuesday and Thursday.','TELEGRAM','on'],['Institutional 5% filing radar','Flags unusual buying in big-holder filings from well-known institutions.','TELEGRAM','on'],['Megacap earnings countdown','The calendar on this page, in your own time zone.','THIS SITE','on'],['Megacap Top N ranking system','Testing whether monthly market-cap rank works as a trading universe.','RESEARCH','rd'],['SpaceX overnight research agent','An agent that researches while I sleep. First task: SpaceX, the next 10 years.','RESEARCH','rd'],['ShaferwineX','English channel on SpaceX, AI, tech and crypto.','X · YOUTUBE','on'],['Open data API','Every number on this site as JSON at /data, free to use.','JSON · /data','on'],['Developer view','Press Esc: the same data as a code editor. Try Ctrl+P, :q or npm run launch.','THIS SITE · ESC','on'],['Live data feed for this site','Bots write JSON, this page reads it. No more sample numbers.','NEXT','nx']],
 log_lbl:'CHANGELOG',ch_lbl:'CHANNELS',
 ch:[['TELEGRAM','@stayhungryasi','Crisis radar, Buffett · VIX reports, research cards'],['X','@shaferwineX','English threads on SpaceX, AI, tech and crypto'],['YOUTUBE','ShaferwineX','Documentary-style explainers about the future'],['NAVER BLOG','shaferwine','Long-form research notes in Korean']],
 hub_src:'Private trading tools and client work are not listed here.',
@@ -609,7 +665,7 @@ lab_src:'이 테스트의 모든 차트는 무작위로 생성됩니다.',
 hub_eb:'HUB · 모든 AI 작업을 한곳에',hub_h1:'시장이 도는 동안',hub_h2:'내가 만드는 것들.',
 hub_sub:'모든 프로젝트는 질문 하나에서 시작해 AI로 만들어지고 채널로 나갑니다. 여기가 그 목차입니다.',
 st:{on:'● 가동중',rd:'◆ 연구중',nx:'○ 다음'},
-hub:[['경제위기 조기경보 봇','매주 월·금, 위기 선행 지표 보고.','TELEGRAM','on'],['버핏지수·VIX 리포트','매주 화·목, 밸류에이션과 공포지수.','TELEGRAM','on'],['기관 5% 대량보유 레이더','이름 있는 기관의 대량보유 공시에서 이례적인 매수를 골라냅니다.','TELEGRAM','on'],['빅테크 실적 카운트다운','이 페이지의 캘린더. 내 시간대 기준.','THIS SITE','on'],['미국 시총 Top N 순위 시스템','월별 시총 순위가 매매 유니버스로 통하는지 검증 중.','RESEARCH','rd'],['SpaceX 야간 리서치 에이전트','제가 자는 동안 리서치하는 에이전트. 첫 과제는 SpaceX의 다음 10년.','RESEARCH','rd'],['ShaferwineX','SpaceX·AI·테크·크립토를 다루는 영어 채널.','X · YOUTUBE','on'],['이 사이트 실데이터 연결','봇이 JSON을 쓰고, 페이지가 읽습니다. 예시값 졸업.','NEXT','nx']],
+hub:[['경제위기 조기경보 봇','매주 월·금, 위기 선행 지표 보고.','TELEGRAM','on'],['버핏지수·VIX 리포트','매주 화·목, 밸류에이션과 공포지수.','TELEGRAM','on'],['기관 5% 대량보유 레이더','이름 있는 기관의 대량보유 공시에서 이례적인 매수를 골라냅니다.','TELEGRAM','on'],['빅테크 실적 카운트다운','이 페이지의 캘린더. 내 시간대 기준.','THIS SITE','on'],['미국 시총 Top N 순위 시스템','월별 시총 순위가 매매 유니버스로 통하는지 검증 중.','RESEARCH','rd'],['SpaceX 야간 리서치 에이전트','제가 자는 동안 리서치하는 에이전트. 첫 과제는 SpaceX의 다음 10년.','RESEARCH','rd'],['ShaferwineX','SpaceX·AI·테크·크립토를 다루는 영어 채널.','X · YOUTUBE','on'],['오픈 데이터 API','이 사이트의 모든 숫자를 /data 에서 JSON으로. 누구나 가져다 쓰세요.','JSON · /data','on'],['개발자 화면','Esc를 누르면 같은 데이터가 코드 편집기로. Ctrl+P, :q, npm run launch도 해보세요.','THIS SITE · ESC','on'],['이 사이트 실데이터 연결','봇이 JSON을 쓰고, 페이지가 읽습니다. 예시값 졸업.','NEXT','nx']],
 log_lbl:'CHANGELOG',ch_lbl:'CHANNELS',
 ch:[['TELEGRAM','@stayhungryasi','위기 레이더, 버핏·VIX 리포트, 리서치 카드'],['X','@shaferwineX','SpaceX·AI·테크·크립토 영어 스레드'],['YOUTUBE','ShaferwineX','미래를 다루는 다큐멘터리식 해설'],['NAVER BLOG','shaferwine','한국어 리서치 노트와 긴 글']],
 hub_src:'개인 매매 도구와 본업 관련 작업은 여기에 올리지 않습니다.',
@@ -659,7 +715,7 @@ lab_src:'Todos los gráficos de este test se generan al azar.',
 hub_eb:'HUB · TODOS LOS PROYECTOS DE IA EN UN LUGAR',hub_h1:'Lo que construyo',hub_h2:'mientras el mercado corre.',
 hub_sub:'Cada proyecto empieza con una pregunta, se construye con IA y sale a un canal. Este es el índice.',
 st:{on:'● ACTIVO',rd:'◆ INVESTIGACIÓN',nx:'○ PRÓXIMO'},
-hub:[['Bot de alerta temprana de crisis','Indicadores adelantados cada lunes y viernes.','TELEGRAM','on'],['Informe Índice Buffett y VIX','Valuación e índice del miedo cada martes y jueves.','TELEGRAM','on'],['Radar de participaciones del 5%','Detecta compras inusuales de instituciones conocidas.','TELEGRAM','on'],['Cuenta regresiva de resultados','El calendario de esta página, en tu zona horaria.','ESTE SITIO','on'],['Sistema de ranking Top N','Probando si el ranking mensual funciona como universo de inversión.','INVESTIGACIÓN','rd'],['Agente nocturno sobre SpaceX','Un agente que investiga mientras duermo. Primera tarea: SpaceX, los próximos 10 años.','INVESTIGACIÓN','rd'],['ShaferwineX','Canal en inglés sobre SpaceX, IA, tecnología y cripto.','X · YOUTUBE','on'],['Datos en vivo para este sitio','Los bots escriben JSON y esta página lo lee. Adiós a los datos de muestra.','PRÓXIMO','nx']],
+hub:[['Bot de alerta temprana de crisis','Indicadores adelantados cada lunes y viernes.','TELEGRAM','on'],['Informe Índice Buffett y VIX','Valuación e índice del miedo cada martes y jueves.','TELEGRAM','on'],['Radar de participaciones del 5%','Detecta compras inusuales de instituciones conocidas.','TELEGRAM','on'],['Cuenta regresiva de resultados','El calendario de esta página, en tu zona horaria.','ESTE SITIO','on'],['Sistema de ranking Top N','Probando si el ranking mensual funciona como universo de inversión.','INVESTIGACIÓN','rd'],['Agente nocturno sobre SpaceX','Un agente que investiga mientras duermo. Primera tarea: SpaceX, los próximos 10 años.','INVESTIGACIÓN','rd'],['ShaferwineX','Canal en inglés sobre SpaceX, IA, tecnología y cripto.','X · YOUTUBE','on'],['API de datos abiertos','Cada número del sitio en JSON en /data, libre para usar.','JSON · /data','on'],['Vista de desarrollador','Pulsa Esc: los mismos datos como editor de código. Prueba Ctrl+P, :q o npm run launch.','THIS SITE · ESC','on'],['Datos en vivo para este sitio','Los bots escriben JSON y esta página lo lee. Adiós a los datos de muestra.','PRÓXIMO','nx']],
 log_lbl:'CHANGELOG',ch_lbl:'CANALES',
 ch:[['TELEGRAM','@stayhungryasi','Radar de crisis, informes Buffett · VIX y tarjetas de investigación'],['X','@shaferwineX','Hilos en inglés sobre SpaceX, IA, tecnología y cripto'],['YOUTUBE','ShaferwineX','Explicaciones documentales sobre el futuro'],['NAVER BLOG','shaferwine','Notas largas de investigación en coreano']],
 hub_src:'Las herramientas privadas de inversión y el trabajo con clientes no aparecen aquí.',
@@ -709,7 +765,7 @@ lab_src:'このテストのチャートはすべてランダム生成です。',
 hub_eb:'HUB · すべてのAIプロジェクトをひとつに',hub_h1:'市場が動く間に',hub_h2:'私が作っているもの。',
 hub_sub:'どのプロジェクトも問いから始まり、AIで作られ、チャンネルへ届けられます。ここがその目次です。',
 st:{on:'● 稼働中',rd:'◆ 研究中',nx:'○ 次'},
-hub:[['経済危機の早期警戒ボット','毎週月・金、危機の先行指標を報告。','TELEGRAM','on'],['バフェット指数・VIXレポート','毎週火・木、バリュエーションと恐怖指数。','TELEGRAM','on'],['機関投資家5%大量保有レーダー','著名な機関の大量保有報告から異例の買いを拾う。','TELEGRAM','on'],['大型テック決算カウントダウン','このページのカレンダー。あなたの時刻で。','THIS SITE','on'],['米国時価総額トップNランキング','月次の時価総額順位が売買ユニバースとして機能するか検証中。','RESEARCH','rd'],['SpaceX夜間リサーチエージェント','寝ている間にリサーチするエージェント。最初の課題はSpaceXの次の10年。','RESEARCH','rd'],['ShaferwineX','SpaceX・AI・テック・暗号資産の英語チャンネル。','X · YOUTUBE','on'],['このサイトのライブデータ接続','ボットがJSONを書き、ページが読む。サンプル値は卒業。','NEXT','nx']],
+hub:[['経済危機の早期警戒ボット','毎週月・金、危機の先行指標を報告。','TELEGRAM','on'],['バフェット指数・VIXレポート','毎週火・木、バリュエーションと恐怖指数。','TELEGRAM','on'],['機関投資家5%大量保有レーダー','著名な機関の大量保有報告から異例の買いを拾う。','TELEGRAM','on'],['大型テック決算カウントダウン','このページのカレンダー。あなたの時刻で。','THIS SITE','on'],['米国時価総額トップNランキング','月次の時価総額順位が売買ユニバースとして機能するか検証中。','RESEARCH','rd'],['SpaceX夜間リサーチエージェント','寝ている間にリサーチするエージェント。最初の課題はSpaceXの次の10年。','RESEARCH','rd'],['ShaferwineX','SpaceX・AI・テック・暗号資産の英語チャンネル。','X · YOUTUBE','on'],['オープンデータAPI','このサイトのすべての数字を /data でJSONに。自由に使えます。','JSON · /data','on'],['開発者ビュー','Escで同じデータがコードエディタに。Ctrl+P、:q、npm run launch もどうぞ。','THIS SITE · ESC','on'],['このサイトのライブデータ接続','ボットがJSONを書き、ページが読む。サンプル値は卒業。','NEXT','nx']],
 log_lbl:'CHANGELOG',ch_lbl:'チャンネル',
 ch:[['TELEGRAM','@stayhungryasi','危機レーダー、バフェット・VIXレポート、リサーチカード'],['X','@shaferwineX','SpaceX・AI・テック・暗号資産の英語スレッド'],['YOUTUBE','ShaferwineX','未来を描くドキュメンタリー風の解説'],['NAVER BLOG','shaferwine','韓国語の長文リサーチノート']],
 hub_src:'個人の売買ツールと本業関連の作業はここに載せません。',
@@ -722,19 +778,19 @@ b_title:'ビルド成功',b_ret:'Esc またはクリックで戻ります'}
 const LANGS=['en','ko','es','ja'];
 const HTML_LANG={en:'en',ko:'ko',es:'es',ja:'ja'};
 const EXT={
-en:{nav10:['TODAY','BRIEF','EARNINGS','SPACEX','MIX','SCORE','RADAR','RANK','LAB','HUB'],brief_eb:'BRIEF · TODAY IN 3 LINES',brief_h1:'Three lines.',brief_h2:"That's the whole day.",mix_eb:'RESEARCH · SPACEX 3Q26 · REVENUE MIX',mix_h1:'In one year,',mix_h2:'revenue changed owners.',score_eb:'RESEARCH · SPACEX 3Q26 · SCORECARD',score_h1:'Beat on everything.',score_h2:'Except one.',next:'NEXT ↓',
+en:{news_eb:'CHANGELOG · BUILT IN PUBLIC',news_h1:'Every update,',news_h2:'logged like a commit.',news_new:'NEW',news_dev:'Developers: press <b>Esc</b>, then <b>Ctrl+P</b>. Open data: <b>/data/index.json</b>',news_src:'Each line is a real commit in github.com/stayhungryasi/stayhungry-terminal.',nav10:['TODAY','BRIEF','EARNINGS','SPACEX','MIX','SCORE','RADAR','RANK','LAB','HUB','NEW'],brief_eb:'BRIEF · TODAY IN 3 LINES',brief_h1:'Three lines.',brief_h2:"That's the whole day.",mix_eb:'RESEARCH · SPACEX 3Q26 · REVENUE MIX',mix_h1:'In one year,',mix_h2:'revenue changed owners.',score_eb:'RESEARCH · SPACEX 3Q26 · SCORECARD',score_h1:'Beat on everything.',score_h2:'Except one.',next:'NEXT ↓',
  dv_back:'Reader view',dv_hint:'esc → reader view · / → prompt',dv_session:'research session',dv_tip:'Tip: this is the same data as the reader view. Type help, or press esc.',
  dv_p:["what's next on deck?","summarize today in 3 lines","list every megacap earnings date","run the crisis checks","decode SpaceX 3Q26","rank the megacaps by market cap","what are you building?"],
  dv_next:'{t} reports in',dv_found:'{n} entries · {c} confirmed · {e} estimated',dv_done:'Done. Full deck on Telegram:',dv_exit:'exit            back to the reader view',vc_refs:'Used {n} references',vc_ph:'Ask asi pair, or type help',vc_cur:'Current file',vc_run:'Run Test',vc_view:'Open in reader view'},
-ko:{nav10:['오늘','3줄','실적','SPACEX','매출','스코어','위기','시총','실험실','허브'],brief_eb:'BRIEF · 오늘을 3줄로',brief_h1:'딱 3줄.',brief_h2:'오늘은 이게 전부다.',mix_eb:'RESEARCH · SPACEX 3Q26 · 매출 구조',mix_h1:'1년 만에',mix_h2:'주인이 바뀐 매출 구조',score_eb:'RESEARCH · SPACEX 3Q26 · 스코어카드',score_h1:'전부 이겼다.',score_h2:'단 하나만 빼고.',next:'다음 ↓',
+ko:{news_eb:'CHANGELOG · 만드는 과정 공개',news_h1:'모든 업데이트를',news_h2:'커밋처럼 기록한다.',news_new:'NEW',news_dev:'개발자라면: <b>Esc</b> 누르고 <b>Ctrl+P</b>. 오픈 데이터: <b>/data/index.json</b>',news_src:'각 줄은 github.com/stayhungryasi/stayhungry-terminal 의 실제 커밋입니다.',nav10:['오늘','3줄','실적','SPACEX','매출','스코어','위기','시총','실험실','허브','새 소식'],brief_eb:'BRIEF · 오늘을 3줄로',brief_h1:'딱 3줄.',brief_h2:'오늘은 이게 전부다.',mix_eb:'RESEARCH · SPACEX 3Q26 · 매출 구조',mix_h1:'1년 만에',mix_h2:'주인이 바뀐 매출 구조',score_eb:'RESEARCH · SPACEX 3Q26 · 스코어카드',score_h1:'전부 이겼다.',score_h2:'단 하나만 빼고.',next:'다음 ↓',
  dv_back:'읽기 화면',dv_hint:'esc → 읽기 화면 · / → 입력창',dv_session:'리서치 세션',dv_tip:'읽기 화면과 같은 데이터입니다. help를 입력하거나 esc를 누르세요.',
  dv_p:['다음 발표 뭐야?','오늘 3줄 요약해줘','빅테크 실적 일정 전부 보여줘','위기 체크 돌려줘','SpaceX 3Q26 해부해줘','시총 순위 정리해줘','지금 뭐 만들고 있어?'],
  dv_next:'{t} 실적 발표까지',dv_found:'{n}건 · 확정 {c} · 추정 {e}',dv_done:'완료. 전체 10장은 텔레그램에:',dv_exit:'exit            읽기 화면으로',vc_refs:'참조 {n}개 사용',vc_ph:'asi pair에게 묻거나 help 입력',vc_cur:'현재 파일',vc_run:'테스트 실행',vc_view:'읽기 화면에서 보기'},
-es:{nav10:['HOY','RESUMEN','RESULTADOS','SPACEX','MEZCLA','MARCADOR','RADAR','RANKING','LAB','HUB'],brief_eb:'RESUMEN · HOY EN 3 LÍNEAS',brief_h1:'Tres líneas.',brief_h2:'Es todo el día.',mix_eb:'INVESTIGACIÓN · SPACEX 3T26 · MEZCLA',mix_h1:'En un año,',mix_h2:'los ingresos cambiaron de dueño.',score_eb:'INVESTIGACIÓN · SPACEX 3T26 · MARCADOR',score_h1:'Ganó en todo.',score_h2:'Menos en una.',next:'SIGUIENTE ↓',
+es:{news_eb:'CHANGELOG · CONSTRUIDO EN PÚBLICO',news_h1:'Cada actualización,',news_h2:'registrada como un commit.',news_new:'NUEVO',news_dev:'Desarrolladores: pulsa <b>Esc</b> y luego <b>Ctrl+P</b>. Datos abiertos: <b>/data/index.json</b>',news_src:'Cada línea es un commit real en github.com/stayhungryasi/stayhungry-terminal.',nav10:['HOY','RESUMEN','RESULTADOS','SPACEX','MEZCLA','MARCADOR','RADAR','RANKING','LAB','HUB','NOVEDADES'],brief_eb:'RESUMEN · HOY EN 3 LÍNEAS',brief_h1:'Tres líneas.',brief_h2:'Es todo el día.',mix_eb:'INVESTIGACIÓN · SPACEX 3T26 · MEZCLA',mix_h1:'En un año,',mix_h2:'los ingresos cambiaron de dueño.',score_eb:'INVESTIGACIÓN · SPACEX 3T26 · MARCADOR',score_h1:'Ganó en todo.',score_h2:'Menos en una.',next:'SIGUIENTE ↓',
  dv_back:'Vista de lectura',dv_hint:'esc → vista de lectura · / → escribir',dv_session:'sesión de investigación',dv_tip:'Son los mismos datos de la vista de lectura. Escribe help o pulsa esc.',
  dv_p:['¿qué sigue?','resume hoy en 3 líneas','muestra todas las fechas de resultados','corre los controles de crisis','decodifica SpaceX 3T26','ordena las megacaps por capitalización','¿qué estás construyendo?'],
  dv_next:'{t} publica en',dv_found:'{n} registros · {c} confirmados · {e} estimados',dv_done:'Listo. Las 10 tarjetas en Telegram:',dv_exit:'exit            volver a la vista de lectura',vc_refs:'Usó {n} referencias',vc_ph:'Pregunta a asi pair o escribe help',vc_cur:'Archivo actual',vc_run:'Ejecutar prueba',vc_view:'Ver en vista de lectura'},
-ja:{nav10:['今日','3行','決算','SPACEX','売上構成','スコア','レーダー','ランキング','ラボ','ハブ'],brief_eb:'BRIEF · 今日を3行で',brief_h1:'3行だけ。',brief_h2:'今日はこれで全部。',mix_eb:'RESEARCH · SPACEX 3Q26 · 売上構成',mix_h1:'1年で',mix_h2:'売上の主役が交代。',score_eb:'RESEARCH · SPACEX 3Q26 · スコアカード',score_h1:'すべて上回った。',score_h2:'ひとつを除いて。',next:'次へ ↓',
+ja:{news_eb:'CHANGELOG · 公開で開発',news_h1:'すべての更新を',news_h2:'コミットのように記録。',news_new:'NEW',news_dev:'開発者の方へ: <b>Esc</b> を押して <b>Ctrl+P</b>。オープンデータ: <b>/data/index.json</b>',news_src:'各行は github.com/stayhungryasi/stayhungry-terminal の実際のコミットです。',nav10:['今日','3行','決算','SPACEX','売上構成','スコア','レーダー','ランキング','ラボ','ハブ','新着'],brief_eb:'BRIEF · 今日を3行で',brief_h1:'3行だけ。',brief_h2:'今日はこれで全部。',mix_eb:'RESEARCH · SPACEX 3Q26 · 売上構成',mix_h1:'1年で',mix_h2:'売上の主役が交代。',score_eb:'RESEARCH · SPACEX 3Q26 · スコアカード',score_h1:'すべて上回った。',score_h2:'ひとつを除いて。',next:'次へ ↓',
  dv_back:'閲覧ビュー',dv_hint:'esc → 閲覧ビュー · / → 入力',dv_session:'リサーチセッション',dv_tip:'閲覧ビューと同じデータです。help と入力するか esc を押してください。',
  dv_p:['次の発表は?','今日を3行で要約して','大型テックの決算日程を全部見せて','危機チェックを実行して','SpaceX 3Q26を解剖して','時価総額順に並べて','今何を作ってる?'],
  dv_next:'{t} の決算まで',dv_found:'{n}件 · 確定 {c} · 推定 {e}',dv_done:'完了。10枚すべてはTelegramで:',dv_exit:'exit            閲覧ビューに戻る',vc_refs:'{n} 件の参照を使用',vc_ph:'asi pair に質問、または help',vc_cur:'現在のファイル',vc_run:'テストを実行',vc_view:'閲覧ビューで開く'}
@@ -842,6 +898,10 @@ function rHub(){
    <div class="chans">${t.ch.map((c,i)=>CH_LINKS[i]?`<a class="chan" href="${CH_LINKS[i]}" target="_blank" rel="noopener"><small>${esc(c[0])}</small><b>${esc(c[1])}</b></a>`:`<span class="chan"><small>${esc(c[0])}</small><b>${esc(c[1])}</b></span>`).join('')}</div>`
    +src(t.foot+' '+t.hub_src,'hub');
 }
+function rNews(){const t=T();
+  $('news').innerHTML=head('news',t.news_eb)+hd(esc(t.news_h1),esc(t.news_h2))
+   +`<div class="logl">${CHANGELOG.map((c,i)=>`<div class="logr${i?'':' lnew'}"><span class="ld">${c.d}</span>${c.h==='HEAD'?'<span class="lh">HEAD</span>':`<a class="lh" href="https://github.com/stayhungryasi/stayhungry-terminal/commit/${c.h}" target="_blank" rel="noopener">${c.h}</a>`}<span class="lm">${esc(c.m[lang]||c.m.en)}</span>${i?'':`<span class="ln">${esc(t.news_new)}</span>`}</div>`).join('')}</div>`
+   +`<div class="devtip">${t.news_dev}</div>`+src(t.news_src,'news');}
 function rChrome(){
   const t=T();document.documentElement.lang=HTML_LANG[lang];
   $('nav').innerHTML=PAGES.map((s,i)=>`<a href="#${s}" data-s="${s}">${esc(t.nav10[i])}</a>`).join('');
@@ -861,7 +921,7 @@ function wrapPins(){PAGES.forEach(id=>{const s=$(id);if(s.firstElementChild&&s.f
 function fit(){const desk=innerWidth>=981&&innerHeight>=620;PAGES.forEach(id=>{const p=$(id).firstElementChild;if(!p)return;p.style.zoom='';if(!desk)return;
   const sec=$(id),cs=getComputedStyle(sec),avail=innerHeight-sec.getBoundingClientRect().top*0-parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--top'))-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom);
   p.style.flex='none';const nat=p.offsetHeight;p.style.flex='';if(nat>avail)p.style.zoom=String(Math.max(.72,avail/nat));});}
-function renderAll(){rChrome();rToday();rBrief();rEarn();rResearch();rMix();rScore();rRadar();rRank();rLab();rHub();render(curShown);rDev();tick();wrapPins();fit();spy();}
+function renderAll(){rChrome();rToday();rBrief();rEarn();rResearch();rMix();rScore();rRadar();rRank();rLab();rHub();rNews();render(curShown);rDev();tick();wrapPins();fit();spy();}
 let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(fit,150);});
 function setLang(c){if(!LANGS.includes(c))return;if(window.SHA_PATHS&&c!==lang){store.set('sha-lang',c);location.href='../'+c+'/'+(devOn()?'#dev':location.hash);return;}lang=c;store.set('sha-lang',c);renderAll();boot();}
 
@@ -882,7 +942,8 @@ const VF=[
  {id:'radar',n:'crisis-radar.test.ts',d:'src',lg:'TypeScript',sym:"describe('crisis radar')"},
  {id:'rank',n:'rank.py',d:'src',lg:'Python',sym:'TOP8'},
  {id:'lab',n:'chart.test.ts',d:'lab',lg:'TypeScript',sym:"test('beat a coin flip')"},
- {id:'hub',n:'README.md',d:'',lg:'Markdown',sym:'# Stay hungry.ASI'}];
+ {id:'hub',n:'README.md',d:'',lg:'Markdown',sym:'# Stay hungry.ASI'},
+ {id:'news',n:'CHANGELOG.md',d:'',lg:'Markdown',sym:'# Changelog'}];
 const VFI=id=>VF.find(f=>f.id===id)||VF[2];
 let devFile='earnings',mru=[],vpTab='term';
 const FIC={gitignore:['◇','#8C8C8C'],ts:['TS','#4FA6ED'],md:['M↓','#519ABA'],json:['{}','#CBCB41'],diff:['±','#E37933'],py:['py','#5FA0D8']};
@@ -937,6 +998,7 @@ const VFILES={
   `  ${xk('const')} ${xp('score')} = ${xc('await')} ${xf('play')}(${xn('10')});`,
   {h:`  ${xf('expect')}(${xp('score')}).${xf('toBeGreaterThan')}(${xn('5')});<span class="vgh">  // ≈ 5/10 · random walk</span><span class="vkb">Tab</span>`,cls:'cur'},
   '});'];},
+ news(t){const r=['<span class="xh"># Changelog</span>',''];CHANGELOG.forEach(c=>{r.push(`<span class="xh">## ${c.d} · ${c.h}</span>`,`<span class="xl">-</span> ${esc(c.m[lang]||c.m.en)}`,'');});r.push(esc(t.news_src));return r;},
  hub(t){const r=['<span class="xh"># Stay hungry.ASI</span>','',`<span class="xh">## ${esc(t.hub_h1)} ${esc(t.hub_h2)}</span>`,'',esc(plain(t.hub_sub)),''];
   t.hub.forEach(h=>r.push(`<span class="xl">-</span> ${h[3]==='on'?'[x]':'[ ]'} <b class="xb">**${esc(h[0])}**</b> — ${esc(h[1])} <span class="xs">\`${esc(h[2])}\`</span>`));
   r.push('',`Telegram: <span class="xu">${TG}</span> · @stayhungryasi`);return r;}
@@ -949,16 +1011,16 @@ function rCode(){const t=T(),now=Date.now(),f=VFI(devFile),ls=(VFILES[f.id]||VFI
   const col={xm:'#6A995599',xh:'#569CD6aa',xs:'#CE917899',xk:'#569CD699',xc:'#C586C099'};
   $('vmini').innerHTML=ls.map(l=>{const o=typeof l==='string'?{h:l}:l,tx=(o.h||'').replace(/<[^>]+>/g,'').replace(/&[a-z]+;/g,'x'),ind=tx.length-tx.trimStart().length,m=(o.h||'').match(/class="(x[a-z])"/),c=o.cls==='da'?'#2EA043aa':o.cls==='dd'?'#F85149aa':m&&col[m[1]]||'#ffffff38';return tx.trim()?`<i style="margin-left:${Math.min(ind,20)}px;width:${Math.max(4,Math.min(54-Math.min(ind,20),tx.trim().length*.8))}px;background:${c}"></i>`:'<i></i>';}).join('')+`<b style="height:${ls.length*4+8}px"></b>`;
   vtyLn=ln;return ln;}
-function rSide(){const deco={earnings:['M','#E2C08D'],research:['M','#E2C08D'],score:['U','#73C991'],mix:['U','#73C991'],radar:['1','#F88070']};
+function rSide(){const deco={earnings:['M','#E2C08D'],research:['M','#E2C08D'],score:['U','#73C991'],mix:['U','#73C991'],radar:['1','#F88070'],d_index:['A','#81B88B'],news:['M','#E2C08D']};
   const item=(id,pad)=>{const f=VFI(id),d=deco[id];return `<button class="vfx${id===devFile?' sel':''}" data-vf="${id}" style="padding-left:${pad}px">${fi(f.n)}<span${d?` style="color:${d[1]}"`:''}>${f.n}</span>${d?`<em style="color:${d[1]}">${d[0]}</em>`:''}</button>`;};
   const st=(n,c)=>`<span class="vfx vstatic" style="padding-left:20px">${fi(n)}<span${c?` style="color:${c}"`:''}>${n}</span></span>`,cf=(n,c)=>`<div class="vfd" style="padding-left:12px${c?`;color:${c}`:''}">${chev(0)}${n}</div>`,of=n=>`<div class="vfd" style="padding-left:12px">${chev(1)}${n}</div>`;
   $('vside').innerHTML=`<div class="vsh"><span>EXPLORER</span><span>···</span></div><div class="vsec">${chev(1)}STAYHUNGRY.ASI</div>`
-    +cf('.github')+of('lab')+item('lab',34)+cf('node_modules','#8C8C8C')+of('research')+['score','mix','research'].map(id=>item(id,34)).join('')+of('src')+['radar','earnings','rank','today'].map(id=>item(id,34)).join('')
-    +st('.gitignore','#8C8C8C')+item('brief',20)+st('package.json')+item('hub',20)+st('tsconfig.json')
+    +cf('.github')+of('data')+['d_log','d_crisis','d_earn','d_index','d_mk','d_spx'].map(id=>item(id,34)).join('')+of('lab')+item('lab',34)+cf('node_modules','#8C8C8C')+of('research')+['score','mix','research'].map(id=>item(id,34)).join('')+of('src')+['radar','earnings','rank','today'].map(id=>item(id,34)).join('')
+    +st('.gitignore','#8C8C8C')+item('brief',20)+item('news',20)+st('package.json')+item('hub',20)+st('tsconfig.json')
     +`<div class="vsbot"><div class="vsec">${chev(0)}OUTLINE</div><div class="vsec">${chev(0)}TIMELINE</div></div>`;}
-function vCounts(){const chk=T().chk||[];return {chk,fails:chk.filter(c=>c[3]!=='ok'),warns:ER.filter(e=>e.st==='e')};}
+function vCounts(){const chk=T().chk||[];return {chk,fails:cheat?[]:chk.filter(c=>c[3]!=='ok'),warns:ER.filter(e=>e.st==='e')};}
 function rStat(ln){const t=T(),f=VFI(devFile),{fails,warns}=vCounts();
-  $('dstat').innerHTML=`<span class="vsl"><span class="vrem">&gt;&lt;</span><span>⎇ main*</span><button data-vp="prob">⊗ ${fails.length}&nbsp;&nbsp;⚠ ${warns.length}</button></span><span class="vsr"><span class="vopt" id="vcol">Ln ${ln}, Col 1</span><span class="vopt">Spaces: 2</span><span class="vopt">UTF-8</span><span class="vopt">${f.lg}</span><span class="vopt">◆ asi pair</span><a href="${TG}" target="_blank" rel="noopener">@stayhungryasi · t.me/stayhungryasi</a><button data-act="reader">${esc(t.dv_back)} · esc</button></span>`;}
+  $('dstat').innerHTML=`<span class="vsl"><span class="vrem">&gt;&lt;</span><span>⎇ main*</span><button data-vp="prob">⊗ ${fails.length}&nbsp;&nbsp;⚠ ${warns.length}</button><span class="vnorm vopt">-- NORMAL --</span></span><span class="vsr"><span class="vopt" id="vcol">Ln ${ln}, Col 1</span><span class="vopt">Spaces: 2</span><span class="vopt">UTF-8</span><span class="vopt">${f.lg}</span><span class="vopt">◆ asi pair</span><a href="${TG}" target="_blank" rel="noopener">@stayhungryasi · t.me/stayhungryasi</a><button data-act="reader">${esc(t.dv_back)} · esc</button></span>`;}
 function rFile(){const t=T(),f=VFI(devFile),ln=rCode();
   $('vtabs').innerHTML=VF.map((x,i)=>{const m=mru.indexOf(x.id);return `<button class="vtab${m>=0?' mru':''}${x.id===devFile?' sel':''}" data-vf="${x.id}" style="order:${m>=0?m:10+i}">${fi(x.n)}<span>${x.n}</span><b>${x.id===devFile?'×':''}</b></button>`;}).join('');
   $('vcrumb').innerHTML=`${f.d?`<span>${f.d}</span><span>›</span>`:''}${fi(f.n)}<span>${f.n}</span><span>›</span><span>${esc(f.sym)}</span>`;
@@ -1019,7 +1081,7 @@ if(!RM){setTimeout(vtyStep,1200);setTimeout(vWatch,9000);}
 const AIC={files:'<path d="M13 3H7.5A1.5 1.5 0 0 0 6 4.5v12A1.5 1.5 0 0 0 7.5 18h9a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M13 3v5h5"/><path d="M3 7v12.5A1.5 1.5 0 0 0 4.5 21H14"/>',search:'<circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5.5 5.5"/>',git:'<circle cx="7" cy="5" r="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="8" r="2"/><path d="M7 7v10M17 10c0 4-5 4-9 7.5"/>',run:'<path d="M8 5.5v13l10-6.5z"/>',ext:'<rect x="4" y="9" width="5.5" height="5.5"/><rect x="9.5" y="14.5" width="5.5" height="5.5"/><rect x="4" y="14.5" width="5.5" height="5.5"/><rect x="13" y="4" width="5.5" height="5.5" transform="rotate(45 15.75 6.75)"/>',chat:'<path d="M4 5.5h16v10H10l-4.5 4v-4H4z"/>',acct:'<circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c1.2-3.6 4-5 7-5s5.8 1.4 7 5"/>',gear:'<circle cx="12" cy="12" r="3"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8"/>'};
 function rFrame(){const t=T(),s=k=>`<svg viewBox="0 0 24 24">${AIC[k]}</svg>`;
   $('vact').innerHTML=`<span class="vai sel">${s('files')}</span><span class="vai">${s('search')}</span><span class="vai">${s('git')}<b class="vbd">3</b></span><span class="vai">${s('run')}</span><span class="vai">${s('ext')}</span><span class="vai">${s('chat')}</span><span class="vsp"></span><span class="vai">${s('acct')}</span><span class="vai">${s('gear')}</span>`;
-  $('vtitle').innerHTML=`<span class="vtl"><i class="vlogo">◆</i>${['File','Edit','Selection','View','Go','Run','Terminal','Help'].map(m=>`<span class="vmn">${m}</span>`).join('')}</span><span class="vcc"><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg>stayhungry.asi</span><span class="vtr"><button class="vwc" data-act="reader" aria-label="${esc(t.dv_back)}"><svg viewBox="0 0 16 16"><path d="M3 8h10"/></svg></button><button class="vwc" tabindex="-1" aria-hidden="true"><svg viewBox="0 0 16 16"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="vwc x" data-act="reader" aria-label="${esc(t.dv_back)}"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></span>`;
+  $('vtitle').innerHTML=`<span class="vtl"><i class="vlogo">◆</i>${['File','Edit','Selection','View','Go','Run','Terminal','Help'].map(m=>`<span class="vmn">${m}</span>`).join('')}</span><span class="vcc" data-qo><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg>stayhungry.asi</span><span class="vtr"><button class="vwc" data-act="reader" aria-label="${esc(t.dv_back)}"><svg viewBox="0 0 16 16"><path d="M3 8h10"/></svg></button><button class="vwc" tabindex="-1" aria-hidden="true"><svg viewBox="0 0 16 16"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="vwc x" data-act="reader" aria-label="${esc(t.dv_back)}"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></span>`;
   $('tin').placeholder=t.vc_ph;}
 function rDev(){rFrame();rFile();rPanel();rChat();}
 function openFile(id){if(!VF.some(f=>f.id===id))return;devFile=id;store.set('sha-file',id);
@@ -1030,17 +1092,98 @@ const DEVICON="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' view
 let baseTitle=document.title;
 function setDev(on,restore){
   if(on){const sf=store.get('sha-file',null);openFile(restore&&sf?sf:PAGES[cur]);}
-  $('dev').hidden=!on;document.body.classList.toggle('devon',on);store.set('sha-mode',on?'dev':'reader');
+  if(on)$('dev').scrollTop=0;$('dev').hidden=!on;document.body.classList.toggle('devon',on);store.set('sha-mode',on?'dev':'reader');
   const ic=document.querySelector('link[rel="icon"]');if(ic){if(!ic.dataset.orig)ic.dataset.orig=ic.href;ic.href=on?DEVICON:ic.dataset.orig;}
   if(on){if(!/stayhungry\.asi$/.test(document.title))baseTitle=document.title;document.title=`${VFI(devFile).n} — stayhungry.asi`;tick();vStream();if(innerWidth>980)setTimeout(()=>{try{$('tin').focus({preventScroll:true});}catch(e){}},30);}
-  else{document.title=baseTitle;go(PAGES.indexOf(devFile));$('devBtn').focus({preventScroll:true});}
+  else{closeQO();closeVim();document.title=baseTitle;go(Math.max(0,PAGES.indexOf(VFI(devFile).pg||devFile)));$('devBtn').focus({preventScroll:true});}
 }
 $('devBtn').addEventListener('click',()=>setDev(true));
+/* ===== dev extras: data files, quick open, vim, toasts, easter eggs ===== */
+const BUILD=window.SHA_BUILD||new Date().toISOString().slice(0,10);
+const DFILES=[['d_log','changelog.json','news'],['d_crisis','crisis.json','radar'],['d_earn','earnings.json','earnings'],['d_index','index.json','hub'],['d_mk','megacaps.json','rank'],['d_spx','spacex-3q26.json','research']];
+DFILES.forEach(([id,n,pg])=>VF.push({id,n,d:'data',lg:'JSON',sym:n,pg}));
+const EXPL=['d_log','d_crisis','d_earn','d_index','d_mk','d_spx','lab','score','mix','research','radar','earnings','rank','today','brief','news','hub'];
+function jsonLines(o){return JSON.stringify(o,null,2).split('\n').map(l=>esc(l)
+  .replace(/^(\s*)(&quot;[^&]*?&quot;)(:)/,'$1<span class="xp">$2</span>$3')
+  .replace(/(: |^\s*)(&quot;.*?&quot;)(,?)$/,'$1<span class="xs">$2</span>$3')
+  .replace(/(: |^\s*)(-?\d[\d.]*)(,?)$/,'$1<span class="xn">$2</span>$3')
+  .replace(/(: |^\s*)(true|false|null)(,?)$/,'$1<span class="xk">$2</span>$3'));}
+DFILES.forEach(([id,n])=>{VFILES[id]=()=>jsonLines(apiData(BUILD)[n]);});
+const dataUrl=n=>(window.SHA_PATHS?'../data/':API_BASE)+n;
+/* toast (VS Code style notification) */
+let toastT=0;
+function toast(h,kind,ms){const el=$('vtoast');el.innerHTML=`<b class="${kind==='err'?'vno':kind==='warn'?'vwarn':'vpb'}">${kind==='err'?'⊗':kind==='warn'?'⚠':'ⓘ'}</b><span>${h}</span><button data-toastx aria-label="close">×</button>`;el.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>{el.hidden=true;},ms||4500);}
+/* quick open + command palette */
+let qoItems=[],qoSel=0;
+const fuzzy=(s,q)=>{let i=0;for(const ch of s){if(ch===q[i])i++;if(i===q.length)return true;}return !q.length;};
+function qCmds(){const t=T();return [
+  ['View: '+t.dv_back,'Esc',()=>setDev(false)],
+  ['Go to File…','Ctrl+P',()=>openQO('')],
+  ['Terminal: Run Tests','npm test',()=>{vpTab='term';rPanel();vWatchNow();}],
+  ['View: Show Problems','',()=>{vpTab='prob';rPanel();}],
+  ['Data: Open API index','data/index.json',()=>openFile('d_index')],
+  ['Data: curl earnings.json','',()=>chatRun('curl earnings.json')],
+  ['Git: View History','git log',()=>chatRun('git log')],
+  ['Tasks: Run Task “launch”','npm run launch',()=>launch()],
+  ...LANGS.map(c=>['Preferences: Display Language — '+L[c].name,c,()=>setLang(c)])];}
+function openQO(pre){$('vqo').hidden=false;$('vqi').value=pre;qoSel=0;rQO();$('vqi').focus({preventScroll:true});}
+function closeQO(){$('vqo').hidden=true;}
+function rQO(){const v=$('vqi').value,cmd=v.startsWith('>'),q=(cmd?v.slice(1):v).trim().toLowerCase();
+  if(cmd)qoItems=qCmds().filter(c=>fuzzy(c[0].toLowerCase(),q)||c[0].toLowerCase().includes(q)).map(c=>({l:esc(c[0]),r:esc(c[1]),run:c[2]}));
+  else{const ord=[...mru.slice().reverse(),...EXPL.filter(id=>!mru.includes(id))];qoItems=ord.map(VFI).filter(f=>fuzzy(f.n.toLowerCase(),q)).map((f,i)=>({l:fi(f.n)+esc(f.n),r:esc(f.d||'')+(i<mru.length&&!q?' · recently opened':''),run:()=>openFile(f.id)}));}
+  qoSel=Math.max(0,Math.min(qoSel,qoItems.length-1));
+  $('vql').innerHTML=qoItems.length?qoItems.map((it,i)=>`<div class="vqr${i===qoSel?' sel':''}" data-qi="${i}"><span>${it.l}</span><em>${it.r}</em></div>`).join(''):'<div class="vqr"><span class="vdim">No matching results</span></div>';
+  const s=$('vql').querySelector('.sel'),l=$('vql');if(s){if(s.offsetTop<l.scrollTop)l.scrollTop=s.offsetTop;else if(s.offsetTop+s.offsetHeight>l.scrollTop+l.clientHeight)l.scrollTop=s.offsetTop+s.offsetHeight-l.clientHeight;}}
+function runQO(i){const it=qoItems[i];closeQO();if(it)it.run();}
+$('vqi').addEventListener('input',()=>{qoSel=0;rQO();});
+$('vqi').addEventListener('keydown',e=>{
+  if(e.key==='Escape'){e.preventDefault();e.stopPropagation();closeQO();return;}
+  if(e.key==='ArrowDown'){e.preventDefault();qoSel=(qoSel+1)%Math.max(1,qoItems.length);rQO();}
+  else if(e.key==='ArrowUp'){e.preventDefault();qoSel=(qoSel-1+qoItems.length)%Math.max(1,qoItems.length);rQO();}
+  else if(e.key==='Enter'){e.preventDefault();runQO(qoSel);}});
+/* vim */
+function openVim(){$('vvim').hidden=false;$('vvi').value='';$('vvi').focus({preventScroll:true});}
+function closeVim(){$('vvim').hidden=true;}
+function stepFile(d){const i=EXPL.indexOf(devFile);openFile(EXPL[(i+d+EXPL.length)%EXPL.length]);}
+$('vvim').addEventListener('submit',e=>{e.preventDefault();const raw=$('vvi').value.trim(),[c,...a]=raw.split(/\s+/),arg=(a[0]||'').toLowerCase();closeVim();
+  if(/^(q|q!|qa|qa!|wq|x|wq!)$/.test(c))setDev(false);
+  else if(c==='w'){const n=$('vcode').querySelectorAll('.vln').length;toast(`"${esc(VFI(devFile).n)}" ${n}L written`);}
+  else if(c==='e'||c==='edit'){const id=alias[arg]||(VF.find(f=>f.n.toLowerCase()===arg)||{}).id;if(id)openFile(id);else toast(`E32: No file name: ${esc(arg||'?')}`,'err');}
+  else if(c==='h'||c==='help')toast('j / k  next · prev file &nbsp;·&nbsp; :e rank &nbsp;·&nbsp; :w &nbsp;·&nbsp; :q  reader view &nbsp;·&nbsp; Ctrl+P  quick open');
+  else if(/^\d+$/.test(c)){const r=$('vcode').querySelectorAll('.vln')[+c-1];if(r)$('vcode').scrollTop=r.offsetTop-$('vcode').clientHeight/2;}
+  else if(c)toast(`E492: Not an editor command: ${esc(raw)}`,'err');});
+$('vvi').addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();e.stopPropagation();closeVim();}});
+/* konami: "this time is different" */
+const KONAMI=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];let kIdx=0,cheat=false,cheatT=0;
+function konami(k){kIdx=(k===KONAMI[kIdx])?kIdx+1:(k===KONAMI[0]?1:0);if(kIdx<KONAMI.length)return;kIdx=0;cheat=true;rPanel();rStat(vtyLn);
+  toast('🎮 Cheat enabled: <b>“This time is different.”</b> Every test passes for 20 seconds. Not investment advice.','warn',8000);
+  clearTimeout(cheatT);cheatT=setTimeout(()=>{cheat=false;rPanel();rStat(vtyLn);toast('Reality restored. Valuation: 205%.','err');},20000);}
+/* npm run launch */
+let launching=false;
+function launch(){if(launching)return;launching=true;vpTab='term';rPanel();const pc=$('vpanel').querySelector('.vpc');
+  const R=['      /\\','     /  \\','     |SH|','     |  |','    /|  |\\','   / |__| \\'],H=9,ps='<span class="vpp">guest@asi</span>:<span class="vpb">~/stayhungry.asi</span>$ npm run launch\n';
+  const steps=['T-3','T-2','T-1','LIFTOFF'];let f=0;
+  const frame=()=>{if(f<steps.length*4){const y=H-R.length-2;pc.innerHTML=ps+'<span class="vdim">&gt; stayhungry@1.0.0 launch</span>\n'+[...Array(y).fill(''),...R,'     '+(f%2?'(**)':'(  )')].join('\n')+`\n\n  <b class="${f>=12?'vok':'vwarn'}">${steps[Math.floor(f/4)]}</b>`;f++;return setTimeout(frame,170);}
+    const k=f-steps.length*4,y=H-R.length-2-k;if(y+R.length+2>0){const rows=[];for(let r=0;r<H;r++){const i=r-y;rows.push(i>=0&&i<R.length?R[i]:i===R.length?'     '+(k%2?'(**)':'(*)'):i===R.length+1?'     '+(k%2?' : ':' . '):i>R.length+1?'      '+(Math.random()<.5?'.':' '):'');}
+      pc.innerHTML=ps+rows.join('\n')+'\n\n  <b class="vok">LIFTOFF</b>  <span class="vdim">T+'+String(k).padStart(2,'0')+'</span>';f++;return setTimeout(frame,110);}
+    launching=false;vwatch.push(`<div><b class="vok">✓</b> launch complete · stay hungry · <span class="vdim">see research/spacex-3q26.md</span></div>`);if(vwatch.length>3)vwatch.shift();rPanel();};
+  frame();}
+function vWatchNow(){const ts=new Date().toTimeString().slice(0,8),{chk,fails}=vCounts();vwatch.push(`<div class="vdim">[${ts}] rerun all tests</div><div> <b class="vok">✓ ${chk.length-fails.length} passed</b>  ${fails.length?`<b class="vno">✕ ${fails.length} failed</b>`:''}  <span class="vdim">${160+Math.floor(Math.random()*260)}ms</span></div>`);if(vwatch.length>3)vwatch.shift();rPanel();}
+function chatRun(cmd){$('tin').value=cmd;$('tform').requestSubmit?$('tform').requestSubmit():$('tform').dispatchEvent(new Event('submit',{cancelable:true}));}
+async function curlCmd(arg,A){let n=(arg||'index.json').replace(/^.*\/data\//,'').replace(/^\/?data\//,'').replace(/^\//,'');if(!/\.json$/.test(n))n+='.json';
+  const known=apiData(BUILD);if(!known[n]){A(`<span class="vno">curl: (22) The requested URL returned error: 404</span>`);return;}
+  let txt,live=true;try{const r=await fetch(dataUrl(n),{cache:'no-store'});if(!r.ok)throw 0;txt=JSON.stringify(await r.json(),null,2);}catch(e){live=false;txt=JSON.stringify(known[n],null,2);}
+  const lines=txt.split('\n');A(`<div class="vmut">GET ${esc(API_BASE+n)} · ${live?'200 OK':'offline copy'} · ${(txt.length/1024).toFixed(1)} kB</div><div class="vcb"><div class="vcbh"><span>json</span><span>⧉</span></div><pre>${esc(lines.slice(0,24).join('\n'))}${lines.length>24?'\n…':''}</pre></div>`);}
+
 
 /* ================= events ================= */
 function closeMenu(){$('langMenu').hidden=true;$('langBtn').setAttribute('aria-expanded','false');}
 $('langBtn').addEventListener('click',()=>{const m=$('langMenu');m.hidden=!m.hidden;$('langBtn').setAttribute('aria-expanded',String(!m.hidden));if(!m.hidden){const b=m.querySelector('[aria-checked="true"]');b&&b.focus();}});
 document.addEventListener('click',e=>{
+  const qi=e.target.closest('[data-qi]');if(qi){runQO(+qi.dataset.qi);return;}
+  if(e.target.closest('[data-qo]')){openQO('');return;}
+  if(e.target.closest('[data-toastx]')){$('vtoast').hidden=true;return;}
+  if(!$('vqo').hidden&&!e.target.closest('#vqo'))closeQO();
   const vf=e.target.closest('[data-vf]');if(vf){openFile(vf.dataset.vf);return;}
   const vp=e.target.closest('[data-vp]');if(vp){vpTab=vp.dataset.vp;rPanel();return;}
   const va=e.target.closest('[data-act]');if(va){setDev(false);if(va.dataset.act==='play')go(PAGES.indexOf('lab'));return;}
@@ -1048,10 +1191,22 @@ document.addEventListener('click',e=>{
   const g=e.target.closest('[data-go]');if(g){go(+g.dataset.go);return;}
   if(!e.target.closest('#langMenu')&&!e.target.closest('#langBtn'))closeMenu();
 });
+let gT=0;
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'){if(!$('langMenu').hidden){closeMenu();$('langBtn').focus();return;}e.preventDefault();setDev(!devOn());return;}
+  if(e.key==='Escape'){if(!$('langMenu').hidden){closeMenu();$('langBtn').focus();return;}if(!$('vqo').hidden){closeQO();return;}if(!$('vvim').hidden){closeVim();return;}e.preventDefault();setDev(!devOn());return;}
   const typing=['INPUT','TEXTAREA'].includes(e.target.tagName);
-  if(devOn()){if(e.key==='/'&&!typing){e.preventDefault();$('tin').focus();}return;}
+  if(devOn()){const mod=e.ctrlKey||e.metaKey;
+    if(mod&&e.shiftKey&&(e.key==='p'||e.key==='P')){e.preventDefault();openQO('>');return;}
+    if(mod&&!e.shiftKey&&(e.key==='p'||e.key==='P')){e.preventDefault();openQO('');return;}
+    if(e.key==='F1'){e.preventDefault();openQO('>');return;}
+    if(typing||mod||e.altKey)return;
+    konami(e.key);if(e.key.startsWith('Arrow')&&innerWidth>980){e.preventDefault();if(e.key==='ArrowDown')$('vcode').scrollTop+=21;else if(e.key==='ArrowUp')$('vcode').scrollTop-=21;}
+    if(e.key==='/'||e.key==='i'){e.preventDefault();$('tin').focus();}
+    else if(e.key===':'){e.preventDefault();openVim();}
+    else if(e.key==='j')stepFile(1);else if(e.key==='k')stepFile(-1);
+    else if(e.key==='G')$('vcode').scrollTop=1e6;
+    else if(e.key==='g'){if(Date.now()-gT<500)$('vcode').scrollTop=0;gT=Date.now();}
+    return;}
   if(typing)return;
   if((e.key==='PageDown'||e.key==='ArrowDown'||e.key==='j')&&(e.key==='PageDown'||fits(cur))){e.preventDefault();go(cur+1);}
   else if((e.key==='PageUp'||e.key==='ArrowUp'||e.key==='k')&&(e.key==='PageUp'||fits(cur))){e.preventDefault();go(cur-1);}
@@ -1061,11 +1216,11 @@ document.addEventListener('keydown',e=>{
 /* dev prompt · chat */
 function tprint(h){const d=document.createElement('div');d.innerHTML=h;$('tlog').appendChild(d);const o=$('tout');if(innerWidth>980)o.scrollTop=o.scrollHeight;else d.scrollIntoView({block:'nearest'});}
 function boot(){$('tlog').innerHTML='';}
-const alias={today:'today',home:'today',brief:'brief',summary:'brief',earnings:'earnings',earn:'earnings',research:'research',spacex:'research',mix:'mix',score:'score',radar:'radar',crisis:'radar',rank:'rank',market:'rank',lab:'lab',game:'lab',hub:'hub',projects:'hub',readme:'hub'};
+const alias={news:'news',changelog:'news',log:'news',api:'d_index',data:'d_index',today:'today',home:'today',brief:'brief',summary:'brief',earnings:'earnings',earn:'earnings',research:'research',spacex:'research',mix:'mix',score:'score',radar:'radar',crisis:'radar',rank:'rank',market:'rank',lab:'lab',game:'lab',hub:'hub',projects:'hub',readme:'hub'};
 $('tform').addEventListener('submit',e=>{e.preventDefault();const raw=$('tin').value.trim();$('tin').value='';if(!raw)return;
   tprint(msgU(raw));const A=h=>tprint(msgA(h)),[cmd,...a]=raw.split(/\s+/),arg=(a[0]||'').toLowerCase(),t=T();
   switch(cmd.toLowerCase()){
-    case 'help':A(`<pre>${esc([...t.t_help.filter(l=>!/^(boss|play)/.test(l)),'play            chart.test.ts (reader view)',t.dv_exit].join('\n'))}</pre>`);break;
+    case 'help':A(`<pre>${esc([...t.t_help.filter(l=>!/^(boss|play)/.test(l)),'play            chart.test.ts (reader view)','curl <file>     GET /data/<file>.json (open API)','api             list API endpoints','git log         changelog','npm run launch  🚀','Ctrl+P · F1     quick open · commands',':q · j · k      vim keys (click the editor first)',t.dv_exit].join('\n'))}</pre>`);break;
     case 'ls':A(VF.map(f=>`<button class="vln2" data-vf="${f.id}">${fi(f.n)}${f.n}</button>`).join(''));break;
     case 'open':case 'cd':case 'code':{const id=alias[arg]||(VF.find(f=>f.n.toLowerCase()===arg)||{}).id;if(id){openFile(id);A(esc(fmt(t.t_open,{f:VFI(id).n})));}else A(`<span class="vno">${esc(fmt(t.t_nofile,{f:arg||'?'}))}</span>`);break;}
     case 'earnings':{const nx=nextEarn(Date.now());A(esc(nx?fmt(t.t_next,{t:nx.t,d:erLabel(nx,t,Date.now())}):'—'));break;}
@@ -1074,7 +1229,13 @@ $('tform').addEventListener('submit',e=>{e.preventDefault();const raw=$('tin').v
     case 'exit':case 'quit':case 'reader':setDev(false);break;
     case 'clear':$('tlog').innerHTML='';break;
     case 'whoami':A('guest · stay hungry, observe everything');break;
-    case 'sudo':A('<span class="vwarn">nice try.</span>');break;
+    case 'sudo':A(/make me rich/i.test(raw)?"make: *** No rule to make target 'rich'.  Stop.":'guest is not in the sudoers file.  This incident will be reported.');break;
+    case 'curl':case 'wget':curlCmd(a.find(x=>!x.startsWith('-')),A);break;
+    case 'api':A(`<pre>${esc(apiData(BUILD)['index.json'].endpoints.map(n=>'curl '+API_BASE+n).join('\n'))}</pre>`);break;
+    case 'git':if(arg==='log')A(`<pre>${CHANGELOG.map(c=>`<span class="xn">${c.h.padEnd(7,' ')}</span> ${c.d}  ${esc(c.m[lang]||c.m.en)}`).join('\n')}</pre>`);else if(arg==='status')A('<pre>On branch main\nChanges not staged for commit:\n  <span class="vno">modified:   src/earnings.ts</span>\n  <span class="vno">modified:   research/spacex-3q26.md</span></pre>');else A('usage: git log | git status');break;
+    case 'npm':if(raw.includes('launch')){A('&gt; stayhungry@1.0.0 launch · see the terminal ↓');launch();}else if(arg==='test'||arg==='t'){vpTab='term';rPanel();vWatchNow();A('✓ rerun · see the terminal ↓');}else if(arg==='i'||arg==='install')A('added 1 package: stay-hungry@∞ · 0 vulnerabilities');else A('npm run launch · npm test · npm install');break;
+    case 'vim':case 'vi':case 'nvim':A("You're already in it. Click the editor, then type :q");break;
+    case 'emacs':A('M-x butterfly');break;
     default:A(`<span class="vno">${esc(fmt(t.t_unknown,{c:cmd}))}</span>`);
   }});
 

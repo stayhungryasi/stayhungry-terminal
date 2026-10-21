@@ -1,0 +1,73 @@
+{
+  "source": "SpaceX 3Q26 8-K and earnings call; consensus from LSEG, Bloomberg, Visible Alpha",
+  "revenue_mix": [
+    {
+      "quarter": "3Q25",
+      "revenue": "$5.58B",
+      "share_pct": {
+        "ai": 15,
+        "starlink": 56,
+        "space": 30
+      }
+    },
+    {
+      "quarter": "2Q26",
+      "revenue": "$7.81B",
+      "share_pct": {
+        "ai": 33,
+        "starlink": 55,
+        "space": 12
+      }
+    },
+    {
+      "quarter": "3Q26",
+      "revenue": "$14.58B",
+      "share_pct": {
+        "ai": 52,
+        "starlink": 36,
+        "space": 12
+      }
+    }
+  ],
+  "vs_consensus": [
+    {
+      "metric": "revenue",
+      "actual": "$14.58B",
+      "consensus": "$12.72B",
+      "diff_pct": 14.6
+    },
+    {
+      "metric": "operating_income",
+      "actual": "$2.79B",
+      "consensus": "$2.33B",
+      "diff_pct": 19.8
+    },
+    {
+      "metric": "ai_revenue",
+      "actual": "$7.56B",
+      "consensus": "$6.47B",
+      "diff_pct": 16.8
+    },
+    {
+      "metric": "starlink_revenue",
+      "actual": "$5.25B",
+      "consensus": "$4.92B",
+      "diff_pct": 6.7
+    },
+    {
+      "metric": "space_revenue",
+      "actual": "$1.77B",
+      "consensus": "$1.4B",
+      "diff_pct": 26.2
+    },
+    {
+      "metric": "starlink_subscribers",
+      "actual": "13.6M",
+      "consensus": "14.2M",
+      "diff_pct": -4.2
+    }
+  ],
+  "updated": "2026-10-21",
+  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+  "disclaimer": "Not investment advice."
+}

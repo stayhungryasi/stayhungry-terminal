@@ -1,0 +1,57 @@
+{
+  "sample": true,
+  "unit": "USD trillions",
+  "items": [
+    {
+      "rank": 1,
+      "ticker": "NVDA",
+      "market_cap": 4.42,
+      "change_pct": 2.31
+    },
+    {
+      "rank": 2,
+      "ticker": "MSFT",
+      "market_cap": 3.81,
+      "change_pct": 0.84
+    },
+    {
+      "rank": 3,
+      "ticker": "AAPL",
+      "market_cap": 3.67,
+      "change_pct": -0.62
+    },
+    {
+      "rank": 4,
+      "ticker": "GOOGL",
+      "market_cap": 3.04,
+      "change_pct": 1.12
+    },
+    {
+      "rank": 5,
+      "ticker": "AMZN",
+      "market_cap": 2.44,
+      "change_pct": -1.45
+    },
+    {
+      "rank": 6,
+      "ticker": "AVGO",
+      "market_cap": 1.92,
+      "change_pct": 3.05
+    },
+    {
+      "rank": 7,
+      "ticker": "META",
+      "market_cap": 1.81,
+      "change_pct": 0.37
+    },
+    {
+      "rank": 8,
+      "ticker": "TSLA",
+      "market_cap": 1.39,
+      "change_pct": -4.12
+    }
+  ],
+  "updated": "2026-10-21",
+  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+  "disclaimer": "Not investment advice."
+}

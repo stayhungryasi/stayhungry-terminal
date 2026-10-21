@@ -1,0 +1,33 @@
+{
+  "sample": true,
+  "note": "Placeholder values until breaking_bot writes this file.",
+  "temperature": 38,
+  "vix": 17.4,
+  "buffett_index_pct": 205,
+  "yield_curve_10y2y": 0.42,
+  "checks": [
+    {
+      "id": "crisis-temperature",
+      "value": 38,
+      "pass": true
+    },
+    {
+      "id": "vix",
+      "value": 17.4,
+      "pass": true
+    },
+    {
+      "id": "yield-curve",
+      "value": 0.42,
+      "pass": true
+    },
+    {
+      "id": "valuation",
+      "value": 205,
+      "pass": false
+    }
+  ],
+  "updated": "2026-10-21",
+  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+  "disclaimer": "Not investment advice."
+}
