@@ -4,10 +4,10 @@ body = open(src, encoding='utf-8').read()
 body = re.sub(r'^<title>.*?</title>\s*', '', body, count=1)
 body = re.sub(r'<meta name="claude:viewport-fit-sides"[^>]*>\s*', '', body, count=1)
 meta = {
- 'en': ('Stayhungry.ASI Terminal — a market observatory disguised as a code editor', 'Megacap rankings, earnings countdowns and crisis signals, written as TypeScript so it looks like work. Press Esc when your boss walks by.'),
- 'ko': ('Stayhungry.ASI Terminal — 코드 편집기로 위장한 시장 관측소', '시총 순위, 실적 카운트다운, 위기 신호를 타입스크립트로 적어 일하는 화면처럼 보입니다. 누가 지나가면 Esc.'),
- 'es': ('Stayhungry.ASI Terminal — un observatorio del mercado disfrazado de editor de código', 'Rankings de megacaps, cuenta regresiva de resultados y señales de crisis escritos en TypeScript para que parezca trabajo. Pulsa Esc si se acerca tu jefe.'),
- 'ja': ('Stayhungry.ASI Terminal — コードエディタに偽装したマーケット観測所', '時価総額ランキング、決算カウントダウン、危機シグナルをTypeScriptで記述。仕事中に見えます。上司が来たら Esc。'),
+ 'en': ('Stayhungry.ASI Terminal — market research hub', 'Megacap earnings countdowns, crisis signals and research like SpaceX 3Q26 decoded. One personal AI research hub. Press Esc when your boss walks by.'),
+ 'ko': ('Stayhungry.ASI Terminal — 시장 리서치 허브', '시총 순위, 실적 카운트다운, 위기 신호를 타입스크립트로 적어 일하는 화면처럼 보입니다. 누가 지나가면 Esc.'),
+ 'es': ('Stayhungry.ASI Terminal — hub de investigación de mercado', 'Rankings de megacaps, cuenta regresiva de resultados y señales de crisis escritos en TypeScript para que parezca trabajo. Pulsa Esc si se acerca tu jefe.'),
+ 'ja': ('Stayhungry.ASI Terminal — マーケットリサーチハブ', '時価総額ランキング、決算カウントダウン、危機シグナルをTypeScriptで記述。仕事中に見えます。上司が来たら Esc。'),
 }
 htmllang = {'en':'en','ko':'ko','es':'es-MX','ja':'ja'}
 favicon = "data:image/svg+xml," + "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D111D'/%3E%3Cpath d='M8 11l6 5-6 5' stroke='%23E9B7A2' stroke-width='2.6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M16 22h8' stroke='%23E9B7A2' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E"
