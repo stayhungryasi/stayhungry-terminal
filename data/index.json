@@ -1,6 +1,6 @@
 {
   "name": "Stayhungry.ASI open data",
-  "base": "https://stayhungryasi.github.io/stayhungry-terminal/data/",
+  "base": "https://stayhungryasi.com/data/",
   "endpoints": [
     "earnings.json",
     "crisis.json",

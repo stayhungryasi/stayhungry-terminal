@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Stayhungry.ASI Terminal — 시장 리서치 허브</title>
 <meta name="description" content="시총 순위, 실적 카운트다운, 위기 신호를 타입스크립트로 적어 일하는 화면처럼 보입니다. 누가 지나가면 Esc.">
-<link rel="canonical" href="https://stayhungryasi.github.io/stayhungry-terminal/ko/">
-<link rel="alternate" hreflang="en" href="https://stayhungryasi.github.io/stayhungry-terminal/en/">
-<link rel="alternate" hreflang="ko" href="https://stayhungryasi.github.io/stayhungry-terminal/ko/">
-<link rel="alternate" hreflang="es-MX" href="https://stayhungryasi.github.io/stayhungry-terminal/es/">
-<link rel="alternate" hreflang="ja" href="https://stayhungryasi.github.io/stayhungry-terminal/ja/">
-<link rel="alternate" hreflang="x-default" href="https://stayhungryasi.github.io/stayhungry-terminal/en/">
+<link rel="canonical" href="https://stayhungryasi.com/ko/">
+<link rel="alternate" hreflang="en" href="https://stayhungryasi.com/en/">
+<link rel="alternate" hreflang="ko" href="https://stayhungryasi.com/ko/">
+<link rel="alternate" hreflang="es-MX" href="https://stayhungryasi.com/es/">
+<link rel="alternate" hreflang="ja" href="https://stayhungryasi.com/ja/">
+<link rel="alternate" hreflang="x-default" href="https://stayhungryasi.com/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Stayhungry.ASI Terminal — 시장 리서치 허브">
 <meta property="og:description" content="시총 순위, 실적 카운트다운, 위기 신호를 타입스크립트로 적어 일하는 화면처럼 보입니다. 누가 지나가면 Esc.">
-<meta property="og:url" content="https://stayhungryasi.github.io/stayhungry-terminal/ko/">
+<meta property="og:url" content="https://stayhungryasi.com/ko/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@shaferwineX">
 <meta name="theme-color" content="#0D111D">
@@ -559,6 +559,7 @@ const MIX=[{"q":"3Q25","rev":"$5.58B","s":[15,56,30]},{"q":"2Q26","rev":"$7.81B"
 const SCORE=[["s_rev","$14.58B","$12.72B",14.6],["s_op","$2.79B","$2.33B",19.8],["s_ai","$7.56B","$6.47B",16.8],["s_sl","$5.25B","$4.92B",6.7],["s_sp","$1.77B","$1.4B",26.2],["s_sub","13.6M","14.2M",-4.2]];
 const RISK={"temp":38,"vix":17.4,"curve":0.42,"buffett":205,"sample":true};
 const CHANGELOG=[
+ {"d":"2026-10-21","h":"HEAD","m":{"en":"New home: stayhungryasi.com (HTTPS, old links redirect)","ko":"새 주소 stayhungryasi.com 오픈 (HTTPS, 예전 주소는 자동 연결)","es":"Nuevo hogar: stayhungryasi.com (HTTPS, los enlaces antiguos redirigen)","ja":"新しい住所 stayhungryasi.com を開設(HTTPS、旧URLは自動転送)"}},
  {"d":"2026-10-21","h":"7699322","m":{"en":"Open data API, quick open (Ctrl+P), vim keys, this changelog and a few easter eggs","ko":"오픈 데이터 API, 빠른 열기(Ctrl+P), Vim 단축키, 변경 기록, 이스터에그 추가","es":"API de datos abiertos, apertura rápida (Ctrl+P), atajos de Vim, este registro y algunas sorpresas","ja":"オープンデータAPI、クイックオープン(Ctrl+P)、Vimキー、この変更履歴、隠し要素を追加"}},
  {"d":"2026-10-21","h":"7c28146","m":{"en":"Developer view comes alive: live typing, tests in watch mode, streaming chat","ko":"개발자 화면이 살아 움직임: 자동 타이핑, 테스트 감시 모드, 채팅 스트리밍","es":"La vista de desarrollador cobra vida: escritura en vivo, pruebas en modo watch, chat en streaming","ja":"開発者ビューが動き出す: 自動タイピング、テストのwatchモード、チャットのストリーミング"}},
  {"d":"2026-10-21","h":"946d7fb","m":{"en":"Editor polish: native font, minimap, terminal toolbar","ko":"편집기 다듬기: 기본 글꼴, 미니맵, 터미널 도구줄","es":"Pulido del editor: fuente nativa, minimapa, barra de terminal","ja":"エディタ調整: ネイティブフォント、ミニマップ、ターミナルツールバー"}},
@@ -566,7 +567,7 @@ const CHANGELOG=[
  {"d":"2026-10-21","h":"08e2ee8","m":{"en":"Snap deck: one screen per page","ko":"스냅 덱: 한 페이지 = 한 화면","es":"Mazo con ajuste: una pantalla por página","ja":"スナップデッキ: 1ページ=1画面"}},
  {"d":"2026-10-21","h":"a3159e2","m":{"en":"Card-news design system","ko":"카드뉴스 디자인 시스템","es":"Sistema de diseño de tarjetas","ja":"カードニュースのデザインシステム"}},
  {"d":"2026-10-21","h":"43a7564","m":{"en":"Launch in English, Korean, Spanish and Japanese","ko":"영어·한국어·스페인어·일본어로 오픈","es":"Lanzamiento en inglés, coreano, español y japonés","ja":"英語・韓国語・スペイン語・日本語で公開"}}];
-const API_BASE='https://stayhungryasi.github.io/stayhungry-terminal/data/';
+const API_BASE='https://stayhungryasi.com/data/';
 function apiData(today){
   const base={updated:today,credit:'@stayhungryasi · https://t.me/stayhungryasi',disclaimer:'Not investment advice.'};
   const SK={s_rev:'revenue',s_op:'operating_income',s_ai:'ai_revenue',s_sl:'starlink_revenue',s_sp:'space_revenue',s_sub:'starlink_subscribers'};

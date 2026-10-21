@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-21",
+      "commit": "HEAD",
+      "message": "New home: stayhungryasi.com (HTTPS, old links redirect)"
+    },
+    {
+      "date": "2026-10-21",
       "commit": "7699322",
       "message": "Open data API, quick open (Ctrl+P), vim keys, this changelog and a few easter eggs"
     },
