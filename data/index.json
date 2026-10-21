@@ -1,6 +1,17 @@
 {
   "name": "Stayhungry.ASI open data",
   "base": "https://stayhungryasi.com/data/",
+  "contact": {
+    "hello": "foolish@stayhungryasi.com",
+    "builders_and_ideas": "commit@stayhungryasi.com",
+    "ads_and_partnerships": "grateful@stayhungryasi.com",
+    "thanks": {
+      "en": "thanks@stayhungryasi.com",
+      "ko": "gamsa@stayhungryasi.com",
+      "es": "gracias@stayhungryasi.com",
+      "ja": "arigato@stayhungryasi.com"
+    }
+  },
   "endpoints": [
     "earnings.json",
     "crisis.json",

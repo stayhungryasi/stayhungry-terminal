@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-21",
+      "commit": "HEAD",
+      "message": "Say hi: foolish@, commit@ and grateful@stayhungryasi.com, plus a thank-you address in every language"
+    },
+    {
+      "date": "2026-10-21",
       "commit": "37d1023",
       "message": "New home: stayhungryasi.com (HTTPS, old links redirect)"
     },

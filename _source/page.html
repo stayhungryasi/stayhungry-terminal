@@ -75,6 +75,13 @@ h2,h3{margin:0;font-weight:900;letter-spacing:-.035em;line-height:1.08;text-wrap
 .src p{margin:0;font-size:13px;color:var(--dim);max-width:72ch;line-height:1.6}
 .handle{font-family:var(--mono);font-size:13px;letter-spacing:.14em;color:var(--mute);text-align:right;text-decoration:none;line-height:1.7}
 .handle:hover{color:var(--or)}
+.hset{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.handle.hm{color:var(--ink2)}
+.cts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.ct{display:flex;flex-direction:column;gap:2px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 18px}
+a.ct:hover{border-color:var(--or)}
+.ct small{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--or)}
+.ct b{font-family:var(--mono);font-size:clamp(14px,1.3vw,16px);color:var(--ink);overflow-wrap:anywhere}
 .tagS{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--gold);border:1px solid #5C4618;border-radius:5px;padding:1px 7px;vertical-align:middle}
 .next{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--dim);background:none;border:0;cursor:pointer;padding:4px 10px}
 .next:hover{color:var(--or)}
@@ -447,7 +454,7 @@ a.chan:hover{border-color:var(--or)}
   .seg{padding:8px 6px}
   .summary{padding:22px 18px}.summary li{grid-template-columns:28px minmax(0,1fr)}
   .card{padding:20px}
-  .handle{text-align:left}
+  .handle{text-align:left}.hset{align-items:flex-start}.cts{grid-template-columns:minmax(0,1fr)}
 }
 @media (prefers-reduced-motion:reduce){.pager button i{transition:none}}
 </style>
@@ -537,6 +544,7 @@ const MIX=[{"q":"3Q25","rev":"$5.58B","s":[15,56,30]},{"q":"2Q26","rev":"$7.81B"
 const SCORE=[["s_rev","$14.58B","$12.72B",14.6],["s_op","$2.79B","$2.33B",19.8],["s_ai","$7.56B","$6.47B",16.8],["s_sl","$5.25B","$4.92B",6.7],["s_sp","$1.77B","$1.4B",26.2],["s_sub","13.6M","14.2M",-4.2]];
 const RISK={"temp":38,"vix":17.4,"curve":0.42,"buffett":205,"sample":true};
 const CHANGELOG=[
+ {"d":"2026-10-21","h":"HEAD","m":{"en":"Say hi: foolish@, commit@ and grateful@stayhungryasi.com, plus a thank-you address in every language","ko":"메일 주소 오픈: foolish@ · commit@ · grateful@stayhungryasi.com, 그리고 언어별 감사 주소","es":"Escríbenos: foolish@, commit@ y grateful@stayhungryasi.com, y un correo de gracias en cada idioma","ja":"メール開設: foolish@ · commit@ · grateful@stayhungryasi.com、各言語のお礼アドレスも"}},
  {"d":"2026-10-21","h":"37d1023","m":{"en":"New home: stayhungryasi.com (HTTPS, old links redirect)","ko":"새 주소 stayhungryasi.com 오픈 (HTTPS, 예전 주소는 자동 연결)","es":"Nuevo hogar: stayhungryasi.com (HTTPS, los enlaces antiguos redirigen)","ja":"新しい住所 stayhungryasi.com を開設(HTTPS、旧URLは自動転送)"}},
  {"d":"2026-10-21","h":"7699322","m":{"en":"Open data API, quick open (Ctrl+P), vim keys, this changelog and a few easter eggs","ko":"오픈 데이터 API, 빠른 열기(Ctrl+P), Vim 단축키, 변경 기록, 이스터에그 추가","es":"API de datos abiertos, apertura rápida (Ctrl+P), atajos de Vim, este registro y algunas sorpresas","ja":"オープンデータAPI、クイックオープン(Ctrl+P)、Vimキー、この変更履歴、隠し要素を追加"}},
  {"d":"2026-10-21","h":"7c28146","m":{"en":"Developer view comes alive: live typing, tests in watch mode, streaming chat","ko":"개발자 화면이 살아 움직임: 자동 타이핑, 테스트 감시 모드, 채팅 스트리밍","es":"La vista de desarrollador cobra vida: escritura en vivo, pruebas en modo watch, chat en streaming","ja":"開発者ビューが動き出す: 自動タイピング、テストのwatchモード、チャットのストリーミング"}},
@@ -545,12 +553,13 @@ const CHANGELOG=[
  {"d":"2026-10-21","h":"08e2ee8","m":{"en":"Snap deck: one screen per page","ko":"스냅 덱: 한 페이지 = 한 화면","es":"Mazo con ajuste: una pantalla por página","ja":"スナップデッキ: 1ページ=1画面"}},
  {"d":"2026-10-21","h":"a3159e2","m":{"en":"Card-news design system","ko":"카드뉴스 디자인 시스템","es":"Sistema de diseño de tarjetas","ja":"カードニュースのデザインシステム"}},
  {"d":"2026-10-21","h":"43a7564","m":{"en":"Launch in English, Korean, Spanish and Japanese","ko":"영어·한국어·스페인어·일본어로 오픈","es":"Lanzamiento en inglés, coreano, español y japonés","ja":"英語・韓国語・スペイン語・日本語で公開"}}];
+const MAIL={"main":"foolish@stayhungryasi.com","dev":"commit@stayhungryasi.com","biz":"grateful@stayhungryasi.com","thanks":{"en":"thanks@stayhungryasi.com","ko":"gamsa@stayhungryasi.com","es":"gracias@stayhungryasi.com","ja":"arigato@stayhungryasi.com"}};
 const API_BASE='https://stayhungryasi.com/data/';
 function apiData(today){
   const base={updated:today,credit:'@stayhungryasi · https://t.me/stayhungryasi',disclaimer:'Not investment advice.'};
   const SK={s_rev:'revenue',s_op:'operating_income',s_ai:'ai_revenue',s_sl:'starlink_revenue',s_sp:'space_revenue',s_sub:'starlink_subscribers'};
   return {
-    'index.json':Object.assign({name:'Stayhungry.ASI open data',base:API_BASE,endpoints:['earnings.json','crisis.json','megacaps.json','spacex-3q26.json','changelog.json']},base),
+    'index.json':Object.assign({name:'Stayhungry.ASI open data',base:API_BASE,contact:{hello:MAIL.main,builders_and_ideas:MAIL.dev,ads_and_partnerships:MAIL.biz,thanks:MAIL.thanks},endpoints:['earnings.json','crisis.json','megacaps.json','spacex-3q26.json','changelog.json']},base),
     'earnings.json':Object.assign({source:'Company IR and days.to, checked 2026-10-21',timezone:'UTC',items:ER.map(e=>({ticker:e.t,at:e.utc,status:e.st==='c'?'confirmed':'estimated'}))},base),
     'crisis.json':Object.assign({sample:true,note:'Placeholder values until breaking_bot writes this file.',temperature:RISK.temp,vix:RISK.vix,buffett_index_pct:RISK.buffett,yield_curve_10y2y:RISK.curve,
       checks:[{id:'crisis-temperature',value:RISK.temp,pass:RISK.temp<40},{id:'vix',value:RISK.vix,pass:RISK.vix<20},{id:'yield-curve',value:RISK.curve,pass:RISK.curve>0},{id:'valuation',value:RISK.buffett,pass:RISK.buffett<140}]},base),
@@ -779,19 +788,19 @@ b_title:'ビルド成功',b_ret:'Esc またはクリックで戻ります'}
 const LANGS=['en','ko','es','ja'];
 const HTML_LANG={en:'en',ko:'ko',es:'es',ja:'ja'};
 const EXT={
-en:{news_eb:'CHANGELOG · BUILT IN PUBLIC',news_h1:'Every update,',news_h2:'logged like a commit.',news_new:'NEW',news_dev:'Developers: press <b>Esc</b>, then <b>Ctrl+P</b>. Open data: <b>/data/index.json</b>',news_src:'Each line is a real commit in github.com/stayhungryasi/stayhungry-terminal.',nav10:['TODAY','BRIEF','EARNINGS','SPACEX','MIX','SCORE','RADAR','RANK','LAB','HUB','NEW'],brief_eb:'BRIEF · TODAY IN 3 LINES',brief_h1:'Three lines.',brief_h2:"That's the whole day.",mix_eb:'RESEARCH · SPACEX 3Q26 · REVENUE MIX',mix_h1:'In one year,',mix_h2:'revenue changed owners.',score_eb:'RESEARCH · SPACEX 3Q26 · SCORECARD',score_h1:'Beat on everything.',score_h2:'Except one.',next:'NEXT ↓',
+en:{ct_main:'SAY HI',ct_dev:'BUILDERS & IDEAS',ct_biz:'ADS & PARTNERSHIPS',news_eb:'CHANGELOG · BUILT IN PUBLIC',news_h1:'Every update,',news_h2:'logged like a commit.',news_new:'NEW',news_dev:'Developers: press <b>Esc</b>, then <b>Ctrl+P</b>. Open data: <b>/data/index.json</b>',news_src:'Each line is a real commit in github.com/stayhungryasi/stayhungry-terminal.',nav10:['TODAY','BRIEF','EARNINGS','SPACEX','MIX','SCORE','RADAR','RANK','LAB','HUB','NEW'],brief_eb:'BRIEF · TODAY IN 3 LINES',brief_h1:'Three lines.',brief_h2:"That's the whole day.",mix_eb:'RESEARCH · SPACEX 3Q26 · REVENUE MIX',mix_h1:'In one year,',mix_h2:'revenue changed owners.',score_eb:'RESEARCH · SPACEX 3Q26 · SCORECARD',score_h1:'Beat on everything.',score_h2:'Except one.',next:'NEXT ↓',
  dv_back:'Reader view',dv_hint:'esc → reader view · / → prompt',dv_session:'research session',dv_tip:'Tip: this is the same data as the reader view. Type help, or press esc.',
  dv_p:["what's next on deck?","summarize today in 3 lines","list every megacap earnings date","run the crisis checks","decode SpaceX 3Q26","rank the megacaps by market cap","what are you building?"],
  dv_next:'{t} reports in',dv_found:'{n} entries · {c} confirmed · {e} estimated',dv_done:'Done. Full deck on Telegram:',dv_exit:'exit            back to the reader view',vc_refs:'Used {n} references',vc_ph:'Ask asi pair, or type help',vc_cur:'Current file',vc_run:'Run Test',vc_view:'Open in reader view'},
-ko:{news_eb:'CHANGELOG · 만드는 과정 공개',news_h1:'모든 업데이트를',news_h2:'커밋처럼 기록한다.',news_new:'NEW',news_dev:'개발자라면: <b>Esc</b> 누르고 <b>Ctrl+P</b>. 오픈 데이터: <b>/data/index.json</b>',news_src:'각 줄은 github.com/stayhungryasi/stayhungry-terminal 의 실제 커밋입니다.',nav10:['오늘','3줄','실적','SPACEX','매출','스코어','위기','시총','실험실','허브','새 소식'],brief_eb:'BRIEF · 오늘을 3줄로',brief_h1:'딱 3줄.',brief_h2:'오늘은 이게 전부다.',mix_eb:'RESEARCH · SPACEX 3Q26 · 매출 구조',mix_h1:'1년 만에',mix_h2:'주인이 바뀐 매출 구조',score_eb:'RESEARCH · SPACEX 3Q26 · 스코어카드',score_h1:'전부 이겼다.',score_h2:'단 하나만 빼고.',next:'다음 ↓',
+ko:{ct_main:'인사 · 제보',ct_dev:'개발 · 제안',ct_biz:'광고 · 협업',news_eb:'CHANGELOG · 만드는 과정 공개',news_h1:'모든 업데이트를',news_h2:'커밋처럼 기록한다.',news_new:'NEW',news_dev:'개발자라면: <b>Esc</b> 누르고 <b>Ctrl+P</b>. 오픈 데이터: <b>/data/index.json</b>',news_src:'각 줄은 github.com/stayhungryasi/stayhungry-terminal 의 실제 커밋입니다.',nav10:['오늘','3줄','실적','SPACEX','매출','스코어','위기','시총','실험실','허브','새 소식'],brief_eb:'BRIEF · 오늘을 3줄로',brief_h1:'딱 3줄.',brief_h2:'오늘은 이게 전부다.',mix_eb:'RESEARCH · SPACEX 3Q26 · 매출 구조',mix_h1:'1년 만에',mix_h2:'주인이 바뀐 매출 구조',score_eb:'RESEARCH · SPACEX 3Q26 · 스코어카드',score_h1:'전부 이겼다.',score_h2:'단 하나만 빼고.',next:'다음 ↓',
  dv_back:'읽기 화면',dv_hint:'esc → 읽기 화면 · / → 입력창',dv_session:'리서치 세션',dv_tip:'읽기 화면과 같은 데이터입니다. help를 입력하거나 esc를 누르세요.',
  dv_p:['다음 발표 뭐야?','오늘 3줄 요약해줘','빅테크 실적 일정 전부 보여줘','위기 체크 돌려줘','SpaceX 3Q26 해부해줘','시총 순위 정리해줘','지금 뭐 만들고 있어?'],
  dv_next:'{t} 실적 발표까지',dv_found:'{n}건 · 확정 {c} · 추정 {e}',dv_done:'완료. 전체 10장은 텔레그램에:',dv_exit:'exit            읽기 화면으로',vc_refs:'참조 {n}개 사용',vc_ph:'asi pair에게 묻거나 help 입력',vc_cur:'현재 파일',vc_run:'테스트 실행',vc_view:'읽기 화면에서 보기'},
-es:{news_eb:'CHANGELOG · CONSTRUIDO EN PÚBLICO',news_h1:'Cada actualización,',news_h2:'registrada como un commit.',news_new:'NUEVO',news_dev:'Desarrolladores: pulsa <b>Esc</b> y luego <b>Ctrl+P</b>. Datos abiertos: <b>/data/index.json</b>',news_src:'Cada línea es un commit real en github.com/stayhungryasi/stayhungry-terminal.',nav10:['HOY','RESUMEN','RESULTADOS','SPACEX','MEZCLA','MARCADOR','RADAR','RANKING','LAB','HUB','NOVEDADES'],brief_eb:'RESUMEN · HOY EN 3 LÍNEAS',brief_h1:'Tres líneas.',brief_h2:'Es todo el día.',mix_eb:'INVESTIGACIÓN · SPACEX 3T26 · MEZCLA',mix_h1:'En un año,',mix_h2:'los ingresos cambiaron de dueño.',score_eb:'INVESTIGACIÓN · SPACEX 3T26 · MARCADOR',score_h1:'Ganó en todo.',score_h2:'Menos en una.',next:'SIGUIENTE ↓',
+es:{ct_main:'HOLA',ct_dev:'DESARROLLO E IDEAS',ct_biz:'PUBLICIDAD Y ALIANZAS',news_eb:'CHANGELOG · CONSTRUIDO EN PÚBLICO',news_h1:'Cada actualización,',news_h2:'registrada como un commit.',news_new:'NUEVO',news_dev:'Desarrolladores: pulsa <b>Esc</b> y luego <b>Ctrl+P</b>. Datos abiertos: <b>/data/index.json</b>',news_src:'Cada línea es un commit real en github.com/stayhungryasi/stayhungry-terminal.',nav10:['HOY','RESUMEN','RESULTADOS','SPACEX','MEZCLA','MARCADOR','RADAR','RANKING','LAB','HUB','NOVEDADES'],brief_eb:'RESUMEN · HOY EN 3 LÍNEAS',brief_h1:'Tres líneas.',brief_h2:'Es todo el día.',mix_eb:'INVESTIGACIÓN · SPACEX 3T26 · MEZCLA',mix_h1:'En un año,',mix_h2:'los ingresos cambiaron de dueño.',score_eb:'INVESTIGACIÓN · SPACEX 3T26 · MARCADOR',score_h1:'Ganó en todo.',score_h2:'Menos en una.',next:'SIGUIENTE ↓',
  dv_back:'Vista de lectura',dv_hint:'esc → vista de lectura · / → escribir',dv_session:'sesión de investigación',dv_tip:'Son los mismos datos de la vista de lectura. Escribe help o pulsa esc.',
  dv_p:['¿qué sigue?','resume hoy en 3 líneas','muestra todas las fechas de resultados','corre los controles de crisis','decodifica SpaceX 3T26','ordena las megacaps por capitalización','¿qué estás construyendo?'],
  dv_next:'{t} publica en',dv_found:'{n} registros · {c} confirmados · {e} estimados',dv_done:'Listo. Las 10 tarjetas en Telegram:',dv_exit:'exit            volver a la vista de lectura',vc_refs:'Usó {n} referencias',vc_ph:'Pregunta a asi pair o escribe help',vc_cur:'Archivo actual',vc_run:'Ejecutar prueba',vc_view:'Ver en vista de lectura'},
-ja:{news_eb:'CHANGELOG · 公開で開発',news_h1:'すべての更新を',news_h2:'コミットのように記録。',news_new:'NEW',news_dev:'開発者の方へ: <b>Esc</b> を押して <b>Ctrl+P</b>。オープンデータ: <b>/data/index.json</b>',news_src:'各行は github.com/stayhungryasi/stayhungry-terminal の実際のコミットです。',nav10:['今日','3行','決算','SPACEX','売上構成','スコア','レーダー','ランキング','ラボ','ハブ','新着'],brief_eb:'BRIEF · 今日を3行で',brief_h1:'3行だけ。',brief_h2:'今日はこれで全部。',mix_eb:'RESEARCH · SPACEX 3Q26 · 売上構成',mix_h1:'1年で',mix_h2:'売上の主役が交代。',score_eb:'RESEARCH · SPACEX 3Q26 · スコアカード',score_h1:'すべて上回った。',score_h2:'ひとつを除いて。',next:'次へ ↓',
+ja:{ct_main:'ごあいさつ',ct_dev:'開発 · 提案',ct_biz:'広告 · 提携',news_eb:'CHANGELOG · 公開で開発',news_h1:'すべての更新を',news_h2:'コミットのように記録。',news_new:'NEW',news_dev:'開発者の方へ: <b>Esc</b> を押して <b>Ctrl+P</b>。オープンデータ: <b>/data/index.json</b>',news_src:'各行は github.com/stayhungryasi/stayhungry-terminal の実際のコミットです。',nav10:['今日','3行','決算','SPACEX','売上構成','スコア','レーダー','ランキング','ラボ','ハブ','新着'],brief_eb:'BRIEF · 今日を3行で',brief_h1:'3行だけ。',brief_h2:'今日はこれで全部。',mix_eb:'RESEARCH · SPACEX 3Q26 · 売上構成',mix_h1:'1年で',mix_h2:'売上の主役が交代。',score_eb:'RESEARCH · SPACEX 3Q26 · スコアカード',score_h1:'すべて上回った。',score_h2:'ひとつを除いて。',next:'次へ ↓',
  dv_back:'閲覧ビュー',dv_hint:'esc → 閲覧ビュー · / → 入力',dv_session:'リサーチセッション',dv_tip:'閲覧ビューと同じデータです。help と入力するか esc を押してください。',
  dv_p:['次の発表は?','今日を3行で要約して','大型テックの決算日程を全部見せて','危機チェックを実行して','SpaceX 3Q26を解剖して','時価総額順に並べて','今何を作ってる?'],
  dv_next:'{t} の決算まで',dv_found:'{n}件 · 確定 {c} · 推定 {e}',dv_done:'完了。10枚すべてはTelegramで:',dv_exit:'exit            閲覧ビューに戻る',vc_refs:'{n} 件の参照を使用',vc_ph:'asi pair に質問、または help',vc_cur:'現在のファイル',vc_run:'テストを実行',vc_view:'閲覧ビューで開く'}
@@ -811,7 +820,7 @@ function erLabel(e,t,now){const s=erState(e,now);return s.k==='in'?fmt(t.er_in,{
 const nextEarn=now=>ER.find(e=>Date.parse(e.utc)>now);
 const head=(id,eb)=>{const n=PAGES.indexOf(id)+1;return `<div class="loghead"><span class="l"><i></i>STAY HUNGRY.ASI · ${esc(id.toUpperCase())}</span><span class="n">LOG <b>${String(n).padStart(2,'0')}</b>/${NP}</span></div><p class="eb">${esc(eb)}</p>`;};
 const hd=(a,b,o2=true)=>`<h2 class="h"><span class="w">${a}</span><span class="${o2?'o':'w'}">${b}</span></h2>`;
-const src=(txt,id)=>{const i=PAGES.indexOf(id);return `<div class="spacer"></div><div class="src"><p>${esc(txt)} ${esc(T().src_na)}</p><a class="handle" href="${TG}" target="_blank" rel="noopener">@stayhungryasi<br>https://t.me/stayhungryasi</a></div>${i<NP-1?`<button class="next" data-go="${i+1}">${esc(T().next)}</button>`:''}`;};
+const src=(txt,id)=>{const i=PAGES.indexOf(id);return `<div class="spacer"></div><div class="src"><p>${esc(txt)} ${esc(T().src_na)}</p><div class="hset"><a class="handle" href="${TG}" target="_blank" rel="noopener">@stayhungryasi<br>https://t.me/stayhungryasi</a><a class="handle hm" href="mailto:${MAIL.thanks[lang]}">✉ ${MAIL.thanks[lang]}</a></div></div>${i<NP-1?`<button class="next" data-go="${i+1}">${esc(T().next)}</button>`:''}`;};
 const etD=()=>new Intl.DateTimeFormat(T().loc,{timeZone:'America/New_York',weekday:'short',month:'short',day:'numeric'});
 const etT=()=>new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'});
 
@@ -901,8 +910,9 @@ function rHub(){
 }
 function rNews(){const t=T();
   $('news').innerHTML=head('news',t.news_eb)+hd(esc(t.news_h1),esc(t.news_h2))
-   +`<div class="logl">${CHANGELOG.map((c,i)=>`<div class="logr${i?'':' lnew'}"><span class="ld">${c.d}</span>${c.h==='HEAD'?'<span class="lh">HEAD</span>':`<a class="lh" href="https://github.com/stayhungryasi/stayhungry-terminal/commit/${c.h}" target="_blank" rel="noopener">${c.h}</a>`}<span class="lm">${esc(c.m[lang]||c.m.en)}</span>${i?'':`<span class="ln">${esc(t.news_new)}</span>`}</div>`).join('')}</div>`
-   +`<div class="devtip">${t.news_dev}</div>`+src(t.news_src,'news');}
+   +`<div class="logl">${CHANGELOG.slice(0,5).map((c,i)=>`<div class="logr${i?'':' lnew'}"><span class="ld">${c.d}</span>${c.h==='HEAD'?'<span class="lh">HEAD</span>':`<a class="lh" href="https://github.com/stayhungryasi/stayhungry-terminal/commit/${c.h}" target="_blank" rel="noopener">${c.h}</a>`}<span class="lm">${esc(c.m[lang]||c.m.en)}</span>${i?'':`<span class="ln">${esc(t.news_new)}</span>`}</div>`).join('')}</div>`
+   +`<div class="devtip">${t.news_dev}</div>`
+   +`<div class="cts">${[['main',t.ct_main],['dev',t.ct_dev],['biz',t.ct_biz]].map(([k,l])=>`<a class="ct" href="mailto:${MAIL[k]}"><small>${esc(l)}</small><b>${MAIL[k]}</b></a>`).join('')}</div>`+src(t.news_src,'news');}
 function rChrome(){
   const t=T();document.documentElement.lang=HTML_LANG[lang];
   $('nav').innerHTML=PAGES.map((s,i)=>`<a href="#${s}" data-s="${s}">${esc(t.nav10[i])}</a>`).join('');
@@ -1002,7 +1012,7 @@ const VFILES={
  news(t){const r=['<span class="xh"># Changelog</span>',''];CHANGELOG.forEach(c=>{r.push(`<span class="xh">## ${c.d} · ${c.h}</span>`,`<span class="xl">-</span> ${esc(c.m[lang]||c.m.en)}`,'');});r.push(esc(t.news_src));return r;},
  hub(t){const r=['<span class="xh"># Stay hungry.ASI</span>','',`<span class="xh">## ${esc(t.hub_h1)} ${esc(t.hub_h2)}</span>`,'',esc(plain(t.hub_sub)),''];
   t.hub.forEach(h=>r.push(`<span class="xl">-</span> ${h[3]==='on'?'[x]':'[ ]'} <b class="xb">**${esc(h[0])}**</b> — ${esc(h[1])} <span class="xs">\`${esc(h[2])}\`</span>`));
-  r.push('',`Telegram: <span class="xu">${TG}</span> · @stayhungryasi`);return r;}
+  r.push('','<span class="xh">## Contact</span>','',`<span class="xl">-</span> ${esc(t.ct_main)}: <span class="xu">${MAIL.main}</span>`,`<span class="xl">-</span> ${esc(t.ct_dev)}: <span class="xu">${MAIL.dev}</span>`,`<span class="xl">-</span> ${esc(t.ct_biz)}: <span class="xu">${MAIL.biz}</span>`,`<span class="xl">-</span> ✉ <span class="xu">${MAIL.thanks[lang]}</span>`,'',`Telegram: <span class="xu">${TG}</span> · @stayhungryasi`);return r;}
 };
 function rCode(){const t=T(),now=Date.now(),f=VFI(devFile),ls=(VFILES[f.id]||VFILES.earnings)(t,now).map(l=>typeof l==='string'?{h:l}:Object.assign({},l,{cls:(l.cls||'').replace('cur','')}));ls.push({h:''},{h:'<span id="vty"></span><i class="vcaret"></i>',cls:'cur'});let n=0,ln=1;
   const gl={ok:'<b class="vok">✓</b>',fail:'<b class="vno">✕</b>',run:'<b class="vok">▷</b>'};
@@ -1221,7 +1231,7 @@ const alias={news:'news',changelog:'news',log:'news',api:'d_index',data:'d_index
 $('tform').addEventListener('submit',e=>{e.preventDefault();const raw=$('tin').value.trim();$('tin').value='';if(!raw)return;
   tprint(msgU(raw));const A=h=>tprint(msgA(h)),[cmd,...a]=raw.split(/\s+/),arg=(a[0]||'').toLowerCase(),t=T();
   switch(cmd.toLowerCase()){
-    case 'help':A(`<pre>${esc([...t.t_help.filter(l=>!/^(boss|play)/.test(l)),'play            chart.test.ts (reader view)','curl <file>     GET /data/<file>.json (open API)','api             list API endpoints','git log         changelog','npm run launch  🚀','Ctrl+P · F1     quick open · commands',':q · j · k      vim keys (click the editor first)',t.dv_exit].join('\n'))}</pre>`);break;
+    case 'help':A(`<pre>${esc([...t.t_help.filter(l=>!/^(boss|play)/.test(l)),'play            chart.test.ts (reader view)','curl <file>     GET /data/<file>.json (open API)','api             list API endpoints','contact         email addresses','git log         changelog','npm run launch  🚀','Ctrl+P · F1     quick open · commands',':q · j · k      vim keys (click the editor first)',t.dv_exit].join('\n'))}</pre>`);break;
     case 'ls':A(VF.map(f=>`<button class="vln2" data-vf="${f.id}">${fi(f.n)}${f.n}</button>`).join(''));break;
     case 'open':case 'cd':case 'code':{const id=alias[arg]||(VF.find(f=>f.n.toLowerCase()===arg)||{}).id;if(id){openFile(id);A(esc(fmt(t.t_open,{f:VFI(id).n})));}else A(`<span class="vno">${esc(fmt(t.t_nofile,{f:arg||'?'}))}</span>`);break;}
     case 'earnings':{const nx=nextEarn(Date.now());A(esc(nx?fmt(t.t_next,{t:nx.t,d:erLabel(nx,t,Date.now())}):'—'));break;}
@@ -1233,7 +1243,8 @@ $('tform').addEventListener('submit',e=>{e.preventDefault();const raw=$('tin').v
     case 'sudo':A(/make me rich/i.test(raw)?"make: *** No rule to make target 'rich'.  Stop.":'guest is not in the sudoers file.  This incident will be reported.');break;
     case 'curl':case 'wget':curlCmd(a.find(x=>!x.startsWith('-')),A);break;
     case 'api':A(`<pre>${esc(apiData(BUILD)['index.json'].endpoints.map(n=>'curl '+API_BASE+n).join('\n'))}</pre>`);break;
-    case 'git':if(arg==='log')A(`<pre>${CHANGELOG.map(c=>`<span class="xn">${c.h.padEnd(7,' ')}</span> ${c.d}  ${esc(c.m[lang]||c.m.en)}`).join('\n')}</pre>`);else if(arg==='status')A('<pre>On branch main\nChanges not staged for commit:\n  <span class="vno">modified:   src/earnings.ts</span>\n  <span class="vno">modified:   research/spacex-3q26.md</span></pre>');else A('usage: git log | git status');break;
+    case 'contact':case 'mail':case 'email':{const t2=T();A(`<pre>${esc([MAIL.main.padEnd(28,' ')+t2.ct_main,MAIL.dev.padEnd(28,' ')+t2.ct_dev,MAIL.biz.padEnd(28,' ')+t2.ct_biz,MAIL.thanks[lang].padEnd(28,' ')+'✉'].join('\n'))}</pre>`);break;}
+    case 'git':if(arg==='config')A(`<pre>user.name=stayhungryasi\nuser.email=${MAIL.dev}</pre>`);else if(arg==='log')A(`<pre>${CHANGELOG.map(c=>`<span class="xn">${c.h.padEnd(7,' ')}</span> ${c.d}  ${esc(c.m[lang]||c.m.en)}`).join('\n')}</pre>`);else if(arg==='status')A('<pre>On branch main\nChanges not staged for commit:\n  <span class="vno">modified:   src/earnings.ts</span>\n  <span class="vno">modified:   research/spacex-3q26.md</span></pre>');else A('usage: git log | git status');break;
     case 'npm':if(raw.includes('launch')){A('&gt; stayhungry@1.0.0 launch · see the terminal ↓');launch();}else if(arg==='test'||arg==='t'){vpTab='term';rPanel();vWatchNow();A('✓ rerun · see the terminal ↓');}else if(arg==='i'||arg==='install')A('added 1 package: stay-hungry@∞ · 0 vulnerabilities');else A('npm run launch · npm test · npm install');break;
     case 'vim':case 'vi':case 'nvim':A("You're already in it. Click the editor, then type :q");break;
     case 'emacs':A('M-x butterfly');break;
