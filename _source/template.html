@@ -243,7 +243,7 @@ a.chan:hover{border-color:var(--or)}
 .chan b{font-size:15.5px}
 
 /* ===== developer view · code editor + AI pair ===== */
-.dev{--vb:#1F1F1F;--vs:#181818;--vl:#2B2B2B;--vt:#CCCCCC;--vd:#9D9D9D;--vn:#6E7681;--va:#0078D4;
+.dev{--vf:Consolas,"Cascadia Mono",Menlo,Monaco,"Courier New","D2Coding","Malgun Gothic","Noto Sans KR","Noto Sans JP",monospace;--vb:#1F1F1F;--vs:#181818;--vl:#2B2B2B;--vt:#CCCCCC;--vd:#9D9D9D;--vn:#6E7681;--va:#0078D4;
   position:fixed;inset:0;z-index:50;display:grid;grid-template-rows:35px minmax(0,1fr) 22px;background:var(--vb);color:var(--vt);
   font:13px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,"Noto Sans KR","Noto Sans JP",sans-serif;overflow:hidden}
 .dev button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0;text-align:left}
@@ -281,14 +281,18 @@ a.chan:hover{border-color:var(--or)}
 .dev .vtab.sel{background:var(--vb);color:#fff;border-top-color:var(--va);margin-bottom:-1px}
 .vtab b{width:16px;font-weight:400;text-align:center;color:var(--vt)}
 @media (min-width:981px){.dev .vtab:not(.mru){display:none}}
+.vedit{display:grid;grid-template-columns:minmax(0,1fr) 72px;min-height:0}
+.vmini{position:relative;padding:6px 10px 0 6px;overflow:hidden;box-shadow:-1px 0 0 #ffffff08}
+.vmini i{display:block;height:2px;margin-bottom:2px;border-radius:1px}
+.vmini b{position:absolute;left:0;right:0;top:0;background:#79797926}
 .vcrumb{display:flex;align-items:center;gap:6px;padding:0 18px;color:var(--vd);font-size:12.5px;white-space:nowrap;overflow:hidden}
-.vcode{overflow:auto;font:14.5px/24px var(--mono);color:var(--vt);padding:6px 0 28px;scrollbar-color:#4E4E4E transparent}
+.vcode{overflow:auto;font:14px/21px var(--vf);color:var(--vt);padding:6px 0 28px;scrollbar-color:#4E4E4E transparent}
 .vln{display:grid;grid-template-columns:24px 38px minmax(0,1fr);min-width:max-content}
-.vcode.wrap .vln{min-width:0}
+.vcode.vwrap .vln{min-width:0}
 .vln i{font-style:normal;color:var(--vn);text-align:right}
 .vg{text-align:center;font-size:12px}
 .vlc{white-space:pre;padding:0 24px 0 22px}
-.vcode.wrap .vlc{white-space:pre-wrap;word-break:break-word}
+.vcode.vwrap .vlc{white-space:pre-wrap;word-break:break-word}
 .vln.cur{background:#ffffff07;box-shadow:inset 0 1px #2D2D2D,inset 0 -1px #2D2D2D}.vln.cur i{color:#CCCCCC}
 .vln.da{background:#2EA04326}.vln.da .vlc{color:#B4E9C2}
 .vln.dd{background:#F8514926}.vln.dd .vlc{color:#FFB4AE}
@@ -297,7 +301,7 @@ a.chan:hover{border-color:var(--or)}
 .dev .vlens button{color:#999}.dev .vlens button:hover{color:#4DAAFC;text-decoration:underline}
 .xk{color:#569CD6}.xc{color:#C586C0}.xs{color:#CE9178}.xn{color:#B5CEA8}.xm{color:#6A9955}.xf{color:#DCDCAA}.xp{color:#9CDCFE}.xy{color:#4EC9B0}
 .xh{color:#569CD6;font-weight:700}.xl{color:#6796E6}.xb{color:#569CD6;font-weight:700}.xq{color:#6A9955}.xu{color:#4DAAFC;text-decoration:underline}
-.vih{display:inline-block;margin-left:14px;padding:0 7px;border-radius:4px;background:#ffffff12;color:#A6A6A6;font-size:12.5px;line-height:19px;vertical-align:1px;white-space:pre}
+.vih{display:inline-block;margin-left:14px;padding:0 6px;border-radius:4px;background:#ffffff12;color:#A6A6A6;font-size:12.5px;line-height:17px;vertical-align:1px;white-space:pre}
 .vih.hot{color:#FF8A4C;background:#F2652226;font-weight:600}
 .vih.warn{color:#CCA700;background:#CCA70014}
 .vih.bad{color:#F88070;background:#F14C4C1C;font-weight:600}
@@ -311,9 +315,10 @@ a.chan:hover{border-color:var(--or)}
 .vpt{display:flex;gap:4px;padding:0 12px;height:35px;align-items:center;flex:none;font-size:11px;letter-spacing:.04em;overflow-x:auto;scrollbar-width:none}
 .dev .vpt button{padding:5px 6px;color:var(--vd);border-bottom:1px solid transparent;white-space:nowrap}
 .dev .vpt button.sel{color:#E7E7E7;border-bottom-color:var(--va)}
+.vptr{margin-left:auto;display:flex;gap:14px;color:var(--vd);font-size:13px;letter-spacing:0;white-space:nowrap}
 .vbdg{display:inline-block;min-width:18px;border-radius:9px;background:#616161;color:#fff;padding:0 5px;margin-left:5px;font-size:10.5px;text-align:center;letter-spacing:0}
-.vpc{flex:1;overflow:auto;padding:2px 20px 10px;font:13.5px/21px var(--mono);white-space:pre-wrap;word-break:break-word}
-.dev .vpr{display:block;width:100%;padding:2px 0;font:13.5px/21px var(--mono)}.dev .vpr:hover{background:#2A2D2E}
+.vpc{flex:1;overflow:auto;padding:2px 20px 10px;font:14px/19px var(--vf);white-space:pre-wrap;word-break:break-word}
+.dev .vpr{display:block;width:100%;padding:2px 0;font:13px/22px -apple-system,"Segoe UI",system-ui,"Noto Sans KR",sans-serif}.dev .vpr:hover{background:#2A2D2E}
 .vcur{display:inline-block;width:8px;height:16px;background:#CCCCCC;vertical-align:-3px;animation:vblink 1.1s steps(1) infinite}
 @keyframes vblink{50%{opacity:0}}
 .vchat{background:var(--vs);border-left:1px solid var(--vl);display:flex;flex-direction:column;min-height:0;min-width:0}
@@ -364,7 +369,7 @@ a.chan:hover{border-color:var(--or)}
 @media (max-width:980px){
   .dev{display:block;overflow:auto}
   .vtitle{position:sticky;top:0;z-index:3;height:40px}.vmn{display:none}.vcc{flex:1;margin-left:4px}
-  .vbody{display:block}.vact,.vside,.vcrumb{display:none}
+  .vbody{display:block}.vact,.vside,.vcrumb,.vmini,.vptr{display:none}.vedit{display:block}
   .vmain{display:block}
   .vtabs{position:sticky;top:40px;z-index:3}
   .vcode{font-size:12.5px;line-height:21px}.vln{min-width:0;grid-template-columns:18px 30px minmax(0,1fr)}.vlc{white-space:pre-wrap;word-break:break-word;padding:0 12px 0 12px}.vlens{padding-left:60px}
@@ -474,7 +479,7 @@ a.chan:hover{border-color:var(--or)}
     <section class="vmain">
       <div class="vtabs" id="vtabs"></div>
       <div class="vcrumb" id="vcrumb"></div>
-      <div class="vcode" id="vcode"></div>
+      <div class="vedit"><div class="vcode" id="vcode"></div><div class="vmini" id="vmini" aria-hidden="true"></div></div>
       <div class="vpanel" id="vpanel"></div>
     </section>
     <aside class="vchat">
@@ -728,9 +733,11 @@ const VFILES={
 };
 function rCode(){const t=T(),now=Date.now(),f=VFI(devFile),ls=(VFILES[f.id]||VFILES.earnings)(t,now);let n=0,ln=1;
   const gl={ok:'<b class="vok">✓</b>',fail:'<b class="vno">✕</b>',run:'<b class="vok">▷</b>'};
-  $('vcode').className='vcode'+(f.lg==='Markdown'?' wrap':'');
+  $('vcode').className='vcode'+(f.lg==='Markdown'?' vwrap':'');
   $('vcode').innerHTML=ls.map(l=>{const o=typeof l==='string'?{h:l}:l;n++;if(o.cls==='cur'&&ln===1)ln=n;
     return (o.lens?`<div class="vlens">${o.lens}</div>`:'')+`<div class="vln ${o.cls||''}"><span class="vg">${gl[o.g]||''}</span><i>${n}</i><span class="vlc">${o.h||' '}</span></div>`;}).join('');
+  const col={xm:'#6A995599',xh:'#569CD6aa',xs:'#CE917899',xk:'#569CD699',xc:'#C586C099'};
+  $('vmini').innerHTML=ls.map(l=>{const o=typeof l==='string'?{h:l}:l,tx=(o.h||'').replace(/<[^>]+>/g,'').replace(/&[a-z]+;/g,'x'),ind=tx.length-tx.trimStart().length,m=(o.h||'').match(/class="(x[a-z])"/),c=o.cls==='da'?'#2EA043aa':o.cls==='dd'?'#F85149aa':m&&col[m[1]]||'#ffffff38';return tx.trim()?`<i style="margin-left:${Math.min(ind,20)}px;width:${Math.max(4,Math.min(54-Math.min(ind,20),tx.trim().length*.8))}px;background:${c}"></i>`:'<i></i>';}).join('')+`<b style="height:${ls.length*4+8}px"></b>`;
   return ln;}
 function rSide(){const deco={earnings:['M','#E2C08D'],research:['M','#E2C08D'],score:['U','#73C991'],mix:['U','#73C991'],radar:['1','#F88070']};
   const item=(id,pad)=>{const f=VFI(id),d=deco[id];return `<button class="vfx${id===devFile?' sel':''}" data-vf="${id}" style="padding-left:${pad}px">${fi(f.n)}<span${d?` style="color:${d[1]}"`:''}>${f.n}</span>${d?`<em style="color:${d[1]}">${d[0]}</em>`:''}</button>`;};
@@ -755,7 +762,7 @@ function rPanel(){const t=T(),{chk,fails,warns}=vCounts();
   else if(vpTab==='term')b=`<div>${ps}npm test</div><div class="vdim"> RUN  src/crisis-radar.test.ts</div>`+chk.map(c=>`<div> ${c[3]==='ok'?'<b class="vok">✓</b>':'<b class="vno">✕</b>'} ${esc(c[0])}  <span class="${c[3]==='ok'?'vdim':'vno'}">${esc(c[1])}</span></div>`).join('')+`<div> Tests  <b class="vno">${fails.length} failed</b> | <b class="vok">${chk.length-fails.length} passed</b> (${chk.length})  <span class="vwarn">${esc(t.sample)}</span></div><div>${ps}<i class="vcur"></i></div>`;
   else if(vpTab==='out')b=`<div class="vdim">[asi pair] indexed ${VF.length} files · data: earnings.json, crisis.json, research/</div><div class="vdim">[asi pair] ${ER.length} earnings dates · ${ER.length-warns.length} confirmed · ${warns.length} estimated</div>`;
   else b='<div class="vdim">—</div>';
-  $('vpanel').innerHTML=`<div class="vpt">${tabs.map(([k,l,n])=>`<button data-vp="${k}" class="${k===vpTab?'sel':''}">${l}${n!=null?`<span class="vbdg">${n}</span>`:''}</button>`).join('')}</div><div class="vpc">${b}</div>`;}
+  $('vpanel').innerHTML=`<div class="vpt">${tabs.map(([k,l,n])=>`<button data-vp="${k}" class="${k===vpTab?'sel':''}">${l}${n!=null?`<span class="vbdg">${n}</span>`:''}</button>`).join('')}<span class="vptr">${vpTab==='term'?'<span>⌨ bash</span><span>+</span><span>⌄</span>':''}<span>···</span><span>⌃</span><span>×</span></span></div><div class="vpc">${b}</div>`;}
 const msgU=x=>`<div class="vcm"><div class="vwho"><i class="vav">G</i>guest</div><div class="vbody2">${esc(x)}</div></div>`;
 const msgA=h=>`<div class="vcm"><div class="vwho"><i class="vav ai">◆</i>asi pair</div><div class="vbody2">${h}</div></div>`;
 function rChat(){const t=T(),now=Date.now(),nx=nextEarn(now),P=t.dv_p,refs=['earnings','radar','research'];
