@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-10-22",
-      "commit": "HEAD",
+      "commit": "e8708d2",
       "message": "News page: a Show all button opens every update in place, plus a link to all commits on GitHub"
     },
     {
