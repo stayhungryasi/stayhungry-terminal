@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-22",
+      "commit": "HEAD",
+      "message": "BRAINS: ask the Buffett·Munger and Jensen thinking engines, or make them duel (live AI with prepared answers as backup)"
+    },
+    {
+      "date": "2026-10-22",
       "commit": "bc7d93c",
       "message": "UNIVERTRIX dev log: five months and 862 commits on one page, plus /data/univertrix.json"
     },
