@@ -59,12 +59,15 @@ async function gemini(env, sys, q) {
 }
 
 async function workersAI(env, sys, q, errs) {
-  const models = [env.WAI_MODEL || '@cf/google/gemma-3-12b-it', '@cf/meta/llama-3.1-8b-instruct'];
+  const models = [env.WAI_MODEL, '@cf/qwen/qwen3-30b-a3b-fp8', '@cf/google/gemma-4-26b-a4b-it', '@cf/mistralai/mistral-small-3.1-24b-instruct', '@cf/meta/llama-3.1-8b-instruct-fp8'].filter(Boolean);
   for (const m of models) {
     try {
-      const r = await env.AI.run(m, { messages: [{ role: 'system', content: sys }, { role: 'user', content: q }], max_tokens: 700 });
-      const t = (r && (r.response || r.result?.response) || '').trim();
-      if (t) return t;
+      const user = m.includes('qwen3') ? q + ' /no_think' : q;
+      const r = await env.AI.run(m, { messages: [{ role: 'system', content: sys }, { role: 'user', content: user }], max_tokens: 700 });
+      let t = (r && (r.response || r.result?.response || r.choices?.[0]?.message?.content) || '');
+      if (typeof t !== 'string') t = JSON.stringify(t);
+      t = t.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+      if (t) return { text: t, model: m };
     } catch (e) { errs.push(m + ': ' + String(e && e.message || e)); console.log('workers-ai', m, String(e && e.message || e)); }
   }
   throw new Error('workers-ai failed');
@@ -100,7 +103,7 @@ export default {
     const sys = SYSTEM[engine] + COMMON + `\nReply in ${LANGS[lang]}.`;
     let answer = null, source = null; const errs = [];
     if (env.GEMINI_API_KEY) { try { answer = await gemini(env, sys, q); source = 'gemini'; } catch (e) { errs.push('gemini: ' + String(e && e.message || e)); console.log('gemini', String(e && e.message || e)); } }
-    if (!answer && env.AI) { try { answer = await workersAI(env, sys, q, errs); source = 'workers-ai'; } catch (e) { } }
+    if (!answer && env.AI) { try { const w = await workersAI(env, sys, q, errs); answer = w.text; source = 'workers-ai:' + w.model.split('/').pop(); } catch (e) { } }
     if (!answer) return json({ fallback: true, reason: 'quota', ...(body.debug === true ? { errs } : {}) }, 200, cors);
     return json({ answer, source, left: Math.max(0, LIMIT - used - 1) }, 200, cors);
   }
