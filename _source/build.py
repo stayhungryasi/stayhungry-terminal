@@ -1,5 +1,12 @@
 import sys, os, re, shutil, json, datetime
 src, out, base = sys.argv[1], sys.argv[2], sys.argv[3].rstrip('/') + '/'
+# <out> is wiped below (rmtree). Never let it be the repo itself: building into "." once
+# meant deleting .git and _source. Build into a scratch dir, then copy (see README).
+_o = os.path.abspath(out)
+if (os.path.exists(os.path.join(_o, '.git')) or os.path.isdir(os.path.join(_o, '_source'))
+        or os.path.abspath(src).startswith(_o + os.sep)):
+    sys.exit(f'refusing to build into {_o}: build.py deletes <out> first. '
+             'Build into a scratch dir (e.g. /tmp/sha-build) and copy the output into the repo.')
 body = open(src, encoding='utf-8').read()
 body = re.sub(r'^<title>.*?</title>\s*', '', body, count=1)
 body = re.sub(r'<meta name="claude:viewport-fit-sides"[^>]*>\s*', '', body, count=1)
