@@ -1,0 +1,63 @@
+{
+  "source": "github.com/stayhungryasi/universe-dominator commit history and univertrix.com data",
+  "as_of": "2026-10-22",
+  "site": "https://univertrix.com",
+  "repo": "https://github.com/stayhungryasi/universe-dominator",
+  "since": "2026-06-06",
+  "commits": {
+    "total": 862,
+    "build": 360,
+    "pipeline_updates": 502
+  },
+  "commits_by_month": [
+    {
+      "month": "2026-06",
+      "build_commits": 69
+    },
+    {
+      "month": "2026-07",
+      "build_commits": 81
+    },
+    {
+      "month": "2026-08",
+      "build_commits": 170
+    },
+    {
+      "month": "2026-09",
+      "build_commits": 40
+    },
+    {
+      "month": "2026-10",
+      "build_commits": 0
+    }
+  ],
+  "pipeline": {
+    "runs_per_day": 3,
+    "run_times_kst": [
+      "08:17",
+      "12:17",
+      "18:17"
+    ]
+  },
+  "pages": 13,
+  "scripts": 32,
+  "self_tests_passing": 494,
+  "landmines_mapped": 14,
+  "legend_benchmark": {
+    "tickers": 34,
+    "zones": {
+      "pass": 2,
+      "prove_growth": 5,
+      "below_bonds": 3,
+      "untested": 24
+    },
+    "note": "Buffett yardstick applied to public filings: 10-year cost coupon vs 3x the 10-year Treasury. Arithmetic, not a recommendation."
+  },
+  "published": {
+    "columns": 77,
+    "essays": 41
+  },
+  "updated": "2026-10-22",
+  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+  "disclaimer": "Not investment advice."
+}

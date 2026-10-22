@@ -11,6 +11,7 @@ Base URL: https://stayhungryasi.com/data/
 | crisis.json | crisis radar checks (SAMPLE until breaking_bot writes it) |
 | megacaps.json | top 8 by market cap (SAMPLE) |
 | spacex-3q26.json | SpaceX 3Q26 revenue mix and results vs consensus |
+| univertrix.json | UNIVERTRIX build log: commits, pipeline runs, self-tests, legend benchmark zones |
 | changelog.json | site changelog |
 
 ```sh

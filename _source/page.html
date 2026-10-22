@@ -42,7 +42,7 @@ main{overflow-x:clip}
 .brand i{width:10px;height:10px;border-radius:50%;background:var(--or);box-shadow:0 0 12px 2px rgba(242,101,34,.7)}
 .brand span{color:var(--mute);font-weight:400}
 .nav{display:flex;gap:0;min-width:0;overflow:hidden}
-.nav a{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--mute);text-decoration:none;padding:8px 8px;border-radius:6px;white-space:nowrap}
+.nav a{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--mute);text-decoration:none;padding:8px 5px;border-radius:6px;white-space:nowrap}
 .nav a:hover{color:var(--ink)}
 .nav a.on{color:var(--or)}
 .tr{display:flex;gap:8px;align-items:center;position:relative}
@@ -123,6 +123,17 @@ a.ct:hover{border-color:var(--or)}
 .cps .d{font-size:clamp(22px,2.4vw,28px);font-weight:900;color:var(--or)}
 .cps .x{font-size:18px;font-weight:700;margin-top:6px}
 .cps .y{font-size:15px;color:var(--ink2);margin-top:2px}
+.utl{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:14px}
+.utl>div{background:var(--card);border-radius:12px;padding:14px 16px;border-top:3px solid var(--line2)}
+.utl>div.on{border-top-color:var(--or)}
+.utl .d{font-family:var(--mono);font-size:13px;letter-spacing:.14em;color:var(--mute)}
+.utl .x{font-size:clamp(16px,1.6vw,19px);font-weight:800;margin-top:4px}
+.utl>div.on .x{color:var(--or)}
+.utl .y{font-size:14px;color:var(--ink2);margin-top:3px;line-height:1.4}
+.giant .uvcta{margin:0 0 8px auto;align-self:flex-end}
+#univertrix .giant .num{font-size:clamp(84px,min(14vw,18vh),180px)}
+@media (min-width:981px) and (max-height:820px){#univertrix .utl .y{display:none}#univertrix .utl>div{padding:12px 14px}}
+.nav a:lang(es){padding:8px 3px;letter-spacing:.04em}
 
 .erows{margin-top:24px;border-top:1px solid var(--line)}
 .erow{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr) 130px;gap:22px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
@@ -423,7 +434,8 @@ a.chan:hover{border-color:var(--or)}
 @media (max-width:1260px){.nav{display:none}.pager{display:none}}
 @media (min-width:1261px){.pgnum{display:none}}
 @media (max-width:980px){
-  .cards3,.cps{grid-template-columns:minmax(0,1fr)}
+  .cards3,.cps,.utl{grid-template-columns:minmax(0,1fr)}
+  .giant .uvcta{margin:6px 0 0}
   .game,.rbot{grid-template-columns:minmax(0,1fr)}
   .hubg{grid-template-columns:minmax(0,1fr)}
   .srow,.axis{grid-template-columns:minmax(0,1fr);gap:4px}
@@ -480,6 +492,7 @@ a.chan:hover{border-color:var(--or)}
   <section class="page" id="score"></section>
   <section class="page" id="radar"></section>
   <section class="page" id="rank"></section>
+  <section class="page glow" id="univertrix"></section>
   <section class="page" id="lab">
     <div id="labHead"></div>
     <div class="game">
@@ -543,7 +556,9 @@ const MK=[{"t":"NVDA","cap":4.42,"c":2.31},{"t":"MSFT","cap":3.81,"c":0.84},{"t"
 const MIX=[{"q":"3Q25","rev":"$5.58B","s":[15,56,30]},{"q":"2Q26","rev":"$7.81B","s":[33,55,12]},{"q":"3Q26","rev":"$14.58B","s":[52,36,12]}];
 const SCORE=[["s_rev","$14.58B","$12.72B",14.6],["s_op","$2.79B","$2.33B",19.8],["s_ai","$7.56B","$6.47B",16.8],["s_sl","$5.25B","$4.92B",6.7],["s_sp","$1.77B","$1.4B",26.2],["s_sub","13.6M","14.2M",-4.2]];
 const RISK={"temp":38,"vix":17.4,"curve":0.42,"buffett":205,"sample":true};
+const UNIV={"asof":"2026-10-22","site":"https://univertrix.com","repo":"https://github.com/stayhungryasi/universe-dominator","since":"2026-06-06","commits":{"total":862,"build":360,"pipeline":502},"by_month":[["2026-06",69],["2026-07",81],["2026-08",170],["2026-09",40],["2026-10",0]],"runs_per_day":3,"run_times_kst":["08:17","12:17","18:17"],"pages":13,"scripts":32,"selftests":494,"legend":{"tickers":34,"pass":2,"prove_growth":5,"bond_inferior":3,"untested":24},"columns":77,"essays":41,"landmines":14};
 const CHANGELOG=[
+ {"d":"2026-10-22","h":"HEAD","m":{"en":"UNIVERTRIX dev log: five months and 862 commits on one page, plus /data/univertrix.json","ko":"우주지배자(UNIVERTRIX) 개발 일지 페이지 추가: 5개월·862커밋, /data/univertrix.json 공개","es":"Diario de desarrollo de UNIVERTRIX: cinco meses y 862 commits en una página, más /data/univertrix.json","ja":"UNIVERTRIX開発日誌ページを追加: 5か月・862コミット、/data/univertrix.json も公開"}},
  {"d":"2026-10-21","h":"1d86f24","m":{"en":"Say hi: foolish@, commit@ and grateful@stayhungryasi.com, plus a thank-you address in every language","ko":"메일 주소 오픈: foolish@ · commit@ · grateful@stayhungryasi.com, 그리고 언어별 감사 주소","es":"Escríbenos: foolish@, commit@ y grateful@stayhungryasi.com, y un correo de gracias en cada idioma","ja":"メール開設: foolish@ · commit@ · grateful@stayhungryasi.com、各言語のお礼アドレスも"}},
  {"d":"2026-10-21","h":"37d1023","m":{"en":"New home: stayhungryasi.com (HTTPS, old links redirect)","ko":"새 주소 stayhungryasi.com 오픈 (HTTPS, 예전 주소는 자동 연결)","es":"Nuevo hogar: stayhungryasi.com (HTTPS, los enlaces antiguos redirigen)","ja":"新しい住所 stayhungryasi.com を開設(HTTPS、旧URLは自動転送)"}},
  {"d":"2026-10-21","h":"7699322","m":{"en":"Open data API, quick open (Ctrl+P), vim keys, this changelog and a few easter eggs","ko":"오픈 데이터 API, 빠른 열기(Ctrl+P), Vim 단축키, 변경 기록, 이스터에그 추가","es":"API de datos abiertos, apertura rápida (Ctrl+P), atajos de Vim, este registro y algunas sorpresas","ja":"オープンデータAPI、クイックオープン(Ctrl+P)、Vimキー、この変更履歴、隠し要素を追加"}},
@@ -559,7 +574,7 @@ function apiData(today){
   const base={updated:today,credit:'@stayhungryasi · https://t.me/stayhungryasi',disclaimer:'Not investment advice.'};
   const SK={s_rev:'revenue',s_op:'operating_income',s_ai:'ai_revenue',s_sl:'starlink_revenue',s_sp:'space_revenue',s_sub:'starlink_subscribers'};
   return {
-    'index.json':Object.assign({name:'Stayhungry.ASI open data',base:API_BASE,contact:{hello:MAIL.main,builders_and_ideas:MAIL.dev,ads_and_partnerships:MAIL.biz,thanks:MAIL.thanks},endpoints:['earnings.json','crisis.json','megacaps.json','spacex-3q26.json','changelog.json']},base),
+    'index.json':Object.assign({name:'Stayhungry.ASI open data',base:API_BASE,contact:{hello:MAIL.main,builders_and_ideas:MAIL.dev,ads_and_partnerships:MAIL.biz,thanks:MAIL.thanks},endpoints:['earnings.json','crisis.json','megacaps.json','spacex-3q26.json','univertrix.json','changelog.json']},base),
     'earnings.json':Object.assign({source:'Company IR and days.to, checked 2026-10-21',timezone:'UTC',items:ER.map(e=>({ticker:e.t,at:e.utc,status:e.st==='c'?'confirmed':'estimated'}))},base),
     'crisis.json':Object.assign({sample:true,note:'Placeholder values until breaking_bot writes this file.',temperature:RISK.temp,vix:RISK.vix,buffett_index_pct:RISK.buffett,yield_curve_10y2y:RISK.curve,
       checks:[{id:'crisis-temperature',value:RISK.temp,pass:RISK.temp<40},{id:'vix',value:RISK.vix,pass:RISK.vix<20},{id:'yield-curve',value:RISK.curve,pass:RISK.curve>0},{id:'valuation',value:RISK.buffett,pass:RISK.buffett<140}]},base),
@@ -567,6 +582,11 @@ function apiData(today){
     'spacex-3q26.json':Object.assign({source:'SpaceX 3Q26 8-K and earnings call; consensus from LSEG, Bloomberg, Visible Alpha',
       revenue_mix:MIX.map(m=>({quarter:m.q,revenue:m.rev,share_pct:{ai:m.s[0],starlink:m.s[1],space:m.s[2]}})),
       vs_consensus:SCORE.map(s=>({metric:SK[s[0]],actual:s[1],consensus:s[2],diff_pct:s[3]}))},base),
+    'univertrix.json':Object.assign({source:'github.com/stayhungryasi/universe-dominator commit history and univertrix.com data',as_of:UNIV.asof,site:UNIV.site,repo:UNIV.repo,since:UNIV.since,
+      commits:{total:UNIV.commits.total,build:UNIV.commits.build,pipeline_updates:UNIV.commits.pipeline},commits_by_month:UNIV.by_month.map(m=>({month:m[0],build_commits:m[1]})),
+      pipeline:{runs_per_day:UNIV.runs_per_day,run_times_kst:UNIV.run_times_kst},pages:UNIV.pages,scripts:UNIV.scripts,self_tests_passing:UNIV.selftests,landmines_mapped:UNIV.landmines,
+      legend_benchmark:{tickers:UNIV.legend.tickers,zones:{pass:UNIV.legend.pass,prove_growth:UNIV.legend.prove_growth,below_bonds:UNIV.legend.bond_inferior,untested:UNIV.legend.untested},note:'Buffett yardstick applied to public filings: 10-year cost coupon vs 3x the 10-year Treasury. Arithmetic, not a recommendation.'},
+      published:{columns:UNIV.columns,essays:UNIV.essays}},base),
     'changelog.json':Object.assign({repo:'https://github.com/stayhungryasi/stayhungry-terminal',items:CHANGELOG.map(c=>({date:c.d,commit:c.h,message:c.m.en}))},base)
   };
 }
@@ -578,7 +598,7 @@ const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 const fmt=(s,o)=>s.replace(/\{(\w+)\}/g,(_,k)=>o[k]);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 const TG='https://t.me/stayhungryasi';
-const PAGES=['today','brief','earnings','research','mix','score','radar','rank','lab','hub','news'];
+const PAGES=['today','brief','earnings','research','mix','score','radar','rank','univertrix','lab','hub','news'];
 const NP=PAGES.length;
 
 const MIXT=[[0.81,2.56,7.56,'+830%'],[3.10,4.29,5.25,'+69%'],[1.67,0.96,1.77,'+6%']];
@@ -627,7 +647,7 @@ hub_sub:'Each project starts as a question, gets built with AI, and ships to a c
 st:{on:'● RUNNING',rd:'◆ RESEARCH',nx:'○ NEXT'},
 hub:[['Crisis early-warning bot','Leading crisis indicators every Monday and Friday.','TELEGRAM','on'],['Buffett Index & VIX report','Valuation and fear gauge every Tuesday and Thursday.','TELEGRAM','on'],['Institutional 5% filing radar','Flags unusual buying in big-holder filings from well-known institutions.','TELEGRAM','on'],['Megacap earnings countdown','The calendar on this page, in your own time zone.','THIS SITE','on'],['Megacap Top N ranking system','Testing whether monthly market-cap rank works as a trading universe.','RESEARCH','rd'],['SpaceX overnight research agent','An agent that researches while I sleep. First task: SpaceX, the next 10 years.','RESEARCH','rd'],['ShaferwineX','English channel on SpaceX, AI, tech and crypto.','X · YOUTUBE','on'],['Open data API','Every number on this site as JSON at /data, free to use.','JSON · /data','on'],['Developer view','Press Esc: the same data as a code editor. Try Ctrl+P, :q or npm run launch.','THIS SITE · ESC','on'],['Live data feed for this site','Bots write JSON, this page reads it. No more sample numbers.','NEXT','nx']],
 log_lbl:'CHANGELOG',ch_lbl:'CHANNELS',
-ch:[['TELEGRAM','@stayhungryasi','Crisis radar, Buffett · VIX reports, research cards'],['X','@shaferwineX','English threads on SpaceX, AI, tech and crypto'],['YOUTUBE','ShaferwineX','Documentary-style explainers about the future'],['NAVER BLOG','shaferwine','Long-form research notes in Korean']],
+ch:[['TELEGRAM','@stayhungryasi','Crisis radar, Buffett · VIX reports, research cards'],['X','@shaferwineX','English threads on SpaceX, AI, tech and crypto'],['YOUTUBE','ShaferwineX','Documentary-style explainers about the future'],['NAVER BLOG','shaferwine','Long-form research notes in Korean'],['WEB','univertrix.com','The daily market-cap universe, built in public']],
 hub_src:'Private trading tools and client work are not listed here.',
 term_eb:'TERMINAL · FOR THE CURIOUS',term_h1:'Type help.',term_h2:'Press Esc anytime.',term_sub:'This page started as a code editor. The terminal still works. Press / to jump here.',
 t_hint:'type help and press Enter',t_help:['help            show commands','ls              list sections','open <name>     jump to a section (e.g. open research)','earnings        next earnings countdown','play            start chart.test.ts','lang <code>     en · ko · es · ja','boss            hide everything (or press Esc)','clear           clear the terminal'],
@@ -677,7 +697,7 @@ hub_sub:'모든 프로젝트는 질문 하나에서 시작해 AI로 만들어지
 st:{on:'● 가동중',rd:'◆ 연구중',nx:'○ 다음'},
 hub:[['경제위기 조기경보 봇','매주 월·금, 위기 선행 지표 보고.','TELEGRAM','on'],['버핏지수·VIX 리포트','매주 화·목, 밸류에이션과 공포지수.','TELEGRAM','on'],['기관 5% 대량보유 레이더','이름 있는 기관의 대량보유 공시에서 이례적인 매수를 골라냅니다.','TELEGRAM','on'],['빅테크 실적 카운트다운','이 페이지의 캘린더. 내 시간대 기준.','THIS SITE','on'],['미국 시총 Top N 순위 시스템','월별 시총 순위가 매매 유니버스로 통하는지 검증 중.','RESEARCH','rd'],['SpaceX 야간 리서치 에이전트','제가 자는 동안 리서치하는 에이전트. 첫 과제는 SpaceX의 다음 10년.','RESEARCH','rd'],['ShaferwineX','SpaceX·AI·테크·크립토를 다루는 영어 채널.','X · YOUTUBE','on'],['오픈 데이터 API','이 사이트의 모든 숫자를 /data 에서 JSON으로. 누구나 가져다 쓰세요.','JSON · /data','on'],['개발자 화면','Esc를 누르면 같은 데이터가 코드 편집기로. Ctrl+P, :q, npm run launch도 해보세요.','THIS SITE · ESC','on'],['이 사이트 실데이터 연결','봇이 JSON을 쓰고, 페이지가 읽습니다. 예시값 졸업.','NEXT','nx']],
 log_lbl:'CHANGELOG',ch_lbl:'CHANNELS',
-ch:[['TELEGRAM','@stayhungryasi','위기 레이더, 버핏·VIX 리포트, 리서치 카드'],['X','@shaferwineX','SpaceX·AI·테크·크립토 영어 스레드'],['YOUTUBE','ShaferwineX','미래를 다루는 다큐멘터리식 해설'],['NAVER BLOG','shaferwine','한국어 리서치 노트와 긴 글']],
+ch:[['TELEGRAM','@stayhungryasi','위기 레이더, 버핏·VIX 리포트, 리서치 카드'],['X','@shaferwineX','SpaceX·AI·테크·크립토 영어 스레드'],['YOUTUBE','ShaferwineX','미래를 다루는 다큐멘터리식 해설'],['NAVER BLOG','shaferwine','한국어 리서치 노트와 긴 글'],['WEB','univertrix.com','매일 다시 그려지는 시총 우주, 우주지배자']],
 hub_src:'개인 매매 도구와 본업 관련 작업은 여기에 올리지 않습니다.',
 term_eb:'TERMINAL · 궁금한 분들을 위해',term_h1:'help를 입력하세요.',term_h2:'Esc는 언제든.',term_sub:'이 페이지는 코드 편집기에서 시작했습니다. 터미널은 아직 살아 있습니다. / 키를 누르면 여기로 옵니다.',
 t_hint:'help 입력 후 Enter',t_help:['help            명령어 보기','ls              섹션 목록','open <name>     섹션으로 이동 (예: open research)','earnings        다음 실적 카운트다운','play            chart.test.ts 시작','lang <code>     en · ko · es · ja','boss            화면 숨기기 (Esc도 가능)','clear           터미널 지우기'],
@@ -727,7 +747,7 @@ hub_sub:'Cada proyecto empieza con una pregunta, se construye con IA y sale a un
 st:{on:'● ACTIVO',rd:'◆ INVESTIGACIÓN',nx:'○ PRÓXIMO'},
 hub:[['Bot de alerta temprana de crisis','Indicadores adelantados cada lunes y viernes.','TELEGRAM','on'],['Informe Índice Buffett y VIX','Valuación e índice del miedo cada martes y jueves.','TELEGRAM','on'],['Radar de participaciones del 5%','Detecta compras inusuales de instituciones conocidas.','TELEGRAM','on'],['Cuenta regresiva de resultados','El calendario de esta página, en tu zona horaria.','ESTE SITIO','on'],['Sistema de ranking Top N','Probando si el ranking mensual funciona como universo de inversión.','INVESTIGACIÓN','rd'],['Agente nocturno sobre SpaceX','Un agente que investiga mientras duermo. Primera tarea: SpaceX, los próximos 10 años.','INVESTIGACIÓN','rd'],['ShaferwineX','Canal en inglés sobre SpaceX, IA, tecnología y cripto.','X · YOUTUBE','on'],['API de datos abiertos','Cada número del sitio en JSON en /data, libre para usar.','JSON · /data','on'],['Vista de desarrollador','Pulsa Esc: los mismos datos como editor de código. Prueba Ctrl+P, :q o npm run launch.','THIS SITE · ESC','on'],['Datos en vivo para este sitio','Los bots escriben JSON y esta página lo lee. Adiós a los datos de muestra.','PRÓXIMO','nx']],
 log_lbl:'CHANGELOG',ch_lbl:'CANALES',
-ch:[['TELEGRAM','@stayhungryasi','Radar de crisis, informes Buffett · VIX y tarjetas de investigación'],['X','@shaferwineX','Hilos en inglés sobre SpaceX, IA, tecnología y cripto'],['YOUTUBE','ShaferwineX','Explicaciones documentales sobre el futuro'],['NAVER BLOG','shaferwine','Notas largas de investigación en coreano']],
+ch:[['TELEGRAM','@stayhungryasi','Radar de crisis, informes Buffett · VIX y tarjetas de investigación'],['X','@shaferwineX','Hilos en inglés sobre SpaceX, IA, tecnología y cripto'],['YOUTUBE','ShaferwineX','Explicaciones documentales sobre el futuro'],['NAVER BLOG','shaferwine','Notas largas de investigación en coreano'],['WEB','univertrix.com','El universo diario de capitalización, construido en público']],
 hub_src:'Las herramientas privadas de inversión y el trabajo con clientes no aparecen aquí.',
 term_eb:'TERMINAL · PARA LOS CURIOSOS',term_h1:'Escribe help.',term_h2:'Pulsa Esc cuando quieras.',term_sub:'Esta página empezó como un editor de código. La terminal sigue funcionando. Pulsa / para venir aquí.',
 t_hint:'escribe help y pulsa Enter',t_help:['help            ver comandos','ls              listar secciones','open <name>     ir a una sección (ej.: open research)','earnings        próxima cuenta regresiva','play            iniciar chart.test.ts','lang <code>     en · ko · es · ja','boss            ocultarlo todo (o pulsa Esc)','clear           limpiar la terminal'],
@@ -777,7 +797,7 @@ hub_sub:'どのプロジェクトも問いから始まり、AIで作られ、チ
 st:{on:'● 稼働中',rd:'◆ 研究中',nx:'○ 次'},
 hub:[['経済危機の早期警戒ボット','毎週月・金、危機の先行指標を報告。','TELEGRAM','on'],['バフェット指数・VIXレポート','毎週火・木、バリュエーションと恐怖指数。','TELEGRAM','on'],['機関投資家5%大量保有レーダー','著名な機関の大量保有報告から異例の買いを拾う。','TELEGRAM','on'],['大型テック決算カウントダウン','このページのカレンダー。あなたの時刻で。','THIS SITE','on'],['米国時価総額トップNランキング','月次の時価総額順位が売買ユニバースとして機能するか検証中。','RESEARCH','rd'],['SpaceX夜間リサーチエージェント','寝ている間にリサーチするエージェント。最初の課題はSpaceXの次の10年。','RESEARCH','rd'],['ShaferwineX','SpaceX・AI・テック・暗号資産の英語チャンネル。','X · YOUTUBE','on'],['オープンデータAPI','このサイトのすべての数字を /data でJSONに。自由に使えます。','JSON · /data','on'],['開発者ビュー','Escで同じデータがコードエディタに。Ctrl+P、:q、npm run launch もどうぞ。','THIS SITE · ESC','on'],['このサイトのライブデータ接続','ボットがJSONを書き、ページが読む。サンプル値は卒業。','NEXT','nx']],
 log_lbl:'CHANGELOG',ch_lbl:'チャンネル',
-ch:[['TELEGRAM','@stayhungryasi','危機レーダー、バフェット・VIXレポート、リサーチカード'],['X','@shaferwineX','SpaceX・AI・テック・暗号資産の英語スレッド'],['YOUTUBE','ShaferwineX','未来を描くドキュメンタリー風の解説'],['NAVER BLOG','shaferwine','韓国語の長文リサーチノート']],
+ch:[['TELEGRAM','@stayhungryasi','危機レーダー、バフェット・VIXレポート、リサーチカード'],['X','@shaferwineX','SpaceX・AI・テック・暗号資産の英語スレッド'],['YOUTUBE','ShaferwineX','未来を描くドキュメンタリー風の解説'],['NAVER BLOG','shaferwine','韓国語の長文リサーチノート'],['WEB','univertrix.com','毎日描き直される時価総額の宇宙']],
 hub_src:'個人の売買ツールと本業関連の作業はここに載せません。',
 term_eb:'TERMINAL · 好奇心のある方へ',term_h1:'help と入力。',term_h2:'Esc はいつでも。',term_sub:'このページはコードエディタから始まりました。ターミナルは今も動きます。/ キーでここへ。',
 t_hint:'help と入力して Enter',t_help:['help            コマンド一覧','ls              セクション一覧','open <name>     セクションへ移動(例: open research)','earnings        次の決算カウントダウン','play            chart.test.ts を開始','lang <code>     en · ko · es · ja','boss            画面を隠す(Esc でも可)','clear           ターミナルを消去'],
@@ -788,19 +808,19 @@ b_title:'ビルド成功',b_ret:'Esc またはクリックで戻ります'}
 const LANGS=['en','ko','es','ja'];
 const HTML_LANG={en:'en',ko:'ko',es:'es',ja:'ja'};
 const EXT={
-en:{ct_main:'SAY HI',ct_dev:'BUILDERS & IDEAS',ct_biz:'ADS & PARTNERSHIPS',news_eb:'CHANGELOG · BUILT IN PUBLIC',news_h1:'Every update,',news_h2:'logged like a commit.',news_new:'NEW',news_dev:'Developers: press <b>Esc</b>, then <b>Ctrl+P</b>. Open data: <b>/data/index.json</b>',news_src:'Each line is a real commit in github.com/stayhungryasi/stayhungry-terminal.',nav10:['TODAY','BRIEF','EARNINGS','SPACEX','MIX','SCORE','RADAR','RANK','LAB','HUB','NEW'],brief_eb:'BRIEF · TODAY IN 3 LINES',brief_h1:'Three lines.',brief_h2:"That's the whole day.",mix_eb:'RESEARCH · SPACEX 3Q26 · REVENUE MIX',mix_h1:'In one year,',mix_h2:'revenue changed owners.',score_eb:'RESEARCH · SPACEX 3Q26 · SCORECARD',score_h1:'Beat on everything.',score_h2:'Except one.',next:'NEXT ↓',
+en:{uv_eb:"PROJECT · UNIVERTRIX · BUILT IN PUBLIC",uv_h1:"Every morning,",uv_h2:"the universe is redrawn.",uv_side:"<b>commits in five months<\/b> {b} build · {p} pipeline updates",uv_cards:[["PIPELINE RUNS", "3× a day", "08:17 · 12:17 · 18:17 KST. Collect, build, commit, with no one at the wheel."], ["LEGEND BENCHMARK", "34", "Buffett’s yardstick on every planet, daily. Pass 2 · prove growth 5 · below bonds 3 · blank 24."], ["SELF-TESTS", "494", "All green. Every safety gate is broken on purpose once, to prove it can fail."]],uv_tl_lbl:"FIVE MONTHS",uv_tl:[["JUN", "The skeleton", "Rankings, rising leaders, megatrends"], ["JUL", "The observatory", "Research feed and data observatory"], ["AUG", "170 commits", "Signal desk, auto columns, legend benchmark"], ["SEP", "Honest yardsticks", "Overnight agent, atomic builds, audits"], ["OCT", "Hands off", "Three runs a day, nobody at the wheel"]],uv_note:"A daily global market-cap tracker where companies are planets and #1 is the sun. Every incident became a rule: <b>14 landmines<\/b> mapped so far.",uv_cta:"Open univertrix.com →",uv_src:"Source: github.com/stayhungryasi/universe-dominator commit history and univertrix.com data, as of 2026-10-22. Buffett zones are arithmetic on public filings, not a recommendation.",ct_main:'SAY HI',ct_dev:'BUILDERS & IDEAS',ct_biz:'ADS & PARTNERSHIPS',news_eb:'CHANGELOG · BUILT IN PUBLIC',news_h1:'Every update,',news_h2:'logged like a commit.',news_new:'NEW',news_dev:'Developers: press <b>Esc</b>, then <b>Ctrl+P</b>. Open data: <b>/data/index.json</b>',news_src:'Each line is a real commit in github.com/stayhungryasi/stayhungry-terminal.',nav10:['TODAY','BRIEF','EARNINGS','SPACEX','MIX','SCORE','RADAR','RANK','UNIVERTRIX','LAB','HUB','NEW'],brief_eb:'BRIEF · TODAY IN 3 LINES',brief_h1:'Three lines.',brief_h2:"That's the whole day.",mix_eb:'RESEARCH · SPACEX 3Q26 · REVENUE MIX',mix_h1:'In one year,',mix_h2:'revenue changed owners.',score_eb:'RESEARCH · SPACEX 3Q26 · SCORECARD',score_h1:'Beat on everything.',score_h2:'Except one.',next:'NEXT ↓',
  dv_back:'Reader view',dv_hint:'esc → reader view · / → prompt',dv_session:'research session',dv_tip:'Tip: this is the same data as the reader view. Type help, or press esc.',
  dv_p:["what's next on deck?","summarize today in 3 lines","list every megacap earnings date","run the crisis checks","decode SpaceX 3Q26","rank the megacaps by market cap","what are you building?"],
  dv_next:'{t} reports in',dv_found:'{n} entries · {c} confirmed · {e} estimated',dv_done:'Done. Full deck on Telegram:',dv_exit:'exit            back to the reader view',vc_refs:'Used {n} references',vc_ph:'Ask asi pair, or type help',vc_cur:'Current file',vc_run:'Run Test',vc_view:'Open in reader view'},
-ko:{ct_main:'인사 · 제보',ct_dev:'개발 · 제안',ct_biz:'광고 · 협업',news_eb:'CHANGELOG · 만드는 과정 공개',news_h1:'모든 업데이트를',news_h2:'커밋처럼 기록한다.',news_new:'NEW',news_dev:'개발자라면: <b>Esc</b> 누르고 <b>Ctrl+P</b>. 오픈 데이터: <b>/data/index.json</b>',news_src:'각 줄은 github.com/stayhungryasi/stayhungry-terminal 의 실제 커밋입니다.',nav10:['오늘','3줄','실적','SPACEX','매출','스코어','위기','시총','실험실','허브','새 소식'],brief_eb:'BRIEF · 오늘을 3줄로',brief_h1:'딱 3줄.',brief_h2:'오늘은 이게 전부다.',mix_eb:'RESEARCH · SPACEX 3Q26 · 매출 구조',mix_h1:'1년 만에',mix_h2:'주인이 바뀐 매출 구조',score_eb:'RESEARCH · SPACEX 3Q26 · 스코어카드',score_h1:'전부 이겼다.',score_h2:'단 하나만 빼고.',next:'다음 ↓',
+ko:{uv_eb:"PROJECT · UNIVERTRIX · 우주지배자 개발 일지",uv_h1:"매일 아침,",uv_h2:"우주를 다시 그린다.",uv_side:"<b>5개월간의 커밋<\/b> 작업 {b} · 자동 갱신 {p}",uv_cards:[["자동 실행", "하루 3회", "08:17 · 12:17 · 18:17 KST. 수집·빌드·커밋까지 사람 손 없이."], ["레전드벤치마크", "34종", "버핏의 눈금을 매일 대입. 통과 2 · 성장 입증 5 · 국채 열위 3 · 미검정 24."], ["자가 점검", "494", "전부 통과. 모든 안전장치는 일부러 한 번 끊어 실패하는지 확인한다."]],uv_tl_lbl:"5개월",uv_tl:[["06", "우주의 뼈대", "순위표 · 잠재지배자 · 메가트렌드"], ["07", "관측소", "리서치 수집 · 데이터 천문대"], ["08", "170 커밋", "신호 관측소 · 자동 칼럼 · 레전드벤치마크"], ["09", "눈금을 정직하게", "무인 탐사선 · 원자적 빌드 · 감사"], ["10", "무인 운영", "사람 손 없이 하루 3회"]],uv_note:"기업은 행성, 시총 1위는 태양. 매일 갱신되는 글로벌 시총 관측소. 사고는 전부 규칙이 됐다: 지금까지 <b>지뢰 14개<\/b>를 지도에 올렸다.",uv_cta:"univertrix.com 열기 →",uv_src:"출처: github.com/stayhungryasi/universe-dominator 커밋 이력 · univertrix.com 데이터, 2026-10-22 기준. 버핏존은 공시에 대한 산술 결과이며 권유가 아닙니다.",ct_main:'인사 · 제보',ct_dev:'개발 · 제안',ct_biz:'광고 · 협업',news_eb:'CHANGELOG · 만드는 과정 공개',news_h1:'모든 업데이트를',news_h2:'커밋처럼 기록한다.',news_new:'NEW',news_dev:'개발자라면: <b>Esc</b> 누르고 <b>Ctrl+P</b>. 오픈 데이터: <b>/data/index.json</b>',news_src:'각 줄은 github.com/stayhungryasi/stayhungry-terminal 의 실제 커밋입니다.',nav10:['오늘','3줄','실적','SPACEX','매출','스코어','위기','시총','우주지배자','실험실','허브','새 소식'],brief_eb:'BRIEF · 오늘을 3줄로',brief_h1:'딱 3줄.',brief_h2:'오늘은 이게 전부다.',mix_eb:'RESEARCH · SPACEX 3Q26 · 매출 구조',mix_h1:'1년 만에',mix_h2:'주인이 바뀐 매출 구조',score_eb:'RESEARCH · SPACEX 3Q26 · 스코어카드',score_h1:'전부 이겼다.',score_h2:'단 하나만 빼고.',next:'다음 ↓',
  dv_back:'읽기 화면',dv_hint:'esc → 읽기 화면 · / → 입력창',dv_session:'리서치 세션',dv_tip:'읽기 화면과 같은 데이터입니다. help를 입력하거나 esc를 누르세요.',
  dv_p:['다음 발표 뭐야?','오늘 3줄 요약해줘','빅테크 실적 일정 전부 보여줘','위기 체크 돌려줘','SpaceX 3Q26 해부해줘','시총 순위 정리해줘','지금 뭐 만들고 있어?'],
  dv_next:'{t} 실적 발표까지',dv_found:'{n}건 · 확정 {c} · 추정 {e}',dv_done:'완료. 전체 10장은 텔레그램에:',dv_exit:'exit            읽기 화면으로',vc_refs:'참조 {n}개 사용',vc_ph:'asi pair에게 묻거나 help 입력',vc_cur:'현재 파일',vc_run:'테스트 실행',vc_view:'읽기 화면에서 보기'},
-es:{ct_main:'HOLA',ct_dev:'DESARROLLO E IDEAS',ct_biz:'PUBLICIDAD Y ALIANZAS',news_eb:'CHANGELOG · CONSTRUIDO EN PÚBLICO',news_h1:'Cada actualización,',news_h2:'registrada como un commit.',news_new:'NUEVO',news_dev:'Desarrolladores: pulsa <b>Esc</b> y luego <b>Ctrl+P</b>. Datos abiertos: <b>/data/index.json</b>',news_src:'Cada línea es un commit real en github.com/stayhungryasi/stayhungry-terminal.',nav10:['HOY','RESUMEN','RESULTADOS','SPACEX','MEZCLA','MARCADOR','RADAR','RANKING','LAB','HUB','NOVEDADES'],brief_eb:'RESUMEN · HOY EN 3 LÍNEAS',brief_h1:'Tres líneas.',brief_h2:'Es todo el día.',mix_eb:'INVESTIGACIÓN · SPACEX 3T26 · MEZCLA',mix_h1:'En un año,',mix_h2:'los ingresos cambiaron de dueño.',score_eb:'INVESTIGACIÓN · SPACEX 3T26 · MARCADOR',score_h1:'Ganó en todo.',score_h2:'Menos en una.',next:'SIGUIENTE ↓',
+es:{uv_eb:"PROYECTO · UNIVERTRIX · CONSTRUIDO EN PÚBLICO",uv_h1:"Cada mañana,",uv_h2:"el universo se redibuja.",uv_side:"<b>commits en cinco meses<\/b> {b} de trabajo · {p} actualizaciones automáticas",uv_cards:[["EJECUCIONES", "3 al día", "08:17 · 12:17 · 18:17 KST. Recoge, compila y publica solo."], ["BENCHMARK LEGENDARIO", "34", "La vara de Buffett, a diario. Pasa 2 · crecer 5 · bajo bonos 3 · en blanco 24."], ["AUTOPRUEBAS", "494", "Todo en verde. Cada barrera se rompe a propósito para probar que puede fallar."]],uv_tl_lbl:"CINCO MESES",uv_tl:[["JUN", "El esqueleto", "Rankings, líderes en ascenso, megatendencias"], ["JUL", "El observatorio", "Feed de investigación y observatorio de datos"], ["AGO", "170 commits", "Radar de señales, columnas automáticas, benchmark legendario"], ["SEP", "Varas honestas", "Agente nocturno, builds atómicos, auditorías"], ["OCT", "Sin manos", "Tres corridas al día, nadie al volante"]],uv_note:"Un rastreador diario de capitalización global donde las empresas son planetas y el n.º 1 es el sol. Cada incidente se volvió regla: <b>14 minas<\/b> mapeadas.",uv_cta:"Abrir univertrix.com →",uv_src:"Fuente: historial de commits de github.com/stayhungryasi/universe-dominator y datos de univertrix.com, al 2026-10-22. Las zonas Buffett son aritmética sobre reportes públicos, no una recomendación.",ct_main:'HOLA',ct_dev:'DESARROLLO E IDEAS',ct_biz:'PUBLICIDAD Y ALIANZAS',news_eb:'CHANGELOG · CONSTRUIDO EN PÚBLICO',news_h1:'Cada actualización,',news_h2:'registrada como un commit.',news_new:'NUEVO',news_dev:'Desarrolladores: pulsa <b>Esc</b> y luego <b>Ctrl+P</b>. Datos abiertos: <b>/data/index.json</b>',news_src:'Cada línea es un commit real en github.com/stayhungryasi/stayhungry-terminal.',nav10:['HOY','RESUMEN','RESULT.','SPACEX','MEZCLA','MARCADOR','RADAR','TOP','UNIVERTRIX','LAB','HUB','NUEVO'],brief_eb:'RESUMEN · HOY EN 3 LÍNEAS',brief_h1:'Tres líneas.',brief_h2:'Es todo el día.',mix_eb:'INVESTIGACIÓN · SPACEX 3T26 · MEZCLA',mix_h1:'En un año,',mix_h2:'los ingresos cambiaron de dueño.',score_eb:'INVESTIGACIÓN · SPACEX 3T26 · MARCADOR',score_h1:'Ganó en todo.',score_h2:'Menos en una.',next:'SIGUIENTE ↓',
  dv_back:'Vista de lectura',dv_hint:'esc → vista de lectura · / → escribir',dv_session:'sesión de investigación',dv_tip:'Son los mismos datos de la vista de lectura. Escribe help o pulsa esc.',
  dv_p:['¿qué sigue?','resume hoy en 3 líneas','muestra todas las fechas de resultados','corre los controles de crisis','decodifica SpaceX 3T26','ordena las megacaps por capitalización','¿qué estás construyendo?'],
  dv_next:'{t} publica en',dv_found:'{n} registros · {c} confirmados · {e} estimados',dv_done:'Listo. Las 10 tarjetas en Telegram:',dv_exit:'exit            volver a la vista de lectura',vc_refs:'Usó {n} referencias',vc_ph:'Pregunta a asi pair o escribe help',vc_cur:'Archivo actual',vc_run:'Ejecutar prueba',vc_view:'Ver en vista de lectura'},
-ja:{ct_main:'ごあいさつ',ct_dev:'開発 · 提案',ct_biz:'広告 · 提携',news_eb:'CHANGELOG · 公開で開発',news_h1:'すべての更新を',news_h2:'コミットのように記録。',news_new:'NEW',news_dev:'開発者の方へ: <b>Esc</b> を押して <b>Ctrl+P</b>。オープンデータ: <b>/data/index.json</b>',news_src:'各行は github.com/stayhungryasi/stayhungry-terminal の実際のコミットです。',nav10:['今日','3行','決算','SPACEX','売上構成','スコア','レーダー','ランキング','ラボ','ハブ','新着'],brief_eb:'BRIEF · 今日を3行で',brief_h1:'3行だけ。',brief_h2:'今日はこれで全部。',mix_eb:'RESEARCH · SPACEX 3Q26 · 売上構成',mix_h1:'1年で',mix_h2:'売上の主役が交代。',score_eb:'RESEARCH · SPACEX 3Q26 · スコアカード',score_h1:'すべて上回った。',score_h2:'ひとつを除いて。',next:'次へ ↓',
+ja:{uv_eb:"PROJECT · UNIVERTRIX · 開発日誌",uv_h1:"毎朝、",uv_h2:"宇宙を描き直す。",uv_side:"<b>5か月のコミット<\/b> 作業 {b} · 自動更新 {p}",uv_cards:[["自動実行", "1日3回", "08:17 · 12:17 · 18:17 KST。収集・ビルド・コミットまで人の手なし。"], ["レジェンドベンチマーク", "34銘柄", "バフェットの物差しを毎日当てる。合格2・成長の証明が必要5・国債以下3・未検定24。"], ["セルフテスト", "494", "すべて合格。安全装置はすべて一度わざと壊し、失敗できることを確かめる。"]],uv_tl_lbl:"5か月",uv_tl:[["6月", "骨格", "時価総額ランキング・次世代候補・メガトレンド"], ["7月", "観測所", "リサーチ収集・データ天文台"], ["8月", "170コミット", "シグナル観測所・自動コラム・レジェンドベンチマーク"], ["9月", "物差しを正直に", "無人探査機・アトミックビルド・監査"], ["10月", "無人運転", "人の手なしで1日3回"]],uv_note:"企業は惑星、時価総額1位は太陽。毎日更新される世界の時価総額観測所。事故はすべてルールになった: これまでに<b>地雷14個<\/b>を地図に。",uv_cta:"univertrix.com を開く →",uv_src:"出典: github.com/stayhungryasi/universe-dominator のコミット履歴と univertrix.com のデータ、2026-10-22 時点。バフェットゾーンは公開開示への算術であり、推奨ではありません。",ct_main:'ごあいさつ',ct_dev:'開発 · 提案',ct_biz:'広告 · 提携',news_eb:'CHANGELOG · 公開で開発',news_h1:'すべての更新を',news_h2:'コミットのように記録。',news_new:'NEW',news_dev:'開発者の方へ: <b>Esc</b> を押して <b>Ctrl+P</b>。オープンデータ: <b>/data/index.json</b>',news_src:'各行は github.com/stayhungryasi/stayhungry-terminal の実際のコミットです。',nav10:['今日','3行','決算','SPACEX','売上構成','スコア','レーダー','ランキング','UNIVERTRIX','ラボ','ハブ','新着'],brief_eb:'BRIEF · 今日を3行で',brief_h1:'3行だけ。',brief_h2:'今日はこれで全部。',mix_eb:'RESEARCH · SPACEX 3Q26 · 売上構成',mix_h1:'1年で',mix_h2:'売上の主役が交代。',score_eb:'RESEARCH · SPACEX 3Q26 · スコアカード',score_h1:'すべて上回った。',score_h2:'ひとつを除いて。',next:'次へ ↓',
  dv_back:'閲覧ビュー',dv_hint:'esc → 閲覧ビュー · / → 入力',dv_session:'リサーチセッション',dv_tip:'閲覧ビューと同じデータです。help と入力するか esc を押してください。',
  dv_p:['次の発表は?','今日を3行で要約して','大型テックの決算日程を全部見せて','危機チェックを実行して','SpaceX 3Q26を解剖して','時価総額順に並べて','今何を作ってる?'],
  dv_next:'{t} の決算まで',dv_found:'{n}件 · 確定 {c} · 推定 {e}',dv_done:'完了。10枚すべてはTelegramで:',dv_exit:'exit            閲覧ビューに戻る',vc_refs:'{n} 件の参照を使用',vc_ph:'asi pair に質問、または help',vc_cur:'現在のファイル',vc_run:'テストを実行',vc_view:'閲覧ビューで開く'}
@@ -900,7 +920,15 @@ function rLab(){
   $('bUpL').textContent=t.gm_up;$('bDownL').textContent=t.gm_down;$('gKl').textContent=t.streak;$('hofH').textContent=t.hof_h;$('hofName').placeholder=t.hof_name;$('hofSave').textContent=t.hof_save;$('share').textContent=t.copy;$('again').textContent=t.again;$('gDisc').textContent=t.gm_disc;
   hud();hofRender();if(!$('res').hidden)endText();if(lastV)showV();
 }
-const CH_LINKS=['https://t.me/stayhungryasi','https://x.com/shaferwineX','','https://blog.naver.com/shaferwine'];
+function rUniv(){
+  const t=T(),U=UNIV,n=x=>x.toLocaleString(t.loc);
+  $('univertrix').innerHTML=head('univertrix',t.uv_eb)+hd(esc(t.uv_h1),esc(t.uv_h2))
+   +`<div class="giant"><span class="num">${n(U.commits.total)}</span><span class="side">${fmt(t.uv_side,{b:n(U.commits.build),p:n(U.commits.pipeline)})}</span><a class="cta uvcta" href="${U.site}" target="_blank" rel="noopener">${esc(t.uv_cta)}</a></div>
+   <div class="cards3">${t.uv_cards.map((c,i)=>`<div class="card ${i===1?'hot':''}"><div class="k"><span>${esc(c[0])}</span></div><div class="v tab">${esc(c[1])}</div><div class="m">${esc(c[2])}</div></div>`).join('')}</div>
+   <p class="lbl" style="margin-top:22px">${esc(t.uv_tl_lbl)}</p><div class="utl">${t.uv_tl.map((s,i)=>`<div class="${i===2?'on':''}"><div class="d">${esc(s[0])}</div><div class="x">${esc(s[1])}</div><div class="y">${esc(s[2])}</div></div>`).join('')}</div>
+   `+src(t.uv_src,'univertrix');
+}
+const CH_LINKS=['https://t.me/stayhungryasi','https://x.com/shaferwineX','','https://blog.naver.com/shaferwine','https://univertrix.com'];
 function rHub(){
   const t=T();
   $('hub').innerHTML=head('hub',t.hub_eb)+hd(esc(t.hub_h1),esc(t.hub_h2))
@@ -932,7 +960,7 @@ function wrapPins(){PAGES.forEach(id=>{const s=$(id);if(s.firstElementChild&&s.f
 function fit(){const desk=innerWidth>=981&&innerHeight>=620;PAGES.forEach(id=>{const p=$(id).firstElementChild;if(!p)return;p.style.zoom='';if(!desk)return;
   const sec=$(id),cs=getComputedStyle(sec),avail=innerHeight-sec.getBoundingClientRect().top*0-parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--top'))-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom);
   p.style.flex='none';const nat=p.offsetHeight;p.style.flex='';if(nat>avail)p.style.zoom=String(Math.max(.72,avail/nat));});}
-function renderAll(){rChrome();rToday();rBrief();rEarn();rResearch();rMix();rScore();rRadar();rRank();rLab();rHub();rNews();render(curShown);rDev();tick();wrapPins();fit();spy();}
+function renderAll(){rChrome();rToday();rBrief();rEarn();rResearch();rMix();rScore();rRadar();rRank();rUniv();rLab();rHub();rNews();render(curShown);rDev();tick();wrapPins();fit();spy();}
 let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(fit,150);});
 function setLang(c){if(!LANGS.includes(c))return;if(window.SHA_PATHS&&c!==lang){store.set('sha-lang',c);location.href='../'+c+'/'+(devOn()?'#dev':location.hash);return;}lang=c;store.set('sha-lang',c);renderAll();boot();}
 
@@ -952,6 +980,7 @@ const VF=[
  {id:'score',n:'consensus.diff',d:'research',lg:'Diff',sym:'@@ 3Q26'},
  {id:'radar',n:'crisis-radar.test.ts',d:'src',lg:'TypeScript',sym:"describe('crisis radar')"},
  {id:'rank',n:'rank.py',d:'src',lg:'Python',sym:'TOP8'},
+ {id:'univertrix',n:'univertrix.md',d:'research',lg:'Markdown',sym:'# UNIVERTRIX'},
  {id:'lab',n:'chart.test.ts',d:'lab',lg:'TypeScript',sym:"test('beat a coin flip')"},
  {id:'hub',n:'README.md',d:'',lg:'Markdown',sym:'# Stay hungry.ASI'},
  {id:'news',n:'CHANGELOG.md',d:'',lg:'Markdown',sym:'# Changelog'}];
@@ -1004,6 +1033,11 @@ const VFILES={
  rank(t){const col=COL(),max=MK[0].cap,r=[xm('# '+t.rank_eb+' · '+t.sample),`${xp('TOP8')} = [`];
   MK.forEach((m,i)=>r.push({h:`    (${xs(m.t)},${' '.repeat(Math.max(0,6-m.t.length))}${xn(m.cap.toFixed(2))}, <span style="color:${m.c>=0?col.up:col.down}">${m.c>=0?'+':'-'}${Math.abs(m.c).toFixed(2)}</span>),${ih(`<span style="color:${i?'#C7CCD8':'#F26522'}">${'█'.repeat(Math.max(1,Math.round(m.cap/max*16)))}</span>`,'bar')}`,cls:i===0?'cur':''}));
   r.push(']','',`${xk('def')} ${xf('leader')}(${xp('rows')}):`,`    ${xc('return')} ${xf('max')}(${xp('rows')}, ${xp('key')}=${xk('lambda')} ${xp('r')}: ${xp('r')}[${xn('1')}])[${xn('0')}]${ih('→ "'+MK[0].t+'"')}`);return r;},
+ univertrix(t){const U=UNIV,r=[`<span class="xh"># UNIVERTRIX — ${esc(t.uv_h1)} ${esc(t.uv_h2)}</span>`,'',`<span class="xq">&gt;</span> <b class="xb">**${U.commits.total}**</b> ${esc(plain(fmt(t.uv_side,{b:U.commits.build,p:U.commits.pipeline})))}`,'','| metric | value | note |','|---|---|---|'];
+  t.uv_cards.forEach((c,i)=>r.push({h:`| ${esc(c[0])} | <b class="xb">**${esc(c[1])}**</b> | ${esc(c[2])} |`,cls:i===1?'cur':''}));
+  r.push('',`<span class="xh">## ${esc(t.uv_tl_lbl)}</span>`,'');
+  t.uv_tl.forEach((s,i)=>r.push(`<span class="xl">-</span> <b class="xb">**${esc(s[0])}**</b> ${esc(s[1])} — ${esc(s[2])}${ih(`<span style="color:${i===2?'#F26522':'#C7CCD8'}">${U.by_month[i][1]?'█'.repeat(Math.max(1,Math.round(U.by_month[i][1]/12))):'·'}</span> ${U.by_month[i][1]}`,'bar')}`));
+  r.push('',esc(plain(t.uv_note)),'',xm(`<!-- ${U.repo.replace('https://','')} · ${U.site.replace('https://','')} · ${U.asof} -->`),`${esc(t.dv_done)} <span class="xu">${TG}</span>`);return r;},
  lab(t){return [xm('// '+t.lab_eb),xm('// '+plain(t.lab_sub)),'',`${xc('import')} { ${xp('play')} } ${xc('from')} ${xs('./candles')};`,'',
   {h:`${xf('test')}(${xs('beat a coin flip')}, ${xk('async')} () =&gt; {`,lens:`<button data-act="play">▷ ${esc(t.vc_run)}</button> | <button data-act="play">${esc(t.vc_view)}</button>`,g:'run'},
   `  ${xk('const')} ${xp('score')} = ${xc('await')} ${xf('play')}(${xn('10')});`,
@@ -1022,11 +1056,11 @@ function rCode(){const t=T(),now=Date.now(),f=VFI(devFile),ls=(VFILES[f.id]||VFI
   const col={xm:'#6A995599',xh:'#569CD6aa',xs:'#CE917899',xk:'#569CD699',xc:'#C586C099'};
   $('vmini').innerHTML=ls.map(l=>{const o=typeof l==='string'?{h:l}:l,tx=(o.h||'').replace(/<[^>]+>/g,'').replace(/&[a-z]+;/g,'x'),ind=tx.length-tx.trimStart().length,m=(o.h||'').match(/class="(x[a-z])"/),c=o.cls==='da'?'#2EA043aa':o.cls==='dd'?'#F85149aa':m&&col[m[1]]||'#ffffff38';return tx.trim()?`<i style="margin-left:${Math.min(ind,20)}px;width:${Math.max(4,Math.min(54-Math.min(ind,20),tx.trim().length*.8))}px;background:${c}"></i>`:'<i></i>';}).join('')+`<b style="height:${ls.length*4+8}px"></b>`;
   vtyLn=ln;return ln;}
-function rSide(){const deco={earnings:['M','#E2C08D'],research:['M','#E2C08D'],score:['U','#73C991'],mix:['U','#73C991'],radar:['1','#F88070'],d_index:['A','#81B88B'],news:['M','#E2C08D']};
+function rSide(){const deco={earnings:['M','#E2C08D'],research:['M','#E2C08D'],score:['U','#73C991'],mix:['U','#73C991'],univertrix:['U','#73C991'],d_univ:['U','#73C991'],radar:['1','#F88070'],d_index:['M','#E2C08D'],news:['M','#E2C08D']};
   const item=(id,pad)=>{const f=VFI(id),d=deco[id];return `<button class="vfx${id===devFile?' sel':''}" data-vf="${id}" style="padding-left:${pad}px">${fi(f.n)}<span${d?` style="color:${d[1]}"`:''}>${f.n}</span>${d?`<em style="color:${d[1]}">${d[0]}</em>`:''}</button>`;};
   const st=(n,c)=>`<span class="vfx vstatic" style="padding-left:20px">${fi(n)}<span${c?` style="color:${c}"`:''}>${n}</span></span>`,cf=(n,c)=>`<div class="vfd" style="padding-left:12px${c?`;color:${c}`:''}">${chev(0)}${n}</div>`,of=n=>`<div class="vfd" style="padding-left:12px">${chev(1)}${n}</div>`;
   $('vside').innerHTML=`<div class="vsh"><span>EXPLORER</span><span>···</span></div><div class="vsec">${chev(1)}STAYHUNGRY.ASI</div>`
-    +cf('.github')+of('data')+['d_log','d_crisis','d_earn','d_index','d_mk','d_spx'].map(id=>item(id,34)).join('')+of('lab')+item('lab',34)+cf('node_modules','#8C8C8C')+of('research')+['score','mix','research'].map(id=>item(id,34)).join('')+of('src')+['radar','earnings','rank','today'].map(id=>item(id,34)).join('')
+    +cf('.github')+of('data')+['d_log','d_crisis','d_earn','d_index','d_mk','d_spx','d_univ'].map(id=>item(id,34)).join('')+of('lab')+item('lab',34)+cf('node_modules','#8C8C8C')+of('research')+['score','mix','research','univertrix'].map(id=>item(id,34)).join('')+of('src')+['radar','earnings','rank','today'].map(id=>item(id,34)).join('')
     +st('.gitignore','#8C8C8C')+item('brief',20)+item('news',20)+st('package.json')+item('hub',20)+st('tsconfig.json')
     +`<div class="vsbot"><div class="vsec">${chev(0)}OUTLINE</div><div class="vsec">${chev(0)}TIMELINE</div></div>`;}
 function vCounts(){const chk=T().chk||[];return {chk,fails:cheat?[]:chk.filter(c=>c[3]!=='ok'),warns:ER.filter(e=>e.st==='e')};}
@@ -1084,7 +1118,7 @@ function vtyStep(){clearTimeout(vtyT);if(!devOn()||document.hidden){vtyT=setTime
   else if(vty.ph==='hold'){vty.ph='del';d=40;}
   else{vty.n=Math.max(0,vty.n-3);d=26;if(!vty.n){vty.ph='type';vty.i++;d=900+Math.random()*1200;}}
   vtyPaint();vtyT=setTimeout(vtyStep,d);}
-function vWatch(){if(devOn()&&!document.hidden){const ts=new Date().toTimeString().slice(0,8),fl=['data/earnings.json','data/crisis.json','src/earnings.ts','research/spacex-3q26.md'],{chk,fails}=vCounts();
+function vWatch(){if(devOn()&&!document.hidden){const ts=new Date().toTimeString().slice(0,8),fl=['data/earnings.json','data/crisis.json','src/earnings.ts','research/spacex-3q26.md','research/univertrix.md'],{chk,fails}=vCounts();
     vwatch.push(`<div class="vdim">[${ts}] change detected: ${fl[Math.floor(Math.random()*fl.length)]}</div><div> <b class="vok">✓ ${chk.length-fails.length} passed</b>  <b class="vno">✕ ${fails.length} failed</b>  <span class="vdim">${160+Math.floor(Math.random()*260)}ms</span></div>`);
     if(vwatch.length>3)vwatch.shift();if(vpTab==='term')rPanel();}
   setTimeout(vWatch,12000+Math.random()*12000);}
@@ -1111,9 +1145,9 @@ function setDev(on,restore){
 $('devBtn').addEventListener('click',()=>setDev(true));
 /* ===== dev extras: data files, quick open, vim, toasts, easter eggs ===== */
 const BUILD=window.SHA_BUILD||new Date().toISOString().slice(0,10);
-const DFILES=[['d_log','changelog.json','news'],['d_crisis','crisis.json','radar'],['d_earn','earnings.json','earnings'],['d_index','index.json','hub'],['d_mk','megacaps.json','rank'],['d_spx','spacex-3q26.json','research']];
+const DFILES=[['d_log','changelog.json','news'],['d_crisis','crisis.json','radar'],['d_earn','earnings.json','earnings'],['d_index','index.json','hub'],['d_mk','megacaps.json','rank'],['d_spx','spacex-3q26.json','research'],['d_univ','univertrix.json','univertrix']];
 DFILES.forEach(([id,n,pg])=>VF.push({id,n,d:'data',lg:'JSON',sym:n,pg}));
-const EXPL=['d_log','d_crisis','d_earn','d_index','d_mk','d_spx','lab','score','mix','research','radar','earnings','rank','today','brief','news','hub'];
+const EXPL=['d_log','d_crisis','d_earn','d_index','d_mk','d_spx','d_univ','lab','score','mix','research','univertrix','radar','earnings','rank','today','brief','news','hub'];
 function jsonLines(o){return JSON.stringify(o,null,2).split('\n').map(l=>esc(l)
   .replace(/^(\s*)(&quot;[^&]*?&quot;)(:)/,'$1<span class="xp">$2</span>$3')
   .replace(/(: |^\s*)(&quot;.*?&quot;)(,?)$/,'$1<span class="xs">$2</span>$3')
@@ -1227,7 +1261,7 @@ document.addEventListener('keydown',e=>{
 /* dev prompt · chat */
 function tprint(h){const d=document.createElement('div');d.innerHTML=h;$('tlog').appendChild(d);const o=$('tout');if(innerWidth>980)o.scrollTop=o.scrollHeight;else d.scrollIntoView({block:'nearest'});}
 function boot(){$('tlog').innerHTML='';}
-const alias={news:'news',changelog:'news',log:'news',api:'d_index',data:'d_index',today:'today',home:'today',brief:'brief',summary:'brief',earnings:'earnings',earn:'earnings',research:'research',spacex:'research',mix:'mix',score:'score',radar:'radar',crisis:'radar',rank:'rank',market:'rank',lab:'lab',game:'lab',hub:'hub',projects:'hub',readme:'hub'};
+const alias={univertrix:'univertrix',univ:'univertrix',universe:'univertrix',legend:'univertrix',devlog:'univertrix',news:'news',changelog:'news',log:'news',api:'d_index',data:'d_index',today:'today',home:'today',brief:'brief',summary:'brief',earnings:'earnings',earn:'earnings',research:'research',spacex:'research',mix:'mix',score:'score',radar:'radar',crisis:'radar',rank:'rank',market:'rank',lab:'lab',game:'lab',hub:'hub',projects:'hub',readme:'hub'};
 $('tform').addEventListener('submit',e=>{e.preventDefault();const raw=$('tin').value.trim();$('tin').value='';if(!raw)return;
   tprint(msgU(raw));const A=h=>tprint(msgA(h)),[cmd,...a]=raw.split(/\s+/),arg=(a[0]||'').toLowerCase(),t=T();
   switch(cmd.toLowerCase()){
