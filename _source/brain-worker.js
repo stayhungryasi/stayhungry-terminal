@@ -58,14 +58,14 @@ async function gemini(env, sys, q) {
   return t;
 }
 
-async function workersAI(env, sys, q) {
+async function workersAI(env, sys, q, errs) {
   const models = [env.WAI_MODEL || '@cf/google/gemma-3-12b-it', '@cf/meta/llama-3.1-8b-instruct'];
   for (const m of models) {
     try {
       const r = await env.AI.run(m, { messages: [{ role: 'system', content: sys }, { role: 'user', content: q }], max_tokens: 700 });
       const t = (r && (r.response || r.result?.response) || '').trim();
       if (t) return t;
-    } catch (e) { /* try next */ }
+    } catch (e) { errs.push(m + ': ' + String(e && e.message || e)); console.log('workers-ai', m, String(e && e.message || e)); }
   }
   throw new Error('workers-ai failed');
 }
@@ -98,10 +98,10 @@ export default {
     ctx.waitUntil(cache.put(key, new Response(String(used + 1), { headers: { 'Cache-Control': 'max-age=90000' } })));
 
     const sys = SYSTEM[engine] + COMMON + `\nReply in ${LANGS[lang]}.`;
-    let answer = null, source = null;
-    if (env.GEMINI_API_KEY) { try { answer = await gemini(env, sys, q); source = 'gemini'; } catch (e) { } }
-    if (!answer && env.AI) { try { answer = await workersAI(env, sys, q); source = 'workers-ai'; } catch (e) { } }
-    if (!answer) return json({ fallback: true, reason: 'quota' }, 200, cors);
+    let answer = null, source = null; const errs = [];
+    if (env.GEMINI_API_KEY) { try { answer = await gemini(env, sys, q); source = 'gemini'; } catch (e) { errs.push('gemini: ' + String(e && e.message || e)); console.log('gemini', String(e && e.message || e)); } }
+    if (!answer && env.AI) { try { answer = await workersAI(env, sys, q, errs); source = 'workers-ai'; } catch (e) { } }
+    if (!answer) return json({ fallback: true, reason: 'quota', ...(body.debug === true ? { errs } : {}) }, 200, cors);
     return json({ answer, source, left: Math.max(0, LIMIT - used - 1) }, 200, cors);
   }
 };
