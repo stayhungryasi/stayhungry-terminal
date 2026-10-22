@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-10-22",
-      "commit": "HEAD",
+      "commit": "f9e05b4",
       "message": "Cleaner footers: the email address now appears only on the News page, next to the contact cards"
     },
     {
