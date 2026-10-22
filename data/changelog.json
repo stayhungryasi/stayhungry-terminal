@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-22",
+      "commit": "HEAD",
+      "message": "News page: a Show all button opens every update in place, plus a link to all commits on GitHub"
+    },
+    {
+      "date": "2026-10-22",
       "commit": "a9189fb",
       "message": "BRAINS: ask the Buffett·Munger and Jensen thinking engines, or make them duel (live AI with prepared answers as backup)"
     },
