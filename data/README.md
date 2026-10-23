@@ -8,7 +8,8 @@ Base URL: https://stayhungryasi.com/data/
 |---|---|
 | index.json | list of endpoints |
 | earnings.json | megacap earnings dates (UTC), confirmed or estimated |
-| crisis.json | crisis radar checks (SAMPLE until breaking_bot writes it) |
+| crisis.json | crisis early-warning report: score, 5 layers, 21 indicators, charts (written by the bot after each Mon/Fri Telegram report) |
+| fear.json | Buffett Index x VIX: values, percentiles, full time series, valuation x fear quadrant (written by the bot after each Tue/Thu report) |
 | megacaps.json | top 8 by market cap (SAMPLE) |
 | spacex-3q26.json | SpaceX 3Q26 revenue mix and results vs consensus |
 | univertrix.json | UNIVERTRIX build log: commits, pipeline runs, self-tests, legend benchmark zones |

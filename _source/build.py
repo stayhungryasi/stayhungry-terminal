@@ -73,7 +73,7 @@ api = json.loads(subprocess.check_output(['node', tf.name, today]).decode('utf-8
 os.unlink(tf.name)
 for name, obj in api.items():
     if isinstance(obj, dict) and obj.get('bot_owned'):
-        continue  # written by the bot (breaking_bot → data/crisis.json); never overwrite it from the site build
+        continue  # written by the bot (breaking_bot → data/crisis.json, data/fear.json); never overwrite it from the site build
     open(f'{out}/data/{name}', 'w', encoding='utf-8').write(json.dumps(obj, ensure_ascii=False, indent=2) + '\n')
 open(f'{out}/data/README.md','w',encoding='utf-8').write(
 """# Stayhungry.ASI open data
@@ -86,7 +86,8 @@ Base URL: https://stayhungryasi.com/data/
 |---|---|
 | index.json | list of endpoints |
 | earnings.json | megacap earnings dates (UTC), confirmed or estimated |
-| crisis.json | crisis radar checks (SAMPLE until breaking_bot writes it) |
+| crisis.json | crisis early-warning report: score, 5 layers, 21 indicators, charts (written by the bot after each Mon/Fri Telegram report) |
+| fear.json | Buffett Index x VIX: values, percentiles, full time series, valuation x fear quadrant (written by the bot after each Tue/Thu report) |
 | megacaps.json | top 8 by market cap (SAMPLE) |
 | spacex-3q26.json | SpaceX 3Q26 revenue mix and results vs consensus |
 | univertrix.json | UNIVERTRIX build log: commits, pipeline runs, self-tests, legend benchmark zones |

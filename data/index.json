@@ -15,6 +15,7 @@
   "endpoints": [
     "earnings.json",
     "crisis.json",
+    "fear.json",
     "megacaps.json",
     "spacex-3q26.json",
     "univertrix.json",

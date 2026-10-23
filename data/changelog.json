@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-23",
+      "commit": "HEAD",
+      "message": "Buffett Index × VIX goes live: a second radar tab with the bot’s numbers, history charts since 1947, the valuation × fear matrix and the Telegram cards"
+    },
+    {
+      "date": "2026-10-23",
       "commit": "c7ac44e",
       "message": "Crisis radar goes live: the early-warning bot now publishes every Telegram report here (score, 5 layers, 21 indicators, charts)"
     },
