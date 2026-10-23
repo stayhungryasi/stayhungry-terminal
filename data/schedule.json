@@ -10,7 +10,7 @@
   "past_days": 14,
   "ahead_days": 180
  },
- "rules": "Public items only (private review dates removed). Korean companies: KRX top 20 by market cap only. All times KST; status confirmed = official, estimated = custom or third party, report = press report.",
+ "rules": "Same public list as the Telegram briefing. Korean companies: KRX top 20 by market cap only. All times KST; status confirmed = official, estimated = custom or third party, report = press report.",
  "kr_top": {
   "as_of": "2026-10-08",
   "basis": "KRX 보통주 시가총액(우선주 제외), 전 영업일 종가. 매월 첫 화·금 갱신",
