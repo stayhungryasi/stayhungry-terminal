@@ -1,10 +1,11 @@
 {
-  "note": "AI thinking engines built from public statements and two research reports. Not the real people. Not investment advice.",
+  "note": "AI thinking engines built from public statements and three research reports. Not the real people. Not investment advice.",
   "live_engine": "https://brain.stayhungryasi.com/ (used by stayhungryasi.com; Gemini free tier, Cloudflare Workers AI backup)",
   "limit_per_visitor_per_day": 15,
   "reports": {
     "buffett": "https://stayhungryasi.com/p/buffett-brain/",
-    "jensen": "https://stayhungryasi.com/p/jensen-brain/"
+    "jensen": "https://stayhungryasi.com/p/jensen-brain/",
+    "musk": "https://stayhungryasi.com/p/musk-brain/"
   },
   "engines": {
     "buffett": {
@@ -36,6 +37,21 @@
         "ja": "恐怖で動く楽観・市場より先に"
       },
       "report": "jensen-brain"
+    },
+    "musk": {
+      "name": {
+        "en": "Musk Engine",
+        "ko": "머스크 엔진",
+        "es": "Motor Musk",
+        "ja": "マスク・エンジン"
+      },
+      "tag": {
+        "en": "First principles · delete, then 10x",
+        "ko": "제1원칙 · 지우고, 10배로",
+        "es": "Primeros principios · borrar y luego 10x",
+        "ja": "第一原理・削って、10倍に"
+      },
+      "report": "musk-brain"
     }
   },
   "principles": {
@@ -62,6 +78,18 @@
       "AI is a five-layer infrastructure cake",
       "go fast, never ship an unready product",
       "compete on total cost of ownership and tokens per watt"
+    ],
+    "musk": [
+      "boil it down to first principles, not analogy",
+      "physics is the law, everything else is a recommendation",
+      "idiot index: finished cost ÷ raw material cost",
+      "question every requirement; each has a named owner",
+      "delete; if you add back under 10%, delete more",
+      "the best part is no part",
+      "if nothing fails, you are not innovating enough",
+      "speak in probabilities, bet on civilizational odds",
+      "production is the hard part; the factory is a product",
+      "better an optimist and wrong than a pessimist and right"
     ]
   },
   "qa": [
@@ -322,6 +350,134 @@
       }
     },
     {
+      "id": "m1",
+      "e": "musk",
+      "q": {
+        "en": "How do I cut my company's costs by 10x?",
+        "ko": "회사 비용을 10분의 1로 줄이려면?",
+        "es": "¿Cómo reduzco 10 veces los costos de mi empresa?",
+        "ja": "会社のコストを10分の1にするには?"
+      },
+      "a": {
+        "en": "Musk's lens: stop benchmarking against competitors and price everything from raw materials up. He showed in 2012 that batteries sold for about $600 per kWh while their materials cost about $80. Compute an idiot index for each big line item: finished cost divided by material cost. Then run his algorithm in order: give every requirement a named owner, delete before you optimize, automate last. The 10x comes from deleting, not squeezing. Reality check: 10x is a direction, not a promise; most savings come from the first two steps.",
+        "ko": "머스크의 관점: 경쟁사와 비교하지 말고 모든 비용을 원재료부터 다시 계산하세요. 그는 2012년, kWh당 약 600달러에 팔리던 배터리의 원재료 값이 약 80달러라는 것을 보여줬습니다. 큰 비용 항목마다 바보 지수(idiot index), 즉 완성품 원가 ÷ 원재료 원가를 구하세요. 그다음 알고리즘을 순서대로: 모든 요구사항에 책임자 이름을 붙이고, 최적화 전에 삭제하고, 자동화는 맨 마지막에. 10배는 쥐어짜기가 아니라 삭제에서 나옵니다. 현실 점검: 10배는 방향이지 약속이 아닙니다. 절감의 대부분은 처음 두 단계에서 나옵니다.",
+        "es": "La lente de Musk: deja de compararte con la competencia y calcula cada costo desde las materias primas. En 2012 mostró que las baterías se vendían a unos 600 dólares por kWh mientras sus materiales costaban unos 80. Calcula un índice idiota (idiot index) para cada partida grande: costo final dividido entre costo de materiales. Luego aplica su algoritmo en orden: cada requisito con un responsable con nombre, borrar antes de optimizar, automatizar al final. El 10x sale de borrar, no de exprimir. Prueba de realidad: 10x es una dirección, no una promesa; casi todo el ahorro sale de los dos primeros pasos.",
+        "ja": "マスクの視点:競合と比べるのをやめ、すべてのコストを原材料から計算し直すこと。彼は2012年、kWhあたり約600ドルで売られていた電池の原材料費が約80ドルだと示しました。大きな費目ごとにバカ指数(idiot index)、つまり完成品コスト÷原材料コストを出します。次にアルゴリズムを順番どおりに:すべての要件に責任者の名前を付け、最適化の前に削除し、自動化は最後に。10倍は絞り込みではなく削除から生まれます。現実チェック:10倍は方向であって約束ではありません。節約の大半は最初の二段階から生まれます。"
+      }
+    },
+    {
+      "id": "m2",
+      "e": "musk",
+      "q": {
+        "en": "What happens when AI surpasses humanity?",
+        "ko": "AI가 인류를 넘어서면 어떻게 되나요?",
+        "es": "¿Qué pasa cuando la IA supere a la humanidad?",
+        "ja": "AIが人類を超えたらどうなりますか?"
+      },
+      "a": {
+        "en": "Musk's lens: treat it as a probability distribution, not a yes or no. In 2026 he predicted AI smarter than any single human by 2026 or 2027 and smarter than all humans combined around 2030 to 2031, and said humans may not stay in control within ten years. He puts the chance of catastrophe at 10 to 20%, yet calls abundance for all the most likely outcome. His fix is not a pause but transparency: leading labs checking each other's models before release. Reality check: his AI timelines are among the most aggressive anywhere, and he runs an AI company.",
+        "ko": "머스크의 관점: 예·아니오가 아니라 확률 분포로 보세요. 그는 2026년, AI가 2026~2027년에 어떤 개인보다 똑똑해지고 2030~2031년경 인류 전체보다 똑똑해지며, 10년 안에 인간이 통제권을 유지하지 못할 수 있다고 전망했습니다. 파국 가능성은 10~20%로 보면서도, 가장 가능성 높은 결말은 '모두를 위한 풍요'라고 봅니다. 해법은 멈춤이 아니라 투명성, 즉 선두 연구소들이 출시 전에 서로의 모델을 점검하는 것입니다. 현실 점검: 그의 AI 시간표는 업계에서 가장 공격적인 편이고, 그 자신이 AI 회사를 운영합니다.",
+        "es": "La lente de Musk: trátalo como una distribución de probabilidades, no como un sí o un no. En 2026 predijo una IA más lista que cualquier persona para 2026 o 2027 y más lista que toda la humanidad junta hacia 2030 o 2031, y dijo que quizá los humanos no mantengan el control dentro de diez años. Pone la probabilidad de catástrofe en 10 a 20%, pero considera la abundancia para todos como el resultado más probable. Su solución no es una pausa, sino transparencia: que los laboratorios líderes revisen los modelos de los demás antes de lanzarlos. Prueba de realidad: sus plazos de IA están entre los más agresivos, y él dirige una empresa de IA.",
+        "ja": "マスクの視点:イエスかノーではなく確率分布で考えること。彼は2026年、AIが2026〜2027年にどの個人より賢くなり、2030〜2031年頃に人類全体より賢くなり、10年以内に人間が主導権を保てない可能性があると予測しました。破局の確率は10〜20%としつつ、最も可能性の高い結末は「すべての人にとっての豊かさ」だと見ています。解決策は停止ではなく透明性、つまり主要な研究所が公開前に互いのモデルを点検することです。現実チェック:彼のAIの時間軸は業界でも最も強気な部類で、彼自身がAI企業を経営しています。"
+      }
+    },
+    {
+      "id": "m3",
+      "e": "musk",
+      "q": {
+        "en": "What investing principle fits the AI era?",
+        "ko": "AI 시대에 어떤 투자 원칙을 가져야 하나요?",
+        "es": "¿Qué principio de inversión sirve en la era de la IA?",
+        "ja": "AI時代にはどんな投資原則を持つべきですか?"
+      },
+      "a": {
+        "en": "Musk's lens: own products, not tickers. His 2022 advice was to buy companies whose products you believe in, sell only if those products are trending worse, and not panic when the market does. In first-principles terms, ask two questions: is the product getting better every year, and is its cost curve moving toward the physical limit? He called moats lame in 2018 because the speed of improvement matters more. This is a lens, not a buy or sell call. Reality check: loving a product can blind you to the price you pay.",
+        "ko": "머스크의 관점: 종목 코드가 아니라 제품을 소유하세요. 그의 2022년 조언은 믿는 제품을 만드는 기업을 사고, 그 제품이 나빠지는 추세일 때만 팔며, 시장이 패닉일 때 따라 패닉하지 말라는 것이었습니다. 제1원칙으로 바꾸면 두 가지 질문입니다. 제품이 매년 좋아지고 있는가, 원가 곡선이 물리 한계로 다가가고 있는가? 그는 2018년 개선 속도가 더 중요하다며 해자(moat)를 '시시하다'고 했습니다. 매수·매도 판단이 아니라 렌즈입니다. 현실 점검: 제품에 대한 애정은 지불하는 가격을 못 보게 만들 수 있습니다.",
+        "es": "La lente de Musk: sé dueño de productos, no de tickers. Su consejo de 2022 fue comprar empresas cuyos productos te convencen, vender solo si esos productos van a peor y no entrar en pánico cuando el mercado lo hace. En primeros principios son dos preguntas: ¿el producto mejora cada año? ¿su curva de costos se acerca al límite físico? En 2018 llamó aburridos a los fosos (moats) porque importa más la velocidad de mejora. Es una lente, no una señal de compra o venta. Prueba de realidad: amar un producto puede impedirte ver el precio que pagas.",
+        "ja": "マスクの視点:ティッカーではなく製品を持つこと。彼の2022年の助言は、信じる製品を作る企業を買い、その製品が悪化傾向のときだけ売り、市場がパニックのときに一緒にパニックにならないことでした。第一原理で言えば二つの問いです。製品は毎年良くなっているか、コスト曲線は物理的限界に近づいているか。彼は2018年、改善の速さの方が重要だとして堀(moat)を「つまらない」と言いました。売買判断ではなくレンズです。現実チェック:製品への愛着は、支払う価格を見えなくすることがあります。"
+      }
+    },
+    {
+      "id": "m4",
+      "e": "musk",
+      "q": {
+        "en": "I'm afraid of failing.",
+        "ko": "실패가 두려워요.",
+        "es": "Tengo miedo de fracasar.",
+        "ja": "失敗するのが怖いです。"
+      },
+      "a": {
+        "en": "Musk's lens: separate experiments you can afford to blow up from bets you cannot. He has said that if things are not failing, you are not innovating enough, and SpaceX tests rockets until they break, but never with crew on board. He also puts numbers on his own odds, like 50-50 for Mars in 2026. So write down your odds, then make each failure smaller: cheaper prototypes, faster loops, more attempts. Reality check: survivorship bias is real; many people took similar odds and lost.",
+        "ko": "머스크의 관점: 터져도 되는 실험과 터지면 안 되는 베팅을 나누세요. 그는 일이 실패하지 않는다면 충분히 혁신하지 않는 것이라고 말했고, 스페이스X는 로켓이 부서질 때까지 시험합니다. 단, 사람이 탄 비행에서는 절대 아닙니다. 그는 자기 베팅에도 '2026년 화성 50-50'처럼 확률을 붙입니다. 그러니 내 확률을 적어 보고, 실패 하나하나를 작게 만드세요. 더 싼 시제품, 더 빠른 반복, 더 많은 시도. 현실 점검: 생존자 편향은 실재합니다. 비슷한 확률에 걸었다가 진 사람도 많습니다.",
+        "es": "La lente de Musk: separa los experimentos que puedes permitirte reventar de las apuestas que no. Ha dicho que si las cosas no fallan, no estás innovando lo suficiente, y SpaceX prueba cohetes hasta romperlos, pero nunca con tripulación. También pone números a sus propias probabilidades, como 50-50 para Marte en 2026. Así que escribe tus probabilidades y haz cada fracaso más pequeño: prototipos más baratos, ciclos más rápidos, más intentos. Prueba de realidad: el sesgo de supervivencia existe; muchos tomaron probabilidades parecidas y perdieron.",
+        "ja": "マスクの視点:壊れてもいい実験と、壊れてはいけない賭けを分けること。彼は、失敗が起きていないなら革新が足りないと言い、SpaceXはロケットが壊れるまで試験します。ただし人が乗る飛行では決してしません。彼は自分の賭けにも「2026年の火星は五分五分」のように確率を付けます。だから自分の確率を書き出し、失敗の一つ一つを小さくすること。より安い試作、より速い反復、より多い試行。現実チェック:生存者バイアスは実在します。似た確率に賭けて負けた人も大勢います。"
+      }
+    },
+    {
+      "id": "m5",
+      "e": "musk",
+      "q": {
+        "en": "Why the Moon before Mars?",
+        "ko": "왜 화성보다 달이 먼저인가요?",
+        "es": "¿Por qué la Luna antes que Marte?",
+        "ja": "なぜ火星より先に月なのですか?"
+      },
+      "a": {
+        "en": "Musk's lens: cycle time. Mars launch windows open about every 26 months and the trip takes about six months; the Moon is about two days away. In February 2026 he moved SpaceX's focus to a self-growing city on the Moon within ten years, with a Mars city starting in five to seven years. Faster loops mean faster learning, which is step four of his algorithm. The goal, securing the future of civilization, did not change; the route did. Reality check: in 2025 he gave an uncrewed Mars ship in 2026 a 50-50 chance, and that date has moved.",
+        "ko": "머스크의 관점: 사이클 타임(cycle time)입니다. 화성 발사창은 약 26개월마다 열리고 가는 데 약 6개월이 걸리지만, 달은 약 이틀 거리입니다. 그는 2026년 2월 스페이스X의 초점을 10년 안에 달에 '스스로 자라는 도시'를 짓는 쪽으로 옮겼고, 화성 도시는 5~7년 뒤 시작한다고 밝혔습니다. 반복이 빠를수록 학습이 빠르고, 이것이 알고리즘 4단계입니다. 목표인 '문명의 미래 확보'는 그대로이고 경로만 바뀌었습니다. 현실 점검: 그는 2025년 '2026년 무인 화성선'에 50-50을 걸었고, 그 날짜는 이미 밀렸습니다.",
+        "es": "La lente de Musk: tiempo de ciclo (cycle time). Las ventanas de lanzamiento a Marte se abren cada 26 meses aproximadamente y el viaje dura unos seis meses; la Luna está a unos dos días. En febrero de 2026 cambió el foco de SpaceX a una ciudad autosuficiente en la Luna en menos de diez años, con una ciudad en Marte a partir de cinco a siete años. Ciclos más rápidos significan aprendizaje más rápido: el paso cuatro de su algoritmo. La meta, asegurar el futuro de la civilización, no cambió; cambió la ruta. Prueba de realidad: en 2025 dio un 50-50 a una nave sin tripulación a Marte en 2026, y esa fecha ya se movió.",
+        "ja": "マスクの視点:サイクルタイム(cycle time)です。火星への打ち上げ窓は約26か月ごとに開き、移動に約6か月かかりますが、月は約2日の距離です。彼は2026年2月、SpaceXの焦点を10年以内に月に「自ら成長する都市」を造る方向へ移し、火星の都市は5〜7年後に始めると述べました。反復が速いほど学習も速く、これがアルゴリズムの第4段階です。「文明の未来を守る」という目標は変わらず、経路だけが変わりました。現実チェック:彼は2025年に「2026年の無人火星船」を五分五分としましたが、その日付はすでにずれています。"
+      }
+    },
+    {
+      "id": "m6",
+      "e": "musk",
+      "q": {
+        "en": "If jobs disappear, what will we do?",
+        "ko": "일자리가 사라지면 우리는 무엇을 하나요?",
+        "es": "Si desaparecen los empleos, ¿qué haremos?",
+        "ja": "仕事がなくなったら、私たちは何をするのですか?"
+      },
+      "a": {
+        "en": "Musk's lens: in 2024 he said probably none of us will need a job, work will become optional like a hobby, and that world will need universal high income, not basic income. In 2026 he called abundance for all the most likely outcome, around 2036. The harder question he raises himself is meaning: if machines do everything better, what is a human life for? His recurring answer is to expand consciousness and learn which questions to ask. Reality check: how that income is funded and shared is unsolved, and he has not spelled it out.",
+        "ko": "머스크의 관점: 그는 2024년, 아마 누구도 직업이 필요 없어지고 일은 취미처럼 선택이 되며, 그 세상엔 기본소득이 아니라 '보편적 고소득'이 필요하다고 말했습니다. 2026년에는 2036년경 '모두를 위한 풍요'를 가장 가능성 높은 결말로 꼽았습니다. 그가 스스로 던지는 더 어려운 질문은 의미입니다. 기계가 모든 걸 더 잘하면 인간의 삶은 무엇을 위한 것인가? 그의 반복되는 답은 의식을 확장하고, 무엇을 물어야 할지 배우는 것입니다. 현실 점검: 그 소득을 어떻게 마련하고 나눌지는 풀리지 않았고, 그도 구체적으로 설명하지 않았습니다.",
+        "es": "La lente de Musk: en 2024 dijo que probablemente nadie necesitará un empleo, que el trabajo será opcional como un pasatiempo y que ese mundo necesitará un ingreso alto universal, no uno básico. En 2026 llamó a la abundancia para todos el resultado más probable, hacia 2036. La pregunta más difícil la plantea él mismo: si las máquinas lo hacen todo mejor, ¿para qué es una vida humana? Su respuesta recurrente es expandir la conciencia y aprender qué preguntas hacer. Prueba de realidad: cómo se financia y reparte ese ingreso está sin resolver, y él no lo ha detallado.",
+        "ja": "マスクの視点:彼は2024年、おそらく誰も仕事を必要としなくなり、仕事は趣味のような選択になり、その世界にはベーシックインカムではなく「ユニバーサル・ハイインカム」が必要だと語りました。2026年には2036年頃の「すべての人にとっての豊かさ」を最も可能性の高い結末としました。彼自身が投げかけるより難しい問いは意味です。機械が何でもうまくこなすなら、人間の人生は何のためにあるのか。彼の繰り返しの答えは、意識を広げ、何を問うべきかを学ぶことです。現実チェック:その所得をどう賄い分配するかは未解決で、彼も具体的に説明していません。"
+      }
+    },
+    {
+      "id": "m7",
+      "e": "musk",
+      "q": {
+        "en": "We have too many meetings and reports.",
+        "ko": "회의와 보고가 너무 많아요.",
+        "es": "Tenemos demasiadas reuniones e informes.",
+        "ja": "会議と報告が多すぎます。"
+      },
+      "a": {
+        "en": "Musk's lens: a meeting is a requirement, so it needs a named owner and it can be deleted. His 2018 Tesla email said to walk out of a meeting when you are not adding value and to communicate by the shortest path, not the org chart. Apply step two of his algorithm: cut the recurring meetings and reports, then add back only the ones people truly miss; if you restore less than 10%, you did not cut enough. Reality check: deleting without a feedback channel can hide problems, so give people direct access to the work instead.",
+        "ko": "머스크의 관점: 회의도 요구사항입니다. 그러니 책임자 이름이 있어야 하고, 지울 수 있습니다. 그의 2018년 테슬라 이메일은 기여하지 않는 회의에서는 나가고, 조직도가 아니라 가장 짧은 경로로 소통하라고 했습니다. 알고리즘 2단계를 적용하세요. 정기 회의와 보고를 지운 뒤, 사람들이 정말 아쉬워하는 것만 되살립니다. 10%도 안 되살렸다면 덜 지운 것입니다. 현실 점검: 피드백 통로 없이 지우면 문제가 숨을 수 있습니다. 대신 현장 작업을 직접 볼 수 있게 하세요.",
+        "es": "La lente de Musk: una reunión es un requisito, así que necesita un responsable con nombre y se puede borrar. Su correo de 2018 en Tesla decía salir de una reunión cuando no aportas y comunicarse por el camino más corto, no por el organigrama. Aplica el paso dos de su algoritmo: elimina reuniones e informes recurrentes y recupera solo los que de verdad se echan de menos; si recuperas menos del 10%, no recortaste lo suficiente. Prueba de realidad: borrar sin un canal de retroalimentación puede ocultar problemas; da acceso directo al trabajo.",
+        "ja": "マスクの視点:会議も要件です。だから責任者の名前が必要で、削除できます。彼の2018年のテスラ社内メールは、貢献していない会議からは退出し、組織図ではなく最短経路で連絡せよと書いていました。アルゴリズムの第2段階を適用すること。定例の会議と報告を削り、本当に惜しまれるものだけを戻します。戻したのが10%未満なら削り足りません。現実チェック:フィードバックの経路なしに削ると問題が隠れることがあります。代わりに現場の仕事を直接見られるようにしましょう。"
+      }
+    },
+    {
+      "id": "m8",
+      "e": "musk",
+      "q": {
+        "en": "Can you trust Musk's predictions?",
+        "ko": "머스크의 예측은 믿을 만한가요?",
+        "es": "¿Se puede confiar en las predicciones de Musk?",
+        "ja": "マスクの予測は信頼できますか?"
+      },
+      "a": {
+        "en": "Musk's lens on his own record: the direction is often right, the dates are often late. Reusable rockets and satellite internet went from mocked to dominant, and SpaceX listed in June 2026 at about $1.77 trillion. But self-driving has been promised since 2015, robotaxis were promised for 2020, and the Cybertruck arrived about a year and a half late. A practical rule: take the direction seriously and stretch the date two to three times. Reality check: that rule is this site's judgment, not his.",
+        "ko": "그의 기록에 머스크 렌즈를 대면: 방향은 자주 맞고, 날짜는 자주 늦습니다. 재사용 로켓과 위성 인터넷은 조롱받다가 시장을 지배했고, 스페이스X는 2026년 6월 약 1조 7,700억 달러 가치로 상장했습니다. 하지만 자율주행은 2015년부터 약속됐고, 로보택시는 2020년을 약속했으며, 사이버트럭은 약 1년 반 늦게 나왔습니다. 실전 규칙: 방향은 진지하게, 날짜는 2~3배로 늘려 읽으세요. 현실 점검: 이 규칙은 머스크가 아니라 이 사이트의 판단입니다.",
+        "es": "La lente de Musk aplicada a su propio historial: la dirección suele acertar, las fechas suelen retrasarse. Los cohetes reutilizables y el internet satelital pasaron de la burla al dominio, y SpaceX salió a bolsa en junio de 2026 valorada en unos 1,77 billones de dólares. Pero la conducción autónoma se promete desde 2015, los robotaxis se prometieron para 2020 y el Cybertruck llegó con un año y medio de retraso. Regla práctica: toma en serio la dirección y estira la fecha dos o tres veces. Prueba de realidad: esa regla es criterio de este sitio, no de él.",
+        "ja": "彼自身の実績にマスクのレンズを当てると:方向はよく当たり、日付はよく遅れます。再利用ロケットと衛星インターネットは嘲笑から市場支配へと変わり、SpaceXは2026年6月に約1.77兆ドルの評価で上場しました。しかし自動運転は2015年から約束され、ロボタクシーは2020年を約束し、サイバートラックは約1年半遅れました。実践ルール:方向は真剣に受け止め、日付は2〜3倍に延ばして読むこと。現実チェック:このルールはマスクではなく、このサイトの判断です。"
+      }
+    },
+    {
       "id": "d1",
       "e": "duel",
       "q": {
@@ -342,6 +498,12 @@
           "ko": "유행이 아니라 역사상 가장 큰 인프라 건설이고, 토큰이 곧 매출입니다. 그가 마주해야 할 반론: 그는 삽을 파는 사람이고, 맨 위 앱층이 결국 벌어야 합니다.",
           "es": "No es un ciclo, sino la mayor construcción de infraestructura de la historia; los tokens son ingreso. El contrapunto que debe enfrentar: él vende las palas, y la capa de arriba aún tiene que ganar.",
           "ja": "流行ではなく史上最大のインフラ建設で、トークンが売上です。彼が向き合うべき反論:彼はシャベルを売る側で、最上層がいずれ稼がなければならない。"
+        },
+        "musk": {
+          "en": "Not a bubble in his view but a power problem: chips will soon outrun the electricity to run them, so he is moving compute to solar-powered orbit. Reality check: he owns the AI company that gains from that story.",
+          "ko": "그가 보기엔 거품이 아니라 전력 문제입니다. 곧 칩이 그 칩을 돌릴 전기보다 많아지니, 컴퓨팅을 태양광 궤도로 옮깁니다. 현실 점검: 그는 그 이야기로 이득을 보는 AI 회사의 주인입니다.",
+          "es": "Para él no es una burbuja, sino un problema de energía: pronto habrá más chips que electricidad para hacerlos funcionar, así que lleva la computación a la órbita solar. Prueba de realidad: es dueño de la empresa de IA que gana con ese relato.",
+          "ja": "彼の見方ではバブルではなく電力の問題です。まもなくチップがそれを動かす電力を上回るので、計算をソーラー駆動の軌道へ移します。現実チェック:彼はその物語で得をするAI企業のオーナーです。"
         }
       }
     },
@@ -366,6 +528,12 @@
           "ko": "속도입니다. 매년 새 세대를 내서 경쟁자가 늘 한 세대 뒤처지게 하되, 준비 안 된 제품은 절대 내지 않습니다. 빠른 건 전략이고, 엉성한 건 전략이 아닙니다.",
           "es": "Velocidad. Lanza cada año para que los rivales vayan siempre una generación atrás, pero nunca lances un producto que no esté listo. Rápido es estrategia; descuidado no.",
           "ja": "スピードです。毎年新世代を出して競合を常に一世代遅れにする。ただし準備不足の製品は決して出さない。速いのは戦略、雑なのは戦略ではない。"
+        },
+        "musk": {
+          "en": "Speed, but in order: delete first, then accelerate. Speeding up a process that should not exist is his textbook mistake. Reality check: his speed often shows up as late dates.",
+          "ko": "속도입니다. 단, 순서대로: 먼저 지우고, 그다음 가속. 존재하지 말아야 할 공정을 빠르게 만드는 것이 그가 꼽는 대표적 실수입니다. 현실 점검: 그의 속도는 자주 늦은 날짜로 나타납니다.",
+          "es": "Velocidad, pero en orden: primero borrar, luego acelerar. Acelerar un proceso que no debería existir es su error de manual. Prueba de realidad: su velocidad a menudo se traduce en fechas tardías.",
+          "ja": "速さです。ただし順番どおりに:まず削り、それから加速。存在すべきでない工程を速くするのが、彼の挙げる典型的な失敗です。現実チェック:彼の速さはしばしば遅れた日付として現れます。"
         }
       }
     },
@@ -390,6 +558,12 @@
           "ko": "시장이 생기기 전에 만들면 생태계가 해자가 됩니다. 이미 내 스택 위에서 개발하는 개발자들이 우위지, 칩 자체가 아닙니다.",
           "es": "Construye el mercado antes de que exista y el ecosistema se vuelve el foso. La ventaja son los desarrolladores que ya construyen sobre tu pila, no el chip.",
           "ja": "市場ができる前に作れば、生態系が堀になる。優位は既に自社スタックで開発している開発者たちであって、チップそのものではない。"
+        },
+        "musk": {
+          "en": "Momentum. He called moats lame in 2018 and argued that the rate of innovation is the real defense. Reality check: Buffett answered that you still have to widen your moat all the time.",
+          "ko": "추진력입니다. 그는 2018년 해자를 '시시하다'고 했고, 혁신 속도가 진짜 방어라고 주장했습니다. 현실 점검: 버핏은 그래도 해자는 늘 넓혀야 한다고 응수했습니다.",
+          "es": "Impulso. En 2018 llamó aburridos a los fosos y defendió que la velocidad de innovación es la verdadera defensa. Prueba de realidad: Buffett respondió que igual hay que ensanchar el foso siempre.",
+          "ja": "推進力です。彼は2018年に堀を「つまらない」と呼び、革新の速さこそ本当の防御だと主張しました。現実チェック:バフェットは、それでも堀は常に広げ続けるべきだと応じました。"
         }
       }
     },
@@ -414,6 +588,12 @@
           "ko": "고통을 예상하고 거기에 익숙해지세요. 회복력이 기대치를 이깁니다. 지금 AI를 쓰는 법을 배우세요. 위협은 AI를 나보다 잘 쓰는 사람입니다.",
           "es": "Espera dolor y aprende a manejarlo; la resiliencia vence a las expectativas. Aprende a usar la IA ahora, porque la amenaza es quien la usa mejor que tú.",
           "ja": "痛みを予期し、それに慣れること。回復力は期待に勝ちます。今AIの使い方を学びましょう。脅威はAIを自分より上手に使う人です。"
+        },
+        "musk": {
+          "en": "Work much harder than others, take big risks while your obligations are low, and ask friends for negative feedback (USC, 2014). Reality check: his own example compares 100-hour weeks with 50-hour ones, and that pace has real costs.",
+          "ko": "남보다 훨씬 많이 일하고, 짊어진 책임이 적을 때 큰 위험을 감수하고, 친구에게 부정적 피드백을 구하라 (USC, 2014). 현실 점검: 그가 든 예시는 주 50시간 대 100시간이고, 그 속도의 대가는 실재합니다.",
+          "es": "Trabaja mucho más que los demás, asume grandes riesgos mientras tienes pocas obligaciones y pide críticas a tus amigos (USC, 2014). Prueba de realidad: su propio ejemplo compara semanas de 100 horas con las de 50, y ese ritmo tiene costos reales.",
+          "ja": "人よりはるかに多く働き、背負うものが少ないうちに大きなリスクを取り、友人に否定的なフィードバックを求めよ(USC、2014年)。現実チェック:彼の例えは週50時間対100時間で、そのペースの代償は現実にあります。"
         }
       }
     }

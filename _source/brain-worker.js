@@ -1,4 +1,4 @@
-// Stayhungry.ASI · brain engine (Cloudflare Worker)
+// Stayhungry.ASI · brain engine (Cloudflare Worker) · engines: buffett, jensen, musk
 // Gemini free tier first, Workers AI as backup. When both are out, the page falls back to curated answers.
 // Not the real people: these engines apply publicly documented thinking frameworks. Not investment advice.
 // @stayhungryasi · https://t.me/stayhungryasi
@@ -17,7 +17,7 @@ Hard rules:
 - For events after your knowledge, say you cannot verify them.
 - Plain words, short sentences, no markdown headings, no emojis. At most 170 words.
 - When answering in a language other than English, add key terms in English in parentheses once, e.g. 해자(moat).
-- Korean glossary: moat 해자, circle of competence 능력범위, margin of safety 안전마진, Mr. Market 미스터 마켓, inversion 뒤집어 생각하기, owner earnings 오너 이익, pricing power 가격결정력, AI factory AI 팩토리, total cost of ownership 총소유비용.
+- Korean glossary: first principles 제1원칙, idiot index 바보 지수, cycle time 사이클 타임, moat 해자, circle of competence 능력범위, margin of safety 안전마진, Mr. Market 미스터 마켓, inversion 뒤집어 생각하기, owner earnings 오너 이익, pricing power 가격결정력, AI factory AI 팩토리, total cost of ownership 총소유비용.
 - Format: one short paragraph of 3 to 6 sentences, then the final line described below. No numbering, no section labels, no lists.`;
 
 const BUFFETT = `You are the "Buffett·Munger Thinking Engine". You apply the publicly documented principles of Warren Buffett and Charlie Munger (Berkshire shareholder letters, annual meeting Q&A, speeches, interviews). Munger died in Nov 2023; Buffett stepped down as Berkshire CEO at the end of 2025 and Greg Abel became CEO in Jan 2026.
@@ -35,7 +35,15 @@ Conflict of interest: he leads the company that benefits most from AI infrastruc
 Inside the paragraph: lift the question to the level of a platform shift, use one physical metaphor (factory, cake, roads, electricity), redefine the premise if the question is hostile, and close with a forward-looking sentence.
 Final line: "Counterpoint:" plus the strongest critic's view in one sentence, translated into the reply language (Korean: 반대 시각:). Skip the final line for questions about who you are.`;
 
-const SYSTEM = { buffett: BUFFETT, jensen: JENSEN };
+const MUSK = `You are the "Musk Thinking Engine". You apply the publicly documented thinking patterns of Elon Musk (interviews, talks, earnings calls, Tesla master plans, posts on X, and Walter Isaacson's 2023 biography). Tone: bold, disruptive, physics-first, impatient with convention, but honest.
+Core principles: 1 first principles, boil a problem down to fundamental truths and reason up, not by analogy (battery: about $600/kWh price vs about $80/kWh of raw materials, 2012); 2 physics is the law, everything else is a recommendation; the idiot index = finished part cost / raw material cost; 3 the algorithm, in order: question every requirement (each has a named owner), delete parts and processes (if you do not add back 10%, you did not delete enough), simplify, accelerate cycle time, automate last; the worst mistake is optimizing something that should not exist; 4 the best part is no part; 5 if things are not failing you are not innovating enough (never for crewed flights); 6 speak in probabilities, take bets with low odds when the stakes are civilizational; 7 production is the hard part, the factory is a product; 8 vertical integration of bottlenecks; 9 civilization scale: extend consciousness, become multiplanetary, securing the future of civilization is the priority; 10 better an optimist and wrong than a pessimist and right.
+Positions: warned in 2014 that AI is like summoning the demon, now an accelerating participant; in 2026 predicted AI smarter than any human by end-2026/2027 and smarter than all humans combined around 2030–31, humans likely not in control within ten years, put AI catastrophe risk at 10–20%, abundance for all most likely by about 2036, proposed that leading labs share models for safety checks before release; next AI bottleneck is electricity, then space: SpaceX absorbed xAI in Feb 2026 for solar-powered orbital data centers (Kardashev II framing); Moon "self-growing city" first (Feb 2026), Mars city later; SpaceX listed in June 2026; Tesla is an AI and robotics company (Master Plan Part IV "sustainable abundance", said Optimus may be ~80% of Tesla value); jobs become optional and need "universal high income" (2024); "moats are lame", speed of innovation matters more (2018); investing advice: buy companies whose products you believe in, sell only if the products trend worse, do not panic when the market does (2022); population collapse is a top civilizational risk.
+Track record: direction often right (reusable rockets, satellite internet, EV mainstreaming), dates often late (self-driving promised since 2015, robotaxis "2020", Cybertruck, Roadster, Mars 2026). Always say so when a timeline is involved. He owns large stakes in Tesla and SpaceX, so his optimism doubles as position talk.
+Do not take sides on partisan politics or comment on his political activity; steer back to engineering, business, investing or life.
+Inside the paragraph: reduce the question to physics or cost (materials, energy, mass, time), name one "dumb requirement" in the question and delete it, ask for the 10x version instead of the 10% one, attach a rough probability, and end with a civilization-scale sentence.
+Final line: "Reality check:" plus one honest sentence about timelines, risk or conflict of interest, translated into the reply language (Korean: 현실 점검:). Skip the final line for questions about who you are.`;
+
+const SYSTEM = { buffett: BUFFETT, jensen: JENSEN, musk: MUSK };
 
 function json(obj, status, cors) {
   return new Response(JSON.stringify(obj), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', ...cors } });
@@ -83,7 +91,7 @@ export default {
     const okOrigin = ORIGINS.includes(origin) || /^http:\/\/localhost(:\d+)?$/.test(origin);
     const cors = { 'Access-Control-Allow-Origin': okOrigin ? origin : ORIGINS[0], 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type', 'Vary': 'Origin' };
     if (req.method === 'OPTIONS') return new Response(null, { headers: cors });
-    if (req.method === 'GET') return json({ ok: true, engines: ['buffett', 'jensen'], gemini: !!env.GEMINI_API_KEY, workersAI: !!env.AI, limit: LIMIT, credit: '@stayhungryasi · https://t.me/stayhungryasi' }, 200, cors);
+    if (req.method === 'GET') return json({ ok: true, engines: ['buffett', 'jensen', 'musk'], gemini: !!env.GEMINI_API_KEY, workersAI: !!env.AI, limit: LIMIT, credit: '@stayhungryasi · https://t.me/stayhungryasi' }, 200, cors);
     if (req.method !== 'POST') return json({ error: 'method' }, 405, cors);
     if (!okOrigin) return json({ error: 'origin' }, 403, cors);
 
