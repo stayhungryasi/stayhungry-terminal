@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-10-23",
-      "commit": "HEAD",
+      "commit": "06c7405",
       "message": "Fact check: every crisis and Buffett × VIX number re-verified against FRED, Cboe, Yahoo, ECOS and Fed Z.1; stale sample text removed from BRIEF, TODAY and the dev view"
     },
     {
