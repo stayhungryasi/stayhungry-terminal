@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-23",
+      "commit": "HEAD",
+      "message": "YouTube channel linked: the HUB channel row and the ShaferwineX card now open youtube.com/@ShaferwineX"
+    },
+    {
+      "date": "2026-10-23",
       "commit": "bcaef5a",
       "message": "Key dates go live: the schedule bot's Telegram list becomes an AGENDA page with a 7-day board, next big date countdown, KST or your own time, category filters, recent changes, 75-day outlook, a source link on every date and calendar feeds (.ics) in 4 languages"
     },
