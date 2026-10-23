@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-10-23",
-      "commit": "HEAD",
+      "commit": "9af28c5",
       "message": "Fact-check fixes: credit layer colour matches the bot, VIX shown to 2 decimals, Buffett history dated at quarter end, footers say exactly which report each number comes from"
     },
     {
