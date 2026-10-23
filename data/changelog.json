@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-10-23",
-      "commit": "HEAD",
+      "commit": "a190ef6",
       "message": "TODAY cards now open the right radar tab: Crisis proximity → crisis early warning, VIX and Buffett Index → Buffett Index × VIX"
     },
     {
