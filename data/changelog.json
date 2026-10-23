@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-23",
+      "commit": "HEAD",
+      "message": "UNIVERTRIX menu page: all 8 rooms of univertrix.com (Universe rulers, Next rulers, Megatrends, Data observatory, Pioneers, Shoulders of giants, Signal observatory, Must-read dissection) with a one-line explainer, live numbers from univertrix.com and a direct link each"
+    },
+    {
+      "date": "2026-10-23",
       "commit": "5e32f6a",
       "message": "BRAINS gets a third engine: the Musk engine (first principles, the five-step algorithm, the idiot index, honest timeline checks), a three-way brain duel and a full report at /p/musk-brain/"
     },
