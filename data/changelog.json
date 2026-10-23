@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-23",
+      "commit": "HEAD",
+      "message": "TODAY cards now open the right radar tab: Crisis proximity → crisis early warning, VIX and Buffett Index → Buffett Index × VIX"
+    },
+    {
+      "date": "2026-10-23",
       "commit": "251d091",
       "message": "UNIVERTRIX menu page: all 8 rooms of univertrix.com (Universe rulers, Next rulers, Megatrends, Data observatory, Pioneers, Shoulders of giants, Signal observatory, Must-read dissection) with a one-line explainer, live numbers from univertrix.com and a direct link each"
     },
