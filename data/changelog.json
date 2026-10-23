@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-23",
+      "commit": "HEAD",
+      "message": "Fact-check fixes: credit layer colour matches the bot, VIX shown to 2 decimals, Buffett history dated at quarter end, footers say exactly which report each number comes from"
+    },
+    {
+      "date": "2026-10-23",
       "commit": "06c7405",
       "message": "Fact check: every crisis and Buffett × VIX number re-verified against FRED, Cboe, Yahoo, ECOS and Fed Z.1; stale sample text removed from BRIEF, TODAY and the dev view"
     },
