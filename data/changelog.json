@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-10-23",
+      "commit": "HEAD",
+      "message": "Crisis radar goes live: the early-warning bot now publishes every Telegram report here (score, 5 layers, 21 indicators, charts)"
+    },
+    {
       "date": "2026-10-22",
       "commit": "f9e05b4",
       "message": "Cleaner footers: the email address now appears only on the News page, next to the contact cards"
@@ -67,7 +72,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "credit": "@stayhungryasi · https://t.me/stayhungryasi",
   "disclaimer": "Not investment advice."
 }

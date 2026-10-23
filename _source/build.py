@@ -72,6 +72,8 @@ with tempfile.NamedTemporaryFile('w', suffix='.js', delete=False, encoding='utf-
 api = json.loads(subprocess.check_output(['node', tf.name, today]).decode('utf-8'))
 os.unlink(tf.name)
 for name, obj in api.items():
+    if isinstance(obj, dict) and obj.get('bot_owned'):
+        continue  # written by the bot (breaking_bot → data/crisis.json); never overwrite it from the site build
     open(f'{out}/data/{name}', 'w', encoding='utf-8').write(json.dumps(obj, ensure_ascii=False, indent=2) + '\n')
 open(f'{out}/data/README.md','w',encoding='utf-8').write(
 """# Stayhungry.ASI open data
