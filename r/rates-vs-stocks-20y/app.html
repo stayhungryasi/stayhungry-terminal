@@ -1,0 +1,415 @@
+<!doctype html><html><head><meta name="robots" content="noindex"><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>금리와 주가 20년</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@600;700&display=swap">
+<style>
+/* Layout: one desk-sheet column — thesis, scorecard, a three-panel stacked timeline sharing one x-axis, then the regime analysis split in two. */
+:root{
+  --bg:#f5f6f8; --sheet:#ffffff; --ink:#14171c; --ink-2:#4a5160; --ink-3:#7b8392;
+  --rule:#e3e6eb; --rule-2:#eef0f3; --accent:#1d3557; --band:#eef1f6; --chip:#e9edf3;
+  --s-spx:#2a78d6; --s-ndx:#eb6834; --s-ksp:#1baf7a; --s-y10:#4a3aa7; --s-y30:#e87ba4; --s-krw:#eda100; --s-dxy:#008300;
+  --neg:#2a78d6; --pos:#d03b3b; --mid:#f0efec;
+  --f-display:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --f-num:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101215; --sheet:#171a1e; --ink:#eef1f5; --ink-2:#b4bbc7; --ink-3:#848c99;
+  --rule:#2a2f36; --rule-2:#21252b; --accent:#9fb7da; --band:#1d2228; --chip:#242a31;
+  --s-spx:#3987e5; --s-ndx:#d95926; --s-ksp:#199e70; --s-y10:#9085e9; --s-y30:#d55181; --s-krw:#c98500; --s-dxy:#008300;
+  --neg:#3987e5; --pos:#e66767; --mid:#383835; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101215; --sheet:#171a1e; --ink:#eef1f5; --ink-2:#b4bbc7; --ink-3:#848c99;
+  --rule:#2a2f36; --rule-2:#21252b; --accent:#9fb7da; --band:#1d2228; --chip:#242a31;
+  --s-spx:#3987e5; --s-ndx:#d95926; --s-ksp:#199e70; --s-y10:#9085e9; --s-y30:#d55181; --s-krw:#c98500; --s-dxy:#008300;
+  --neg:#3987e5; --pos:#e66767; --mid:#383835; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6;padding:28px 16px 56px}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:10px;max-width:780px}
+.eyebrow{font-family:var(--f-num);font-size:12px;letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,4.4vw,40px);line-height:1.2;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-family:var(--f-display);font-weight:600;font-size:20px;margin:0;text-wrap:balance}
+.lede{color:var(--ink-2);margin:0;max-width:68ch}
+.lede b{color:var(--ink);font-weight:600}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.sheet-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px}
+.sub{color:var(--ink-3);font-size:13px;margin:2px 0 0}
+.num{font-family:var(--f-num);font-variant-numeric:tabular-nums}
+/* scorecard */
+.tbl-wrap{overflow-x:auto}
+table.score{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+.score th,.score td{padding:9px 10px;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap}
+.score th{font-weight:500;font-size:12px;color:var(--ink-3);letter-spacing:.03em}
+.score th:first-child,.score td:first-child{text-align:left}
+.score tbody tr:last-child td{border-bottom:none}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:8px;vertical-align:0}
+.score .grp td{color:var(--ink-3);font-size:12px;padding-top:14px;border-bottom:1px solid var(--rule)}
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.seg{display:inline-flex;flex-wrap:wrap;background:var(--chip);border-radius:6px;padding:3px;gap:2px;max-width:100%}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink-2);padding:5px 11px;border-radius:4px;cursor:pointer;white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--sheet);color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.ctl-label{font-size:12px;color:var(--ink-3);margin-right:8px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:16px;height:2px;border-radius:1px;display:inline-block}
+/* chart */
+.chart{position:relative;width:100%}
+.chart svg{display:block;width:100%;overflow:visible}
+.chart text{font-family:var(--f-num);font-size:11px;fill:var(--ink-3)}
+.chart .plabel{font-family:var(--f-body);font-size:12px;font-weight:600;fill:var(--ink-2);paint-order:stroke;stroke:var(--sheet);stroke-width:4px;stroke-linejoin:round}
+.chart .dl{font-family:var(--f-num);font-size:11px;font-weight:500;fill:var(--ink)}
+.chart .ev{font-family:var(--f-body);font-size:10.5px;fill:var(--ink-3)}
+.tip{position:absolute;top:0;pointer-events:none;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:9px 11px;font-size:12.5px;box-shadow:0 6px 18px rgba(10,20,40,.12);min-width:200px;z-index:2}
+.tip .d{font-family:var(--f-num);font-weight:500;color:var(--ink);margin-bottom:6px}
+.tip .r{display:flex;justify-content:space-between;gap:14px;color:var(--ink-2)}
+.tip .r b{font-family:var(--f-num);font-weight:500;color:var(--ink)}
+.tip .r i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.tip hr{border:0;border-top:1px solid var(--rule);margin:6px 0}
+/* analysis */
+.grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:20px}
+@media (max-width:860px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.panel{display:flex;flex-direction:column;gap:10px;min-width:0}
+.panel h3{margin:0;font-size:14px;font-weight:600}
+.panel p.cap{margin:0;color:var(--ink-3);font-size:12.5px}
+.matrix{display:grid;grid-template-columns:52px repeat(7,minmax(0,1fr));gap:2px;font-size:12px}
+.matrix .h{color:var(--ink-3);text-align:center;padding:4px 0;font-size:clamp(9.5px,1.2vw,11.5px);word-break:keep-all;line-height:1.25;align-self:end}
+.matrix .rh{color:var(--ink-3);display:flex;align-items:center;font-size:11.5px}
+.matrix .c{aspect-ratio:1.3/1;max-width:100%;display:flex;align-items:center;justify-content:center;border-radius:3px;font-family:var(--f-num);font-variant-numeric:tabular-nums;font-size:clamp(9.5px,1.1vw,12px)}
+.scale{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--ink-3);font-family:var(--f-num)}
+.scale .bar{flex:0 1 180px;height:8px;border-radius:2px;background:linear-gradient(90deg,var(--neg),var(--mid),var(--pos))}
+.reads{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px 28px}
+.read{display:flex;flex-direction:column;gap:4px;min-width:0}
+.read h3{margin:0;font-size:15px;font-weight:600}
+.read p{margin:0;color:var(--ink-2);font-size:14px}
+.read .k{font-family:var(--f-num);font-size:12px;color:var(--accent);letter-spacing:.02em}
+details{border-top:1px solid var(--rule);padding-top:12px}
+summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
+summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.datatbl{max-height:360px;overflow:auto;margin-top:10px}
+.datatbl table{border-collapse:collapse;width:100%;min-width:560px;font-size:12.5px}
+.datatbl th,.datatbl td{padding:4px 8px;text-align:right;border-bottom:1px solid var(--rule-2);white-space:nowrap}
+.datatbl th{position:sticky;top:0;background:var(--sheet);color:var(--ink-3);font-weight:500}
+.datatbl td:first-child,.datatbl th:first-child{text-align:left}
+.notes{font-size:12.5px;color:var(--ink-3);display:flex;flex-direction:column;gap:4px;max-width:90ch}
+.notes p{margin:0}
+@media (prefers-reduced-motion:no-preference){.chart path.ln{transition:opacity .2s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">2006.01 – 2026.10 · 월말 종가 · 250개월</div>
+    <h1>미국채 금리와 주가, 20년의 관계</h1>
+    <p class="lede">20년 전체로 보면 금리 변화와 주가의 상관은 <b>0에 가깝습니다</b>. 평균이 두 개의 정반대 국면을 덮고 있기 때문입니다. 2006–2021년에는 금리가 오르면 주가도 오르는 <b>양(+)의 관계</b>였고, 2022년 이후에는 금리 상승이 곧 주가 하락인 <b>음(−)의 관계</b>로 뒤집혔습니다. 지금 10년물 금리는 20년 월말값 가운데 <b id="pct10">상위 1%</b> 안에 있습니다. 2022년 이후엔 금리가 오를 때 달러도 강해지는 경향이 뚜렷해져, 달러로 환산한 코스피는 원화 기준보다 금리에 더 민감합니다.</p>
+  </header>
+
+  <section class="sheet" aria-labelledby="sc-h">
+    <div class="sheet-head"><div><h2 id="sc-h">20년 성적표</h2><p class="sub">2006년 1월 말 대비 최근값 · 지수는 가격지수(배당 제외) · 분위는 250개 월말값 중 현재값보다 낮았던 달의 비율</p></div></div>
+    <div class="tbl-wrap"><table class="score" id="score"></table></div>
+  </section>
+
+  <section class="sheet" aria-labelledby="ch-h">
+    <div class="sheet-head">
+      <div><h2 id="ch-h">한 화면에서 보는 금리·주가·환율</h2><p class="sub">네 패널이 같은 시간축을 씁니다. 차트 위에 커서를 올리면 그 달의 값이 모두 표시됩니다.</p></div>
+      <div class="controls">
+        <div><span class="ctl-label">기간</span><div class="seg" id="seg-range" role="group" aria-label="표시 기간">
+          <button data-v="2006-01" aria-pressed="true">20년</button><button data-v="2016-10">10년</button><button data-v="2021-10">5년</button><button data-v="2022-01">2022~</button></div></div>
+        <div><span class="ctl-label">상관 창</span><div class="seg" id="seg-win" role="group" aria-label="롤링 상관 기간">
+          <button data-v="12">12개월</button><button data-v="24" aria-pressed="true">24개월</button><button data-v="36">36개월</button></div></div>
+        <div><span class="ctl-label">코스피</span><div class="seg" id="seg-ks" role="group" aria-label="코스피 기준 통화">
+          <button data-v="krw" aria-pressed="true">원화</button><button data-v="usd">달러 환산</button></div></div>
+      </div>
+    </div>
+    <div class="legend" aria-hidden="true">
+      <span><i style="background:var(--s-spx)"></i>S&amp;P 500</span><span><i style="background:var(--s-ndx)"></i>나스닥 종합</span><span><i style="background:var(--s-ksp)"></i>코스피</span>
+      <span><i style="background:var(--s-y10)"></i>미국채 10년</span><span><i style="background:var(--s-y30)"></i>미국채 30년</span><span><i style="background:var(--s-krw)"></i>원/달러</span>
+      <span><i style="background:var(--band);height:10px;width:14px;border-radius:2px"></i>연준 금리인상기</span>
+    </div>
+    <div class="chart" id="chart"><svg id="svg" role="img" aria-label="주가지수(시작=100, 로그), 미국채 10년·30년 금리, 주가와 10년물 금리 변화의 롤링 상관계수, 원/달러 환율을 같은 시간축에 쌓은 차트"></svg><div class="tip" id="tip" hidden></div></div>
+    <details>
+      <summary>월별 데이터 표로 보기</summary>
+      <div class="datatbl"><table id="datatbl"></table></div>
+    </details>
+  </section>
+
+  <section class="sheet" aria-labelledby="rg-h">
+    <div class="sheet-head">
+      <div><h2 id="rg-h">국면별 관계</h2><p class="sub">월간 변화 기준: 주가·환율은 로그수익률, 금리는 bp 변화. 원/달러는 오르면 원화 약세, 코스피는 원화 기준. 수준(level)끼리의 상관은 추세 때문에 착시가 생겨 쓰지 않았습니다.</p></div>
+      <div><span class="ctl-label">분석 구간</span><div class="seg" id="seg-per" role="group" aria-label="분석 구간">
+        <button data-v="2006-02|2026-10" aria-pressed="true">전체</button><button data-v="2006-02|2012-12">2006–12</button><button data-v="2013-01|2019-12">2013–19</button><button data-v="2020-01|2026-10">2020–26</button><button data-v="2022-01|2026-10">2022~</button></div></div>
+    </div>
+    <div class="grid2">
+      <div class="panel">
+        <h3>월간 변화 상관계수</h3>
+        <div class="matrix" id="matrix"></div>
+        <div class="scale"><span>−1</span><span class="bar"></span><span>+1</span><span style="margin-left:8px">파랑=반대로 움직임 · 빨강=같이 움직임</span></div>
+      </div>
+      <div class="panel">
+        <h3>10년물 금리 월간 변화 구간별 평균 월수익률</h3>
+        <p class="cap">금리가 크게 움직인 달(±25bp 이상)과 잠잠했던 달의 주가 반응 비교</p>
+        <div class="chart" id="bars"><svg id="bsvg" role="img" aria-label="10년물 금리 변화 구간별 세 지수의 평균 월수익률 막대 차트"></svg><div class="tip" id="btip" hidden></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sheet" aria-labelledby="rd-h">
+    <h2 id="rd-h">읽는 법</h2>
+    <div class="reads" id="reads"></div>
+  </section>
+
+  <div class="notes">
+    <p>데이터: Yahoo Finance 일별 종가에서 매월 마지막 거래일 값을 추출(^GSPC, ^IXIC, ^KS11, ^TNX, ^TYX, KRW=X, DX-Y.NYB). 2026년 10월은 월중 최근값(미국 10/7 종가, 코스피 10/7 종가, 원/달러 10/8 장중). 원/달러는 Yahoo 기준 시각 값이라 서울 외환시장 종가와 수 원 차이가 날 수 있습니다.</p>
+    <p>검증: 7개 지표 모두 250개월 누락 없음. 월간 ±15%(금리 ±60bp) 이상 변동한 달은 일별 데이터와 대조했고, 코스피 2026년 5월(8,476.15)·6월(8,476.48) 종가와 7월 13일 급락(6,806.93), 원/달러 2026년 6월 말 1,540원대·7월 급락은 국내외 언론 종가와 일치함을 확인. 10년물 월말값은 FRED 월평균(GS10)과 방향·수준 일치. Yahoo 일별 시계열에 코스피 10/7 봉이 비어 있어 같은 소스의 시장가(6,803.90)로 보완.</p>
+    <p>주가지수는 배당 미포함 가격지수, 코스피 달러 환산은 코스피÷원/달러. 상관계수는 피어슨, 롤링 상관은 선택한 개월 수 기준. 과거 관계가 앞으로도 유지된다는 보장은 없습니다.</p>
+  </div>
+</div>
+
+<script>
+const RAW = {"KS11":[1400,1372,1360,1420,1318,1295,1298,1353,1371,1365,1432,1434,1360,1417,1453,1542,1701,1744,1933,1873,1946,2065,1906,1897,1625,1712,1704,1825,1852,1675,1595,1474,1448,1113,1076,1124,1162,1063,1206,1369,1396,1390,1557,1592,1673,1581,1556,1683,1602,1595,1693,1742,1641,1698,1759,1743,1873,1883,1905,2051,2070,1939,2107,2192,2142,2101,2133,1880,1770,1909,1848,1826,1956,2030,2014,1982,1843,1854,1882,1905,1996,1912,1933,1997,1962,2026,2005,1964,2001,1863,1914,1926,1997,2030,2045,2011,1941,1980,1986,1962,1995,2002,2076,2069,2020,1964,1981,1916,1949,1986,2041,2127,2115,2074,2030,1941,1963,2029,1992,1961,1912,1917,1996,1994,1983,1970,2016,2035,2044,2008,1983,2026,2068,2092,2160,2205,2347,2392,2403,2363,2394,2523,2476,2467,2566,2427,2446,2515,2423,2326,2295,2323,2343,2030,2097,2041,2205,2195,2141,2204,2042,2131,2025,1968,2063,2083,2088,2198,2119,1987,1755,1948,2030,2108,2249,2326,2328,2267,2591,2873,2976,3013,3061,3148,3204,3297,3202,3199,3069,2971,2839,2978,2663,2699,2758,2695,2686,2333,2452,2472,2155,2294,2473,2236,2425,2413,2477,2502,2577,2564,2633,2556,2465,2278,2535,2655,2497,2642,2747,2692,2637,2798,2771,2674,2593,2556,2456,2399,2517,2533,2481,2557,2698,3072,3245,3186,3425,4108,3927,4214,5224,6244,5052,6599,8476,8476,6595,6820,6838,6804],"IXIC":[2306,2281,2340,2323,2179,2172,2091,2184,2258,2367,2432,2415,2464,2416,2422,2525,2605,2603,2546,2596,2702,2859,2661,2652,2390,2271,2279,2413,2523,2293,2326,2368,2092,1721,1536,1577,1476,1378,1529,1717,1774,1835,1979,2009,2122,2045,2145,2269,2147,2238,2398,2461,2257,2109,2255,2114,2369,2507,2498,2653,2700,2782,2781,2874,2835,2774,2756,2579,2415,2684,2620,2605,2814,2967,3092,3046,2827,2935,2940,3067,3116,2977,3010,3020,3142,3160,3268,3329,3456,3403,3626,3590,3771,3920,4060,4177,4104,4308,4199,4115,4243,4408,4370,4580,4493,4631,4792,4736,4635,4964,4901,4941,5070,4987,5128,4777,4620,5054,5109,5007,4614,4558,4870,4775,4948,4843,5162,5213,5312,5189,5324,5383,5615,5825,5912,6048,6199,6140,6348,6429,6496,6728,6874,6903,7411,7273,7063,7066,7442,7510,7672,8110,8046,7306,7331,6635,7282,7533,7729,8095,7453,8006,8175,7963,7999,8292,8665,8973,9151,8567,7700,8890,9490,10059,10745,11775,11168,10912,12199,12888,13071,13192,13247,13963,13749,14504,14673,15259,14449,15498,15538,15645,14240,13751,14221,12335,12081,11029,12391,11816,10576,10988,11468,10466,11585,11456,12222,12227,12935,13788,14346,14035,13219,12851,14226,15011,15164,16092,16379,15658,16735,17733,17599,17714,18189,18095,19218,19311,19627,18847,17299,17446,19114,20370,21122,21456,22660,23725,23366,23242,23462,22668,21591,24892,26973,26214,25374,26371,26861,27539],"GSPC":[1280,1281,1295,1311,1270,1270,1277,1304,1336,1378,1401,1418,1438,1407,1421,1482,1531,1503,1455,1474,1527,1549,1481,1468,1379,1331,1323,1386,1400,1280,1267,1283,1166,969,896,903,826,735,798,873,919,919,987,1021,1057,1036,1096,1115,1074,1104,1169,1187,1089,1031,1102,1049,1141,1183,1181,1258,1286,1327,1326,1364,1345,1321,1292,1219,1131,1253,1247,1258,1312,1366,1408,1398,1310,1362,1379,1407,1441,1412,1416,1426,1498,1515,1569,1598,1631,1606,1686,1633,1682,1757,1806,1848,1783,1859,1872,1884,1924,1960,1931,2003,1972,2018,2068,2059,1995,2105,2068,2086,2107,2063,2104,1972,1920,2079,2080,2044,1940,1932,2060,2065,2097,2099,2174,2171,2168,2126,2199,2239,2279,2364,2363,2384,2412,2423,2470,2472,2519,2575,2648,2674,2824,2714,2641,2648,2705,2718,2816,2902,2914,2712,2760,2507,2704,2784,2834,2946,2752,2942,2980,2926,2977,3038,3141,3231,3226,2954,2585,2912,3044,3100,3271,3500,3363,3270,3622,3756,3714,3811,3973,4181,4204,4298,4395,4523,4308,4605,4567,4766,4516,4374,4530,4132,4132,3785,4130,3955,3586,3872,4080,3840,4077,3970,4109,4169,4180,4450,4589,4508,4288,4194,4568,4770,4846,5096,5254,5036,5278,5460,5522,5648,5762,5705,6032,5882,6041,5955,5612,5569,5912,6205,6339,6460,6688,6840,6849,6846,6939,6879,6529,7209,7580,7499,7490,7686,7652,7802],"TNX":[4.53,4.55,4.85,5.07,5.11,5.14,4.99,4.73,4.63,4.61,4.46,4.71,4.83,4.55,4.65,4.63,4.89,5.03,4.77,4.54,4.58,4.47,3.97,4.03,3.64,3.53,3.43,3.76,4.05,3.98,3.98,3.81,3.83,3.97,2.96,2.24,2.84,3.04,2.68,3.12,3.46,3.52,3.5,3.4,3.31,3.39,3.2,3.84,3.61,3.6,3.83,3.66,3.3,2.95,2.91,2.48,2.52,2.61,2.8,3.31,3.38,3.41,3.45,3.3,3.05,3.16,2.81,2.22,1.92,2.17,2.07,1.87,1.8,1.98,2.22,1.91,1.58,1.66,1.49,1.56,1.64,1.69,1.61,1.76,1.99,1.89,1.85,1.67,2.16,2.48,2.59,2.75,2.62,2.54,2.74,3.03,2.67,2.66,2.72,2.65,2.46,2.52,2.56,2.34,2.51,2.34,2.19,2.17,1.67,2.0,1.93,2.05,2.1,2.34,2.2,2.2,2.06,2.15,2.22,2.27,1.93,1.74,1.79,1.82,1.83,1.49,1.46,1.57,1.61,1.83,2.37,2.45,2.45,2.36,2.4,2.28,2.2,2.3,2.29,2.12,2.33,2.38,2.42,2.4,2.72,2.87,2.74,2.94,2.82,2.85,2.96,2.85,3.06,3.16,3.01,2.69,2.63,2.71,2.41,2.51,2.14,2.0,2.02,1.51,1.67,1.69,1.78,1.92,1.52,1.13,0.7,0.62,0.65,0.65,0.54,0.69,0.68,0.86,0.84,0.92,1.09,1.46,1.75,1.63,1.58,1.44,1.24,1.3,1.53,1.56,1.44,1.51,1.78,1.84,2.33,2.89,2.84,2.97,2.64,3.13,3.8,4.08,3.7,3.88,3.53,3.92,3.49,3.45,3.64,3.82,3.96,4.09,4.57,4.88,4.35,3.87,3.97,4.25,4.21,4.69,4.51,4.34,4.11,3.91,3.8,4.28,4.18,4.57,4.57,4.23,4.25,4.18,4.42,4.23,4.36,4.23,4.15,4.1,4.02,4.16,4.24,3.96,4.31,4.39,4.45,4.42,4.74,4.76,5.29,5.28],"TYX":[4.68,4.5,4.89,5.17,5.21,5.19,5.07,4.88,4.77,4.72,4.56,4.82,4.93,4.67,4.85,4.82,5.01,5.13,4.92,4.83,4.83,4.75,4.4,4.46,4.35,4.42,4.31,4.5,4.71,4.53,4.6,4.41,4.3,4.37,3.49,2.69,3.6,3.72,3.56,4.04,4.34,4.31,4.31,4.18,4.05,4.24,4.19,4.64,4.51,4.53,4.72,4.53,4.21,3.91,3.98,3.53,3.69,4.0,4.1,4.36,4.57,4.49,4.51,4.41,4.22,4.38,4.13,3.59,2.92,3.2,3.06,2.89,2.93,3.09,3.35,3.11,2.67,2.76,2.58,2.68,2.83,2.85,2.79,2.95,3.17,3.09,3.1,2.88,3.31,3.5,3.65,3.68,3.69,3.63,3.81,3.96,3.62,3.59,3.56,3.46,3.31,3.34,3.31,3.08,3.21,3.06,2.91,2.75,2.25,2.6,2.54,2.75,2.85,3.1,2.93,2.93,2.88,2.93,2.99,3.02,2.76,2.62,2.62,2.67,2.63,2.31,2.18,2.23,2.34,2.59,3.02,3.06,3.05,2.97,3.02,2.95,2.86,2.84,2.9,2.72,2.86,2.88,2.83,2.74,2.94,3.13,2.97,3.1,2.99,2.98,3.08,3.01,3.2,3.4,3.31,3.02,3.01,3.08,2.82,2.94,2.58,2.53,2.53,1.97,2.12,2.18,2.2,2.39,2.02,1.67,1.35,1.27,1.41,1.41,1.2,1.45,1.45,1.64,1.57,1.65,1.86,2.18,2.42,2.3,2.26,2.07,1.9,1.93,2.09,1.94,1.79,1.9,2.1,2.18,2.45,2.95,3.06,3.12,2.97,3.26,3.77,4.2,3.82,3.97,3.66,3.93,3.69,3.68,3.86,3.86,4.02,4.2,4.71,5.02,4.51,4.02,4.22,4.38,4.35,4.79,4.65,4.5,4.37,4.2,4.13,4.47,4.37,4.79,4.81,4.52,4.61,4.68,4.93,4.78,4.89,4.92,4.73,4.67,4.66,4.84,4.87,4.63,4.89,4.99,4.99,4.9,5.28,5.25,5.64,5.66],"KRW":[948,953,964,922,937,936,942,950,936,925,920,917,924,929,932,931,931,922,920,937,911,899,919,926,941,938,992,1002,1029,1046,1011,1088,1205,1289,1468,1242,1377,1530,1375,1278,1250,1273,1223,1250,1174,1186,1161,1151,1158,1161,1132,1108,1200,1227,1184,1193,1139,1132,1163,1127,1117,1127,1098,1069,1075,1069,1049,1072,1177,1104,1140,1155,1126,1125,1138,1132,1180,1157,1137,1134,1115,1090,1082,1038,1085,1084,1112,1103,1128,1147,1113,1112,1076,1058,1060,1054,1079,1069,1067,1029,1019,1013,1024,1014,1052,1054,1099,1095,1099,1101,1106,1069,1107,1118,1171,1178,1194,1140,1155,1175,1206,1241,1140,1134,1198,1152,1123,1118,1102,1147,1168,1205,1169,1134,1117,1130,1124,1146,1124,1123,1146,1123,1081,1069,1073,1079,1062,1068,1075,1121,1117,1115,1112,1138,1117,1116,1109,1115,1134,1159,1188,1156,1181,1207,1202,1164,1177,1156,1187,1211,1223,1211,1238,1198,1190,1180,1168,1130,1104,1086,1112,1119,1132,1107,1113,1131,1142,1166,1187,1167,1191,1190,1208,1198,1210,1272,1236,1302,1295,1350,1430,1422,1325,1260,1232,1318,1297,1339,1320,1323,1272,1323,1348,1348,1288,1278,1327,1333,1350,1375,1376,1387,1384,1333,1309,1379,1393,1467,1442,1450,1469,1431,1370,1364,1393,1384,1399,1424,1461,1438,1429,1432,1516,1487,1495,1542,1421,1377,1351,1339],"DXY":[88.96,90.11,89.73,86.11,84.72,85.22,85.3,85.05,85.97,85.32,82.92,83.72,84.61,83.57,82.93,81.45,82.3,81.92,80.77,80.79,77.72,76.48,76.15,76.7,75.18,73.71,71.8,72.51,72.88,72.46,73.23,77.38,79.45,85.63,86.52,81.31,86.0,88.01,85.43,84.61,80.43,80.13,78.35,78.17,76.65,76.3,74.88,77.86,79.46,80.36,81.07,81.87,86.48,86.02,81.54,83.2,78.72,77.27,81.2,79.03,77.74,76.89,75.86,72.93,74.64,74.3,73.9,74.13,78.55,76.17,78.39,80.17,79.28,78.73,78.93,78.79,83.04,81.65,82.64,81.25,79.94,79.92,80.15,79.77,79.21,81.98,82.99,81.73,83.38,83.17,81.45,82.09,80.22,80.2,80.68,80.04,81.27,79.78,80.1,79.49,80.37,79.78,81.46,82.75,85.94,86.88,88.36,90.27,94.8,95.25,98.36,94.6,96.91,95.49,97.37,95.95,96.35,96.95,100.17,98.63,99.61,98.21,94.59,93.08,95.89,96.14,95.53,96.02,95.46,98.45,101.5,102.39,99.51,101.12,100.35,99.05,96.92,95.66,92.86,92.67,93.08,94.55,93.01,92.12,89.13,90.61,90.15,91.84,93.99,94.63,94.49,95.14,95.19,97.13,97.27,96.17,95.58,96.16,97.28,97.48,97.75,96.13,98.52,98.92,99.38,97.35,98.27,96.39,97.39,98.13,99.05,99.02,98.34,97.39,93.49,92.14,93.89,94.04,91.87,89.94,90.58,90.93,93.23,91.28,90.03,92.44,92.17,92.63,94.25,94.12,95.99,95.67,96.54,96.71,98.31,102.96,101.75,104.69,105.9,108.7,112.12,111.53,105.95,103.52,102.1,104.87,102.51,101.67,104.32,102.91,101.86,103.62,106.17,106.66,103.5,101.33,103.27,104.16,104.55,106.22,104.67,105.87,104.1,101.7,100.78,103.98,105.74,108.49,108.37,107.61,104.21,99.47,99.33,96.88,100.03,97.77,97.77,99.8,99.46,98.28,96.99,97.61,99.96,98.08,98.91,101.19,99.8,99.43,101.45,102.25]};
+const START = '2006-01';
+const months = RAW.GSPC.map((_,i)=>{const y=2006+Math.floor(i/12), m=i%12+1; return y+'-'+String(m).padStart(2,'0');});
+const N = months.length;
+const S = [
+  {k:'GSPC', name:'S&P 500', short:'S&P', col:'--s-spx', type:'eq'},
+  {k:'IXIC', name:'나스닥 종합', short:'나스닥', col:'--s-ndx', type:'eq'},
+  {k:'KS11', name:'코스피', short:'코스피', col:'--s-ksp', type:'eq'},
+  {k:'TNX', name:'미국채 10년', short:'10년물', col:'--s-y10', type:'y'},
+  {k:'TYX', name:'미국채 30년', short:'30년물', col:'--s-y30', type:'y'},
+];
+const FX = [
+  {k:'KRW', name:'원/달러', short:'원/달러', col:'--s-krw', type:'fx'},
+  {k:'DXY', name:'달러인덱스', short:'DXY', col:'--s-dxy', type:'fx'},
+];
+const ALL = S.concat(FX);
+const EQ = S.filter(s=>s.type==='eq'), YD = S.filter(s=>s.type==='y');
+RAW.KSU = RAW.KS11.map((v,i)=>v/RAW.KRW[i]*1000);
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const mi = ym => months.indexOf(ym);
+const fmt = (v,d=0)=> v==null||isNaN(v)?'–':v.toLocaleString('ko-KR',{minimumFractionDigits:d,maximumFractionDigits:d});
+const lbl = ym => ym.replace('-','.');
+
+// monthly changes (index i = change from i-1 to i)
+const CH = {};
+EQ.forEach(s=>CH[s.k]=RAW[s.k].map((v,i)=>i?Math.log(v/RAW[s.k][i-1]):null));
+YD.forEach(s=>CH[s.k]=RAW[s.k].map((v,i)=>i?(v-RAW[s.k][i-1])*100:null));
+['KRW','DXY','KSU'].forEach(k=>CH[k]=RAW[k].map((v,i)=>i?Math.log(v/RAW[k][i-1]):null));
+const pctOf=k=>RAW[k].filter(v=>v<RAW[k][N-1]).length/N*100;
+function corr(a,b){let n=a.length,ma=0,mb=0;for(let i=0;i<n;i++){ma+=a[i];mb+=b[i]}ma/=n;mb/=n;let sab=0,saa=0,sbb=0;for(let i=0;i<n;i++){const x=a[i]-ma,y=b[i]-mb;sab+=x*y;saa+=x*x;sbb+=y*y}return sab/Math.sqrt(saa*sbb)}
+function rolling(k,w){return CH[k].map((_,i)=>{if(i<w)return null;const a=[],b=[];for(let j=i-w+1;j<=i;j++){a.push(CH[k][j]);b.push(CH.TNX[j])}return corr(a,b)})}
+
+// ---------- scorecard ----------
+(function(){
+  const t=document.getElementById('score'); const yrs=(N-1)/12;
+  let h='<thead><tr><th>지표</th><th>2006.01</th><th>최근</th><th>20년 변화</th><th>연환산 · 저점</th><th>20년 최고</th><th>최대 낙폭 · 현재 분위</th></tr></thead><tbody>';
+  h+='<tr class="grp"><td colspan="7">주가지수</td></tr>';
+  const eqRow=(name,col,v,dig)=>{const a=v[0],b=v[N-1];let pk=-1,mdd=0,mx=0,mxi=0;v.forEach((x,i)=>{if(x>pk)pk=x;mdd=Math.min(mdd,x/pk-1);if(x>mx){mx=x;mxi=i}});
+    return `<tr><td><span class="sw" style="background:var(${col})"></span>${name}</td><td class="num">${dig==null?fmt(a):'–'}</td><td class="num">${dig==null?fmt(b):'–'}</td><td class="num">${fmt(b/a,2)}배</td><td class="num">${fmt((Math.pow(b/a,1/yrs)-1)*100,1)}%</td><td class="num">${dig==null?fmt(mx):'최고'} <span style="color:var(--ink-3)">(${lbl(months[mxi])})</span></td><td class="num">${fmt(mdd*100,1)}%</td></tr>`};
+  EQ.forEach(s=>{h+=eqRow(s.name,s.col,RAW[s.k])});
+  h+=eqRow('코스피 (달러 환산)','--s-ksp',RAW.KSU,1);
+  h+='<tr class="grp"><td colspan="7">미국채 금리</td></tr>';
+  YD.forEach(s=>{const v=RAW[s.k],a=v[0],b=v[N-1];let mx=-1,mxi=0,mn=99,mni=0;v.forEach((x,i)=>{if(x>mx){mx=x;mxi=i}if(x<mn){mn=x;mni=i}});
+    h+=`<tr><td><span class="sw" style="background:var(${s.col})"></span>${s.name}</td><td class="num">${fmt(a,2)}%</td><td class="num">${fmt(b,2)}%</td><td class="num">${b-a>=0?'+':''}${fmt((b-a)*100)}bp</td><td class="num" style="color:var(--ink-3)">저점 ${fmt(mn,2)}% (${lbl(months[mni])})</td><td class="num">${fmt(mx,2)}% <span style="color:var(--ink-3)">(${lbl(months[mxi])})</span></td><td class="num">상위 ${fmt(100-pctOf(s.k),1)}%</td></tr>`});
+  h+='<tr class="grp"><td colspan="7">환율</td></tr>';
+  FX.forEach(s=>{const v=RAW[s.k],a=v[0],b=v[N-1],d=s.k==='DXY'?2:0;let mx=-1,mxi=0,mn=1e9,mni=0;v.forEach((x,i)=>{if(x>mx){mx=x;mxi=i}if(x<mn){mn=x;mni=i}});
+    h+=`<tr><td><span class="sw" style="background:var(${s.col})"></span>${s.name}</td><td class="num">${fmt(a,d)}</td><td class="num">${fmt(b,d)}</td><td class="num">${b>=a?'+':''}${fmt((b/a-1)*100,1)}%</td><td class="num" style="color:var(--ink-3)">저점 ${fmt(mn,d)} (${lbl(months[mni])})</td><td class="num">${fmt(mx,d)} <span style="color:var(--ink-3)">(${lbl(months[mxi])})</span></td><td class="num">상위 ${fmt(100-pctOf(s.k),1)}%</td></tr>`});
+  t.innerHTML=h+'</tbody>';
+})();
+
+// ---------- data table ----------
+(function(){
+  let h='<thead><tr><th>월</th>'+S.map(s=>`<th>${s.short}</th>`).join('')+'<th>30–10y</th><th>원/달러</th><th>DXY</th></tr></thead><tbody>';
+  for(let i=N-1;i>=0;i--){h+=`<tr><td class="num">${lbl(months[i])}</td>`+S.map(s=>`<td class="num">${s.type==='eq'?fmt(RAW[s.k][i]):fmt(RAW[s.k][i],2)}</td>`).join('')+`<td class="num">${fmt((RAW.TYX[i]-RAW.TNX[i])*100)}bp</td><td class="num">${fmt(RAW.KRW[i])}</td><td class="num">${fmt(RAW.DXY[i],2)}</td></tr>`}
+  document.getElementById('datatbl').innerHTML=h+'</tbody>';
+})();
+
+// ---------- main stacked chart ----------
+const HIKES=[['2015-12','2018-12'],['2022-03','2023-07']];
+const EVENTS=[['2008-09','리먼'],['2013-05','테이퍼 텐트럼'],['2020-03','코로나'],['2022-03','인상 개시'],['2024-09','첫 인하']];
+let state={from:'2006-01', win:24, per:'2006-02|2026-10', ks:'krw'};
+const eqKey=s=>s.k==='KS11'&&state.ks==='usd'?'KSU':s.k;
+const eqName=s=>s.k==='KS11'&&state.ks==='usd'?'코스피($)':s.short;
+const svg=document.getElementById('svg'), tip=document.getElementById('tip'), box=document.getElementById('chart');
+const NS='http://www.w3.org/2000/svg';
+const el=(t,a={},p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e};
+let geo=null;
+
+function niceTicks(lo,hi,n=5){const span=hi-lo,step0=span/n,mag=Math.pow(10,Math.floor(Math.log10(step0)));const st=[1,2,2.5,5,10].map(x=>x*mag).find(x=>span/x<=n)||mag*10;const out=[];for(let v=Math.ceil(lo/st)*st;v<=hi+1e-9;v+=st)out.push(+v.toFixed(6));return out}
+
+function draw(){
+  const W=box.clientWidth; const narrow=W<560;
+  const m={l:narrow?40:48,r:narrow?62:78,t:8};
+  const pH=[narrow?230:300, narrow?140:170, narrow?120:140, narrow?110:130]; const gap=30, xAx=24;
+  const H=m.t+pH[0]+gap+pH[1]+gap+pH[2]+gap+pH[3]+xAx;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`); svg.setAttribute('height',H); svg.innerHTML='';
+  const i0=mi(state.from), i1=N-1, iw=m.l, ow=W-m.r;
+  const x=i=>iw+(i-i0)/(i1-i0)*(ow-iw);
+  const tops=[m.t]; for(let p=1;p<pH.length;p++)tops.push(tops[p-1]+pH[p-1]+gap);
+  const ink3=css('--ink-3'), rule=css('--rule'), rule2=css('--rule-2'), band=css('--band'), sheet=css('--sheet');
+
+  // bands + events across all panels
+  HIKES.forEach(([a,b])=>{let ia=Math.max(mi(a),i0),ib=mi(b);if(ib<i0)return;tops.forEach((t,p)=>el('rect',{x:x(ia),y:t,width:Math.max(0,x(ib)-x(ia)),height:pH[p],fill:band},svg))});
+  // year ticks
+  const span=(i1-i0)/12, stepY=span>12?2:span>6?1:1;
+  const xg=el('g',{},svg);
+  for(let i=i0;i<=i1;i++){const [y,mo]=months[i].split('-');if(mo!=='01')continue;if((+y)%stepY)continue;
+    tops.forEach((t,p)=>el('line',{x1:x(i),x2:x(i),y1:t,y2:t+pH[p],stroke:rule2,'stroke-width':1},xg));
+    const tx=el('text',{x:x(i),y:tops[3]+pH[3]+16,'text-anchor':'middle'},xg);tx.textContent=narrow?"'"+y.slice(2):y;}
+
+  // panel A: rebased log
+  const reb={};EQ.forEach(s=>{const k=eqKey(s);reb[s.k]=RAW[k].map(v=>v/RAW[k][i0]*100)});
+  let lo=1e9,hi=0;EQ.forEach(s=>{for(let i=i0;i<=i1;i++){lo=Math.min(lo,reb[s.k][i]);hi=Math.max(hi,reb[s.k][i])}});
+  lo*=0.92;hi*=1.06; const LA=Math.log(lo),LB=Math.log(hi);
+  const yA=v=>tops[0]+pH[0]-(Math.log(v)-LA)/(LB-LA)*pH[0];
+  const cand=[10,20,25,50,75,100,150,200,300,400,500,700,1000,1500,2000,3000,5000];
+  let ticks=cand.filter(v=>v>=lo&&v<=hi); if(ticks.length>7)ticks=ticks.filter(v=>[50,100,200,500,1000,2000,5000].includes(v));
+  ticks.forEach(v=>{el('line',{x1:iw,x2:ow,y1:yA(v),y2:yA(v),stroke:v===100?ink3:rule,'stroke-width':v===100?1:1,'stroke-opacity':v===100?.5:1},svg);const t=el('text',{x:iw-6,y:yA(v)+4,'text-anchor':'end'},svg);t.textContent=v});
+  const pa=el('text',{x:iw,y:tops[0]-0+12,class:'plabel'},svg);pa.textContent=`주가지수 · ${lbl(state.from)}=100 · 로그 눈금${state.ks==='usd'?' · 코스피 달러 환산':''}`;
+  pa.setAttribute('x',iw+8);pa.setAttribute('y',tops[0]+16);
+  // events
+  EVENTS.forEach(([ym,t],k)=>{const i=mi(ym);if(i<i0)return;el('line',{x1:x(i),x2:x(i),y1:tops[0]+24,y2:tops[0]+pH[0],stroke:ink3,'stroke-width':1,'stroke-opacity':.35},svg);
+    if(narrow&&k%2)return;const tx=el('text',{x:x(i)+4,y:tops[0]+pH[0]-6-(k%2)*13,class:'ev'},svg);tx.textContent=t});
+  const ends=[];
+  EQ.forEach(s=>{let d='';for(let i=i0;i<=i1;i++)d+=(i===i0?'M':'L')+x(i).toFixed(1)+','+yA(reb[s.k][i]).toFixed(1);
+    el('path',{d,fill:'none',stroke:css(s.col),'stroke-width':2,'stroke-linejoin':'round',class:'ln'},svg);ends.push({s,y:yA(reb[s.k][i1]),v:reb[s.k][i1]})});
+  placeLabels(ends,tops[0],tops[0]+pH[0]).forEach(e=>{el('circle',{cx:ow,cy:e.y0,r:3.5,fill:css(e.s.col),stroke:sheet,'stroke-width':2},svg);const t=el('text',{x:ow+8,y:e.y+4,class:'dl'},svg);t.textContent=(narrow?'':eqName(e.s)+' ')+fmt(e.v)});
+
+  // panel B: yields
+  let ylo=99,yhi=0;YD.forEach(s=>{for(let i=i0;i<=i1;i++){ylo=Math.min(ylo,RAW[s.k][i]);yhi=Math.max(yhi,RAW[s.k][i])}});
+  ylo=Math.max(0,Math.floor(ylo*2)/2-0.25);yhi=Math.ceil(yhi*2)/2+0.1;
+  const yB=v=>tops[1]+pH[1]-(v-ylo)/(yhi-ylo)*pH[1];
+  niceTicks(ylo,yhi,4).forEach(v=>{el('line',{x1:iw,x2:ow,y1:yB(v),y2:yB(v),stroke:rule},svg);const t=el('text',{x:iw-6,y:yB(v)+4,'text-anchor':'end'},svg);t.textContent=v.toFixed(v%1?1:0)+'%'});
+  const pb=el('text',{x:iw+8,y:tops[1]+16,class:'plabel'},svg);pb.textContent='미국채 금리 · %';
+  const ends2=[];
+  YD.forEach(s=>{let d='';for(let i=i0;i<=i1;i++)d+=(i===i0?'M':'L')+x(i).toFixed(1)+','+yB(RAW[s.k][i]).toFixed(1);
+    el('path',{d,fill:'none',stroke:css(s.col),'stroke-width':2,'stroke-linejoin':'round',class:'ln'},svg);ends2.push({s,y:yB(RAW[s.k][i1]),v:RAW[s.k][i1]})});
+  placeLabels(ends2,tops[1],tops[1]+pH[1]).forEach(e=>{el('circle',{cx:ow,cy:e.y0,r:3.5,fill:css(e.s.col),stroke:sheet,'stroke-width':2},svg);const t=el('text',{x:ow+8,y:e.y+4,class:'dl'},svg);t.textContent=(narrow?'':e.s.short+' ')+fmt(e.v,2)});
+
+  // panel C: rolling corr
+  const yC=v=>tops[2]+pH[2]/2-v*pH[2]/2;
+  [-1,-.5,0,.5,1].forEach(v=>{el('line',{x1:iw,x2:ow,y1:yC(v),y2:yC(v),stroke:v===0?ink3:rule,'stroke-opacity':v===0?.6:1},svg);const t=el('text',{x:iw-6,y:yC(v)+4,'text-anchor':'end'},svg);t.textContent=(v>0?'+':'')+v});
+  const pc=el('text',{x:iw+8,y:tops[2]+16,class:'plabel'},svg);pc.textContent=narrow?`10년물 금리와의 ${state.win}개월 상관`:`주가 vs 10년물 금리 변화 · ${state.win}개월 롤링 상관`;
+  const RC={};const ends3=[];
+  EQ.forEach(s=>{RC[s.k]=rolling(eqKey(s),state.win);let d='',pen=false;for(let i=i0;i<=i1;i++){const v=RC[s.k][i];if(v==null){pen=false;continue}d+=(pen?'L':'M')+x(i).toFixed(1)+','+yC(v).toFixed(1);pen=true}
+    el('path',{d,fill:'none',stroke:css(s.col),'stroke-width':2,'stroke-linejoin':'round',class:'ln'},svg);ends3.push({s,y:yC(RC[s.k][i1]),v:RC[s.k][i1]})});
+  placeLabels(ends3,tops[2],tops[2]+pH[2]).forEach(e=>{el('circle',{cx:ow,cy:e.y0,r:3.5,fill:css(e.s.col),stroke:sheet,'stroke-width':2},svg);const t=el('text',{x:ow+8,y:e.y+4,class:'dl'},svg);t.textContent=(narrow?'':eqName(e.s)+' ')+(e.v>0?'+':'')+fmt(e.v,2)});
+  if(!narrow){const c1=el('text',{x:ow-4,y:tops[2]+12,'text-anchor':'end',class:'ev'},svg);c1.textContent='같이 움직임 ↑';}
+  const c2=el('text',{x:ow-4,y:tops[2]+pH[2]-5,'text-anchor':'end',class:'ev'},svg);c2.textContent='반대로 움직임 ↓';
+
+  // panel D: KRW
+  let klo=1e9,khi=0;for(let i=i0;i<=i1;i++){klo=Math.min(klo,RAW.KRW[i]);khi=Math.max(khi,RAW.KRW[i])}
+  klo=Math.floor((klo-20)/50)*50;khi=Math.ceil((khi+20)/50)*50;
+  const yD=v=>tops[3]+pH[3]-(v-klo)/(khi-klo)*pH[3];
+  niceTicks(klo,khi,3).forEach(v=>{el('line',{x1:iw,x2:ow,y1:yD(v),y2:yD(v),stroke:rule},svg);const t=el('text',{x:iw-6,y:yD(v)+4,'text-anchor':'end'},svg);t.textContent=fmt(v)});
+  const pd=el('text',{x:iw+8,y:tops[3]+16,class:'plabel'},svg);pd.textContent='원/달러 · 원 (위로 갈수록 원화 약세)';
+  {let d='';for(let i=i0;i<=i1;i++)d+=(i===i0?'M':'L')+x(i).toFixed(1)+','+yD(RAW.KRW[i]).toFixed(1);
+   el('path',{d,fill:'none',stroke:css('--s-krw'),'stroke-width':2,'stroke-linejoin':'round',class:'ln'},svg);
+   const ye=yD(RAW.KRW[i1]);el('circle',{cx:ow,cy:ye,r:3.5,fill:css('--s-krw'),stroke:sheet,'stroke-width':2},svg);
+   const t=el('text',{x:ow+8,y:Math.min(tops[3]+pH[3]-4,Math.max(tops[3]+8,ye))+4,class:'dl'},svg);t.textContent=fmt(RAW.KRW[i1]);}
+
+  // crosshair layer
+  const cross=el('g',{style:'display:none'},svg);
+  const vline=el('line',{y1:tops[0],y2:tops[3]+pH[3],stroke:css('--ink-2'),'stroke-width':1,'stroke-opacity':.6},cross);
+  const dots=S.map(s=>el('circle',{r:4,fill:css(s.col),stroke:sheet,'stroke-width':2},cross));
+  const dots3=EQ.map(s=>el('circle',{r:3.5,fill:css(s.col),stroke:sheet,'stroke-width':2},cross));
+  const dotK=el('circle',{r:4,fill:css('--s-krw'),stroke:sheet,'stroke-width':2},cross);
+  geo={x,i0,i1,iw,ow,yA,yB,yC,yD,reb,RC,cross,vline,dots,dots3,dotK,W,H};
+}
+function placeLabels(arr,top,bot){arr.forEach(e=>{e.y0=e.y;e.y=Math.max(top+8,Math.min(bot-4,e.y))});arr.sort((a,b)=>a.y-b.y);const g=14;for(let k=1;k<arr.length;k++)if(arr[k].y-arr[k-1].y<g)arr[k].y=arr[k-1].y+g;const over=arr.at(-1).y-(bot-4);if(over>0){arr.at(-1).y-=over;for(let k=arr.length-2;k>=0;k--)if(arr[k+1].y-arr[k].y<g)arr[k].y=arr[k+1].y-g}return arr}
+
+function showAt(clientX){
+  if(!geo)return;const r=svg.getBoundingClientRect();const px=(clientX-r.left)*(geo.W/r.width);
+  if(px<geo.iw-4||px>geo.ow+4){hide();return}
+  let i=Math.round(geo.i0+(px-geo.iw)/(geo.ow-geo.iw)*(geo.i1-geo.i0));i=Math.max(geo.i0,Math.min(geo.i1,i));
+  geo.cross.style.display='';const X=geo.x(i);geo.vline.setAttribute('x1',X);geo.vline.setAttribute('x2',X);
+  S.forEach((s,k)=>{const y=s.type==='eq'?geo.yA(geo.reb[s.k][i]):geo.yB(RAW[s.k][i]);geo.dots[k].setAttribute('cx',X);geo.dots[k].setAttribute('cy',y)});
+  geo.dotK.setAttribute('cx',X);geo.dotK.setAttribute('cy',geo.yD(RAW.KRW[i]));
+  EQ.forEach((s,k)=>{const v=geo.RC[s.k][i];const d=geo.dots3[k];if(v==null){d.style.display='none';return}d.style.display='';d.setAttribute('cx',X);d.setAttribute('cy',geo.yC(v))});
+  const row=(s,v)=>`<div class="r"><span><i style="background:var(${s.col})"></i>${s.name}</span><b>${v}</b></div>`;
+  let h=`<div class="d">${lbl(months[i])}${i===N-1?' (월중)':''}</div>`;
+  EQ.forEach(s=>{const ch=CH[eqKey(s)][i];h+=row(s.k==='KS11'&&state.ks==='usd'?{...s,name:'코스피 ($ 기준 변화)'}:s,`${fmt(RAW[s.k][i])} <span style="color:var(--ink-3);font-weight:400">${ch==null?'':(ch>=0?'+':'')+fmt((Math.exp(ch)-1)*100,1)+'%'}</span>`)});
+  h+='<hr>';YD.forEach(s=>{const ch=CH[s.k][i];h+=row(s,`${fmt(RAW[s.k][i],2)}% <span style="color:var(--ink-3);font-weight:400">${ch==null?'':(ch>=0?'+':'')+fmt(ch)+'bp'}</span>`)});
+  h+=`<div class="r"><span>30년−10년</span><b>${fmt((RAW.TYX[i]-RAW.TNX[i])*100)}bp</b></div>`;
+  h+='<hr>';FX.forEach(s=>{const ch=CH[s.k][i];h+=row(s,`${fmt(RAW[s.k][i],s.k==='DXY'?2:0)} <span style="color:var(--ink-3);font-weight:400">${ch==null?'':(ch>=0?'+':'')+fmt((Math.exp(ch)-1)*100,1)+'%'}</span>`)});
+  if(geo.RC.GSPC[i]!=null){h+='<hr>';EQ.forEach(s=>{h+=`<div class="r"><span>${eqName(s)} 상관(${state.win}M)</span><b>${(geo.RC[s.k][i]>0?'+':'')+fmt(geo.RC[s.k][i],2)}</b></div>`})}
+  tip.innerHTML=h;tip.hidden=false;
+  const bx=box.clientWidth, sx=X*(r.width/geo.W), tw=tip.offsetWidth;
+  let left=sx+16; if(left+tw>bx)left=sx-tw-16; tip.style.left=Math.max(0,left)+'px'; tip.style.top='40px';
+}
+function hide(){tip.hidden=true;if(geo)geo.cross.style.display='none'}
+svg.addEventListener('pointermove',e=>showAt(e.clientX));
+svg.addEventListener('pointerdown',e=>showAt(e.clientX));
+svg.addEventListener('pointerleave',hide);
+
+// ---------- regime panel ----------
+const SER5=S;
+function periodIdx(){const [a,b]=state.per.split('|');return [mi(a),mi(b)]}
+function drawMatrix(){
+  const [a,b]=periodIdx();const cols={};ALL.forEach(s=>cols[s.k]=CH[s.k].slice(a,b+1));
+  const neg=css('--neg'),pos=css('--pos'),mid=css('--mid');
+  let h='<div></div>'+ALL.map(s=>`<div class="h">${s.short}</div>`).join('');
+  ALL.forEach(r=>{h+=`<div class="rh">${r.short}</div>`;ALL.forEach(c=>{const v=r.k===c.k?1:corr(cols[r.k],cols[c.k]);const bg=r.k===c.k?css('--chip'):mix(v<0?neg:pos,mid,1-Math.min(1,Math.abs(v)));const dark=r.k===c.k?false:lum(bg)<0.32;
+    h+=`<div class="c" title="${r.name} × ${c.name}: ${v.toFixed(2)}" style="background:${bg};color:${r.k===c.k?'var(--ink-3)':dark?'#fff':'#14171c'}">${r.k===c.k?'—':(v>0?'+':'')+v.toFixed(2)}</div>`})});
+  document.getElementById('matrix').innerHTML=h;
+}
+function hex2rgb(h){h=h.replace('#','');if(h.length===3)h=h.split('').map(c=>c+c).join('');return [0,2,4].map(i=>parseInt(h.slice(i,i+2),16))}
+function mix(c1,c2,t){const a=hex2rgb(c1),b=hex2rgb(c2);return 'rgb('+a.map((v,i)=>Math.round(v*(1-t)+b[i]*t)).join(',')+')'}
+function lum(rgb){const v=rgb.match(/\d+/g).map(n=>{n/=255;return n<=.03928?n/12.92:Math.pow((n+.055)/1.055,2.4)});return .2126*v[0]+.7152*v[1]+.0722*v[2]}
+
+const BUCKETS=[['−25bp 이하',-1e9,-25],['−25~−10',-25,-10],['±10bp',-10,10],['+10~+25',10,25],['+25bp 이상',25,1e9]];
+const bsvg=document.getElementById('bsvg'),btip=document.getElementById('btip'),bbox=document.getElementById('bars');
+function drawBars(){
+  const [a,b]=periodIdx();const W=bbox.clientWidth,narrow=W<480;const H=narrow?250:270;const m={l:40,r:8,t:14,b:46};
+  bsvg.setAttribute('viewBox',`0 0 ${W} ${H}`);bsvg.setAttribute('height',H);bsvg.innerHTML='';
+  const stats=BUCKETS.map(([n,lo,hi])=>{const idx=[];for(let i=Math.max(a,1);i<=b;i++){const d=CH.TNX[i];if(d>lo&&d<=hi)idx.push(i)}
+    return {n,cnt:idx.length,v:EQ.map(s=>idx.length?idx.reduce((acc,i)=>acc+(Math.exp(CH[s.k][i])-1),0)/idx.length*100:null)}});
+  let mx=0;stats.forEach(s=>s.v.forEach(v=>{if(v!=null)mx=Math.max(mx,Math.abs(v))}));mx=Math.max(1,Math.ceil(mx+0.5));
+  const y=v=>m.t+(mx-v)/(2*mx)*(H-m.t-m.b);
+  const rule=css('--rule'),ink3=css('--ink-3');
+  niceTicks(-mx,mx,4).forEach(v=>{el('line',{x1:m.l,x2:W-m.r,y1:y(v),y2:y(v),stroke:v===0?ink3:rule,'stroke-opacity':v===0?.6:1},bsvg);const t=el('text',{x:m.l-6,y:y(v)+4,'text-anchor':'end'},bsvg);t.textContent=(v>0?'+':'')+v+'%'});
+  const gw=(W-m.l-m.r)/BUCKETS.length,bw=Math.min(18,(gw-16)/3-2);
+  stats.forEach((st,g)=>{const cx=m.l+gw*g+gw/2;
+    st.v.forEach((v,k)=>{if(v==null)return;const bx=cx+(k-1)*(bw+2)-bw/2;const y0=y(0),y1=y(v);const hgt=Math.abs(y1-y0);
+      const r=Math.min(4,hgt/2);const top=v>=0;const path=top?`M${bx},${y0}V${y1+r}Q${bx},${y1} ${bx+r},${y1}H${bx+bw-r}Q${bx+bw},${y1} ${bx+bw},${y1+r}V${y0}Z`:`M${bx},${y0}V${y1-r}Q${bx},${y1} ${bx+r},${y1}H${bx+bw-r}Q${bx+bw},${y1} ${bx+bw},${y1-r}V${y0}Z`;
+      const p=el('path',{d:path,fill:css(EQ[k].col)},bsvg);
+      const hit=el('rect',{x:bx-1,y:Math.min(y0,y1)-6,width:bw+2,height:hgt+12,fill:'transparent'},bsvg);
+      hit.addEventListener('pointerenter',()=>{btip.innerHTML=`<div class="d">10년물 ${st.n}</div><div class="r"><span><i style="background:var(${EQ[k].col})"></i>${EQ[k].name}</span><b>${(v>=0?'+':'')+fmt(v,2)}%</b></div><div class="r"><span>해당 개월 수</span><b>${st.cnt}</b></div>`;btip.hidden=false;
+        const rr=bsvg.getBoundingClientRect(),sc=rr.width/W;let L=(bx+bw+8)*sc;if(L+btip.offsetWidth>bbox.clientWidth)L=(bx-8)*sc-btip.offsetWidth;btip.style.left=Math.max(0,L)+'px';btip.style.top=Math.max(0,Math.min(y0,y1)*sc-10)+'px'});
+      hit.addEventListener('pointerleave',()=>btip.hidden=true)});
+    const t=el('text',{x:cx,y:H-m.b+16,'text-anchor':'middle',class:'plabel'},bsvg);t.textContent=st.n;t.setAttribute('style','font-size:'+(narrow?'10.5px':'11.5px'));
+    const c=el('text',{x:cx,y:H-m.b+31,'text-anchor':'middle'},bsvg);c.textContent=st.cnt+'개월'});
+}
+
+// ---------- reads (computed) ----------
+function drawReads(){
+  const seg=(a,b)=>{const ia=mi(a),ib=mi(b);const o={};EQ.forEach(s=>o[s.k]=corr(CH[s.k].slice(ia,ib+1),CH.TNX.slice(ia,ib+1)));return o};
+  const e=seg('2006-02','2021-12'), l=seg('2022-01','2026-10');
+  const sp=(RAW.TYX[N-1]-RAW.TNX[N-1])*100, y10=RAW.TNX[N-1];const cr=(k1,k2,a,b)=>corr(CH[k1].slice(mi(a),mi(b)+1),CH[k2].slice(mi(a),mi(b)+1));const yrs=(N-1)/12;const ksuX=RAW.KSU[N-1]/RAW.KSU[0];const R24={};EQ.forEach(s=>R24[s.k]=rolling(s.k,24));const minR=k=>Math.min(...R24[k].slice(mi('2023-01'),mi('2025-12')+1));const nowR=k=>R24[k][N-1];const sg=v=>(v>0?'+':'')+fmt(v,2);
+  const items=[
+    ['국면 전환','상관이 부호를 바꿨습니다',`2006–21년 S&P 500과 10년물 금리 변화의 상관은 ${fmt(e.GSPC,2)}로 양(+)이었습니다. 금리 상승이 성장 기대를 반영하던 시기입니다. 2022년 이후엔 ${fmt(l.GSPC,2)}로 뒤집혀, 금리 상승이 할인율 부담으로 바로 주가를 누르는 구조가 됐습니다. 나스닥(${fmt(l.IXIC,2)})이 더 민감합니다.`],
+    ['평균의 함정','20년 전체 상관 0은 “무관”이 아닙니다',`전체 구간 상관은 S&P ${fmt(corr(CH.GSPC.slice(1),CH.TNX.slice(1)),2)}, 코스피 ${fmt(corr(CH.KS11.slice(1),CH.TNX.slice(1)),2)}에 그칩니다. 반대 방향의 두 국면이 서로 상쇄된 결과라서, 롤링 상관 패널로 지금이 어느 국면인지 확인해야 합니다.`],
+    ['금리 충격','금리가 오르거나 급락한 달이 약했습니다','20년 전체로 10년물이 한 달에 10bp 넘게 오른 달과 25bp 넘게 급락한 달은 평균 수익률이 낮았습니다. 급락은 위기(경기 공포), 급등은 긴축 공포였던 경우가 많습니다. 성과는 금리가 소폭 내리거나 보합인 달(−25~+10bp)에 몰려 있습니다. 구간 버튼으로 국면별 차이를 확인할 수 있습니다.'],
+    ['코스피','같은 방향, 다른 강도',`코스피는 2022년 이후 상관 ${fmt(l.KS11,2)}로 방향은 미국과 같지만 강도는 약합니다. 2023–25년 24개월 롤링 상관의 저점도 ${sg(minR('KS11'))}로 S&P(${sg(minR('GSPC'))})보다 얕았습니다. 반도체 이익 사이클처럼 국내 요인이 강할 때는 미국 금리와의 연결이 느슨해집니다.`],
+    ['현재 위치','10년물 '+fmt(y10,2)+'%, 20년 중 상위 '+fmt(100-pctOf('TNX'),1)+'%',`250개 월말값 중 지금보다 높았던 달은 10년물 ${Math.round((100-pctOf('TNX'))*N/100)}개월, 30년물 ${Math.round((100-pctOf('TYX'))*N/100)}개월뿐입니다. 30–10년 스프레드는 ${fmt(sp)}bp로 20년 평균(약 59bp)보다 좁습니다. 최근 24개월 롤링 상관은 S&P ${sg(nowR('GSPC'))}, 나스닥 ${sg(nowR('IXIC'))}, 코스피 ${sg(nowR('KS11'))}입니다. 2023–25년의 강한 음(−) 국면에서 0 쪽으로 돌아오는 중이라, 금리 수준은 높아도 주가가 금리에 끌려다니는 정도는 약해졌습니다.`],
+    ['환율','금리 상승 = 달러 강세, 2022년 이후 뚜렷',`2006–21년 10년물 변화와 원/달러의 상관은 ${sg(cr('TNX','KRW','2006-02','2021-12'))}로 거의 무관했지만, 2022년 이후 ${sg(cr('TNX','KRW','2022-01','2026-10'))}(달러인덱스 ${sg(cr('TNX','DXY','2022-01','2026-10'))})로 올라섰습니다. 그래서 달러로 환산한 코스피의 금리 상관(${sg(cr('TNX','KSU','2022-01','2026-10'))})이 원화 기준(${sg(cr('TNX','KS11','2022-01','2026-10'))})보다 강합니다. 20년 달러 환산 코스피는 ${fmt(ksuX,2)}배(연 ${fmt((Math.pow(ksuX,1/yrs)-1)*100,1)}%)로 원화 기준 ${fmt(RAW.KS11[N-1]/RAW.KS11[0],2)}배에 못 미칩니다. 외국인 입장에서는 미국 금리 상승이 주가와 환율 두 경로로 동시에 부담입니다.`],
+  ];
+  document.getElementById('reads').innerHTML=items.map(([k,h,p])=>`<div class="read"><span class="k">${k}</span><h3>${h}</h3><p>${p}</p></div>`).join('');
+}
+
+// ---------- controls ----------
+function bindSeg(id,key,cb){const g=document.getElementById(id);g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));state[key]=key==='win'?+b.dataset.v:b.dataset.v;cb()})}
+bindSeg('seg-range','from',()=>{hide();draw()});
+bindSeg('seg-win','win',()=>{hide();draw()});
+bindSeg('seg-per','per',()=>{drawMatrix();drawBars()});
+bindSeg('seg-ks','ks',()=>{hide();draw()});
+function all(){draw();drawMatrix();drawBars()}
+document.getElementById('pct10').textContent='상위 '+fmt(100-pctOf('TNX'),1)+'%';
+drawReads();all();
+let rt;new ResizeObserver(()=>{clearTimeout(rt);rt=setTimeout(all,80)}).observe(document.querySelector('.wrap'));
+const mq=matchMedia('(prefers-color-scheme: dark)');mq.addEventListener&&mq.addEventListener('change',all);
+new MutationObserver(all).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+</script>
+
+</body></html>

@@ -1,0 +1,94 @@
+{
+  "slug": "cybersecurity-ai-era",
+  "date": "2026-10-03",
+  "asof": "2026-10-02 종가",
+  "category": "sector",
+  "title": {
+    "ko": "AI 시대의 사이버보안: 'AI로 지키는 보안'에서 'AI를 지키는 보안'으로",
+    "en": "Cybersecurity in the AI Era: From Security Powered by AI to Security for AI",
+    "es": "Ciberseguridad en la era de la IA: de la seguridad con IA a la seguridad para la IA",
+    "ja": "AI時代のサイバーセキュリティ：「AIで守る」から「AIを守る」へ"
+  },
+  "dek": {
+    "ko": "보안 예산은 'AI로 지키는 보안'에서 'AI를 지키는 보안'으로 옮겨가는 중이며, 승자는 플랫폼 통합 기업이다.",
+    "en": "Security spending is shifting from using AI for defense to defending AI itself, and integrated platform vendors are the winners.",
+    "es": "El gasto en seguridad pasa de usar la IA para defender a defender la propia IA, y los ganadores son las plataformas integradas.",
+    "ja": "セキュリティ予算は「AIで守る」から「AIを守る」へ移りつつあり、勝者はプラットフォーム統合型の企業だ。"
+  },
+  "key": {
+    "value": "$244.2B",
+    "label": {
+      "ko": "2026년 전 세계 보안 지출 전망 (가트너, +13.3%)",
+      "en": "Global security spending forecast for 2026 (Gartner, +13.3%)",
+      "es": "Pronóstico de gasto mundial en seguridad para 2026 (Gartner, +13.3%)",
+      "ja": "2026年の世界セキュリティ支出予測（ガートナー、+13.3%）"
+    }
+  },
+  "points": {
+    "ko": [
+      "AI 자체를 보호하는 지출은 $2.8B로, AI를 활용한 보안($49B)의 17분의 1에 불과하다.",
+      "CrowdStrike Falcon Flex ARR은 $2.29B(+101%), Palo Alto NGS ARR은 $9.10B(+63%, 인수 포함)다.",
+      "선행 P/E는 CrowdStrike 191배, Palo Alto 94.6배이며 두 종목 모두 6개월간 주가가 2배 넘게 올랐다."
+    ],
+    "en": [
+      "Spending to protect AI itself is $2.8B, just one-seventeenth of AI-powered security ($49B).",
+      "CrowdStrike's Falcon Flex ARR is $2.29B (+101%); Palo Alto's NGS ARR is $9.10B (+63%, including acquisitions).",
+      "Forward P/E is 191x for CrowdStrike and 94.6x for Palo Alto; both stocks more than doubled over six months."
+    ],
+    "es": [
+      "El gasto para proteger la propia IA es de $2.8B, apenas 1/17 de la seguridad basada en IA ($49B).",
+      "El ARR de Falcon Flex de CrowdStrike es de $2.29B (+101%); el ARR NGS de Palo Alto es de $9.10B (+63%, con adquisiciones).",
+      "El P/E proyectado es de 191x para CrowdStrike y 94.6x para Palo Alto; ambas acciones más que duplicaron su precio en seis meses."
+    ],
+    "ja": [
+      "AIそのものを守る支出は$2.8Bで、AIを活用したセキュリティ（$49B）の17分の1にすぎない。",
+      "CrowdStrikeのFalcon Flex ARRは$2.29B（+101%）、Palo AltoのNGS ARRは$9.10B（+63%、買収含む）。",
+      "予想PERはCrowdStrikeが191倍、Palo Altoが94.6倍。両銘柄とも6カ月で株価が2倍超に上昇した。"
+    ]
+  },
+  "tickers": [
+    "CrowdStrike",
+    "Palo Alto Networks",
+    "Zscaler",
+    "SentinelOne",
+    "Okta",
+    "안랩"
+  ],
+  "checkpoints": [
+    {
+      "date": "2026-12-01",
+      "text": {
+        "ko": "안랩 에이전틱 AI 플랫폼 출시 (온프레미스·SaaS)",
+        "en": "AhnLab launches its agentic AI platform (on-premises and SaaS)",
+        "es": "AhnLab lanza su plataforma de IA agéntica (local y SaaS)",
+        "ja": "アンラボがエージェント型AIプラットフォームを発売（オンプレミス・SaaS）"
+      }
+    }
+  ],
+  "tags": {
+    "ko": [
+      "사이버보안",
+      "AI 보안",
+      "플랫폼",
+      "N2SF"
+    ],
+    "en": [
+      "Cybersecurity",
+      "AI security",
+      "Platforms",
+      "N2SF"
+    ],
+    "es": [
+      "Ciberseguridad",
+      "Seguridad de IA",
+      "Plataformas",
+      "N2SF"
+    ],
+    "ja": [
+      "サイバーセキュリティ",
+      "AIセキュリティ",
+      "プラットフォーム",
+      "N2SF"
+    ]
+  }
+}

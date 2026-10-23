@@ -1,0 +1,116 @@
+{
+ "slug": "damodaran-ai-warning",
+ "date": "2026-10-10",
+ "asof": "2026-10-09 (US close) / 2026-10-08 (KR close)",
+ "category": "masters",
+ "title": {
+  "ko": "다모다란 AI 경고 영상 검증·수혜기업 판단",
+  "en": "Fact-Checking a Video on Damodaran's AI Warning, and Who Benefits",
+  "es": "Verificación de un video sobre la advertencia de Damodaran sobre la IA y quiénes se benefician",
+  "ja": "ダモダラン教授のAI警告動画の検証と恩恵企業の判断"
+ },
+ "dek": {
+  "ko": "‘AI 이익은 보이나 현금·투자수익은 아직’이라는 영상 논지는 다모다란 원문과 대체로 맞지만, 일부 숫자는 진행자 예시이거나 틀렸다.",
+  "en": "The video's core point (AI profits are visible, cash and returns not yet) broadly matches Damodaran, but some figures are the host's examples or wrong.",
+  "es": "La tesis del video (hay ganancias de IA, aún no efectivo ni retorno) coincide en general con Damodaran; algunas cifras son ejemplos del presentador o errores.",
+  "ja": "「AIの利益は見えるが現金と投資リターンはまだ」という動画の主旨はダモダラン氏の原文とおおむね一致するが、一部の数字は司会者の例示か誤りだ。"
+ },
+ "key": {
+  "value": "~$800B",
+  "label": {
+   "ko": "하이퍼스케일러 5사 Q2'26 CAPEX 연환산(분석자 합산)",
+   "en": "Annualized Q2'26 capex of 5 hyperscalers (analyst's sum)",
+   "es": "Capex anualizado del 2T26 de 5 hiperescaladores (suma del analista)",
+   "ja": "ハイパースケーラー5社のQ2'26設備投資・年率換算(分析者の合算)"
+  }
+ },
+ "points": {
+  "ko": [
+   "다모다란 원문: 미국 상장사 Q2 순이익은 $576B→$904B(+57%)로 늘었지만 S&P500 주주환원은 이익의 63%로 2004년 이후 최저다.",
+   "영상의 ‘4,000억 달러 = 미국 전체 기업 이익’은 오류다. 연환산 상장사 순이익 약 $3.6조의 약 11%다.",
+   "보고서는 NVIDIA를 최우선 조사 대상으로 본다. FY28 컨센서스 EPS $15.91이 2029년 연 10% 수익에 필요한 $15.55를 넘는다."
+  ],
+  "en": [
+   "Damodaran: US listed firms' Q2 net income rose from $576B to $904B (+57%), but S&P 500 payouts were 63% of earnings, lowest since 2004.",
+   "The video's claim that $400B equals all US corporate profit is wrong: it is about 11% of annualized listed-firm net income (about $3.6T).",
+   "The report ranks NVIDIA first for deeper research: FY28 consensus EPS ($15.91) already tops the $15.55 needed for 10% a year to 2029."
+  ],
+  "es": [
+   "Damodaran: la utilidad neta de cotizadas de EE. UU. subió a $904B en el 2T (+57%); el S&P 500 repartió 63% de lo ganado, mínimo desde 2004.",
+   "El video yerra: $400B no igualan toda la ganancia corporativa de EE. UU., sino cerca del 11% de la utilidad anualizada (unos $3.6T).",
+   "El informe prioriza a NVIDIA para investigar: el EPS de consenso FY28 ($15.91) ya supera los $15.55 necesarios para 10% anual hasta 2029."
+  ],
+  "ja": [
+   "ダモダラン氏の原文:米上場企業のQ2純利益は$576B→$904B(+57%)に増えたが、S&P500の株主還元は利益の63%で2004年以降最低だ。",
+   "「4,000億ドル=米企業利益全体」という動画の主張は誤り。年率換算の上場企業純利益約$3.6兆の約11%にとどまる。",
+   "レポートはNVIDIAを最優先の調査対象とする。FY28コンセンサスEPS $15.91が、2029年まで年10%のリターンに必要な$15.55をすでに上回る。"
+  ]
+ },
+ "tickers": [
+  "NVDA",
+  "TSM",
+  "000660",
+  "MU",
+  "AVGO",
+  "005930",
+  "GEV",
+  "267260",
+  "010120",
+  "298040"
+ ],
+ "checkpoints": [
+  {
+   "date": "2026-10-15",
+   "text": {
+    "ko": "TSMC 3분기 실적: AI 가속기 매출 성장 가이던스, 2027 CAPEX, CoWoS 증설",
+    "en": "TSMC Q3 results: AI accelerator revenue growth guidance, 2027 capex, CoWoS expansion",
+    "es": "Resultados del 3T de TSMC: guía de crecimiento de ingresos por aceleradores de IA, capex 2027, ampliación de CoWoS",
+    "ja": "TSMC第3四半期決算:AIアクセラレーター売上成長ガイダンス、2027年設備投資、CoWoS増設"
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "text": {
+    "ko": "MSFT·GEV·EQIX 실적: 2027 CAPEX, FCF, 미착수 리스, 내용연수 변경",
+    "en": "MSFT, GEV, EQIX results: 2027 capex, FCF, leases not yet commenced, useful-life changes",
+    "es": "Resultados de MSFT, GEV y EQIX: capex 2027, FCF, arrendamientos aún no iniciados, cambios de vida útil",
+    "ja": "MSFT・GEV・EQIX決算:2027年設備投資、FCF、未開始リース、耐用年数の変更"
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "text": {
+    "ko": "삼성전자 확정 실적: HBM4 출하·가격, 2027 증설 계획",
+    "en": "Samsung Electronics final results: HBM4 shipments and pricing, 2027 capacity plans",
+    "es": "Resultados definitivos de Samsung Electronics: envíos y precios de HBM4, planes de expansión 2027",
+    "ja": "サムスン電子確定決算:HBM4の出荷・価格、2027年の増設計画"
+   }
+  }
+ ],
+ "tags": {
+  "ko": [
+   "다모다란",
+   "AI CAPEX",
+   "팩트체크",
+   "현금흐름"
+  ],
+  "en": [
+   "Damodaran",
+   "AI capex",
+   "Fact-check",
+   "Cash flow"
+  ],
+  "es": [
+   "Damodaran",
+   "Capex de IA",
+   "Verificación",
+   "Flujo de caja"
+  ],
+  "ja": [
+   "ダモダラン",
+   "AI設備投資",
+   "ファクトチェック",
+   "キャッシュフロー"
+  ]
+ }
+}

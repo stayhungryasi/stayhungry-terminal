@@ -1,0 +1,109 @@
+{
+  "slug": "ethereum-outlook",
+  "date": "2026-10-04",
+  "asof": "2026-10-03",
+  "category": "crypto",
+  "title": {
+    "ko": "이더리움 전망: 1년은 완만한 회복, 3년은 상승 우위",
+    "en": "Ethereum Outlook: Gradual Recovery Over 1 Year, Upside Bias Over 3 Years",
+    "es": "Perspectivas de Ethereum: recuperación gradual a 1 año, sesgo alcista a 3 años",
+    "ja": "イーサリアム展望：1年は緩やかな回復、3年は上昇優位"
+  },
+  "dek": {
+    "ko": "ETH는 기관 금융의 결제층으로 자리를 굳히지만 가치 포착은 약해졌고, 기본 전망은 1년 $3,000 안팎·3년 $4,000 내외다.",
+    "en": "Ethereum is cementing its role as institutional finance's settlement layer, but value capture has weakened; base case: ~$3,000 in 1 year, ~$4,000 in 3.",
+    "es": "Ethereum se afianza como capa de liquidación de las finanzas institucionales, pero capta menos valor; escenario base: ~$3,000 a 1 año y ~$4,000 a 3.",
+    "ja": "ETHは機関金融の決済レイヤーとして地位を固める一方、価値捕捉は弱まった。基本シナリオは1年で$3,000前後、3年で$4,000程度。"
+  },
+  "key": {
+    "value": "$3,000",
+    "label": {
+      "ko": "1년 기본 시나리오 ETH 가격 (확률 47%, 저자 판단)",
+      "en": "Base-case 1-year ETH level (47% probability, author's view)",
+      "es": "Nivel de ETH en el escenario base a 1 año (probabilidad 47%, visión del autor)",
+      "ja": "1年後の基本シナリオのETH価格（確率47%、筆者判断）"
+    }
+  },
+  "points": {
+    "ko": [
+      "토큰화 자산 점유율 48.4%, 스테이블코인 약 $1,560억(+22%)으로 1위지만 메인넷 수수료는 1년 새 -69%다.",
+      "상장사 보유 801만 ETH 중 600만 ETH가 BMNR 몫(기업 수요의 75%)이며, 매수는 4~6주 내 끝날 수 있다.",
+      "확률 가중 기대값은 1년 약 $3,060(+14%), 3년 약 $4,600(+71%)이고, 1년 손실 확률은 약 28%다(저자 판단)."
+    ],
+    "en": [
+      "Ethereum leads with a 48.4% share of tokenized assets and ~$156B in stablecoins (+22% YoY), yet mainnet fee revenue fell 69% in a year.",
+      "BMNR holds 6 million of the 8.01 million ETH owned by listed companies (75% of corporate demand); its buying could end within 4–6 weeks.",
+      "Probability-weighted expected value: ~$3,060 (+14%) in 1 year and ~$4,600 (+71%) in 3; 1-year loss probability ~28% (author's view)."
+    ],
+    "es": [
+      "Lidera con 48.4% de los activos tokenizados y ~$156,000 millones en stablecoins (+22% anual), pero sus comisiones cayeron 69% en un año.",
+      "BMNR posee 6 de los 8.01 millones de ETH de empresas cotizadas (75% de la demanda corporativa); podría dejar de comprar en 4–6 semanas.",
+      "Valor esperado ponderado: ~$3,060 (+14%) a 1 año y ~$4,600 (+71%) a 3 años; probabilidad de pérdida a 1 año ~28% (visión del autor)."
+    ],
+    "ja": [
+      "トークン化資産シェア48.4%、ステーブルコイン約$1,560億（前年比+22%）で首位だが、メインネット手数料収入は1年で-69%。",
+      "上場企業保有801万ETHのうち600万ETHをBMNRが保有（企業需要の75%）。その買いは4〜6週間以内に終わる可能性がある。",
+      "確率加重期待値は1年で約$3,060（+14%）、3年で約$4,600（+71%）。1年で損失となる確率は約28%（筆者判断）。"
+    ]
+  },
+  "tickers": [
+    "ETH",
+    "BMNR",
+    "BMNP"
+  ],
+  "checkpoints": [
+    {
+      "date": "2026-10-05",
+      "text": {
+        "ko": "미국 상원 회기 시작 (10월 5일~11월 6일)",
+        "en": "U.S. Senate session begins (Oct 5–Nov 6)",
+        "es": "Comienza el período de sesiones del Senado de EE. UU. (5 oct–6 nov)",
+        "ja": "米上院の会期開始（10月5日〜11月6日）"
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "text": {
+        "ko": "Glamsterdam 업그레이드 Sepolia 테스트넷 적용",
+        "en": "Glamsterdam upgrade goes live on the Sepolia testnet",
+        "es": "La actualización Glamsterdam se activa en la testnet Sepolia",
+        "ja": "GlamsterdamアップグレードがSepoliaテストネットに適用"
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "text": {
+        "ko": "Devcon 8 개최 (11월 3~6일)",
+        "en": "Devcon 8 (Nov 3–6)",
+        "es": "Devcon 8 (3–6 de noviembre)",
+        "ja": "Devcon 8開催（11月3〜6日）"
+      }
+    }
+  ],
+  "tags": {
+    "ko": [
+      "이더리움",
+      "스테이블코인",
+      "토큰화",
+      "BMNR"
+    ],
+    "en": [
+      "Ethereum",
+      "Stablecoins",
+      "Tokenization",
+      "BMNR"
+    ],
+    "es": [
+      "Ethereum",
+      "Stablecoins",
+      "Tokenización",
+      "BMNR"
+    ],
+    "ja": [
+      "イーサリアム",
+      "ステーブルコイン",
+      "トークン化",
+      "BMNR"
+    ]
+  }
+}

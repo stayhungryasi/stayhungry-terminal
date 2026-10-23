@@ -1,0 +1,85 @@
+{
+  "slug": "rates-vs-stocks-20y",
+  "date": "2026-10-08",
+  "asof": "2026-10-07 close",
+  "category": "macro",
+  "title": {
+    "ko": "미국채 금리와 주가, 20년의 관계",
+    "en": "U.S. Treasury Yields and Stocks: A 20-Year Relationship",
+    "es": "Rendimientos del Tesoro de EE. UU. y acciones: una relación de 20 años",
+    "ja": "米国債利回りと株価、20年の関係"
+  },
+  "dek": {
+    "ko": "20년 전체로 보면 금리 변화와 주가의 상관은 0에 가깝지만, 2006–2021년의 양(+) 관계가 2022년 이후 음(−)으로 뒤집혔다.",
+    "en": "Over 20 years, yield changes and stocks look nearly uncorrelated, but a positive link in 2006–2021 flipped negative from 2022.",
+    "es": "En 20 años, los cambios de tasas y las acciones casi no se correlacionan, pero la relación positiva de 2006–2021 se volvió negativa desde 2022.",
+    "ja": "20年全体では金利変化と株価の相関はほぼゼロだが、2006〜2021年の正の関係が2022年以降は負に反転した。"
+  },
+  "key": {
+    "value": "5.28%",
+    "label": {
+      "ko": "미국채 10년물 금리 (2026년 10월, 10/7 종가) — 250개 월말값 중 상위 1% 안",
+      "en": "U.S. 10-year Treasury yield (Oct 2026, Oct 7 close): within the top 1% of 250 month-ends",
+      "es": "Rendimiento del bono del Tesoro a 10 años (oct 2026, cierre del 7 oct): dentro del 1% más alto de 250 cierres mensuales",
+      "ja": "米10年債利回り（2026年10月、10/7終値）— 250の月末値で上位1%以内"
+    }
+  },
+  "points": {
+    "ko": [
+      "20년간 10년물이 한 달에 10bp 넘게 오르거나 25bp 넘게 급락한 달은 평균 수익률이 낮았다.",
+      "10년물 금리 5.28%(10/7 종가)는 2006.01 이후 250개 월말값 가운데 상위 1% 안에 있다.",
+      "2022년 이후 금리가 오를 때 달러도 강해져, 달러 환산 코스피가 원화 기준보다 금리에 더 민감하다."
+    ],
+    "en": [
+      "Over 20 years, months when the 10-year yield rose more than 10bp or plunged more than 25bp saw lower average stock returns.",
+      "The 10-year yield at 5.28% (Oct 7 close) sits in the top 1% of 250 month-end readings since Jan 2006.",
+      "Since 2022 the dollar has tended to strengthen as yields rise, so KOSPI in dollar terms is more rate-sensitive than in won."
+    ],
+    "es": [
+      "En 20 años, los meses en que el bono a 10 años subió más de 10pb o se desplomó más de 25pb tuvieron rendimientos promedio más bajos.",
+      "El rendimiento a 10 años de 5.28% (cierre del 7 oct) está en el 1% más alto de 250 cierres mensuales desde enero de 2006.",
+      "Desde 2022 el dólar tiende a fortalecerse cuando suben las tasas, por lo que el KOSPI en dólares es más sensible que en wones."
+    ],
+    "ja": [
+      "20年間、10年債利回りが月10bp超上昇した月と25bp超急低下した月は平均リターンが低かった。",
+      "10年債利回り5.28%（10/7終値）は2006年1月以降250の月末値のうち上位1%以内にある。",
+      "2022年以降は金利上昇時にドルも強まり、ドル換算KOSPIはウォン建てより金利に敏感だ。"
+    ]
+  },
+  "tickers": [
+    "^GSPC",
+    "^IXIC",
+    "^KS11",
+    "^TNX",
+    "^TYX",
+    "KRW=X",
+    "DX-Y.NYB"
+  ],
+  "checkpoints": [],
+  "tags": {
+    "ko": [
+      "미국채 금리",
+      "주가",
+      "상관관계",
+      "달러"
+    ],
+    "en": [
+      "Treasury yields",
+      "Equities",
+      "Correlation",
+      "Dollar"
+    ],
+    "es": [
+      "Rendimientos del Tesoro",
+      "Acciones",
+      "Correlación",
+      "Dólar"
+    ],
+    "ja": [
+      "米国債利回り",
+      "株価",
+      "相関",
+      "ドル"
+    ]
+  }
+}

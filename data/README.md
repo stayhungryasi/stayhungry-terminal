@@ -14,6 +14,7 @@ Base URL: https://stayhungryasi.com/data/
 | spacex-3q26.json | SpaceX 3Q26 revenue mix and results vs consensus |
 | univertrix.json | UNIVERTRIX build log: commits, pipeline runs, self-tests, legend benchmark zones |
 | brains.json | BRAINS: Buffett·Munger and Jensen thinking engines, principles and verified Q&A in 4 languages |
+| research.json | research library: every report's brief in 4 languages, key number, tickers, upcoming checkpoints (pages at /r/, RSS at /r/feed.xml) |
 | changelog.json | site changelog |
 
 ```sh

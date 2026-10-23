@@ -1,0 +1,1038 @@
+{
+ "name": "Stayhungry.ASI research library",
+ "updated": "2026-10-23",
+ "count": 8,
+ "feed": "https://stayhungryasi.com/r/feed.xml",
+ "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.",
+ "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+ "categories": {
+  "macro": {
+   "en": "Macro",
+   "ko": "거시",
+   "es": "Macro",
+   "ja": "マクロ"
+  },
+  "ai": {
+   "en": "AI infrastructure",
+   "ko": "AI 인프라",
+   "es": "Infraestructura IA",
+   "ja": "AIインフラ"
+  },
+  "sector": {
+   "en": "Sectors",
+   "ko": "섹터",
+   "es": "Sectores",
+   "ja": "セクター"
+  },
+  "crypto": {
+   "en": "Crypto",
+   "ko": "크립토",
+   "es": "Cripto",
+   "ja": "クリプト"
+  },
+  "masters": {
+   "en": "Investors",
+   "ko": "투자 거장",
+   "es": "Inversionistas",
+   "ja": "投資家"
+  }
+ },
+ "reports": [
+  {
+   "slug": "usdkrw-outlook",
+   "date": "2026-10-21",
+   "asof": "2026-10-20 close",
+   "category": "macro",
+   "title": {
+    "ko": "원/달러 환율 전망 — 반도체 달러가 끌어내린 환율, 어디까지 가나",
+    "en": "USD/KRW Outlook: How Far Can Chip Dollars Push the Exchange Rate Down?",
+    "es": "Perspectivas del USD/KRW: ¿hasta dónde pueden bajar el tipo de cambio los dólares de los chips?",
+    "ja": "ウォン/ドル相場展望：半導体ドルが押し下げた為替、どこまで行くか"
+   },
+   "dek": {
+    "ko": "원화 강세는 달러 약세가 아니라 경상흑자와 기업 환전이 만든 수급의 결과이고, 연말 기본 경로는 1,300~1,345원(확률 55%)이다.",
+    "en": "The won's rally reflects current-account and corporate FX-conversion flows, not dollar weakness; year-end base case: KRW 1,300–1,345 (55%).",
+    "es": "La apreciación del won responde al superávit corriente y la conversión de divisas de empresas, no a un dólar débil; base a fin de año: 1,300–1,345 (55%).",
+    "ja": "ウォン高はドル安ではなく経常黒字と企業の両替が生んだ需給の結果であり、年末の基本シナリオは1,300〜1,345ウォン（確率55%）。"
+   },
+   "key": {
+    "value": "1,328.1",
+    "label": {
+     "ko": "원/달러 종가 (원, 2026-10-20 15:30)",
+     "en": "USD/KRW close (KRW, Oct 20, 2026, 15:30)",
+     "es": "Cierre del USD/KRW (wones, 20 oct 2026, 15:30)",
+     "ja": "ウォン/ドル終値（ウォン、2026年10月20日15:30）"
+    }
+   },
+   "points": {
+    "ko": [
+     "원/달러는 6/30 1,549.4원에서 10/20 1,328.1원으로 내렸지만 달러인덱스는 101.11→101.757로 거의 그대로다.",
+     "경상수지 흑자는 6월 497.3억달러로 월간 사상 최대였고 8월에도 461.1억달러를 기록했다.",
+     "1,300원 하회 터치 확률은 3개월 내 35%, 그 아래 안착은 12개월 내 20%로 본다. 되돌림 시나리오는 25%다."
+    ],
+    "en": [
+     "USD/KRW fell from 1,549.4 on Jun 30 to 1,328.1 on Oct 20, while the dollar index barely moved (101.11 to 101.757).",
+     "The current-account surplus hit a monthly record of $49.73 billion in June and was $46.11 billion in August.",
+     "The report puts a break below 1,300 at 35% within 3 months and settling below it at 20% within 12 months; reversal scenario: 25%."
+    ],
+    "es": [
+     "El USD/KRW bajó de 1,549.4 el 30 de junio a 1,328.1 el 20 de octubre, mientras el índice dólar casi no se movió (101.11 a 101.757).",
+     "El superávit de cuenta corriente marcó un récord mensual de US$49,730 millones en junio y fue de US$46,110 millones en agosto.",
+     "El informe asigna 35% a tocar menos de 1,300 en 3 meses y 20% a asentarse por debajo en 12 meses; escenario de reversión: 25%."
+    ],
+    "ja": [
+     "ウォン/ドルは6/30の1,549.4ウォンから10/20に1,328.1ウォンへ下落したが、ドル指数は101.11→101.757とほぼ横ばい。",
+     "経常黒字は6月に497.3億ドルと月間で過去最大、8月も461.1億ドルを記録した。",
+     "1,300ウォン割れの確率は3カ月以内35%、その下での定着は12カ月以内20%とみる。反転シナリオは25%。"
+    ]
+   },
+   "tickers": [
+    "USD/KRW",
+    "SK하이닉스",
+    "삼성전자"
+   ],
+   "checkpoints": [
+    {
+     "date": "2026-10-22",
+     "text": {
+      "ko": "한은 금통위 (현 3.00%, 동결 우세)",
+      "en": "Bank of Korea rate decision (currently 3.00%, hold expected)",
+      "es": "Decisión de tasas del Banco de Corea (actual 3.00%, se espera pausa)",
+      "ja": "韓国銀行金融通貨委員会（現行3.00%、据え置き優勢）"
+     }
+    },
+    {
+     "date": "2026-10-29",
+     "text": {
+      "ko": "FOMC 결과 발표 (한국시간 새벽, 동결 확률 84.5%)",
+      "en": "FOMC decision (early morning KST; 84.5% probability of a hold)",
+      "es": "Decisión del FOMC (madrugada en Corea; 84.5% de probabilidad de pausa)",
+      "ja": "FOMC結果発表（韓国時間未明、据え置き確率84.5%）"
+     }
+    },
+    {
+     "date": "2026-10-31",
+     "text": {
+      "ko": "10월 말 삼성 이사회(3분기 배당 약 30조원 확정)·하이닉스 3분기 실적",
+      "en": "Late October: Samsung board (Q3 dividend of about KRW 30 trillion) and SK hynix Q3 results",
+      "es": "Fines de octubre: directorio de Samsung (dividendo del 3T de unos 30 billones de wones) y resultados del 3T de SK hynix",
+      "ja": "10月末 サムスン取締役会（第3四半期配当 約30兆ウォン確定）・SKハイニックス第3四半期決算"
+     }
+    },
+    {
+     "date": "2026-11-19",
+     "text": {
+      "ko": "하이닉스 자사주 매입 종료",
+      "en": "SK hynix share buyback ends",
+      "es": "Termina la recompra de acciones de SK hynix",
+      "ja": "SKハイニックスの自社株買い終了"
+     }
+    },
+    {
+     "date": "2026-11-26",
+     "text": {
+      "ko": "한은 금통위 (연내 마지막 결정)",
+      "en": "Bank of Korea rate decision (last of the year)",
+      "es": "Decisión de tasas del Banco de Corea (la última del año)",
+      "ja": "韓国銀行金融通貨委員会（年内最後の決定）"
+     }
+    },
+    {
+     "date": "2026-12-10",
+     "text": {
+      "ko": "FOMC 결과 발표 (한국시간 새벽, 연내 추가 인상 여부)",
+      "en": "FOMC decision (early morning KST): whether to hike again this year",
+      "es": "Decisión del FOMC (madrugada en Corea): si habrá otra subida este año",
+      "ja": "FOMC結果発表（韓国時間未明、年内追加利上げの有無）"
+     }
+    }
+   ],
+   "tags": {
+    "ko": [
+     "원/달러",
+     "환율",
+     "경상수지",
+     "수급"
+    ],
+    "en": [
+     "USD/KRW",
+     "FX",
+     "Current account",
+     "Flows"
+    ],
+    "es": [
+     "USD/KRW",
+     "Divisas",
+     "Cuenta corriente",
+     "Flujos"
+    ],
+    "ja": [
+     "ウォン/ドル",
+     "為替",
+     "経常収支",
+     "需給"
+    ]
+   },
+   "kind": "page",
+   "minutes": 21,
+   "sources": 3,
+   "url": "https://stayhungryasi.com/r/usdkrw-outlook/"
+  },
+  {
+   "slug": "damodaran-ai-warning",
+   "date": "2026-10-10",
+   "asof": "2026-10-09 (US close) / 2026-10-08 (KR close)",
+   "category": "masters",
+   "title": {
+    "ko": "다모다란 AI 경고 영상 검증·수혜기업 판단",
+    "en": "Fact-Checking a Video on Damodaran's AI Warning, and Who Benefits",
+    "es": "Verificación de un video sobre la advertencia de Damodaran sobre la IA y quiénes se benefician",
+    "ja": "ダモダラン教授のAI警告動画の検証と恩恵企業の判断"
+   },
+   "dek": {
+    "ko": "‘AI 이익은 보이나 현금·투자수익은 아직’이라는 영상 논지는 다모다란 원문과 대체로 맞지만, 일부 숫자는 진행자 예시이거나 틀렸다.",
+    "en": "The video's core point (AI profits are visible, cash and returns not yet) broadly matches Damodaran, but some figures are the host's examples or wrong.",
+    "es": "La tesis del video (hay ganancias de IA, aún no efectivo ni retorno) coincide en general con Damodaran; algunas cifras son ejemplos del presentador o errores.",
+    "ja": "「AIの利益は見えるが現金と投資リターンはまだ」という動画の主旨はダモダラン氏の原文とおおむね一致するが、一部の数字は司会者の例示か誤りだ。"
+   },
+   "key": {
+    "value": "~$800B",
+    "label": {
+     "ko": "하이퍼스케일러 5사 Q2'26 CAPEX 연환산(분석자 합산)",
+     "en": "Annualized Q2'26 capex of 5 hyperscalers (analyst's sum)",
+     "es": "Capex anualizado del 2T26 de 5 hiperescaladores (suma del analista)",
+     "ja": "ハイパースケーラー5社のQ2'26設備投資・年率換算(分析者の合算)"
+    }
+   },
+   "points": {
+    "ko": [
+     "다모다란 원문: 미국 상장사 Q2 순이익은 $576B→$904B(+57%)로 늘었지만 S&P500 주주환원은 이익의 63%로 2004년 이후 최저다.",
+     "영상의 ‘4,000억 달러 = 미국 전체 기업 이익’은 오류다. 연환산 상장사 순이익 약 $3.6조의 약 11%다.",
+     "보고서는 NVIDIA를 최우선 조사 대상으로 본다. FY28 컨센서스 EPS $15.91이 2029년 연 10% 수익에 필요한 $15.55를 넘는다."
+    ],
+    "en": [
+     "Damodaran: US listed firms' Q2 net income rose from $576B to $904B (+57%), but S&P 500 payouts were 63% of earnings, lowest since 2004.",
+     "The video's claim that $400B equals all US corporate profit is wrong: it is about 11% of annualized listed-firm net income (about $3.6T).",
+     "The report ranks NVIDIA first for deeper research: FY28 consensus EPS ($15.91) already tops the $15.55 needed for 10% a year to 2029."
+    ],
+    "es": [
+     "Damodaran: la utilidad neta de cotizadas de EE. UU. subió a $904B en el 2T (+57%); el S&P 500 repartió 63% de lo ganado, mínimo desde 2004.",
+     "El video yerra: $400B no igualan toda la ganancia corporativa de EE. UU., sino cerca del 11% de la utilidad anualizada (unos $3.6T).",
+     "El informe prioriza a NVIDIA para investigar: el EPS de consenso FY28 ($15.91) ya supera los $15.55 necesarios para 10% anual hasta 2029."
+    ],
+    "ja": [
+     "ダモダラン氏の原文:米上場企業のQ2純利益は$576B→$904B(+57%)に増えたが、S&P500の株主還元は利益の63%で2004年以降最低だ。",
+     "「4,000億ドル=米企業利益全体」という動画の主張は誤り。年率換算の上場企業純利益約$3.6兆の約11%にとどまる。",
+     "レポートはNVIDIAを最優先の調査対象とする。FY28コンセンサスEPS $15.91が、2029年まで年10%のリターンに必要な$15.55をすでに上回る。"
+    ]
+   },
+   "tickers": [
+    "NVDA",
+    "TSM",
+    "000660",
+    "MU",
+    "AVGO",
+    "005930",
+    "GEV",
+    "267260",
+    "010120",
+    "298040"
+   ],
+   "checkpoints": [
+    {
+     "date": "2026-10-15",
+     "text": {
+      "ko": "TSMC 3분기 실적: AI 가속기 매출 성장 가이던스, 2027 CAPEX, CoWoS 증설",
+      "en": "TSMC Q3 results: AI accelerator revenue growth guidance, 2027 capex, CoWoS expansion",
+      "es": "Resultados del 3T de TSMC: guía de crecimiento de ingresos por aceleradores de IA, capex 2027, ampliación de CoWoS",
+      "ja": "TSMC第3四半期決算:AIアクセラレーター売上成長ガイダンス、2027年設備投資、CoWoS増設"
+     }
+    },
+    {
+     "date": "2026-10-28",
+     "text": {
+      "ko": "MSFT·GEV·EQIX 실적: 2027 CAPEX, FCF, 미착수 리스, 내용연수 변경",
+      "en": "MSFT, GEV, EQIX results: 2027 capex, FCF, leases not yet commenced, useful-life changes",
+      "es": "Resultados de MSFT, GEV y EQIX: capex 2027, FCF, arrendamientos aún no iniciados, cambios de vida útil",
+      "ja": "MSFT・GEV・EQIX決算:2027年設備投資、FCF、未開始リース、耐用年数の変更"
+     }
+    },
+    {
+     "date": "2026-10-29",
+     "text": {
+      "ko": "삼성전자 확정 실적: HBM4 출하·가격, 2027 증설 계획",
+      "en": "Samsung Electronics final results: HBM4 shipments and pricing, 2027 capacity plans",
+      "es": "Resultados definitivos de Samsung Electronics: envíos y precios de HBM4, planes de expansión 2027",
+      "ja": "サムスン電子確定決算:HBM4の出荷・価格、2027年の増設計画"
+     }
+    }
+   ],
+   "tags": {
+    "ko": [
+     "다모다란",
+     "AI CAPEX",
+     "팩트체크",
+     "현금흐름"
+    ],
+    "en": [
+     "Damodaran",
+     "AI capex",
+     "Fact-check",
+     "Cash flow"
+    ],
+    "es": [
+     "Damodaran",
+     "Capex de IA",
+     "Verificación",
+     "Flujo de caja"
+    ],
+    "ja": [
+     "ダモダラン",
+     "AI設備投資",
+     "ファクトチェック",
+     "キャッシュフロー"
+    ]
+   },
+   "kind": "doc",
+   "minutes": 18,
+   "sources": 30,
+   "url": "https://stayhungryasi.com/r/damodaran-ai-warning/"
+  },
+  {
+   "slug": "rates-vs-stocks-20y",
+   "date": "2026-10-08",
+   "asof": "2026-10-07 close",
+   "category": "macro",
+   "title": {
+    "ko": "미국채 금리와 주가, 20년의 관계",
+    "en": "U.S. Treasury Yields and Stocks: A 20-Year Relationship",
+    "es": "Rendimientos del Tesoro de EE. UU. y acciones: una relación de 20 años",
+    "ja": "米国債利回りと株価、20年の関係"
+   },
+   "dek": {
+    "ko": "20년 전체로 보면 금리 변화와 주가의 상관은 0에 가깝지만, 2006–2021년의 양(+) 관계가 2022년 이후 음(−)으로 뒤집혔다.",
+    "en": "Over 20 years, yield changes and stocks look nearly uncorrelated, but a positive link in 2006–2021 flipped negative from 2022.",
+    "es": "En 20 años, los cambios de tasas y las acciones casi no se correlacionan, pero la relación positiva de 2006–2021 se volvió negativa desde 2022.",
+    "ja": "20年全体では金利変化と株価の相関はほぼゼロだが、2006〜2021年の正の関係が2022年以降は負に反転した。"
+   },
+   "key": {
+    "value": "5.28%",
+    "label": {
+     "ko": "미국채 10년물 금리 (2026년 10월, 10/7 종가) — 250개 월말값 중 상위 1% 안",
+     "en": "U.S. 10-year Treasury yield (Oct 2026, Oct 7 close): within the top 1% of 250 month-ends",
+     "es": "Rendimiento del bono del Tesoro a 10 años (oct 2026, cierre del 7 oct): dentro del 1% más alto de 250 cierres mensuales",
+     "ja": "米10年債利回り（2026年10月、10/7終値）— 250の月末値で上位1%以内"
+    }
+   },
+   "points": {
+    "ko": [
+     "20년간 10년물이 한 달에 10bp 넘게 오르거나 25bp 넘게 급락한 달은 평균 수익률이 낮았다.",
+     "10년물 금리 5.28%(10/7 종가)는 2006.01 이후 250개 월말값 가운데 상위 1% 안에 있다.",
+     "2022년 이후 금리가 오를 때 달러도 강해져, 달러 환산 코스피가 원화 기준보다 금리에 더 민감하다."
+    ],
+    "en": [
+     "Over 20 years, months when the 10-year yield rose more than 10bp or plunged more than 25bp saw lower average stock returns.",
+     "The 10-year yield at 5.28% (Oct 7 close) sits in the top 1% of 250 month-end readings since Jan 2006.",
+     "Since 2022 the dollar has tended to strengthen as yields rise, so KOSPI in dollar terms is more rate-sensitive than in won."
+    ],
+    "es": [
+     "En 20 años, los meses en que el bono a 10 años subió más de 10pb o se desplomó más de 25pb tuvieron rendimientos promedio más bajos.",
+     "El rendimiento a 10 años de 5.28% (cierre del 7 oct) está en el 1% más alto de 250 cierres mensuales desde enero de 2006.",
+     "Desde 2022 el dólar tiende a fortalecerse cuando suben las tasas, por lo que el KOSPI en dólares es más sensible que en wones."
+    ],
+    "ja": [
+     "20年間、10年債利回りが月10bp超上昇した月と25bp超急低下した月は平均リターンが低かった。",
+     "10年債利回り5.28%（10/7終値）は2006年1月以降250の月末値のうち上位1%以内にある。",
+     "2022年以降は金利上昇時にドルも強まり、ドル換算KOSPIはウォン建てより金利に敏感だ。"
+    ]
+   },
+   "tickers": [
+    "^GSPC",
+    "^IXIC",
+    "^KS11",
+    "^TNX",
+    "^TYX",
+    "KRW=X",
+    "DX-Y.NYB"
+   ],
+   "checkpoints": [],
+   "tags": {
+    "ko": [
+     "미국채 금리",
+     "주가",
+     "상관관계",
+     "달러"
+    ],
+    "en": [
+     "Treasury yields",
+     "Equities",
+     "Correlation",
+     "Dollar"
+    ],
+    "es": [
+     "Rendimientos del Tesoro",
+     "Acciones",
+     "Correlación",
+     "Dólar"
+    ],
+    "ja": [
+     "米国債利回り",
+     "株価",
+     "相関",
+     "ドル"
+    ]
+   },
+   "kind": "page",
+   "minutes": 2,
+   "sources": 3,
+   "url": "https://stayhungryasi.com/r/rates-vs-stocks-20y/"
+  },
+  {
+   "slug": "ethereum-outlook",
+   "date": "2026-10-04",
+   "asof": "2026-10-03",
+   "category": "crypto",
+   "title": {
+    "ko": "이더리움 전망: 1년은 완만한 회복, 3년은 상승 우위",
+    "en": "Ethereum Outlook: Gradual Recovery Over 1 Year, Upside Bias Over 3 Years",
+    "es": "Perspectivas de Ethereum: recuperación gradual a 1 año, sesgo alcista a 3 años",
+    "ja": "イーサリアム展望：1年は緩やかな回復、3年は上昇優位"
+   },
+   "dek": {
+    "ko": "ETH는 기관 금융의 결제층으로 자리를 굳히지만 가치 포착은 약해졌고, 기본 전망은 1년 $3,000 안팎·3년 $4,000 내외다.",
+    "en": "Ethereum is cementing its role as institutional finance's settlement layer, but value capture has weakened; base case: ~$3,000 in 1 year, ~$4,000 in 3.",
+    "es": "Ethereum se afianza como capa de liquidación de las finanzas institucionales, pero capta menos valor; escenario base: ~$3,000 a 1 año y ~$4,000 a 3.",
+    "ja": "ETHは機関金融の決済レイヤーとして地位を固める一方、価値捕捉は弱まった。基本シナリオは1年で$3,000前後、3年で$4,000程度。"
+   },
+   "key": {
+    "value": "$3,000",
+    "label": {
+     "ko": "1년 기본 시나리오 ETH 가격 (확률 47%, 저자 판단)",
+     "en": "Base-case 1-year ETH level (47% probability, author's view)",
+     "es": "Nivel de ETH en el escenario base a 1 año (probabilidad 47%, visión del autor)",
+     "ja": "1年後の基本シナリオのETH価格（確率47%、筆者判断）"
+    }
+   },
+   "points": {
+    "ko": [
+     "토큰화 자산 점유율 48.4%, 스테이블코인 약 $1,560억(+22%)으로 1위지만 메인넷 수수료는 1년 새 -69%다.",
+     "상장사 보유 801만 ETH 중 600만 ETH가 BMNR 몫(기업 수요의 75%)이며, 매수는 4~6주 내 끝날 수 있다.",
+     "확률 가중 기대값은 1년 약 $3,060(+14%), 3년 약 $4,600(+71%)이고, 1년 손실 확률은 약 28%다(저자 판단)."
+    ],
+    "en": [
+     "Ethereum leads with a 48.4% share of tokenized assets and ~$156B in stablecoins (+22% YoY), yet mainnet fee revenue fell 69% in a year.",
+     "BMNR holds 6 million of the 8.01 million ETH owned by listed companies (75% of corporate demand); its buying could end within 4–6 weeks.",
+     "Probability-weighted expected value: ~$3,060 (+14%) in 1 year and ~$4,600 (+71%) in 3; 1-year loss probability ~28% (author's view)."
+    ],
+    "es": [
+     "Lidera con 48.4% de los activos tokenizados y ~$156,000 millones en stablecoins (+22% anual), pero sus comisiones cayeron 69% en un año.",
+     "BMNR posee 6 de los 8.01 millones de ETH de empresas cotizadas (75% de la demanda corporativa); podría dejar de comprar en 4–6 semanas.",
+     "Valor esperado ponderado: ~$3,060 (+14%) a 1 año y ~$4,600 (+71%) a 3 años; probabilidad de pérdida a 1 año ~28% (visión del autor)."
+    ],
+    "ja": [
+     "トークン化資産シェア48.4%、ステーブルコイン約$1,560億（前年比+22%）で首位だが、メインネット手数料収入は1年で-69%。",
+     "上場企業保有801万ETHのうち600万ETHをBMNRが保有（企業需要の75%）。その買いは4〜6週間以内に終わる可能性がある。",
+     "確率加重期待値は1年で約$3,060（+14%）、3年で約$4,600（+71%）。1年で損失となる確率は約28%（筆者判断）。"
+    ]
+   },
+   "tickers": [
+    "ETH",
+    "BMNR",
+    "BMNP"
+   ],
+   "checkpoints": [
+    {
+     "date": "2026-10-05",
+     "text": {
+      "ko": "미국 상원 회기 시작 (10월 5일~11월 6일)",
+      "en": "U.S. Senate session begins (Oct 5–Nov 6)",
+      "es": "Comienza el período de sesiones del Senado de EE. UU. (5 oct–6 nov)",
+      "ja": "米上院の会期開始（10月5日〜11月6日）"
+     }
+    },
+    {
+     "date": "2026-10-06",
+     "text": {
+      "ko": "Glamsterdam 업그레이드 Sepolia 테스트넷 적용",
+      "en": "Glamsterdam upgrade goes live on the Sepolia testnet",
+      "es": "La actualización Glamsterdam se activa en la testnet Sepolia",
+      "ja": "GlamsterdamアップグレードがSepoliaテストネットに適用"
+     }
+    },
+    {
+     "date": "2026-11-03",
+     "text": {
+      "ko": "Devcon 8 개최 (11월 3~6일)",
+      "en": "Devcon 8 (Nov 3–6)",
+      "es": "Devcon 8 (3–6 de noviembre)",
+      "ja": "Devcon 8開催（11月3〜6日）"
+     }
+    }
+   ],
+   "tags": {
+    "ko": [
+     "이더리움",
+     "스테이블코인",
+     "토큰화",
+     "BMNR"
+    ],
+    "en": [
+     "Ethereum",
+     "Stablecoins",
+     "Tokenization",
+     "BMNR"
+    ],
+    "es": [
+     "Ethereum",
+     "Stablecoins",
+     "Tokenización",
+     "BMNR"
+    ],
+    "ja": [
+     "イーサリアム",
+     "ステーブルコイン",
+     "トークン化",
+     "BMNR"
+    ]
+   },
+   "kind": "doc",
+   "minutes": 11,
+   "sources": 18,
+   "url": "https://stayhungryasi.com/r/ethereum-outlook/"
+  },
+  {
+   "slug": "ken-griffin-view",
+   "date": "2026-10-03",
+   "asof": "2026-10-03 (13F: Q2 2026, end of June)",
+   "category": "masters",
+   "title": {
+    "ko": "켄 그리핀의 시각: 발언과 13F 자금 흐름 분석",
+    "en": "Ken Griffin's View: His Statements and 13F Capital Flows",
+    "es": "La visión de Ken Griffin: sus declaraciones y los flujos de capital del 13F",
+    "ja": "ケン・グリフィンの視点:発言と13Fの資金フロー分析"
+   },
+   "dek": {
+    "ko": "보고서의 추론으로는 미국 우위에 베팅하되 재정·인플레이션·지정학 리스크는 헤지하는 것이 그리핀식 접근이다.",
+    "en": "The report infers (not Griffin's words) that his approach bets on US strength while hedging fiscal, inflation and geopolitical risks.",
+    "es": "El informe infiere (no son palabras de Griffin) que su enfoque apuesta por EE. UU. y cubre los riesgos fiscales, inflacionarios y geopolíticos.",
+    "ja": "レポートの推論(グリフィン本人の発言ではない)では、米国の優位に賭けつつ財政・インフレ・地政学リスクをヘッジするのがグリフィン流だ。"
+   },
+   "key": {
+    "value": "−8%",
+    "label": {
+     "ko": "그리핀 추정: 미국이 대만산 반도체를 잃을 경우 6개월 내 GDP 감소폭",
+     "en": "Griffin's estimate: US GDP decline within 6 months if it lost Taiwanese chips",
+     "es": "Estimación de Griffin: caída del PIB de EE. UU. en 6 meses si perdiera los chips de Taiwán",
+     "ja": "グリフィンの推計:米国が台湾製半導体を失った場合の6カ月以内のGDP減少幅"
+    }
+   },
+   "points": {
+    "ko": [
+     "[팩트] 그리핀은 호르무즈 해협이 6~12개월 닫히면 침체가 불가피하다고 했지만, 2분기 13F의 SPY 콜은 전 분기 대비 +77%였다.",
+     "[팩트] 2분기 13F 공시 총액 8,751억 달러 중 약 80%는 옵션 명목가치라 방향성 견해로 읽으면 안 된다.",
+     "[추론] 보고서는 가스→전력→컴퓨트 수직계열화를 유력 시나리오로 본다. 근거는 Paloma·FlexPower 인수다."
+    ],
+    "en": [
+     "[Fact] Griffin said a 6–12 month Hormuz closure would make a global recession unavoidable, yet Q2 13F SPY calls rose 77% QoQ.",
+     "[Fact] Of the $875.1B total in the Q2 13F, about 80% is option notional, so it should not be read as a directional view.",
+     "[Inference] The report sees gas→power→compute vertical integration as the likeliest large-scale move, citing the Paloma and FlexPower deals."
+    ],
+    "es": [
+     "[Hecho] Griffin dijo que cerrar Ormuz 6 a 12 meses haría inevitable una recesión, pero las calls de SPY del 13F del 2T subieron 77% t/t.",
+     "[Hecho] De los US$875.100 millones del 13F del 2T, cerca del 80% es nocional de opciones; no debe leerse como una visión direccional.",
+     "[Inferencia] El informe ve probable una integración vertical gas→electricidad→cómputo, con base en las compras de Paloma y FlexPower."
+    ],
+    "ja": [
+     "[事実]グリフィンはホルムズ海峡が6~12カ月封鎖されれば景気後退は不可避と述べたが、4~6月期13FのSPYコールは前期比+77%だった。",
+     "[事実]4~6月期13Fの開示総額8,751億ドルのうち約80%はオプション想定元本で、方向性の見解として読むべきではない。",
+     "[推論]レポートはガス→電力→コンピュートの垂直統合を有力シナリオとみる。根拠はPaloma・FlexPowerの買収だ。"
+    ]
+   },
+   "tickers": [
+    "SPY",
+    "QQQ",
+    "MU",
+    "SNDK",
+    "SMH",
+    "엔비디아",
+    "아마존",
+    "MSFT",
+    "알파벳(GOOG)",
+    "SK하이닉스"
+   ],
+   "checkpoints": [],
+   "tags": {
+    "ko": [
+     "켄 그리핀",
+     "시타델",
+     "13F",
+     "매크로"
+    ],
+    "en": [
+     "Ken Griffin",
+     "Citadel",
+     "13F",
+     "Macro"
+    ],
+    "es": [
+     "Ken Griffin",
+     "Citadel",
+     "13F",
+     "Macro"
+    ],
+    "ja": [
+     "ケン・グリフィン",
+     "シタデル",
+     "13F",
+     "マクロ"
+    ]
+   },
+   "kind": "doc",
+   "minutes": 12,
+   "sources": 33,
+   "url": "https://stayhungryasi.com/r/ken-griffin-view/"
+  },
+  {
+   "slug": "cybersecurity-ai-era",
+   "date": "2026-10-03",
+   "asof": "2026-10-02 종가",
+   "category": "sector",
+   "title": {
+    "ko": "AI 시대의 사이버보안: 'AI로 지키는 보안'에서 'AI를 지키는 보안'으로",
+    "en": "Cybersecurity in the AI Era: From Security Powered by AI to Security for AI",
+    "es": "Ciberseguridad en la era de la IA: de la seguridad con IA a la seguridad para la IA",
+    "ja": "AI時代のサイバーセキュリティ：「AIで守る」から「AIを守る」へ"
+   },
+   "dek": {
+    "ko": "보안 예산은 'AI로 지키는 보안'에서 'AI를 지키는 보안'으로 옮겨가는 중이며, 승자는 플랫폼 통합 기업이다.",
+    "en": "Security spending is shifting from using AI for defense to defending AI itself, and integrated platform vendors are the winners.",
+    "es": "El gasto en seguridad pasa de usar la IA para defender a defender la propia IA, y los ganadores son las plataformas integradas.",
+    "ja": "セキュリティ予算は「AIで守る」から「AIを守る」へ移りつつあり、勝者はプラットフォーム統合型の企業だ。"
+   },
+   "key": {
+    "value": "$244.2B",
+    "label": {
+     "ko": "2026년 전 세계 보안 지출 전망 (가트너, +13.3%)",
+     "en": "Global security spending forecast for 2026 (Gartner, +13.3%)",
+     "es": "Pronóstico de gasto mundial en seguridad para 2026 (Gartner, +13.3%)",
+     "ja": "2026年の世界セキュリティ支出予測（ガートナー、+13.3%）"
+    }
+   },
+   "points": {
+    "ko": [
+     "AI 자체를 보호하는 지출은 $2.8B로, AI를 활용한 보안($49B)의 17분의 1에 불과하다.",
+     "CrowdStrike Falcon Flex ARR은 $2.29B(+101%), Palo Alto NGS ARR은 $9.10B(+63%, 인수 포함)다.",
+     "선행 P/E는 CrowdStrike 191배, Palo Alto 94.6배이며 두 종목 모두 6개월간 주가가 2배 넘게 올랐다."
+    ],
+    "en": [
+     "Spending to protect AI itself is $2.8B, just one-seventeenth of AI-powered security ($49B).",
+     "CrowdStrike's Falcon Flex ARR is $2.29B (+101%); Palo Alto's NGS ARR is $9.10B (+63%, including acquisitions).",
+     "Forward P/E is 191x for CrowdStrike and 94.6x for Palo Alto; both stocks more than doubled over six months."
+    ],
+    "es": [
+     "El gasto para proteger la propia IA es de $2.8B, apenas 1/17 de la seguridad basada en IA ($49B).",
+     "El ARR de Falcon Flex de CrowdStrike es de $2.29B (+101%); el ARR NGS de Palo Alto es de $9.10B (+63%, con adquisiciones).",
+     "El P/E proyectado es de 191x para CrowdStrike y 94.6x para Palo Alto; ambas acciones más que duplicaron su precio en seis meses."
+    ],
+    "ja": [
+     "AIそのものを守る支出は$2.8Bで、AIを活用したセキュリティ（$49B）の17分の1にすぎない。",
+     "CrowdStrikeのFalcon Flex ARRは$2.29B（+101%）、Palo AltoのNGS ARRは$9.10B（+63%、買収含む）。",
+     "予想PERはCrowdStrikeが191倍、Palo Altoが94.6倍。両銘柄とも6カ月で株価が2倍超に上昇した。"
+    ]
+   },
+   "tickers": [
+    "CrowdStrike",
+    "Palo Alto Networks",
+    "Zscaler",
+    "SentinelOne",
+    "Okta",
+    "안랩"
+   ],
+   "checkpoints": [
+    {
+     "date": "2026-12-01",
+     "text": {
+      "ko": "안랩 에이전틱 AI 플랫폼 출시 (온프레미스·SaaS)",
+      "en": "AhnLab launches its agentic AI platform (on-premises and SaaS)",
+      "es": "AhnLab lanza su plataforma de IA agéntica (local y SaaS)",
+      "ja": "アンラボがエージェント型AIプラットフォームを発売（オンプレミス・SaaS）"
+     }
+    }
+   ],
+   "tags": {
+    "ko": [
+     "사이버보안",
+     "AI 보안",
+     "플랫폼",
+     "N2SF"
+    ],
+    "en": [
+     "Cybersecurity",
+     "AI security",
+     "Platforms",
+     "N2SF"
+    ],
+    "es": [
+     "Ciberseguridad",
+     "Seguridad de IA",
+     "Plataformas",
+     "N2SF"
+    ],
+    "ja": [
+     "サイバーセキュリティ",
+     "AIセキュリティ",
+     "プラットフォーム",
+     "N2SF"
+    ]
+   },
+   "kind": "doc",
+   "minutes": 11,
+   "sources": 26,
+   "url": "https://stayhungryasi.com/r/cybersecurity-ai-era/"
+  },
+  {
+   "slug": "ai-uncorrelated-growth",
+   "date": "2026-10-03",
+   "asof": "2026-09-17 (latest source date; figures as of each source's release)",
+   "category": "sector",
+   "title": {
+    "ko": "AI와 상관없는 폭발 성장 섹터 찾기",
+    "en": "Finding Explosive-Growth Sectors Uncorrelated with AI",
+    "es": "En busca de sectores de crecimiento explosivo no correlacionados con la IA",
+    "ja": "AIと相関しない爆発的成長セクターを探す"
+   },
+   "dek": {
+    "ko": "AI 사이클과 무관하게 폭발적 성장을 기대할 1순위 섹터는 비만·대사질환, 안보(방산·조선), 디지털자산 금융 인프라다.",
+    "en": "The report names obesity/metabolic disease, security (defense, shipbuilding) and digital-asset financial infrastructure as the top non-AI growth sectors.",
+    "es": "El informe señala obesidad/metabolismo, seguridad (defensa, astilleros) e infraestructura financiera de activos digitales como los sectores clave sin IA.",
+    "ja": "レポートはAIサイクルと無関係な最有力の成長セクターとして、肥満・代謝疾患、安全保障(防衛・造船)、デジタル資産金融インフラを挙げる。"
+   },
+   "key": {
+    "value": "+56%",
+    "label": {
+     "ko": "일라이릴리 2026년 1분기 매출 전년 대비 증가율",
+     "en": "Eli Lilly Q1 2026 revenue growth, year over year",
+     "es": "Crecimiento interanual de los ingresos de Eli Lilly en el 1T 2026",
+     "ja": "イーライリリーの2026年1~3月期売上高の前年比伸び率"
+    }
+   },
+   "points": {
+    "ko": [
+     "일라이릴리의 2026년 1분기 매출은 198억 달러(+56%)이고, 연간 가이던스는 820억~850억 달러로 상향됐다.",
+     "한화에어로스페이스의 2분기 말 수주잔고는 약 70조원이다. 2026년 7월 9일 펜타곤은 HD현대중공업·한화오션에 RFI를 보냈다.",
+     "2026년 9월 17일 SEC가 토큰화 주식의 온체인 거래를 승인했다. 로빈후드의 2분기 매출은 13.1억 달러(+32%)다."
+    ],
+    "en": [
+     "Eli Lilly's Q1 2026 revenue was $19.8B (+56%), and full-year guidance was raised to $82B–$85B.",
+     "Hanwha Aerospace's end-Q2 backlog was about KRW 70 trillion. On July 9, 2026, the Pentagon sent RFIs to HD Hyundai Heavy and Hanwha Ocean.",
+     "On September 17, 2026 the SEC approved on-chain trading of tokenized stocks. Robinhood's Q2 revenue was $1.31B (+32%)."
+    ],
+    "es": [
+     "Los ingresos de Eli Lilly en el 1T 2026 fueron de US$19.800 millones (+56%) y su guía anual subió a US$82.000–85.000 millones.",
+     "Cartera de Hanwha Aerospace al cierre del 2T: unos 70 billones de wones. El 9 de julio, el Pentágono envió RFI a HD Hyundai y Hanwha Ocean.",
+     "El 17 de septiembre de 2026 la SEC aprobó negociar on-chain acciones tokenizadas. Robinhood ingresó US$1.310 millones en el 2T (+32%)."
+    ],
+    "ja": [
+     "イーライリリーの2026年1~3月期売上高は198億ドル(+56%)で、通期ガイダンスは820億~850億ドルに上方修正された。",
+     "ハンファエアロスペースの4~6月期末の受注残高は約70兆ウォン。2026年7月9日、米国防総省はHD現代重工業・ハンファオーシャンにRFIを送付した。",
+     "2026年9月17日、SECがトークン化株式のオンチェーン取引を承認した。ロビンフッドの4~6月期売上高は13.1億ドル(+32%)。"
+    ]
+   },
+   "tickers": [
+    "LLY",
+    "펩트론",
+    "한화에어로스페이스",
+    "HD현대중공업",
+    "한화오션",
+    "HOOD",
+    "CRCL",
+    "알테오젠",
+    "에이피알",
+    "RKLB"
+   ],
+   "checkpoints": [
+    {
+     "date": "2026-10-07",
+     "text": {
+      "ko": "펩트론–릴리 기술평가 종료 여부와 후속 계약 공시",
+      "en": "Peptron–Lilly technology evaluation outcome and any follow-on contract disclosure",
+      "es": "Resultado de la evaluación tecnológica Peptron–Lilly y posible anuncio de contrato posterior",
+      "ja": "ペプトロン–リリーの技術評価終了の有無と後続契約の開示"
+     }
+    },
+    {
+     "date": "2026-11-11",
+     "text": {
+      "ko": "알테오젠 3분기 실적과 큐렉스 판매 마일스톤 진행",
+      "en": "Alteogen Q3 results and progress on Keytruda Qlex sales milestones",
+      "es": "Resultados del 3T de Alteogen y avance de los hitos de ventas de Keytruda Qlex",
+      "ja": "アルテオジェンの7~9月期決算とキイトルーダ・キューレックス販売マイルストーンの進捗"
+     }
+    },
+    {
+     "date": "2026-12-31",
+     "text": {
+      "ko": "로켓랩 Neutron 첫 발사의 연내 성사 여부",
+      "en": "Whether Rocket Lab's first Neutron launch happens within the year",
+      "es": "Si el primer lanzamiento del Neutron de Rocket Lab ocurre dentro del año",
+      "ja": "ロケットラボのNeutron初打ち上げが年内に実現するか"
+     }
+    }
+   ],
+   "tags": {
+    "ko": [
+     "비AI 성장",
+     "비만치료제",
+     "방산·조선",
+     "디지털자산"
+    ],
+    "en": [
+     "Non-AI growth",
+     "Obesity drugs",
+     "Defense & shipbuilding",
+     "Digital assets"
+    ],
+    "es": [
+     "Crecimiento sin IA",
+     "Fármacos para obesidad",
+     "Defensa y astilleros",
+     "Activos digitales"
+    ],
+    "ja": [
+     "非AI成長",
+     "肥満症治療薬",
+     "防衛・造船",
+     "デジタル資産"
+    ]
+   },
+   "kind": "doc",
+   "minutes": 6,
+   "sources": 23,
+   "url": "https://stayhungryasi.com/r/ai-uncorrelated-growth/"
+  },
+  {
+   "slug": "ai-capital-flow-map",
+   "date": "2026-09-29",
+   "asof": "2026-09-29",
+   "category": "ai",
+   "title": {
+    "ko": "AI Capital Flow Map — Musk G20 발언 검증과 AI 통행료 분석",
+    "en": "AI Capital Flow Map: Fact-Checking Musk's G20 Remarks and Mapping AI Toll Booths",
+    "es": "Mapa de flujos de capital de la IA: verificación de lo dicho por Musk en el G20 y análisis de los peajes de la IA",
+    "ja": "AIキャピタル・フロー・マップ — マスク氏のG20発言検証とAI「通行料」分析"
+   },
+   "dek": {
+    "ko": "AI 병목은 GPU에서 칩·메모리·가동 가능한 MW의 동시 부족으로 옮겨갔다. 돈은 첨단 파운드리·HBM·과점 전력장비로 가장 확실히 흐른다.",
+    "en": "AI's bottleneck is now a joint shortage of chips, memory and usable MW; the surest money flows to advanced foundry, HBM and oligopoly power equipment.",
+    "es": "El límite de la IA ya no son solo las GPU, sino chips, memoria y MW utilizables; el dinero más seguro va a fundición avanzada, HBM y equipo eléctrico.",
+    "ja": "AIのボトルネックはGPU単独から、チップ・メモリ・稼働可能なMWの同時不足へ移った。最も確実に資金が流れる先は先端ファウンドリ、HBM、寡占的な電力機器だ。"
+   },
+   "key": {
+    "value": "15GW",
+    "label": {
+     "ko": "2027년 전력 부족으로 가동하지 못할 AI 칩 규모(Musk 주장)",
+     "en": "AI chips unable to switch on in 2027 for lack of power (Musk's claim)",
+     "es": "Chips de IA que no podrán encenderse en 2027 por falta de energía (según Musk)",
+     "ja": "電力不足で2027年に稼働できないAIチップの規模(マスク氏の主張)"
+    }
+   },
+   "points": {
+    "ko": [
+     "Musk 발언 7개 중 사실은 2개, 과장은 3개다. 보고서는 2027년 미가동 규모를 8~20GW(중앙값 12GW)로 추정한다.",
+     "AI Toll Booth Index 1위는 첨단 파운드리+패키징(91점)이다. 전력 쪽 최상위는 대형 가스터빈(84점)·초고압 변압기(83점)다.",
+     "연간 AI 최종수요 $100 중 $65가 인프라로 흐르고, 반도체 몫이 $24로 가장 크다(작성자 추정)."
+    ],
+    "en": [
+     "Of Musk's 7 claims, 2 are confirmed facts and 3 are heavily exaggerated; the report estimates 8–20GW (median 12GW) will sit idle in 2027.",
+     "AI Toll Booth Index: advanced foundry + packaging ranks first (91 points); in power, large gas turbines (84) and UHV transformers (83) lead.",
+     "Of every $100 of annual AI end demand, $65 flows to infrastructure, and semiconductors take the largest share at $24 (author's estimate)."
+    ],
+    "es": [
+     "De las 7 afirmaciones de Musk, 2 son hechos confirmados y 3 son muy exageradas; el informe estima 8–20GW (mediana 12GW) sin operar en 2027.",
+     "Peajes de IA: lidera fundición avanzada + empaquetado (91); en energía, turbinas de gas (84) y transformadores de extra alta tensión (83).",
+     "De cada $100 de demanda final anual de IA, $65 van a infraestructura; la mayor parte, $24, a semiconductores (estimación del autor)."
+    ],
+    "ja": [
+     "マスク氏の発言7つのうち事実と確認されたのは2つ、誇張が大きいのは3つ。レポートは2027年の未稼働規模を8~20GW(中央値12GW)と推定する。",
+     "AI Toll Booth Indexの1位は先端ファウンドリ+パッケージング(91点)。電力分野の首位は大型ガスタービン(84点)と超高圧変圧器(83点)だ。",
+     "年間AI最終需要$100のうち$65がインフラへ流れ、最大の取り分は半導体の$24だ(筆者推定)。"
+    ]
+   },
+   "tickers": [
+    "TSMC",
+    "NVIDIA",
+    "Broadcom",
+    "SK hynix",
+    "GE Vernova",
+    "Lumentum",
+    "Siemens Energy",
+    "Vertiv",
+    "Hitachi Energy",
+    "SpaceX"
+   ],
+   "checkpoints": [
+    {
+     "date": "2026-12-08",
+     "text": {
+      "ko": "SpaceX(SPCX) 락업 해제",
+      "en": "SpaceX (SPCX) lock-up expiry",
+      "es": "Vence el período de lock-up de SpaceX (SPCX)",
+      "ja": "SpaceX(SPCX)のロックアップ解除"
+     }
+    }
+   ],
+   "tags": {
+    "ko": [
+     "AI 인프라",
+     "전력 병목",
+     "AI 통행료",
+     "SpaceX"
+    ],
+    "en": [
+     "AI infrastructure",
+     "Power bottleneck",
+     "AI toll booths",
+     "SpaceX"
+    ],
+    "es": [
+     "Infraestructura de IA",
+     "Cuello de botella eléctrico",
+     "Peajes de la IA",
+     "SpaceX"
+    ],
+    "ja": [
+     "AIインフラ",
+     "電力ボトルネック",
+     "AI通行料",
+     "SpaceX"
+    ]
+   },
+   "kind": "doc",
+   "minutes": 48,
+   "sources": 43,
+   "url": "https://stayhungryasi.com/r/ai-capital-flow-map/"
+  }
+ ],
+ "upcoming_checkpoints": [
+  {
+   "date": "2026-10-28",
+   "text": {
+    "ko": "MSFT·GEV·EQIX 실적: 2027 CAPEX, FCF, 미착수 리스, 내용연수 변경",
+    "en": "MSFT, GEV, EQIX results: 2027 capex, FCF, leases not yet commenced, useful-life changes",
+    "es": "Resultados de MSFT, GEV y EQIX: capex 2027, FCF, arrendamientos aún no iniciados, cambios de vida útil",
+    "ja": "MSFT・GEV・EQIX決算:2027年設備投資、FCF、未開始リース、耐用年数の変更"
+   },
+   "slug": "damodaran-ai-warning"
+  },
+  {
+   "date": "2026-10-29",
+   "text": {
+    "ko": "FOMC 결과 발표 (한국시간 새벽, 동결 확률 84.5%)",
+    "en": "FOMC decision (early morning KST; 84.5% probability of a hold)",
+    "es": "Decisión del FOMC (madrugada en Corea; 84.5% de probabilidad de pausa)",
+    "ja": "FOMC結果発表（韓国時間未明、据え置き確率84.5%）"
+   },
+   "slug": "usdkrw-outlook"
+  },
+  {
+   "date": "2026-10-29",
+   "text": {
+    "ko": "삼성전자 확정 실적: HBM4 출하·가격, 2027 증설 계획",
+    "en": "Samsung Electronics final results: HBM4 shipments and pricing, 2027 capacity plans",
+    "es": "Resultados definitivos de Samsung Electronics: envíos y precios de HBM4, planes de expansión 2027",
+    "ja": "サムスン電子確定決算:HBM4の出荷・価格、2027年の増設計画"
+   },
+   "slug": "damodaran-ai-warning"
+  },
+  {
+   "date": "2026-10-31",
+   "text": {
+    "ko": "10월 말 삼성 이사회(3분기 배당 약 30조원 확정)·하이닉스 3분기 실적",
+    "en": "Late October: Samsung board (Q3 dividend of about KRW 30 trillion) and SK hynix Q3 results",
+    "es": "Fines de octubre: directorio de Samsung (dividendo del 3T de unos 30 billones de wones) y resultados del 3T de SK hynix",
+    "ja": "10月末 サムスン取締役会（第3四半期配当 約30兆ウォン確定）・SKハイニックス第3四半期決算"
+   },
+   "slug": "usdkrw-outlook"
+  },
+  {
+   "date": "2026-11-03",
+   "text": {
+    "ko": "Devcon 8 개최 (11월 3~6일)",
+    "en": "Devcon 8 (Nov 3–6)",
+    "es": "Devcon 8 (3–6 de noviembre)",
+    "ja": "Devcon 8開催（11月3〜6日）"
+   },
+   "slug": "ethereum-outlook"
+  },
+  {
+   "date": "2026-11-11",
+   "text": {
+    "ko": "알테오젠 3분기 실적과 큐렉스 판매 마일스톤 진행",
+    "en": "Alteogen Q3 results and progress on Keytruda Qlex sales milestones",
+    "es": "Resultados del 3T de Alteogen y avance de los hitos de ventas de Keytruda Qlex",
+    "ja": "アルテオジェンの7~9月期決算とキイトルーダ・キューレックス販売マイルストーンの進捗"
+   },
+   "slug": "ai-uncorrelated-growth"
+  },
+  {
+   "date": "2026-11-19",
+   "text": {
+    "ko": "하이닉스 자사주 매입 종료",
+    "en": "SK hynix share buyback ends",
+    "es": "Termina la recompra de acciones de SK hynix",
+    "ja": "SKハイニックスの自社株買い終了"
+   },
+   "slug": "usdkrw-outlook"
+  },
+  {
+   "date": "2026-11-26",
+   "text": {
+    "ko": "한은 금통위 (연내 마지막 결정)",
+    "en": "Bank of Korea rate decision (last of the year)",
+    "es": "Decisión de tasas del Banco de Corea (la última del año)",
+    "ja": "韓国銀行金融通貨委員会（年内最後の決定）"
+   },
+   "slug": "usdkrw-outlook"
+  },
+  {
+   "date": "2026-12-01",
+   "text": {
+    "ko": "안랩 에이전틱 AI 플랫폼 출시 (온프레미스·SaaS)",
+    "en": "AhnLab launches its agentic AI platform (on-premises and SaaS)",
+    "es": "AhnLab lanza su plataforma de IA agéntica (local y SaaS)",
+    "ja": "アンラボがエージェント型AIプラットフォームを発売（オンプレミス・SaaS）"
+   },
+   "slug": "cybersecurity-ai-era"
+  },
+  {
+   "date": "2026-12-08",
+   "text": {
+    "ko": "SpaceX(SPCX) 락업 해제",
+    "en": "SpaceX (SPCX) lock-up expiry",
+    "es": "Vence el período de lock-up de SpaceX (SPCX)",
+    "ja": "SpaceX(SPCX)のロックアップ解除"
+   },
+   "slug": "ai-capital-flow-map"
+  },
+  {
+   "date": "2026-12-10",
+   "text": {
+    "ko": "FOMC 결과 발표 (한국시간 새벽, 연내 추가 인상 여부)",
+    "en": "FOMC decision (early morning KST): whether to hike again this year",
+    "es": "Decisión del FOMC (madrugada en Corea): si habrá otra subida este año",
+    "ja": "FOMC結果発表（韓国時間未明、年内追加利上げの有無）"
+   },
+   "slug": "usdkrw-outlook"
+  },
+  {
+   "date": "2026-12-31",
+   "text": {
+    "ko": "로켓랩 Neutron 첫 발사의 연내 성사 여부",
+    "en": "Whether Rocket Lab's first Neutron launch happens within the year",
+    "es": "Si el primer lanzamiento del Neutron de Rocket Lab ocurre dentro del año",
+    "ja": "ロケットラボのNeutron初打ち上げが年内に実現するか"
+   },
+   "slug": "ai-uncorrelated-growth"
+  }
+ ]
+}

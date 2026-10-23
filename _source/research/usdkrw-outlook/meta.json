@@ -1,0 +1,136 @@
+{
+  "slug": "usdkrw-outlook",
+  "date": "2026-10-21",
+  "asof": "2026-10-20 close",
+  "category": "macro",
+  "title": {
+    "ko": "원/달러 환율 전망 — 반도체 달러가 끌어내린 환율, 어디까지 가나",
+    "en": "USD/KRW Outlook: How Far Can Chip Dollars Push the Exchange Rate Down?",
+    "es": "Perspectivas del USD/KRW: ¿hasta dónde pueden bajar el tipo de cambio los dólares de los chips?",
+    "ja": "ウォン/ドル相場展望：半導体ドルが押し下げた為替、どこまで行くか"
+  },
+  "dek": {
+    "ko": "원화 강세는 달러 약세가 아니라 경상흑자와 기업 환전이 만든 수급의 결과이고, 연말 기본 경로는 1,300~1,345원(확률 55%)이다.",
+    "en": "The won's rally reflects current-account and corporate FX-conversion flows, not dollar weakness; year-end base case: KRW 1,300–1,345 (55%).",
+    "es": "La apreciación del won responde al superávit corriente y la conversión de divisas de empresas, no a un dólar débil; base a fin de año: 1,300–1,345 (55%).",
+    "ja": "ウォン高はドル安ではなく経常黒字と企業の両替が生んだ需給の結果であり、年末の基本シナリオは1,300〜1,345ウォン（確率55%）。"
+  },
+  "key": {
+    "value": "1,328.1",
+    "label": {
+      "ko": "원/달러 종가 (원, 2026-10-20 15:30)",
+      "en": "USD/KRW close (KRW, Oct 20, 2026, 15:30)",
+      "es": "Cierre del USD/KRW (wones, 20 oct 2026, 15:30)",
+      "ja": "ウォン/ドル終値（ウォン、2026年10月20日15:30）"
+    }
+  },
+  "points": {
+    "ko": [
+      "원/달러는 6/30 1,549.4원에서 10/20 1,328.1원으로 내렸지만 달러인덱스는 101.11→101.757로 거의 그대로다.",
+      "경상수지 흑자는 6월 497.3억달러로 월간 사상 최대였고 8월에도 461.1억달러를 기록했다.",
+      "1,300원 하회 터치 확률은 3개월 내 35%, 그 아래 안착은 12개월 내 20%로 본다. 되돌림 시나리오는 25%다."
+    ],
+    "en": [
+      "USD/KRW fell from 1,549.4 on Jun 30 to 1,328.1 on Oct 20, while the dollar index barely moved (101.11 to 101.757).",
+      "The current-account surplus hit a monthly record of $49.73 billion in June and was $46.11 billion in August.",
+      "The report puts a break below 1,300 at 35% within 3 months and settling below it at 20% within 12 months; reversal scenario: 25%."
+    ],
+    "es": [
+      "El USD/KRW bajó de 1,549.4 el 30 de junio a 1,328.1 el 20 de octubre, mientras el índice dólar casi no se movió (101.11 a 101.757).",
+      "El superávit de cuenta corriente marcó un récord mensual de US$49,730 millones en junio y fue de US$46,110 millones en agosto.",
+      "El informe asigna 35% a tocar menos de 1,300 en 3 meses y 20% a asentarse por debajo en 12 meses; escenario de reversión: 25%."
+    ],
+    "ja": [
+      "ウォン/ドルは6/30の1,549.4ウォンから10/20に1,328.1ウォンへ下落したが、ドル指数は101.11→101.757とほぼ横ばい。",
+      "経常黒字は6月に497.3億ドルと月間で過去最大、8月も461.1億ドルを記録した。",
+      "1,300ウォン割れの確率は3カ月以内35%、その下での定着は12カ月以内20%とみる。反転シナリオは25%。"
+    ]
+  },
+  "tickers": [
+    "USD/KRW",
+    "SK하이닉스",
+    "삼성전자"
+  ],
+  "checkpoints": [
+    {
+      "date": "2026-10-22",
+      "text": {
+        "ko": "한은 금통위 (현 3.00%, 동결 우세)",
+        "en": "Bank of Korea rate decision (currently 3.00%, hold expected)",
+        "es": "Decisión de tasas del Banco de Corea (actual 3.00%, se espera pausa)",
+        "ja": "韓国銀行金融通貨委員会（現行3.00%、据え置き優勢）"
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "text": {
+        "ko": "FOMC 결과 발표 (한국시간 새벽, 동결 확률 84.5%)",
+        "en": "FOMC decision (early morning KST; 84.5% probability of a hold)",
+        "es": "Decisión del FOMC (madrugada en Corea; 84.5% de probabilidad de pausa)",
+        "ja": "FOMC結果発表（韓国時間未明、据え置き確率84.5%）"
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "text": {
+        "ko": "10월 말 삼성 이사회(3분기 배당 약 30조원 확정)·하이닉스 3분기 실적",
+        "en": "Late October: Samsung board (Q3 dividend of about KRW 30 trillion) and SK hynix Q3 results",
+        "es": "Fines de octubre: directorio de Samsung (dividendo del 3T de unos 30 billones de wones) y resultados del 3T de SK hynix",
+        "ja": "10月末 サムスン取締役会（第3四半期配当 約30兆ウォン確定）・SKハイニックス第3四半期決算"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "text": {
+        "ko": "하이닉스 자사주 매입 종료",
+        "en": "SK hynix share buyback ends",
+        "es": "Termina la recompra de acciones de SK hynix",
+        "ja": "SKハイニックスの自社株買い終了"
+      }
+    },
+    {
+      "date": "2026-11-26",
+      "text": {
+        "ko": "한은 금통위 (연내 마지막 결정)",
+        "en": "Bank of Korea rate decision (last of the year)",
+        "es": "Decisión de tasas del Banco de Corea (la última del año)",
+        "ja": "韓国銀行金融通貨委員会（年内最後の決定）"
+      }
+    },
+    {
+      "date": "2026-12-10",
+      "text": {
+        "ko": "FOMC 결과 발표 (한국시간 새벽, 연내 추가 인상 여부)",
+        "en": "FOMC decision (early morning KST): whether to hike again this year",
+        "es": "Decisión del FOMC (madrugada en Corea): si habrá otra subida este año",
+        "ja": "FOMC結果発表（韓国時間未明、年内追加利上げの有無）"
+      }
+    }
+  ],
+  "tags": {
+    "ko": [
+      "원/달러",
+      "환율",
+      "경상수지",
+      "수급"
+    ],
+    "en": [
+      "USD/KRW",
+      "FX",
+      "Current account",
+      "Flows"
+    ],
+    "es": [
+      "USD/KRW",
+      "Divisas",
+      "Cuenta corriente",
+      "Flujos"
+    ],
+    "ja": [
+      "ウォン/ドル",
+      "為替",
+      "経常収支",
+      "需給"
+    ]
+  }
+}

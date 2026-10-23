@@ -1,0 +1,116 @@
+{
+  "slug": "ai-uncorrelated-growth",
+  "date": "2026-10-03",
+  "asof": "2026-09-17 (latest source date; figures as of each source's release)",
+  "category": "sector",
+  "title": {
+    "ko": "AI와 상관없는 폭발 성장 섹터 찾기",
+    "en": "Finding Explosive-Growth Sectors Uncorrelated with AI",
+    "es": "En busca de sectores de crecimiento explosivo no correlacionados con la IA",
+    "ja": "AIと相関しない爆発的成長セクターを探す"
+  },
+  "dek": {
+    "ko": "AI 사이클과 무관하게 폭발적 성장을 기대할 1순위 섹터는 비만·대사질환, 안보(방산·조선), 디지털자산 금융 인프라다.",
+    "en": "The report names obesity/metabolic disease, security (defense, shipbuilding) and digital-asset financial infrastructure as the top non-AI growth sectors.",
+    "es": "El informe señala obesidad/metabolismo, seguridad (defensa, astilleros) e infraestructura financiera de activos digitales como los sectores clave sin IA.",
+    "ja": "レポートはAIサイクルと無関係な最有力の成長セクターとして、肥満・代謝疾患、安全保障(防衛・造船)、デジタル資産金融インフラを挙げる。"
+  },
+  "key": {
+    "value": "+56%",
+    "label": {
+      "ko": "일라이릴리 2026년 1분기 매출 전년 대비 증가율",
+      "en": "Eli Lilly Q1 2026 revenue growth, year over year",
+      "es": "Crecimiento interanual de los ingresos de Eli Lilly en el 1T 2026",
+      "ja": "イーライリリーの2026年1~3月期売上高の前年比伸び率"
+    }
+  },
+  "points": {
+    "ko": [
+      "일라이릴리의 2026년 1분기 매출은 198억 달러(+56%)이고, 연간 가이던스는 820억~850억 달러로 상향됐다.",
+      "한화에어로스페이스의 2분기 말 수주잔고는 약 70조원이다. 2026년 7월 9일 펜타곤은 HD현대중공업·한화오션에 RFI를 보냈다.",
+      "2026년 9월 17일 SEC가 토큰화 주식의 온체인 거래를 승인했다. 로빈후드의 2분기 매출은 13.1억 달러(+32%)다."
+    ],
+    "en": [
+      "Eli Lilly's Q1 2026 revenue was $19.8B (+56%), and full-year guidance was raised to $82B–$85B.",
+      "Hanwha Aerospace's end-Q2 backlog was about KRW 70 trillion. On July 9, 2026, the Pentagon sent RFIs to HD Hyundai Heavy and Hanwha Ocean.",
+      "On September 17, 2026 the SEC approved on-chain trading of tokenized stocks. Robinhood's Q2 revenue was $1.31B (+32%)."
+    ],
+    "es": [
+      "Los ingresos de Eli Lilly en el 1T 2026 fueron de US$19.800 millones (+56%) y su guía anual subió a US$82.000–85.000 millones.",
+      "Cartera de Hanwha Aerospace al cierre del 2T: unos 70 billones de wones. El 9 de julio, el Pentágono envió RFI a HD Hyundai y Hanwha Ocean.",
+      "El 17 de septiembre de 2026 la SEC aprobó negociar on-chain acciones tokenizadas. Robinhood ingresó US$1.310 millones en el 2T (+32%)."
+    ],
+    "ja": [
+      "イーライリリーの2026年1~3月期売上高は198億ドル(+56%)で、通期ガイダンスは820億~850億ドルに上方修正された。",
+      "ハンファエアロスペースの4~6月期末の受注残高は約70兆ウォン。2026年7月9日、米国防総省はHD現代重工業・ハンファオーシャンにRFIを送付した。",
+      "2026年9月17日、SECがトークン化株式のオンチェーン取引を承認した。ロビンフッドの4~6月期売上高は13.1億ドル(+32%)。"
+    ]
+  },
+  "tickers": [
+    "LLY",
+    "펩트론",
+    "한화에어로스페이스",
+    "HD현대중공업",
+    "한화오션",
+    "HOOD",
+    "CRCL",
+    "알테오젠",
+    "에이피알",
+    "RKLB"
+  ],
+  "checkpoints": [
+    {
+      "date": "2026-10-07",
+      "text": {
+        "ko": "펩트론–릴리 기술평가 종료 여부와 후속 계약 공시",
+        "en": "Peptron–Lilly technology evaluation outcome and any follow-on contract disclosure",
+        "es": "Resultado de la evaluación tecnológica Peptron–Lilly y posible anuncio de contrato posterior",
+        "ja": "ペプトロン–リリーの技術評価終了の有無と後続契約の開示"
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "text": {
+        "ko": "알테오젠 3분기 실적과 큐렉스 판매 마일스톤 진행",
+        "en": "Alteogen Q3 results and progress on Keytruda Qlex sales milestones",
+        "es": "Resultados del 3T de Alteogen y avance de los hitos de ventas de Keytruda Qlex",
+        "ja": "アルテオジェンの7~9月期決算とキイトルーダ・キューレックス販売マイルストーンの進捗"
+      }
+    },
+    {
+      "date": "2026-12-31",
+      "text": {
+        "ko": "로켓랩 Neutron 첫 발사의 연내 성사 여부",
+        "en": "Whether Rocket Lab's first Neutron launch happens within the year",
+        "es": "Si el primer lanzamiento del Neutron de Rocket Lab ocurre dentro del año",
+        "ja": "ロケットラボのNeutron初打ち上げが年内に実現するか"
+      }
+    }
+  ],
+  "tags": {
+    "ko": [
+      "비AI 성장",
+      "비만치료제",
+      "방산·조선",
+      "디지털자산"
+    ],
+    "en": [
+      "Non-AI growth",
+      "Obesity drugs",
+      "Defense & shipbuilding",
+      "Digital assets"
+    ],
+    "es": [
+      "Crecimiento sin IA",
+      "Fármacos para obesidad",
+      "Defensa y astilleros",
+      "Activos digitales"
+    ],
+    "ja": [
+      "非AI成長",
+      "肥満症治療薬",
+      "防衛・造船",
+      "デジタル資産"
+    ]
+  }
+}

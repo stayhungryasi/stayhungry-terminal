@@ -1,0 +1,88 @@
+{
+  "slug": "ken-griffin-view",
+  "date": "2026-10-03",
+  "asof": "2026-10-03 (13F: Q2 2026, end of June)",
+  "category": "masters",
+  "title": {
+    "ko": "켄 그리핀의 시각: 발언과 13F 자금 흐름 분석",
+    "en": "Ken Griffin's View: His Statements and 13F Capital Flows",
+    "es": "La visión de Ken Griffin: sus declaraciones y los flujos de capital del 13F",
+    "ja": "ケン・グリフィンの視点:発言と13Fの資金フロー分析"
+  },
+  "dek": {
+    "ko": "보고서의 추론으로는 미국 우위에 베팅하되 재정·인플레이션·지정학 리스크는 헤지하는 것이 그리핀식 접근이다.",
+    "en": "The report infers (not Griffin's words) that his approach bets on US strength while hedging fiscal, inflation and geopolitical risks.",
+    "es": "El informe infiere (no son palabras de Griffin) que su enfoque apuesta por EE. UU. y cubre los riesgos fiscales, inflacionarios y geopolíticos.",
+    "ja": "レポートの推論(グリフィン本人の発言ではない)では、米国の優位に賭けつつ財政・インフレ・地政学リスクをヘッジするのがグリフィン流だ。"
+  },
+  "key": {
+    "value": "−8%",
+    "label": {
+      "ko": "그리핀 추정: 미국이 대만산 반도체를 잃을 경우 6개월 내 GDP 감소폭",
+      "en": "Griffin's estimate: US GDP decline within 6 months if it lost Taiwanese chips",
+      "es": "Estimación de Griffin: caída del PIB de EE. UU. en 6 meses si perdiera los chips de Taiwán",
+      "ja": "グリフィンの推計:米国が台湾製半導体を失った場合の6カ月以内のGDP減少幅"
+    }
+  },
+  "points": {
+    "ko": [
+      "[팩트] 그리핀은 호르무즈 해협이 6~12개월 닫히면 침체가 불가피하다고 했지만, 2분기 13F의 SPY 콜은 전 분기 대비 +77%였다.",
+      "[팩트] 2분기 13F 공시 총액 8,751억 달러 중 약 80%는 옵션 명목가치라 방향성 견해로 읽으면 안 된다.",
+      "[추론] 보고서는 가스→전력→컴퓨트 수직계열화를 유력 시나리오로 본다. 근거는 Paloma·FlexPower 인수다."
+    ],
+    "en": [
+      "[Fact] Griffin said a 6–12 month Hormuz closure would make a global recession unavoidable, yet Q2 13F SPY calls rose 77% QoQ.",
+      "[Fact] Of the $875.1B total in the Q2 13F, about 80% is option notional, so it should not be read as a directional view.",
+      "[Inference] The report sees gas→power→compute vertical integration as the likeliest large-scale move, citing the Paloma and FlexPower deals."
+    ],
+    "es": [
+      "[Hecho] Griffin dijo que cerrar Ormuz 6 a 12 meses haría inevitable una recesión, pero las calls de SPY del 13F del 2T subieron 77% t/t.",
+      "[Hecho] De los US$875.100 millones del 13F del 2T, cerca del 80% es nocional de opciones; no debe leerse como una visión direccional.",
+      "[Inferencia] El informe ve probable una integración vertical gas→electricidad→cómputo, con base en las compras de Paloma y FlexPower."
+    ],
+    "ja": [
+      "[事実]グリフィンはホルムズ海峡が6~12カ月封鎖されれば景気後退は不可避と述べたが、4~6月期13FのSPYコールは前期比+77%だった。",
+      "[事実]4~6月期13Fの開示総額8,751億ドルのうち約80%はオプション想定元本で、方向性の見解として読むべきではない。",
+      "[推論]レポートはガス→電力→コンピュートの垂直統合を有力シナリオとみる。根拠はPaloma・FlexPowerの買収だ。"
+    ]
+  },
+  "tickers": [
+    "SPY",
+    "QQQ",
+    "MU",
+    "SNDK",
+    "SMH",
+    "엔비디아",
+    "아마존",
+    "MSFT",
+    "알파벳(GOOG)",
+    "SK하이닉스"
+  ],
+  "checkpoints": [],
+  "tags": {
+    "ko": [
+      "켄 그리핀",
+      "시타델",
+      "13F",
+      "매크로"
+    ],
+    "en": [
+      "Ken Griffin",
+      "Citadel",
+      "13F",
+      "Macro"
+    ],
+    "es": [
+      "Ken Griffin",
+      "Citadel",
+      "13F",
+      "Macro"
+    ],
+    "ja": [
+      "ケン・グリフィン",
+      "シタデル",
+      "13F",
+      "マクロ"
+    ]
+  }
+}

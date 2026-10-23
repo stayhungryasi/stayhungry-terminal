@@ -1,0 +1,98 @@
+{
+ "slug": "ai-capital-flow-map",
+ "date": "2026-09-29",
+ "asof": "2026-09-29",
+ "category": "ai",
+ "title": {
+  "ko": "AI Capital Flow Map — Musk G20 발언 검증과 AI 통행료 분석",
+  "en": "AI Capital Flow Map: Fact-Checking Musk's G20 Remarks and Mapping AI Toll Booths",
+  "es": "Mapa de flujos de capital de la IA: verificación de lo dicho por Musk en el G20 y análisis de los peajes de la IA",
+  "ja": "AIキャピタル・フロー・マップ — マスク氏のG20発言検証とAI「通行料」分析"
+ },
+ "dek": {
+  "ko": "AI 병목은 GPU에서 칩·메모리·가동 가능한 MW의 동시 부족으로 옮겨갔다. 돈은 첨단 파운드리·HBM·과점 전력장비로 가장 확실히 흐른다.",
+  "en": "AI's bottleneck is now a joint shortage of chips, memory and usable MW; the surest money flows to advanced foundry, HBM and oligopoly power equipment.",
+  "es": "El límite de la IA ya no son solo las GPU, sino chips, memoria y MW utilizables; el dinero más seguro va a fundición avanzada, HBM y equipo eléctrico.",
+  "ja": "AIのボトルネックはGPU単独から、チップ・メモリ・稼働可能なMWの同時不足へ移った。最も確実に資金が流れる先は先端ファウンドリ、HBM、寡占的な電力機器だ。"
+ },
+ "key": {
+  "value": "15GW",
+  "label": {
+   "ko": "2027년 전력 부족으로 가동하지 못할 AI 칩 규모(Musk 주장)",
+   "en": "AI chips unable to switch on in 2027 for lack of power (Musk's claim)",
+   "es": "Chips de IA que no podrán encenderse en 2027 por falta de energía (según Musk)",
+   "ja": "電力不足で2027年に稼働できないAIチップの規模(マスク氏の主張)"
+  }
+ },
+ "points": {
+  "ko": [
+   "Musk 발언 7개 중 사실은 2개, 과장은 3개다. 보고서는 2027년 미가동 규모를 8~20GW(중앙값 12GW)로 추정한다.",
+   "AI Toll Booth Index 1위는 첨단 파운드리+패키징(91점)이다. 전력 쪽 최상위는 대형 가스터빈(84점)·초고압 변압기(83점)다.",
+   "연간 AI 최종수요 $100 중 $65가 인프라로 흐르고, 반도체 몫이 $24로 가장 크다(작성자 추정)."
+  ],
+  "en": [
+   "Of Musk's 7 claims, 2 are confirmed facts and 3 are heavily exaggerated; the report estimates 8–20GW (median 12GW) will sit idle in 2027.",
+   "AI Toll Booth Index: advanced foundry + packaging ranks first (91 points); in power, large gas turbines (84) and UHV transformers (83) lead.",
+   "Of every $100 of annual AI end demand, $65 flows to infrastructure, and semiconductors take the largest share at $24 (author's estimate)."
+  ],
+  "es": [
+   "De las 7 afirmaciones de Musk, 2 son hechos confirmados y 3 son muy exageradas; el informe estima 8–20GW (mediana 12GW) sin operar en 2027.",
+   "Peajes de IA: lidera fundición avanzada + empaquetado (91); en energía, turbinas de gas (84) y transformadores de extra alta tensión (83).",
+   "De cada $100 de demanda final anual de IA, $65 van a infraestructura; la mayor parte, $24, a semiconductores (estimación del autor)."
+  ],
+  "ja": [
+   "マスク氏の発言7つのうち事実と確認されたのは2つ、誇張が大きいのは3つ。レポートは2027年の未稼働規模を8~20GW(中央値12GW)と推定する。",
+   "AI Toll Booth Indexの1位は先端ファウンドリ+パッケージング(91点)。電力分野の首位は大型ガスタービン(84点)と超高圧変圧器(83点)だ。",
+   "年間AI最終需要$100のうち$65がインフラへ流れ、最大の取り分は半導体の$24だ(筆者推定)。"
+  ]
+ },
+ "tickers": [
+  "TSMC",
+  "NVIDIA",
+  "Broadcom",
+  "SK hynix",
+  "GE Vernova",
+  "Lumentum",
+  "Siemens Energy",
+  "Vertiv",
+  "Hitachi Energy",
+  "SpaceX"
+ ],
+ "checkpoints": [
+  {
+   "date": "2026-12-08",
+   "text": {
+    "ko": "SpaceX(SPCX) 락업 해제",
+    "en": "SpaceX (SPCX) lock-up expiry",
+    "es": "Vence el período de lock-up de SpaceX (SPCX)",
+    "ja": "SpaceX(SPCX)のロックアップ解除"
+   }
+  }
+ ],
+ "tags": {
+  "ko": [
+   "AI 인프라",
+   "전력 병목",
+   "AI 통행료",
+   "SpaceX"
+  ],
+  "en": [
+   "AI infrastructure",
+   "Power bottleneck",
+   "AI toll booths",
+   "SpaceX"
+  ],
+  "es": [
+   "Infraestructura de IA",
+   "Cuello de botella eléctrico",
+   "Peajes de la IA",
+   "SpaceX"
+  ],
+  "ja": [
+   "AIインフラ",
+   "電力ボトルネック",
+   "AI通行料",
+   "SpaceX"
+  ]
+ }
+}

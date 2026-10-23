@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>미국채 금리와 주가, 20년의 관계 · U.S. Treasury Yields and Stocks: A 20-Year Relationship · Stayhungry.ASI</title>
+<meta name="description" content="Over 20 years, yield changes and stocks look nearly uncorrelated, but a positive link in 2006–2021 flipped negative from 2022. 20년 전체로 보면 금리 변화와 주가의 상관은 0에 가깝지만, 2006–2021년의 양(+) 관계가 2022년 이후 음(−)으로 뒤집혔다.">
+<link rel="canonical" href="https://stayhungryasi.com/r/rates-vs-stocks-20y/">
+<meta property="og:type" content="article"><meta property="og:title" content="미국채 금리와 주가, 20년의 관계 · U.S. Treasury Yields and Stocks: A 20-Year Relationship · Stayhungry.ASI"><meta property="og:description" content="Over 20 years, yield changes and stocks look nearly uncorrelated, but a positive link in 2006–2021 flipped negative from 2022. 20년 전체로 보면 금리 변화와 주가의 상관은 0에 가깝지만, 2006–2021년의 양(+) 관계가 2022년 이후 음(−)으로 뒤집혔다."><meta property="og:url" content="https://stayhungryasi.com/r/rates-vs-stocks-20y/">
+<meta name="twitter:card" content="summary"><meta name="twitter:site" content="@shaferwineX">
+<meta name="theme-color" content="#0A0C10"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D111D'/%3E%3Cpath d='M8 11l6 5-6 5' stroke='%23E9B7A2' stroke-width='2.6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M16 22h8' stroke='%23E9B7A2' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="alternate" type="application/rss+xml" title="Stayhungry.ASI research" href="/r/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0C10;--card:#12161E;--line:#1D2330;--line2:#2E3445;--ink:#EEF0F5;--ink2:#C3C9D6;--mute:#8D95A8;--or:#F26522;--mono:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink2);font:16px/1.75 "Noto Sans KR",system-ui,sans-serif}
+a{color:var(--or)}
+.top{position:sticky;top:0;z-index:5;background:#0A0C10ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .in{max-width:980px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-family:var(--mono);font-size:13px;letter-spacing:.2em;color:var(--ink);text-decoration:none;font-weight:600;white-space:nowrap}
+.brand i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--or);margin-right:10px;vertical-align:1px}
+.top a.back{font-family:var(--mono);font-size:12.5px;color:var(--or);text-decoration:none;white-space:nowrap}
+main{max-width:980px;margin:0 auto;padding:30px 20px 60px}
+.eb{font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;color:var(--or);text-transform:uppercase}
+h1.t{color:var(--ink);font-size:clamp(28px,4.6vw,46px);line-height:1.2;font-weight:900;margin:.3em 0 .35em;letter-spacing:-.01em}
+.meta{font-family:var(--mono);font-size:12.5px;color:var(--mute);display:flex;flex-wrap:wrap;gap:6px 16px}
+.brief{margin:26px 0 30px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 24px}
+.lt{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.lt button{font:600 12.5px var(--mono);letter-spacing:.06em;color:var(--ink2);background:none;border:1px solid var(--line2);border-radius:999px;padding:6px 12px;cursor:pointer}
+.lt button.on{background:var(--or);border-color:var(--or);color:#0A0C10}
+.bp[hidden]{display:none}
+.dek{color:var(--ink);font-size:clamp(19px,2.3vw,24px);font-weight:800;line-height:1.45;margin:0 0 16px}
+.kg{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px;align-items:start}
+.kv b{display:block;font-size:clamp(34px,5vw,52px);font-weight:900;color:var(--or);line-height:1.05;letter-spacing:-.02em;word-break:keep-all}
+.kv small,.lbl{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--mute);margin:6px 0}
+.pts{margin:0;padding-left:20px}.pts li{margin:4px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}.chips span{font-family:var(--mono);font-size:12px;border:1px solid var(--line2);border-radius:999px;padding:3px 10px;color:var(--ink2)}
+.ck{margin:12px 0 0;padding:0;list-style:none}.ck li{font-size:14.5px;margin:3px 0}.ck time{font-family:var(--mono);color:var(--or);margin-right:8px}
+.note{font-size:13px;color:var(--mute);border:1px dashed var(--line2);border-radius:10px;padding:10px 14px;margin:18px 0 0;line-height:1.6}
+.doc h2{color:var(--ink);font-size:clamp(21px,2.6vw,27px);font-weight:900;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line);line-height:1.35}
+.doc h3{color:var(--ink);font-size:19px;font-weight:800;margin:1.5em 0 .4em}
+.doc b{color:var(--ink)}.doc li p{margin:.2em 0}
+.doc ul.check{list-style:none;padding-left:4px}.doc ul.check li:before{content:"☐ ";color:var(--or)}
+.doc blockquote{margin:16px 0;border-left:3px solid var(--or);padding:4px 16px;color:var(--ink2)}
+.doc hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.55}
+th,td{text-align:left;vertical-align:top;padding:8px 11px;border-bottom:1px solid var(--line)}
+th{background:var(--card);color:var(--ink);font-weight:700}th p,td p{margin:0}
+figure.fig{margin:20px 0;background:#fcfcfb;border-radius:12px;padding:12px;overflow-x:auto}
+figure.fig svg{width:100%;height:auto;min-width:560px;display:block;
+ --cds-text-primary:#141413;--cds-text-secondary:#5E5D59;--cds-chart-axis:#9A988F;--cds-chart-muted:#C9C7BD;--cds-chart-reference:#7B7A73;--cds-chart-categorical-1:#D9480F;--cds-chart-reference-tint:#F0EEE6}
+figure.fig figcaption{font-size:12.5px;color:#5E5D59;margin-top:6px}
+.frame{width:100%;border:1px solid var(--line);border-radius:14px;background:#0A0C10;min-height:80vh;display:block}
+.wide{max-width:1240px}body.w .top .in,body.w footer{max-width:1240px}
+.rel{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:12px}
+.rel a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none;color:var(--ink2)}
+.rel a:hover{border-color:var(--or)}.rel b{display:block;color:var(--ink);font-size:16px;line-height:1.4}.rel small{font-family:var(--mono);font-size:11.5px;color:var(--mute)}
+footer{max-width:980px;margin:0 auto;padding:20px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12.5px;color:var(--mute);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--mute);text-decoration:none}
+@media (max-width:640px){.kg{grid-template-columns:1fr}.brief{padding:16px}main{padding:22px 16px 48px}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "U.S. Treasury Yields and Stocks: A 20-Year Relationship", "alternativeHeadline": "미국채 금리와 주가, 20년의 관계", "inLanguage": "ko", "datePublished": "2026-10-08", "description": "Over 20 years, yield changes and stocks look nearly uncorrelated, but a positive link in 2006–2021 flipped negative from 2022.", "url": "https://stayhungryasi.com/r/rates-vs-stocks-20y/", "author": {"@type": "Organization", "name": "Stayhungry.ASI", "url": "https://stayhungryasi.com/"}, "publisher": {"@type": "Organization", "name": "Stayhungry.ASI", "url": "https://stayhungryasi.com/"}}</script>
+</head>
+<body class="w">
+<header class="top"><div class="in"><a class="brand" href="/"><i></i>STAY HUNGRY.ASI</a><a class="back" data-l="en" data-lib href="/en/#library">← Research library</a><a class="back" data-l="ko" data-lib href="/ko/#library" hidden>← 리서치 라이브러리</a><a class="back" data-l="es" data-lib href="/es/#library" hidden>← Biblioteca de investigación</a><a class="back" data-l="ja" data-lib href="/ja/#library" hidden>← リサーチライブラリ</a></div></header><main class="wide"><p class="eb" data-l="en">RESEARCH · Macro · ORIGINAL IN KOREAN</p><p class="eb" data-l="ko" hidden>RESEARCH · 거시 · 원문 한국어</p><p class="eb" data-l="es" hidden>RESEARCH · Macro · ORIGINAL EN COREANO</p><p class="eb" data-l="ja" hidden>RESEARCH · マクロ · 原文は韓国語</p><h1 class="t" lang="ko">미국채 금리와 주가, 20년의 관계</h1><p class="meta" data-l="en" style="font-size:15px;color:var(--ink2);font-family:inherit" lang="en">U.S. Treasury Yields and Stocks: A 20-Year Relationship</p><p class="meta" data-l="es" style="font-size:15px;color:var(--ink2);font-family:inherit" hidden lang="es-MX">Rendimientos del Tesoro de EE. UU. y acciones: una relación de 20 años</p><p class="meta" data-l="ja" style="font-size:15px;color:var(--ink2);font-family:inherit" hidden lang="ja">米国債利回りと株価、20年の関係</p><div class="meta" data-l="en"><span>Macro</span><span>Published 2026-10-08</span><span>Data as of 2026-10-07 close</span><span>2 min read</span><span>3 sources</span></div><div class="meta" data-l="ko" hidden><span>거시</span><span>작성 2026-10-08</span><span>데이터 기준 2026-10-07 close</span><span>2분 분량</span><span>출처 3개</span></div><div class="meta" data-l="es" hidden><span>Macro</span><span>Publicado 2026-10-08</span><span>Datos al 2026-10-07 close</span><span>2 min de lectura</span><span>3 fuentes</span></div><div class="meta" data-l="ja" hidden><span>マクロ</span><span>作成 2026-10-08</span><span>データ基準 2026-10-07 close</span><span>2分で読める</span><span>出典3件</span></div><section class="brief"><div class="lt" role="tablist"><button data-set="en" class="on">EN</button><button data-set="ko" class="">한국어</button><button data-set="es" class="">ES</button><button data-set="ja" class="">日本語</button></div><div class="bp" data-l="en">
+<p class="dek">Over 20 years, yield changes and stocks look nearly uncorrelated, but a positive link in 2006–2021 flipped negative from 2022.</p>
+<div class="kg"><div class="kv"><small>KEY NUMBER</small><b>5.28%</b><small style="letter-spacing:.04em;text-transform:none">U.S. 10-year Treasury yield (Oct 2026, Oct 7 close): within the top 1% of 250 month-ends</small></div>
+<div><p class="lbl">BRIEF</p><ul class="pts"><li>Over 20 years, months when the 10-year yield rose more than 10bp or plunged more than 25bp saw lower average stock returns.</li><li>The 10-year yield at 5.28% (Oct 7 close) sits in the top 1% of 250 month-end readings since Jan 2006.</li><li>Since 2022 the dollar has tended to strengthen as yields rise, so KOSPI in dollar terms is more rate-sensitive than in won.</li></ul></div></div>
+<div class="chips"><span>^GSPC</span><span>^IXIC</span><span>^KS11</span><span>^TNX</span><span>^TYX</span><span>KRW=X</span><span>DX-Y.NYB</span><span>Treasury yields</span><span>Equities</span><span>Correlation</span><span>Dollar</span></div>
+<p class="note">AI-assisted research by @stayhungryasi. Written on the date shown; numbers may have changed since. Not investment advice.</p></div><div class="bp" data-l="ko" hidden>
+<p class="dek">20년 전체로 보면 금리 변화와 주가의 상관은 0에 가깝지만, 2006–2021년의 양(+) 관계가 2022년 이후 음(−)으로 뒤집혔다.</p>
+<div class="kg"><div class="kv"><small>핵심 숫자</small><b>5.28%</b><small style="letter-spacing:.04em;text-transform:none">미국채 10년물 금리 (2026년 10월, 10/7 종가) — 250개 월말값 중 상위 1% 안</small></div>
+<div><p class="lbl">요약</p><ul class="pts"><li>20년간 10년물이 한 달에 10bp 넘게 오르거나 25bp 넘게 급락한 달은 평균 수익률이 낮았다.</li><li>10년물 금리 5.28%(10/7 종가)는 2006.01 이후 250개 월말값 가운데 상위 1% 안에 있다.</li><li>2022년 이후 금리가 오를 때 달러도 강해져, 달러 환산 코스피가 원화 기준보다 금리에 더 민감하다.</li></ul></div></div>
+<div class="chips"><span>^GSPC</span><span>^IXIC</span><span>^KS11</span><span>^TNX</span><span>^TYX</span><span>KRW=X</span><span>DX-Y.NYB</span><span>미국채 금리</span><span>주가</span><span>상관관계</span><span>달러</span></div>
+<p class="note">AI 도움을 받아 @stayhungryasi가 작성한 리서치입니다. 작성일 기준이며 이후 숫자가 바뀌었을 수 있습니다. 투자 권유가 아닙니다.</p></div><div class="bp" data-l="es" hidden>
+<p class="dek">En 20 años, los cambios de tasas y las acciones casi no se correlacionan, pero la relación positiva de 2006–2021 se volvió negativa desde 2022.</p>
+<div class="kg"><div class="kv"><small>CIFRA CLAVE</small><b>5.28%</b><small style="letter-spacing:.04em;text-transform:none">Rendimiento del bono del Tesoro a 10 años (oct 2026, cierre del 7 oct): dentro del 1% más alto de 250 cierres mensuales</small></div>
+<div><p class="lbl">RESUMEN</p><ul class="pts"><li>En 20 años, los meses en que el bono a 10 años subió más de 10pb o se desplomó más de 25pb tuvieron rendimientos promedio más bajos.</li><li>El rendimiento a 10 años de 5.28% (cierre del 7 oct) está en el 1% más alto de 250 cierres mensuales desde enero de 2006.</li><li>Desde 2022 el dólar tiende a fortalecerse cuando suben las tasas, por lo que el KOSPI en dólares es más sensible que en wones.</li></ul></div></div>
+<div class="chips"><span>^GSPC</span><span>^IXIC</span><span>^KS11</span><span>^TNX</span><span>^TYX</span><span>KRW=X</span><span>DX-Y.NYB</span><span>Rendimientos del Tesoro</span><span>Acciones</span><span>Correlación</span><span>Dólar</span></div>
+<p class="note">Investigación asistida por IA de @stayhungryasi. Vigente a la fecha indicada; las cifras pueden haber cambiado. No es asesoría de inversión.</p></div><div class="bp" data-l="ja" hidden>
+<p class="dek">20年全体では金利変化と株価の相関はほぼゼロだが、2006〜2021年の正の関係が2022年以降は負に反転した。</p>
+<div class="kg"><div class="kv"><small>重要な数字</small><b>5.28%</b><small style="letter-spacing:.04em;text-transform:none">米10年債利回り（2026年10月、10/7終値）— 250の月末値で上位1%以内</small></div>
+<div><p class="lbl">要約</p><ul class="pts"><li>20年間、10年債利回りが月10bp超上昇した月と25bp超急低下した月は平均リターンが低かった。</li><li>10年債利回り5.28%（10/7終値）は2006年1月以降250の月末値のうち上位1%以内にある。</li><li>2022年以降は金利上昇時にドルも強まり、ドル換算KOSPIはウォン建てより金利に敏感だ。</li></ul></div></div>
+<div class="chips"><span>^GSPC</span><span>^IXIC</span><span>^KS11</span><span>^TNX</span><span>^TYX</span><span>KRW=X</span><span>DX-Y.NYB</span><span>米国債利回り</span><span>株価</span><span>相関</span><span>ドル</span></div>
+<p class="note">AIの支援を受けて@stayhungryasiが作成したリサーチです。作成日時点の内容で、その後数値が変わっている可能性があります。投資助言ではありません。</p></div></section><p id="full"><a href="app.html" target="_blank" rel="noopener">인터랙티브 리포트 새 창으로 열기 ↗</a></p><iframe id="app" class="frame" src="app.html" title="미국채 금리와 주가, 20년의 관계" loading="lazy"></iframe><script>
+(function(){var f=document.getElementById('app');function fit(){try{var d=f.contentDocument;if(d&&d.body){f.style.height=Math.max(600,d.documentElement.scrollHeight)+'px'}}catch(e){}}
+f.addEventListener('load',function(){fit();try{new ResizeObserver(fit).observe(f.contentDocument.body)}catch(e){setInterval(fit,1000)}});})();
+</script><div data-l="en"><p class="lbl" style="margin-top:40px">MORE RESEARCH</p><div class="rel"><a href="/r/usdkrw-outlook/"><small>Macro · 2026-10-21</small><b>USD/KRW Outlook: How Far Can Chip Dollars Push the Exchange Rate Down?</b></a><a href="/r/damodaran-ai-warning/"><small>Investors · 2026-10-10</small><b>Fact-Checking a Video on Damodaran&#x27;s AI Warning, and Who Benefits</b></a><a href="/r/ethereum-outlook/"><small>Crypto · 2026-10-04</small><b>Ethereum Outlook: Gradual Recovery Over 1 Year, Upside Bias Over 3 Years</b></a></div></div><div data-l="ko" hidden><p class="lbl" style="margin-top:40px">다른 리서치</p><div class="rel"><a href="/r/usdkrw-outlook/"><small>거시 · 2026-10-21</small><b>원/달러 환율 전망 — 반도체 달러가 끌어내린 환율, 어디까지 가나</b></a><a href="/r/damodaran-ai-warning/"><small>투자 거장 · 2026-10-10</small><b>다모다란 AI 경고 영상 검증·수혜기업 판단</b></a><a href="/r/ethereum-outlook/"><small>크립토 · 2026-10-04</small><b>이더리움 전망: 1년은 완만한 회복, 3년은 상승 우위</b></a></div></div><div data-l="es" hidden><p class="lbl" style="margin-top:40px">MÁS INVESTIGACIÓN</p><div class="rel"><a href="/r/usdkrw-outlook/"><small>Macro · 2026-10-21</small><b>Perspectivas del USD/KRW: ¿hasta dónde pueden bajar el tipo de cambio los dólares de los chips?</b></a><a href="/r/damodaran-ai-warning/"><small>Inversionistas · 2026-10-10</small><b>Verificación de un video sobre la advertencia de Damodaran sobre la IA y quiénes se benefician</b></a><a href="/r/ethereum-outlook/"><small>Cripto · 2026-10-04</small><b>Perspectivas de Ethereum: recuperación gradual a 1 año, sesgo alcista a 3 años</b></a></div></div><div data-l="ja" hidden><p class="lbl" style="margin-top:40px">ほかのリサーチ</p><div class="rel"><a href="/r/usdkrw-outlook/"><small>マクロ · 2026-10-21</small><b>ウォン/ドル相場展望：半導体ドルが押し下げた為替、どこまで行くか</b></a><a href="/r/damodaran-ai-warning/"><small>投資家 · 2026-10-10</small><b>ダモダラン教授のAI警告動画の検証と恩恵企業の判断</b></a><a href="/r/ethereum-outlook/"><small>クリプト · 2026-10-04</small><b>イーサリアム展望：1年は緩やかな回復、3年は上昇優位</b></a></div></div></main><footer><span>Not investment advice. 투자 권유 아님.</span><a href="https://t.me/stayhungryasi" target="_blank" rel="noopener">@stayhungryasi · https://t.me/stayhungryasi</a></footer><script>
+(function(){var L=['en','ko','es','ja'],p=null;try{p=JSON.parse(localStorage.getItem('sha-lang'))}catch(e){}
+if(L.indexOf(p)<0){var n=(navigator.language||'en').toLowerCase().slice(0,2);p=L.indexOf(n)>=0?n:'en'}
+function set(c){document.querySelectorAll('[data-l]').forEach(function(e){e.hidden=e.getAttribute('data-l')!==c});
+document.querySelectorAll('.lt button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-set')===c)});
+document.querySelectorAll('a[data-lib]').forEach(function(a){a.href='/'+c+'/#library'});}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set]');if(b){set(b.getAttribute('data-set'));try{localStorage.setItem('sha-lang',JSON.stringify(b.getAttribute('data-set')))}catch(x){}}});
+set(p);})();
+</script></body></html>
