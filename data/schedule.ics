@@ -1,0 +1,1666 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//stayhungryasi//key-dates//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Stayhungry.ASI 핵심 일정
+X-WR-TIMEZONE:Asia/Seoul
+X-WR-CALDESC:한국시간 기준 일정 정보이며 투자 권유가 아닙니다. @stayhungryasi · https://t.me/stayhungryasi
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:kr-hol-hangul@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:한국 증시 휴장(한글날)
+DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
+  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
+ asi
+CATEGORIES:시장
+URL:https://www.krx.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-exp-10a@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:관세청 10월 1~10일 수출(반도체 수출 속보) (추정)
+DESCRIPTION:https://unipass.customs.go.kr/\n한국시간 기준 일정 정
+ 보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/s
+ tayhungryasi
+CATEGORIES:한국 매크로
+URL:https://unipass.customs.go.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ocp@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261016
+SUMMARY:★ OCP 글로벌 서밋(새너제이)
+DESCRIPTION:네트워킹·스케일업 표준\n미국 현지 날짜\nhttps:
+ //www.opencompute.org/events/ocp-summit/2026-ocp-global-summit/\n한국시
+ 간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungry
+ asi · https://t.me/stayhungryasi
+CATEGORIES:AI·산업
+URL:https://www.opencompute.org/events/ocp-summit/2026-ocp-global-summit/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:anth-day@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:★ Anthropic 상장 전 투자자 설명회(샌프란시스코) (
+ 보도)
+DESCRIPTION:미국 현지 날짜\nhttps://www.pymnts.com/news/artificial-in
+ telligence/2026/anthropic-targets-pre-thanksgiving-ipo-at-2-trillion-valua
+ tion/\n한국시간 기준 일정 정보이며 투자 권유가 아닙니
+ 다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:IPO
+URL:https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-targ
+ ets-pre-thanksgiving-ipo-at-2-trillion-valuation/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sedex@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261017
+SUMMARY:SEDEX 2026 반도체대전(코엑스)
+DESCRIPTION:https://www.sedex.org\n한국시간 기준 일정 정보이며 
+ 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungrya
+ si
+CATEGORIES:AI·산업
+URL:https://www.sedex.org
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:asml-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261014T050000Z
+DTEND:20261014T053000Z
+SUMMARY:ASML 3분기 실적
+DESCRIPTION:유럽 10/14(수) 07:00\n14:00 KST\nhttps://investor.asml.com/q
+ uarterly-results\n한국시간 기준 일정 정보이며 투자 권유가
+  아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://investor.asml.com/quarterly-results
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-cpi-sep@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261014T123000Z
+DTEND:20261014T130000Z
+SUMMARY:★ 미국 9월 CPI
+DESCRIPTION:미국 10/14(수) 08:30\n21:30 KST\nhttps://www.bls.gov/schedul
+ e/news_release/cpi.htm\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/cpi.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tsmc-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261015T060000Z
+DTEND:20261015T063000Z
+SUMMARY:★ TSMC 3분기 실적 설명회
+DESCRIPTION:대만 10/15(목) 14:00\n15:00 KST\nhttps://investor.tsmc.com/e
+ nglish/quarterly-results/2026/q3\n한국시간 기준 일정 정보이며 
+ 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungrya
+ si
+CATEGORIES:실적
+URL:https://investor.tsmc.com/english/quarterly-results/2026/q3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-ppi-sep@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261015T123000Z
+DTEND:20261015T130000Z
+SUMMARY:미국 9월 PPI
+DESCRIPTION:미국 10/15(목) 08:30\n21:30 KST\nhttps://www.bls.gov/schedul
+ e/news_release/ppi.htm\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/ppi.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-opex-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:미국 월간 옵션 만기
+DESCRIPTION:미국 현지 날짜\nhttps://www.nyse.com/trade/hours-calendar
+ s\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\
+ n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:시장
+URL:https://www.nyse.com/trade/hours-calendars
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:celltrion-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:셀트리온 3분기 실적 (추정)
+DESCRIPTION:https://www.ajunews.com/view/20251021104316650\n한국시간 
+ 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi 
+ · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.ajunews.com/view/20251021104316650
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-exp-10b@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:관세청 10월 1~20일 수출 (추정)
+DESCRIPTION:https://unipass.customs.go.kr/\n한국시간 기준 일정 정
+ 보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/s
+ tayhungryasi
+CATEGORIES:한국 매크로
+URL:https://unipass.customs.go.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sbl-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:삼성바이오로직스 3분기 실적 (추정)
+DESCRIPTION:https://www.kukinews.com/article/view/kuk202604220157\n한국
+ 시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhun
+ gryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.kukinews.com/article/view/kuk202604220157
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meta-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261021T200500Z
+DTEND:20261021T203500Z
+SUMMARY:★ 메타 3분기 실적
+DESCRIPTION:2027 capex\n미국 10/21(수) 장 마감 후(콜 16:30 ET)\n≈
+  05:05 KST\nhttps://investor.atmeta.com/investor-news/press-release-detail
+ s/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx\n한국시
+ 간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungry
+ asi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://investor.atmeta.com/investor-news/press-release-details/2026/Me
+ ta-to-Announce-Third-Quarter-2026-Results/default.aspx
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tsla-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261021T200500Z
+DTEND:20261021T203500Z
+SUMMARY:테슬라 3분기 실적
+DESCRIPTION:미국 10/21(수) 장 마감 후\n≈ 05:05 KST\nhttps://www.se
+ c.gov/Archives/edgar/data/0001318605/000162828026064366/exhibit991111111.h
+ tm\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.
+ \n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.sec.gov/Archives/edgar/data/0001318605/000162828026064366/e
+ xhibit991111111.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bok-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261022T010000Z
+DTEND:20261022T013000Z
+SUMMARY:★ 한국은행 금통위 기준금리 결정
+DESCRIPTION:10:00 KST\nhttps://www.bok.or.kr/\n한국시간 기준 일정 
+ 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.m
+ e/stayhungryasi
+CATEGORIES:한국 매크로
+URL:https://www.bok.or.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hmc-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261022T050000Z
+DTEND:20261022T053000Z
+SUMMARY:현대차 3분기 실적 컨퍼런스콜 (추정)
+DESCRIPTION:≈ 14:00 KST\nhttps://www.newswire.co.kr/newsRead.php?no=10391
+ 77\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.
+ \n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.newswire.co.kr/newsRead.php?no=1039177
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hana-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:하나금융지주 3분기 실적 (보도)
+DESCRIPTION:https://www.mt.co.kr/finance/2026/10/06/2026100615103372264\n
+ 한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@s
+ tayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.mt.co.kr/finance/2026/10/06/2026100615103372264
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kia-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:기아 3분기 실적 (추정)
+DESCRIPTION:https://www.hyundaimotorgroup.com/ko/news/kia-2026-q2-earnings\
+ n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@
+ stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.hyundaimotorgroup.com/ko/news/kia-2026-q2-earnings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:spcx-lock135@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:스페이스X 락업 135일차 물량 해제(약) (추정)
+DESCRIPTION:미국 현지 날짜\nhttps://www.techtimes.com/articles/326114
+ /20260901/spacex-stock-lockup-hits-tuesday-november-earnings-tranche-dwarf
+ s-september-9-four-times.htm\n한국시간 기준 일정 정보이며 투
+ 자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:우주
+URL:https://www.techtimes.com/articles/326114/20260901/spacex-stock-lockup-
+ hits-tuesday-november-earnings-tranche-dwarfs-september-9-four-times.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:anth-s1@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:★ Anthropic S-1 공개본 제출 예상 시한 (추정)
+DESCRIPTION:미국 현지 날짜\nhttps://www.sec.gov/\n한국시간 기준
+  일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · htt
+ ps://t.me/stayhungryasi
+CATEGORIES:IPO
+URL:https://www.sec.gov/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shinhan-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:신한지주 3분기 실적 (보도)
+DESCRIPTION:https://www.mt.co.kr/finance/2026/10/06/2026100615103372264\n
+ 한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@s
+ tayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.mt.co.kr/finance/2026/10/06/2026100615103372264
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-gdp-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261026T230000Z
+DTEND:20261026T233000Z
+SUMMARY:한국 3분기 GDP 속보치 (추정)
+DESCRIPTION:08:00 KST\nhttps://www.bok.or.kr/\n한국시간 기준 일정 
+ 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.m
+ e/stayhungryasi
+CATEGORIES:한국 매크로
+URL:https://www.bok.or.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:doosan-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:두산에너빌리티 3분기 잠정실적 (추정)
+DESCRIPTION:https://mobile.newsis.com/view/NISX20260727_0003725044\n한국
+ 시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhun
+ gryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://mobile.newsis.com/view/NISX20260727_0003725044
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hhi-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:HD현대중공업 3분기 잠정실적 (추정)
+DESCRIPTION:https://stockhub.kr/news/news_fa15139557e7\n한국시간 기준
+  일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · htt
+ ps://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://stockhub.kr/news/news_fa15139557e7
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sct-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:삼성물산 3분기 잠정실적(장 마감 후) (추정)
+DESCRIPTION:https://www.ddaily.co.kr/page/view/2026042917550495873\n한국
+ 시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhun
+ gryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.ddaily.co.kr/page/view/2026042917550495873
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sdi-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:삼성SDI 3분기 실적 (추정)
+DESCRIPTION:https://www.mt.co.kr/industry/2026/07/30/2026073013242481962\n
+ 한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@s
+ tayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.mt.co.kr/industry/2026/07/30/2026073013242481962
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:skh-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261028T000000Z
+DTEND:20261028T003000Z
+SUMMARY:★ SK하이닉스 3분기 실적 (추정)
+DESCRIPTION:09:00 KST\nhttps://news.skhynix.co.kr/\n한국시간 기준 일
+ 정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https:/
+ /t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://news.skhynix.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:lge-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261028T070000Z
+DTEND:20261028T073000Z
+SUMMARY:LG전자 3분기 확정실적·실적설명회 (추정)
+DESCRIPTION:≈ 16:00 KST\nhttps://www.lg.com/global/newsroom/news/corporat
+ e/lg-electronics-releases-preliminary-earnings-for-third-quarter-2026/\n
+ 한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@s
+ tayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.lg.com/global/newsroom/news/corporate/lg-electronics-releas
+ es-preliminary-earnings-for-third-quarter-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gev-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261028T110000Z
+DTEND:20261028T113000Z
+SUMMARY:GE버노바 3분기 실적
+DESCRIPTION:미국 10/28(수) 장 시작 전\n≈ 20:00 KST\nhttps://www.ge
+ vernova.com/investors\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.gevernova.com/investors
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fomc-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261028T180000Z
+DTEND:20261028T183000Z
+SUMMARY:★ FOMC 금리 결정
+DESCRIPTION:미국 10/28(수) 14:00\n03:00 KST\nhttps://www.federalreserve.
+ gov/monetarypolicy/fomccalendars.htm\n한국시간 기준 일정 정보이
+ 며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhun
+ gryasi
+CATEGORIES:연준
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:googl-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261028T200500Z
+DTEND:20261028T203500Z
+SUMMARY:★ 알파벳 3분기 실적
+DESCRIPTION:capex·TPU·FCF\n미국 10/28(수) 장 마감 후\n≈ 05:05 KS
+ T\nhttps://abc.xyz/investor/\n한국시간 기준 일정 정보이며 투
+ 자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://abc.xyz/investor/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:msft-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261028T200500Z
+DTEND:20261028T203500Z
+SUMMARY:★ 마이크로소프트 FQ1 실적
+DESCRIPTION:2027 capex 첫 언급\n미국 10/28(수) 장 마감 후\n≈ 05
+ :05 KST\nhttps://news.microsoft.com/source/2026/10/07/microsoft-announces-
+ quarterly-earnings-release-date-69/\n한국시간 기준 일정 정보이
+ 며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhun
+ gryasi
+CATEGORIES:실적
+URL:https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarte
+ rly-earnings-release-date-69/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sec-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261029T010000Z
+DTEND:20261029T013000Z
+SUMMARY:★ 삼성전자 3분기 확정실적 컨퍼런스콜
+DESCRIPTION:10:00 KST\nhttps://www.samsung.com/global/ir/\n한국시간 기
+ 준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · 
+ https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.samsung.com/global/ir/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:semco-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261029T043000Z
+DTEND:20261029T050000Z
+SUMMARY:삼성전기 3분기 실적 (추정)
+DESCRIPTION:≈ 13:30 KST\nhttps://www.smarttoday.co.kr/ko-kr/articles/9480
+ 9\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\
+ n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.smarttoday.co.kr/ko-kr/articles/94809
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hanwha-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261029T063000Z
+DTEND:20261029T070000Z
+SUMMARY:한화에어로스페이스 3분기 실적 (추정)
+DESCRIPTION:≈ 15:30 KST\nhttps://www.mt.co.kr/industry/2026/07/31/2026073
+ 115185741310\n한국시간 기준 일정 정보이며 투자 권유가 아
+ 닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.mt.co.kr/industry/2026/07/31/2026073115185741310
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kbfg-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261029T070000Z
+DTEND:20261029T073000Z
+SUMMARY:KB금융 3분기 실적 (보도)
+DESCRIPTION:≈ 16:00 KST\nhttps://www.mt.co.kr/finance/2026/10/06/20261006
+ 15103372264\n한국시간 기준 일정 정보이며 투자 권유가 아
+ 닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.mt.co.kr/finance/2026/10/06/2026100615103372264
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-gdp-q3a@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261029T123000Z
+DTEND:20261029T130000Z
+SUMMARY:미국 3분기 GDP 속보치 + 9월 PCE
+DESCRIPTION:미국 10/29(목) 08:30\n21:30 KST\nhttps://www.bea.gov/news/sc
+ hedule/full\n한국시간 기준 일정 정보이며 투자 권유가 아
+ 닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bea.gov/news/schedule/full
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:amzn-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261029T200500Z
+DTEND:20261029T203500Z
+SUMMARY:★ 아마존 3분기 실적 (추정)
+DESCRIPTION:AWS·capex\n미국 10/29(목) 장 마감 후\n≈ 05:05 KST\nht
+ tps://www.wallstreethorizon.com/amazon-earnings-calendar\n한국시간 기
+ 준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · 
+ https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.wallstreethorizon.com/amazon-earnings-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:intc-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261029T200500Z
+DTEND:20261029T203500Z
+SUMMARY:인텔 3분기 실적
+DESCRIPTION:미국 10/29(목) 장 마감 후\n≈ 05:05 KST\nhttps://www.in
+ tc.com/\n한국시간 기준 일정 정보이며 투자 권유가 아닙
+ 니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.intc.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sndk-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261029T200500Z
+DTEND:20261029T203500Z
+SUMMARY:샌디스크 FQ1 실적
+DESCRIPTION:미국 10/29(목) 장 마감 후\n≈ 05:05 KST\nhttps://www.sa
+ ndisk.com/company/newsroom/press-releases/2026/2026-09-29-sandisk-to-repor
+ t-first-quarter-fiscal-year-2027-results-on-october-29-2026\n한국시간 
+ 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi 
+ · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.sandisk.com/company/newsroom/press-releases/2026/2026-09-29
+ -sandisk-to-report-first-quarter-fiscal-year-2027-results-on-october-29-20
+ 26
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:boj-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261030T030000Z
+DTEND:20261030T033000Z
+SUMMARY:일본은행 금융정책 결정(전망보고서 포함)
+DESCRIPTION:12:00 KST\nhttps://www.boj.or.jp/mopo/mpmsche_minu/index.htm\n
+ 한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@s
+ tayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:글로벌 매크로
+URL:https://www.boj.or.jp/mopo/mpmsche_minu/index.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-exp-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261101T000000Z
+DTEND:20261101T003000Z
+SUMMARY:한국 10월 수출입동향 (추정)
+DESCRIPTION:09:00 KST\nhttps://www.motie.go.kr/\n한국시간 기준 일정
+  정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.
+ me/stayhungryasi
+CATEGORIES:한국 매크로
+URL:https://www.motie.go.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-midterm@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:★ 미국 중간선거
+DESCRIPTION:미국 현지 날짜\nhttps://en.wikipedia.org/wiki/2026_United
+ _States_elections\n한국시간 기준 일정 정보이며 투자 권유
+ 가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:정치
+URL:https://en.wikipedia.org/wiki/2026_United_States_elections
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pltr-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261102T210500Z
+DTEND:20261102T213500Z
+SUMMARY:팔란티어 3분기 실적 (추정)
+DESCRIPTION:미국 11/2(월) 장 마감 후\n≈ 06:05 KST\nhttps://www.wal
+ lstreethorizon.com/palantir-earnings-calendar\n한국시간 기준 일정 
+ 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.m
+ e/stayhungryasi
+CATEGORIES:실적
+URL:https://www.wallstreethorizon.com/palantir-earnings-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:aapl-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261102T213000Z
+DTEND:20261102T220000Z
+SUMMARY:애플 FQ4 실적
+DESCRIPTION:미국 11/2(월) 16:30\n06:30 KST\nhttps://www.mactrast.com/202
+ 6/10/apple-to-announce-fiscal-q4-2026-earnings-on-november-2/\n한국시
+ 간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungry
+ asi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.mactrast.com/2026/10/apple-to-announce-fiscal-q4-2026-earni
+ ngs-on-november-2/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-cpi-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261102T230000Z
+DTEND:20261102T233000Z
+SUMMARY:한국 10월 소비자물가 (추정)
+DESCRIPTION:08:00 KST\nhttps://kostat.go.kr/\n한국시간 기준 일정 
+ 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.m
+ e/stayhungryasi
+CATEGORIES:한국 매크로
+URL:https://kostat.go.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:lges-q3call@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261103T010000Z
+DTEND:20261103T013000Z
+SUMMARY:LG에너지솔루션 3분기 실적 컨퍼런스콜
+DESCRIPTION:10:00 KST\nhttps://www.fntimes.com/html/view.php?ud=20261008114
+ 71324247492587736_18\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.fntimes.com/html/view.php?ud=2026100811471324247492587736_1
+ 8
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:alab-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261103T210500Z
+DTEND:20261103T213500Z
+SUMMARY:★ 아스테라랩스 3분기 실적
+DESCRIPTION:미국 11/3(화) 장 마감 후\n≈ 06:05 KST\nhttps://new.qua
+ ntisnow.com/earnings/ALAB\n한국시간 기준 일정 정보이며 투자 
+ 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://new.quantisnow.com/earnings/ALAB
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:amd-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261103T210500Z
+DTEND:20261103T213500Z
+SUMMARY:AMD 3분기 실적
+DESCRIPTION:미국 11/3(화) 장 마감 후\n≈ 06:05 KST\nhttps://ir.amd.
+ com/\n한국시간 기준 일정 정보이며 투자 권유가 아닙니
+ 다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://ir.amd.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:anet-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261103T210500Z
+DTEND:20261103T213500Z
+SUMMARY:아리스타 3분기 실적
+DESCRIPTION:AI 네트워킹\n미국 11/3(화) 장 마감 후\n≈ 06:05 KST
+ \nhttps://www.arista.com/company/news/press-release/24817-pr-20261006\n한
+ 국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stay
+ hungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.arista.com/company/news/press-release/24817-pr-20261006
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:spcx-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261103T210500Z
+DTEND:20261103T213500Z
+SUMMARY:스페이스X 3분기 실적 (추정)
+DESCRIPTION:미국 11/3(화) 장 마감 후\n≈ 06:05 KST\nhttps://www.wal
+ lstreethorizon.com/spacex-earnings-calendar\n한국시간 기준 일정 
+ 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.m
+ e/stayhungryasi
+CATEGORIES:실적
+URL:https://www.wallstreethorizon.com/spacex-earnings-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ceg-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261106T120000Z
+DTEND:20261106T123000Z
+SUMMARY:컨스텔레이션에너지 3분기 실적 (추정)
+DESCRIPTION:미국 11/6(금) 장 시작 전\n≈ 21:00 KST\nhttps://nextear
+ ningsdate.com/constellation-energy.html\n한국시간 기준 일정 정보
+ 이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stay
+ hungryasi
+CATEGORIES:실적
+URL:https://nextearningsdate.com/constellation-energy.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-jobs-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261106T133000Z
+DTEND:20261106T140000Z
+SUMMARY:★ 미국 10월 고용보고서
+DESCRIPTION:미국 11/6(금) 08:30\n22:30 KST\nhttps://www.bls.gov/schedule
+ /news_release/empsit.htm\n한국시간 기준 일정 정보이며 투자 
+ 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/empsit.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:starship15@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:스타십 15차 비행 NET (추정)
+DESCRIPTION:미국 현지 날짜\nhttps://spiketoday.com/starship-flight-15
+ -launch-date/\n한국시간 기준 일정 정보이며 투자 권유가 
+ 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:우주
+URL:https://spiketoday.com/starship-flight-15-launch-date/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:anth-road@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:★ Anthropic IPO 로드쇼 시작 가능 (보도)
+DESCRIPTION:미국 현지 날짜\nhttps://www.pymnts.com/news/artificial-in
+ telligence/2026/anthropic-targets-pre-thanksgiving-ipo-at-2-trillion-valua
+ tion/\n한국시간 기준 일정 정보이며 투자 권유가 아닙니
+ 다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:IPO
+URL:https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-targ
+ ets-pre-thanksgiving-ipo-at-2-trillion-valuation/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tsmc-rev-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:TSMC 10월 월매출 (추정)
+DESCRIPTION:https://investor.tsmc.com/\n한국시간 기준 일정 정보
+ 이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stay
+ hungryasi
+CATEGORIES:AI·산업
+URL:https://investor.tsmc.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:crwv-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261109T210500Z
+DTEND:20261109T213500Z
+SUMMARY:코어위브 3분기 실적 (추정)
+DESCRIPTION:미국 11/9(월) 장 마감 후\n≈ 06:05 KST\nhttps://nextear
+ ningsdate.com/coreweave.html\n한국시간 기준 일정 정보이며 투
+ 자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://nextearningsdate.com/coreweave.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:oxy-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261109T210500Z
+DTEND:20261109T213500Z
+SUMMARY:★ 옥시덴탈 3분기 실적
+DESCRIPTION:미국 11/9(월) 장 마감 후\n≈ 06:05 KST\nhttps://finviz.
+ com/news/398041/occidental-to-announce-third-quarter-results-monday-novemb
+ er-9-2026-hold-conference-call-tuesday-november-10-2026\n한국시간 기
+ 준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · 
+ https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://finviz.com/news/398041/occidental-to-announce-third-quarter-res
+ ults-monday-november-9-2026-hold-conference-call-tuesday-november-10-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-cpi-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261110T133000Z
+DTEND:20261110T140000Z
+SUMMARY:★ 미국 10월 CPI
+DESCRIPTION:미국 11/10(화) 08:30\n22:30 KST\nhttps://www.bls.gov/schedul
+ e/news_release/cpi.htm\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/cpi.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:msci-nov@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:MSCI 11월 정기 리뷰 발표\, 11/30 종가 반영
+DESCRIPTION:미국 현지 날짜\nhttps://www.msci.com/eqb/pressreleases/ar
+ chive/ir_dates.pdf\n한국시간 기준 일정 정보이며 투자 권유
+ 가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:지수
+URL:https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:oklo-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261110T210500Z
+DTEND:20261110T213500Z
+SUMMARY:오클로 3분기 실적 (추정)
+DESCRIPTION:ATM 소진 현황\n미국 11/10(화) 장 마감 후\n≈ 06:05 
+ KST\nhttps://nextearningsdate.com/oklo.html\n한국시간 기준 일정 
+ 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.m
+ e/stayhungryasi
+CATEGORIES:실적
+URL:https://nextearningsdate.com/oklo.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-opt-nov@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:코스피200 옵션 만기
+DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
+  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
+ asi
+CATEGORIES:시장
+URL:https://www.krx.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sksq-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:SK스퀘어 3분기 실적 (추정)
+DESCRIPTION:https://dealsite.co.kr/articles/151452\n한국시간 기준 일
+ 정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https:/
+ /t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://dealsite.co.kr/articles/151452
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sl-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261112T050000Z
+DTEND:20261112T053000Z
+SUMMARY:삼성생명 3분기 실적 (추정)
+DESCRIPTION:≈ 14:00 KST\nhttps://www.mt.co.kr/finance/2026/08/13/20260813
+ 14090042887\n한국시간 기준 일정 정보이며 투자 권유가 아
+ 닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.mt.co.kr/finance/2026/08/13/2026081314090042887
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sk-q3@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:SK 3분기 실적 (추정)
+DESCRIPTION:https://www.sk-inc.com/kr/ir/irArchive.aspx\n한국시간 기
+ 준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · 
+ https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.sk-inc.com/kr/ir/irArchive.aspx
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-ppi-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261113T133000Z
+DTEND:20261113T140000Z
+SUMMARY:미국 10월 PPI
+DESCRIPTION:미국 11/13(금) 08:30\n22:30 KST\nhttps://www.bls.gov/schedul
+ e/news_release/ppi.htm\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/ppi.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc26@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261121
+SUMMARY:SC26 슈퍼컴퓨팅 컨퍼런스(시카고)
+DESCRIPTION:미국 현지 날짜\nhttps://sc26.supercomputing.org/\n한국
+ 시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhun
+ gryasi · https://t.me/stayhungryasi
+CATEGORIES:AI·산업
+URL:https://sc26.supercomputing.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ignite@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261121
+SUMMARY:마이크로소프트 Ignite
+DESCRIPTION:미국 현지 날짜\nhttps://moscone.com/events/microsoft-igni
+ te-2026\n한국시간 기준 일정 정보이며 투자 권유가 아닙
+ 니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:AI·산업
+URL:https://moscone.com/events/microsoft-ignite-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-k200-ann@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:코스피200·코스닥150 정기변경 발표 (추정)
+DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
+  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
+ asi
+CATEGORIES:지수
+URL:https://www.krx.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fomc-min-oct@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261118T190000Z
+DTEND:20261118T193000Z
+SUMMARY:FOMC 의사록 (추정)
+DESCRIPTION:미국 11/18(수) 14:00\n04:00 KST\nhttps://www.federalreserve.
+ gov/monetarypolicy/fomccalendars.htm\n한국시간 기준 일정 정보이
+ 며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhun
+ gryasi
+CATEGORIES:연준
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:nvda-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261118T210500Z
+DTEND:20261118T213500Z
+SUMMARY:★ 엔비디아 FQ3 실적 (추정)
+DESCRIPTION:미국 11/18(수) 장 마감 후\n≈ 06:05 KST\nhttps://days.t
+ o/nvidia-earnings\n한국시간 기준 일정 정보이며 투자 권유
+ 가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://days.to/nvidia-earnings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-opex-nov@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:미국 월간 옵션 만기
+DESCRIPTION:미국 현지 날짜\nhttps://www.nyse.com/trade/hours-calendar
+ s\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\
+ n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:시장
+URL:https://www.nyse.com/trade/hours-calendars
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bmnr-fy@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261120T120000Z
+DTEND:20261120T123000Z
+SUMMARY:비트마인 FY26 연간 실적·10-K (추정)
+DESCRIPTION:미국 11/20(금) 장 시작 전\n≈ 21:00 KST\nhttps://www.in
+ vesting.com/equities/bitmine-immersion-tech-earnings\n한국시간 기준 
+ 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · http
+ s://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.investing.com/equities/bitmine-immersion-tech-earnings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:anth-list@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:★ Anthropic 나스닥 상장 목표 시한 (보도)
+DESCRIPTION:미국 현지 날짜\nhttps://finance.yahoo.com/markets/stocks/
+ articles/anthropic-targets-2-trillion-ipo-150408036.html\n한국시간 기
+ 준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · 
+ https://t.me/stayhungryasi
+CATEGORIES:IPO
+URL:https://finance.yahoo.com/markets/stocks/articles/anthropic-targets-2-t
+ rillion-ipo-150408036.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dell-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261124T210500Z
+DTEND:20261124T213500Z
+SUMMARY:델 FQ3 실적 (추정)
+DESCRIPTION:AI 서버 수주\n미국 11/24(화) 장 마감 후\n≈ 06:05 K
+ ST\nhttps://nextearningsdate.com/dell-technologies.html\n한국시간 기
+ 준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · 
+ https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://nextearningsdate.com/dell-technologies.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-gdp-q3b@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261125T133000Z
+DTEND:20261125T140000Z
+SUMMARY:미국 3분기 GDP 잠정치 + 10월 PCE
+DESCRIPTION:미국 11/25(수) 08:30\n22:30 KST\nhttps://www.bea.gov/news/sc
+ hedule/full\n한국시간 기준 일정 정보이며 투자 권유가 아
+ 닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bea.gov/news/schedule/full
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-hol-tg@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:미국 증시 휴장(추수감사절)\, 11/27 13시 조기 폐장
+DESCRIPTION:미국 현지 날짜\nhttps://www.nyse.com/trade/hours-calendar
+ s\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\
+ n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:시장
+URL:https://www.nyse.com/trade/hours-calendars
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bok-nov@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261126T010000Z
+DTEND:20261126T013000Z
+SUMMARY:★ 한국은행 금통위 기준금리 결정(올해 마지막)
+DESCRIPTION:10:00 KST\nhttps://www.bok.or.kr/\n한국시간 기준 일정 
+ 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.m
+ e/stayhungryasi
+CATEGORIES:한국 매크로
+URL:https://www.bok.or.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:reinvent@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261205
+SUMMARY:AWS re:Invent(라스베이거스)
+DESCRIPTION:Trainium\n미국 현지 날짜\nhttps://aws.amazon.com/events/r
+ einvent/\n한국시간 기준 일정 정보이며 투자 권유가 아닙
+ 니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:AI·산업
+URL:https://aws.amazon.com/events/reinvent/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-exp-nov@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261201T000000Z
+DTEND:20261201T003000Z
+SUMMARY:한국 11월 수출입동향 (추정)
+DESCRIPTION:09:00 KST\nhttps://www.motie.go.kr/\n한국시간 기준 일정
+  정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.
+ me/stayhungryasi
+CATEGORIES:한국 매크로
+URL:https://www.motie.go.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:gtcdc@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261201T190000Z
+DTEND:20261201T193000Z
+SUMMARY:엔비디아 GTC DC 젠슨 황 기조연설
+DESCRIPTION:미국 12/1(화) 14:00\n04:00 KST\nhttps://www.nvidia.com/en-us
+ /gtc-dc/attend/\n한국시간 기준 일정 정보이며 투자 권유가 
+ 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:AI·산업
+URL:https://www.nvidia.com/en-us/gtc-dc/attend/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:crdo-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261201T210500Z
+DTEND:20261201T213500Z
+SUMMARY:★ 크레도 FQ2 실적 (추정)
+DESCRIPTION:미국 12/1(화) 장 마감 후\n≈ 06:05 KST\nhttps://www.tip
+ ranks.com/stocks/crdo/earnings-calendar\n한국시간 기준 일정 정보
+ 이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stay
+ hungryasi
+CATEGORIES:실적
+URL:https://www.tipranks.com/stocks/crdo/earnings-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mrvl-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261201T210500Z
+DTEND:20261201T213500Z
+SUMMARY:마벨 FQ3 실적 (추정)
+DESCRIPTION:커스텀 실리콘\n미국 12/1(화) 장 마감 후\n≈ 06:05
+  KST\nhttps://nextearningsdate.com/marvell-tech.html\n한국시간 기준 
+ 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · http
+ s://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://nextearningsdate.com/marvell-tech.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sp-rebal-ann@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:S&P 분기 리밸런싱 발표(장 마감 후) (추정)
+DESCRIPTION:미국 현지 날짜\nhttps://www.spglobal.com/spdji/\n한국
+ 시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhun
+ gryasi · https://t.me/stayhungryasi
+CATEGORIES:지수
+URL:https://www.spglobal.com/spdji/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-jobs-nov@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261204T133000Z
+DTEND:20261204T140000Z
+SUMMARY:★ 미국 11월 고용보고서
+DESCRIPTION:미국 12/4(금) 08:30\n22:30 KST\nhttps://www.bls.gov/schedule
+ /news_release/empsit.htm\n한국시간 기준 일정 정보이며 투자 
+ 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/empsit.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:spcx-lock180@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:스페이스X 180일 락업 전면 해제(약) (추정)
+DESCRIPTION:미국 현지 날짜\nhttps://spcx.capital/spacex-stock-lockup-
+ dates\n한국시간 기준 일정 정보이며 투자 권유가 아닙니
+ 다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:우주
+URL:https://spcx.capital/spacex-stock-lockup-dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-quad@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:선물옵션 동시만기(쿼드러플 위칭)
+DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
+  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
+ asi
+CATEGORIES:시장
+URL:https://www.krx.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tsmc-rev-nov@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:TSMC 11월 월매출 (추정)
+DESCRIPTION:https://investor.tsmc.com/\n한국시간 기준 일정 정보
+ 이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stay
+ hungryasi
+CATEGORIES:AI·산업
+URL:https://investor.tsmc.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fomc-dec@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261209T190000Z
+DTEND:20261209T193000Z
+SUMMARY:★ FOMC 금리 결정 + 점도표
+DESCRIPTION:AVGO 실적과 같은 날\n미국 12/9(수) 14:00\n04:00 KST\nh
+ ttps://www.federalreserve.gov/monetarypolicy/fomccalendars.htm\n한국시
+ 간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungry
+ asi · https://t.me/stayhungryasi
+CATEGORIES:연준
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:avgo-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261209T210500Z
+DTEND:20261209T213500Z
+SUMMARY:★ 브로드컴 4Q FY26 실적
+DESCRIPTION:AI $21.7B·FY27 $115B·금융 노출\n미국 12/9(수) 장 마
+ 감 후\n≈ 06:05 KST\nhttps://www.webull.com/news/15511095937917952\n한
+ 국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stay
+ hungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://www.webull.com/news/15511095937917952
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:orcl-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261209T210500Z
+DTEND:20261209T213500Z
+SUMMARY:오라클 FQ2 실적 (추정)
+DESCRIPTION:미국 12/9(수) 장 마감 후\n≈ 06:05 KST\nhttps://nextear
+ ningsdate.com/oracle.html\n한국시간 기준 일정 정보이며 투자 
+ 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://nextearningsdate.com/oracle.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-cpi-nov@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261210T133000Z
+DTEND:20261210T140000Z
+SUMMARY:★ 미국 11월 CPI
+DESCRIPTION:미국 12/10(목) 08:30\n22:30 KST\nhttps://www.bls.gov/schedul
+ e/news_release/cpi.htm\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/cpi.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-k200-eff@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:코스피200·코스닥150 정기변경 적용 (추정)
+DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
+  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
+ asi
+CATEGORIES:지수
+URL:https://www.krx.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ndx-recon@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:나스닥100 연간 재구성 발표 (추정)
+DESCRIPTION:미국 현지 날짜\nhttps://www.nasdaq.com/press-release/annu
+ al-changes-nasdaq-100-indexr-2025-12-13\n한국시간 기준 일정 정보
+ 이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stay
+ hungryasi
+CATEGORIES:지수
+URL:https://www.nasdaq.com/press-release/annual-changes-nasdaq-100-indexr-2
+ 025-12-13
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:russell-dec@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:러셀 12월 재구성 적용(장 마감 후)
+DESCRIPTION:미국 현지 날짜\nhttps://mondovisione.com/media-and-resour
+ ces/news/ftse-russell-announces-december-2026-russell-us-indexes-reconstit
+ ution-schedule-202691\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:지수
+URL:https://mondovisione.com/media-and-resources/news/ftse-russell-announce
+ s-december-2026-russell-us-indexes-reconstitution-schedule-202691
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-cr@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:미국 임시예산(CR) 만료
+DESCRIPTION:셧다운 시한\n미국 현지 날짜\nhttps://cra.org/govaffa
+ irs/blog/2026/09/fy2027-sept-update/\n한국시간 기준 일정 정보이
+ 며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhun
+ gryasi
+CATEGORIES:정치
+URL:https://cra.org/govaffairs/blog/2026/09/fy2027-sept-update/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-ppi-nov@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261215T133000Z
+DTEND:20261215T140000Z
+SUMMARY:미국 11월 PPI
+DESCRIPTION:미국 12/15(화) 08:30\n22:30 KST\nhttps://www.bls.gov/schedul
+ e/news_release/ppi.htm\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/ppi.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:avgo-10k@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:★ AVGO FY26 10-K 제출 예상 (추정)
+DESCRIPTION:보증·대출 약정·우발채무 주석 확인\nhttps://www.
+ sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001730168\n한국시
+ 간 기준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungry
+ asi · https://t.me/stayhungryasi
+CATEGORIES:공시
+URL:https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=00017301
+ 68
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-quad@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:미국 쿼드러플 위칭 + S&P 분기 리밸런싱 적용
+DESCRIPTION:미국 현지 날짜\nhttps://www.nyse.com/trade/hours-calendar
+ s\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\
+ n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:시장
+URL:https://www.nyse.com/trade/hours-calendars
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:boj-dec@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261218T030000Z
+DTEND:20261218T033000Z
+SUMMARY:일본은행 금융정책 결정
+DESCRIPTION:12:00 KST\nhttps://www.boj.or.jp/mopo/mpmsche_minu/index.htm\n
+ 한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@s
+ tayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:글로벌 매크로
+URL:https://www.boj.or.jp/mopo/mpmsche_minu/index.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-gdp-q3c@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261223T133000Z
+DTEND:20261223T140000Z
+SUMMARY:미국 3분기 GDP 확정치 + 11월 PCE
+DESCRIPTION:미국 12/23(수) 08:30\n22:30 KST\nhttps://www.bea.gov/news/sc
+ hedule/full\n한국시간 기준 일정 정보이며 투자 권유가 아
+ 닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bea.gov/news/schedule/full
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mu-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261223T210500Z
+DTEND:20261223T213500Z
+SUMMARY:마이크론 FQ1 실적 (추정)
+DESCRIPTION:미국 12/23(수) 장 마감 후\n≈ 06:05 KST\nhttps://www.wa
+ llstreethorizon.com/micron-earnings-calendar\n한국시간 기준 일정 
+ 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.m
+ e/stayhungryasi
+CATEGORIES:실적
+URL:https://www.wallstreethorizon.com/micron-earnings-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-hol-xmas@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:한국 증시 휴장(성탄절)
+DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
+  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
+ asi
+CATEGORIES:시장
+URL:https://www.krx.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-hol-xmas@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:미국 증시 휴장(성탄절)\, 12/24 13시 조기 폐장
+DESCRIPTION:미국 현지 날짜\nhttps://www.nyse.com/trade/hours-calendar
+ s\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\
+ n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:시장
+URL:https://www.nyse.com/trade/hours-calendars
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-close@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:한국거래소 연말 휴장 (추정)
+DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
+  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
+ asi
+CATEGORIES:시장
+URL:https://www.krx.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fomc-min-dec@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261230T190000Z
+DTEND:20261230T193000Z
+SUMMARY:FOMC 의사록 (추정)
+DESCRIPTION:미국 12/30(수) 14:00\n04:00 KST\nhttps://www.federalreserve.
+ gov/monetarypolicy/fomccalendars.htm\n한국시간 기준 일정 정보이
+ 며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhun
+ gryasi
+CATEGORIES:연준
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-hol-ny@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:한국 증시 휴장(신정)
+DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
+  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
+ asi
+CATEGORIES:시장
+URL:https://www.krx.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-hol-ny@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:미국 증시 휴장(신정)
+DESCRIPTION:미국 현지 날짜\nhttps://www.nyse.com/trade/hours-calendar
+ s\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\
+ n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:시장
+URL:https://www.nyse.com/trade/hours-calendars
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-exp-dec@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20270101T000000Z
+DTEND:20270101T003000Z
+SUMMARY:한국 12월·연간 수출입동향 (추정)
+DESCRIPTION:09:00 KST\nhttps://www.motie.go.kr/\n한국시간 기준 일정
+  정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.
+ me/stayhungryasi
+CATEGORIES:한국 매크로
+URL:https://www.motie.go.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ces27@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270110
+SUMMARY:CES 2027(라스베이거스)
+DESCRIPTION:미국 현지 날짜\nhttps://www.ces.tech/\n한국시간 기
+ 준 일정 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · 
+ https://t.me/stayhungryasi
+CATEGORIES:AI·산업
+URL:https://www.ces.tech/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tsmc-rev-dec@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:TSMC 12월 월매출 (추정)
+DESCRIPTION:https://investor.tsmc.com/\n한국시간 기준 일정 정보
+ 이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stay
+ hungryasi
+CATEGORIES:AI·산업
+URL:https://investor.tsmc.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-jobs-dec@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20270108T133000Z
+DTEND:20270108T140000Z
+SUMMARY:★ 미국 12월 고용보고서 (추정)
+DESCRIPTION:미국 1/8(금) 08:30\n22:30 KST\nhttps://www.bls.gov/schedule/
+ news_release/empsit.htm\n한국시간 기준 일정 정보이며 투자 
+ 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/empsit.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-cpi-dec@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20270113T133000Z
+DTEND:20270113T140000Z
+SUMMARY:★ 미국 12월 CPI (추정)
+DESCRIPTION:미국 1/13(수) 08:30\n22:30 KST\nhttps://www.bls.gov/schedule
+ /news_release/cpi.htm\n한국시간 기준 일정 정보이며 투자 권
+ 유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bls.gov/schedule/news_release/cpi.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kr-opt-jan@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:코스피200 옵션 만기
+DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
+  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
+ asi
+CATEGORIES:시장
+URL:https://www.krx.co.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bok-jan@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20270114T010000Z
+DTEND:20270114T013000Z
+SUMMARY:한국은행 금통위 (추정)
+DESCRIPTION:10:00 KST\nhttps://www.bok.or.kr/\n한국시간 기준 일정 
+ 정보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.m
+ e/stayhungryasi
+CATEGORIES:한국 매크로
+URL:https://www.bok.or.kr/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tsmc-q4@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20270114T060000Z
+DTEND:20270114T063000Z
+SUMMARY:TSMC 4분기 실적 설명회 (추정)
+DESCRIPTION:대만 1/14(목) 14:00\n15:00 KST\nhttps://days.to/tsmc-earning
+ s/q4-2026\n한국시간 기준 일정 정보이며 투자 권유가 아닙
+ 니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://days.to/tsmc-earnings/q4-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-opex-jan@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:미국 월간 옵션 만기
+DESCRIPTION:미국 현지 날짜\nhttps://www.nyse.com/trade/hours-calendar
+ s\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\
+ n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:시장
+URL:https://www.nyse.com/trade/hours-calendars
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-hol-mlk@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:미국 증시 휴장(마틴 루터 킹 데이)
+DESCRIPTION:미국 현지 날짜\nhttps://www.nyse.com/trade/hours-calendar
+ s\n한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\
+ n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:시장
+URL:https://www.nyse.com/trade/hours-calendars
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:boj-jan@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20270122T030000Z
+DTEND:20270122T033000Z
+SUMMARY:일본은행 금융정책 결정
+DESCRIPTION:12:00 KST\nhttps://www.boj.or.jp/mopo/mpmsche_minu/index.htm\n
+ 한국시간 기준 일정 정보이며 투자 권유가 아닙니다.\n@s
+ tayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:글로벌 매크로
+URL:https://www.boj.or.jp/mopo/mpmsche_minu/index.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:asml-q4@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20270127T060000Z
+DTEND:20270127T063000Z
+SUMMARY:ASML 4분기 실적
+DESCRIPTION:유럽 1/27(수) 07:00\n15:00 KST\nhttps://uk.marketscreener.co
+ m/quote/stock/ASML-HOLDING-6268/calendar/\n한국시간 기준 일정 정
+ 보이며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/s
+ tayhungryasi
+CATEGORIES:실적
+URL:https://uk.marketscreener.com/quote/stock/ASML-HOLDING-6268/calendar/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fomc-jan@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20270127T190000Z
+DTEND:20270127T193000Z
+SUMMARY:★ FOMC 금리 결정
+DESCRIPTION:미국 1/27(수) 14:00\n04:00 KST\nhttps://www.federalreserve.g
+ ov/monetarypolicy/fomccalendars.htm\n한국시간 기준 일정 정보이
+ 며 투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhun
+ gryasi
+CATEGORIES:연준
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:us-gdp-q4a@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20270128T133000Z
+DTEND:20270128T140000Z
+SUMMARY:미국 4분기 GDP 속보치 + 12월 PCE
+DESCRIPTION:미국 1/28(목) 08:30\n22:30 KST\nhttps://www.bea.gov/index.ph
+ p/news/schedule/next-year\n한국시간 기준 일정 정보이며 투자 
+ 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:미국 매크로
+URL:https://www.bea.gov/index.php/news/schedule/next-year
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
