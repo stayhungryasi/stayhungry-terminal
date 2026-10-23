@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-23",
+      "commit": "HEAD",
+      "message": "Fact check: every crisis and Buffett × VIX number re-verified against FRED, Cboe, Yahoo, ECOS and Fed Z.1; stale sample text removed from BRIEF, TODAY and the dev view"
+    },
+    {
+      "date": "2026-10-23",
       "commit": "94e9357",
       "message": "Buffett Index × VIX goes live: a second radar tab with the bot’s numbers, history charts since 1947, the valuation × fear matrix and the Telegram cards"
     },
