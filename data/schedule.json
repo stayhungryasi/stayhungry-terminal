@@ -1,7 +1,7 @@
 {
  "kind": "schedule",
  "schema": 1,
- "generated_kst": "2026-10-23 20:02",
+ "generated_kst": "2026-10-23 23:47",
  "data_updated": "2026-10-23",
  "last_sent_kst": "2026-10-23 09:22",
  "next_send": "2026-10-27",
@@ -508,6 +508,46 @@
    }
   },
   {
+   "id": "spcx-q",
+   "date": "2026-10-21",
+   "time": "05:30",
+   "approx": false,
+   "end": null,
+   "local": "미국 10/20(화) 장 마감 후(콜 16:30 ET)",
+   "title": "스페이스X 3분기 실적",
+   "point": "",
+   "cat": "실적",
+   "tickers": [
+    "SPCX"
+   ],
+   "imp": 2,
+   "status": "confirmed",
+   "country": "us",
+   "source": "https://s21.q4cdn.com/184289198/files/content_files/SpaceX-Reports-Third-Quarter-2026-Results.pdf",
+   "updated": "2026-10-23",
+   "change": "발표 완료 확인: 11/4(추정) → 10/20 장 마감 후(한국 10/21) 발표",
+   "i18n": {
+    "en": {
+     "t": "SpaceX Q3 results",
+     "p": "",
+     "l": "US Oct 20 (Tue), after the close (call 16:30 ET)",
+     "c": "Already reported: Nov 4 (est.) → Oct 20 after the close (Oct 21 KST)"
+    },
+    "es": {
+     "t": "Resultados del 3T de SpaceX",
+     "p": "",
+     "l": "EE. UU., 20 oct (mar), tras el cierre (llamada 16:30 ET)",
+     "c": "Ya publicados: 4 nov (estim.) → 20 oct tras el cierre (21 oct KST)"
+    },
+    "ja": {
+     "t": "スペースX 第3四半期決算",
+     "p": "",
+     "l": "米国 10/20(火) 引け後(電話会議 16:30 ET)",
+     "c": "発表済みを確認:11/4(推定)→ 10/20 引け後(韓国時間10/21)"
+    }
+   }
+  },
+  {
    "id": "sbl-q3",
    "date": "2026-10-22",
    "time": null,
@@ -786,46 +826,6 @@
    }
   },
   {
-   "id": "spcx-lock135",
-   "date": "2026-10-24",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "미국 현지 날짜",
-   "title": "스페이스X 락업 135일차 물량 해제(약)",
-   "point": "",
-   "cat": "우주",
-   "tickers": [
-    "SPCX"
-   ],
-   "imp": 2,
-   "status": "estimated",
-   "country": "us",
-   "source": "https://www.techtimes.com/articles/326114/20260901/spacex-stock-lockup-hits-tuesday-november-earnings-tranche-dwarfs-september-9-four-times.htm",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "SpaceX day-135 lock-up expiry (approx.)",
-     "p": "",
-     "l": "US local date",
-     "c": ""
-    },
-    "es": {
-     "t": "Vencimiento del lock-up de SpaceX, día 135 (aprox.)",
-     "p": "",
-     "l": "fecha local de EE. UU.",
-     "c": ""
-    },
-    "ja": {
-     "t": "スペースX ロックアップ135日目分 解除(約)",
-     "p": "",
-     "l": "米国現地日付",
-     "c": ""
-    }
-   }
-  },
-  {
    "id": "anth-s1",
    "date": "2026-10-25",
    "time": null,
@@ -862,6 +862,46 @@
      "p": "",
      "l": "米国現地日付",
      "c": ""
+    }
+   }
+  },
+  {
+   "id": "spcx-lock135",
+   "date": "2026-10-26",
+   "time": "22:30",
+   "approx": false,
+   "end": null,
+   "local": "미국 10/26(월) 개장부터 거래 가능(계약상 10/24 토)",
+   "title": "스페이스X 락업 135일차 물량 해제",
+   "point": "",
+   "cat": "우주",
+   "tickers": [
+    "SPCX"
+   ],
+   "imp": 2,
+   "status": "confirmed",
+   "country": "us",
+   "source": "https://stayhungryasi.com/ko/#spcxlock",
+   "updated": "2026-10-23",
+   "change": "락업 레이더 기준으로 정정: 10/24(약) → 10/26 미국장 개장부터(계약상 10/24 토, SpaceX 424B4)",
+   "i18n": {
+    "en": {
+     "t": "SpaceX day-135 lock-up expiry (up to 328M shares)",
+     "p": "",
+     "l": "US Oct 26 (Mon), tradable from the open (contract date Oct 24, Sat)",
+     "c": "Aligned with the lock-up radar: Oct 24 (approx.) → from the US open on Oct 26 (contract date Oct 24, Sat; SpaceX 424B4)"
+    },
+    "es": {
+     "t": "Fin del lock-up del día 135 de SpaceX (hasta 328 M acciones)",
+     "p": "",
+     "l": "EE. UU., 26 oct (lun), negociables desde la apertura (fecha contractual 24 oct, sáb)",
+     "c": "Alineado con el radar de lock-up: 24 oct (aprox.) → desde la apertura del 26 oct (fecha contractual 24 oct, sáb; SpaceX 424B4)"
+    },
+    "ja": {
+     "t": "スペースX 135日目ロックアップ解除(最大3.3億株)",
+     "p": "",
+     "l": "米国 10/26(月) 寄り付きから取引可能(契約上 10/24 土)",
+     "c": "ロックアップ・レーダー基準に修正:10/24(約)→ 10/26 米国市場寄り付きから(契約上 10/24 土、SpaceX 424B4)"
     }
    }
   },
@@ -2046,46 +2086,6 @@
     "ja": {
      "t": "アリスタ 第3四半期決算",
      "p": "AIネットワーキング",
-     "l": "米国 11/3(火) 引け後",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "spcx-q",
-   "date": "2026-11-04",
-   "time": "06:05",
-   "approx": true,
-   "end": null,
-   "local": "미국 11/3(화) 장 마감 후",
-   "title": "스페이스X 3분기 실적",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "SPCX"
-   ],
-   "imp": 2,
-   "status": "estimated",
-   "country": "us",
-   "source": "https://www.wallstreethorizon.com/spacex-earnings-calendar",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "SpaceX Q3 results",
-     "p": "",
-     "l": "US Nov 3 (Tue), after the close",
-     "c": ""
-    },
-    "es": {
-     "t": "Resultados del 3T de SpaceX",
-     "p": "",
-     "l": "EE. UU., 3 nov (mar), tras el cierre",
-     "c": ""
-    },
-    "ja": {
-     "t": "スペースX 第3四半期決算",
-     "p": "",
      "l": "米国 11/3(火) 引け後",
      "c": ""
     }

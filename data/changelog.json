@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-23",
+      "commit": "HEAD",
+      "message": "SpaceX lock-up radar goes live: next unlock with countdown to the US open, the full unlock ladder, tradable vs locked share gauge, cumulative unlock curve, SPCX price with unlock days and the Telegram cards, updated every morning by the bot"
+    },
+    {
+      "date": "2026-10-23",
       "commit": "33e75ad",
       "message": "YouTube channel linked: the HUB channel row and the ShaferwineX card now open youtube.com/@ShaferwineX"
     },

@@ -167,6 +167,21 @@ URL:https://unipass.customs.go.kr/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:spcx-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261020T203000Z
+DTEND:20261020T210000Z
+SUMMARY:スペースX 第3四半期決算
+DESCRIPTION:米国 10/20(火) 引け後(電話会議 16:30 ET)\n05:30 KST\n
+ https://s21.q4cdn.com/184289198/files/content_files/SpaceX-Reports-Third-Q
+ uarter-2026-Results.pdf\n日程情報であり、投資助言ではあり
+ ません。\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://s21.q4cdn.com/184289198/files/content_files/SpaceX-Reports-Thir
+ d-Quarter-2026-Results.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:sbl-q3@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261022
@@ -264,21 +279,6 @@ URL:https://www.hyundaimotorgroup.com/ko/news/kia-2026-q2-earnings
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:spcx-lock135@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261025
-SUMMARY:スペースX ロックアップ135日目分 解除(約) (推定)
-DESCRIPTION:米国現地日付\nhttps://www.techtimes.com/articles/326114/2
- 0260901/spacex-stock-lockup-hits-tuesday-november-earnings-tranche-dwarfs-
- september-9-four-times.htm\n日程情報であり、投資助言ではあ
- りません。\n@stayhungryasi · https://t.me/stayhungryasi
-CATEGORIES:우주
-URL:https://www.techtimes.com/articles/326114/20260901/spacex-stock-lockup-
- hits-tuesday-november-earnings-tranche-dwarfs-september-9-four-times.htm
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:anth-s1@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261025
@@ -289,6 +289,20 @@ DESCRIPTION:米国現地日付\nhttps://www.sec.gov/\n日程情報であり
  ayhungryasi
 CATEGORIES:IPO
 URL:https://www.sec.gov/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:spcx-lock135@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261026T133000Z
+DTEND:20261026T140000Z
+SUMMARY:スペースX 135日目ロックアップ解除(最大3.3億株)
+DESCRIPTION:米国 10/26(月) 寄り付きから取引可能(契約上 10/2
+ 4 土)\n22:30 KST\nhttps://stayhungryasi.com/ko/#spcxlock\n日程情報で
+ あり、投資助言ではありません。\n@stayhungryasi · https://t
+ .me/stayhungryasi
+CATEGORIES:우주
+URL:https://stayhungryasi.com/ko/#spcxlock
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -695,19 +709,6 @@ DESCRIPTION:AIネットワーキング\n米国 11/3(火) 引け後\n≈ 06:
  ryasi · https://t.me/stayhungryasi
 CATEGORIES:실적
 URL:https://www.arista.com/company/news/press-release/24817-pr-20261006
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:spcx-q@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART:20261103T210500Z
-DTEND:20261103T213500Z
-SUMMARY:スペースX 第3四半期決算 (推定)
-DESCRIPTION:米国 11/3(火) 引け後\n≈ 06:05 KST\nhttps://www.wallstre
- ethorizon.com/spacex-earnings-calendar\n日程情報であり、投資助
- 言ではありません。\n@stayhungryasi · https://t.me/stayhungryasi
-CATEGORIES:실적
-URL:https://www.wallstreethorizon.com/spacex-earnings-calendar
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

@@ -166,6 +166,21 @@ URL:https://unipass.customs.go.kr/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:spcx-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261020T203000Z
+DTEND:20261020T210000Z
+SUMMARY:Resultados del 3T de SpaceX
+DESCRIPTION:EE. UU.\, 20 oct (mar)\, tras el cierre (llamada 16:30 ET)\n05:
+ 30 KST\nhttps://s21.q4cdn.com/184289198/files/content_files/SpaceX-Reports
+ -Third-Quarter-2026-Results.pdf\nInformación de calendario\, no es asesor
+ ía de inversión.\n@stayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://s21.q4cdn.com/184289198/files/content_files/SpaceX-Reports-Thir
+ d-Quarter-2026-Results.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:sbl-q3@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261022
@@ -262,21 +277,6 @@ URL:https://www.hyundaimotorgroup.com/ko/news/kia-2026-q2-earnings
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:spcx-lock135@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261025
-SUMMARY:Vencimiento del lock-up de SpaceX\, día 135 (aprox.) (estimado)
-DESCRIPTION:fecha local de EE. UU.\nhttps://www.techtimes.com/articles/3261
- 14/20260901/spacex-stock-lockup-hits-tuesday-november-earnings-tranche-dwa
- rfs-september-9-four-times.htm\nInformación de calendario\, no es asesor
- ía de inversión.\n@stayhungryasi · https://t.me/stayhungryasi
-CATEGORIES:우주
-URL:https://www.techtimes.com/articles/326114/20260901/spacex-stock-lockup-
- hits-tuesday-november-earnings-tranche-dwarfs-september-9-four-times.htm
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:anth-s1@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261025
@@ -288,6 +288,20 @@ DESCRIPTION:fecha local de EE. UU.\nhttps://www.sec.gov/\nInformación de c
  /stayhungryasi
 CATEGORIES:IPO
 URL:https://www.sec.gov/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:spcx-lock135@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261026T133000Z
+DTEND:20261026T140000Z
+SUMMARY:Fin del lock-up del día 135 de SpaceX (hasta 328 M acciones)
+DESCRIPTION:EE. UU.\, 26 oct (lun)\, negociables desde la apertura (fecha c
+ ontractual 24 oct\, sáb)\n22:30 KST\nhttps://stayhungryasi.com/ko/#spcxlo
+ ck\nInformación de calendario\, no es asesoría de inversión.\n@stayhung
+ ryasi · https://t.me/stayhungryasi
+CATEGORIES:우주
+URL:https://stayhungryasi.com/ko/#spcxlock
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -697,20 +711,6 @@ DESCRIPTION:Redes de IA\nEE. UU.\, 3 nov (mar)\, tras el cierre\n≈ 06:05
  i · https://t.me/stayhungryasi
 CATEGORIES:실적
 URL:https://www.arista.com/company/news/press-release/24817-pr-20261006
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:spcx-q@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART:20261103T210500Z
-DTEND:20261103T213500Z
-SUMMARY:Resultados del 3T de SpaceX (estimado)
-DESCRIPTION:EE. UU.\, 3 nov (mar)\, tras el cierre\n≈ 06:05 KST\nhttps://
- www.wallstreethorizon.com/spacex-earnings-calendar\nInformación de calend
- ario\, no es asesoría de inversión.\n@stayhungryasi · https://t.me/stay
- hungryasi
-CATEGORIES:실적
-URL:https://www.wallstreethorizon.com/spacex-earnings-calendar
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

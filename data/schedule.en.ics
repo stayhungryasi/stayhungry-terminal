@@ -165,6 +165,21 @@ URL:https://unipass.customs.go.kr/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:spcx-q@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261020T203000Z
+DTEND:20261020T210000Z
+SUMMARY:SpaceX Q3 results
+DESCRIPTION:US Oct 20 (Tue)\, after the close (call 16:30 ET)\n05:30 KST\nh
+ ttps://s21.q4cdn.com/184289198/files/content_files/SpaceX-Reports-Third-Qu
+ arter-2026-Results.pdf\nSchedule information\, not investment advice.\n@st
+ ayhungryasi · https://t.me/stayhungryasi
+CATEGORIES:실적
+URL:https://s21.q4cdn.com/184289198/files/content_files/SpaceX-Reports-Thir
+ d-Quarter-2026-Results.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:sbl-q3@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261022
@@ -260,21 +275,6 @@ URL:https://www.hyundaimotorgroup.com/ko/news/kia-2026-q2-earnings
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:spcx-lock135@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261025
-SUMMARY:SpaceX day-135 lock-up expiry (approx.) (est.)
-DESCRIPTION:US local date\nhttps://www.techtimes.com/articles/326114/202609
- 01/spacex-stock-lockup-hits-tuesday-november-earnings-tranche-dwarfs-septe
- mber-9-four-times.htm\nSchedule information\, not investment advice.\n@sta
- yhungryasi · https://t.me/stayhungryasi
-CATEGORIES:우주
-URL:https://www.techtimes.com/articles/326114/20260901/spacex-stock-lockup-
- hits-tuesday-november-earnings-tranche-dwarfs-september-9-four-times.htm
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:anth-s1@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261025
@@ -284,6 +284,20 @@ DESCRIPTION:US local date\nhttps://www.sec.gov/\nSchedule information\, not
   investment advice.\n@stayhungryasi · https://t.me/stayhungryasi
 CATEGORIES:IPO
 URL:https://www.sec.gov/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:spcx-lock135@stayhungryasi.com
+DTSTAMP:20261023T000000Z
+DTSTART:20261026T133000Z
+DTEND:20261026T140000Z
+SUMMARY:SpaceX day-135 lock-up expiry (up to 328M shares)
+DESCRIPTION:US Oct 26 (Mon)\, tradable from the open (contract date Oct 24\
+ , Sat)\n22:30 KST\nhttps://stayhungryasi.com/ko/#spcxlock\nSchedule inform
+ ation\, not investment advice.\n@stayhungryasi · https://t.me/stayhungrya
+ si
+CATEGORIES:우주
+URL:https://stayhungryasi.com/ko/#spcxlock
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -681,19 +695,6 @@ DESCRIPTION:AI networking\nUS Nov 3 (Tue)\, after the close\n≈ 06:05 KST\
  stayhungryasi
 CATEGORIES:실적
 URL:https://www.arista.com/company/news/press-release/24817-pr-20261006
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:spcx-q@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART:20261103T210500Z
-DTEND:20261103T213500Z
-SUMMARY:SpaceX Q3 results (est.)
-DESCRIPTION:US Nov 3 (Tue)\, after the close\n≈ 06:05 KST\nhttps://www.wa
- llstreethorizon.com/spacex-earnings-calendar\nSchedule information\, not i
- nvestment advice.\n@stayhungryasi · https://t.me/stayhungryasi
-CATEGORIES:실적
-URL:https://www.wallstreethorizon.com/spacex-earnings-calendar
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
