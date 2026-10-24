@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-24",
+      "commit": "HEAD",
+      "message": "Fortune Danji on the hub: the free, ad-free saju tools jar with Yeouido Jeomjip (a daily money-luck report written like a sell-side note) and Anchak (when a hard stretch ends), plus spots for the 2027 New Year fortune and the naming service on the way; under Built, hub card 9, in 4 languages"
+    },
+    {
+      "date": "2026-10-24",
       "commit": "0b76017",
       "message": "Easier top menu: 20 tabs folded into 6 groups (Today, Research, Markets, UNIVERTRIX, Built, Hub) that open a list of their pages; text 11.5px → 15px and brighter, the current group underlined, and the text-size button now scales the menu too"
     },

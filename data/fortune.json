@@ -1,0 +1,216 @@
+{
+  "note": "Fortune Danji, the saju tools hub: live tools and the ones on the way, in 4 languages. Readings are entertainment; birth dates stay on the user's device.",
+  "hub": {
+    "name": {
+      "ko": "포춘단지",
+      "en": "Fortune Danji",
+      "es": "Fortune Danji",
+      "ja": "フォーチュン・ダンジ"
+    },
+    "url": "https://fortunedanji.com/",
+    "img": "https://fortunedanji.com/assets/brand/magpie.webp",
+    "tagline": {
+      "ko": "난 언제나 네 편이야.",
+      "en": "I'm always on your side.",
+      "es": "Siempre estoy de tu lado.",
+      "ja": "いつだって君の味方だよ。"
+    },
+    "sub": {
+      "ko": "잘하고 있어. 반드시 잘될 거야, 네가 이토록 간절한데.",
+      "en": "You're doing well. It will work out, because you want it this much.",
+      "es": "Lo estás haciendo bien. Va a salir bien, porque lo deseas tanto.",
+      "ja": "よくやってるよ。きっとうまくいく、こんなに切実なんだから。"
+    },
+    "about": {
+      "ko": "복을 담는 단지, 포춘단지. 사주 도구를 하나씩 담아요. 까치가 복을 물어다 주듯, 좋은 기운을 담은 도구를 하나씩 단지에 넣고 있어요.",
+      "en": "A jar that holds good fortune. Fortune Danji collects saju tools one at a time, the way a magpie brings luck home.",
+      "es": "Un tarro que guarda la buena suerte. Fortune Danji reúne herramientas de saju una a una, como la urraca que trae la suerte a casa.",
+      "ja": "福を入れる壺、フォーチュン・ダンジ。カササギが福を運ぶように、良い気を込めた四柱推命ツールを一つずつ壺に入れていく。"
+    },
+    "promise": [
+      [
+        {
+          "ko": "수집 없음",
+          "en": "Nothing collected",
+          "es": "Nada se recopila",
+          "ja": "収集なし"
+        },
+        {
+          "ko": "생년월일은 내 기기(브라우저)에만 남고 서버로 보내지 않습니다. 포춘단지 서버는 없습니다.",
+          "en": "Your birth date stays in your own browser and is never sent to a server. There is no Fortune Danji server.",
+          "es": "Tu fecha de nacimiento se queda en tu navegador y nunca se envía a un servidor. Fortune Danji no tiene servidor.",
+          "ja": "生年月日は自分の端末(ブラウザ)にだけ残り、サーバーに送られない。フォーチュン・ダンジにサーバーはない。"
+        }
+      ],
+      [
+        {
+          "ko": "광고 없음",
+          "en": "No ads",
+          "es": "Sin anuncios",
+          "ja": "広告なし"
+        },
+        {
+          "ko": "지금도, 앞으로도 광고 없이 무료로 운영합니다.",
+          "en": "Free and ad-free, now and from here on.",
+          "es": "Gratis y sin anuncios, hoy y en adelante.",
+          "ja": "今もこれからも広告なし・無料で運営。"
+        }
+      ],
+      [
+        {
+          "ko": "만세력 기준",
+          "en": "Manseryeok calendar",
+          "es": "Calendario manseryeok",
+          "ja": "万歳暦ベース"
+        },
+        {
+          "ko": "만세력으로 계산하고 5만 건 이상 교차 검증했습니다. 오락 목적이며 투자·의료 판단의 근거가 아닙니다.",
+          "en": "Calculated on the manseryeok calendar and cross-checked on more than 50,000 cases. For entertainment, not a basis for investment or medical decisions.",
+          "es": "Calculado con el calendario manseryeok y verificado con más de 50.000 casos. Es entretenimiento, no base para decisiones de inversión o médicas.",
+          "ja": "万歳暦で計算し、5万件以上で照合検証。娯楽目的であり、投資・医療判断の根拠ではない。"
+        }
+      ]
+    ],
+    "roadmap": {
+      "ko": "재물·직업·관계 순으로 새 도구를 준비하고 있어요.",
+      "en": "New tools are coming in this order: wealth, work, relationships.",
+      "es": "Vienen nuevas herramientas en este orden: dinero, trabajo, relaciones.",
+      "ja": "財運・仕事・人間関係の順に新しいツールを準備中。"
+    },
+    "tools": [
+      {
+        "id": "ybosal",
+        "no": 1,
+        "status": "live",
+        "url": "https://ybosal.com/",
+        "shot": "https://fortunedanji.com/assets/products/ybosal-shot.webp?v=2",
+        "name": {
+          "ko": "여의도점집",
+          "en": "Yeouido Jeomjip",
+          "es": "Yeouido Jeomjip",
+          "ja": "ヨイド占い館"
+        },
+        "tagline": {
+          "ko": "오늘의 재물운, 리포트로.",
+          "en": "Today's money luck, as a research report.",
+          "es": "Tu suerte con el dinero hoy, como informe de análisis.",
+          "ja": "今日の金運を、レポートで。"
+        },
+        "sub": {
+          "ko": "보살님이 애널리스트처럼 브리핑하는 데일리 재물운 리포트. 증권가 리서치 리포트 스타일로 사주 원국부터 대운까지.",
+          "en": "A daily money-luck report briefed by a fortune teller in the style of a sell-side analyst, from the birth chart to the 10-year cycles.",
+          "es": "Un informe diario de suerte con el dinero, presentado como lo haría un analista bursátil, desde la carta natal hasta los ciclos de 10 años.",
+          "ja": "占い師がアナリストのようにブリーフィングする毎日の金運レポート。証券会社のリサーチレポート風に、命式から大運まで。"
+        },
+        "points": [
+          {
+            "ko": "오늘의 재물운 지수와 등락",
+            "en": "Today's money-luck index and its change",
+            "es": "Índice de suerte con el dinero de hoy y su variación",
+            "ja": "今日の金運指数と騰落"
+          },
+          {
+            "ko": "충동 지출 주의 시간대",
+            "en": "The hours to watch for impulse spending",
+            "es": "Las horas de cuidado con el gasto impulsivo",
+            "ja": "衝動買いに注意する時間帯"
+          },
+          {
+            "ko": "사주 원국부터 대운(10년 흐름)까지",
+            "en": "Birth chart through the 10-year cycles",
+            "es": "De la carta natal a los ciclos de 10 años",
+            "ja": "命式から大運(10年の流れ)まで"
+          },
+          {
+            "ko": "이름의 기운(선택), 시간을 몰라도 삼주로",
+            "en": "Optional name reading; works without a birth time",
+            "es": "Lectura del nombre opcional; funciona sin hora de nacimiento",
+            "ja": "名前の気(任意)、生まれた時間が不明でも三柱で"
+          }
+        ]
+      },
+      {
+        "id": "anchak",
+        "no": 2,
+        "status": "live",
+        "url": "https://anchak.vercel.app/",
+        "shot": "https://fortunedanji.com/assets/products/anchak-shot.webp",
+        "name": {
+          "ko": "안착 安着",
+          "en": "Anchak 安着",
+          "es": "Anchak 安着",
+          "ja": "安着(アンチャク)"
+        },
+        "tagline": {
+          "ko": "언제쯤 괜찮아질까요.",
+          "en": "When will it get better?",
+          "es": "¿Cuándo va a mejorar?",
+          "ja": "いつになったら楽になる?"
+        },
+        "sub": {
+          "ko": "힘든 시기가 언제 끝나는지, 지금 무엇을 해야 하는지 사주로 짚어드려요. “힘들어서 왔지. 잘 왔어.”",
+          "en": "Reads in your saju when a hard stretch ends and what to do now. “You came because it’s hard. I’m glad you came.”",
+          "es": "Lee en tu saju cuándo termina una mala racha y qué hacer ahora. “Viniste porque está difícil. Qué bueno que viniste.”",
+          "ja": "つらい時期がいつ終わるのか、今何をすべきかを四柱推命で示す。「つらくて来たんだね。よく来たね。」"
+        },
+        "points": [
+          {
+            "ko": "돈·직장·사업·사람·연애·건강·집안 중 가장 힘든 하나",
+            "en": "Pick the hardest one: money, work, business, people, love, health, family",
+            "es": "Elige lo más difícil: dinero, trabajo, negocio, personas, amor, salud, familia",
+            "ja": "お金・職場・事業・人・恋愛・健康・家庭から一番つらいものを一つ"
+          },
+          {
+            "ko": "고비가 끝나는 시점",
+            "en": "When the rough patch ends",
+            "es": "Cuándo termina el bache",
+            "ja": "山場が終わる時期"
+          },
+          {
+            "ko": "지금 할 일",
+            "en": "What to do now",
+            "es": "Qué hacer ahora",
+            "ja": "今やるべきこと"
+          }
+        ]
+      },
+      {
+        "id": "newyear2027",
+        "no": 3,
+        "status": "soon",
+        "name": {
+          "ko": "신년운세 2027",
+          "en": "2027 New Year Fortune",
+          "es": "Fortuna de Año Nuevo 2027",
+          "ja": "2027年 新年運勢"
+        },
+        "tagline": {
+          "ko": "2027년 한 해의 흐름을 미리.",
+          "en": "The shape of your 2027, ahead of time.",
+          "es": "Cómo viene tu 2027, por adelantado.",
+          "ja": "2027年の流れを先取り。"
+        }
+      },
+      {
+        "id": "naming",
+        "no": 4,
+        "status": "soon",
+        "name": {
+          "ko": "작명 서비스",
+          "en": "Naming service",
+          "es": "Servicio de nombres",
+          "ja": "命名サービス"
+        },
+        "tagline": {
+          "ko": "사주에 맞는 이름 짓기.",
+          "en": "Names that fit the saju.",
+          "es": "Nombres acordes al saju.",
+          "ja": "四柱推命に合う名前づくり。"
+        }
+      }
+    ]
+  },
+  "updated": "2026-10-24",
+  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+  "disclaimer": "Not investment advice."
+}
