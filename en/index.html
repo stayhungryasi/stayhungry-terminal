@@ -605,7 +605,7 @@ button.bchip:hover{border-color:var(--or);color:var(--ink)}
 .lkcards img{width:100%;display:block}
 @media (max-width:1260px){.lkg1,.lkg3{grid-template-columns:minmax(0,1fr)}.lkrows{max-height:none}}
 @media (max-width:640px){.lkr{grid-template-columns:10px 100px 40px minmax(0,1fr) 54px;font-size:14px}.lkr .b{display:none}.lkpx{margin-left:0;text-align:left}}
-.brby{display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--mute);margin:-4px 0 12px}
+.brby{display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--mute);margin:10px 0 14px}
 .brwhy{margin:10px 0 0;font-size:15px;color:var(--ink2)}.brwhy summary{cursor:pointer;font-family:var(--mono);font-size:13px;color:var(--mute)}.brwhy p{margin:6px 0 0;line-height:1.6}
 .kdtop{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin-top:14px}
 .kdnext{font-family:var(--mono);font-size:15px;color:var(--ink2);margin:6px 0 0;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
@@ -1473,7 +1473,7 @@ function brAuto(c){const t=L[c],L0=lang;lang=c;const out=[],cps=[];try{
  }finally{lang=L0;}
  out.sort((a,b)=>b[0]-a[0]);return {lines:out.slice(0,3).map(x=>x[1]),cps};}
 function brApply(){const ed=brFresh();LANGS.forEach(c=>{const t=L[c],a=brAuto(c);
-  if(ed){t.sum=ed.lines.map(l=>brSan(l[c]||l.en));t.cp=(ed.checkpoints||[]).map(x=>[x.d&&(x.d[c]||x.d.en)||'',x.x&&(x.x[c]||x.x.en)||'',x.y&&(x.y[c]||x.y.en)||'']);if(!t.cp.length)t.cp=a.cps;t.br_by=fmt(t.br_ed,{t:md(ed.generated_kst||ed.date)});}
+  if(ed){t.sum=ed.lines.map(l=>brSan(l[c]||l.en));t.cp=(ed.checkpoints||[]).map(x=>[x.d&&(x.d[c]||x.d.en)||'',x.x&&(x.x[c]||x.x.en)||'',x.y&&(x.y[c]||x.y.en)||'']);if(!t.cp.length)t.cp=a.cps;t.br_by=fmt(t.br_ed,{t:String(ed.generated_kst||ed.date).slice(5,16).replace('-','/')});}
   else{if(a.lines.length>=2)t.sum=a.lines;if(a.cps.length)t.cp=a.cps;t.br_by=t.br_auto;}});}
 function brRefresh(){brApply();rToday();rBrief();if(typeof rDev==='function'&&(devFile==='brief'||devFile==='today'))rDev();fit();}
 async function brLoad(){try{const r=await fetch(crUrl('live/brief.json'),{cache:'no-cache'});if(r.ok)BR=await r.json();}catch(e){}brRefresh();}
