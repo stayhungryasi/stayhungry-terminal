@@ -1,7 +1,7 @@
 {
  "kind": "schedule",
  "schema": 1,
- "generated_kst": "2026-10-23 23:47",
+ "generated_kst": "2026-10-24 10:10",
  "data_updated": "2026-10-23",
  "last_sent_kst": "2026-10-23 09:22",
  "next_send": "2026-10-27",
@@ -37,46 +37,8 @@
    "LG전자"
   ]
  },
- "count": 123,
+ "count": 122,
  "events": [
-  {
-   "id": "kr-hol-hangul",
-   "date": "2026-10-09",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "",
-   "title": "한국 증시 휴장(한글날)",
-   "point": "",
-   "cat": "시장",
-   "tickers": [],
-   "imp": 1,
-   "status": "confirmed",
-   "country": "kr",
-   "source": "https://www.krx.co.kr/",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Korea market holiday (Hangul Day)",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "es": {
-     "t": "Feriado bursátil en Corea (Día del Hangul)",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "ja": {
-     "t": "韓国市場 休場(ハングルの日)",
-     "p": "",
-     "l": "",
-     "c": ""
-    }
-   }
-  },
   {
    "id": "kr-exp-10a",
    "date": "2026-10-12",
@@ -4855,6 +4817,6 @@
  "telegram": "https://t.me/stayhungryasi",
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
  "note": "Written by the key-dates bot (schedule-bot) after each refresh. Schedule information, not investment advice. Dates can change.",
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "live": "https://stayhungryasi.com/live/schedule.json"
 }

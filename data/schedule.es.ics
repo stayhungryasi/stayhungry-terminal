@@ -9,18 +9,6 @@ X-WR-CALDESC:Información de calendario\, no es asesoría de inversión. @stayhu
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:kr-hol-hangul@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:Feriado bursátil en Corea (Día del Hangul)
-DESCRIPTION:https://www.krx.co.kr/\nInformación de calendario\, no es ases
- oría de inversión.\n@stayhungryasi · https://t.me/stayhungryasi
-CATEGORIES:시장
-URL:https://www.krx.co.kr/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:kr-exp-10a@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261012

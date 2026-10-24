@@ -9,18 +9,6 @@ X-WR-CALDESC:Schedule information\, not investment advice. @stayhungryasi · htt
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:kr-hol-hangul@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:Korea market holiday (Hangul Day)
-DESCRIPTION:https://www.krx.co.kr/\nSchedule information\, not investment a
- dvice.\n@stayhungryasi · https://t.me/stayhungryasi
-CATEGORIES:시장
-URL:https://www.krx.co.kr/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:kr-exp-10a@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261012

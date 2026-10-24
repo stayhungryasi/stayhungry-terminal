@@ -9,18 +9,6 @@ X-WR-CALDESC:日程情報であり、投資助言ではありません。 @stayh
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:kr-hol-hangul@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:韓国市場 休場(ハングルの日)
-DESCRIPTION:https://www.krx.co.kr/\n日程情報であり、投資助言で
- はありません。\n@stayhungryasi · https://t.me/stayhungryasi
-CATEGORIES:시장
-URL:https://www.krx.co.kr/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:kr-exp-10a@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261012

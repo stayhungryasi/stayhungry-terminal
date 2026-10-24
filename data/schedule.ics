@@ -9,19 +9,6 @@ X-WR-CALDESC:한국시간 기준 일정 정보이며 투자 권유가 아닙니�
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:kr-hol-hangul@stayhungryasi.com
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:한국 증시 휴장(한글날)
-DESCRIPTION:https://www.krx.co.kr/\n한국시간 기준 일정 정보이며
-  투자 권유가 아닙니다.\n@stayhungryasi · https://t.me/stayhungry
- asi
-CATEGORIES:시장
-URL:https://www.krx.co.kr/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:kr-exp-10a@stayhungryasi.com
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261012
