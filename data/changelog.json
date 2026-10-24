@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-24",
+      "commit": "HEAD",
+      "message": "Easier top menu: 20 tabs folded into 6 groups (Today, Research, Markets, UNIVERTRIX, Built, Hub) that open a list of their pages; text 11.5px → 15px and brighter, the current group underlined, and the text-size button now scales the menu too"
+    },
+    {
+      "date": "2026-10-24",
       "commit": "dec57e6",
       "message": "New SOFTWARE page: the tools I build with Claude, starting with No. 01 MoCapture, a Windows capture tool with no ads, no alerts and no network (instant editor, automatic masking of private numbers, window and scroll capture, offline text copy), with screens, numbers, releases and install-safety facts; on the hub as card 8, in 4 languages"
     },
