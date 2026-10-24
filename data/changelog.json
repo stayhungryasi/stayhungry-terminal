@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-10-24",
-      "commit": "HEAD",
+      "commit": "12ff1ff",
       "message": "New research: Claude and GPT Models × Effort Matrix. Thirteen Claude models and the GPT-6 family across five effort levels, mapped to five work tasks with Artificial Analysis per-effort measurements (rechecked Oct 24, adds Haiku 5.5); Opus 5.5 at high costs 30% of Fable 5.1 at extra high"
     },
     {
