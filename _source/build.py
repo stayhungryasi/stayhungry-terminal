@@ -97,6 +97,7 @@ Base URL: https://stayhungryasi.com/data/
 | earnings.json | megacap earnings dates (UTC), confirmed or estimated |
 | crisis.json | crisis early-warning report: score, 5 layers, 21 indicators, charts (written by the bot after each Mon/Fri Telegram report) |
 | brief.json | the daily brief: three lines + checkpoints picked each morning by Claude from every live feed, with the reason (history: brief-history.json) |
+| quote.json | STAY HUNGRY morning card: 7 weekday themes, every quote with source, story and today's order in 4 languages, rotation anchor and last Telegram send (written by the quote bot) |
 | schedule.json | key dates: every public earnings, macro and IPO date with KST time, status and source (written by the schedule bot after each refresh). Calendar feeds: schedule.ics (ko), schedule.en.ics, schedule.es.ics, schedule.ja.ics |
 | fear.json | Buffett Index x VIX: values, percentiles, full time series, valuation x fear quadrant (written by the bot after each Tue/Thu report) |
 | megacaps.json | top 8 by market cap (SAMPLE) |

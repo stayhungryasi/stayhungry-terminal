@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 KST = dt.timezone(dt.timedelta(hours=9))
 LANGS = ("ko", "en", "es", "ja")
 PAGES = {"today", "brief", "earnings", "schedule", "research", "mix", "score", "spcxlock", "library", "radar",
-         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear"}
+         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear", "quote"}
 TAG = re.compile(r"<(?!/?b>|a href=\"#[a-z]+\">|/a>)[^>]*>")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from research import FORBIDDEN  # noqa: E402

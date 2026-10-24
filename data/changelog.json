@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-24",
+      "commit": "HEAD",
+      "message": "STAY HUNGRY morning card on the hub: the quote bot's daily card (checked quote, the story behind it, today's order) on a new QUOTE page and on TODAY, with this week's seven themes; a new card opens at 08:00 KST like the Telegram channel, in 4 languages"
+    },
+    {
+      "date": "2026-10-24",
       "commit": "768c3e9",
       "message": "New research: The Superintelligence Bet, Rechecked. Six weeks after ARK swapped GOOGL for META, META leads by 1.5 points; on forward earnings Meta (19.5x) is now cheaper than Alphabet (23.9x), the market reads AI capex as borrowing, and the author's top five becomes Nvidia, SK hynix, Amazon, Alphabet, TSMC"
     },
