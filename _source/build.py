@@ -99,6 +99,7 @@ Base URL: https://stayhungryasi.com/data/
 | brief.json | the daily brief: three lines + checkpoints picked each morning by Claude from every live feed, with the reason (history: brief-history.json) |
 | fortune.json | Fortune Danji saju tools hub: live tools (Yeouido Jeomjip, Anchak) and the ones on the way (2027 New Year fortune, naming), in 4 languages |
 | software.json | software the hub owner builds with Claude (No. 01 MoCapture): features, numbers, releases, install-safety facts and links, in 4 languages |
+| dart5.json | institutional 5% filing radar: watchlist large-holding reports sorted by transaction type with verdicts, 120 days (written by the filing bot, source OpenDART) |
 | leverage.json | K-leverage monitor: fuel x fire regime with inputs, verdict and readings as codes, margin loans, forced selling, unpaid margin, deposits, KOSPI, 1-year / 60-day / 10-year series and the 60-day regime path (written by the debt bot after each run, source KOFIA FreeSIS) |
 | quote.json | STAY HUNGRY morning card: 7 weekday themes, every quote with source, story and today's order in 4 languages, rotation anchor and last Telegram send (written by the quote bot) |
 | schedule.json | key dates: every public earnings, macro and IPO date with KST time, status and source (written by the schedule bot after each refresh). Calendar feeds: schedule.ics (ko), schedule.en.ics, schedule.es.ics, schedule.ja.ics |

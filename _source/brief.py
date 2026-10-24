@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 KST = dt.timezone(dt.timedelta(hours=9))
 LANGS = ("ko", "en", "es", "ja")
 PAGES = {"today", "brief", "earnings", "schedule", "research", "mix", "score", "spcxlock", "library", "radar",
-         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear", "quote", "leverage"}
+         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear", "quote", "leverage", "filings"}
 TAG = re.compile(r"<(?!/?b>|a href=\"#[a-z]+\">|/a>)[^>]*>")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from research import FORBIDDEN  # noqa: E402
@@ -61,6 +61,13 @@ def digest():
         print(f"- margin loans {k['credit']} tn KRW (d/d {k['credit_d1']:+}) · forced selling {k['forced']} x100m KRW "
               f"({k['forced_x']}x 1y avg) · unpaid {k['unpaid']} tn · deposits {k['deposit']} tn ({k['dep20']:+}% 1m) · "
               f"KOSPI {k['kospi']} ({k['kospi_dd1y']:+}% vs 1y high)")
+    d5 = load("live/dart5.json")
+    if d5 and d5.get("items"):
+        lim = (today() - dt.timedelta(days=7)).strftime("%Y%m%d")
+        recent = [x for x in d5["items"] if x["rcept_dt"] >= lim]
+        print(f"\n## Institutional 5% filings (#filings) · last run {(d5.get('last_run') or {}).get('at_kst')} · {len(recent)} in 7 days")
+        for x in recent[:6]:
+            print(f"- {x['rcept_dt']} {x['icon']} {x['badge']} {x['corp']} · {x['label']} {x['ratio_before']}% -> {x['ratio_after']}% ({x['purpose']})")
     lk = load("live/spcx-lock.json")
     if lk and lk.get("next"):
         n, s = lk["next"], lk["summary"]
