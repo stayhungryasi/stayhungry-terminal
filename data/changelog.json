@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-10-25",
+      "commit": "HEAD",
+      "message": "YouTube link fixed: the channel row and the channel card now open Future Field Trip (youtube.com/@futurefieldtrip)"
+    },
+    {
       "date": "2026-10-24",
       "commit": "2701981",
       "message": "Institutional 5% filing radar goes live: large-holding reports from global managers, pensions, sovereign funds, IBs and activists, sorted into control / real buying / watch / mechanical by splitting each filing's change table (on-market buys vs lending, swaps, existing holdings), with 40 days of history, filters, most active filers and the watchlist; under Markets, in 4 languages"
@@ -182,7 +187,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "credit": "@stayhungryasi · https://t.me/stayhungryasi",
   "disclaimer": "Not investment advice."
 }
