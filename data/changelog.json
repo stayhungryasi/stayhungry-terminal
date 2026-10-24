@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-10-24",
-      "commit": "HEAD",
+      "commit": "3c98799",
       "message": "Easier to read: pages no longer shrink below 92% (taller pages scroll instead), small text is 1–2px larger, gray text is brighter, and a new text-size button (Aa) offers 100 / 112 / 125%"
     },
     {
