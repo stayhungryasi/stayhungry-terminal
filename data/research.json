@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
  "updated": "2026-10-24",
- "count": 10,
+ "count": 11,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.",
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
@@ -129,6 +129,87 @@
    "minutes": 10,
    "sources": 27,
    "url": "https://stayhungryasi.com/r/terafab-equipment-map/"
+  },
+  {
+   "slug": "claude-gpt-effort-matrix",
+   "date": "2026-10-24",
+   "asof": "2026-10-24 (Artificial Analysis v4.3.2)",
+   "category": "ai",
+   "title": {
+    "ko": "Claude·GPT 모델 × 노력 매트릭스",
+    "en": "Claude and GPT Models × Effort Matrix",
+    "es": "Matriz de modelos Claude y GPT × esfuerzo",
+    "ja": "Claude・GPTモデル × 思考量マトリクス"
+   },
+   "dek": {
+    "ko": "Artificial Analysis가 노력 단계마다 따로 측정한 수치로 Claude 13종과 GPT-6 계열을 5대 업무에 매핑했다. Opus 5.5 높음은 Fable 5.1 엑스트라 비용의 30%로 5개 업무 중 3개에서 더 높고 2개에서 동급이다.",
+    "en": "Thirteen Claude models and the GPT-6 family, mapped to five work tasks with Artificial Analysis measurements taken at each effort level. Opus 5.5 at high costs 30% of Fable 5.1 at extra high and scores higher on 3 of 5 tasks, level on the other 2.",
+    "es": "Trece modelos Claude y la familia GPT-6, aplicados a cinco tareas con mediciones de Artificial Analysis en cada nivel de esfuerzo. Opus 5.5 en alto cuesta el 30% de Fable 5.1 en extra alto y puntúa más en 3 de 5 tareas, igual en las otras 2.",
+    "ja": "Artificial Analysisが思考量の段階ごとに測った数値で、Claude 13種とGPT-6系を5つの業務に当てはめた。Opus 5.5「高」はFable 5.1「エクストラ」の30%のコストで、5業務中3つで上回り、2つで同等。"
+   },
+   "key": {
+    "value": "30%",
+    "label": {
+     "ko": "Fable 5.1 엑스트라 → Opus 5.5 높음으로 바꿀 때의 과제당 비용 (AA $1.82 vs $5.98)",
+     "en": "Cost per task when switching Fable 5.1 extra high to Opus 5.5 high (AA, $1.82 vs $5.98)",
+     "es": "Costo por tarea al pasar de Fable 5.1 extra alto a Opus 5.5 alto (AA, $1.82 vs $5.98)",
+     "ja": "Fable 5.1「エクストラ」からOpus 5.5「高」に替えたときのタスク当たりコスト（AA、$1.82 vs $5.98）"
+    }
+   },
+   "points": {
+    "ko": [
+     "Fable 5.1도 노력별 AA 측정이 나왔다. 가장 낮은 단계($2.37)도 Opus 5.5 높음($1.82, 지수 54)보다 비싸다.",
+     "새 Haiku 5.5(10/7)는 토큰 단가 $0.10/$0.50로 가장 싸지만 Terminal-Bench 33%, 환각 억제 11이라 대량 단순 작업용이다.",
+     "GPT-6.1 Sol 높음은 AA 지수 50에 과제당 $0.32, GPT-6 Astra 최대는 53에 $3.26이다. GPT-6.1 Astra는 출시되지 않았다."
+    ],
+    "en": [
+     "Fable 5.1 now has per-effort AA measurements. Even its lowest level ($2.37) costs more than Opus 5.5 at high ($1.82, index 54).",
+     "The new Haiku 5.5 (Oct 7) is the cheapest at $0.10/$0.50 per million tokens, but Terminal-Bench 33% and a hallucination score of 11 make it a bulk-task model.",
+     "GPT-6.1 Sol at high scores an AA index of 50 at $0.32 per task; GPT-6 Astra at max scores 53 at $3.26. GPT-6.1 Astra was never released."
+    ],
+    "es": [
+     "Fable 5.1 ya tiene mediciones de AA por nivel de esfuerzo. Incluso su nivel más bajo ($2.37) cuesta más que Opus 5.5 en alto ($1.82, índice 54).",
+     "El nuevo Haiku 5.5 (7 oct) es el más barato, a $0.10/$0.50 por millón de tokens, pero Terminal-Bench 33% y un puntaje de alucinación de 11 lo dejan para tareas masivas simples.",
+     "GPT-6.1 Sol en alto logra un índice AA de 50 a $0.32 por tarea; GPT-6 Astra en máximo logra 53 a $3.26. GPT-6.1 Astra nunca se lanzó."
+    ],
+    "ja": [
+     "Fable 5.1にも思考量別のAA測定が出た。最も低い段階（$2.37）でもOpus 5.5「高」（$1.82、指数54）より高い。",
+     "新しいHaiku 5.5（10/7）はトークン単価$0.10/$0.50で最安だが、Terminal-Bench 33%、ハルシネーション抑制11で大量の単純作業向け。",
+     "GPT-6.1 Sol「高」はAA指数50でタスク当たり$0.32、GPT-6 Astra「最大」は53で$3.26。GPT-6.1 Astraはリリースされなかった。"
+    ]
+   },
+   "tickers": [],
+   "checkpoints": [],
+   "tags": {
+    "ko": [
+     "AI 모델",
+     "노력 설정",
+     "Claude",
+     "GPT-6"
+    ],
+    "en": [
+     "AI models",
+     "Effort settings",
+     "Claude",
+     "GPT-6"
+    ],
+    "es": [
+     "Modelos de IA",
+     "Niveles de esfuerzo",
+     "Claude",
+     "GPT-6"
+    ],
+    "ja": [
+     "AIモデル",
+     "思考量設定",
+     "Claude",
+     "GPT-6"
+    ]
+   },
+   "kind": "page",
+   "minutes": 6,
+   "sources": 4,
+   "url": "https://stayhungryasi.com/r/claude-gpt-effort-matrix/"
   },
   {
    "slug": "asi-bet-meta-googl",
