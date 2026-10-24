@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-10-24",
+      "commit": "HEAD",
+      "message": "Easier to read: pages no longer shrink below 92% (taller pages scroll instead), small text is 1–2px larger, gray text is brighter, and a new text-size button (Aa) offers 100 / 112 / 125%"
+    },
+    {
       "date": "2026-10-23",
       "commit": "ecf3c2b",
       "message": "SpaceX lock-up radar goes live: next unlock with countdown to the US open, the full unlock ladder, tradable vs locked share gauge, cumulative unlock curve, SPCX price with unlock days and the Telegram cards, updated every morning by the bot"
@@ -127,7 +132,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "credit": "@stayhungryasi · https://t.me/stayhungryasi",
   "disclaimer": "Not investment advice."
 }
