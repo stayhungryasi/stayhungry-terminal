@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 KST = dt.timezone(dt.timedelta(hours=9))
 LANGS = ("ko", "en", "es", "ja")
 PAGES = {"today", "brief", "earnings", "schedule", "research", "mix", "score", "spcxlock", "library", "radar",
-         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear", "quote"}
+         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear", "quote", "leverage"}
 TAG = re.compile(r"<(?!/?b>|a href=\"#[a-z]+\">|/a>)[^>]*>")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from research import FORBIDDEN  # noqa: E402
@@ -53,6 +53,14 @@ def digest():
         print(f"\n## Buffett Index x VIX (#radar, #buffett) · {'sent ' + str(fr.get('sent_kst')) if fr.get('sent') else 'check run ' + str(fr.get('run_kst'))}")
         print(f"- Buffett {b.get('value')}% ({b.get('key')}, pct {b.get('pct')}, estimated={b.get('estimated')}, official {b.get('last_official')} {b.get('official_quarter')})")
         print(f"- VIX {v.get('value')} ({v.get('key')}, as of {v.get('asof')}, 1w {v.get('d1w')}, 1m {v.get('d1m')}, VIX/VIX3M {v.get('ratio')})")
+    lv = load("live/leverage.json")
+    if lv and lv.get("regime"):
+        k = lv["kpi"]
+        print(f"\n## K-leverage monitor (#leverage) · data as of {lv['asof']} · last Telegram {lv.get('last_sent_kst')}")
+        print(f"- regime {lv['regime']['key']} · fuel {lv['fuel']} · fire {lv['fire']} (60 = line) · verdict codes {lv['verdict']}")
+        print(f"- margin loans {k['credit']} tn KRW (d/d {k['credit_d1']:+}) · forced selling {k['forced']} x100m KRW "
+              f"({k['forced_x']}x 1y avg) · unpaid {k['unpaid']} tn · deposits {k['deposit']} tn ({k['dep20']:+}% 1m) · "
+              f"KOSPI {k['kospi']} ({k['kospi_dd1y']:+}% vs 1y high)")
     lk = load("live/spcx-lock.json")
     if lk and lk.get("next"):
         n, s = lk["next"], lk["summary"]

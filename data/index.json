@@ -15,6 +15,7 @@
   "endpoints": [
     "brief.json",
     "quote.json",
+    "leverage.json",
     "earnings.json",
     "crisis.json",
     "fear.json",
