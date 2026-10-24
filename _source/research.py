@@ -93,7 +93,7 @@ a{color:var(--or)}
 .top .in{max-width:980px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
 .brand{font-family:var(--mono);font-size:13px;letter-spacing:.2em;color:var(--ink);text-decoration:none;font-weight:600;white-space:nowrap}
 .brand i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--or);margin-right:10px;vertical-align:1px}
-.top a.back{font-family:var(--mono);font-size:12.5px;color:var(--or);text-decoration:none;white-space:nowrap}
+.top a.back{font-family:var(--mono);font-size:12.5px;color:var(--or);text-decoration:none;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
 main{max-width:980px;margin:0 auto;padding:30px 20px 60px}
 .eb{font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;color:var(--or);text-transform:uppercase}
 h1.t{color:var(--ink);font-size:clamp(28px,4.6vw,46px);line-height:1.2;font-weight:900;margin:.3em 0 .35em;letter-spacing:-.01em}

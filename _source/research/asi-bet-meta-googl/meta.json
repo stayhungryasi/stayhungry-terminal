@@ -1,0 +1,78 @@
+{
+ "slug": "asi-bet-meta-googl",
+ "date": "2026-10-24",
+ "asof": "2026-10-23 (US close)",
+ "category": "ai",
+ "title": {
+  "ko": "초지능 베팅 재검증: 캐시 우드의 META↔GOOGL 스왑 6주 후",
+  "en": "The Superintelligence Bet, Rechecked: Cathie Wood's META-for-GOOGL Swap Six Weeks On",
+  "es": "La apuesta por la superinteligencia, revisada: el cambio de GOOGL por META de Cathie Wood seis semanas después",
+  "ja": "超知能ベットの再検証:キャシー・ウッドのGOOGL→META乗り換えから6週間"
+ },
+ "dek": {
+  "ko": "선행 기준으로는 메타가 알파벳보다 싸고, 시장은 AI 설비투자를 수요가 아닌 차입의 증거로 읽기 시작했다. 작성자의 순위는 엔비디아·SK하이닉스·아마존 순으로 바뀌었다.",
+  "en": "On forward earnings Meta is cheaper than Alphabet, and the market now reads AI capex as evidence of borrowing, not demand. The author's ranking now runs Nvidia, SK hynix, Amazon.",
+  "es": "Con utilidades esperadas, Meta es más barata que Alphabet, y el mercado ya lee el capex de IA como prueba de endeudamiento, no de demanda. El ranking del autor queda: Nvidia, SK hynix, Amazon.",
+  "ja": "予想利益ベースではメタの方がアルファベットより割安で、市場はAI設備投資を需要ではなく借入の証拠として読み始めた。筆者の順位はエヌビディア、SKハイニックス、アマゾンの順に変わった。"
+ },
+ "key": {
+  "value": "19.5x / 23.9x",
+  "label": {
+   "ko": "META / GOOGL 선행 P/E (10/23) — 9월의 '17배 vs 23배' 비교가 역전",
+   "en": "META / GOOGL forward P/E (Oct 23): September's '17x vs 23x' comparison is reversed",
+   "es": "P/U esperado de META / GOOGL (23 oct): la comparación de septiembre '17x vs 23x' se invierte",
+   "ja": "META/GOOGLの予想PER(10/23):9月の「17倍対23倍」比較が逆転"
+  }
+ },
+ "points": {
+  "ko": [
+   "ARK 스왑 6주 후 META -1.7%, GOOGL -3.2%로 캐시 우드가 1.5%p 앞서 있다. 9월에 쓰인 'GOOGL P/E 17 vs META 23'은 지분 평가이익이 들어간 후행 기준이었고, 선행으로는 19.5배 vs 23.9배로 뒤집힌다.",
+   "레짐 전환: 메타가 첫 분기 FCF 마이너스(-21억달러)와 자본 조달용 클래스C 주식을 발표한 다음 날 GE버노바가 -11% 빠졌다. AI 설비투자는 이제 차입의 증거로 읽힌다.",
+   "작성자 순위: 엔비디아(PEG 0.33), SK하이닉스(선행 3.75배), 아마존(선행 19배, Anthropic 지분), 알파벳, TSMC. GE버노바는 선행 36.5배로 상위 5개에서 뺐다."
+  ],
+  "en": [
+   "Six weeks after ARK's swap, META is -1.7% and GOOGL -3.2%, so Cathie Wood leads by 1.5 points. September's 'GOOGL P/E 17 vs META 23' was trailing and included stake gains; on forward earnings it flips to 19.5x vs 23.9x.",
+   "Regime shift: the day after Meta reported its first negative quarterly FCF (-$2.1B) and a new Class C share for capital raising, GE Vernova fell 11%. AI capex now reads as evidence of borrowing.",
+   "Author's ranking: Nvidia (PEG 0.33), SK hynix (3.75x forward), Amazon (19x forward, Anthropic stake), Alphabet, TSMC. GE Vernova drops out of the top five at 36.5x forward."
+  ],
+  "es": [
+   "Seis semanas después del cambio de ARK, META cae 1.7% y GOOGL 3.2%: Cathie Wood va 1.5 puntos arriba. El 'P/U 17 de GOOGL vs 23 de META' de septiembre era histórico e incluía ganancias por participaciones; con utilidades esperadas se invierte a 19.5x vs 23.9x.",
+   "Cambio de régimen: el día después de que Meta reportó su primer FCF trimestral negativo (-$2.1B) y una nueva acción Clase C para captar capital, GE Vernova cayó 11%. El capex de IA ya se lee como prueba de endeudamiento.",
+   "Ranking del autor: Nvidia (PEG 0.33), SK hynix (3.75x esperado), Amazon (19x esperado, participación en Anthropic), Alphabet, TSMC. GE Vernova sale del top cinco con 36.5x esperado."
+  ],
+  "ja": [
+   "ARKの乗り換えから6週間でMETAは-1.7%、GOOGLは-3.2%、キャシー・ウッドが1.5ポイントリード。9月の「GOOGLのPER17倍対META23倍」は持分評価益を含む実績ベースで、予想ベースでは19.5倍対23.9倍に逆転する。",
+   "レジーム転換:メタが上場来初の四半期FCFマイナス(-21億ドル)と資本調達用のクラスC株新設を発表した翌日、GEベルノバは11%下落。AI設備投資はいまや借入の証拠として読まれる。",
+   "筆者の順位:エヌビディア(PEG0.33)、SKハイニックス(予想3.75倍)、アマゾン(予想19倍、Anthropic持分)、アルファベット、TSMC。GEベルノバは予想36.5倍で上位5社から外した。"
+  ]
+ },
+ "tickers": ["NVDA", "000660", "AMZN", "GOOGL", "TSM", "META", "GEV", "CEG", "267260", "ORCL"],
+ "checkpoints": [
+  {"date": "2026-10-28", "text": {
+   "ko": "알파벳·MSFT 실적(장 마감 후), GEV·VRT 실적, FOMC: 클라우드 성장률 85% 이상·TPU 매출·2027 설비투자 3,300억달러 이하 여부",
+   "en": "Alphabet and MSFT results (after close), GEV and VRT results, FOMC: Cloud growth of 85%+, TPU revenue, 2027 capex at or below $330B",
+   "es": "Resultados de Alphabet y MSFT (al cierre), de GEV y VRT, y FOMC: crecimiento de Cloud de 85% o más, ingresos por TPU, capex 2027 de $330B o menos",
+   "ja": "アルファベット・MSFT決算(引け後)、GEV・VRT決算、FOMC:クラウド成長率85%以上、TPU売上、2027年設備投資3,300億ドル以下か"}},
+  {"date": "2026-10-29", "text": {
+   "ko": "SK하이닉스·삼성전자 3분기 확정 실적: 주주환원 규모, HBM4 가격, 4분기 가이드",
+   "en": "SK hynix and Samsung Electronics final Q3 results: shareholder returns, HBM4 pricing, Q4 guidance",
+   "es": "Resultados definitivos del 3T de SK hynix y Samsung Electronics: retorno al accionista, precio de HBM4, guía del 4T",
+   "ja": "SKハイニックス・サムスン電子の第3四半期確定決算:株主還元規模、HBM4価格、第4四半期ガイダンス"}},
+  {"date": "2026-11-11", "text": {
+   "ko": "지멘스에너지 연간 실적·2030 목표: 가스터빈 사이클 정점 여부",
+   "en": "Siemens Energy full-year results and 2030 targets: is the gas-turbine cycle peaking?",
+   "es": "Resultados anuales y metas 2030 de Siemens Energy: ¿llega a su pico el ciclo de turbinas de gas?",
+   "ja": "シーメンス・エナジー通期決算と2030年目標:ガスタービンのサイクルはピークか"}},
+  {"date": "2026-12-09", "text": {
+   "ko": "브로드컴 FQ4 실적·FOMC: 고객 금융 노출 총액 공시",
+   "en": "Broadcom FQ4 results and FOMC: disclosure of total customer-financing exposure",
+   "es": "Resultados del 4T fiscal de Broadcom y FOMC: revelación de la exposición total al financiamiento de clientes",
+   "ja": "ブロードコムFQ4決算とFOMC:顧客向け金融エクスポージャー総額の開示"}}
+ ],
+ "tags": {
+  "ko": ["캐시 우드", "초지능", "빅테크 밸류에이션", "AI 자금조달"],
+  "en": ["Cathie Wood", "Superintelligence", "Big Tech valuation", "AI financing"],
+  "es": ["Cathie Wood", "Superinteligencia", "Valuación de Big Tech", "Financiamiento de IA"],
+  "ja": ["キャシー・ウッド", "超知能", "ビッグテックのバリュエーション", "AI資金調達"]
+ }
+}
