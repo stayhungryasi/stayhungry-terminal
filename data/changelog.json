@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-10-24",
-      "commit": "HEAD",
+      "commit": "0b76017",
       "message": "Easier top menu: 20 tabs folded into 6 groups (Today, Research, Markets, UNIVERTRIX, Built, Hub) that open a list of their pages; text 11.5px → 15px and brighter, the current group underlined, and the text-size button now scales the menu too"
     },
     {
