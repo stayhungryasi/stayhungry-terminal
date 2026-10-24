@@ -1,0 +1,87 @@
+{
+ "date": "2026-10-24",
+ "asof": "2026-10-20",
+ "category": "ai",
+ "title": {
+  "ko": "테라팹 장비 지도 — 머스크 칩 팹이 사들일 장비와 진짜 수혜 기업",
+  "en": "Terafab Equipment Map: What Musk's Chip Fab Will Buy and Who Really Benefits",
+  "es": "Mapa de equipos de Terafab: qué comprará la fábrica de chips de Musk y quién gana de verdad",
+  "ja": "テラファブ装置マップ — マスク氏の半導体工場が買う装置と本当の恩恵企業"
+ },
+ "dek": {
+  "ko": "총 1,194억달러는 2036년까지 4단계에 걸친 금액이다. 1단계 장비 수요는 글로벌 WFE의 3~4%로, 대형 장비사에겐 옵션이고 확정 수혜는 소수다.",
+  "en": "The $119.4B total is spread over four phases through 2036. Phase 1 equipment demand is about 3–4% of global WFE: an option for big toolmakers, with few confirmed winners.",
+  "es": "Los $119.400 M se reparten en cuatro fases hasta 2036. La demanda de equipos de la fase 1 ronda el 3–4% del WFE mundial: una opción para los grandes fabricantes, con pocos ganadores confirmados.",
+  "ja": "総額1,194億ドルは2036年まで4段階に分かれた金額だ。第1段階の装置需要は世界WFEの3~4%で、大手装置メーカーにとってはオプション、確定した恩恵企業は少数だ。"
+ },
+ "key": {
+  "value": "3~4%",
+  "label": {
+   "ko": "1단계 연간 장비 수요의 글로벌 WFE 대비 비중(작성자 추정)",
+   "en": "Phase 1 annual equipment demand as a share of global WFE (author's estimate)",
+   "es": "Demanda anual de equipos de la fase 1 como parte del WFE mundial (estimación del autor)",
+   "ja": "第1段階の年間装置需要が世界WFEに占める比率(筆者推定)"
+  }
+ },
+ "points": {
+  "ko": [
+   "투자는 168억 / 386억 / 386억 / 253억달러의 4단계로 2036년까지 나뉜다. 장비 투자는 총 835억~955억달러, 10년 평균 연 84억~96억달러로 추정된다.",
+   "대체 불가능성·확정도 1순위는 ASML이다. 사내 마스크숍과 신규 조직의 수율 학습 때문에 레이저텍·KLA가 숨은 수혜다. 한국에서 PO가 확정된 곳은 HPSP 1곳뿐이다.",
+   "인텔 14A가 기본안이지만 TSMC가 협상을 이어가고 있어 공정 교체 가능성이 열려 있다. 인텔 협력사 경로로 거론된 기업일수록 리스크가 크다."
+  ],
+  "en": [
+   "Spending splits into four phases through 2036: $16.8B / $38.6B / $38.6B / $25.3B. Equipment totals an estimated $83.5–95.5B, or $8.4–9.6B a year on a 10-year average.",
+   "ASML ranks first on irreplaceability and certainty. The in-house mask shop and a new team's yield learning make Lasertec and KLA the hidden winners. In Korea only HPSP holds a confirmed PO.",
+   "Intel 14A is the base case, but TSMC is still negotiating, so a process switch stays possible. Suppliers that entered through Intel's supply chain carry the most risk."
+  ],
+  "es": [
+   "La inversión se divide en cuatro fases hasta 2036: $16.800 M / $38.600 M / $38.600 M / $25.300 M. Los equipos sumarían unos $83.500–95.500 M, o $8.400–9.600 M al año en promedio de 10 años.",
+   "ASML encabeza en carácter insustituible y certeza. El taller de máscaras propio y el aprendizaje de rendimiento de un equipo nuevo hacen de Lasertec y KLA los ganadores ocultos. En Corea solo HPSP tiene una orden de compra confirmada.",
+   "Intel 14A es el escenario base, pero TSMC sigue negociando, así que un cambio de proceso sigue siendo posible. Los proveedores que entraron por la cadena de Intel cargan el mayor riesgo."
+  ],
+  "ja": [
+   "投資は168億/386億/386億/253億ドルの4段階に分かれ、2036年まで続く。装置投資は総額835億~955億ドル、10年平均で年84億~96億ドルと推定される。",
+   "代替不可能性・確定度の首位はASML。社内マスクショップと新組織の歩留まり学習により、レーザーテックとKLAが隠れた恩恵企業になる。韓国でPOが確定しているのはHPSPの1社だけだ。",
+   "インテル14Aが基本案だが、TSMCが交渉を続けており工程変更の可能性は残る。インテルの協力会社ルートで名前が挙がった企業ほどリスクが大きい。"
+  ]
+ },
+ "tickers": [
+  "ASML",
+  "Lasertec",
+  "KLA",
+  "Applied Materials",
+  "Lam Research",
+  "Tokyo Electron",
+  "HPSP",
+  "ISC",
+  "Intel",
+  "Tesla"
+ ],
+ "checkpoints": [],
+ "tags": {
+  "ko": [
+   "테라팹",
+   "반도체 장비",
+   "소부장",
+   "인텔 14A"
+  ],
+  "en": [
+   "Terafab",
+   "Chip equipment",
+   "Materials & parts",
+   "Intel 14A"
+  ],
+  "es": [
+   "Terafab",
+   "Equipos de chips",
+   "Materiales y piezas",
+   "Intel 14A"
+  ],
+  "ja": [
+   "テラファブ",
+   "半導体装置",
+   "素材・部品・装置",
+   "インテル14A"
+  ]
+ }
+}
