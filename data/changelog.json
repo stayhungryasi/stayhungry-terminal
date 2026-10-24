@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-10-24",
+      "commit": "HEAD",
+      "message": "Daily brief: every morning Claude picks the three things that matter most across the whole hub (lock-ups, key dates, crisis and valuation, research) for TODAY and BRIEF, in 4 languages with the reason; without a pick the page chooses from live data itself"
+    },
+    {
+      "date": "2026-10-24",
       "commit": "97f4a3e",
       "message": "New research: Terafab Equipment Map. How much chip equipment Musk's fab will really buy (phase 1 ≈ 3–4% of global WFE, author's estimate), who is confirmed vs only in talks, hidden winners from the in-house mask shop, and the risks"
     },

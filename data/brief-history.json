@@ -1,0 +1,34 @@
+[
+ {
+  "date": "2026-10-24",
+  "lines": [
+   {
+    "href": "#spcxlock",
+    "ko": "<a href=\"#spcxlock\"><b>스페이스X 락업 D-2.</b></a> 10/26(월) 미국장 개장부터 최대 3.3억주(≈$475억)가 풀립니다. 지금 유통가능 물량의 +8%.",
+    "en": "<a href=\"#spcxlock\"><b>SpaceX lock-up in 2 days.</b></a> Up to 328M shares (≈$47.5B) unlock at the US open on Mon, Oct 26: +8% on what trades today.",
+    "es": "<a href=\"#spcxlock\"><b>Lock-up de SpaceX en 2 días.</b></a> Hasta 328 M acciones (≈US$47.5 mil M) se liberan el lun 26 oct: +8% sobre lo negociable hoy.",
+    "ja": "<a href=\"#spcxlock\"><b>スペースXロックアップまで2日。</b></a>10/26(月)の米国寄り付きから最大3.3億株(≈$475億)が解除。現在の流通可能株数の+8%。"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<a href=\"#schedule\"><b>다음 주가 진짜 실적 주간.</b></a> 10/28 SK하이닉스, 10/29 새벽 FOMC·알파벳·MS, 같은 날 삼성전자 콜, 10/30 아마존.",
+    "en": "<a href=\"#schedule\"><b>Next week is the real earnings week.</b></a> SK hynix Oct 28; FOMC, Alphabet, Microsoft early Oct 29 KST; Amazon Oct 30.",
+    "es": "<a href=\"#schedule\"><b>La semana que viene manda.</b></a> SK hynix 28 oct; FOMC, Alphabet y Microsoft el 29 (madrugada KST); Amazon 30 oct.",
+    "ja": "<a href=\"#schedule\"><b>来週が本当の決算ウィーク。</b></a>10/28 SKハイニックス、10/29未明 FOMC・アルファベット・MS、同日サムスン電子、10/30 アマゾン。"
+   },
+   {
+    "href": "#library",
+    "ko": "<a href=\"#library\"><b>새 리서치: 테라팹 장비 지도.</b></a> 머스크 칩 팹 1,194억달러는 2036년까지 4단계, 1단계 장비 수요는 글로벌 WFE의 3~4%(작성자 추정).",
+    "en": "<a href=\"#library\"><b>New research: the Terafab equipment map.</b></a> $119.4B over 4 phases to 2036; phase 1 is 3–4% of global WFE (author's estimate).",
+    "es": "<a href=\"#library\"><b>Nuevo informe: equipos de Terafab.</b></a> US$119.4 mil M en 4 fases hasta 2036; la fase 1 es 3–4% del WFE mundial (estimación del autor).",
+    "ja": "<a href=\"#library\"><b>新リサーチ:テラファブ装置マップ。</b></a>1,194億ドルは2036年まで4段階、第1段階の装置需要は世界WFEの3〜4%(筆者推定)。"
+   }
+  ],
+  "why": {
+   "ko": "락업은 날짜와 물량이 정해진 이틀 뒤 이벤트라 1순위. 다음 주는 FOMC와 빅테크·한국 반도체 실적이 한꺼번에 몰려 2순위. 오늘 새로 올라온 테라팹 리서치가 3순위입니다. 위기 근접도(32.5 경계)와 버핏지수(244%, 추정)는 어제와 같아 빼고, Anthropic S-1(10/25)은 날짜가 추정이라 넣지 않았습니다.",
+   "en": "The lock-up is a fixed-date, fixed-size event two days out, so it leads. Next week stacks the FOMC with Big Tech and Korean chip earnings. Today's new Terafab report is third. Crisis proximity (32.5, watch) and the Buffett Index (244%, est.) are unchanged, so they sit out; Anthropic's S-1 (Oct 25) is left out because its date is only estimated.",
+   "es": "El lock-up tiene fecha y tamaño fijos y llega en dos días, por eso va primero. La próxima semana junta la FOMC con resultados de Big Tech y de chips coreanos. El nuevo informe de Terafab de hoy va tercero. La proximidad de crisis (32.5) y el Índice Buffett (244%, est.) no cambian; el S-1 de Anthropic (25 oct) queda fuera porque su fecha es estimada.",
+   "ja": "ロックアップは日付と株数が確定した2日後のイベントなので1番目。来週はFOMCとビッグテック・韓国半導体の決算が集中するので2番目。今日公開のテラファブ・リサーチが3番目。危機近接度(32.5 警戒)とバフェット指数(244%、推定)は昨日と同じため外し、Anthropic S-1(10/25)は日付が推定のため入れていません。"
+  }
+ }
+]

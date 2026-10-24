@@ -583,6 +583,8 @@ button.bchip:hover{border-color:var(--or);color:var(--ink)}
 .lkcards img{width:100%;display:block}
 @media (max-width:1260px){.lkg1,.lkg3{grid-template-columns:minmax(0,1fr)}.lkrows{max-height:none}}
 @media (max-width:640px){.lkr{grid-template-columns:10px 100px 40px minmax(0,1fr) 54px;font-size:14px}.lkr .b{display:none}.lkpx{margin-left:0;text-align:left}}
+.brby{display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--mute);margin:-4px 0 12px}
+.brwhy{margin:10px 0 0;font-size:15px;color:var(--ink2)}.brwhy summary{cursor:pointer;font-family:var(--mono);font-size:13px;color:var(--mute)}.brwhy p{margin:6px 0 0;line-height:1.6}
 .kdtop{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin-top:14px}
 .kdnext{font-family:var(--mono);font-size:15px;color:var(--ink2);margin:6px 0 0;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
 .kdnext b{color:var(--ink);font-weight:600}.kdnext .cdx{color:var(--or);font-weight:600}
@@ -815,6 +817,7 @@ const UVM=[
   d:{en:'Must-read signals rewritten section by section as Korean briefings.',ko:'필독 신호의 원문을 문단·섹션 단위로 재서술한 한국어 브리핑.',es:'Las señales imprescindibles, reescritas sección por sección como informes en coreano.',ja:'必読シグナルの原文を段落・セクション単位で書き直した韓国語ブリーフィング。'}}];
 const UVM_SNAP={dissect:72,dissect_at:'2026-10-23 09:50',throne_kings:6,throne_years:21,themes:6};
 const CHANGELOG=[
+ {"d":"2026-10-24","h":"HEAD","m":{"en":"Daily brief: every morning Claude picks the three things that matter most across the whole hub (lock-ups, key dates, crisis and valuation, research) for TODAY and BRIEF, in 4 languages with the reason; without a pick the page chooses from live data itself","ko":"매일의 3줄: 매일 아침 Claude가 허브 전체(락업·핵심 일정·위기·밸류에이션·리서치)에서 가장 중요한 3가지를 골라 TODAY와 BRIEF에 올림. 4개 언어, 선정 이유 포함. 선정본이 없는 날은 실시간 데이터로 자동 선정","es":"Resumen diario: cada mañana Claude elige las tres cosas más importantes de todo el hub (lock-ups, fechas clave, crisis y valuación, investigación) para TODAY y BRIEF, en 4 idiomas y con el motivo; sin selección, la página elige con datos en vivo","ja":"毎日の3行:毎朝Claudeがハブ全体(ロックアップ・重要日程・危機とバリュエーション・リサーチ)から最重要の3つを選びTODAYとBRIEFに掲載。4言語・選定理由付き。選定がない日はライブデータで自動選定"}},
  {"d":"2026-10-24","h":"97f4a3e","m":{"en":"New research: Terafab Equipment Map. How much chip equipment Musk's fab will really buy (phase 1 ≈ 3–4% of global WFE, author's estimate), who is confirmed vs only in talks, hidden winners from the in-house mask shop, and the risks","ko":"새 리서치: 테라팹 장비 지도. 머스크 칩 팹이 실제로 사들일 장비 규모(1단계는 글로벌 WFE의 3~4%, 작성자 추정), 발주 확정과 협의 단계 구분, 사내 마스크숍발 숨은 수혜, 리스크","es":"Nueva investigación: Mapa de equipos de Terafab. Cuánto equipo comprará de verdad la fábrica de Musk (fase 1 ≈ 3–4% del WFE mundial, estimación del autor), quién está confirmado y quién solo negocia, ganadores ocultos del taller de máscaras propio y riesgos","ja":"新リサーチ:テラファブ装置マップ。マスク氏の工場が実際に買う装置の規模(第1段階は世界WFEの3~4%、筆者推定)、発注確定と協議段階の区別、社内マスクショップ発の隠れた恩恵、リスク"}},
  {"d":"2026-10-24","h":"3c98799","m":{"en":"Easier to read: pages no longer shrink below 92% (taller pages scroll instead), small text is 1–2px larger, gray text is brighter, and a new text-size button (Aa) offers 100 / 112 / 125%","ko":"가독성 개선: 페이지 축소는 최대 92%까지만(넘치면 스크롤), 작은 글씨 1~2px 확대, 흐린 회색 글씨 밝게, 글자 크기 버튼(가) 추가 100·112·125%","es":"Más legible: las páginas ya no se reducen por debajo del 92% (si no caben, se desplazan), el texto pequeño crece 1–2 px, el gris es más claro y un botón de tamaño (Aa) ofrece 100 / 112 / 125%","ja":"読みやすさを改善:ページ縮小は最大92%まで(はみ出す分はスクロール)、小さな文字を1〜2px拡大、薄いグレーを明るく、文字サイズボタン(あ)で100・112・125%"}},
  {"d":"2026-10-23","h":"ecf3c2b","m":{"en":"SpaceX lock-up radar goes live: next unlock with countdown to the US open, the full unlock ladder, tradable vs locked share gauge, cumulative unlock curve, SPCX price with unlock days and the Telegram cards, updated every morning by the bot","ko":"스페이스X 락업 레이더 실데이터 연결: 다음 해제와 미국장 개장까지 카운트다운, 전체 해제 사다리, 유통가능·잠금 물량 게이지, 누적 해제 곡선, 해제일을 표시한 SPCX 주가, 텔레그램 카드. 봇이 매일 아침 갱신","es":"Radar de lock-up de SpaceX en vivo: próxima liberación con cuenta regresiva a la apertura en EE. UU., escalera completa, medidor de acciones negociables vs bloqueadas, curva acumulada, precio de SPCX con días de liberación y tarjetas de Telegram; el bot lo actualiza cada mañana","ja":"スペースX ロックアップ・レーダーをライブ接続:次の解除と米国市場寄り付きまでのカウントダウン、解除はしご、流通可能・ロック中の株数ゲージ、累計解除カーブ、解除日入りのSPCX株価、Telegramカード。ボットが毎朝更新"}},
@@ -854,9 +857,10 @@ function apiData(today){
   const base={updated:today,credit:'@stayhungryasi · https://t.me/stayhungryasi',disclaimer:'Not investment advice.'};
   const SK={s_rev:'revenue',s_op:'operating_income',s_ai:'ai_revenue',s_sl:'starlink_revenue',s_sp:'space_revenue',s_sub:'starlink_subscribers'};
   return {
-    'index.json':Object.assign({name:'Stayhungry.ASI open data',base:API_BASE,contact:{hello:MAIL.main,builders_and_ideas:MAIL.dev,ads_and_partnerships:MAIL.biz,thanks:MAIL.thanks},endpoints:['earnings.json','crisis.json','fear.json','schedule.json','spcx-lock.json','research.json','megacaps.json','spacex-3q26.json','univertrix.json','brains.json','changelog.json']},base),
+    'index.json':Object.assign({name:'Stayhungry.ASI open data',base:API_BASE,contact:{hello:MAIL.main,builders_and_ideas:MAIL.dev,ads_and_partnerships:MAIL.biz,thanks:MAIL.thanks},endpoints:['brief.json','earnings.json','crisis.json','fear.json','schedule.json','spcx-lock.json','research.json','megacaps.json','spacex-3q26.json','univertrix.json','brains.json','changelog.json']},base),
     'earnings.json':Object.assign({source:'Company IR and days.to, checked 2026-10-21',timezone:'UTC',items:ER.map(e=>({ticker:e.t,at:e.utc,status:e.st==='c'?'confirmed':'estimated'}))},base),
     'fear.json':{note:'Written by the Buffett Index x VIX bot after each Telegram report. Live copy: https://stayhungryasi.com/live/fear.json',live:'https://stayhungryasi.com/live/fear.json',bot_owned:true},
+    'brief.json':{note:'The daily brief: three lines and checkpoints picked each morning by Claude from every live feed on the hub, in 4 languages, with the reason for the pick. History: brief-history.json.',live:'https://stayhungryasi.com/live/brief.json',bot_owned:true},
     'spcx-lock.json':{note:'Written every morning by the SpaceX lock-up radar bot (spcx_lock_bot): next unlock, full ladder with trading dates, tradable vs locked shares, SPCX close series and the Telegram cards. Shares are the maximum eligible to sell (up to), from the SpaceX 424(b)(4) prospectus.',live:'https://stayhungryasi.com/live/spcx-lock.json',bot_owned:true},
     'schedule.json':{note:'Written by the key-dates bot (schedule-bot) after each refresh: every public date with KST time, status, importance, source link and translations. Calendar feeds: /data/schedule.ics (ko), schedule.en.ics, schedule.es.ics, schedule.ja.ics.',live:'https://stayhungryasi.com/live/schedule.json',bot_owned:true},
     'research.json':{note:'Written by _source/research.py from _source/research/<slug>/ at build time: every report with its 4-language brief, key number, tickers and checkpoints.',pages:'https://stayhungryasi.com/r/',feed:'https://stayhungryasi.com/r/feed.xml',built_elsewhere:true},
@@ -898,12 +902,12 @@ today_eb:'TODAY · THE 3-SECOND READ',today_h1:'Next on deck:',today_h2:'{t} ear
 when:'<b>{date}</b> · {time} ET · after the close · {st}',local:'Your time: <b>{local}</b>',conf:'confirmed',est:'estimated',
 u:['DAYS','HRS','MIN','SEC'],
 k_crisis:'CRISIS PROXIMITY',m_crisis:'Calm. Nothing is flashing red.',k_vix:'FEAR GAUGE · VIX',m_vix:'Under 20: traders expect a quiet month.',k_buf:'BUFFETT INDEX',m_buf:'Top 25% of history (about 116%+) = expensive.',
-sum_eb:'3-LINE SUMMARY',sum:['Crisis proximity and the Buffett Index: see the <a href="#radar">radar</a>.','<a href="#earnings"><b>Earnings week.</b></a> META and TSLA: Oct 21, after the close. GOOGL, MSFT and AMZN next week.','<a href="#research">Latest research:</a> <b>SpaceX now earns 52% of its revenue from AI.</b>'],
+sum_eb:'3-LINE SUMMARY',sum:['Crisis proximity and the Buffett Index: see the <a href="#radar">radar</a>.','Key dates for the week: see the <a href="#schedule">agenda</a>.','Latest research: see the <a href="#library">library</a>.'],
 today_src:'Crisis proximity and VIX come live from the crisis bot; valuation is still sample data. Earnings dates: company IR and days.to, checked Oct 21, 2026.',
 earn_eb:'EARNINGS · MEGACAP CALENDAR',earn_h1:'8 megacaps.',earn_h2:'One countdown each.',
 earn_sub:'<b>Solid</b> = the company confirmed the date. <b>Hatched ⚠</b> = estimate. The longer the bar, the sooner the report.',
 er_in:'in {t}',er_now:'reporting now',er_done:'reported',er_after:'after close',
-cp_lbl:'NEXT CHECKPOINTS',cp:[['OCT 21','META · TSLA','After the close'],['OCT 28 – 29','GOOGL · MSFT ⚠ · AMZN','Cloud and AI spending week'],['NOV 2 – DEC 10','AAPL · NVDA ⚠ · AVGO ⚠','Hardware and chips close the season']],
+cp_lbl:'NEXT CHECKPOINTS',cp:[],
 earn_src:'Sources: Meta IR (META), days.to (others), CM Elite (MSFT estimate). Checked Oct 21, 2026. Times in US Eastern and in your time zone.',
 res_eb:'RESEARCH · SPACEX 3Q26 · DECODED',res_h1:'SpaceX is no longer',res_h2:'a space company.',
 res_side:'of 3Q revenue came from<b>AI (Super Intelligence)</b>',
@@ -948,12 +952,12 @@ today_eb:'TODAY · 3초 요약',today_h1:'다음 발표:',today_h2:'{t} 실적',
 when:'<b>{date}</b> · 미 동부 {time} · 장 마감 후 · {st}',local:'내 시간: <b>{local}</b>',conf:'확정',est:'추정',
 u:['일','시간','분','초'],
 k_crisis:'위기 근접도',m_crisis:'평온. 빨간불 켜진 지표 없음.',k_vix:'공포지수 · VIX',m_vix:'20 미만: 조용한 한 달을 예상한다는 뜻.',k_buf:'버핏지수',m_buf:'역사적 상위 25%(약 116% 이상) = 비싼 구간.',
-sum_eb:'3-LINE SUMMARY',sum:['위기 근접도와 버핏지수는 <a href="#radar">레이더</a>에서 확인.','<a href="#earnings"><b>실적 주간.</b></a> 10/21 META·TSLA(장 마감 후), 다음 주 GOOGL·MSFT·AMZN.','<a href="#research">최신 리서치:</a> <b>SpaceX 매출의 52%가 이제 AI.</b>'],
+sum_eb:'3-LINE SUMMARY',sum:['위기 근접도와 버핏지수는 <a href="#radar">레이더</a>에서 확인.','이번 주 핵심 일정은 <a href="#schedule">일정 보드</a>에서.','최신 리서치는 <a href="#library">리서치 라이브러리</a>에서.'],
 today_src:'위기 근접도·VIX는 위기 조기경보 봇 실데이터, 밸류에이션은 아직 예시값입니다. 실적 일정: 회사 IR·days.to, 2026-10-21 확인.',
 earn_eb:'EARNINGS · 빅테크 실적 캘린더',earn_h1:'빅테크 8개.',earn_h2:'카운트다운 8개.',
 earn_sub:'<b>실선</b> = 회사가 확정한 날짜. <b>빗금 ⚠</b> = 추정. 막대가 길수록 발표가 가깝습니다.',
 er_in:'{t} 후',er_now:'발표 중',er_done:'발표 완료',er_after:'장 마감 후',
-cp_lbl:'NEXT CHECKPOINTS',cp:[['10/21 (미국)','META · TSLA','장 마감 후'],['10/28 – 29','GOOGL · MSFT ⚠ · AMZN','클라우드·AI 투자 주간'],['11/2 – 12/10','AAPL · NVDA ⚠ · AVGO ⚠','하드웨어·반도체로 시즌 마무리']],
+cp_lbl:'NEXT CHECKPOINTS',cp:[],
 earn_src:'출처: Meta IR(META), days.to(나머지), CM Elite(MSFT 추정). 2026-10-21 확인. 미 동부 시각과 내 시간대를 함께 표시.',
 res_eb:'RESEARCH · SPACEX 3Q26 · DECODED',res_h1:'SpaceX는 더 이상',res_h2:'우주 회사가 아니다',
 res_side:'3분기 매출 중<b>AI(Super Intelligence)</b> 비중',
@@ -998,12 +1002,12 @@ today_eb:'HOY · LECTURA DE 3 SEGUNDOS',today_h1:'Lo siguiente:',today_h2:'resul
 when:'<b>{date}</b> · {time} ET · tras el cierre · {st}',local:'Tu hora: <b>{local}</b>',conf:'confirmada',est:'estimada',
 u:['DÍAS','HRS','MIN','SEG'],
 k_crisis:'PROXIMIDAD DE CRISIS',m_crisis:'Calma. Ninguna alarma encendida.',k_vix:'MIEDO · VIX',m_vix:'Debajo de 20: se espera un mes tranquilo.',k_buf:'ÍNDICE BUFFETT',m_buf:'25% superior de la historia (≈116% o más) = caro.',
-sum_eb:'RESUMEN EN 3 LÍNEAS',sum:['Proximidad de crisis e Índice Buffett: mira el <a href="#radar">radar</a>.','<a href="#earnings"><b>Semana de resultados.</b></a> META y TSLA: 21 oct, tras el cierre. GOOGL, MSFT y AMZN la próxima semana.','<a href="#research">Última investigación:</a> <b>el 52% de los ingresos de SpaceX ya viene de la IA.</b>'],
+sum_eb:'RESUMEN EN 3 LÍNEAS',sum:['Proximidad de crisis e Índice Buffett: mira el <a href="#radar">radar</a>.','Fechas clave de la semana: mira la <a href="#schedule">agenda</a>.','Investigación más reciente: mira la <a href="#library">biblioteca</a>.'],
 today_src:'La proximidad de crisis y el VIX llegan en vivo del bot; la valuación sigue siendo de muestra. Fechas de resultados: IR de cada empresa y days.to, revisadas el 21 oct 2026.',
 earn_eb:'RESULTADOS · CALENDARIO DE MEGACAPS',earn_h1:'8 megacaps.',earn_h2:'Una cuenta regresiva cada una.',
 earn_sub:'<b>Sólido</b> = la empresa confirmó la fecha. <b>Rayado ⚠</b> = estimada. Entre más larga la barra, más cerca el reporte.',
 er_in:'en {t}',er_now:'publicando ahora',er_done:'publicado',er_after:'tras el cierre',
-cp_lbl:'PRÓXIMOS PUNTOS DE CONTROL',cp:[['21 OCT','META · TSLA','Tras el cierre'],['28 – 29 OCT','GOOGL · MSFT ⚠ · AMZN','Semana de nube e inversión en IA'],['2 NOV – 10 DIC','AAPL · NVDA ⚠ · AVGO ⚠','Hardware y chips cierran la temporada']],
+cp_lbl:'PRÓXIMOS PUNTOS DE CONTROL',cp:[],
 earn_src:'Fuentes: IR de Meta (META), days.to (resto), CM Elite (estimación de MSFT). Revisado el 21 oct 2026. Horas en tiempo del Este y en tu zona horaria.',
 res_eb:'INVESTIGACIÓN · SPACEX 3T26 · DECODIFICADO',res_h1:'SpaceX ya no es',res_h2:'una empresa espacial.',
 res_side:'de los ingresos del 3T vino de<b>la IA (Super Intelligence)</b>',
@@ -1048,12 +1052,12 @@ today_eb:'TODAY · 3秒で読む',today_h1:'次の発表:',today_h2:'{t} 決算'
 when:'<b>{date}</b> · 米東部 {time} · 引け後 · {st}',local:'あなたの時刻: <b>{local}</b>',conf:'確定',est:'推定',
 u:['日','時間','分','秒'],
 k_crisis:'危機近接度',m_crisis:'平穏。赤信号はなし。',k_vix:'恐怖指数 · VIX',m_vix:'20未満:静かな1か月を予想。',k_buf:'バフェット指数',m_buf:'歴史的に上位25%(約116%以上)= 割高。',
-sum_eb:'3行サマリー',sum:['危機近接度とバフェット指数は<a href="#radar">レーダー</a>で確認。','<a href="#earnings"><b>決算ウィーク。</b></a>10/21 META・TSLA(引け後)、来週GOOGL・MSFT・AMZN。','<a href="#research">最新リサーチ:</a><b>SpaceXの売上の52%がAIに。</b>'],
+sum_eb:'3行サマリー',sum:['危機近接度とバフェット指数は<a href="#radar">レーダー</a>で確認。','今週の重要日程は<a href="#schedule">日程ボード</a>で。','最新リサーチは<a href="#library">リサーチライブラリ</a>で。'],
 today_src:'危機近接度とVIXはボットのライブデータ、バリュエーションはまだサンプルです。決算日程:各社IR・days.to、2026年10月21日確認。',
 earn_eb:'EARNINGS · 大型テック決算カレンダー',earn_h1:'大型テック8社。',earn_h2:'それぞれにカウントダウン。',
 earn_sub:'<b>実線</b> = 会社が確定した日付。<b>斜線 ⚠</b> = 推定。バーが長いほど発表が近い。',
 er_in:'あと {t}',er_now:'発表中',er_done:'発表済み',er_after:'引け後',
-cp_lbl:'次のチェックポイント',cp:[['10/21(米国)','META · TSLA','引け後'],['10/28 – 29','GOOGL · MSFT ⚠ · AMZN','クラウドとAI投資の週'],['11/2 – 12/10','AAPL · NVDA ⚠ · AVGO ⚠','ハードと半導体でシーズン終了']],
+cp_lbl:'次のチェックポイント',cp:[],
 earn_src:'出典:Meta IR(META)、days.to(その他)、CM Elite(MSFT推定)。2026年10月21日確認。米東部時間とあなたの時刻を併記。',
 res_eb:'RESEARCH · SPACEX 3Q26 · DECODED',res_h1:'SpaceXはもう',res_h2:'宇宙企業ではない',
 res_side:'3四半期売上のうち<b>AI(Super Intelligence)</b>の比率',
@@ -1148,6 +1152,12 @@ es:{lk_eb:'RADAR DE LOCK-UP DE SPACEX · EN VIVO DESDE EL BOT',fs_lbl:'Tamaño d
 ja:{lk_eb:'SPACEX LOCK-UP RADAR · ボットからライブ',fs_lbl:'文字サイズ {p}% · クリックで変更',lk_s:['これまでの解除','年末まで','マスク氏 · 2027'],lk_s2:['{n}回','+{v} → {p}%','{d} · 全体の{p}%'],lk_h1:'次の解除 {d}。',lk_h1na:'スペースX ロックアップ・レーダー',lk_h2:'最大 {v}。',lk_d0:'今夜',lk_load:'ロックアップ・レーダーを読み込み中…',lk_fail:'今はロックアップ・レーダーを読み込めませんでした。',lk_next:'NEXT UNLOCK',lk_open:'米国市場の寄り付きから',lk_est:'推定',lk_val:'≈ {u}(直近終値)',lk_inc:'現在の流通可能株数比 +{p}%',lk_cnote:'契約上の解除日 {c} → 最初の取引可能日で表示',lk_enote:'{e} 引け後に決算発表 → 2営業日目に解除(目論見書の規定)',lk_estn:'決算発表日は未定。確定すると自動で反映',lk_px:'{d} 終値 · 公募価格$135比 {r}',lk_ladder:'解除はしご · 残りの日程',lk_bar:'バー:最大解除株数',lk_done:'解除済み {n}回 · {v}',lk_hide:'閉じる',lk_gauge:'全体 ≈{t} のうち解除の進み具合',lk_elig:'流通可能 {p}%',lk_locked:'まだロック中 {v}({p}%)',lk_g:{ipo:'IPO公募',done:'解除済み',y26:'2026年の残り',ext:'2027年 拡張投資家',musk:'マスク氏'},lk_cum:'流通可能株数の累計',lk_today:'今日 {p}%',lk_ye:'年末 {p}%',lk_price:'上場後のSPCX株価 · 解除日',lk_ipo:'公募価格$135',lk_cards:'Telegramカード',lk_src:'ロックアップ・レーダーボット。すべて最大売却可能株数(上限)で、実際の売却量ではありません。主幹事の早期解除や会社の売買可能期間で変わり得ます。出典:SpaceX 424(b)(4) 最終目論見書(2026-06-11)。株価:Yahoo Finance終値。投資助言ではありません。',lk_sent:'Telegramレポート {d} KST',lk_upd:'更新 {d} KST',hub_lk:['スペースX ロックアップ・レーダー','上場後のロックアップ解除日・株数・残りのロックを追跡。毎週月曜+解除前日。','TELEGRAM','on'],t_lk:'lockup          スペースX ロックアップ解除はしご',
  lk_t:{q2:'2Q決算連動 20%',bonus:'株価条件ボーナス 10%(未発動→12/8へ繰越)',d70:'70日目 7%',d90:'90日目 7%',aff:'関係会社の繰延分(Rule 144)',d105:'105日目 7%',d120:'120日目 7%',d135:'135日目 7%',q3:'3Q決算連動 28%',d180:'180日満了 残り17%',x_q4:'拡張投資家 20% · 4Q決算',x_d280:'拡張投資家 10% · 280日',x_q1:'拡張投資家 20% · 1Q決算',x_d340:'拡張投資家 10% · 340日',x_d366:'拡張投資家 20% · 366日',musk:'イーロン・マスク氏 全量 · 366日',x_q2:'拡張投資家 残り · 2Q決算'}}};
 LANGS.forEach(c=>{Object.assign(L[c],LKX[c]);L[c].hub.splice(4,0,L[c].hub_lk);});
+const BRX={
+en:{br_lock:'<a href="#spcxlock"><b>SpaceX lock-up {d}.</b></a> From the US open on {w}, up to {v} unlock (+{p}% vs shares tradable now).',br_week:'<a href="#schedule"><b>{n} key dates in 7 days.</b></a> {l}.',br_risk:'<a href="#radar"><b>Crisis proximity {s}</b></a> ({z}, {r} red lights) · Buffett Index {b}% ({q}).',br_rs:'<a href="#library"><b>Latest research:</b></a> {t}',br_auto:'AUTO-PICKED FROM LIVE DATA',br_ed:'PICKED BY CLAUDE · {t} KST',br_why:'Why these three',br_src:'Brief: picked each morning by Claude from every live feed on this hub (crisis bot, Buffett × VIX bot, key-dates bot, lock-up radar, research library); if that pick is missing, the page picks from live data itself. Not investment advice.'},
+ko:{br_lock:'<a href="#spcxlock"><b>스페이스X 락업 {d}.</b></a> {w} 미국장 개장부터 최대 {v} 해제(현재 유통가능 물량 대비 +{p}%).',br_week:'<a href="#schedule"><b>7일 안 핵심 일정 {n}건.</b></a> {l}.',br_risk:'<a href="#radar"><b>위기 근접도 {s}</b></a>({z}, 빨간불 {r}개) · 버핏지수 {b}%({q}).',br_rs:'<a href="#library"><b>최신 리서치:</b></a> {t}',br_auto:'실시간 데이터 자동 선정',br_ed:'Claude 선정 · {t} KST',br_why:'이 3줄을 고른 이유',br_src:'BRIEF: 매일 아침 Claude가 허브의 모든 실시간 데이터(위기 봇·버핏지수×VIX 봇·일정 봇·락업 레이더·리서치 라이브러리)에서 가장 중요한 3가지를 고릅니다. 선정본이 없으면 페이지가 실시간 데이터로 직접 고릅니다. 투자 권유 아님.'},
+es:{br_lock:'<a href="#spcxlock"><b>Lock-up de SpaceX {d}.</b></a> Desde la apertura del {w} se liberan hasta {v} (+{p}% vs acciones negociables hoy).',br_week:'<a href="#schedule"><b>{n} fechas clave en 7 días.</b></a> {l}.',br_risk:'<a href="#radar"><b>Proximidad de crisis {s}</b></a> ({z}, {r} luces rojas) · Índice Buffett {b}% ({q}).',br_rs:'<a href="#library"><b>Investigación más reciente:</b></a> {t}',br_auto:'SELECCIÓN AUTOMÁTICA CON DATOS EN VIVO',br_ed:'ELEGIDO POR CLAUDE · {t} KST',br_why:'Por qué estas tres',br_src:'Resumen: cada mañana Claude elige lo más importante de todos los datos en vivo del hub (bot de crisis, bot Buffett × VIX, bot de fechas clave, radar de lock-up, biblioteca). Si falta esa selección, la página elige con los datos en vivo. No es asesoría de inversión.'},
+ja:{br_lock:'<a href="#spcxlock"><b>スペースX ロックアップ {d}。</b></a>{w}の寄り付きから最大{v}が解除(現在の流通可能株数比+{p}%)。',br_week:'<a href="#schedule"><b>7日以内の重要日程{n}件。</b></a>{l}。',br_risk:'<a href="#radar"><b>危機近接度 {s}</b></a>({z}、赤信号{r}個)・バフェット指数 {b}%({q})。',br_rs:'<a href="#library"><b>最新リサーチ:</b></a>{t}',br_auto:'ライブデータから自動選定',br_ed:'Claude選定 · {t} KST',br_why:'この3行を選んだ理由',br_src:'BRIEF:毎朝Claudeがハブのすべてのライブデータ(危機ボット・バフェット×VIXボット・日程ボット・ロックアップ・レーダー・リサーチライブラリ)から最重要の3つを選びます。選定がない日はページがライブデータから自動で選びます。投資助言ではありません。'}};
+LANGS.forEach(c=>Object.assign(L[c],BRX[c]));
 /* research library: window.SHA_RESEARCH is injected by build.py from _source/research/; the artifact copy fetches /data/research.json */
 let RS=window.SHA_RESEARCH||null,rsState=RS?'ok':'load',rsCat='all',rsQ='',rsAll=false;
 const RSMAX=8;
@@ -1190,9 +1200,12 @@ function rToday(){
 }
 function rBrief(){
   const t=T();
+  const ed=brFresh(),why=ed&&ed.why&&(ed.why[lang]||ed.why.en);
   $('brief').innerHTML=head('brief',t.brief_eb)+hd(esc(t.brief_h1),esc(t.brief_h2))
-   +`<div class="summary"><ol>${t.sum.map(x=>`<li><span>${x}</span></li>`).join('')}</ol></div>
-   <p class="lbl">${esc(t.cp_lbl)}</p><div class="cps">${t.cp.map(c=>`<div class="card"><div class="d">${esc(c[0])}</div><div class="x">${esc(c[1])}</div><div class="y">${esc(c[2])}</div></div>`).join('')}</div>`+src(tSrc(t),'brief');
+   +(t.br_by?`<p class="brby"><span class="tagL">${ed?'CLAUDE':'AUTO'}</span>${esc(t.br_by)}</p>`:'')
+   +`<div class="summary"><ol>${t.sum.map(x=>`<li><span>${x}</span></li>`).join('')}</ol></div>`
+   +(why?`<details class="brwhy"><summary>${esc(t.br_why)}</summary><p>${esc(why)}</p></details>`:'')
+   +(t.cp&&t.cp.length?`<p class="lbl">${esc(t.cp_lbl)}</p><div class="cps">${t.cp.map(c=>`<div class="card"><div class="d">${esc(c[0])}</div><div class="x">${esc(c[1])}</div><div class="y">${esc(c[2])}</div></div>`).join('')}</div>`:'')+src(t.br_src+' '+tSrc(t),'brief');
 }
 function rEarn(){
   const t=T(),now=Date.now(),horizon=60*86400000;
@@ -1333,7 +1346,7 @@ async function crLoad(){const g=async p=>{try{const r=await fetch(crUrl(p),{cach
   if(c&&c.indicators){CR=c;crState='ok';crApply();}else crState='fail';
   if(f&&(f.buffett||f.vix)){FR=f;frState='ok';frApply();}else frState='fail';
   const deep=/^#(buffett|vix|valuation|fear)$/.test(location.hash);if(deep)crTab='fear';
-  rToday();rBrief();rRadar();rHub();if(typeof rDev==='function')rDev();fit();if(deep)$('radar').scrollIntoView();}
+  rToday();rBrief();rRadar();rHub();brRefresh();if(typeof rDev==='function')rDev();fit();if(deep)$('radar').scrollIntoView();}
 document.addEventListener('click',e=>{const tb=e.target.closest('[data-crtab]');if(tb){crTab=tb.dataset.crtab;rRadar();fit();if(tb.tagName!=='A'){const r=$('radar');if(r.getBoundingClientRect().top<0)r.scrollIntoView();}return;}const b=e.target.closest('[data-crimg]');if(b){$('crimg').src=b.dataset.crimg;$('crbox').hidden=false;return;}if(e.target.closest('#crbox')){$('crbox').hidden=true;$('crimg').src='';}});
 function rRank(){
   const t=T(),col=COL(),max=MK[0].cap;
@@ -1422,6 +1435,26 @@ async function rsLoad(){if(RS)return;try{const r=await fetch(crUrl('data/researc
   rLib();rToday();rHub();if(typeof rDev==='function')rDev();fit();}
 document.addEventListener('click',e=>{const c=e.target.closest('[data-rcat]');if(c){rsCat=c.dataset.rcat;rsAll=false;rsGrid();fit();return;}if(e.target.closest('#rsmore')){rsAll=!rsAll;rsGrid();fit();}});
 document.addEventListener('input',e=>{if(e.target&&e.target.id==='rsq'){rsQ=e.target.value;rsGrid();}});
+/* DAILY BRIEF: live/brief.json is Claude's pick of the day (scheduled task, _source/brief.py);
+   without a fresh pick the page builds the three lines from live data itself */
+let BR=null;
+const brSan=h=>String(h||'').replace(/<(?!\/?b>|a href="#[a-z]+">|\/a>)[^>]*>/g,'');
+const brToday=()=>new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
+function brFresh(){return BR&&BR.lines&&BR.lines.length&&BR.date>=addD(brToday(),-1)?BR:null;}
+function brAuto(c){const t=L[c],L0=lang;lang=c;const out=[],cps=[];try{
+  if(LK&&LK.next&&!LK.next.estimated){const n=LK.next,d=lkDD(n);out.push([n.dday<=1?95:n.dday<=3?85:n.dday<=7?70:30,fmt(t.br_lock,{d:esc(d),w:esc(lkDate(n.trade)),v:esc(lkSh(n.shares_m)),p:Math.round(n.vs_eligible_pct)})]);}
+  if(SC){const tk=brToday(),e7=addD(tk,7),ev=SC.events.filter(e=>e.imp>=3&&!e.end&&e.date>=tk&&e.date<=e7).sort((a,b)=>(scAt(a)||Date.parse(a.date))-(scAt(b)||Date.parse(b.date)));
+    if(ev.length){const soon=ev.some(e=>e.date<=addD(tk,3));out.push([soon?80:60,fmt(t.br_week,{n:ev.length,l:ev.slice(0,3).map(e=>esc(scDayLbl(e.date))+' '+esc(scTitle(e).replace(/\s*\(.*$/,''))).join(' · ')})]);}
+    const seen=new Set();SC.events.filter(e=>e.imp>=3&&!e.end&&e.date>=tk).sort((a,b)=>a.date<b.date?-1:1).forEach(e=>{if(cps.length>=3||seen.has(e.date))return;seen.add(e.date);const same=SC.events.filter(x=>x.imp>=3&&x.date===e.date&&!x.end);cps.push([scDayLbl(e.date),same.slice(0,2).map(x=>scTitle(x).replace(/\s*\(.*$/,'')).join(' · ')+(same.length>2?' +'+(same.length-2):''),same.some(x=>x.status!=='confirmed')?t.sc_est:'']);});}
+  if(CR){const sc=CR.score,b=FR&&FR.buffett;out.push([sc>=50?90:sc>=30?55:40,fmt(t.br_risk,{s:crS(sc),z:esc(t.cr_z[CR.regime]||''),r:crCount(),b:b?b.value.toFixed(0):'—',q:b?esc((t.fr_bq||{})[b.key]||''):'—'})]);}
+  if(RS&&RS.reports&&RS.reports.length){const r=RS.reports[0],age=(Date.parse(brToday())-Date.parse(r.date))/864e5;out.push([age<=2?65:35,fmt(t.br_rs,{t:`<a href="${rUrl(r.slug)}">${esc(r.title[c]||r.title.en)}</a>`})]);}
+ }finally{lang=L0;}
+ out.sort((a,b)=>b[0]-a[0]);return {lines:out.slice(0,3).map(x=>x[1]),cps};}
+function brApply(){const ed=brFresh();LANGS.forEach(c=>{const t=L[c],a=brAuto(c);
+  if(ed){t.sum=ed.lines.map(l=>brSan(l[c]||l.en));t.cp=(ed.checkpoints||[]).map(x=>[x.d&&(x.d[c]||x.d.en)||'',x.x&&(x.x[c]||x.x.en)||'',x.y&&(x.y[c]||x.y.en)||'']);if(!t.cp.length)t.cp=a.cps;t.br_by=fmt(t.br_ed,{t:md(ed.generated_kst||ed.date)});}
+  else{if(a.lines.length>=2)t.sum=a.lines;if(a.cps.length)t.cp=a.cps;t.br_by=t.br_auto;}});}
+function brRefresh(){brApply();rToday();rBrief();if(typeof rDev==='function'&&(devFile==='brief'||devFile==='today'))rDev();fit();}
+async function brLoad(){try{const r=await fetch(crUrl('live/brief.json'),{cache:'no-cache'});if(r.ok)BR=await r.json();}catch(e){}brRefresh();}
 /* SPACEX LOCK-UP RADAR: live/spcx-lock.json is written by spcx_lock_bot (hub_export.py) every morning */
 let LK=null,lkState='load',lkAllDone=false;
 const LK_COL={ipo:'#CDD2E1',done:'#40C4AA',next:'#FF7A1A',y26:'#FFB847',ext:'#8B7CFF',musk:'#FF4D6D'};
@@ -1477,7 +1510,7 @@ function rLock(){const t=T(),el=$('spcxlock');if(!el)return;
    +src(t.lk_src,'spcxlock');
   if(typeof tick==='function')tick();}
 async function lkLoad(){try{const r=await fetch(crUrl('live/spcx-lock.json'),{cache:'no-cache'});if(!r.ok)throw 0;LK=await r.json();lkState=LK&&LK.tranches?'ok':'fail';}catch(e){lkState='fail';}
-  rLock();rResearch();rHub();if(typeof rDev==='function')rDev();fit();if(/^#(spcxlock|lockup)$/.test(location.hash))$('spcxlock').scrollIntoView();}
+  rLock();rResearch();rHub();brRefresh();if(typeof rDev==='function')rDev();fit();if(/^#(spcxlock|lockup)$/.test(location.hash))$('spcxlock').scrollIntoView();}
 document.addEventListener('click',e=>{if(e.target.closest('[data-lkdone]')){lkAllDone=!lkAllDone;rLock();fit();}});
 /* KEY DATES: live/schedule.json is written by schedule-bot (bot/hub_export.py) after each refresh */
 let SC=null,scState='load',scCat='all',scTz=store.get('sha-sc-tz',null)||((-new Date().getTimezoneOffset())===540?'kst':'local');
@@ -1528,7 +1561,7 @@ function rSched(){const t=T(),el=$('schedule');if(!el)return;
    +src(t.sc_src,'schedule');
   if(typeof tick==='function')tick();}
 async function scLoad(){try{const r=await fetch(crUrl('live/schedule.json'),{cache:'no-cache'});if(!r.ok)throw 0;SC=await r.json();scState=SC&&SC.events?'ok':'fail';}catch(e){scState='fail';}
-  rSched();rHub();if(typeof rDev==='function')rDev();fit();if(location.hash==='#schedule')$('schedule').scrollIntoView();}
+  rSched();rHub();brRefresh();if(typeof rDev==='function')rDev();fit();if(location.hash==='#schedule')$('schedule').scrollIntoView();}
 document.addEventListener('click',e=>{const c=e.target.closest('[data-sccat]');if(c){scCat=c.dataset.sccat;rSched();fit();return;}
   const z=e.target.closest('[data-sctz]');if(z){scTz=z.dataset.sctz;store.set('sha-sc-tz',scTz);rSched();fit();return;}
   const cp=e.target.closest('[data-sccopy]');if(cp){const u=cp.dataset.sccopy,done=()=>{cp.textContent=T().sc_copied;};try{navigator.clipboard.writeText(u).then(done,()=>{});}catch(x){}}});
@@ -1960,7 +1993,7 @@ document.addEventListener('keydown',e=>{
 /* dev prompt · chat */
 function tprint(h){const d=document.createElement('div');d.innerHTML=h;$('tlog').appendChild(d);const o=$('tout');if(innerWidth>980)o.scrollTop=o.scrollHeight;else d.scrollIntoView({block:'nearest'});return d;}
 function boot(){$('tlog').innerHTML='';}
-setTimeout(crLoad,0);setTimeout(rsLoad,0);setTimeout(scLoad,0);setTimeout(lkLoad,0);
+setTimeout(crLoad,0);setTimeout(rsLoad,0);setTimeout(scLoad,0);setTimeout(lkLoad,0);setTimeout(brLoad,0);
 const alias={vix:'fear',valuation:'fear',fear:'fear',brains:'brains',brain:'brains',buffett:'brains',munger:'brains',jensen:'brains_j',musk:'brains_m',elon:'brains_m',lockup:'spcxlock',lock:'spcxlock','spcx-lock':'spcxlock',unlock:'spcxlock',schedule:'schedule',calendar:'schedule',cal:'schedule',ics:'schedule',dates:'schedule',agenda:'schedule',uvmap:'uvmap',menu:'uvmap',routes:'uvmap',latent:'uvmap',megatrend:'uvmap',observatory:'uvmap',pioneers:'uvmap',giants:'uvmap',gurus:'uvmap',signals:'uvmap',dissect:'uvmap',univertrix:'univertrix',univ:'univertrix',universe:'univertrix',legend:'univertrix',devlog:'univertrix',news:'news',changelog:'news',log:'news',api:'d_index',data:'d_index',today:'today',home:'today',brief:'brief',summary:'brief',earnings:'earnings',earn:'earnings',research:'library',library:'library',lib:'library',reports:'library',r:'library',spacex:'research',mix:'mix',score:'score',radar:'radar',crisis:'radar',rank:'rank',market:'rank',lab:'lab',game:'lab',hub:'hub',projects:'hub',readme:'hub'};
 $('tform').addEventListener('submit',e=>{e.preventDefault();const raw=$('tin').value.trim();$('tin').value='';if(!raw)return;
   tprint(msgU(raw));const A=h=>tprint(msgA(h)),[cmd,...a]=raw.split(/\s+/),arg=(a[0]||'').toLowerCase(),t=T();

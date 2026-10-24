@@ -13,6 +13,7 @@
     }
   },
   "endpoints": [
+    "brief.json",
     "earnings.json",
     "crisis.json",
     "fear.json",
