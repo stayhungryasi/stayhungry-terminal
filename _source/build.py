@@ -97,6 +97,7 @@ Base URL: https://stayhungryasi.com/data/
 | earnings.json | megacap earnings dates (UTC), confirmed or estimated |
 | crisis.json | crisis early-warning report: score, 5 layers, 21 indicators, charts (written by the bot after each Mon/Fri Telegram report) |
 | brief.json | the daily brief: three lines + checkpoints picked each morning by Claude from every live feed, with the reason (history: brief-history.json) |
+| software.json | software the hub owner builds with Claude (No. 01 MoCapture): features, numbers, releases, install-safety facts and links, in 4 languages |
 | leverage.json | K-leverage monitor: fuel x fire regime with inputs, verdict and readings as codes, margin loans, forced selling, unpaid margin, deposits, KOSPI, 1-year / 60-day / 10-year series and the 60-day regime path (written by the debt bot after each run, source KOFIA FreeSIS) |
 | quote.json | STAY HUNGRY morning card: 7 weekday themes, every quote with source, story and today's order in 4 languages, rotation anchor and last Telegram send (written by the quote bot) |
 | schedule.json | key dates: every public earnings, macro and IPO date with KST time, status and source (written by the schedule bot after each refresh). Calendar feeds: schedule.ics (ko), schedule.en.ics, schedule.es.ics, schedule.ja.ics |

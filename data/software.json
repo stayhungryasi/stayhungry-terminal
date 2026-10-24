@@ -1,0 +1,347 @@
+{
+  "note": "Software the hub owner builds with Claude. Facts, numbers and screenshots come from each product's own site; speeds are the maker's development-build measurements.",
+  "items": [
+    {
+      "id": "mocapture",
+      "no": 1,
+      "status": "live",
+      "maker": {
+        "ko": "무광소프트",
+        "en": "MUGWANGSOFT",
+        "es": "MUGWANGSOFT",
+        "ja": "MUGWANGSOFT"
+      },
+      "name": {
+        "ko": "모캡쳐?",
+        "en": "MoCapture",
+        "es": "MoCapture",
+        "ja": "MoCapture"
+      },
+      "url": {
+        "ko": "https://mugwangsoft.com/",
+        "en": "https://mugwangsoft.com/en/",
+        "es": "https://mugwangsoft.com/en/",
+        "ja": "https://mugwangsoft.com/en/"
+      },
+      "download": "https://downloads.mugwangsoft.com/MoCapture-Setup-1.6.0.zip",
+      "version": "1.6.0",
+      "released": "2026-10-03",
+      "platform": "Windows 10/11 · 64-bit",
+      "size": "67.9 MB",
+      "price": {
+        "ko": "개인 무료 · 기업 도입 별도",
+        "en": "Free for personal use · business licensed separately",
+        "es": "Gratis para uso personal · licencia aparte para empresas",
+        "ja": "個人は無料 · 法人導入は別途"
+      },
+      "tagline": {
+        "ko": "캡처하면, 바로 편집창.",
+        "en": "Capture. Edit. Done.",
+        "es": "Captura. Edita. Listo.",
+        "ja": "キャプチャしたら、すぐ編集画面。"
+      },
+      "sub": {
+        "ko": "광고도 알림도 인터넷 연결도 없는 Windows 캡처 프로그램.",
+        "en": "A Windows capture tool with no ads, no notifications and no internet connection.",
+        "es": "Una herramienta de captura para Windows sin anuncios, sin avisos y sin conexión a internet.",
+        "ja": "広告も通知もインターネット接続もないWindows用キャプチャツール。"
+      },
+      "motto": {
+        "ko": "광고가 없어서, 무광.",
+        "en": "No ads, hence “mugwang” (matte, no shine).",
+        "es": "Sin anuncios: por eso “mugwang” (mate, sin brillo).",
+        "ja": "広告がないから、“無光”(ムグァン)。"
+      },
+      "numbers": [
+        [
+          "0.047s",
+          {
+            "ko": "단축키 → 화면 정지",
+            "en": "Hotkey → screen frozen",
+            "es": "Atajo → pantalla congelada",
+            "ja": "ショートカット → 画面停止"
+          }
+        ],
+        [
+          "0.044s",
+          {
+            "ko": "키를 놓으면 → 편집창",
+            "en": "Let go → editor open",
+            "es": "Soltar → editor abierto",
+            "ja": "キーを離す → 編集画面"
+          }
+        ],
+        [
+          "0",
+          {
+            "ko": "인터넷 통신 코드",
+            "en": "lines of network code",
+            "es": "código de red",
+            "ja": "通信コード"
+          }
+        ],
+        [
+          "14/15",
+          {
+            "ko": "가짜 금융 문서 속 개인정보 가림",
+            "en": "private fields masked in a fake finance document",
+            "es": "datos privados ocultos en un documento financiero ficticio",
+            "ja": "架空の金融文書で隠せた個人情報"
+          }
+        ],
+        [
+          "400px",
+          {
+            "ko": "캡처 바깥 주변 화면 복원",
+            "en": "of surrounding screen restored",
+            "es": "de pantalla alrededor recuperados",
+            "ja": "キャプチャ外の周囲を復元"
+          }
+        ]
+      ],
+      "features": [
+        {
+          "k": "speed",
+          "t": {
+            "ko": "0.1초.",
+            "en": "0.1 seconds.",
+            "es": "0.1 segundos.",
+            "ja": "0.1秒。"
+          },
+          "d": {
+            "ko": "단축키를 누르면 0.05초 안에 화면이 멈추고, 놓으면 0.1초 안에 편집창이 뜹니다.",
+            "en": "Screen frozen in 0.05 seconds. Editor open in 0.1 seconds.",
+            "es": "La pantalla se congela en 0.05 s y el editor se abre en 0.1 s.",
+            "ja": "ショートカットで0.05秒以内に画面が止まり、離すと0.1秒以内に編集画面が開く。"
+          },
+          "img": "tray"
+        },
+        {
+          "k": "offline",
+          "t": {
+            "ko": "광고 0. 알림 0. 통신 0.",
+            "en": "No ads. No alerts. No network.",
+            "es": "Sin anuncios. Sin avisos. Sin red.",
+            "ja": "広告0。通知0。通信0。"
+          },
+          "d": {
+            "ko": "인터넷에 접속하는 코드가 없어 방화벽으로 막아도 모든 기능이 동작합니다.",
+            "en": "There is no code that connects to the internet. Block it at the firewall and everything still works.",
+            "es": "No tiene código que se conecte a internet: bloquéalo en el firewall y todo sigue funcionando.",
+            "ja": "インターネットに接続するコードがなく、ファイアウォールで遮断しても全機能が動く。"
+          }
+        },
+        {
+          "k": "mask",
+          "t": {
+            "ko": "나가는 문도 막습니다.",
+            "en": "Covered before it leaves.",
+            "es": "Tapado antes de salir.",
+            "ja": "外に出る前に隠す。"
+          },
+          "d": {
+            "ko": "캡처 속 계좌번호·주민등록번호·카드번호 같은 개인정보를 찾아 모자이크합니다.",
+            "en": "Finds card numbers, IBANs and Social Security numbers in a capture and pixelates them.",
+            "es": "Encuentra números de tarjeta, IBAN y de seguridad social en la captura y los pixela.",
+            "ja": "キャプチャ内の口座番号・住民登録番号・カード番号などの個人情報を見つけてモザイクをかける。"
+          },
+          "img": "masking"
+        },
+        {
+          "k": "edit",
+          "t": {
+            "ko": "편집이 필요 없으면 그냥 Ctrl+V.",
+            "en": "No edits needed? Just Ctrl+V.",
+            "es": "¿Sin editar? Solo Ctrl+V.",
+            "ja": "編集不要ならそのままCtrl+V。"
+          },
+          "d": {
+            "ko": "가장자리를 끌어 자르고, 바깥으로 끌면 캡처 순간의 주변 화면이 최대 400픽셀까지 되살아납니다.",
+            "en": "Drag an edge to trim. Drag it outward and up to 400 px of the screen around the capture comes back.",
+            "es": "Arrastra un borde para recortar; hacia afuera recupera hasta 400 px de la pantalla alrededor.",
+            "ja": "端をドラッグして切り取り、外側に引くとキャプチャ時の周囲の画面が最大400ピクセル戻る。"
+          },
+          "img": "editor"
+        },
+        {
+          "k": "window",
+          "t": {
+            "ko": "제목줄을 톡.",
+            "en": "Point at the title bar.",
+            "es": "Toca la barra de título.",
+            "ja": "タイトルバーをタップ。"
+          },
+          "d": {
+            "ko": "제목줄을 누르면 창 전체, 휠로 범위를 조절합니다. 창 안의 작은 패널과 차트 영역도 찍습니다.",
+            "en": "Click a title bar for the whole window; small windows, panels and chart areas inside a window too. Roll the wheel for bigger or smaller.",
+            "es": "Un clic en la barra de título captura la ventana entera; también paneles y gráficos dentro de una ventana. La rueda ajusta el tamaño.",
+            "ja": "タイトルバーでウィンドウ全体、ホイールで範囲を調整。ウィンドウ内の小さなパネルやチャート領域も撮れる。"
+          },
+          "img": "window"
+        },
+        {
+          "k": "scroll",
+          "t": {
+            "ko": "긴 대화도 한 장.",
+            "en": "Long chats, one image.",
+            "es": "Chats largos, una sola imagen.",
+            "ja": "長い会話も1枚に。"
+          },
+          "d": {
+            "ko": "스크롤되는 화면을 자동으로 이어 붙여 한 장으로 만듭니다.",
+            "en": "Anything that scrolls is stitched together into a single capture.",
+            "es": "Todo lo que se desplaza se une en una sola captura.",
+            "ja": "スクロールする画面を自動でつなぎ合わせて1枚にする。"
+          },
+          "img": "scroll"
+        },
+        {
+          "k": "text",
+          "t": {
+            "ko": "그림 속 글자를, 글자로.",
+            "en": "Words, not pixels.",
+            "es": "Palabras, no píxeles.",
+            "ja": "画像の文字を、文字に。"
+          },
+          "d": {
+            "ko": "Windows 내장 글자 인식으로 캡처 속 글자를 복사합니다. 모두 PC 안에서 끝납니다.",
+            "en": "Copy the text out of any capture. Offline, inside Windows.",
+            "es": "Copia el texto de cualquier captura, sin conexión, dentro de Windows.",
+            "ja": "Windows内蔵の文字認識でキャプチャ内の文字をコピー。すべてPCの中で完結。"
+          },
+          "img": "textcopy"
+        },
+        {
+          "k": "enterprise",
+          "t": {
+            "ko": "보안 심사가 쉬운 캡처 도구.",
+            "en": "Easy on security review.",
+            "es": "Fácil de aprobar en seguridad.",
+            "ja": "セキュリティ審査が楽なキャプチャツール。"
+          },
+          "d": {
+            "ko": "무통신 보증서와 보안 질의서 답변서를 문서로 제공하고, 무인 설치를 지원합니다.",
+            "en": "Written no-network assurance. Ready answers. Silent install.",
+            "es": "Garantía escrita de no conexión, respuestas listas e instalación silenciosa.",
+            "ja": "無通信の保証書とセキュリティ質問票の回答書を提供し、サイレントインストールに対応。"
+          }
+        }
+      ],
+      "releases": [
+        [
+          "1.6.0",
+          "2026-10-03",
+          {
+            "ko": "크기 조절 편집창, 바깥으로 끌면 주변 400px 복원, 창 안 패널·차트 캡처",
+            "en": "Resizable editor, drag outward to restore 400 px around the capture, panels and charts inside a window",
+            "es": "Editor redimensionable, recupera 400 px alrededor al arrastrar hacia afuera, paneles y gráficos dentro de una ventana",
+            "ja": "サイズ変更できる編集画面、外側ドラッグで周囲400px復元、ウィンドウ内のパネル・チャート撮影"
+          }
+        ],
+        [
+          "1.5.0",
+          "2026-09-24",
+          {
+            "ko": "영어 지원, 미국 사회보장번호·카드·IBAN 가림",
+            "en": "English support; masks US SSNs, cards and IBANs",
+            "es": "Soporte en inglés; oculta SSN de EE. UU., tarjetas e IBAN",
+            "ja": "英語対応、米国社会保障番号・カード・IBANの自動マスク"
+          }
+        ],
+        [
+          "1.4.1",
+          "2026-09-23",
+          {
+            "ko": "새 캡처에 편집창이 찍히던 문제 수정",
+            "en": "Fix: the editor no longer shows up in new captures",
+            "es": "Corrección: el editor ya no aparece en capturas nuevas",
+            "ja": "新規キャプチャに編集画面が写り込む不具合を修正"
+          }
+        ],
+        [
+          "1.4.0",
+          "2026-09-20",
+          {
+            "ko": "캡처 보관함과 최근 20장 필름 띠",
+            "en": "Capture archive and a film strip of the last 20",
+            "es": "Archivo de capturas y tira con las últimas 20",
+            "ja": "キャプチャ保管庫と直近20枚のフィルムストリップ"
+          }
+        ],
+        [
+          "1.3.0",
+          "2026-09-20",
+          {
+            "ko": "개인정보 자동 가림, 글자 복사, 흔적 없음 모드, 무인 설치",
+            "en": "Automatic masking, text copy, zero-trace mode, silent install",
+            "es": "Ocultado automático, copia de texto, modo sin rastro, instalación silenciosa",
+            "ja": "個人情報の自動マスク、文字コピー、痕跡なしモード、サイレントインストール"
+          }
+        ],
+        [
+          "1.2.0",
+          "2026-09-19",
+          {
+            "ko": "편집 도구 두 줄 배치, 설치 시 바로가기 생성",
+            "en": "Two-row editor toolbar, shortcuts on install",
+            "es": "Barra del editor en dos filas, accesos directos al instalar",
+            "ja": "編集ツールを2段に、インストール時にショートカット作成"
+          }
+        ]
+      ],
+      "trust": [
+        {
+          "ko": "SHA-256 해시 공개",
+          "en": "SHA-256 hash published",
+          "es": "Hash SHA-256 publicado",
+          "ja": "SHA-256ハッシュを公開"
+        },
+        {
+          "ko": "백신 60여 개 VirusTotal 검사",
+          "en": "VirusTotal scan, ~60 engines",
+          "es": "Análisis de VirusTotal, ~60 motores",
+          "ja": "VirusTotalで約60エンジン検査"
+        },
+        {
+          "ko": "관리자 권한 불필요",
+          "en": "No admin rights needed",
+          "es": "No requiere permisos de administrador",
+          "ja": "管理者権限不要"
+        },
+        {
+          "ko": "자동 업데이트·통계 수집 없음",
+          "en": "No auto-update, no telemetry",
+          "es": "Sin actualización automática ni telemetría",
+          "ja": "自動更新・統計収集なし"
+        },
+        {
+          "ko": "코드 서명 인증서 준비 중 — 첫 실행 때 Windows 경고가 뜰 수 있음",
+          "en": "Code-signing certificate in preparation — Windows may warn on first run",
+          "es": "Certificado de firma en preparación: Windows puede avisar en la primera ejecución",
+          "ja": "コード署名証明書は準備中 — 初回起動時にWindowsの警告が出ることがある"
+        }
+      ],
+      "links": {
+        "virustotal": "https://www.virustotal.com/gui/file/f5212e4a6807eacafa44dd914d573b464fb4ffa0d162f67f372c214387ecc56d",
+        "changelog": "https://mugwangsoft.com/changelog/",
+        "privacy": "https://mugwangsoft.com/privacy/",
+        "enterprise": "https://mugwangsoft.com/enterprise/",
+        "feedback": "https://mugwangsoft.com/feedback/",
+        "contact": "hello@mugwangsoft.com"
+      },
+      "media": "https://mugwangsoft.com/media/",
+      "shots": [
+        "tray",
+        "masking",
+        "editor",
+        "window",
+        "scroll",
+        "textcopy"
+      ],
+      "built_with": "Claude"
+    }
+  ],
+  "updated": "2026-10-24",
+  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+  "disclaimer": "Not investment advice."
+}
