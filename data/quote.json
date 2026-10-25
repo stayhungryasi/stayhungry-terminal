@@ -1,7 +1,7 @@
 {
  "kind": "quote",
  "schema": 1,
- "generated_kst": "2026-10-25 10:31",
+ "generated_kst": "2026-10-26 08:00",
  "anchor": "2026-10-19",
  "send_kst": "08:00",
  "rule": "Weekday picks the theme (0 = Monday). Inside a theme the card moves to the next quote each week: index = floor((date - anchor) / 7 days) mod pool size. Same rule as quote_card.py pick().",
@@ -1527,14 +1527,14 @@
  },
  "count": 39,
  "today": {
-  "date": "2026-10-25",
-  "id": "6-0"
+  "date": "2026-10-26",
+  "id": "0-1"
  },
  "last_run": {
-  "sent_date": "2026-10-25",
-  "run_at_kst": "2026-10-25 10:31:23",
-  "trigger": "schedule",
-  "status": "skipped (already sent today)"
+  "sent_date": "2026-10-26",
+  "run_at_kst": "2026-10-26 08:00:49",
+  "trigger": "workflow_dispatch",
+  "status": "success"
  },
  "telegram": "https://t.me/stayhungryasi",
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
