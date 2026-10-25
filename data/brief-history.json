@@ -30,5 +30,37 @@
    "es": "El lock-up tiene fecha y tamaño fijos y llega en dos días, por eso va primero. La próxima semana junta la FOMC con resultados de Big Tech y de chips coreanos. El nuevo informe de Terafab de hoy va tercero. La proximidad de crisis (32.5) y el Índice Buffett (244%, est.) no cambian; el S-1 de Anthropic (25 oct) queda fuera porque su fecha es estimada.",
    "ja": "ロックアップは日付と株数が確定した2日後のイベントなので1番目。来週はFOMCとビッグテック・韓国半導体の決算が集中するので2番目。今日公開のテラファブ・リサーチが3番目。危機近接度(32.5 警戒)とバフェット指数(244%、推定)は昨日と同じため外し、Anthropic S-1(10/25)は日付が推定のため入れていません。"
   }
+ },
+ {
+  "date": "2026-10-25",
+  "lines": [
+   {
+    "href": "#spcxlock",
+    "ko": "<a href=\"#spcxlock\"><b>스페이스X 락업 D-1.</b></a> 내일(10/26) 한국 22:30 미국장 개장부터 3.28억주(≈$484억) 해제. SPCX는 10/23 종가 $147.49, 공모가 $135 대비 +9.3%.",
+    "en": "<a href=\"#spcxlock\"><b>SpaceX lock-up tomorrow.</b></a> 328.4M shares (≈$48.4B) unlock at the US open Mon, Oct 26. SPCX closed Oct 23 at $147.49, +9.3% vs the $135 IPO.",
+    "es": "<a href=\"#spcxlock\"><b>Lock-up de SpaceX, mañana.</b></a> 328,4 M acciones (≈US$48,4 mil M) se liberan el lun 26 oct. SPCX: US$147,49 (23 oct), +9,3% sobre la OPV.",
+    "ja": "<a href=\"#spcxlock\"><b>スペースXロックアップ、明日。</b></a>10/26(月)米国寄り付き(22:30 KST)から3.28億株(≈$484億)が解除。SPCXは10/23終値$147.49、公開価格$135比+9.3%。"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<a href=\"#schedule\"><b>이번 주 중앙은행 두 곳.</b></a> 10/29 03:00 FOMC 금리 결정, 같은 날 21:30 미국 3분기 GDP·9월 PCE, 10/30 12:00 일본은행(모두 한국시간).",
+    "en": "<a href=\"#schedule\"><b>Two central banks this week.</b></a> FOMC decision Oct 29 03:00 KST, US Q3 GDP + Sept PCE that day at 21:30, Bank of Japan Oct 30 12:00 KST.",
+    "es": "<a href=\"#schedule\"><b>Dos bancos centrales.</b></a> FOMC el 29 oct 03:00 KST; PIB T3 y PCE de EE. UU. ese día 21:30; Banco de Japón el 30 oct 12:00 KST.",
+    "ja": "<a href=\"#schedule\"><b>今週は中央銀行が2つ。</b></a>10/29 03:00 FOMC金利決定、同日21:30 米7-9月期GDP・9月PCE、10/30 12:00 日本銀行(いずれも韓国時間)。"
+   },
+   {
+    "href": "#filings",
+    "ko": "<a href=\"#filings\"><b>새 기능: 기관 5% 공시 레이더.</b></a> 최근 7일 4건 모두 J.P. Morgan(엑시콘 5.39% 등)이고, 4건 다 실제 매집이 아닌 '기계적' 신고로 분류됐습니다.",
+    "en": "<a href=\"#filings\"><b>New: the 5% filing radar.</b></a> All 4 filings in the last 7 days are J.P. Morgan (Exicon 5.39%, etc.), all sorted as mechanical.",
+    "es": "<a href=\"#filings\"><b>Nuevo: radar del 5%.</b></a> Las 4 declaraciones de los últimos 7 días son de J.P. Morgan (Exicon 5,39%, etc.), todas mecánicas.",
+    "ja": "<a href=\"#filings\"><b>新機能:機関5%大量保有レーダー。</b></a>直近7日の4件はすべてJ.P. Morgan(エクシコン5.39%など)で、4件とも実質的な買い集めではなく「機械的」届出に分類。"
+   }
+  ],
+  "why": {
+   "ko": "락업은 날짜·물량이 확정된 내일 일이고 D-2에서 D-1로 바뀌어 1순위. 실적 주간은 어제 썼으니 이번엔 일정이 모두 확정된 중앙은행·미국 지표로 바꿨고, 어제 문을 연 5% 공시 레이더의 첫 주간 숫자를 3순위로 넣었습니다. 위기 근접도(32.5, 변화 없음)·버핏지수(244.3%, 추정)는 그대로라 빼고, Anthropic S-1(10/25)과 SK하이닉스(10/28)는 날짜가 추정이라 넣지 않았습니다.",
+   "en": "The lock-up is a fixed-date, fixed-size event tomorrow, now D-1, so it leads. Earnings week ran yesterday, so line 2 switches to the central banks and US data, all on confirmed dates; line 3 is the first week of numbers from the 5% filing radar that opened yesterday. Crisis proximity (32.5, unchanged) and the Buffett Index (244.3%, estimated) didn't move, and the Anthropic S-1 (Oct 25) and SK hynix (Oct 28) dates are estimates, so they're out.",
+   "es": "El lock-up es mañana, con fecha y tamaño fijos, así que va primero. La semana de resultados salió ayer; hoy la línea 2 pasa a los bancos centrales y datos de EE. UU., todos con fecha confirmada, y la 3 trae la primera semana del nuevo radar del 5%. La proximidad de crisis (32,5, sin cambios) y el índice Buffett (244,3%, estimado) no se movieron, y las fechas del S-1 de Anthropic (25 oct) y SK hynix (28 oct) son estimadas, así que quedan fuera.",
+   "ja": "ロックアップは日付と株数が確定した明日のイベントで、D-2からD-1に変わったため1位。決算ウィークは昨日書いたので、今日は日程がすべて確定した中央銀行・米指標に切り替え、昨日公開した5%大量保有レーダーの最初の1週間の数字を3位に。危機接近度(32.5、変化なし)とバフェット指数(244.3%、推定)は動きがなく、Anthropic S-1(10/25)とSKハイニックス(10/28)は日付が推定のため外しました。"
+  }
  }
 ]
