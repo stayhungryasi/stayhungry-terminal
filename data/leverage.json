@@ -1,9 +1,9 @@
 {
  "kind": "leverage",
  "schema": 1,
- "generated_kst": "2026-10-24 12:04",
+ "generated_kst": "2026-10-26 09:46",
  "asof": "2026-10-22",
- "asof_market": "2026-10-22",
+ "asof_market": "2026-10-23",
  "source": "Korea Financial Investment Association (KOFIA) FreeSIS: STATSCU0100000070BO credit balance, 060BO investor funds & forced liquidation, 020BO/030BO KOSPI·KOSDAQ. Values for day T are published on T+1.",
  "units": "credit, unpaid, deposit, collat, debt_all = trillion KRW (조원); forced = 100 million KRW (억원); p_* = 10-year percentile",
  "regime": {
@@ -111,10 +111,10 @@
   "p_unpaid": 94.64,
   "deposit": 88.684,
   "dep20": -9.8,
-  "kospi": 5533.77,
-  "kospi_dd1y": -39.3,
-  "kospi_date": "2026-10-22",
-  "kosdaq": 764.1
+  "kospi": 5550.3,
+  "kospi_dd1y": -39.1,
+  "kospi_date": "2026-10-23",
+  "kosdaq": 751.69
  },
  "detail": {
   "credit_ks": 23.523,
@@ -4754,10 +4754,13 @@
    ]
   ]
  },
- "message_html": "📊 <b>K-빚투 레버리지 모니터</b>\n<i>10.24(토) · 기준일 10/22(목) · 금투협</i>\n\n🟢 <b>안정</b>\n<blockquote>지수 하락과 함께 빚이 강제로 줄어드는 디레버리징 국면입니다. 미수금이 10년 최고권이라 1~2영업일 추가 반대매매 가능성이 남아 있습니다.</blockquote>\n\n🔥 연료  <code>▰▰▰▰▰▱▱▱▱▱</code>  <b>45</b> 보통\n💥 점화  <code>▰▰▰▰▰▱▱▱▱▱</code>  <b>51</b> 보통\n\n━━━━━━━━━━━━━━━\n<b>핵심 숫자</b>\n💳 신용잔고 <b>30.36조</b> · ▲0.09조\n⚠️ 반대매매 <b>106억</b> · 평소의 0.5배\n⏳ 미수금 <b>1.05조</b> · 높음\n💰 예탁금 <b>88.7조</b> · 한 달 -9.8%\n📉 코스피 <b>5,534</b> · 1년 고점 -39.3% <i>(10/22)</i>\n━━━━━━━━━━━━━━━\n\n<b>💡 이렇게 읽으세요</b>\n1️⃣ <b>‘사상 최대 빚투’는 과장</b>\n   금액은 10년 93%ile, 시총 대비로는 31%ile로 보통 수준\n\n2️⃣ <b>빚은 코스피 대형주에 몰려 있음</b>\n   시총 대비 신용 코스피 80%ile vs 코스닥 2%ile\n\n3️⃣ <b>저가매수 실탄이 빠지는 중</b>\n   투자자예탁금 한 달 -9.8%\n\n<b>👀 다음에 볼 것</b>\n• 반대매매 678억 아래로 → 청산 진정\n• 신용잔고 30조 하회 → 디레버리징 가속\n• 신용잔고 31조 재돌파 → 빚투 재유입\n\n<blockquote expandable>📋 <b>상세 지표</b> (펼쳐 보기)\n신용 합계 30.36조 · 1W -7.3% · 1M -7.8% · 1Y +27.4%\n  코스피 23.52조 · 코스닥 6.84조\n  사상최대 38.63조(26.06.24) 대비 -21.4%\n시총 대비 신용 0.607% (31%ile)\n  코스피 0.515% (80%ile) · 코스닥 1.582% (2%ile)\n예탁금 대비 신용 34.2% (46%ile)\n주식담보대출(예담) 25.85조 · 1M +0.4%\n빚투 총량(신용+예담+미수) 57.26조\n반대매매 106억 · 비중 1.0% · 5일평균 316억 · 1년평균 226억\n미수금 1.05조 (95%ile)\n코스닥 764.10 · 코스피 20일 -19.7%\n\n연료 = 쌓인 빚의 크기 · 점화 = 강제청산 강도 (0~100, 10년 분포 기준)</blockquote>\n\n📡 금융투자협회 FreeSIS | Stay hungry.ASI · t.me/stayhungryasi\n<i>투자권유가 아닌 참고자료입니다.</i>",
- "sent": false,
- "last_sent_kst": null,
- "card": null,
+ "message_html": "📊 <b>K-빚투 레버리지 모니터</b>\n<i>10.26(월) · 기준일 10/22(목) · 금투협</i>\n\n🟢 <b>안정</b>\n<blockquote>지수 하락과 함께 빚이 강제로 줄어드는 디레버리징 국면입니다. 미수금이 10년 최고권이라 1~2영업일 추가 반대매매 가능성이 남아 있습니다.</blockquote>\n\n🔥 연료  <code>▰▰▰▰▰▱▱▱▱▱</code>  <b>45</b> 보통\n💥 점화  <code>▰▰▰▰▰▱▱▱▱▱</code>  <b>51</b> 보통\n\n━━━━━━━━━━━━━━━\n<b>핵심 숫자</b>\n💳 신용잔고 <b>30.36조</b> · ▲0.09조\n⚠️ 반대매매 <b>106억</b> · 평소의 0.5배\n⏳ 미수금 <b>1.05조</b> · 높음\n💰 예탁금 <b>88.7조</b> · 한 달 -9.8%\n📉 코스피 <b>5,550</b> · 1년 고점 -39.1% <i>(10/23)</i>\n━━━━━━━━━━━━━━━\n\n<b>💡 이렇게 읽으세요</b>\n1️⃣ <b>‘사상 최대 빚투’는 과장</b>\n   금액은 10년 93%ile, 시총 대비로는 31%ile로 보통 수준\n\n2️⃣ <b>빚은 코스피 대형주에 몰려 있음</b>\n   시총 대비 신용 코스피 80%ile vs 코스닥 2%ile\n\n3️⃣ <b>저가매수 실탄이 빠지는 중</b>\n   투자자예탁금 한 달 -9.8%\n\n<b>👀 다음에 볼 것</b>\n• 반대매매 678억 아래로 → 청산 진정\n• 신용잔고 30조 하회 → 디레버리징 가속\n• 신용잔고 31조 재돌파 → 빚투 재유입\n\n<blockquote expandable>📋 <b>상세 지표</b> (펼쳐 보기)\n신용 합계 30.36조 · 1W -7.3% · 1M -7.8% · 1Y +27.4%\n  코스피 23.52조 · 코스닥 6.84조\n  사상최대 38.63조(26.06.24) 대비 -21.4%\n시총 대비 신용 0.607% (31%ile)\n  코스피 0.515% (80%ile) · 코스닥 1.582% (2%ile)\n예탁금 대비 신용 34.2% (46%ile)\n주식담보대출(예담) 25.85조 · 1M +0.4%\n빚투 총량(신용+예담+미수) 57.26조\n반대매매 106억 · 비중 1.0% · 5일평균 316억 · 1년평균 226억\n미수금 1.05조 (95%ile)\n코스닥 751.69 · 코스피 20일 -19.7%\n\n연료 = 쌓인 빚의 크기 · 점화 = 강제청산 강도 (0~100, 10년 분포 기준)</blockquote>\n\n📡 금융투자협회 FreeSIS | Stay hungry.ASI · t.me/stayhungryasi\n<i>투자권유가 아닌 참고자료입니다.</i>",
+ "sent": true,
+ "last_sent_kst": "2026-10-26 09:46",
+ "card": {
+  "src": "live/leverage/card.webp",
+  "kst": "2026-10-26 09:46"
+ },
  "schedule": "Mon · Wed · Fri 07:50 KST",
  "telegram": "https://t.me/stayhungryasi",
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
