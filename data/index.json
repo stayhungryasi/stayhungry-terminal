@@ -26,13 +26,13 @@
     "schedule.json",
     "spcx-lock.json",
     "research.json",
-    "megacaps.json",
+    "rank.json",
     "spacex-3q26.json",
     "univertrix.json",
     "brains.json",
     "changelog.json"
   ],
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "credit": "@stayhungryasi · https://t.me/stayhungryasi",
   "disclaimer": "Not investment advice."
 }

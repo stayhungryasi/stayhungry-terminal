@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 KST = dt.timezone(dt.timedelta(hours=9))
 LANGS = ("ko", "en", "es", "ja")
 PAGES = {"today", "brief", "earnings", "schedule", "research", "mix", "score", "spcxlock", "library", "radar",
-         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear", "quote", "leverage", "filings", "agent"}
+         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear", "quote", "leverage", "filings", "agent", "rank"}
 TAG = re.compile(r"<(?!/?b>|a href=\"#[a-z]+\">|/a>)[^>]*>")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from research import FORBIDDEN  # noqa: E402
@@ -88,6 +88,21 @@ def digest():
         print(f"- probs bull {pr.get('bull')} / base {pr.get('base')} / bear {pr.get('bear')} · assumed value band ${b.get('lo')}-${b.get('hi')} (not a target) · price ${(ag.get('price') or {}).get('v')}")
         for t in (ag.get("triggers") or [])[:3]:
             print(f"- trigger {t['id']} {t.get('when')}: {t['name']}")
+    rk = load("live/rank.json")
+    if rk and rk.get("days"):
+        L = len(rk["days"]) - 1
+        top = sorted([t for t in rk["rank"] if rk["rank"][t][L] is not None], key=lambda t: rk["rank"][t][L])
+        d1 = {t: (rk["rank"][t][L - 1] - rk["rank"][t][L]) if rk["rank"][t][L - 1] is not None else None for t in top}
+        print(f"\n## Global market-cap Top 20 (#rank) · univertrix snapshot {rk['asof']} (USD bn)")
+        print("- " + ", ".join(f"#{rk['rank'][t][L]} {t} {rk['mc'][t][L]:.0f}" + (f" ({d1[t]:+d})" if d1[t] else "") for t in top))
+        moved = [t for t in top if d1[t] is None or abs(d1[t]) >= 2]
+        if moved:
+            print("- big rank moves vs previous snapshot: " + ", ".join(f"{t} {'new' if d1[t] is None else f'{d1[t]:+d}'}" for t in moved))
+    el = load("live/earnings.json")
+    if el and el.get("items"):
+        print("\n## Earnings, global Top 20 (#earnings) · univertrix calendar (Finnhub)")
+        for x in el["items"][:8]:
+            print(f"- {x['date']} {x['t']} {x.get('hour') or 'time n/a'}")
     sc = load("live/schedule.json")
     if sc:
         print(f"\n## Key dates bot (#schedule) · data {sc.get('data_updated')} · last Telegram {sc.get('last_sent_kst')}")

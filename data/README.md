@@ -7,7 +7,7 @@ Base URL: https://stayhungryasi.com/data/
 | file | what |
 |---|---|
 | index.json | list of endpoints |
-| earnings.json | megacap earnings dates (UTC), confirmed or estimated |
+| earnings.json | earnings dates of the global market-cap Top 20 from univertrix.com (calendar via Finnhub): upcoming with session, reports of the last 45 days, companies with no date yet |
 | crisis.json | crisis early-warning report: score, 5 layers, 21 indicators, charts (written by the bot after each Mon/Fri Telegram report) |
 | brief.json | the daily brief: three lines + checkpoints picked each morning by Claude from every live feed, with the reason (history: brief-history.json) |
 | fortune.json | Fortune Danji saju tools hub: live tools (Yeouido Jeomjip, Anchak) and the ones on the way (2027 New Year fortune, naming), in 4 languages |
@@ -18,7 +18,7 @@ Base URL: https://stayhungryasi.com/data/
 | quote.json | STAY HUNGRY morning card: 7 weekday themes, every quote with source, story and today's order in 4 languages, rotation anchor and last Telegram send (written by the quote bot) |
 | schedule.json | key dates: every public earnings, macro and IPO date with KST time, status and source (written by the schedule bot after each refresh). Calendar feeds: schedule.ics (ko), schedule.en.ics, schedule.es.ics, schedule.ja.ics |
 | fear.json | Buffett Index x VIX: values, percentiles, full time series, valuation x fear quadrant (written by the bot after each Tue/Thu report) |
-| megacaps.json | top 8 by market cap (SAMPLE) |
+| rank.json | global market-cap Top 20 from univertrix.com daily snapshots: rank and market cap per company per day since the first snapshot, names in 4 languages |
 | spacex-3q26.json | SpaceX 3Q26 revenue mix and results vs consensus |
 | univertrix.json | UNIVERTRIX build log: commits, pipeline runs, self-tests, legend benchmark zones |
 | brains.json | BRAINS: Buffett·Munger, Jensen and Musk thinking engines, principles and verified Q&A in 4 languages |

@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-10-27",
+      "commit": "HEAD",
+      "message": "Market-cap rank and earnings go live from univertrix.com: RANK shows the global Top 20 every day with a Top 5/10/20 switch, month-end rank chart, who entered and who left, and the research question of whether the month-end Top N works as a universe; EARNINGS now covers every Top 20 report date in your time zone, reported ones with the market-cap move around the report; hub cards 11 and 12 go live; in 4 languages"
+    },
+    {
       "date": "2026-10-26",
       "commit": "4f2804d",
       "message": "SpaceX overnight research agent goes live: the same cockpit univertrix.com shows, synced every 3 hours from universe-dominator's agent: what changed this run, share price vs the assumed value band, scenarios and probability by run, every milestone by axis with progress and detail, triggers with last forecast vs what happened, probability rules, latest quarter and the latest report; untranslated lines marked KO; under Research, in 4 languages"
@@ -192,7 +197,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "credit": "@stayhungryasi · https://t.me/stayhungryasi",
   "disclaimer": "Not investment advice."
 }

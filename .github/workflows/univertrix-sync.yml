@@ -1,0 +1,40 @@
+name: univertrix-sync
+# univertrix.com (universe-dominator, public) -> hub, every 3 hours. The hub re-judges nothing.
+#  - SpaceX overnight research agent: live/agent-*.json, data/agent.json (agent_export.py runs universe-dominator's own cockpit builder)
+#  - market-cap Top 20 and earnings dates: live/rank.json, live/earnings.json, data/rank.json, data/earnings.json (uv_export.py)
+on:
+  schedule:
+    - cron: '23 */3 * * *'   # every 3 hours
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: univertrix-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout universe-dominator
+        uses: actions/checkout@v4
+        with:
+          repository: stayhungryasi/universe-dominator
+          path: _ud
+          fetch-depth: 1
+      - name: Export the agent cockpit
+        run: python3 -B _source/agent_export.py --ud _ud --out .
+      - name: Export market-cap rank and earnings dates
+        run: python3 -B _source/uv_export.py --ud _ud --out .
+      - name: Commit if changed
+        run: |
+          git add live/agent-*.json data/agent.json live/rank.json live/earnings.json data/rank.json data/earnings.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          MSG=$(python3 -c "import json;a=json.load(open('live/agent-ko.json'))['run']['id'];r=json.load(open('live/rank.json'))['asof'];print(f'agent {a} · rank {r}')")
+          git -c user.name="stayhungryasi" -c user.email="shaferwine@gmail.com" commit -q -m "data(univertrix): ${MSG} [sync]"
+          for i in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
