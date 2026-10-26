@@ -1,0 +1,37 @@
+name: agent-sync
+# SpaceX overnight research agent -> hub (live/agent-*.json, data/agent.json)
+# Reads universe-dominator (public) and runs its own cockpit builder; the hub re-judges nothing.
+on:
+  schedule:
+    - cron: '23 */3 * * *'   # every 3 hours
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: agent-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout universe-dominator
+        uses: actions/checkout@v4
+        with:
+          repository: stayhungryasi/universe-dominator
+          path: _ud
+          fetch-depth: 1
+      - name: Export the cockpit
+        run: python3 -B _source/agent_export.py --ud _ud --out .
+      - name: Commit if changed
+        run: |
+          git add live/agent-*.json data/agent.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          RUN=$(python3 -c "import json;print(json.load(open('live/agent-ko.json'))['run']['id'])")
+          git -c user.name="stayhungryasi" -c user.email="shaferwine@gmail.com" commit -q -m "data(agent): ${RUN} [sync]"
+          for i in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1

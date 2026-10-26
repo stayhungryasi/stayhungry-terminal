@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 KST = dt.timezone(dt.timedelta(hours=9))
 LANGS = ("ko", "en", "es", "ja")
 PAGES = {"today", "brief", "earnings", "schedule", "research", "mix", "score", "spcxlock", "library", "radar",
-         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear", "quote", "leverage", "filings"}
+         "rank", "univertrix", "uvmap", "lab", "brains", "hub", "news", "buffett", "vix", "fear", "quote", "leverage", "filings", "agent"}
 TAG = re.compile(r"<(?!/?b>|a href=\"#[a-z]+\">|/a>)[^>]*>")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from research import FORBIDDEN  # noqa: E402
@@ -78,6 +78,16 @@ def digest():
         if lk.get("price"):
             p = lk["price"]
             print(f"- SPCX ${p['last']} ({p['last_date']} close, {p['chg_pct']:+}% d/d, {p['vs_ipo_pct']:+}% vs IPO $135)")
+    ag = load("live/agent-ko.json")
+    if ag and ag.get("run"):
+        r, b = ag["run"], ag.get("band") or {}
+        pr = {x["key"]: x["prob"] for x in ag.get("scen") or []}
+        print(f"\n## SpaceX overnight agent (#agent) · run {r['id']} ({r['mode']}) · next monthly {r.get('next')} · verifier {r.get('verify')}")
+        for ln in (ag.get("delta") or [{}])[0].get("lines", [])[:3]:
+            print(f"- {ln}")
+        print(f"- probs bull {pr.get('bull')} / base {pr.get('base')} / bear {pr.get('bear')} · assumed value band ${b.get('lo')}-${b.get('hi')} (not a target) · price ${(ag.get('price') or {}).get('v')}")
+        for t in (ag.get("triggers") or [])[:3]:
+            print(f"- trigger {t['id']} {t.get('when')}: {t['name']}")
     sc = load("live/schedule.json")
     if sc:
         print(f"\n## Key dates bot (#schedule) · data {sc.get('data_updated')} · last Telegram {sc.get('last_sent_kst')}")

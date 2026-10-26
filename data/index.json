@@ -17,6 +17,7 @@
     "quote.json",
     "leverage.json",
     "dart5.json",
+    "agent.json",
     "software.json",
     "fortune.json",
     "earnings.json",
@@ -31,7 +32,7 @@
     "brains.json",
     "changelog.json"
   ],
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "credit": "@stayhungryasi · https://t.me/stayhungryasi",
   "disclaimer": "Not investment advice."
 }
