@@ -62,5 +62,37 @@
    "es": "El lock-up es mañana, con fecha y tamaño fijos, así que va primero. La semana de resultados salió ayer; hoy la línea 2 pasa a los bancos centrales y datos de EE. UU., todos con fecha confirmada, y la 3 trae la primera semana del nuevo radar del 5%. La proximidad de crisis (32,5, sin cambios) y el índice Buffett (244,3%, estimado) no se movieron, y las fechas del S-1 de Anthropic (25 oct) y SK hynix (28 oct) son estimadas, así que quedan fuera.",
    "ja": "ロックアップは日付と株数が確定した明日のイベントで、D-2からD-1に変わったため1位。決算ウィークは昨日書いたので、今日は日程がすべて確定した中央銀行・米指標に切り替え、昨日公開した5%大量保有レーダーの最初の1週間の数字を3位に。危機接近度(32.5、変化なし)とバフェット指数(244.3%、推定)は動きがなく、Anthropic S-1(10/25)とSKハイニックス(10/28)は日付が推定のため外しました。"
   }
+ },
+ {
+  "date": "2026-10-26",
+  "lines": [
+   {
+    "href": "#spcxlock",
+    "ko": "<a href=\"#spcxlock\"><b>오늘 밤 스페이스X 락업 해제.</b></a> 한국 22:30 미국장 개장부터 3.28억주(≈$484억), 지금 유통가능 물량의 +7.8%. 해제 전 유통가능 비율 31.1%.",
+    "en": "<a href=\"#spcxlock\"><b>SpaceX lock-up lifts tonight.</b></a> 328.4M shares (≈$48.4B) unlock at the US open (22:30 KST), +7.8% vs today's tradable float of 31.1%.",
+    "es": "<a href=\"#spcxlock\"><b>Hoy, lock-up de SpaceX.</b></a> 328,4 M acciones (≈US$48,4 mil M) desde la apertura de EE. UU., +7,8% sobre el flotante negociable.",
+    "ja": "<a href=\"#spcxlock\"><b>今夜スペースXのロックアップ解除。</b></a>22:30(韓国時間)の米国寄り付きから3.28億株(≈$484億)、現在の流通可能株の+7.8%。解除前の流通可能比率は31.1%。"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<a href=\"#schedule\"><b>D-3, 10/29 하루에 빅이벤트 4개.</b></a> 03:00 FOMC, 05:05 알파벳·마이크로소프트 실적, 10:00 삼성전자 확정실적 콜(모두 한국시간·확정 일정).",
+    "en": "<a href=\"#schedule\"><b>Oct 29 stacks four big events.</b></a> FOMC 03:00, Alphabet and Microsoft earnings 05:05, Samsung Electronics call 10:00 (KST, confirmed).",
+    "es": "<a href=\"#schedule\"><b>El 29 oct, cuatro eventos.</b></a> FOMC 03:00, Alphabet y Microsoft 05:05, llamada de Samsung Electronics 10:00 (KST, confirmados).",
+    "ja": "<a href=\"#schedule\"><b>3日後、10/29に大型イベント4つ。</b></a>03:00 FOMC、05:05 アルファベット・マイクロソフト決算、10:00 サムスン電子確定実績コール(韓国時間・確定日程)。"
+   },
+   {
+    "href": "#leverage",
+    "ko": "<a href=\"#leverage\"><b>국내 빚투는 '안정'.</b></a> 10/22 기준 신용융자 30.363조원, 반대매매는 1년 평균의 0.47배. 다만 예탁금은 1개월 -9.8%로 88.684조원.",
+    "en": "<a href=\"#leverage\"><b>Korean margin debt: stable.</b></a> Oct 22: margin loans ₩30.363tn, forced selling 0.47x 1-yr avg; deposits -9.8% in a month to ₩88.684tn.",
+    "es": "<a href=\"#leverage\"><b>Apalancamiento coreano: estable.</b></a> 22 oct: crédito ₩30,363 billones, ventas forzosas 0,47x la media anual; depósitos -9,8% en un mes.",
+    "ja": "<a href=\"#leverage\"><b>韓国の信用取引は「安定」。</b></a>10/22時点で信用融資30.363兆ウォン、反対売買は1年平均の0.47倍。ただし預託金は1か月で-9.8%の88.684兆ウォン。"
+   }
+  ],
+  "why": {
+   "ko": "오늘 실제로 일어나는 스페이스X 락업 해제를 1순위로, 확정 일정이 몰린 10/29를 2순위로, 지난 3일 3줄에 없던 국내 레버리지 숫자(10/22 기준)를 3순위로 골랐습니다. 위기 근접도는 32.5로 어제와 같아 뺐고, SK하이닉스(10/28)·한국 GDP(10/27)는 날짜가 추정이라 줄 앞에 두지 않았습니다.",
+   "en": "SpaceX's unlock happens today, so it leads; Oct 29 packs the week's confirmed events; Korean leverage (as of Oct 22) is new to the brief. Crisis proximity is unchanged at 32.5, and SK hynix (Oct 28) and Korea GDP (Oct 27) dates are estimates, so they stay off the lead.",
+   "es": "El desbloqueo de SpaceX ocurre hoy y va primero; el 29 oct concentra los eventos confirmados; el apalancamiento coreano (al 22 oct) es nuevo. La proximidad de crisis sigue en 32,5, y las fechas de SK hynix (28 oct) y del PIB coreano (27 oct) son estimadas.",
+   "ja": "今日実際に起きるスペースXのロックアップ解除を1位に、確定日程が集中する10/29を2位に、直近の3行になかった韓国レバレッジ指標(10/22時点)を3位に選びました。危機接近度は32.5で前日と同じため除外、SKハイニックス(10/28)・韓国GDP(10/27)は日付が推定のため先頭に置いていません。"
+  }
  }
 ]
