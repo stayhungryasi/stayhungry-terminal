@@ -83,13 +83,27 @@ def main():
                 mc[tk].append(None)
     if len(days) < 2:
         raise SystemExit("[uv_export] not enough snapshots - nothing written")
+    # universe-dominator keeps only ~90 days of snapshots; the hub keeps every day it has seen
+    old = read(out / "live/rank.json", {}) or {}
+    odays = [d for d in (old.get("days") or []) if d < days[0]]
+    if odays:
+        n_old = len(odays)
+        for tk in set(rank) | set(old.get("rank") or {}):
+            orank = ((old.get("rank") or {}).get(tk) or [None] * len(old["days"]))[:n_old]
+            omc = ((old.get("mc") or {}).get(tk) or [None] * len(old["days"]))[:n_old]
+            rank[tk] = orank + (rank.get(tk) or [None] * len(days))
+            mc[tk] = omc + (mc.get(tk) or [None] * len(days))
+            if tk not in name:
+                t0 = next((x for x in old.get("tickers") or [] if x.get("tk") == tk), None)
+                name[tk] = ((t0 or {}).get("name") or {}).get("en") or tk
+        days = odays + days
 
     def names_for(tk, nm):
         n = names_i18n.get(tk) or {}
         return {l: n.get(l) or nm for l in LANGS}
 
     tickers = [{"tk": tk, "name": names_for(tk, name[tk]), "flag": flags.get(tk, "")} for tk in rank]
-    rank_doc = {"kind": "rank", "schema": 1, "universe": "earth", "unit": "USD billions",
+    rank_doc = {"kind": "rank", "schema": 1, "universe": "earth", "unit": "USD billions", "note": "history accumulates in the hub; univertrix keeps about 90 days",
                 "asof": days[-1], "first": days[0], "days": days, "tickers": tickers, "rank": rank, "mc": mc}
 
     # ---------------- earnings ----------------
