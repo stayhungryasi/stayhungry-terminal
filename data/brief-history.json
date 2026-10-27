@@ -94,5 +94,37 @@
    "es": "El desbloqueo de SpaceX ocurre hoy y va primero; el 29 oct concentra los eventos confirmados; el apalancamiento coreano (al 22 oct) es nuevo. La proximidad de crisis sigue en 32,5, y las fechas de SK hynix (28 oct) y del PIB coreano (27 oct) son estimadas.",
    "ja": "今日実際に起きるスペースXのロックアップ解除を1位に、確定日程が集中する10/29を2位に、直近の3行になかった韓国レバレッジ指標(10/22時点)を3位に選びました。危機接近度は32.5で前日と同じため除外、SKハイニックス(10/28)・韓国GDP(10/27)は日付が推定のため先頭に置いていません。"
   }
+ },
+ {
+  "date": "2026-10-27",
+  "lines": [
+   {
+    "href": "#earnings",
+    "ko": "<a href=\"#earnings\"><b>시총 Top 20 실적 주간 시작.</b></a> 오늘(10/27) 장 마감 후 비자, 10/28 알파벳·MS, 10/29 아마존·일라이릴리, 10/30 엑슨모빌, 11/2 애플(미국 날짜).",
+    "en": "<a href=\"#earnings\"><b>Top 20 earnings week begins.</b></a> Visa after today's close, Alphabet and MSFT Oct 28, Amazon and Lilly Oct 29, Exxon Oct 30 (US dates).",
+    "es": "<a href=\"#earnings\"><b>Semana de resultados del Top 20.</b></a> Visa hoy tras el cierre, Alphabet y Microsoft el 28, Amazon y Lilly el 29, Exxon el 30 (EE. UU.).",
+    "ja": "<a href=\"#earnings\"><b>時価総額Top20の決算週が開幕。</b></a>今日(10/27)引け後にビザ、10/28アルファベット・MS、10/29アマゾン・イーライリリー、10/30エクソン、11/2アップル(米国日付)。"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<a href=\"#schedule\"><b>D-2, 10/29 새벽 FOMC.</b></a> 03:00 금리 결정, 05:05 알파벳·MS 실적, 10:00 삼성전자 확정실적 콜, 21:30 미국 3분기 GDP·9월 PCE(한국시간·확정).",
+    "en": "<a href=\"#schedule\"><b>FOMC in two days.</b></a> Oct 29: rates 03:00, Alphabet and MSFT 05:05, Samsung call 10:00, US Q3 GDP + PCE 21:30 (KST, confirmed).",
+    "es": "<a href=\"#schedule\"><b>FOMC en dos días.</b></a> 29 oct: tipos 03:00, Alphabet y Microsoft 05:05, Samsung 10:00, PIB 3T y PCE de septiembre 21:30 (KST, confirmados).",
+    "ja": "<a href=\"#schedule\"><b>2日後、10/29未明にFOMC。</b></a>03:00金利決定、05:05アルファベット・MS決算、10:00サムスン電子コール、21:30米7-9月期GDP・9月PCE(韓国時間・確定)。"
+   },
+   {
+    "href": "#rank",
+    "ko": "<a href=\"#rank\"><b>새 기능: 글로벌 시총 순위.</b></a> 10/27 기준 1위 엔비디아 $5.199조, 스페이스X는 $2.026조로 7위, 삼성전자는 $1.046조로 14위.",
+    "en": "<a href=\"#rank\"><b>New: global market-cap rank.</b></a> Oct 27: Nvidia #1 at $5.199T, SpaceX #7 at $2.026T, Samsung Electronics #14 at $1.046T.",
+    "es": "<a href=\"#rank\"><b>Nuevo: ranking mundial por capitalización.</b></a> 27 oct: Nvidia n.º 1 con US$5.199 mil M, SpaceX n.º 7 con US$2.026 mil M, Samsung n.º 14.",
+    "ja": "<a href=\"#rank\"><b>新機能：世界時価総額ランキング。</b></a>10/27時点で1位エヌビディア$5.199兆、スペースXは$2.026兆で7位、サムスン電子は$1.046兆で14位。"
+   }
+  ],
+  "why": {
+   "ko": "오늘 밤 시작되는 시총 Top 20 실적 주간을 1순위로, D-2로 다가온 10/29 FOMC 묶음을 2순위로, 오늘 새로 열린 글로벌 시총 순위를 3순위로 골랐습니다. 락업은 어제 해제돼 새 숫자가 없고, 위기 근접도는 32.5로 변화가 없어 뺐습니다. SK하이닉스(10/28)·한국 GDP는 날짜가 추정이라 줄 앞에 두지 않았습니다.",
+   "en": "First, the Top 20 earnings week that starts tonight; second, the Oct 29 FOMC cluster now two days out; third, today's new global market-cap rank. Left out: the lock-up (lifted yesterday, no new numbers) and the crisis score (unchanged at 32.5). SK hynix and Korea GDP dates are estimated, so they don't lead.",
+   "es": "Primero, la semana de resultados del Top 20 que empieza hoy; segundo, el bloque del FOMC del 29 oct, a dos días; tercero, el nuevo ranking mundial. Fuera: el lock-up (ya liberado, sin cifras nuevas) y el índice de crisis (sin cambios, 32,5). SK hynix y el PIB coreano tienen fecha estimada.",
+   "ja": "1位は今夜始まる時価総額Top20の決算週、2位は2日後に迫った10/29のFOMC、3位は今日公開の世界時価総額ランキング。ロックアップは昨日解除済みで新しい数字がなく、危機近接度も32.5で変化なしのため除外。SKハイニックス・韓国GDPは日付が推定のため先頭に置いていません。"
+  }
  }
 ]
