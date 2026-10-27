@@ -1,10 +1,10 @@
 {
  "kind": "schedule",
  "schema": 1,
- "generated_kst": "2026-10-24 10:10",
- "data_updated": "2026-10-23",
- "last_sent_kst": "2026-10-23 09:22",
- "next_send": "2026-10-27",
+ "generated_kst": "2026-10-27 09:23",
+ "data_updated": "2026-10-27",
+ "last_sent_kst": "2026-10-27 09:22",
+ "next_send": "2026-10-30",
  "schedule": "Tue & Fri 10:00 KST",
  "window": {
   "past_days": 14,
@@ -37,46 +37,8 @@
    "LG전자"
   ]
  },
- "count": 122,
+ "count": 121,
  "events": [
-  {
-   "id": "kr-exp-10a",
-   "date": "2026-10-12",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "",
-   "title": "관세청 10월 1~10일 수출(반도체 수출 속보)",
-   "point": "",
-   "cat": "한국 매크로",
-   "tickers": [],
-   "imp": 2,
-   "status": "estimated",
-   "country": "kr",
-   "source": "https://unipass.customs.go.kr/",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Korea Customs: Oct 1–10 exports (semiconductor export flash)",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "es": {
-     "t": "Aduanas de Corea: exportaciones del 1 al 10 de octubre (avance de exportaciones de semiconductores)",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "ja": {
-     "t": "関税庁 10月1~10日輸出(半導体輸出速報)",
-     "p": "",
-     "l": "",
-     "c": ""
-    }
-   }
-  },
   {
    "id": "ocp",
    "date": "2026-10-12",
@@ -1555,29 +1517,29 @@
     "AMZN"
    ],
    "imp": 3,
-   "status": "estimated",
+   "status": "confirmed",
    "country": "us",
-   "source": "https://www.wallstreethorizon.com/amazon-earnings-calendar",
-   "updated": "2026-10-09",
-   "change": "",
+   "source": "https://ir.aboutamazon.com/events/event-details/2026/Q3-2026-Amazoncom-Inc-Earnings-Conference-Call/default.aspx",
+   "updated": "2026-10-27",
+   "change": "회사 공지로 확정, 날짜 동일(10/29 콜 17:00 ET)",
    "i18n": {
     "en": {
      "t": "Amazon Q3 results",
      "p": "AWS, capex",
      "l": "US Oct 29 (Thu), after the close",
-     "c": ""
+     "c": "Confirmed by company notice; date unchanged (Oct 29 call, 5:00 pm ET)"
     },
     "es": {
      "t": "Resultados del 3T de Amazon",
      "p": "AWS, capex",
      "l": "EE. UU., 29 oct (jue), tras el cierre",
-     "c": ""
+     "c": "Confirmado por la empresa; fecha sin cambios (llamada 29 oct, 17:00 ET)"
     },
     "ja": {
      "t": "アマゾン 第3四半期決算",
      "p": "AWS・capex",
      "l": "米国 10/29(木) 引け後",
-     "c": ""
+     "c": "会社発表で確定、日付は変更なし(10/29 コール 17:00 ET)"
     }
    }
   },
@@ -4817,6 +4779,6 @@
  "telegram": "https://t.me/stayhungryasi",
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
  "note": "Written by the key-dates bot (schedule-bot) after each refresh. Schedule information, not investment advice. Dates can change.",
- "updated": "2026-10-24",
+ "updated": "2026-10-27",
  "live": "https://stayhungryasi.com/live/schedule.json"
 }
