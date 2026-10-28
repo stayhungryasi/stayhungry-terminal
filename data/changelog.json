@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-10-28",
+      "commit": "HEAD",
+      "message": "New research: Anthropic's S-1 through a disruptive-innovation lens. S-curve, compute efficiency, the 2027 commitment wall, a probability-weighted value range and the price-performance gap, with 5 new charts, after four rounds of independent checks against the filing; in 4 languages"
+    },
+    {
       "date": "2026-10-27",
       "commit": "307258f",
       "message": "Market-cap rank and earnings go live from univertrix.com: RANK shows the global Top 20 every day with a Top 5/10/20 switch, month-end rank chart, who entered and who left, and the research question of whether the month-end Top N works as a universe; EARNINGS now covers every Top 20 report date in your time zone, reported ones with the market-cap move around the report; hub cards 11 and 12 go live; in 4 languages"
@@ -197,7 +202,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "credit": "@stayhungryasi · https://t.me/stayhungryasi",
   "disclaimer": "Not investment advice."
 }

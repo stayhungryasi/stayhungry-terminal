@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
- "updated": "2026-10-27",
- "count": 11,
+ "updated": "2026-10-28",
+ "count": 12,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.",
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
@@ -38,6 +38,95 @@
   }
  },
  "reports": [
+  {
+   "slug": "anthropic-s1-disruption",
+   "date": "2026-10-28",
+   "asof": "2026-10-28 (S-1 filed 2026-10-26)",
+   "category": "ai",
+   "title": {
+    "ko": "앤트로픽 S-1 파괴적 혁신 분석: 혁신은 진짜, 2조 달러는 범위의 상단",
+    "en": "Anthropic's S-1 Through a Disruptive-Innovation Lens: The Innovation Is Real, $2T Is the Top of the Range",
+    "es": "El S-1 de Anthropic bajo la lente de la innovación disruptiva: la innovación es real, US$2 billones es el techo del rango",
+    "ja": "アンソロピックS-1を破壊的イノベーションで読む:イノベーションは本物、2兆ドルはレンジの上限"
+   },
+   "dek": {
+    "ko": "분기 매출은 7개 분기 만에 약 85배, 컴퓨팅 1달러당 매출은 0.40달러에서 2.08달러가 됐다. 그러나 성장은 감속하기 시작했고, 2027년 약정 컴퓨팅은 현재 비용의 약 3.3배다. 네 차례 독립 검증을 거친 보정 가치의 중심은 공모 전 주당 약 96~98달러다.",
+    "en": "Quarterly revenue rose about 85x in seven quarters, and revenue per compute dollar went from $0.40 to $2.08. But growth has started to slow, and committed compute for 2027 is about 3.3x today's cost. After four rounds of independent checks, the adjusted value centers on about $96-98 per pre-IPO share.",
+    "es": "Los ingresos trimestrales subieron unas 85 veces en siete trimestres y el ingreso por dólar de cómputo pasó de US$0.40 a US$2.08. Pero el crecimiento empezó a frenarse y el cómputo comprometido para 2027 equivale a unas 3.3 veces el costo actual. Tras cuatro rondas de verificación independiente, el valor ajustado se centra en unos US$96-98 por acción antes de la OPI.",
+    "ja": "四半期売上は7四半期で約85倍、コンピュート1ドルあたり売上は0.40ドルから2.08ドルになった。しかし成長は減速し始め、2027年の契約済みコンピュートは現在のコストの約3.3倍に達する。4回の独立検証を経た補正後価値の中心は、上場前1株あたり約96〜98ドルだ。"
+   },
+   "key": {
+    "value": "$1.33T–$1.99T",
+    "label": {
+     "ko": "보정 확률가중 가치 범위(공모 전, 작성자 추정) — 보도된 2조 달러는 8개 시나리오 중 2개에서만 닿는다",
+     "en": "Adjusted probability-weighted value range (pre-IPO, author's estimate): the reported $2T is reached in only 2 of 8 scenarios",
+     "es": "Rango de valor ajustado ponderado por probabilidad (antes de la OPI, estimación del autor): los US$2 billones reportados solo se alcanzan en 2 de 8 escenarios",
+     "ja": "補正後の確率加重価値レンジ(上場前、筆者推計):報道された2兆ドルに届くのは8シナリオ中2つだけ"
+    }
+   },
+   "points": {
+    "ko": [
+     "혁신의 증거: 분기 매출이 7개 분기 만에 약 85배가 됐고, 컴퓨팅 1달러당 매출은 0.40달러에서 2.08달러로 5배 넘게 올랐다. 연 10만 달러 이상 고객은 950곳에서 11,900곳, NRR은 약 900%다. 다만 전분기 대비 증가율은 +144%에서 +45%로 감속했고, 3분기 효율은 약 1.70달러로 후퇴했다는 보도가 있다.",
+     "약정의 벽: 해지 불가 컴퓨팅 약정은 약 4,800억~5,200억 달러다. 계약 기간대로 나누면 2027년 부담은 연 약 722억 달러로 2분기 컴퓨팅 연환산의 약 3.3배다. 매출의 80%는 언제든 줄일 수 있는 사용량 과금이고, 회사는 성장률 하락과 단기 마진 압박을 '예상'한다고 공시했다.",
+     "가치: 보정 확률가중 범위는 공모 전 약 1.33조~1.99조 달러, 중심은 주당 약 96~98달러(작성자 추정)다. 보도된 2조 달러(공모 후 주당 약 113달러)는 8개 시나리오 중 2개에서만 닿는다. 성능 지수 +6점에 작업당 약 8배를 받는 가격 프리미엄이 유지되는지가 핵심 추적 지표다."
+    ],
+    "en": [
+     "Evidence of disruption: quarterly revenue rose about 85x in seven quarters, and revenue per compute dollar more than quintupled from $0.40 to $2.08. Customers paying $100K+ a year went from 950 to 11,900, and NRR is about 900%. But quarter-on-quarter growth slowed from +144% to +45%, and reports say Q3 efficiency slipped to about $1.70.",
+     "The commitment wall: non-cancelable compute commitments total about $480-520B. Spread over each contract's term, the 2027 burden is about $72.2B a year, roughly 3.3x Q2's annualized compute cost. 80% of revenue is usage-based and can shrink at any time, and the company says it expects its growth rate to decline and near-term margins to compress.",
+     "Value: the adjusted probability-weighted range is about $1.33-1.99T pre-IPO, centered on about $96-98 per share (author's estimate). The reported $2T (about $113 per share post-IPO) is reached in only 2 of 8 scenarios. The key thing to track is whether Claude keeps earning about 8x per task for a 6-point lead on the intelligence index."
+    ],
+    "es": [
+     "Evidencia de disrupción: los ingresos trimestrales subieron unas 85 veces en siete trimestres y el ingreso por dólar de cómputo se multiplicó más de cinco veces, de US$0.40 a US$2.08. Los clientes que pagan US$100 mil o más al año pasaron de 950 a 11,900 y la NRR ronda el 900%. Pero el crecimiento trimestral se frenó de +144% a +45%, y según reportes la eficiencia del 3T bajó a unos US$1.70.",
+     "El muro de compromisos: los compromisos de cómputo no cancelables suman unos US$480-520 mil millones. Repartidos según el plazo de cada contrato, la carga de 2027 es de unos US$72.2 mil millones al año, unas 3.3 veces el costo de cómputo anualizado del 2T. El 80% de los ingresos se cobra por uso y puede caer en cualquier momento; la empresa dice que espera que su crecimiento se modere y que sus márgenes de corto plazo se compriman.",
+     "Valor: el rango ajustado ponderado por probabilidad es de unos US$1.33-1.99 billones antes de la OPI, con centro en unos US$96-98 por acción (estimación del autor). Los US$2 billones reportados (unos US$113 por acción después de la OPI) solo se alcanzan en 2 de 8 escenarios. Lo clave es si Claude sigue cobrando unas 8 veces más por tarea a cambio de 6 puntos de ventaja en el índice de inteligencia."
+    ],
+    "ja": [
+     "破壊の証拠:四半期売上は7四半期で約85倍、コンピュート1ドルあたり売上は0.40ドルから2.08ドルへ5倍超に伸びた。年10万ドル以上の顧客は950社から11,900社、NRRは約900%だ。ただし前四半期比の伸びは+144%から+45%に減速し、第3四半期の効率は約1.70ドルに後退したと報じられている。",
+     "契約の壁:解約不能なコンピュート契約は約4,800億〜5,200億ドル。契約期間で割ると2027年の負担は年約722億ドルで、第2四半期の年換算コンピュート費の約3.3倍になる。売上の80%はいつでも減りうる従量課金で、会社は成長率の低下と短期的なマージン圧迫を「見込む」と開示した。",
+     "価値:補正後の確率加重レンジは上場前で約1.33兆〜1.99兆ドル、中心は1株約96〜98ドル(筆者推計)。報道された2兆ドル(上場後1株約113ドル)に届くのは8シナリオ中2つだけだ。知能指数で6ポイント上回る代わりにタスクあたり約8倍の価格を取れるプレミアムが続くかが、最重要の追跡指標になる。"
+    ]
+   },
+   "tickers": [
+    "ANT",
+    "AMZN",
+    "GOOGL",
+    "MSFT",
+    "AVGO",
+    "NVDA",
+    "000660",
+    "005930"
+   ],
+   "tags": {
+    "ko": [
+     "앤트로픽",
+     "IPO·S-1",
+     "파괴적 혁신",
+     "AI 컴퓨팅"
+    ],
+    "en": [
+     "Anthropic",
+     "IPO / S-1",
+     "Disruptive innovation",
+     "AI compute"
+    ],
+    "es": [
+     "Anthropic",
+     "OPI / S-1",
+     "Innovación disruptiva",
+     "Cómputo de IA"
+    ],
+    "ja": [
+     "アンソロピック",
+     "IPO・S-1",
+     "破壊的イノベーション",
+     "AIコンピュート"
+    ]
+   },
+   "kind": "doc",
+   "minutes": 33,
+   "sources": 23,
+   "url": "https://stayhungryasi.com/r/anthropic-s1-disruption/"
+  },
   {
    "date": "2026-10-24",
    "asof": "2026-10-20",
