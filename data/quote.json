@@ -1,7 +1,7 @@
 {
  "kind": "quote",
  "schema": 1,
- "generated_kst": "2026-10-28 08:00",
+ "generated_kst": "2026-10-29 08:00",
  "anchor": "2026-10-19",
  "send_kst": "08:00",
  "rule": "Weekday picks the theme (0 = Monday). Inside a theme the card moves to the next quote each week: index = floor((date - anchor) / 7 days) mod pool size. Same rule as quote_card.py pick().",
@@ -1527,12 +1527,12 @@
  },
  "count": 39,
  "today": {
-  "date": "2026-10-28",
-  "id": "2-1"
+  "date": "2026-10-29",
+  "id": "3-1"
  },
  "last_run": {
-  "sent_date": "2026-10-28",
-  "run_at_kst": "2026-10-28 08:00:42",
+  "sent_date": "2026-10-29",
+  "run_at_kst": "2026-10-29 08:00:40",
   "trigger": "workflow_dispatch",
   "status": "success"
  },
