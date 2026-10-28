@@ -126,5 +126,37 @@
    "es": "Primero, la semana de resultados del Top 20 que empieza hoy; segundo, el bloque del FOMC del 29 oct, a dos días; tercero, el nuevo ranking mundial. Fuera: el lock-up (ya liberado, sin cifras nuevas) y el índice de crisis (sin cambios, 32,5). SK hynix y el PIB coreano tienen fecha estimada.",
    "ja": "1位は今夜始まる時価総額Top20の決算週、2位は2日後に迫った10/29のFOMC、3位は今日公開の世界時価総額ランキング。ロックアップは昨日解除済みで新しい数字がなく、危機近接度も32.5で変化なしのため除外。SKハイニックス・韓国GDPは日付が推定のため先頭に置いていません。"
   }
+ },
+ {
+  "date": "2026-10-28",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<a href=\"#schedule\"><b>오늘 밤, FOMC와 빅테크 실적.</b></a> 10/29 03:00 FOMC 금리 결정, 05:05 알파벳·MS 실적, 10:00 삼성전자 확정실적 콜, 21:30 미국 3분기 GDP·9월 PCE(한국시간·확정).",
+    "en": "<a href=\"#schedule\"><b>Tonight: FOMC and big-tech earnings.</b></a> Oct 29 KST: Fed 03:00, Alphabet and MSFT 05:05, Samsung call 10:00, US GDP + PCE 21:30 (confirmed).",
+    "es": "<a href=\"#schedule\"><b>Esta noche: FOMC y big tech.</b></a> 29 oct (KST): Fed 03:00, Alphabet y Microsoft 05:05, Samsung 10:00, PIB y PCE de EE. UU. 21:30 (confirmado).",
+    "ja": "<a href=\"#schedule\"><b>今夜、FOMCとビッグテック決算。</b></a>10/29 03:00 FOMC金利決定、05:05 アルファベット・MS決算、10:00 サムスン電子確定決算説明会、21:30 米7-9月期GDP・9月PCE(韓国時間・確定)。"
+   },
+   {
+    "href": "#agent",
+    "ko": "<a href=\"#agent\"><b>스페이스X 에이전트, 이정표 첫 '미달'.</b></a> 우크라이나 Starlink 속도 제한(10/13~10/24)이 확정돼 '분쟁 개입 재발 0건'이 1건으로 미달. 시나리오 확률 25/50/25는 유지.",
+    "en": "<a href=\"#agent\"><b>SpaceX agent: first missed milestone.</b></a> Confirmed Ukraine Starlink speed cap (Oct 13–24) breaks \"zero interventions\". Odds hold at 25/50/25.",
+    "es": "<a href=\"#agent\"><b>SpaceX: primer hito fallido.</b></a> El límite de Starlink en Ucrania (13–24 oct) rompe el hito \"cero intervenciones\". Probabilidades: 25/50/25.",
+    "ja": "<a href=\"#agent\"><b>スペースXエージェント、初の「未達」。</b></a>ウクライナでのStarlink速度制限(10/13〜10/24)が確定し、「紛争介入の再発0件」が1件で未達に。シナリオ確率25/50/25は据え置き。"
+   },
+   {
+    "href": "#rank",
+    "ko": "<a href=\"#rank\"><b>시총 순위: 메타 2계단 하락.</b></a> 10/28 기준 메타 $1.596조로 11위. 브로드컴($1.625조) 9위, 테슬라($1.597조) 10위로 한 계단씩 올라섰습니다.",
+    "en": "<a href=\"#rank\"><b>Market-cap rank: Meta slips two places.</b></a> As of Oct 28, Meta is 11th at $1.596T; Broadcom ($1.625T) rises to 9th and Tesla ($1.597T) to 10th.",
+    "es": "<a href=\"#rank\"><b>Ranking: Meta cae dos puestos.</b></a> 28 oct: Meta 11.ª (US$1596 mil M); Broadcom sube al 9.º (US$1625 mil M) y Tesla al 10.º (US$1597 mil M).",
+    "ja": "<a href=\"#rank\"><b>時価総額ランキング:メタが2つ後退。</b></a>10/28時点でメタは1.596兆ドルで11位。ブロードコム(1.625兆ドル)が9位、テスラ(1.597兆ドル)が10位に1つずつ浮上。"
+   }
+  ],
+  "why": {
+   "ko": "몇 시간 앞으로 다가온 10/29 FOMC·알파벳·MS 묶음을 1순위로(어제 D-2에서 오늘 밤으로 바뀜), 어젯밤 새로 나온 스페이스X 에이전트의 첫 이정표 미달을 2순위로, 오늘 스냅샷에서 바뀐 시총 순위(메타 -2)를 3순위로 골랐습니다. 위기 근접도(10/26 보고, 32.5)와 버핏지수(244.07%, 추정치)는 변화가 없어 뺐고, SK하이닉스 등 오늘 국내 실적은 날짜가 추정이라 넣지 않았습니다.",
+   "en": "First, the Oct 29 FOMC + Alphabet/MSFT cluster, now hours away (yesterday it was two days out); second, the SpaceX agent's first missed milestone from last night's run; third, today's market-cap rank shift (Meta −2). Left out: the crisis score (32.5, Oct 26 report) and the Buffett Index (244.07%, estimated), both unchanged; today's Korean earnings such as SK hynix have estimated dates.",
+   "es": "Primero, el bloque FOMC + Alphabet/Microsoft del 29 oct, ya a horas (ayer faltaban dos días); segundo, el primer hito fallido del agente de SpaceX en la ejecución de anoche; tercero, el cambio de ranking de hoy (Meta −2). Fuera: el índice de crisis (32,5, informe del 26 oct) y el Índice Buffett (244,07 %, estimado), sin cambios; los resultados coreanos de hoy, como SK hynix, tienen fecha estimada.",
+   "ja": "1位は数時間後に迫った10/29のFOMC・アルファベット・MS(昨日はD-2、今日は今夜に)、2位は昨夜の実行で出たスペースXエージェント初の未達、3位は今日のスナップショットで変わった時価総額順位(メタ−2)。危機近接度(10/26報告、32.5)とバフェット指数(244.07%、推定)は変化なしのため除外。SKハイニックスなど今日の国内決算は日付が推定のため入れていません。"
+  }
  }
 ]
