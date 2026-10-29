@@ -158,5 +158,37 @@
    "es": "Primero, el bloque FOMC + Alphabet/Microsoft del 29 oct, ya a horas (ayer faltaban dos días); segundo, el primer hito fallido del agente de SpaceX en la ejecución de anoche; tercero, el cambio de ranking de hoy (Meta −2). Fuera: el índice de crisis (32,5, informe del 26 oct) y el Índice Buffett (244,07 %, estimado), sin cambios; los resultados coreanos de hoy, como SK hynix, tienen fecha estimada.",
    "ja": "1位は数時間後に迫った10/29のFOMC・アルファベット・MS(昨日はD-2、今日は今夜に)、2位は昨夜の実行で出たスペースXエージェント初の未達、3位は今日のスナップショットで変わった時価総額順位(メタ−2)。危機近接度(10/26報告、32.5)とバフェット指数(244.07%、推定)は変化なしのため除外。SKハイニックスなど今日の国内決算は日付が推定のため入れていません。"
   }
+ },
+ {
+  "date": "2026-10-29",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<a href=\"#schedule\"><b>오늘 밤 미국 GDP·PCE, 내일 새벽 아마존.</b></a> 21:30 미국 3분기 GDP 속보치·9월 PCE, 10/30 05:05 아마존·샌디스크 실적, 12:00 일본은행 결정(한국시간·확정).",
+    "en": "<a href=\"#schedule\"><b>US GDP and PCE tonight, Amazon at dawn.</b></a> 21:30 KST US Q3 GDP + Sept PCE; Oct 30 05:05 Amazon, SanDisk; 12:00 BOJ (confirmed).",
+    "es": "<a href=\"#schedule\"><b>Hoy PIB y PCE; de madrugada, Amazon.</b></a> 21:30 KST PIB 3T y PCE de septiembre; 30 oct 05:05 Amazon y SanDisk; 12:00 Banco de Japón (confirmado).",
+    "ja": "<a href=\"#schedule\"><b>今夜は米GDP・PCE、明け方にアマゾン。</b></a>21:30 米7-9月期GDP速報値・9月PCE、10/30 05:05 アマゾン・サンディスク決算、12:00 日銀決定(韓国時間・確定)。"
+   },
+   {
+    "href": "#spcxlock",
+    "ko": "<a href=\"#spcxlock\"><b>다음 스페이스X 락업 D-42.</b></a> 12/9(미국 거래일) 7.976억주(≈$1,185억), 유통가능 물량의 +17.6%. 10/27 종가 $148.58, 공모가 대비 +10.1%.",
+    "en": "<a href=\"#spcxlock\"><b>Next SpaceX lock-up: D-42.</b></a> Dec 9 (US trading day): 797.6M shares (≈$118.5B), +17.6% of tradable float. Oct 27 close $148.58, +10.1% vs IPO.",
+    "es": "<a href=\"#spcxlock\"><b>Lock-up de SpaceX: D-42.</b></a> 9 dic: 797,6 M de acciones (≈US$118,5 mil M), +17,6% del flotante. Cierre 27 oct: US$148,58.",
+    "ja": "<a href=\"#spcxlock\"><b>次のスペースXロックアップ解除まで42日。</b></a>12/9(米国取引日)に7.976億株(≈1,185億ドル)、流通可能株の+17.6%。10/27終値148.58ドル、公開価格比+10.1%。"
+   },
+   {
+    "href": "#rank",
+    "ko": "<a href=\"#rank\"><b>알파벳, MS 제치고 시총 3위.</b></a> 10/29 기준 알파벳 $3.924조, MS $3.917조. 메타는 $1.599조로 테슬라($1.586조)를 다시 넘어 10위.",
+    "en": "<a href=\"#rank\"><b>Alphabet passes Microsoft for No. 3.</b></a> As of Oct 29: Alphabet $3.924T vs MSFT $3.917T. Meta ($1.599T) retakes 10th from Tesla ($1.586T).",
+    "es": "<a href=\"#rank\"><b>Alphabet supera a Microsoft.</b></a> 29 oct: Alphabet 3.ª (US$3924 mil M), Microsoft 4.ª (US$3917 mil M). Meta recupera el 10.º ante Tesla.",
+    "ja": "<a href=\"#rank\"><b>アルファベット、MSを抜き時価総額3位。</b></a>10/29時点でアルファベット3.924兆ドル、MS 3.917兆ドル。メタは1.599兆ドルでテスラ(1.586兆ドル)を再び抜き10位。"
+   }
+  ],
+  "why": {
+   "ko": "오늘 밤~내일 새벽 확정 일정(GDP·PCE, 아마존, 일본은행)을 1순위로, D-day가 새로 잡힌 다음 락업과 오늘 바뀐 시총 순위를 골랐습니다. FOMC 결과는 digest에 수치가 없어 쓰지 않았고, 위기 점수(32.5)·버핏지수는 변화가 없어 뺐습니다.",
+   "en": "Confirmed events from tonight to tomorrow morning (GDP/PCE, Amazon, BOJ) come first, then the next lock-up countdown and today's rank change. The FOMC outcome is not in the feeds yet, so it is left out; the crisis score (32.5) and Buffett Index did not move.",
+   "es": "Primero, los eventos confirmados de esta noche y mañana (PIB/PCE, Amazon, BoJ); luego, la cuenta atrás del próximo lock-up y el cambio de ranking de hoy. El resultado del FOMC aún no está en los datos; el índice de crisis (32,5) y el indicador Buffett no cambiaron.",
+   "ja": "今夜から明朝の確定日程(GDP・PCE、アマゾン、日銀)を最優先に、次のロックアップ解除のカウントダウンと本日の順位変動を選びました。FOMCの結果はデータにまだないため触れず、危機スコア(32.5)とバフェット指数は変化がないため外しました。"
+  }
  }
 ]
