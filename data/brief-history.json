@@ -190,5 +190,37 @@
    "es": "Primero, los eventos confirmados de esta noche y mañana (PIB/PCE, Amazon, BoJ); luego, la cuenta atrás del próximo lock-up y el cambio de ranking de hoy. El resultado del FOMC aún no está en los datos; el índice de crisis (32,5) y el indicador Buffett no cambiaron.",
    "ja": "今夜から明朝の確定日程(GDP・PCE、アマゾン、日銀)を最優先に、次のロックアップ解除のカウントダウンと本日の順位変動を選びました。FOMCの結果はデータにまだないため触れず、危機スコア(32.5)とバフェット指数は変化がないため外しました。"
   }
+ },
+ {
+  "date": "2026-10-30",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>오늘 12:00 일본은행 결정.</b> 새벽 05:05 아마존·샌디스크 실적 발표에 이어, 12:00 일본은행 금융정책 결정(전망보고서 포함), 엑슨모빌은 미국 10/30 장 전 실적(한국시간·확정). <a href=\"#schedule\">일정</a>",
+    "en": "<b>BOJ decides at 12:00 today.</b> After Amazon and Sandisk at 05:05, BOJ policy at 12:00; ExxonMobil reports before the US open 10/30 (KST). <a href=\"#schedule\">Dates</a>",
+    "es": "<b>Banco de Japón, hoy 12:00.</b> Tras Amazon y Sandisk (05:05), decide a las 12:00; ExxonMobil antes de la apertura del 30/10 (hora Corea). <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>本日12:00、日銀決定。</b>早朝05:05のアマゾン・サンディスク決算に続き、12:00に日銀金融政策決定（展望レポート含む）、エクソンモービルは米国10/30寄り前に決算（韓国時間・確定）。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<b>다음 주: 중간선거·애플·고용.</b> 11/3 미국 중간선거, 11/3 06:30 애플 FQ4, 11/4 06:05 AMD·아스테라랩스·아리스타 실적, 11/6 22:30 미국 10월 고용보고서(한국시간·확정). <a href=\"#schedule\">일정</a>",
+    "en": "<b>Next week: midterms, Apple, jobs.</b> 11/3 US midterms and Apple 06:30; 11/4 06:05 AMD, Astera Labs, Arista; 11/6 22:30 US jobs (KST). <a href=\"#schedule\">Dates</a>",
+    "es": "<b>Semana próxima: elecciones, Apple, empleo.</b> 3/11 elecciones y Apple 06:30; 4/11 06:05 AMD, Astera, Arista; 6/11 22:30 empleo EE. UU. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>来週：中間選挙・アップル・雇用統計。</b>11/3米中間選挙、11/3 06:30アップルFQ4、11/4 06:05 AMD・アステラ・ラボ・アリスタ決算、11/6 22:30米10月雇用統計（韓国時間・確定）。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X 락업 D-41, 주가 하락.</b> 12/9 7.976억주(≈$1,158억) 해제 예정. 10/28 종가 $145.23으로 하루 -2.25%, 공모가 대비 +7.6%까지 좁혀졌습니다. <a href=\"#spcxlock\">락업 레이더</a>",
+    "en": "<b>SpaceX lock-up D-41, stock slips.</b> 797.6M shares (≈$115.8B) unlock 12/9. SPCX $145.23 on 10/28, -2.25% d/d, +7.6% vs IPO. <a href=\"#spcxlock\">Radar</a>",
+    "es": "<b>Bloqueo SpaceX D-41; cae SPCX.</b> 797,6 M acciones (≈US$115,8 mil M) se liberan el 9/12. Cierre 28/10: US$145,23, -2,25 %, +7,6 % vs OPV. <a href=\"#spcxlock\">Radar</a>",
+    "ja": "<b>スペースXロックアップD-41、株価下落。</b>12/9に7.976億株（≈1,158億ドル）が解除予定。10/28終値は145.23ドルで前日比-2.25%、公開価格比+7.6%まで縮小。<a href=\"#spcxlock\">ロックアップ・レーダー</a>"
+   }
+  ],
+  "why": {
+   "ko": "오늘 실제로 있는 일(일본은행·엑슨모빌)과 다음 주 확정 일정(중간선거·애플·AMD·고용)을 먼저, 그다음 숫자가 바뀐 스페이스X 락업(D-41, 새 종가)을 골랐습니다. 위기 근접도(10/26 기준 32.5, 변화 없음)·버핏지수 243.5%(추정치)는 변하지 않은 배경이라 뺐고, 시총 순위(삼성전자 2계단 하락 14위)는 사흘 연속 다뤄 이번엔 제외했습니다. 아마존 실적 내용은 허브 피드에 아직 숫자가 없어 쓰지 않았습니다.",
+   "en": "Today's events (BOJ, ExxonMobil) and next week's confirmed dates (midterms, Apple, AMD, jobs) come first, then the SpaceX lock-up, where the numbers changed (D-41, new close). The crisis gauge (32.5 as of 10/26, unchanged) and the Buffett Index at 243.5% (estimate) are unchanged background, and market-cap rank (Samsung down two to 14th) ran three days in a row, so they sit out today. Amazon's results have no numbers in the hub feeds yet, so they are not described.",
+   "es": "Primero lo que ocurre hoy (Banco de Japón, ExxonMobil) y las fechas confirmadas de la próxima semana (elecciones, Apple, AMD, empleo); después el bloqueo de SpaceX, cuyas cifras cambiaron (D-41, nuevo cierre). El indicador de crisis (32,5 al 26/10, sin cambios) y el índice Buffett en 243,5 % (estimado) son contexto sin cambios, y el ranking por capitalización (Samsung baja dos puestos al 14.º) ya salió tres días seguidos, así que hoy quedan fuera. Los resultados de Amazon aún no tienen cifras en los feeds del hub, por eso no se describen.",
+   "ja": "今日の出来事（日銀・エクソンモービル）と来週の確定日程（中間選挙・アップル・AMD・雇用統計）を先に、次に数字が変わったスペースXロックアップ（D-41、新しい終値）を選びました。危機接近度（10/26時点32.5、変化なし）とバフェット指数243.5%（推計）は変わらない背景のため外し、時価総額ランキング（サムスン電子2つ下げ14位）は3日連続で扱ったので今回は見送りました。アマゾン決算の中身はハブのフィードにまだ数字がないため書いていません。"
+  }
  }
 ]
