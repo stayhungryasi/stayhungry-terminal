@@ -1,10 +1,10 @@
 {
  "kind": "schedule",
  "schema": 1,
- "generated_kst": "2026-10-27 09:23",
- "data_updated": "2026-10-27",
- "last_sent_kst": "2026-10-27 09:22",
- "next_send": "2026-10-30",
+ "generated_kst": "2026-10-30 09:22",
+ "data_updated": "2026-10-30",
+ "last_sent_kst": "2026-10-30 09:22",
+ "next_send": "2026-11-03",
  "schedule": "Tue & Fri 10:00 KST",
  "window": {
   "past_days": 14,
@@ -37,90 +37,8 @@
    "LG전자"
   ]
  },
- "count": 121,
+ "count": 115,
  "events": [
-  {
-   "id": "ocp",
-   "date": "2026-10-12",
-   "time": null,
-   "approx": false,
-   "end": "2026-10-15",
-   "local": "미국 현지 날짜",
-   "title": "OCP 글로벌 서밋(새너제이)",
-   "point": "네트워킹·스케일업 표준",
-   "cat": "AI·산업",
-   "tickers": [
-    "AVGO",
-    "ALAB",
-    "CRDO"
-   ],
-   "imp": 3,
-   "status": "confirmed",
-   "country": "us",
-   "source": "https://www.opencompute.org/events/ocp-summit/2026-ocp-global-summit/",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "OCP Global Summit (San Jose)",
-     "p": "Networking & scale-up standards",
-     "l": "US local date",
-     "c": ""
-    },
-    "es": {
-     "t": "OCP Global Summit (San José)",
-     "p": "Estándares de redes y scale-up",
-     "l": "fecha local de EE. UU.",
-     "c": ""
-    },
-    "ja": {
-     "t": "OCPグローバルサミット(サンノゼ)",
-     "p": "ネットワーキング・スケールアップ標準",
-     "l": "米国現地日付",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "anth-day",
-   "date": "2026-10-14",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "미국 현지 날짜",
-   "title": "Anthropic 상장 전 투자자 설명회(샌프란시스코)",
-   "point": "",
-   "cat": "IPO",
-   "tickers": [
-    "AVGO"
-   ],
-   "imp": 3,
-   "status": "report",
-   "country": "us",
-   "source": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-targets-pre-thanksgiving-ipo-at-2-trillion-valuation/",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Anthropic pre-IPO investor presentation (San Francisco)",
-     "p": "",
-     "l": "US local date",
-     "c": ""
-    },
-    "es": {
-     "t": "Presentación de Anthropic para inversionistas previa a la OPI (San Francisco)",
-     "p": "",
-     "l": "fecha local de EE. UU.",
-     "c": ""
-    },
-    "ja": {
-     "t": "Anthropic 上場前投資家説明会(サンフランシスコ)",
-     "p": "",
-     "l": "米国現地日付",
-     "c": ""
-    }
-   }
-  },
   {
    "id": "sedex",
    "date": "2026-10-14",
@@ -155,162 +73,6 @@
      "t": "SEDEX 2026 半導体展(COEX)",
      "p": "",
      "l": "",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "asml-q3",
-   "date": "2026-10-14",
-   "time": "14:00",
-   "approx": false,
-   "end": null,
-   "local": "유럽 10/14(수) 07:00",
-   "title": "ASML 3분기 실적",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "ASML"
-   ],
-   "imp": 2,
-   "status": "confirmed",
-   "country": "eu",
-   "source": "https://investor.asml.com/quarterly-results",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "ASML Q3 results",
-     "p": "",
-     "l": "Europe Oct 14 (Wed) 07:00",
-     "c": ""
-    },
-    "es": {
-     "t": "Resultados del 3T de ASML",
-     "p": "",
-     "l": "Europa, 14 oct (mié) 07:00",
-     "c": ""
-    },
-    "ja": {
-     "t": "ASML 第3四半期決算",
-     "p": "",
-     "l": "欧州 10/14(水) 07:00",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "us-cpi-sep",
-   "date": "2026-10-14",
-   "time": "21:30",
-   "approx": false,
-   "end": null,
-   "local": "미국 10/14(수) 08:30",
-   "title": "미국 9월 CPI",
-   "point": "",
-   "cat": "미국 매크로",
-   "tickers": [],
-   "imp": 3,
-   "status": "confirmed",
-   "country": "us",
-   "source": "https://www.bls.gov/schedule/news_release/cpi.htm",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "US September CPI",
-     "p": "",
-     "l": "US Oct 14 (Wed) 08:30",
-     "c": ""
-    },
-    "es": {
-     "t": "IPC de EE. UU. de septiembre",
-     "p": "",
-     "l": "EE. UU., 14 oct (mié) 08:30",
-     "c": ""
-    },
-    "ja": {
-     "t": "米国 9月CPI",
-     "p": "",
-     "l": "米国 10/14(水) 08:30",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "tsmc-q3",
-   "date": "2026-10-15",
-   "time": "15:00",
-   "approx": false,
-   "end": null,
-   "local": "대만 10/15(목) 14:00",
-   "title": "TSMC 3분기 실적 설명회",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "TSM"
-   ],
-   "imp": 3,
-   "status": "confirmed",
-   "country": "tw",
-   "source": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "TSMC Q3 earnings call",
-     "p": "",
-     "l": "Taiwan Oct 15 (Thu) 14:00",
-     "c": ""
-    },
-    "es": {
-     "t": "Conferencia de resultados del 3T de TSMC",
-     "p": "",
-     "l": "Taiwán, 15 oct (jue) 14:00",
-     "c": ""
-    },
-    "ja": {
-     "t": "TSMC 第3四半期決算説明会",
-     "p": "",
-     "l": "台湾 10/15(木) 14:00",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "us-ppi-sep",
-   "date": "2026-10-15",
-   "time": "21:30",
-   "approx": false,
-   "end": null,
-   "local": "미국 10/15(목) 08:30",
-   "title": "미국 9월 PPI",
-   "point": "",
-   "cat": "미국 매크로",
-   "tickers": [],
-   "imp": 2,
-   "status": "confirmed",
-   "country": "us",
-   "source": "https://www.bls.gov/schedule/news_release/ppi.htm",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "US September PPI",
-     "p": "",
-     "l": "US Oct 15 (Thu) 08:30",
-     "c": ""
-    },
-    "es": {
-     "t": "IPP de EE. UU. de septiembre",
-     "p": "",
-     "l": "EE. UU., 15 oct (jue) 08:30",
-     "c": ""
-    },
-    "ja": {
-     "t": "米国 9月PPI",
-     "p": "",
-     "l": "米国 10/15(木) 08:30",
      "c": ""
     }
    }
@@ -4779,6 +4541,6 @@
  "telegram": "https://t.me/stayhungryasi",
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
  "note": "Written by the key-dates bot (schedule-bot) after each refresh. Schedule information, not investment advice. Dates can change.",
- "updated": "2026-10-27",
+ "updated": "2026-10-30",
  "live": "https://stayhungryasi.com/live/schedule.json"
 }
