@@ -1,30 +1,30 @@
 {
  "kind": "brief",
  "schema": 1,
- "date": "2026-10-30",
- "generated_kst": "2026-10-30 10:09",
+ "date": "2026-10-31",
+ "generated_kst": "2026-10-31 10:09",
  "editor": "Claude",
  "lines": [
   {
    "href": "#schedule",
-   "ko": "<b>오늘 12:00 일본은행 결정.</b> 새벽 05:05 아마존·샌디스크 실적 발표에 이어, 12:00 일본은행 금융정책 결정(전망보고서 포함), 엑슨모빌은 미국 10/30 장 전 실적(한국시간·확정). <a href=\"#schedule\">일정</a>",
-   "en": "<b>BOJ decides at 12:00 today.</b> After Amazon and Sandisk at 05:05, BOJ policy at 12:00; ExxonMobil reports before the US open 10/30 (KST). <a href=\"#schedule\">Dates</a>",
-   "es": "<b>Banco de Japón, hoy 12:00.</b> Tras Amazon y Sandisk (05:05), decide a las 12:00; ExxonMobil antes de la apertura del 30/10 (hora Corea). <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>本日12:00、日銀決定。</b>早朝05:05のアマゾン・サンディスク決算に続き、12:00に日銀金融政策決定（展望レポート含む）、エクソンモービルは米国10/30寄り前に決算（韓国時間・確定）。<a href=\"#schedule\">日程</a>"
+   "ko": "<b>D-3, 중간선거와 애플이 같은 날.</b> 11/3 미국 중간선거·06:30 애플 FQ4, 11/4 06:05 AMD·아스테라랩스, 11/6 22:30 미국 고용보고서(한국시간·확정). <a href=\"#schedule\">일정</a>",
+   "en": "<b>D-3: midterms and Apple, same day.</b> 11/3 US midterms, Apple 06:30; 11/4 06:05 AMD, Astera Labs; 11/6 22:30 US jobs (KST). <a href=\"#schedule\">Dates</a>",
+   "es": "<b>D-3: elecciones y Apple, mismo día.</b> 3/11 elecciones en EE. UU., Apple 06:30; 4/11 06:05 AMD, Astera Labs; 6/11 22:30 empleo (Corea). <a href=\"#schedule\">Agenda</a>",
+   "ja": "<b>D-3、中間選挙とアップル決算が同じ日。</b>11/3 米中間選挙・06:30 アップルFQ4、11/4 06:05 AMD・アステラ・ラブズ、11/6 22:30 米雇用統計（韓国時間・確定）。<a href=\"#schedule\">日程</a>"
   },
   {
-   "href": "#schedule",
-   "ko": "<b>다음 주: 중간선거·애플·고용.</b> 11/3 미국 중간선거, 11/3 06:30 애플 FQ4, 11/4 06:05 AMD·아스테라랩스·아리스타 실적, 11/6 22:30 미국 10월 고용보고서(한국시간·확정). <a href=\"#schedule\">일정</a>",
-   "en": "<b>Next week: midterms, Apple, jobs.</b> 11/3 US midterms and Apple 06:30; 11/4 06:05 AMD, Astera Labs, Arista; 11/6 22:30 US jobs (KST). <a href=\"#schedule\">Dates</a>",
-   "es": "<b>Semana próxima: elecciones, Apple, empleo.</b> 3/11 elecciones y Apple 06:30; 4/11 06:05 AMD, Astera, Arista; 6/11 22:30 empleo EE. UU. <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>来週：中間選挙・アップル・雇用統計。</b>11/3米中間選挙、11/3 06:30アップルFQ4、11/4 06:05 AMD・アステラ・ラボ・アリスタ決算、11/6 22:30米10月雇用統計（韓国時間・確定）。<a href=\"#schedule\">日程</a>"
+   "href": "#radar",
+   "ko": "<b>위기 근접도 32.5→36.2, 신용이 끌어올렸다.</b> CCC 스프레드 1,307bp로 방어선 1,300bp를 넘었고, CCC–BB 1,123bp·10년 텀프리미엄 0.94%까지 빨간불 3개(10/30 리포트). <a href=\"#radar\">위기 레이더</a>",
+   "en": "<b>Crisis proximity 32.5→36.2, led by credit.</b> CCC spread 1,307bp, past its 1,300bp line; CCC–BB 1,123bp, 10Y term premium 0.94% (10/30). <a href=\"#radar\">Radar</a>",
+   "es": "<b>Crisis 32,5→36,2, por el crédito.</b> CCC en 1.307 pb, sobre su línea de 1.300 pb; CCC–BB 1.123 pb, prima a 10 años 0,94% (30/10). <a href=\"#radar\">Radar</a>",
+   "ja": "<b>危機接近度32.5→36.2、押し上げたのは信用。</b>CCCスプレッド1,307bpが防衛線1,300bpを超え、CCC–BB 1,123bp・10年タームプレミアム0.94%と赤信号3つ（10/30レポート）。<a href=\"#radar\">危機レーダー</a>"
   },
   {
    "href": "#spcxlock",
-   "ko": "<b>스페이스X 락업 D-41, 주가 하락.</b> 12/9 7.976억주(≈$1,158억) 해제 예정. 10/28 종가 $145.23으로 하루 -2.25%, 공모가 대비 +7.6%까지 좁혀졌습니다. <a href=\"#spcxlock\">락업 레이더</a>",
-   "en": "<b>SpaceX lock-up D-41, stock slips.</b> 797.6M shares (≈$115.8B) unlock 12/9. SPCX $145.23 on 10/28, -2.25% d/d, +7.6% vs IPO. <a href=\"#spcxlock\">Radar</a>",
-   "es": "<b>Bloqueo SpaceX D-41; cae SPCX.</b> 797,6 M acciones (≈US$115,8 mil M) se liberan el 9/12. Cierre 28/10: US$145,23, -2,25 %, +7,6 % vs OPV. <a href=\"#spcxlock\">Radar</a>",
-   "ja": "<b>スペースXロックアップD-41、株価下落。</b>12/9に7.976億株（≈1,158億ドル）が解除予定。10/28終値は145.23ドルで前日比-2.25%、公開価格比+7.6%まで縮小。<a href=\"#spcxlock\">ロックアップ・レーダー</a>"
+   "ko": "<b>스페이스X 락업 D-40, 공모가 프리미엄 +6.6%.</b> 12/9 7.976억주(≈$1,148억) 해제 예정. 10/29 종가 $143.89(-0.92%), 공모가 $135 위 여유가 더 좁아졌습니다. <a href=\"#spcxlock\">락업 레이더</a>",
+   "en": "<b>SpaceX lock-up D-40, IPO premium +6.6%.</b> 797.6M shares (≈$114.8B) unlock 12/9. 10/29 close $143.89 (-0.92%) vs $135 IPO. <a href=\"#spcxlock\">Lock-up radar</a>",
+   "es": "<b>Lock-up de SpaceX D-40, prima +6,6%.</b> 797,6 M de acciones (≈US$114,8 mil M) se liberan el 9/12. Cierre 29/10: US$143,89 (-0,92%). <a href=\"#spcxlock\">Radar</a>",
+   "ja": "<b>スペースXロックアップD-40、公募価格比+6.6%。</b>12/9に7.976億株（≈1,148億ドル）解除予定。10/29終値143.89ドル（-0.92%）、公募価格135ドルとの差がさらに縮小。<a href=\"#spcxlock\">ロックアップ・レーダー</a>"
   }
  ],
  "checkpoints": [
@@ -36,15 +36,15 @@
     "ja": "11/3(火)"
    },
    "x": {
-    "ko": "미국 중간선거 · 애플 FQ4 실적 06:30",
+    "ko": "미국 중간선거 · 06:30 애플 FQ4",
     "en": "US midterms · Apple FQ4 06:30",
-    "es": "Elecciones de medio mandato · Apple 4T fiscal 06:30",
-    "ja": "米中間選挙・アップルFQ4決算 06:30"
+    "es": "Elecciones de EE. UU. · Apple FQ4 06:30",
+    "ja": "米中間選挙・06:30 アップルFQ4"
    },
    "y": {
     "ko": "한국시간·확정",
-    "en": "KST, confirmed",
-    "es": "hora de Corea, confirmado",
+    "en": "KST · confirmed",
+    "es": "hora Corea · confirmado",
     "ja": "韓国時間・確定"
    }
   },
@@ -56,15 +56,15 @@
     "ja": "11/4(水)"
    },
    "x": {
-    "ko": "AMD·아스테라랩스·아리스타 실적 06:05",
-    "en": "AMD, Astera Labs, Arista results 06:05",
-    "es": "Resultados de AMD, Astera Labs y Arista 06:05",
-    "ja": "AMD・アステラ・ラボ・アリスタ決算 06:05"
+    "ko": "06:05 AMD·아스테라랩스·아리스타 실적",
+    "en": "06:05 AMD, Astera Labs, Arista earnings",
+    "es": "06:05 resultados de AMD, Astera Labs y Arista",
+    "ja": "06:05 AMD・アステラ・ラブズ・アリスタ決算"
    },
    "y": {
     "ko": "한국시간·확정",
-    "en": "KST, confirmed",
-    "es": "hora de Corea, confirmado",
+    "en": "KST · confirmed",
+    "es": "hora Corea · confirmado",
     "ja": "韓国時間・確定"
    }
   },
@@ -76,35 +76,31 @@
     "ja": "11/6(金)"
    },
    "x": {
-    "ko": "미국 10월 고용보고서 22:30",
-    "en": "US October jobs report 22:30",
-    "es": "Informe de empleo de octubre de EE. UU. 22:30",
-    "ja": "米10月雇用統計 22:30"
+    "ko": "22:30 미국 10월 고용보고서",
+    "en": "22:30 US October jobs report",
+    "es": "22:30 informe de empleo de octubre en EE. UU.",
+    "ja": "22:30 米10月雇用統計"
    },
    "y": {
     "ko": "한국시간·확정",
-    "en": "KST, confirmed",
-    "es": "hora de Corea, confirmado",
+    "en": "KST · confirmed",
+    "es": "hora Corea · confirmado",
     "ja": "韓国時間・確定"
    }
   }
  ],
  "why": {
-  "ko": "오늘 실제로 있는 일(일본은행·엑슨모빌)과 다음 주 확정 일정(중간선거·애플·AMD·고용)을 먼저, 그다음 숫자가 바뀐 스페이스X 락업(D-41, 새 종가)을 골랐습니다. 위기 근접도(10/26 기준 32.5, 변화 없음)·버핏지수 243.5%(추정치)는 변하지 않은 배경이라 뺐고, 시총 순위(삼성전자 2계단 하락 14위)는 사흘 연속 다뤄 이번엔 제외했습니다. 아마존 실적 내용은 허브 피드에 아직 숫자가 없어 쓰지 않았습니다.",
-  "en": "Today's events (BOJ, ExxonMobil) and next week's confirmed dates (midterms, Apple, AMD, jobs) come first, then the SpaceX lock-up, where the numbers changed (D-41, new close). The crisis gauge (32.5 as of 10/26, unchanged) and the Buffett Index at 243.5% (estimate) are unchanged background, and market-cap rank (Samsung down two to 14th) ran three days in a row, so they sit out today. Amazon's results have no numbers in the hub feeds yet, so they are not described.",
-  "es": "Primero lo que ocurre hoy (Banco de Japón, ExxonMobil) y las fechas confirmadas de la próxima semana (elecciones, Apple, AMD, empleo); después el bloqueo de SpaceX, cuyas cifras cambiaron (D-41, nuevo cierre). El indicador de crisis (32,5 al 26/10, sin cambios) y el índice Buffett en 243,5 % (estimado) son contexto sin cambios, y el ranking por capitalización (Samsung baja dos puestos al 14.º) ya salió tres días seguidos, así que hoy quedan fuera. Los resultados de Amazon aún no tienen cifras en los feeds del hub, por eso no se describen.",
-  "ja": "今日の出来事（日銀・エクソンモービル）と来週の確定日程（中間選挙・アップル・AMD・雇用統計）を先に、次に数字が変わったスペースXロックアップ（D-41、新しい終値）を選びました。危機接近度（10/26時点32.5、変化なし）とバフェット指数243.5%（推計）は変わらない背景のため外し、時価総額ランキング（サムスン電子2つ下げ14位）は3日連続で扱ったので今回は見送りました。アマゾン決算の中身はハブのフィードにまだ数字がないため書いていません。"
+  "ko": "토요일이라 오늘 열리는 확정 일정이 없어 D-3으로 다가온 다음 주 일정을 1순위로, 이어 새로 바뀐 숫자(위기 근접도 +3.7, CCC 방어선 돌파)와 공모가 프리미엄이 계속 줄고 있는 스페이스X 락업을 골랐습니다. 내일 한국 수출입동향은 날짜가 추정이라, 레버리지·버핏지수는 데이터가 2일 넘게 지나 뺐습니다. 작성자 판단입니다.",
+  "en": "It's Saturday with no confirmed events today, so next week's calendar, now D-3, goes first, followed by fresh numbers (crisis proximity +3.7, CCC past its defense line) and the SpaceX lock-up as the IPO premium keeps shrinking. Tomorrow's Korean trade data was left out because its date is estimated; leverage and Buffett data are over two days old. Editor's judgment.",
+  "es": "Es sábado y hoy no hay eventos confirmados, así que primero va la agenda de la próxima semana (D-3), luego cifras nuevas (proximidad de crisis +3,7, CCC sobre su línea de defensa) y el lock-up de SpaceX con una prima sobre la OPV que sigue bajando. Se omitió el comercio exterior coreano de mañana (fecha estimada) y los datos de apalancamiento y Buffett (más de dos días). Criterio del editor.",
+  "ja": "土曜日で本日確定の予定がないため、D-3に迫った来週の日程を最優先にし、次に新しい数字（危機接近度+3.7、CCCが防衛線突破）と公募価格比プレミアムが縮み続けるスペースXのロックアップを選びました。明日の韓国輸出入動向は日付が推定のため、レバレッジ・バフェット指数はデータが2日超前のため外しました。編集者の判断です。"
  },
  "facts": [
-  "10/30 05:05 KST Amazon Q3, Sandisk FQ1 results [confirmed] — #schedule (data 2026-10-30)",
-  "10/30 12:00 KST BOJ policy decision incl. Outlook Report [confirmed] — #schedule",
-  "XOM 2026-10-30 bmo — #earnings (univertrix calendar)",
-  "11/3 US midterms [confirmed]; 11/3 06:30 KST Apple FQ4 [confirmed] — #schedule",
-  "11/4 06:05 KST AMD, Astera Labs, Arista Q3 [confirmed] — #schedule",
-  "11/6 22:30 KST US October jobs report [confirmed] — #schedule",
-  "SpaceX next unlock trade 2026-12-09, D-41, 797.6M shares, ≈$115.8B — #spcxlock asof 2026-10-29",
-  "SPCX $145.23 (2026-10-28 close), -2.25% d/d, +7.6% vs IPO $135 — #spcxlock",
-  "Crisis 32.5 (report 2026-10-26), Buffett 243.5% estimated, Samsung #14 (-2) — mentioned in why only"
+  "11/3 미국 중간선거 [confirmed], 11/3 06:30 KST 애플 FQ4 [confirmed] — key dates bot (data 2026-10-30)",
+  "11/4 06:05 KST AMD·아스테라랩스·아리스타 3분기 실적 [confirmed] — key dates bot",
+  "11/6 22:30 KST 미국 10월 고용보고서 [confirmed] — key dates bot",
+  "위기 근접도 36.2 (watch), 이전 32.5; red 3: CCC OAS 1307bp (defense 1300, hit), CCC–BB 1123bp, 10Y term premium 0.9358% — crisis bot report 2026-10-30 10:22",
+  "SpaceX lock-up D-40, trade 2026-12-09, 797.6M shares, ≈$114.8B; SPCX $143.89 (2026-10-29 close, -0.92% d/d, +6.6% vs IPO $135) — spcx-lock asof 2026-10-30"
  ],
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
  "note": "Picked from the hub's live feeds. Not investment advice.",

@@ -222,5 +222,37 @@
    "es": "Primero lo que ocurre hoy (Banco de Japón, ExxonMobil) y las fechas confirmadas de la próxima semana (elecciones, Apple, AMD, empleo); después el bloqueo de SpaceX, cuyas cifras cambiaron (D-41, nuevo cierre). El indicador de crisis (32,5 al 26/10, sin cambios) y el índice Buffett en 243,5 % (estimado) son contexto sin cambios, y el ranking por capitalización (Samsung baja dos puestos al 14.º) ya salió tres días seguidos, así que hoy quedan fuera. Los resultados de Amazon aún no tienen cifras en los feeds del hub, por eso no se describen.",
    "ja": "今日の出来事（日銀・エクソンモービル）と来週の確定日程（中間選挙・アップル・AMD・雇用統計）を先に、次に数字が変わったスペースXロックアップ（D-41、新しい終値）を選びました。危機接近度（10/26時点32.5、変化なし）とバフェット指数243.5%（推計）は変わらない背景のため外し、時価総額ランキング（サムスン電子2つ下げ14位）は3日連続で扱ったので今回は見送りました。アマゾン決算の中身はハブのフィードにまだ数字がないため書いていません。"
   }
+ },
+ {
+  "date": "2026-10-31",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>D-3, 중간선거와 애플이 같은 날.</b> 11/3 미국 중간선거·06:30 애플 FQ4, 11/4 06:05 AMD·아스테라랩스, 11/6 22:30 미국 고용보고서(한국시간·확정). <a href=\"#schedule\">일정</a>",
+    "en": "<b>D-3: midterms and Apple, same day.</b> 11/3 US midterms, Apple 06:30; 11/4 06:05 AMD, Astera Labs; 11/6 22:30 US jobs (KST). <a href=\"#schedule\">Dates</a>",
+    "es": "<b>D-3: elecciones y Apple, mismo día.</b> 3/11 elecciones en EE. UU., Apple 06:30; 4/11 06:05 AMD, Astera Labs; 6/11 22:30 empleo (Corea). <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>D-3、中間選挙とアップル決算が同じ日。</b>11/3 米中間選挙・06:30 アップルFQ4、11/4 06:05 AMD・アステラ・ラブズ、11/6 22:30 米雇用統計（韓国時間・確定）。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#radar",
+    "ko": "<b>위기 근접도 32.5→36.2, 신용이 끌어올렸다.</b> CCC 스프레드 1,307bp로 방어선 1,300bp를 넘었고, CCC–BB 1,123bp·10년 텀프리미엄 0.94%까지 빨간불 3개(10/30 리포트). <a href=\"#radar\">위기 레이더</a>",
+    "en": "<b>Crisis proximity 32.5→36.2, led by credit.</b> CCC spread 1,307bp, past its 1,300bp line; CCC–BB 1,123bp, 10Y term premium 0.94% (10/30). <a href=\"#radar\">Radar</a>",
+    "es": "<b>Crisis 32,5→36,2, por el crédito.</b> CCC en 1.307 pb, sobre su línea de 1.300 pb; CCC–BB 1.123 pb, prima a 10 años 0,94% (30/10). <a href=\"#radar\">Radar</a>",
+    "ja": "<b>危機接近度32.5→36.2、押し上げたのは信用。</b>CCCスプレッド1,307bpが防衛線1,300bpを超え、CCC–BB 1,123bp・10年タームプレミアム0.94%と赤信号3つ（10/30レポート）。<a href=\"#radar\">危機レーダー</a>"
+   },
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X 락업 D-40, 공모가 프리미엄 +6.6%.</b> 12/9 7.976억주(≈$1,148억) 해제 예정. 10/29 종가 $143.89(-0.92%), 공모가 $135 위 여유가 더 좁아졌습니다. <a href=\"#spcxlock\">락업 레이더</a>",
+    "en": "<b>SpaceX lock-up D-40, IPO premium +6.6%.</b> 797.6M shares (≈$114.8B) unlock 12/9. 10/29 close $143.89 (-0.92%) vs $135 IPO. <a href=\"#spcxlock\">Lock-up radar</a>",
+    "es": "<b>Lock-up de SpaceX D-40, prima +6,6%.</b> 797,6 M de acciones (≈US$114,8 mil M) se liberan el 9/12. Cierre 29/10: US$143,89 (-0,92%). <a href=\"#spcxlock\">Radar</a>",
+    "ja": "<b>スペースXロックアップD-40、公募価格比+6.6%。</b>12/9に7.976億株（≈1,148億ドル）解除予定。10/29終値143.89ドル（-0.92%）、公募価格135ドルとの差がさらに縮小。<a href=\"#spcxlock\">ロックアップ・レーダー</a>"
+   }
+  ],
+  "why": {
+   "ko": "토요일이라 오늘 열리는 확정 일정이 없어 D-3으로 다가온 다음 주 일정을 1순위로, 이어 새로 바뀐 숫자(위기 근접도 +3.7, CCC 방어선 돌파)와 공모가 프리미엄이 계속 줄고 있는 스페이스X 락업을 골랐습니다. 내일 한국 수출입동향은 날짜가 추정이라, 레버리지·버핏지수는 데이터가 2일 넘게 지나 뺐습니다. 작성자 판단입니다.",
+   "en": "It's Saturday with no confirmed events today, so next week's calendar, now D-3, goes first, followed by fresh numbers (crisis proximity +3.7, CCC past its defense line) and the SpaceX lock-up as the IPO premium keeps shrinking. Tomorrow's Korean trade data was left out because its date is estimated; leverage and Buffett data are over two days old. Editor's judgment.",
+   "es": "Es sábado y hoy no hay eventos confirmados, así que primero va la agenda de la próxima semana (D-3), luego cifras nuevas (proximidad de crisis +3,7, CCC sobre su línea de defensa) y el lock-up de SpaceX con una prima sobre la OPV que sigue bajando. Se omitió el comercio exterior coreano de mañana (fecha estimada) y los datos de apalancamiento y Buffett (más de dos días). Criterio del editor.",
+   "ja": "土曜日で本日確定の予定がないため、D-3に迫った来週の日程を最優先にし、次に新しい数字（危機接近度+3.7、CCCが防衛線突破）と公募価格比プレミアムが縮み続けるスペースXのロックアップを選びました。明日の韓国輸出入動向は日付が推定のため、レバレッジ・バフェット指数はデータが2日超前のため外しました。編集者の判断です。"
+  }
  }
 ]
