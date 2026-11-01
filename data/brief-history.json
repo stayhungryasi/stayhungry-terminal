@@ -254,5 +254,37 @@
    "es": "Es sábado y hoy no hay eventos confirmados, así que primero va la agenda de la próxima semana (D-3), luego cifras nuevas (proximidad de crisis +3,7, CCC sobre su línea de defensa) y el lock-up de SpaceX con una prima sobre la OPV que sigue bajando. Se omitió el comercio exterior coreano de mañana (fecha estimada) y los datos de apalancamiento y Buffett (más de dos días). Criterio del editor.",
    "ja": "土曜日で本日確定の予定がないため、D-3に迫った来週の日程を最優先にし、次に新しい数字（危機接近度+3.7、CCCが防衛線突破）と公募価格比プレミアムが縮み続けるスペースXのロックアップを選びました。明日の韓国輸出入動向は日付が推定のため、レバレッジ・バフェット指数はデータが2日超前のため外しました。編集者の判断です。"
   }
+ },
+ {
+  "date": "2026-11-01",
+  "lines": [
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X, 공모가 $135 아래로.</b> 10/30 종가 $134.72(-6.37%)로 공모가 대비 -0.2%. 12/9 7.976억주(≈$1,075억) 락업 해제를 앞두고 있습니다. <a href=\"#spcxlock\">락업 레이더</a>",
+    "en": "<b>SpaceX below its $135 IPO price.</b> 10/30 close $134.72 (-6.37%), -0.2% vs IPO, before 797.6M shares (≈$107.5B) unlock on 12/9. <a href=\"#spcxlock\">Lock-up</a>",
+    "es": "<b>SpaceX, bajo su OPV de US$135.</b> Cierre 30/10: US$134,72 (-6,37%), -0,2% vs. OPV; el 9/12 se liberan 797,6 M de acciones (≈US$107,5 mil M). <a href=\"#spcxlock\">↗</a>",
+    "ja": "<b>スペースX、公募価格$135を割り込む。</b>10/30終値$134.72(-6.37%)で公募価格比-0.2%。12/9に7.976億株(約$1,075億)のロックアップ解除を控えます。<a href=\"#spcxlock\">ロックアップ・レーダー</a>"
+   },
+   {
+    "href": "#earnings",
+    "ko": "<b>D-2, 이번 주 첫 관문은 애플.</b> 11/2 버크셔(시간 미정)에 이어 11/3 06:30 애플 FQ4·미국 중간선거, 11/4 06:05 AMD·아스테라랩스(한국시간·확정). <a href=\"#earnings\">실적</a>",
+    "en": "<b>D-2: Apple opens the week.</b> Berkshire 11/2 (time TBA), Apple FQ4 06:30 11/3 with the midterms, AMD and Astera Labs 06:05 11/4 (KST). <a href=\"#earnings\">Earnings</a>",
+    "es": "<b>D-2: Apple abre la semana.</b> Berkshire 2/11 (hora por confirmar), Apple 06:30 3/11 y legislativas, AMD y Astera Labs 06:05 4/11 (Corea). <a href=\"#earnings\">↗</a>",
+    "ja": "<b>D-2、今週最初の関門はアップル。</b>11/2バークシャー(時刻未定)、11/3 06:30アップルFQ4・米中間選挙、11/4 06:05 AMD・アステラ・ラブズ(韓国時間・確定)。<a href=\"#earnings\">決算</a>"
+   },
+   {
+    "href": "#leverage",
+    "ko": "<b>예탁금 한 달 -15.5%, 빚투는 줄고 있다.</b> 10/28 기준 고객예탁금 88.3조원, 신용융자 29.3조원(하루 -0.31조), 반대매매는 1년 평균의 0.22배. <a href=\"#leverage\">K-레버리지</a>",
+    "en": "<b>Deposits -15.5% in a month.</b> As of 10/28: deposits KRW 88.3tn, margin loans KRW 29.3tn (-0.31tn d/d), forced selling 0.22x 1y avg. <a href=\"#leverage\">K-leverage</a>",
+    "es": "<b>Depósitos -15,5% en un mes.</b> Al 28/10: depósitos 88,3 billones de KRW, margen 29,3 billones (-0,31 diario), ventas forzadas 0,22x la media. <a href=\"#leverage\">↗</a>",
+    "ja": "<b>預託金は1カ月で-15.5%、信用買いも縮小。</b>10/28時点で顧客預託金88.3兆ウォン、信用融資29.3兆ウォン(前日比-0.31兆)、反対売買は1年平均の0.22倍。<a href=\"#leverage\">Kレバレッジ</a>"
+   }
+  ],
+  "why": {
+   "ko": "새로 바뀐 숫자 중 가장 큰 변화는 스페이스X가 공모가 아래로 내려간 것이라 1순위로 올렸고, 이번 주 일정은 어제와 겹치지 않게 내일 버크셔부터 다시 짰습니다. 위기 근접도 36.2(10/30)는 어제와 같아 뺐고, 버핏지수·VIX는 10/29 기준이라 쓰지 않았습니다. 한국 10월 수출입동향(오늘 09:00)은 날짜가 추정이라 넣지 않았습니다.",
+   "en": "SpaceX falling below its IPO price is the biggest new number, so it leads; this week's calendar is rebuilt from Berkshire tomorrow so it does not repeat yesterday. The crisis score 36.2 (10/30) is unchanged and left out; Buffett Index and VIX date from 10/29, so they are skipped. Korea's October trade data (today 09:00) has an estimated date and is not included.",
+   "es": "Que SpaceX caiga bajo su precio de OPV es el mayor cambio, por eso va primero; el calendario semanal se rehízo desde Berkshire mañana para no repetir el de ayer. El índice de crisis 36,2 (30/10) no cambió y quedó fuera; el índice Buffett y el VIX son del 29/10, así que no se usan. El comercio exterior de Corea de octubre (hoy 09:00) tiene fecha estimada y no se incluye.",
+   "ja": "新しい数字で最も大きな変化はスペースXの公募価格割れのため1位に。今週の日程は昨日と重ならないよう明日のバークシャーから組み直しました。危機接近度36.2(10/30)は昨日と同じため外し、バフェット指数・VIXは10/29時点のため使っていません。韓国10月輸出入動向(本日09:00)は日付が推定のため入れていません。"
+  }
  }
 ]
