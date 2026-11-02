@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-03",
+      "commit": "HEAD",
+      "message": "Mobile quick menu: a thumb-reach dock at the bottom (previous · menu · next · top) shows where you are, and the menu opens a sheet with every page grouped like the top menu, a live number on each tile and instant search in 4 languages; swipe down or Esc to close"
+    },
+    {
       "date": "2026-11-02",
       "commit": "0b9f7b6",
       "message": "New research: the 2026 US midterms through a disruptive-innovation lens, red-team edition. Markets vs models, a scenario tree, a sector heat map, the election-night checklist in Korea time and the post-vote calendar, with 8 charts; checked twice by independent red teams (Oct 29 and Nov 2, election eve); in 4 languages"
@@ -207,7 +212,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "credit": "@stayhungryasi · https://t.me/stayhungryasi",
   "disclaimer": "Not investment advice."
 }

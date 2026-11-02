@@ -868,6 +868,40 @@ a.ftt:hover{border-color:#C9963F}.ftimg{background:#FBF4E8;display:flex;align-it
 .rkq{margin:8px 0}.rkqr{display:grid;grid-template-columns:120px 170px 110px 120px 90px;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);font:600 13.5px var(--mono)}.rkqr.h{font:500 12px var(--mono);color:var(--mute)}.rkqr b{color:var(--ink)}
 @media (max-width:1260px){.rkg{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:900px){.rkr{grid-template-columns:24px minmax(0,1fr) 82px 58px;gap:8px}.rkr .st,.rkr .d1,.rkr.rkh span:nth-child(4),.rkr.rkh span:nth-child(6),.rkr .nm small{display:none}.rkcut span{margin-left:30px}.elr{grid-template-columns:minmax(0,1fr) 92px}.elr .d,.elr.h span:first-child{grid-column:1/-1}.elr .k{display:none}.elr.h span:last-child{display:none}.rkqr{grid-template-columns:minmax(0,1fr) 62px 66px 62px;gap:6px;font-size:12px}.rkqr span:nth-child(2){display:none}.ernm{display:block;margin-left:0}}
+.dock,.sheet{display:none}
+@media (max-width:1260px){
+.pgnum{display:none!important}
+#reader{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+.dock{display:grid;grid-template-columns:46px minmax(0,1fr) 46px 46px;gap:6px;position:fixed;z-index:30;left:max(10px,env(safe-area-inset-left,0px));right:max(10px,env(safe-area-inset-right,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));max-width:560px;margin:0 auto;padding:6px;border-radius:18px;background:rgba(16,19,27,.94);border:1px solid var(--line2);box-shadow:0 10px 30px rgba(0,0,0,.55);backdrop-filter:blur(12px)}
+.dk{height:48px;border:0;border-radius:13px;background:#1A1F2B;color:var(--ink);font:700 24px/1 var(--mono);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.dk:active{transform:scale(.96)}.dk:disabled{opacity:.3}
+.dkm{display:flex;align-items:center;gap:10px;padding:0 14px;background:var(--or);color:#0A0C10;text-align:left;min-width:0}
+.dkm .ic{font-size:20px}.dkm .nm{flex:1;min-width:0;font:700 15px var(--sans,inherit);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.dkm .nm b{font-family:var(--mono)}.dkm .nm em{font:500 12px var(--mono);font-style:normal;opacity:.65;margin-right:4px}
+.dkm .mn{flex:none;font:800 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;background:rgba(10,12,16,.16);border-radius:8px;padding:4px 7px}
+.dkt{font-size:20px;color:var(--mute)}
+.sheet{display:block;position:fixed;inset:0;z-index:40}
+.sheet[hidden]{display:none}
+.shbg{position:absolute;inset:0;background:rgba(4,6,10,.62);opacity:0;transition:opacity .18s}
+.shp{position:absolute;left:0;right:0;bottom:0;max-height:min(88vh,100dvh - 40px);display:flex;flex-direction:column;background:#0E1118;border-top:1px solid var(--line2);border-radius:22px 22px 0 0;transform:translateY(100%);transition:transform .2s ease-out;padding-bottom:env(safe-area-inset-bottom,0px);max-width:760px;margin:0 auto}
+.sheet.open .shbg{opacity:1}.sheet.open .shp{transform:none}
+.shh{padding:8px 16px 10px;border-bottom:1px solid var(--line)}.grab{display:block;width:44px;height:5px;border-radius:3px;background:var(--line2);margin:0 auto 8px}
+.shr{display:flex;justify-content:space-between;align-items:center}.shr h3{margin:0;font-size:20px;font-weight:900}
+.shx{width:40px;height:40px;border-radius:12px;border:1px solid var(--line2);background:none;color:var(--ink);font-size:18px}
+#shIn{width:100%;margin-top:10px;height:46px;border-radius:12px;border:1px solid var(--line2);background:#151A24;color:var(--ink);font-size:16px;padding:0 14px;outline:none}#shIn:focus{border-color:var(--or)}
+.shn{display:block;margin-top:6px;font:500 12px var(--mono);color:var(--dim)}
+.shb{overflow:auto;padding:4px 16px 18px;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.shg h4{margin:14px 0 6px;font:700 12px var(--mono);letter-spacing:.14em;color:var(--or)}
+.sht{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.shc{position:relative;display:flex;flex-direction:column;gap:3px;min-height:74px;padding:10px 12px;border-radius:14px;background:#151A24;border:1px solid var(--line);color:var(--ink);text-decoration:none;-webkit-tap-highlight-color:transparent}
+.shc:active{transform:scale(.98)}.shc.on{border-color:var(--or);background:#1E1A16}
+.shc .no{position:absolute;right:10px;top:9px;font:600 11px var(--mono);color:var(--dim)}.shc .ic{font-size:18px;line-height:1}
+.shc b{font-size:15.5px;font-weight:800;line-height:1.2;padding-right:20px}.shc small{font-size:12px;color:var(--mute);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.shc .lv{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:5px;vertical-align:1px}
+.shnone{color:var(--mute);margin:20px 0}
+html.shon,html.shon body{overflow:hidden}
+@media (max-width:440px){.dkm .mn{display:none}.dkm{gap:8px;padding:0 12px}}
+}
+@media (max-width:1260px) and (min-width:700px){.sht{grid-template-columns:repeat(3,minmax(0,1fr))}}
 </style>
 
 <header class="top">
@@ -936,6 +970,8 @@ a.ftt:hover{border-color:#C9963F}.ftimg{background:#FBF4E8;display:flex;align-it
 </main>
 <nav class="pager" id="pager" aria-label="Page index"></nav>
 <div class="pgnum" id="pgnum" aria-hidden="true"></div>
+<nav class="dock" id="dock" aria-label="Quick menu"></nav>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="shTitle" hidden></div>
 
 <div class="dev" id="dev" hidden>
   <div class="vtitle" id="vtitle"></div>
@@ -1046,6 +1082,7 @@ const SOFTWARE=[{id:'mocapture',no:1,status:'live',maker:{ko:'무광소프트',e
  links:{virustotal:'https://www.virustotal.com/gui/file/f5212e4a6807eacafa44dd914d573b464fb4ffa0d162f67f372c214387ecc56d',changelog:'https://mugwangsoft.com/changelog/',privacy:'https://mugwangsoft.com/privacy/',enterprise:'https://mugwangsoft.com/enterprise/',feedback:'https://mugwangsoft.com/feedback/',contact:'hello@mugwangsoft.com'},
  media:'https://mugwangsoft.com/media/',shots:['tray','masking','editor','window','scroll','textcopy'],built_with:'Claude'}];
 const CHANGELOG=[
+ {"d":"2026-11-03","h":"HEAD","m":{"en":"Mobile quick menu: a thumb-reach dock at the bottom (previous · menu · next · top) shows where you are, and the menu opens a sheet with every page grouped like the top menu, a live number on each tile and instant search in 4 languages; swipe down or Esc to close","ko":"모바일 빠른 메뉴: 화면 아래 엄지 닿는 곳에 독(이전 · 메뉴 · 다음 · 맨 위로)과 현재 위치 표시. 메뉴를 누르면 전체 페이지가 상단 메뉴와 같은 묶음으로 펼쳐지고, 타일마다 실시간 숫자, 4개 언어 바로 검색. 아래로 쓸거나 Esc로 닫기","es":"Menú rápido móvil: un dock al alcance del pulgar (anterior · menú · siguiente · arriba) muestra dónde estás, y el menú abre una hoja con todas las páginas agrupadas como el menú superior, un número en vivo en cada tarjeta y búsqueda instantánea en 4 idiomas; desliza hacia abajo o Esc para cerrar","ja":"モバイル用クイックメニュー:画面下の親指が届く位置にドック(前 · メニュー · 次 · 先頭へ)と現在位置。メニューを押すと全ページを上部メニューと同じグループで表示、タイルごとにライブの数字、4言語の即時検索。下にスワイプかEscで閉じる"}},
  {"d":"2026-11-02","h":"0b9f7b6","m":{"en":"New research: the 2026 US midterms through a disruptive-innovation lens, red-team edition. Markets vs models, a scenario tree, a sector heat map, the election-night checklist in Korea time and the post-vote calendar, with 8 charts; checked twice by independent red teams (Oct 29 and Nov 2, election eve); in 4 languages","ko":"새 리서치: 2026 미국 중간선거 × 파괴적 혁신 레드팀 검증판. 예측시장 vs 모델, 시나리오 트리, 섹터 히트맵, 한국 시간 개표 체크리스트, 선거 후 일정을 차트 8개로. 독립 레드팀 2회 검증(10/29, 선거 전날 11/2) 후 탑재. 4개 언어","es":"Nueva investigación: las elecciones intermedias de EE. UU. de 2026 bajo la lente de la innovación disruptiva, edición red team. Mercados vs modelos, árbol de escenarios, mapa de calor sectorial, la lista de la noche electoral en hora de Corea y el calendario posterior, con 8 gráficos; verificada dos veces por equipos independientes (29 oct y 2 nov, víspera electoral); en 4 idiomas","ja":"新リサーチ:2026年米中間選挙を破壊的イノベーションで読む(レッドチーム検証版)。予測市場とモデルの比較、シナリオツリー、セクターヒートマップ、韓国時間の開票チェックリスト、選挙後の日程をチャート8点で。独立レッドチームによる2回の検証(10/29、選挙前日の11/2)を経て掲載。4言語"}},
  {"d":"2026-10-28","h":"81cb4f2","m":{"en":"New research: Anthropic's S-1 through a disruptive-innovation lens. S-curve, compute efficiency, the 2027 commitment wall, a probability-weighted value range and the price-performance gap, with 5 new charts, after four rounds of independent checks against the filing; in 4 languages","ko":"새 리서치: 앤트로픽 S-1 파괴적 혁신 분석. S곡선, 컴퓨팅 효율, 2027년 약정의 벽, 확률가중 가치 범위, 가격 대비 성능 격차를 새 차트 5개로. S-1 원문 대조 네 차례 독립 검증 후 탑재. 4개 언어","es":"Nueva investigación: el S-1 de Anthropic bajo la lente de la innovación disruptiva. Curva S, eficiencia de cómputo, el muro de compromisos de 2027, un rango de valor ponderado por probabilidad y la brecha precio-rendimiento, con 5 gráficos nuevos, tras cuatro rondas de verificación independiente contra el documento; en 4 idiomas","ja":"新リサーチ:アンソロピックS-1を破壊的イノベーションで読む。Sカーブ、コンピュート効率、2027年の契約の壁、確率加重の価値レンジ、価格対性能の差を新しいチャート5点で。S-1原文との照合を4回の独立検証で行ってから掲載。4言語"}},
  {"d":"2026-10-27","h":"307258f","m":{"en":"Market-cap rank and earnings go live from univertrix.com: RANK shows the global Top 20 every day with a Top 5/10/20 switch, month-end rank chart, who entered and who left, and the research question of whether the month-end Top N works as a universe; EARNINGS now covers every Top 20 report date in your time zone, reported ones with the market-cap move around the report; hub cards 11 and 12 go live; in 4 languages","ko":"시총 순위·실적 일정 실데이터 연결(우주지배자): RANK는 글로벌 시총 Top 20을 매일, Top 5·10·20 전환, 월말 순위 차트, 진입·이탈, '월말 Top N은 유니버스로 통하는가' 연구 표. EARNINGS는 Top 20 전체 실적일을 내 시간대로, 발표 끝난 기업은 발표 전후 시총 변화까지. 허브 11·12번 카드 가동. 4개 언어","es":"El ranking por capitalización y los resultados ya están en vivo desde univertrix.com: RANK muestra el Top 20 mundial cada día con selector Top 5/10/20, gráfico de ranking a fin de mes, quién entró y quién salió, y la pregunta de si el Top N de fin de mes funciona como universo; RESULTADOS cubre todas las fechas del Top 20 en tu zona horaria, y los ya publicados con el movimiento de capitalización; tarjetas 11 y 12 en vivo; en 4 idiomas","ja":"時価総額順位と決算日程をunivertrix.comから実データ接続:RANKは世界トップ20を毎日、トップ5・10・20切替、月末順位チャート、入った企業・外れた企業、「月末トップNはユニバースとして機能するか」の研究表。EARNINGSはトップ20全社の決算日をあなたの時刻で、発表済みは発表前後の時価総額変化まで。ハブ11・12番カード稼働。4言語"}},
@@ -1548,6 +1585,12 @@ ja:{d5_eb:'機関の5%大量保有 · 開示ボットからライブ',d5_h1:'誰
  d5_src:'開示ボット(dart_bot):Telegramレポートと同じ判定です。出典:OpenDARTの公開開示。大量保有の開示は買い推奨ではなく、IB本体は顧客スワップや貸株のために株を保有することが多い。',
  hub_d5n:'{n}件 · 直近 {c}',t_d5:'filings [語]  機関の5%大量保有開示'}};
 LANGS.forEach(c=>Object.assign(L[c],D5X[c]));
+const MNX={
+en:{mn_menu:'Menu',mn_find:'Find a page or topic…',mn_close:'Close',mn_prev:'Previous page',mn_next:'Next page',mn_top:'Back to top',mn_none:'No page matches. Try another word.',mn_title:'Go anywhere',mn_hint:'{n} pages · tap to jump'},
+ko:{mn_menu:'메뉴',mn_find:'페이지·주제 찾기…',mn_close:'닫기',mn_prev:'이전 페이지',mn_next:'다음 페이지',mn_top:'맨 위로',mn_none:'맞는 페이지가 없습니다. 다른 단어로 찾아보세요.',mn_title:'바로 가기',mn_hint:'{n}개 페이지 · 누르면 바로 이동'},
+es:{mn_menu:'Menú',mn_find:'Busca una página o tema…',mn_close:'Cerrar',mn_prev:'Página anterior',mn_next:'Página siguiente',mn_top:'Volver arriba',mn_none:'Ninguna página coincide. Prueba otra palabra.',mn_title:'Ir a cualquier parte',mn_hint:'{n} páginas · toca para ir'},
+ja:{mn_menu:'メニュー',mn_find:'ページ・テーマを探す…',mn_close:'閉じる',mn_prev:'前のページ',mn_next:'次のページ',mn_top:'先頭へ',mn_none:'一致するページがありません。別の言葉で探してください。',mn_title:'すぐ移動',mn_hint:'{n}ページ · タップで移動'}};
+LANGS.forEach(c=>Object.assign(L[c],MNX[c]));
 const RKX={
 en:{rk_eb:'GLOBAL MARKET-CAP TOP 20 · LIVE FROM UNIVERTRIX',rk_h2:'{n} #1 · {d} days running',rk_live:'univertrix.com daily snapshot {a} · {k} days of history since {f}',rk_load:'Loading the live ranking…',rk_fail:'Live ranking unavailable right now; showing sample data.',
  rk_top:'Top {n}',rk_cols:['#','COMPANY','MARKET CAP','1D','30D','IN TOP {n}'],rk_line:'Top {n} line',rk_bump:'MONTH-END RANK · TOP {n}',rk_now:'now',rk_chg:'WHO ENTERED · WHO LEFT · TOP {n}',rk_in:'IN',rk_out:'OUT',rk_none:'no change',rk_turn:'turnover {p}%',
@@ -2062,6 +2105,60 @@ function rFilings(){const t=T(),el=$('filings');if(!el)return;
 async function d5Load(){try{const r=await fetch(crUrl('live/dart5.json'),{cache:'no-cache'});if(!r.ok)throw 0;D5=await r.json();d5State=D5&&D5.items?'ok':'fail';}catch(e){d5State='fail';}
   rFilings();rHub();if(typeof rDev==='function')rDev();fit();if(/^#(filings|dart|5pct)$/.test(location.hash))$('filings').scrollIntoView();}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-d5b]');if(b){d5Badge=b.dataset.d5b;rFilings();fit();}});
+/* MOBILE QUICK MENU: a thumb-reach dock (prev · menu · next · top) and a full-height sheet
+   with every page grouped like the top menu, a live number on each tile and instant search. */
+let shQ='',mnTouch=0;
+/* after a jump, wait for the smooth scroll to stop; if pages above grew meanwhile (live data), land on the page top again */
+function mnSettle(id){const t0=Date.now();let last=-1,same=0;const hh=()=>(document.querySelector('header.top')||{}).offsetHeight||64;
+  const iv=setInterval(()=>{if(mnTouch>t0||Date.now()-t0>3000){clearInterval(iv);return;}const y=Math.round(scrollY);same=y===last?same+1:0;last=y;
+    if(same>=2){clearInterval(iv);const el=$(id),tp=el.getBoundingClientRect().top,atEnd=innerHeight+scrollY>=document.documentElement.scrollHeight-2;
+      if(Math.abs(tp-hh())>6&&!atEnd)scrollTo({top:scrollY+tp-hh(),behavior:'instant'});}},120);}
+document.addEventListener('touchstart',e=>{if(!e.target.closest('#sheet,#dock'))mnTouch=Date.now();},{passive:true});
+document.addEventListener('wheel',()=>{mnTouch=Date.now();},{passive:true});
+const MN_ICON={today:'⏱',brief:'≡',quote:'❝',earnings:'📅',schedule:'🗓',research:'🚀',mix:'◔',score:'✓',agent:'🌙',spcxlock:'🔓',library:'📚',radar:'📡',leverage:'💳',filings:'🏦',rank:'🏆',univertrix:'🌌',uvmap:'🗺',lab:'🧪',brains:'🧠',software:'💾',fortune:'🔮',hub:'🔗',news:'📰'};
+function mnHint(id){const t=T(),now=Date.now();try{switch(id){
+  case 'today':case 'earnings':{const nx=nextEarn(now);return nx?nx.t+' · '+erLabel(nx,t,now):'';}
+  case 'brief':{const b=brFresh();return b?b.date:'';}
+  case 'quote':{const q=qtPick(qtDay());return q?qtL(q.q).who:'';}
+  case 'schedule':{const n=scNext();return n?scDD(n)+' · '+scTitle(n):'';}
+  case 'radar':return CR?(t.k_crisis+' '+crS(CR.score)):'';
+  case 'leverage':return LV&&LV.regime?t.lv_reg[LV.regime.key]:'';
+  case 'filings':return D5&&D5.items?fmt(t.hub_d5n,{n:D5.items.length,c:D5.items[0].corp}):'';
+  case 'rank':return RK?'#1 '+rkShort(rkTop(RK.days.length-1,1)[0]):'';
+  case 'agent':return AG&&AG.run?agHub():'';
+  case 'spcxlock':return LK&&LK.next?lkDD(LK.next)+' · '+lkSh(LK.next.shares_m):'';
+  case 'research':return 'SpaceX 3Q26';
+  case 'library':return RS&&RS.reports?String(RS.reports.length):'';
+  case 'software':return 'v'+SOFTWARE[0].version;
+  default:return '';}}catch(e){return '';}}
+const mnLive=id=>({radar:CR,leverage:LV,filings:D5,rank:RK,agent:AG,spcxlock:LK,quote:typeof QT!=='undefined'?QT:null,schedule:typeof SC!=='undefined'?SC:null,earnings:EL,today:EL})[id];
+function rDock(){const t=T(),el=$('dock');if(!el)return;const i=Math.max(0,cur||0),id=PAGES[i];
+  el.innerHTML=`<button class="dk dkp" data-dk="prev" aria-label="${esc(t.mn_prev)}"${i===0?' disabled':''}>‹</button>`
+   +`<button class="dk dkm" data-dk="menu" aria-haspopup="dialog" aria-expanded="${!$('sheet').hidden}"><span class="ic">☰</span><span class="nm"><b>${String(i+1).padStart(2,'0')}</b><em>/${NP}</em> ${esc(t.nav10[i])}</span><span class="mn">${esc(t.mn_menu)}</span></button>`
+   +`<button class="dk dkn" data-dk="next" aria-label="${esc(t.mn_next)}"${i===NP-1?' disabled':''}>›</button>`
+   +`<button class="dk dkt" data-dk="top" aria-label="${esc(t.mn_top)}">↑</button>`;}
+function mnMatch(id,q){if(!q)return true;q=q.toLowerCase();const i=PAGES.indexOf(id);
+  return [id,...LANGS.map(c=>(L[c].nav10||[])[i]||''),...Object.keys(alias).filter(k=>alias[k]===id),mnHint(id)].join(' ').toLowerCase().includes(q);}
+function rSheetBody(){const t=T(),q=shQ.trim();let n=0;
+  const body=NAV_G.map((g,gi)=>{const ps=g.p.filter(id=>mnMatch(id,q));n+=ps.length;if(!ps.length)return '';
+    return `<section class="shg"><h4>${esc(t.navg[gi])}</h4><div class="sht">${ps.map(id=>{const i=PAGES.indexOf(id),h=mnHint(id),lv=mnLive(id);
+      return `<a href="#${id}" class="shc${i===cur?' on':''}" data-sh="${id}"><span class="no">${String(i+1).padStart(2,'0')}</span><span class="ic">${MN_ICON[id]||'•'}</span><b>${esc(t.nav10[i])}</b>${h?`<small>${lv?'<i class="lv"></i>':''}${esc(h)}</small>`:''}</a>`;}).join('')}</div></section>`;}).join('');
+  return n?body:`<p class="shnone">${esc(t.mn_none)}</p>`;}
+function rSheet(){const t=T(),el=$('sheet');if(!el)return;
+  el.innerHTML=`<div class="shbg" data-dk="close"></div><div class="shp"><div class="shh"><span class="grab"></span><div class="shr"><h3 id="shTitle">${esc(t.mn_title)}</h3><button class="shx" data-dk="close" aria-label="${esc(t.mn_close)}">✕</button></div>`
+   +`<input id="shIn" type="search" enterkeyhint="go" autocomplete="off" placeholder="${esc(t.mn_find)}" value="${esc(shQ)}"><small class="shn">${esc(fmt(t.mn_hint,{n:NP}))}</small></div><div class="shb" id="shBody">${rSheetBody()}</div></div>`;}
+function shOpen(){const el=$('sheet');rSheet();el.hidden=false;document.documentElement.classList.add('shon');requestAnimationFrame(()=>el.classList.add('open'));rDock();
+  const on=el.querySelector('.shc.on');if(on)on.scrollIntoView({block:'center'});}
+function shClose(){const el=$('sheet');if(el.hidden)return;el.classList.remove('open');document.documentElement.classList.remove('shon');setTimeout(()=>{el.hidden=true;},180);shQ='';rDock();}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-dk]');if(b){e.preventDefault();const k=b.dataset.dk;
+    if(k==='menu')($('sheet').hidden?shOpen:shClose)();else if(k==='close')shClose();else if(k==='top')scrollTo({top:0,behavior:'smooth'});
+    else if(k==='prev')go((cur||0)-1);else if(k==='next')go((cur||0)+1);return;}
+  const a=e.target.closest('[data-sh]');if(a){e.preventDefault();const id=a.dataset.sh;shClose();setTimeout(()=>{go(PAGES.indexOf(id));history.replaceState(null,'','#'+id);mnSettle(id);},60);}});
+document.addEventListener('input',e=>{if(e.target.id==='shIn'){shQ=e.target.value;$('shBody').innerHTML=rSheetBody();}});
+document.addEventListener('keydown',e=>{if($('sheet')&&!$('sheet').hidden){if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();shClose();}
+  else if(e.key==='Enter'&&e.target.id==='shIn'){const f=$('shBody').querySelector('[data-sh]');if(f){e.preventDefault();f.click();}}}},true);
+let shY=null;document.addEventListener('touchstart',e=>{if(e.target.closest('.shh'))shY=e.touches[0].clientY;},{passive:true});
+document.addEventListener('touchend',e=>{if(shY!=null&&e.changedTouches[0].clientY-shY>70)shClose();shY=null;},{passive:true});
 /* RANK + EARNINGS: live/rank.json and live/earnings.json come from univertrix.com (universe-dominator)
    through .github/workflows/univertrix-sync.yml (_source/uv_export.py). Everything below is computed here. */
 let RK=null,rkState='load',EL=null,rkN=10;const ER0=ER.slice(),MK0=MK.slice();
@@ -2401,7 +2498,7 @@ const FS=[1,1.12,1.25],FIT_MIN=.92;let fsI=+store.get('sha-fs',0);if(!(fsI in FS
 function fit(){wrapPins();const desk=innerWidth>=981&&innerHeight>=620,U=FS[fsI]||1;PAGES.forEach(id=>{const p=$(id).firstElementChild;if(!p)return;p.style.zoom='';if(!desk){if(U!==1)p.style.zoom=String(U);return;}
   const sec=$(id),cs=getComputedStyle(sec),avail=innerHeight-sec.getBoundingClientRect().top*0-parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--top'))-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom);
   p.style.flex='none';const nat=p.offsetHeight;p.style.flex='';const z=nat*U>avail?U*Math.max(FIT_MIN,avail/(nat*U)):U;if(Math.abs(z-1)>.005)p.style.zoom=String(z);});}
-function renderAll(){rChrome();rToday();rBrief();rQuote();rEarn();rResearch();rMix();rScore();rAgent();rLock();rLib();rRadar();rLev();rFilings();rRank();rUniv();rUvMap();rSched();rLab();rBrains();rSoft();rFortune();rHub();rNews();render(curShown);rDev();tick();wrapPins();fit();spy();}
+function renderAll(){rChrome();rToday();rBrief();rQuote();rEarn();rResearch();rMix();rScore();rAgent();rLock();rLib();rRadar();rLev();rFilings();rRank();rUniv();rUvMap();rSched();rLab();rBrains();rSoft();rFortune();rHub();rNews();rDock();if(!$('sheet').hidden)rSheet();render(curShown);rDev();tick();wrapPins();fit();spy();}
 let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(fit,150);});
 function setLang(c){if(!LANGS.includes(c))return;if(window.SHA_PATHS&&c!==lang){store.set('sha-lang',c);location.href='../'+c+'/'+(devOn()?'#dev':location.hash);return;}lang=c;store.set('sha-lang',c);renderAll();boot();}
 
@@ -2409,7 +2506,7 @@ function setLang(c){if(!LANGS.includes(c))return;if(window.SHA_PATHS&&c!==lang){
 /* top menu: 6 groups, each opens a list of its pages (every page in PAGES appears exactly once) */
 const NAV_G=[{k:'today',p:['today','brief','quote','earnings','schedule']},{k:'research',p:['research','agent','spcxlock','library','mix','score']},{k:'market',p:['radar','leverage','filings','rank']},{k:'univ',p:['univertrix','uvmap']},{k:'made',p:['software','fortune','lab','brains']},{k:'hub',p:['hub','news']}];
 const NAV_SUB={agent:'research',mix:'research',score:'research',spcxlock:'research',quote:'today',leverage:'radar',uvmap:'univertrix'};
-function setCur(i){cur=i;document.querySelectorAll('.pager button').forEach((b,j)=>b.classList.toggle('on',j===i));document.querySelectorAll('.ng').forEach(g=>g.classList.toggle('on',(NAV_G.find(x=>x.k===g.dataset.g)||{p:[]}).p.includes(PAGES[i])));document.querySelectorAll('.ngm a').forEach(a=>a.classList.toggle('on',a.dataset.s===PAGES[i]));$('pgnum').innerHTML=`<b>${String(i+1).padStart(2,'0')}</b> / ${NP}`;}
+function setCur(i){cur=i;if(typeof rDock==='function'&&$('dock'))rDock();document.querySelectorAll('.pager button').forEach((b,j)=>b.classList.toggle('on',j===i));document.querySelectorAll('.ng').forEach(g=>g.classList.toggle('on',(NAV_G.find(x=>x.k===g.dataset.g)||{p:[]}).p.includes(PAGES[i])));document.querySelectorAll('.ngm a').forEach(a=>a.classList.toggle('on',a.dataset.s===PAGES[i]));$('pgnum').innerHTML=`<b>${String(i+1).padStart(2,'0')}</b> / ${NP}`;}
 function go(i){i=Math.max(0,Math.min(NP-1,i));$(PAGES[i]).scrollIntoView({block:'start'});setCur(i);}
 let io;function spy(){try{if(io)io.disconnect();io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)setCur(PAGES.indexOf(e.target.id));});},{rootMargin:'-45% 0px -50% 0px'});PAGES.forEach(s=>io.observe($(s)));}catch(e){}}
 function fits(i){const el=$(PAGES[i]);return el&&el.offsetHeight<=window.innerHeight-40;}
