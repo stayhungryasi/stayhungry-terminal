@@ -198,9 +198,20 @@ def brief(m):
 <p class="dek">{E(m["dek"][c])}</p>
 <div class="kg"><div class="kv"><small>{E(u["key"])}</small><b>{E(m["key"]["value"])}</b><small style="letter-spacing:.04em;text-transform:none">{E(m["key"]["label"][c])}</small></div>
 <div><p class="lbl">{E(u["brief"])}</p><ul class="pts">{"".join(f"<li>{E(p)}</li>" for p in m["points"][c])}</ul>{ck}</div></div>
-<div class="chips">{chips}</div>
+<div class="chips">{chips}</div>{cards_html(m, c)}
 <p class="note">{E(u["note"])}</p></div>''')
     return '<section class="brief">' + tabs + ''.join(panes) + '</section>'
+
+
+def cards_html(m, c):
+    """Optional per-language card strip in the brief (meta.json "cards": {lang: {"label", "files": [[thumb, full, alt], ...]}})."""
+    cg = m.get('cards', {}).get(c)
+    if not cg:
+        return ''
+    cells = ''.join(f'<a href="{E(full)}" target="_blank" rel="noopener"><img src="{E(th)}" alt="{E(alt)}" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a>'
+                    for th, full, alt in cg['files'])
+    return (f'<p class="lbl" style="margin-top:28px">{E(cg["label"])}</p>'
+            f'<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:10px 0 6px">{cells}</div>')
 
 
 def meta_line(m):

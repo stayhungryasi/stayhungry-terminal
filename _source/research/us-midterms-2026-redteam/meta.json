@@ -46,20 +46,158 @@
    "韓国と日程:半導体輸出は+259%なのに、KOSPIは米大手テックの資金調達に縛られ、ウォンは1ドル1,343.8ウォンまで下がった。選挙後は11/6雇用統計、11/10 CPI、11/17エヌビディア決算、12/8〜9 FOMC、12/11予算期限が続く。"
   ]
  },
- "tickers": ["SPX", "NDX", "SMH", "GOOGL", "AMZN", "NVDA", "INTC", "000660", "005930"],
+ "tickers": [
+  "SPX",
+  "NDX",
+  "SMH",
+  "GOOGL",
+  "AMZN",
+  "NVDA",
+  "INTC",
+  "000660",
+  "005930"
+ ],
  "tags": {
-  "ko": ["미국 중간선거", "매크로", "AI 인프라", "레드팀 검증"],
-  "en": ["US midterms", "Macro", "AI infrastructure", "Red-team check"],
-  "es": ["Elecciones intermedias de EE. UU.", "Macro", "Infraestructura de IA", "Verificación red team"],
-  "ja": ["米中間選挙", "マクロ", "AIインフラ", "レッドチーム検証"]
+  "ko": [
+   "미국 중간선거",
+   "매크로",
+   "AI 인프라",
+   "레드팀 검증"
+  ],
+  "en": [
+   "US midterms",
+   "Macro",
+   "AI infrastructure",
+   "Red-team check"
+  ],
+  "es": [
+   "Elecciones intermedias de EE. UU.",
+   "Macro",
+   "Infraestructura de IA",
+   "Verificación red team"
+  ],
+  "ja": [
+   "米中間選挙",
+   "マクロ",
+   "AIインフラ",
+   "レッドチーム検証"
+  ]
  },
  "checkpoints": [
-  {"date": "2026-11-03", "text": {"ko": "미국 중간선거 (개표는 한국 시간 11/4 09:00부터)", "en": "US midterm election (the count starts 09:00 Korea time on Nov 4)", "es": "Elecciones intermedias de EE. UU. (el conteo empieza a las 09:00 hora de Corea del 4 de noviembre)", "ja": "米中間選挙(開票は韓国時間11/4 09:00から)"}},
-  {"date": "2026-11-06", "text": {"ko": "미국 10월 고용보고서", "en": "US October jobs report", "es": "Informe de empleo de octubre en EE. UU.", "ja": "米10月雇用統計"}},
-  {"date": "2026-11-10", "text": {"ko": "미국 10월 CPI", "en": "US October CPI", "es": "IPC de octubre en EE. UU.", "ja": "米10月CPI"}},
-  {"date": "2026-11-17", "text": {"ko": "엔비디아 3분기 실적", "en": "Nvidia third-quarter earnings", "es": "Resultados del tercer trimestre de Nvidia", "ja": "エヌビディア第3四半期決算"}},
-  {"date": "2026-12-09", "text": {"ko": "FOMC 결정 (12월 인상 여부)", "en": "FOMC decision (December hike or not)", "es": "Decisión de la Fed (alza en diciembre o no)", "ja": "FOMC決定(12月利上げの有無)"}},
-  {"date": "2026-12-11", "text": {"ko": "미국 정부 예산 시한 (셧다운 위험)", "en": "US government funding deadline (shutdown risk)", "es": "Plazo de financiamiento del gobierno de EE. UU. (riesgo de cierre)", "ja": "米政府予算期限(政府閉鎖リスク)"}},
-  {"date": "2027-01-10", "text": {"ko": "미중 휴전 만료", "en": "US-China trade truce expires", "es": "Vence la tregua comercial EE. UU.-China", "ja": "米中休戦の期限"}}
- ]
+  {
+   "date": "2026-11-03",
+   "text": {
+    "ko": "미국 중간선거 (개표는 한국 시간 11/4 09:00부터)",
+    "en": "US midterm election (the count starts 09:00 Korea time on Nov 4)",
+    "es": "Elecciones intermedias de EE. UU. (el conteo empieza a las 09:00 hora de Corea del 4 de noviembre)",
+    "ja": "米中間選挙(開票は韓国時間11/4 09:00から)"
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "text": {
+    "ko": "미국 10월 고용보고서",
+    "en": "US October jobs report",
+    "es": "Informe de empleo de octubre en EE. UU.",
+    "ja": "米10月雇用統計"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "text": {
+    "ko": "미국 10월 CPI",
+    "en": "US October CPI",
+    "es": "IPC de octubre en EE. UU.",
+    "ja": "米10月CPI"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "text": {
+    "ko": "엔비디아 3분기 실적",
+    "en": "Nvidia third-quarter earnings",
+    "es": "Resultados del tercer trimestre de Nvidia",
+    "ja": "エヌビディア第3四半期決算"
+   }
+  },
+  {
+   "date": "2026-12-09",
+   "text": {
+    "ko": "FOMC 결정 (12월 인상 여부)",
+    "en": "FOMC decision (December hike or not)",
+    "es": "Decisión de la Fed (alza en diciembre o no)",
+    "ja": "FOMC決定(12月利上げの有無)"
+   }
+  },
+  {
+   "date": "2026-12-11",
+   "text": {
+    "ko": "미국 정부 예산 시한 (셧다운 위험)",
+    "en": "US government funding deadline (shutdown risk)",
+    "es": "Plazo de financiamiento del gobierno de EE. UU. (riesgo de cierre)",
+    "ja": "米政府予算期限(政府閉鎖リスク)"
+   }
+  },
+  {
+   "date": "2027-01-10",
+   "text": {
+    "ko": "미중 휴전 만료",
+    "en": "US-China trade truce expires",
+    "es": "Vence la tregua comercial EE. UU.-China",
+    "ja": "米中休戦の期限"
+   }
+  }
+ ],
+ "cards": {
+  "en": {
+   "label": "The report in 9 cards (English)",
+   "files": [
+    [
+     "card-en-01.webp",
+     "card-en-01.jpg",
+     "Card 1/9 · Cover: bigger than the vote are AI financing, oil and the Fed"
+    ],
+    [
+     "card-en-02.webp",
+     "card-en-02.jpg",
+     "Card 2/9 · Odds: Democratic sweep 71% on Kalshi; split Congress 21-25%; GOP sweep 6-15%"
+    ],
+    [
+     "card-en-03.webp",
+     "card-en-03.jpg",
+     "Card 3/9 · Five Senate battlegrounds with Kalshi odds; only Iowa leans GOP"
+    ],
+    [
+     "card-en-04.webp",
+     "card-en-04.jpg",
+     "Card 4/9 · AI financing: Alphabet -12.6% on Oct 29, Intel -28.6%, SMH -7.0%, S&P -1.82%"
+    ],
+    [
+     "card-en-05.webp",
+     "card-en-05.jpg",
+     "Card 5/9 · Oil and the Fed: Brent about $110, December hike odds 72-76%, 10-year 4.93%"
+    ],
+    [
+     "card-en-06.webp",
+     "card-en-06.jpg",
+     "Card 6/9 · Three calls the red team fixed: tariffs, GOP sweep odds, Korean won"
+    ],
+    [
+     "card-en-07.webp",
+     "card-en-07.jpg",
+     "Card 7/9 · Sector matrix by election outcome (author judgment)"
+    ],
+    [
+     "card-en-08.webp",
+     "card-en-08.jpg",
+     "Card 8/9 · Election night timeline in ET as polls close"
+    ],
+    [
+     "card-en-09.webp",
+     "card-en-09.jpg",
+     "Card 9/9 · Calendar for the weeks after the vote"
+    ]
+   ]
+  }
+ }
 }

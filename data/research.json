@@ -188,6 +188,58 @@
      }
     }
    ],
+   "cards": {
+    "en": {
+     "label": "The report in 9 cards (English)",
+     "files": [
+      [
+       "card-en-01.webp",
+       "card-en-01.jpg",
+       "Card 1/9 · Cover: bigger than the vote are AI financing, oil and the Fed"
+      ],
+      [
+       "card-en-02.webp",
+       "card-en-02.jpg",
+       "Card 2/9 · Odds: Democratic sweep 71% on Kalshi; split Congress 21-25%; GOP sweep 6-15%"
+      ],
+      [
+       "card-en-03.webp",
+       "card-en-03.jpg",
+       "Card 3/9 · Five Senate battlegrounds with Kalshi odds; only Iowa leans GOP"
+      ],
+      [
+       "card-en-04.webp",
+       "card-en-04.jpg",
+       "Card 4/9 · AI financing: Alphabet -12.6% on Oct 29, Intel -28.6%, SMH -7.0%, S&P -1.82%"
+      ],
+      [
+       "card-en-05.webp",
+       "card-en-05.jpg",
+       "Card 5/9 · Oil and the Fed: Brent about $110, December hike odds 72-76%, 10-year 4.93%"
+      ],
+      [
+       "card-en-06.webp",
+       "card-en-06.jpg",
+       "Card 6/9 · Three calls the red team fixed: tariffs, GOP sweep odds, Korean won"
+      ],
+      [
+       "card-en-07.webp",
+       "card-en-07.jpg",
+       "Card 7/9 · Sector matrix by election outcome (author judgment)"
+      ],
+      [
+       "card-en-08.webp",
+       "card-en-08.jpg",
+       "Card 8/9 · Election night timeline in ET as polls close"
+      ],
+      [
+       "card-en-09.webp",
+       "card-en-09.jpg",
+       "Card 9/9 · Calendar for the weeks after the vote"
+      ]
+     ]
+    }
+   },
    "kind": "doc",
    "minutes": 20,
    "sources": 93,
