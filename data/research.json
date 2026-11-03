@@ -1,6 +1,6 @@
 {
  "name": "Stayhungry.ASI research library",
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "count": 13,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.",
@@ -1512,26 +1512,6 @@
   }
  ],
  "upcoming_checkpoints": [
-  {
-   "date": "2026-11-03",
-   "text": {
-    "ko": "미국 중간선거 (개표는 한국 시간 11/4 09:00부터)",
-    "en": "US midterm election (the count starts 09:00 Korea time on Nov 4)",
-    "es": "Elecciones intermedias de EE. UU. (el conteo empieza a las 09:00 hora de Corea del 4 de noviembre)",
-    "ja": "米中間選挙(開票は韓国時間11/4 09:00から)"
-   },
-   "slug": "us-midterms-2026-redteam"
-  },
-  {
-   "date": "2026-11-03",
-   "text": {
-    "ko": "Devcon 8 개최 (11월 3~6일)",
-    "en": "Devcon 8 (Nov 3–6)",
-    "es": "Devcon 8 (3–6 de noviembre)",
-    "ja": "Devcon 8開催（11月3〜6日）"
-   },
-   "slug": "ethereum-outlook"
-  },
   {
    "date": "2026-11-06",
    "text": {
