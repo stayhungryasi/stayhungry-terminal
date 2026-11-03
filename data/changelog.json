@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-03",
+      "commit": "HEAD",
+      "message": "The US midterms report now opens with a 9-card summary (odds, Senate battlegrounds, AI financing, oil and the Fed, red-team corrections, sectors, the Korea-time election-night checklist and the post-vote calendar)"
+    },
+    {
+      "date": "2026-11-03",
       "commit": "f467318",
       "message": "Mobile quick menu: a thumb-reach dock at the bottom (previous · menu · next · top) shows where you are, and the menu opens a sheet with every page grouped like the top menu, a live number on each tile and instant search in 4 languages; swipe down or Esc to close"
     },
