@@ -1,45 +1,45 @@
 {
  "kind": "brief",
  "schema": 1,
- "date": "2026-11-02",
- "generated_kst": "2026-11-02 10:11",
+ "date": "2026-11-03",
+ "generated_kst": "2026-11-03 10:09",
  "editor": "Claude",
  "lines": [
   {
-   "href": "#schedule",
-   "ko": "<b>D-1, 새벽 애플·낮 LG엔솔·밤 중간선거.</b> 11/3 06:30 애플 FQ4, 10:00 LG에너지솔루션 3분기 콜, 같은 날 미국 중간선거(한국시간·확정). <a href=\"#schedule\">일정</a>",
-   "en": "<b>D-1: Apple, LGES, midterms.</b> 11/3: Apple FQ4 06:30, LG Energy Solution Q3 call 10:00, US midterms (KST, confirmed). <a href=\"#schedule\">Calendar</a>",
-   "es": "<b>D-1: Apple, LGES y legislativas.</b> 3/11: Apple FQ4 06:30, LG Energy Solution 3T 10:00 y legislativas de EE. UU. (Corea, confirmado). <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>D-1、アップル・LGエナジー・中間選挙。</b>11/3 06:30アップルFQ4、10:00 LGエナジーソリューション3Q説明会、同日に米中間選挙(韓国時間・確定)。<a href=\"#schedule\">日程</a>"
+   "href": "#library",
+   "ko": "<b>오늘 미국 중간선거.</b> 11/3(한국시간·확정) 투표일. 허브의 11/2 레드팀 리포트는 선거보다 AI 자금조달·유가·연준을 더 큰 변수로 봅니다(작성자 판단). <a href=\"#library\">리서치</a>",
+   "en": "<b>US midterms today.</b> Vote on 11/3 (KST). Hub 11/2 report: AI financing, oil and the Fed matter more than the vote (author's view). <a href=\"#library\">Research</a>",
+   "es": "<b>Hoy, legislativas en EE. UU.</b> Voto el 3/11. Informe del 2/11: la IA, el petróleo y la Fed pesan más que el voto (opinión del autor). <a href=\"#library\">↗</a>",
+   "ja": "<b>今日は米中間選挙。</b>11/3(韓国時間・確定)が投票日。ハブの11/2レッドチーム・リポートは選挙よりAI資金調達・原油・FRBの方が大きな変数と見ています(筆者の判断)。<a href=\"#library\">リサーチ</a>"
   },
   {
    "href": "#earnings",
-   "ko": "<b>11/4 06:05, 칩·네트워크 3사 동시 발표.</b> AMD·아스테라랩스·아리스타 3분기 실적이 같은 시각, 이틀 뒤 11/6 22:30 미국 10월 고용보고서(한국시간·확정). <a href=\"#earnings\">실적</a>",
-   "en": "<b>11/4 06:05: three chip reports at once.</b> AMD, Astera Labs, Arista Q3; US October jobs 22:30 11/6 (KST, confirmed). <a href=\"#earnings\">Earnings</a>",
-   "es": "<b>4/11 06:05: tres resultados a la vez.</b> AMD, Astera Labs y Arista (3T); empleo de EE. UU. de octubre 22:30 del 6/11 (Corea, confirmado). <a href=\"#earnings\">↗</a>",
-   "ja": "<b>11/4 06:05、半導体・ネットワーク3社が同時決算。</b>AMD・アステラ・ラブズ・アリスタの3Q、2日後の11/6 22:30に米10月雇用統計(韓国時間・確定)。<a href=\"#earnings\">決算</a>"
+   "ko": "<b>내일 06:05, AI 칩·네트워크 3사.</b> 11/4 AMD·아스테라랩스·아리스타 3분기 실적(한국시간·확정). 팔란티어 3분기 실적도 8-K 공시로 11/3 확정. <a href=\"#earnings\">실적</a>",
+   "en": "<b>Tomorrow 06:05: three AI chip reports.</b> AMD, Astera Labs, Arista Q3 on 11/4 (KST, confirmed). Palantir Q3 set for 11/3 via 8-K. <a href=\"#earnings\">Earnings</a>",
+   "es": "<b>Mañana 06:05: tres resultados de chips.</b> AMD, Astera Labs y Arista (3T) el 4/11 (Corea). Palantir (3T): 3/11 por 8-K. <a href=\"#earnings\">↗</a>",
+   "ja": "<b>明日06:05、AIチップ・ネットワーク3社。</b>11/4にAMD・アステラ・ラブズ・アリスタの3Q決算(韓国時間・確定)。パランティアの3Qも8-K開示で11/3に確定。<a href=\"#earnings\">決算</a>"
   },
   {
-   "href": "#library",
-   "ko": "<b>앤트로픽 IPO 로드쇼, 11/9 시작 가능(보도).</b> 허브의 S-1 분석은 확률 가중 가치 범위를 1.33조–1.99조 달러로 봅니다(작성자 판단, 2조 달러는 상단). <a href=\"#library\">리서치</a>",
-   "en": "<b>Anthropic roadshow may start 11/9 (reported).</b> Hub S-1 analysis: probability-weighted range $1.33T–$1.99T (author's view). <a href=\"#library\">Research</a>",
-   "es": "<b>Gira de OPV de Anthropic: posible 9/11 (prensa).</b> El análisis del S-1 ve un rango ponderado de US$1.330–1.990 mil M (opinión del autor). <a href=\"#library\">↗</a>",
-   "ja": "<b>アンソロピックIPOロードショー、11/9開始の可能性(報道)。</b>ハブのS-1分析は確率加重の価値レンジを1.33兆〜1.99兆ドルと見ています(筆者の判断、2兆ドルは上限)。<a href=\"#library\">リサーチ</a>"
+   "href": "#schedule",
+   "ko": "<b>엔비디아 11/18 06:20 확정.</b> 회사 공지로 11/19→11/18(한국시간). 앤트로픽 IPO 로드쇼는 S-1 기준 최단 11/10(보도), 같은 날 22:30 미국 10월 CPI. <a href=\"#schedule\">일정</a>",
+   "en": "<b>Nvidia set for 11/18 06:20.</b> Moved from 11/19 (KST). Anthropic roadshow earliest 11/10 (reported); US Oct CPI 22:30 that day. <a href=\"#schedule\">Calendar</a>",
+   "es": "<b>Nvidia: 18/11 06:20.</b> Antes 19/11 (Corea). Gira de Anthropic desde el 10/11 según el S-1 (prensa); IPC de octubre 22:30 ese día. <a href=\"#schedule\">Agenda</a>",
+   "ja": "<b>エヌビディア、11/18 06:20に確定。</b>会社発表で11/19→11/18(韓国時間)。アンソロピックIPOロードショーはS-1基準で最短11/10(報道)、同日22:30に米10月CPI。<a href=\"#schedule\">日程</a>"
   }
  ],
  "checkpoints": [
   {
    "d": {
-    "ko": "11/3(화)",
-    "en": "Tue 11/3",
-    "es": "mar 3/11",
-    "ja": "11/3(火)"
+    "ko": "11/4(수)",
+    "en": "Wed 11/4",
+    "es": "mié 4/11",
+    "ja": "11/4(水)"
    },
    "x": {
-    "ko": "06:30 애플 FQ4 · 10:00 LG엔솔 콜 · 미국 중간선거",
-    "en": "06:30 Apple FQ4 · 10:00 LGES call · US midterms",
-    "es": "06:30 Apple FQ4 · 10:00 LGES · legislativas de EE. UU.",
-    "ja": "06:30 アップルFQ4・10:00 LGエナジー・米中間選挙"
+    "ko": "06:05 AMD · 아스테라랩스 · 아리스타 3분기",
+    "en": "06:05 AMD · Astera Labs · Arista Q3",
+    "es": "06:05 AMD · Astera Labs · Arista 3T",
+    "ja": "06:05 AMD・アステラ・アリスタ3Q"
    },
    "y": {
     "ko": "확정 · 한국시간",
@@ -58,7 +58,7 @@
    "x": {
     "ko": "22:30 미국 10월 고용보고서",
     "en": "22:30 US October jobs report",
-    "es": "22:30 informe de empleo de octubre en EE. UU.",
+    "es": "22:30 empleo de EE. UU. (octubre)",
     "ja": "22:30 米10月雇用統計"
    },
    "y": {
@@ -70,40 +70,40 @@
   },
   {
    "d": {
-    "ko": "11/9(월)",
-    "en": "Mon 11/9",
-    "es": "lun 9/11",
-    "ja": "11/9(月)"
+    "ko": "11/10(화)",
+    "en": "Tue 11/10",
+    "es": "mar 10/11",
+    "ja": "11/10(火)"
    },
    "x": {
-    "ko": "앤트로픽 IPO 로드쇼 시작 가능",
-    "en": "Anthropic IPO roadshow may start",
-    "es": "Posible inicio de la gira de OPV de Anthropic",
-    "ja": "アンソロピックIPOロードショー開始の可能性"
+    "ko": "22:30 미국 10월 CPI · 앤트로픽 로드쇼 시작 가능",
+    "en": "22:30 US October CPI · Anthropic roadshow may start",
+    "es": "22:30 IPC de EE. UU. · posible gira de Anthropic",
+    "ja": "22:30 米10月CPI・アンソロピック ロードショー開始の可能性"
    },
    "y": {
-    "ko": "보도 · 미확정",
-    "en": "Reported · not confirmed",
-    "es": "Según informes · sin confirmar",
-    "ja": "報道・未確定"
+    "ko": "CPI 확정 · 로드쇼 보도",
+    "en": "CPI confirmed · roadshow reported",
+    "es": "IPC confirmado · gira según prensa",
+    "ja": "CPI確定・ロードショーは報道"
    }
   }
  ],
  "why": {
-  "ko": "내일(11/3) 확정 일정이 가장 가까워 1순위로, 이번 주 확정 일정(11/4 실적·11/6 고용)을 2순위로 두었고, 새 일정인 앤트로픽 로드쇼(보도)와 허브 리서치를 묶어 3순위로 올렸습니다. 위기 근접도 36.2는 어제와 같아, 스페이스X 락업(D-38)은 10/30 종가 그대로라 반복을 피해 뺐고, 버핏지수·VIX(10/28~29 기준)와 K-레버리지(10/28 기준)는 2일 넘게 지나 쓰지 않았습니다. 스타십 15차(11/8)는 날짜가 추정이라 넣지 않았습니다.",
-  "en": "Tomorrow's confirmed events (11/3) are closest, so they lead; this week's confirmed dates (11/4 earnings, 11/6 jobs) come second, and the newly listed Anthropic roadshow (reported) is paired with the hub's research third. The crisis score 36.2 is unchanged; the SpaceX lock-up (D-38) still runs on the 10/30 close, so it is left out to avoid repeating; Buffett Index/VIX (10/28–29) and K-leverage (10/28) are over 2 days old and skipped. Starship Flight 15 (11/8) has an estimated date and is not included.",
-  "es": "Los eventos confirmados de mañana (3/11) son los más cercanos y van primero; las fechas confirmadas de la semana (resultados del 4/11, empleo del 6/11) van segundas, y la gira de Anthropic (según informes) junto con el análisis del hub, tercera. El índice de crisis 36,2 no cambió; el lock-up de SpaceX (D-38) sigue con el cierre del 30/10, así que se omite para no repetir; el índice Buffett/VIX (28–29/10) y el apalancamiento coreano (28/10) tienen más de 2 días y no se usan. El vuelo 15 de Starship (8/11) tiene fecha estimada y no se incluye.",
-  "ja": "明日(11/3)の確定日程が最も近いため1位、今週の確定日程(11/4決算・11/6雇用統計)を2位、新たに載ったアンソロピックのロードショー(報道)をハブのリサーチと合わせて3位にしました。危機接近度36.2は昨日と同じ、スペースXのロックアップ(D-38)は10/30終値のままのため重複を避けて外し、バフェット指数・VIX(10/28〜29時点)とKレバレッジ(10/28時点)は2日以上前のため使っていません。スターシップ15回目(11/8)は日付が推定のため入れていません。"
+  "ko": "오늘 실제로 열리는 중간선거, 내일 새벽 확정된 3사 실적, 오늘 새로 확정·조정된 엔비디아·앤트로픽 일정을 골랐습니다. 위기 근접도 36.2는 변화 없음, 버핏지수×VIX·K-레버리지는 10/29 기준이라 오래됐고, 스페이스X 락업(12/9, D-37)은 새 가격이 없어 뺐습니다.",
+  "en": "Picked the midterms happening today, three confirmed reports early tomorrow, and the Nvidia and Anthropic dates newly confirmed or moved today. Left out: crisis proximity 36.2 (unchanged), Buffett×VIX and K-leverage (data as of 10/29, stale), and the SpaceX lock-up (12/9, D-37) with no new price.",
+  "es": "Elegimos las legislativas de hoy, tres resultados confirmados para mañana temprano y las fechas de Nvidia y Anthropic confirmadas o movidas hoy. Fuera: la proximidad de crisis 36,2 (sin cambios), Buffett×VIX y K-apalancamiento (datos del 29/10, antiguos) y el lock-up de SpaceX (9/12, D-37) sin precio nuevo.",
+  "ja": "今日行われる中間選挙、明日早朝の確定済み3社決算、今日新たに確定・変更されたエヌビディアとアンソロピックの日程を選びました。危機接近度36.2は横ばい、バフェット指数×VIXとKレバレッジは10/29時点で古く、スペースXのロックアップ(12/9、D-37)は新しい価格がないため外しました。"
  },
  "facts": [
-  "2026-11-03 KST US midterm elections [confirmed] (schedule bot, data 2026-10-30)",
-  "2026-11-03 06:30 KST Apple FQ4 [confirmed] (schedule bot)",
-  "2026-11-03 10:00 KST LG Energy Solution Q3 call [confirmed] (schedule bot)",
-  "2026-11-04 06:05 KST AMD, Astera Labs, Arista Q3 [confirmed] (schedule bot)",
-  "2026-11-06 22:30 KST US October jobs report [confirmed] (schedule bot)",
-  "2026-11-09 KST Anthropic IPO roadshow may start [report] (schedule bot)",
-  "Anthropic S-1 research 2026-10-28, key $1.33T–$1.99T, '$2T is the top of the range' (research library)",
-  "Omitted: crisis 36.2 unchanged (crisis bot 2026-11-02 10:02); SPCX lock-up D-38 on 10/30 close (spcx-lock asof 2026-11-01); Buffett/VIX 10/28-29; K-leverage 10/28; Starship F15 11/8 [estimated]"
+  "US midterms 2026-11-03 KST confirmed (schedule bot)",
+  "Research 2026-11-02 midterms red-team: AI financing, oil, Fed bigger than election (library)",
+  "AMD, Astera Labs, Arista Q3 2026-11-04 06:05 KST confirmed (schedule bot)",
+  "Palantir Q3 confirmed 2026-11-03 via 8-K (schedule bot CHANGED)",
+  "Nvidia FQ3 confirmed 11/19 -> 11/18 06:20 KST (schedule bot CHANGED)",
+  "Anthropic IPO roadshow earliest 11/10 per S-1, reported, 11/9 -> 11/10 (schedule bot CHANGED)",
+  "US October CPI 2026-11-10 22:30 KST confirmed; US October jobs 2026-11-06 22:30 KST confirmed (schedule bot)",
+  "Crisis score 36.2 prev 36.2 (crisis bot 11/02); Buffett/VIX 10/29; K-leverage 10/29; SpaceX lock-up 12/9 D-37 (spcx-lock asof 11/02)"
  ],
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
  "note": "Picked from the hub's live feeds. Not investment advice.",

@@ -318,5 +318,37 @@
    "es": "Los eventos confirmados de mañana (3/11) son los más cercanos y van primero; las fechas confirmadas de la semana (resultados del 4/11, empleo del 6/11) van segundas, y la gira de Anthropic (según informes) junto con el análisis del hub, tercera. El índice de crisis 36,2 no cambió; el lock-up de SpaceX (D-38) sigue con el cierre del 30/10, así que se omite para no repetir; el índice Buffett/VIX (28–29/10) y el apalancamiento coreano (28/10) tienen más de 2 días y no se usan. El vuelo 15 de Starship (8/11) tiene fecha estimada y no se incluye.",
    "ja": "明日(11/3)の確定日程が最も近いため1位、今週の確定日程(11/4決算・11/6雇用統計)を2位、新たに載ったアンソロピックのロードショー(報道)をハブのリサーチと合わせて3位にしました。危機接近度36.2は昨日と同じ、スペースXのロックアップ(D-38)は10/30終値のままのため重複を避けて外し、バフェット指数・VIX(10/28〜29時点)とKレバレッジ(10/28時点)は2日以上前のため使っていません。スターシップ15回目(11/8)は日付が推定のため入れていません。"
   }
+ },
+ {
+  "date": "2026-11-03",
+  "lines": [
+   {
+    "href": "#library",
+    "ko": "<b>오늘 미국 중간선거.</b> 11/3(한국시간·확정) 투표일. 허브의 11/2 레드팀 리포트는 선거보다 AI 자금조달·유가·연준을 더 큰 변수로 봅니다(작성자 판단). <a href=\"#library\">리서치</a>",
+    "en": "<b>US midterms today.</b> Vote on 11/3 (KST). Hub 11/2 report: AI financing, oil and the Fed matter more than the vote (author's view). <a href=\"#library\">Research</a>",
+    "es": "<b>Hoy, legislativas en EE. UU.</b> Voto el 3/11. Informe del 2/11: la IA, el petróleo y la Fed pesan más que el voto (opinión del autor). <a href=\"#library\">↗</a>",
+    "ja": "<b>今日は米中間選挙。</b>11/3(韓国時間・確定)が投票日。ハブの11/2レッドチーム・リポートは選挙よりAI資金調達・原油・FRBの方が大きな変数と見ています(筆者の判断)。<a href=\"#library\">リサーチ</a>"
+   },
+   {
+    "href": "#earnings",
+    "ko": "<b>내일 06:05, AI 칩·네트워크 3사.</b> 11/4 AMD·아스테라랩스·아리스타 3분기 실적(한국시간·확정). 팔란티어 3분기 실적도 8-K 공시로 11/3 확정. <a href=\"#earnings\">실적</a>",
+    "en": "<b>Tomorrow 06:05: three AI chip reports.</b> AMD, Astera Labs, Arista Q3 on 11/4 (KST, confirmed). Palantir Q3 set for 11/3 via 8-K. <a href=\"#earnings\">Earnings</a>",
+    "es": "<b>Mañana 06:05: tres resultados de chips.</b> AMD, Astera Labs y Arista (3T) el 4/11 (Corea). Palantir (3T): 3/11 por 8-K. <a href=\"#earnings\">↗</a>",
+    "ja": "<b>明日06:05、AIチップ・ネットワーク3社。</b>11/4にAMD・アステラ・ラブズ・アリスタの3Q決算(韓国時間・確定)。パランティアの3Qも8-K開示で11/3に確定。<a href=\"#earnings\">決算</a>"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<b>엔비디아 11/18 06:20 확정.</b> 회사 공지로 11/19→11/18(한국시간). 앤트로픽 IPO 로드쇼는 S-1 기준 최단 11/10(보도), 같은 날 22:30 미국 10월 CPI. <a href=\"#schedule\">일정</a>",
+    "en": "<b>Nvidia set for 11/18 06:20.</b> Moved from 11/19 (KST). Anthropic roadshow earliest 11/10 (reported); US Oct CPI 22:30 that day. <a href=\"#schedule\">Calendar</a>",
+    "es": "<b>Nvidia: 18/11 06:20.</b> Antes 19/11 (Corea). Gira de Anthropic desde el 10/11 según el S-1 (prensa); IPC de octubre 22:30 ese día. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>エヌビディア、11/18 06:20に確定。</b>会社発表で11/19→11/18(韓国時間)。アンソロピックIPOロードショーはS-1基準で最短11/10(報道)、同日22:30に米10月CPI。<a href=\"#schedule\">日程</a>"
+   }
+  ],
+  "why": {
+   "ko": "오늘 실제로 열리는 중간선거, 내일 새벽 확정된 3사 실적, 오늘 새로 확정·조정된 엔비디아·앤트로픽 일정을 골랐습니다. 위기 근접도 36.2는 변화 없음, 버핏지수×VIX·K-레버리지는 10/29 기준이라 오래됐고, 스페이스X 락업(12/9, D-37)은 새 가격이 없어 뺐습니다.",
+   "en": "Picked the midterms happening today, three confirmed reports early tomorrow, and the Nvidia and Anthropic dates newly confirmed or moved today. Left out: crisis proximity 36.2 (unchanged), Buffett×VIX and K-leverage (data as of 10/29, stale), and the SpaceX lock-up (12/9, D-37) with no new price.",
+   "es": "Elegimos las legislativas de hoy, tres resultados confirmados para mañana temprano y las fechas de Nvidia y Anthropic confirmadas o movidas hoy. Fuera: la proximidad de crisis 36,2 (sin cambios), Buffett×VIX y K-apalancamiento (datos del 29/10, antiguos) y el lock-up de SpaceX (9/12, D-37) sin precio nuevo.",
+   "ja": "今日行われる中間選挙、明日早朝の確定済み3社決算、今日新たに確定・変更されたエヌビディアとアンソロピックの日程を選びました。危機接近度36.2は横ばい、バフェット指数×VIXとKレバレッジは10/29時点で古く、スペースXのロックアップ(12/9、D-37)は新しい価格がないため外しました。"
+  }
  }
 ]
