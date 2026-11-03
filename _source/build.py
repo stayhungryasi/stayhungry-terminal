@@ -87,7 +87,7 @@ for name, obj in api.items():
 open(f'{out}/data/README.md','w',encoding='utf-8').write(
 """# Stayhungry.ASI open data
 
-Every number on the site, as JSON. Free to use; credit @stayhungryasi · https://t.me/stayhungryasi. Not investment advice.
+Every number on the site, as JSON. Free to use; credit @stayhungryasi · https://stayhungryasi.com. Not investment advice.
 
 Base URL: https://stayhungryasi.com/data/
 

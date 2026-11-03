@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-03",
+      "commit": "HEAD",
+      "message": "Every page footer now has one-tap channel icons: YouTube, Instagram, X, Threads, TikTok and Telegram; the credit line points to stayhungryasi.com"
+    },
+    {
+      "date": "2026-11-03",
       "commit": "cabe9ab",
       "message": "The US midterms report now shows the 9 summary cards in English for English readers (election-night times in ET), with full-size JPGs and 9:16 versions alongside"
     },
@@ -223,6 +228,6 @@
     }
   ],
   "updated": "2026-11-03",
-  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+  "credit": "@stayhungryasi · https://stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }

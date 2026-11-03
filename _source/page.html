@@ -84,7 +84,11 @@ h2,h3{margin:0;font-weight:900;letter-spacing:-.035em;line-height:1.08;text-wrap
 .src p{margin:0;font-size:15px;color:var(--dim);max-width:72ch;line-height:1.6}
 .handle{font-family:var(--mono);font-size:15px;letter-spacing:.14em;color:var(--mute);text-align:right;text-decoration:none;line-height:1.7}
 .handle:hover{color:var(--or)}
-.hset{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.hset{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.soc{display:flex;gap:8px;flex-wrap:wrap}
+.soci{width:38px;height:38px;border:1px solid var(--line2);border-radius:50%;display:grid;place-items:center;color:var(--mute);text-decoration:none;transition:color .15s,border-color .15s,background .15s}
+.soci:hover,.soci:focus-visible{color:var(--or);border-color:var(--or);background:var(--orbg);outline:none}
+.soci svg{display:block}
 .handle.hm{color:var(--ink2)}
 .cts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
 .ct{display:flex;flex-direction:column;gap:2px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 18px}
@@ -1082,6 +1086,7 @@ const SOFTWARE=[{id:'mocapture',no:1,status:'live',maker:{ko:'무광소프트',e
  links:{virustotal:'https://www.virustotal.com/gui/file/f5212e4a6807eacafa44dd914d573b464fb4ffa0d162f67f372c214387ecc56d',changelog:'https://mugwangsoft.com/changelog/',privacy:'https://mugwangsoft.com/privacy/',enterprise:'https://mugwangsoft.com/enterprise/',feedback:'https://mugwangsoft.com/feedback/',contact:'hello@mugwangsoft.com'},
  media:'https://mugwangsoft.com/media/',shots:['tray','masking','editor','window','scroll','textcopy'],built_with:'Claude'}];
 const CHANGELOG=[
+ {"d":"2026-11-03","h":"HEAD","m":{"en":"Every page footer now has one-tap channel icons: YouTube, Instagram, X, Threads, TikTok and Telegram; the credit line points to stayhungryasi.com","ko":"모든 페이지 하단에 채널 바로가기 아이콘 추가: 유튜브·인스타그램·X·스레드·틱톡·텔레그램. 출처 표기는 stayhungryasi.com으로","es":"El pie de cada página ahora tiene iconos de canal a un toque: YouTube, Instagram, X, Threads, TikTok y Telegram; el crédito apunta a stayhungryasi.com","ja":"全ページのフッターにワンタップのチャンネルアイコンを追加:YouTube・Instagram・X・Threads・TikTok・Telegram。クレジット表記は stayhungryasi.com に"}},
  {"d":"2026-11-03","h":"cabe9ab","m":{"en":"The US midterms report now shows the 9 summary cards in English for English readers (election-night times in ET), with full-size JPGs and 9:16 versions alongside","ko":"미국 중간선거 리포트 영어 요약에 카드뉴스 영어판 9장 추가(개표 시각은 미 동부시간), 원본 JPG와 9:16 세로판도 함께 올림","es":"El informe de las elecciones intermedias de EE. UU. ahora muestra las 9 tarjetas resumen en inglés para lectores en inglés (horarios de cierre en hora del Este), con JPG a tamaño completo y versiones 9:16","ja":"米中間選挙レポートの英語サマリーに英語版カード9枚を追加(開票時刻は米東部時間)。原寸JPGと9:16縦版も掲載"}},
  {"d":"2026-11-03","h":"1b60836","m":{"en":"The US midterms report now opens with a 9-card summary (odds, Senate battlegrounds, AI financing, oil and the Fed, red-team corrections, sectors, the Korea-time election-night checklist and the post-vote calendar)","ko":"미국 중간선거 리포트 맨 위에 카드뉴스 9장 추가(판세, 상원 승부처, AI 자금조달, 유가·연준, 레드팀 정정, 섹터, 한국 시간 개표 체크리스트, 선거 후 일정)","es":"El informe de las elecciones intermedias de EE. UU. ahora empieza con un resumen de 9 tarjetas (probabilidades, contiendas clave del Senado, financiamiento de la IA, petróleo y la Fed, correcciones del red team, sectores, la lista de la noche electoral en hora de Corea y el calendario posterior)","ja":"米中間選挙レポートの冒頭にカードニュース9枚を追加(情勢、上院の激戦州、AIの資金調達、原油とFRB、レッドチームの修正、セクター、韓国時間の開票チェックリスト、選挙後の日程)"}},
  {"d":"2026-11-03","h":"f467318","m":{"en":"Mobile quick menu: a thumb-reach dock at the bottom (previous · menu · next · top) shows where you are, and the menu opens a sheet with every page grouped like the top menu, a live number on each tile and instant search in 4 languages; swipe down or Esc to close","ko":"모바일 빠른 메뉴: 화면 아래 엄지 닿는 곳에 독(이전 · 메뉴 · 다음 · 맨 위로)과 현재 위치 표시. 메뉴를 누르면 전체 페이지가 상단 메뉴와 같은 묶음으로 펼쳐지고, 타일마다 실시간 숫자, 4개 언어 바로 검색. 아래로 쓸거나 Esc로 닫기","es":"Menú rápido móvil: un dock al alcance del pulgar (anterior · menú · siguiente · arriba) muestra dónde estás, y el menú abre una hoja con todas las páginas agrupadas como el menú superior, un número en vivo en cada tarjeta y búsqueda instantánea en 4 idiomas; desliza hacia abajo o Esc para cerrar","ja":"モバイル用クイックメニュー:画面下の親指が届く位置にドック(前 · メニュー · 次 · 先頭へ)と現在位置。メニューを押すと全ページを上部メニューと同じグループで表示、タイルごとにライブの数字、4言語の即時検索。下にスワイプかEscで閉じる"}},
@@ -1135,7 +1140,7 @@ const CR_LAYER=[{"en": "Funding plumbing", "ko": "자금조달 배관", "es": "F
 const CR_UNIT={"bp": {"en": "bp", "ko": "bp", "es": "pb", "ja": "bp"}, "$B": {"en": "$B", "ko": "$B", "es": "$B", "ja": "$B"}, "$T": {"en": "$T", "ko": "$T", "es": "$T", "ja": "$T"}, "%": {"en": "%", "ko": "%", "es": "%", "ja": "%"}, "": {"en": "", "ko": "", "es": "", "ja": ""}, "천건": {"en": "k", "ko": "천건", "es": " mil", "ja": "千件"}, "원": {"en": " KRW", "ko": "원", "es": " KRW", "ja": "ウォン"}, "%p": {"en": "pp", "ko": "%p", "es": "pp", "ja": "%pt"}};
 const API_BASE='https://stayhungryasi.com/data/';
 function apiData(today){
-  const base={updated:today,credit:'@stayhungryasi · https://t.me/stayhungryasi',disclaimer:'Not investment advice.'};
+  const base={updated:today,credit:'@stayhungryasi · https://stayhungryasi.com',disclaimer:'Not investment advice.'};
   const SK={s_rev:'revenue',s_op:'operating_income',s_ai:'ai_revenue',s_sl:'starlink_revenue',s_sp:'space_revenue',s_sub:'starlink_subscribers'};
   return {
     'index.json':Object.assign({name:'Stayhungry.ASI open data',base:API_BASE,contact:{hello:MAIL.main,builders_and_ideas:MAIL.dev,ads_and_partnerships:MAIL.biz,thanks:MAIL.thanks},endpoints:['brief.json','quote.json','leverage.json','dart5.json','agent.json','software.json','fortune.json','earnings.json','crisis.json','fear.json','schedule.json','spcx-lock.json','research.json','rank.json','spacex-3q26.json','univertrix.json','brains.json','changelog.json']},base),
@@ -1175,6 +1180,8 @@ const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 const fmt=(s,o)=>s.replace(/\{(\w+)\}/g,(_,k)=>o[k]);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 const TG='https://t.me/stayhungryasi';
+const SOC=[['YouTube','@futurefieldtrip','https://www.youtube.com/@futurefieldtrip','<path d="M8.5 5.5v13l10.5-6.5z" fill="currentColor"/>'],['Instagram','@stayhungryasi','https://www.instagram.com/stayhungryasi/','<path d="M3.8 8.6h3.4l1.7-2.6h6.2l1.7 2.6h3.4v10.2H3.8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="13.4" r="3.1" fill="none" stroke="currentColor" stroke-width="1.7"/>'],['X','@shaferwineX','https://x.com/shaferwineX','<path d="M6.5 5.5l11 13M17.5 5.5l-11 13" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>'],['Threads','@stayhungryasi','https://www.threads.com/@stayhungryasi','<text x="12" y="17.2" text-anchor="middle" font-size="16.5" font-weight="700" fill="currentColor" font-family="Inter,system-ui,sans-serif">@</text>'],['TikTok','@shaferwinex','https://www.tiktok.com/@shaferwinex','<path d="M10 17.2V5.2l8-1.6v11.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><ellipse cx="7.6" cy="17.4" rx="2.6" ry="2" fill="currentColor"/><ellipse cx="15.6" cy="15.6" rx="2.6" ry="2" fill="currentColor"/>'],['Telegram','@stayhungryasi','https://t.me/stayhungryasi','<path d="M3.6 11.4L20.2 4.6l-2.9 14.6-5.4-4.3-3 2.9v-4.9l8.3-6.3-10 5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>']];
+const socRow=()=>`<div class="soc">${SOC.map(s=>`<a class="soci" href="${s[2]}" target="_blank" rel="noopener" title="${s[0]} ${s[1]}" aria-label="${s[0]} ${s[1]}"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">${s[3]}</svg></a>`).join('')}</div>`;
 const PAGES=['today','brief','quote','earnings','schedule','research','mix','score','agent','spcxlock','library','radar','leverage','filings','rank','univertrix','uvmap','lab','brains','software','fortune','hub','news'];
 const NP=PAGES.length;
 
@@ -1700,7 +1707,7 @@ function erLabel(e,t,now){const s=erState(e,now);return s.k==='in'?fmt(t.er_in,{
 const nextEarn=now=>ER.find(e=>Date.parse(e.utc)>now);
 const head=(id,eb)=>{const n=PAGES.indexOf(id)+1;return `<div class="loghead"><span class="l"><i></i>STAY HUNGRY.ASI · ${esc(({uvmap:'UNIVERTRIX · MENU',schedule:'KEY DATES',spcxlock:'LOCK-UP',quote:'MORNING CARD',leverage:'K-LEVERAGE',software:'SOFTWARE',fortune:'FORTUNE DANJI',filings:'5% FILINGS',agent:'OVERNIGHT AGENT'})[id]||id.toUpperCase())}</span><span class="n">LOG <b>${String(n).padStart(2,'0')}</b>/${NP}</span></div><p class="eb">${esc(eb)}</p>`;};
 const hd=(a,b,o2=true)=>`<h2 class="h"><span class="w">${a}</span><span class="${o2?'o':'w'}">${b}</span></h2>`;
-const src=(txt,id)=>{const i=PAGES.indexOf(id);return `<div class="spacer"></div><div class="src"><p>${esc(txt)} ${esc(T().src_na)}</p><div class="hset"><a class="handle" href="${TG}" target="_blank" rel="noopener">@stayhungryasi<br>https://t.me/stayhungryasi</a>${id==='news'?`<a class="handle hm" href="mailto:${MAIL.thanks[lang]}">✉ ${MAIL.thanks[lang]}</a>`:''}</div></div>${i<NP-1?`<button class="next" data-go="${i+1}">${esc(T().next)}</button>`:''}`;};
+const src=(txt,id)=>{const i=PAGES.indexOf(id);return `<div class="spacer"></div><div class="src"><p>${esc(txt)} ${esc(T().src_na)}</p><div class="hset">${socRow()}<a class="handle" href="https://stayhungryasi.com/" target="_blank" rel="noopener">@stayhungryasi · stayhungryasi.com</a>${id==='news'?`<a class="handle hm" href="mailto:${MAIL.thanks[lang]}">✉ ${MAIL.thanks[lang]}</a>`:''}</div></div>${i<NP-1?`<button class="next" data-go="${i+1}">${esc(T().next)}</button>`:''}`;};
 const etD=()=>new Intl.DateTimeFormat(T().loc,{timeZone:'America/New_York',weekday:'short',month:'short',day:'numeric'});
 const etT=()=>new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'});
 
@@ -2569,12 +2576,12 @@ const VFILES={
  fortune(t){const F=FORTUNE,r=[`<span class="xh"># ${esc(swL(F.name))} · ${esc(swL(F.tagline))}</span>`,xm('<!-- '+t.ft_eb+' · '+F.url+' · /data/fortune.json -->'),'',esc(swL(F.about)),''];
   F.tools.forEach(x=>{r.push(`<span class="xh">## ${esc(fmt(t.ft_no,{n:String(x.no).padStart(2,'0')}))} · ${esc(swL(x.name))} ${x.status==='live'?'':'('+esc(t.ft_soon)+')'}</span>`,'',`<span class="xl">&gt;</span> <b class="xb">${esc(swL(x.tagline))}</b>`);
    (x.points||[]).forEach(p=>r.push(`<span class="xl">-</span> ${esc(swL(p))}`));if(x.url)r.push(`<span class="xl">-</span> [${esc(t.ft_web)}](<span class="xs">${esc(x.url)}</span>)`);r.push('');});
-  F.promise.forEach(p=>r.push(`<span class="xl">-</span> <b class="xb">**${esc(swL(p[0]))}**</b> ${esc(swL(p[1]))}`));r.push('',xm('<!-- @stayhungryasi · t.me/stayhungryasi -->'));return r;},
+  F.promise.forEach(p=>r.push(`<span class="xl">-</span> <b class="xb">**${esc(swL(p[0]))}**</b> ${esc(swL(p[1]))}`));r.push('',xm('<!-- @stayhungryasi · stayhungryasi.com -->'));return r;},
  software(t){const r=[`<span class="xh"># ${esc(t.sw_h1)} ${esc(t.sw_h2)}</span>`,xm('<!-- '+t.sw_eb+' · /data/software.json -->'),''];
   SOFTWARE.forEach(p=>{r.push(`<span class="xh">## ${esc(fmt(t.sw_no,{n:String(p.no).padStart(2,'0')}))} · ${esc(swL(p.name))} v${esc(p.version)}</span>`,'',`<span class="xl">&gt;</span> <b class="xb">${esc(swL(p.tagline))}</b> ${esc(swL(p.sub))}`,'');
    p.features.forEach(f=>r.push(`<span class="xl">-</span> <b class="xb">**${esc(swL(f.t))}**</b> ${esc(swL(f.d))}`));
    r.push('',`<span class="xl">-</span> ${esc(p.platform)} · ${esc(p.size)} · ${esc(swL(p.price))}`,`<span class="xl">-</span> [${esc(t.sw_site)}](<span class="xs">${esc(swL(p.url))}</span>)`,'');});
-  r.push(`<span class="xh">## ${esc(fmt(t.sw_next,{n:String(SOFTWARE.length+1).padStart(2,'0')}))}</span>`,'',xm('<!-- @stayhungryasi · t.me/stayhungryasi -->'));return r;},
+  r.push(`<span class="xh">## ${esc(fmt(t.sw_next,{n:String(SOFTWARE.length+1).padStart(2,'0')}))}</span>`,'',xm('<!-- @stayhungryasi · stayhungryasi.com -->'));return r;},
  agent(t){if(!AG||!AG.run)return [xm('# '+(agState==='fail'?t.ag_fail:t.ag_load))];const r=AG.run,b=AG.band||{},p={};AG.scen.forEach(x=>p[x.key]=x.prob);
   const o=[xm('# '+t.ag_eb),xm('# universe-dominator/agent-research · univertrix.com · '+(AG.meta||{}).commit),xm('# '+(AG.labels.disclaimer||'')),'',
    `${xp('RUN')} = {${xs('id')}: ${xs(r.id)}, ${xs('mode')}: ${xs(r.mode)}, ${xs('verify')}: ${xn((r.verify||[]).join('/'))}, ${xs('next')}: ${xs(r.next||'')}}`,
@@ -2582,27 +2589,27 @@ const VFILES={
    `${xp('BAND')} = (${xn(b.lo)}, ${xn(b.hi)})  ${xm('# '+t.ag_g.band+' · '+t.ag_g.pw+' $'+b.pw)}`,'',`${xp('MILESTONES')} = [`];
   AG.milestones.forEach(m=>o.push(`    (${xs(m.id)}, ${xs(m.cls)}, ${xn(m.pct==null?'None':(+m.pct).toFixed(2))}),  ${xm('# '+m.text)}`));
   o.push(']','',`${xp('TRIGGERS')} = [`);AG.triggers.forEach(x=>o.push(`    (${xs(x.id)}, ${xs(x.when||'')}),  ${xm('# '+x.name)}`));
-  o.push(']','',xm('# @stayhungryasi · t.me/stayhungryasi'));return o;},
+  o.push(']','',xm('# @stayhungryasi · stayhungryasi.com'));return o;},
  filings(t){if(!D5||!D5.items)return [xm('# '+(d5State==='fail'?t.d5_fail:t.d5_load))];const r=[xm('# '+t.d5_eb),xm('# OpenDART · same verdicts as the Telegram bot · weekdays 19:10 KST'),'',`${xp('WATCHLIST')} = [`];
   (D5.watchlist||[]).forEach(w=>r.push(`    (${xs(w.tier)}, ${xs(w.label)}),`));r.push(']','',`${xp('flagged')} = [  ${xm('# '+D5.items.length+' filings')}`);
   D5.items.slice(0,14).forEach(x=>r.push(`    {${xp('dt')}: ${xs(x.rcept_dt)}, ${xp('badge')}: ${xs(x.badge)}, ${xp('corp')}: ${xs(x.corp)}, ${xp('filer')}: ${xs(x.label)}, ${xp('to')}: ${xn(x.ratio_after)}},`));
-  r.push(']','',xm('# @stayhungryasi · t.me/stayhungryasi'));return r;},
+  r.push(']','',xm('# @stayhungryasi · stayhungryasi.com'));return r;},
  leverage(t){if(!LV||!LV.regime)return [xm('# '+(lvState==='fail'?t.lv_fail:t.lv_load))];const K=LV.kpi,r=[xm('# '+t.lv_eb),xm(`# as of ${LV.asof} · KOFIA FreeSIS · same score() as the Telegram bot`),'',`${xp('THRESHOLD')} = ${xn(LV.threshold||60)}`,'',`${xk('def')} ${xf('score')}():`];
   r.push(`    ${xp('fuel')} = ${xn(LV.fuel)}  ${xm('# '+t.lv_fuel)}`);(LV.fuel_parts||[]).forEach(p=>r.push(`        ${xs(p.k)}: (${xn(p.p)}, ${xn(p.w)}),  ${xm('# '+(t.lv_p[p.k]||''))}`));
   r.push(`    ${xp('fire')} = ${xn(LV.fire)}  ${xm('# '+t.lv_fire)}`);(LV.fire_parts||[]).forEach(p=>r.push(`        ${xs(p.k)}: (${xn(p.p)}, ${xn(p.w)}),  ${xm('# '+(t.lv_p[p.k]||''))}`));
   r.push(`    ${xk('return')} ${xs(LV.regime.key)}  ${xm('# '+LV.regime.icon+' '+t.lv_reg[LV.regime.key])}`,'',`${xp('verdict')} = [${LV.verdict.map(xs).join(', ')}]  ${xm('# '+(t.lv_v1[LV.verdict[0]]||''))}`,
-   `${xp('credit')} = ${xn(K.credit)}  ${xm('# '+lvJo(K.credit))}`,`${xp('forced')} = ${xn(K.forced)}  ${xm('# '+lvEok(K.forced)+' · '+fmt(t.lv_fx,{x:K.forced_x!=null?K.forced_x.toFixed(1):'—'}))}`,`${xp('kospi')} = ${xn(K.kospi)}`,'',xm('# @stayhungryasi · t.me/stayhungryasi'));return r;},
+   `${xp('credit')} = ${xn(K.credit)}  ${xm('# '+lvJo(K.credit))}`,`${xp('forced')} = ${xn(K.forced)}  ${xm('# '+lvEok(K.forced)+' · '+fmt(t.lv_fx,{x:K.forced_x!=null?K.forced_x.toFixed(1):'—'}))}`,`${xp('kospi')} = ${xn(K.kospi)}`,'',xm('# @stayhungryasi · stayhungryasi.com'));return r;},
  quote(t){if(!QT)return [xm('<!-- '+(qtState==='fail'?t.q_fail:t.q_load)+' -->')];const c=qtPick(qtDay());if(!c)return [xm('<!-- '+t.q_fail+' -->')];const x=qtL(c.q),o=qtOrig(c.q,x),day=qtDay(),mon=addD(day,-qtWd(day));
   const r=[`<span class="xh"># STAY HUNGRY · ${esc(c.th.tag)}</span>`,xm(`<!-- ${t.q_eb} · ${day} 08:00 KST -->`),'',`<span class="xl">&gt;</span> <b class="xb">${esc(x.text)}</b>`];
   if(o)r.push(`<span class="xl">&gt;</span> ${xm(o)}`);
   r.push(`<span class="xl">&gt;</span> — ${esc(x.who)} · ${esc(x.ctx)}`,'',`<span class="xh">## ${esc(t.q_order)}</span>`,'',esc(x.order),'',`<span class="xh">## ${esc(t.q_story)}</span>`,'',esc(x.story),'',`<span class="xh">## ${esc(t.q_week)}</span>`,'');
   [...Array(7)].forEach((_,i)=>{const d=addD(mon,i),p=qtPick(d);r.push(`<span class="xl">-</span> ${d<=day?'[x]':'[ ]'} <b class="xb">**${esc(scDayLbl(d))}**</b> ${esc(qtNm(p.th))} · ${d<=day?esc(qtL(p.q).who):'🔒 08:00'}`);});
-  r.push('',xm(`<!-- ${QT.count} lines · rule: ${QT.rule} · @stayhungryasi · t.me/stayhungryasi -->`));return r;},
+  r.push('',xm(`<!-- ${QT.count} lines · rule: ${QT.rule} · @stayhungryasi · stayhungryasi.com -->`));return r;},
  brief(t){const r=[`<span class="xh"># ${esc(t.brief_h1)} ${esc(t.brief_h2)}</span>`,''];
   t.sum.forEach((x,i)=>r.push(`<span class="xl">${i+1}.</span> ${mdb(x)}`));
   r.push('',`<span class="xh">## ${esc(t.cp_lbl)}</span>`,'');
   t.cp.forEach(c=>r.push(`<span class="xl">-</span> <b class="xb">**${esc(c[0])}**</b> ${esc(c[1])} — ${esc(c[2])}`));
-  r.push('',xm('<!-- @stayhungryasi · t.me/stayhungryasi -->'));return r;},
+  r.push('',xm('<!-- @stayhungryasi · stayhungryasi.com -->'));return r;},
  earnings(t,now){const nx=nextEarn(now),r=[xm('// '+t.earn_eb+' · US Eastern'),`${xk('export const')} ${xp('EARNINGS')} = [`];
   ER.forEach(e=>{const pad=' '.repeat(Math.max(0,5-e.t.length));
    const at=e.st==='e'?`<span class="vwv">${xs('~'+etD().format(new Date(e.utc)))}</span>`:xs(when(e));
@@ -2705,7 +2712,7 @@ function rSide(){const deco={agent:['A','#81B88B'],filings:['A','#81B88B'],fortu
     +`<div class="vsbot"><div class="vsec">${chev(0)}OUTLINE</div><div class="vsec">${chev(0)}TIMELINE</div></div>`;}
 function vCounts(){const chk=T().chk||[];return {chk,fails:cheat?[]:chk.filter(c=>c[3]!=='ok'),warns:ER.filter(e=>e.st==='e')};}
 function rStat(ln){const t=T(),f=VFI(devFile),{fails,warns}=vCounts();
-  $('dstat').innerHTML=`<span class="vsl"><span class="vrem">&gt;&lt;</span><span>⎇ main*</span><button data-vp="prob">⊗ ${fails.length}&nbsp;&nbsp;⚠ ${warns.length}</button><span class="vnorm vopt">-- NORMAL --</span></span><span class="vsr"><span class="vopt" id="vcol">Ln ${ln}, Col 1</span><span class="vopt">Spaces: 2</span><span class="vopt">UTF-8</span><span class="vopt">${f.lg}</span><span class="vopt">◆ asi pair</span><a href="${TG}" target="_blank" rel="noopener">@stayhungryasi · t.me/stayhungryasi</a><button data-act="reader">${esc(t.dv_back)} · esc</button></span>`;}
+  $('dstat').innerHTML=`<span class="vsl"><span class="vrem">&gt;&lt;</span><span>⎇ main*</span><button data-vp="prob">⊗ ${fails.length}&nbsp;&nbsp;⚠ ${warns.length}</button><span class="vnorm vopt">-- NORMAL --</span></span><span class="vsr"><span class="vopt" id="vcol">Ln ${ln}, Col 1</span><span class="vopt">Spaces: 2</span><span class="vopt">UTF-8</span><span class="vopt">${f.lg}</span><span class="vopt">◆ asi pair</span><a href="${TG}" target="_blank" rel="noopener">@stayhungryasi · stayhungryasi.com</a><button data-act="reader">${esc(t.dv_back)} · esc</button></span>`;}
 function rFile(){const t=T(),f=VFI(devFile),ln=rCode();
   $('vtabs').innerHTML=VF.map((x,i)=>{const m=mru.indexOf(x.id);return `<button class="vtab${m>=0?' mru':''}${x.id===devFile?' sel':''}" data-vf="${x.id}" style="order:${m>=0?m:10+i}">${fi(x.n)}<span>${x.n}</span><b>${x.id===devFile?'×':''}</b></button>`;}).join('');
   $('vcrumb').innerHTML=`${f.d?`<span>${f.d}</span><span>›</span>`:''}${fi(f.n)}<span>${f.n}</span><span>›</span><span>${esc(f.sym)}</span>`;

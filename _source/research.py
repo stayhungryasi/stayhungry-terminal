@@ -132,6 +132,7 @@ figure.fig figcaption{font-size:12.5px;color:#5E5D59;margin-top:6px}
 .rel a:hover{border-color:var(--or)}.rel b{display:block;color:var(--ink);font-size:16px;line-height:1.4}.rel small{font-family:var(--mono);font-size:11.5px;color:var(--mute)}
 footer{max-width:980px;margin:0 auto;padding:20px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12.5px;color:var(--mute);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:var(--mute);text-decoration:none}
+footer .fr{display:flex;flex-direction:column;align-items:flex-end;gap:8px}.soc{display:flex;gap:6px;flex-wrap:wrap}footer a.soci{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--mute)}footer a.soci:hover{color:var(--or,#F26522);border-color:var(--or,#F26522)}@media(max-width:640px){footer .fr{align-items:flex-start}}
 @media (max-width:640px){.kg{grid-template-columns:1fr}.brief{padding:16px}main{padding:22px 16px 48px}}
 '''
 
@@ -178,8 +179,17 @@ def topbar():
             + '</div></header>')
 
 
+SOC = [('YouTube', '@futurefieldtrip', 'https://www.youtube.com/@futurefieldtrip', '<path d="M8.5 5.5v13l10.5-6.5z" fill="currentColor"/>'),
+       ('Instagram', '@stayhungryasi', 'https://www.instagram.com/stayhungryasi/', '<path d="M3.8 8.6h3.4l1.7-2.6h6.2l1.7 2.6h3.4v10.2H3.8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="13.4" r="3.1" fill="none" stroke="currentColor" stroke-width="1.7"/>'),
+       ('X', '@shaferwineX', 'https://x.com/shaferwineX', '<path d="M6.5 5.5l11 13M17.5 5.5l-11 13" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>'),
+       ('Threads', '@stayhungryasi', 'https://www.threads.com/@stayhungryasi', '<text x="12" y="17.2" text-anchor="middle" font-size="16.5" font-weight="700" fill="currentColor" font-family="Inter,system-ui,sans-serif">@</text>'),
+       ('TikTok', '@shaferwinex', 'https://www.tiktok.com/@shaferwinex', '<path d="M10 17.2V5.2l8-1.6v11.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><ellipse cx="7.6" cy="17.4" rx="2.6" ry="2" fill="currentColor"/><ellipse cx="15.6" cy="15.6" rx="2.6" ry="2" fill="currentColor"/>'),
+       ('Telegram', '@stayhungryasi', 'https://t.me/stayhungryasi', '<path d="M3.6 11.4L20.2 4.6l-2.9 14.6-5.4-4.3-3 2.9v-4.9l8.3-6.3-10 5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>')]
+SOC_ROW = '<span class="soc">' + ''.join(
+    f'<a class="soci" href="{u}" target="_blank" rel="noopener" title="{n} {h}" aria-label="{n} {h}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">{p}</svg></a>'
+    for n, h, u, p in SOC) + '</span>'
 FOOT = ('<footer><span>Not investment advice. 투자 권유 아님.</span>'
-        '<a href="https://t.me/stayhungryasi" target="_blank" rel="noopener">@stayhungryasi · https://t.me/stayhungryasi</a></footer>')
+        '<span class="fr">' + SOC_ROW + '<a href="https://stayhungryasi.com/" target="_blank" rel="noopener">@stayhungryasi · stayhungryasi.com</a></span></footer>')
 
 
 def brief(m):
@@ -274,7 +284,7 @@ def rss(allm, base):
         return datetime.datetime.strptime(s, '%Y-%m-%d').strftime('%a, %d %b %Y 00:00:00 +0900')
     items = ''.join(f'''<item><title>{E(m["title"]["en"])} · {E(m["title"]["ko"])}</title><link>{base}r/{m["slug"]}/</link><guid>{base}r/{m["slug"]}/</guid><pubDate>{d(m["date"])}</pubDate><description>{E(m["dek"]["en"] + " " + m["dek"]["ko"])}</description></item>''' for m in allm)
     return f'''<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>Stayhungry.ASI research</title><link>{base}r/</link><description>Research by @stayhungryasi · https://t.me/stayhungryasi. Not investment advice.</description>{items}</channel></rss>
+<rss version="2.0"><channel><title>Stayhungry.ASI research</title><link>{base}r/</link><description>Research by @stayhungryasi · https://stayhungryasi.com. Not investment advice.</description>{items}</channel></rss>
 '''
 
 
@@ -298,7 +308,7 @@ def build(out, base='https://stayhungryasi.com/'):
     upcoming = sorted([dict(c, slug=m['slug']) for m in allm for c in m.get('checkpoints', []) if c['date'] >= today], key=lambda c: c['date'])
     doc = {'name': 'Stayhungry.ASI research library', 'updated': today, 'count': len(pub), 'feed': f'{base}r/feed.xml',
            'rule': 'Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.',
-           'credit': '@stayhungryasi · https://t.me/stayhungryasi', 'categories': CAT, 'reports': pub, 'upcoming_checkpoints': upcoming}
+           'credit': '@stayhungryasi · https://stayhungryasi.com', 'categories': CAT, 'reports': pub, 'upcoming_checkpoints': upcoming}
     open(os.path.join(out, 'data', 'research.json'), 'w', encoding='utf-8').write(json.dumps(doc, ensure_ascii=False, indent=1) + '\n')
     urls.append(f'{base}r/')
     return urls
