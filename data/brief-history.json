@@ -350,5 +350,37 @@
    "es": "Elegimos las legislativas de hoy, tres resultados confirmados para mañana temprano y las fechas de Nvidia y Anthropic confirmadas o movidas hoy. Fuera: la proximidad de crisis 36,2 (sin cambios), Buffett×VIX y K-apalancamiento (datos del 29/10, antiguos) y el lock-up de SpaceX (9/12, D-37) sin precio nuevo.",
    "ja": "今日行われる中間選挙、明日早朝の確定済み3社決算、今日新たに確定・変更されたエヌビディアとアンソロピックの日程を選びました。危機接近度36.2は横ばい、バフェット指数×VIXとKレバレッジは10/29時点で古く、スペースXのロックアップ(12/9、D-37)は新しい価格がないため外しました。"
   }
+ },
+ {
+  "date": "2026-11-04",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>모레 22:30, 미국 10월 고용보고서.</b> 11/6(한국시간·확정). 이어 11/10 22:30 미국 10월 CPI, 11/11 MSCI 11월 정기 리뷰 발표(11/30 종가 반영)가 확정돼 있습니다. <a href=\"#schedule\">일정</a>",
+    "en": "<b>US October jobs report, 11/6 22:30.</b> KST, confirmed. Then US CPI 11/10 22:30 and the MSCI November review 11/11. <a href=\"#schedule\">Calendar</a>",
+    "es": "<b>Empleo de EE. UU.: 6/11 22:30.</b> Hora de Corea. Luego IPC el 10/11 22:30 y revisión MSCI el 11/11. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>明後日22:30、米10月雇用統計。</b>11/6(韓国時間・確定)。続いて11/10 22:30に米10月CPI、11/11にMSCI 11月定期見直し発表(11/30終値で反映)が確定しています。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#rank",
+    "ko": "<b>엔비디아, 시총 1위 탈환.</b> 11/4 스냅샷 엔비디아 5조 370억 달러로 애플(4조 8,340억 달러)을 넘어 1위, 스페이스X는 1조 9,190억 달러로 7위. 실적은 11/18 06:20(한국시간·확정). <a href=\"#rank\">랭킹</a>",
+    "en": "<b>Nvidia retakes #1.</b> 11/4: Nvidia $5.04T tops Apple ($4.83T); SpaceX #7 at $1.92T. Reports 11/18 06:20 KST. <a href=\"#rank\">Ranking</a>",
+    "es": "<b>Nvidia recupera el n.º 1.</b> 4/11: US$5037 mil M frente a Apple (US$4834 mil M); SpaceX 7.º. Resultados: 18/11. <a href=\"#rank\">Ranking</a>",
+    "ja": "<b>エヌビディア、時価総額1位を奪還。</b>11/4時点で5.04兆ドルとアップル(4.83兆ドル)を上回り1位、スペースXは1.92兆ドルで7位。決算は11/18 06:20(韓国時間・確定)。<a href=\"#rank\">ランキング</a>"
+   },
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X, 공모가 위로 복귀.</b> 11/2 종가 $136.37(공모가 대비 +1.0%). 12/9 7.976억주(≈1,088억 달러) 락업 해제까지 D-36, 야간 에이전트는 터빈 소송·EchoStar 확인점 2개를 신설. <a href=\"#spcxlock\">락업 레이더</a>",
+    "en": "<b>SpaceX back above IPO price.</b> 11/2 close $136.37 (+1.0%). 797.6M shares (≈$108.8B) unlock 12/9, D-36. <a href=\"#spcxlock\">Lock-up radar</a>",
+    "es": "<b>SpaceX supera su precio de salida.</b> 2/11: US$136,37 (+1,0%). 797,6 M de acciones (≈US$108,8 mil M) se liberan el 9/12. <a href=\"#spcxlock\">Radar</a>",
+    "ja": "<b>スペースX、公募価格を回復。</b>11/2終値$136.37(公募価格比+1.0%)。12/9に7.976億株(約1,088億ドル)のロックアップ解除までD-36、夜間エージェントはタービン訴訟・EchoStarの確認点2つを新設。<a href=\"#spcxlock\">ロックアップ</a>"
+   }
+  ],
+  "why": {
+   "ko": "오늘 새벽 AMD·아스테라랩스·아리스타 실적은 발표됐지만 허브 피드에 결과 숫자가 아직 없어 쓰지 않았습니다. 그래서 이번 주 남은 확정 일정(11/6 고용), 새로 바뀐 숫자(엔비디아 1위 복귀·스페이스X 공모가 회복)를 골랐습니다. 위기 근접도 36.2는 변화 없어 뺐고, 스타십 15차 비행(11/8)은 날짜가 추정이라 뺐습니다.",
+   "en": "AMD, Astera Labs and Arista reported this morning, but no result numbers are in the hub feeds yet, so they are left out. Picked instead: the week's remaining confirmed date (11/6 jobs) and new numbers (Nvidia back at #1, SpaceX back above IPO). Crisis score 36.2 was unchanged; Starship flight 15 (11/8) is only an estimated date.",
+   "es": "AMD, Astera Labs y Arista publicaron esta madrugada, pero aún no hay cifras en los datos del hub, así que no se incluyen. Elegimos la fecha confirmada que queda esta semana (empleo, 6/11) y cifras nuevas (Nvidia vuelve al n.º 1, SpaceX sobre su precio de salida). El índice de crisis (36,2) no cambió y el vuelo 15 de Starship (8/11) es solo una fecha estimada.",
+   "ja": "今朝AMD・アステラ・ラブズ・アリスタが決算を発表しましたが、ハブのフィードにまだ結果の数字がないため載せていません。代わりに今週残る確定日程(11/6雇用統計)と新しい数字(エヌビディア1位復帰、スペースXの公募価格回復)を選びました。危機スコア36.2は変化なし、スターシップ15回目の飛行(11/8)は推定日程のため除外。"
+  }
  }
 ]
