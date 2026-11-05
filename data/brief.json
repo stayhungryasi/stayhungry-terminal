@@ -1,30 +1,30 @@
 {
  "kind": "brief",
  "schema": 1,
- "date": "2026-11-04",
- "generated_kst": "2026-11-04 10:09",
+ "date": "2026-11-05",
+ "generated_kst": "2026-11-05 10:09",
  "editor": "Claude",
  "lines": [
   {
    "href": "#schedule",
-   "ko": "<b>모레 22:30, 미국 10월 고용보고서.</b> 11/6(한국시간·확정). 이어 11/10 22:30 미국 10월 CPI, 11/11 MSCI 11월 정기 리뷰 발표(11/30 종가 반영)가 확정돼 있습니다. <a href=\"#schedule\">일정</a>",
-   "en": "<b>US October jobs report, 11/6 22:30.</b> KST, confirmed. Then US CPI 11/10 22:30 and the MSCI November review 11/11. <a href=\"#schedule\">Calendar</a>",
-   "es": "<b>Empleo de EE. UU.: 6/11 22:30.</b> Hora de Corea. Luego IPC el 10/11 22:30 y revisión MSCI el 11/11. <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>明後日22:30、米10月雇用統計。</b>11/6(韓国時間・確定)。続いて11/10 22:30に米10月CPI、11/11にMSCI 11月定期見直し発表(11/30終値で反映)が確定しています。<a href=\"#schedule\">日程</a>"
+   "ko": "<b>내일 22:30, 미국 10월 고용보고서.</b> 11/6(한국시간·확정). 다음 주 11/10에는 22:30 미국 10월 CPI와 앤트로픽 IPO 로드쇼 시작 가능일(보도)이 겹칩니다. <a href=\"#schedule\">일정</a>",
+   "en": "<b>US jobs report tomorrow, 22:30.</b> 11/6 KST, confirmed. 11/10: US CPI 22:30; Anthropic roadshow may start (reported). <a href=\"#schedule\">Calendar</a>",
+   "es": "<b>Mañana 22:30, empleo de EE. UU.</b> 6/11, hora de Corea, confirmado. El 10/11: IPC (22:30) y posible roadshow de Anthropic (informes). <a href=\"#schedule\">Agenda</a>",
+   "ja": "<b>明日22:30、米10月雇用統計。</b>11/6(韓国時間・確定)。来週11/10は22:30の米10月CPIとアンソロピックIPOロードショー開始可能日(報道)が重なります。<a href=\"#schedule\">日程</a>"
   },
   {
    "href": "#rank",
-   "ko": "<b>엔비디아, 시총 1위 탈환.</b> 11/4 스냅샷 엔비디아 5조 370억 달러로 애플(4조 8,340억 달러)을 넘어 1위, 스페이스X는 1조 9,190억 달러로 7위. 실적은 11/18 06:20(한국시간·확정). <a href=\"#rank\">랭킹</a>",
-   "en": "<b>Nvidia retakes #1.</b> 11/4: Nvidia $5.04T tops Apple ($4.83T); SpaceX #7 at $1.92T. Reports 11/18 06:20 KST. <a href=\"#rank\">Ranking</a>",
-   "es": "<b>Nvidia recupera el n.º 1.</b> 4/11: US$5037 mil M frente a Apple (US$4834 mil M); SpaceX 7.º. Resultados: 18/11. <a href=\"#rank\">Ranking</a>",
-   "ja": "<b>エヌビディア、時価総額1位を奪還。</b>11/4時点で5.04兆ドルとアップル(4.83兆ドル)を上回り1位、スペースXは1.92兆ドルで7位。決算は11/18 06:20(韓国時間・確定)。<a href=\"#rank\">ランキング</a>"
+   "ko": "<b>애플, 하루 만에 시총 1위 복귀.</b> 11/5 스냅샷 애플 5조 790억 달러, 엔비디아 4조 8,320억 달러로 2위. 스페이스X는 1조 8,450억 달러로 7위 유지. <a href=\"#rank\">랭킹</a>",
+   "en": "<b>Apple back at #1 after one day.</b> 11/5 snapshot: Apple $5.08T, Nvidia $4.83T at #2; SpaceX holds #7 at $1.85T. <a href=\"#rank\">Ranking</a>",
+   "es": "<b>Apple recupera el n.º 1 en un día.</b> 5/11: Apple US$5079 mil M; Nvidia, 2.ª con US$4832 mil M; SpaceX sigue 7.ª con US$1845 mil M. <a href=\"#rank\">Ranking</a>",
+   "ja": "<b>アップル、1日で時価総額1位に復帰。</b>11/5時点でアップル5.08兆ドル、エヌビディアは4.83兆ドルで2位。スペースXは1.85兆ドルで7位を維持。<a href=\"#rank\">ランキング</a>"
   },
   {
    "href": "#spcxlock",
-   "ko": "<b>스페이스X, 공모가 위로 복귀.</b> 11/2 종가 $136.37(공모가 대비 +1.0%). 12/9 7.976억주(≈1,088억 달러) 락업 해제까지 D-36, 야간 에이전트는 터빈 소송·EchoStar 확인점 2개를 신설. <a href=\"#spcxlock\">락업 레이더</a>",
-   "en": "<b>SpaceX back above IPO price.</b> 11/2 close $136.37 (+1.0%). 797.6M shares (≈$108.8B) unlock 12/9, D-36. <a href=\"#spcxlock\">Lock-up radar</a>",
-   "es": "<b>SpaceX supera su precio de salida.</b> 2/11: US$136,37 (+1,0%). 797,6 M de acciones (≈US$108,8 mil M) se liberan el 9/12. <a href=\"#spcxlock\">Radar</a>",
-   "ja": "<b>スペースX、公募価格を回復。</b>11/2終値$136.37(公募価格比+1.0%)。12/9に7.976億株(約1,088億ドル)のロックアップ解除までD-36、夜間エージェントはタービン訴訟・EchoStarの確認点2つを新設。<a href=\"#spcxlock\">ロックアップ</a>"
+   "ko": "<b>스페이스X, 하루 +3.6%.</b> 11/3 종가 $141.31(공모가 대비 +4.7%). 12/9 7.976억주(≈1,127억 달러) 락업 해제까지 D-35, 야간 에이전트는 Meridian 소송 확인점(T11)을 신설. <a href=\"#spcxlock\">락업 레이더</a>",
+   "en": "<b>SpaceX up 3.6% in a day.</b> 11/3 close $141.31 (+4.7% vs IPO). 797.6M shares (≈$112.7B) unlock 12/9, D-35. <a href=\"#spcxlock\">Lock-up radar</a>",
+   "es": "<b>SpaceX sube 3,6% en un día.</b> Cierre 3/11: US$141,31 (+4,7% vs. salida). 797,6 M de acciones (≈US$112,7 mil M) se liberan el 9/12, D-35. <a href=\"#spcxlock\">Radar</a>",
+   "ja": "<b>スペースX、1日で+3.6%。</b>11/3終値$141.31(公募価格比+4.7%)。12/9に7.976億株(約1,127億ドル)のロックアップ解除までD-35、夜間エージェントはMeridian訴訟の確認点(T11)を新設。<a href=\"#spcxlock\">ロックアップ</a>"
   }
  ],
  "checkpoints": [
@@ -56,16 +56,16 @@
     "ja": "11/10(火)"
    },
    "x": {
-    "ko": "22:30 미국 10월 CPI · 06:05 옥시덴탈 3분기",
-    "en": "22:30 US October CPI · 06:05 Occidental Q3",
-    "es": "22:30 IPC de EE. UU. · 06:05 Occidental 3T",
-    "ja": "22:30 米10月CPI・06:05 オキシデンタル3Q"
+    "ko": "22:30 미국 10월 CPI · 앤트로픽 IPO 로드쇼 시작 가능",
+    "en": "22:30 US October CPI · Anthropic IPO roadshow may start",
+    "es": "22:30 IPC de EE. UU. · posible roadshow de Anthropic",
+    "ja": "22:30 米10月CPI・アンソロピックIPOロードショー開始可能"
    },
    "y": {
-    "ko": "확정 · 한국시간",
-    "en": "Confirmed · KST",
-    "es": "Confirmado · hora de Corea",
-    "ja": "確定・韓国時間"
+    "ko": "CPI 확정 · 로드쇼는 보도",
+    "en": "CPI confirmed · roadshow reported",
+    "es": "IPC confirmado · roadshow según informes",
+    "ja": "CPI確定・ロードショーは報道"
    }
   },
   {
@@ -90,20 +90,18 @@
   }
  ],
  "why": {
-  "ko": "오늘 새벽 AMD·아스테라랩스·아리스타 실적은 발표됐지만 허브 피드에 결과 숫자가 아직 없어 쓰지 않았습니다. 그래서 이번 주 남은 확정 일정(11/6 고용), 새로 바뀐 숫자(엔비디아 1위 복귀·스페이스X 공모가 회복)를 골랐습니다. 위기 근접도 36.2는 변화 없어 뺐고, 스타십 15차 비행(11/8)은 날짜가 추정이라 뺐습니다.",
-  "en": "AMD, Astera Labs and Arista reported this morning, but no result numbers are in the hub feeds yet, so they are left out. Picked instead: the week's remaining confirmed date (11/6 jobs) and new numbers (Nvidia back at #1, SpaceX back above IPO). Crisis score 36.2 was unchanged; Starship flight 15 (11/8) is only an estimated date.",
-  "es": "AMD, Astera Labs y Arista publicaron esta madrugada, pero aún no hay cifras en los datos del hub, así que no se incluyen. Elegimos la fecha confirmada que queda esta semana (empleo, 6/11) y cifras nuevas (Nvidia vuelve al n.º 1, SpaceX sobre su precio de salida). El índice de crisis (36,2) no cambió y el vuelo 15 de Starship (8/11) es solo una fecha estimada.",
-  "ja": "今朝AMD・アステラ・ラブズ・アリスタが決算を発表しましたが、ハブのフィードにまだ結果の数字がないため載せていません。代わりに今週残る確定日程(11/6雇用統計)と新しい数字(エヌビディア1位復帰、スペースXの公募価格回復)を選びました。危機スコア36.2は変化なし、スターシップ15回目の飛行(11/8)は推定日程のため除外。"
+  "ko": "내일로 다가온 확정 일정(11/6 고용), 하루 만에 뒤집힌 시총 1위(애플 복귀), 새 숫자(스페이스X 11/3 +3.6%·락업 D-35)를 골랐습니다. 위기 근접도(36.2, 11/2 보고)와 버핏지수(11/3)는 2일 넘게 지나 뺐고, 스타십 15차 비행(11/8)은 날짜가 추정이라 뺐습니다.",
+  "en": "Picked the confirmed event now one day away (11/6 jobs), the #1 market-cap spot flipping back to Apple, and new SpaceX numbers (+3.6% on 11/3, lock-up D-35). The crisis score (36.2, 11/2 report) and Buffett Index (11/3) are over two days old; Starship flight 15 (11/8) has only an estimated date.",
+  "es": "Elegimos el evento confirmado de mañana (empleo, 6/11), el regreso de Apple al n.º 1 y las nuevas cifras de SpaceX (+3,6% el 3/11, desbloqueo en D-35). El índice de crisis (36,2, informe del 2/11) y el índice Buffett (3/11) tienen más de dos días; el vuelo 15 de Starship (8/11) solo tiene fecha estimada.",
+  "ja": "明日に迫った確定日程(11/6雇用統計)、1日で入れ替わった時価総額1位(アップル復帰)、スペースXの新しい数字(11/3 +3.6%・ロックアップD-35)を選びました。危機接近度(36.2、11/2報告)とバフェット指数(11/3)は2日以上前のため外し、スターシップ15回目の飛行(11/8)は日付が推定のため外しました。"
  },
  "facts": [
-  "2026-11-06 22:30 KST 미국 10월 고용보고서 [confirmed] — key dates bot (data 2026-11-03)",
-  "2026-11-10 22:30 KST 미국 10월 CPI [confirmed]; 2026-11-10 06:05 옥시덴탈 3분기 [confirmed] — key dates bot",
-  "2026-11-11 MSCI 11월 정기 리뷰 발표, 11/30 종가 반영 [confirmed] — key dates bot",
-  "NVDA 5037, AAPL 4834, SPCX #7 1919 (USD bn) — univertrix snapshot 2026-11-04 (#rank)",
-  "엔비디아 FQ3 11/18 06:20 KST 확정 — key dates bot CHANGED; earnings feed 2026-11-17 amc",
-  "SPCX $136.37 (2026-11-02 close, +1.0% vs IPO $135); next unlock trade 2026-12-09 D-36, 797.6M shares, ≈$108.8B — SpaceX lock-up radar asof 2026-11-03",
-  "T9 (Boost/EchoStar) · T10 (Colossus turbine suit) 신설 — SpaceX overnight agent run 2026-11-03-event",
-  "Crisis score 36.2 unchanged (report 2026-11-02); Starship 15 NET 2026-11-08 [estimated] — excluded"
+  "US October jobs report 2026-11-06 22:30 KST confirmed — schedule bot (data 2026-11-03)",
+  "US October CPI 2026-11-10 22:30 KST confirmed; Anthropic IPO roadshow may start 2026-11-10 [report]; MSCI November review 2026-11-11 confirmed, effective 11/30 close — schedule bot",
+  "AAPL 5079, NVDA 4832, SPCX 1845 (USD bn), ranks 1/2/7; previous brief 11/4 had NVDA #1 — univertrix snapshot 2026-11-05",
+  "SPCX $141.31 (2026-11-03 close, +3.62% d/d, +4.7% vs IPO $135); next unlock trade 2026-12-09, D-35, 797.6M shares, ≈$112.7B — spcxlock asof 2026-11-04",
+  "T11 Meridian lawsuit checkpoint created — SpaceX overnight agent run 2026-11-04-event",
+  "Crisis score 36.2 (report 2026-11-02), Buffett (sent 2026-11-03) excluded as stale; Starship flight 15 2026-11-08 [estimated] excluded"
  ],
  "credit": "@stayhungryasi · https://t.me/stayhungryasi",
  "note": "Picked from the hub's live feeds. Not investment advice.",
