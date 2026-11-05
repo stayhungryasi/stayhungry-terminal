@@ -1,0 +1,197 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "date": "2026-11-06",
+ "asof": "2026-11-05 US close (written 2026-11-06 07:00 KST)",
+ "category": "macro",
+ "title": {
+  "ko": "AI 디레버리징 점검: 반도체 -12.25%, 무너지는 건 AI가 아니라 빚이다",
+  "en": "AI Deleveraging Check: Chips -12.25%, and It's the Leverage Breaking, Not AI",
+  "es": "Revisión del desapalancamiento de la IA: chips -12.25%; lo que se rompe es el apalancamiento, no la IA",
+  "ja": "AIデレバレッジ点検:半導体-12.25%、崩れているのはAIではなく借金だ"
+ },
+ "dek": {
+  "ko": "11월 5일 필라델피아 반도체지수는 -12.25%로 2020년 3월 이후 최대 낙폭을 냈다. Walleye·Engineers Gate·Millennium의 구조조정은 언론으로 확인됐지만, SNS에 퍼진 Situational Awareness 파산설은 미확인이다. 레버리지 ETF의 기계적 매도와 앤트로픽 S-1 손익을 뜯어보고, 약 40개 항목을 재검증해 정정한 내용까지 담았다.",
+  "en": "On Nov 5 the Philadelphia chip index fell 12.25%, its worst day since March 2020. Restructurings at Walleye, Engineers Gate and Millennium are confirmed by the press, but the Situational Awareness 'blow-up' circulating on social media is unverified. This piece unpacks the mechanical selling by leveraged ETFs and Anthropic's S-1 numbers, and lists the corrections from rechecking about 40 items.",
+  "es": "El 5 de noviembre el índice de chips de Filadelfia cayó 12.25%, su peor día desde marzo de 2020. Las reestructuraciones de Walleye, Engineers Gate y Millennium están confirmadas por la prensa, pero el supuesto colapso de Situational Awareness que circula en redes no está verificado. Analizamos la venta mecánica de los ETF apalancados y las cifras del S-1 de Anthropic, e incluimos las correcciones tras revisar unos 40 puntos.",
+  "ja": "11月5日、フィラデルフィア半導体指数は-12.25%と2020年3月以来の最大下落となった。Walleye・Engineers Gate・Millenniumのリストラは報道で確認されたが、SNSで広がるSituational Awareness破綻説は未確認だ。レバレッジETFの機械的な売りとアンソロピックのS-1の損益を分解し、約40項目を再検証して訂正した内容もまとめた。"
+ },
+ "key": {
+  "value": "-12.25%",
+  "label": {
+   "ko": "11/5 필라델피아 반도체지수(SOX) 하루 낙폭. 6/5의 -10.3%를 넘어 2020년 3월 이후 최대(종가 비교, 추정)",
+   "en": "The Philadelphia chip index (SOX) on Nov 5. Bigger than June 5's -10.3%, so the worst since March 2020 (closing basis, estimate)",
+   "es": "El índice de chips de Filadelfia (SOX) el 5 de noviembre. Supera el -10.3% del 5 de junio: el peor día desde marzo de 2020 (al cierre, estimación)",
+   "ja": "11/5のフィラデルフィア半導体指数(SOX)の下落率。6/5の-10.3%を超え、2020年3月以来最大(終値比較、推定)"
+  }
+ },
+ "points": {
+  "ko": [
+   "시장: S&P 500 -4.36%는 2025년 4월 이후 최악, 나스닥은 -5.52%로 고점 대비 -11.9% 조정 구간, VIX는 28.18로 69.66% 뛰었다. 코스피는 -5.28%로 외국인이 3조3,928억원을 순매도했고, 11월 첫 4거래일 순매도는 7조9,520억원이다.",
+   "청산: Walleye(운용자산 170억달러)는 주식 롱숏을 줄이고 일부 자본을 돌려주며, Engineers Gate는 Synthesis 팀 대부분을 정리했고, Millennium은 외부 운용사 2곳에서 15억달러 이상을 회수했다. Situational Awareness 파산설과 11월 신규 마진콜은 미확인이다. 3배 롱 ETF는 순자산의 약 73.5%, 3배 인버스는 약 147%만큼 장 막판에 팔아야 하는 구조다(추정).",
+   "프레임과 일정: 앤트로픽 순손실 807억달러 중 724억달러는 비현금 평가손이고 2분기 영업이익은 9.74억달러다. 문제는 기술이 아니라 자금조달이다(작성자 판단). 시나리오는 기본 55%·하방 25%·상방 20%(추정), 분기점은 11/13 이후 앤트로픽 공모가 결정과 11/17 엔비디아 실적이다."
+  ],
+  "en": [
+   "Markets: the S&P 500's -4.36% was its worst day since April 2025; the Nasdaq fell 5.52% and is 11.9% off its peak, in a correction; the VIX jumped 69.66% to 28.18. The KOSPI fell 5.28% as foreigners sold a net ₩3.39 trillion, and ₩7.95 trillion over the first four sessions of November.",
+   "Liquidations: Walleye ($17B) is shrinking stock long-short and returning some capital, Engineers Gate cut most of its Synthesis team, and Millennium pulled $1.5B+ from two outside managers. The Situational Awareness blow-up claim and new November margin calls are unverified. A 3x long ETF must sell about 73.5% of NAV at the close and a 3x inverse about 147% (estimate).",
+   "Lens and calendar: $72.4B of Anthropic's $80.7B net loss is a non-cash fair-value charge, and Q2 operating income was $974M. The problem is funding, not the technology (author's view). Scenarios: base 55%, bear 25%, bull 20% (estimates). The turning points are Anthropic pricing from Nov 13 and Nvidia earnings on Nov 17."
+  ],
+  "es": [
+   "Mercados: el -4.36% del S&P 500 fue su peor día desde abril de 2025; el Nasdaq cayó 5.52% y está 11.9% por debajo de su máximo, en corrección; el VIX subió 69.66% hasta 28.18. El KOSPI cayó 5.28% con ventas netas extranjeras de 3.39 billones de wones, y 7.95 billones en las primeras cuatro sesiones de noviembre.",
+   "Liquidaciones: Walleye (US$17.000 millones) reduce su negocio long-short en acciones y devuelve parte del capital, Engineers Gate recortó casi todo su equipo Synthesis y Millennium retiró más de US$1.500 millones de dos gestores externos. El supuesto colapso de Situational Awareness y nuevas llamadas de margen en noviembre no están verificados. Un ETF 3x largo debe vender cerca del 73.5% de su patrimonio al cierre y uno 3x inverso cerca del 147% (estimación).",
+   "Marco y calendario: US$72.400 millones de la pérdida neta de US$80.700 millones de Anthropic son un cargo contable sin efectivo, y su beneficio operativo del segundo trimestre fue de US$974 millones. El problema es el financiamiento, no la tecnología (visión del autor). Escenarios: base 55%, bajista 25%, alcista 20% (estimaciones). Los puntos clave son el precio de la OPV de Anthropic desde el 13 de noviembre y los resultados de Nvidia el 17."
+  ],
+  "ja": [
+   "市場:S&P 500の-4.36%は2025年4月以来最悪、ナスダックは-5.52%で高値から-11.9%の調整局面、VIXは69.66%上昇し28.18。KOSPIは-5.28%で外国人が3兆3,928億ウォンを売り越し、11月最初の4営業日の売り越しは7兆9,520億ウォン。",
+   "清算:Walleye(運用資産170億ドル)は株式ロングショートを縮小し一部資本を返還、Engineers GateはSynthesisチームの大半を整理、Millenniumは外部運用会社2社から15億ドル超を回収した。Situational Awareness破綻説と11月の新たなマージンコールは未確認。3倍ロングETFは純資産の約73.5%、3倍インバースは約147%を引け際に売る構造だ(推定)。",
+   "枠組みと日程:アンソロピックの純損失807億ドルのうち724億ドルは非現金の評価損で、第2四半期の営業利益は9.74億ドル。問題は技術ではなく資金調達だ(筆者の判断)。シナリオは基本55%・下振れ25%・上振れ20%(推定)、分岐点は11/13以降のアンソロピック公募価格決定と11/17のエヌビディア決算。"
+  ]
+ },
+ "tickers": [
+  "SOX",
+  "SPX",
+  "NDX",
+  "SOXL",
+  "NVDA",
+  "KOSPI",
+  "TAIEX"
+ ],
+ "tags": {
+  "ko": [
+   "AI 디레버리징",
+   "헤지펀드 청산",
+   "레버리지 ETF",
+   "재검증"
+  ],
+  "en": [
+   "AI deleveraging",
+   "Hedge fund liquidations",
+   "Leveraged ETFs",
+   "Rechecked"
+  ],
+  "es": [
+   "Desapalancamiento de la IA",
+   "Liquidaciones de hedge funds",
+   "ETF apalancados",
+   "Verificado"
+  ],
+  "ja": [
+   "AIデレバレッジ",
+   "ヘッジファンド清算",
+   "レバレッジETF",
+   "再検証"
+  ]
+ },
+ "checkpoints": [
+  {
+   "date": "2026-11-10",
+   "text": {
+    "ko": "앤트로픽 로드쇼 시작 가능 최초일",
+    "en": "Earliest possible start of Anthropic's roadshow",
+    "es": "Primer día posible del roadshow de Anthropic",
+    "ja": "アンソロピックのロードショー開始が可能な最初の日"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "text": {
+    "ko": "피델리티 ETF 5종 마지막 거래일",
+    "en": "Last trading day for five Fidelity ETFs",
+    "es": "Último día de negociación de cinco ETF de Fidelity",
+    "ja": "フィデリティETF5本の最終取引日"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "text": {
+    "ko": "앤트로픽 공모가 결정 가능 최초일",
+    "en": "Earliest possible Anthropic IPO pricing",
+    "es": "Primera fecha posible para fijar el precio de la OPV de Anthropic",
+    "ja": "アンソロピックの公募価格決定が可能な最初の日"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "text": {
+    "ko": "엔비디아 3분기 실적(미국 장 마감 후)",
+    "en": "Nvidia third-quarter earnings (after the US close)",
+    "es": "Resultados del tercer trimestre de Nvidia (tras el cierre en EE. UU.)",
+    "ja": "エヌビディア第3四半期決算(米国市場終了後)"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "text": {
+    "ko": "피델리티 ETF 청산 예정일",
+    "en": "Planned liquidation date for the Fidelity ETFs",
+    "es": "Fecha prevista de liquidación de los ETF de Fidelity",
+    "ja": "フィデリティETFの清算予定日"
+   }
+  },
+  {
+   "date": "2026-12-09",
+   "text": {
+    "ko": "FOMC 결정",
+    "en": "FOMC decision",
+    "es": "Decisión de la Fed",
+    "ja": "FOMC決定"
+   }
+  }
+ ],
+ "cards": {
+  "en": {
+   "label": "The report in 10 cards (English)",
+   "files": [
+    [
+     "card-en-01.webp",
+     "card-en-01.jpg",
+     "Card 1/10 · Cover: SOX -12.25%; AI didn't break, the leverage did"
+    ],
+    [
+     "card-en-02.webp",
+     "card-en-02.jpg",
+     "Card 2/10 · Market snapshot: index drops, VIX 28.18, Nasdaq -11.9% from peak"
+    ],
+    [
+     "card-en-03.webp",
+     "card-en-03.jpg",
+     "Card 3/10 · Liquidation tracker with confirmation levels; Situational Awareness claim unverified"
+    ],
+    [
+     "card-en-04.webp",
+     "card-en-04.jpg",
+     "Card 4/10 · Leveraged ETF mechanics: 3x long sells 73.5% of NAV, 3x inverse adds 147%"
+    ],
+    [
+     "card-en-05.webp",
+     "card-en-05.jpg",
+     "Card 5/10 · Six contagion paths and their risk levels (author's view)"
+    ],
+    [
+     "card-en-06.webp",
+     "card-en-06.jpg",
+     "Card 6/10 · Anthropic's $80.7B H1 net loss is mostly a $72.4B non-cash charge"
+    ],
+    [
+     "card-en-07.webp",
+     "card-en-07.jpg",
+     "Card 7/10 · Perez lens: entering the turning point (author's view)"
+    ],
+    [
+     "card-en-08.webp",
+     "card-en-08.jpg",
+     "Card 8/10 · Scenarios: base 55%, bear 25%, bull 20% (author estimates)"
+    ],
+    [
+     "card-en-09.webp",
+     "card-en-09.jpg",
+     "Card 9/10 · Checkpoint calendar Nov 10-26: Nvidia earnings Nov 17"
+    ],
+    [
+     "card-en-10.webp",
+     "card-en-10.jpg",
+     "Card 10/10 · Five questions to check your own account"
+    ]
+   ]
+  }
+ }
+}

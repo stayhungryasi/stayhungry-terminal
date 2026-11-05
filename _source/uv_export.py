@@ -153,7 +153,7 @@ def main():
             continue
         doc = dict(meta={"source": "univertrix.com (universe-dominator: daily market-cap snapshots, calendar via Finnhub)",
                          "commit": sha, "generated_at": now.strftime("%Y-%m-%d %H:%M KST"), "hash": hh,
-                         "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+                         "credit": "stayhungryasi.com",
                          "note": "Market data and dates only. Not investment advice."}, **doc)
         write(out / "live" / f"{nm}.json", doc)
         write(out / "data" / f"{nm}.json", doc)

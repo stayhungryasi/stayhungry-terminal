@@ -1,6 +1,6 @@
 # Stayhungry.ASI open data
 
-Every number on the site, as JSON. Free to use; credit @stayhungryasi · https://stayhungryasi.com. Not investment advice.
+Every number on the site, as JSON. Free to use; credit stayhungryasi.com. Not investment advice.
 
 Base URL: https://stayhungryasi.com/data/
 

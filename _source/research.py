@@ -19,7 +19,7 @@ and prints the report URLs (build.py adds them to sitemap.xml).
 
 Publishing rule: pure research only. No employer, real name, PB/client or internal-review content,
 no direct buy/sell/allocation instructions. check() refuses to build if any of that slips in.
-@stayhungryasi · https://t.me/stayhungryasi
+stayhungryasi.com
 """
 import html, json, os, re, shutil, sys, datetime
 
@@ -35,10 +35,10 @@ CAT = {
     'masters': {'en': 'Investors', 'ko': '투자 거장', 'es': 'Inversionistas', 'ja': '投資家'},
 }
 UI = {
-    'en': dict(back='← Research library', orig='ORIGINAL IN KOREAN', brief='BRIEF', key='KEY NUMBER', checks='CHECKPOINTS', related='MORE RESEARCH', read='Read the full report ↓', minutes='{n} min read', sources='{n} sources', asof='Data as of {d}', date='Published {d}', open='Open the interactive report in a new tab ↗', note='AI-assisted research by @stayhungryasi. Written on the date shown; numbers may have changed since. Not investment advice.'),
-    'ko': dict(back='← 리서치 라이브러리', orig='원문 한국어', brief='요약', key='핵심 숫자', checks='검증 일정', related='다른 리서치', read='원문 전체 읽기 ↓', minutes='{n}분 분량', sources='출처 {n}개', asof='데이터 기준 {d}', date='작성 {d}', open='인터랙티브 리포트 새 창으로 열기 ↗', note='AI 도움을 받아 @stayhungryasi가 작성한 리서치입니다. 작성일 기준이며 이후 숫자가 바뀌었을 수 있습니다. 투자 권유가 아닙니다.'),
-    'es': dict(back='← Biblioteca de investigación', orig='ORIGINAL EN COREANO', brief='RESUMEN', key='CIFRA CLAVE', checks='PUNTOS DE CONTROL', related='MÁS INVESTIGACIÓN', read='Leer el informe completo ↓', minutes='{n} min de lectura', sources='{n} fuentes', asof='Datos al {d}', date='Publicado {d}', open='Abrir el informe interactivo en otra pestaña ↗', note='Investigación asistida por IA de @stayhungryasi. Vigente a la fecha indicada; las cifras pueden haber cambiado. No es asesoría de inversión.'),
-    'ja': dict(back='← リサーチライブラリ', orig='原文は韓国語', brief='要約', key='重要な数字', checks='検証スケジュール', related='ほかのリサーチ', read='全文を読む ↓', minutes='{n}分で読める', sources='出典{n}件', asof='データ基準 {d}', date='作成 {d}', open='インタラクティブ版を新しいタブで開く ↗', note='AIの支援を受けて@stayhungryasiが作成したリサーチです。作成日時点の内容で、その後数値が変わっている可能性があります。投資助言ではありません。'),
+    'en': dict(back='← Research library', orig='ORIGINAL IN KOREAN', brief='BRIEF', key='KEY NUMBER', checks='CHECKPOINTS', related='MORE RESEARCH', read='Read the full report ↓', minutes='{n} min read', sources='{n} sources', asof='Data as of {d}', date='Published {d}', open='Open the interactive report in a new tab ↗', note='AI-assisted research from stayhungryasi.com. Written on the date shown; numbers may have changed since. Not investment advice.'),
+    'ko': dict(back='← 리서치 라이브러리', orig='원문 한국어', brief='요약', key='핵심 숫자', checks='검증 일정', related='다른 리서치', read='원문 전체 읽기 ↓', minutes='{n}분 분량', sources='출처 {n}개', asof='데이터 기준 {d}', date='작성 {d}', open='인터랙티브 리포트 새 창으로 열기 ↗', note='AI 도움을 받아 작성한 stayhungryasi.com 리서치입니다. 작성일 기준이며 이후 숫자가 바뀌었을 수 있습니다. 투자 권유가 아닙니다.'),
+    'es': dict(back='← Biblioteca de investigación', orig='ORIGINAL EN COREANO', brief='RESUMEN', key='CIFRA CLAVE', checks='PUNTOS DE CONTROL', related='MÁS INVESTIGACIÓN', read='Leer el informe completo ↓', minutes='{n} min de lectura', sources='{n} fuentes', asof='Datos al {d}', date='Publicado {d}', open='Abrir el informe interactivo en otra pestaña ↗', note='Investigación asistida por IA de stayhungryasi.com. Vigente a la fecha indicada; las cifras pueden haber cambiado. No es asesoría de inversión.'),
+    'ja': dict(back='← リサーチライブラリ', orig='原文は韓国語', brief='要約', key='重要な数字', checks='検証スケジュール', related='ほかのリサーチ', read='全文を読む ↓', minutes='{n}分で読める', sources='出典{n}件', asof='データ基準 {d}', date='作成 {d}', open='インタラクティブ版を新しいタブで開く ↗', note='AIの支援を受けて作成したstayhungryasi.comのリサーチです。作成日時点の内容で、その後数値が変わっている可能性があります。投資助言ではありません。'),
 }
 FORBIDDEN = re.compile(r'하나증권|Centerfield|김광모|광모|대표님|필승|PB 활용|고객 설명|고객용|고객 성향|내부 투자검토|투자위원회|등록 투자자문|Investment Committee|예시 비중|분할 매수|매수할 기회|분할로 사면')
 FAV = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D111D'/%3E"
@@ -189,7 +189,7 @@ SOC_ROW = '<span class="soc">' + ''.join(
     f'<a class="soci" href="{u}" target="_blank" rel="noopener" title="{n} {h}" aria-label="{n} {h}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">{p}</svg></a>'
     for n, h, u, p in SOC) + '</span>'
 FOOT = ('<footer><span>Not investment advice. 투자 권유 아님.</span>'
-        '<span class="fr">' + SOC_ROW + '<a href="https://stayhungryasi.com/" target="_blank" rel="noopener">@stayhungryasi · stayhungryasi.com</a></span></footer>')
+        '<span class="fr">' + SOC_ROW + '<a href="https://stayhungryasi.com/" target="_blank" rel="noopener">stayhungryasi.com</a></span></footer>')
 
 
 def brief(m):
@@ -273,7 +273,7 @@ def index_page(allm, base):
     url = f'{base}r/'
     rows = ''.join(f'''<a href="/r/{m["slug"]}/"><small>{E(CAT[m["category"]]["en"])} · {E(m["date"])}</small><b>{E(m["title"]["en"])}</b><span lang="ko">{E(m["title"]["ko"])}</span><p>{E(m["dek"]["en"])}</p></a>''' for m in allm)
     css = '<style>.rel a span{display:block;font-size:14px;color:var(--ink2);margin-top:2px}.rel a p{margin:8px 0 0;font-size:14px;color:var(--mute);line-height:1.55}</style>'
-    return (head('Research library · Stayhungry.ASI', f'{len(allm)} research reports by @stayhungryasi: AI infrastructure, macro, sectors, crypto, great investors. Korean originals with briefs in 4 languages.', url, 'en', css)
+    return (head('Research library · Stayhungry.ASI', f'{len(allm)} research reports on stayhungryasi.com: AI infrastructure, macro, sectors, crypto, great investors. Korean originals with briefs in 4 languages.', url, 'en', css)
             + topbar() + f'<main><p class="eb">RESEARCH LIBRARY · {len(allm)}</p><h1 class="t">Research, in full.</h1>'
             + '<p>Every report is hosted here in its Korean original, with a brief in English, Korean, Spanish and Japanese. Interactive version: <a href="/en/#library">open the library</a> · RSS: <a href="/r/feed.xml">/r/feed.xml</a> · JSON: <a href="/data/research.json">/data/research.json</a></p>'
             + f'<div class="rel">{rows}</div></main>' + FOOT + '</body></html>\n')
@@ -284,7 +284,7 @@ def rss(allm, base):
         return datetime.datetime.strptime(s, '%Y-%m-%d').strftime('%a, %d %b %Y 00:00:00 +0900')
     items = ''.join(f'''<item><title>{E(m["title"]["en"])} · {E(m["title"]["ko"])}</title><link>{base}r/{m["slug"]}/</link><guid>{base}r/{m["slug"]}/</guid><pubDate>{d(m["date"])}</pubDate><description>{E(m["dek"]["en"] + " " + m["dek"]["ko"])}</description></item>''' for m in allm)
     return f'''<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>Stayhungry.ASI research</title><link>{base}r/</link><description>Research by @stayhungryasi · https://stayhungryasi.com. Not investment advice.</description>{items}</channel></rss>
+<rss version="2.0"><channel><title>Stayhungry.ASI research</title><link>{base}r/</link><description>Research from https://stayhungryasi.com. Not investment advice.</description>{items}</channel></rss>
 '''
 
 
@@ -308,7 +308,7 @@ def build(out, base='https://stayhungryasi.com/'):
     upcoming = sorted([dict(c, slug=m['slug']) for m in allm for c in m.get('checkpoints', []) if c['date'] >= today], key=lambda c: c['date'])
     doc = {'name': 'Stayhungry.ASI research library', 'updated': today, 'count': len(pub), 'feed': f'{base}r/feed.xml',
            'rule': 'Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.',
-           'credit': '@stayhungryasi · https://stayhungryasi.com', 'categories': CAT, 'reports': pub, 'upcoming_checkpoints': upcoming}
+           'credit': 'stayhungryasi.com', 'categories': CAT, 'reports': pub, 'upcoming_checkpoints': upcoming}
     open(os.path.join(out, 'data', 'research.json'), 'w', encoding='utf-8').write(json.dumps(doc, ensure_ascii=False, indent=1) + '\n')
     urls.append(f'{base}r/')
     return urls

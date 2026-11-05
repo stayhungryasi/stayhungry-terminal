@@ -13,7 +13,7 @@ draft.json:
 }
 Lines may use only <b>…</b> and <a href="#page">…</a> (hub pages). Pure public data: no affiliation, client,
 internal-review or buy/sell wording (same rule as the research library). Run from the repo root.
-@stayhungryasi · https://t.me/stayhungryasi
+stayhungryasi.com
 """
 import datetime as dt, json, re, sys
 from pathlib import Path
@@ -162,7 +162,7 @@ def publish(path):
     now = dt.datetime.now(KST)
     doc = dict(kind="brief", schema=1, date=today().isoformat(), generated_kst=now.strftime("%Y-%m-%d %H:%M"),
                editor="Claude", lines=lines, checkpoints=(d.get("checkpoints") or [])[:3], why=d["why"],
-               facts=d.get("facts") or [], credit="@stayhungryasi · https://t.me/stayhungryasi",
+               facts=d.get("facts") or [], credit="stayhungryasi.com",
                note="Picked from the hub's live feeds. Not investment advice.")
     (ROOT / "live").mkdir(exist_ok=True)
     (ROOT / "live" / "brief.json").write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

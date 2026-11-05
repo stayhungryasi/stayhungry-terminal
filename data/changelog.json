@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-06",
+      "commit": "HEAD",
+      "message": "New research: AI Deleveraging Check (chips -12.25% on Nov 5) with a liquidation tracker, leveraged-ETF mechanics, Anthropic S-1 breakdown and 10 cards in Korean and English; every credit across the site is now just stayhungryasi.com"
+    },
+    {
       "date": "2026-11-03",
       "commit": "3893bde",
       "message": "Every page footer now has one-tap channel icons: YouTube, Instagram, X, Threads, TikTok and Telegram; the credit line points to stayhungryasi.com"
@@ -227,7 +232,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-04",
-  "credit": "@stayhungryasi · https://stayhungryasi.com",
+  "updated": "2026-11-06",
+  "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }

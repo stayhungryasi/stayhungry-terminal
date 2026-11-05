@@ -124,7 +124,7 @@ def main():
         sha = ""
     meta = {"source": "universe-dominator/agent-research (univertrix.com)", "commit": sha[:12],
             "generated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M KST"),
-            "credit": "@stayhungryasi · https://t.me/stayhungryasi"}
+            "credit": "stayhungryasi.com"}
     per = {}
     for lang in LANGS:
         per[lang] = build_lang(pc, ar, i18n, lang)
