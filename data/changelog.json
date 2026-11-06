@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-06",
-      "commit": "HEAD",
+      "commit": "649b28d",
       "message": "Faster first screen: the last live data you saw shows instantly on your next visit while fresh data loads behind it, TODAY shows loading shimmers instead of sample numbers, the hidden developer view no longer rebuilds on every update, page sizing reads all pages in one pass, deep-page feeds load when the browser is idle, and fonts stop blocking the first paint"
     },
     {
