@@ -1,30 +1,30 @@
 {
  "kind": "brief",
  "schema": 1,
- "date": "2026-11-05",
- "generated_kst": "2026-11-05 10:09",
+ "date": "2026-11-06",
+ "generated_kst": "2026-11-06 10:09",
  "editor": "Claude",
  "lines": [
   {
    "href": "#schedule",
-   "ko": "<b>내일 22:30, 미국 10월 고용보고서.</b> 11/6(한국시간·확정). 다음 주 11/10에는 22:30 미국 10월 CPI와 앤트로픽 IPO 로드쇼 시작 가능일(보도)이 겹칩니다. <a href=\"#schedule\">일정</a>",
-   "en": "<b>US jobs report tomorrow, 22:30.</b> 11/6 KST, confirmed. 11/10: US CPI 22:30; Anthropic roadshow may start (reported). <a href=\"#schedule\">Calendar</a>",
-   "es": "<b>Mañana 22:30, empleo de EE. UU.</b> 6/11, hora de Corea, confirmado. El 10/11: IPC (22:30) y posible roadshow de Anthropic (informes). <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>明日22:30、米10月雇用統計。</b>11/6(韓国時間・確定)。来週11/10は22:30の米10月CPIとアンソロピックIPOロードショー開始可能日(報道)が重なります。<a href=\"#schedule\">日程</a>"
+   "ko": "<b>오늘 22:30, 미국 10월 고용보고서.</b> 11/6(한국시간·확정). VIX는 11/5 28.18로 '주의' 구간, VIX/VIX3M 1.103으로 단기 공포가 장기보다 높은 상태에서 발표를 맞습니다. <a href=\"#schedule\">일정</a>",
+   "en": "<b>US jobs report tonight, 22:30.</b> 11/6 KST, confirmed. VIX at 28.18 (11/5) with VIX/VIX3M 1.103: near-term fear above long-term. <a href=\"#schedule\">Calendar</a>",
+   "es": "<b>Hoy 22:30, empleo de EE. UU.</b> Confirmado. VIX en 28,18 (5/11) y VIX/VIX3M 1,103: más miedo a corto que a largo plazo. <a href=\"#schedule\">Agenda</a>",
+   "ja": "<b>今夜22:30、米10月雇用統計。</b>11/6(韓国時間・確定)。VIXは11/5に28.18で「注意」圏、VIX/VIX3Mは1.103と短期の恐怖が長期を上回る中での発表です。<a href=\"#schedule\">日程</a>"
   },
   {
-   "href": "#rank",
-   "ko": "<b>애플, 하루 만에 시총 1위 복귀.</b> 11/5 스냅샷 애플 5조 790억 달러, 엔비디아 4조 8,320억 달러로 2위. 스페이스X는 1조 8,450억 달러로 7위 유지. <a href=\"#rank\">랭킹</a>",
-   "en": "<b>Apple back at #1 after one day.</b> 11/5 snapshot: Apple $5.08T, Nvidia $4.83T at #2; SpaceX holds #7 at $1.85T. <a href=\"#rank\">Ranking</a>",
-   "es": "<b>Apple recupera el n.º 1 en un día.</b> 5/11: Apple US$5079 mil M; Nvidia, 2.ª con US$4832 mil M; SpaceX sigue 7.ª con US$1845 mil M. <a href=\"#rank\">Ranking</a>",
-   "ja": "<b>アップル、1日で時価総額1位に復帰。</b>11/5時点でアップル5.08兆ドル、エヌビディアは4.83兆ドルで2位。スペースXは1.85兆ドルで7位を維持。<a href=\"#rank\">ランキング</a>"
+   "href": "#library",
+   "ko": "<b>새 리서치: AI 디레버리징 점검.</b> 반도체 -12.25%, '무너지는 건 AI가 아니라 빚'(작성자 판단). 11/4 기준 국내 신용융자 28.645조원, 반대매매는 39억원으로 1년 평균의 0.17배. <a href=\"#library\">리서치</a>",
+   "en": "<b>New research: AI deleveraging.</b> Chips -12.25%; author's view: debt, not AI, is breaking. Korea forced selling 0.17x 1y avg (11/4). <a href=\"#library\">Research</a>",
+   "es": "<b>Informe: desapalancamiento en IA.</b> Chips -12,25%; según el autor, cae la deuda, no la IA. Ventas forzosas en Corea: 0,17x (4/11). <a href=\"#library\">Informes</a>",
+   "ja": "<b>新リサーチ:AIデレバレッジ点検。</b>半導体-12.25%、「崩れているのはAIではなく借金」(筆者の判断)。11/4時点で韓国の信用融資28.645兆ウォン、反対売買は39億ウォンで1年平均の0.17倍。<a href=\"#library\">リサーチ</a>"
   },
   {
    "href": "#spcxlock",
-   "ko": "<b>스페이스X, 하루 +3.6%.</b> 11/3 종가 $141.31(공모가 대비 +4.7%). 12/9 7.976억주(≈1,127억 달러) 락업 해제까지 D-35, 야간 에이전트는 Meridian 소송 확인점(T11)을 신설. <a href=\"#spcxlock\">락업 레이더</a>",
-   "en": "<b>SpaceX up 3.6% in a day.</b> 11/3 close $141.31 (+4.7% vs IPO). 797.6M shares (≈$112.7B) unlock 12/9, D-35. <a href=\"#spcxlock\">Lock-up radar</a>",
-   "es": "<b>SpaceX sube 3,6% en un día.</b> Cierre 3/11: US$141,31 (+4,7% vs. salida). 797,6 M de acciones (≈US$112,7 mil M) se liberan el 9/12, D-35. <a href=\"#spcxlock\">Radar</a>",
-   "ja": "<b>スペースX、1日で+3.6%。</b>11/3終値$141.31(公募価格比+4.7%)。12/9に7.976億株(約1,127億ドル)のロックアップ解除までD-35、夜間エージェントはMeridian訴訟の確認点(T11)を新設。<a href=\"#spcxlock\">ロックアップ</a>"
+   "ko": "<b>스페이스X, 공모가 턱밑.</b> 11/4 종가 $135.92(-3.81%, 공모가 대비 +0.7%). 12/9 7.976억주(≈1,084억 달러) 락업 해제까지 D-34, 퀄컴은 11/4 스타링크 모바일 지상 5G 다년 계약을 발표. <a href=\"#spcxlock\">락업 레이더</a>",
+   "en": "<b>SpaceX near its IPO price.</b> 11/4 close $135.92 (-3.81%, +0.7% vs IPO). 797.6M shares (≈$108.4B) unlock 12/9, D-34. <a href=\"#spcxlock\">Lock-up radar</a>",
+   "es": "<b>SpaceX, cerca de su salida.</b> Cierre 4/11: US$135,92 (-3,81%). 797,6 M de acciones (≈US$108,4 mil M) se liberan el 9/12, D-34. <a href=\"#spcxlock\">Radar</a>",
+   "ja": "<b>スペースX、公募価格目前。</b>11/4終値$135.92(-3.81%、公募価格比+0.7%)。12/9に7.976億株(約1,084億ドル)のロックアップ解除までD-34、クアルコムは11/4にスターリンク・モバイルの地上5G複数年契約を発表。<a href=\"#spcxlock\">ロックアップ</a>"
   }
  ],
  "checkpoints": [
@@ -90,20 +90,22 @@
   }
  ],
  "why": {
-  "ko": "내일로 다가온 확정 일정(11/6 고용), 하루 만에 뒤집힌 시총 1위(애플 복귀), 새 숫자(스페이스X 11/3 +3.6%·락업 D-35)를 골랐습니다. 위기 근접도(36.2, 11/2 보고)와 버핏지수(11/3)는 2일 넘게 지나 뺐고, 스타십 15차 비행(11/8)은 날짜가 추정이라 뺐습니다.",
-  "en": "Picked the confirmed event now one day away (11/6 jobs), the #1 market-cap spot flipping back to Apple, and new SpaceX numbers (+3.6% on 11/3, lock-up D-35). The crisis score (36.2, 11/2 report) and Buffett Index (11/3) are over two days old; Starship flight 15 (11/8) has only an estimated date.",
-  "es": "Elegimos el evento confirmado de mañana (empleo, 6/11), el regreso de Apple al n.º 1 y las nuevas cifras de SpaceX (+3,6% el 3/11, desbloqueo en D-35). El índice de crisis (36,2, informe del 2/11) y el índice Buffett (3/11) tienen más de dos días; el vuelo 15 de Starship (8/11) solo tiene fecha estimada.",
-  "ja": "明日に迫った確定日程(11/6雇用統計)、1日で入れ替わった時価総額1位(アップル復帰)、スペースXの新しい数字(11/3 +3.6%・ロックアップD-35)を選びました。危機接近度(36.2、11/2報告)とバフェット指数(11/3)は2日以上前のため外し、スターシップ15回目の飛行(11/8)は日付が推定のため外しました。"
+  "ko": "오늘 밤 실제로 열리는 고용보고서를 1순위로, 오늘 새로 나온 디레버리징 리서치와 11/4 신용 데이터를 2순위로, 공모가 근처까지 내려온 스페이스X와 D-34 락업을 3순위로 골랐습니다. 위기 리포트(11/2)는 2일이 넘어 숫자를 쓰지 않았고, 날짜가 추정인 스타십 15차 비행(11/8)과 어제와 같은 시총 랭킹은 뺐습니다.",
+  "en": "Tonight's jobs report comes first, today's new deleveraging research with 11/4 credit data second, and SpaceX sliding to near its IPO price with the D-34 unlock third. The crisis report (11/2) is over two days old so its numbers are left out, as are Starship Flight 15 (11/8, estimated date) and an unchanged market-cap ranking.",
+  "es": "Primero, el informe de empleo de esta noche; segundo, el nuevo estudio sobre desapalancamiento con datos de crédito del 4/11; tercero, SpaceX cerca de su precio de salida y el desbloqueo a D-34. El informe de crisis (2/11) tiene más de dos días y se omite, igual que el vuelo 15 de Starship (8/11, fecha estimada) y el ranking sin cambios.",
+  "ja": "今夜実際に出る雇用統計を1位、本日公開のデレバレッジ・リサーチと11/4の信用データを2位、公募価格近くまで下げたスペースXとD-34のロックアップを3位にしました。危機レポート(11/2)は2日超のため数値を使わず、日付が推定のスターシップ15回目飛行(11/8)と変化のない時価総額ランキングは外しました。"
  },
  "facts": [
-  "US October jobs report 2026-11-06 22:30 KST confirmed — schedule bot (data 2026-11-03)",
-  "US October CPI 2026-11-10 22:30 KST confirmed; Anthropic IPO roadshow may start 2026-11-10 [report]; MSCI November review 2026-11-11 confirmed, effective 11/30 close — schedule bot",
-  "AAPL 5079, NVDA 4832, SPCX 1845 (USD bn), ranks 1/2/7; previous brief 11/4 had NVDA #1 — univertrix snapshot 2026-11-05",
-  "SPCX $141.31 (2026-11-03 close, +3.62% d/d, +4.7% vs IPO $135); next unlock trade 2026-12-09, D-35, 797.6M shares, ≈$112.7B — spcxlock asof 2026-11-04",
-  "T11 Meridian lawsuit checkpoint created — SpaceX overnight agent run 2026-11-04-event",
-  "Crisis score 36.2 (report 2026-11-02), Buffett (sent 2026-11-03) excluded as stale; Starship flight 15 2026-11-08 [estimated] excluded"
+  "2026-11-06 22:30 KST US October jobs report [confirmed] — Key dates bot (#schedule), data 2026-11-06",
+  "VIX 28.18 (watch, as of 2026-11-05), VIX/VIX3M 1.103 — Buffett x VIX bot, check run 2026-11-06 09:27",
+  "Research 2026-11-06 'AI 디레버리징 점검', key -12.25% — Research library (#library)",
+  "Margin loans 28.645 tn KRW, forced selling 39.0 x100m KRW (0.17x 1y avg) — K-leverage monitor, data as of 2026-11-04",
+  "SPCX $135.92 (2026-11-04 close, -3.81% d/d, +0.7% vs IPO $135) — SpaceX lock-up radar, asof 2026-11-05",
+  "Next unlock trade 2026-12-09, D-34, 797.6M shares, ≈$108.4B — SpaceX lock-up radar",
+  "Qualcomm 11/4 Starlink Mobile terrestrial 5G multi-year deal — SpaceX overnight agent, run 2026-11-05-event",
+  "2026-11-10 22:30 US CPI [confirmed], 2026-11-10 Anthropic IPO roadshow may start [report], 2026-11-11 MSCI review [confirmed] — Key dates bot"
  ],
- "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+ "credit": "stayhungryasi.com",
  "note": "Picked from the hub's live feeds. Not investment advice.",
  "live": "https://stayhungryasi.com/live/brief.json"
 }
