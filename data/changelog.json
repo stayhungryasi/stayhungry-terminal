@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-06",
-      "commit": "HEAD",
+      "commit": "34de9da",
       "message": "Data truth on TODAY: every number shows its as-of date (US close, report day, daily estimate), LIVE turns into DELAYED when newer market data exists, and VIX now comes from the fresher of the two bot runs instead of the older crisis report; the Buffett x VIX check now refreshes after every US close"
     },
     {
