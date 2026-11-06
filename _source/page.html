@@ -915,6 +915,13 @@ html.shon,html.shon body{overflow:hidden}
 @media print{.page{content-visibility:visible}}
 .tagD{font:600 11px var(--mono);letter-spacing:.08em;color:#F2B33D;border:1px solid #F2B33D88;border-radius:6px;padding:2px 7px;background:#F2B33D14;cursor:help}
 .card .asof{margin-top:8px;font:500 12px var(--mono);color:var(--dim);letter-spacing:.02em}
+.lvplain{margin-top:12px;display:grid;gap:8px}
+.lvnow{background:#0E1118;border:1px solid var(--line2);border-radius:12px;padding:10px 14px}.lvnow b{font:700 12px var(--mono);letter-spacing:.12em;color:var(--or)}.lvnow p{margin:4px 0 0;font-size:15.5px;line-height:1.6;color:var(--ink)}
+.lvhow summary{cursor:pointer;font:600 13px var(--mono);color:var(--mute);letter-spacing:.06em}.lvhow p{margin:6px 0;font-size:14px;color:var(--ink2);line-height:1.55}.lvhow .tg{font-size:12.5px;color:var(--dim)}
+.lvq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.lvq span{display:grid;grid-template-columns:10px 1fr;gap:2px 8px;align-items:center;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:#11151D}.lvq span.on{border-color:var(--qc);background:color-mix(in srgb,var(--qc) 12%,#11151D)}
+.lvq i{width:10px;height:10px;border-radius:50%;background:var(--qc);grid-row:span 2}.lvq b{font-size:14px}.lvq em{font-style:normal;font:500 12px var(--mono);color:var(--mute)}
+.lvga .l small{display:block;font:500 11.5px var(--sans);color:var(--dim);letter-spacing:0;text-transform:none;margin-top:1px}
+.lvpd{display:block;font-size:11.5px;color:var(--dim);line-height:1.35;margin-top:1px}
 </style>
 
 <header class="top">
@@ -1095,6 +1102,7 @@ const SOFTWARE=[{id:'mocapture',no:1,status:'live',maker:{ko:'무광소프트',e
  links:{virustotal:'https://www.virustotal.com/gui/file/f5212e4a6807eacafa44dd914d573b464fb4ffa0d162f67f372c214387ecc56d',changelog:'https://mugwangsoft.com/changelog/',privacy:'https://mugwangsoft.com/privacy/',enterprise:'https://mugwangsoft.com/enterprise/',feedback:'https://mugwangsoft.com/feedback/',contact:'hello@mugwangsoft.com'},
  media:'https://mugwangsoft.com/media/',shots:['tray','masking','editor','window','scroll','textcopy'],built_with:'Claude'}];
 const CHANGELOG=[
+ {"d":"2026-11-06","h":"HEAD","m":{"en":"K-leverage made plain: “fuel” and “fire” are now “debt load” and “forced selling”, a RIGHT NOW sentence explains today’s reading in one breath, a how-to-read card shows what each of the four zones means, every input says what it measures, the late 07:50 report shows as late instead of skipping to Monday, and a weekday 19:40 hub-only refresh brings the day-fresher KOFIA date","ko":"K-빚투를 쉬운 말로: ‘연료·점화’를 ‘빚 규모·청산 압력’으로, ‘지금 상황’ 한 문단 해석, 네 구간이 뭔지 보여 주는 읽는 법, 세부 지표마다 무엇을 재는지 설명, 늦어진 07:50 리포트는 다음 주로 건너뛰지 않고 ‘지연 중’ 표시, 평일 19:40 허브 전용 갱신으로 하루 더 최신 기준일 반영","es":"Deuda K en lenguaje claro: “combustible” y “chispa” ahora son “deuda” y “ventas forzadas”, una frase AHORA MISMO explica la lectura, una guía muestra qué significa cada zona, cada indicador dice qué mide, el informe de las 07:50 con retraso se muestra como retrasado y una actualización del hub a las 19:40 trae la fecha más reciente de KOFIA","ja":"K-信用取引をわかりやすく:「燃料・点火」を「借金の規模・強制売り」に、「いまの状況」を一文で、4つのゾーンの意味を示す読み方、各指標が何を測るかの説明、遅れた07:50レポートは来週に飛ばさず「遅延中」と表示、平日19:40のハブ専用更新で1日新しい基準日を反映"}},
  {"d":"2026-11-06","h":"f628b3b","m":{"en":"AI Deleveraging Check: the liquidation-tracker card now shows the date of each report (Korean and English)","ko":"AI 디레버리징 점검: 청산 트래커 카드에 건별 보도 날짜 표기(한국어·영어)","es":"Revisión del desapalancamiento de la IA: la tarjeta de liquidaciones ahora muestra la fecha de cada noticia (coreano e inglés)","ja":"AIデレバレッジ点検:清算トラッカーのカードに各報道の日付を表示(韓国語・英語)"}},
  {"d":"2026-11-06","h":"34de9da","m":{"en":"Data truth on TODAY: every number shows its as-of date (US close, report day, daily estimate), LIVE turns into DELAYED when newer market data exists, and VIX now comes from the fresher of the two bot runs instead of the older crisis report; the Buffett x VIX check now refreshes after every US close","ko":"TODAY 데이터 정합성: 모든 숫자에 기준일(미국 종가·보고일·일별 추정) 표시, 더 새 시장 데이터가 있으면 LIVE 대신 '지연' 표시, VIX는 오래된 위기 보고가 아니라 두 봇 중 더 최신 값을 사용, 버핏지수×VIX는 미국 장 마감마다 갱신","es":"Datos fieles en HOY: cada cifra muestra su fecha (cierre de EE. UU., día del informe, estimación diaria), EN VIVO pasa a RETRASO cuando existen datos más nuevos, y el VIX ahora sale de la ejecución más reciente de los dos bots en vez del informe de crisis más antiguo; Buffett x VIX se actualiza tras cada cierre de EE. UU.","ja":"TODAYのデータ整合性:すべての数字に基準日(米国終値・レポート日・日次推定)を表示、より新しい市場データがあればLIVEの代わりに「遅延」、VIXは古い危機レポートではなく2つのボットのうち新しい方を使用、バフェット指数×VIXは米国の取引終了ごとに更新"}},
  {"d":"2026-11-06","h":"649b28d","m":{"en":"Faster first screen: the last live data you saw shows instantly on your next visit while fresh data loads behind it, TODAY shows loading shimmers instead of sample numbers, the hidden developer view no longer rebuilds on every update, page sizing reads all pages in one pass, deep-page feeds load when the browser is idle, and fonts stop blocking the first paint","ko":"첫 화면 속도 개선: 다시 방문하면 마지막으로 본 실시간 데이터가 즉시 뜨고 새 데이터는 뒤에서 교체, TODAY는 예시 숫자 대신 로딩 표시, 숨어 있는 개발자 화면은 업데이트마다 다시 그리지 않음, 페이지 크기 계산을 한 번에, 안쪽 페이지 데이터는 여유 있을 때 로딩, 글꼴이 첫 화면을 막지 않음","es":"Primera pantalla más rápida: en tu próxima visita los últimos datos en vivo aparecen al instante mientras los nuevos cargan detrás, HOY muestra indicadores de carga en vez de cifras de muestra, la vista de desarrollador oculta ya no se reconstruye con cada actualización, el tamaño de las páginas se calcula en una sola pasada, los datos de páginas profundas cargan cuando el navegador está libre y las fuentes ya no bloquean el primer pintado","ja":"最初の画面を高速化:再訪時は最後に見たライブデータが即表示され、新しいデータは裏で差し替え。TODAYはサンプル値の代わりに読み込み表示、隠れた開発者画面は更新のたびに再描画しない、ページサイズ計算を一度に、奥のページのデータは余裕のある時に読み込み、フォントが最初の描画を妨げない"}},
@@ -1479,10 +1487,10 @@ const LVX={
 en:{lv_eb:'K-LEVERAGE MONITOR · LIVE FROM THE DEBT BOT',lv_h1na:'Korea leverage monitor',lv_load:'Loading the leverage monitor…',lv_fail:'Could not load the leverage monitor right now.',
  lv_reg:{stable:'Stable',overheat:'Leverage building up',flush:'Liquidation under way',cascade:'Cascade liquidation alert'},
  lv_regd:{stable:'Leverage and liquidation pressure are both ordinary',overheat:'Debt has piled up but forced selling is still low; a small shock can be amplified',flush:'Forced selling is flushing out debt; watch for signs that deleveraging is ending',cascade:'Forced selling is hitting a market loaded with debt'},
- lv_h2:'Fuel {f} · Fire {x}',lv_fuel:'FUEL · debt built up',lv_fire:'FIRE · forced selling',lv_sw:['low','normal','high','very high'],
- lv_v1:{flush:'Debt piled up by buying the early dip is starting to be flushed out by forced selling.',fuel_build:'The index is falling while debt keeps rising: fuel for forced selling is building.',delever:'Debt is being forced down as the index falls: a deleveraging phase.',hot_rally:'Debt is growing faster than the rally: a sign of overheating.',healthy:'A healthy rise with little reliance on debt.',flat:'Neither the index nor debt has a clear direction.'},
+ lv_h2:'Debt load {f} · Forced selling {x}',lv_fuel:'DEBT LOAD · how much was bought on credit',lv_fire:'FORCED SELLING · is that debt being dumped',lv_sw:['low','normal','high','very high'],
+ lv_v1:{flush:'Debt piled up by buying the early dip is starting to be flushed out by forced selling.',fuel_build:'The index is falling while debt keeps rising: fuel for forced selling is building.',delever:'Debt is shrinking fast as the index falls: a deleveraging phase.',hot_rally:'Debt is growing faster than the rally: a sign of overheating.',healthy:'A healthy rise with little reliance on debt.',flat:'Neither the index nor debt has a clear direction.'},
  lv_v2:{cascade:'Liquidation hitting a market loaded with debt is the most dangerous combination.',unpaid:'Unsettled margin is in its 10-year high zone, so more forced selling may follow over the next 1–2 trading days.',forced_mult:'Forced selling is running at several times normal and adding to selling pressure.',overheat:'No liquidation yet, but a small shock could be amplified.',calm:'Liquidation pressure is at normal levels.'},
- lv_map:'REGIME MAP · LAST 60 TRADING DAYS',lv_axf:'Fuel →',lv_axx:'Fire →',lv_now:'now',
+ lv_map:'REGIME MAP · LAST 60 TRADING DAYS',lv_axf:'Debt load →',lv_axx:'Forced selling →',lv_now:'now',
  lv_k:['Margin loans','Forced selling','Unsettled margin','Investor deposits','KOSPI'],lv_d1:'{v} vs prior day',lv_fx:'{x}× the 1-year average',lv_dep:'{v} in a month',lv_ks:'{v} from 1-year high · {d}',
  lv_lw:['10-year high zone','high','normal','low','10-year low zone'],
  lv_c1:'MARGIN LOANS vs KOSPI · 1 YEAR',lv_c1s:'record {v} ({d}) · now {g}',lv_c2:'FORCED SELLING · LAST 60 TRADING DAYS',lv_c2s:'dashed = 1-year average {v} · red = 3× or more',lv_c3:'MARGIN LOANS / MARKET CAP · 10 YEARS',lv_c3s:'now {v}% · {p} percentile',
@@ -1496,10 +1504,10 @@ en:{lv_eb:'K-LEVERAGE MONITOR · LIVE FROM THE DEBT BOT',lv_h1na:'Korea leverage
 ko:{lv_eb:'K-빚투 레버리지 모니터 · 빚투봇 실시간',lv_h1na:'K-빚투 레버리지 모니터',lv_load:'레버리지 모니터를 불러오는 중…',lv_fail:'지금은 레버리지 모니터를 불러오지 못했습니다.',
  lv_reg:{stable:'안정',overheat:'레버리지 과열 축적',flush:'청산 진행·바닥 탐색',cascade:'연쇄청산 경보'},
  lv_regd:{stable:'레버리지·청산 압력 모두 평이',overheat:'빚은 쌓였지만 아직 청산 압력은 낮음 — 작은 충격에도 증폭 위험',flush:'강제청산이 빚을 털어내는 중 — 디레버리징 막바지 신호 추적',cascade:'빚이 많이 쌓인 상태에서 강제청산이 터지는 중'},
- lv_h2:'연료 {f} · 점화 {x}',lv_fuel:'연료 · 쌓인 빚',lv_fire:'점화 · 강제청산',lv_sw:['낮음','보통','높음','매우 높음'],
- lv_v1:{flush:'하락 초반 물타기로 쌓인 빚이 반대매매로 털리기 시작했습니다.',fuel_build:'지수가 빠지는데 빚은 오히려 늘고 있습니다. 반대매매 연료가 쌓이는 중입니다.',delever:'지수 하락과 함께 빚이 강제로 줄어드는 디레버리징 국면입니다.',hot_rally:'빚이 랠리보다 빨리 늘고 있습니다. 과열 신호입니다.',healthy:'빚 의존도가 낮은 건강한 상승입니다.',flat:'지수와 빚 모두 뚜렷한 방향이 없습니다.'},
+ lv_h2:'빚 규모 {f} · 청산 압력 {x}',lv_fuel:'빚 규모 · 얼마나 빌려서 샀나',lv_fire:'청산 압력 · 빚이 강제로 팔리나',lv_sw:['낮음','보통','높음','매우 높음'],
+ lv_v1:{flush:'하락 초반 물타기로 쌓인 빚이 반대매매로 털리기 시작했습니다.',fuel_build:'지수가 빠지는데 빚은 오히려 늘고 있습니다. 반대매매 연료가 쌓이는 중입니다.',delever:'지수 하락과 함께 빚이 빠르게 줄어드는 디레버리징 국면입니다.',hot_rally:'빚이 랠리보다 빨리 늘고 있습니다. 과열 신호입니다.',healthy:'빚 의존도가 낮은 건강한 상승입니다.',flat:'지수와 빚 모두 뚜렷한 방향이 없습니다.'},
  lv_v2:{cascade:'빚이 많은 상태에서 청산이 터지는 가장 위험한 조합입니다.',unpaid:'미수금이 10년 최고권이라 1~2영업일 추가 반대매매 가능성이 남아 있습니다.',forced_mult:'강제청산이 평소의 몇 배로 매도압력을 키우고 있습니다.',overheat:'아직 청산은 없지만 작은 충격에도 증폭될 수 있습니다.',calm:'청산 압력은 평소 수준입니다.'},
- lv_map:'국면 지도 · 최근 60거래일',lv_axf:'연료 →',lv_axx:'점화 →',lv_now:'현재',
+ lv_map:'국면 지도 · 최근 60거래일',lv_axf:'빚 규모 →',lv_axx:'청산 압력 →',lv_now:'현재',
  lv_k:['신용융자 잔고','반대매매','위탁매매 미수금','투자자예탁금','코스피'],lv_d1:'전일 대비 {v}',lv_fx:'평소(1년 평균)의 {x}배',lv_dep:'한 달 {v}',lv_ks:'1년 고점 대비 {v} · {d}',
  lv_lw:['10년 최고권','높음','보통','낮음','10년 최저권'],
  lv_c1:'신용잔고 vs 코스피 · 1년',lv_c1s:'사상 최대 {v}({d}) · 현재 {g}',lv_c2:'반대매매 · 최근 60거래일',lv_c2s:'점선 = 1년 평균 {v} · 빨강 = 평소의 3배 이상',lv_c3:'시총 대비 신용 · 10년',lv_c3s:'현재 {v}% · 10년 {p}%ile',
@@ -1513,10 +1521,10 @@ ko:{lv_eb:'K-빚투 레버리지 모니터 · 빚투봇 실시간',lv_h1na:'K-�
 es:{lv_eb:'MONITOR DE APALANCAMIENTO DE COREA · EN VIVO DESDE EL BOT',lv_h1na:'Monitor de apalancamiento de Corea',lv_load:'Cargando el monitor de apalancamiento…',lv_fail:'No se pudo cargar el monitor de apalancamiento ahora.',
  lv_reg:{stable:'Estable',overheat:'Apalancamiento acumulándose',flush:'Liquidación en curso',cascade:'Alerta de liquidación en cascada'},
  lv_regd:{stable:'Apalancamiento y presión de liquidación en niveles normales',overheat:'La deuda se acumuló pero las ventas forzadas aún son bajas; un pequeño golpe puede amplificarse',flush:'Las ventas forzadas están limpiando la deuda; vigilar señales de que termina el desapalancamiento',cascade:'Las ventas forzadas golpean un mercado cargado de deuda'},
- lv_h2:'Combustible {f} · Chispa {x}',lv_fuel:'COMBUSTIBLE · deuda acumulada',lv_fire:'CHISPA · ventas forzadas',lv_sw:['bajo','normal','alto','muy alto'],
- lv_v1:{flush:'La deuda acumulada comprando la primera caída empieza a liquidarse con ventas forzadas.',fuel_build:'El índice cae mientras la deuda sigue subiendo: se acumula combustible para ventas forzadas.',delever:'La deuda se reduce a la fuerza mientras cae el índice: fase de desapalancamiento.',hot_rally:'La deuda crece más rápido que el rally: señal de sobrecalentamiento.',healthy:'Una subida sana, con poca dependencia de la deuda.',flat:'Ni el índice ni la deuda tienen una dirección clara.'},
+ lv_h2:'Deuda {f} · Ventas forzadas {x}',lv_fuel:'DEUDA · cuánto se compró a crédito',lv_fire:'VENTAS FORZADAS · ¿se está liquidando esa deuda?',lv_sw:['bajo','normal','alto','muy alto'],
+ lv_v1:{flush:'La deuda acumulada comprando la primera caída empieza a liquidarse con ventas forzadas.',fuel_build:'El índice cae mientras la deuda sigue subiendo: se acumula combustible para ventas forzadas.',delever:'La deuda se reduce rápido mientras cae el índice: fase de desapalancamiento.',hot_rally:'La deuda crece más rápido que el rally: señal de sobrecalentamiento.',healthy:'Una subida sana, con poca dependencia de la deuda.',flat:'Ni el índice ni la deuda tienen una dirección clara.'},
  lv_v2:{cascade:'Una liquidación sobre un mercado cargado de deuda es la combinación más peligrosa.',unpaid:'El margen impago está en máximos de 10 años, así que puede haber más ventas forzadas en 1–2 días hábiles.',forced_mult:'Las ventas forzadas van a varias veces lo normal y aumentan la presión vendedora.',overheat:'Aún no hay liquidación, pero un pequeño golpe podría amplificarse.',calm:'La presión de liquidación está en niveles normales.'},
- lv_map:'MAPA DE RÉGIMEN · ÚLTIMOS 60 DÍAS HÁBILES',lv_axf:'Combustible →',lv_axx:'Chispa →',lv_now:'hoy',
+ lv_map:'MAPA DE RÉGIMEN · ÚLTIMOS 60 DÍAS HÁBILES',lv_axf:'Deuda →',lv_axx:'Ventas forzadas →',lv_now:'hoy',
  lv_k:['Crédito para acciones','Ventas forzadas','Margen impago','Depósitos de inversores','KOSPI'],lv_d1:'{v} vs día anterior',lv_fx:'{x}× la media de 1 año',lv_dep:'{v} en un mes',lv_ks:'{v} desde el máximo de 1 año · {d}',
  lv_lw:['máximos de 10 años','alto','normal','bajo','mínimos de 10 años'],
  lv_c1:'CRÉDITO vs KOSPI · 1 AÑO',lv_c1s:'récord {v} ({d}) · ahora {g}',lv_c2:'VENTAS FORZADAS · ÚLTIMOS 60 DÍAS HÁBILES',lv_c2s:'línea = media de 1 año {v} · rojo = 3× o más',lv_c3:'CRÉDITO / CAPITALIZACIÓN · 10 AÑOS',lv_c3s:'ahora {v}% · percentil {p}',
@@ -1530,10 +1538,10 @@ es:{lv_eb:'MONITOR DE APALANCAMIENTO DE COREA · EN VIVO DESDE EL BOT',lv_h1na:'
 ja:{lv_eb:'韓国 信用取引レバレッジモニター · ボットからライブ',lv_h1na:'韓国 信用取引レバレッジモニター',lv_load:'レバレッジモニターを読み込み中…',lv_fail:'今はレバレッジモニターを読み込めませんでした。',
  lv_reg:{stable:'安定',overheat:'レバレッジ過熱の蓄積',flush:'清算進行・底探り',cascade:'連鎖清算警報'},
  lv_regd:{stable:'レバレッジも清算圧力も平常',overheat:'借金は積み上がったが清算圧力はまだ低い — 小さなショックでも増幅の危険',flush:'強制決済が借金を吐き出させている — デレバレッジ終盤のサインを追跡',cascade:'借金が積み上がった状態で強制決済が起きている'},
- lv_h2:'燃料 {f} · 点火 {x}',lv_fuel:'燃料 · 積み上がった借金',lv_fire:'点火 · 強制決済',lv_sw:['低い','普通','高い','非常に高い'],
- lv_v1:{flush:'下落初期のナンピンで積み上がった借金が、反対売買で吐き出され始めた。',fuel_build:'指数は下がっているのに借金はむしろ増えている。反対売買の燃料が積み上がっている。',delever:'指数下落とともに借金が強制的に減るデレバレッジ局面。',hot_rally:'借金が上昇相場より速く増えている。過熱のサイン。',healthy:'借金への依存が小さい健全な上昇。',flat:'指数も借金もはっきりした方向がない。'},
+ lv_h2:'借金の規模 {f} · 強制売り {x}',lv_fuel:'借金の規模 · どれだけ借りて買ったか',lv_fire:'強制売り · 借金が強制的に売られているか',lv_sw:['低い','普通','高い','非常に高い'],
+ lv_v1:{flush:'下落初期のナンピンで積み上がった借金が、反対売買で吐き出され始めた。',fuel_build:'指数は下がっているのに借金はむしろ増えている。反対売買の燃料が積み上がっている。',delever:'指数下落とともに借金が急速に減るデレバレッジ局面。',hot_rally:'借金が上昇相場より速く増えている。過熱のサイン。',healthy:'借金への依存が小さい健全な上昇。',flat:'指数も借金もはっきりした方向がない。'},
  lv_v2:{cascade:'借金が多い状態で清算が起きる、最も危険な組み合わせ。',unpaid:'未収金が10年の最高圏にあり、1〜2営業日の追加反対売買の可能性が残る。',forced_mult:'強制決済が平常の数倍となり売り圧力を強めている。',overheat:'まだ清算はないが、小さなショックでも増幅しうる。',calm:'清算圧力は平常水準。'},
- lv_map:'局面マップ · 直近60営業日',lv_axf:'燃料 →',lv_axx:'点火 →',lv_now:'現在',
+ lv_map:'局面マップ · 直近60営業日',lv_axf:'借金の規模 →',lv_axx:'強制売り →',lv_now:'現在',
  lv_k:['信用取引融資残高','反対売買','委託売買未収金','投資者預託金','KOSPI'],lv_d1:'前日比 {v}',lv_fx:'平常(1年平均)の{x}倍',lv_dep:'1か月で{v}',lv_ks:'1年高値比 {v} · {d}',
  lv_lw:['10年の最高圏','高い','普通','低い','10年の最低圏'],
  lv_c1:'信用残高 vs KOSPI · 1年',lv_c1s:'過去最大 {v}({d}) · 現在 {g}',lv_c2:'反対売買 · 直近60営業日',lv_c2s:'点線 = 1年平均 {v} · 赤 = 平常の3倍以上',lv_c3:'時価総額比の信用 · 10年',lv_c3s:'現在 {v}% · 10年で{p}パーセンタイル',
@@ -1617,6 +1625,36 @@ ja:{d5_eb:'機関の5%大量保有 · 開示ボットからライブ',d5_h1:'誰
  d5_src:'開示ボット(dart_bot):Telegramレポートと同じ判定です。出典:OpenDARTの公開開示。大量保有の開示は買い推奨ではなく、IB本体は顧客スワップや貸株のために株を保有することが多い。',
  hub_d5n:'{n}件 · 直近 {c}',t_d5:'filings [語]  機関の5%大量保有開示'}};
 LANGS.forEach(c=>Object.assign(L[c],D5X[c]));
+const LV3={
+en:{lv_how:'HOW TO READ IT',lv_how1:'Each score is 0–100: where today sits in the last 10 years (50 = a normal day). Above 60 is the danger zone.',lv_tg:'In the Telegram report these two are called “fuel” and “fire”.',
+ lv_q:{stable:'both under 60',overheat:'only debt 60+',flush:'only forced selling 60+',cascade:'both 60+'},lv_now2:'RIGHT NOW',
+ lv_s1:'Debt load is {fb} for the last 10 years ({f}), forced-selling pressure is {xb} ({x}).',lv_s2:'Highest inside forced selling: “{p1}” {v1} and “{p2}” {v2}.',
+ lv_s3lo:'Actual forced sales are {fx}× a normal day, so margin calls are not piling up yet.',lv_s3hi:'Actual forced sales are {fx}× a normal day: margin calls are hitting.',
+ lv_band:['low','about normal','high','very high'],
+ lv_pd:{credit_abs:'Size of the debt itself vs the last 10 years',r_total:'Debt relative to the size of the market',r_dep:'Debt vs cash waiting in brokerage accounts',g60:'How fast debt grew in 60 days',r_collat:'Stock-backed loans vs market cap',unpaid:'Unsettled buys on credit',forced_mult:'Forced sales in 5 days vs the 1-year average',forced_pct5:'Share of trading that is forced sales',dd20:'How far KOSPI fell in 20 days (bigger fall = higher)',g5:'How fast debt shrank in 5 days (faster = higher)'},
+ lv_due:'Today’s 07:50 report is running late (GitHub queue)',lv_upd:'hub refreshed {g}',lv_chk:'check run, not sent to Telegram'},
+ko:{lv_how:'읽는 법',lv_how1:'두 점수 모두 0~100: 지난 10년 중 오늘이 어느 수준인지(50 = 보통). 60을 넘으면 위험 구간입니다.',lv_tg:'텔레그램 리포트에서는 이 두 점수를 ‘연료’·‘점화’라고 부릅니다.',
+ lv_q:{stable:'둘 다 60 미만',overheat:'빚만 60↑',flush:'청산 압력만 60↑',cascade:'둘 다 60↑'},lv_now2:'지금 상황',
+ lv_s1:'빚 규모는 10년 기준 {fb}({f}점), 청산 압력은 {xb}({x}점)입니다.',lv_s2:'청산 압력 안에서는 ‘{p1}’({v1})·‘{p2}’({v2})이 가장 높습니다.',
+ lv_s3lo:'실제 반대매매는 평소의 {fx}배라 강제 매도가 아직 쌓이지 않았습니다.',lv_s3hi:'실제 반대매매가 평소의 {fx}배로 늘어 강제 매도가 진행 중입니다.',
+ lv_band:['낮은 편','보통','높은 편','매우 높음'],
+ lv_pd:{credit_abs:'빚 금액 자체가 10년 중 어느 수준인지',r_total:'시장 규모(시총)에 비해 빚이 얼마나 큰지',r_dep:'대기 자금(예탁금) 대비 빚 비율',g60:'최근 60일 동안 빚이 늘어난 속도',r_collat:'주식담보대출이 시총에서 차지하는 비중',unpaid:'외상으로 산 주식(미수금) 규모',forced_mult:'최근 5일 반대매매가 1년 평균의 몇 배인지',forced_pct5:'전체 거래 중 반대매매 비중',dd20:'코스피가 20일 동안 빠진 폭 (많이 빠질수록 높음)',g5:'최근 5일 빚이 줄어든 속도 (빨리 줄수록 높음)'},
+ lv_due:'오늘 07:50 리포트 지연 중 (GitHub 예약 실행 대기)',lv_upd:'허브 갱신 {g}',lv_chk:'텔레그램 미발송 점검 갱신'},
+es:{lv_how:'CÓMO LEERLO',lv_how1:'Cada puntaje va de 0 a 100: dónde está hoy frente a los últimos 10 años (50 = un día normal). Por encima de 60 es zona de peligro.',lv_tg:'En el informe de Telegram se llaman “combustible” y “chispa”.',
+ lv_q:{stable:'ambos bajo 60',overheat:'solo deuda 60+',flush:'solo ventas forzadas 60+',cascade:'ambos 60+'},lv_now2:'AHORA MISMO',
+ lv_s1:'La deuda está {fb} frente a los últimos 10 años ({f}) y la presión de ventas forzadas {xb} ({x}).',lv_s2:'Lo más alto dentro de las ventas forzadas: “{p1}” {v1} y “{p2}” {v2}.',
+ lv_s3lo:'Las ventas forzadas reales son {fx}× un día normal: las llamadas de margen aún no se acumulan.',lv_s3hi:'Las ventas forzadas reales son {fx}× un día normal: las llamadas de margen están golpeando.',
+ lv_band:['baja','en lo normal','alta','muy alta'],
+ lv_pd:{credit_abs:'Tamaño de la deuda frente a 10 años',r_total:'Deuda frente al tamaño del mercado',r_dep:'Deuda frente al efectivo en cuentas de corretaje',g60:'Qué tan rápido creció la deuda en 60 días',r_collat:'Préstamos con acciones en garantía frente a la capitalización',unpaid:'Compras a crédito sin liquidar',forced_mult:'Ventas forzadas de 5 días frente al promedio anual',forced_pct5:'Parte de la negociación que son ventas forzadas',dd20:'Cuánto cayó el KOSPI en 20 días (más caída = más alto)',g5:'Qué tan rápido se redujo la deuda en 5 días (más rápido = más alto)'},
+ lv_due:'El informe de hoy a las 07:50 va con retraso (cola de GitHub)',lv_upd:'hub actualizado {g}',lv_chk:'revisión, no enviada a Telegram'},
+ja:{lv_how:'読み方',lv_how1:'どちらも0〜100:過去10年の中で今日がどの水準か(50=普通の日)。60を超えると危険ゾーンです。',lv_tg:'Telegramのレポートではこの2つを「燃料」「点火」と呼んでいます。',
+ lv_q:{stable:'どちらも60未満',overheat:'借金だけ60↑',flush:'強制売りだけ60↑',cascade:'どちらも60↑'},lv_now2:'いまの状況',
+ lv_s1:'借金の規模は10年基準で{fb}({f}点)、強制売りの圧力は{xb}({x}点)です。',lv_s2:'強制売りの中では「{p1}」({v1})・「{p2}」({v2})が最も高い。',
+ lv_s3lo:'実際の反対売買は普段の{fx}倍で、強制売りはまだ積み上がっていません。',lv_s3hi:'実際の反対売買が普段の{fx}倍に増え、強制売りが進んでいます。',
+ lv_band:['低め','普通','高め','非常に高い'],
+ lv_pd:{credit_abs:'借金の額そのものが10年でどの水準か',r_total:'市場規模(時価総額)に対する借金の大きさ',r_dep:'待機資金(預託金)に対する借金の比率',g60:'直近60日の借金の増え方',r_collat:'株式担保ローンの時価総額比',unpaid:'信用で買った未決済(未収金)の規模',forced_mult:'直近5日の反対売買が1年平均の何倍か',forced_pct5:'全取引に占める反対売買の比率',dd20:'KOSPIの20日下落幅(大きいほど高い)',g5:'直近5日の借金の減り方(速いほど高い)'},
+ lv_due:'本日07:50のレポートが遅延中(GitHubの予約実行待ち)',lv_upd:'ハブ更新 {g}',lv_chk:'Telegram未送信のチェック更新'}};
+LANGS.forEach(c=>Object.assign(L[c],LV3[c]));
 const TRX={
 en:{asof_close:'{d} US close',asof_rep:'{d} report · Mon & Fri',asof_est:'{d} · daily estimate',asof_stale:'DELAYED',asof_tip:'Newer market data exists than this number. It updates with the next bot run.'},
 ko:{asof_close:'{d} 미국 종가',asof_rep:'{d} 보고 · 월·금 정기',asof_est:'{d} · 일별 추정',asof_stale:'지연',asof_tip:'이 숫자보다 새 시장 데이터가 있습니다. 다음 봇 실행 때 갱신됩니다.'},
@@ -2404,7 +2442,7 @@ const lvSg=(x,d=1,u='%')=>x==null?'n/a':(x>0?'+':'')+x.toFixed(d)+u;
 const lvJo=(v,d=2)=>{if(v==null)return '—';const a=v.toFixed(d);return lang==='ko'?a+'조':lang==='ja'?a+'兆円':lang==='es'?'₩'+a+' billones':'₩'+a+'T';};
 const lvEok=v=>{if(v==null)return '—';const n=Math.round(v);return lang==='ko'?n.toLocaleString('ko-KR')+'억':lang==='ja'?n.toLocaleString('ja-JP')+'億円':lang==='es'?'₩'+(n/10).toLocaleString('es-MX',{maximumFractionDigits:0})+' mil M':'₩'+(n/10).toLocaleString('en-US',{maximumFractionDigits:0})+'B';};
 const lvD=k=>scDayLbl(k);
-function lvNext(){const now=Date.now();for(let i=0;i<8;i++){const k=new Date(now+9*3600e3+i*864e5).toISOString().slice(0,10),wd=new Date(k+'T12:00:00Z').getUTCDay(),at=Date.parse(k+'T07:50:00+09:00');if([1,3,5].includes(wd)&&at>now)return k;}return null;}
+function lvNext(){const now=Date.now(),ls=LV&&LV.last_sent_kst?Date.parse(LV.last_sent_kst.replace(' ','T')+':00+09:00'):now-864e5,from=Math.min(now,ls+60e3);for(let i=0;i<10;i++){const k=new Date(from+9*3600e3+i*864e5).toISOString().slice(0,10),wd=new Date(k+'T12:00:00Z').getUTCDay(),at=Date.parse(k+'T07:50:00+09:00');if([1,3,5].includes(wd)&&at>ls)return {k,late:at<=now};}return null;}
 function lvMini(t){if(!LV||!LV.regime)return '';const k=LV.regime.key;
   return `<a class="qmini" href="#leverage" style="--qa:${lvCol(k)}"><span class="qmk">${esc(t.lv_today)} · ${esc(lvD(LV.asof))}</span><span class="qmt">${esc(t.lv_reg[k])} · ${esc(fmt(t.lv_h2,{f:Math.round(LV.fuel),x:Math.round(LV.fire)}))}</span><span class="qmw">${esc(t.lv_k[0])} ${esc(lvJo(LV.kpi.credit))} · ${esc(t.lv_k[1])} ${esc(lvEok(LV.kpi.forced))} →</span></a>`;}
 function lvMap(t){const P=(LV.series&&LV.series.path)||[],W=360,H=300,L=34,R=10,Tp=10,B=30,X=v=>L+v/100*(W-L-R),Y=v=>Tp+(1-v/100)*(H-Tp-B),th=LV.threshold||60;
@@ -2439,17 +2477,25 @@ function lvC3(t){const r=LV.series.r_total_10y||[];if(r.length<2)return '';const
   return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(t.lv_c3)}">${gy}${yr}<line x1="${g.L}" x2="${W-g.R}" y1="${Y(cur)}" y2="${Y(cur)}" stroke="#F2B33D" stroke-dasharray="3 4" opacity=".7"/><path d="${p}" fill="none" stroke="#F2B33D" stroke-width="1.8"/><circle cx="${lx}" cy="${Y(cur)}" r="4" fill="#F2B33D" stroke="#0A0C10" stroke-width="1.5"/></svg>`;}
 function lvRd(x){const t=T(),tpl=t.lv_r[x.k];if(!tpl)return '';const v={p_abs:lvOrd(x.p_abs),p_rel:lvOrd(x.p_rel),p_ks:lvOrd(x.p_ks),p_kq:lvOrd(x.p_kq),dep20:lvSg(x.dep20),col20:lvSg(x.col20),mult:x.mult!=null?x.mult.toFixed(1):'',lw:x.p_rel!=null?lvLW(x.p_rel):''};return `<li><b>${esc(fmt(tpl[0],v))}</b><span>${esc(fmt(tpl[1],v))}</span></li>`;}
 function lvWt(x){const t=T(),tpl=t.lv_w[x.k];if(!tpl)return '';const v=x.k==='forced_calm'?lvEok(x.v):lvJo(x.v,x.k==='ath'?1:0);return `<li>${esc(fmt(tpl,{v}))}</li>`;}
+function lvBand(v){const b=T().lv_band;return v>=80?b[3]:v>=60?b[2]:v>=40?b[1]:b[0];}
+function lvPlain(t){const fp=(LV.fire_parts||[]).filter(p=>p.p!=null).slice().sort((a,b)=>b.p-a.p),fx=LV.kpi.forced_x;
+  const s1=fmt(t.lv_s1,{fb:lvBand(LV.fuel),f:Math.round(LV.fuel),xb:lvBand(LV.fire),x:Math.round(LV.fire)});
+  const s2=fp.length>1?fmt(t.lv_s2,{p1:t.lv_p[fp[0].k]||fp[0].k,v1:Math.round(fp[0].p),p2:t.lv_p[fp[1].k]||fp[1].k,v2:Math.round(fp[1].p)}):'';
+  const s3=fx!=null?fmt(fx>=2?t.lv_s3hi:t.lv_s3lo,{fx:fx.toFixed(1)}):'';
+  const th=LV.threshold||60,q=['stable','overheat','flush','cascade'];
+  return `<div class="lvplain"><div class="lvnow"><b>${esc(t.lv_now2)}</b><p>${esc(s1)} ${esc(s2)} ${esc(s3)}</p></div>`
+   +`<details class="lvhow"><summary>${esc(t.lv_how)}</summary><p>${esc(t.lv_how1)}</p><div class="lvq">${q.map(x=>`<span class="${x===LV.regime.key?'on':''}" style="--qc:${lvCol(x)}"><i></i><b>${esc(t.lv_reg[x])}</b><em>${esc(t.lv_q[x])}</em></span>`).join('')}</div><p class="tg">${esc(t.lv_tg)}</p></details></div>`;}
 function rLev(){const t=T(),el=$('leverage');if(!el)return;
   if(!LV||!LV.regime){el.innerHTML=head('leverage',t.lv_eb)+hd(esc(t.lv_h1na),'')+`<p class="sub">${esc(lvState==='fail'?t.lv_fail:t.lv_load)}</p>`+src(t.lv_src,'leverage');return;}
-  const k=LV.regime.key,col=lvCol(k),K=LV.kpi,D=LV.detail,c=COL(),nx=lvNext();
-  const gauge=(lbl,v)=>`<div class="lvga"><span class="l">${esc(lbl)}</span><span class="tr"><i style="width:${Math.max(2,Math.min(100,v))}%;background:${v>=(LV.threshold||60)?col:'#8D95A8'}"></i><b style="left:${LV.threshold||60}%"></b></span><strong>${Math.round(v)}</strong><em>${esc(lvSW(v))}</em></div>`;
-  const parts=(arr)=>arr.map(p=>`<div class="lvpt"><span>${esc(t.lv_p[p.k]||p.k)}</span><span class="tr"><i style="width:${Math.max(1,p.p||0)}%"></i></span><b>${p.p==null?'—':Math.round(p.p)}</b><em>${esc(fmt(t.lv_wt,{w:p.w}))}</em></div>`).join('');
+  const k=LV.regime.key,col=lvCol(k),K=LV.kpi,D=LV.detail,c=COL(),nn=lvNext(),nx=nn&&!nn.late?nn.k:null;
+  const gauge=(lbl,v)=>`<div class="lvga"><span class="l">${esc(lbl.split(' · ')[0])}<small>${esc(lbl.split(' · ')[1]||'')}</small></span><span class="tr"><i style="width:${Math.max(2,Math.min(100,v))}%;background:${v>=(LV.threshold||60)?col:'#8D95A8'}"></i><b style="left:${LV.threshold||60}%"></b></span><strong>${Math.round(v)}</strong><em>${esc(lvSW(v))}</em></div>`;
+  const parts=(arr)=>arr.map(p=>`<div class="lvpt" title="${esc((t.lv_pd||{})[p.k]||'')}"><span>${esc(t.lv_p[p.k]||p.k)}<small class="lvpd">${esc((t.lv_pd||{})[p.k]||'')}</small></span><span class="tr"><i style="width:${Math.max(1,p.p||0)}%"></i></span><b>${p.p==null?'—':Math.round(p.p)}</b><em>${esc(fmt(t.lv_wt,{w:p.w}))}</em></div>`).join('');
   const tile=(i,val,sub,alert)=>`<div class="lvk${alert?' al':''}"><small>${esc(t.lv_k[i])}</small><b>${esc(val)}</b><em>${esc(sub)}</em></div>`;
   const d1=K.credit_d1;
   el.innerHTML=head('leverage',t.lv_eb)+hd(esc(t.lv_reg[k])+(lang==='ja'?'。':'.'),esc(fmt(t.lv_h2,{f:Math.round(LV.fuel),x:Math.round(LV.fire)})))
-   +`<p class="kdnext" style="font-size:14px;color:var(--mute)"><span class="tagL">LIVE</span>${esc(fmt(t.lv_live,{d:lvD(LV.asof),n:nx?lvD(nx)+' 07:50 KST':t.lv_none})+(LV.last_sent_kst?' · '+fmt(t.lv_sent,{s:md(LV.last_sent_kst)}):''))}${nx?`<span class="cdx" data-cd="${new Date(Date.parse(nx+'T07:50:00+09:00')).toISOString()}"></span>`:''}</p>`
-   +`<div class="lvg1"><div class="lvhero" style="--lc:${col}"><div class="lvreg"><i></i>${esc(t.lv_regd[k])}</div><blockquote>${esc((t.lv_v1[LV.verdict[0]]||'')+(lang==='ja'?'':' ')+(t.lv_v2[LV.verdict[1]]||''))}</blockquote>${gauge(t.lv_fuel,LV.fuel)}${gauge(t.lv_fire,LV.fire)}`
-   +`<details class="lvparts" open><summary>${esc(t.lv_parts)}</summary><h6>${esc(t.lv_fuel)}</h6>${parts(LV.fuel_parts||[])}<h6>${esc(t.lv_fire)}</h6>${parts(LV.fire_parts||[])}</details></div>`
+   +`<p class="kdnext" style="font-size:14px;color:var(--mute)"><span class="tagL">LIVE</span>${esc(fmt(t.lv_live,{d:lvD(LV.asof),n:nn?lvD(nn.k)+' 07:50 KST':t.lv_none})+(LV.last_sent_kst?' · '+fmt(t.lv_sent,{s:md(LV.last_sent_kst)}):'')+(LV.generated_kst?' · '+fmt(t.lv_upd,{g:LV.generated_kst.slice(5,16).replace('-','/')})+(LV.sent===false?' ('+t.lv_chk+')':''):''))}${nn&&nn.late?` <span class="tagD">${esc(t.lv_due)}</span>`:''}${nx?`<span class="cdx" data-cd="${new Date(Date.parse(nx+'T07:50:00+09:00')).toISOString()}"></span>`:''}</p>`
+   +`<div class="lvg1"><div class="lvhero" style="--lc:${col}"><div class="lvreg"><i></i>${esc(t.lv_regd[k])}</div><blockquote>${esc((t.lv_v1[LV.verdict[0]]||'')+(lang==='ja'?'':' ')+(t.lv_v2[LV.verdict[1]]||''))}</blockquote>${gauge(t.lv_fuel,LV.fuel)}${gauge(t.lv_fire,LV.fire)}${lvPlain(t)}`
+   +`<details class="lvparts"><summary>${esc(t.lv_parts)}</summary><h6>${esc(t.lv_fuel)}</h6>${parts(LV.fuel_parts||[])}<h6>${esc(t.lv_fire)}</h6>${parts(LV.fire_parts||[])}</details></div>`
    +`<div class="lkbox lvmap"><h5><span>${esc(t.lv_map)}</span></h5>${lvMap(t)}</div></div>`
    +`<div class="lvks">${tile(0,lvJo(K.credit),fmt(t.lv_d1,{v:(d1>0?'▲':d1<0?'▼':'')+lvJo(Math.abs(d1||0),2)}),false)}${tile(1,lvEok(K.forced),fmt(t.lv_fx,{x:K.forced_x!=null?K.forced_x.toFixed(1):'—'}),K.forced_x>=3)}${tile(2,lvJo(K.unpaid),lvLW(K.p_unpaid),K.p_unpaid>=95)}${tile(3,lvJo(K.deposit,1),fmt(t.lv_dep,{v:lvSg(K.dep20)}),K.dep20<=-5)}`
    +`<div class="lvk"><small>${esc(t.lv_k[4])}</small><b>${K.kospi!=null?K.kospi.toLocaleString('en-US',{maximumFractionDigits:0}):'—'}</b><em style="color:${K.kospi_dd1y<0?c.down:c.up}">${esc(fmt(t.lv_ks,{v:lvSg(K.kospi_dd1y),d:lvD(K.kospi_date)}))}</em></div></div>`

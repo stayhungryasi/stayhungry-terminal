@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-06",
+      "commit": "HEAD",
+      "message": "K-leverage made plain: “fuel” and “fire” are now “debt load” and “forced selling”, a RIGHT NOW sentence explains today’s reading in one breath, a how-to-read card shows what each of the four zones means, every input says what it measures, the late 07:50 report shows as late instead of skipping to Monday, and a weekday 19:40 hub-only refresh brings the day-fresher KOFIA date"
+    },
+    {
+      "date": "2026-11-06",
       "commit": "f628b3b",
       "message": "AI Deleveraging Check: the liquidation-tracker card now shows the date of each report (Korean and English)"
     },
