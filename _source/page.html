@@ -2535,9 +2535,9 @@ function fitNow(){wrapPins();fitWatch();const desk=innerWidth>=981&&innerHeight>
   const ps=ids.map(id=>[id,$(id),$(id).firstElementChild]).filter(x=>x[2]);
   if(!desk){ps.forEach(([id,,p])=>{const z=U!==1?String(U):'';if(p.style.zoom!==z)p.style.zoom=z;fitDirty.delete(id);});return;}
   const top=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--top'))||0;
-  ps.forEach(([,,p])=>{p.style.zoom='';p.style.flex='none';});
+  ps.forEach(([,sec,p])=>{sec.style.contentVisibility='visible';p.style.zoom='';p.style.flex='none';});
   const m=ps.map(([,sec,p])=>{const cs=getComputedStyle(sec);return [p.offsetHeight,innerHeight-top-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom)];});
-  ps.forEach(([id,,p],k)=>{p.style.flex='';const [nat,avail]=m[k],z=nat*U>avail?U*Math.max(FIT_MIN,avail/(nat*U)):U;if(Math.abs(z-1)>.005)p.style.zoom=String(z);fitDirty.delete(id);});}
+  ps.forEach(([id,sec,p],k)=>{sec.style.contentVisibility='';p.style.flex='';const [nat,avail]=m[k],z=nat*U>avail?U*Math.max(FIT_MIN,avail/(nat*U)):U;if(Math.abs(z-1)>.005)p.style.zoom=String(z);fitDirty.delete(id);});}
 let fitRaf=0;function fit(){if(fitRaf)return;fitRaf=requestAnimationFrame(()=>{fitRaf=0;fitNow();});}
 function renderAll(){rChrome();rToday();rBrief();rQuote();rEarn();rResearch();rMix();rScore();rAgent();rLock();rLib();rRadar();rLev();rFilings();rRank();rUniv();rUvMap();rSched();rLab();rBrains();rSoft();rFortune();rHub();rNews();rDock();if(!$('sheet').hidden)rSheet();render(curShown);rDev();tick();wrapPins();fitNow();spy();}
 let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{fitAll=true;fitNow();},150);});
@@ -3044,6 +3044,12 @@ data=gen();
 const PR={today:rToday,brief:rBrief,quote:rQuote,earnings:rEarn,research:rResearch,mix:rMix,score:rScore,agent:rAgent,spcxlock:rLock,library:rLib,radar:rRadar,leverage:rLev,filings:rFilings,rank:rRank,univertrix:rUniv,uvmap:rUvMap,schedule:rSched,lab:()=>{rLab();render(curShown);},brains:rBrains,software:rSoft,fortune:rFortune,hub:rHub,news:rNews};
 (()=>{const h=location.hash.slice(1),first=[...new Set([PAGES.includes(h)?h:null,'today',PAGES[1],PAGES[2]].filter(Boolean))],rest=PAGES.filter(p=>!first.includes(p));
   rChrome();first.forEach(p=>{try{PR[p]();}catch(e){console.error(e);}});rDock();wrapPins();fitNow();spy();tick();
+  /* deep link (#agent, #rank …): land on the page top and keep it there while the pages above fill in, until the reader moves */
+  if(PAGES.includes(h)&&h!=='today'){let moved=false;const stop=()=>{moved=true;};['wheel','touchstart','keydown','pointerdown'].forEach(e=>addEventListener(e,stop,{once:true,passive:true}));
+    const hh=()=>(document.querySelector('header.top')||{}).offsetHeight||64,t0=Date.now();
+    const al=()=>{if(moved||Date.now()-t0>8000)return;const el=$(h),tp=el.getBoundingClientRect().top,atEnd=innerHeight+scrollY>=document.documentElement.scrollHeight-2;
+      if(Math.abs(tp-hh())>6&&!(atEnd&&tp>hh()))scrollTo({top:scrollY+tp-hh(),behavior:'instant'});setTimeout(al,150);};
+    document.documentElement.style.scrollBehavior='auto';al();}
   const step=dl=>{let n=0;while(rest.length&&(n<1||(dl&&dl.timeRemaining&&dl.timeRemaining()>8))){const p=rest.shift();try{PR[p]();}catch(e){console.error(e);}n++;}
     if(rest.length)(window.requestIdleCallback||(f=>setTimeout(f,16)))(step,{timeout:120});else{rDev();wrapPins();fit();}};
   (window.requestIdleCallback||(f=>setTimeout(f,16)))(step,{timeout:120});})();
