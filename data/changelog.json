@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-06",
-      "commit": "HEAD",
+      "commit": "475b240",
       "message": "Smoother hub and readable K-leverage charts: pages no longer snap to the next screen while you scroll (the top menu takes you anywhere); click any K-leverage chart for a large window with a crosshair that shows the date and values; the regime map's y-axis label is no longer cut off; the breakdown of the two scores is open by default"
     },
     {
