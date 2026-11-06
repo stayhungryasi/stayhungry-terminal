@@ -51,7 +51,10 @@ for c,(title,desc) in meta.items():
 </head>
 <body>
 '''
-    open(f'{out}/{c}/index.html','w',encoding='utf-8').write(head + body + '\n</body>\n</html>\n')
+    page = head + body
+    if c != 'ja':   # Japanese glyphs only on the Japanese page: a smaller font stylesheet for the other three
+        page = page.replace('&family=Noto+Sans+JP:wght@400;700;900', '')
+    open(f'{out}/{c}/index.html','w',encoding='utf-8').write(page + '\n</body>\n</html>\n')
 redirect = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Stayhungry.ASI Terminal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {alts}<link rel="canonical" href="{base}en/">

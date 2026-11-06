@@ -2,7 +2,8 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="preload" as="style" id="gfont" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap"></noscript>
 <style>
 /* Layout: an 11-page card-news deck; each LOG page fills one screen and snaps. Esc flips the same data into a code-editor view with an AI pair chat, quick open (Ctrl+P), vim keys and an open data API at /data. */
 :root{
@@ -906,6 +907,12 @@ html.shon,html.shon body{overflow:hidden}
 @media (max-width:440px){.dkm .mn{display:none}.dkm{gap:8px;padding:0 12px}}
 }
 @media (max-width:1260px) and (min-width:700px){.sht{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card.skel .v i,.card.skel .m i{display:block;height:.82em;width:46%;border-radius:8px;background:linear-gradient(90deg,#1A1F2B 0%,#262C3A 50%,#1A1F2B 100%);background-size:200% 100%;animation:skel 1.2s ease-in-out infinite}.card.skel .m i{height:14px;width:78%;margin-top:6px}
+@keyframes skel{0%{background-position:100% 0}100%{background-position:-100% 0}}
+@media (prefers-reduced-motion:reduce){.card.skel .v i,.card.skel .m i{animation:none}}
+.page{content-visibility:auto;contain-intrinsic-size:auto 100vh}
+@media (max-width:980px){.page{contain-intrinsic-size:auto 1300px}}
+@media print{.page{content-visibility:visible}}
 </style>
 
 <header class="top">
@@ -1086,6 +1093,7 @@ const SOFTWARE=[{id:'mocapture',no:1,status:'live',maker:{ko:'무광소프트',e
  links:{virustotal:'https://www.virustotal.com/gui/file/f5212e4a6807eacafa44dd914d573b464fb4ffa0d162f67f372c214387ecc56d',changelog:'https://mugwangsoft.com/changelog/',privacy:'https://mugwangsoft.com/privacy/',enterprise:'https://mugwangsoft.com/enterprise/',feedback:'https://mugwangsoft.com/feedback/',contact:'hello@mugwangsoft.com'},
  media:'https://mugwangsoft.com/media/',shots:['tray','masking','editor','window','scroll','textcopy'],built_with:'Claude'}];
 const CHANGELOG=[
+ {"d":"2026-11-06","h":"HEAD","m":{"en":"Faster first screen: the last live data you saw shows instantly on your next visit while fresh data loads behind it, TODAY shows loading shimmers instead of sample numbers, the hidden developer view no longer rebuilds on every update, page sizing reads all pages in one pass, deep-page feeds load when the browser is idle, and fonts stop blocking the first paint","ko":"첫 화면 속도 개선: 다시 방문하면 마지막으로 본 실시간 데이터가 즉시 뜨고 새 데이터는 뒤에서 교체, TODAY는 예시 숫자 대신 로딩 표시, 숨어 있는 개발자 화면은 업데이트마다 다시 그리지 않음, 페이지 크기 계산을 한 번에, 안쪽 페이지 데이터는 여유 있을 때 로딩, 글꼴이 첫 화면을 막지 않음","es":"Primera pantalla más rápida: en tu próxima visita los últimos datos en vivo aparecen al instante mientras los nuevos cargan detrás, HOY muestra indicadores de carga en vez de cifras de muestra, la vista de desarrollador oculta ya no se reconstruye con cada actualización, el tamaño de las páginas se calcula en una sola pasada, los datos de páginas profundas cargan cuando el navegador está libre y las fuentes ya no bloquean el primer pintado","ja":"最初の画面を高速化:再訪時は最後に見たライブデータが即表示され、新しいデータは裏で差し替え。TODAYはサンプル値の代わりに読み込み表示、隠れた開発者画面は更新のたびに再描画しない、ページサイズ計算を一度に、奥のページのデータは余裕のある時に読み込み、フォントが最初の描画を妨げない"}},
  {"d":"2026-11-06","h":"71761d1","m":{"en":"New research: AI Deleveraging Check (chips -12.25% on Nov 5) with a liquidation tracker, leveraged-ETF mechanics, Anthropic S-1 breakdown and 10 cards in Korean and English; every credit across the site is now just stayhungryasi.com","ko":"새 리서치: AI 디레버리징 점검(11/5 반도체 -12.25%). 청산 트래커, 레버리지 ETF 매도 구조, 앤트로픽 S-1 손익 분해, 카드뉴스 한국어·영어 10장. 사이트 전체 출처 표기를 stayhungryasi.com 하나로 통일","es":"Nueva investigación: revisión del desapalancamiento de la IA (chips -12.25% el 5 de noviembre) con seguimiento de liquidaciones, mecánica de ETF apalancados, desglose del S-1 de Anthropic y 10 tarjetas en coreano e inglés; todos los créditos del sitio ahora dicen solo stayhungryasi.com","ja":"新リサーチ:AIデレバレッジ点検(11/5半導体-12.25%)。清算トラッカー、レバレッジETFの売りの仕組み、アンソロピックS-1の損益分解、韓国語・英語のカード10枚。サイト全体のクレジット表記をstayhungryasi.comに統一"}},
  {"d":"2026-11-03","h":"3893bde","m":{"en":"Every page footer now has one-tap channel icons: YouTube, Instagram, X, Threads, TikTok and Telegram; the credit line points to stayhungryasi.com","ko":"모든 페이지 하단에 채널 바로가기 아이콘 추가: 유튜브·인스타그램·X·스레드·틱톡·텔레그램. 출처 표기는 stayhungryasi.com으로","es":"El pie de cada página ahora tiene iconos de canal a un toque: YouTube, Instagram, X, Threads, TikTok y Telegram; el crédito apunta a stayhungryasi.com","ja":"全ページのフッターにワンタップのチャンネルアイコンを追加:YouTube・Instagram・X・Threads・TikTok・Telegram。クレジット表記は stayhungryasi.com に"}},
  {"d":"2026-11-03","h":"cabe9ab","m":{"en":"The US midterms report now shows the 9 summary cards in English for English readers (election-night times in ET), with full-size JPGs and 9:16 versions alongside","ko":"미국 중간선거 리포트 영어 요약에 카드뉴스 영어판 9장 추가(개표 시각은 미 동부시간), 원본 JPG와 9:16 세로판도 함께 올림","es":"El informe de las elecciones intermedias de EE. UU. ahora muestra las 9 tarjetas resumen en inglés para lectores en inglés (horarios de cierre en hora del Este), con JPG a tamaño completo y versiones 9:16","ja":"米中間選挙レポートの英語サマリーに英語版カード9枚を追加(開票時刻は米東部時間)。原寸JPGと9:16縦版も掲載"}},
@@ -1180,6 +1188,16 @@ const $=id=>document.getElementById(id);
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=(s,o)=>s.replace(/\{(\w+)\}/g,(_,k)=>o[k]);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+/* FAST START: every live/*.json the page reads is kept in this browser. On the next visit the page renders
+   from that copy at once (no sample numbers, no waiting) and the network copy replaces it when it lands;
+   if the data changed, the loader that asked for it runs again. Copies older than 7 days are not used. */
+const LIVE_RE=/(?:^|\/)((?:live\/[\w.-]+|data\/research)\.json)(?:\?|$)/,LIVE_MAX=7*864e5,liveRerun={},liveTodo=new Set();
+const liveGet=k=>{try{const v=localStorage.getItem('sha-lc:'+k);if(!v)return null;const o=JSON.parse(v);return Date.now()-o.t<LIVE_MAX?o:null;}catch(e){return null;}};
+const livePut=(k,b)=>{try{localStorage.setItem('sha-lc:'+k,JSON.stringify({t:Date.now(),b}));}catch(e){try{Object.keys(localStorage).filter(x=>x.startsWith('sha-lc:')).forEach(x=>localStorage.removeItem(x));localStorage.setItem('sha-lc:'+k,JSON.stringify({t:Date.now(),b}));}catch(e2){}}};
+const netFetch=window.fetch.bind(window);
+const fetch=(u,o)=>{const m=String(u).match(LIVE_RE);if(!m)return netFetch(u,o);const k=m[1],c=liveGet(k);
+  const net=netFetch(u,o).then(async r=>{if(r.ok){const b=await r.clone().text();if(!c||c.b!==b){livePut(k,b);if(c&&liveRerun[k]){liveTodo.add(liveRerun[k]);clearTimeout(fetch.tm);fetch.tm=setTimeout(()=>{const l=[...liveTodo];liveTodo.clear();l.forEach(f=>{try{f();}catch(e){}});},60);}}else if(c)livePut(k,b);}return r;});
+  if(c){net.catch(()=>{});return Promise.resolve(new Response(c.b,{status:200,headers:{'Content-Type':'application/json'}}));}return net;};
 const TG='https://t.me/stayhungryasi';
 const SOC=[['YouTube','@futurefieldtrip','https://www.youtube.com/@futurefieldtrip','<path d="M8.5 5.5v13l10.5-6.5z" fill="currentColor"/>'],['Instagram','@stayhungryasi','https://www.instagram.com/stayhungryasi/','<path d="M3.8 8.6h3.4l1.7-2.6h6.2l1.7 2.6h3.4v10.2H3.8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="13.4" r="3.1" fill="none" stroke="currentColor" stroke-width="1.7"/>'],['X','@shaferwineX','https://x.com/shaferwineX','<path d="M6.5 5.5l11 13M17.5 5.5l-11 13" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>'],['Threads','@stayhungryasi','https://www.threads.com/@stayhungryasi','<text x="12" y="17.2" text-anchor="middle" font-size="16.5" font-weight="700" fill="currentColor" font-family="Inter,system-ui,sans-serif">@</text>'],['TikTok','@shaferwinex','https://www.tiktok.com/@shaferwinex','<path d="M10 17.2V5.2l8-1.6v11.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><ellipse cx="7.6" cy="17.4" rx="2.6" ry="2" fill="currentColor"/><ellipse cx="15.6" cy="15.6" rx="2.6" ry="2" fill="currentColor"/>'],['Telegram','@stayhungryasi','https://t.me/stayhungryasi','<path d="M3.6 11.4L20.2 4.6l-2.9 14.6-5.4-4.3-3 2.9v-4.9l8.3-6.3-10 5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>']];
 const socRow=()=>`<div class="soc">${SOC.map(s=>`<a class="soci" href="${s[2]}" target="_blank" rel="noopener" title="${s[0]} ${s[1]}" aria-label="${s[0]} ${s[1]}"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">${s[3]}</svg></a>`).join('')}</div>`;
@@ -1522,9 +1540,10 @@ function rToday(){
    <div class="cards3">
      ${CR?`<a class="card" href="#radar" data-crtab="crisis" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_crisis)}</span><span class="tagL">${esc(t.live)}</span></div><div class="v tab" style="color:${crCol(CR.score)}">${crS(CR.score)}<span style="font-size:.45em;color:var(--mute)">/100</span></div><div class="m">${esc(fmt(t.cr_zmsg,{z:t.cr_z[CR.regime]||'',r:crCount()}))}</div></a>
      <a class="card" href="#radar" data-crtab="fear" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_vix)}</span><span class="tagL">${esc(t.live)}</span></div><div class="v tab">${crNum('vix',(CR.indicators.find(i=>i.key==='vix')||{}).value)}</div><div class="m">${esc(((CR.indicators.find(i=>i.key==='vix')||{}).value??0)<20?t.m_vix:t.m_vix_hi)}</div></a>`
+     :crState==='load'?`<div class="card skel" aria-busy="true"><div class="k"><span>${esc(t.k_crisis)}</span></div><div class="v tab"><i></i></div><div class="m"><i></i></div></div><div class="card skel" aria-busy="true"><div class="k"><span>${esc(t.k_vix)}</span></div><div class="v tab"><i></i></div><div class="m"><i></i></div></div>`
      :`<div class="card"><div class="k"><span>${esc(t.k_crisis)}</span><span class="tagS">${esc(t.sample)}</span></div><div class="v tab">38<span style="font-size:.45em;color:var(--mute)">/100</span></div><div class="m">${esc(t.m_crisis)}</div></div>
      <div class="card"><div class="k"><span>${esc(t.k_vix)}</span><span class="tagS">${esc(t.sample)}</span></div><div class="v tab">17.4</div><div class="m">${esc(t.m_vix)}</div></div>`}
-     ${FR&&FR.buffett?`<a class="card hot" href="#radar" data-crtab="fear" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_buf)}</span><span class="tagL">${esc(t.live)}</span></div><div class="v tab" style="color:${frBCol(FR.buffett.key)}">${FR.buffett.value.toFixed(0)}%</div><div class="m">${esc(fmt(t.fr_today,{l:t.fr_bq[FR.buffett.key]||'',r:frRank(FR.buffett,t)}))}</div></a>`:`<div class="card hot"><div class="k"><span>${esc(t.k_buf)}</span><span class="tagS">${esc(t.sample)}</span></div><div class="v tab" style="color:var(--or)">205%</div><div class="m">${esc(t.m_buf)}</div></div>`}
+     ${FR&&FR.buffett?`<a class="card hot" href="#radar" data-crtab="fear" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_buf)}</span><span class="tagL">${esc(t.live)}</span></div><div class="v tab" style="color:${frBCol(FR.buffett.key)}">${FR.buffett.value.toFixed(0)}%</div><div class="m">${esc(fmt(t.fr_today,{l:t.fr_bq[FR.buffett.key]||'',r:frRank(FR.buffett,t)}))}</div></a>`:frState==='load'?`<div class="card hot skel" aria-busy="true"><div class="k"><span>${esc(t.k_buf)}</span></div><div class="v tab"><i></i></div><div class="m"><i></i></div></div>`:`<div class="card hot"><div class="k"><span>${esc(t.k_buf)}</span><span class="tagS">${esc(t.sample)}</span></div><div class="v tab" style="color:var(--or)">205%</div><div class="m">${esc(t.m_buf)}</div></div>`}
    </div>`+qtMini(t)+lvMini(t)+src(tSrc(t),'today');
 }
 function rBrief(){
@@ -1709,7 +1728,7 @@ function rBrains(){const t=T(),E=BRAINS.engines;
    <form class="bform" id="bform"><input id="bin" maxlength="400" autocomplete="off" placeholder="${esc(t.br_ph)}" aria-label="${esc(t.br_ph)}"><button type="submit">${esc(t.br_send)}</button></form></div></div>
    <p class="bnote">${esc(t.br_note)}</p>`+src(t.br_src,'brains');
   bAdd('ba','',esc(t.br_hi));}
-function bAdd(cls,who,html,tag){const d=document.createElement('div');d.className='bmsg '+cls;d.innerHTML=(who?`<span class="bwho">${esc(who)}${tag?`<span class="btag">${esc(tag)}</span>`:''}</span>`:'')+html;const l=$('blog');l.appendChild(d);l.scrollTop=l.scrollHeight;return d;}
+function bAdd(cls,who,html,tag){const d=document.createElement('div');d.className='bmsg '+cls;d.innerHTML=(who?`<span class="bwho">${esc(who)}${tag?`<span class="btag">${esc(tag)}</span>`:''}</span>`:'')+html;const l=$('blog');l.appendChild(d);cancelAnimationFrame(l._sr);l._sr=requestAnimationFrame(()=>{l.scrollTop=l.scrollHeight;});return d;}
 function bSay(x,e){return esc(x.e==='duel'?bq(x.a[e]):bq(x.a));}
 function askCurated(id){const x=BRAINS.qa.find(q=>q.id===id);if(!x)return;const t=T();bAdd('bu','',esc(bq(x.q)));
   (x.e==='duel'?BENG:[x.e]).forEach(e=>bAdd('ba',bName(e),bSay(x,e),t.br_verified));}
@@ -2299,17 +2318,29 @@ function rChrome(){
 function tick(){
   const t=T();document.querySelectorAll('[data-cd]').forEach(el=>{if(!el.dataset.cd)return;const sec=Math.floor(Math.max(0,Date.parse(el.dataset.cd)-Date.now())/1000);
     const v=[Math.floor(sec/86400),Math.floor(sec%86400/3600),Math.floor(sec%3600/60),sec%60];
-    if(el.classList.contains('cd'))el.innerHTML=v.map((x,i)=>`<div><strong>${String(x).padStart(2,'0')}</strong><small>${esc(t.u[i])}</small></div>`).join('');
+    if(el.classList.contains('cd')){const sg=el.querySelectorAll('strong');if(sg.length===4&&el.dataset.cl===lang)v.forEach((x,i)=>{const s2=String(x).padStart(2,'0');if(sg[i].textContent!==s2)sg[i].textContent=s2;});else{el.dataset.cl=lang;el.innerHTML=v.map((x,i)=>`<div><strong>${String(x).padStart(2,'0')}</strong><small>${esc(t.u[i])}</small></div>`).join('');}}
     else el.textContent=`${String(v[0]).padStart(2,'0')}d ${String(v[1]).padStart(2,'0')}:${String(v[2]).padStart(2,'0')}:${String(v[3]).padStart(2,'0')}`;});
 }
 function wrapPins(){PAGES.forEach(id=>{const s=$(id);if(s.firstElementChild&&s.firstElementChild.classList.contains('pin')&&s.children.length===1)return;const p=document.createElement('div');p.className='pin';while(s.firstChild)p.appendChild(s.firstChild);s.appendChild(p);});}
 const FS=[1,1.12,1.25],FIT_MIN=.92;let fsI=+store.get('sha-fs',0);if(!(fsI in FS))fsI=0;
 /* fit: a page may shrink to 92% at most (readability floor); taller pages scroll. FS = the reader's text size (가 button) */
-function fit(){wrapPins();const desk=innerWidth>=981&&innerHeight>=620,U=FS[fsI]||1;PAGES.forEach(id=>{const p=$(id).firstElementChild;if(!p)return;p.style.zoom='';if(!desk){if(U!==1)p.style.zoom=String(U);return;}
-  const sec=$(id),cs=getComputedStyle(sec),avail=innerHeight-sec.getBoundingClientRect().top*0-parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--top'))-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom);
-  p.style.flex='none';const nat=p.offsetHeight;p.style.flex='';const z=nat*U>avail?U*Math.max(FIT_MIN,avail/(nat*U)):U;if(Math.abs(z-1)>.005)p.style.zoom=String(z);});}
-function renderAll(){rChrome();rToday();rBrief();rQuote();rEarn();rResearch();rMix();rScore();rAgent();rLock();rLib();rRadar();rLev();rFilings();rRank();rUniv();rUvMap();rSched();rLab();rBrains();rSoft();rFortune();rHub();rNews();rDock();if(!$('sheet').hidden)rSheet();render(curShown);rDev();tick();wrapPins();fit();spy();}
-let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(fit,150);});
+const fitDirty=new Set(),fitNear=new Set();let fitAll=true,fitMO=null,fitIO=null,fitU=null;
+function fitWatch(){if(fitMO)return;try{fitMO=new MutationObserver(ms=>{let any=false;for(const m of ms){const el=m.target.nodeType===1?m.target:m.target.parentElement;if(!el||el.closest('[data-cd]'))continue;const sec=el.closest('.page');if(sec){fitDirty.add(sec.id);any=true;}}if(any)fit();});
+  PAGES.forEach(id=>fitMO.observe($(id),{childList:true,subtree:true,characterData:true}));
+  fitIO=new IntersectionObserver(es=>{let go=false;es.forEach(e=>{const id=e.target.id;if(e.isIntersecting){fitNear.add(id);if(fitDirty.has(id))go=true;}else fitNear.delete(id);});if(go)fit();},{rootMargin:'120% 0px'});
+  PAGES.forEach(id=>fitIO.observe($(id)));}catch(e){fitMO=null;}}
+function fitNow(){wrapPins();fitWatch();const desk=innerWidth>=981&&innerHeight>=620,U=FS[fsI]||1;
+  if(fitAll||U!==fitU||!fitMO){fitAll=false;fitU=U;PAGES.forEach(id=>fitDirty.add(id));}
+  const ids=[...fitDirty].filter(id=>!desk||!fitIO||fitNear.has(id)||id===PAGES[cur||0]);
+  const ps=ids.map(id=>[id,$(id),$(id).firstElementChild]).filter(x=>x[2]);
+  if(!desk){ps.forEach(([id,,p])=>{const z=U!==1?String(U):'';if(p.style.zoom!==z)p.style.zoom=z;fitDirty.delete(id);});return;}
+  const top=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--top'))||0;
+  ps.forEach(([,,p])=>{p.style.zoom='';p.style.flex='none';});
+  const m=ps.map(([,sec,p])=>{const cs=getComputedStyle(sec);return [p.offsetHeight,innerHeight-top-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom)];});
+  ps.forEach(([id,,p],k)=>{p.style.flex='';const [nat,avail]=m[k],z=nat*U>avail?U*Math.max(FIT_MIN,avail/(nat*U)):U;if(Math.abs(z-1)>.005)p.style.zoom=String(z);fitDirty.delete(id);});}
+let fitRaf=0;function fit(){if(fitRaf)return;fitRaf=requestAnimationFrame(()=>{fitRaf=0;fitNow();});}
+function renderAll(){rChrome();rToday();rBrief();rQuote();rEarn();rResearch();rMix();rScore();rAgent();rLock();rLib();rRadar();rLev();rFilings();rRank();rUniv();rUvMap();rSched();rLab();rBrains();rSoft();rFortune();rHub();rNews();rDock();if(!$('sheet').hidden)rSheet();render(curShown);rDev();tick();wrapPins();fitNow();spy();}
+let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{fitAll=true;fitNow();},150);});
 function setLang(c){if(!LANGS.includes(c))return;if(window.SHA_PATHS&&c!==lang){store.set('sha-lang',c);location.href='../'+c+'/'+(devOn()?'#dev':location.hash);return;}lang=c;store.set('sha-lang',c);renderAll();boot();}
 
 /* ================= paging ================= */
@@ -2576,7 +2607,8 @@ function rFrame(){const t=T(),s=k=>`<svg viewBox="0 0 24 24">${AIC[k]}</svg>`;
   $('vact').innerHTML=`<span class="vai sel">${s('files')}</span><span class="vai">${s('search')}</span><span class="vai">${s('git')}<b class="vbd">3</b></span><span class="vai">${s('run')}</span><span class="vai">${s('ext')}</span><span class="vai">${s('chat')}</span><span class="vsp"></span><span class="vai">${s('acct')}</span><span class="vai">${s('gear')}</span>`;
   $('vtitle').innerHTML=`<span class="vtl"><i class="vlogo">◆</i>${['File','Edit','Selection','View','Go','Run','Terminal','Help'].map(m=>`<span class="vmn">${m}</span>`).join('')}</span><span class="vcc" data-qo><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg>stayhungry.asi</span><span class="vtr"><button class="vwc" data-act="reader" aria-label="${esc(t.dv_back)}"><svg viewBox="0 0 16 16"><path d="M3 8h10"/></svg></button><button class="vwc" tabindex="-1" aria-hidden="true"><svg viewBox="0 0 16 16"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="vwc x" data-act="reader" aria-label="${esc(t.dv_back)}"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></span>`;
   $('tin').placeholder=t.vc_ph;}
-function rDev(){rFrame();rFile();rPanel();rChat();}
+let devDirty=true;
+function rDev(){if($('dev').hidden){devDirty=true;return;}devDirty=false;rFrame();rFile();rPanel();rChat();}
 function openFile(id){if(!VF.some(f=>f.id===id))return;devFile=id;store.set('sha-file',id);
   if(!mru.includes(id)){mru.push(id);if(mru.length>4)mru.splice(mru.findIndex(x=>x!==id),1);}
   rFile();tick();vtyPaint();$('vcode').scrollTop=0;}
@@ -2584,7 +2616,7 @@ const devOn=()=>!$('dev').hidden;
 const DEVICON="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23252526'/%3E%3Cpath d='M12 8c-3 0-3 2-3 4.5S7.5 16 6 16c1.5 0 3 1 3 3.5S9 24 12 24M20 8c3 0 3 2 3 4.5s1.5 3.5 3 3.5c-1.5 0-3 1-3 3.5S23 24 20 24' stroke='%233794FF' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E";
 let baseTitle=document.title;
 function setDev(on,restore){
-  if(on){const sf=store.get('sha-file',null);openFile(restore&&sf?sf:PAGES[cur]);}
+  if(on){$('dev').hidden=false;if(devDirty)rDev();const sf=store.get('sha-file',null);openFile(restore&&sf?sf:PAGES[cur]);}
   if(on)$('dev').scrollTop=0;$('dev').hidden=!on;document.body.classList.toggle('devon',on);store.set('sha-mode',on?'dev':'reader');
   const ic=document.querySelector('link[rel="icon"]');if(ic){if(!ic.dataset.orig)ic.dataset.orig=ic.href;ic.href=on?DEVICON:ic.dataset.orig;}
   if(on){if(!/stayhungry\.asi$/.test(document.title))baseTitle=document.title;document.title=`${VFI(devFile).n} — stayhungry.asi`;tick();vStream();if(innerWidth>980)setTimeout(()=>{try{$('tin').focus({preventScroll:true});}catch(e){}},30);}
@@ -2725,7 +2757,13 @@ document.addEventListener('keydown',e=>{
 /* dev prompt · chat */
 function tprint(h){const d=document.createElement('div');d.innerHTML=h;$('tlog').appendChild(d);const o=$('tout');if(innerWidth>980)o.scrollTop=o.scrollHeight;else d.scrollIntoView({block:'nearest'});return d;}
 function boot(){$('tlog').innerHTML='';}
-setTimeout(crLoad,0);setTimeout(rsLoad,0);setTimeout(scLoad,0);setTimeout(lkLoad,0);setTimeout(brLoad,0);setTimeout(qtLoad,0);setTimeout(lvLoad,0);setTimeout(d5Load,0);setTimeout(agLoad,0);setTimeout(rkLoad,0);
+Object.assign(liveRerun,{'live/crisis.json':crLoad,'live/fear.json':crLoad,'live/brief.json':brLoad,'live/quote.json':qtLoad,'live/leverage.json':lvLoad,'live/rank.json':rkLoad,'live/earnings.json':rkLoad,'live/spcx-lock.json':lkLoad,'live/schedule.json':scLoad,'live/dart5.json':d5Load});LANGS.forEach(c=>{liveRerun['live/agent-'+c+'.json']=agLoad;});
+setTimeout(crLoad,0);setTimeout(rkLoad,0);setTimeout(qtLoad,0);setTimeout(lvLoad,0);setTimeout(brLoad,0);setTimeout(lkLoad,0);
+(()=>{const later=[['agent',agLoad],['filings',d5Load],['schedule',scLoad],['library',rsLoad]],h=location.hash.slice(1);let done=false;
+  const run=()=>{if(done)return;done=true;later.forEach(([,f],k)=>setTimeout(f,k*120));};
+  later.forEach(([id,f])=>{if(h===id)setTimeout(f,0);});
+  const idle=window.requestIdleCallback||(f=>setTimeout(f,600));addEventListener('load',()=>idle(run,{timeout:2500}));setTimeout(run,4000);
+  ['scroll','pointerdown','keydown','touchstart'].forEach(e=>addEventListener(e,run,{once:true,passive:true}));})();
 const alias={top:'rank',topn:'rank',agent:'agent',overnight:'agent',probe:'agent',filings:'filings',dart:'filings',filing:'filings','5%':'filings',fortune:'fortune',saju:'fortune',danji:'fortune',ybosal:'fortune',anchak:'fortune',software:'software',apps:'software',app:'software',mocapture:'software',capture:'software',leverage:'leverage',debt:'leverage',margin:'leverage',loan:'leverage',quote:'quote',quotes:'quote',card:'quote',aphorism:'quote',morning:'quote',vix:'fear',valuation:'fear',fear:'fear',brains:'brains',brain:'brains',buffett:'brains',munger:'brains',jensen:'brains_j',musk:'brains_m',elon:'brains_m',lockup:'spcxlock',lock:'spcxlock','spcx-lock':'spcxlock',unlock:'spcxlock',schedule:'schedule',calendar:'schedule',cal:'schedule',ics:'schedule',dates:'schedule',agenda:'schedule',uvmap:'uvmap',menu:'uvmap',routes:'uvmap',latent:'uvmap',megatrend:'uvmap',observatory:'uvmap',pioneers:'uvmap',giants:'uvmap',gurus:'uvmap',signals:'uvmap',dissect:'uvmap',univertrix:'univertrix',univ:'univertrix',universe:'univertrix',legend:'univertrix',devlog:'univertrix',news:'news',changelog:'news',log:'news',api:'d_index',data:'d_index',today:'today',home:'today',brief:'brief',summary:'brief',earnings:'earnings',earn:'earnings',research:'library',library:'library',lib:'library',reports:'library',r:'library',spacex:'research',mix:'mix',score:'score',radar:'radar',crisis:'radar',rank:'rank',market:'rank',lab:'lab',game:'lab',hub:'hub',projects:'hub',readme:'hub'};
 $('tform').addEventListener('submit',e=>{e.preventDefault();const raw=$('tin').value.trim();$('tin').value='';if(!raw)return;
   tprint(msgU(raw));const A=h=>tprint(msgA(h)),[cmd,...a]=raw.split(/\s+/),arg=(a[0]||'').toLowerCase(),t=T();
@@ -2801,10 +2839,18 @@ $('share').addEventListener('click',()=>{const t=T(),txt=fmt(t.share,{s:score,t:
 $('again').addEventListener('click',()=>{results=[];score=0;streak=0;best=0;$('res').hidden=true;newRound();});
 $('bUp').addEventListener('click',()=>answer(true));$('bDown').addEventListener('click',()=>answer(false));
 
-data=gen();renderAll();boot();newRound();
+data=gen();
+/* staged first render: chrome + the first screen now, every other page in small idle slices */
+const PR={today:rToday,brief:rBrief,quote:rQuote,earnings:rEarn,research:rResearch,mix:rMix,score:rScore,agent:rAgent,spcxlock:rLock,library:rLib,radar:rRadar,leverage:rLev,filings:rFilings,rank:rRank,univertrix:rUniv,uvmap:rUvMap,schedule:rSched,lab:()=>{rLab();render(curShown);},brains:rBrains,software:rSoft,fortune:rFortune,hub:rHub,news:rNews};
+(()=>{const h=location.hash.slice(1),first=[...new Set([PAGES.includes(h)?h:null,'today',PAGES[1],PAGES[2]].filter(Boolean))],rest=PAGES.filter(p=>!first.includes(p));
+  rChrome();first.forEach(p=>{try{PR[p]();}catch(e){console.error(e);}});rDock();wrapPins();fitNow();spy();tick();
+  const step=dl=>{let n=0;while(rest.length&&(n<1||(dl&&dl.timeRemaining&&dl.timeRemaining()>8))){const p=rest.shift();try{PR[p]();}catch(e){console.error(e);}n++;}
+    if(rest.length)(window.requestIdleCallback||(f=>setTimeout(f,16)))(step,{timeout:120});else{rDev();wrapPins();fit();}};
+  (window.requestIdleCallback||(f=>setTimeout(f,16)))(step,{timeout:120});})();
+boot();newRound();
 if(location.hash==='#dev'||store.get('sha-mode','reader')==='dev')setDev(true,true);
 setInterval(tick,1000);
 setInterval(()=>{rEarn();wrapPins();fit();if(devOn()){rCode();tick();vtyPaint();}},60000);
-if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{fitAll=true;fit();});
 })();
 </script>

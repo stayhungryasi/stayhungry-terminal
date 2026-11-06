@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-06",
+      "commit": "HEAD",
+      "message": "Faster first screen: the last live data you saw shows instantly on your next visit while fresh data loads behind it, TODAY shows loading shimmers instead of sample numbers, the hidden developer view no longer rebuilds on every update, page sizing reads all pages in one pass, deep-page feeds load when the browser is idle, and fonts stop blocking the first paint"
+    },
+    {
+      "date": "2026-11-06",
       "commit": "71761d1",
       "message": "New research: AI Deleveraging Check (chips -12.25% on Nov 5) with a liquidation tracker, leveraged-ETF mechanics, Anthropic S-1 breakdown and 10 cards in Korean and English; every credit across the site is now just stayhungryasi.com"
     },
