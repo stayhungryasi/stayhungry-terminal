@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-06",
+      "commit": "HEAD",
+      "message": "Data truth on TODAY: every number shows its as-of date (US close, report day, daily estimate), LIVE turns into DELAYED when newer market data exists, and VIX now comes from the fresher of the two bot runs instead of the older crisis report; the Buffett x VIX check now refreshes after every US close"
+    },
+    {
+      "date": "2026-11-06",
       "commit": "649b28d",
       "message": "Faster first screen: the last live data you saw shows instantly on your next visit while fresh data loads behind it, TODAY shows loading shimmers instead of sample numbers, the hidden developer view no longer rebuilds on every update, page sizing reads all pages in one pass, deep-page feeds load when the browser is idle, and fonts stop blocking the first paint"
     },

@@ -935,6 +935,8 @@ html.shon,html.shon body{overflow:hidden}
 .page{content-visibility:auto;contain-intrinsic-size:auto 100vh}
 @media (max-width:980px){.page{contain-intrinsic-size:auto 1300px}}
 @media print{.page{content-visibility:visible}}
+.tagD{font:600 11px var(--mono);letter-spacing:.08em;color:#F2B33D;border:1px solid #F2B33D88;border-radius:6px;padding:2px 7px;background:#F2B33D14;cursor:help}
+.card .asof{margin-top:8px;font:500 12px var(--mono);color:var(--dim);letter-spacing:.02em}
 </style>
 
 <header class="top">
@@ -1032,7 +1034,7 @@ html.shon,html.shon body{overflow:hidden}
 <script id="sha-data">
 /* Single source for every number on the site and for the open data API (/data/*.json).
    build.py runs apiData() with node to write the JSON files. */
-let ER=[{"t":"META","utc":"2026-10-21T20:30:00Z","st":"c"},{"t":"TSLA","utc":"2026-10-21T21:30:00Z","st":"c"},{"t":"GOOGL","utc":"2026-10-28T20:30:00Z","st":"c"},{"t":"MSFT","utc":"2026-10-28T20:00:00Z","st":"e"},{"t":"AMZN","utc":"2026-10-29T21:00:00Z","st":"c"},{"t":"AAPL","utc":"2026-11-02T22:00:00Z","st":"c"},{"t":"NVDA","utc":"2026-11-18T22:00:00Z","st":"e"},{"t":"AVGO","utc":"2026-12-10T22:00:00Z","st":"e"}];
+let ER=[{"t":"META","utc":"2026-10-21T20:30:00Z","st":"c"},{"t":"TSLA","utc":"2026-10-21T21:30:00Z","st":"c"},{"t":"GOOGL","utc":"2026-10-28T20:30:00Z","st":"c"},{"t":"MSFT","utc":"2026-10-28T20:00:00Z","st":"e"},{"t":"AMZN","utc":"2026-10-29T21:00:00Z","st":"c"},{"t":"AAPL","utc":"2026-11-02T22:00:00Z","st":"c"},{"t":"NVDA","utc":"2026-11-17T21:20:00Z","st":"c"},{"t":"AVGO","utc":"2026-12-10T22:00:00Z","st":"e"}];
 let MK=[{"t":"NVDA","cap":4.42,"c":2.31},{"t":"MSFT","cap":3.81,"c":0.84},{"t":"AAPL","cap":3.67,"c":-0.62},{"t":"GOOGL","cap":3.04,"c":1.12},{"t":"AMZN","cap":2.44,"c":-1.45},{"t":"AVGO","cap":1.92,"c":3.05},{"t":"META","cap":1.81,"c":0.37},{"t":"TSLA","cap":1.39,"c":-4.12}];
 const MIX=[{"q":"3Q25","rev":"$5.58B","s":[15,56,30]},{"q":"2Q26","rev":"$7.81B","s":[33,55,12]},{"q":"3Q26","rev":"$14.58B","s":[52,36,12]}];
 const SCORE=[["s_rev","$14.58B","$12.72B",14.6],["s_op","$2.79B","$2.33B",19.8],["s_ai","$7.56B","$6.47B",16.8],["s_sl","$5.25B","$4.92B",6.7],["s_sp","$1.77B","$1.4B",26.2],["s_sub","13.6M","14.2M",-4.2]];
@@ -1115,6 +1117,7 @@ const SOFTWARE=[{id:'mocapture',no:1,status:'live',maker:{ko:'무광소프트',e
  links:{virustotal:'https://www.virustotal.com/gui/file/f5212e4a6807eacafa44dd914d573b464fb4ffa0d162f67f372c214387ecc56d',changelog:'https://mugwangsoft.com/changelog/',privacy:'https://mugwangsoft.com/privacy/',enterprise:'https://mugwangsoft.com/enterprise/',feedback:'https://mugwangsoft.com/feedback/',contact:'hello@mugwangsoft.com'},
  media:'https://mugwangsoft.com/media/',shots:['tray','masking','editor','window','scroll','textcopy'],built_with:'Claude'}];
 const CHANGELOG=[
+ {"d":"2026-11-06","h":"HEAD","m":{"en":"Data truth on TODAY: every number shows its as-of date (US close, report day, daily estimate), LIVE turns into DELAYED when newer market data exists, and VIX now comes from the fresher of the two bot runs instead of the older crisis report; the Buffett x VIX check now refreshes after every US close","ko":"TODAY 데이터 정합성: 모든 숫자에 기준일(미국 종가·보고일·일별 추정) 표시, 더 새 시장 데이터가 있으면 LIVE 대신 '지연' 표시, VIX는 오래된 위기 보고가 아니라 두 봇 중 더 최신 값을 사용, 버핏지수×VIX는 미국 장 마감마다 갱신","es":"Datos fieles en HOY: cada cifra muestra su fecha (cierre de EE. UU., día del informe, estimación diaria), EN VIVO pasa a RETRASO cuando existen datos más nuevos, y el VIX ahora sale de la ejecución más reciente de los dos bots en vez del informe de crisis más antiguo; Buffett x VIX se actualiza tras cada cierre de EE. UU.","ja":"TODAYのデータ整合性:すべての数字に基準日(米国終値・レポート日・日次推定)を表示、より新しい市場データがあればLIVEの代わりに「遅延」、VIXは古い危機レポートではなく2つのボットのうち新しい方を使用、バフェット指数×VIXは米国の取引終了ごとに更新"}},
  {"d":"2026-11-06","h":"649b28d","m":{"en":"Faster first screen: the last live data you saw shows instantly on your next visit while fresh data loads behind it, TODAY shows loading shimmers instead of sample numbers, the hidden developer view no longer rebuilds on every update, page sizing reads all pages in one pass, deep-page feeds load when the browser is idle, and fonts stop blocking the first paint","ko":"첫 화면 속도 개선: 다시 방문하면 마지막으로 본 실시간 데이터가 즉시 뜨고 새 데이터는 뒤에서 교체, TODAY는 예시 숫자 대신 로딩 표시, 숨어 있는 개발자 화면은 업데이트마다 다시 그리지 않음, 페이지 크기 계산을 한 번에, 안쪽 페이지 데이터는 여유 있을 때 로딩, 글꼴이 첫 화면을 막지 않음","es":"Primera pantalla más rápida: en tu próxima visita los últimos datos en vivo aparecen al instante mientras los nuevos cargan detrás, HOY muestra indicadores de carga en vez de cifras de muestra, la vista de desarrollador oculta ya no se reconstruye con cada actualización, el tamaño de las páginas se calcula en una sola pasada, los datos de páginas profundas cargan cuando el navegador está libre y las fuentes ya no bloquean el primer pintado","ja":"最初の画面を高速化:再訪時は最後に見たライブデータが即表示され、新しいデータは裏で差し替え。TODAYはサンプル値の代わりに読み込み表示、隠れた開発者画面は更新のたびに再描画しない、ページサイズ計算を一度に、奥のページのデータは余裕のある時に読み込み、フォントが最初の描画を妨げない"}},
  {"d":"2026-11-06","h":"71761d1","m":{"en":"New research: AI Deleveraging Check (chips -12.25% on Nov 5) with a liquidation tracker, leveraged-ETF mechanics, Anthropic S-1 breakdown and 10 cards in Korean and English; every credit across the site is now just stayhungryasi.com","ko":"새 리서치: AI 디레버리징 점검(11/5 반도체 -12.25%). 청산 트래커, 레버리지 ETF 매도 구조, 앤트로픽 S-1 손익 분해, 카드뉴스 한국어·영어 10장. 사이트 전체 출처 표기를 stayhungryasi.com 하나로 통일","es":"Nueva investigación: revisión del desapalancamiento de la IA (chips -12.25% el 5 de noviembre) con seguimiento de liquidaciones, mecánica de ETF apalancados, desglose del S-1 de Anthropic y 10 tarjetas en coreano e inglés; todos los créditos del sitio ahora dicen solo stayhungryasi.com","ja":"新リサーチ:AIデレバレッジ点検(11/5半導体-12.25%)。清算トラッカー、レバレッジETFの売りの仕組み、アンソロピックS-1の損益分解、韓国語・英語のカード10枚。サイト全体のクレジット表記をstayhungryasi.comに統一"}},
  {"d":"2026-11-03","h":"3893bde","m":{"en":"Every page footer now has one-tap channel icons: YouTube, Instagram, X, Threads, TikTok and Telegram; the credit line points to stayhungryasi.com","ko":"모든 페이지 하단에 채널 바로가기 아이콘 추가: 유튜브·인스타그램·X·스레드·틱톡·텔레그램. 출처 표기는 stayhungryasi.com으로","es":"El pie de cada página ahora tiene iconos de canal a un toque: YouTube, Instagram, X, Threads, TikTok y Telegram; el crédito apunta a stayhungryasi.com","ja":"全ページのフッターにワンタップのチャンネルアイコンを追加:YouTube・Instagram・X・Threads・TikTok・Telegram。クレジット表記は stayhungryasi.com に"}},
@@ -1635,6 +1638,12 @@ ja:{d5_eb:'機関の5%大量保有 · 開示ボットからライブ',d5_h1:'誰
  d5_src:'開示ボット(dart_bot):Telegramレポートと同じ判定です。出典:OpenDARTの公開開示。大量保有の開示は買い推奨ではなく、IB本体は顧客スワップや貸株のために株を保有することが多い。',
  hub_d5n:'{n}件 · 直近 {c}',t_d5:'filings [語]  機関の5%大量保有開示'}};
 LANGS.forEach(c=>Object.assign(L[c],D5X[c]));
+const TRX={
+en:{asof_close:'{d} US close',asof_rep:'{d} report · Mon & Fri',asof_est:'{d} · daily estimate',asof_stale:'DELAYED',asof_tip:'Newer market data exists than this number. It updates with the next bot run.'},
+ko:{asof_close:'{d} 미국 종가',asof_rep:'{d} 보고 · 월·금 정기',asof_est:'{d} · 일별 추정',asof_stale:'지연',asof_tip:'이 숫자보다 새 시장 데이터가 있습니다. 다음 봇 실행 때 갱신됩니다.'},
+es:{asof_close:'cierre EE. UU. {d}',asof_rep:'informe {d} · lun y vie',asof_est:'{d} · estimación diaria',asof_stale:'RETRASO',asof_tip:'Hay datos de mercado más nuevos que esta cifra. Se actualiza en la próxima ejecución del bot.'},
+ja:{asof_close:'{d} 米国終値',asof_rep:'{d} レポート · 月・金',asof_est:'{d} · 日次推定',asof_stale:'遅延',asof_tip:'この数字より新しい市場データがあります。次のボット実行で更新されます。'}};
+LANGS.forEach(c=>Object.assign(L[c],TRX[c]));
 const MNX={
 en:{mn_menu:'Menu',mn_find:'Find a page or topic…',mn_close:'Close',mn_prev:'Previous page',mn_next:'Next page',mn_top:'Back to top',mn_none:'No page matches. Try another word.',mn_title:'Go anywhere',mn_hint:'{n} pages · tap to jump'},
 ko:{mn_menu:'메뉴',mn_find:'페이지·주제 찾기…',mn_close:'닫기',mn_prev:'이전 페이지',mn_next:'다음 페이지',mn_top:'맨 위로',mn_none:'맞는 페이지가 없습니다. 다른 단어로 찾아보세요.',mn_title:'바로 가기',mn_hint:'{n}개 페이지 · 누르면 바로 이동'},
@@ -1760,12 +1769,12 @@ function rToday(){
   $('today').innerHTML=head('today',t.today_eb)+hd(esc(t.today_h1),esc(fmt(t.today_h2,{t:nx?nx.t:'—'})))
    +`<div class="cd" data-cd="${nx?nx.utc:''}"></div><p class="when">${when}</p>
    <div class="cards3">
-     ${CR?`<a class="card" href="#radar" data-crtab="crisis" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_crisis)}</span><span class="tagL">${esc(t.live)}</span></div><div class="v tab" style="color:${crCol(CR.score)}">${crS(CR.score)}<span style="font-size:.45em;color:var(--mute)">/100</span></div><div class="m">${esc(fmt(t.cr_zmsg,{z:t.cr_z[CR.regime]||'',r:crCount()}))}</div></a>
-     <a class="card" href="#radar" data-crtab="fear" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_vix)}</span><span class="tagL">${esc(t.live)}</span></div><div class="v tab">${crNum('vix',(CR.indicators.find(i=>i.key==='vix')||{}).value)}</div><div class="m">${esc(((CR.indicators.find(i=>i.key==='vix')||{}).value??0)<20?t.m_vix:t.m_vix_hi)}</div></a>`
+     ${CR?`<a class="card" href="#radar" data-crtab="crisis" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_crisis)}</span>${crRepStale()?`<span class="tagD" title="${esc(t.asof_tip)}">${esc(t.asof_stale)}</span>`:`<span class="tagL">${esc(t.live)}</span>`}</div><div class="v tab" style="color:${crCol(CR.score)}">${crS(CR.score)}<span style="font-size:.45em;color:var(--mute)">/100</span></div><div class="m">${esc(fmt(t.cr_zmsg,{z:t.cr_z[CR.regime]||'',r:crCount()}))}</div><div class="asof">${esc(fmt(t.asof_rep,{d:dayLbl(String(CR.report_kst||CR.sent_kst).slice(0,10))}))}</div></a>
+     ${(()=>{const vx=vixNow();return `<a class="card" href="#radar" data-crtab="fear" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_vix)}</span>${asofTag(t,vx.asof)}</div><div class="v tab">${crNum('vix',vx.v)}</div><div class="m">${esc((vx.v??0)<20?t.m_vix:t.m_vix_hi)}</div><div class="asof">${esc(fmt(t.asof_close,{d:dayLbl(vx.asof)}))}</div></a>`;})()}`
      :crState==='load'?`<div class="card skel" aria-busy="true"><div class="k"><span>${esc(t.k_crisis)}</span></div><div class="v tab"><i></i></div><div class="m"><i></i></div></div><div class="card skel" aria-busy="true"><div class="k"><span>${esc(t.k_vix)}</span></div><div class="v tab"><i></i></div><div class="m"><i></i></div></div>`
      :`<div class="card"><div class="k"><span>${esc(t.k_crisis)}</span><span class="tagS">${esc(t.sample)}</span></div><div class="v tab">38<span style="font-size:.45em;color:var(--mute)">/100</span></div><div class="m">${esc(t.m_crisis)}</div></div>
      <div class="card"><div class="k"><span>${esc(t.k_vix)}</span><span class="tagS">${esc(t.sample)}</span></div><div class="v tab">17.4</div><div class="m">${esc(t.m_vix)}</div></div>`}
-     ${FR&&FR.buffett?`<a class="card hot" href="#radar" data-crtab="fear" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_buf)}</span><span class="tagL">${esc(t.live)}</span></div><div class="v tab" style="color:${frBCol(FR.buffett.key)}">${FR.buffett.value.toFixed(0)}%</div><div class="m">${esc(fmt(t.fr_today,{l:t.fr_bq[FR.buffett.key]||'',r:frRank(FR.buffett,t)}))}</div></a>`:frState==='load'?`<div class="card hot skel" aria-busy="true"><div class="k"><span>${esc(t.k_buf)}</span></div><div class="v tab"><i></i></div><div class="m"><i></i></div></div>`:`<div class="card hot"><div class="k"><span>${esc(t.k_buf)}</span><span class="tagS">${esc(t.sample)}</span></div><div class="v tab" style="color:var(--or)">205%</div><div class="m">${esc(t.m_buf)}</div></div>`}
+     ${FR&&FR.buffett?`<a class="card hot" href="#radar" data-crtab="fear" style="color:inherit;text-decoration:none"><div class="k"><span>${esc(t.k_buf)}</span>${asofTag(t,FR.buffett.asof)}</div><div class="v tab" style="color:${frBCol(FR.buffett.key)}">${FR.buffett.value.toFixed(0)}%</div><div class="m">${esc(fmt(t.fr_today,{l:t.fr_bq[FR.buffett.key]||'',r:frRank(FR.buffett,t)}))}</div><div class="asof">${esc(fmt(FR.buffett.estimated?t.asof_est:t.asof_close,{d:dayLbl(FR.buffett.asof)}))}</div></a>`:frState==='load'?`<div class="card hot skel" aria-busy="true"><div class="k"><span>${esc(t.k_buf)}</span></div><div class="v tab"><i></i></div><div class="m"><i></i></div></div>`:`<div class="card hot"><div class="k"><span>${esc(t.k_buf)}</span><span class="tagS">${esc(t.sample)}</span></div><div class="v tab" style="color:var(--or)">205%</div><div class="m">${esc(t.m_buf)}</div></div>`}
    </div>`+qtMini(t)+lvMini(t)+src(tSrc(t),'today');
 }
 function rBrief(){
@@ -1896,9 +1905,23 @@ function rRadar(){
    +src(t.cr_src,'radar');
 }
 const md=k=>String(k||'').slice(5,10).replace('-','/');
+/* DATA TRUTH: every TODAY number carries its as-of date; LIVE only when nothing newer can exist yet.
+   VIX comes from whichever bot run is fresher (Buffett x VIX runs every US trading day, the crisis report Mon & Fri). */
+const US_HOL=['2026-11-26','2026-12-25','2027-01-01','2027-01-18','2027-02-15','2027-03-26','2027-05-31','2027-06-18','2027-07-05','2027-09-06','2027-11-25','2027-12-24'];
+const etYMD=ms=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date(ms));
+function usLastClose(now){let d=etYMD(now);const hm=new Intl.DateTimeFormat('en-GB',{timeZone:'America/New_York',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(now)),wk=x=>new Date(x+'T12:00:00Z').getUTCDay(),open=x=>![0,6].includes(wk(x))&&!US_HOL.includes(x),back=x=>{const D=new Date(x+'T12:00:00Z');D.setUTCDate(D.getUTCDate()-1);return D.toISOString().slice(0,10);};
+  if(!(open(d)&&hm>='16:30'))d=back(d);while(!open(d))d=back(d);return d;}
+function usPrevClose(ymd){const wk=x=>new Date(x+'T12:00:00Z').getUTCDay(),back=x=>{const D=new Date(x+'T12:00:00Z');D.setUTCDate(D.getUTCDate()-1);return D.toISOString().slice(0,10);};let d=back(ymd);while([0,6].includes(wk(d))||US_HOL.includes(d))d=back(d);return d;}
+const dayLbl=ymd=>{if(!ymd)return '—';const D=new Date(ymd+'T12:00:00Z');if(lang==='ko')return `${D.getUTCMonth()+1}/${D.getUTCDate()}(${'일월화수목금토'[D.getUTCDay()]})`;return new Intl.DateTimeFormat(T().loc,{timeZone:'UTC',month:'numeric',day:'numeric',weekday:'short'}).format(D);};
+function vixNow(){const fv=FR&&FR.vix&&FR.vix.value!=null?{v:FR.vix.value,asof:FR.vix.asof,src:'fear'}:null;
+  const ci=CR&&CR.indicators&&(CR.indicators.find(i=>i.key==='vix')||{}).value,cv=ci!=null?{v:ci,asof:usPrevClose(String(CR.report_kst||CR.sent_kst).slice(0,10)),src:'crisis'}:null;
+  if(fv&&cv)return fv.asof>=cv.asof?fv:cv;return fv||cv;}
+function asofTag(t,ymd){const fresh=ymd&&ymd>=usLastClose(Date.now());return fresh?`<span class="tagL">${esc(t.live)}</span>`:`<span class="tagD" title="${esc(t.asof_tip)}">${esc(t.asof_stale)}</span>`;}
+function crRepStale(){if(!CR)return true;const rep=String(CR.report_kst||CR.sent_kst).slice(0,10),now=new Date(Date.now()+9*36e5);let d=new Date(now);
+  for(let i=0;i<8;i++){const wd=d.getUTCDay(),ymd=d.toISOString().slice(0,10),due=i>0||d.getUTCHours()>=11;if((wd===1||wd===5)&&due)return rep<ymd;d.setUTCDate(d.getUTCDate()-1);}return false;}
 const tSrc=t=>CR&&FR&&FR.buffett?fmt(t.today_src_live,{c:md(CR.sent_kst||CR.report_kst),f:md(FR.sent?FR.sent_kst:FR.run_kst),x:FR.sent?'':t.today_src_chk}):t.today_src;
 function crApply(){if(!CR)return;const s=crS(CR.score),r=crCount(),by=k=>CR.indicators.find(i=>i.key===k)||{};
-  LANGS.forEach(c=>{const t=L[c],z=t.cr_z[CR.regime]||'',vx=by('vix').value,cv=by('curve').value;
+  LANGS.forEach(c=>{const t=L[c],z=t.cr_z[CR.regime]||'',vx=(vixNow()||{}).v??by('vix').value,cv=by('curve').value;
     t.chk=[[t.chk[0][0],s+'/100',fmt(t.cr_zmsg,{z,r}),CR.score<50?'ok':'fail'],
       [t.chk[1][0],crNum('vix',vx),vx<20?t.chk[1][2]:t.m_vix_hi,vx<20?'ok':'fail'],
       [t.chk[2][0],cv==null?'—':(cv>0?'+':'')+(cv/100).toFixed(2),t.chk[2][2],cv>0?'ok':'fail'],
@@ -1907,7 +1930,7 @@ function crApply(){if(!CR)return;const s=crS(CR.score),r=crCount(),by=k=>CR.indi
 async function crLoad(){const g=async p=>{try{const r=await fetch(crUrl(p),{cache:'no-cache'});if(!r.ok)throw 0;return await r.json();}catch(e){return null;}};
   const [c,f]=await Promise.all([g('live/crisis.json'),g('live/fear.json')]);
   if(c&&c.indicators){CR=c;crState='ok';crApply();}else crState='fail';
-  if(f&&(f.buffett||f.vix)){FR=f;frState='ok';frApply();}else frState='fail';
+  if(f&&(f.buffett||f.vix)){FR=f;frState='ok';frApply();if(CR)crApply();}else frState='fail';
   const deep=/^#(buffett|vix|valuation|fear)$/.test(location.hash);if(deep)crTab='fear';
   rToday();rBrief();rRadar();rHub();brRefresh();if(typeof rDev==='function')rDev();fit();if(deep)$('radar').scrollIntoView();}
 document.addEventListener('click',e=>{const tb=e.target.closest('[data-crtab]');if(tb){crTab=tb.dataset.crtab;rRadar();fit();if(tb.tagName!=='A'){const r=$('radar');if(r.getBoundingClientRect().top<0)r.scrollIntoView();}return;}const b=e.target.closest('[data-crimg]');if(b){$('crimg').src=b.dataset.crimg;$('crbox').hidden=false;return;}if(e.target.closest('#crbox')){$('crbox').hidden=true;$('crimg').src='';}});
