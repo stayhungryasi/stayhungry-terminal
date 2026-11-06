@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-06",
-      "commit": "HEAD",
+      "commit": "f628b3b",
       "message": "AI Deleveraging Check: the liquidation-tracker card now shows the date of each report (Korean and English)"
     },
     {
