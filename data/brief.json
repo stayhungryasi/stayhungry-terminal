@@ -1,53 +1,33 @@
 {
  "kind": "brief",
  "schema": 1,
- "date": "2026-11-06",
- "generated_kst": "2026-11-06 10:09",
+ "date": "2026-11-07",
+ "generated_kst": "2026-11-07 10:08",
  "editor": "Claude",
  "lines": [
   {
    "href": "#schedule",
-   "ko": "<b>오늘 22:30, 미국 10월 고용보고서.</b> 11/6(한국시간·확정). VIX는 11/5 28.18로 '주의' 구간, VIX/VIX3M 1.103으로 단기 공포가 장기보다 높은 상태에서 발표를 맞습니다. <a href=\"#schedule\">일정</a>",
-   "en": "<b>US jobs report tonight, 22:30.</b> 11/6 KST, confirmed. VIX at 28.18 (11/5) with VIX/VIX3M 1.103: near-term fear above long-term. <a href=\"#schedule\">Calendar</a>",
-   "es": "<b>Hoy 22:30, empleo de EE. UU.</b> Confirmado. VIX en 28,18 (5/11) y VIX/VIX3M 1,103: más miedo a corto que a largo plazo. <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>今夜22:30、米10月雇用統計。</b>11/6(韓国時間・確定)。VIXは11/5に28.18で「注意」圏、VIX/VIX3Mは1.103と短期の恐怖が長期を上回る中での発表です。<a href=\"#schedule\">日程</a>"
-  },
-  {
-   "href": "#library",
-   "ko": "<b>새 리서치: AI 디레버리징 점검.</b> 반도체 -12.25%, '무너지는 건 AI가 아니라 빚'(작성자 판단). 11/4 기준 국내 신용융자 28.645조원, 반대매매는 39억원으로 1년 평균의 0.17배. <a href=\"#library\">리서치</a>",
-   "en": "<b>New research: AI deleveraging.</b> Chips -12.25%; author's view: debt, not AI, is breaking. Korea forced selling 0.17x 1y avg (11/4). <a href=\"#library\">Research</a>",
-   "es": "<b>Informe: desapalancamiento en IA.</b> Chips -12,25%; según el autor, cae la deuda, no la IA. Ventas forzosas en Corea: 0,17x (4/11). <a href=\"#library\">Informes</a>",
-   "ja": "<b>新リサーチ:AIデレバレッジ点検。</b>半導体-12.25%、「崩れているのはAIではなく借金」(筆者の判断)。11/4時点で韓国の信用融資28.645兆ウォン、反対売買は39億ウォンで1年平均の0.17倍。<a href=\"#library\">リサーチ</a>"
+   "ko": "<b>화요일 11/10, 미국 10월 CPI.</b> 22:30(한국시간·확정). 같은 날 앤트로픽 IPO 로드쇼 시작 가능일(보도), 이튿날 11/11엔 MSCI 11월 정기 리뷰 발표(확정)가 이어집니다. <a href=\"#schedule\">일정</a>",
+   "en": "<b>US October CPI, Tue 11/10.</b> 22:30 KST, confirmed. Anthropic IPO roadshow may start that day (reported); MSCI review 11/11. <a href=\"#schedule\">Calendar</a>",
+   "es": "<b>IPC de EE. UU., mar 10/11.</b> 22:30 (Corea), confirmado. Ese día podría iniciar el roadshow de Anthropic (informes). <a href=\"#schedule\">Agenda</a>",
+   "ja": "<b>11/10(火)、米10月CPI。</b>22:30(韓国時間・確定)。同日はアンソロピックIPOロードショー開始可能日(報道)、翌11/11にはMSCI 11月定期見直し発表(確定)が続きます。<a href=\"#schedule\">日程</a>"
   },
   {
    "href": "#spcxlock",
-   "ko": "<b>스페이스X, 공모가 턱밑.</b> 11/4 종가 $135.92(-3.81%, 공모가 대비 +0.7%). 12/9 7.976억주(≈1,084억 달러) 락업 해제까지 D-34, 퀄컴은 11/4 스타링크 모바일 지상 5G 다년 계약을 발표. <a href=\"#spcxlock\">락업 레이더</a>",
-   "en": "<b>SpaceX near its IPO price.</b> 11/4 close $135.92 (-3.81%, +0.7% vs IPO). 797.6M shares (≈$108.4B) unlock 12/9, D-34. <a href=\"#spcxlock\">Lock-up radar</a>",
-   "es": "<b>SpaceX, cerca de su salida.</b> Cierre 4/11: US$135,92 (-3,81%). 797,6 M de acciones (≈US$108,4 mil M) se liberan el 9/12, D-34. <a href=\"#spcxlock\">Radar</a>",
-   "ja": "<b>スペースX、公募価格目前。</b>11/4終値$135.92(-3.81%、公募価格比+0.7%)。12/9に7.976億株(約1,084億ドル)のロックアップ解除までD-34、クアルコムは11/4にスターリンク・モバイルの地上5G複数年契約を発表。<a href=\"#spcxlock\">ロックアップ</a>"
+   "ko": "<b>스페이스X, 공모가 아래로.</b> 11/5 종가 $123.62(-9.05%, 공모가 $135 대비 -8.4%). 12/9 7.976억주(≈986억 달러) 락업 해제까지 D-33, 해제 물량은 현재 유통 주식의 +17.6%. <a href=\"#spcxlock\">락업 레이더</a>",
+   "en": "<b>SpaceX below its IPO price.</b> 11/5 close $123.62 (-9.05%, -8.4% vs $135). 797.6M shares (≈$98.6B) unlock 12/9, D-33. <a href=\"#spcxlock\">Lock-up radar</a>",
+   "es": "<b>SpaceX, bajo su salida.</b> Cierre 5/11: US$123,62 (-9,05%). 797,6 M de acciones (≈US$98,6 mil M) se liberan el 9/12, D-33. <a href=\"#spcxlock\">Radar</a>",
+   "ja": "<b>スペースX、公募価格割れ。</b>11/5終値$123.62(-9.05%、公募価格$135比-8.4%)。12/9に7.976億株(約986億ドル)のロックアップ解除までD-33、解除分は現在の流通株の+17.6%。<a href=\"#spcxlock\">ロックアップ</a>"
+  },
+  {
+   "href": "#leverage",
+   "ko": "<b>국내 반대매매, 하루 새 두 배.</b> 11/5 기준 84억원(1년 평균의 0.37배)으로 11/4 39억원에서 늘었고, 신용융자는 28.772조원(+0.127조원). 국면은 아직 '안정'. <a href=\"#leverage\">K-레버리지</a>",
+   "en": "<b>Korea forced selling doubles.</b> KRW 8.4bn on 11/5 (0.37x 1y avg) vs 3.9bn on 11/4; margin loans KRW 28.772tn. Still stable. <a href=\"#leverage\">K-leverage</a>",
+   "es": "<b>Corea: ventas forzosas x2.</b> 8.400 M de wones el 5/11 (0,37x la media anual) vs. 3.900 M el 4/11. Régimen estable. <a href=\"#leverage\">K-apalancamiento</a>",
+   "ja": "<b>韓国の反対売買、倍増。</b>11/5時点で84億ウォン(1年平均の0.37倍)と11/4の39億ウォンから増加、信用融資は28.772兆ウォン(+0.127兆ウォン)。局面はまだ「安定」。<a href=\"#leverage\">Kレバレッジ</a>"
   }
  ],
  "checkpoints": [
-  {
-   "d": {
-    "ko": "11/6(금)",
-    "en": "Fri 11/6",
-    "es": "vie 6/11",
-    "ja": "11/6(金)"
-   },
-   "x": {
-    "ko": "22:30 미국 10월 고용보고서",
-    "en": "22:30 US October jobs report",
-    "es": "22:30 empleo de EE. UU. (octubre)",
-    "ja": "22:30 米10月雇用統計"
-   },
-   "y": {
-    "ko": "확정 · 한국시간",
-    "en": "Confirmed · KST",
-    "es": "Confirmado · hora de Corea",
-    "ja": "確定・韓国時間"
-   }
-  },
   {
    "d": {
     "ko": "11/10(화)",
@@ -87,23 +67,39 @@
     "es": "Confirmado · efectiva al cierre del 30/11",
     "ja": "確定・11/30終値で反映"
    }
+  },
+  {
+   "d": {
+    "ko": "11/18(수)",
+    "en": "Wed 11/18",
+    "es": "mié 18/11",
+    "ja": "11/18(水)"
+   },
+   "x": {
+    "ko": "06:20 엔비디아 FQ3 실적",
+    "en": "06:20 Nvidia FQ3 earnings",
+    "es": "06:20 resultados FQ3 de Nvidia",
+    "ja": "06:20 エヌビディアFQ3決算"
+   },
+   "y": {
+    "ko": "확정 · 한국시간",
+    "en": "Confirmed · KST",
+    "es": "Confirmado · hora de Corea",
+    "ja": "確定・韓国時間"
+   }
   }
  ],
  "why": {
-  "ko": "오늘 밤 실제로 열리는 고용보고서를 1순위로, 오늘 새로 나온 디레버리징 리서치와 11/4 신용 데이터를 2순위로, 공모가 근처까지 내려온 스페이스X와 D-34 락업을 3순위로 골랐습니다. 위기 리포트(11/2)는 2일이 넘어 숫자를 쓰지 않았고, 날짜가 추정인 스타십 15차 비행(11/8)과 어제와 같은 시총 랭킹은 뺐습니다.",
-  "en": "Tonight's jobs report comes first, today's new deleveraging research with 11/4 credit data second, and SpaceX sliding to near its IPO price with the D-34 unlock third. The crisis report (11/2) is over two days old so its numbers are left out, as are Starship Flight 15 (11/8, estimated date) and an unchanged market-cap ranking.",
-  "es": "Primero, el informe de empleo de esta noche; segundo, el nuevo estudio sobre desapalancamiento con datos de crédito del 4/11; tercero, SpaceX cerca de su precio de salida y el desbloqueo a D-34. El informe de crisis (2/11) tiene más de dos días y se omite, igual que el vuelo 15 de Starship (8/11, fecha estimada) y el ranking sin cambios.",
-  "ja": "今夜実際に出る雇用統計を1位、本日公開のデレバレッジ・リサーチと11/4の信用データを2位、公募価格近くまで下げたスペースXとD-34のロックアップを3位にしました。危機レポート(11/2)は2日超のため数値を使わず、日付が推定のスターシップ15回目飛行(11/8)と変化のない時価総額ランキングは外しました。"
+  "ko": "주말이라 오늘·내일 확정 일정이 없어, 다음 주 화요일 CPI·앤트로픽 로드쇼 가능일을 1순위로, 하루 -9.05%로 공모가 아래로 내려간 스페이스X와 D-33 락업을 2순위로, 하루 새 두 배가 된 국내 반대매매를 3순위로 골랐습니다. 날짜가 추정인 스타십 15차 비행(11/8), 1.8점 하락에 그친 위기 점수(34.4), 어제와 같은 VIX 28.18은 뺐습니다.",
+  "en": "With no confirmed events this weekend, next Tuesday's CPI and possible Anthropic roadshow come first, SpaceX's -9.05% drop below its IPO price with the D-33 unlock second, and Korea's forced selling doubling in a day third. Left out: Starship Flight 15 (11/8, estimated date), a crisis score that moved only 1.8 points (34.4), and yesterday's unchanged VIX 28.18.",
+  "es": "Sin eventos confirmados este fin de semana, primero va el IPC del martes y el posible roadshow de Anthropic; segundo, la caída de SpaceX (-9,05%) bajo su precio de salida con el desbloqueo a D-33; tercero, las ventas forzosas en Corea, que se duplicaron en un día. Se omiten el vuelo 15 de Starship (8/11, fecha estimada), el índice de crisis que solo bajó 1,8 puntos (34,4) y el VIX sin cambios (28,18).",
+  "ja": "週末で今日・明日の確定日程がないため、来週火曜のCPIとアンソロピックのロードショー開始可能日を1位、1日で-9.05%と公募価格を割ったスペースXとD-33のロックアップを2位、1日で倍増した韓国の反対売買を3位にしました。日付が推定のスターシップ15回目飛行(11/8)、1.8ポイント低下にとどまった危機スコア(34.4)、昨日と同じVIX 28.18は外しました。"
  },
  "facts": [
-  "2026-11-06 22:30 KST US October jobs report [confirmed] — Key dates bot (#schedule), data 2026-11-06",
-  "VIX 28.18 (watch, as of 2026-11-05), VIX/VIX3M 1.103 — Buffett x VIX bot, check run 2026-11-06 09:27",
-  "Research 2026-11-06 'AI 디레버리징 점검', key -12.25% — Research library (#library)",
-  "Margin loans 28.645 tn KRW, forced selling 39.0 x100m KRW (0.17x 1y avg) — K-leverage monitor, data as of 2026-11-04",
-  "SPCX $135.92 (2026-11-04 close, -3.81% d/d, +0.7% vs IPO $135) — SpaceX lock-up radar, asof 2026-11-05",
-  "Next unlock trade 2026-12-09, D-34, 797.6M shares, ≈$108.4B — SpaceX lock-up radar",
-  "Qualcomm 11/4 Starlink Mobile terrestrial 5G multi-year deal — SpaceX overnight agent, run 2026-11-05-event",
-  "2026-11-10 22:30 US CPI [confirmed], 2026-11-10 Anthropic IPO roadshow may start [report], 2026-11-11 MSCI review [confirmed] — Key dates bot"
+  "2026-11-10 22:30 KST US October CPI [confirmed]; 2026-11-10 Anthropic IPO roadshow may start [report]; 2026-11-11 MSCI November review [confirmed], effective 11/30 close; 2026-11-18 06:20 KST Nvidia FQ3 [confirmed, changelog] — Key dates bot (#schedule), data 2026-11-06",
+  "SPCX $123.62 (2026-11-05 close, -9.05% d/d, -8.4% vs IPO $135); next unlock trade 2026-12-09, D-33, 797.6M shares, +17.6% vs tradable, ≈$98.6B — SpaceX lock-up radar, asof 2026-11-06",
+  "Forced selling 84.0 x100m KRW (0.37x 1y avg), margin loans 28.772 tn KRW (d/d +0.127), regime stable — K-leverage monitor, data as of 2026-11-05; 11/4 forced selling 39억원 — previous brief 2026-11-06",
+  "Crisis score 34.4 (prev 36.2) — Crisis bot report 2026-11-06 10:49 (omitted); VIX 28.18 as of 2026-11-05 — Buffett x VIX bot (omitted)"
  ],
  "credit": "stayhungryasi.com",
  "note": "Picked from the hub's live feeds. Not investment advice.",
