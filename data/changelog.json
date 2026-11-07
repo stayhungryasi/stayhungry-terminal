@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-07",
-      "commit": "HEAD",
+      "commit": "e0ea13c",
       "message": "Links land where they point: tapping a TODAY card, a hub card or a menu item now jumps straight to that page and holds it in place while the pages above finish loading, so you no longer see another page first or need to tap twice (this mattered most on iPhone)"
     },
     {
