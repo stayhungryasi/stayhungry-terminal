@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-07",
+      "commit": "HEAD",
+      "message": "Links land where they point: tapping a TODAY card, a hub card or a menu item now jumps straight to that page and holds it in place while the pages above finish loading, so you no longer see another page first or need to tap twice (this mattered most on iPhone)"
+    },
+    {
+      "date": "2026-11-07",
       "commit": "5cf21f4",
       "message": "New research: Was AI an illusion? A fact-check of the Nov 5 AI shock. Money and permits broke, not demand: GPU rents +79% while CoreWeave CDS hit 1,038bp. Three-layer verdict, 1/3/5/10-year odds, every correction from two fact-check rounds, and 12 card-news images in Korean and English"
     },
