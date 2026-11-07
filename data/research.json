@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
- "updated": "2026-11-06",
- "count": 14,
+ "updated": "2026-11-07",
+ "count": 15,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.",
  "credit": "stayhungryasi.com",
@@ -38,6 +38,191 @@
   }
  },
  "reports": [
+  {
+   "slug": "ai-shock-fact-check",
+   "date": "2026-11-07",
+   "asof": "2026-11-06 19:52 KST: US Nov 5 close, KOSPI Nov 6 close (rechecked 2026-11-07)",
+   "category": "ai",
+   "title": {
+    "ko": "AI는 허상인가: 11·5 AI 쇼크 전수검증, 무너진 건 수요가 아니라 돈과 허가다",
+    "en": "Was AI an Illusion? Fact-Checking the Nov 5 AI Shock: Money and Permits Broke, Not Demand",
+    "es": "¿Fue la IA un espejismo? Verificación del choque del 5 de noviembre: se rompieron el dinero y los permisos, no la demanda",
+    "ja": "AIは幻だったのか:11・5 AIショック全数検証、崩れたのは需要ではなくカネと許認可だ"
+   },
+   "dek": {
+    "ko": "11월 5일 필라델피아 반도체지수가 하루 12.3% 빠졌고, 다음 날 코스피는 서킷브레이커 끝에 6.02% 급락했다. 그런데 B200 GPU 임대료는 3개월 새 79% 올랐고 D램 계약가도 아직 오른다. 먼저 무너진 건 코어위브 채권과 데이터센터 인허가였다. 기술·수익성·자금구조 세 층으로 나눠 판정하고 1·3·5·10년 시나리오를 확률로 제시한다. 두 차례 전수검증에서 정정·삭제한 항목도 모두 공개한다.",
+    "en": "On Nov 5 the Philadelphia chip index fell 12.3% in a day, and the next day the KOSPI tripped a circuit breaker and closed down 6.02%. Yet B200 GPU rents rose 79% in three months and DRAM contract prices are still climbing. What broke first was CoreWeave's debt and data center permitting. This report judges AI in three layers (technology, profitability, funding), puts odds on 1-, 3-, 5- and 10-year scenarios, and lists every item corrected or removed in two rounds of fact-checking.",
+    "es": "El 5 de noviembre el índice de chips de Filadelfia cayó 12.3% en un día, y al día siguiente el KOSPI activó el cortacircuitos y cerró con -6.02%. Sin embargo, la renta de GPU B200 subió 79% en tres meses y los precios por contrato de DRAM siguen al alza. Lo primero que se rompió fue la deuda de CoreWeave y los permisos de centros de datos. El informe evalúa la IA en tres capas (tecnología, rentabilidad y financiamiento), asigna probabilidades a escenarios a 1, 3, 5 y 10 años y publica cada dato corregido o eliminado en dos rondas de verificación.",
+    "ja": "11月5日、フィラデルフィア半導体指数は1日で12.3%下落し、翌日のKOSPIはサーキットブレーカー発動の末に6.02%急落した。だがB200 GPUのレンタル料は3か月で79%上がり、DRAM契約価格もまだ上がっている。先に崩れたのはコアウィーブの債券とデータセンターの許認可だった。技術・収益性・資金構造の3層で判定し、1・3・5・10年のシナリオを確率で示す。2回の全数検証で訂正・削除した項目もすべて公開する。"
+   },
+   "key": {
+    "value": "+79%",
+    "label": {
+     "ko": "B200 GPU 평균 임대료 3개월 상승률(9월 말 기준). 과잉공급이었다면 가장 먼저 떨어졌어야 할 가격이다",
+     "en": "Three-month rise in average B200 GPU rental (to late September). In a glut, this is the price that would fall first",
+     "es": "Alza en tres meses de la renta media de GPU B200 (a finales de septiembre). En un exceso de oferta, sería el primer precio en caer",
+     "ja": "B200 GPUの平均レンタル料の3か月上昇率(9月末時点)。供給過剰なら真っ先に下がるはずの価格だ"
+    }
+   },
+   "points": {
+    "ko": [
+     "충격: 11월 5일 나스닥 -5.5%, S&P500 약 -4.4%, 엔비디아 -9.2%로 매그니피센트7 시가총액 1조 달러 이상이 사라졌다. 코스피는 11월 6일 5,059.69(-6.02%)로 마감했고, 외국인은 6거래일 동안 11조9,949억원을 순매도했으며 원/달러는 1,356.6원이 됐다.",
+     "판정: 기술·수요는 실체, 수익성은 부분입증, 가격·자금은 거품 성분이다. 코어위브 5년 CDS 1,038bp와 2031년 만기 채권 수익률 15.78%가 돈의 위기를, 미국 계획 데이터센터 용량의 45%가 모라토리엄 지지 민주당 장악 주에 있다는 골드만삭스 추정이 허가의 위기를 보여준다.",
+     "시나리오와 일정: 1년 박스권 후 회복 45%·신용발 약세 심화 30%·빠른 신고가 25%, 3년 수익이 투자 추월 40%·과잉투자 조정 35%·초가속 25%(작성자 판단). 분기점은 11월 17일 엔비디아 실적, 12월 9일 FOMC, 1월 말 빅테크 2027 설비투자 가이던스(컨센서스 9,345억 달러)다."
+    ],
+    "en": [
+     "Shock: on Nov 5 the Nasdaq fell 5.5%, the S&P 500 about 4.4% and Nvidia 9.2%, erasing more than $1 trillion from the Magnificent 7. The KOSPI closed Nov 6 at 5,059.69 (-6.02%); foreigners sold a net ₩11.99 trillion over six sessions, and the won weakened to 1,356.6 per dollar.",
+     "Verdict: technology and demand are real, profitability is half-proven, and prices and funding carry bubble elements. CoreWeave's 1,038bp five-year CDS and 15.78% yield on its 2031 bonds show the money crisis; Goldman Sachs' estimate that 45% of planned US data center capacity sits in states controlled by moratorium-backing Democrats shows the permit crisis.",
+     "Scenarios and calendar: one year, range then recovery 45%, credit-led bear 30%, fast new highs 25%; three years, returns catch up 40%, overbuild correction 35%, hyper-acceleration 25% (author's judgment). Turning points: Nvidia earnings Nov 17, the FOMC Dec 9, and Big Tech 2027 capex guidance in late January (consensus $934.5B)."
+    ],
+    "es": [
+     "Choque: el 5 de noviembre el Nasdaq cayó 5.5%, el S&P 500 cerca de 4.4% y Nvidia 9.2%, borrando más de un billón de dólares de los Siete Magníficos. El KOSPI cerró el 6 de noviembre en 5,059.69 (-6.02%); los extranjeros vendieron en neto 11.99 billones de wones en seis sesiones y el won se debilitó a 1,356.6 por dólar.",
+     "Veredicto: la tecnología y la demanda son reales, la rentabilidad está a medio probar y los precios y el financiamiento tienen elementos de burbuja. El CDS a cinco años de CoreWeave en 1,038 pb y el rendimiento de 15.78% de sus bonos 2031 muestran la crisis del dinero; la estimación de Goldman Sachs de que 45% de la capacidad planeada de centros de datos en EE. UU. está en estados que controlarán demócratas favorables a una moratoria muestra la crisis de los permisos.",
+     "Escenarios y calendario: a un año, rango y luego recuperación 45%, mercado bajista por crédito 30%, nuevos máximos rápidos 25%; a tres años, los retornos alcanzan a la inversión 40%, corrección por sobreinversión 35%, hiperaceleración 25% (juicio del autor). Puntos clave: resultados de Nvidia el 17 de noviembre, la Fed el 9 de diciembre y la guía de inversión 2027 de las grandes tecnológicas a fines de enero (consenso de US$934.500 millones)."
+    ],
+    "ja": [
+     "衝撃:11月5日、ナスダックは-5.5%、S&P500は約-4.4%、エヌビディアは-9.2%で、マグニフィセント7の時価総額1兆ドル超が消えた。KOSPIは11月6日に5,059.69(-6.02%)で引け、外国人は6営業日で11兆9,949億ウォンを売り越し、ウォンは1ドル=1,356.6ウォンまで下落した。",
+     "判定:技術・需要は実体、収益性は一部立証、価格・資金にはバブル成分がある。コアウィーブの5年CDS 1,038bpと2031年満期債の利回り15.78%がカネの危機を、米国で計画中のデータセンター容量の45%がモラトリアム支持の民主党が握る州にあるというゴールドマン・サックスの推計が許認可の危機を示す。",
+     "シナリオと日程:1年ではレンジ後の回復45%・信用主導の下落深化30%・急速な新高値25%、3年では収益が投資に追いつく40%・過剰投資の調整35%・超加速25%(筆者の判断)。分岐点は11月17日のエヌビディア決算、12月9日のFOMC、1月末のビッグテック2027年設備投資ガイダンス(コンセンサス9,345億ドル)。"
+    ]
+   },
+   "tickers": [
+    "SOX",
+    "NVDA",
+    "CRWV",
+    "QCOM",
+    "ARM",
+    "KOSPI",
+    "000660",
+    "005930"
+   ],
+   "tags": {
+    "ko": [
+     "AI 거품 논쟁",
+     "AI 인프라",
+     "데이터센터 규제",
+     "전수검증"
+    ],
+    "en": [
+     "AI bubble debate",
+     "AI infrastructure",
+     "Data center regulation",
+     "Fact-checked"
+    ],
+    "es": [
+     "Debate sobre la burbuja de IA",
+     "Infraestructura de IA",
+     "Regulación de centros de datos",
+     "Verificado"
+    ],
+    "ja": [
+     "AIバブル論争",
+     "AIインフラ",
+     "データセンター規制",
+     "全数検証"
+    ]
+   },
+   "checkpoints": [
+    {
+     "date": "2026-11-17",
+     "text": {
+      "ko": "엔비디아 3분기 실적(미국 장 마감 후)",
+      "en": "Nvidia third-quarter earnings (after the US close)",
+      "es": "Resultados del tercer trimestre de Nvidia (tras el cierre en EE. UU.)",
+      "ja": "エヌビディア第3四半期決算(米国市場終了後)"
+     }
+    },
+    {
+     "date": "2026-12-09",
+     "text": {
+      "ko": "FOMC 결정과 점도표",
+      "en": "FOMC decision and dot plot",
+      "es": "Decisión de la Fed y gráfico de puntos",
+      "ja": "FOMC決定とドットチャート"
+     }
+    },
+    {
+     "date": "2027-01-27",
+     "text": {
+      "ko": "FOMC 결정",
+      "en": "FOMC decision",
+      "es": "Decisión de la Fed",
+      "ja": "FOMC決定"
+     }
+    }
+   ],
+   "cards": {
+    "en": {
+     "label": "The report in 12 cards (English)",
+     "files": [
+      [
+       "card-en-01.webp",
+       "card-en-01.jpg",
+       "Card 1/12 · Cover: Was AI an illusion? 44 of 100 wafer dies = the KOSPI's 44.2% drop from its peak"
+      ],
+      [
+       "card-en-02.webp",
+       "card-en-02.jpg",
+       "Card 2/12 · Shock: Philadelphia chip index -12.3%, moves by stock and index"
+      ],
+      [
+       "card-en-03.webp",
+       "card-en-03.jpg",
+       "Card 3/12 · Verdict: demand didn't break, money and permits did. GPU rent +79%, CoreWeave CDS 1,038bp"
+      ],
+      [
+       "card-en-04.webp",
+       "card-en-04.jpg",
+       "Card 4/12 · Three layers: tech and demand real, profitability half-proven, prices and funding bubbly"
+      ],
+      [
+       "card-en-05.webp",
+       "card-en-05.jpg",
+       "Card 5/12 · Real economy: B200 GPU rental +79% in three months"
+      ],
+      [
+       "card-en-06.webp",
+       "card-en-06.jpg",
+       "Card 6/12 · Credit: CoreWeave 5-year CDS 1,038bp, 2031 bonds yielding 15.78%"
+      ],
+      [
+       "card-en-07.webp",
+       "card-en-07.jpg",
+       "Card 7/12 · Second derivative: Big Tech capex growth from +78% to +28%"
+      ],
+      [
+       "card-en-08.webp",
+       "card-en-08.jpg",
+       "Card 8/12 · Politics: 45% of planned data center capacity sits in moratorium-backing Democratic states"
+      ],
+      [
+       "card-en-09.webp",
+       "card-en-09.jpg",
+       "Card 9/12 · Korea: KOSPI -44.2% from peak, foreigners sold about ₩12T in six sessions, won at 1,356.6"
+      ],
+      [
+       "card-en-10.webp",
+       "card-en-10.jpg",
+       "Card 10/12 · Scenarios: odds for 1, 3, 5 and 10 years (author's judgment)"
+      ],
+      [
+       "card-en-11.webp",
+       "card-en-11.jpg",
+       "Card 11/12 · Checkpoints: Nvidia earnings Nov 17, FOMC Dec 9, Big Tech capex guidance late January"
+      ],
+      [
+       "card-en-12.webp",
+       "card-en-12.jpg",
+       "Card 12/12 · Closing: the tech can be right and the price wrong"
+      ]
+     ]
+    }
+   },
+   "kind": "doc",
+   "minutes": 14,
+   "sources": 29,
+   "url": "https://stayhungryasi.com/r/ai-shock-fact-check/"
+  },
   {
    "slug": "ai-deleveraging-2026-11",
    "date": "2026-11-06",
@@ -1714,16 +1899,6 @@
  ],
  "upcoming_checkpoints": [
   {
-   "date": "2026-11-06",
-   "text": {
-    "ko": "미국 10월 고용보고서",
-    "en": "US October jobs report",
-    "es": "Informe de empleo de octubre en EE. UU.",
-    "ja": "米10月雇用統計"
-   },
-   "slug": "us-midterms-2026-redteam"
-  },
-  {
    "date": "2026-11-10",
    "text": {
     "ko": "앤트로픽 로드쇼 시작 가능 최초일",
@@ -1782,6 +1957,16 @@
     "ja": "アンソロピックの公募価格決定が可能な最初の日"
    },
    "slug": "ai-deleveraging-2026-11"
+  },
+  {
+   "date": "2026-11-17",
+   "text": {
+    "ko": "엔비디아 3분기 실적(미국 장 마감 후)",
+    "en": "Nvidia third-quarter earnings (after the US close)",
+    "es": "Resultados del tercer trimestre de Nvidia (tras el cierre en EE. UU.)",
+    "ja": "エヌビディア第3四半期決算(米国市場終了後)"
+   },
+   "slug": "ai-shock-fact-check"
   },
   {
    "date": "2026-11-17",
@@ -1856,6 +2041,16 @@
   {
    "date": "2026-12-09",
    "text": {
+    "ko": "FOMC 결정과 점도표",
+    "en": "FOMC decision and dot plot",
+    "es": "Decisión de la Fed y gráfico de puntos",
+    "ja": "FOMC決定とドットチャート"
+   },
+   "slug": "ai-shock-fact-check"
+  },
+  {
+   "date": "2026-12-09",
+   "text": {
     "ko": "FOMC 결정",
     "en": "FOMC decision",
     "es": "Decisión de la Fed",
@@ -1922,6 +2117,16 @@
     "ja": "米中休戦の期限"
    },
    "slug": "us-midterms-2026-redteam"
+  },
+  {
+   "date": "2027-01-27",
+   "text": {
+    "ko": "FOMC 결정",
+    "en": "FOMC decision",
+    "es": "Decisión de la Fed",
+    "ja": "FOMC決定"
+   },
+   "slug": "ai-shock-fact-check"
   }
  ]
 }

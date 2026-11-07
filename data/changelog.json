@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-07",
+      "commit": "HEAD",
+      "message": "New research: Was AI an illusion? A fact-check of the Nov 5 AI shock. Money and permits broke, not demand: GPU rents +79% while CoreWeave CDS hit 1,038bp. Three-layer verdict, 1/3/5/10-year odds, every correction from two fact-check rounds, and 12 card-news images in Korean and English"
+    },
+    {
       "date": "2026-11-06",
       "commit": "475b240",
       "message": "Smoother hub and readable K-leverage charts: pages no longer snap to the next screen while you scroll (the top menu takes you anywhere); click any K-leverage chart for a large window with a crosshair that shows the date and values; the regime map's y-axis label is no longer cut off; the breakdown of the two scores is open by default"
@@ -257,7 +262,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }
