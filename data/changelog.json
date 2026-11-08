@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-08",
+      "commit": "HEAD",
+      "message": "Fortune Danji grows to five live tools plus Madang: 2027 My Year (your twelve months of 2027), Chaltteok (name game and a saju match two people open together) and Ireum Seodang (name reports and exhaustive naming) are now live, and Madang, a 3D yard where you walk between the jars, gets its own spot"
+    },
+    {
+      "date": "2026-11-08",
       "commit": "1af7e44",
       "message": "Buffett Index and VIX charts open big: tap either chart on the radar's Buffett × VIX tab for a full-size window with a crosshair that shows the date, the value, its zone and (for VIX) the VIX ÷ VIX3M ratio that day"
     },

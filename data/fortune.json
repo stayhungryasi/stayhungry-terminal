@@ -1,5 +1,5 @@
 {
-  "note": "Fortune Danji, the saju tools hub: live tools and the ones on the way, in 4 languages. Readings are entertainment; birth dates stay on the user's device.",
+  "note": "Fortune Danji, the saju tools hub: its live tools and Madang (the 3D yard), in 4 languages. Readings are entertainment; birth dates stay on the user's device.",
   "hub": {
     "name": {
       "ko": "포춘단지",
@@ -16,10 +16,10 @@
       "ja": "いつだって君の味方だよ。"
     },
     "sub": {
-      "ko": "잘하고 있어. 반드시 잘될 거야, 네가 이토록 간절한데.",
-      "en": "You're doing well. It will work out, because you want it this much.",
-      "es": "Lo estás haciendo bien. Va a salir bien, porque lo deseas tanto.",
-      "ja": "よくやってるよ。きっとうまくいく、こんなに切実なんだから。"
+      "ko": "오늘은 어떤 하루였어? 네가 이토록 간절한데.",
+      "en": "How was your day? You want this so much.",
+      "es": "¿Qué tal tu día? Lo deseas tanto.",
+      "ja": "今日はどんな一日だった?こんなに切実なんだから。"
     },
     "about": {
       "ko": "복을 담는 단지, 포춘단지. 사주 도구를 하나씩 담아요. 까치가 복을 물어다 주듯, 좋은 기운을 담은 도구를 하나씩 단지에 넣고 있어요.",
@@ -36,10 +36,10 @@
           "ja": "収集なし"
         },
         {
-          "ko": "생년월일은 내 기기(브라우저)에만 남고 서버로 보내지 않습니다. 포춘단지 서버는 없습니다.",
-          "en": "Your birth date stays in your own browser and is never sent to a server. There is no Fortune Danji server.",
-          "es": "Tu fecha de nacimiento se queda en tu navegador y nunca se envía a un servidor. Fortune Danji no tiene servidor.",
-          "ja": "生年月日は自分の端末(ブラウザ)にだけ残り、サーバーに送られない。フォーチュン・ダンジにサーバーはない。"
+          "ko": "각 도구는 생년월일을 내 기기(브라우저)에만 저장하고 서버로 보내지 않습니다. 마당은 머무는 사람 수 같은 이름 없는 숫자만 세고, 함께 있는 사람끼리 마당 안 위치만 잠깐 나눕니다.",
+          "en": "Each tool keeps your birth date in your own browser and never sends it to a server. Madang only counts anonymous numbers such as how many people are there, and briefly shares positions inside the yard with the people present.",
+          "es": "Cada herramienta guarda tu fecha de nacimiento en tu navegador y nunca la envía a un servidor. Madang solo cuenta números anónimos, como cuántas personas hay, y comparte un momento la posición dentro del patio con quienes están allí.",
+          "ja": "各ツールは生年月日を自分の端末(ブラウザ)にだけ保存し、サーバーに送らない。広場(マダン)は滞在人数のような名前のない数字だけを数え、その場にいる人同士で広場内の位置を一時的に共有するだけ。"
         }
       ],
       [
@@ -177,38 +177,205 @@
       {
         "id": "newyear2027",
         "no": 3,
-        "status": "soon",
+        "status": "live",
+        "url": "https://fortunedanji.com/2027",
+        "shot": "https://fortunedanji.com/assets/products/2027-shot.webp",
         "name": {
-          "ko": "신년운세 2027",
-          "en": "2027 New Year Fortune",
-          "es": "Fortuna de Año Nuevo 2027",
-          "ja": "2027年 新年運勢"
+          "ko": "2027 내 운세",
+          "en": "2027 My Year",
+          "es": "Mi 2027",
+          "ja": "2027 私の運勢"
         },
         "tagline": {
-          "ko": "2027년 한 해의 흐름을 미리.",
-          "en": "The shape of your 2027, ahead of time.",
-          "es": "Cómo viene tu 2027, por adelantado.",
-          "ja": "2027年の流れを先取り。"
-        }
+          "ko": "정미년, 내 열두 달.",
+          "en": "The Jeongmi year, my twelve months.",
+          "es": "El año Jeongmi, mis doce meses.",
+          "ja": "丁未年、私の12か月。"
+        },
+        "sub": {
+          "ko": "생년월일만 넣으면 2027년 몇 월이 좋고 몇 월을 조심할지 바로 보여드려요.",
+          "en": "Enter a birth date and see right away which months of 2027 look good and which call for care.",
+          "es": "Escribe tu fecha de nacimiento y ve al momento qué meses de 2027 pintan bien y en cuáles conviene ir con cuidado.",
+          "ja": "生年月日を入れるだけで、2027年のどの月が良く、どの月に気をつけるかがすぐわかる。"
+        },
+        "points": [
+          {
+            "ko": "올해의 총운과 열두 달 점수(좋은 달·보통·조심할 달)",
+            "en": "The year at a glance and a score for each of the 12 months (good, average, take care)",
+            "es": "El año de un vistazo y una nota para cada uno de los 12 meses (bueno, normal, con cuidado)",
+            "ja": "今年の総運と12か月の点数(良い月・普通・気をつける月)"
+          },
+          {
+            "ko": "달마다 재물·건강·직업·연애 신호, 할 일 하나, 주간 흐름",
+            "en": "Each month: money, health, work and love signals, one thing to do, and the weekly flow",
+            "es": "Cada mes: señales de dinero, salud, trabajo y amor, una tarea y el ritmo semanal",
+            "ja": "月ごとの財運・健康・仕事・恋愛のサイン、やること1つ、週ごとの流れ"
+          },
+          {
+            "ko": "PDF 저장·캘린더 추가·결과 카드 공유(카드에 생년월일은 안 들어감)",
+            "en": "Save as PDF, add to your calendar, share a result card (the card never shows the birth date)",
+            "es": "Guardar en PDF, añadir al calendario y compartir una tarjeta (la tarjeta no muestra la fecha de nacimiento)",
+            "ja": "PDF保存・カレンダー追加・結果カード共有(カードに生年月日は入らない)"
+          },
+          {
+            "ko": "띠별 신년운세와 2027 삼재(돼지띠·토끼띠·양띠, 날삼재)",
+            "en": "Outlook for each zodiac animal and the 2027 samjae signs (Pig, Rabbit, Goat, in their outgoing year)",
+            "es": "Previsión para cada animal del zodiaco y el samjae de 2027 (Cerdo, Conejo y Cabra, en su año de salida)",
+            "ja": "干支別の新年運勢と2027年の三災(亥・卯・未年生まれ、三災が明ける年)"
+          }
+        ]
+      },
+      {
+        "id": "gunghap",
+        "no": 4,
+        "status": "live",
+        "url": "https://fortunedanji.com/gunghap",
+        "shot": "https://fortunedanji.com/assets/products/gunghap-shot.webp",
+        "name": {
+          "ko": "찰떡",
+          "en": "Chaltteok",
+          "es": "Chaltteok",
+          "ja": "チャルトク"
+        },
+        "tagline": {
+          "ko": "우리, 어디가 찰떡일까.",
+          "en": "Where do we two click?",
+          "es": "¿En qué encajamos los dos?",
+          "ja": "私たち、どこが相性ぴったり?"
+        },
+        "sub": {
+          "ko": "이름점부터 둘이 여는 사주 궁합까지, 어디가 찰떡인지 찾아요.",
+          "en": "From the old schoolyard name game to a saju match two people open together, it finds where you fit.",
+          "es": "Del clásico juego de nombres del colegio a una compatibilidad de saju que abren los dos juntos: encuentra dónde encajan.",
+          "ja": "学生時代の名前占いから二人で開く四柱推命の相性まで、どこが相性ぴったりかを探す。"
+        },
+        "points": [
+          {
+            "ko": "추억의 이름점: 두 이름을 한 글자씩 번갈아 쓰고 획수를 더하기",
+            "en": "The name game: write both names letter by letter, alternating, and add up the strokes",
+            "es": "El juego de nombres: se alternan las letras de los dos nombres y se suman los trazos",
+            "ja": "懐かしの名前占い:二人の名前を一文字ずつ交互に書き、画数を足す"
+          },
+          {
+            "ko": "둘이 여는 사주 궁합: 각자 생년월일을 넣고 초대 링크로 같은 결과를 봄",
+            "en": "Saju match for two: each person enters their own birth date through an invite link and both see the same result",
+            "es": "Compatibilidad para dos: cada uno pone su fecha con un enlace de invitación y ambos ven el mismo resultado",
+            "ja": "二人で開く相性:それぞれが招待リンクから自分の生年月日を入れ、同じ結果を見る"
+          },
+          {
+            "ko": "애인·결혼 상대·친구로서, 띠 궁합, 이름으로 본 궁합, 데이트 처방",
+            "en": "As partners, spouses and friends; zodiac match; name match; a date prescription",
+            "es": "Como pareja, cónyuges y amigos; compatibilidad por animal y por nombre; receta para una cita",
+            "ja": "恋人・結婚相手・友人として、干支の相性、名前の相性、デート処方"
+          },
+          {
+            "ko": "맞다·안 맞다 판정이 아니라 서로를 알아 가는 설명서",
+            "en": "Not a pass-or-fail verdict but a guide to getting to know each other",
+            "es": "No es un veredicto de sí o no, sino una guía para conocerse",
+            "ja": "合う・合わないの判定ではなく、お互いを知るための説明書"
+          }
+        ]
       },
       {
         "id": "naming",
-        "no": 4,
-        "status": "soon",
+        "no": 5,
+        "status": "live",
+        "url": "https://fortunedanji.com/name",
+        "shot": "https://fortunedanji.com/assets/products/name-shot.webp",
         "name": {
-          "ko": "작명 서비스",
-          "en": "Naming service",
-          "es": "Servicio de nombres",
-          "ja": "命名サービス"
+          "ko": "이름서당",
+          "en": "Ireum Seodang",
+          "es": "Ireum Seodang",
+          "ja": "名前書堂(イルムソダン)"
         },
         "tagline": {
-          "ko": "사주에 맞는 이름 짓기.",
-          "en": "Names that fit the saju.",
-          "es": "Nombres acordes al saju.",
-          "ja": "四柱推命に合う名前づくり。"
-        }
+          "ko": "이름의 소리와 뜻, 흐름.",
+          "en": "The sound, meaning and flow of a name.",
+          "es": "El sonido, el significado y el ritmo de un nombre.",
+          "ja": "名前の音と意味、流れ。"
+        },
+        "sub": {
+          "ko": "이름을 넣으면 성명학·발음·요즘 감각을 함께 읽어드려요. 성명학 기준을 모두 공개하는 무료 작명.",
+          "en": "Enter a name for a reading that combines traditional name study, pronunciation and a modern ear. Free naming, with every rule published.",
+          "es": "Escribe un nombre y recibe una lectura que une la onomástica tradicional, la pronunciación y el gusto actual. Nombres gratis, con todas las reglas publicadas.",
+          "ja": "名前を入れると姓名判断・発音・今の感覚をあわせて読み解く。基準をすべて公開する無料の命名。"
+        },
+        "points": [
+          {
+            "ko": "무료 이름 감명서: 원획·81수·발음오행·사주 보완에 발음과 요즘 감각까지",
+            "en": "Free name report: original strokes, the 81-number system, sound elements and saju balance, plus pronunciation and modern feel",
+            "es": "Informe gratis del nombre: trazos originales, sistema de 81 números, elementos del sonido y equilibrio con el saju, más pronunciación y gusto actual",
+            "ja": "無料の名前鑑定書:原画・81数・発音五行・四柱の補完に、発音と今の感覚まで"
+          },
+          {
+            "ko": "전수 탐색 작명: 인명용 한자로 만들 수 있는 모든 조합에서 하나씩 걸러 좋은 이름을 고름",
+            "en": "Exhaustive naming: screens every combination of name-approved hanja, one by one, to pick good names",
+            "es": "Nombres por búsqueda exhaustiva: revisa una a una todas las combinaciones de hanja permitidos para elegir buenos nombres",
+            "ja": "全探索の命名:人名用漢字で作れるすべての組み合わせを一つずつ絞り込み、良い名前を選ぶ"
+          },
+          {
+            "ko": "인명용 한자 사전과 대법원 이름 통계",
+            "en": "A dictionary of name-approved hanja and Korean Supreme Court name statistics",
+            "es": "Diccionario de hanja para nombres y estadísticas de nombres del Tribunal Supremo de Corea",
+            "ja": "人名用漢字辞典と大法院(韓国最高裁)の名前統計"
+          },
+          {
+            "ko": "가족 이름과 겹치는 글자·같은 한자 찾기, 원하는 소리 느낌·흔한 정도 선택",
+            "en": "Flags letters or hanja shared with family names; pick the sound you want and how common it should be",
+            "es": "Detecta letras o hanja repetidos con la familia; eliges el tono del sonido y lo común que sea",
+            "ja": "家族の名前と重なる字・同じ漢字を検出、好みの響き・ありふれ度を選べる"
+          }
+        ]
       }
-    ]
+    ],
+    "madang": {
+      "url": "https://fortunedanji.com/madang",
+      "shot": "assets/fortune/madang.webp",
+      "name": {
+        "ko": "마당",
+        "en": "Madang",
+        "es": "Madang",
+        "ja": "マダン(広場)"
+      },
+      "tagline": {
+        "ko": "복 받으러 들르는 마당.",
+        "en": "A yard you drop by for luck.",
+        "es": "Un patio al que pasas a buscar suerte.",
+        "ja": "福をもらいに立ち寄る広場。"
+      },
+      "sub": {
+        "ko": "마음 가는 단지에 들러 복을 빌고 가는 3D 마당. 바닥을 누르면 걸어가고, 끌면 둘러봐요.",
+        "en": "A 3D yard where you stop at whichever jar calls to you and make a wish. Tap the ground to walk, drag to look around.",
+        "es": "Un patio en 3D donde pasas por el tarro que te llame y pides un deseo. Toca el suelo para caminar y arrastra para mirar alrededor.",
+        "ja": "気になる壺に立ち寄って福を祈る3Dの広場。地面を押すと歩き、ドラッグで見回す。"
+      },
+      "points": [
+        {
+          "ko": "가운데 복항아리: 까치가 지켜보는 항아리에 소원 빌기·문지르기·기도하기",
+          "en": "The lucky jar in the middle, watched by a magpie: make a wish, rub it or pray",
+          "es": "El tarro de la suerte en el centro, vigilado por una urraca: pide un deseo, frótalo o reza",
+          "ja": "真ん中の福壺:カササギが見守る壺に願う・なでる・祈る"
+        },
+        {
+          "ko": "단지 다섯 곳으로 걸어 들어가기: 안착·여의도·정미년(2027 내 운세)·찰떡·명당(이름서당)",
+          "en": "Walk into five jars: Anchak, Yeouido, Jeongmi (2027 My Year), Chaltteok and Myeongdang (Ireum Seodang)",
+          "es": "Entra caminando en cinco tarros: Anchak, Yeouido, Jeongmi (Mi 2027), Chaltteok y Myeongdang (Ireum Seodang)",
+          "ja": "5つの壺に歩いて入る:安着・ヨイド・丁未(2027 私の運勢)・チャルトク・明堂(名前書堂)"
+        },
+        {
+          "ko": "오늘 담은 복과 할 일",
+          "en": "Luck collected today, plus a to-do list",
+          "es": "La suerte reunida hoy y una lista de tareas",
+          "ja": "今日ためた福とやること"
+        },
+        {
+          "ko": "지금 마당에 있는 사람 수 표시. 이름 없이 마당 안 위치만 잠깐 나눔",
+          "en": "Shows how many people are in the yard; only positions inside the yard are shared, briefly and without names",
+          "es": "Muestra cuántas personas hay en el patio; solo se comparte la posición dentro del patio, un momento y sin nombres",
+          "ja": "今広場にいる人数を表示。名前なしで広場内の位置だけを一時的に共有"
+        }
+      ]
+    }
   },
   "updated": "2026-11-08",
   "credit": "stayhungryasi.com",
