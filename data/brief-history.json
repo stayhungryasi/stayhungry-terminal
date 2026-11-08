@@ -478,5 +478,37 @@
    "es": "Sin eventos confirmados este fin de semana, primero va el IPC del martes y el posible roadshow de Anthropic; segundo, la caída de SpaceX (-9,05%) bajo su precio de salida con el desbloqueo a D-33; tercero, las ventas forzosas en Corea, que se duplicaron en un día. Se omiten el vuelo 15 de Starship (8/11, fecha estimada), el índice de crisis que solo bajó 1,8 puntos (34,4) y el VIX sin cambios (28,18).",
    "ja": "週末で今日・明日の確定日程がないため、来週火曜のCPIとアンソロピックのロードショー開始可能日を1位、1日で-9.05%と公募価格を割ったスペースXとD-33のロックアップを2位、1日で倍増した韓国の反対売買を3位にしました。日付が推定のスターシップ15回目飛行(11/8)、1.8ポイント低下にとどまった危機スコア(34.4)、昨日と同じVIX 28.18は外しました。"
   }
+ },
+ {
+  "date": "2026-11-08",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>모레 11/10, 미국 10월 CPI.</b> 22:30(한국시간·확정), 같은 날 06:05엔 옥시덴탈 3분기 실적(확정). VIX는 11/6 25.64로 '주의' 구간에서 발표를 맞습니다. <a href=\"#schedule\">일정</a>",
+    "en": "<b>US October CPI in two days.</b> Tue 11/10, 22:30 KST (confirmed); Occidental Q3 at 06:05 that day. VIX 25.64 on 11/6, still in 'watch'. <a href=\"#schedule\">Calendar</a>",
+    "es": "<b>IPC de EE. UU., en dos días.</b> Mar 10/11, 22:30 (Corea), confirmado; Occidental publica su 3T a las 06:05. VIX en 25,64 el 6/11. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>あさって11/10、米10月CPI。</b>22:30(韓国時間・確定)、同日06:05にはオキシデンタル7-9月期決算(確定)。VIXは11/6時点25.64で「注意」圏のまま発表を迎えます。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X, 하루 +8.62% 반등.</b> 11/6 종가 $134.27로 공모가 $135 대비 -0.5%까지 회복. 12/9 7.976억주(≈1,071억 달러) 락업 해제까지 D-32. <a href=\"#spcxlock\">락업 레이더</a>",
+    "en": "<b>SpaceX rebounds 8.62%.</b> 11/6 close $134.27, just -0.5% vs the $135 IPO price. 797.6M shares (≈$107.1B) unlock 12/9, D-32. <a href=\"#spcxlock\">Lock-up radar</a>",
+    "es": "<b>SpaceX rebota un 8,62%.</b> Cierre 6/11: US$134,27, -0,5% vs. su salida. 797,6 M de acciones (≈US$107,1 mil M) se liberan el 9/12, D-32. <a href=\"#spcxlock\">Radar</a>",
+    "ja": "<b>スペースX、1日で+8.62%反発。</b>11/6終値$134.27で公募価格$135比-0.5%まで回復。12/9の7.976億株(約1,071億ドル)ロックアップ解除までD-32。<a href=\"#spcxlock\">ロックアップ</a>"
+   },
+   {
+    "href": "#library",
+    "ko": "<b>새 리서치: 11·5 AI 쇼크 전수검증.</b> GPU 임대료는 +79%인데 코어위브 CDS는 1,038bp — 무너진 건 수요가 아니라 돈과 허가라는 판단(작성자). <a href=\"#library\">리서치</a>",
+    "en": "<b>New research: the Nov 5 AI shock.</b> GPU rents +79%, CoreWeave CDS 1,038bp: money and permits broke, not demand (author's view). <a href=\"#library\">Research</a>",
+    "es": "<b>Informe: el choque de IA del 5/11.</b> GPU +79% en alquiler, CDS de CoreWeave en 1.038 pb: falló el dinero, no la demanda (autor). <a href=\"#library\">Informes</a>",
+    "ja": "<b>新リサーチ：11・5 AIショック全数検証。</b>GPU賃料は+79%なのにコアウィーブCDSは1,038bp。崩れたのは需要ではなく資金と許認可という判断(筆者)。<a href=\"#library\">リサーチ</a>"
+   }
+  ],
+  "why": {
+   "ko": "이번 주 가장 큰 확정 일정인 11/10 CPI를 1순위로, 11/6 하루 +8.62%로 공모가 턱밑에 돌아온 스페이스X를 2순위로, 아직 3줄에 오르지 않은 11/7 새 리서치를 3순위로 골랐습니다. 오늘(11/8) 스타십 15차 비행은 날짜가 '추정'이라 뺐고, 위기 근접도는 34.4(이전 36.2)로 50 아래·변동 5점 미만이라, 반대매매는 어제 다뤄 뺐습니다.",
+   "en": "CPI on 11/10 is the week's biggest confirmed event; SpaceX's 8.62% rebound to just under its IPO price is the biggest new number; the 11/7 research has not yet made the brief. Left out: today's Starship flight 15 (date estimated), the crisis score 34.4 (from 36.2, under 50, moved <5), and Korean forced selling (covered yesterday).",
+   "es": "El IPC del 10/11 es el mayor evento confirmado de la semana; el rebote de SpaceX del 8,62% hasta casi su precio de salida es el dato nuevo más relevante; el informe del 7/11 aún no había salido aquí. Fuera: el vuelo 15 de Starship de hoy (fecha estimada), el índice de crisis en 34,4 (desde 36,2) y las ventas forzosas en Corea (ya tratadas ayer).",
+   "ja": "今週最大の確定日程である11/10のCPIを1番目に、11/6に+8.62%で公募価格目前まで戻したスペースXを2番目に、まだ3行に載っていない11/7の新リサーチを3番目に選びました。本日(11/8)のスターシップ15回目の飛行は日付が「推定」のため除外、危機近接度は34.4(前回36.2)で50未満・変動5点未満、反対売買は昨日扱ったため除外しました。"
+  }
  }
 ]
