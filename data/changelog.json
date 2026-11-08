@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-08",
-      "commit": "HEAD",
+      "commit": "1af7e44",
       "message": "Buffett Index and VIX charts open big: tap either chart on the radar's Buffett × VIX tab for a full-size window with a crosshair that shows the date, the value, its zone and (for VIX) the VIX ÷ VIX3M ratio that day"
     },
     {
