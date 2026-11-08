@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-08",
+      "commit": "HEAD",
+      "message": "Buffett Index and VIX charts open big: tap either chart on the radar's Buffett × VIX tab for a full-size window with a crosshair that shows the date, the value, its zone and (for VIX) the VIX ÷ VIX3M ratio that day"
+    },
+    {
       "date": "2026-11-07",
       "commit": "e0ea13c",
       "message": "Links land where they point: tapping a TODAY card, a hub card or a menu item now jumps straight to that page and holds it in place while the pages above finish loading, so you no longer see another page first or need to tap twice (this mattered most on iPhone)"
@@ -267,7 +272,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }

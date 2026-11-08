@@ -265,7 +265,8 @@ svg.lc text{font:12.5px var(--mono);fill:var(--mute)}
 svg.lc .ln{fill:none;stroke-width:2;stroke-linejoin:round}
 svg.lc .gr{stroke:#1E2431;stroke-width:1}
 svg.lc .rf{stroke-width:1;stroke-dasharray:4 4}
-svg.lc .hv{pointer-events:none}
+.frzh{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 6px}.frz .zi{font:600 15px var(--mono);color:var(--dim);letter-spacing:0;line-height:1}.frz:hover .zi{color:var(--ink)}
+#zbody svg.lc text{font-size:13.5px}
 @media (max-width:980px){.frg,.frch{grid-template-columns:minmax(0,1fr)}.frmx{grid-template-columns:96px repeat(3,minmax(0,1fr))}}
 @media (max-width:620px){.frmx div{font-size:14px;padding:7px 8px}}
 .crwait{margin-top:30px;font-size:18px;color:var(--ink2)}
@@ -1117,6 +1118,7 @@ const SOFTWARE=[{id:'mocapture',no:1,status:'live',maker:{ko:'무광소프트',e
  links:{virustotal:'https://www.virustotal.com/gui/file/f5212e4a6807eacafa44dd914d573b464fb4ffa0d162f67f372c214387ecc56d',changelog:'https://mugwangsoft.com/changelog/',privacy:'https://mugwangsoft.com/privacy/',enterprise:'https://mugwangsoft.com/enterprise/',feedback:'https://mugwangsoft.com/feedback/',contact:'hello@mugwangsoft.com'},
  media:'https://mugwangsoft.com/media/',shots:['tray','masking','editor','window','scroll','textcopy'],built_with:'Claude'}];
 const CHANGELOG=[
+ {"d":"2026-11-08","h":"HEAD","m":{"en":"Buffett Index and VIX charts open big: tap either chart on the radar's Buffett × VIX tab for a full-size window with a crosshair that shows the date, the value, its zone and (for VIX) the VIX ÷ VIX3M ratio that day","ko":"버핏지수·VIX 차트 크게 보기: 위기 레이더 '버핏지수 × VIX' 탭의 차트를 누르면 큰 창이 열리고, 십자선으로 날짜·수치·구간(VIX는 그날의 VIX ÷ VIX3M 비율까지) 확인","es":"Los gráficos del Índice Buffett y del VIX se amplían: toca cualquiera en la pestaña Buffett × VIX del radar para abrir una ventana grande con una cruz que muestra fecha, valor, zona y (en el VIX) la razón VIX ÷ VIX3M de ese día","ja":"バフェット指数・VIXチャートを拡大表示:危機レーダー「バフェット指数 × VIX」タブのチャートを押すと大きなウィンドウが開き、十字線で日付・数値・区分(VIXはその日のVIX ÷ VIX3M比率も)を確認"}},
  {"d":"2026-11-07","h":"e0ea13c","m":{"en":"Links land where they point: tapping a TODAY card, a hub card or a menu item now jumps straight to that page and holds it in place while the pages above finish loading, so you no longer see another page first or need to tap twice (this mattered most on iPhone)","ko":"누르면 정확히 그 페이지로: TODAY 카드·허브 카드·메뉴를 누르면 해당 페이지로 바로 이동하고, 위쪽 페이지가 다 그려질 때까지 그 자리를 고정합니다. 다른 페이지가 먼저 보이거나 여러 번 눌러야 하던 문제 해결(특히 아이폰)","es":"Los enlaces llevan a su destino: al tocar una tarjeta de HOY, del hub o del menú saltas directo a esa página y se mantiene en su sitio mientras cargan las de arriba; ya no aparece otra página primero ni hay que tocar dos veces (sobre todo en iPhone)","ja":"押したページへ正確に:TODAYカード・ハブカード・メニューを押すとそのページへ直接移動し、上のページが描画し終わるまで位置を固定。別のページが先に出たり何度も押す必要があった問題を解消(特にiPhone)"}},
  {"d":"2026-11-07","h":"5cf21f4","m":{"en":"New research: Was AI an illusion? A fact-check of the Nov 5 AI shock. Money and permits broke, not demand: GPU rents +79% while CoreWeave CDS hit 1,038bp. Three-layer verdict, 1/3/5/10-year odds, every correction from two fact-check rounds, and 12 card-news images in Korean and English","ko":"새 리서치: AI는 허상인가, 11·5 AI 쇼크 전수검증. 무너진 건 수요가 아니라 돈과 허가(GPU 임대료 +79%, 코어위브 CDS 1,038bp). 세 개 층 판정, 1·3·5·10년 확률, 두 차례 검증의 정정 내역, 한국어·영어 카드뉴스 12장 포함","es":"Nueva investigación: ¿Fue la IA un espejismo? Verificación del choque del 5 de noviembre. Se rompieron el dinero y los permisos, no la demanda: renta de GPU +79% y CDS de CoreWeave en 1,038 pb. Veredicto en tres capas, probabilidades a 1/3/5/10 años, todas las correcciones de dos rondas de verificación y 12 tarjetas en coreano e inglés","ja":"新リサーチ:AIは幻だったのか、11・5 AIショック全数検証。崩れたのは需要ではなくカネと許認可(GPUレンタル料+79%、コアウィーブCDS 1,038bp)。3層判定、1・3・5・10年の確率、2回の検証の訂正内容、韓国語・英語カードニュース12枚を収録"}},
  {"d":"2026-11-06","h":"475b240","m":{"en":"Smoother hub and readable K-leverage charts: pages no longer snap to the next screen while you scroll (the top menu takes you anywhere); click any K-leverage chart for a large window with a crosshair that shows the date and values; the regime map's y-axis label is no longer cut off; the breakdown of the two scores is open by default","ko":"허브 스크롤을 부드럽게, K-빚투 그래프를 크게: 스크롤할 때 다음 화면으로 훅 넘어가던 자동 맞춤 제거(이동은 맨 위 메뉴로), K-빚투 그래프를 누르면 큰 창이 열리고 십자선으로 날짜·수치 확인, 국면 지도 세로축 글씨 잘림 수정, '두 점수는 이렇게 만듭니다' 기본으로 펼침","es":"Hub más fluido y gráficos de apalancamiento legibles: las páginas ya no saltan a la siguiente pantalla al desplazarte (el menú superior te lleva a cualquier sección); haz clic en un gráfico para abrir una ventana grande con cruz que muestra fecha y valores; el eje vertical del mapa de régimen ya no se corta; el desglose de las dos puntuaciones está abierto por defecto","ja":"ハブのスクロールを滑らかに、K-レバレッジのグラフを大きく:スクロール中に次の画面へ勝手に移る吸着を削除(移動は上部メニューで)、グラフをクリックすると大きなウィンドウが開き十字線で日付と数値を確認、局面マップの縦軸ラベルの切れを修正、「2つのスコアの作り方」を最初から展開"}},
@@ -1474,10 +1476,10 @@ ja:{lv_how:'読み方',lv_how1:'どちらも0〜100:過去10年の中で今日�
  lv_due:'本日07:50のレポートが遅延中(GitHubの予約実行待ち)',lv_upd:'ハブ更新 {g}',lv_chk:'Telegram未送信のチェック更新'}};
 LANGS.forEach(c=>Object.assign(L[c],LV3[c]));
 const LVZ_TX={
-en:{lv_zh:'Click to enlarge',lv_zh2:'Hover or drag a finger across the chart for the date and values. Esc or click outside to close.',lv_zs:'Share of trading',lv_zr3:'Margin loans / market cap',lv_zx:'vs normal'},
-ko:{lv_zh:'클릭하면 크게 보기',lv_zh2:'그래프 위에 마우스를 올리거나 손가락으로 끌면 날짜와 수치가 나옵니다. Esc 또는 바깥을 누르면 닫힙니다.',lv_zs:'거래 대비 비중',lv_zr3:'시총 대비 신용',lv_zx:'평소 대비'},
-es:{lv_zh:'Clic para ampliar',lv_zh2:'Pasa el ratón o desliza el dedo por el gráfico para ver fecha y valores. Esc o clic fuera para cerrar.',lv_zs:'Peso en la negociación',lv_zr3:'Crédito / capitalización',lv_zx:'vs lo normal'},
-ja:{lv_zh:'クリックで拡大',lv_zh2:'グラフにマウスを重ねるか指でなぞると日付と数値が出ます。Escまたは外側をクリックで閉じます。',lv_zs:'売買に占める比率',lv_zr3:'時価総額比の信用',lv_zx:'平常比'}};
+en:{lv_zh:'Click to enlarge',lv_zh2:'Hover or drag a finger across the chart for the date and values. Esc or click outside to close.',lv_zs:'Share of trading',lv_zr3:'Margin loans / market cap',lv_zx:'vs normal',fr_zb:'Buffett Index',fr_zest:'Estimate (the official figure is quarterly)'},
+ko:{lv_zh:'클릭하면 크게 보기',lv_zh2:'그래프 위에 마우스를 올리거나 손가락으로 끌면 날짜와 수치가 나옵니다. Esc 또는 바깥을 누르면 닫힙니다.',lv_zs:'거래 대비 비중',lv_zr3:'시총 대비 신용',lv_zx:'평소 대비',fr_zb:'버핏지수',fr_zest:'추정치 (공식 수치는 분기마다 나옴)'},
+es:{lv_zh:'Clic para ampliar',lv_zh2:'Pasa el ratón o desliza el dedo por el gráfico para ver fecha y valores. Esc o clic fuera para cerrar.',lv_zs:'Peso en la negociación',lv_zr3:'Crédito / capitalización',lv_zx:'vs lo normal',fr_zb:'Índice Buffett',fr_zest:'Estimación (la cifra oficial es trimestral)'},
+ja:{lv_zh:'クリックで拡大',lv_zh2:'グラフにマウスを重ねるか指でなぞると日付と数値が出ます。Escまたは外側をクリックで閉じます。',lv_zs:'売買に占める比率',lv_zr3:'時価総額比の信用',lv_zx:'平常比',fr_zb:'バフェット指数',fr_zest:'推定値(公式値は四半期ごと)'}};
 LANGS.forEach(c=>Object.assign(L[c],LVZ_TX[c]));
 const TRX={
 en:{asof_close:'{d} US close',asof_rep:'{d} report · Mon & Fri',asof_est:'{d} · daily estimate',asof_stale:'DELAYED',asof_tip:'Newer market data exists than this number. It updates with the next bot run.'},
@@ -1667,28 +1669,36 @@ function qLabel(d){const m=String(d||'').match(/^(\d{4})-(\d\d)/);return m?m[1]+
 function frRank(b,t){const top=100-b.pct;return top<0.5?fmt(t.fr_rank_top,{y:b.start_year}):fmt(t.fr_rank,{n:Math.round(top),y:b.start_year});}
 function zbar(lo,hi,segs,val,lab,ticks){const P=x=>Math.max(0,Math.min(100,(x-lo)/(hi-lo)*100));
   return `<div class="zb">${segs.map(([a,b,c])=>`<i style="left:${P(a)}%;width:${P(b)-P(a)}%;background:${c}"></i>`).join('')}<span class="mk2" style="left:${P(val)}%"><span>${esc(lab)}</span></span>${ticks.map(([x,l])=>`<span class="tk" style="left:${P(x)}%">${esc(l)}</span>`).join('')}</div>`;}
-const LC={};
-function lineSVG(id,pts,o){if(!pts||pts.length<2)return '';const W=600,H=230,L=44,Rr=14,Tt=14,B=26;const xs=pts.map(p=>Date.parse(p[0])),ys=pts.map(p=>p[1]);
+
+function lineSVG(id,pts,o,W=600,H=230){if(!pts||pts.length<2)return '';const big=W>=800,L=big?56:44,Rr=14,Tt=14,B=26;const xs=pts.map(p=>Date.parse(p[0])),ys=pts.map(p=>p[1]);
   let y0=Math.min(...ys,...(o.refs||[]).map(r=>r[0])),y1=Math.max(...ys,...(o.refs||[]).map(r=>r[0]));const pad=(y1-y0)*.08||1;y0=Math.max(o.floor??-1e9,y0-pad);y1+=pad;
   const x0=xs[0],x1=xs[xs.length-1],X=x=>L+(x-x0)/(x1-x0)*(W-L-Rr),Y=y=>Tt+(1-(y-y0)/(y1-y0))*(H-Tt-B);
-  const step=(y1-y0)/4,grid=[0,1,2,3,4].map(i=>y0+step*i);
-  const yrs=[];const ya=new Date(x0).getUTCFullYear(),yb=new Date(x1).getUTCFullYear(),span=yb-ya,every=span>40?10:span>15?5:span>4?1:0;
-  if(every)for(let y=Math.ceil(ya/every)*every;y<=yb;y+=every)yrs.push([Date.UTC(y,0,1),String(y)]);else{const d=new Date(x0);for(let i=0;i<30;i++){const m=Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+i*6,1);if(m>x1)break;if(m>=x0)yrs.push([m,new Date(m).toISOString().slice(0,7)]);}}
+  const ng=big?7:5,raw=(y1-y0)/ng,mg=Math.pow(10,Math.floor(Math.log10(raw))),step=[1,2,2.5,5,10].map(m=>m*mg).find(v=>v>=raw)||raw,grid=[];for(let g=Math.ceil(y0/step)*step;g<=y1+1e-9;g+=step)grid.push(g);
+  const yrs=[],ya=new Date(x0).getUTCFullYear(),yb=new Date(x1).getUTCFullYear(),span=yb-ya,aw=W-L-Rr,shortM=W<520;
+  if(span>4){const every=[1,2,5,10,20,25,50].find(e=>span/e*48<=aw)||50;for(let y=Math.ceil(ya/every)*every;y<=yb;y+=every)yrs.push([Date.UTC(y,0,1),String(y)]);}
+  else{const months=(x1-x0)/2.63e9,mstep=[1,2,3,6,12].find(m=>months/m*(shortM?52:72)<=aw)||12,d=new Date(x0);for(let i=0;i<240;i++){const m=Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+i,1);if(m>x1)break;if(m>=x0&&new Date(m).getUTCMonth()%mstep===0)yrs.push([m,shortM?new Date(m).toISOString().slice(2,7).replace('-','.'):new Date(m).toISOString().slice(0,7)]);}}
   const path=pts.map((p,i)=>(i?'L':'M')+X(xs[i]).toFixed(1)+' '+Y(p[1]).toFixed(1)).join('');
-  const last=pts[pts.length-1];LC[id]={xs,ys,pts,X,Y,o,W,H,L,Rr};
-  return `<svg class="lc" id="${id}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.aria||'')}">
+  const last=pts[pts.length-1];
+  const zk=zReg(id,W,H,{x0:L,x1:W-Rr,y0:Tt,y1:H-B,pts:pts.map((p,i)=>({x:X(xs[i]),d:p[0],dots:[[Y(p[1]),o.dot||o.color]],rows:o.rows?o.rows(p,i):[['',o.fy(p[1],1)]]}))});
+  return `<svg class="lc" viewBox="0 0 ${W} ${H}" data-z="${zk}" role="img" aria-label="${esc(o.aria||'')}">
    ${grid.map(g=>`<line class="gr" x1="${L}" x2="${W-Rr}" y1="${Y(g).toFixed(1)}" y2="${Y(g).toFixed(1)}"/><text x="${L-6}" y="${(Y(g)+4).toFixed(1)}" text-anchor="end">${esc(o.fy(g))}</text>`).join('')}
-   ${yrs.map(([x,l])=>`<text x="${X(x).toFixed(1)}" y="${H-8}" text-anchor="middle">${l}</text>`).join('')}
+   ${yrs.map(([x,l])=>{const xx=X(x),tw=l.length*4.2;return `<text x="${Math.max(L+tw,Math.min(xx,W-Rr-tw)).toFixed(1)}" y="${H-8}" text-anchor="middle">${l}</text>`;}).join('')}
    ${(o.refs||[]).map(([v,l,c])=>`<line class="rf" x1="${L}" x2="${W-Rr}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}" stroke="${c}"/><text x="${W-Rr}" y="${(Y(v)-4).toFixed(1)}" text-anchor="end" style="fill:${c}">${esc(l)}</text>`).join('')}
    <path class="ln" d="${path}" stroke="${o.color}"/>
    <circle cx="${X(xs[xs.length-1]).toFixed(1)}" cy="${Y(last[1]).toFixed(1)}" r="4.5" fill="${o.color}" stroke="var(--card)" stroke-width="2"/>
-   <g class="hv" visibility="hidden"><line x1="0" x2="0" y1="${Tt}" y2="${H-B}" stroke="var(--line2)"/><circle r="4" fill="var(--ink)"/><text y="${Tt+10}" style="fill:var(--ink);font-weight:700"></text></g></svg>`;}
-function lcHover(e){const svg=e.target.closest&&e.target.closest('svg.lc');if(!svg)return;const c=LC[svg.id];if(!c)return;const r=svg.getBoundingClientRect(),cx=(e.clientX-r.left)/r.width*c.W;
-  let best=0,bd=1e9;c.xs.forEach((x,i)=>{const d=Math.abs(c.X(x)-cx);if(d<bd){bd=d;best=i;}});const g=svg.querySelector('.hv'),x=c.X(c.xs[best]),y=c.Y(c.ys[best]);
-  g.setAttribute('visibility','visible');g.querySelector('line').setAttribute('x1',x);g.querySelector('line').setAttribute('x2',x);const ci=g.querySelector('circle');ci.setAttribute('cx',x);ci.setAttribute('cy',y);
-  const tx=g.querySelector('text');tx.textContent=c.pts[best][0]+'  '+c.o.fy(c.ys[best],1);tx.setAttribute('x',Math.min(Math.max(x,c.L+70),c.W-c.Rr-70));tx.setAttribute('text-anchor','middle');}
-document.addEventListener('mousemove',lcHover);document.addEventListener('touchmove',e=>{if(e.touches[0])lcHover({target:e.target,clientX:e.touches[0].clientX});},{passive:true});
-document.addEventListener('mouseleave',e=>{},true);
+   <text x="${Math.min(X(xs[xs.length-1])-8,W-Rr-4).toFixed(1)}" y="${Tt+10}" text-anchor="end" style="fill:var(--ink);font-weight:700">${esc(last[0]+'  '+o.fy(last[1],o.ld??1))}</text></svg>`;}
+/* Buffett Index and VIX history: the same builders feed the card and the zoom window */
+const frBKey=(b,v)=>v>=b.p95?'very_high':v>=b.p75?'high':v>=b.p25?'fair':'low';
+const frVKey=v=>v<15?'complacent':v<20?'normal':v<30?'watch':v<40?'fear':'panic';
+const frRCol=r=>r>1?'var(--red)':r>=.9?'var(--gold)':'var(--green)';
+function frChartB(t,W,H){const b=FR&&FR.buffett;if(!b)return '';const hl=(b.hist||[]).length?b.hist[b.hist.length-1][0]:'';
+  const pts=[...(b.hist||[]),...(b.daily||[]).filter(d=>!hl||d[0]>hl)];
+  return lineSVG('fb',pts,{color:'var(--or)',dot:'#F27A2E',fy:(y,d)=>y.toFixed(d||0)+'%',floor:0,refs:[[b.mean,t.fr_avg+' '+Math.round(b.mean)+'%','#8C8C8C'],[b.p95,'p95','#F2B33D']],aria:fmt(t.fr_hc,{y:b.start_year}),
+    rows:p=>{const k=frBKey(b,p[1]);return [[t.fr_zb,p[1].toFixed(1)+'%','#F27A2E'],['',t.fr_bq[k]||'',frBCol(k)]].concat(b.estimated&&hl&&p[0]>hl?[['',t.fr_zest,'#8D95A8']]:[]);}},W,H);}
+function frChartV(t,W,H){const v=FR&&FR.vix;if(!v||!v.series)return '';const rm=new Map((v.ratio_series||[]).map(r=>[r[0],r[1]]));
+  return lineSVG('fv',v.series,{color:'#2F8FDD',fy:(y,d)=>y.toFixed(d||0),floor:0,ld:1,refs:[[20,'20','#F2B33D'],[30,'30','#FF4438']],aria:'VIX',
+    rows:p=>{const k=frVKey(p[1]),r=rm.get(p[0]);return [['VIX',p[1].toFixed(2),'#2F8FDD'],['',t.fr_vq[k]||'',frVCol(k)]].concat(r!=null?[['VIX ÷ VIX3M',r.toFixed(2),frRCol(r)]]:[]);}},W,H);}
+const frZBox=(t,k,ttl,body)=>body?`<div class="frc lvz frz" data-zk="${k}" tabindex="0" role="button" title="${esc(t.lv_zh)}"><p class="lbl frzh"><span>${esc(ttl)}</span><span class="zi" aria-hidden="true">⤢</span></p>${body}</div>`:'';
 function rFear(t){const F=FR;
   if(!F){$('radar').innerHTML=head('radar',t.fr_eb)+crTabs()+hd(esc(t.fr_h1na),esc(frState==='fail'?t.fr_fail:t.fr_load))+src(t.fr_src,'radar');return;}
   const b=F.buffett,v=F.vix,qk=frKey(F.quadrant),q=qk?t.fr_q[qk]:null;
@@ -1705,9 +1715,7 @@ function rFear(t){const F=FR;
      ${v.ratio!=null?`<div class="frterm"><p class="lbl">${esc(t.fr_term)}</p><b style="color:${v.ratio>1?'var(--red)':v.ratio>=.9?'var(--gold)':'var(--green)'}">${v.ratio.toFixed(2)}</b><span>${esc(t.fr_rq[v.ratio_key]||'')}</span><small>${esc(t.fr_term_n)}</small></div>`:''}</div>`:'';
   const mx=`<p class="lbl" style="margin-top:24px">${esc(t.fr_mx)}</p><div class="frmx"><div class="h"></div>${['calm','tense','fear'].map(m=>`<div class="h">${esc(t.fr_mood[m])}</div>`).join('')}
      ${[['h',t.fr_hi],['f',t.fr_lo]].map(([r,l])=>`<div class="h">${esc(l)}</div>`+['calm','tense','fear'].map(m=>`<div class="${qk===r+'_'+m?'on':''}">${esc(t.fr_q[r+'_'+m][0])}</div>`).join('')).join('')}</div>`;
-  const bpts=b?[...(b.hist||[]),...(b.daily||[]).filter(d=>!b.hist||!b.hist.length||d[0]>b.hist[b.hist.length-1][0])]:[];
-  const ch=`<div class="frch">${b?`<div class="frc"><p class="lbl" style="margin:0 0 6px">${esc(fmt(t.fr_hc,{y:b.start_year}))}</p>${lineSVG('lcB',bpts,{color:'var(--or)',fy:(y,d)=>y.toFixed(d||0)+'%',floor:0,refs:[[b.mean,t.fr_avg+' '+Math.round(b.mean)+'%','#8C8C8C'],[b.p95,'p95','#F2B33D']],aria:t.fr_hc})}</div>`:''}
-     ${v?`<div class="frc"><p class="lbl" style="margin:0 0 6px">${esc(t.fr_vc)}</p>${lineSVG('lcV',v.series,{color:'#2F8FDD',fy:(y,d)=>y.toFixed(d||0),floor:0,refs:[[20,'20','#F2B33D'],[30,'30','#FF4438']],aria:'VIX'})}</div>`:''}</div>`;
+  const ch=`<div class="frch">${b?frZBox(t,'fb',fmt(t.fr_hc,{y:b.start_year}),frChartB(t,600,230)):''}${v?frZBox(t,'fv',t.fr_vc,frChartV(t,600,230)):''}</div>`;
   const imgs=(F.charts||[]).map((c,i)=>`<button class="crth" data-crimg="${crUrl(c.src)}" aria-label="chart ${i+1}"><img src="${crUrl(c.src)}" alt="chart ${i+1}" loading="lazy"></button>`).join('');
   const hist=(F.history||[]).slice(-8).reverse().map(h=>`<span>${esc(h.t.slice(5,10).replace('-','/'))}<b>${h.buffett!=null?Math.round(h.buffett)+'% · ':''}VIX ${h.vix!=null?h.vix.toFixed(2):'—'}</b></span>`).join('');
   const msg=F.message_html?`<details class="crmsg"><summary>${esc(F.sent?t.cr_msg:t.fr_msg_chk)}</summary><div>${esc(F.message_html).replace(/&lt;(\/?)(b|i)&gt;/g,'<$1$2>')}</div></details>`:'';
@@ -1715,7 +1723,7 @@ function rFear(t){const F=FR;
    +(q?`<p class="sub">${esc(q[1])}</p>`:'')+meta+`<div class="frg">${bc}${vc}</div>`+mx+ch
    +`<p class="lbl" style="margin-top:24px">${esc(imgs?(F.sent?t.cr_charts:t.fr_chk):t.fr_hist)}</p><div class="crC${imgs?'':' crN'}">${imgs?`<div><div class="crimgs" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:420px">${imgs}</div>${t.cr_kochart?`<p class="crnote">${esc(t.cr_kochart)}</p>`:''}</div>`:''}
      <div class="crside"><div>${imgs?`<p class="lbl" style="margin:0 0 8px">${esc(t.fr_hist)}</p>`:''}<div class="crhist">${hist}</div></div>${msg}<a class="crtg" href="${TG}" target="_blank" rel="noopener">${esc(t.cr_tg.replace(/월·금|Mon & Fri|lunes y viernes|月・金/,m=>({'월·금':'화·목','Mon & Fri':'Tue & Thu','lunes y viernes':'martes y jueves','月・金':'火・木'})[m]))}</a></div></div>`
-   +src(t.fr_src,'radar');}
+   +src(t.fr_src,'radar');if(zOpen==='fb'||zOpen==='fv')zShow(zOpen);}
 function frApply(){if(!FR||!FR.buffett)return;const b=FR.buffett;LANGS.forEach(c=>{const t=L[c];t.chk[3]=[t.chk[3][0],b.value.toFixed(0)+'%',(t.fr_bq[b.key]||'')+' · '+frRank(b,t),b.pct>=75?'fail':'ok'];});}
 const crUrl=p=>(window.SHA_PATHS?'../':'https://stayhungryasi.com/')+p;
 function crNum(k,v){if(v==null)return '—';const f=CR_FMT[k]||[2,0,0];let x=Number(v).toLocaleString('en-US',{minimumFractionDigits:f[0],maximumFractionDigits:f[0],useGrouping:!!f[2]});if(f[1]&&v>0)x='+'+x;return x;}
@@ -2280,10 +2288,11 @@ function lvMap(t,W=360,H=300){const P=(LV.series&&LV.series.path)||[],L=50,R=16,
 /* CHART ZOOM + CROSSHAIR: each chart registers its points; hover or drag shows date and values, click opens a big window */
 const ZD={};function zReg(id,W,H,o){const k=id+'@'+Math.round(W)+'x'+Math.round(H);ZD[k]=Object.assign({W,H},o);return k;}
 const zDate=k=>{const D=new Date(String(k).slice(0,10)+'T12:00:00Z');return isNaN(D)?String(k):new Intl.DateTimeFormat(T().loc,{timeZone:'UTC',year:'numeric',month:'numeric',day:'numeric',weekday:'short'}).format(D);};
-const ZCH={c1:['lv_c1',(t,W,H)=>lvC1(t,W,H)],c2:['lv_c2',(t,W,H)=>lvC2(t,W,H)],c3:['lv_c3',(t,W,H)=>lvC3(t,W,H)],map:['lv_map',(t,W,H)=>lvMap(t,W,H)]};
+const ZCH={c1:['lv_c1',(t,W,H)=>lvC1(t,W,H)],c2:['lv_c2',(t,W,H)=>lvC2(t,W,H)],c3:['lv_c3',(t,W,H)=>lvC3(t,W,H)],map:['lv_map',(t,W,H)=>lvMap(t,W,H)],
+ fb:[t=>fmt(t.fr_hc,{y:FR.buffett.start_year}),(t,W,H)=>frChartB(t,W,H),()=>FR&&FR.buffett],fv:['fr_vc',(t,W,H)=>frChartV(t,W,H),()=>FR&&FR.vix]};
 let zOpen=null;
-function zShow(id){const c=ZCH[id];if(!c||!LV)return;const t=T(),bx=$('zbox');zOpen=id;bx.hidden=false;document.body.style.overflow='hidden';
-  $('zttl').textContent=t[c[0]];$('zhint').textContent=t.lv_zh2;$('zcls').setAttribute('aria-label',t.cr_close||'Close');
+function zShow(id){const c=ZCH[id];if(!c||!(c[2]?c[2]():LV))return;const t=T(),bx=$('zbox');zOpen=id;bx.hidden=false;document.body.style.overflow='hidden';
+  $('zttl').textContent=typeof c[0]==='function'?c[0](t):t[c[0]];$('zhint').textContent=t.lv_zh2;$('zcls').setAttribute('aria-label',t.cr_close||'Close');
   const b=$('zbody'),cw=Math.max(300,b.clientWidth),ch=Math.max(240,innerHeight-(innerWidth<=980?190:230));let W,H;
   if(id==='map'){H=Math.min(ch,cw*300/360);W=H*360/300;}else{W=cw;H=Math.max(240,Math.min(ch,W*(W<600?.95:.52)));}
   W=Math.round(W);H=Math.round(H);b.innerHTML=c[1](t,W,H);const sv=b.querySelector('svg');if(sv){sv.style.width=W+'px';sv.style.maxWidth='100%';}$('zcls').focus({preventScroll:true});}
@@ -2302,6 +2311,7 @@ document.addEventListener('pointerdown',e=>{const sv=e.target.closest&&e.target.
 document.addEventListener('click',e=>{if(e.target.closest('#zcls')){zHide();return;}const bx=e.target.closest('#zbox');if(bx){if(!e.target.closest('.zpan'))zHide();return;}const b=e.target.closest('[data-zk]');if(b){e.preventDefault();zShow(b.dataset.zk);}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&zOpen){e.preventDefault();e.stopImmediatePropagation();zHide();}else if((e.key==='Enter'||e.key===' ')&&e.target.dataset&&e.target.dataset.zk){e.preventDefault();zShow(e.target.dataset.zk);}},true);
 addEventListener('resize',()=>{if(zOpen)zShow(zOpen);});
+addEventListener('scroll',()=>{if(!zOpen&&!$('ztip').hidden){document.querySelectorAll('g.zx').forEach(g=>g.remove());zTip(null);}},{passive:true});
 function lvLine(ser,W,H,o){const L=o.L||8,R=o.R||44,Tp=12,B=22,xs=ser.map(p=>Date.parse(p[0])),x0=xs[0],x1=xs[xs.length-1],X=x=>L+(x-x0)/(x1-x0||1)*(W-L-R);return {X,xs,L,R,Tp,B};}
 function lvC1(t,W=600,H=210){const c=LV.series.credit_1y||[],k=LV.series.kospi_1y||[];if(c.length<2)return '';const g=lvLine(c,W,H,{L:44,R:46}),big=W>=800;
   const cv=c.map(p=>p[1]),kv=k.map(p=>p[1]).filter(v=>v!=null),c0=Math.min(...cv)*.97,c1=Math.max(...cv)*1.02,k0=Math.min(...kv)*.97,k1=Math.max(...kv)*1.02;
