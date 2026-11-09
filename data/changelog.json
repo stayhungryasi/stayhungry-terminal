@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-09",
-      "commit": "HEAD",
+      "commit": "a624d78",
       "message": "Research menu tidied: the SpaceX pages (SpaceX, Mix, Score, Overnight agent, Lock-up) now sit together under a SpaceX analysis heading, and Berkshire moves under More research next to the research library, in the menu and in page order"
     },
     {
