@@ -3,7 +3,7 @@
  "updated": "2026-11-09",
  "count": 17,
  "feed": "https://stayhungryasi.com/r/feed.xml",
- "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.",
+ "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals (full translations in en/es/ja where listed in langs); briefs in 4 languages. Not investment advice.",
  "credit": "stayhungryasi.com",
  "categories": {
   "macro": {
@@ -150,9 +150,21 @@
     }
    ],
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 10,
    "sources": 25,
-   "url": "https://stayhungryasi.com/r/spacex-anthropic-90day-clause/"
+   "url": "https://stayhungryasi.com/r/spacex-anthropic-90day-clause/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/spacex-anthropic-90day-clause/",
+    "en": "https://stayhungryasi.com/r/spacex-anthropic-90day-clause/en/",
+    "es": "https://stayhungryasi.com/r/spacex-anthropic-90day-clause/es/",
+    "ja": "https://stayhungryasi.com/r/spacex-anthropic-90day-clause/ja/"
+   }
   },
   {
    "slug": "railroad-vs-semis-130y",
@@ -248,9 +260,21 @@
     }
    ],
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 7,
    "sources": 13,
-   "url": "https://stayhungryasi.com/r/railroad-vs-semis-130y/"
+   "url": "https://stayhungryasi.com/r/railroad-vs-semis-130y/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/railroad-vs-semis-130y/",
+    "en": "https://stayhungryasi.com/r/railroad-vs-semis-130y/en/",
+    "es": "https://stayhungryasi.com/r/railroad-vs-semis-130y/es/",
+    "ja": "https://stayhungryasi.com/r/railroad-vs-semis-130y/ja/"
+   }
   },
   {
    "slug": "ai-shock-fact-check",
@@ -433,9 +457,21 @@
     }
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 14,
    "sources": 29,
-   "url": "https://stayhungryasi.com/r/ai-shock-fact-check/"
+   "url": "https://stayhungryasi.com/r/ai-shock-fact-check/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/ai-shock-fact-check/",
+    "en": "https://stayhungryasi.com/r/ai-shock-fact-check/en/",
+    "es": "https://stayhungryasi.com/r/ai-shock-fact-check/es/",
+    "ja": "https://stayhungryasi.com/r/ai-shock-fact-check/ja/"
+   }
   },
   {
    "slug": "ai-deleveraging-2026-11",
@@ -634,9 +670,21 @@
     }
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 10,
    "sources": 40,
-   "url": "https://stayhungryasi.com/r/ai-deleveraging-2026-11/"
+   "url": "https://stayhungryasi.com/r/ai-deleveraging-2026-11/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/ai-deleveraging-2026-11/",
+    "en": "https://stayhungryasi.com/r/ai-deleveraging-2026-11/en/",
+    "es": "https://stayhungryasi.com/r/ai-deleveraging-2026-11/es/",
+    "ja": "https://stayhungryasi.com/r/ai-deleveraging-2026-11/ja/"
+   }
   },
   {
    "slug": "us-midterms-2026-redteam",
@@ -841,9 +889,21 @@
     }
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 20,
    "sources": 93,
-   "url": "https://stayhungryasi.com/r/us-midterms-2026-redteam/"
+   "url": "https://stayhungryasi.com/r/us-midterms-2026-redteam/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/us-midterms-2026-redteam/",
+    "en": "https://stayhungryasi.com/r/us-midterms-2026-redteam/en/",
+    "es": "https://stayhungryasi.com/r/us-midterms-2026-redteam/es/",
+    "ja": "https://stayhungryasi.com/r/us-midterms-2026-redteam/ja/"
+   }
   },
   {
    "slug": "anthropic-s1-disruption",
@@ -930,9 +990,21 @@
     ]
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 33,
    "sources": 23,
-   "url": "https://stayhungryasi.com/r/anthropic-s1-disruption/"
+   "url": "https://stayhungryasi.com/r/anthropic-s1-disruption/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/anthropic-s1-disruption/",
+    "en": "https://stayhungryasi.com/r/anthropic-s1-disruption/en/",
+    "es": "https://stayhungryasi.com/r/anthropic-s1-disruption/es/",
+    "ja": "https://stayhungryasi.com/r/anthropic-s1-disruption/ja/"
+   }
   },
   {
    "date": "2026-10-24",
@@ -1022,9 +1094,21 @@
    },
    "slug": "terafab-equipment-map",
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 10,
    "sources": 27,
-   "url": "https://stayhungryasi.com/r/terafab-equipment-map/"
+   "url": "https://stayhungryasi.com/r/terafab-equipment-map/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/terafab-equipment-map/",
+    "en": "https://stayhungryasi.com/r/terafab-equipment-map/en/",
+    "es": "https://stayhungryasi.com/r/terafab-equipment-map/es/",
+    "ja": "https://stayhungryasi.com/r/terafab-equipment-map/ja/"
+   }
   },
   {
    "slug": "claude-gpt-effort-matrix",
@@ -1103,9 +1187,21 @@
     ]
    },
    "kind": "page",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 6,
    "sources": 4,
-   "url": "https://stayhungryasi.com/r/claude-gpt-effort-matrix/"
+   "url": "https://stayhungryasi.com/r/claude-gpt-effort-matrix/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/claude-gpt-effort-matrix/",
+    "en": "https://stayhungryasi.com/r/claude-gpt-effort-matrix/en/",
+    "es": "https://stayhungryasi.com/r/claude-gpt-effort-matrix/es/",
+    "ja": "https://stayhungryasi.com/r/claude-gpt-effort-matrix/ja/"
+   }
   },
   {
    "slug": "asi-bet-meta-googl",
@@ -1232,9 +1328,21 @@
     ]
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 20,
    "sources": 56,
-   "url": "https://stayhungryasi.com/r/asi-bet-meta-googl/"
+   "url": "https://stayhungryasi.com/r/asi-bet-meta-googl/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/asi-bet-meta-googl/",
+    "en": "https://stayhungryasi.com/r/asi-bet-meta-googl/en/",
+    "es": "https://stayhungryasi.com/r/asi-bet-meta-googl/es/",
+    "ja": "https://stayhungryasi.com/r/asi-bet-meta-googl/ja/"
+   }
   },
   {
    "slug": "usdkrw-outlook",
@@ -1372,9 +1480,21 @@
     ]
    },
    "kind": "page",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 21,
    "sources": 3,
-   "url": "https://stayhungryasi.com/r/usdkrw-outlook/"
+   "url": "https://stayhungryasi.com/r/usdkrw-outlook/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/usdkrw-outlook/",
+    "en": "https://stayhungryasi.com/r/usdkrw-outlook/en/",
+    "es": "https://stayhungryasi.com/r/usdkrw-outlook/es/",
+    "ja": "https://stayhungryasi.com/r/usdkrw-outlook/ja/"
+   }
   },
   {
    "slug": "damodaran-ai-warning",
@@ -1492,9 +1612,21 @@
     ]
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 18,
    "sources": 30,
-   "url": "https://stayhungryasi.com/r/damodaran-ai-warning/"
+   "url": "https://stayhungryasi.com/r/damodaran-ai-warning/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/damodaran-ai-warning/",
+    "en": "https://stayhungryasi.com/r/damodaran-ai-warning/en/",
+    "es": "https://stayhungryasi.com/r/damodaran-ai-warning/es/",
+    "ja": "https://stayhungryasi.com/r/damodaran-ai-warning/ja/"
+   }
   },
   {
    "slug": "rates-vs-stocks-20y",
@@ -1581,9 +1713,21 @@
     ]
    },
    "kind": "page",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 2,
    "sources": 3,
-   "url": "https://stayhungryasi.com/r/rates-vs-stocks-20y/"
+   "url": "https://stayhungryasi.com/r/rates-vs-stocks-20y/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/rates-vs-stocks-20y/",
+    "en": "https://stayhungryasi.com/r/rates-vs-stocks-20y/en/",
+    "es": "https://stayhungryasi.com/r/rates-vs-stocks-20y/es/",
+    "ja": "https://stayhungryasi.com/r/rates-vs-stocks-20y/ja/"
+   }
   },
   {
    "slug": "ethereum-outlook",
@@ -1694,9 +1838,21 @@
     ]
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 11,
    "sources": 18,
-   "url": "https://stayhungryasi.com/r/ethereum-outlook/"
+   "url": "https://stayhungryasi.com/r/ethereum-outlook/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/ethereum-outlook/",
+    "en": "https://stayhungryasi.com/r/ethereum-outlook/en/",
+    "es": "https://stayhungryasi.com/r/ethereum-outlook/es/",
+    "ja": "https://stayhungryasi.com/r/ethereum-outlook/ja/"
+   }
   },
   {
    "slug": "ken-griffin-view",
@@ -1786,9 +1942,21 @@
     ]
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 12,
    "sources": 33,
-   "url": "https://stayhungryasi.com/r/ken-griffin-view/"
+   "url": "https://stayhungryasi.com/r/ken-griffin-view/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/ken-griffin-view/",
+    "en": "https://stayhungryasi.com/r/ken-griffin-view/en/",
+    "es": "https://stayhungryasi.com/r/ken-griffin-view/es/",
+    "ja": "https://stayhungryasi.com/r/ken-griffin-view/ja/"
+   }
   },
   {
    "slug": "cybersecurity-ai-era",
@@ -1884,9 +2052,21 @@
     ]
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 11,
    "sources": 26,
-   "url": "https://stayhungryasi.com/r/cybersecurity-ai-era/"
+   "url": "https://stayhungryasi.com/r/cybersecurity-ai-era/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/cybersecurity-ai-era/",
+    "en": "https://stayhungryasi.com/r/cybersecurity-ai-era/en/",
+    "es": "https://stayhungryasi.com/r/cybersecurity-ai-era/es/",
+    "ja": "https://stayhungryasi.com/r/cybersecurity-ai-era/ja/"
+   }
   },
   {
    "slug": "ai-uncorrelated-growth",
@@ -2004,9 +2184,21 @@
     ]
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 6,
    "sources": 23,
-   "url": "https://stayhungryasi.com/r/ai-uncorrelated-growth/"
+   "url": "https://stayhungryasi.com/r/ai-uncorrelated-growth/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/ai-uncorrelated-growth/",
+    "en": "https://stayhungryasi.com/r/ai-uncorrelated-growth/en/",
+    "es": "https://stayhungryasi.com/r/ai-uncorrelated-growth/es/",
+    "ja": "https://stayhungryasi.com/r/ai-uncorrelated-growth/ja/"
+   }
   },
   {
    "slug": "ai-capital-flow-map",
@@ -2106,9 +2298,21 @@
     ]
    },
    "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
    "minutes": 48,
    "sources": 43,
-   "url": "https://stayhungryasi.com/r/ai-capital-flow-map/"
+   "url": "https://stayhungryasi.com/r/ai-capital-flow-map/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/ai-capital-flow-map/",
+    "en": "https://stayhungryasi.com/r/ai-capital-flow-map/en/",
+    "es": "https://stayhungryasi.com/r/ai-capital-flow-map/es/",
+    "ja": "https://stayhungryasi.com/r/ai-capital-flow-map/ja/"
+   }
   }
  ],
  "upcoming_checkpoints": [

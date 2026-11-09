@@ -1,0 +1,268 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "src": "card-en-04.webp",
+ "boxes": "card-en-04.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "keep": [
+  [
+   78,
+   88,
+   113,
+   121
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "Por qué cae tan rápido",
+    "ja": "なぜこれほど速く下がるのか"
+   },
+   "size": 24.5,
+   "color": "#9da7b3",
+   "expand": [
+    -36,
+    0,
+    260,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    1
+   ],
+   "text": {
+    "es": "Mecánica de los ETF apalancados",
+    "ja": "レバレッジETFの構造"
+   },
+   "size": 24.5,
+   "align": "right",
+   "expand": [
+    90,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Cuando el índice cae,",
+    "ja": "指数が下がると"
+   },
+   "weight": "black",
+   "size": 60,
+   "color": "#f3f6fd",
+   "expand": [
+    3,
+    0,
+    230,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "los ETF venden en automático",
+    "ja": "ETFが機械的に売る"
+   },
+   "weight": "black",
+   "size": 60,
+   "color": "#ff5a61",
+   "expand": [
+    7,
+    0,
+    270,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "es": "Punto de partida",
+    "ja": "出発点"
+   },
+   "size": 29.5,
+   "color": "#9aa6bd",
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "Índice de chips ==-12.25%==",
+    "ja": "半導体指数 ==-12.25%=="
+   },
+   "weight": "bold",
+   "size": 47,
+   "color": "#f2f6fc",
+   "accent": "#ff5a61",
+   "expand": [
+    2,
+    0,
+    300,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "ETF largo 3x (tipo SOXL)",
+    "ja": "3倍ロングETF（SOXL系）"
+   },
+   "size": 29.5,
+   "color": "#99a6bc",
+   "expand": [
+    0,
+    0,
+    60,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "ETF inverso 3x (tipo SOXS)",
+    "ja": "3倍インバースETF（SOXS系）"
+   },
+   "size": 29.5,
+   "color": "#99a5bc",
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    9,
+    11,
+    13
+   ],
+   "text": {
+    "es": "Vende el ==73.5%== de su patrimonio al cierre",
+    "ja": "純資産の==73.5%==を\n引け際に売る"
+   },
+   "weight": "bold",
+   "size": 47,
+   "lh": 67,
+   "color": "#f3f6fd",
+   "accent": "#ff5a61",
+   "expand": [
+    2,
+    0,
+    90,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    10,
+    12,
+    14
+   ],
+   "text": {
+    "es": "Añade cortos por el ==147%== de su patrimonio",
+    "ja": "純資産の==147%==の\n空売りを追加"
+   },
+   "weight": "bold",
+   "size": 47,
+   "lh": 67,
+   "color": "#f3f6fe",
+   "accent": "#ff5a61",
+   "expand": [
+    2,
+    0,
+    95,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "es": "Ambos lados ==venden a la vez== → mayor caída",
+    "ja": "ロング・ショート双方が==同時に売り== → 下げ幅拡大"
+   },
+   "weight": "bold",
+   "size": 39,
+   "color": "#f2f6fd",
+   "accent": "#f3b541",
+   "expand": [
+    2,
+    0,
+    150,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    19,
+    20
+   ],
+   "text": {
+    "es": "Fórmula: rebalanceo = palanca × (palanca - 1) × variación del índice (cálculo del autor, aproximado). El índice subyacente real de estos ETF es el ICE Semiconductor Index. En octubre, SOXL recibió un récord de US$7,000 M.",
+    "ja": "計算式：リバランス規模＝倍率×（倍率-1）×指数変動率（筆者計算、近似値）。\n当該ETFの実際の連動指数はICE半導体指数。10月にSOXLへ過去最大の70億ドルが流入。"
+   },
+   "size": 20.5,
+   "lh": 29,
+   "color": "#7d8898",
+   "expand": [
+    0,
+    6,
+    12,
+    22
+   ]
+  },
+  {
+   "boxes": [
+    21
+   ],
+   "text": {
+    "es": "Fuentes: Bloomberg, aviso de NYSE Arca",
+    "ja": "出所：Bloomberg、NYSE Arca告知"
+   },
+   "size": 22,
+   "color": "#7f899a",
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ],
+   "nowrap": true
+  }
+ ]
+}

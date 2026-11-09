@@ -1,0 +1,298 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "chart-4.webp",
+ "boxes": "chart-4.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "weight": "bold",
+   "size": 39,
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    700,
+    0
+   ],
+   "text": {
+    "en": "Railroads afterward: a 4th rally of +60%, then -38% in 1907",
+    "es": "El ferrocarril después: una 4.ª alza de +60% y luego -38% en 1907",
+    "ja": "鉄道のその後：第4次上昇+60%、そして1907年-38%"
+   }
+  },
+  {
+   "boxes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "size": 27,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    850,
+    0
+   ],
+   "text": {
+    "en": "Cowles-Shiller stock index, monthly average, log scale, 1871~1915",
+    "es": "Índice bursátil Cowles-Shiller, promedio mensual, escala logarítmica, 1871~1915",
+    "ja": "コウルズ・シラー株価指数、月平均・対数目盛、1871~1915"
+   }
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "size": 21,
+   "nowrap": true,
+   "pad": 2,
+   "color": "#5c6882",
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "text": {
+    "en": "Period shown in the BofA chart (~1903)",
+    "es": "Periodo que muestra el gráfico de BofA (~1903)",
+    "ja": "BofAチャートが示した期間（~1903）"
+   }
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "weight": "bold",
+   "size": 27,
+   "nowrap": true,
+   "pad": 2,
+   "align": "right",
+   "color": "#edbd64",
+   "expand": [
+    120,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "Rally 4 +60%",
+    "es": "Alza 4 +60%",
+    "ja": "第4次 +60%"
+   }
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "weight": "bold",
+   "size": 27,
+   "nowrap": true,
+   "pad": 2,
+   "align": "center",
+   "color": "#eb646b",
+   "expand": [
+    60,
+    0,
+    60,
+    0
+   ],
+   "text": {
+    "en": "Drop 4 -38%",
+    "es": "Caída 4 -38%",
+    "ja": "第4次 -38%"
+   }
+  },
+  {
+   "boxes": [
+    28
+   ],
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "color": "#e0707a",
+   "expand": [
+    48,
+    0,
+    20,
+    0
+   ],
+   "text": {
+    "en": "1907 panic",
+    "es": "Pánico de 1907",
+    "ja": "1907年恐慌"
+   },
+   "align": "center"
+  },
+  {
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "color": "#e8effb",
+   "rect": [
+    1372,
+    624,
+    1470,
+    645
+   ],
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "text": {
+    "en": "Around 1910",
+    "es": "Hacia 1910",
+    "ja": "1910年前後"
+   }
+  },
+  {
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "color": "#e8effb",
+   "rect": [
+    1372,
+    647,
+    1525,
+    669
+   ],
+   "expand": [
+    0,
+    0,
+    70,
+    0
+   ],
+   "text": {
+    "en": "rail expansion ends",
+    "es": "termina la expansión",
+    "ja": "鉄道網の拡張が終了"
+   }
+  },
+  {
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "color": "#e8effb",
+   "rect": [
+    1372,
+    670,
+    1525,
+    692
+   ],
+   "expand": [
+    0,
+    0,
+    70,
+    0
+   ],
+   "text": {
+    "en": "",
+    "es": "de la red ferroviaria",
+    "ja": ""
+   }
+  },
+  {
+   "rect": [
+    1279,
+    847,
+    1516,
+    872
+   ],
+   "size": 18,
+   "nowrap": true,
+   "pad": 2,
+   "valign": "middle",
+   "color": "#f2f9ff",
+   "expand": [
+    0,
+    0,
+    66,
+    0
+   ],
+   "text": {
+    "en": "Cowles-Shiller index (monthly avg.)",
+    "es": "Índice Cowles-Shiller (media mensual)",
+    "ja": "コウルズ・シラー指数（月平均）"
+   }
+  },
+  {
+   "boxes": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    56,
+    57,
+    58
+   ],
+   "weight": "bold",
+   "size": 21,
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    0,
+    100,
+    0
+   ],
+   "text": {
+    "en": "Source: Shiller/Cowles (de facto railroad index before 1900, more industrials after), GFD. Monthly averages swing less than daily highs/lows",
+    "es": "",
+    "ja": "出所：Shiller/Cowles（1900年以前は事実上の鉄道指数、以後は産業株が増加）、GFD。月平均のため日次の高値・安値より騰落幅が小さい"
+   }
+  },
+  {
+   "weight": "bold",
+   "size": 18,
+   "nowrap": true,
+   "pad": 1,
+   "color": "#c3ccdb",
+   "rect": [
+    57,
+    953,
+    1330,
+    975
+   ],
+   "text": {
+    "en": "",
+    "ja": "",
+    "es": "Fuente: Shiller/Cowles (antes de 1900, de facto un índice ferroviario; después aumentan las industriales), GFD."
+   }
+  },
+  {
+   "weight": "bold",
+   "size": 18,
+   "nowrap": true,
+   "pad": 1,
+   "color": "#c3ccdb",
+   "rect": [
+    57,
+    977,
+    1330,
+    999
+   ],
+   "text": {
+    "en": "",
+    "ja": "",
+    "es": "Al ser promedios mensuales, las oscilaciones son menores que con máximos y mínimos diarios."
+   }
+  }
+ ]
+}

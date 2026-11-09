@@ -1,0 +1,205 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-01.webp",
+ "boxes": "card-01.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "en": "SPACEX × ANTHROPIC · FULL FACT-CHECK",
+    "es": "SPACEX × ANTHROPIC · VERIFICACIÓN COMPLETA",
+    "ja": "SPACEX × ANTHROPIC · 全件検証"
+   },
+   "weight": "bold",
+   "color": "#f26422",
+   "expand": [
+    0,
+    0,
+    480,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "en": "The 90-day clause",
+    "es": "La cláusula de 90 días",
+    "ja": "90日条項と"
+   },
+   "weight": "black",
+   "size": 104,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    370,
+    0
+   ],
+   "minscale": 0.7
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "en": "and Chamath's math",
+    "es": "y el cálculo de Chamath",
+    "ja": "チャマスの計算法"
+   },
+   "weight": "black",
+   "size": 104,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    215,
+    0
+   ],
+   "minscale": 0.7
+  },
+  {
+   "boxes": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "text": {
+    "en": "After the market-cap crash, talk of a 'kingmaker contract' spread.\nWe checked 20 claims one by one against primary sources.",
+    "es": "Tras el desplome bursátil circuló la idea de un 'contrato hacedor de reyes'.**\n**Contrastamos 20 afirmaciones, una por una, con fuentes primarias.",
+    "ja": "時価総額の急落後、「キングメーカー契約」という言葉が広まった。\n20の主張を一つずつ一次資料と照合した。"
+   },
+   "size": 31,
+   "lh": 50,
+   "expand": [
+    0,
+    0,
+    220,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "en": "Original remarks",
+    "es": "Declaración original",
+    "ja": "元の発言"
+   },
+   "weight": "medium",
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "en": "Cross-check",
+    "es": "Contraste",
+    "ja": "クロス検証"
+   },
+   "weight": "medium",
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    22
+   ],
+   "text": {
+    "en": "All-In podcast",
+    "es": "Podcast All-In",
+    "ja": "All-In ポッドキャスト"
+   },
+   "weight": "bold",
+   "expand": [
+    0,
+    0,
+    160,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    23
+   ],
+   "text": {
+    "en": "SEC filings · major outlets",
+    "es": "SEC · prensa internacional",
+    "ja": "SEC開示・主要外信"
+   },
+   "weight": "bold",
+   "size": 33,
+   "expand": [
+    0,
+    0,
+    80,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    24,
+    26
+   ],
+   "text": {
+    "en": "Nov 8 episode · Chamath**\n**Palihapitiya",
+    "es": "Episodio del 8 de noviembre ·**\n**Chamath Palihapitiya",
+    "ja": "11月8日放送・チャマス・\nパリハピティヤ"
+   },
+   "size": 26,
+   "lh": 40,
+   "expand": [
+    0,
+    0,
+    120,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    25,
+    28
+   ],
+   "text": {
+    "en": "SpaceX·Anthropic S-1, Bloomberg,**\n**CNBC, Reuters",
+    "es": "S-1 de SpaceX y Anthropic,**\n**Bloomberg, CNBC, Reuters",
+    "ja": "SpaceX・Anthropic S-1、\nブルームバーグ、CNBC、ロイター"
+   },
+   "size": 26,
+   "lh": 40,
+   "expand": [
+    0,
+    0,
+    25,
+    0
+   ]
+  }
+ ]
+}

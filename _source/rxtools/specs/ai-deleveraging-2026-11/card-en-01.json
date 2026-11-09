@@ -1,0 +1,165 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "src": "card-en-01.webp",
+ "boxes": "card-en-01.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "erase": [
+  [
+   626,
+   758,
+   656,
+   790
+  ],
+  [
+   684,
+   852,
+   716,
+   892
+  ],
+  [
+   777,
+   990,
+   793,
+   1012
+  ],
+  [
+   860,
+   108,
+   1000,
+   118
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "REVISIÓN DEL DESAPALANCAMIENTO DE LA IA",
+    "ja": "AIデレバレッジ点検"
+   },
+   "weight": "bold",
+   "size": 22,
+   "color": "#eab859",
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "2026.11.06",
+    "ja": "2026.11.06"
+   },
+   "align": "right",
+   "size": 23,
+   "expand": [
+    120,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "Índice de chips de EE. UU. (SOX), anoche",
+    "ja": "前夜の米半導体指数（SOX）"
+   },
+   "weight": "bold",
+   "size": 30,
+   "color": "#edb651",
+   "expand": [
+    0,
+    0,
+    450,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "La mayor caída desde marzo de 2020 ==(base de cierre)==",
+    "ja": "2020年3月以来最大の下落==（終値ベース）=="
+   },
+   "size": 36,
+   "color": "#c8d2e2",
+   "accent": "#9fa9b9",
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "es": "No es la IA lo que se derrumba,",
+    "ja": "AIが崩れたのではなく、"
+   },
+   "weight": "black",
+   "size": 72,
+   "color": "#f3f6fc",
+   "expand": [
+    0,
+    0,
+    380,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "es la deuda.",
+    "ja": "借金が崩れている。"
+   },
+   "weight": "black",
+   "size": 72,
+   "color": "#f3b541",
+   "expand": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    8,
+    9
+   ],
+   "text": {
+    "es": "Liquidaciones y reestructuraciones de fondos, cómo se encadenan las ventas apalancadas y los puntos de inflexión de las próximas 2 semanas, en un solo lugar.",
+    "ja": "ファンドの清算・リストラの現状、レバレッジ連鎖売りの構造、そして今後2週間の分岐点までを一度に整理する。"
+   },
+   "size": 32,
+   "color": "#c8d2e1",
+   "expand": [
+    0,
+    0,
+    70,
+    50
+   ]
+  }
+ ]
+}

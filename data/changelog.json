@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-09",
+      "commit": "HEAD",
+      "message": "Every research report now reads in full in English, Spanish and Japanese: all 17 reports, including their charts and card news (redrawn in each language) and the three interactive reports. English readers land on the English version automatically, the library links to your language, and the Korean original stays one tap away"
+    },
+    {
+      "date": "2026-11-09",
       "commit": "a624d78",
       "message": "Research menu tidied: the SpaceX pages (SpaceX, Mix, Score, Overnight agent, Lock-up) now sit together under a SpaceX analysis heading, and Berkshire moves under More research next to the research library, in the menu and in page order"
     },

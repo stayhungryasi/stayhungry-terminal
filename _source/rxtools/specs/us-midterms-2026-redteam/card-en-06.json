@@ -1,0 +1,256 @@
+{
+ "slug": "us-midterms-2026-redteam",
+ "src": "card-en-06.webp",
+ "boxes": "card-en-06.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "text": {
+    "es": "3 PUNTOS QUE CORRIGIÓ EL EQUIPO ROJO",
+    "ja": "レッドチームが正した3つの点"
+   },
+   "boxes": [
+    2
+   ],
+   "weight": "medium",
+   "size": 26,
+   "color": "#e06a33",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    360,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "La lectura habitual",
+    "ja": "よくある解釈、"
+   },
+   "boxes": [
+    3
+   ],
+   "weight": "black",
+   "size": 64,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    380,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "no pasó la prueba.",
+    "ja": "検証すると違った。"
+   },
+   "boxes": [
+    4
+   ],
+   "weight": "black",
+   "size": 64,
+   "color": "#f46420",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    380,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "Si ganan los demócratas, se frenan los aranceles",
+    "ja": "民主党が勝てば関税は止まる"
+   },
+   "rect": [
+    110,
+    459,
+    523,
+    489
+   ],
+   "size": 26,
+   "color": "#acb2c1",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    440,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "Los aranceles casi no dependen del voto: la Sección 301 cubre el ==99.4%== de las importaciones sin votación en el Congreso.",
+    "ja": "関税は選挙とほぼ無関係だ。通商法301条の関税が議会の採決なしに輸入の==99.4%==をカバーする。"
+   },
+   "boxes": [
+    5,
+    6
+   ],
+   "weight": "bold",
+   "size": 30,
+   "color": "#eef1f8",
+   "accent": "#ef6625",
+   "expand": [
+    0,
+    0,
+    60,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "Lo decisivo: el fallo del Tribunal de Comercio Internacional y la Sección 232 (25% a los chips)",
+    "ja": "本当の変数は国際貿易裁判所の判決と232条（半導体25%）"
+   },
+   "boxes": [
+    7,
+    8
+   ],
+   "size": 24,
+   "color": "#c3c8d1",
+   "expand": [
+    0,
+    0,
+    50,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "La barrida republicana es la mayor sorpresa",
+    "ja": "共和党の両院制覇が最大のサプライズ"
+   },
+   "boxes": [
+    9
+   ],
+   "size": 26,
+   "color": "#acb2c1",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    360,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "La barrida republicana es una cola delgada de ==6–15%==. La sorpresa realista es un Congreso dividido.",
+    "ja": "共和党の両院制覇は==6~15%==の薄いテールだ。\n現実的なサプライズはねじれ議会である。"
+   },
+   "boxes": [
+    10,
+    11
+   ],
+   "weight": "bold",
+   "size": 30,
+   "color": "#eef1f8",
+   "accent": "#ef6625",
+   "expand": [
+    0,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "La barrida republicana también puede subir las tasas: efecto mixto en bolsa",
+    "ja": "共和党の両院制覇にも金利上昇の経路があり、株価指数には両面的"
+   },
+   "boxes": [
+    12
+   ],
+   "size": 24,
+   "color": "#c3c8d1",
+   "expand": [
+    0,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "El won coreano está en tendencia de apreciación",
+    "ja": "ウォンは上昇トレンドにある"
+   },
+   "boxes": [
+    13
+   ],
+   "size": 26,
+   "color": "#acb2c1",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    270,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "1,320 (26 oct) → ==1,343.8== wones por dólar (2 nov). Se retira la conclusión.",
+    "ja": "1ドル=1,320ウォン（10月26日）→ ==1,343.8ウォン==（11月2日）。判断を撤回。"
+   },
+   "boxes": [
+    14,
+    15
+   ],
+   "weight": "bold",
+   "size": 30,
+   "color": "#eef1f8",
+   "accent": "#ef6625",
+   "expand": [
+    0,
+    0,
+    60,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "El won es sensible al petróleo y a los flujos extranjeros",
+    "ja": "ウォンは原油価格と外国人の資金フローに敏感だ"
+   },
+   "boxes": [
+    16
+   ],
+   "size": 24,
+   "color": "#c3c8d1",
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "text": {
+    "es": "2 rondas de equipo rojo",
+    "ja": "レッドチーム検証2回"
+   },
+   "boxes": [
+    19
+   ],
+   "size": 18,
+   "color": "#adb0bb",
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    300,
+    2,
+    0,
+    2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,301 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-09.webp",
+ "boxes": "card-en-09.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "keep": [
+  [
+   166,
+   404,
+   193,
+   447
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "weight": "black",
+   "color": "#f2f3f7",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    330,
+    0
+   ],
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Corea es el mercado",
+    "ja": "韓国はAI設備投資の"
+   }
+  },
+  {
+   "weight": "black",
+   "color": "#f2f3f7",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    330,
+    0
+   ],
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "apalancado de la",
+    "ja": "レバレッジ市場だ"
+   }
+  },
+  {
+   "weight": "black",
+   "color": "#f2f3f7",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "es": "inversión en IA",
+    "ja": ""
+   },
+   "rect": [
+    88,
+    304,
+    995,
+    365
+   ]
+  },
+  {
+   "rect": [
+    195,
+    404,
+    578,
+    430
+   ],
+   "text": {
+    "es": "9,063.84 18 jun., primer cierre sobre 9,000",
+    "ja": "9,063.84 6月18日 初の9,000台で引け"
+   },
+   "weight": "bold",
+   "color": "#f5f7fb",
+   "size": 20,
+   "expand": [
+    0,
+    0,
+    240,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "es": "5,059.69 6 nov.",
+    "ja": "5,059.69 11月6日"
+   },
+   "weight": "bold",
+   "align": "right",
+   "expand": [
+    60,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "color": "#abaeb4",
+   "size": 16,
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "jun",
+    "ja": "6月"
+   }
+  },
+  {
+   "color": "#abaeb4",
+   "size": 16,
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "boxes": [
+    21
+   ],
+   "text": {
+    "es": "jul",
+    "ja": "7月"
+   }
+  },
+  {
+   "color": "#abaeb4",
+   "size": 16,
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "boxes": [
+    22
+   ],
+   "text": {
+    "es": "ago",
+    "ja": "8月"
+   }
+  },
+  {
+   "color": "#abaeb4",
+   "size": 16,
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "boxes": [
+    23
+   ],
+   "text": {
+    "es": "sep",
+    "ja": "9月"
+   }
+  },
+  {
+   "color": "#abaeb4",
+   "size": 16,
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "boxes": [
+    24
+   ],
+   "text": {
+    "es": "oct",
+    "ja": "10月"
+   }
+  },
+  {
+   "color": "#abaeb4",
+   "size": 16,
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "boxes": [
+    25
+   ],
+   "text": {
+    "es": "nov",
+    "ja": "11月"
+   }
+  },
+  {
+   "boxes": [
+    26
+   ],
+   "text": {
+    "es": "Solo se trazan cierres confirmados en notas de prensa; no es una serie diaria continua.",
+    "ja": "報道で確認できた終値の地点のみを示した軌跡であり、日次の連続データではない。"
+   },
+   "expand": [
+    0,
+    0,
+    190,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    27
+   ],
+   "text": {
+    "es": "−₩12 bill.",
+    "ja": "−12兆"
+   },
+   "weight": "light",
+   "size": 100,
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    0,
+    185,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    29,
+    31
+   ],
+   "text": {
+    "es": "Venta neta extranjera, seis sesiones seguidas",
+    "ja": "外国人の6営業日連続売り越し"
+   },
+   "expand": [
+    0,
+    0,
+    77,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    30
+   ],
+   "text": {
+    "es": "Wones por dólar, +14.5 en un día",
+    "ja": "ウォン/ドル、1日で+14.5ウォン"
+   },
+   "expand": [
+    0,
+    0,
+    44,
+    0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,254 @@
+{
+ "slug": "us-midterms-2026-redteam",
+ "src": "card-en-04.webp",
+ "boxes": "card-en-04.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2,
+    3
+   ],
+   "text": {
+    "es": "FACTOR REAL N.º 1 · FINANCIAMIENTO DE LA IA",
+    "ja": "本当の変数① · AIの資金調達"
+   },
+   "weight": "medium",
+   "size": 26,
+   "color": "#d86d3b",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "es": "Lo que sacudió el final de octubre",
+    "ja": "10月末を揺らしたのは"
+   },
+   "weight": "black",
+   "size": 56,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "minscale": 0.5,
+   "expand": [
+    0,
+    0,
+    180,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "no fue la elección.",
+    "ja": "選挙ではなかった。"
+   },
+   "weight": "black",
+   "size": 56,
+   "color": "#f46523",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    7,
+    8
+   ],
+   "text": {
+    "es": "Caída de Alphabet en un solo día, el 29 de octubre. El capex trimestral llegó a $51.4 mil millones y el flujo de caja libre pasó a -$9.1 mil millones.",
+    "ja": "アルファベットの10月29日の1日の下落率。\n四半期の設備投資は514億ドルに達し、\nフリーキャッシュフローは-91億ドルに転じた。"
+   },
+   "size": 31,
+   "lh": 42,
+   "color": "#c6c9d3",
+   "expand": [
+    0,
+    0,
+    33,
+    40
+   ]
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Intel · 30 oct",
+    "ja": "インテル · 10月30日"
+   },
+   "size": 25,
+   "color": "#adb1bd",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    150,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "Peor día desde 1974",
+    "ja": "1974年以来最悪の1日"
+   },
+   "size": 24,
+   "color": "#adb1bb",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    150,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "ETF de chips SMH · 30 oct",
+    "ja": "半導体ETF SMH · 10月30日"
+   },
+   "size": 25,
+   "color": "#adb1be",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    120,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "text": {
+    "es": "S&P 500 · 30 oct",
+    "ja": "S&P 500 · 10月30日"
+   },
+   "size": 25,
+   "color": "#adb2be",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    150,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "7,580.07, bajo la media de 100 días",
+    "ja": "7,580.07、100日線を下回る"
+   },
+   "size": 24,
+   "color": "#adb0bc",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    130,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "es": "Amazon · últimos 12 meses",
+    "ja": "アマゾン · 直近12カ月"
+   },
+   "size": 25,
+   "color": "#adb1bd",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    110,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "es": "-$42.4 mil mill.",
+    "ja": "-424億ドル"
+   },
+   "weight": "bold",
+   "size": 54,
+   "color": "#eef1f4",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    160,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "Flujo de caja libre",
+    "ja": "フリーキャッシュフロー"
+   },
+   "size": 24,
+   "color": "#adb1bc",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    21,
+    22
+   ],
+   "text": {
+    "es": "La próxima prueba no es el voto: son ==**los resultados de Nvidia del 17 de noviembre**== y la OPI de Anthropic.",
+    "ja": "次の試金石は選挙ではない。==**11月17日のエヌビディア決算**==とAnthropicのIPOだ。"
+   },
+   "size": 32,
+   "lh": 45,
+   "color": "#eef0f4",
+   "accent": "#f46523",
+   "expand": [
+    0,
+    0,
+    14,
+    10
+   ]
+  }
+ ]
+}

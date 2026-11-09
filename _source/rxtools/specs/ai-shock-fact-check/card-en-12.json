@@ -1,0 +1,152 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-12.webp",
+ "boxes": "card-en-12.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "erase": [
+  [
+   843,
+   680,
+   862,
+   712
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "weight": "black",
+   "size": 100,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "minscale": 0.9,
+   "expand": [
+    0,
+    0,
+    181,
+    0
+   ],
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "La tecnología",
+    "ja": "技術は正しく、"
+   }
+  },
+  {
+   "weight": "black",
+   "size": 100,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "minscale": 0.9,
+   "expand": [
+    0,
+    0,
+    299,
+    0
+   ],
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "puede acertar",
+    "ja": "価格は誤りうる。"
+   }
+  },
+  {
+   "weight": "black",
+   "size": 100,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "minscale": 0.9,
+   "expand": [
+    0,
+    0,
+    319,
+    0
+   ],
+   "boxes": [
+    4
+   ],
+   "text": {
+    "es": "y el precio, fallar.",
+    "ja": ""
+   }
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "Internet cambió el mundo, como se predijo.",
+    "ja": "インターネットは予言どおり世界を変えた。"
+   },
+   "color": "#d2d5dc",
+   "expand": [
+    0,
+    0,
+    280,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "es": "Quien compró en el pico del Nasdaq de marzo de 2000 esperó 15 años.",
+    "ja": "2000年3月のナスダック高値で買った人は15年待った。"
+   },
+   "color": "#d2d5dc",
+   "lh": 46,
+   "expand": [
+    0,
+    0,
+    150,
+    50
+   ]
+  },
+  {
+   "boxes": [
+    8,
+    9,
+    10
+   ],
+   "text": {
+    "es": "Análisis basado en notas de prensa, documentos regulatorios e investigación públicos; no es una recomendación de compra o venta de ningún valor. Las probabilidades de los escenarios son juicio subjetivo del autor y algunas cifras son citas de segunda mano.",
+    "ja": "公開報道・開示資料・リサーチに基づく分析であり、特定銘柄の売買を推奨するものではない。シナリオ確率は筆者の主観的判断であり、一部の数値は二次引用である。"
+   },
+   "size": 18,
+   "lh": 31,
+   "color": "#abafb6",
+   "expand": [
+    0,
+    0,
+    98,
+    30
+   ]
+  }
+ ]
+}

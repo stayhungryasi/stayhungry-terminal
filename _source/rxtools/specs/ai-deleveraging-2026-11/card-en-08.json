@@ -1,0 +1,216 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "src": "card-en-08.webp",
+ "boxes": "card-en-08.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "keep": [
+  [
+   78,
+   86,
+   113,
+   121
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "Escenarios",
+    "ja": "シナリオ"
+   },
+   "size": 24,
+   "color": "#9da7b4",
+   "expand": [
+    -36,
+    0,
+    250,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    1
+   ],
+   "text": {
+    "es": "Probabilidades: estimación del autor",
+    "ja": "確率は筆者推定"
+   },
+   "size": 23.5,
+   "align": "right",
+   "expand": [
+    120,
+    0,
+    0,
+    5
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Por delante, ==tres caminos==",
+    "ja": "この先、==3つの道=="
+   },
+   "weight": "black",
+   "size": 61,
+   "color": "#f2f5fa",
+   "accent": "#f3b542",
+   "expand": [
+    0,
+    0,
+    350,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "es": "Base: turbulencia y luego cierre",
+    "ja": "基本：陣痛の後に収束"
+   },
+   "weight": "bold",
+   "size": 37,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    5,
+    6
+   ],
+   "text": {
+    "es": "El desapalancamiento termina tras 2-4 semanas de volatilidad. Detonantes: baja el crédito con margen en Taiwán, Nvidia sin sorpresas, Anthropic ya cotiza",
+    "ja": "2~4週間の変動の後、デレバレッジが終了。トリガー：台湾の信用残高減少、エヌビディア決算が無難、Anthropic上場完了"
+   },
+   "size": 24.5,
+   "expand": [
+    0,
+    0,
+    35,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Bajista: llamadas de margen en cadena",
+    "ja": "下方：連鎖的なマージンコール"
+   },
+   "weight": "bold",
+   "size": 37,
+   "expand": [
+    0,
+    0,
+    265,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    10,
+    11
+   ],
+   "text": {
+    "es": "Detonantes: venta forzada de un gran fondo confirmada, IPO aplazada, VIX por encima de 35, se extienden moratorias estatales a centros de datos",
+    "ja": "トリガー：大型ファンドの強制売却確認、IPO延期、VIX 35突破、州単位のデータセンター・モラトリアム拡大"
+   },
+   "size": 24.5,
+   "expand": [
+    0,
+    0,
+    39,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "Alcista: rebote brusco como en julio",
+    "ja": "上方：7月型の急反発"
+   },
+   "weight": "bold",
+   "size": 36,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    15,
+    16
+   ],
+   "text": {
+    "es": "Detonantes: salida confirmada de vendedores forzados, Nvidia sorprende. Precedente: tras la liquidación de julio, muchas acciones de IA rebotaron 15-25% intradía",
+    "ja": "トリガー：強制売り手の退場確認、エヌビディア決算のサプライズ。7月の清算直後、AI銘柄の多くが日中15~25%反発した前例"
+   },
+   "size": 24.5,
+   "lh": 36,
+   "expand": [
+    0,
+    0,
+    126,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    18,
+    19
+   ],
+   "text": {
+    "es": "Candidatos a fortaleza relativa: electricidad y servicios públicos, sectores defensivos / a debilidad relativa: memoria, neoclouds, chips de Corea y Taiwán (juicio del autor)",
+    "ja": "相対的に強い候補：電力・公益、ディフェンシブ業種／相対的に弱い候補：メモリー、ネオクラウド、韓国・台湾の半導体（筆者の判断）"
+   },
+   "size": 22,
+   "lh": 34,
+   "expand": [
+    0,
+    0,
+    45,
+    6
+   ]
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "No es una recomendación sobre ningún valor",
+    "ja": "特定銘柄の売買推奨ではない"
+   },
+   "size": 22.3,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "nowrap": true
+  }
+ ]
+}

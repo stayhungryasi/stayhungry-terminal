@@ -1,0 +1,261 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-02.webp",
+ "boxes": "card-02.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "en": "The original claim",
+    "es": "La afirmación original",
+    "ja": "原文の主張"
+   },
+   "weight": "bold",
+   "color": "#f26421",
+   "size": 25,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "en": "One election",
+    "es": "Una elección cambia",
+    "ja": "選挙一つが"
+   },
+   "weight": "black",
+   "nowrap": true,
+   "expand": [
+    0,
+    -4,
+    540,
+    0
+   ],
+   "size": 76
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "en": "changes compute prices",
+    "es": "el precio del cómputo",
+    "ja": "コンピュート価格を変える"
+   },
+   "weight": "black",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    262,
+    0
+   ],
+   "minscale": 0.7,
+   "size": 76
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "en": "Democratic midterm landslide",
+    "es": "Arrolladora victoria demócrata en las intermedias",
+    "ja": "中間選挙で民主党が圧勝"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    510,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "text": {
+    "en": "Even Texas flips; data center permits may freeze",
+    "es": "Hasta Texas voltea: se teme un freno a permisos de centros de datos",
+    "ja": "テキサスまで覆り、データセンター認可凍結の懸念"
+   },
+   "size": 27,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    255,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    11,
+    12,
+    13
+   ],
+   "text": {
+    "en": "Scramble for new supply",
+    "es": "Carrera por nueva oferta",
+    "ja": "新規供給の模索"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    14,
+    15,
+    16,
+    17
+   ],
+   "text": {
+    "en": "Whoever already holds land and power becomes the 'landlord'",
+    "es": "Quien ya tiene terreno y energía se vuelve el 'casero'",
+    "ja": "既に用地と電力を握る側が「家主」になる"
+   },
+   "size": 27,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    330,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "en": "Spot prices 2~3x",
+    "es": "Precio spot de 2~3 veces",
+    "ja": "現物価格2~3倍"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "en": "SpaceX uses the 90-day clause to cut the contract and re-sign at spot",
+    "es": "SpaceX corta con la cláusula de 90 días y recontrata a precio spot",
+    "ja": "SpaceXが90日条項で契約を打ち切り、現物価格で再契約"
+   },
+   "size": 27,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "en": "Anthropic gives in",
+    "es": "Anthropic cede",
+    "ja": "Anthropicが屈服"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    21,
+    22,
+    23,
+    24
+   ],
+   "text": {
+    "en": "A 'tenant' with no alternative capacity accepts the higher price",
+    "es": "El 'inquilino' sin capacidad alternativa acepta el precio más alto",
+    "ja": "代替容量のない「テナント」は上がった価格を受け入れる"
+   },
+   "size": 27,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    233,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+   ],
+   "text": {
+    "en": "The source text is a third-hand version: a Chinese summary of the All-In episode, translated again into Korean.",
+    "es": "El texto original es una versión de tercera mano: un resumen en chino del episodio de All-In, traducido de nuevo al coreano.",
+    "ja": "原文はAll-In放送を中国語で要約した記事を、さらに韓国語に翻訳した3次加工版である。"
+   },
+   "size": 21,
+   "lh": 32,
+   "color": "#7e8088",
+   "expand": [
+    0,
+    0,
+    156,
+    30
+   ]
+  }
+ ]
+}

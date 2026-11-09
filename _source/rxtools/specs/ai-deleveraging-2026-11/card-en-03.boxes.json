@@ -1,0 +1,405 @@
+[
+{
+"i": 0,
+"rect": [
+81,
+92,
+347,
+116
+],
+"ocr": "02 Liquidation tracker",
+"bg": "#0e1726",
+"fg": "#9da7b4",
+"h": 24
+},
+{
+"i": 1,
+"rect": [
+81,
+92,
+998,
+116
+],
+"ocr": "02 Liquidation tracker With confirmation level",
+"bg": "#0e1726",
+"fg": "#99a3b0",
+"h": 24
+},
+{
+"i": 2,
+"rect": [
+718,
+92,
+998,
+111
+],
+"ocr": "With confirmation level",
+"bg": "#0e1726",
+"fg": "#9ba6b5",
+"h": 19
+},
+{
+"i": 3,
+"rect": [
+81,
+143,
+552,
+210
+],
+"ocr": "Who is cracking",
+"bg": "#0e1726",
+"fg": "#f3f5fb",
+"h": 67
+},
+{
+"i": 4,
+"rect": [
+407,
+275,
+801,
+301
+],
+"ocr": "Shrinks stock long-short unit, cuts",
+"bg": "#15223b",
+"fg": "#c5d1e5",
+"h": 26
+},
+{
+"i": 5,
+"rect": [
+106,
+292,
+239,
+327
+],
+"ocr": "Walleye",
+"bg": "#15213b",
+"fg": "#f4f7ff",
+"h": 35
+},
+{
+"i": 6,
+"rect": [
+406,
+311,
+781,
+337
+],
+"ocr": "teams, returns some capital. Oct",
+"bg": "#15223b",
+"fg": "#c4d1e4",
+"h": 26
+},
+{
+"i": 7,
+"rect": [
+107,
+333,
+290,
+354
+],
+"ocr": "5178 AUM - Nov 5",
+"bg": "#15213b",
+"fg": "#dab26e",
+"h": 21
+},
+{
+"i": 8,
+"rect": [
+407,
+348,
+471,
+367
+],
+"ocr": "-5.9%",
+"bg": "#15213b",
+"fg": "#c5d1e6",
+"h": 19
+},
+{
+"i": 9,
+"rect": [
+109,
+444,
+363,
+481
+],
+"ocr": "Engineers Gate",
+"bg": "#15213b",
+"fg": "#f3f7ff",
+"h": 37
+},
+{
+"i": 10,
+"rect": [
+407,
+446,
+771,
+472
+],
+"ocr": "Cut most of its 'Synthesis' stock",
+"bg": "#15213b",
+"fg": "#c5d1e4",
+"h": 26
+},
+{
+"i": 11,
+"rect": [
+837,
+464,
+954,
+483
+],
+"ocr": "Confirmed",
+"bg": "#1e3a33",
+"fg": "#4ec69f",
+"h": 19
+},
+{
+"i": 12,
+"rect": [
+107,
+487,
+304,
+509
+],
+"ocr": "Quant fund ㆍ Nov 5",
+"bg": "#15223b",
+"fg": "#d5b273",
+"h": 22
+},
+{
+"i": 13,
+"rect": [
+406,
+484,
+463,
+502
+],
+"ocr": "team",
+"bg": "#15213b",
+"fg": "#c6d3e6",
+"h": 18
+},
+{
+"i": 14,
+"rect": [
+109,
+578,
+299,
+607
+],
+"ocr": "Millennium",
+"bg": "#15213b",
+"fg": "#f3f7fe",
+"h": 29
+},
+{
+"i": 15,
+"rect": [
+109,
+579,
+954,
+617
+],
+"ocr": "Millennium Pulled $1.5B+ from two outside Confirmed",
+"bg": "#15213b",
+"fg": "#eef3f9",
+"h": 38
+},
+{
+"i": 16,
+"rect": [
+408,
+579,
+768,
+603
+],
+"ocr": "Pulled $1.5B+ from two outside",
+"bg": "#15213b",
+"fg": "#c5d2e4",
+"h": 24
+},
+{
+"i": 17,
+"rect": [
+107,
+620,
+302,
+642
+],
+"ocr": "$95B+AUM - Nov 3",
+"bg": "#15213b",
+"fg": "#d7b274",
+"h": 22
+},
+{
+"i": 18,
+"rect": [
+408,
+616,
+657,
+642
+],
+"ocr": "managers after losses",
+"bg": "#15213b",
+"fg": "#c5d1e5",
+"h": 26
+},
+{
+"i": 19,
+"rect": [
+107,
+712,
+353,
+748
+],
+"ocr": "5 Fidelity ETFs",
+"bg": "#15213b",
+"fg": "#f3f7ff",
+"h": 36
+},
+{
+"i": 20,
+"rect": [
+408,
+732,
+830,
+758
+],
+"ocr": "Last trade Nov 12, liquidation Nov 19",
+"bg": "#15213b",
+"fg": "#c5d1e5",
+"h": 26
+},
+{
+"i": 21,
+"rect": [
+108,
+753,
+377,
+780
+],
+"ocr": "Incl. 3 'Disruptive' - Oct 15",
+"bg": "#17223c",
+"fg": "#9da7b7",
+"h": 27
+},
+{
+"i": 22,
+"rect": [
+110,
+848,
+300,
+877
+],
+"ocr": "Situational",
+"bg": "#15213b",
+"fg": "#f4f8ff",
+"h": 29
+},
+{
+"i": 23,
+"rect": [
+411,
+871,
+652,
+897
+],
+"ocr": "‘Blew up’ claims on X",
+"bg": "#15213b",
+"fg": "#c4d1e4",
+"h": 26
+},
+{
+"i": 24,
+"rect": [
+418,
+871,
+951,
+914
+],
+"ocr": "Blew up’ claims on X Unverified",
+"bg": "#16213b",
+"fg": "#c9a7ba",
+"h": 43
+},
+{
+"i": 25,
+"rect": [
+109,
+892,
+293,
+918
+],
+"ocr": "Awareness",
+"bg": "#15213b",
+"fg": "#f5f8ff",
+"h": 26
+},
+{
+"i": 26,
+"rect": [
+411,
+906,
+740,
+933
+],
+"ocr": "No major outlet confirms it",
+"bg": "#15213b",
+"fg": "#f0f7ff",
+"h": 27
+},
+{
+"i": 27,
+"rect": [
+109,
+932,
+347,
+950
+],
+"ocr": "Aschenbrenner + Nov 5",
+"bg": "#17223c",
+"fg": "#d9b270",
+"h": 18
+},
+{
+"i": 28,
+"rect": [
+82,
+1007,
+891,
+1030
+],
+"ocr": "November prime-broker margin calls or redemption gates: none reported so far.",
+"bg": "#0e1726",
+"fg": "#7f8999",
+"h": 23
+},
+{
+"i": 29,
+"rect": [
+81,
+1273,
+727,
+1296
+],
+"ocr": "Sources: Investing.com, Bloomberg, Hedgeweek, Fidelity, CNBC",
+"bg": "#0e1726",
+"fg": "#7f8999",
+"h": 23
+},
+{
+"i": 30,
+"rect": [
+930,
+1273,
+999,
+1295
+],
+"ocr": "03/10",
+"bg": "#0e1726",
+"fg": "#f0f7ff",
+"h": 22
+}
+]

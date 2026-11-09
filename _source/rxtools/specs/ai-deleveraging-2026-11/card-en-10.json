@@ -1,0 +1,262 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "src": "card-en-10.webp",
+ "boxes": "card-en-10.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "keep": [
+  [
+   78,
+   86,
+   113,
+   121
+  ],
+  [
+   77,
+   334,
+   128,
+   385
+  ],
+  [
+   77,
+   472,
+   128,
+   524
+  ],
+  [
+   77,
+   611,
+   128,
+   662
+  ],
+  [
+   77,
+   749,
+   128,
+   801
+  ],
+  [
+   77,
+   888,
+   128,
+   940
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "Revisión de la cuenta propia",
+    "ja": "自分の口座を点検"
+   },
+   "size": 23.5,
+   "color": "#9da7b4",
+   "expand": [
+    -36,
+    0,
+    250,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    1
+   ],
+   "text": {
+    "es": "5 puntos para revisar hoy",
+    "ja": "今日すぐ確認すべき5項目"
+   },
+   "size": 23.8,
+   "align": "right",
+   "expand": [
+    120,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Preguntas para ==hacerse==",
+    "ja": "いま==自分に=="
+   },
+   "weight": "black",
+   "size": 62.5,
+   "color": "#f2f6fc",
+   "accent": "#f3b542",
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "ahora mismo",
+    "ja": "問うべき質問"
+   },
+   "weight": "black",
+   "size": 62.5,
+   "color": "#f2f6fc",
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    4,
+    5
+   ],
+   "text": {
+    "es": "¿Qué peso tienen los chips y la IA, y cuánto de eso son productos apalancados 3x?",
+    "ja": "半導体・AIの比率は何%で、\nそのうち3倍レバレッジ商品はいくらか？"
+   },
+   "weight": "bold",
+   "size": 32.4,
+   "lh": 47,
+   "color": "#f2f6fc",
+   "expand": [
+    -71,
+    0,
+    8,
+    8
+   ]
+  },
+  {
+   "boxes": [
+    6,
+    7
+   ],
+   "text": {
+    "es": "Con margen o préstamos con garantía de acciones, ¿hay holgura suficiente en la garantía?",
+    "ja": "信用取引・株式担保ローンがあるなら、\n担保比率の余裕は十分か？"
+   },
+   "weight": "bold",
+   "size": 32.4,
+   "lh": 47,
+   "color": "#f2f6fc",
+   "expand": [
+    -71,
+    0,
+    98,
+    8
+   ]
+  },
+  {
+   "boxes": [
+    8,
+    9
+   ],
+   "text": {
+    "es": "Si cae otro 10-15% desde aquí, ¿cuánto se pierde y se puede aguantar?",
+    "ja": "ここからさらに10~15%下落したら、\n損失額はいくらで、耐えられるか？"
+   },
+   "weight": "bold",
+   "size": 32.4,
+   "lh": 47,
+   "color": "#f2f6fc",
+   "expand": [
+    0,
+    0,
+    3,
+    8
+   ]
+  },
+  {
+   "boxes": [
+    10,
+    11
+   ],
+   "text": {
+    "es": "¿Hay peso en otro eje, como electricidad o servicios públicos?",
+    "ja": "電力・公益など別の軸の比率はあるか？"
+   },
+   "weight": "bold",
+   "size": 32.4,
+   "lh": 47,
+   "color": "#f2f6fc",
+   "expand": [
+    -71,
+    0,
+    41,
+    8
+   ]
+  },
+  {
+   "boxes": [
+    12,
+    13
+   ],
+   "text": {
+    "es": "¿Están fijadas de antemano las reglas (niveles de precio, montos) ante otra caída?",
+    "ja": "追加下落時の対応原則（価格帯・金額）を\n事前に決めてあるか？"
+   },
+   "weight": "bold",
+   "size": 32.4,
+   "lh": 47,
+   "color": "#f2f6fc",
+   "expand": [
+    -71,
+    0,
+    41,
+    8
+   ]
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "text": {
+    "es": "Informe completo · análisis anteriores",
+    "ja": "全文レポート・過去の分析を見る"
+   },
+   "size": 27.2,
+   "align": "right",
+   "expand": [
+    180,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    16,
+    17,
+    18
+   ],
+   "text": {
+    "es": "Se recotejaron unos 40 puntos con las fuentes. 'No confirmado' indica que ningún medio de primer nivel lo ha confirmado; las probabilidades, los niveles de riesgo y el juicio de fase son estimaciones subjetivas del autor. Contenido solo informativo; no es una recomendación de compra o venta de ningún valor. La decisión de inversión y su responsabilidad son del inversionista.",
+    "ja": "作成後、約40項目を出所と再照合した。「未確認」は一次報道で確認できていない事項であり、確率・リスク度・局面の判断は筆者の主観的な推定である。本コンテンツは情報提供を目的としており、特定銘柄の売買推奨ではない。投資判断と責任は投資家本人にある。"
+   },
+   "size": 19.5,
+   "lh": 31,
+   "color": "#7f8999",
+   "expand": [
+    0,
+    14,
+    22,
+    0
+   ]
+  }
+ ]
+}

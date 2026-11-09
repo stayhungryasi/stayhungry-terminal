@@ -1,0 +1,437 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "card-08.webp",
+ "boxes": "card-08.boxes.json",
+ "langs": [
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "鉄道網が完成すると、"
+   },
+   "weight": "black",
+   "color": "#f3f6fc",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    3,
+    4,
+    5
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "成長株は==規制産業==になった"
+   },
+   "weight": "black",
+   "color": "#f3f6fc",
+   "accent": "#ff5a61",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    270,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "en": "==07== Railroads afterward ②",
+    "es": "==07== Los ferrocarriles después ②",
+    "ja": "==07== 鉄道のその後 ②"
+   },
+   "weight": "bold",
+   "color": "#cad3e2",
+   "accent": "#f3b541",
+   "size": 25,
+   "expand": [
+    0,
+    0,
+    330,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    1
+   ],
+   "text": {
+    "en": "1910 → today",
+    "es": "1910 → hoy",
+    "ja": "1910 → 現在"
+   },
+   "align": "right",
+   "color": "#8f99aa",
+   "size": 23,
+   "expand": [
+    160,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "en": "c. 1910",
+    "es": "Hacia 1910",
+    "ja": "1910年前後"
+   },
+   "weight": "bold",
+   "color": "#f2f8ff",
+   "size": 27,
+   "nowrap": true,
+   "valign": "middle",
+   "expand": [
+    0,
+    4,
+    40,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "en": "1920s",
+    "es": "Años 1920",
+    "ja": "1920年代"
+   },
+   "weight": "bold",
+   "color": "#f2f8ff",
+   "size": 27,
+   "nowrap": true,
+   "valign": "middle",
+   "expand": [
+    0,
+    0,
+    50,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    31
+   ],
+   "text": {
+    "en": "1956~today",
+    "es": "1956~hoy",
+    "ja": "1956~現在"
+   },
+   "weight": "bold",
+   "color": "#f2f8ff",
+   "size": 27,
+   "nowrap": true,
+   "valign": "middle",
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    8,
+    9,
+    10
+   ],
+   "text": {
+    "en": "Almost no new lines left to lay",
+    "es": "Casi no quedan líneas por tender",
+    "ja": "敷く路線がほぼ残っていない"
+   },
+   "color": "#cad3e1",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.85,
+   "valign": "middle",
+   "expand": [
+    0,
+    4,
+    390,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    14,
+    15,
+    16,
+    17
+   ],
+   "text": {
+    "en": "Nationalized by the government during World War I",
+    "es": "Nacionalizados durante la Primera Guerra Mundial",
+    "ja": "第一次世界大戦中に政府が国有化"
+   },
+   "color": "#cad3e1",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.85,
+   "valign": "middle",
+   "expand": [
+    0,
+    2,
+    350,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "en": "All-time high at the time",
+    "es": "Máximo histórico hasta entonces",
+    "ja": "当時として史上最高値"
+   },
+   "color": "#cad3e1",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.85,
+   "valign": "middle",
+   "expand": [
+    0,
+    2,
+    428,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    21,
+    23,
+    24,
+    25
+   ],
+   "text": {
+    "en": "==**-90% or more.**== Below the 1832 level",
+    "es": "==**-90% o más.**== Por debajo del nivel de 1832",
+    "ja": "==**-90%以上。**==1832年の水準を下回る"
+   },
+   "color": "#cad3e1",
+   "accent": "#ef6269",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.85,
+   "valign": "middle",
+   "expand": [
+    0,
+    2,
+    302,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    26
+   ],
+   "text": {
+    "en": "About a 5x rebound, then another fall; bottom in 1942",
+    "es": "Rebote de unas 5 veces y nueva caída; mínimo en 1942",
+    "ja": "約5倍に反発した後に再下落、1942年に底"
+   },
+   "color": "#cad3e1",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.85,
+   "valign": "middle",
+   "expand": [
+    0,
+    0,
+    264,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    32,
+    33,
+    34,
+    35,
+    36
+   ],
+   "text": {
+    "en": "Revived via freight and containers; consolidated into a few",
+    "es": "Renace con carga y contenedores; se concentra en pocas firmas",
+    "ja": "貨物・コンテナで復活、少数に統合"
+   },
+   "color": "#cad3e1",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.8,
+   "valign": "middle",
+   "expand": [
+    0,
+    0,
+    282,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    38
+   ],
+   "text": {
+    "en": "Railroads' share of the US stock market",
+    "es": "Peso del ferrocarril en la bolsa de EE. UU.",
+    "ja": "米国株式市場に占める鉄道の比率"
+   },
+   "color": "#8c98b1",
+   "size": 22,
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    2,
+    180,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    41
+   ],
+   "text": {
+    "en": "63% → ==under 1%==",
+    "es": "63% → ==menos de 1%==",
+    "ja": "63% → ==1%未満=="
+   },
+   "weight": "black",
+   "color": "#f3f7fe",
+   "accent": "#ff5a61",
+   "size": 47,
+   "nowrap": true,
+   "minscale": 0.75,
+   "valign": "middle",
+   "expand": [
+    0,
+    0,
+    58,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    39,
+    37,
+    40
+   ],
+   "text": {
+    "en": "Long-run return, 1830~2023",
+    "es": "Rendimiento de largo plazo, 1830~2023",
+    "ja": "1830~2023年の長期リターン"
+   },
+   "color": "#8c98b1",
+   "size": 22,
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    2,
+    160,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    42
+   ],
+   "text": {
+    "en": "8.3% a year",
+    "es": "8.3% anual",
+    "ja": "年8.3%"
+   },
+   "weight": "black",
+   "color": "#f2b543",
+   "size": 50,
+   "nowrap": true,
+   "valign": "middle",
+   "expand": [
+    0,
+    0,
+    220,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    43
+   ],
+   "text": {
+    "en": "dividends included",
+    "es": "con dividendos",
+    "ja": "配当込み"
+   },
+   "color": "#8c98b1",
+   "size": 22,
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    200,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    44
+   ],
+   "text": {
+    "en": "It became not a failed industry, but an ordinary one.",
+    "es": "No se volvió una industria quebrada, sino una industria común.",
+    "ja": "滅びた産業ではなく、平凡な産業になった。"
+   },
+   "color": "#8e98a8",
+   "size": 21,
+   "nowrap": true,
+   "valign": "middle",
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    45
+   ],
+   "text": {
+    "en": "Source: GFD, Credit Suisse Yearbook",
+    "es": "Fuente: GFD, Credit Suisse Yearbook",
+    "ja": "出所：GFD, Credit Suisse Yearbook"
+   },
+   "color": "#8e98a9",
+   "size": 22,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  }
+ ],
+ "note": "Japanese keeps the original two-line headline; en/es use a three-line headline in card-08.json"
+}

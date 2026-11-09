@@ -1,0 +1,203 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-13.webp",
+ "boxes": "card-13.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "rect": [
+    85,
+    179,
+    990,
+    204
+   ],
+   "weight": "bold",
+   "size": 26,
+   "color": "#dd6528",
+   "text": {
+    "en": "On entering the 2027 termination window · estimate",
+    "es": "Al entrar en la ventana de rescisión de 2027 · estimación",
+    "ja": "2027年の解約可能期間入り時・推定"
+   }
+  },
+  {
+   "rect": [
+    86,
+    239,
+    995,
+    311
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#090a0c",
+   "nowrap": true,
+   "text": {
+    "en": "Rather than eviction,",
+    "es": "Más que un desalojo,",
+    "ja": "退去よりも"
+   }
+  },
+  {
+   "rect": [
+    86,
+    327,
+    995,
+    400
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#ed621e",
+   "nowrap": true,
+   "text": {
+    "en": "renegotiation is likely",
+    "es": "lo probable: renegociar",
+    "ja": "再交渉が有力"
+   }
+  },
+  {
+   "rect": [
+    113,
+    460,
+    880,
+    489
+   ],
+   "size": 31,
+   "weight": "black",
+   "color": "#070708",
+   "text": {
+    "en": "Status quo·minor adjustment",
+    "es": "Statu quo·ajuste menor",
+    "ja": "現状維持・小幅調整"
+   }
+  },
+  {
+   "rect": [
+    113,
+    645,
+    880,
+    674
+   ],
+   "size": 31,
+   "weight": "black",
+   "color": "#070708",
+   "text": {
+    "en": "Big increase at renewal",
+    "es": "Fuerte alza al renovar",
+    "ja": "更新時に大幅値上げ"
+   }
+  },
+  {
+   "rect": [
+    113,
+    829,
+    880,
+    858
+   ],
+   "size": 31,
+   "weight": "black",
+   "color": "#070708",
+   "text": {
+    "en": "Terminate, then re-sign at spot",
+    "es": "Rescisión y nuevo contrato a precio spot",
+    "ja": "解約後に現物価格で再契約"
+   }
+  },
+  {
+   "rect": [
+    113,
+    1014,
+    880,
+    1043
+   ],
+   "size": 31,
+   "weight": "black",
+   "color": "#070708",
+   "text": {
+    "en": "Anthropic walks away",
+    "es": "Anthropic se retira",
+    "ja": "Anthropic側の離脱"
+   }
+  },
+  {
+   "rect": [
+    85,
+    553,
+    995,
+    575
+   ],
+   "size": 24,
+   "color": "#3b3d46",
+   "text": {
+    "en": "The contract price is already high, so terminating gains little",
+    "es": "El precio del contrato ya es alto; rescindir aporta poco",
+    "ja": "契約価格が既に高く、解約の実益は小さい"
+   }
+  },
+  {
+   "rect": [
+    85,
+    737,
+    995,
+    759
+   ],
+   "size": 24,
+   "color": "#3b3d46",
+   "text": {
+    "en": "Termination threat as leverage: renegotiated at 1.3~1.6x",
+    "es": "La amenaza de rescisión como palanca: se renegocia a 1.3~1.6 veces",
+    "ja": "解約の脅しをてこに1.3~1.6倍で再交渉"
+   }
+  },
+  {
+   "rect": [
+    85,
+    922,
+    995,
+    944
+   ],
+   "size": 24,
+   "color": "#3b3d46",
+   "text": {
+    "en": "Needs spot at 2x or more and a prolonged freeze at the same time",
+    "es": "Requiere a la vez un spot de 2 veces o más y un congelamiento prolongado",
+    "ja": "現物2倍以上と凍結の長期化が同時に必要"
+   }
+  },
+  {
+   "rect": [
+    85,
+    1107,
+    995,
+    1130
+   ],
+   "size": 24,
+   "color": "#3b3d46",
+   "text": {
+    "en": "If Google TPUs come online in 2027 and demand slows",
+    "es": "Si los TPU de Google operan en 2027 y la demanda se modera",
+    "ja": "Google TPUの2027年稼働、需要鈍化の場合"
+   }
+  },
+  {
+   "rect": [
+    85,
+    1153,
+    995,
+    1217
+   ],
+   "size": 22.5,
+   "color": "#7b7e84",
+   "text": {
+    "en": "Probabilities are estimates from disclosed terms, price position and political time lags.",
+    "es": "Las probabilidades son estimaciones basadas en las condiciones divulgadas, la posición del precio y los desfases políticos.",
+    "ja": "確率は開示条件・単価の位置・政治日程のずれに基づく推定値である。"
+   },
+   "lh": 30,
+   "valign": "middle"
+  }
+ ]
+}

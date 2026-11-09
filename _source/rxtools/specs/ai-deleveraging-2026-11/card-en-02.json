@@ -1,0 +1,314 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "src": "card-en-02.webp",
+ "boxes": "card-en-02.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "keep": [
+  [
+   78,
+   88,
+   113,
+   121
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "Panorama del mercado",
+    "ja": "市場スナップショット"
+   },
+   "size": 24.5,
+   "color": "#9da7b3",
+   "expand": [
+    -36,
+    0,
+    260,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Cierre del 5 de nov.",
+    "ja": "11月5日終値ベース"
+   },
+   "size": 24.5,
+   "align": "right",
+   "expand": [
+    160,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "En un solo día, ==todo en rojo==",
+    "ja": "1日で==全面安=="
+   },
+   "weight": "black",
+   "size": 59,
+   "color": "#f3f6fc",
+   "accent": "#ff5a5f",
+   "expand": [
+    5,
+    0,
+    280,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "Nasdaq",
+    "ja": "ナスダック"
+   },
+   "weight": "bold",
+   "size": 33.5,
+   "color": "#f3f8ff",
+   "expand": [
+    4,
+    0,
+    80,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "Dow Jones",
+    "ja": "ダウ"
+   },
+   "weight": "bold",
+   "size": 33.5,
+   "color": "#f3f8fe",
+   "expand": [
+    4,
+    0,
+    120,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    24
+   ],
+   "text": {
+    "es": "Taiwán",
+    "ja": "台湾"
+   },
+   "weight": "bold",
+   "size": 33.5,
+   "color": "#f2f8ff",
+   "expand": [
+    0,
+    0,
+    80,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    26
+   ],
+   "text": {
+    "es": "Índice del miedo VIX",
+    "ja": "恐怖指数VIX"
+   },
+   "size": 24,
+   "color": "#99a5bc",
+   "expand": [
+    0,
+    0,
+    85,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    28
+   ],
+   "text": {
+    "es": "Nasdaq vs. máximo",
+    "ja": "ナスダック高値比"
+   },
+   "size": 24,
+   "color": "#99a5bb",
+   "expand": [
+    0,
+    0,
+    36,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    29
+   ],
+   "text": {
+    "es": "Extranjeros en KOSPI",
+    "ja": "KOSPI外国人"
+   },
+   "size": 24,
+   "color": "#99a5bc",
+   "expand": [
+    0,
+    0,
+    54,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    33
+   ],
+   "text": {
+    "es": "-₩3.4",
+    "ja": "-₩3.4兆"
+   },
+   "weight": "bold",
+   "size": 56,
+   "color": "#ff5a61",
+   "valign": "bottom",
+   "expand": [
+    0,
+    0,
+    64,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "rect": [
+    882,
+    1030,
+    990,
+    1059
+   ],
+   "text": {
+    "es": "billones",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 24,
+   "color": "#ff5a61",
+   "valign": "bottom",
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    34
+   ],
+   "text": {
+    "es": "+69.7% en un día",
+    "ja": "1日で+69.7%"
+   },
+   "size": 22,
+   "color": "#c3cfe4",
+   "expand": [
+    0,
+    0,
+    80,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    36
+   ],
+   "text": {
+    "es": "En corrección",
+    "ja": "調整局面入り"
+   },
+   "size": 22,
+   "color": "#c5d2e7",
+   "expand": [
+    0,
+    2,
+    110,
+    4
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    37
+   ],
+   "text": {
+    "es": "Venta neta el 5 de nov.",
+    "ja": "11月5日の売り越し"
+   },
+   "size": 22,
+   "color": "#c5d1e7",
+   "expand": [
+    0,
+    0,
+    64,
+    5
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    38,
+    39
+   ],
+   "text": {
+    "es": "El peor día del S&P 500 desde el choque arancelario de abril de 2025. KOSPI y Taiwán son cierres asiáticos previos a la sesión de EE. UU.",
+    "ja": "S&P 500は2025年4月の関税ショック以来最悪の1日。\nKOSPI・台湾は米国時間前のアジア市場の終値。"
+   },
+   "size": 22,
+   "lh": 33,
+   "color": "#7e8899",
+   "expand": [
+    0,
+    0,
+    60,
+    6
+   ]
+  },
+  {
+   "boxes": [
+    40
+   ],
+   "text": {
+    "es": "Fuentes: Yahoo Finance, AP, Money Today, Focus Taiwan",
+    "ja": "出所：Yahoo Finance、AP、Money Today、Focus Taiwan"
+   },
+   "size": 22,
+   "color": "#7e8898",
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ],
+   "nowrap": true
+  }
+ ]
+}

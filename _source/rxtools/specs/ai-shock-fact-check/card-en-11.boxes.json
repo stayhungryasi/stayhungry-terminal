@@ -1,0 +1,210 @@
+[
+{
+"i": 0,
+"rect": [
+84,
+76,
+395,
+97
+],
+"ocr": "Al shock fact-check Nov 6, 2026",
+"bg": "#0a0c10",
+"fg": "#cdd0d6",
+"h": 21
+},
+{
+"i": 1,
+"rect": [
+943,
+77,
+994,
+97
+],
+"ocr": "11/12",
+"bg": "#0a0c10",
+"fg": "#adaeb7",
+"h": 20
+},
+{
+"i": 2,
+"rect": [
+84,
+162,
+995,
+211
+],
+"ocr": "Watch these dates and numbers",
+"bg": "#0a0c10",
+"fg": "#f1f2f6",
+"h": 49
+},
+{
+"i": 3,
+"rect": [
+92,
+322,
+305,
+381
+],
+"ocr": "Nov 17",
+"bg": "#0a0c10",
+"fg": "#f4f6fa",
+"h": 59
+},
+{
+"i": 4,
+"rect": [
+376,
+353,
+687,
+389
+],
+"ocr": "Nvidia Q3 earnings",
+"bg": "#0a0c10",
+"fg": "#f8f9fd",
+"h": 36
+},
+{
+"i": 5,
+"rect": [
+375,
+399,
+659,
+424
+],
+"ocr": "Company-confirmed date",
+"bg": "#0b0c10",
+"fg": "#d4d7dd",
+"h": 25
+},
+{
+"i": 6,
+"rect": [
+92,
+511,
+260,
+582
+],
+"ocr": "Dec 9",
+"bg": "#0a0c10",
+"fg": "#f3f5f9",
+"h": 71
+},
+{
+"i": 7,
+"rect": [
+92,
+513,
+680,
+579
+],
+"ocr": "Dec 9 FOMC and dot plot",
+"bg": "#0a0c10",
+"fg": "#f1f2f6",
+"h": 66
+},
+{
+"i": 8,
+"rect": [
+376,
+544,
+680,
+579
+],
+"ocr": "FOMC and dot plot",
+"bg": "#0a0c10",
+"fg": "#f9fafe",
+"h": 35
+},
+{
+"i": 9,
+"rect": [
+374,
+590,
+587,
+609
+],
+"ocr": "Another hike or not",
+"bg": "#0a0c10",
+"fg": "#d8dbe1",
+"h": 19
+},
+{
+"i": 10,
+"rect": [
+92,
+704,
+706,
+773
+],
+"ocr": "Late J d 「 | Big Tech 2027 capex",
+"bg": "#0a0c10",
+"fg": "#f2f3f7",
+"h": 69
+},
+{
+"i": 11,
+"rect": [
+374,
+781,
+592,
+806
+],
+"ocr": "Any cut to guidance",
+"bg": "#0b0d11",
+"fg": "#d5d7dd",
+"h": 25
+},
+{
+"i": 12,
+"rect": [
+84,
+1068,
+608,
+1092
+],
+"ocr": "This is when a correction becomes a collapse",
+"bg": "#0a0c10",
+"fg": "#e7713a",
+"h": 24
+},
+{
+"i": 13,
+"rect": [
+85,
+1119,
+945,
+1144
+],
+"ocr": "GPU rents fall more than 30% in three months. DRAM contract",
+"bg": "#0a0c10",
+"fg": "#fafcff",
+"h": 25
+},
+{
+"i": 14,
+"rect": [
+86,
+1164,
+786,
+1196
+],
+"ocr": "prices turn negative. A neocloud can't pay its debt.",
+"bg": "#0a0c10",
+"fg": "#f8f9fd",
+"h": 32
+},
+{
+"i": 15,
+"rect": [
+84,
+1260,
+282,
+1282
+],
+"ocr": "stayhungryasi.com",
+"bg": "#0a0c10",
+"fg": "#e3733e",
+"h": 22
+}
+]

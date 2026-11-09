@@ -1,0 +1,288 @@
+[
+{
+"i": 0,
+"rect": [
+81,
+92,
+353,
+116
+],
+"ocr": "09 Check your account",
+"bg": "#0e1726",
+"fg": "#9da6b3",
+"h": 24
+},
+{
+"i": 1,
+"rect": [
+720,
+92,
+998,
+117
+],
+"ocr": "5 things to check today",
+"bg": "#0e1726",
+"fg": "#9ba5b3",
+"h": 25
+},
+{
+"i": 2,
+"rect": [
+83,
+143,
+848,
+208
+],
+"ocr": "Questions to ask yourself",
+"bg": "#0e1726",
+"fg": "#f2f5fc",
+"h": 65
+},
+{
+"i": 3,
+"rect": [
+84,
+219,
+375,
+286
+],
+"ocr": "right now",
+"bg": "#0e1726",
+"fg": "#f2f6fd",
+"h": 67
+},
+{
+"i": 4,
+"rect": [
+78,
+334,
+990,
+384
+],
+"ocr": "[ ) What share is chips and Al, and how much of that is 3x",
+"bg": "#0e1726",
+"fg": "#f1f6fd",
+"h": 50
+},
+{
+"i": 5,
+"rect": [
+150,
+389,
+465,
+423
+],
+"ocr": "leveraged products?",
+"bg": "#0f1726",
+"fg": "#f2f7ff",
+"h": 34
+},
+{
+"i": 6,
+"rect": [
+78,
+473,
+900,
+523
+],
+"ocr": "[| ] Ifyou use margin or stock-backed loans, is there",
+"bg": "#0e1726",
+"fg": "#f0f6fd",
+"h": 50
+},
+{
+"i": 7,
+"rect": [
+149,
+528,
+528,
+562
+],
+"ocr": "enough collateral room?",
+"bg": "#0e1726",
+"fg": "#f2f7ff",
+"h": 34
+},
+{
+"i": 8,
+"rect": [
+151,
+620,
+995,
+653
+],
+"ocr": "If it falls another 10-15%, what is the loss, and can you",
+"bg": "#0e1726",
+"fg": "#f2f7fe",
+"h": 33
+},
+{
+"i": 9,
+"rect": [
+150,
+667,
+234,
+693
+],
+"ocr": "hold?",
+"bg": "#0e1726",
+"fg": "#f2f9ff",
+"h": 26
+},
+{
+"i": 10,
+"rect": [
+78,
+750,
+957,
+800
+],
+"ocr": "[ ] Do you hold anything on another axis, like power or",
+"bg": "#0e1726",
+"fg": "#f0f6fe",
+"h": 50
+},
+{
+"i": 11,
+"rect": [
+150,
+805,
+283,
+831
+],
+"ocr": "utilities?",
+"bg": "#0f1726",
+"fg": "#f2f8ff",
+"h": 26
+},
+{
+"i": 12,
+"rect": [
+78,
+889,
+957,
+939
+],
+"ocr": "[ ] Have you set your rules (price levels, amounts) for a",
+"bg": "#0e1726",
+"fg": "#f0f6fd",
+"h": 50
+},
+{
+"i": 13,
+"rect": [
+149,
+944,
+356,
+977
+],
+"ocr": "further drop?",
+"bg": "#0e1726",
+"fg": "#f2f7ff",
+"h": 33
+},
+{
+"i": 14,
+"rect": [
+109,
+1059,
+423,
+1095
+],
+"ocr": "stayhungryasi.com",
+"bg": "#15213b",
+"fg": "#eeb64a",
+"h": 36
+},
+{
+"i": 15,
+"rect": [
+636,
+1058,
+970,
+1086
+],
+"ocr": "Full report - past research",
+"bg": "#15213b",
+"fg": "#99a5bc",
+"h": 28
+},
+{
+"i": 16,
+"rect": [
+80,
+1153,
+978,
+1174
+],
+"ocr": "About 40 items were rechecked against sources. 'Unverified' means no first-tier outlet confirms it;",
+"bg": "#0e1726",
+"fg": "#7d8898",
+"h": 21
+},
+{
+"i": 17,
+"rect": [
+81,
+1184,
+902,
+1204
+],
+"ocr": "odds, risk levels and the phase call are the author's estimates. For information only, not a",
+"bg": "#0e1726",
+"fg": "#7d8898",
+"h": 20
+},
+{
+"i": 18,
+"rect": [
+82,
+1215,
+885,
+1235
+],
+"ocr": "recommendation to buy or sell any security. Your decisions are your own responsibility.",
+"bg": "#0e1726",
+"fg": "#7d8899",
+"h": 20
+},
+{
+"i": 19,
+"rect": [
+81,
+1270,
+999,
+1298
+],
+"ocr": "stayhungryasi.com 10/10",
+"bg": "#0e1726",
+"fg": "#4b5566",
+"h": 28
+},
+{
+"i": 20,
+"rect": [
+81,
+1274,
+271,
+1296
+],
+"ocr": "stayhungryasi.com",
+"bg": "#0e1726",
+"fg": "#7f899a",
+"h": 22
+},
+{
+"i": 21,
+"rect": [
+931,
+1273,
+999,
+1295
+],
+"ocr": "10/10",
+"bg": "#0e1726",
+"fg": "#f0f8ff",
+"h": 22
+}
+]

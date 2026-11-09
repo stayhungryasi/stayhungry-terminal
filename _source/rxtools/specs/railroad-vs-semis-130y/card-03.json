@@ -1,0 +1,284 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "card-03.webp",
+ "boxes": "card-03.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "rect": [
+    81,
+    96,
+    245,
+    120
+   ],
+   "text": {
+    "en": "==02== AI-era railroads",
+    "es": "==02== Ferrocarriles de la IA",
+    "ja": "==02== AI版の鉄道株"
+   },
+   "weight": "bold",
+   "size": 24,
+   "color": "#cbd4e2",
+   "accent": "#f3b541",
+   "expand": [
+    0,
+    0,
+    380,
+    0
+   ]
+  },
+  {
+   "rect": [
+    852,
+    95,
+    998,
+    119
+   ],
+   "text": {
+    "en": "Daily closes",
+    "es": "Cierres diarios",
+    "ja": "日次終値ベース"
+   },
+   "size": 23,
+   "color": "#8e98a8",
+   "align": "right",
+   "expand": [
+    100,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "rect": [
+    82,
+    161,
+    482,
+    302
+   ],
+   "text": {
+    "en": "Chips, just the same,==\ncollapsed three times==",
+    "es": "Los chips, igual,==\nse desplomaron tres veces==",
+    "ja": "半導体も同じく\n==3度崩れた=="
+   },
+   "weight": "black",
+   "size": 58,
+   "lh": 82,
+   "color": "#f2f6fd",
+   "accent": "#ff5a61",
+   "expand": [
+    0,
+    0,
+    480,
+    0
+   ]
+  },
+  {
+   "rect": [
+    112,
+    365,
+    690,
+    397
+   ],
+   "text": {
+    "en": "AI-era railroads: chips also suffered three 30~50% corrections in a bull market",
+    "es": "Ferrocarriles de la IA: los chips también corrigieron 30~50% tres veces en plena alza",
+    "ja": "AI版の鉄道株：半導体も強気相場で30~50%の調整を3回経験した"
+   },
+   "weight": "bold",
+   "size": 21.5,
+   "color": "#eef6ff",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "rect": [
+    112,
+    402,
+    606,
+    421
+   ],
+   "text": {
+    "en": "Philadelphia Semiconductor Index (SOX), weekly closes, log scale, 2020.1 ~ 2026.11.6",
+    "es": "Índice de Semiconductores de Filadelfia (SOX), cierres semanales, escala logarítmica, 2020.1 ~ 2026.11.6",
+    "ja": "フィラデルフィア半導体株指数（SOX）、週足終値・対数目盛、2020.1 ~ 2026.11.6"
+   },
+   "size": 15,
+   "color": "#b3bccc",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    330,
+    0
+   ]
+  },
+  {
+   "rect": [
+    204,
+    459,
+    372,
+    480
+   ],
+   "pad": 2,
+   "text": {
+    "en": "Philadelphia Semiconductor Index (SOX)",
+    "es": "Índice de Semiconductores de Filadelfia (SOX)",
+    "ja": "フィラデルフィア半導体株指数（SOX）"
+   },
+   "size": 13,
+   "color": "#e4edf6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  },
+  {
+   "rect": [
+    942,
+    522,
+    981,
+    537
+   ],
+   "pad": 1,
+   "text": {
+    "en": "ongoing",
+    "es": "en curso",
+    "ja": "進行中"
+   },
+   "size": 11.5,
+   "color": "#ed666d",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    12,
+    0,
+    12,
+    0
+   ]
+  },
+  {
+   "rect": [
+    112,
+    895,
+    600,
+    914
+   ],
+   "text": {
+    "en": "Source: Nasdaq PHLX Semiconductor Index closes (Yahoo Finance); peaks and troughs on daily closes",
+    "es": "Fuente: cierres del Nasdaq PHLX Semiconductor Index (Yahoo Finance); máximos y mínimos con cierres diarios",
+    "ja": "出所：Nasdaq PHLX Semiconductor Index 終値（Yahoo Finance）、高値・安値は日次終値ベース"
+   },
+   "weight": "bold",
+   "size": 11.5,
+   "color": "#b4becd",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    240,
+    0
+   ]
+  },
+  {
+   "rect": [
+    107,
+    986,
+    242,
+    1010
+   ],
+   "text": {
+    "en": "Cycle 1 · 2020~22",
+    "es": "Ciclo 1 · 2020~22",
+    "ja": "第1次 2020~22"
+   },
+   "size": 23,
+   "color": "#8c98b1",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    120,
+    0
+   ]
+  },
+  {
+   "rect": [
+    418,
+    986,
+    554,
+    1010
+   ],
+   "text": {
+    "en": "Cycle 2 · 2022~25",
+    "es": "Ciclo 2 · 2022~25",
+    "ja": "第2次 2022~25"
+   },
+   "size": 23,
+   "color": "#8c98b1",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    120,
+    0
+   ]
+  },
+  {
+   "rect": [
+    730,
+    986,
+    866,
+    1010
+   ],
+   "text": {
+    "en": "Cycle 3 · 2025~26",
+    "es": "Ciclo 3 · 2025~26",
+    "ja": "第3次 2025~26"
+   },
+   "size": 23,
+   "color": "#8c98b1",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    120,
+    0
+   ]
+  },
+  {
+   "rect": [
+    81,
+    1262,
+    618,
+    1288
+   ],
+   "text": {
+    "en": "Source: PHLX Semiconductor Index closes (Yahoo Finance)",
+    "es": "Fuente: cierres del PHLX Semiconductor Index (Yahoo Finance)",
+    "ja": "出所：PHLX Semiconductor Index 終値（Yahoo Finance）"
+   },
+   "size": 23,
+   "color": "#8e98a8",
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ]
+  }
+ ]
+}

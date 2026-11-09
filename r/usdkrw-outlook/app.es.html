@@ -1,0 +1,731 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Perspectivas del USD/KRW · Stayhungry.ASI</title>
+<meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet"><style>
+:root{color-scheme:dark;
+ --color-fg:#EEF0F5;--color-fg-muted:#9AA3B5;--color-bg:#0A0C10;--color-panel:#11141B;--color-border-line:#232836;--color-ok:#22B07D;--color-warn:#E3B341;--color-bad:#FF4438;
+ --font-anthropic-sans:"Noto Sans KR",system-ui,sans-serif;--font-anthropic-serif:"Noto Serif KR",Georgia,serif;
+ --cds-font-size-caption:12.5px;--cds-font-size-body:15px;--cds-font-size-heading:17px;--cds-font-size-title:24px;--cds-font-weight-medium:600;
+ --cds-gap-xs:6px;--cds-gap-sm:10px;--cds-gap-md:16px;--cds-gap-lg:24px;--cds-gap-xl:36px;--cds-pad-xs:4px;--cds-pad-sm:8px;--cds-pad-md:14px;--cds-pad-lg:22px;--cds-radius:10px;
+ --cds-border:#232836;--cds-chart-axis:#5B6475;--cds-chart-grid:#1E2431;--cds-chart-muted:#3A4253;--cds-chart-reference:#8D95A8;--cds-chart-status-critical:#FF4438;
+ --cds-text-secondary:#9AA3B5;--cds-surface-popover:#161A23;--cds-shadow-popover:0 8px 24px rgba(0,0,0,.5);--cds-dur-slow:.3s}
+html,body{margin:0;background:#0A0C10;color:#EEF0F5}
+#dash-root{padding:8px 16px 40px}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script type="application/json" id="fx-data">{"ledger_inputs": {"rows": [{"item": "Superávit de la balanza de bienes", "side": "Oferta", "raw": 468.1, "unit": "cientos de mill. de US$", "period": "agosto de 2026", "status": "Observado", "src": "Banco de Corea, balanza de pagos 2026-10-08"}, {"item": "Conversión de fondos del ADR de SK hynix", "side": "Oferta", "raw": 265, "unit": "cientos de mill. de US$", "period": "Conversión escalonada en julio~agosto", "status": "Concluido (aporte en octubre: 0)", "src": "Sangsangin Securities (Financial News 2026-08-21)"}, {"item": "Cobertura cambiaria del NPS", "side": "Oferta", "raw": null, "unit": "cientos de mill. de US$", "period": "—", "status": "No verificable (límite de cobertura máximo 20%)", "src": "Asia Business Daily 2026-04-14"}, {"item": "Entradas extranjeras a bonos", "side": "Oferta", "raw": null, "unit": "cientos de mill. de US$", "period": "—", "status": "No verificable", "src": "—"}, {"item": "Ventas a plazo de divisas por empresas", "side": "Oferta", "raw": null, "unit": "cientos de mill. de US$", "period": "—", "status": "No verificable (se observan ventas)", "src": "Money Today 2026-10-20"}, {"item": "Compras netas de acciones extranjeras por residentes", "side": "Demanda", "raw": 41.522, "unit": "cientos de mill. de US$", "period": "1–19 oct.", "status": "Observado", "src": "KSD SEIBro (Dailian 2026-10-21)"}, {"item": "Ventas netas de acciones por extranjeros", "side": "Demanda", "raw": 177160, "unit": "cientos de mill. de wones", "period": "1–16 oct.", "status": "Observado", "src": "Korea Exchange (Newspim 2026-10-19)"}, {"item": "Ejecución de inversión en EE. UU.", "side": "Demanda", "raw": 200, "unit": "cientos de mill. de US$/año", "period": "Límite anual", "status": "Según el límite", "src": "Financial News 2026-01-21"}, {"item": "Inversión externa de fondos de pensiones", "side": "Demanda", "raw": null, "unit": "cientos de mill. de US$", "period": "—", "status": "No verificable", "src": "—"}, {"item": "Repatriación de dividendos", "side": "Demanda", "raw": null, "unit": "cientos de mill. de US$", "period": "Desde noviembre", "status": "Aún no ocurre (tras el pago del dividendo del 3T de Samsung)", "src": "—"}]}, "decomp": {"rows": [{"series": "USD/KRW", "start": 1549.4, "start_date": "2026-06-30", "end": 1328.1, "end_date": "2026-10-20", "src": "Kuki News 2026-06-30 / Herald Business 2026-10-20"}, {"series": "Índice dólar", "start": 101.11, "start_date": "2026-06-30", "end": 101.757, "end_date": "2026-10-20", "src": "News1 (Financial News) 2026-07-03 / Herald Business 2026-10-20"}]}, "sh_return": {"rows": [{"step": "1", "what": "Conversión de fondos del ADR de SK hynix", "size": "US$26,500 millones (unos 40 billones de wones)", "when": "julio~agosto de 2026", "fx": "Apreciación del won (aporte estimado de unos 129 wones)", "status": "Concluido", "src": "Sangsangin Securities 2026-08-21"}, {"step": "2", "what": "Recompra y amortización de acciones propias de SK hynix por 40 billones de wones", "size": "40 billones de wones", "when": "20 ago.–19 nov.", "fx": "Apreciación al convertir; depreciación al repatriar los fondos de ventas extranjeras", "status": "En curso", "src": "Divulgación de SK hynix (Financial News 2026-08-19)"}, {"step": "3", "what": "Dividendo en efectivo del 3T de Samsung", "size": "unos 30 billones de wones", "when": "Aprobación del consejo a fines de octubre → pago habitual en noviembre", "fx": "Apreciación por conversión antes del pago → depreciación por repatriación después del pago", "status": "Pendiente de aprobación", "src": "Samsung Newsroom 2026-08-21"}, {"step": "4", "what": "Anuncio de retorno adicional de SK hynix", "size": "50% o más del FCF (monto por definir)", "when": "Con los resultados del 3T", "fx": "Depende del monto y la modalidad", "status": "Pendiente de anuncio", "src": "Financial News 2026-08-19"}, {"step": "5", "what": "Retorno remanente de Samsung", "size": "Remanente de 90~110 billones de wones anuales", "when": "Decisión del consejo en enero de 2027", "fx": "Cuanto mayor el peso del dividendo extraordinario, mayor la repatriación", "status": "Pendiente de decisión", "src": "Newspim 2026-08-21"}]}, "ca_monthly": {"rows": [{"month": "2025-08", "ca": 98.4, "note": "Superávit de 2026-08 (461.1) menos el aumento interanual (362.7)", "src": "Cálculo basado en HuffPost Korea 2026-10-08"}, {"month": "2026-06", "ca": 497.3, "note": "Récord mensual histórico", "src": "Banco de Corea, balanza de pagos (Nocut News 2026-10-08)"}, {"month": "2026-07", "ca": 420.8, "note": "", "src": "Banco de Corea, balanza de pagos (SBS Biz 2026-10-08)"}, {"month": "2026-08", "ca": 461.1, "note": "Balanza de bienes: 468.1", "src": "Banco de Corea, balanza de pagos (SBS Biz 2026-10-08)"}]}, "level_probs": {"rows": [{"event": "Tocar bajo 1,300", "horizon": "3 meses", "prob": 0.35}, {"event": "Tocar bajo 1,300", "horizon": "6 meses", "prob": 0.45}, {"event": "Asentarse bajo 1,300 (prom. trimestral)", "horizon": "12 meses", "prob": 0.2}]}, "calendar": {"rows": [{"date": "2026-10-22", "event": "Junta de Política Monetaria del BOK", "why": "Actual 3.00%; predomina la pausa. Una subida favorecería al won", "src": "skyatlastreasure 2026-10"}, {"date": "2026-10-29", "event": "Resultado del FOMC (madrugada, hora de Corea)", "why": "Probabilidad de pausa 84.5%. Qué tan fuerte sugiere el comunicado una subida en diciembre", "src": "TokenPost 2026-10-19"}, {"date": "2026-10-31", "event": "Consejo de Samsung y resultados del 3T de SK hynix (fines de octubre)", "why": "Confirmación del dividendo del 3T (unos 30 billones de wones); monto del retorno adicional de SK hynix", "src": "Samsung Newsroom · Financial News"}, {"date": "2026-11-03", "event": "Elecciones intermedias de EE. UU.", "why": "Volatilidad de la Fed y del dólar en torno a la elección", "src": "Financial News 2026-10-15"}, {"date": "2026-11-19", "event": "Fin de la recompra de acciones de SK hynix", "why": "Desaparece un comprador de wones", "src": "Financial News 2026-08-19"}, {"date": "2026-11-26", "event": "Junta de Política Monetaria del BOK", "why": "Última decisión del año", "src": "marketlog 2026-10"}, {"date": "2026-11-30", "event": "Pago del dividendo del 3T de Samsung (habitualmente en noviembre)", "why": "Inicio de la repatriación de la parte extranjera", "src": "Calendario habitual — fecha definitiva no verificable"}, {"date": "2026-12-10", "event": "Resultado del FOMC (madrugada, hora de Corea)", "why": "Si habrá otra subida este año. Punto de inflexión para la dirección del dólar", "src": "Eden Post 2026-09"}, {"date": "2026-12-31", "event": "Vencimiento de la cobertura cambiaria estratégica del NPS y del swap con el BOK", "why": "Su prórroga define el respaldo de oferta de dólares. Fecha del comité del fondo no verificable", "src": "Nocut News 2025-12-15"}, {"date": "2027-01-31", "event": "Consejo de Samsung: decisión sobre el retorno remanente (enero)", "why": "La proporción dividendo extraordinario vs. amortización define el monto repatriado", "src": "Samsung Newsroom 2026-08-21"}]}, "scenarios": {"rows": [{"scenario": "Base: formación de piso", "prob": 0.55, "ye_lo": 1300, "ye_hi": 1345, "m6_lo": 1280, "m6_hi": 1370, "m12_lo": 1270, "m12_hi": 1390, "trigger": "Superávit corriente sostenido en el rango de US$40,000 millones mensuales, ventas de dólares de exportadores a fin de año, una subida de la Fed en diciembre y luego pausa"}, {"scenario": "Mayor apreciación del won", "prob": 0.2, "ye_lo": 1270, "ye_hi": 1300, "m6_lo": 1220, "m6_hi": 1300, "m12_lo": 1200, "m12_hi": 1290, "trigger": "Pausa de la Fed y expectativa de recortes en 2027, índice dólar por debajo de 99, giro a compras netas extranjeras, dividendo extraordinario de Samsung + alta conversión"}, {"scenario": "Reversión", "prob": 0.25, "ye_lo": 1360, "ye_hi": 1420, "m6_lo": 1380, "m6_hi": 1450, "m12_lo": 1380, "m12_hi": 1470, "trigger": "Riesgo crediticio de la IA y pico del ciclo de memoria, alza brusca del bono a 10 años de EE. UU., concentración de repatriación de dividendos, freno a la conversión de las empresas"}]}, "macro": {"rows": [{"var": "Tasa de la Fed (límite superior)", "value": 4.0, "unit": "%", "asof": "Subida del 2026-09-16", "impact": "Presión a la baja sobre el won", "src": "Financial News 2026-10-08"}, {"var": "Mediana del dot plot a fines de 2026", "value": 4.1, "unit": "%", "asof": "2026-09 SEP", "impact": "Sugiere una subida más este año", "src": "Eden Post 2026-09"}, {"var": "Probabilidad de pausa en el FOMC de octubre", "value": 84.5, "unit": "%", "asof": "2026-10-18~19", "impact": "Alivia la presión de corto plazo", "src": "TokenPost 2026-10-19"}, {"var": "Probabilidad de subida en el FOMC de diciembre", "value": null, "unit": "%", "asof": "—", "impact": "No verificable (la mayoría de los grandes bancos de inversión espera una subida en diciembre)", "src": "Reuters(capital.com)"}, {"var": "Bono a 10 años de EE. UU. (máximo intradía)", "value": 5.36, "unit": "%", "asof": "2026-10-07", "impact": "Máximo desde 2002; factor de fortaleza del dólar", "src": "Blockmedia 2026-10-08"}, {"var": "Tasa de referencia del BOK", "value": 3.0, "unit": "%", "asof": "Subida del 2026-08-27", "impact": "Decisión el 22 oct.; predomina la pausa", "src": "skyatlastreasure 2026-10"}, {"var": "Tasa de política del Banco de Japón", "value": 1.25, "unit": "%", "asof": "Decisión del 2026-09-18", "impact": "El yen sigue débil; baja el JPY/KRW", "src": "KBR 2026-09-21"}, {"var": "WTI contrato de noviembre", "value": 101.79, "unit": "US$", "asof": "2026-10-20", "impact": "Superó US$110 intradía y luego retrocedió; presión sobre pagos de importaciones", "src": "Etoday · News1 2026-10-21"}]}, "indicators": {"rows": [{"ind": "Saldo de depósitos en divisas de empresas", "latest": "US$98,990 millones", "asof": "Fines de 2026-06 (julio~septiembre no verificable)", "flip": "Aumento de +US$2,000 millones o más por mes durante 2 meses seguidos", "meaning": "Las empresas vuelven a acumular dólares → se desacelera la oferta", "src": "Banco de Corea (SBS Biz 2026-07-27)"}, {"ind": "Exportaciones de chips (dato preliminar de 10 días, Aduanas de Corea)", "latest": "+170.9% (interanual)", "asof": "1–10 oct.", "flip": "Crecimiento por debajo de +50% o superávit comercial de 10 días inferior a US$2,000 millones", "meaning": "Se debilita la fuente de entrada de dólares", "src": "Aduanas de Corea (KDI 2026-10-12)"}, {"ind": "Índice dólar", "latest": "101.757", "asof": "2026-10-20", "flip": "Se mantiene por encima de 103", "meaning": "La fortaleza del dólar se impone a los flujos", "src": "Herald Business 2026-10-20"}, {"ind": "Rendimiento del bono a 10 años de EE. UU.", "latest": "5.36% intradía", "asof": "2026-10-07", "flip": "Cierre por encima de 5.40%", "meaning": "Fortaleza global del dólar y aversión al riesgo generalizada", "src": "Blockmedia 2026-10-08"}, {"ind": "Sincronía entre ventas extranjeras y tipo de cambio", "latest": "Tipo de cambio -2.2 wones pese a ventas netas de 500 mil millones de wones", "asof": "2026-10-20", "flip": "Alza del tipo de cambio en días de venta neta extranjera, 3 sesiones seguidas", "meaning": "Fin del desacople → la repatriación se refleja en el precio", "src": "Herald Business 2026-10-20"}]}, "levels": {"rows": [{"metric": "Último cierre", "value": 1328.1, "unit": "wones", "asof": "2026-10-20 15:30", "note": "Mínimo del año por 3 sesiones seguidas; el más bajo desde 2024-10-02", "src": "Herald Business 2026-10-20"}, {"metric": "Mínimo intradía", "value": 1325.4, "unit": "wones", "asof": "2026-10-20 09:52", "note": "", "src": "Herald Business 2026-10-20"}, {"metric": "Cotización publicada hoy", "value": 1327.6, "unit": "wones", "asof": "2026-10-21 11:00", "note": "Tipo de referencia de Hana Bank", "src": "Job Post 2026-10-21"}, {"metric": "Máximo del año (intradía)", "value": 1561.5, "unit": "wones", "asof": "2026-06-06, sesión nocturna", "note": "El más alto desde 2009-03", "src": "Financial News 2026-06-06"}, {"metric": "Índice dólar", "value": 101.757, "unit": "pt", "asof": "2026-10-20", "note": "", "src": "Herald Business 2026-10-20"}, {"metric": "JPY/KRW (100 yenes)", "value": 840.2, "unit": "wones", "asof": "2026-10-20", "note": "El más bajo desde 2008-01", "src": "Herald Business 2026-10-20"}, {"metric": "CNY/KRW", "value": 198.31, "unit": "wones", "asof": "2026-10-21 09:43", "note": "Intradía", "src": "Tour Korea 2026-10-21"}]}, "fx_path": {"rows": [{"point": "2026Q1", "date": "2026-02-15", "label": "Promedio 1T", "usdkrw": 1466.9, "src": "Informe de iM Securities (BusinessPost 2026-10-06)"}, {"point": "2026Q2", "date": "2026-05-15", "label": "Promedio 2T", "usdkrw": 1501.64, "src": "Informe de iM Securities (BusinessPost 2026-10-06)"}, {"point": "2026Q3", "date": "2026-08-15", "label": "Promedio 3T", "usdkrw": 1418.62, "src": "Informe de iM Securities (BusinessPost 2026-10-06)"}, {"point": "2026-10avg", "date": "2026-10-09", "label": "Promedio de octubre (según nota del día 18)", "usdkrw": 1342.6, "src": "Seoul Economic TV 2026-10-18"}, {"point": "2026-10-20", "date": "2026-10-20", "label": "Cierre diurno del 20 oct.", "usdkrw": 1328.1, "src": "Herald Business · SBS 2026-10-20"}]}, "assumptions": {"rows": [{"key": "conv_base", "value": 0.4, "label": "Tasa base de conversión de ingresos por exportaciones", "note": "Extremo inferior entre las estimaciones de NH (40~50%) y Sangsangin (50~60%)"}, {"key": "repat_sell", "value": 0.5, "label": "Tasa de repatriación de ventas extranjeras", "note": "Supuesto subjetivo"}, {"key": "fx", "value": 1330, "label": "Tipo de cambio de conversión", "note": "USD/KRW"}, {"key": "os_days", "value": 19, "label": "Días observados de acciones extranjeras", "note": "1–19 oct."}, {"key": "month_days", "value": 31, "label": "Días para mensualizar", "note": "Octubre"}, {"key": "repat_div", "value": 0.9, "label": "Tasa de repatriación extranjera de retornos al accionista", "note": "Supuesto subjetivo"}, {"key": "hynix_foreign", "value": 0.5116, "label": "Participación extranjera en SK hynix", "note": "Al cierre del 2026-08-19 (Wikitree)"}, {"key": "samsung_div", "value": 30, "label": "Dividendo en efectivo del 3T de Samsung (billones de wones)", "note": "Aprobación del consejo prevista para fines de octubre"}, {"key": "samsung_foreign", "value": 0.5, "label": "Participación extranjera supuesta en Samsung", "note": "Supuesto subjetivo"}]}, "consensus": {"rows": [{"inst": "Hana Bank, Seo Jung-hoon", "horizon": "Fines de 2026", "view": "Alrededor de 1,320 wones", "lo": 1320, "hi": 1320, "pub": "2026-10-19", "gap": "Coincide en ver la entrada de ingresos por exportaciones como factor central", "src": "Etoday (Nate) 2026-10-19"}, {"inst": "Hana Bank, Lee Yu-jeong", "horizon": "Fines de 2026", "view": "Cerca de 1,320 wones", "lo": 1320, "hi": 1320, "pub": "2026-10-18", "gap": "Misma dirección", "src": "Seoul Economic TV 2026-10-18"}, {"inst": "Woori Bank, Lim Hwan-yeol", "horizon": "Durante octubre", "view": "1,330~1,370 wones", "lo": 1330, "hi": 1370, "pub": "2026-10-18", "gap": "Ve un techo de corto plazo más alto (petróleo, Fed)", "src": "Seoul Economic TV 2026-10-18"}, {"inst": "Sangsangin, Choi Ye-chan", "horizon": "Próximos 12 meses", "view": "1,325~1,400 wones", "lo": 1325, "hi": 1400, "pub": "2026-08-21", "gap": "Tipo de cambio en el rango de 1,390 wones al redactarse; refleja la reversión por repatriación", "src": "Financial News 2026-08-21"}, {"inst": "NH Investment & Securities", "horizon": "Corto plazo", "view": "Soporte en 1,340~1,350 wones", "lo": 1340, "hi": 1350, "pub": "2026-08-26", "gap": "Ya perforado a la baja (diferencia de fecha de redacción)", "src": "Bloomingbit 2026-08-26"}, {"inst": "iM Sec., Park Sang-hyun", "horizon": "2027", "view": "1,200~1,450 wones, promedio de 1,280 wones", "lo": 1200, "hi": 1450, "pub": "2026-10-06", "gap": "Pondera más la debilidad del dólar; más inclinado a la apreciación del won que este análisis", "src": "BusinessPost 2026-10-06"}]}}</script>
+<script>
+/* Minimal stand-in for the dashboard runtime: the same datasets the original report used, served from this page. */
+(function(){
+  var DS=JSON.parse(document.getElementById('fx-data').textContent),C={},cache={},cbs=[];
+  function cols(r){return r&&r.length?Object.keys(r[0]):[];}
+  window.dash={
+    colors:['#F26522','#3B82F6','#22B07D','#E3B341','#A78BFA','#F472B6','#2DD4BF','#94A3B8'],
+    data:function(id){
+      if(DS[id]){var r=DS[id].rows;return {status:'ok',data:r,rows:r,columns:cols(r),meta:[],refreshing:false};}
+      if(C[id]){if(!(id in cache)){var c=C[id];cache[id]=c.fn.apply(null,c.inputs.map(function(i){return window.dash.data(i).data;}));}
+        var v=cache[id];return {status:'ok',data:v,rows:v,columns:Array.isArray(v)?cols(v):[],meta:[],refreshing:false};}
+      return {status:'missing',data:[],rows:[],columns:[],meta:[],message:'missing '+id};
+    },
+    calc:function(id,o){C[id]=o;},
+    loader:function(){}, onData:function(fn){cbs.push(fn);},
+    setLink:function(){}, params:function(){return {};}, setParams:function(){}, resetParams:function(){}, refresh:function(){}
+  };
+  function run(){cbs.forEach(function(f){try{f();}catch(e){console.error(e);}});}
+  var t;addEventListener('resize',function(){clearTimeout(t);t=setTimeout(run,150);});
+  document.addEventListener('DOMContentLoaded',run);
+})();
+</script></head><body><div id="dash-root">
+<style>
+#dash-root { --dash-gutter: clamp(16px, 4vw, 40px); }
+.fx { max-width: 1120px; margin-inline: auto; font-family: var(--font-anthropic-sans); color: var(--color-fg); font-variant-numeric: tabular-nums; }
+.fx-brand { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .02em; border-bottom: 1px solid var(--color-border-line); padding-bottom: var(--cds-pad-sm); display: flex; justify-content: space-between; gap: var(--cds-gap-sm); flex-wrap: wrap; }
+.fx-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: clamp(1.9rem, 4.6vw, 3rem); line-height: 1.12; margin: var(--cds-gap-lg) 0 var(--cds-gap-sm); letter-spacing: -.01em; }
+.fx-dek { font-size: var(--cds-font-size-heading); color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-lg); line-height: 1.5; max-width: 52rem; }
+.fx-concl { list-style: none; padding: 0; margin: 0 0 var(--cds-gap-xl); display: grid; gap: 0; border-top: 2px solid var(--color-fg); }
+.fx-concl li { display: grid; grid-template-columns: 2.4rem 1fr; gap: var(--cds-gap-sm); padding: var(--cds-pad-md) 0; border-bottom: 1px solid var(--color-border-line); font-size: var(--cds-font-size-heading); line-height: 1.55; }
+.fx-concl .fx-num { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); line-height: 1; color: var(--color-fg-muted); }
+.fx-concl b, .fx b { font-weight: 600; }
+.fx-toc { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-xl); color: var(--color-fg-muted); }
+.fx-toc a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-border-line); padding-bottom: 2px; }
+.fx-sec { margin: 0 0 calc(var(--cds-gap-xl) * 1.6); scroll-margin-top: 16px; }
+.fx-sec > h2 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); display: flex; gap: var(--cds-gap-sm); align-items: baseline; }
+.fx-sec > h2 .fx-step { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .08em; }
+.fx-lede { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-md); max-width: 50rem; line-height: 1.55; }
+.fx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.fx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.fx-card.fx-wide { grid-column: 1 / -1; }
+.fx-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 2px; }
+.fx-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-sm); line-height: 1.45; }
+.fx-figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: 0; border-top: 1px solid var(--color-border-line); border-bottom: 1px solid var(--color-border-line); margin-bottom: var(--cds-gap-md); }
+.fx-fig { padding: var(--cds-pad-md) var(--cds-pad-sm); border-right: 1px solid var(--color-border-line); min-width: 0; }
+.fx-fig:last-child { border-right: 0; }
+.fx-fig .k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.fx-fig .v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.15; margin: 4px 0 2px; }
+.fx-fig .s { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.fx-chart { position: relative; width: 100%; }
+.fx-chart svg { display: block; overflow: visible; }
+.fx-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-sm); }
+.fx-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.fx-legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.fx-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); opacity: 0; transition: opacity .12s; max-width: 16rem; z-index: 2; }
+.fx-tip .t { color: var(--cds-text-secondary); margin-bottom: 2px; }
+.fx-tbl-wrap { overflow-x: auto; }
+.fx-tbl { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-body); }
+.fx-tbl th { text-align: left; font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); border-bottom: 1px solid var(--color-fg); padding: 6px 10px 6px 0; white-space: nowrap; }
+.fx-tbl td { border-bottom: 1px solid var(--color-border-line); padding: 8px 10px 8px 0; vertical-align: top; line-height: 1.45; }
+.fx-tbl td.r, .fx-tbl th.r { text-align: right; }
+.fx-tbl td.m { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.fx-tbl tr.fx-na td { color: var(--color-fg-muted); }
+.fx-callout { border-left: 3px solid var(--color-fg); padding: var(--cds-pad-sm) var(--cds-pad-md); margin: var(--cds-gap-md) 0 0; line-height: 1.6; }
+.fx-callout .v { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); }
+.fx-list { margin: 0; padding-left: 1.1rem; line-height: 1.65; }
+.fx-list li { margin-bottom: 6px; }
+.fx-check { list-style: none; padding: 0; margin: 0; }
+.fx-check li { padding: 8px 0 8px 1.8rem; border-bottom: 1px solid var(--color-border-line); position: relative; line-height: 1.5; }
+.fx-check li::before { content: ""; position: absolute; left: 0; top: 11px; width: 14px; height: 14px; border: 1.5px solid var(--color-fg-muted); border-radius: 3px; }
+.fx-foot { border-top: 2px solid var(--color-fg); padding-top: var(--cds-pad-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.6; }
+.fx-fail { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: inherit; height: 100%; }
+.fx-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.fx-pos { color: var(--color-ok); }
+.fx-neg { color: var(--color-bad); }
+</style>
+
+<div class="fx">
+  <div class="fx-brand"><span>stayhungryasi.com</span><span>Investigación cambiaria · al 21 de octubre de 2026</span></div>
+  <h1 class="fx-title" id="top">Perspectivas del USD/KRW: ¿hasta dónde pueden bajar el tipo de cambio los dólares de los chips?</h1>
+  <p class="fx-dek">Aunque los extranjeros vendieron KOSPI en grandes cantidades y el dólar estaba fuerte, el won se apreció. Lo que movió el precio no fueron las tasas sino los flujos, y en particular la rapidez con que los exportadores venden sus dólares.</p>
+
+  <ol class="fx-concl" id="conclusion">
+    <li><span class="fx-num">01</span><span>El motor de la apreciación del won no son los retornos al accionista sino el <b>superávit de cuenta corriente</b> (agosto: <b data-source="ca_monthly" data-field="ca" data-where="month=2026-08" class="dash-skeleton">—</b> cientos de millones de US$) y el <b>aumento de la tasa de conversión de las empresas</b>. Con convertir a wones apenas el <b data-source="breakeven" data-field="value" data-where="metric=supply" class="dash-skeleton">—</b> de los ingresos por exportaciones ya hay oferta neta de dólares.</span></li>
+    <li><span class="fx-num">02</span><span>La trayectoria base para fin de año es de <b data-source="scen_fmt" data-field="ye" data-where="scenario=Base%3A%20formaci%C3%B3n%20de%20piso" class="dash-skeleton">—</b> wones (probabilidad <span data-source="scenarios" data-field="prob" data-where="scenario=Base%3A%20formaci%C3%B3n%20de%20piso" class="dash-skeleton">—</span>). La probabilidad de <b>tocar</b> por debajo de 1,300 wones es de <b data-source="level_probs" data-field="prob" data-where="horizon=3%20meses" class="dash-skeleton">—</b> en 3 meses, y la de <b>asentarse</b> por debajo, de <b data-source="level_probs" data-field="prob" data-where="horizon=12%20meses" class="dash-skeleton">—</b> en 12 meses.</span></li>
+    <li><span class="fx-num">03</span><span>La probabilidad de reversión es de <b data-source="scenarios" data-field="prob" data-where="scenario=Reversi%C3%B3n" class="dash-skeleton">—</b>. Los factores de riesgo son el límite superior de la Fed en <span data-source="macro" data-field="value" data-where="var=Tasa%20de%20la%20Fed%20(l%C3%ADmite%20superior)" class="dash-skeleton">—</span>% y la señal de nuevas subidas, una repatriación potencial (estimada) de unos <b data-source="samsung_repat" data-field="value" data-where="metric=samsung_repat" class="dash-skeleton">—</b> cientos de millones de US$ tras el dividendo de Samsung de noviembre, y la reacción cuando las empresas dejen de convertir.</span></li>
+  </ol>
+
+  <nav class="fx-toc" aria-label="Índice">
+    <a href="#s1">1 Situación actual</a><a href="#s2">2 Balance de flujos</a><a href="#s3">3 Retornos al accionista</a><a href="#s4">4 Variables externas</a><a href="#s5">5 Escenarios</a><a href="#s6">6 Monitoreo</a><a href="#s7">Riesgos y lista de control</a>
+  </nav>
+
+  <!-- 1 -->
+  <section class="fx-sec" id="s1">
+    <h2><span class="fx-step">STEP 1</span>Situación actual</h2>
+    <p class="fx-lede">El tipo de cambio ha bajado mucho desde el máximo del año. La caída desde fines de junio no se debió a un dólar débil sino a una fuerza propia del won.</p>
+    <div class="fx-figs">
+      <div class="fx-fig"><div class="k">Último cierre</div><div class="v" data-source="levels" data-field="value" data-where="metric=%C3%9Altimo%20cierre">—</div><div class="s" data-source="levels" data-field="asof" data-where="metric=%C3%9Altimo%20cierre">—</div></div>
+      <div class="fx-fig"><div class="k">Máximo del año (intradía)</div><div class="v" data-source="levels" data-field="value" data-where="metric=M%C3%A1ximo%20del%20a%C3%B1o%20(intrad%C3%ADa)">—</div><div class="s" data-source="levels" data-field="asof" data-where="metric=M%C3%A1ximo%20del%20a%C3%B1o%20(intrad%C3%ADa)">—</div></div>
+      <div class="fx-fig"><div class="k">Índice dólar</div><div class="v" data-source="levels" data-field="value" data-where="metric=%C3%8Dndice%20d%C3%B3lar">—</div><div class="s" data-source="levels" data-field="asof" data-where="metric=%C3%8Dndice%20d%C3%B3lar">—</div></div>
+      <div class="fx-fig"><div class="k">JPY/KRW (100 yenes)</div><div class="v" data-source="levels" data-field="value" data-where="metric=JPY%2FKRW%20(100%20yenes)">—</div><div class="s" data-source="levels" data-field="note" data-where="metric=JPY%2FKRW%20(100%20yenes)">—</div></div>
+      <div class="fx-fig"><div class="k">CNY/KRW</div><div class="v" data-source="levels" data-field="value" data-where="metric=CNY%2FKRW">—</div><div class="s" data-source="levels" data-field="asof" data-where="metric=CNY%2FKRW">—</div></div>
+    </div>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <h3 id="chart-path">Trayectoria del tipo de cambio y rangos por escenario</h3>
+        <p class="fx-note">Promedios trimestrales y último cierre (línea); rangos esperados por escenario a fin de año, 6 meses y 12 meses (barras). La línea punteada marca 1,300 wones.</p>
+        <div class="fx-legend" id="path-legend"></div>
+        <div class="fx-chart dash-skeleton" id="path-chart" data-source="fx_path scenarios" style="min-height:340px"></div>
+      </div>
+      <div class="fx-card">
+        <h3 id="chart-decomp">Factores propios del won vs. factor dólar</h3>
+        <p class="fx-note">Variación del 30 de junio al 20 de octubre. El valor del won se calcula como el inverso del USD/KRW.</p>
+        <div class="fx-chart dash-skeleton" id="decomp-chart" data-source="decomp_calc" style="min-height:150px"></div>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">El índice dólar casi no se movió, pero el won subió mucho. Esta caída la generaron los flujos internos.</p>
+      </div>
+      <div class="fx-card">
+        <h3>El won a través de tipos cruzados</h3>
+        <p class="fx-note">Valores calculados al combinar JPY/KRW y CNY/KRW con el USD/KRW (aproximados por diferencias de hora).</p>
+        <table class="fx-tbl" data-source="cross" data-row-key="pair" id="tbl-cross">
+          <thead><tr><th data-field="pair">Par</th><th data-field="value" class="r">Valor calculado</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">El yen sigue débil. Que el JPY/KRW esté en su mínimo en 18 años indica que el won también está sobrecalentado frente al yen, y es un factor que limita una baja mayor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="fx-sec" id="s2">
+    <h2><span class="fx-step">STEP 2</span>Balance de flujos (mensual, cientos de millones de US$)</h2>
+    <p class="fx-lede">La fuente de la oferta es el superávit de la balanza de bienes; la variable es cuánto de él se convierte a wones. A las partidas no verificadas no se les inventaron cifras: se dejaron como "No verificable".</p>
+    <div class="fx-grid">
+      <div class="fx-card">
+        <h3 id="chart-ca">Superávit de cuenta corriente</h3>
+        <p class="fx-note">Mensual, cientos de millones de US$. Muy por encima del mismo mes del año anterior (gris).</p>
+        <div class="fx-chart dash-skeleton" id="ca-chart" data-source="ca_monthly" style="min-height:230px"></div>
+      </div>
+      <div class="fx-card">
+        <h3 id="chart-sens">Sensibilidad a la tasa de conversión</h3>
+        <p class="fx-note">Oferta neta mensual de dólares por tasa de conversión (oferta − demanda observada). Se muestran el supuesto base y ±10 pp.</p>
+        <div class="fx-chart dash-skeleton" id="sens-chart" data-source="sens" style="min-height:230px"></div>
+      </div>
+      <div class="fx-card fx-wide">
+        <h3 id="tbl-ledger-h">Balance de flujos</h3>
+        <p class="fx-note">Mensualización: a los ingresos por exportaciones se aplica la tasa base de conversión; las acciones extranjeras se escalan de los días observados a los días del mes; de las ventas extranjeras se supone que se repatría la mitad; la inversión en EE. UU. es 1/12 del límite anual.</p>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="ledger_inputs" data-row-key="item" id="tbl-ledger">
+          <thead><tr><th data-field="side">Lado</th><th data-field="item">Partida</th><th data-field="raw" class="r">Observado</th><th data-field="unit">Unidad</th><th data-field="period">Periodo</th><th data-source="ledger_calc" data-field="monthly" class="r">Mensual (cientos de mill. US$)</th><th data-field="status">Estado</th><th data-field="src">Fuente</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+      <div class="fx-card">
+        <h3>Tabla de sensibilidad</h3>
+        <p class="fx-note">Cientos de millones de US$/mes.</p>
+        <table class="fx-tbl" data-source="sens" data-row-key="ratio" id="tbl-sens">
+          <thead><tr><th data-field="ratio">Tasa de conversión</th><th data-field="supply" class="r">Oferta</th><th data-field="demand" class="r">Demanda</th><th data-field="net" class="r">Oferta neta</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="fx-card">
+        <h3>Tasa de conversión de equilibrio</h3>
+        <p class="fx-note">Demanda mensual observada dividida entre el superávit de la balanza de bienes.</p>
+        <div class="fx-callout">Si se convierte más del <span class="v" data-source="breakeven" data-field="value" data-where="metric=supply">—</span> de los ingresos por exportaciones, hay oferta neta de dólares. La demanda observada suma <b data-source="breakeven" data-field="value" data-where="metric=demand">—</b> cientos de millones de US$ al mes.</div>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">Hay más partidas no verificables del lado de la demanda, como la inversión externa del NPS y la repatriación de dividendos, por lo que es probable que el equilibrio real sea más alto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="fx-sec" id="s3">
+    <h2><span class="fx-step">STEP 3</span>Retornos al accionista — primero la conversión, después la repatriación</h2>
+    <p class="fx-lede">Cuando una empresa convierte dólares a wones para pagar dividendos o recomprar acciones, los accionistas extranjeros vuelven a convertir esos wones a dólares y se los llevan. El efecto neto surge del desfase temporal.</p>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <h3>Demanda de wones de corto plazo vs. repatriación de mediano plazo: cronología</h3>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="sh_return" data-row-key="step" id="tbl-sh">
+          <thead><tr><th data-field="step">#</th><th data-field="what">Evento</th><th data-field="size">Monto</th><th data-field="when">Fecha</th><th data-field="fx">Impacto cambiario</th><th data-field="status">Estado</th><th data-field="src">Fuente</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+      <div class="fx-card">
+        <h3>Tasa de conversión de equilibrio de los retornos al accionista</h3>
+        <p class="fx-note">= participación extranjera × tasa de repatriación extranjera</p>
+        <div class="fx-callout"><span class="v" data-source="breakeven" data-field="value" data-where="metric=shareholder">—</span><br>Participación extranjera en SK hynix <b data-source="assumptions" data-field="value" data-where="key=hynix_foreign">—</b> × repatriación <b data-source="assumptions" data-field="value" data-where="key=repat_div">—</b> (supuesto)</div>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">Es casi igual a la estimación de Sangsangin Securities y se superpone con el rango de conversión real estimado por NH Investment & Securities. Es decir, el efecto neto de los retornos al accionista es cercano a 0 en el mediano plazo.</p>
+      </div>
+      <div class="fx-card">
+        <h3>Repatriación potencial del dividendo del 3T de Samsung</h3>
+        <p class="fx-note">Dividendo de unos <span data-source="assumptions" data-field="value" data-where="key=samsung_div">—</span> billones de wones × participación extranjera supuesta <span data-source="assumptions" data-field="value" data-where="key=samsung_foreign">—</span>, convertido a <span data-source="assumptions" data-field="value" data-where="key=fx">—</span> wones por dólar</p>
+        <div class="fx-callout">Unos <span class="v" data-source="samsung_repat" data-field="value" data-where="metric=samsung_repat">—</span> cientos de millones de US$<br>Salida escalonada tras el pago habitual en noviembre. Fecha de pago no verificable.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="fx-sec" id="s4">
+    <h2><span class="fx-step">STEP 4</span>Variables externas</h2>
+    <p class="fx-lede">La mayoría de las variables externas apuntan a un won más débil. Si aun así el tipo de cambio bajó, fue porque los flujos se impusieron; en cuanto los flujos se debiliten, estas variables volverán a dominar el precio.</p>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="macro" data-row-key="var" id="tbl-macro">
+          <thead><tr><th data-field="var">Variable</th><th data-field="value" class="r">Nivel</th><th data-field="unit">Unidad</th><th data-field="asof">Fecha</th><th data-field="impact">Impacto en el won</th><th data-field="src">Fuente</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+        <div class="fx-callout">Diferencial de tasas de referencia EE. UU.-Corea (límite superior): <span class="v" data-source="rate_gap" data-field="value" data-where="metric=gap">—</span> pp. Si el BOK mantiene la tasa mañana (22 oct.), se conserva; si la Fed sube en diciembre, se amplía.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="fx-sec" id="s5">
+    <h2><span class="fx-step">STEP 5</span>Escenarios</h2>
+    <p class="fx-lede">Las probabilidades son un juicio subjetivo basado en los datos anteriores, no el resultado de un modelo econométrico. 6 meses corresponde a abril de 2027 y 12 meses a octubre de 2027.</p>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="scenarios" data-row-key="scenario" id="tbl-scen">
+          <thead><tr><th data-field="scenario">Escenario</th><th data-field="prob" class="r">Probabilidad</th><th data-source="scen_fmt" data-field="ye" class="r">Fin de año</th><th data-source="scen_fmt" data-field="m6" class="r">6 meses</th><th data-source="scen_fmt" data-field="m12" class="r">12 meses</th><th data-field="trigger">Detonantes</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+      <div class="fx-card">
+        <h3 id="chart-probs">1,300 wones: tocar no es lo mismo que asentarse</h3>
+        <p class="fx-note">Tocar: cae por debajo al menos una vez intradía. Asentarse: el promedio trimestral queda por debajo.</p>
+        <div class="fx-chart dash-skeleton" id="probs-chart" data-source="level_probs" style="min-height:170px"></div>
+      </div>
+      <div class="fx-card">
+        <h3 id="chart-cons">Comparación con los pronósticos del mercado</h3>
+        <p class="fx-note">Rango de pronóstico por institución (línea) y rango de fin de año del escenario base de este análisis (sombreado).</p>
+        <div class="fx-chart dash-skeleton" id="cons-chart" data-source="consensus scenarios" style="min-height:260px"></div>
+      </div>
+      <div class="fx-card fx-wide">
+        <h3>Por qué difieren los pronósticos</h3>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="consensus" data-row-key="inst" id="tbl-cons">
+          <thead><tr><th data-field="inst">Institución</th><th data-field="horizon">Horizonte</th><th data-field="view">Pronóstico</th><th data-field="pub">Publicación</th><th data-field="gap">Diferencia con este análisis</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">Los pronósticos anteriores a agosto reflejaban menos la conversión del ADR de SK hynix y la aceleración de la conversión de las empresas. Las mesas de cambios de los bancos ponderan más los flujos de fin de año; los pronósticos anuales de las casas de bolsa, el ciclo del dólar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="fx-sec" id="s6">
+    <h2><span class="fx-step">STEP 6</span>Monitoreo</h2>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <h3>Calendario de eventos de los próximos 90 días</h3>
+        <p class="fx-note">Hora de Corea. Las fechas marcadas como "habitual" o "no verificable" no están confirmadas.</p>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="calendar" data-row-key="date" id="tbl-cal">
+          <thead><tr><th data-field="date">Fecha</th><th data-field="event">Evento</th><th data-field="why">Por qué importa</th><th data-field="src">Fuente</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+      <div class="fx-card fx-wide">
+        <h3>5 indicadores adelantados y señales de reversión</h3>
+        <p class="fx-note">Los umbrales de reversión son criterios de este análisis.</p>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="indicators" data-row-key="ind" id="tbl-ind">
+          <thead><tr><th data-field="ind">Indicador</th><th data-field="latest">Último valor</th><th data-field="asof">Fecha</th><th data-field="flip">Señal de reversión</th><th data-field="meaning">Significado</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="fx-sec" id="s7">
+    <h2><span class="fx-step">RISK</span>Riesgos y lista de control</h2>
+    <div class="fx-grid">
+      <div class="fx-card">
+        <h3>Riesgos de depreciación del won (alza del tipo de cambio)</h3>
+        <ul class="fx-list">
+          <li><b>Freno a la conversión de las empresas</b> — si el tipo de cambio rebota, las empresas pueden empezar a acumular dólares y acentuar el rebote (como en el periodo de tipo de cambio alto de mayo de este año).</li>
+          <li><b>Concentración de repatriación de dividendos</b> — tras el pago del dividendo del 3T de Samsung y tras la decisión sobre el retorno remanente en enero.</li>
+          <li><b>Subida de la Fed en diciembre + alza brusca del bono a 10 años de EE. UU.</b> — una fase en la que la fortaleza del dólar se impone a los flujos.</li>
+          <li><b>Riesgo crediticio de la IA y pico del ciclo de memoria</b> — desaceleración de las exportaciones y salida de extranjeros al mismo tiempo.</li>
+          <li><b>Vencimiento de la cobertura cambiaria y del swap del NPS</b> — si se prorrogan a fines de 2026.</li>
+        </ul>
+      </div>
+      <div class="fx-card">
+        <h3>Riesgos de apreciación del won (baja del tipo de cambio)</h3>
+        <ul class="fx-list">
+          <li><b>Giro hacia un dólar débil</b> — señales de pausa de la Fed, caída del índice dólar.</li>
+          <li><b>Dividendo extraordinario de Samsung + alta tasa de conversión</b> — si la empresa obtiene la mayor parte de los wones vendiendo dólares.</li>
+          <li><b>Giro a compras netas extranjeras en KOSPI</b> — si la presión vendedora se vuelve compradora, la oferta de dólares se duplica.</li>
+          <li><b>Estacionalidad de las ventas de dólares de fin de año</b> — conversión de los exportadores por el cierre contable anual.</li>
+        </ul>
+      </div>
+      <div class="fx-card fx-wide">
+        <h3>Lista de control</h3>
+        <ul class="fx-check">
+          <li>22 oct. decisión de la Junta de Política Monetaria y votos disidentes — cambio en el atractivo de las tasas en wones</li>
+          <li>29 oct. comunicado del FOMC — qué tan fuerte sugiere una subida en diciembre; reacción del índice dólar</li>
+          <li>Consejo de Samsung — monto definitivo y fecha de pago del dividendo del 3T; monto y modalidad del retorno adicional de SK hynix</li>
+          <li>Exportaciones del 1~10 de noviembre (Aduanas de Corea) — crecimiento de los chips y tamaño del superávit comercial</li>
+          <li>Depósitos en divisas de residentes (BOK) — dirección de los depósitos en dólares de las empresas</li>
+          <li>Dirección del tipo de cambio en días de venta neta extranjera — si continúa el desacople</li>
+          <li>Comité del fondo del NPS en diciembre — prórroga de la cobertura cambiaria estratégica y del swap</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fx-foot">
+    Este material es un análisis basado en notas de prensa públicas y anuncios oficiales, y no constituye asesoría de inversión. Las probabilidades de los escenarios, las tasas de conversión y las tasas de repatriación son juicios subjetivos o supuestos. La fuente y la fecha de cada cifra pueden consultarse en la columna de fuente de cada tabla; las partidas no verificadas se marcaron como "No verificable".<br>stayhungryasi.com
+  </footer>
+</div>
+
+<script>
+(function () {
+  const get = (rows, k, v, f) => { const r = rows.find(x => x[k] === v); return r ? r[f] : null; };
+
+  dash.calc('cross', {
+    inputs: ['levels'],
+    title: 'USD/JPY y USD/CNY calculados',
+    description: 'Aproximación: cierre del USD/KRW dividido entre el JPY/KRW (por 100 yenes) y el CNY/KRW.',
+    fn: (levels) => {
+      const v = m => levels.find(r => r.metric === m).value;
+      const k = v('Último cierre');
+      return [
+        { pair: 'USD/JPY (calculado)', value: k / (v('JPY/KRW (100 yenes)') / 100) },
+        { pair: 'USD/CNY (calculado)', value: k / v('CNY/KRW') }
+      ];
+    }
+  });
+
+  dash.calc('decomp_calc', {
+    inputs: ['decomp'],
+    title: 'Variación del won vs. el dólar',
+    description: 'Variación 30 jun.→20 oct. del valor del won (inverso del USD/KRW) y del índice dólar.',
+    fn: (decomp) => {
+      const k = decomp.find(r => r.series === 'USD/KRW');
+      const d = decomp.find(r => r.series === 'Índice dólar');
+      return [
+        { series: 'Valor del won', chg: k.start / k.end - 1 },
+        { series: 'Índice dólar', chg: d.end / d.start - 1 }
+      ];
+    }
+  });
+
+  dash.calc('ledger_calc', {
+    inputs: ['ledger_inputs', 'assumptions'],
+    title: 'Balance de flujos mensualizado',
+    description: 'Observaciones convertidas a cientos de millones de US$ por mes. Supuestos en los datos de assumptions.',
+    fn: (ledger_inputs, assumptions) => {
+      const a = k => assumptions.find(r => r.key === k).value;
+      const f = {
+        'Superávit de la balanza de bienes': r => r.raw * a('conv_base'),
+        'Conversión de fondos del ADR de SK hynix': r => 0,
+        'Compras netas de acciones extranjeras por residentes': r => r.raw * a('month_days') / a('os_days'),
+        'Ventas netas de acciones por extranjeros': r => r.raw / a('fx') * a('repat_sell'),
+        'Ejecución de inversión en EE. UU.': r => r.raw / 12
+      };
+      return ledger_inputs.map(r => ({ item: r.item, monthly: (r.raw == null || !f[r.item]) ? null : f[r.item](r) }));
+    }
+  });
+
+  dash.calc('sens', {
+    inputs: ['ledger_inputs', 'ledger_calc'],
+    title: 'Sensibilidad a la tasa de conversión',
+    description: 'Diferencia entre la oferta (balanza de bienes × tasa) y la demanda observada total, para tasas de conversión de 20~60%.',
+    fn: (ledger_inputs, ledger_calc) => {
+      const goods = ledger_inputs.find(r => r.item === 'Superávit de la balanza de bienes').raw;
+      const demand = ledger_inputs.filter(r => r.side === 'Demanda')
+        .map(r => (ledger_calc.find(c => c.item === r.item) || {}).monthly)
+        .filter(v => v != null).reduce((s, v) => s + v, 0);
+      return [0.2, 0.3, 0.4, 0.5, 0.6].map(ratio => ({ ratio, supply: goods * ratio, demand, net: goods * ratio - demand }));
+    }
+  });
+
+  dash.calc('breakeven', {
+    inputs: ['ledger_inputs', 'ledger_calc', 'assumptions'],
+    title: 'Tasa de conversión de equilibrio',
+    description: 'Flujos: demanda observada ÷ superávit de bienes. Retornos al accionista: participación extranjera × tasa de repatriación.',
+    fn: (ledger_inputs, ledger_calc, assumptions) => {
+      const a = k => assumptions.find(r => r.key === k).value;
+      const goods = ledger_inputs.find(r => r.item === 'Superávit de la balanza de bienes').raw;
+      const demand = ledger_inputs.filter(r => r.side === 'Demanda')
+        .map(r => (ledger_calc.find(c => c.item === r.item) || {}).monthly)
+        .filter(v => v != null).reduce((s, v) => s + v, 0);
+      return [
+        { metric: 'supply', value: demand / goods },
+        { metric: 'demand', value: demand },
+        { metric: 'shareholder', value: a('hynix_foreign') * a('repat_div') }
+      ];
+    }
+  });
+
+  dash.calc('samsung_repat', {
+    inputs: ['assumptions'],
+    title: 'Repatriación potencial del dividendo de Samsung',
+    description: 'Dividendo del 3T (billones de wones) × participación extranjera supuesta ÷ tipo de cambio, en cientos de millones de US$.',
+    fn: (assumptions) => {
+      const a = k => assumptions.find(r => r.key === k).value;
+      return [{ metric: 'samsung_repat', value: a('samsung_div') * 10000 * a('samsung_foreign') / a('fx') }];
+    }
+  });
+
+  dash.calc('rate_gap', {
+    inputs: ['macro'],
+    title: 'Diferencial de tasas EE. UU.-Corea',
+    description: 'Tasa de la Fed (límite superior) − tasa de referencia del BOK.',
+    fn: (macro) => {
+      const v = n => macro.find(r => r.var === n).value;
+      return [{ metric: 'gap', value: v('Tasa de la Fed (límite superior)') - v('Tasa de referencia del BOK') }];
+    }
+  });
+
+  dash.calc('scen_fmt', {
+    inputs: ['scenarios'],
+    title: 'Formato de rangos por escenario',
+    description: 'Mínimo~máximo por escenario como texto en wones.',
+    fn: (scenarios) => {
+      const n = v => v.toLocaleString('en-US');
+      return scenarios.map(r => ({ scenario: r.scenario, ye: n(r.ye_lo) + '~' + n(r.ye_hi), m6: n(r.m6_lo) + '~' + n(r.m6_hi), m12: n(r.m12_lo) + '~' + n(r.m12_hi) }));
+    }
+  });
+
+  window.FXU = { get };
+})();
+</script>
+
+<script>
+(function () {
+  const F1 = d3.format(',.1f'), F0 = d3.format(',.0f'), F2 = d3.format(',.2f'), F3 = d3.format(',.3f');
+  const P0 = d3.format('.0%'), P1 = d3.format('+.1%');
+  const SCOL = () => ({ 'Base: formación de piso': dash.colors[0], 'Mayor apreciación del won': dash.colors[2], 'Reversión': dash.colors[3] });
+
+  function setText(sel, fmt) {
+    document.querySelectorAll(sel).forEach(el => {
+      const id = el.getAttribute('data-source'), field = el.getAttribute('data-field');
+      const where = el.getAttribute('data-where');
+      const d = dash.data(id);
+      if (d.status !== 'ok') { el.textContent = '—'; if (d.status !== 'loading') el.classList.remove('dash-skeleton'); return; }
+      const [k, v] = where.split('=').map(decodeURIComponent);
+      const r = d.data.find(x => String(x[k]) === v);
+      el.classList.remove('dash-skeleton');
+      if (!r || r[field] == null) { el.textContent = '—'; return; }
+      el.textContent = fmt(r[field], id, field, r);
+    });
+  }
+
+  function fmtValue(v, id, field, r) {
+    if (field === 'asof' || field === 'note') return String(v);
+    if (id === 'breakeven') return r.metric === 'demand' ? F1(v) : P0(v);
+    if (id === 'level_probs' || (id === 'scenarios' && field === 'prob')) return P0(v);
+    if (id === 'assumptions') return (r.key === 'samsung_div' || r.key === 'fx') ? F0(v) : (v < 1 ? P0(v) : F0(v));
+    if (id === 'scen_fmt') return String(v);
+    if (id === 'rate_gap' || id === 'macro') return F2(v);
+    if (id === 'levels') return r.metric === 'Índice dólar' ? F3(v) : F1(v);
+    if (id === 'samsung_repat' || id === 'ca_monthly') return F1(v);
+    return String(v);
+  }
+
+  function failBox(el, d) {
+    el.innerHTML = '';
+    el.classList.remove('dash-skeleton');
+    if (d.status === 'error' || d.status === 'connect' || d.status === 'declined' || d.status === 'missing') {
+      const f = document.createElement('div'); f.className = 'fx-fail'; f.textContent = 'Failed to load'; el.appendChild(f);
+    } else if (d.status === 'loading') el.classList.add('dash-skeleton');
+  }
+
+  function tip(container) {
+    let t = container.querySelector('.fx-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'fx-tip'; container.appendChild(t); }
+    return {
+      show(ev, title, lines) {
+        t.innerHTML = '';
+        const h = document.createElement('div'); h.className = 't'; h.textContent = title; t.appendChild(h);
+        lines.forEach(l => { const p = document.createElement('div'); p.textContent = l; t.appendChild(p); });
+        const b = container.getBoundingClientRect();
+        let x = ev.clientX - b.left + 12, y = ev.clientY - b.top + 12;
+        t.style.opacity = 1;
+        const w = t.offsetWidth, hh = t.offsetHeight;
+        if (x + w > b.width) x = Math.max(0, ev.clientX - b.left - w - 12);
+        if (y + hh > b.height) y = Math.max(0, ev.clientY - b.top - hh - 12);
+        t.style.left = x + 'px'; t.style.top = y + 'px';
+      },
+      hide() { t.style.opacity = 0; }
+    };
+  }
+
+  function styleAxis(g) {
+    g.attr('font-size', null).attr('font-family', null);
+    g.selectAll('text').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)');
+    g.selectAll('.domain').style('stroke', 'var(--cds-chart-axis)');
+    g.selectAll('.tick line').style('stroke', 'var(--cds-chart-grid)');
+  }
+
+  function fillTable(id, cols) {
+    const tbl = document.getElementById(id);
+    const src = tbl.getAttribute('data-source');
+    const d = dash.data(src);
+    const tb = tbl.querySelector('tbody');
+    tb.innerHTML = '';
+    if (d.status !== 'ok') {
+      const tr = tb.insertRow(); const td = tr.insertCell(); td.colSpan = cols.length;
+      td.className = 'm'; td.textContent = d.status === 'loading' ? '' : 'No se pudo cargar';
+      return;
+    }
+    const extra = {};
+    cols.forEach(c => { if (c.calc && !extra[c.calc]) extra[c.calc] = dash.data(c.calc); });
+    d.data.forEach(r => {
+      const tr = tb.insertRow();
+      tr.setAttribute('data-key', String(r[tbl.getAttribute('data-row-key')]));
+      if (cols.naKey && r[cols.naKey] == null) tr.className = 'fx-na';
+      cols.forEach(c => {
+        const td = tr.insertCell();
+        if (c.cls) td.className = c.cls;
+        let v;
+        if (c.calc) {
+          const e = extra[c.calc];
+          const row = e && e.status === 'ok' ? e.data.find(x => x[c.key] === r[c.key]) : null;
+          v = row ? row[c.f] : null;
+        } else v = r[c.f];
+        td.textContent = v == null ? (c.na || '—') : (c.fmt ? c.fmt(v, r) : String(v));
+      });
+    });
+  }
+
+  function drawPath() {
+    const el = document.getElementById('path-chart');
+    const p = dash.data('fx_path'), s = dash.data('scenarios');
+    const leg = document.getElementById('path-legend');
+    if (p.status !== 'ok' || s.status !== 'ok') { failBox(el, p.status !== 'ok' ? p : s); leg.innerHTML = ''; return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const col = SCOL();
+    leg.innerHTML = '';
+    [['Real · último dato', 'var(--color-fg)']].concat(s.data.map(r => [r.scenario + ' ' + P0(r.prob), col[r.scenario]])).forEach(([n, c]) => {
+      const sp = document.createElement('span'); const i = document.createElement('i'); i.style.background = c; sp.appendChild(i);
+      sp.appendChild(document.createTextNode(n)); leg.appendChild(sp);
+    });
+    const W = el.clientWidth, H = 340, m = { t: 12, r: 18, b: 34, l: 48 };
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const hist = p.data.map(r => ({ ...r, d: new Date(r.date + 'T00:00:00Z') }));
+    const hz = [['Fin de año', '2026-12-31', 'ye'], ['6 meses', '2027-04-21', 'm6'], ['12 meses', '2027-10-21', 'm12']].map(([n, dt, k]) => ({ n, d: new Date(dt + 'T00:00:00Z'), k }));
+    const x = d3.scaleUtc([new Date('2026-01-01T00:00:00Z'), new Date('2027-11-30T00:00:00Z')], [m.l, W - m.r]);
+    const lows = s.data.flatMap(r => [r.ye_lo, r.m6_lo, r.m12_lo]).concat(hist.map(h => h.usdkrw));
+    const highs = s.data.flatMap(r => [r.ye_hi, r.m6_hi, r.m12_hi]).concat(hist.map(h => h.usdkrw));
+    const y = d3.scaleLinear([Math.floor((d3.min(lows) - 30) / 50) * 50, Math.ceil((d3.max(highs) + 30) / 50) * 50], [H - m.b, m.t]);
+    const yAx = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6).tickFormat(d3.format(',')).tickSize(-(W - m.l - m.r)));
+    styleAxis(yAx); yAx.select('.domain').remove();
+    const xAx = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(W < 520 ? 4 : 8).tickFormat(d3.utcFormat('%y.%m')).tickSizeOuter(0));
+    styleAxis(xAx); xAx.selectAll('.tick line').remove();
+    // 1300 reference
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(1300)).attr('y2', y(1300)).style('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4');
+    svg.append('text').attr('x', W - m.r).attr('y', y(1300) - 5).attr('text-anchor', 'end').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('1,300');
+    // today divider
+    const today = new Date('2026-10-21T00:00:00Z');
+    svg.append('line').attr('x1', x(today)).attr('x2', x(today)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--cds-chart-grid)');
+    svg.append('text').attr('x', x(today) + 4).attr('y', m.t + 10).style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('Pronóstico →');
+    // history line
+    svg.append('path').datum(hist).style('fill', 'none').style('stroke', 'var(--color-fg)').attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+      .attr('d', d3.line().x(d => x(d.d)).y(d => y(d.usdkrw)));
+    const T = tip(el);
+    svg.selectAll('.hp').data(hist).join('circle').attr('cx', d => x(d.d)).attr('cy', d => y(d.usdkrw)).attr('r', 4).style('fill', 'var(--color-panel)').style('stroke', 'var(--color-fg)').attr('stroke-width', 2)
+      .on('mousemove', (ev, d) => T.show(ev, d.label, [F2(d.usdkrw) + ' wones', d.src])).on('mouseleave', () => T.hide());
+    const last = hist[hist.length - 1];
+    svg.append('text').attr('x', x(last.d) - 6).attr('y', y(last.usdkrw) + 18).attr('text-anchor', 'end').style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(F1(last.usdkrw));
+    // scenario bars
+    const bw = Math.max(5, Math.min(10, W / 90)), off = bw + 3;
+    hz.forEach(h => {
+      svg.append('text').attr('x', x(h.d)).attr('y', H - m.b + 28).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text(h.n);
+      s.data.forEach((r, i) => {
+        const lo = r[h.k + '_lo'], hi = r[h.k + '_hi'];
+        svg.append('rect').attr('x', x(h.d) + (i - 1) * off - bw / 2).attr('width', bw).attr('y', y(hi)).attr('height', Math.max(2, y(lo) - y(hi))).attr('rx', 3).style('fill', col[r.scenario]).attr('opacity', .9)
+          .on('mousemove', ev => T.show(ev, h.n + ' · ' + r.scenario, [F0(lo) + '~' + F0(hi) + ' wones', 'Probabilidad ' + P0(r.prob) + ' (juicio subjetivo)'])).on('mouseleave', () => T.hide());
+      });
+    });
+  }
+
+  function drawDecomp() {
+    const el = document.getElementById('decomp-chart');
+    const d = dash.data('decomp_calc');
+    if (d.status !== 'ok') { failBox(el, d); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const W = el.clientWidth, rowH = 46, H = d.data.length * rowH + 20;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const labW = Math.min(130, W * 0.38);
+    const max = d3.max(d.data, r => Math.abs(r.chg)) * 1.25;
+    const x = d3.scaleLinear([0, max], [labW, W - 56]);
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', 4).attr('y2', H - 8).style('stroke', 'var(--cds-chart-axis)');
+    d.data.forEach((r, i) => {
+      const yy = 10 + i * rowH;
+      svg.append('text').attr('x', 0).attr('y', yy + 16).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(r.series);
+      svg.append('rect').attr('x', x(0)).attr('y', yy + 4).attr('height', 20).attr('rx', 4).attr('width', Math.max(3, x(Math.abs(r.chg)) - x(0))).style('fill', i === 0 ? dash.colors[0] : 'var(--cds-chart-muted)');
+      svg.append('text').attr('x', x(Math.abs(r.chg)) + 6).attr('y', yy + 19).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(P1(r.chg));
+    });
+  }
+
+  function drawCA() {
+    const el = document.getElementById('ca-chart');
+    const d = dash.data('ca_monthly');
+    if (d.status !== 'ok') { failBox(el, d); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const W = el.clientWidth, H = 230, m = { t: 22, r: 8, b: 28, l: 8 };
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3.scaleBand(d.data.map(r => r.month), [m.l, W - m.r]).padding(0.38);
+    const y = d3.scaleLinear([0, d3.max(d.data, r => r.ca) * 1.12], [H - m.b, m.t]);
+    const T = tip(el);
+    const bw = Math.min(56, x.bandwidth()), dx = (x.bandwidth() - bw) / 2;
+    svg.selectAll('rect').data(d.data).join('rect').attr('x', r => x(r.month) + dx).attr('width', bw).attr('y', r => y(r.ca)).attr('height', r => y(0) - y(r.ca)).attr('rx', 4)
+      .style('fill', r => r.month.startsWith('2025') ? 'var(--cds-chart-muted)' : dash.colors[0])
+      .on('mousemove', (ev, r) => T.show(ev, r.month, [F1(r.ca) + ' cientos de mill. de US$', r.note || '', r.src].filter(Boolean))).on('mouseleave', () => T.hide());
+    svg.selectAll('.vl').data(d.data).join('text').attr('x', r => x(r.month) + x.bandwidth() / 2).attr('y', r => y(r.ca) - 6).attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(r => F1(r.ca));
+    svg.selectAll('.xl').data(d.data).join('text').attr('x', r => x(r.month) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text(r => r.month.replace('-', '.'));
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--cds-chart-axis)');
+  }
+
+  function drawSens() {
+    const el = document.getElementById('sens-chart');
+    const d = dash.data('sens'), a = dash.data('assumptions');
+    if (d.status !== 'ok' || a.status !== 'ok') { failBox(el, d.status !== 'ok' ? d : a); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const base = a.data.find(r => r.key === 'conv_base').value;
+    const W = el.clientWidth, H = 230, m = { t: 22, r: 8, b: 40, l: 8 };
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3.scaleBand(d.data.map(r => r.ratio), [m.l, W - m.r]).padding(0.34);
+    const ext = d3.extent(d.data, r => r.net);
+    const y = d3.scaleLinear([Math.min(0, ext[0]) * 1.2, Math.max(0, ext[1]) * 1.15], [H - m.b, m.t]);
+    const T = tip(el);
+    const bw = Math.min(48, x.bandwidth()), dx = (x.bandwidth() - bw) / 2;
+    const near = r => Math.abs(r.ratio - base) < 0.101;
+    svg.selectAll('rect').data(d.data).join('rect').attr('x', r => x(r.ratio) + dx).attr('width', bw)
+      .attr('y', r => y(Math.max(0, r.net))).attr('height', r => Math.abs(y(r.net) - y(0))).attr('rx', 4)
+      .style('fill', r => r.net < 0 ? 'var(--cds-chart-status-critical)' : (near(r) ? dash.colors[0] : 'var(--cds-chart-muted)'))
+      .on('mousemove', (ev, r) => T.show(ev, 'Tasa de conversión ' + P0(r.ratio), ['Oferta ' + F1(r.supply), 'Demanda ' + F1(r.demand), 'Oferta neta ' + F1(r.net) + ' cientos de mill. de US$'])).on('mouseleave', () => T.hide());
+    svg.selectAll('.vl').data(d.data).join('text').attr('x', r => x(r.ratio) + x.bandwidth() / 2).attr('y', r => r.net >= 0 ? y(r.net) - 6 : y(r.net) + 14).attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(r => (r.net > 0 ? '+' : '') + F0(r.net));
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--cds-chart-axis)');
+    svg.selectAll('.xl').data(d.data).join('text').attr('x', r => x(r.ratio) + x.bandwidth() / 2).attr('y', H - 20).attr('text-anchor', 'middle').style('fill', r => Math.abs(r.ratio - base) < 0.001 ? 'var(--color-fg)' : 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', r => Math.abs(r.ratio - base) < 0.001 ? 600 : 400).text(r => P0(r.ratio));
+    svg.append('text').attr('x', x(base) + x.bandwidth() / 2).attr('y', H - 4).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('Supuesto base');
+  }
+
+  function drawProbs() {
+    const el = document.getElementById('probs-chart');
+    const d = dash.data('level_probs');
+    if (d.status !== 'ok') { failBox(el, d); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const W = el.clientWidth, rowH = 50, H = d.data.length * rowH + 6;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3.scaleLinear([0, 1], [0, W - 44]);
+    d.data.forEach((r, i) => {
+      const yy = i * rowH;
+      svg.append('text').attr('x', 0).attr('y', yy + 14).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(r.event + ' · ' + r.horizon);
+      svg.append('rect').attr('x', 0).attr('y', yy + 22).attr('height', 14).attr('rx', 4).attr('width', x(1)).style('fill', 'var(--cds-chart-grid)');
+      svg.append('rect').attr('x', 0).attr('y', yy + 22).attr('height', 14).attr('rx', 4).attr('width', Math.max(3, x(r.prob))).style('fill', r.event.includes('Asentarse') ? dash.colors[3] : dash.colors[0]);
+      svg.append('text').attr('x', x(1) + 6).attr('y', yy + 34).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(P0(r.prob));
+    });
+  }
+
+  function drawCons() {
+    const el = document.getElementById('cons-chart');
+    const c = dash.data('consensus'), s = dash.data('scenarios');
+    if (c.status !== 'ok' || s.status !== 'ok') { failBox(el, c.status !== 'ok' ? c : s); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const base = s.data[0];
+    const W = el.clientWidth, rowH = 30, m = { t: 8, r: 14, b: 26 };
+    const H = c.data.length * rowH + m.t + m.b;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const meas = svg.append('text').style('font-size', 'var(--cds-font-size-caption)');
+    let labW = 0; c.data.forEach(r => { meas.text(r.inst); labW = Math.max(labW, meas.node().getComputedTextLength()); }); meas.remove();
+    labW = Math.min(labW + 10, W * 0.42);
+    const x = d3.scaleLinear([1150, 1500], [labW, W - m.r]);
+    svg.append('rect').attr('x', x(base.ye_lo)).attr('width', x(base.ye_hi) - x(base.ye_lo)).attr('y', m.t).attr('height', H - m.t - m.b).style('fill', dash.colors[0]).attr('opacity', .14);
+    const ax = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(W < 420 ? 3 : 6).tickFormat(d3.format(',')).tickSizeOuter(0));
+    styleAxis(ax);
+    svg.append('line').attr('x1', x(1300)).attr('x2', x(1300)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4');
+    const T = tip(el);
+    c.data.forEach((r, i) => {
+      const yy = m.t + i * rowH + rowH / 2;
+      svg.append('text').attr('x', 0).attr('y', yy + 4).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(r.inst);
+      const g = svg.append('g').on('mousemove', ev => T.show(ev, r.inst + ' · ' + r.horizon, [r.view, 'Publicado ' + r.pub])).on('mouseleave', () => T.hide());
+      if (r.hi > r.lo) g.append('line').attr('x1', x(r.lo)).attr('x2', x(r.hi)).attr('y1', yy).attr('y2', yy).style('stroke', dash.colors[1]).attr('stroke-width', 6).attr('stroke-linecap', 'round');
+      else g.append('circle').attr('cx', x(r.lo)).attr('cy', yy).attr('r', 5).style('fill', dash.colors[1]);
+    });
+  }
+
+  dash.onData(() => {
+    setText('#dash-root [data-source][data-where]', fmtValue);
+    drawPath(); drawDecomp(); drawCA(); drawSens(); drawProbs(); drawCons();
+    fillTable('tbl-cross', [{ f: 'pair' }, { f: 'value', cls: 'r', fmt: v => F2(v) }]);
+    const ledgerCols = [{ f: 'side' }, { f: 'item' }, { f: 'raw', cls: 'r', na: 'No verificable', fmt: v => Number.isInteger(v) ? d3.format(',')(v) : F1(v) }, { f: 'unit', cls: 'm' }, { f: 'period', cls: 'm' }, { calc: 'ledger_calc', key: 'item', f: 'monthly', cls: 'r', na: '—', fmt: v => F1(v) }, { f: 'status' }, { f: 'src', cls: 'm' }];
+    ledgerCols.naKey = 'raw';
+    fillTable('tbl-ledger', ledgerCols);
+    fillTable('tbl-sens', [{ f: 'ratio', fmt: v => P0(v) }, { f: 'supply', cls: 'r', fmt: v => F1(v) }, { f: 'demand', cls: 'r', fmt: v => F1(v) }, { f: 'net', cls: 'r', fmt: v => (v > 0 ? '+' : '') + F1(v) }]);
+    fillTable('tbl-sh', [{ f: 'step' }, { f: 'what' }, { f: 'size' }, { f: 'when' }, { f: 'fx' }, { f: 'status' }, { f: 'src', cls: 'm' }]);
+    const macroCols = [{ f: 'var' }, { f: 'value', cls: 'r', na: 'No verificable', fmt: v => F2(v) }, { f: 'unit', cls: 'm' }, { f: 'asof', cls: 'm' }, { f: 'impact' }, { f: 'src', cls: 'm' }];
+    macroCols.naKey = 'value';
+    fillTable('tbl-macro', macroCols);
+    fillTable('tbl-scen', [{ f: 'scenario' }, { f: 'prob', cls: 'r', fmt: v => P0(v) }, { calc: 'scen_fmt', key: 'scenario', f: 'ye', cls: 'r' }, { calc: 'scen_fmt', key: 'scenario', f: 'm6', cls: 'r' }, { calc: 'scen_fmt', key: 'scenario', f: 'm12', cls: 'r' }, { f: 'trigger', cls: 'm' }]);
+    fillTable('tbl-cons', [{ f: 'inst' }, { f: 'horizon', cls: 'm' }, { f: 'view' }, { f: 'pub', cls: 'm' }, { f: 'gap', cls: 'm' }]);
+    fillTable('tbl-cal', [{ f: 'date' }, { f: 'event' }, { f: 'why' }, { f: 'src', cls: 'm' }]);
+    fillTable('tbl-ind', [{ f: 'ind' }, { f: 'latest' }, { f: 'asof', cls: 'm' }, { f: 'flip' }, { f: 'meaning', cls: 'm' }]);
+  });
+
+  const named = document.getElementById(location.hash.slice(1));
+  if (named) setTimeout(() => { named.scrollIntoView(); dash.setLink(named.id); }, 300);
+  document.querySelectorAll('.fx-toc a').forEach(a => a.addEventListener('click', e => { e.preventDefault(); const t = document.getElementById(a.getAttribute('href').slice(1)); if (t) { t.scrollIntoView({ behavior: 'smooth' }); dash.setLink(t.id); } }));
+})();
+</script>
+
+</div></body></html>

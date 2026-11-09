@@ -1,0 +1,188 @@
+{
+ "slug": "us-midterms-2026-redteam",
+ "src": "card-en-02.webp",
+ "boxes": "card-en-02.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2,
+    3
+   ],
+   "text": {
+    "es": "LA CONTIENDA · CONTROL DEL CONGRESO",
+    "ja": "情勢 · 議会の構成"
+   },
+   "weight": "medium",
+   "size": 26,
+   "color": "#dc6c38",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "es": "Escenario base: barrida demócrata.",
+    "ja": "基本シナリオは民主党の両院制覇。"
+   },
+   "weight": "black",
+   "size": 64,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "minscale": 0.5,
+   "expand": [
+    0,
+    0,
+    124,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "La sorpresa real: Congreso dividido.",
+    "ja": "現実的なサプライズはねじれ議会。"
+   },
+   "weight": "black",
+   "size": 64,
+   "color": "#f46523",
+   "nowrap": true,
+   "minscale": 0.5,
+   "expand": [
+    0,
+    0,
+    256,
+    0
+   ]
+  },
+  {
+   "rect": [
+    575,
+    582,
+    873,
+    616
+   ],
+   "text": {
+    "es": "Barrida demócrata",
+    "ja": "民主党の両院制覇"
+   },
+   "size": 35,
+   "color": "#c6c9d2",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    125,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "Cámara demócrata + Senado demócrata",
+    "ja": "民主党下院 + 民主党上院"
+   },
+   "weight": "bold",
+   "size": 33,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "Cámara demócrata + Senado republicano",
+    "ja": "民主党下院 + 共和党上院"
+   },
+   "weight": "bold",
+   "size": 33,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "Cámara republicana + Senado republicano",
+    "ja": "共和党下院 + 共和党上院"
+   },
+   "weight": "bold",
+   "size": 33,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    320,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    16,
+    17,
+    18
+   ],
+   "text": {
+    "es": "Las barras muestran Kalshi (71 · 25 · 6.5%). Los rangos abarcan Kalshi, Polymarket y el modelo de DDHQ. Los demócratas tienen 84–95% de probabilidad de ganar la Cámara, así que el Senado lo decide.",
+    "ja": "バーはKalshiの値（71・25・6.5%）。レンジはKalshi・Polymarket・DDHQモデル。民主党の下院獲得確率は84〜95%で、勝負は上院で決まる。"
+   },
+   "size": 27,
+   "lh": 39,
+   "color": "#adb0bc",
+   "expand": [
+    0,
+    0,
+    14,
+    30
+   ]
+  },
+  {
+   "boxes": [
+    21
+   ],
+   "text": {
+    "es": "2 nov",
+    "ja": "11月2日"
+   },
+   "size": 20,
+   "color": "#adb0bb",
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    60,
+    0,
+    0,
+    0
+   ]
+  }
+ ]
+}

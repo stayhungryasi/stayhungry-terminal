@@ -1,0 +1,731 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ウォン/ドル相場展望 · Stayhungry.ASI</title>
+<meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet"><style>
+:root{color-scheme:dark;
+ --color-fg:#EEF0F5;--color-fg-muted:#9AA3B5;--color-bg:#0A0C10;--color-panel:#11141B;--color-border-line:#232836;--color-ok:#22B07D;--color-warn:#E3B341;--color-bad:#FF4438;
+ --font-anthropic-sans:"Noto Sans KR",system-ui,sans-serif;--font-anthropic-serif:"Noto Serif KR",Georgia,serif;
+ --cds-font-size-caption:12.5px;--cds-font-size-body:15px;--cds-font-size-heading:17px;--cds-font-size-title:24px;--cds-font-weight-medium:600;
+ --cds-gap-xs:6px;--cds-gap-sm:10px;--cds-gap-md:16px;--cds-gap-lg:24px;--cds-gap-xl:36px;--cds-pad-xs:4px;--cds-pad-sm:8px;--cds-pad-md:14px;--cds-pad-lg:22px;--cds-radius:10px;
+ --cds-border:#232836;--cds-chart-axis:#5B6475;--cds-chart-grid:#1E2431;--cds-chart-muted:#3A4253;--cds-chart-reference:#8D95A8;--cds-chart-status-critical:#FF4438;
+ --cds-text-secondary:#9AA3B5;--cds-surface-popover:#161A23;--cds-shadow-popover:0 8px 24px rgba(0,0,0,.5);--cds-dur-slow:.3s}
+html,body{margin:0;background:#0A0C10;color:#EEF0F5}
+#dash-root{padding:8px 16px 40px}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script type="application/json" id="fx-data">{"ledger_inputs": {"rows": [{"item": "貿易収支黒字", "side": "供給", "raw": 468.1, "unit": "億ドル", "period": "2026年8月", "status": "観測", "src": "韓国銀行 国際収支 2026-10-08"}, {"item": "ハイニックスADR調達資金の両替", "side": "供給", "raw": 265, "unit": "億ドル", "period": "7〜8月に分割両替", "status": "終了（10月の寄与0）", "src": "サンサンイン証券（ファイナンシャルニュース 2026-08-21）"}, {"item": "国民年金の為替ヘッジ", "side": "供給", "raw": null, "unit": "億ドル", "period": "—", "status": "確認不可（ヘッジ上限は最大20%）", "src": "アジア経済 2026-04-14"}, {"item": "外国人の債券流入", "side": "供給", "raw": null, "unit": "億ドル", "period": "—", "status": "確認不可", "src": "—"}, {"item": "企業の先物為替売り", "side": "供給", "raw": null, "unit": "億ドル", "period": "—", "status": "確認不可（売りは観測）", "src": "マネートゥデイ 2026-10-20"}, {"item": "国内投資家の海外株式純買い", "side": "需要", "raw": 41.522, "unit": "億ドル", "period": "10/1~19", "status": "観測", "src": "韓国預託決済院 SEIBro（デイリアン 2026-10-21）"}, {"item": "外国人の株式純売り", "side": "需要", "raw": 177160, "unit": "億ウォン", "period": "10/1~16", "status": "観測", "src": "韓国取引所（ニュースピム 2026-10-19）"}, {"item": "対米投資の執行", "side": "需要", "raw": 200, "unit": "億ドル/年", "period": "年間上限", "status": "上限ベース", "src": "ファイナンシャルニュース 2026-01-21"}, {"item": "年金基金の海外投資", "side": "需要", "raw": null, "unit": "億ドル", "period": "—", "status": "確認不可", "src": "—"}, {"item": "配当の本国送金", "side": "需要", "raw": null, "unit": "億ドル", "period": "11月以降", "status": "未発生（サムスン第3四半期配当の支払い後）", "src": "—"}]}, "decomp": {"rows": [{"series": "ウォン/ドル", "start": 1549.4, "start_date": "2026-06-30", "end": 1328.1, "end_date": "2026-10-20", "src": "クッキーニュース 2026-06-30 / ヘラルド経済 2026-10-20"}, {"series": "ドル指数", "start": 101.11, "start_date": "2026-06-30", "end": 101.757, "end_date": "2026-10-20", "src": "News1（ファイナンシャルニュース）2026-07-03 / ヘラルド経済 2026-10-20"}]}, "sh_return": {"rows": [{"step": "1", "what": "ハイニックスADR資金の両替", "size": "265億ドル（約40兆ウォン）", "when": "2026年7〜8月", "fx": "ウォン高（約129ウォンの寄与と推定）", "status": "終了", "src": "サンサンイン証券 2026-08-21"}, {"step": "2", "what": "ハイニックス自社株40兆ウォンの買い入れ・消却", "size": "40兆ウォン", "when": "8/20~11/19", "fx": "両替時はウォン高、外国人の売却代金の本国送金時はウォン安", "status": "進行中", "src": "SK hynix開示（ファイナンシャルニュース 2026-08-19）"}, {"step": "3", "what": "サムスン第3四半期現金配当", "size": "約30兆ウォン", "when": "10月末の取締役会で確定 → 通常11月に支払い", "fx": "支払い前の両替でウォン高 → 支払い後の本国送金でウォン安", "status": "確定待ち", "src": "サムスン電子ニュースルーム 2026-08-21"}, {"step": "4", "what": "ハイニックス追加還元の発表", "size": "FCFの50%以上（規模未定）", "when": "第3四半期決算発表時", "fx": "規模・方式次第", "status": "発表待ち", "src": "ファイナンシャルニュース 2026-08-19"}, {"step": "5", "what": "サムスンの残余還元", "size": "年間90〜110兆ウォンのうち残余", "when": "2027年1月の取締役会で決定", "fx": "特別配当の比重が高いほど本国送金が大きくなる", "status": "決定待ち", "src": "ニュースピム 2026-08-21"}]}, "ca_monthly": {"rows": [{"month": "2025-08", "ca": 98.4, "note": "2026-08の黒字（461.1）から前年比増加幅（362.7）を差し引いた値", "src": "ハフポスト韓国版 2026-10-08に基づく計算"}, {"month": "2026-06", "ca": 497.3, "note": "月間で過去最大", "src": "韓国銀行 国際収支（ノーカットニュース 2026-10-08）"}, {"month": "2026-07", "ca": 420.8, "note": "", "src": "韓国銀行 国際収支（SBS Biz 2026-10-08）"}, {"month": "2026-08", "ca": 461.1, "note": "貿易収支468.1", "src": "韓国銀行 国際収支（SBS Biz 2026-10-08）"}]}, "level_probs": {"rows": [{"event": "1,300ウォン割れタッチ", "horizon": "3カ月", "prob": 0.35}, {"event": "1,300ウォン割れタッチ", "horizon": "6カ月", "prob": 0.45}, {"event": "1,300ウォン以下に定着（四半期平均）", "horizon": "12カ月", "prob": 0.2}]}, "calendar": {"rows": [{"date": "2026-10-22", "event": "韓銀金融通貨委員会", "why": "現在3.00%、据え置きが優勢。利上げならウォン高材料", "src": "skyatlastreasure 2026-10"}, {"date": "2026-10-29", "event": "FOMC結果（韓国時間の未明）", "why": "据え置き確率84.5%。声明が12月利上げをどこまで示唆するか", "src": "トークンポスト 2026-10-19"}, {"date": "2026-10-31", "event": "サムスン取締役会・ハイニックス第3四半期決算（10月末）", "why": "第3四半期配当約30兆ウォンの確定、ハイニックス追加還元の規模", "src": "サムスン電子ニュースルーム・ファイナンシャルニュース"}, {"date": "2026-11-03", "event": "米中間選挙", "why": "選挙前後のFRB・ドルの変動", "src": "ファイナンシャルニュース 2026-10-15"}, {"date": "2026-11-19", "event": "ハイニックス自社株買い終了", "why": "ウォンの買い手が一つ消える", "src": "ファイナンシャルニュース 2026-08-19"}, {"date": "2026-11-26", "event": "韓銀金融通貨委員会", "why": "年内最後の決定", "src": "marketlog 2026-10"}, {"date": "2026-11-30", "event": "サムスン第3四半期配当の支払い（通常11月）", "why": "外国人持ち分の本国送金が始まる時点", "src": "通常の日程 — 確定日は確認不可"}, {"date": "2026-12-10", "event": "FOMC結果（韓国時間の未明）", "why": "年内追加利上げの有無。ドルの方向の分岐点", "src": "イーデンポスト 2026-09"}, {"date": "2026-12-31", "event": "国民年金の戦略的為替ヘッジ・韓銀スワップの期限", "why": "延長の有無がドル供給の安全弁を左右。基金運用委員会の日付は確認不可", "src": "ノーカットニュース 2025-12-15"}, {"date": "2027-01-31", "event": "サムスン取締役会：残余還元の決定（1月）", "why": "特別配当と消却の比重が本国送金の規模を決める", "src": "サムスン電子ニュースルーム 2026-08-21"}]}, "scenarios": {"rows": [{"scenario": "基本：底固め", "prob": 0.55, "ye_lo": 1300, "ye_hi": 1345, "m6_lo": 1280, "m6_hi": 1370, "m12_lo": 1270, "m12_hi": 1390, "trigger": "経常黒字が月400億ドル台を維持、年末の輸出企業のドル売り、FRBは12月に1回利上げ後に停止"}, {"scenario": "ウォン一段高", "prob": 0.2, "ye_lo": 1270, "ye_hi": 1300, "m6_lo": 1220, "m6_hi": 1300, "m12_lo": 1200, "m12_hi": 1290, "trigger": "FRB据え置き・2027年利下げ期待、ドル指数99割れ、外国人の純買い転換、サムスン特別配当＋高い両替比率"}, {"scenario": "揺り戻し", "prob": 0.25, "ye_lo": 1360, "ye_hi": 1420, "m6_lo": 1380, "m6_hi": 1450, "m12_lo": 1380, "m12_hi": 1470, "trigger": "AI信用リスク・メモリーのピークアウト、米10年債利回り急騰、配当の本国送金集中、企業の両替停止"}]}, "macro": {"rows": [{"var": "FRB政策金利の上限", "value": 4.0, "unit": "%", "asof": "2026-09-16利上げ", "impact": "ウォン安圧力", "src": "ファイナンシャルニュース 2026-10-08"}, {"var": "ドットチャート2026年末の中央値", "value": 4.1, "unit": "%", "asof": "2026-09 SEP", "impact": "年内1回の追加利上げを示唆", "src": "イーデンポスト 2026-09"}, {"var": "10月FOMC据え置き確率", "value": 84.5, "unit": "%", "asof": "2026-10-18~19", "impact": "短期的な負担は緩和", "src": "トークンポスト 2026-10-19"}, {"var": "12月FOMC利上げ確率", "value": null, "unit": "%", "asof": "—", "impact": "確認不可（主要IBの多くは12月利上げを予想）", "src": "Reuters(capital.com)"}, {"var": "米10年債（取引時間中の高値）", "value": 5.36, "unit": "%", "asof": "2026-10-07", "impact": "2002年以来の高水準、ドル高要因", "src": "ブロックメディア 2026-10-08"}, {"var": "韓銀政策金利", "value": 3.0, "unit": "%", "asof": "2026-08-27利上げ", "impact": "10/22決定、据え置きが優勢", "src": "skyatlastreasure 2026-10"}, {"var": "日本銀行政策金利", "value": 1.25, "unit": "%", "asof": "2026-09-18決定", "impact": "円安が継続、ウォン/円は下落", "src": "KBR 2026-09-21"}, {"var": "WTI 11月限", "value": 101.79, "unit": "ドル", "asof": "2026-10-20", "impact": "取引時間中に110ドルを突破後に反落、輸入決済の負担", "src": "イートゥデイ・News1 2026-10-21"}]}, "indicators": {"rows": [{"ind": "企業の外貨預金残高", "latest": "989.9億ドル", "asof": "2026-06末（7〜9月は確認不可）", "flip": "2カ月連続で月+20億ドル以上の増加", "meaning": "企業が再びドルを積み上げ始める → 供給が鈍化", "src": "韓国銀行（SBS Biz 2026-07-27）"}, {"ind": "半導体輸出（関税庁10日間速報）", "latest": "+170.9%（前年比）", "asof": "10/1~10", "flip": "伸び率が+50%を下回る、または10日間の貿易黒字が20億ドル未満", "meaning": "ドル流入の源泉が弱まる", "src": "関税庁（KDI 2026-10-12）"}, {"ind": "ドル指数", "latest": "101.757", "asof": "2026-10-20", "flip": "103超えが持続", "meaning": "ドル高が需給を圧倒", "src": "ヘラルド経済 2026-10-20"}, {"ind": "米10年債利回り", "latest": "取引時間中5.36%", "asof": "2026-10-07", "flip": "終値で5.40%超え", "meaning": "世界的なドル高・リスク回避の拡大", "src": "ブロックメディア 2026-10-08"}, {"ind": "外国人の売りと為替の連動", "latest": "5千億ウォンの純売りでも為替は-2.2ウォン", "asof": "2026-10-20", "flip": "外国人純売りの日に為替が上昇、3営業日連続", "meaning": "デカップリング終了 → 本国送金が価格に反映", "src": "ヘラルド経済 2026-10-20"}]}, "levels": {"rows": [{"metric": "直近終値", "value": 1328.1, "unit": "ウォン", "asof": "2026-10-20 15:30", "note": "3営業日連続の年初来安値、2024-10-02以来の低水準", "src": "ヘラルド経済 2026-10-20"}, {"metric": "取引時間中の安値", "value": 1325.4, "unit": "ウォン", "asof": "2026-10-20 09:52", "note": "", "src": "ヘラルド経済 2026-10-20"}, {"metric": "本日の公示", "value": 1327.6, "unit": "ウォン", "asof": "2026-10-21 11:00", "note": "ハナ銀行の売買基準レート", "src": "ジョブポスト 2026-10-21"}, {"metric": "年初来高値（取引時間中）", "value": 1561.5, "unit": "ウォン", "asof": "2026-06-06 夜間取引", "note": "2009-03以来の高水準", "src": "ファイナンシャルニュース 2026-06-06"}, {"metric": "ドル指数", "value": 101.757, "unit": "pt", "asof": "2026-10-20", "note": "", "src": "ヘラルド経済 2026-10-20"}, {"metric": "ウォン/円（100円）", "value": 840.2, "unit": "ウォン", "asof": "2026-10-20", "note": "2008-01以来の低水準", "src": "ヘラルド経済 2026-10-20"}, {"metric": "ウォン/人民元", "value": 198.31, "unit": "ウォン", "asof": "2026-10-21 09:43", "note": "取引時間中", "src": "ツアーコリア 2026-10-21"}]}, "fx_path": {"rows": [{"point": "2026Q1", "date": "2026-02-15", "label": "第1四半期平均", "usdkrw": 1466.9, "src": "iM証券レポート（ビジネスポスト 2026-10-06）"}, {"point": "2026Q2", "date": "2026-05-15", "label": "第2四半期平均", "usdkrw": 1501.64, "src": "iM証券レポート（ビジネスポスト 2026-10-06）"}, {"point": "2026Q3", "date": "2026-08-15", "label": "第3四半期平均", "usdkrw": 1418.62, "src": "iM証券レポート（ビジネスポスト 2026-10-06）"}, {"point": "2026-10avg", "date": "2026-10-09", "label": "10月平均（18日報道時点）", "usdkrw": 1342.6, "src": "ソウル経済TV 2026-10-18"}, {"point": "2026-10-20", "date": "2026-10-20", "label": "10/20 昼間取引終値", "usdkrw": 1328.1, "src": "ヘラルド経済・SBS 2026-10-20"}]}, "assumptions": {"rows": [{"key": "conv_base", "value": 0.4, "label": "輸出代金の基本両替比率", "note": "NHの推定40〜50%とサンサンインの推定50〜60%の間の下限"}, {"key": "repat_sell", "value": 0.5, "label": "外国人売却代金の本国送金比率", "note": "主観的な仮定"}, {"key": "fx", "value": 1330, "label": "換算レート", "note": "ウォン/ドル"}, {"key": "os_days", "value": 19, "label": "海外株式の観測日数", "note": "10/1~19"}, {"key": "month_days", "value": 31, "label": "月換算日数", "note": "10月"}, {"key": "repat_div", "value": 0.9, "label": "株主還元金の外国人本国送金比率", "note": "主観的な仮定"}, {"key": "hynix_foreign", "value": 0.5116, "label": "SK hynixの外国人持ち株比率", "note": "2026-08-19終値ベース（ウィキツリー）"}, {"key": "samsung_div", "value": 30, "label": "サムスン第3四半期現金配当（兆ウォン）", "note": "10月末の取締役会で確定予定"}, {"key": "samsung_foreign", "value": 0.5, "label": "サムスンの外国人持ち株比率の仮定", "note": "主観的な仮定"}]}, "consensus": {"rows": [{"inst": "ハナ銀行 ソ・ジョンフン", "horizon": "2026年末", "view": "1,320ウォン前後", "lo": 1320, "hi": 1320, "pub": "2026-10-19", "gap": "輸出代金の流入を核心とみる点は同じ", "src": "イートゥデイ（Nate）2026-10-19"}, {"inst": "ハナ銀行 イ・ユジョン", "horizon": "2026年末", "view": "1,320ウォン近辺", "lo": 1320, "hi": 1320, "pub": "2026-10-18", "gap": "同じ方向", "src": "ソウル経済TV 2026-10-18"}, {"inst": "ウリ銀行 イム・ファニョル", "horizon": "10月中", "view": "1,330〜1,370ウォン", "lo": 1330, "hi": 1370, "pub": "2026-10-18", "gap": "短期の上限をより高くみる（原油価格・FRB）", "src": "ソウル経済TV 2026-10-18"}, {"inst": "サンサンイン証券 チェ・イェチャン", "horizon": "今後12カ月", "view": "1,325〜1,400ウォン", "lo": 1325, "hi": 1400, "pub": "2026-08-21", "gap": "作成時点の為替は1,390ウォン台、本国送金による揺り戻しを反映", "src": "ファイナンシャルニュース 2026-08-21"}, {"inst": "NH投資証券", "horizon": "短期", "view": "1,340〜1,350ウォンが支持線", "lo": 1340, "hi": 1350, "pub": "2026-08-26", "gap": "すでに下抜け（作成時点の違い）", "src": "ブルーミングビット 2026-08-26"}, {"inst": "iM証券 パク・サンヒョン", "horizon": "2027年", "view": "1,200〜1,450ウォン、平均1,280ウォン", "lo": 1200, "hi": 1450, "pub": "2026-10-06", "gap": "ドル安をより大きく反映、本分析よりウォン高寄り", "src": "ビジネスポスト 2026-10-06"}]}}</script>
+<script>
+/* Minimal stand-in for the dashboard runtime: the same datasets the original report used, served from this page. */
+(function(){
+  var DS=JSON.parse(document.getElementById('fx-data').textContent),C={},cache={},cbs=[];
+  function cols(r){return r&&r.length?Object.keys(r[0]):[];}
+  window.dash={
+    colors:['#F26522','#3B82F6','#22B07D','#E3B341','#A78BFA','#F472B6','#2DD4BF','#94A3B8'],
+    data:function(id){
+      if(DS[id]){var r=DS[id].rows;return {status:'ok',data:r,rows:r,columns:cols(r),meta:[],refreshing:false};}
+      if(C[id]){if(!(id in cache)){var c=C[id];cache[id]=c.fn.apply(null,c.inputs.map(function(i){return window.dash.data(i).data;}));}
+        var v=cache[id];return {status:'ok',data:v,rows:v,columns:Array.isArray(v)?cols(v):[],meta:[],refreshing:false};}
+      return {status:'missing',data:[],rows:[],columns:[],meta:[],message:'missing '+id};
+    },
+    calc:function(id,o){C[id]=o;},
+    loader:function(){}, onData:function(fn){cbs.push(fn);},
+    setLink:function(){}, params:function(){return {};}, setParams:function(){}, resetParams:function(){}, refresh:function(){}
+  };
+  function run(){cbs.forEach(function(f){try{f();}catch(e){console.error(e);}});}
+  var t;addEventListener('resize',function(){clearTimeout(t);t=setTimeout(run,150);});
+  document.addEventListener('DOMContentLoaded',run);
+})();
+</script></head><body><div id="dash-root">
+<style>
+#dash-root { --dash-gutter: clamp(16px, 4vw, 40px); }
+.fx { max-width: 1120px; margin-inline: auto; font-family: var(--font-anthropic-sans); color: var(--color-fg); font-variant-numeric: tabular-nums; }
+.fx-brand { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .02em; border-bottom: 1px solid var(--color-border-line); padding-bottom: var(--cds-pad-sm); display: flex; justify-content: space-between; gap: var(--cds-gap-sm); flex-wrap: wrap; }
+.fx-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: clamp(1.9rem, 4.6vw, 3rem); line-height: 1.12; margin: var(--cds-gap-lg) 0 var(--cds-gap-sm); letter-spacing: -.01em; }
+.fx-dek { font-size: var(--cds-font-size-heading); color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-lg); line-height: 1.5; max-width: 52rem; }
+.fx-concl { list-style: none; padding: 0; margin: 0 0 var(--cds-gap-xl); display: grid; gap: 0; border-top: 2px solid var(--color-fg); }
+.fx-concl li { display: grid; grid-template-columns: 2.4rem 1fr; gap: var(--cds-gap-sm); padding: var(--cds-pad-md) 0; border-bottom: 1px solid var(--color-border-line); font-size: var(--cds-font-size-heading); line-height: 1.55; }
+.fx-concl .fx-num { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); line-height: 1; color: var(--color-fg-muted); }
+.fx-concl b, .fx b { font-weight: 600; }
+.fx-toc { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-xl); color: var(--color-fg-muted); }
+.fx-toc a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-border-line); padding-bottom: 2px; }
+.fx-sec { margin: 0 0 calc(var(--cds-gap-xl) * 1.6); scroll-margin-top: 16px; }
+.fx-sec > h2 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); display: flex; gap: var(--cds-gap-sm); align-items: baseline; }
+.fx-sec > h2 .fx-step { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .08em; }
+.fx-lede { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-md); max-width: 50rem; line-height: 1.55; }
+.fx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.fx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.fx-card.fx-wide { grid-column: 1 / -1; }
+.fx-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 2px; }
+.fx-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-sm); line-height: 1.45; }
+.fx-figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: 0; border-top: 1px solid var(--color-border-line); border-bottom: 1px solid var(--color-border-line); margin-bottom: var(--cds-gap-md); }
+.fx-fig { padding: var(--cds-pad-md) var(--cds-pad-sm); border-right: 1px solid var(--color-border-line); min-width: 0; }
+.fx-fig:last-child { border-right: 0; }
+.fx-fig .k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.fx-fig .v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.15; margin: 4px 0 2px; }
+.fx-fig .s { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.fx-chart { position: relative; width: 100%; }
+.fx-chart svg { display: block; overflow: visible; }
+.fx-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-sm); }
+.fx-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.fx-legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.fx-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); opacity: 0; transition: opacity .12s; max-width: 16rem; z-index: 2; }
+.fx-tip .t { color: var(--cds-text-secondary); margin-bottom: 2px; }
+.fx-tbl-wrap { overflow-x: auto; }
+.fx-tbl { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-body); }
+.fx-tbl th { text-align: left; font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); border-bottom: 1px solid var(--color-fg); padding: 6px 10px 6px 0; white-space: nowrap; }
+.fx-tbl td { border-bottom: 1px solid var(--color-border-line); padding: 8px 10px 8px 0; vertical-align: top; line-height: 1.45; }
+.fx-tbl td.r, .fx-tbl th.r { text-align: right; }
+.fx-tbl td.m { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.fx-tbl tr.fx-na td { color: var(--color-fg-muted); }
+.fx-callout { border-left: 3px solid var(--color-fg); padding: var(--cds-pad-sm) var(--cds-pad-md); margin: var(--cds-gap-md) 0 0; line-height: 1.6; }
+.fx-callout .v { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); }
+.fx-list { margin: 0; padding-left: 1.1rem; line-height: 1.65; }
+.fx-list li { margin-bottom: 6px; }
+.fx-check { list-style: none; padding: 0; margin: 0; }
+.fx-check li { padding: 8px 0 8px 1.8rem; border-bottom: 1px solid var(--color-border-line); position: relative; line-height: 1.5; }
+.fx-check li::before { content: ""; position: absolute; left: 0; top: 11px; width: 14px; height: 14px; border: 1.5px solid var(--color-fg-muted); border-radius: 3px; }
+.fx-foot { border-top: 2px solid var(--color-fg); padding-top: var(--cds-pad-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.6; }
+.fx-fail { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: inherit; height: 100%; }
+.fx-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.fx-pos { color: var(--color-ok); }
+.fx-neg { color: var(--color-bad); }
+</style>
+
+<div class="fx">
+  <div class="fx-brand"><span>stayhungryasi.com</span><span>外為リサーチ · 2026年10月21日時点</span></div>
+  <h1 class="fx-title" id="top">ウォン/ドル相場展望 — 半導体ドルが押し下げた為替、どこまで行くか</h1>
+  <p class="fx-dek">外国人がKOSPIを大量に売り越し、ドルが強くてもウォンは上昇した。価格を動かしたのは金利ではなく需給であり、とりわけ輸出企業がどれだけ早くドルを売るかである。</p>
+
+  <ol class="fx-concl" id="conclusion">
+    <li><span class="fx-num">01</span><span>ウォン高のエンジンは株主還元ではなく、<b>経常黒字</b>（8月 <b data-source="ca_monthly" data-field="ca" data-where="month=2026-08" class="dash-skeleton">—</b>億ドル）と<b>企業の両替比率の上昇</b>である。輸出代金の<b data-source="breakeven" data-field="value" data-where="metric=supply" class="dash-skeleton">—</b>をウォンに替えるだけでドルの純供給になる。</span></li>
+    <li><span class="fx-num">02</span><span>年末の基本経路は<b data-source="scen_fmt" data-field="ye" data-where="scenario=%E5%9F%BA%E6%9C%AC%EF%BC%9A%E5%BA%95%E5%9B%BA%E3%82%81" class="dash-skeleton">—</b>ウォン（確率<span data-source="scenarios" data-field="prob" data-where="scenario=%E5%9F%BA%E6%9C%AC%EF%BC%9A%E5%BA%95%E5%9B%BA%E3%82%81" class="dash-skeleton">—</span>）。1,300ウォン割れの<b>タッチ</b>は3カ月以内に<b data-source="level_probs" data-field="prob" data-where="horizon=3%E3%82%AB%E6%9C%88" class="dash-skeleton">—</b>、その下での<b>定着</b>は12カ月以内に<b data-source="level_probs" data-field="prob" data-where="horizon=12%E3%82%AB%E6%9C%88" class="dash-skeleton">—</b>とみる。</span></li>
+    <li><span class="fx-num">03</span><span>揺り戻しの確率は<b data-source="scenarios" data-field="prob" data-where="scenario=%E6%8F%BA%E3%82%8A%E6%88%BB%E3%81%97" class="dash-skeleton">—</b>。FRB上限<span data-source="macro" data-field="value" data-where="var=FRB%E6%94%BF%E7%AD%96%E9%87%91%E5%88%A9%E3%81%AE%E4%B8%8A%E9%99%90" class="dash-skeleton">—</span>%と追加利上げの示唆、11月のサムスン配当後の約<b data-source="samsung_repat" data-field="value" data-where="metric=samsung_repat" class="dash-skeleton">—</b>億ドルの潜在的な本国送金（推定）、企業の両替が止まったときの反動がリスク要因である。</span></li>
+  </ol>
+
+  <nav class="fx-toc" aria-label="目次">
+    <a href="#s1">1 現在の位置</a><a href="#s2">2 需給台帳</a><a href="#s3">3 株主還元の検証</a><a href="#s4">4 対外変数</a><a href="#s5">5 シナリオ</a><a href="#s6">6 モニタリング</a><a href="#s7">リスク・チェックリスト</a>
+  </nav>
+
+  <!-- 1 -->
+  <section class="fx-sec" id="s1">
+    <h2><span class="fx-step">STEP 1</span>現在の位置</h2>
+    <p class="fx-lede">今年の高値から大きく下がった。6月末以降の下落はドル安ではなく、ウォン固有の力によるものだった。</p>
+    <div class="fx-figs">
+      <div class="fx-fig"><div class="k">直近終値</div><div class="v" data-source="levels" data-field="value" data-where="metric=%E7%9B%B4%E8%BF%91%E7%B5%82%E5%80%A4">—</div><div class="s" data-source="levels" data-field="asof" data-where="metric=%E7%9B%B4%E8%BF%91%E7%B5%82%E5%80%A4">—</div></div>
+      <div class="fx-fig"><div class="k">年初来高値（取引時間中）</div><div class="v" data-source="levels" data-field="value" data-where="metric=%E5%B9%B4%E5%88%9D%E6%9D%A5%E9%AB%98%E5%80%A4%EF%BC%88%E5%8F%96%E5%BC%95%E6%99%82%E9%96%93%E4%B8%AD%EF%BC%89">—</div><div class="s" data-source="levels" data-field="asof" data-where="metric=%E5%B9%B4%E5%88%9D%E6%9D%A5%E9%AB%98%E5%80%A4%EF%BC%88%E5%8F%96%E5%BC%95%E6%99%82%E9%96%93%E4%B8%AD%EF%BC%89">—</div></div>
+      <div class="fx-fig"><div class="k">ドル指数</div><div class="v" data-source="levels" data-field="value" data-where="metric=%E3%83%89%E3%83%AB%E6%8C%87%E6%95%B0">—</div><div class="s" data-source="levels" data-field="asof" data-where="metric=%E3%83%89%E3%83%AB%E6%8C%87%E6%95%B0">—</div></div>
+      <div class="fx-fig"><div class="k">ウォン/円（100円）</div><div class="v" data-source="levels" data-field="value" data-where="metric=%E3%82%A6%E3%82%A9%E3%83%B3%2F%E5%86%86%EF%BC%88100%E5%86%86%EF%BC%89">—</div><div class="s" data-source="levels" data-field="note" data-where="metric=%E3%82%A6%E3%82%A9%E3%83%B3%2F%E5%86%86%EF%BC%88100%E5%86%86%EF%BC%89">—</div></div>
+      <div class="fx-fig"><div class="k">ウォン/人民元</div><div class="v" data-source="levels" data-field="value" data-where="metric=%E3%82%A6%E3%82%A9%E3%83%B3%2F%E4%BA%BA%E6%B0%91%E5%85%83">—</div><div class="s" data-source="levels" data-field="asof" data-where="metric=%E3%82%A6%E3%82%A9%E3%83%B3%2F%E4%BA%BA%E6%B0%91%E5%85%83">—</div></div>
+    </div>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <h3 id="chart-path">為替の推移とシナリオ別レンジ</h3>
+        <p class="fx-note">四半期平均と直近終値（線）、年末・6カ月・12カ月時点のシナリオ別予想レンジ（棒）。点線は1,300ウォン。</p>
+        <div class="fx-legend" id="path-legend"></div>
+        <div class="fx-chart dash-skeleton" id="path-chart" data-source="fx_path scenarios" style="min-height:340px"></div>
+      </div>
+      <div class="fx-card">
+        <h3 id="chart-decomp">ウォン固有の要因 vs ドル要因</h3>
+        <p class="fx-note">6月30日 → 10月20日の変化率。ウォンの価値はウォン/ドルの逆数ベース。</p>
+        <div class="fx-chart dash-skeleton" id="decomp-chart" data-source="decomp_calc" style="min-height:150px"></div>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">ドル指数はほぼ横ばいなのに、ウォンだけが大きく上昇した。今回の下落は国内の需給が生んだものである。</p>
+      </div>
+      <div class="fx-card">
+        <h3>クロスレートで見たウォン</h3>
+        <p class="fx-note">ウォン/円・ウォン/人民元とウォン/ドルから換算した値（時点の違いがあるため近似値）。</p>
+        <table class="fx-tbl" data-source="cross" data-row-key="pair" id="tbl-cross">
+          <thead><tr><th data-field="pair">通貨ペア</th><th data-field="value" class="r">換算値</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">円は依然として弱い。ウォン/円が18年ぶりの低水準にあることは、ウォンが円に対しても過熱しているというシグナルであり、下値を限定する要因である。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="fx-sec" id="s2">
+    <h2><span class="fx-step">STEP 2</span>需給台帳（月次、億ドル）</h2>
+    <p class="fx-lede">供給の源泉は貿易収支黒字であり、変数はそのうちどれだけをウォンに替えるかである。確認できない項目は数字を作らず、「確認不可」とした。</p>
+    <div class="fx-grid">
+      <div class="fx-card">
+        <h3 id="chart-ca">経常収支黒字</h3>
+        <p class="fx-note">月次、億ドル。前年同月（灰色）を大きく上回る推移。</p>
+        <div class="fx-chart dash-skeleton" id="ca-chart" data-source="ca_monthly" style="min-height:230px"></div>
+      </div>
+      <div class="fx-card">
+        <h3 id="chart-sens">両替比率の感応度</h3>
+        <p class="fx-note">両替比率別の月間ドル純供給（供給 − 観測需要）。基本前提と±10%ptを併せて表示。</p>
+        <div class="fx-chart dash-skeleton" id="sens-chart" data-source="sens" style="min-height:230px"></div>
+      </div>
+      <div class="fx-card fx-wide">
+        <h3 id="tbl-ledger-h">需給台帳</h3>
+        <p class="fx-note">月換算：輸出代金は基本両替比率を適用、海外株式は観測日数を月の日数に換算、外国人売却代金は半分を本国送金と仮定、対米投資は年間上限の12分の1。</p>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="ledger_inputs" data-row-key="item" id="tbl-ledger">
+          <thead><tr><th data-field="side">区分</th><th data-field="item">項目</th><th data-field="raw" class="r">観測値</th><th data-field="unit">単位</th><th data-field="period">期間</th><th data-source="ledger_calc" data-field="monthly" class="r">月換算（億ドル）</th><th data-field="status">状態</th><th data-field="src">出所</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+      <div class="fx-card">
+        <h3>感応度表</h3>
+        <p class="fx-note">億ドル/月。</p>
+        <table class="fx-tbl" data-source="sens" data-row-key="ratio" id="tbl-sens">
+          <thead><tr><th data-field="ratio">両替比率</th><th data-field="supply" class="r">供給</th><th data-field="demand" class="r">需要</th><th data-field="net" class="r">純供給</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="fx-card">
+        <h3>損益分岐両替比率</h3>
+        <p class="fx-note">観測された月間需要を貿易収支黒字で割った値。</p>
+        <div class="fx-callout">輸出代金の<span class="v" data-source="breakeven" data-field="value" data-where="metric=supply">—</span>以上を両替すればドルの純供給。観測需要の合計は月<b data-source="breakeven" data-field="value" data-where="metric=demand">—</b>億ドルである。</div>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">国民年金の海外投資や配当の本国送金のように、確認不可の項目は需要側に多いため、実際の損益分岐はこれより高い可能性が大きい。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="fx-sec" id="s3">
+    <h2><span class="fx-step">STEP 3</span>株主還元の検証 — 両替が先、本国送金は後</h2>
+    <p class="fx-lede">会社がドルをウォンに替えて配当・自社株買いに使うと、外国人株主はそのウォンを再びドルに替えて持ち出す。純効果はタイムラグから生じる。</p>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <h3>短期のウォン需要 vs 中期の本国送金 タイムラグ表</h3>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="sh_return" data-row-key="step" id="tbl-sh">
+          <thead><tr><th data-field="step">#</th><th data-field="what">イベント</th><th data-field="size">規模</th><th data-field="when">時期</th><th data-field="fx">為替への影響</th><th data-field="status">状態</th><th data-field="src">出所</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+      <div class="fx-card">
+        <h3>株主還元の損益分岐両替比率</h3>
+        <p class="fx-note">= 外国人持ち株比率 × 外国人の本国送金比率</p>
+        <div class="fx-callout"><span class="v" data-source="breakeven" data-field="value" data-where="metric=shareholder">—</span><br>ハイニックスの外国人持ち株 <b data-source="assumptions" data-field="value" data-where="key=hynix_foreign">—</b> × 本国送金 <b data-source="assumptions" data-field="value" data-where="key=repat_div">—</b>（仮定）</div>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">サンサンイン証券の推定値とほぼ同じで、NH投資証券が推定した実際の両替比率の範囲とも重なる。つまり株主還元の純効果は中期的には0に近い。</p>
+      </div>
+      <div class="fx-card">
+        <h3>サムスン第3四半期配当の潜在的な本国送金</h3>
+        <p class="fx-note">配当約<span data-source="assumptions" data-field="value" data-where="key=samsung_div">—</span>兆ウォン × 外国人持ち株比率の仮定 <span data-source="assumptions" data-field="value" data-where="key=samsung_foreign">—</span>、為替 <span data-source="assumptions" data-field="value" data-where="key=fx">—</span>ウォンで換算</p>
+        <div class="fx-callout">約<span class="v" data-source="samsung_repat" data-field="value" data-where="metric=samsung_repat">—</span>億ドル<br>通常11月の支払い後に分散して流出。支払日は確認不可。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="fx-sec" id="s4">
+    <h2><span class="fx-step">STEP 4</span>対外変数</h2>
+    <p class="fx-lede">対外変数の大半はウォン安の方向を指している。それでも為替が下がったのは需給がこれを圧倒したためであり、需給が弱まった瞬間、これらの変数が再び価格を支配する。</p>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="macro" data-row-key="var" id="tbl-macro">
+          <thead><tr><th data-field="var">変数</th><th data-field="value" class="r">水準</th><th data-field="unit">単位</th><th data-field="asof">時点</th><th data-field="impact">ウォンへの影響</th><th data-field="src">出所</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+        <div class="fx-callout">韓米政策金利差（上限ベース）<span class="v" data-source="rate_gap" data-field="value" data-where="metric=gap">—</span>%pt。明日（10/22）韓銀が据え置けば維持、12月にFRBが利上げすれば拡大する。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="fx-sec" id="s5">
+    <h2><span class="fx-step">STEP 5</span>シナリオ</h2>
+    <p class="fx-lede">確率は上記データに基づく主観的判断であり、計量モデルの結果ではない。6カ月は2027年4月、12カ月は2027年10月時点である。</p>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="scenarios" data-row-key="scenario" id="tbl-scen">
+          <thead><tr><th data-field="scenario">シナリオ</th><th data-field="prob" class="r">確率</th><th data-source="scen_fmt" data-field="ye" class="r">年末</th><th data-source="scen_fmt" data-field="m6" class="r">6カ月</th><th data-source="scen_fmt" data-field="m12" class="r">12カ月</th><th data-field="trigger">トリガー</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+      <div class="fx-card">
+        <h3 id="chart-probs">1,300ウォン：タッチと定着は違う</h3>
+        <p class="fx-note">タッチは取引時間中に一度でも下回ること、定着は四半期平均が下回ること。</p>
+        <div class="fx-chart dash-skeleton" id="probs-chart" data-source="level_probs" style="min-height:170px"></div>
+      </div>
+      <div class="fx-card">
+        <h3 id="chart-cons">市場予想との比較</h3>
+        <p class="fx-note">機関別の予想レンジ（線）と本分析の基本シナリオの年末レンジ（網掛け）。</p>
+        <div class="fx-chart dash-skeleton" id="cons-chart" data-source="consensus scenarios" style="min-height:260px"></div>
+      </div>
+      <div class="fx-card fx-wide">
+        <h3>予想が分かれる理由</h3>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="consensus" data-row-key="inst" id="tbl-cons">
+          <thead><tr><th data-field="inst">機関</th><th data-field="horizon">期間</th><th data-field="view">予想</th><th data-field="pub">発表日</th><th data-field="gap">本分析との違い</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+        <p class="fx-note" style="margin-top:var(--cds-gap-sm)">8月以前の予想は、ハイニックスADRの両替と企業の両替加速を十分には反映していなかった。銀行ディーリングルームの予想は年末の需給を、証券会社の年間予想はドルサイクルをより重くみる。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="fx-sec" id="s6">
+    <h2><span class="fx-step">STEP 6</span>モニタリング</h2>
+    <div class="fx-grid">
+      <div class="fx-card fx-wide">
+        <h3>今後90日のイベントカレンダー</h3>
+        <p class="fx-note">韓国時間。「通常」・「確認不可」の表記は確定日程ではない。</p>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="calendar" data-row-key="date" id="tbl-cal">
+          <thead><tr><th data-field="date">日付</th><th data-field="event">イベント</th><th data-field="why">なぜ重要か</th><th data-field="src">根拠</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+      <div class="fx-card fx-wide">
+        <h3>5つの先行指標と反転シグナル</h3>
+        <p class="fx-note">反転基準値は本分析の判断基準である。</p>
+        <div class="fx-tbl-wrap">
+        <table class="fx-tbl" data-source="indicators" data-row-key="ind" id="tbl-ind">
+          <thead><tr><th data-field="ind">指標</th><th data-field="latest">最新値</th><th data-field="asof">時点</th><th data-field="flip">反転シグナル</th><th data-field="meaning">意味</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="fx-sec" id="s7">
+    <h2><span class="fx-step">RISK</span>リスクとチェックリスト</h2>
+    <div class="fx-grid">
+      <div class="fx-card">
+        <h3>ウォン安（為替上昇）リスク</h3>
+        <ul class="fx-list">
+          <li><b>企業の両替停止</b> — 為替が反発すると企業がドルを積み上げ始め、反発が急になり得る（今年5月のウォン安局面の事例）。</li>
+          <li><b>配当の本国送金集中</b> — サムスン第3四半期配当の支払い後、1月の残余還元決定後。</li>
+          <li><b>FRBの12月利上げ＋米10年債利回り急騰</b> — ドル高が需給を圧倒する局面。</li>
+          <li><b>AI信用リスク・メモリーのピークアウト</b> — 輸出の伸び鈍化と外国人の資金流出が同時に起きる。</li>
+          <li><b>国民年金の為替ヘッジ・スワップの期限</b> — 2026年末に延長されるか。</li>
+        </ul>
+      </div>
+      <div class="fx-card">
+        <h3>ウォン高（為替下落）リスク</h3>
+        <ul class="fx-list">
+          <li><b>ドル安への転換</b> — FRBの利上げ停止シグナル、ドル指数の下落。</li>
+          <li><b>サムスン特別配当＋高い両替比率</b> — 会社がウォンの大半をドル売りで調達する場合。</li>
+          <li><b>外国人のKOSPI純買い転換</b> — 売り圧力が買いに転じれば二重の供給。</li>
+          <li><b>年末の輸出企業ドル売りの季節性</b> — 輸出企業の年末決算に伴う両替。</li>
+        </ul>
+      </div>
+      <div class="fx-card fx-wide">
+        <h3>チェックリスト</h3>
+        <ul class="fx-check">
+          <li>10/22 金融通貨委員会の結果と少数意見 — ウォン金利の魅力の変化</li>
+          <li>10/29 FOMC声明 — 12月利上げ示唆の強さ、ドル指数の反応</li>
+          <li>サムスン取締役会 — 第3四半期配当の確定額・支払日、ハイニックス追加還元の規模・方式</li>
+          <li>関税庁 11月1〜10日の輸出 — 半導体の伸び率と貿易黒字の規模</li>
+          <li>韓銀 居住者外貨預金 — 企業のドル預金の増減方向</li>
+          <li>外国人純売り日の為替の方向 — デカップリングが続くか</li>
+          <li>12月 国民年金基金運用委員会 — 戦略的為替ヘッジ・スワップの延長</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fx-foot">
+    本資料は公開報道・公式発表に基づく分析であり、投資助言ではない。シナリオ確率・両替比率・本国送金比率は主観的判断または仮定である。すべての数値の出所と時点は各表の出所列で確認でき、確認できない項目は「確認不可」と表記した。<br>stayhungryasi.com
+  </footer>
+</div>
+
+<script>
+(function () {
+  const get = (rows, k, v, f) => { const r = rows.find(x => x[k] === v); return r ? r[f] : null; };
+
+  dash.calc('cross', {
+    inputs: ['levels'],
+    title: 'ドル/円・ドル/人民元の換算',
+    description: 'ウォン/ドル終値をウォン/円（100円あたり）とウォン/人民元で割って換算した近似値。',
+    fn: (levels) => {
+      const v = m => levels.find(r => r.metric === m).value;
+      const k = v('直近終値');
+      return [
+        { pair: 'ドル/円（換算）', value: k / (v('ウォン/円（100円）') / 100) },
+        { pair: 'ドル/人民元（換算）', value: k / v('ウォン/人民元') }
+      ];
+    }
+  });
+
+  dash.calc('decomp_calc', {
+    inputs: ['decomp'],
+    title: 'ウォン vs ドルの変化率',
+    description: '6/30→10/20のウォンの価値（ウォン/ドルの逆数）とドル指数の変化率。',
+    fn: (decomp) => {
+      const k = decomp.find(r => r.series === 'ウォン/ドル');
+      const d = decomp.find(r => r.series === 'ドル指数');
+      return [
+        { series: 'ウォン価値(対ドル)', chg: k.start / k.end - 1 },
+        { series: 'ドル指数', chg: d.end / d.start - 1 }
+      ];
+    }
+  });
+
+  dash.calc('ledger_calc', {
+    inputs: ['ledger_inputs', 'assumptions'],
+    title: '需給台帳の月換算',
+    description: '観測値を月次の億ドルに換算。前提値はassumptionsデータ。',
+    fn: (ledger_inputs, assumptions) => {
+      const a = k => assumptions.find(r => r.key === k).value;
+      const f = {
+        '貿易収支黒字': r => r.raw * a('conv_base'),
+        'ハイニックスADR調達資金の両替': r => 0,
+        '国内投資家の海外株式純買い': r => r.raw * a('month_days') / a('os_days'),
+        '外国人の株式純売り': r => r.raw / a('fx') * a('repat_sell'),
+        '対米投資の執行': r => r.raw / 12
+      };
+      return ledger_inputs.map(r => ({ item: r.item, monthly: (r.raw == null || !f[r.item]) ? null : f[r.item](r) }));
+    }
+  });
+
+  dash.calc('sens', {
+    inputs: ['ledger_inputs', 'ledger_calc'],
+    title: '両替比率の感応度',
+    description: '両替比率20〜60%ごとの供給（貿易収支×比率）と観測需要合計の差。',
+    fn: (ledger_inputs, ledger_calc) => {
+      const goods = ledger_inputs.find(r => r.item === '貿易収支黒字').raw;
+      const demand = ledger_inputs.filter(r => r.side === '需要')
+        .map(r => (ledger_calc.find(c => c.item === r.item) || {}).monthly)
+        .filter(v => v != null).reduce((s, v) => s + v, 0);
+      return [0.2, 0.3, 0.4, 0.5, 0.6].map(ratio => ({ ratio, supply: goods * ratio, demand, net: goods * ratio - demand }));
+    }
+  });
+
+  dash.calc('breakeven', {
+    inputs: ['ledger_inputs', 'ledger_calc', 'assumptions'],
+    title: '損益分岐両替比率',
+    description: '需給：観測需要 ÷ 貿易収支黒字。株主還元：外国人持ち株比率 × 本国送金比率。',
+    fn: (ledger_inputs, ledger_calc, assumptions) => {
+      const a = k => assumptions.find(r => r.key === k).value;
+      const goods = ledger_inputs.find(r => r.item === '貿易収支黒字').raw;
+      const demand = ledger_inputs.filter(r => r.side === '需要')
+        .map(r => (ledger_calc.find(c => c.item === r.item) || {}).monthly)
+        .filter(v => v != null).reduce((s, v) => s + v, 0);
+      return [
+        { metric: 'supply', value: demand / goods },
+        { metric: 'demand', value: demand },
+        { metric: 'shareholder', value: a('hynix_foreign') * a('repat_div') }
+      ];
+    }
+  });
+
+  dash.calc('samsung_repat', {
+    inputs: ['assumptions'],
+    title: 'サムスン配当の潜在的な本国送金',
+    description: '第3四半期配当（兆ウォン）× 外国人持ち株比率の仮定 ÷ 為替、億ドル。',
+    fn: (assumptions) => {
+      const a = k => assumptions.find(r => r.key === k).value;
+      return [{ metric: 'samsung_repat', value: a('samsung_div') * 10000 * a('samsung_foreign') / a('fx') }];
+    }
+  });
+
+  dash.calc('rate_gap', {
+    inputs: ['macro'],
+    title: '韓米金利差',
+    description: 'FRB政策金利の上限 − 韓銀政策金利。',
+    fn: (macro) => {
+      const v = n => macro.find(r => r.var === n).value;
+      return [{ metric: 'gap', value: v('FRB政策金利の上限') - v('韓銀政策金利') }];
+    }
+  });
+
+  dash.calc('scen_fmt', {
+    inputs: ['scenarios'],
+    title: 'シナリオレンジの表記',
+    description: 'シナリオ別の下限〜上限をウォン単位の文字列に。',
+    fn: (scenarios) => {
+      const n = v => v.toLocaleString('en-US');
+      return scenarios.map(r => ({ scenario: r.scenario, ye: n(r.ye_lo) + '~' + n(r.ye_hi), m6: n(r.m6_lo) + '~' + n(r.m6_hi), m12: n(r.m12_lo) + '~' + n(r.m12_hi) }));
+    }
+  });
+
+  window.FXU = { get };
+})();
+</script>
+
+<script>
+(function () {
+  const F1 = d3.format(',.1f'), F0 = d3.format(',.0f'), F2 = d3.format(',.2f'), F3 = d3.format(',.3f');
+  const P0 = d3.format('.0%'), P1 = d3.format('+.1%');
+  const SCOL = () => ({ '基本：底固め': dash.colors[0], 'ウォン一段高': dash.colors[2], '揺り戻し': dash.colors[3] });
+
+  function setText(sel, fmt) {
+    document.querySelectorAll(sel).forEach(el => {
+      const id = el.getAttribute('data-source'), field = el.getAttribute('data-field');
+      const where = el.getAttribute('data-where');
+      const d = dash.data(id);
+      if (d.status !== 'ok') { el.textContent = '—'; if (d.status !== 'loading') el.classList.remove('dash-skeleton'); return; }
+      const [k, v] = where.split('=').map(decodeURIComponent);
+      const r = d.data.find(x => String(x[k]) === v);
+      el.classList.remove('dash-skeleton');
+      if (!r || r[field] == null) { el.textContent = '—'; return; }
+      el.textContent = fmt(r[field], id, field, r);
+    });
+  }
+
+  function fmtValue(v, id, field, r) {
+    if (field === 'asof' || field === 'note') return String(v);
+    if (id === 'breakeven') return r.metric === 'demand' ? F1(v) : P0(v);
+    if (id === 'level_probs' || (id === 'scenarios' && field === 'prob')) return P0(v);
+    if (id === 'assumptions') return (r.key === 'samsung_div' || r.key === 'fx') ? F0(v) : (v < 1 ? P0(v) : F0(v));
+    if (id === 'scen_fmt') return String(v);
+    if (id === 'rate_gap' || id === 'macro') return F2(v);
+    if (id === 'levels') return r.metric === 'ドル指数' ? F3(v) : F1(v);
+    if (id === 'samsung_repat' || id === 'ca_monthly') return F1(v);
+    return String(v);
+  }
+
+  function failBox(el, d) {
+    el.innerHTML = '';
+    el.classList.remove('dash-skeleton');
+    if (d.status === 'error' || d.status === 'connect' || d.status === 'declined' || d.status === 'missing') {
+      const f = document.createElement('div'); f.className = 'fx-fail'; f.textContent = 'Failed to load'; el.appendChild(f);
+    } else if (d.status === 'loading') el.classList.add('dash-skeleton');
+  }
+
+  function tip(container) {
+    let t = container.querySelector('.fx-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'fx-tip'; container.appendChild(t); }
+    return {
+      show(ev, title, lines) {
+        t.innerHTML = '';
+        const h = document.createElement('div'); h.className = 't'; h.textContent = title; t.appendChild(h);
+        lines.forEach(l => { const p = document.createElement('div'); p.textContent = l; t.appendChild(p); });
+        const b = container.getBoundingClientRect();
+        let x = ev.clientX - b.left + 12, y = ev.clientY - b.top + 12;
+        t.style.opacity = 1;
+        const w = t.offsetWidth, hh = t.offsetHeight;
+        if (x + w > b.width) x = Math.max(0, ev.clientX - b.left - w - 12);
+        if (y + hh > b.height) y = Math.max(0, ev.clientY - b.top - hh - 12);
+        t.style.left = x + 'px'; t.style.top = y + 'px';
+      },
+      hide() { t.style.opacity = 0; }
+    };
+  }
+
+  function styleAxis(g) {
+    g.attr('font-size', null).attr('font-family', null);
+    g.selectAll('text').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)');
+    g.selectAll('.domain').style('stroke', 'var(--cds-chart-axis)');
+    g.selectAll('.tick line').style('stroke', 'var(--cds-chart-grid)');
+  }
+
+  function fillTable(id, cols) {
+    const tbl = document.getElementById(id);
+    const src = tbl.getAttribute('data-source');
+    const d = dash.data(src);
+    const tb = tbl.querySelector('tbody');
+    tb.innerHTML = '';
+    if (d.status !== 'ok') {
+      const tr = tb.insertRow(); const td = tr.insertCell(); td.colSpan = cols.length;
+      td.className = 'm'; td.textContent = d.status === 'loading' ? '' : '読み込めませんでした';
+      return;
+    }
+    const extra = {};
+    cols.forEach(c => { if (c.calc && !extra[c.calc]) extra[c.calc] = dash.data(c.calc); });
+    d.data.forEach(r => {
+      const tr = tb.insertRow();
+      tr.setAttribute('data-key', String(r[tbl.getAttribute('data-row-key')]));
+      if (cols.naKey && r[cols.naKey] == null) tr.className = 'fx-na';
+      cols.forEach(c => {
+        const td = tr.insertCell();
+        if (c.cls) td.className = c.cls;
+        let v;
+        if (c.calc) {
+          const e = extra[c.calc];
+          const row = e && e.status === 'ok' ? e.data.find(x => x[c.key] === r[c.key]) : null;
+          v = row ? row[c.f] : null;
+        } else v = r[c.f];
+        td.textContent = v == null ? (c.na || '—') : (c.fmt ? c.fmt(v, r) : String(v));
+      });
+    });
+  }
+
+  function drawPath() {
+    const el = document.getElementById('path-chart');
+    const p = dash.data('fx_path'), s = dash.data('scenarios');
+    const leg = document.getElementById('path-legend');
+    if (p.status !== 'ok' || s.status !== 'ok') { failBox(el, p.status !== 'ok' ? p : s); leg.innerHTML = ''; return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const col = SCOL();
+    leg.innerHTML = '';
+    [['実績・最新値', 'var(--color-fg)']].concat(s.data.map(r => [r.scenario + ' ' + P0(r.prob), col[r.scenario]])).forEach(([n, c]) => {
+      const sp = document.createElement('span'); const i = document.createElement('i'); i.style.background = c; sp.appendChild(i);
+      sp.appendChild(document.createTextNode(n)); leg.appendChild(sp);
+    });
+    const W = el.clientWidth, H = 340, m = { t: 12, r: 18, b: 34, l: 48 };
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const hist = p.data.map(r => ({ ...r, d: new Date(r.date + 'T00:00:00Z') }));
+    const hz = [['年末', '2026-12-31', 'ye'], ['6カ月', '2027-04-21', 'm6'], ['12カ月', '2027-10-21', 'm12']].map(([n, dt, k]) => ({ n, d: new Date(dt + 'T00:00:00Z'), k }));
+    const x = d3.scaleUtc([new Date('2026-01-01T00:00:00Z'), new Date('2027-11-30T00:00:00Z')], [m.l, W - m.r]);
+    const lows = s.data.flatMap(r => [r.ye_lo, r.m6_lo, r.m12_lo]).concat(hist.map(h => h.usdkrw));
+    const highs = s.data.flatMap(r => [r.ye_hi, r.m6_hi, r.m12_hi]).concat(hist.map(h => h.usdkrw));
+    const y = d3.scaleLinear([Math.floor((d3.min(lows) - 30) / 50) * 50, Math.ceil((d3.max(highs) + 30) / 50) * 50], [H - m.b, m.t]);
+    const yAx = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6).tickFormat(d3.format(',')).tickSize(-(W - m.l - m.r)));
+    styleAxis(yAx); yAx.select('.domain').remove();
+    const xAx = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(W < 520 ? 4 : 8).tickFormat(d3.utcFormat('%y.%m')).tickSizeOuter(0));
+    styleAxis(xAx); xAx.selectAll('.tick line').remove();
+    // 1300 reference
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(1300)).attr('y2', y(1300)).style('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4');
+    svg.append('text').attr('x', W - m.r).attr('y', y(1300) - 5).attr('text-anchor', 'end').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('1,300');
+    // today divider
+    const today = new Date('2026-10-21T00:00:00Z');
+    svg.append('line').attr('x1', x(today)).attr('x2', x(today)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--cds-chart-grid)');
+    svg.append('text').attr('x', x(today) + 4).attr('y', m.t + 10).style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('予想 →');
+    // history line
+    svg.append('path').datum(hist).style('fill', 'none').style('stroke', 'var(--color-fg)').attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+      .attr('d', d3.line().x(d => x(d.d)).y(d => y(d.usdkrw)));
+    const T = tip(el);
+    svg.selectAll('.hp').data(hist).join('circle').attr('cx', d => x(d.d)).attr('cy', d => y(d.usdkrw)).attr('r', 4).style('fill', 'var(--color-panel)').style('stroke', 'var(--color-fg)').attr('stroke-width', 2)
+      .on('mousemove', (ev, d) => T.show(ev, d.label, [F2(d.usdkrw) + 'ウォン', d.src])).on('mouseleave', () => T.hide());
+    const last = hist[hist.length - 1];
+    svg.append('text').attr('x', x(last.d) - 6).attr('y', y(last.usdkrw) + 18).attr('text-anchor', 'end').style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(F1(last.usdkrw));
+    // scenario bars
+    const bw = Math.max(5, Math.min(10, W / 90)), off = bw + 3;
+    hz.forEach(h => {
+      svg.append('text').attr('x', x(h.d)).attr('y', H - m.b + 28).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text(h.n);
+      s.data.forEach((r, i) => {
+        const lo = r[h.k + '_lo'], hi = r[h.k + '_hi'];
+        svg.append('rect').attr('x', x(h.d) + (i - 1) * off - bw / 2).attr('width', bw).attr('y', y(hi)).attr('height', Math.max(2, y(lo) - y(hi))).attr('rx', 3).style('fill', col[r.scenario]).attr('opacity', .9)
+          .on('mousemove', ev => T.show(ev, h.n + ' · ' + r.scenario, [F0(lo) + '~' + F0(hi) + 'ウォン', '確率 ' + P0(r.prob) + '（主観的判断）'])).on('mouseleave', () => T.hide());
+      });
+    });
+  }
+
+  function drawDecomp() {
+    const el = document.getElementById('decomp-chart');
+    const d = dash.data('decomp_calc');
+    if (d.status !== 'ok') { failBox(el, d); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const W = el.clientWidth, rowH = 46, H = d.data.length * rowH + 20;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const labW = Math.min(130, W * 0.38);
+    const max = d3.max(d.data, r => Math.abs(r.chg)) * 1.25;
+    const x = d3.scaleLinear([0, max], [labW, W - 56]);
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', 4).attr('y2', H - 8).style('stroke', 'var(--cds-chart-axis)');
+    d.data.forEach((r, i) => {
+      const yy = 10 + i * rowH;
+      svg.append('text').attr('x', 0).attr('y', yy + 16).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(r.series);
+      svg.append('rect').attr('x', x(0)).attr('y', yy + 4).attr('height', 20).attr('rx', 4).attr('width', Math.max(3, x(Math.abs(r.chg)) - x(0))).style('fill', i === 0 ? dash.colors[0] : 'var(--cds-chart-muted)');
+      svg.append('text').attr('x', x(Math.abs(r.chg)) + 6).attr('y', yy + 19).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(P1(r.chg));
+    });
+  }
+
+  function drawCA() {
+    const el = document.getElementById('ca-chart');
+    const d = dash.data('ca_monthly');
+    if (d.status !== 'ok') { failBox(el, d); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const W = el.clientWidth, H = 230, m = { t: 22, r: 8, b: 28, l: 8 };
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3.scaleBand(d.data.map(r => r.month), [m.l, W - m.r]).padding(0.38);
+    const y = d3.scaleLinear([0, d3.max(d.data, r => r.ca) * 1.12], [H - m.b, m.t]);
+    const T = tip(el);
+    const bw = Math.min(56, x.bandwidth()), dx = (x.bandwidth() - bw) / 2;
+    svg.selectAll('rect').data(d.data).join('rect').attr('x', r => x(r.month) + dx).attr('width', bw).attr('y', r => y(r.ca)).attr('height', r => y(0) - y(r.ca)).attr('rx', 4)
+      .style('fill', r => r.month.startsWith('2025') ? 'var(--cds-chart-muted)' : dash.colors[0])
+      .on('mousemove', (ev, r) => T.show(ev, r.month, [F1(r.ca) + '億ドル', r.note || '', r.src].filter(Boolean))).on('mouseleave', () => T.hide());
+    svg.selectAll('.vl').data(d.data).join('text').attr('x', r => x(r.month) + x.bandwidth() / 2).attr('y', r => y(r.ca) - 6).attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(r => F1(r.ca));
+    svg.selectAll('.xl').data(d.data).join('text').attr('x', r => x(r.month) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text(r => r.month.replace('-', '.'));
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--cds-chart-axis)');
+  }
+
+  function drawSens() {
+    const el = document.getElementById('sens-chart');
+    const d = dash.data('sens'), a = dash.data('assumptions');
+    if (d.status !== 'ok' || a.status !== 'ok') { failBox(el, d.status !== 'ok' ? d : a); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const base = a.data.find(r => r.key === 'conv_base').value;
+    const W = el.clientWidth, H = 230, m = { t: 22, r: 8, b: 40, l: 8 };
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3.scaleBand(d.data.map(r => r.ratio), [m.l, W - m.r]).padding(0.34);
+    const ext = d3.extent(d.data, r => r.net);
+    const y = d3.scaleLinear([Math.min(0, ext[0]) * 1.2, Math.max(0, ext[1]) * 1.15], [H - m.b, m.t]);
+    const T = tip(el);
+    const bw = Math.min(48, x.bandwidth()), dx = (x.bandwidth() - bw) / 2;
+    const near = r => Math.abs(r.ratio - base) < 0.101;
+    svg.selectAll('rect').data(d.data).join('rect').attr('x', r => x(r.ratio) + dx).attr('width', bw)
+      .attr('y', r => y(Math.max(0, r.net))).attr('height', r => Math.abs(y(r.net) - y(0))).attr('rx', 4)
+      .style('fill', r => r.net < 0 ? 'var(--cds-chart-status-critical)' : (near(r) ? dash.colors[0] : 'var(--cds-chart-muted)'))
+      .on('mousemove', (ev, r) => T.show(ev, '両替比率 ' + P0(r.ratio), ['供給 ' + F1(r.supply), '需要 ' + F1(r.demand), '純供給 ' + F1(r.net) + '億ドル'])).on('mouseleave', () => T.hide());
+    svg.selectAll('.vl').data(d.data).join('text').attr('x', r => x(r.ratio) + x.bandwidth() / 2).attr('y', r => r.net >= 0 ? y(r.net) - 6 : y(r.net) + 14).attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(r => (r.net > 0 ? '+' : '') + F0(r.net));
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--cds-chart-axis)');
+    svg.selectAll('.xl').data(d.data).join('text').attr('x', r => x(r.ratio) + x.bandwidth() / 2).attr('y', H - 20).attr('text-anchor', 'middle').style('fill', r => Math.abs(r.ratio - base) < 0.001 ? 'var(--color-fg)' : 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', r => Math.abs(r.ratio - base) < 0.001 ? 600 : 400).text(r => P0(r.ratio));
+    svg.append('text').attr('x', x(base) + x.bandwidth() / 2).attr('y', H - 4).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('基本前提');
+  }
+
+  function drawProbs() {
+    const el = document.getElementById('probs-chart');
+    const d = dash.data('level_probs');
+    if (d.status !== 'ok') { failBox(el, d); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const W = el.clientWidth, rowH = 50, H = d.data.length * rowH + 6;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3.scaleLinear([0, 1], [0, W - 44]);
+    d.data.forEach((r, i) => {
+      const yy = i * rowH;
+      svg.append('text').attr('x', 0).attr('y', yy + 14).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(r.event + ' · ' + r.horizon);
+      svg.append('rect').attr('x', 0).attr('y', yy + 22).attr('height', 14).attr('rx', 4).attr('width', x(1)).style('fill', 'var(--cds-chart-grid)');
+      svg.append('rect').attr('x', 0).attr('y', yy + 22).attr('height', 14).attr('rx', 4).attr('width', Math.max(3, x(r.prob))).style('fill', r.event.includes('定着') ? dash.colors[3] : dash.colors[0]);
+      svg.append('text').attr('x', x(1) + 6).attr('y', yy + 34).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(P0(r.prob));
+    });
+  }
+
+  function drawCons() {
+    const el = document.getElementById('cons-chart');
+    const c = dash.data('consensus'), s = dash.data('scenarios');
+    if (c.status !== 'ok' || s.status !== 'ok') { failBox(el, c.status !== 'ok' ? c : s); return; }
+    el.classList.remove('dash-skeleton'); el.innerHTML = '';
+    const base = s.data[0];
+    const W = el.clientWidth, rowH = 30, m = { t: 8, r: 14, b: 26 };
+    const H = c.data.length * rowH + m.t + m.b;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const meas = svg.append('text').style('font-size', 'var(--cds-font-size-caption)');
+    let labW = 0; c.data.forEach(r => { meas.text(r.inst); labW = Math.max(labW, meas.node().getComputedTextLength()); }); meas.remove();
+    labW = Math.min(labW + 10, W * 0.42);
+    const x = d3.scaleLinear([1150, 1500], [labW, W - m.r]);
+    svg.append('rect').attr('x', x(base.ye_lo)).attr('width', x(base.ye_hi) - x(base.ye_lo)).attr('y', m.t).attr('height', H - m.t - m.b).style('fill', dash.colors[0]).attr('opacity', .14);
+    const ax = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(W < 420 ? 3 : 6).tickFormat(d3.format(',')).tickSizeOuter(0));
+    styleAxis(ax);
+    svg.append('line').attr('x1', x(1300)).attr('x2', x(1300)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4');
+    const T = tip(el);
+    c.data.forEach((r, i) => {
+      const yy = m.t + i * rowH + rowH / 2;
+      svg.append('text').attr('x', 0).attr('y', yy + 4).style('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(r.inst);
+      const g = svg.append('g').on('mousemove', ev => T.show(ev, r.inst + ' · ' + r.horizon, [r.view, '発表 ' + r.pub])).on('mouseleave', () => T.hide());
+      if (r.hi > r.lo) g.append('line').attr('x1', x(r.lo)).attr('x2', x(r.hi)).attr('y1', yy).attr('y2', yy).style('stroke', dash.colors[1]).attr('stroke-width', 6).attr('stroke-linecap', 'round');
+      else g.append('circle').attr('cx', x(r.lo)).attr('cy', yy).attr('r', 5).style('fill', dash.colors[1]);
+    });
+  }
+
+  dash.onData(() => {
+    setText('#dash-root [data-source][data-where]', fmtValue);
+    drawPath(); drawDecomp(); drawCA(); drawSens(); drawProbs(); drawCons();
+    fillTable('tbl-cross', [{ f: 'pair' }, { f: 'value', cls: 'r', fmt: v => F2(v) }]);
+    const ledgerCols = [{ f: 'side' }, { f: 'item' }, { f: 'raw', cls: 'r', na: '確認不可', fmt: v => Number.isInteger(v) ? d3.format(',')(v) : F1(v) }, { f: 'unit', cls: 'm' }, { f: 'period', cls: 'm' }, { calc: 'ledger_calc', key: 'item', f: 'monthly', cls: 'r', na: '—', fmt: v => F1(v) }, { f: 'status' }, { f: 'src', cls: 'm' }];
+    ledgerCols.naKey = 'raw';
+    fillTable('tbl-ledger', ledgerCols);
+    fillTable('tbl-sens', [{ f: 'ratio', fmt: v => P0(v) }, { f: 'supply', cls: 'r', fmt: v => F1(v) }, { f: 'demand', cls: 'r', fmt: v => F1(v) }, { f: 'net', cls: 'r', fmt: v => (v > 0 ? '+' : '') + F1(v) }]);
+    fillTable('tbl-sh', [{ f: 'step' }, { f: 'what' }, { f: 'size' }, { f: 'when' }, { f: 'fx' }, { f: 'status' }, { f: 'src', cls: 'm' }]);
+    const macroCols = [{ f: 'var' }, { f: 'value', cls: 'r', na: '確認不可', fmt: v => F2(v) }, { f: 'unit', cls: 'm' }, { f: 'asof', cls: 'm' }, { f: 'impact' }, { f: 'src', cls: 'm' }];
+    macroCols.naKey = 'value';
+    fillTable('tbl-macro', macroCols);
+    fillTable('tbl-scen', [{ f: 'scenario' }, { f: 'prob', cls: 'r', fmt: v => P0(v) }, { calc: 'scen_fmt', key: 'scenario', f: 'ye', cls: 'r' }, { calc: 'scen_fmt', key: 'scenario', f: 'm6', cls: 'r' }, { calc: 'scen_fmt', key: 'scenario', f: 'm12', cls: 'r' }, { f: 'trigger', cls: 'm' }]);
+    fillTable('tbl-cons', [{ f: 'inst' }, { f: 'horizon', cls: 'm' }, { f: 'view' }, { f: 'pub', cls: 'm' }, { f: 'gap', cls: 'm' }]);
+    fillTable('tbl-cal', [{ f: 'date' }, { f: 'event' }, { f: 'why' }, { f: 'src', cls: 'm' }]);
+    fillTable('tbl-ind', [{ f: 'ind' }, { f: 'latest' }, { f: 'asof', cls: 'm' }, { f: 'flip' }, { f: 'meaning', cls: 'm' }]);
+  });
+
+  const named = document.getElementById(location.hash.slice(1));
+  if (named) setTimeout(() => { named.scrollIntoView(); dash.setLink(named.id); }, 300);
+  document.querySelectorAll('.fx-toc a').forEach(a => a.addEventListener('click', e => { e.preventDefault(); const t = document.getElementById(a.getAttribute('href').slice(1)); if (t) { t.scrollIntoView({ behavior: 'smooth' }); dash.setLink(t.id); } }));
+})();
+</script>
+
+</div></body></html>

@@ -1,0 +1,1225 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-06.webp",
+ "boxes": "card-06.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "erase": [
+  [
+   101,
+   189,
+   143,
+   211
+  ],
+  [
+   132,
+   552,
+   173,
+   575
+  ],
+  [
+   598,
+   552,
+   712,
+   575
+  ],
+  [
+   136,
+   868,
+   180,
+   900
+  ],
+  [
+   205,
+   866,
+   640,
+   906
+  ]
+ ],
+ "regions": [
+  {
+   "rect": [
+    114,
+    176,
+    161,
+    232
+   ],
+   "text": {
+    "en": "█",
+    "es": "",
+    "ja": ""
+   },
+   "size": 46,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    135,
+    183,
+    168,
+    222
+   ],
+   "text": {
+    "en": "█",
+    "es": "",
+    "ja": ""
+   },
+   "size": 32,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    152,
+    175,
+    169,
+    194
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    152,
+    206,
+    169,
+    225
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    84,
+    175,
+    168,
+    221
+   ],
+   "text": {
+    "en": "Error",
+    "es": "",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#b8362a",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    114,
+    176,
+    161,
+    232
+   ],
+   "text": {
+    "en": "",
+    "es": "█",
+    "ja": ""
+   },
+   "size": 46,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    135,
+    183,
+    168,
+    222
+   ],
+   "text": {
+    "en": "",
+    "es": "█",
+    "ja": ""
+   },
+   "size": 32,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    152,
+    175,
+    169,
+    194
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    152,
+    206,
+    169,
+    225
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    84,
+    175,
+    168,
+    221
+   ],
+   "text": {
+    "en": "",
+    "es": "Error",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#b8362a",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    84,
+    175,
+    160,
+    221
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "誤り"
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#b8362a",
+   "pad": -1000
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "en": "\"CEO 'Dalio,' Fidelity roadshow\"",
+    "es": "\"El CEO 'Dalio', roadshow de Fidelity\"",
+    "ja": "\"CEOのDalio、フィデリティのロードショー\""
+   },
+   "weight": "bold",
+   "size": 25,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "en": "'Dalio' is Dario,",
+    "es": "'Dalio' es Dario,",
+    "ja": "'Dalio'はDario、"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    340,
+    0
+   ],
+   "minscale": 0.75
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "en": "anecdote unverified",
+    "es": "anécdota sin verificar",
+    "ja": "逸話は確認できず"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.75
+  },
+  {
+   "rect": [
+    149,
+    540,
+    288,
+    596
+   ],
+   "text": {
+    "en": "███",
+    "es": "",
+    "ja": ""
+   },
+   "size": 46,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fae5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    262,
+    547,
+    295,
+    586
+   ],
+   "text": {
+    "en": "█",
+    "es": "",
+    "ja": ""
+   },
+   "size": 32,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fae5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    279,
+    539,
+    296,
+    558
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fae5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    279,
+    570,
+    296,
+    589
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fae5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    116,
+    539,
+    295,
+    585
+   ],
+   "text": {
+    "en": "Mistranslation",
+    "es": "",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#ba392c",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    166,
+    540,
+    305,
+    596
+   ],
+   "text": {
+    "en": "",
+    "es": "███",
+    "ja": ""
+   },
+   "size": 46,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fae5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    279,
+    547,
+    312,
+    586
+   ],
+   "text": {
+    "en": "",
+    "es": "█",
+    "ja": ""
+   },
+   "size": 32,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fae5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    296,
+    539,
+    313,
+    558
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fae5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    296,
+    570,
+    313,
+    589
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fae5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    116,
+    539,
+    312,
+    585
+   ],
+   "text": {
+    "en": "",
+    "es": "Mala traducción",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#ba392c",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    116,
+    539,
+    191,
+    585
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "誤訳"
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#ba392c",
+   "pad": -1000
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "text": {
+    "en": "Dario Amodei",
+    "es": "Dario Amodei",
+    "ja": "ダリオ・アモデイ"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    160,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    17,
+    22,
+    24,
+    25
+   ],
+   "text": {
+    "en": "Anthropic's CEO. A translation error, unrelated to Ray Dalio.",
+    "es": "CEO de Anthropic. Un error de traducción sin relación con Ray Dalio.",
+    "ja": "AnthropicのCEO。レイ・ダリオとは無関係の翻訳ミスだ。"
+   },
+   "size": 26,
+   "lh": 38,
+   "expand": [
+    0,
+    0,
+    60,
+    60
+   ],
+   "color": "#393c4a"
+  },
+  {
+   "rect": [
+    606,
+    540,
+    745,
+    596
+   ],
+   "text": {
+    "en": "███",
+    "es": "",
+    "ja": ""
+   },
+   "size": 46,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    719,
+    547,
+    752,
+    586
+   ],
+   "text": {
+    "en": "█",
+    "es": "",
+    "ja": ""
+   },
+   "size": 32,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    736,
+    539,
+    753,
+    558
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    736,
+    570,
+    753,
+    589
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    582,
+    539,
+    752,
+    585
+   ],
+   "text": {
+    "en": "Wrong timing",
+    "es": "",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#b9372a",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    603,
+    540,
+    788,
+    596
+   ],
+   "text": {
+    "en": "",
+    "es": "████",
+    "ja": ""
+   },
+   "size": 46,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    762,
+    547,
+    795,
+    586
+   ],
+   "text": {
+    "en": "",
+    "es": "█",
+    "ja": ""
+   },
+   "size": 32,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    779,
+    539,
+    796,
+    558
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    779,
+    570,
+    796,
+    589
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    582,
+    539,
+    795,
+    585
+   ],
+   "text": {
+    "en": "",
+    "es": "Desfase de fechas",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#b9372a",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    592,
+    540,
+    731,
+    596
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "███"
+   },
+   "size": 46,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    705,
+    547,
+    738,
+    586
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "█"
+   },
+   "size": 32,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    722,
+    539,
+    739,
+    558
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "●"
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    722,
+    570,
+    739,
+    589
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "●"
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fbe5e3",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    582,
+    539,
+    738,
+    585
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "時期の不一致"
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#b9372a",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    582,
+    606,
+    832,
+    641
+   ],
+   "text": {
+    "en": "Roadshow from Nov 10",
+    "es": "Roadshow desde el 10 nov",
+    "ja": "ロードショーは11/10~"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    18,
+    19,
+    20,
+    21,
+    23,
+    26
+   ],
+   "text": {
+    "en": "Under SEC rules, the official roadshow starts Nov 10 at the earliest. No press reports back the 'past two days' story.",
+    "es": "Según la SEC, el roadshow oficial empieza el 10 de noviembre como pronto. Ningún medio reporta lo de 'los últimos dos días'.",
+    "ja": "SEC規定上、正式なロードショーは早くても11月10日。「この2日間」の逸話を伝える報道はない。"
+   },
+   "size": 26,
+   "lh": 38,
+   "expand": [
+    0,
+    0,
+    22,
+    18
+   ],
+   "color": "#363945"
+  },
+  {
+   "rect": [
+    166,
+    863,
+    257,
+    917
+   ],
+   "text": {
+    "en": "██",
+    "es": "",
+    "ja": ""
+   },
+   "size": 45,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    232,
+    869,
+    264,
+    906
+   ],
+   "text": {
+    "en": "█",
+    "es": "",
+    "ja": ""
+   },
+   "size": 31,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    248,
+    861,
+    265,
+    880
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    248,
+    891,
+    265,
+    910
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    120,
+    861,
+    264,
+    906
+   ],
+   "text": {
+    "en": "Overstated",
+    "es": "",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#ba8618",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    160,
+    863,
+    251,
+    917
+   ],
+   "text": {
+    "en": "",
+    "es": "██",
+    "ja": ""
+   },
+   "size": 45,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    226,
+    869,
+    258,
+    906
+   ],
+   "text": {
+    "en": "",
+    "es": "█",
+    "ja": ""
+   },
+   "size": 31,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    242,
+    861,
+    259,
+    880
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    242,
+    891,
+    259,
+    910
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    120,
+    861,
+    258,
+    906
+   ],
+   "text": {
+    "en": "",
+    "es": "Exagerado",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#ba8618",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    120,
+    861,
+    195,
+    906
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "誇張"
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#ba8618",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    276,
+    868,
+    965,
+    904
+   ],
+   "text": {
+    "en": "$2T→$1.2T is not a final price.",
+    "es": "",
+    "ja": ""
+   },
+   "size": 31,
+   "nowrap": true,
+   "color": "#3a3e4b",
+   "pad": -1000,
+   "minscale": 0.8
+  },
+  {
+   "rect": [
+    270,
+    868,
+    965,
+    904
+   ],
+   "text": {
+    "en": "",
+    "es": "US$2 billones→1.2 billones no es un precio final.",
+    "ja": ""
+   },
+   "size": 31,
+   "nowrap": true,
+   "color": "#3a3e4b",
+   "pad": -1000,
+   "minscale": 0.8
+  },
+  {
+   "rect": [
+    207,
+    868,
+    965,
+    904
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "2兆→1.2兆は確定価格ではない。"
+   },
+   "size": 31,
+   "nowrap": true,
+   "color": "#3a3e4b",
+   "pad": -1000,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    29,
+    30
+   ],
+   "text": {
+    "en": "That is the range investors are discussing (some say 1.1T). The price range in the 11/2 S-1/A is blank. Fidelity is an existing holder.",
+    "es": "Es el rango en discusión entre inversionistas (algunos, 1.1 billones). El S-1/A del 2 de noviembre deja en blanco el rango de precio. Fidelity ya era accionista.",
+    "ja": "投資家が議論しているレンジ(一部は1.1兆)で、11/2のS-1/Aでは公募価格レンジは空欄だ。フィデリティは既存の保有機関である。"
+   },
+   "size": 29,
+   "lh": 48,
+   "expand": [
+    0,
+    0,
+    35,
+    6
+   ],
+   "color": "#343846"
+  }
+ ]
+}

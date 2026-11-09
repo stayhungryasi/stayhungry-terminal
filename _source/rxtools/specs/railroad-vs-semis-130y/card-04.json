@@ -1,0 +1,465 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "card-04.webp",
+ "boxes": "card-04.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "erase": [
+  [
+   384,
+   190,
+   396,
+   236
+  ]
+ ],
+ "keep": [
+  [
+   160,
+   456,
+   196,
+   500
+  ]
+ ],
+ "regions": [
+  {
+   "rect": [
+    81,
+    96,
+    212,
+    120
+   ],
+   "text": {
+    "en": "==03== Parallel history",
+    "es": "==03== Historias paralelas",
+    "ja": "==03== 平行する歴史"
+   },
+   "weight": "bold",
+   "size": 24,
+   "color": "#cbd4e2",
+   "accent": "#f3b541",
+   "expand": [
+    0,
+    0,
+    380,
+    0
+   ]
+  },
+  {
+   "rect": [
+    800,
+    95,
+    998,
+    120
+   ],
+   "text": {
+    "en": "Rallies vs corrections, by size",
+    "es": "Tamaño de alzas y correcciones",
+    "ja": "上昇・調整の大きさ比較"
+   },
+   "size": 23,
+   "color": "#8c96a6",
+   "align": "right",
+   "expand": [
+    200,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "rect": [
+    84,
+    157,
+    392,
+    235
+   ],
+   "text": {
+    "en": "130 years apart,",
+    "es": "130 años de distancia,",
+    "ja": "130年の隔たり、"
+   },
+   "weight": "black",
+   "size": 74,
+   "color": "#f3f5fc",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ]
+  },
+  {
+   "rect": [
+    82,
+    243,
+    320,
+    304
+   ],
+   "text": {
+    "en": "the same rhythm",
+    "es": "el mismo ritmo",
+    "ja": "同じリズム"
+   },
+   "weight": "black",
+   "size": 74,
+   "color": "#f3b541",
+   "nowrap": true,
+   "expand": [
+    0,
+    -8,
+    600,
+    0
+   ]
+  },
+  {
+   "rect": [
+    112,
+    365,
+    468,
+    395
+   ],
+   "text": {
+    "en": "130 years apart, the same rhythm: railroads vs chips",
+    "es": "130 años de distancia, el mismo ritmo: ferrocarriles vs semiconductores",
+    "ja": "130年の隔たり、同じリズム：鉄道 vs 半導体"
+   },
+   "weight": "bold",
+   "size": 22.5,
+   "color": "#eff6ff",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "rect": [
+    112,
+    402,
+    414,
+    422
+   ],
+   "text": {
+    "en": "Size of rallies and corrections within each bull market (closing prices)",
+    "es": "Tamaño de las alzas y correcciones dentro del mercado alcista (precios de cierre)",
+    "ja": "強気相場における上昇と調整の大きさの比較（終値ベース）"
+   },
+   "size": 15.5,
+   "color": "#aeb7c6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "rect": [
+    203,
+    458,
+    420,
+    479
+   ],
+   "pad": 2,
+   "text": {
+    "en": "19th-century railroad index (1861~1903, BofA)",
+    "es": "Índice ferroviario del siglo XIX (1861~1903, BofA)",
+    "ja": "19世紀の鉄道指数（1861~1903、BofA）"
+   },
+   "size": 13.8,
+   "color": "#e4ebf5",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ]
+  },
+  {
+   "rect": [
+    203,
+    481,
+    381,
+    499
+   ],
+   "pad": 2,
+   "text": {
+    "en": "Semiconductor index SOX (2020~2026)",
+    "es": "Índice de semiconductores SOX (2020~2026)",
+    "ja": "半導体指数 SOX（2020~2026）"
+   },
+   "size": 13.8,
+   "color": "#e4ebf5",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ]
+  },
+  {
+   "rect": [
+    884,
+    816,
+    925,
+    833
+   ],
+   "pad": 1,
+   "text": {
+    "en": "ongoing",
+    "es": "en curso",
+    "ja": "進行中"
+   },
+   "size": 11,
+   "color": "#e7686f",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    14,
+    0,
+    14,
+    0
+   ]
+  },
+  {
+   "rect": [
+    217,
+    844,
+    262,
+    865
+   ],
+   "text": {
+    "en": "Rally 1",
+    "es": "Alza 1",
+    "ja": "第1次上昇"
+   },
+   "size": 12,
+   "color": "#b4bdcc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    25,
+    0,
+    25,
+    0
+   ]
+  },
+  {
+   "rect": [
+    344,
+    844,
+    389,
+    865
+   ],
+   "text": {
+    "en": "Drop 1",
+    "es": "Caída 1",
+    "ja": "第1次調整"
+   },
+   "size": 12,
+   "color": "#b4bdcc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    25,
+    0,
+    25,
+    0
+   ]
+  },
+  {
+   "rect": [
+    472,
+    844,
+    518,
+    865
+   ],
+   "text": {
+    "en": "Rally 2",
+    "es": "Alza 2",
+    "ja": "第2次上昇"
+   },
+   "size": 12,
+   "color": "#b4bdcc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    25,
+    0,
+    25,
+    0
+   ]
+  },
+  {
+   "rect": [
+    600,
+    844,
+    645,
+    865
+   ],
+   "text": {
+    "en": "Drop 2",
+    "es": "Caída 2",
+    "ja": "第2次調整"
+   },
+   "size": 12,
+   "color": "#b4bdcc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    25,
+    0,
+    25,
+    0
+   ]
+  },
+  {
+   "rect": [
+    728,
+    844,
+    774,
+    865
+   ],
+   "text": {
+    "en": "Rally 3",
+    "es": "Alza 3",
+    "ja": "第3次上昇"
+   },
+   "size": 12,
+   "color": "#b4bdcc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    25,
+    0,
+    25,
+    0
+   ]
+  },
+  {
+   "rect": [
+    856,
+    844,
+    901,
+    865
+   ],
+   "text": {
+    "en": "Drop 3",
+    "es": "Caída 3",
+    "ja": "第3次調整"
+   },
+   "size": 12,
+   "color": "#b4bdcc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    25,
+    0,
+    25,
+    0
+   ]
+  },
+  {
+   "rect": [
+    112,
+    896,
+    721,
+    915
+   ],
+   "text": {
+    "en": "Source: BofA Global Investment Strategy·GFD (railroads), Yahoo Finance (SOX). SOX rally 1 from the Covid low (2020.3)",
+    "es": "Fuente: BofA Global Investment Strategy·GFD (ferrocarriles), Yahoo Finance (SOX). Alza 1 del SOX desde el mínimo de Covid (2020.3)",
+    "ja": "出所：BofA Global Investment Strategy・GFD（鉄道）、Yahoo Finance（SOX）。SOXの第1次上昇は2020.3のコロナ安値が起点"
+   },
+   "weight": "bold",
+   "size": 12,
+   "color": "#b5becd",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    128,
+    0
+   ]
+  },
+  {
+   "rect": [
+    115,
+    968,
+    968,
+    1132
+   ],
+   "text": {
+    "en": "Corrections are nearly the same size: **-50/-45/-30 vs -46/-40/-38**. The difference: the chips' third rally (+311%) was far steeper than the railroads' (+170%). Not a fading rally but a ==sharp fall after overheating==.",
+    "es": "Las correcciones son casi iguales: **-50/-45/-30 vs. -46/-40/-38**. La diferencia: la tercera alza de los chips (+311%) fue mucho más empinada que la de los ferrocarriles (+170%). No es un rally debilitado, sino una ==caída brusca tras el sobrecalentamiento==.",
+    "ja": "調整幅はほぼ同じだ：**-50/-45/-30 対 -46/-40/-38**。違いは、半導体の第3次上昇（+311%）が鉄道（+170%）よりはるかに急だったことだ。勢いが弱まったラリーではなく、==過熱後の急落==である。"
+   },
+   "size": 26.5,
+   "lh": 41,
+   "color": "#cdd8ea",
+   "accent": "#ff5d64",
+   "expand": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "weight": "regular",
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    81,
+    1170,
+    968,
+    1203
+   ],
+   "text": {
+    "en": "Caveat: SOX rally 1 was the pandemic digital boom that began at the March 2020 Covid low, before ChatGPT.",
+    "es": "Salvedad: el alza 1 del SOX fue el auge digital de la pandemia, iniciado en el mínimo de Covid de marzo de 2020, antes de ChatGPT.",
+    "ja": "注記：SOXの第1次上昇はChatGPT以前、2020年3月のコロナ安値から始まったパンデミックのデジタルブームである。"
+   },
+   "size": 22,
+   "lh": 29,
+   "color": "#8d98a7",
+   "expand": [
+    0,
+    0,
+    20,
+    20
+   ]
+  },
+  {
+   "rect": [
+    81,
+    1263,
+    396,
+    1288
+   ],
+   "text": {
+    "en": "Source: BofA·GFD, Yahoo Finance",
+    "es": "Fuente: BofA·GFD, Yahoo Finance",
+    "ja": "出所：BofA·GFD, Yahoo Finance"
+   },
+   "size": 23,
+   "color": "#8e98a8",
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ]
+  }
+ ]
+}

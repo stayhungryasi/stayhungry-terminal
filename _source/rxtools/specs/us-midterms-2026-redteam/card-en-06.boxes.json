@@ -1,0 +1,262 @@
+[
+{
+"i": 0,
+"rect": [
+80,
+84,
+408,
+104
+],
+"ocr": "© STAY HUNGRY.ASI",
+"bg": "#0a0c10",
+"fg": "#eff1f5",
+"h": 20
+},
+{
+"i": 1,
+"rect": [
+859,
+83,
+993,
+114
+],
+"ocr": "06 / 09",
+"bg": "#0a0c10",
+"fg": "#aaaeb9",
+"h": 31
+},
+{
+"i": 2,
+"rect": [
+82,
+174,
+628,
+195
+],
+"ocr": "3 CALLS THE RED TEAM FIXED",
+"bg": "#0a0c10",
+"fg": "#d66e3d",
+"h": 21
+},
+{
+"i": 3,
+"rect": [
+81,
+235,
+614,
+296
+],
+"ocr": "The popular take",
+"bg": "#0a0c10",
+"fg": "#eef0f4",
+"h": 61
+},
+{
+"i": 4,
+"rect": [
+80,
+307,
+604,
+360
+],
+"ocr": "failed the check.",
+"bg": "#0a0c10",
+"fg": "#f46523",
+"h": 53
+},
+{
+"i": 5,
+"rect": [
+111,
+507,
+900,
+537
+],
+"ocr": "Tariffs barely depend on the vote. Section 301 tariffs",
+"bg": "#13161e",
+"fg": "#eef1f8",
+"h": 30
+},
+{
+"i": 6,
+"rect": [
+111,
+548,
+857,
+579
+],
+"ocr": "cover 99.4% of imports with no vote in Congress.",
+"bg": "#13161e",
+"fg": "#eef1f7",
+"h": 31
+},
+{
+"i": 7,
+"rect": [
+111,
+597,
+913,
+622
+],
+"ocr": "The real swing factors: the trade-court ruling and Section 232 (25% on",
+"bg": "#13161e",
+"fg": "#c3c8d1",
+"h": 25
+},
+{
+"i": 8,
+"rect": [
+111,
+632,
+177,
+656
+],
+"ocr": "chips)",
+"bg": "#13161e",
+"fg": "#c5c9d2",
+"h": 24
+},
+{
+"i": 9,
+"rect": [
+110,
+733,
+596,
+764
+],
+"ocr": "A-GOP-sweep-is-the-biggest surprise",
+"bg": "#13161e",
+"fg": "#acb2c1",
+"h": 31
+},
+{
+"i": 10,
+"rect": [
+111,
+780,
+936,
+810
+],
+"ocr": "A GOP sweep is a thin 6-15% tail. The realistic surprise",
+"bg": "#13161e",
+"fg": "#eef1f8",
+"h": 30
+},
+{
+"i": 11,
+"rect": [
+111,
+821,
+395,
+852
+],
+"ocr": "is a split Congress.",
+"bg": "#13161e",
+"fg": "#eef1f7",
+"h": 31
+},
+{
+"i": 12,
+"rect": [
+111,
+871,
+947,
+895
+],
+"ocr": "A GOP sweep also has a higher-rates path, so it cuts both ways for stocks",
+"bg": "#13161e",
+"fg": "#c3c8d1",
+"h": 24
+},
+{
+"i": 13,
+"rect": [
+110,
+976,
+688,
+1002
+],
+"ocr": "+HheKerean-won-ts-ofra-strengthentng-trend",
+"bg": "#13161e",
+"fg": "#acb2c1",
+"h": 26
+},
+{
+"i": 14,
+"rect": [
+111,
+1018,
+896,
+1050
+],
+"ocr": "1,320 (Oct 26) - 1,343.8 won per dollar (Nov 2). Call",
+"bg": "#13171e",
+"fg": "#eef1f7",
+"h": 32
+},
+{
+"i": 15,
+"rect": [
+110,
+1061,
+279,
+1085
+],
+"ocr": "withdrawn.",
+"bg": "#13171e",
+"fg": "#eff3f8",
+"h": 24
+},
+{
+"i": 16,
+"rect": [
+111,
+1112,
+604,
+1135
+],
+"ocr": "The won is sensitive to oil and foreign flows",
+"bg": "#13161e",
+"fg": "#c3c8d2",
+"h": 23
+},
+{
+"i": 17,
+"rect": [
+80,
+1250,
+247,
+1269
+],
+"ocr": "@stayhungryasi",
+"bg": "#0a0c10",
+"fg": "#acafb9",
+"h": 19
+},
+{
+"i": 18,
+"rect": [
+286,
+1250,
+596,
+1269
+],
+"ocr": "https://t.me/stayhungryasi",
+"bg": "#0a0c10",
+"fg": "#acb0b9",
+"h": 19
+},
+{
+"i": 19,
+"rect": [
+797,
+1250,
+998,
+1265
+],
+"ocr": "2 red-team rounds",
+"bg": "#0a0c10",
+"fg": "#adb0bb",
+"h": 15
+}
+]

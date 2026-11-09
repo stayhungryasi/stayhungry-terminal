@@ -1,0 +1,183 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-09.webp",
+ "boxes": "card-09.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "en": "Map of Anthropic's compute commitments",
+    "es": "Mapa de compromisos de cómputo de Anthropic",
+    "ja": "Anthropicのコンピュート契約マップ"
+   },
+   "weight": "bold",
+   "size": 26,
+   "nowrap": true,
+   "color": "#dd652a",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5,
+    6,
+    7
+   ],
+   "text": {
+    "en": "The only terminable one",
+    "es": "El único rescindible",
+    "ja": "解約できるのは"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.75
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "en": "is SpaceX alone",
+    "es": "es SpaceX, nadie más",
+    "ja": "SpaceXただ1社"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    390,
+    0
+   ],
+   "minscale": 0.75
+  },
+  {
+   "boxes": [
+    10,
+    11,
+    12,
+    13
+   ],
+   "text": {
+    "en": "SpaceX's share of the five disclosed commitments (about $557.9 billion)",
+    "es": "Peso de SpaceX en los 5 compromisos declarados (unos US$557,900 millones)",
+    "ja": "明示された5大契約約5,579億ドルのうちSpaceXの比率"
+   },
+   "size": 30,
+   "nowrap": true,
+   "color": "#353948",
+   "expand": [
+    0,
+    0,
+    323,
+    0
+   ],
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "text": {
+    "en": "Broadcom",
+    "es": "Broadcom",
+    "ja": "ブロードコム"
+   },
+   "expand": [
+    3,
+    0,
+    129,
+    0
+   ],
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8,
+   "color": "#323745"
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "en": "Google",
+    "es": "Google",
+    "ja": "グーグル"
+   },
+   "expand": [
+    0,
+    0,
+    180,
+    0
+   ],
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8,
+   "color": "#323745"
+  },
+  {
+   "boxes": [
+    24
+   ],
+   "text": {
+    "en": "Amazon",
+    "es": "Amazon",
+    "ja": "アマゾン"
+   },
+   "expand": [
+    0,
+    0,
+    153,
+    0
+   ],
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8,
+   "color": "#323745"
+  },
+  {
+   "boxes": [
+    29,
+    30,
+    31,
+    32
+   ],
+   "text": {
+    "en": "In $ billions · SpaceX is the maximum, others are minimum commitments · gray = not terminable",
+    "es": "En miles de millones de US$ · SpaceX: máximo; resto: compromisos mínimos · gris = no rescindible",
+    "ja": "単位:十億ドル・SpaceXは上限、他は最低契約・灰色=解約不可"
+   },
+   "size": 22,
+   "nowrap": true,
+   "color": "#7b7c87",
+   "expand": [
+    0,
+    0,
+    237,
+    0
+   ],
+   "minscale": 0.75
+  }
+ ]
+}

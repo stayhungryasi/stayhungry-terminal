@@ -1,0 +1,261 @@
+{
+ "slug": "us-midterms-2026-redteam",
+ "src": "card-en-05.webp",
+ "boxes": "card-en-05.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2,
+    3
+   ],
+   "text": {
+    "es": "FACTOR REAL N.º 2 · PETRÓLEO Y LA FED",
+    "ja": "本当の変数② · 原油・FRB"
+   },
+   "weight": "medium",
+   "size": 26,
+   "color": "#da6c3a",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    4,
+    5
+   ],
+   "text": {
+    "es": "La elección llega al petróleo y las tasas ==a través de Irán.==",
+    "ja": "選挙はイランを通じて\n==原油と金利に波及する。=="
+   },
+   "weight": "black",
+   "size": 62,
+   "lh": 74,
+   "color": "#eff1f5",
+   "accent": "#f36523",
+   "expand": [
+    0,
+    0,
+    160,
+    10
+   ]
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "Crudo Brent",
+    "ja": "ブレント原油"
+   },
+   "weight": "bold",
+   "size": 34,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Cierre del 23 oct: $116.72; luego bajó por señales diplomáticas",
+    "ja": "10月23日終値$116.72 → 外交シグナルで反落"
+   },
+   "size": 25,
+   "color": "#adb0bc",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    280,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "text": {
+    "es": "Probabilidad de alza en diciembre",
+    "ja": "12月利上げ確率"
+   },
+   "weight": "bold",
+   "size": 34,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    320,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "Baja desde cerca de 85% justo después del FOMC",
+    "ja": "FOMC直後の約85%から低下"
+   },
+   "size": 25,
+   "color": "#adb1bd",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "es": "Bono del Tesoro a 10 años",
+    "ja": "米10年債利回り"
+   },
+   "weight": "bold",
+   "size": 34,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ]
+  },
+  {
+   "rect": [
+    81,
+    811,
+    500,
+    838
+   ],
+   "text": {
+    "es": "La caída bursátil pesó más que el discurso restrictivo",
+    "ja": "タカ派発言より株安が勝った"
+   },
+   "size": 25,
+   "color": "#aeb1bd",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "es": "Tras la elección: dos caminos con Irán",
+    "ja": "選挙後のイラン、2つのシナリオ"
+   },
+   "size": 25,
+   "color": "#abb0bb",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "Se reanudan los ataques",
+    "ja": "攻撃の再開"
+   },
+   "weight": "bold",
+   "size": 31,
+   "color": "#ec6729",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    180,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    22,
+    23,
+    25
+   ],
+   "text": {
+    "es": "Petróleo → inflación → presión para un alza en diciembre. Las tasas de corto plazo suben más rápido.",
+    "ja": "原油→物価→12月利上げ圧力。\n短期金利がより速く上昇する。"
+   },
+   "size": 26,
+   "lh": 37.5,
+   "color": "#c5c9d2",
+   "expand": [
+    0,
+    0,
+    22,
+    20
+   ]
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "Acuerdo para reabrir Ormuz",
+    "ja": "ホルムズ再開で合意"
+   },
+   "weight": "bold",
+   "size": 31,
+   "color": "#eef1f7",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    60,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    21,
+    24
+   ],
+   "text": {
+    "es": "El Brent vuelve cerca de $100. Se alivia la presión de alza.",
+    "ja": "ブレントは$100近辺へ戻る。\n利上げ圧力は和らぐ。"
+   },
+   "size": 26,
+   "lh": 37.5,
+   "color": "#c5c9d2",
+   "expand": [
+    0,
+    0,
+    70,
+    55
+   ]
+  }
+ ]
+}

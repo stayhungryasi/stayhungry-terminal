@@ -1,0 +1,310 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "src": "card-en-07.webp",
+ "boxes": "card-en-07.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "keep": [
+  [
+   78,
+   86,
+   113,
+   121
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "Marco de innovación disruptiva",
+    "ja": "破壊的イノベーションの枠組み"
+   },
+   "size": 23.5,
+   "expand": [
+    -36,
+    0,
+    200,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    1
+   ],
+   "text": {
+    "es": "Modelo de Carlota Pérez",
+    "ja": "カルロタ・ペレスのモデル"
+   },
+   "size": 23.5,
+   "align": "right",
+   "expand": [
+    150,
+    0,
+    0,
+    5
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Al inicio del ==punto de inflexión==",
+    "ja": "いまは==転換点==の入り口"
+   },
+   "weight": "black",
+   "size": 64,
+   "color": "#f3f5f9",
+   "accent": "#ff5a5f",
+   "expand": [
+    0,
+    0,
+    120,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "(juicio del autor)",
+    "ja": "(筆者の判断)"
+   },
+   "weight": "bold",
+   "size": 36,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "Instalación",
+    "ja": "導入期"
+   },
+   "weight": "bold",
+   "size": 31,
+   "align": "center",
+   "expand": [
+    10,
+    0,
+    10,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Frenesí",
+    "ja": "狂乱期"
+   },
+   "weight": "bold",
+   "size": 31,
+   "align": "center",
+   "expand": [
+    40,
+    0,
+    40,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    11,
+    12
+   ],
+   "text": {
+    "es": "Punto de inflexión",
+    "ja": "転換点"
+   },
+   "weight": "bold",
+   "size": 35,
+   "lh": 49,
+   "align": "center",
+   "color": "#ff5a62",
+   "expand": [
+    10,
+    0,
+    10,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "Despliegue",
+    "ja": "展開期"
+   },
+   "weight": "bold",
+   "size": 30,
+   "align": "center",
+   "expand": [
+    20,
+    0,
+    20,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "Retirada del capital financiero",
+    "ja": "金融資本の離脱"
+   },
+   "weight": "bold",
+   "size": 31,
+   "expand": [
+    0,
+    0,
+    340,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    14,
+    15
+   ],
+   "text": {
+    "es": "Los fondos de cobertura recortan equipos de acciones y retiran capital, uno tras otro",
+    "ja": "ヘッジファンドの株式チーム縮小・資本回収が連鎖的に発生"
+   },
+   "size": 28.3,
+   "expand": [
+    0,
+    0,
+    76,
+    10
+   ]
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "es": "Reacción de la política y la opinión pública",
+    "ja": "政治・世論の反撃"
+   },
+   "weight": "bold",
+   "size": 31,
+   "expand": [
+    0,
+    0,
+    370,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    17,
+    18
+   ],
+   "text": {
+    "es": "El 71% de los estadounidenses rechaza un centro de datos de IA cerca (vs. 53% para una nuclear). Los demócratas anuncian impuestos a la IA",
+    "ja": "米国人の71%が地元のAIデータセンターに反対（原発反対の53%より高い）。民主党はAI課税を予告"
+   },
+   "size": 28,
+   "expand": [
+    0,
+    -4,
+    50,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "Oferta de mega-IPO",
+    "ja": "メガIPOの供給"
+   },
+   "weight": "bold",
+   "size": 30.5,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "Anthropic, en fila tras SpaceX: señal típica de fin de frenesí",
+    "ja": "SpaceXに続きAnthropicが上場待機。狂乱期末期の典型的なシグナル"
+   },
+   "size": 28.3,
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    21,
+    22
+   ],
+   "text": {
+    "es": "Históricamente, en las burbujas del ferrocarril (1847) y de la fibra óptica (2000) la tecnología sobrevivió; los que cayeron fueron los inversionistas apalancados.",
+    "ja": "歴史的に、鉄道（1847）・光ファイバー（2000）バブルでも技術は生き残り、崩れたのはレバレッジを使った投資家だった。"
+   },
+   "size": 21.5,
+   "lh": 34,
+   "expand": [
+    0,
+    0,
+    50,
+    10
+   ]
+  },
+  {
+   "boxes": [
+    23
+   ],
+   "text": {
+    "es": "Fuentes: Gallup (marzo de 2026), Bloomberg Law",
+    "ja": "出所：Gallup（2026年3月）、Bloomberg Law"
+   },
+   "size": 21.5,
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ],
+   "nowrap": true
+  }
+ ]
+}

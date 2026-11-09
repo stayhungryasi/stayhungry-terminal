@@ -1,0 +1,276 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-08.webp",
+ "boxes": "card-08.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "en": "The twist in the numbers",
+    "es": "El giro de los números",
+    "ja": "数字上の逆転"
+   },
+   "weight": "bold",
+   "size": 26,
+   "nowrap": true,
+   "color": "#dd6428",
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "en": "Anthropic already pays",
+    "es": "Anthropic ya paga",
+    "ja": "Anthropicはすでに"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    420,
+    0
+   ],
+   "minscale": 0.75
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "en": "2x the market price",
+    "es": "2x el precio de mercado",
+    "ja": "市場価格の2倍を払う"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    287,
+    0
+   ],
+   "minscale": 0.75
+  },
+  {
+   "boxes": [
+    7,
+    8
+   ],
+   "text": {
+    "en": "Price per GPU-hour · $ (market = Aug 2026 median)",
+    "es": "Precio por GPU-hora · US$ (mercado: mediana de agosto de 2026)",
+    "ja": "GPU1枚1時間の価格・ドル(市場は2026年8月の中央値)"
+   },
+   "size": 23,
+   "nowrap": true,
+   "color": "#7a7d89",
+   "expand": [
+    0,
+    0,
+    380,
+    0
+   ],
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "en": "H100 market",
+    "es": "Mercado H100",
+    "ja": "H100市場"
+   },
+   "color": "#353a48",
+   "expand": [
+    0,
+    0,
+    102,
+    0
+   ],
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "text": {
+    "en": "H200 market",
+    "es": "Mercado H200",
+    "ja": "H200市場"
+   },
+   "color": "#353a48",
+   "expand": [
+    0,
+    0,
+    102,
+    0
+   ],
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "text": {
+    "en": "B200 market",
+    "es": "Mercado B200",
+    "ja": "B200市場"
+   },
+   "color": "#353a48",
+   "expand": [
+    0,
+    0,
+    102,
+    0
+   ],
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "en": "SpaceX contract",
+    "es": "Contrato SpaceX",
+    "ja": "SpaceX契約"
+   },
+   "color": "#353a48",
+   "expand": [
+    0,
+    0,
+    73,
+    0
+   ],
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+   ],
+   "text": {
+    "en": "$1.25 billion a month ÷ 220,000 GPUs works out to ==**about $7.8 per hour**== (estimate, ±25%). That is about 1.6~2x the blended Colossus 1 market price ($4~5).",
+    "es": "US$1,250 millones al mes ÷ 220,000 GPU equivale a ==**unos US$7.8 por hora**== (estimación, ±25%). Es cerca de 1.6~2 veces el precio de mercado mixto de Colossus 1 (US$4~5).",
+    "ja": "月12.5億ドル÷GPU22万枚で換算すると==**1時間あたり約7.8ドル**==\n(推定、±25%)。コロッサス1の混合市場価格(4~5ドル)の\n約1.6~2倍だ。"
+   },
+   "size": 29,
+   "lh": 48,
+   "color": "#313544",
+   "accent": "#0c0d0f",
+   "expand": [
+    0,
+    0,
+    30,
+    8
+   ]
+  },
+  {
+   "boxes": [
+    29,
+    30,
+    31,
+    32,
+    33
+   ],
+   "text": {
+    "en": "For SpaceX to profit from terminating, market prices must rise ==**about 2x or more**==. The article's '2~3x' is not an exaggeration but the ==**trigger threshold**==.",
+    "es": "",
+    "ja": ""
+   },
+   "size": 27,
+   "lh": 40,
+   "color": "#2d313c",
+   "accent": "#0c0d0f",
+   "expand": [
+    0,
+    15,
+    50,
+    15
+   ]
+  },
+  {
+   "boxes": [
+    29,
+    30,
+    31,
+    32,
+    33
+   ],
+   "text": {
+    "en": "",
+    "es": "Para que SpaceX gane al rescindir, el precio de mercado debe subir ==**unas 2 veces o más**==. El '2~3 veces' del artículo no es exageración, sino el ==**umbral de activación**==.",
+    "ja": ""
+   },
+   "size": 27,
+   "lh": 40,
+   "color": "#2d313c",
+   "accent": "#0c0d0f",
+   "expand": [
+    0,
+    15,
+    50,
+    15
+   ]
+  },
+  {
+   "boxes": [
+    29,
+    30,
+    31,
+    32,
+    33
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "SpaceXが解約で得をするには、市場価格が==**約2倍以上**==に上がる必要がある。原文の「2~3倍」は誇張ではなく==**発動の閾値**==だ。"
+   },
+   "size": 29,
+   "lh": 48,
+   "color": "#2d313c",
+   "accent": "#0c0d0f",
+   "expand": [
+    0,
+    0,
+    50,
+    4
+   ]
+  }
+ ]
+}

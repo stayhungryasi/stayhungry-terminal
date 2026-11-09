@@ -1,0 +1,344 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-11.webp",
+ "boxes": "card-11.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    3
+   ],
+   "weight": "bold",
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ],
+   "text": {
+    "en": "Disruptive innovation frame",
+    "es": "Marco de innovación disruptiva",
+    "ja": "破壊的イノベーションの枠組み"
+   }
+  },
+  {
+   "rect": [
+    86,
+    242,
+    995,
+    403
+   ],
+   "size": 78,
+   "lh": 88,
+   "weight": "black",
+   "color": "#0a0b0e",
+   "accent": "#ef631f",
+   "text": {
+    "en": "The bottleneck moves,\n==and the money follows==",
+    "es": "",
+    "ja": "ボトルネックが移れば\n==お金も移る=="
+   }
+  },
+  {
+   "rect": [
+    86,
+    242,
+    995,
+    315
+   ],
+   "size": 60,
+   "weight": "black",
+   "color": "#0a0b0e",
+   "valign": "middle",
+   "nowrap": true,
+   "text": {
+    "en": "",
+    "es": "Se mueve el cuello de botella,",
+    "ja": ""
+   }
+  },
+  {
+   "rect": [
+    86,
+    330,
+    995,
+    403
+   ],
+   "size": 60,
+   "weight": "black",
+   "color": "#ef631f",
+   "valign": "middle",
+   "nowrap": true,
+   "text": {
+    "en": "",
+    "es": "y el dinero lo sigue",
+    "ja": ""
+   }
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "weight": "medium",
+   "expand": [
+    0,
+    0,
+    280,
+    0
+   ],
+   "text": {
+    "en": "2026~ now",
+    "es": "2026~ actual",
+    "ja": "2026~ 現在"
+   }
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "weight": "black",
+   "expand": [
+    0,
+    0,
+    380,
+    0
+   ],
+   "text": {
+    "en": "Chips",
+    "es": "Chips",
+    "ja": "チップ"
+   }
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "weight": "black",
+   "expand": [
+    0,
+    0,
+    340,
+    0
+   ],
+   "text": {
+    "en": "Power",
+    "es": "Energía",
+    "ja": "電力"
+   }
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "weight": "black",
+   "expand": [
+    0,
+    0,
+    310,
+    0
+   ],
+   "text": {
+    "en": "Permitting",
+    "es": "Permisos",
+    "ja": "許認可"
+   }
+  },
+  {
+   "boxes": [
+    21
+   ],
+   "weight": "black",
+   "expand": [
+    0,
+    0,
+    340,
+    0
+   ],
+   "text": {
+    "en": "Orbit",
+    "es": "Órbita",
+    "ja": "軌道"
+   }
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "size": 27,
+   "expand": [
+    0,
+    0,
+    295,
+    0
+   ],
+   "text": {
+    "en": "GPU shortage",
+    "es": "Escasez de GPU",
+    "ja": "GPU不足"
+   }
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "size": 27,
+   "expand": [
+    0,
+    0,
+    245,
+    0
+   ],
+   "text": {
+    "en": "Winners: chips·HBM",
+    "es": "Beneficio: chips·HBM",
+    "ja": "恩恵：チップ・HBM"
+   }
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "size": 27,
+   "expand": [
+    0,
+    0,
+    215,
+    0
+   ],
+   "text": {
+    "en": "Grid connection queue",
+    "es": "Espera de conexión a la red",
+    "ja": "系統接続待ち"
+   }
+  },
+  {
+   "boxes": [
+    17
+   ],
+   "size": 27,
+   "expand": [
+    0,
+    0,
+    245,
+    0
+   ],
+   "text": {
+    "en": "Winners: power equipment",
+    "es": "Beneficio: equipo eléctrico",
+    "ja": "恩恵：電力機器"
+   }
+  },
+  {
+   "boxes": [
+    22
+   ],
+   "size": 27,
+   "expand": [
+    0,
+    0,
+    240,
+    0
+   ],
+   "text": {
+    "en": "Local ballots·freezes",
+    "es": "Votaciones locales·congelamiento",
+    "ja": "住民投票・凍結"
+   }
+  },
+  {
+   "boxes": [
+    24,
+    25,
+    27
+   ],
+   "size": 27,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ],
+   "text": {
+    "en": "Winners: operating capacity",
+    "es": "Beneficio: capacidad operativa",
+    "ja": "恩恵：稼働中の容量"
+   }
+  },
+  {
+   "boxes": [
+    23
+   ],
+   "size": 27,
+   "expand": [
+    0,
+    0,
+    240,
+    0
+   ],
+   "text": {
+    "en": "Regulation-bypass narrative",
+    "es": "Narrativa de eludir la regulación",
+    "ja": "規制回避のストーリー"
+   }
+  },
+  {
+   "boxes": [
+    26
+   ],
+   "size": 27,
+   "expand": [
+    0,
+    0,
+    240,
+    0
+   ],
+   "text": {
+    "en": "Still exploratory",
+    "es": "Aún en fase exploratoria",
+    "ja": "まだ探索段階"
+   }
+  },
+  {
+   "boxes": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+   ],
+   "size": 30,
+   "lh": 46,
+   "color": "#363a47",
+   "accent": "#08090c",
+   "expand": [
+    0,
+    12,
+    65,
+    8
+   ],
+   "text": {
+    "en": "When one layer turns common, profit moves to the scarce layer next to it. Scarcest now: ==**sites with power connected and permits done**==. That is why Chamath sees SpaceX as a 'kingmaker'.",
+    "es": "Cuando una capa se vuelve común, la ganancia pasa a la capa escasa contigua. Hoy lo más escaso es ==**un terreno con electricidad conectada y permisos concluidos**==. Por eso Chamath ve a SpaceX como 'hacedor de reyes'.",
+    "ja": "ある層がありふれると、利益は隣の希少な層へ移る。今最も希少なのは==**電力が接続され、許認可を終えた用地**==だ。チャマスがSpaceXを「キングメーカー」と見た理由である。"
+   },
+   "valign": "middle"
+  }
+ ],
+ "erase": [
+  [
+   886,
+   1026,
+   906,
+   1042
+  ]
+ ]
+}

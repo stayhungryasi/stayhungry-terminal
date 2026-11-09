@@ -1,0 +1,426 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-10.webp",
+ "boxes": "card-en-10.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "weight": "black",
+   "color": "#f2f3f7",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "1, 3, 5 y 10 años:",
+    "ja": "1・3・5・10年、"
+   }
+  },
+  {
+   "weight": "black",
+   "color": "#f2f3f7",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "la IA en probabilidades",
+    "ja": "確率で見るAI"
+   }
+  },
+  {
+   "boxes": [
+    4,
+    5
+   ],
+   "text": {
+    "es": "Las probabilidades son un juicio subjetivo. Verde: alcista; azul: base; naranja: bajista.",
+    "ja": "確率は主観的な判断だ。\n緑は強気、青は中立、オレンジは弱気。"
+   },
+   "expand": [
+    0,
+    0,
+    12,
+    0
+   ]
+  },
+  {
+   "rect": [
+    84,
+    505,
+    164,
+    533
+   ],
+   "text": {
+    "es": "1 año",
+    "ja": "1年"
+   },
+   "weight": "bold",
+   "size": 22,
+   "color": "#f2f3f7",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    84,
+    647,
+    164,
+    675
+   ],
+   "text": {
+    "es": "3 años",
+    "ja": "3年"
+   },
+   "weight": "bold",
+   "size": 22,
+   "color": "#f2f3f7",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    84,
+    790,
+    164,
+    818
+   ],
+   "text": {
+    "es": "5 años",
+    "ja": "5年"
+   },
+   "weight": "bold",
+   "size": 22,
+   "color": "#f2f3f7",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    84,
+    933,
+    164,
+    961
+   ],
+   "text": {
+    "es": "10 años",
+    "ja": "10年"
+   },
+   "weight": "bold",
+   "size": 22,
+   "color": "#f2f3f7",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "Nuevos máximos rápidos",
+    "ja": "急速な新高値"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    79,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Rango y luego recuperación",
+    "ja": "レンジ後の回復"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    193,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "Bajista por crédito",
+    "ja": "信用主導の下落深化"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    115,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "text": {
+    "es": "Hiperaceleración",
+    "ja": "超加速"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    46,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "Los retornos alcanzan a la inversión",
+    "ja": "収益が投資に追いつく"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    187,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "Corrección por sobreinversión",
+    "ja": "過剰投資の調整"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    112,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "es": "Pocos ganadores se llevan todo",
+    "ja": "少数の勝者が独占"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    135,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "es": "La IA como servicio público",
+    "ja": "ユーティリティ化"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    260,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "Freno regulatorio",
+    "ja": "規制で停滞"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    35,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    21
+   ],
+   "text": {
+    "es": "IA transformadora",
+    "ja": "変革的AI"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    139,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    23
+   ],
+   "text": {
+    "es": "Difusión tipo internet",
+    "ja": "インターネット型の普及"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    180,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    24
+   ],
+   "text": {
+    "es": "Techo de capacidad",
+    "ja": "能力の停滞"
+   },
+   "size": 17,
+   "color": "#d6d9de",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    15,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    25,
+    26,
+    27
+   ],
+   "text": {
+    "es": "El año tres lo decide. **Cuando la depreciación de las GPU compradas hoy llegue a resultados**, se juzgará el retorno de la inversión. Nadie sabe cómo será el año diez.",
+    "ja": "勝負どころは3年目だ。**今買ったGPUの減価償却が\n損益に表れるとき**、投資に見合う収益かが決まる。\n10年後は誰にもわからない。"
+   },
+   "weight": "regular",
+   "valign": "bottom",
+   "expand": [
+    0,
+    20,
+    30,
+    0
+   ]
+  }
+ ]
+}

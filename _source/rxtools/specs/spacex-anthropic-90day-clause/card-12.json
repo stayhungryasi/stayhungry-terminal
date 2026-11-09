@@ -1,0 +1,266 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-12.webp",
+ "boxes": "card-12.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    4
+   ],
+   "weight": "bold",
+   "size": 26,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ],
+   "text": {
+    "en": "The symmetry the original missed",
+    "es": "La simetría que omitió el original",
+    "ja": "原文が見落とした対称性"
+   }
+  },
+  {
+   "rect": [
+    86,
+    242,
+    995,
+    315
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#07080a",
+   "nowrap": true,
+   "text": {
+    "en": "Same clause,",
+    "es": "La misma cláusula,",
+    "ja": "同じ条項、"
+   }
+  },
+  {
+   "rect": [
+    86,
+    330,
+    995,
+    403
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#f26520",
+   "nowrap": true,
+   "text": {
+    "en": "two options",
+    "es": "dos opciones",
+    "ja": "2つのオプション"
+   }
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "weight": "medium",
+   "size": 21,
+   "expand": [
+    0,
+    0,
+    230,
+    0
+   ],
+   "text": {
+    "en": "Boom·spot price surge",
+    "es": "Auge·alza del precio spot",
+    "ja": "好況・現物急騰"
+   }
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "weight": "medium",
+   "size": 21,
+   "expand": [
+    0,
+    0,
+    230,
+    0
+   ],
+   "text": {
+    "en": "Bust·spot price drop",
+    "es": "Recesión·caída del precio spot",
+    "ja": "不況・現物下落"
+   }
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "weight": "black",
+   "size": 36,
+   "expand": [
+    0,
+    0,
+    190,
+    0
+   ],
+   "text": {
+    "en": "SpaceX's call",
+    "es": "Call de SpaceX",
+    "ja": "SpaceXのコール"
+   }
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "weight": "black",
+   "size": 36,
+   "expand": [
+    0,
+    0,
+    190,
+    0
+   ],
+   "text": {
+    "en": "Anthropic's put",
+    "es": "Put de Anthropic",
+    "ja": "Anthropicのプット"
+   }
+  },
+  {
+   "boxes": [
+    15,
+    16,
+    17,
+    22,
+    23,
+    27
+   ],
+   "size": 25.5,
+   "lh": 38,
+   "expand": [
+    0,
+    0,
+    100,
+    22
+   ],
+   "text": {
+    "en": "The exit threat lifts the renewal price. The side Chamath saw.",
+    "es": "Amenazar con salir encarece la renovación. El lado de Chamath.",
+    "ja": "解約をちらつかせて更新単価を\n引き上げる。チャマスが見た側。"
+   }
+  },
+  {
+   "boxes": [
+    18,
+    19,
+    20,
+    21,
+    24,
+    25,
+    28
+   ],
+   "size": 25.5,
+   "lh": 38,
+   "expand": [
+    0,
+    0,
+    45,
+    22
+   ],
+   "text": {
+    "en": "Its only terminable commitment, so it is the first to go.",
+    "es": "Es su único compromiso rescindible, así que sale primero.",
+    "ja": "唯一解約できる契約なので、\n真っ先に抜け出す。"
+   }
+  },
+  {
+   "boxes": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+   ],
+   "size": 31,
+   "lh": 48,
+   "color": "#333645",
+   "accent": "#08090b",
+   "expand": [
+    0,
+    8,
+    40,
+    10
+   ],
+   "valign": "middle",
+   "text": {
+    "en": "The 90-day clause is less one side's weapon than ==**a volatility amplifier for both sides**==. Even the SpaceX AI unit's first operating profit came, in effect, from one customer: Anthropic.",
+    "es": "La cláusula de 90 días, más que el arma de una parte, es ==**un amplificador de volatilidad para ambas**==. Incluso la primera utilidad operativa de la división de IA de SpaceX vino, en la práctica, de un solo cliente: Anthropic.",
+    "ja": "90日条項は一方の武器というより==**双方のボラティリティ増幅装置**==だ。SpaceX AI部門の初の営業利益も、事実上Anthropic一社から生まれた。"
+   }
+  },
+  {
+   "boxes": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+   ],
+   "size": 31,
+   "lh": 48,
+   "color": "#333645",
+   "accent": "#08090b",
+   "expand": [
+    0,
+    6,
+    40,
+    8
+   ],
+   "valign": "middle",
+   "text": {
+    "en": "Chamath read the very fact that Musk signed such a contract as ==**a signal of rising spot prices**== (gist of the Oct 17 episode).",
+    "es": "Chamath leyó el solo hecho de que Musk firmara un contrato así como ==**una señal de alza del precio spot**== (idea del episodio del 17 de octubre).",
+    "ja": "マスクがこうした契約を結んだこと自体を、チャマスは==**現物価格上昇のシグナル**==と読んだ（10月17日放送の趣旨）。"
+   }
+  }
+ ],
+ "erase": [
+  [
+   372,
+   300,
+   402,
+   328
+  ],
+  [
+   414,
+   698,
+   432,
+   716
+  ]
+ ]
+}

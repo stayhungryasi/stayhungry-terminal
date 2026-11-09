@@ -1,0 +1,458 @@
+{
+ "slug": "us-midterms-2026-redteam",
+ "src": "card-en-08.webp",
+ "boxes": "card-en-08.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2,
+    3,
+    4
+   ],
+   "text": {
+    "es": "NOCHE ELECTORAL · 3 NOV · ET",
+    "ja": "選挙当日の夜 · 11月3日 · 米東部時間"
+   },
+   "weight": "medium",
+   "size": 26,
+   "color": "#da6d3a",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    340,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "Qué vigilar",
+    "ja": "投票締め切りごとの"
+   },
+   "weight": "black",
+   "size": 64,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "expand": [
+    0,
+    6,
+    470,
+    6
+   ]
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "es": "al cierre de las urnas.",
+    "ja": "注目ポイント。"
+   },
+   "weight": "black",
+   "size": 64,
+   "color": "#f46423",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    480,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "7:00 p. m.",
+    "ja": "午後7:00"
+   },
+   "weight": "bold",
+   "size": 26,
+   "color": "#ea672a",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    0,
+    57,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "7:30 p. m.",
+    "ja": "午後7:30"
+   },
+   "weight": "bold",
+   "size": 26,
+   "color": "#ea672a",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    0,
+    57,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "8:00 p. m.",
+    "ja": "午後8:00"
+   },
+   "weight": "bold",
+   "size": 26,
+   "color": "#ea672a",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    0,
+    57,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "es": "9:00 p. m.",
+    "ja": "午後9:00"
+   },
+   "weight": "bold",
+   "size": 26,
+   "color": "#ea672a",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    0,
+    57,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "9:30 a. m.",
+    "ja": "午前9:30"
+   },
+   "weight": "bold",
+   "size": 26,
+   "color": "#ea672a",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    0,
+    57,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    23
+   ],
+   "text": {
+    "es": "~1 semana",
+    "ja": "約1週間"
+   },
+   "weight": "bold",
+   "size": 26,
+   "color": "#ea672a",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    0,
+    57,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "Georgia · Carolina del Sur",
+    "ja": "ジョージア · サウスカロライナ"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    385,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "text": {
+    "es": "Ohio · Carolina del Norte",
+    "ja": "オハイオ · ノースカロライナ"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    433,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "Texas · Maine · Kansas",
+    "ja": "テキサス · メイン · カンザス"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    405,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    17
+   ],
+   "text": {
+    "es": "Iowa",
+    "ja": "アイオワ"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    661,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "4 nov · Apertura del mercado en EE. UU.",
+    "ja": "11月4日 · 米国市場オープン"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    396,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    24
+   ],
+   "text": {
+    "es": "Resultado final en Maine",
+    "ja": "メインの最終確定"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    515,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Si Carolina del Sur está reñida, léase como señal de “ola”",
+    "ja": "サウスカロライナが接戦なら「ウェーブ」のシグナル"
+   },
+   "size": 24,
+   "color": "#adb0bc",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    148,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "text": {
+    "es": "Senado de Ohio: mercados 70.5% vs. modelo 55%, la mayor brecha",
+    "ja": "オハイオ上院：市場70.5% vs モデル55%、乖離が最大"
+   },
+   "size": 24,
+   "color": "#adb0bc",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    56,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "text": {
+    "es": "Si los republicanos retienen 2+ estados clave, el Senado queda parejo",
+    "ja": "共和党が激戦州を2つ以上守れば、上院は五分五分"
+   },
+   "size": 24,
+   "color": "#adb0bc",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    64,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "es": "Si ganan los demócratas aquí, la barrida queda casi asegurada",
+    "ja": "ここで民主党が勝てば両院制覇はほぼ確定"
+   },
+   "size": 24,
+   "color": "#adb0bc",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    25
+   ],
+   "text": {
+    "es": "El conteo por voto preferencial puede retrasar el resultado",
+    "ja": "順位選択投票の集計で確定が遅れる可能性がある"
+   },
+   "size": 24,
+   "color": "#adb0bc",
+   "nowrap": true,
+   "minscale": 0.85,
+   "expand": [
+    0,
+    0,
+    208,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    21,
+    22
+   ],
+   "text": {
+    "es": "S&P más allá de ±1.5% o el bono a 10 años de vuelta en 5% = el mercado leyó mal el resultado",
+    "ja": "S&Pが±1.5%超、または10年債利回りが5%に戻れば＝市場が結果を読み違えたということ"
+   },
+   "size": 24,
+   "color": "#adb0bc",
+   "lh": 33,
+   "expand": [
+    0,
+    0,
+    92,
+    6
+   ]
+  },
+  {
+   "boxes": [
+    26,
+    27,
+    28
+   ],
+   "text": {
+    "es": "Donde el voto anticipado se cuenta primero, **==las ventajas demócratas iniciales pueden verse infladas==**. Las opciones implican ±1.3–1.5% para el S&P. En Seúl, el conteo cae en horario del KOSPI el 4 de noviembre.",
+    "ja": "期日前投票を先に数える州では、**==序盤の民主党リードが膨らんで見える==**可能性がある。オプションが示すS&Pの変動幅は±1.3~1.5%。韓国では11月4日のKOSPI取引時間中に開票が進む。"
+   },
+   "size": 25,
+   "lh": 36,
+   "color": "#edf0f7",
+   "accent": "#ea672a",
+   "expand": [
+    0,
+    0,
+    4,
+    14
+   ]
+  },
+  {
+   "boxes": [
+    31
+   ],
+   "text": {
+    "es": "Horarios: The Green Papers",
+    "ja": "時刻：The Green Papers"
+   },
+   "size": 18,
+   "color": "#acb0ba",
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    200,
+    2,
+    0,
+    2
+   ]
+  }
+ ]
+}

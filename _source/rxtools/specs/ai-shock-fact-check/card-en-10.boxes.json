@@ -1,0 +1,379 @@
+[
+{
+"i": 0,
+"rect": [
+83,
+76,
+395,
+97
+],
+"ocr": "Al shock fact-check Nov 6, 2026",
+"bg": "#0a0c10",
+"fg": "#cdd0d5",
+"h": 21
+},
+{
+"i": 1,
+"rect": [
+943,
+77,
+994,
+97
+],
+"ocr": "10/12",
+"bg": "#0a0c10",
+"fg": "#aeafb6",
+"h": 20
+},
+{
+"i": 2,
+"rect": [
+83,
+160,
+506,
+224
+],
+"ocr": "Alinl,3,5and",
+"bg": "#0a0c10",
+"fg": "#f2f3f7",
+"h": 64
+},
+{
+"i": 3,
+"rect": [
+88,
+231,
+560,
+295
+],
+"ocr": "10 years, in odds",
+"bg": "#0a0c10",
+"fg": "#f2f3f7",
+"h": 64
+},
+{
+"i": 4,
+"rect": [
+84,
+324,
+983,
+363
+],
+"ocr": "The odds are the author's judgment. Green bull, blue base,",
+"bg": "#0b0d11",
+"fg": "#d1d4db",
+"h": 39
+},
+{
+"i": 5,
+"rect": [
+85,
+376,
+273,
+411
+],
+"ocr": "orange bear.",
+"bg": "#0b0c11",
+"fg": "#d3d6dd",
+"h": 35
+},
+{
+"i": 6,
+"rect": [
+85,
+483,
+994,
+552
+],
+"ocr": "ERE",
+"bg": "#0a0d11",
+"fg": "#3090e0",
+"h": 69
+},
+{
+"i": 7,
+"rect": [
+184,
+563,
+299,
+581
+],
+"ocr": "Fast new highs",
+"bg": "#0b0c11",
+"fg": "#d4d8dd",
+"h": 18
+},
+{
+"i": 8,
+"rect": [
+184,
+563,
+880,
+581
+],
+"ocr": "Fast new highs Range, then recovery Credit-led bear",
+"bg": "#0a0c10",
+"fg": "#c9cbd2",
+"h": 18
+},
+{
+"i": 9,
+"rect": [
+390,
+563,
+557,
+581
+],
+"ocr": "Range, then recovery",
+"bg": "#0a0c10",
+"fg": "#d8dbe0",
+"h": 18
+},
+{
+"i": 10,
+"rect": [
+762,
+563,
+880,
+577
+],
+"ocr": "Credit-led bear",
+"bg": "#0a0c11",
+"fg": "#d7d9df",
+"h": 14
+},
+{
+"i": 11,
+"rect": [
+84,
+624,
+992,
+719
+],
+"ocr": "EE EE",
+"bg": "#0a0c10",
+"fg": "#2f8fde",
+"h": 95
+},
+{
+"i": 12,
+"rect": [
+184,
+705,
+332,
+722
+],
+"ocr": "Hyper-acceleration",
+"bg": "#0a0c11",
+"fg": "#d9dbe1",
+"h": 17
+},
+{
+"i": 13,
+"rect": [
+390,
+705,
+522,
+722
+],
+"ocr": "Returns catch up",
+"bg": "#0b0d11",
+"fg": "#d5d8dd",
+"h": 17
+},
+{
+"i": 14,
+"rect": [
+721,
+705,
+883,
+719
+],
+"ocr": "Overbuild correction",
+"bg": "#0a0c10",
+"fg": "#dcdfe4",
+"h": 14
+},
+{
+"i": 15,
+"rect": [
+84,
+768,
+994,
+836
+],
+"ocr": "Ss 】-~~",
+"bg": "#0a0d10",
+"fg": "#2f8fde",
+"h": 68
+},
+{
+"i": 16,
+"rect": [
+183,
+847,
+325,
+861
+],
+"ocr": "Winner-take-most",
+"bg": "#0a0c10",
+"fg": "#d7dadf",
+"h": 14
+},
+{
+"i": 17,
+"rect": [
+183,
+847,
+967,
+865
+],
+"ocr": "Winner-take-most Al as a utility Regulatory stall",
+"bg": "#0a0c10",
+"fg": "#c6c9ce",
+"h": 18
+},
+{
+"i": 18,
+"rect": [
+472,
+847,
+573,
+865
+],
+"ocr": "Al as a utility",
+"bg": "#0a0c10",
+"fg": "#d5d8dd",
+"h": 18
+},
+{
+"i": 19,
+"rect": [
+845,
+847,
+967,
+865
+],
+"ocr": "Regulatory stall",
+"bg": "#0a0c10",
+"fg": "#d8dbe1",
+"h": 18
+},
+{
+"i": 20,
+"rect": [
+85,
+910,
+994,
+979
+],
+"ocr": "ad",
+"bg": "#0a0c10",
+"fg": "#2f8fde",
+"h": 69
+},
+{
+"i": 21,
+"rect": [
+183,
+990,
+322,
+1004
+],
+"ocr": "Transformative Al",
+"bg": "#0a0c10",
+"fg": "#dddfe6",
+"h": 14
+},
+{
+"i": 22,
+"rect": [
+183,
+990,
+987,
+1007
+],
+"ocr": "Transformative Al Internet-style diffusion Capability plateau",
+"bg": "#0a0c10",
+"fg": "#cdcfd4",
+"h": 17
+},
+{
+"i": 23,
+"rect": [
+473,
+990,
+652,
+1007
+],
+"ocr": "Internet-style diffusion",
+"bg": "#0a0c10",
+"fg": "#d8dbe0",
+"h": 17
+},
+{
+"i": 24,
+"rect": [
+844,
+990,
+987,
+1007
+],
+"ocr": "Capability plateau",
+"bg": "#0a0c10",
+"fg": "#d8dbe0",
+"h": 17
+},
+{
+"i": 25,
+"rect": [
+83,
+1064,
+969,
+1099
+],
+"ocr": "Year three decides it. When today's GPUs hit the income",
+"bg": "#0b0d11",
+"fg": "#f8f9fd",
+"h": 35
+},
+{
+"i": 26,
+"rect": [
+84,
+1115,
+906,
+1151
+],
+"ocr": "statement as depreciation, returns on the spend get",
+"bg": "#0a0c10",
+"fg": "#f8f9fd",
+"h": 36
+},
+{
+"i": 27,
+"rect": [
+82,
+1166,
+577,
+1201
+],
+"ocr": "judged. Nobody knows year ten.",
+"bg": "#0a0c10",
+"fg": "#f8f9fd",
+"h": 35
+},
+{
+"i": 28,
+"rect": [
+84,
+1260,
+282,
+1282
+],
+"ocr": "stayhungryasi.com",
+"bg": "#0a0c10",
+"fg": "#e3733f",
+"h": 22
+}
+]

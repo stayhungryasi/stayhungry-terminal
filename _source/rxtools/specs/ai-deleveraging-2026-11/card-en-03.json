@@ -1,0 +1,456 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "src": "card-en-03.webp",
+ "boxes": "card-en-03.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "keep": [
+  [
+   78,
+   88,
+   113,
+   121
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "Liquidaciones y reestructuraciones",
+    "ja": "清算・リストラ追跡"
+   },
+   "size": 24.5,
+   "color": "#9da7b4",
+   "expand": [
+    -36,
+    0,
+    260,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Con nivel de confirmación",
+    "ja": "確認度を表示"
+   },
+   "size": 24.5,
+   "align": "right",
+   "expand": [
+    60,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "¿Quién ==se está quebrando==?",
+    "ja": "誰が==崩れている==のか"
+   },
+   "weight": "black",
+   "size": 60,
+   "color": "#f3f5fb",
+   "accent": "#f3b541",
+   "expand": [
+    3,
+    0,
+    420,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "Activos US$17,000 M · **==5 nov.==**",
+    "ja": "運用資産170億ドル · **==11/5==**"
+   },
+   "size": 22,
+   "color": "#9da7b7",
+   "accent": "#f3b541",
+   "expand": [
+    0,
+    0,
+    105,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    4,
+    6,
+    8
+   ],
+   "text": {
+    "es": "Recorta su negocio long-short de acciones y equipos; devuelve parte del capital. Octubre: -5.9%",
+    "ja": "株式ロングショート縮小、\nチーム大幅整理、一部資本返還。\n10月-5.9%"
+   },
+   "size": 25,
+   "lh": 36,
+   "color": "#c5d1e5",
+   "expand": [
+    0,
+    0,
+    6,
+    10
+   ]
+  },
+  {
+   "rect": [
+    835,
+    309,
+    957,
+    334
+   ],
+   "text": {
+    "es": "Confirmado",
+    "ja": "確認"
+   },
+   "weight": "bold",
+   "size": 22,
+   "color": "#4ec69f",
+   "align": "center",
+   "valign": "middle",
+   "expand": [
+    6,
+    0,
+    6,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "text": {
+    "es": "Cuant. multiestrategia · **==5 nov.==**",
+    "ja": "クオンツ・マルチ戦略 · **==11/5==**"
+   },
+   "size": 22,
+   "color": "#9da7b7",
+   "accent": "#f3b541",
+   "expand": [
+    0,
+    0,
+    90,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    10,
+    13
+   ],
+   "text": {
+    "es": "Desmantela la mayor parte de su equipo de acciones 'Synthesis'",
+    "ja": "「Synthesis」株式チームの\n大半を整理"
+   },
+   "size": 25,
+   "lh": 36,
+   "color": "#c5d1e4",
+   "expand": [
+    0,
+    0,
+    36,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "text": {
+    "es": "Confirmado",
+    "ja": "確認"
+   },
+   "weight": "bold",
+   "size": 22,
+   "color": "#4ec69f",
+   "align": "center",
+   "valign": "middle",
+   "expand": [
+    8,
+    2,
+    8,
+    2
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    17
+   ],
+   "text": {
+    "es": "Activos US$95,000 M+ · **==3 nov.==**",
+    "ja": "運用資産950億ドル+ · **==11/3==**"
+   },
+   "size": 22,
+   "color": "#9da7b7",
+   "accent": "#f3b541",
+   "expand": [
+    0,
+    0,
+    93,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    16,
+    18
+   ],
+   "text": {
+    "es": "Retira más de US$1,500 M de 2 gestoras externas con pérdidas",
+    "ja": "損失を出した外部運用会社2社から15億ドル超を回収"
+   },
+   "size": 25,
+   "lh": 37,
+   "color": "#c5d2e4",
+   "expand": [
+    0,
+    0,
+    40,
+    4
+   ]
+  },
+  {
+   "rect": [
+    835,
+    596,
+    957,
+    621
+   ],
+   "text": {
+    "es": "Confirmado",
+    "ja": "確認"
+   },
+   "weight": "bold",
+   "size": 22,
+   "color": "#4ec69f",
+   "align": "center",
+   "valign": "middle",
+   "expand": [
+    6,
+    0,
+    6,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "5 ETF de Fidelity",
+    "ja": "フィデリティETF 5本"
+   },
+   "weight": "bold",
+   "size": 34.7,
+   "color": "#f3f7ff",
+   "expand": [
+    2,
+    0,
+    40,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    21
+   ],
+   "text": {
+    "es": "3 'Disruptive' · **==anuncio 15 oct.==**",
+    "ja": "「Disruptive」3本 · **==10/15発表==**"
+   },
+   "size": 22,
+   "color": "#9da7b7",
+   "accent": "#f3b541",
+   "expand": [
+    0,
+    0,
+    20,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "Última operación 12 nov. → liquidación 19 nov.",
+    "ja": "11/12最終取引 → 11/19清算"
+   },
+   "size": 25,
+   "lh": 36,
+   "color": "#c5d1e5",
+   "valign": "middle",
+   "expand": [
+    0,
+    30,
+    -122,
+    30
+   ]
+  },
+  {
+   "rect": [
+    893,
+    731,
+    963,
+    755
+   ],
+   "text": {
+    "es": "Oficial",
+    "ja": "開示"
+   },
+   "weight": "bold",
+   "size": 20,
+   "color": "#4ec69f",
+   "align": "center",
+   "valign": "middle",
+   "expand": [
+    4,
+    0,
+    4,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    27
+   ],
+   "text": {
+    "es": "Fondo de Aschenbrenner · **==5 nov.==**",
+    "ja": "アッシェンブレナー · **==11/5==**"
+   },
+   "size": 22,
+   "color": "#9da7b7",
+   "accent": "#f3b541",
+   "expand": [
+    0,
+    2,
+    50,
+    2
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    23
+   ],
+   "text": {
+    "es": "Se difunden rumores de 'quiebra' en X",
+    "ja": "Xで「破綻説」が拡散"
+   },
+   "size": 25,
+   "color": "#c4d1e4",
+   "expand": [
+    0,
+    0,
+    160,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    26
+   ],
+   "text": {
+    "es": "Sin reportes de medios importantes",
+    "ja": "主要メディアの報道なし"
+   },
+   "weight": "bold",
+   "size": 25,
+   "color": "#f0f7ff",
+   "expand": [
+    0,
+    0,
+    65,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "rect": [
+    833,
+    887,
+    954,
+    912
+   ],
+   "text": {
+    "es": "Sin confirmar",
+    "ja": "未確認"
+   },
+   "weight": "bold",
+   "size": 20,
+   "color": "#ff5a61",
+   "align": "center",
+   "valign": "middle",
+   "expand": [
+    6,
+    0,
+    6,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    28
+   ],
+   "text": {
+    "es": "Nuevos casos en noviembre de llamadas de margen de prime brokers o suspensión de rescates (gates): sin reportes oficiales hasta ahora.",
+    "ja": "11月の新規プライムブローカーのマージンコール・解約停止（ゲート）事例：\n現時点で公式報道なし。"
+   },
+   "size": 22,
+   "lh": 33,
+   "color": "#7f8999",
+   "expand": [
+    0,
+    0,
+    110,
+    40
+   ]
+  },
+  {
+   "boxes": [
+    29
+   ],
+   "text": {
+    "es": "Fuentes: Investing.com, Bloomberg, Hedgeweek, Fidelity, CNBC",
+    "ja": "出所：Investing.com、Bloomberg、Hedgeweek、Fidelity、CNBC"
+   },
+   "size": 22,
+   "color": "#7f8999",
+   "expand": [
+    0,
+    0,
+    180,
+    0
+   ],
+   "nowrap": true
+  }
+ ]
+}

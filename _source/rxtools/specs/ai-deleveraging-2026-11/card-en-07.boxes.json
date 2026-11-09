@@ -1,0 +1,327 @@
+[
+{
+"i": 0,
+"rect": [
+81,
+92,
+431,
+116
+],
+"ocr": "06 Disruptive innovation lens",
+"bg": "#0e1726",
+"fg": "#9da7b4",
+"h": 24
+},
+{
+"i": 1,
+"rect": [
+757,
+92,
+998,
+111
+],
+"ocr": "Carlota Perez model",
+"bg": "#0e1726",
+"fg": "#9ca5b5",
+"h": 19
+},
+{
+"i": 2,
+"rect": [
+85,
+143,
+877,
+210
+],
+"ocr": "Entering the turning point",
+"bg": "#0e1726",
+"fg": "#f3f5fb",
+"h": 67
+},
+{
+"i": 3,
+"rect": [
+83,
+241,
+331,
+278
+],
+"ocr": "(author's view)",
+"bg": "#0e1726",
+"fg": "#9da7b7",
+"h": 37
+},
+{
+"i": 4,
+"rect": [
+78,
+386,
+686,
+440
+],
+"ocr": "-—@ 을 &",
+"bg": "#0e1726",
+"fg": "#f2b342",
+"h": 54
+},
+{
+"i": 5,
+"rect": [
+634,
+388,
+686,
+440
+],
+"ocr": "@",
+"bg": "#0f1725",
+"fg": "#ff5a5f",
+"h": 52
+},
+{
+"i": 6,
+"rect": [
+80,
+398,
+166,
+430
+],
+"ocr": "= @",
+"bg": "#0e1726",
+"fg": "#f3b442",
+"h": 32
+},
+{
+"i": 7,
+"rect": [
+68,
+459,
+232,
+484
+],
+"ocr": "Installation",
+"bg": "#0e1726",
+"fg": "#f2f8ff",
+"h": 25
+},
+{
+"i": 8,
+"rect": [
+68,
+459,
+980,
+507
+],
+"ocr": "Installation Frenzy Turning Deployment",
+"bg": "#0e1726",
+"fg": "#edbfc7",
+"h": 48
+},
+{
+"i": 9,
+"rect": [
+363,
+461,
+459,
+491
+],
+"ocr": "Frenzy",
+"bg": "#0e1726",
+"fg": "#f2f8fe",
+"h": 30
+},
+{
+"i": 10,
+"rect": [
+802,
+460,
+980,
+490
+],
+"ocr": "Deployment",
+"bg": "#0e1726",
+"fg": "#9da7b7",
+"h": 30
+},
+{
+"i": 11,
+"rect": [
+593,
+471,
+726,
+507
+],
+"ocr": "Turning",
+"bg": "#0e1726",
+"fg": "#ff5b63",
+"h": 36
+},
+{
+"i": 12,
+"rect": [
+616,
+520,
+705,
+555
+],
+"ocr": "point",
+"bg": "#0e1726",
+"fg": "#ff5a62",
+"h": 35
+},
+{
+"i": 13,
+"rect": [
+184,
+617,
+593,
+649
+],
+"ocr": "Financial capital pulls back",
+"bg": "#15213b",
+"fg": "#f2f8ff",
+"h": 32
+},
+{
+"i": 14,
+"rect": [
+184,
+660,
+894,
+690
+],
+"ocr": "Hedge funds cut stock teams and pull capital, one after",
+"bg": "#15213b",
+"fg": "#c5d3e4",
+"h": 30
+},
+{
+"i": 15,
+"rect": [
+183,
+701,
+285,
+724
+],
+"ocr": "another",
+"bg": "#15213b",
+"fg": "#c6d4e6",
+"h": 23
+},
+{
+"i": 16,
+"rect": [
+162,
+807,
+594,
+839
+],
+"ocr": "Politics and public pushback",
+"bg": "#15213b",
+"fg": "#f2f7ff",
+"h": 32
+},
+{
+"i": 17,
+"rect": [
+161,
+850,
+910,
+879
+],
+"ocr": "71% of Americans oppose an Al data center near them (vs.",
+"bg": "#15213b",
+"fg": "#c5d2e4",
+"h": 29
+},
+{
+"i": 18,
+"rect": [
+161,
+891,
+813,
+921
+],
+"ocr": "53% for a nuclear plant). Democrats signal Al taxes",
+"bg": "#15213b",
+"fg": "#c5d2e5",
+"h": 30
+},
+{
+"i": 19,
+"rect": [
+186,
+997,
+439,
+1029
+],
+"ocr": "Mega-IPO supply",
+"bg": "#15213b",
+"fg": "#f2f7ff",
+"h": 32
+},
+{
+"i": 20,
+"rect": [
+184,
+1040,
+939,
+1070
+],
+"ocr": "Anthropic lines up after SpaceX: a classic late-frenzy signal",
+"bg": "#15213b",
+"fg": "#c5d3e3",
+"h": 30
+},
+{
+"i": 21,
+"rect": [
+82,
+1121,
+949,
+1144
+],
+"ocr": "In the railway (1847) and fiber (2000) bubbles, the technology survived. The leveraged",
+"bg": "#0e1726",
+"fg": "#7e8899",
+"h": 23
+},
+{
+"i": 22,
+"rect": [
+82,
+1155,
+255,
+1172
+],
+"ocr": "investors did not.",
+"bg": "#0f1827",
+"fg": "#7f8999",
+"h": 17
+},
+{
+"i": 23,
+"rect": [
+81,
+1273,
+522,
+1296
+],
+"ocr": "Sources: Gallup (Mar 2026), Bloomberg Law",
+"bg": "#0e1726",
+"fg": "#7f8999",
+"h": 23
+},
+{
+"i": 24,
+"rect": [
+930,
+1273,
+999,
+1295
+],
+"ocr": "07/10",
+"bg": "#0e1726",
+"fg": "#f1f7ff",
+"h": 22
+}
+]

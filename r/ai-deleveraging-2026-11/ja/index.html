@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja" data-fix="ja" data-langs="ko,en,es,ja" data-home="/r/ai-deleveraging-2026-11/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIデレバレッジ点検:半導体-12.25%、崩れているのはAIではなく借金だ · Stayhungry.ASI</title>
+<meta name="description" content="11月5日、フィラデルフィア半導体指数は-12.25%と2020年3月以来の最大下落となった。Walleye・Engineers Gate・Millenniumのリストラは報道で確認されたが、SNSで広がるSituational Awareness破綻説は未確認だ。レバレッジETFの機械的な売りとアンソロピックのS-1の損益を分解し、約40項目を再検証して訂正した内容もまとめた。">
+<link rel="canonical" href="https://stayhungryasi.com/r/ai-deleveraging-2026-11/ja/">
+<meta property="og:type" content="article"><meta property="og:title" content="AIデレバレッジ点検:半導体-12.25%、崩れているのはAIではなく借金だ · Stayhungry.ASI"><meta property="og:description" content="11月5日、フィラデルフィア半導体指数は-12.25%と2020年3月以来の最大下落となった。Walleye・Engineers Gate・Millenniumのリストラは報道で確認されたが、SNSで広がるSituational Awareness破綻説は未確認だ。レバレッジETFの機械的な売りとアンソロピックのS-1の損益を分解し、約40項目を再検証して訂正した内容もまとめた。"><meta property="og:url" content="https://stayhungryasi.com/r/ai-deleveraging-2026-11/ja/">
+<meta name="twitter:card" content="summary"><meta name="twitter:site" content="@shaferwineX">
+<meta name="theme-color" content="#0A0C10"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D111D'/%3E%3Cpath d='M8 11l6 5-6 5' stroke='%23E9B7A2' stroke-width='2.6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M16 22h8' stroke='%23E9B7A2' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="alternate" type="application/rss+xml" title="Stayhungry.ASI research" href="/r/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0C10;--card:#12161E;--line:#1D2330;--line2:#2E3445;--ink:#EEF0F5;--ink2:#C3C9D6;--mute:#8D95A8;--or:#F26522;--mono:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink2);font:16px/1.75 "Noto Sans KR",system-ui,sans-serif}
+a{color:var(--or)}
+.top{position:sticky;top:0;z-index:5;background:#0A0C10ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .in{max-width:980px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-family:var(--mono);font-size:13px;letter-spacing:.2em;color:var(--ink);text-decoration:none;font-weight:600;white-space:nowrap}
+.brand i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--or);margin-right:10px;vertical-align:1px}
+.top a.back{font-family:var(--mono);font-size:12.5px;color:var(--or);text-decoration:none;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
+main{max-width:980px;margin:0 auto;padding:30px 20px 60px}
+.eb{font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;color:var(--or);text-transform:uppercase}
+h1.t{color:var(--ink);font-size:clamp(28px,4.6vw,46px);line-height:1.2;font-weight:900;margin:.3em 0 .35em;letter-spacing:-.01em}
+.meta{font-family:var(--mono);font-size:12.5px;color:var(--mute);display:flex;flex-wrap:wrap;gap:6px 16px}
+.brief{margin:26px 0 30px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 24px}
+.lt{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.lt button{font:600 12.5px var(--mono);letter-spacing:.06em;color:var(--ink2);background:none;border:1px solid var(--line2);border-radius:999px;padding:6px 12px;cursor:pointer}
+.lt button.on{background:var(--or);border-color:var(--or);color:#0A0C10}
+.bp[hidden]{display:none}
+.dek{color:var(--ink);font-size:clamp(19px,2.3vw,24px);font-weight:800;line-height:1.45;margin:0 0 16px}
+.kg{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px;align-items:start}
+.kv b{display:block;font-size:clamp(34px,5vw,52px);font-weight:900;color:var(--or);line-height:1.05;letter-spacing:-.02em;word-break:keep-all}
+.kv small,.lbl{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--mute);margin:6px 0}
+.pts{margin:0;padding-left:20px}.pts li{margin:4px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}.chips span{font-family:var(--mono);font-size:12px;border:1px solid var(--line2);border-radius:999px;padding:3px 10px;color:var(--ink2)}
+.ck{margin:12px 0 0;padding:0;list-style:none}.ck li{font-size:14.5px;margin:3px 0}.ck time{font-family:var(--mono);color:var(--or);margin-right:8px}
+.note{font-size:13px;color:var(--mute);border:1px dashed var(--line2);border-radius:10px;padding:10px 14px;margin:18px 0 0;line-height:1.6}
+.doc h2{color:var(--ink);font-size:clamp(21px,2.6vw,27px);font-weight:900;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line);line-height:1.35}
+.doc h3{color:var(--ink);font-size:19px;font-weight:800;margin:1.5em 0 .4em}
+.doc b{color:var(--ink)}.doc li p{margin:.2em 0}
+.doc ul.check{list-style:none;padding-left:4px}.doc ul.check li:before{content:"☐ ";color:var(--or)}
+.doc blockquote{margin:16px 0;border-left:3px solid var(--or);padding:4px 16px;color:var(--ink2)}
+.doc hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.55}
+th,td{text-align:left;vertical-align:top;padding:8px 11px;border-bottom:1px solid var(--line)}
+th{background:var(--card);color:var(--ink);font-weight:700}th p,td p{margin:0}
+figure.fig{margin:20px 0;background:#fcfcfb;border-radius:12px;padding:12px;overflow-x:auto}
+figure.fig svg{width:100%;height:auto;min-width:560px;display:block;
+ --cds-text-primary:#141413;--cds-text-secondary:#5E5D59;--cds-chart-axis:#9A988F;--cds-chart-muted:#C9C7BD;--cds-chart-reference:#7B7A73;--cds-chart-categorical-1:#D9480F;--cds-chart-reference-tint:#F0EEE6;--cds-chart-grid:#E6E4DC;--cds-chart-status-good:#2EA87A;--cds-chart-status-critical:#E5484D;--cds-chart-status-warning:#E3A008}
+figure.fig figcaption{font-size:12.5px;color:#5E5D59;margin-top:6px}
+.frame{width:100%;border:1px solid var(--line);border-radius:14px;background:#0A0C10;min-height:80vh;display:block}
+.wide{max-width:1240px}body.w .top .in,body.w footer{max-width:1240px}
+.rel{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:12px}
+.rel a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none;color:var(--ink2)}
+.rel a:hover{border-color:var(--or)}.rel b{display:block;color:var(--ink);font-size:16px;line-height:1.4}.rel small{font-family:var(--mono);font-size:11.5px;color:var(--mute)}
+footer{max-width:980px;margin:0 auto;padding:20px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12.5px;color:var(--mute);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--mute);text-decoration:none}
+footer .fr{display:flex;flex-direction:column;align-items:flex-end;gap:8px}.soc{display:flex;gap:6px;flex-wrap:wrap}footer a.soci{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--mute)}footer a.soci:hover{color:var(--or,#F26522);border-color:var(--or,#F26522)}@media(max-width:640px){footer .fr{align-items:flex-start}}
+@media (max-width:640px){.kg{grid-template-columns:1fr}.brief{padding:16px}main{padding:22px 16px 48px}}
+</style><link rel="alternate" hreflang="ko" href="https://stayhungryasi.com/r/ai-deleveraging-2026-11/"><link rel="alternate" hreflang="en" href="https://stayhungryasi.com/r/ai-deleveraging-2026-11/en/"><link rel="alternate" hreflang="es-MX" href="https://stayhungryasi.com/r/ai-deleveraging-2026-11/es/"><link rel="alternate" hreflang="ja" href="https://stayhungryasi.com/r/ai-deleveraging-2026-11/ja/"><link rel="alternate" hreflang="x-default" href="https://stayhungryasi.com/r/ai-deleveraging-2026-11/en/"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AIデレバレッジ点検:半導体-12.25%、崩れているのはAIではなく借金だ", "inLanguage": "ja", "datePublished": "2026-11-06", "description": "11月5日、フィラデルフィア半導体指数は-12.25%と2020年3月以来の最大下落となった。Walleye・Engineers Gate・Millenniumのリストラは報道で確認されたが、SNSで広がるSituational Awareness破綻説は未確認だ。レバレッジETFの機械的な売りとアンソロピックのS-1の損益を分解し、約40項目を再検証して訂正した内容もまとめた。", "url": "https://stayhungryasi.com/r/ai-deleveraging-2026-11/ja/", "translationOfWork": {"@type": "Article", "url": "https://stayhungryasi.com/r/ai-deleveraging-2026-11/", "inLanguage": "ko"}, "author": {"@type": "Organization", "name": "Stayhungry.ASI", "url": "https://stayhungryasi.com/"}, "publisher": {"@type": "Organization", "name": "Stayhungry.ASI", "url": "https://stayhungryasi.com/"}}</script>
+</head>
+<body>
+<header class="top"><div class="in"><a class="brand" href="/"><i></i>STAY HUNGRY.ASI</a><a class="back" data-l="en" data-lib href="/en/#library" hidden>← Research library</a><a class="back" data-l="ko" data-lib href="/ko/#library" hidden>← 리서치 라이브러리</a><a class="back" data-l="es" data-lib href="/es/#library" hidden>← Biblioteca de investigación</a><a class="back" data-l="ja" data-lib href="/ja/#library">← リサーチライブラリ</a></div></header><main><p class="eb">RESEARCH · マクロ · 韓国語原文からの翻訳</p><h1 class="t">AIデレバレッジ点検:半導体-12.25%、崩れているのはAIではなく借金だ</h1><p class="meta" style="font-size:15px;color:var(--ink2);font-family:inherit" lang="ko">AI 디레버리징 점검: 반도체 -12.25%, 무너지는 건 AI가 아니라 빚이다</p><div class="meta" data-l="en" hidden><span>Macro</span><span>Published 2026-11-06</span><span>Data as of 2026-11-05 US close (written 2026-11-06 07:00 KST)</span><span>10 min read</span><span>40 sources</span></div><div class="meta" data-l="ko" hidden><span>거시</span><span>작성 2026-11-06</span><span>데이터 기준 2026-11-05 US close (written 2026-11-06 07:00 KST)</span><span>10분 분량</span><span>출처 40개</span></div><div class="meta" data-l="es" hidden><span>Macro</span><span>Publicado 2026-11-06</span><span>Datos al 2026-11-05 US close (written 2026-11-06 07:00 KST)</span><span>10 min de lectura</span><span>40 fuentes</span></div><div class="meta" data-l="ja"><span>マクロ</span><span>作成 2026-11-06</span><span>データ基準 2026-11-05 US close (written 2026-11-06 07:00 KST)</span><span>10分で読める</span><span>出典40件</span></div><section class="brief"><div class="lt" role="tablist"><button data-set="en" class="">EN</button><button data-set="ko" class="">한국어</button><button data-set="es" class="">ES</button><button data-set="ja" class="on">日本語</button></div><div class="bp" data-l="en" hidden>
+<p class="dek">On Nov 5 the Philadelphia chip index fell 12.25%, its worst day since March 2020. Restructurings at Walleye, Engineers Gate and Millennium are confirmed by the press, but the Situational Awareness &#x27;blow-up&#x27; circulating on social media is unverified. This piece unpacks the mechanical selling by leveraged ETFs and Anthropic&#x27;s S-1 numbers, and lists the corrections from rechecking about 40 items.</p>
+<div class="kg"><div class="kv"><small>KEY NUMBER</small><b>-12.25%</b><small style="letter-spacing:.04em;text-transform:none">The Philadelphia chip index (SOX) on Nov 5. Bigger than June 5&#x27;s -10.3%, so the worst since March 2020 (closing basis, estimate)</small></div>
+<div><p class="lbl">BRIEF</p><ul class="pts"><li>Markets: the S&amp;P 500&#x27;s -4.36% was its worst day since April 2025; the Nasdaq fell 5.52% and is 11.9% off its peak, in a correction; the VIX jumped 69.66% to 28.18. The KOSPI fell 5.28% as foreigners sold a net ₩3.39 trillion, and ₩7.95 trillion over the first four sessions of November.</li><li>Liquidations: Walleye ($17B) is shrinking stock long-short and returning some capital, Engineers Gate cut most of its Synthesis team, and Millennium pulled $1.5B+ from two outside managers. The Situational Awareness blow-up claim and new November margin calls are unverified. A 3x long ETF must sell about 73.5% of NAV at the close and a 3x inverse about 147% (estimate).</li><li>Lens and calendar: $72.4B of Anthropic&#x27;s $80.7B net loss is a non-cash fair-value charge, and Q2 operating income was $974M. The problem is funding, not the technology (author&#x27;s view). Scenarios: base 55%, bear 25%, bull 20% (estimates). The turning points are Anthropic pricing from Nov 13 and Nvidia earnings on Nov 17.</li></ul><p class="lbl">CHECKPOINTS</p><ul class="ck"><li><time datetime="2026-11-10">2026-11-10</time>Earliest possible start of Anthropic&#x27;s roadshow</li><li><time datetime="2026-11-12">2026-11-12</time>Last trading day for five Fidelity ETFs</li><li><time datetime="2026-11-13">2026-11-13</time>Earliest possible Anthropic IPO pricing</li><li><time datetime="2026-11-17">2026-11-17</time>Nvidia third-quarter earnings (after the US close)</li><li><time datetime="2026-11-19">2026-11-19</time>Planned liquidation date for the Fidelity ETFs</li><li><time datetime="2026-12-09">2026-12-09</time>FOMC decision</li></ul></div></div>
+<div class="chips"><span>SOX</span><span>SPX</span><span>NDX</span><span>SOXL</span><span>NVDA</span><span>KOSPI</span><span>TAIEX</span><span>AI deleveraging</span><span>Hedge fund liquidations</span><span>Leveraged ETFs</span><span>Rechecked</span></div><p class="lbl" style="margin-top:28px">The report in 10 cards (English)</p><div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:10px 0 6px"><a href="../card-en-01.jpg" target="_blank" rel="noopener"><img src="../card-en-01.webp" alt="Card 1/10 · Cover: SOX -12.25%; AI didn&#x27;t break, the leverage did" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a><a href="../card-en-02.jpg" target="_blank" rel="noopener"><img src="../card-en-02.webp" alt="Card 2/10 · Market snapshot: index drops, VIX 28.18, Nasdaq -11.9% from peak" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a><a href="../card-en-03.jpg" target="_blank" rel="noopener"><img src="../card-en-03.webp" alt="Card 3/10 · Liquidation tracker with confirmation levels; Situational Awareness claim unverified" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a><a href="../card-en-04.jpg" target="_blank" rel="noopener"><img src="../card-en-04.webp" alt="Card 4/10 · Leveraged ETF mechanics: 3x long sells 73.5% of NAV, 3x inverse adds 147%" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a><a href="../card-en-05.jpg" target="_blank" rel="noopener"><img src="../card-en-05.webp" alt="Card 5/10 · Six contagion paths and their risk levels (author&#x27;s view)" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a><a href="../card-en-06.jpg" target="_blank" rel="noopener"><img src="../card-en-06.webp" alt="Card 6/10 · Anthropic&#x27;s $80.7B H1 net loss is mostly a $72.4B non-cash charge" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a><a href="../card-en-07.jpg" target="_blank" rel="noopener"><img src="../card-en-07.webp" alt="Card 7/10 · Perez lens: entering the turning point (author&#x27;s view)" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a><a href="../card-en-08.jpg" target="_blank" rel="noopener"><img src="../card-en-08.webp" alt="Card 8/10 · Scenarios: base 55%, bear 25%, bull 20% (author estimates)" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a><a href="../card-en-09.jpg" target="_blank" rel="noopener"><img src="../card-en-09.webp" alt="Card 9/10 · Checkpoint calendar Nov 10-26: Nvidia earnings Nov 17" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a><a href="../card-en-10.jpg" target="_blank" rel="noopener"><img src="../card-en-10.webp" alt="Card 10/10 · Five questions to check your own account" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:10px;display:block"></a></div>
+<p class="note">AI-assisted research from stayhungryasi.com. Written on the date shown; numbers may have changed since. Not investment advice.</p></div><div class="bp" data-l="ko" hidden>
+<p class="dek">11월 5일 필라델피아 반도체지수는 -12.25%로 2020년 3월 이후 최대 낙폭을 냈다. Walleye·Engineers Gate·Millennium의 구조조정은 언론으로 확인됐지만, SNS에 퍼진 Situational Awareness 파산설은 미확인이다. 레버리지 ETF의 기계적 매도와 앤트로픽 S-1 손익을 뜯어보고, 약 40개 항목을 재검증해 정정한 내용까지 담았다.</p>
+<div class="kg"><div class="kv"><small>핵심 숫자</small><b>-12.25%</b><small style="letter-spacing:.04em;text-transform:none">11/5 필라델피아 반도체지수(SOX) 하루 낙폭. 6/5의 -10.3%를 넘어 2020년 3월 이후 최대(종가 비교, 추정)</small></div>
+<div><p class="lbl">요약</p><ul class="pts"><li>시장: S&amp;P 500 -4.36%는 2025년 4월 이후 최악, 나스닥은 -5.52%로 고점 대비 -11.9% 조정 구간, VIX는 28.18로 69.66% 뛰었다. 코스피는 -5.28%로 외국인이 3조3,928억원을 순매도했고, 11월 첫 4거래일 순매도는 7조9,520억원이다.</li><li>청산: Walleye(운용자산 170억달러)는 주식 롱숏을 줄이고 일부 자본을 돌려주며, Engineers Gate는 Synthesis 팀 대부분을 정리했고, Millennium은 외부 운용사 2곳에서 15억달러 이상을 회수했다. Situational Awareness 파산설과 11월 신규 마진콜은 미확인이다. 3배 롱 ETF는 순자산의 약 73.5%, 3배 인버스는 약 147%만큼 장 막판에 팔아야 하는 구조다(추정).</li><li>프레임과 일정: 앤트로픽 순손실 807억달러 중 724억달러는 비현금 평가손이고 2분기 영업이익은 9.74억달러다. 문제는 기술이 아니라 자금조달이다(작성자 판단). 시나리오는 기본 55%·하방 25%·상방 20%(추정), 분기점은 11/13 이후 앤트로픽 공모가 결정과 11/17 엔비디아 실적이다.</li></ul><p class="lbl">검증 일정</p><ul class="ck"><li><time datetime="2026-11-10">2026-11-10</time>앤트로픽 로드쇼 시작 가능 최초일</li><li><time datetime="2026-11-12">2026-11-12</time>피델리티 ETF 5종 마지막 거래일</li><li><time datetime="2026-11-13">2026-11-13</time>앤트로픽 공모가 결정 가능 최초일</li><li><time datetime="2026-11-17">2026-11-17</time>엔비디아 3분기 실적(미국 장 마감 후)</li><li><time datetime="2026-11-19">2026-11-19</time>피델리티 ETF 청산 예정일</li><li><time datetime="2026-12-09">2026-12-09</time>FOMC 결정</li></ul></div></div>
+<div class="chips"><span>SOX</span><span>SPX</span><span>NDX</span><span>SOXL</span><span>NVDA</span><span>KOSPI</span><span>TAIEX</span><span>AI 디레버리징</span><span>헤지펀드 청산</span><span>레버리지 ETF</span><span>재검증</span></div>
+<p class="note">AI 도움을 받아 작성한 stayhungryasi.com 리서치입니다. 작성일 기준이며 이후 숫자가 바뀌었을 수 있습니다. 투자 권유가 아닙니다.</p></div><div class="bp" data-l="es" hidden>
+<p class="dek">El 5 de noviembre el índice de chips de Filadelfia cayó 12.25%, su peor día desde marzo de 2020. Las reestructuraciones de Walleye, Engineers Gate y Millennium están confirmadas por la prensa, pero el supuesto colapso de Situational Awareness que circula en redes no está verificado. Analizamos la venta mecánica de los ETF apalancados y las cifras del S-1 de Anthropic, e incluimos las correcciones tras revisar unos 40 puntos.</p>
+<div class="kg"><div class="kv"><small>CIFRA CLAVE</small><b>-12.25%</b><small style="letter-spacing:.04em;text-transform:none">El índice de chips de Filadelfia (SOX) el 5 de noviembre. Supera el -10.3% del 5 de junio: el peor día desde marzo de 2020 (al cierre, estimación)</small></div>
+<div><p class="lbl">RESUMEN</p><ul class="pts"><li>Mercados: el -4.36% del S&amp;P 500 fue su peor día desde abril de 2025; el Nasdaq cayó 5.52% y está 11.9% por debajo de su máximo, en corrección; el VIX subió 69.66% hasta 28.18. El KOSPI cayó 5.28% con ventas netas extranjeras de 3.39 billones de wones, y 7.95 billones en las primeras cuatro sesiones de noviembre.</li><li>Liquidaciones: Walleye (US$17.000 millones) reduce su negocio long-short en acciones y devuelve parte del capital, Engineers Gate recortó casi todo su equipo Synthesis y Millennium retiró más de US$1.500 millones de dos gestores externos. El supuesto colapso de Situational Awareness y nuevas llamadas de margen en noviembre no están verificados. Un ETF 3x largo debe vender cerca del 73.5% de su patrimonio al cierre y uno 3x inverso cerca del 147% (estimación).</li><li>Marco y calendario: US$72.400 millones de la pérdida neta de US$80.700 millones de Anthropic son un cargo contable sin efectivo, y su beneficio operativo del segundo trimestre fue de US$974 millones. El problema es el financiamiento, no la tecnología (visión del autor). Escenarios: base 55%, bajista 25%, alcista 20% (estimaciones). Los puntos clave son el precio de la OPV de Anthropic desde el 13 de noviembre y los resultados de Nvidia el 17.</li></ul><p class="lbl">PUNTOS DE CONTROL</p><ul class="ck"><li><time datetime="2026-11-10">2026-11-10</time>Primer día posible del roadshow de Anthropic</li><li><time datetime="2026-11-12">2026-11-12</time>Último día de negociación de cinco ETF de Fidelity</li><li><time datetime="2026-11-13">2026-11-13</time>Primera fecha posible para fijar el precio de la OPV de Anthropic</li><li><time datetime="2026-11-17">2026-11-17</time>Resultados del tercer trimestre de Nvidia (tras el cierre en EE. UU.)</li><li><time datetime="2026-11-19">2026-11-19</time>Fecha prevista de liquidación de los ETF de Fidelity</li><li><time datetime="2026-12-09">2026-12-09</time>Decisión de la Fed</li></ul></div></div>
+<div class="chips"><span>SOX</span><span>SPX</span><span>NDX</span><span>SOXL</span><span>NVDA</span><span>KOSPI</span><span>TAIEX</span><span>Desapalancamiento de la IA</span><span>Liquidaciones de hedge funds</span><span>ETF apalancados</span><span>Verificado</span></div>
+<p class="note">Investigación asistida por IA de stayhungryasi.com. Vigente a la fecha indicada; las cifras pueden haber cambiado. No es asesoría de inversión.</p></div><div class="bp" data-l="ja">
+<p class="dek">11月5日、フィラデルフィア半導体指数は-12.25%と2020年3月以来の最大下落となった。Walleye・Engineers Gate・Millenniumのリストラは報道で確認されたが、SNSで広がるSituational Awareness破綻説は未確認だ。レバレッジETFの機械的な売りとアンソロピックのS-1の損益を分解し、約40項目を再検証して訂正した内容もまとめた。</p>
+<div class="kg"><div class="kv"><small>重要な数字</small><b>-12.25%</b><small style="letter-spacing:.04em;text-transform:none">11/5のフィラデルフィア半導体指数(SOX)の下落率。6/5の-10.3%を超え、2020年3月以来最大(終値比較、推定)</small></div>
+<div><p class="lbl">要約</p><ul class="pts"><li>市場:S&amp;P 500の-4.36%は2025年4月以来最悪、ナスダックは-5.52%で高値から-11.9%の調整局面、VIXは69.66%上昇し28.18。KOSPIは-5.28%で外国人が3兆3,928億ウォンを売り越し、11月最初の4営業日の売り越しは7兆9,520億ウォン。</li><li>清算:Walleye(運用資産170億ドル)は株式ロングショートを縮小し一部資本を返還、Engineers GateはSynthesisチームの大半を整理、Millenniumは外部運用会社2社から15億ドル超を回収した。Situational Awareness破綻説と11月の新たなマージンコールは未確認。3倍ロングETFは純資産の約73.5%、3倍インバースは約147%を引け際に売る構造だ(推定)。</li><li>枠組みと日程:アンソロピックの純損失807億ドルのうち724億ドルは非現金の評価損で、第2四半期の営業利益は9.74億ドル。問題は技術ではなく資金調達だ(筆者の判断)。シナリオは基本55%・下振れ25%・上振れ20%(推定)、分岐点は11/13以降のアンソロピック公募価格決定と11/17のエヌビディア決算。</li></ul><p class="lbl">検証スケジュール</p><ul class="ck"><li><time datetime="2026-11-10">2026-11-10</time>アンソロピックのロードショー開始が可能な最初の日</li><li><time datetime="2026-11-12">2026-11-12</time>フィデリティETF5本の最終取引日</li><li><time datetime="2026-11-13">2026-11-13</time>アンソロピックの公募価格決定が可能な最初の日</li><li><time datetime="2026-11-17">2026-11-17</time>エヌビディア第3四半期決算(米国市場終了後)</li><li><time datetime="2026-11-19">2026-11-19</time>フィデリティETFの清算予定日</li><li><time datetime="2026-12-09">2026-12-09</time>FOMC決定</li></ul></div></div>
+<div class="chips"><span>SOX</span><span>SPX</span><span>NDX</span><span>SOXL</span><span>NVDA</span><span>KOSPI</span><span>TAIEX</span><span>AIデレバレッジ</span><span>ヘッジファンド清算</span><span>レバレッジETF</span><span>再検証</span></div>
+<p class="note">AIの支援を受けて作成したstayhungryasi.comのリサーチです。作成日時点の内容で、その後数値が変わっている可能性があります。投資助言ではありません。</p></div></section><p class="note" style="margin:0 0 26px">この記事は韓国語原文の翻訳です。内容に差異がある場合は韓国語原文が優先されます。 <a href="/r/ai-deleveraging-2026-11/?ko" hreflang="ko">韓国語の原文を読む →</a></p><article class="doc" id="full" lang="ja"><p><b>データ基準：2026年11月5日米国通常取引終値 · 作成：2026年11月6日07時（韓国時間） · stayhungryasi.com</b></p><p>表記ルール：数値はリンクした出典に基づく事実である。「推定」は筆者の判断、「未確認」は一次報道で確認できなかった事項である。草稿作成後に約40項目を出典と再照合し、訂正内容は最後のセクションにまとめた。</p><p><b>利益相反の告知：</b>本リサーチはAnthropicのAI（Claude）を使って作成しており、本文にはAnthropicのS-1とIPO日程が登場する。投資勧誘ではない。</p>
+<h2>カードニュース10枚で見る</h2><p>要点だけを10枚にまとめた。画像をクリックすると拡大表示できる。</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:14px 0 8px"><a href="../card-en-01.ja.webp"><img src="../card-en-01.ja.webp" alt="カード1/10 · 表紙：SOX -12.25%、崩れているのはAIではなく借金だ" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a><a href="../card-en-02.ja.webp"><img src="../card-en-02.ja.webp" alt="カード2/10 · 市場スナップショット：主要指数の下落幅、VIX 28.18、ナスダックは高値から-11.9%" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a><a href="../card-en-03.ja.webp"><img src="../card-en-03.ja.webp" alt="カード3/10 · 清算・リストラ追跡と確認度" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a><a href="../card-en-04.ja.webp"><img src="../card-en-04.ja.webp" alt="カード4/10 · レバレッジETFのリバランス構造" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a><a href="../card-en-05.ja.webp"><img src="../card-en-05.ja.webp" alt="カード5/10 · 6つの波及経路とリスク度" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a><a href="../card-en-06.ja.webp"><img src="../card-en-06.ja.webp" alt="カード6/10 · Anthropic上半期純損失807億ドルの内訳" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a><a href="../card-en-07.ja.webp"><img src="../card-en-07.ja.webp" alt="カード7/10 · ペレスの局面：転換点の入り口" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a><a href="../card-en-08.ja.webp"><img src="../card-en-08.ja.webp" alt="カード8/10 · シナリオ：基本55%、下方25%、上方20%" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a><a href="../card-en-09.ja.webp"><img src="../card-en-09.ja.webp" alt="カード9/10 · 11/10~11/26 チェックポイント・カレンダー" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a><a href="../card-en-10.ja.webp"><img src="../card-en-10.ja.webp" alt="カード10/10 · 自分の口座を点検する5つの質問" loading="lazy" width="1080" height="1350" style="width:100%;height:auto;border-radius:12px;display:block"></a></div>
+
+<h2>要約</h2>
+<ul><li>11月5日の米国株急落の本質は、AI技術の失敗ではなく<b>レバレッジと集中ポジションの強制的な解消</b>である。S&amp;P 500は2025年4月以来最悪の1日（-4.36%）、半導体指数（SOX）は-12.25%を記録した。</li><li>確認されたリストラは、Walleye（株式ロングショートの縮小・一部資本の返還）、Engineers Gate（Synthesisチームの大半を整理）、Millennium（外部運用会社2社から15億ドル超を回収）である。SNSで広がったSituational Awareness破綻説は<b>主要メディアが確認していない未確認事項</b>だ。</li><li>今後2週間は、Anthropicが公募価格を決定できるようになる11/13以降の期間と、11/17のエヌビディア決算が続くため、方向性の分岐点となる可能性が高い（推定）。</li></ul>
+
+<h2>1. 市場スナップショット</h2>
+<div class='tw'><table><thead><tr><th>指標</th><th>終値</th><th>騰落</th><th>備考</th></tr></thead><tbody>
+<tr><td>S&amp;P 500</td><td>7,353.73</td><td>-4.36%</td><td>2025年4月の「解放の日」関税ショック以来最悪の1日</td></tr>
+<tr><td>ナスダック総合</td><td>24,315.00</td><td>-5.52%</td><td>高値から-11.9%で調整局面入り。一部メディアは-5.2%と集計</td></tr>
+<tr><td>ダウ</td><td>51,523.06</td><td>-3.44%</td><td>-1,833ポイント</td></tr>
+<tr><td>フィラデルフィア半導体（SOX）</td><td>—</td><td>-12.25%</td><td>6/5の-10.3%を上回り、2020年3月以来最大の下落幅（推定、終値比較）</td></tr>
+<tr><td>VIX</td><td>28.18</td><td>+69.66%</td><td></td></tr>
+<tr><td>米10年債</td><td>4.837%</td><td>-5.7bp</td><td></td></tr>
+<tr><td>WTI（12月限）</td><td>91.06</td><td>+3.34%</td><td></td></tr>
+<tr><td>ビットコイン</td><td>75,702</td><td>-5.56%</td><td>24時間取引の資産、照会時点の値</td></tr>
+<tr><td>KOSPI（11/5）</td><td>5,383.80</td><td>-5.28%</td><td>外国人が3兆3,928億ウォンの売り越し、個人は2兆2,722億ウォン・機関は8,457億ウォンの買い越し</td></tr>
+<tr><td>台湾加権指数（TAIEX、11/5）</td><td>41,574.72</td><td>-3.20%</td><td>7/31以来の安値。外国人がNT$1,024.6億の売り越し（過去10位）</td></tr>
+</tbody></table></div>
+<p>きっかけは、民主党の中間選挙での圧勝（報道ベース）が招いたAIデータセンターの規制・課税への懸念である。ただし、1日の下落幅のかなりの部分はファンダメンタルズよりも需給、特にレバレッジポジションの機械的な解消で説明できると判断する（推定）。外国人は11月最初の4営業日に韓国株式市場で7兆9,520億ウォンを売り越し、1日平均の売り越し強度は10月の2倍を超えた。</p>
+
+<h2>2. 清算・リストラ追跡</h2>
+<div class='tw'><table><thead><tr><th>ファンド（運用資産）</th><th>事象</th><th>日付</th><th>確認度</th></tr></thead><tbody>
+<tr><td>Walleye Capital（170億ドル）</td><td>自社の株式ロングショート事業を簡素化し、同部門の幹部・投資チームの多くを整理、一部資本を返還。10月-5.9%（2020年3月以来最悪の月）</td><td>11/5</td><td>報道で確認</td></tr>
+<tr><td>Engineers Gate</td><td>クオンツとファンダメンタルズを組み合わせた「Synthesis」株式チームの大半を整理</td><td>11/5</td><td>報道で確認（ブルームバーグ）</td></tr>
+<tr><td>Millennium（950億ドル超）</td><td>Troluceから10億ドル超、Axebrookから5億ドルのレバレッジ資本を回収</td><td>11/3</td><td>報道で確認（ブルームバーグ）</td></tr>
+<tr><td>マルチストラテジーの10月成績</td><td>Millennium -2.3%、Marshall Wace Eureka -5.4%、ExodusPoint -2.4%、North Rock -2.3%</td><td>10月</td><td>ブルームバーグ引用</td></tr>
+<tr><td>Situational Awareness（7月以降約100億ドル）</td><td>11/5にX（Kalshiなど）で「破綻」の主張が拡散。7月のマージンコール時に上場株式をすべて売却し、その約80%をシタデルが引き受けた。9月からオプションで再参入</td><td>11/5</td><td><b>未確認（SNS）</b></td></tr>
+<tr><td>フィデリティETF 5本</td><td>Disruptive Finance・Disruptive Medicine・Disruptors・Metaverse・Real Estate ETFを清算。11/12最終取引、11/19ごろ清算</td><td>10/15発表</td><td>プレスリリース</td></tr>
+<tr><td>データセンター向け融資</td><td>身元不明の売り手が5億ドル規模のデータセンター向け融資の売却を試みている</td><td>11/5</td><td>単一報道</td></tr>
+<tr><td>韓国の個人信用</td><td>信用融資残高28兆6,446億ウォン（11/4）。10/12の34兆2,887億ウォンから約5.6兆ウォン減り、3か月ぶりの低水準</td><td>~11/4</td><td>報道で確認</td></tr>
+<tr><td>解約制限（ゲート）</td><td>11月の新規事例は見つからなかった。参考として、2026年3月にBlue Owlのプライベートクレジット・ファンドが無期限のゲートを設けた事例がある</td><td>—</td><td>—</td></tr>
+<tr><td>11月のプライムブローカーのマージンコール</td><td>公式報道なし。確認された報道は7月のFTの件（ゴールドマン・JPモルガンが追加担保を要求）</td><td>—</td><td><b>未確認</b></td></tr>
+</tbody></table></div>
+<p>Situational Awarenessは、シタデルへの売却前はポートフォリオの約2/3が上場株式で、残りは主にAnthropic株だった。噂が事実でも市場での強制売却量は限られ、このファンドに残るリスクはむしろ<b>AnthropicのIPO価格と連動</b>しているとみる（推定）。</p>
+
+<h2>3. 波及経路</h2>
+<div class='tw'><table><thead><tr><th>経路</th><th>根拠</th><th>リスク度（推定）</th></tr></thead><tbody>
+<tr><td>プライムブローカー</td><td>ゴールドマンのプライム融資の約16%がAIメモリー株に直接連動（<b>6月30日時点</b>）。ヘッジファンドのグロス・レバレッジは約310%</td><td>高い</td></tr>
+<tr><td>集中</td><td>ヘッジファンドが5営業日で2025年以降のAI買い越しをすべて巻き戻した。10/22のゴールドマンのヘッジファンド人気株バスケット-4.2%は2011年以来最悪（二次出典）。ゴールドマンは、巻き戻しは終わりよりも始まりに近いとみた</td><td>高い</td></tr>
+<tr><td>レバレッジETF</td><td>SOXLに10月、過去最大の70億ドルが流入。下落日のたびに大引け間際のリバランス売りが構造的に出る</td><td>非常に高い</td></tr>
+<tr><td>銀行信用</td><td>銀行が内部の与信枠に達し、データセンター向け融資のリスクを外部に移している（FT、5月）。11/5にデータセンター向け融資の売却の試み</td><td>中程度</td></tr>
+<tr><td>韓国</td><td>信用残高は減ったが、貸借残高は3週間で6.5%増えた（32億7,787万株）。投資者預託金は89兆2,273億ウォン</td><td>中程度</td></tr>
+<tr><td>台湾</td><td>指数が下落しても信用融資残高があまり減っていない。追加の強制売却の余地</td><td>高い</td></tr>
+</tbody></table></div>
+<p><b>レバレッジETFのリバランス計算（推定）。</b>倍率LのETFは、原指数がrだけ動くと純資産のL×(L-1)×r分だけエクスポージャーを調整しなければならない。3倍ロングETFは6×|r|、3倍インバースETFは12×|r|である。SOXの-12.25%を当てはめると、3倍ロングは純資産の約73.5%を売らねばならず、3倍インバースは純資産の約147%分だけ空売りを増やさねばならない。<b>ロング・ショート両方のレバレッジETFが同時に大引け間際の売り</b>を出したということだ。ただし、SOXL・SOXSの原指数は2021年からSOXではなくICE Semiconductor Indexであるため、この計算は近似値である。</p>
+<p>韓国では7月と10月の2度の反対売買（追証未達による強制決済）で、個人のレバレッジのかなりの部分が整理された。台湾は信用残高の減りが小さく、短期的には<b>台湾側の強制清算リスクのほうが大きい</b>とみる（推定）。</p>
+
+<h2>4. 破壊的イノベーションの枠組み</h2>
+<p><b>ペレスの局面：狂乱期末期から転換点の入り口へ（推定）。</b></p>
+<ul><li><b>金融資本の離脱</b>：Walleye・Engineers Gateなど株式ロングショート組織の縮小が続いている。</li><li><b>政治・世論の反撃</b>：ギャラップの調査（2026年3月実施）では、米国人の71%が地元のAIデータセンターに反対した。原発反対（53%）より高い。ワイデン、ウォーレン両上院議員は、上院を奪還すればAI課税を優先課題にすると表明した。</li><li><b>メガIPOの供給</b>：6月のSpaceXに続き、Anthropicの上場が控えている。狂乱期末期の典型的なシグナルである。</li></ul>
+<p><b>技術リスクと金融リスクの分離</b></p>
+<div class='tw'><table><thead><tr><th>区分</th><th>根拠</th><th>判断（推定）</th></tr></thead><tbody>
+<tr><td>技術・需要</td><td>AnthropicのS-1：2026年上半期の売上高162.9億ドル（前年同期11.6億ドル）、第2四半期営業利益9.74億ドル、上半期営業キャッシュフロー+39億ドル。純損失807億ドルのうち724億ドルは転換社債・SAFEの公正価値変動（非現金）</td><td>需要は実在する</td></tr>
+<tr><td>金融・資金調達</td><td>ファンドのレバレッジ、プライムブローカーへの集中、銀行のデータセンター向け融資枠、Anthropicの9/30時点の購入・リース契約約8,954億ドル、IPOの需給負担</td><td><b>現在の主なリスク</b></td></tr>
+</tbody></table></div>
+<p><b>歴史的事例との比較（一般的な歴史知識に基づく）</b></p>
+<div class='tw'><table><thead><tr><th>事例</th><th>共通点</th><th>相違点</th></tr></thead><tbody>
+<tr><td>鉄道1847</td><td>投機資本がまずインフラを敷き、一部払込株式への追加払込要求が事実上マージンコールの役割を果たした</td><td>現在のAIはすでに大きな売上高と営業利益を生んでいる</td></tr>
+<tr><td>光ファイバー2000</td><td>負債で調達した設備投資、過剰建設への懸念</td><td>ハイパースケーラー自身のキャッシュフローが堅固である</td></tr>
+<tr><td>ARK 2021</td><td>テーマ型商品からの資金流出（フィデリティの「Disruptive」ETF清算と類似）</td><td>当時はファンドのレバレッジがなかったが、現在はファンドのレバレッジと3倍ETFが重なっている</td></tr>
+</tbody></table></div>
+
+<h2>5. シナリオ（確率は筆者推定）</h2>
+<div class='tw'><table><thead><tr><th>シナリオ</th><th>確率</th><th>トリガー</th><th>相対的に強い / 弱い候補</th></tr></thead><tbody>
+<tr><td>基本：2~4週間の変動の後、デレバレッジが終了</td><td>55%</td><td>台湾の信用残高減少、エヌビディア決算が無難、Anthropic上場完了</td><td>強い：電力・公益、ボラティリティ戦略 / 弱い：ネオクラウド</td></tr>
+<tr><td>下方：連鎖的なマージンコール</td><td>25%</td><td>大型ファンドの強制売却確認、IPO延期、VIX 35以上、州単位のデータセンター・モラトリアム拡大</td><td>強い：国債・金 / 弱い：メモリー、韓国・台湾</td></tr>
+<tr><td>上方：7月型の急反発</td><td>20%</td><td>強制売り手の退場確認、エヌビディア決算のサプライズ</td><td>強い：半導体製造装置・メモリー</td></tr>
+</tbody></table></div>
+<p>参考までに、7月のSituational Awareness清算時には、清算報道の直後に急落したAI銘柄の多くが日中15~25%急反発した。10月にはエネルギー・金融や公益・ヘルスケアといったディフェンシブ業種が底堅く、Walleyeのボラティリティ事業は10月に過去最高の月を記録した。特定銘柄の売買推奨ではない。</p>
+
+<h2>6. チェックポイント・カレンダー</h2>
+<div class='tw'><table><thead><tr><th>日付（米国）</th><th>イベント</th></tr></thead><tbody>
+<tr><td>11/10（火）</td><td>Anthropicのロードショー開始が可能な最初の日（公開S-1から15日後）</td></tr>
+<tr><td>11/12（木）</td><td>フィデリティETF 5本の最終取引日</td></tr>
+<tr><td>11/13（金）</td><td>Anthropicの公募価格決定が可能な最初の日（11/11のSEC休業日を反映）</td></tr>
+<tr><td>11/14（土）</td><td>第3四半期13Fの期限。週末のため、規定上は翌営業日（11/16）まで提出可能。SAのシタデルへの売却が初めて反映される開示</td></tr>
+<tr><td>11/16（月）</td><td>Anthropicの上場が可能な最初の日。報道では11/16の週が目標</td></tr>
+<tr><td><b>11/17（火）</b></td><td><b>エヌビディア第3四半期（FY27）決算、米国市場引け後 / 韓国時間11/18（水）午前7時にカンファレンスコール</b></td></tr>
+<tr><td>11/19（木）</td><td>フィデリティETFの清算予定日</td></tr>
+<tr><td>11/26（木）以前</td><td>Anthropic上場目標（感謝祭前）、代替案は年末</td></tr>
+<tr><td>12/8~9</td><td>FOMC（複数の二次出典に基づく）</td></tr>
+</tbody></table></div>
+<p>Anthropicは11/2に第3四半期実績を盛り込んだS-1修正版を提出したが、11/5時点で公募価格レンジを盛り込んだ修正版はまだない。投資家のバリュエーション期待は約2兆ドルから1.5兆~1.6兆ドルに下がったと報じられた。</p>
+
+<h2>7. 投資家が自ら点検すべき質問</h2>
+<ol><li>半導体・AIの比率は何%で、そのうち3倍レバレッジ商品はどれくらいか？</li><li>信用取引・株式担保ローンがあるなら、担保比率の余裕は十分か？</li><li>ここからさらに10~15%下落した場合、損失額はいくらで、耐えられるか？</li><li>電力・公益など別の軸の比率はあるか？</li><li>さらなる下落時の対応原則（価格帯・金額）をあらかじめ決めてあるか？</li></ol>
+
+<h2>8. 検証ノートと訂正</h2>
+<p>草稿から訂正した内容である。未確認のまま残る項目は、Situational Awareness破綻説と11月の新規プライムブローカー・マージンコールの2つだ。</p>
+<div class='tw'><table><thead><tr><th>項目</th><th>草稿</th><th>訂正</th></tr></thead><tbody>
+<tr><td>エヌビディア決算日</td><td>11/18（予想サイト基準）</td><td><b>11/17（火）</b>、会社の公式発表（10/28）</td></tr>
+<tr><td>Anthropicの数値</td><td>純損失と営業利益が「矛盾」</td><td>矛盾ではない。純損失の大部分は非現金の公正価値変動</td></tr>
+<tr><td>Engineers Gate</td><td>単一報道</td><td>ブルームバーグの署名記事で確認</td></tr>
+<tr><td>SAの売却</td><td>上場株式をすべてシタデルに</td><td>すべて売却し、その約80%をシタデルが引き受け</td></tr>
+<tr><td>レバレッジETF</td><td>SOX基準で約72%</td><td>原指数はICE半導体指数、近似値は約73.5%</td></tr>
+<tr><td>ギャラップ71%</td><td>二次ページから引用</td><td>ギャラップの原調査（2026年3月）に差し替え</td></tr>
+<tr><td>ゴールドマン16%</td><td>現在形で記述</td><td>6月30日時点の数値と明記</td></tr>
+</tbody></table></div>
+<p><b>この判断が誤りうる点。</b>① SAのショックはオプション・未公開株に限られるとみたが、非公開の借入や未公開株を担保とする構造があれば、波及はより大きくなりうる。② Anthropicの営業黒字は1四半期の数値であり、8,954億ドルの契約負担を考えれば、持続性はまだ検証されていない。③ 連邦レベルでは「ペース調整」とみたが、州単位のデータセンター・モラトリアムが広がれば、下方シナリオの確率は上がる。</p>
+
+<h2>出典</h2>
+<ul>
+<li><a href="https://finance.yahoo.com/markets/stocks/articles/ai-free-fall-triggers-another-202650432.html">Investing.com via Yahoo Finance: AI free-fall triggers another major hedge fund shakeout（11/5）</a></li>
+<li><a href="https://ca.finance.yahoo.com/news/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html">Yahoo Finance: Stock market today, Nov 5</a></li>
+<li><a href="https://www.bnnbloomberg.ca/markets/2026/11/05/a-wipeout-for-ai-stocks-sends-wall-street-reeling-and-the-sp-500-tumbles-more-than-3/">AP via BNN Bloomberg: S&amp;P 500 tumbles 4.4%</a></li>
+<li><a href="https://www.foxbusiness.com/markets/stocks-nov-5-2026">Fox Business: Stocks plunge as Dem midterm sweep fuels AI regulatory concerns</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-11-05/chips-selloff-worsens-as-fears-about-ai-trade-grip-stock-market">Bloomberg: Chips selloff worsens</a></li>
+<li><a href="https://profit.pakistantoday.com.pk/2026/06/06/us-listed-chipmakers-slump-erases-dollar13-trillion-in-stock-market-value">Reuters via Profit: PHLX半導体指数 -10.3%（6/5）</a></li>
+<li><a href="https://hedgeweek.com/news/millennium-withdraws-1-5bn-from-external-hedge-funds-following-losses">Hedgeweek: Millennium withdraws $1.5bn</a></li>
+<li><a href="https://muckrack.com/nishant-kumar">ブルームバーグ記事一覧（Muck Rack）: Engineers Gate parts ways with most of Synthesis stock team</a></li>
+<li><a href="https://newsroom.fidelity.com/pressreleases/fidelity-investments--announces-liquidation-of-five-exchange-traded-funds/s/64b91ef9-353a-414c-b7ba-d1f2e85a761e">Fidelity Newsroom: ETF 5本の清算</a></li>
+<li><a href="https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html">CNBC: Situational Awareness fire sale（7/31）</a></li>
+<li><a href="https://www.cnbc.com/2026/09/11/leopold-aschenbrenners-situational-awareness-is-active-in-options-market-sources-say.html">CNBC: Situational Awareness options（9/11）</a></li>
+<li><a href="https://finance.yahoo.com/markets/stocks/articles/leopold-aschenbrenners-ai-hedge-fund-174426079.html">Yahoo Finance: SA collapses after margin calls</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Leopold_Aschenbrenner">Wikipedia: Leopold Aschenbrenner</a></li>
+<li><a href="https://x.com/Kalshi/status/2118394914685984776">X（Kalshi）11/5の投稿（未確認の主張）</a></li>
+<li><a href="https://www.hedgeweek.com/hedge-funds-face-margin-calls-amid-ai-stock-sell-off/">Hedgeweek: Hedge funds face margin calls（7月）</a></li>
+<li><a href="https://www.forbes.com/sites/jonmarkman/2026/11/02/hedge-funds-reversed-all-their-2025-ai-stock-buying-in-five-days/">Forbes: Hedge funds reversed all their 2025 AI buying</a></li>
+<li><a href="https://beincrypto.com/hedge-funds-dump-ai-stocks/">BeInCrypto: US hedge funds sold every AI stock they bought since 2025</a></li>
+<li><a href="https://en.bloomingbit.io/feed/news/123354">Bloomingbit（ブルームバーグ引用）: SOXLへの資金流入</a></li>
+<li><a href="https://www.nyse.com/publicdocs/nyse/markets/nyse-arca/rule-interpretations/2021/NYSE%20Arca%20Equities%20RB-21-075.pdf">NYSE Arca: SOXL原指数変更の告知（2021）</a></li>
+<li><a href="http://www.zerohedge.com/markets/stocks-slump-ai-rout-resumes-supporting-havens-newsquawk-us-market-wrap">Newsquawk via ZeroHedge: US market wrap 11/5</a></li>
+<li><a href="https://www.silicon.co.uk/cloud/datacenter/bank-data-centre-debt-629721">Silicon UK（FT引用）: 銀行のデータセンター向け融資</a></li>
+<li><a href="https://www.pulse.bot/hedge-funds/news/the-gating-of-blue-owl-reviving-the-bear-stearns-specter-in-private-markets-221072a9-037f-4813-9e94-a17f7ba148f4/">HedgeCo via Pulse: Blue Owlのゲート（3月）</a></li>
+<li><a href="https://supple.kr/news/cmw37haic3n1yal9p2cl67sx5">マネートゥデイ（Supple）: KOSPI 5383.80</a></li>
+<li><a href="https://supple.kr/news/cmw41hf1milukal9pl6ye22qx">マネートゥデイ（Supple）: 外国人の売りペースが2倍に</a></li>
+<li><a href="https://m.sedaily.com/article/20110879">ソウル経済新聞: 信用融資・貸借残高・預託金（11/4）</a></li>
+<li><a href="https://focustaiwan.tw/business/202611050014">Focus Taiwan: 加権指数が3.2%下落</a></li>
+<li><a href="https://www.taiwannews.com.tw/news/6472574">Taiwan News: 台湾の信用融資</a></li>
+<li><a href="https://www.implicator.ai/gallup-poll-finds-7-in-10-americans-oppose-data-centers-near-their-homes/">Implicator（ギャラップ原調査を引用）</a></li>
+<li><a href="https://news.bloomberglaw.com/tax-insights-and-commentary/democrats-float-ai-data-center-tax-plans-as-tool-for-midterms">Bloomberg Law: Democrats float AI, data center tax plans</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm">SEC EDGAR: Anthropic PBC Form S-1</a></li>
+<li><a href="https://leverageshares.com/us/insights/anthropic-s-1-filing/">Leverage Shares: AnthropicのS-1分析</a></li>
+<li><a href="https://leverageshares.com/us/insights/when-is-the-anthropic-ipo/">Leverage Shares: AnthropicのIPO日程</a></li>
+<li><a href="https://finance.yahoo.com/technology/live/anthropic-ipo-live-updates-frontier-ai-lab-discloses-revenue-and-risks-in-highly-anticipated-s-1-filing-141702607.html">Yahoo Finance: Anthropic S-1 live updates</a></li>
+<li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262272287-anthropic-ipo-preview-guid-us-ai-tradingkey">TradingKey: Anthropic IPO preview（契約8,954億ドル）</a></li>
+<li><a href="https://www.tokenpost.com/news/business/47099">TokenPost: バリュエーション期待1.5~1.6兆ドル</a></li>
+<li><a href="https://financefeeds.com/anthropic-ipo-roadshow-looms-with-no-price-range/">FinanceFeeds: 公募価格レンジ未提出</a></li>
+<li><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx">NVIDIA IR: 第3四半期決算カンファレンスコールの告知（10/28）</a></li>
+<li><a href="https://fedratecalc.com/fomc-meeting-schedule/december-2026/">FedRateCalc: 2026年12月のFOMC</a></li>
+<li><a href="https://taekim.substack.com/p/the-big-lesson-from-the-implosion">Tae Kim: SA清算後の反発</a></li>
+<li><a href="https://gvwire.com/2026/11/01/midterm-us-elections-earnings-jobs-data-loom-for-ai-wary-stock-market/">Reuters via GV Wire: 10月のセクター動向</a></li>
+</ul>
+<p>stayhungryasi.com · 情報提供を目的としたリサーチであり、投資勧誘ではない。投資判断とその責任は投資家本人にある。</p>
+</article><div data-l="en" hidden><p class="lbl" style="margin-top:40px">MORE RESEARCH</p><div class="rel"><a href="/r/us-midterms-2026-redteam/en/"><small>Macro · 2026-11-02</small><b>The 2026 US Midterms Through a Disruptive-Innovation Lens: AI Financing, Oil and the Fed Matter More Than the Vote</b></a><a href="/r/usdkrw-outlook/en/"><small>Macro · 2026-10-21</small><b>USD/KRW Outlook: How Far Can Chip Dollars Push the Exchange Rate Down?</b></a><a href="/r/rates-vs-stocks-20y/en/"><small>Macro · 2026-10-08</small><b>U.S. Treasury Yields and Stocks: A 20-Year Relationship</b></a></div></div><div data-l="ko" hidden><p class="lbl" style="margin-top:40px">다른 리서치</p><div class="rel"><a href="/r/us-midterms-2026-redteam/"><small>거시 · 2026-11-02</small><b>2026 미국 중간선거 × 파괴적 혁신: 선거보다 큰 변수는 AI 자금조달·유가·연준</b></a><a href="/r/usdkrw-outlook/"><small>거시 · 2026-10-21</small><b>원/달러 환율 전망 — 반도체 달러가 끌어내린 환율, 어디까지 가나</b></a><a href="/r/rates-vs-stocks-20y/"><small>거시 · 2026-10-08</small><b>미국채 금리와 주가, 20년의 관계</b></a></div></div><div data-l="es" hidden><p class="lbl" style="margin-top:40px">MÁS INVESTIGACIÓN</p><div class="rel"><a href="/r/us-midterms-2026-redteam/es/"><small>Macro · 2026-11-02</small><b>Las elecciones intermedias de EE. UU. de 2026 bajo la lente de la innovación disruptiva: el financiamiento de la IA, el petróleo y la Fed pesan más que el voto</b></a><a href="/r/usdkrw-outlook/es/"><small>Macro · 2026-10-21</small><b>Perspectivas del USD/KRW: ¿hasta dónde pueden bajar el tipo de cambio los dólares de los chips?</b></a><a href="/r/rates-vs-stocks-20y/es/"><small>Macro · 2026-10-08</small><b>Rendimientos del Tesoro de EE. UU. y acciones: una relación de 20 años</b></a></div></div><div data-l="ja"><p class="lbl" style="margin-top:40px">ほかのリサーチ</p><div class="rel"><a href="/r/us-midterms-2026-redteam/ja/"><small>マクロ · 2026-11-02</small><b>2026年米中間選挙を破壊的イノベーションで読む:選挙より大きいのはAIの資金調達・原油・FRB</b></a><a href="/r/usdkrw-outlook/ja/"><small>マクロ · 2026-10-21</small><b>ウォン/ドル相場展望：半導体ドルが押し下げた為替、どこまで行くか</b></a><a href="/r/rates-vs-stocks-20y/ja/"><small>マクロ · 2026-10-08</small><b>米国債利回りと株価、20年の関係</b></a></div></div></main><footer><span>Not investment advice. 투자 권유 아님.</span><span class="fr"><span class="soc"><a class="soci" href="https://www.youtube.com/@futurefieldtrip" target="_blank" rel="noopener" title="YouTube @futurefieldtrip" aria-label="YouTube @futurefieldtrip"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8.5 5.5v13l10.5-6.5z" fill="currentColor"/></svg></a><a class="soci" href="https://www.instagram.com/stayhungryasi/" target="_blank" rel="noopener" title="Instagram @stayhungryasi" aria-label="Instagram @stayhungryasi"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3.8 8.6h3.4l1.7-2.6h6.2l1.7 2.6h3.4v10.2H3.8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="13.4" r="3.1" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></a><a class="soci" href="https://x.com/shaferwineX" target="_blank" rel="noopener" title="X @shaferwineX" aria-label="X @shaferwineX"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 5.5l11 13M17.5 5.5l-11 13" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg></a><a class="soci" href="https://www.threads.com/@stayhungryasi" target="_blank" rel="noopener" title="Threads @stayhungryasi" aria-label="Threads @stayhungryasi"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><text x="12" y="17.2" text-anchor="middle" font-size="16.5" font-weight="700" fill="currentColor" font-family="Inter,system-ui,sans-serif">@</text></svg></a><a class="soci" href="https://www.tiktok.com/@shaferwinex" target="_blank" rel="noopener" title="TikTok @shaferwinex" aria-label="TikTok @shaferwinex"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M10 17.2V5.2l8-1.6v11.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><ellipse cx="7.6" cy="17.4" rx="2.6" ry="2" fill="currentColor"/><ellipse cx="15.6" cy="15.6" rx="2.6" ry="2" fill="currentColor"/></svg></a><a class="soci" href="https://t.me/stayhungryasi" target="_blank" rel="noopener" title="Telegram @stayhungryasi" aria-label="Telegram @stayhungryasi"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3.6 11.4L20.2 4.6l-2.9 14.6-5.4-4.3-3 2.9v-4.9l8.3-6.3-10 5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a></span><a href="https://stayhungryasi.com/" target="_blank" rel="noopener">stayhungryasi.com</a></span></footer><script>
+(function(){var L=['en','ko','es','ja'],H=document.documentElement,fix=H.getAttribute('data-fix'),av=(H.getAttribute('data-langs')||'ko').split(','),home=H.getAttribute('data-home')||'',p=null;
+try{p=JSON.parse(localStorage.getItem('sha-lang'))}catch(e){}
+if(L.indexOf(p)<0){var n=(navigator.language||'en').toLowerCase().slice(0,2);p=L.indexOf(n)>=0?n:'en'}
+if(!fix&&home&&p!=='ko'&&av.indexOf(p)>=0&&!/[?&]ko/.test(location.search)&&!/bot|crawl|spider|slurp|preview/i.test(navigator.userAgent)){location.replace(home+p+'/'+location.hash);return;}
+if(fix)p=fix;
+function go(c){if(!home||av.indexOf(c)<0||c===(fix||'ko'))return false;location.href=c==='ko'?home+'?ko':home+c+'/';return true;}
+function set(c){document.querySelectorAll('[data-l]').forEach(function(e){e.hidden=e.getAttribute('data-l')!==c});
+document.querySelectorAll('.lt button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-set')===c)});
+document.querySelectorAll('a[data-lib]').forEach(function(a){a.href='/'+c+'/#library'});}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set]');if(b){var c=b.getAttribute('data-set');try{localStorage.setItem('sha-lang',JSON.stringify(c))}catch(x){}if(!go(c))set(c);}});
+set(p);})();
+</script></body></html>

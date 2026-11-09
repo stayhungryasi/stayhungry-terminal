@@ -1,0 +1,685 @@
+{
+ "ledger_inputs": {
+  "title": "FX flow ledger: observations",
+  "description": "Latest observation and source for each FX supply/demand item. Items that could not be confirmed are left blank.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "item": "Goods trade surplus",
+    "side": "Supply",
+    "raw": 468.1,
+    "unit": "USD 100M",
+    "period": "Aug 2026",
+    "status": "Observed",
+    "src": "Bank of Korea balance of payments 2026-10-08"
+   },
+   {
+    "item": "Conversion of Hynix ADR proceeds",
+    "side": "Supply",
+    "raw": 265,
+    "unit": "USD 100M",
+    "period": "Converted in tranches, Jul\u2013Aug",
+    "status": "Ended (zero contribution in Oct)",
+    "src": "Sangsangin Securities (Financial News 2026-08-21)"
+   },
+   {
+    "item": "NPS FX hedging",
+    "side": "Supply",
+    "raw": null,
+    "unit": "USD 100M",
+    "period": "\u2014",
+    "status": "Unconfirmed (hedge cap up to 20%)",
+    "src": "Asia Economy 2026-04-14"
+   },
+   {
+    "item": "Foreign bond inflows",
+    "side": "Supply",
+    "raw": null,
+    "unit": "USD 100M",
+    "period": "\u2014",
+    "status": "Unconfirmed",
+    "src": "\u2014"
+   },
+   {
+    "item": "Corporate forward dollar sales",
+    "side": "Supply",
+    "raw": null,
+    "unit": "USD 100M",
+    "period": "\u2014",
+    "status": "Unconfirmed (selling observed)",
+    "src": "Money Today 2026-10-20"
+   },
+   {
+    "item": "Residents' net buying of foreign stocks",
+    "side": "Demand",
+    "raw": 41.522,
+    "unit": "USD 100M",
+    "period": "Oct 1\u201319",
+    "status": "Observed",
+    "src": "KSD SEIBro (Dailian 2026-10-21)"
+   },
+   {
+    "item": "Foreign net selling of Korean stocks",
+    "side": "Demand",
+    "raw": 177160,
+    "unit": "KRW 100M",
+    "period": "Oct 1\u201316",
+    "status": "Observed",
+    "src": "Korea Exchange (Newspim 2026-10-19)"
+   },
+   {
+    "item": "Investment in the US (execution)",
+    "side": "Demand",
+    "raw": 200,
+    "unit": "USD 100M/yr",
+    "period": "Annual cap",
+    "status": "Based on cap",
+    "src": "Financial News 2026-01-21"
+   },
+   {
+    "item": "Pension funds' overseas investment",
+    "side": "Demand",
+    "raw": null,
+    "unit": "USD 100M",
+    "period": "\u2014",
+    "status": "Unconfirmed",
+    "src": "\u2014"
+   },
+   {
+    "item": "Dividend repatriation",
+    "side": "Demand",
+    "raw": null,
+    "unit": "USD 100M",
+    "period": "From Nov",
+    "status": "Not yet (after Samsung's Q3 dividend is paid)",
+    "src": "\u2014"
+   }
+  ]
+ },
+ "decomp": {
+  "title": "Change since end-June",
+  "description": "USD/KRW and dollar index levels on 2026-06-30 and 10-20.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "series": "USD/KRW",
+    "start": 1549.4,
+    "start_date": "2026-06-30",
+    "end": 1328.1,
+    "end_date": "2026-10-20",
+    "src": "Kuki News 2026-06-30 / Herald Economy 2026-10-20"
+   },
+   {
+    "series": "Dollar index",
+    "start": 101.11,
+    "start_date": "2026-06-30",
+    "end": 101.757,
+    "end_date": "2026-10-20",
+    "src": "News1 (Financial News) 2026-07-03 / Herald Economy 2026-10-20"
+   }
+  ]
+ },
+ "sh_return": {
+  "title": "Shareholder-return timing table",
+  "description": "Size, timing and FX effect of SK hynix and Samsung shareholder-return events. Based on company filings and press reports.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "step": "1",
+    "what": "Conversion of Hynix ADR proceeds",
+    "size": "$26.5B (about KRW 40 trillion)",
+    "when": "Jul\u2013Aug 2026",
+    "fx": "KRW strength (estimated contribution of about KRW 129)",
+    "status": "Ended",
+    "src": "Sangsangin Securities 2026-08-21"
+   },
+   {
+    "step": "2",
+    "what": "Hynix KRW 40 trillion buyback and cancellation",
+    "size": "KRW 40 trillion",
+    "when": "8/20\u201311/19",
+    "fx": "Strength on conversion; weakness when foreign sellers repatriate proceeds",
+    "status": "In progress",
+    "src": "SK hynix filing (Financial News 2026-08-19)"
+   },
+   {
+    "step": "3",
+    "what": "Samsung Q3 cash dividend",
+    "size": "About KRW 30 trillion",
+    "when": "Board approval at end-Oct \u2192 usually paid in Nov",
+    "fx": "Strength from conversion before payment \u2192 weakness from repatriation after payment",
+    "status": "Awaiting approval",
+    "src": "Samsung Newsroom 2026-08-21"
+   },
+   {
+    "step": "4",
+    "what": "Hynix additional return announcement",
+    "size": "50%+ of FCF (size TBD)",
+    "when": "With Q3 results",
+    "fx": "Depends on size and method",
+    "status": "Awaiting announcement",
+    "src": "Financial News 2026-08-19"
+   },
+   {
+    "step": "5",
+    "what": "Samsung remaining returns",
+    "size": "Remainder of KRW 90\u2013110 trillion a year",
+    "when": "Board decision in Jan 2027",
+    "fx": "The larger the special-dividend share, the larger the repatriation",
+    "status": "Awaiting decision",
+    "src": "Newspim 2026-08-21"
+   }
+  ]
+ },
+ "ca_monthly": {
+  "title": "Monthly current account",
+  "description": "Press reports of the Bank of Korea's preliminary balance of payments (released 2026-10-08). 2025-08 is backed out from the year-on-year increase.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "month": "2025-08",
+    "ca": 98.4,
+    "note": "Aug 2026 surplus ($46.11B) minus the year-on-year increase ($36.27B)",
+    "src": "Calculated from HuffPost Korea 2026-10-08"
+   },
+   {
+    "month": "2026-06",
+    "ca": 497.3,
+    "note": "Monthly record high",
+    "src": "Bank of Korea balance of payments (CBS NoCut News 2026-10-08)"
+   },
+   {
+    "month": "2026-07",
+    "ca": 420.8,
+    "note": "",
+    "src": "Bank of Korea balance of payments (SBS Biz 2026-10-08)"
+   },
+   {
+    "month": "2026-08",
+    "ca": 461.1,
+    "note": "Goods balance $46.81B",
+    "src": "Bank of Korea balance of payments (SBS Biz 2026-10-08)"
+   }
+  ]
+ },
+ "level_probs": {
+  "title": "1,300 probability judgment",
+  "description": "Probabilities of touching and settling below 1,300. Subjective judgment.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "event": "Touch below 1,300",
+    "horizon": "3 months",
+    "prob": 0.35
+   },
+   {
+    "event": "Touch below 1,300",
+    "horizon": "6 months",
+    "prob": 0.45
+   },
+   {
+    "event": "Settle below 1,300 (quarterly avg)",
+    "horizon": "12 months",
+    "prob": 0.2
+   }
+  ]
+ },
+ "calendar": {
+  "title": "90-day event calendar",
+  "description": "FX-related events over the next 90 days. Usual (unconfirmed) dates are marked as such.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "date": "2026-10-22",
+    "event": "BOK Monetary Policy Board",
+    "why": "Currently 3.00%; a hold is more likely. A hike would support the won",
+    "src": "skyatlastreasure 2026-10"
+   },
+   {
+    "date": "2026-10-29",
+    "event": "FOMC decision (early morning, Korea time)",
+    "why": "84.5% probability of a hold. How strongly the statement signals a December hike",
+    "src": "TokenPost 2026-10-19"
+   },
+   {
+    "date": "2026-10-31",
+    "event": "Samsung board meeting \u00b7 Hynix Q3 results (end-Oct)",
+    "why": "Q3 dividend of about KRW 30 trillion confirmed; size of Hynix's additional returns",
+    "src": "Samsung Newsroom \u00b7 Financial News"
+   },
+   {
+    "date": "2026-11-03",
+    "event": "US midterm elections",
+    "why": "Fed and dollar volatility around the election",
+    "src": "Financial News 2026-10-15"
+   },
+   {
+    "date": "2026-11-19",
+    "event": "Hynix buyback ends",
+    "why": "One buyer of won drops out",
+    "src": "Financial News 2026-08-19"
+   },
+   {
+    "date": "2026-11-26",
+    "event": "BOK Monetary Policy Board",
+    "why": "Last decision of the year",
+    "src": "marketlog 2026-10"
+   },
+   {
+    "date": "2026-11-30",
+    "event": "Samsung Q3 dividend payment (usually Nov)",
+    "why": "When repatriation of the foreign share begins",
+    "src": "Usual schedule \u2014 confirmed date unavailable"
+   },
+   {
+    "date": "2026-12-10",
+    "event": "FOMC decision (early morning, Korea time)",
+    "why": "Whether there is another hike this year. A turning point for the dollar",
+    "src": "Eden Post 2026-09"
+   },
+   {
+    "date": "2026-12-31",
+    "event": "NPS strategic FX hedge \u00b7 BOK swap expiry",
+    "why": "Whether they are extended decides the backstop for dollar supply. Fund committee date unavailable",
+    "src": "CBS NoCut News 2025-12-15"
+   },
+   {
+    "date": "2027-01-31",
+    "event": "Samsung board: decision on remaining returns (Jan)",
+    "why": "Special dividend vs. cancellation mix sets the size of repatriation",
+    "src": "Samsung Newsroom 2026-08-21"
+   }
+  ]
+ },
+ "scenarios": {
+  "title": "Scenario judgment",
+  "description": "Probability and range for each scenario in this analysis. Subjective judgment, not model output.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "scenario": "Base: bottoming out",
+    "prob": 0.55,
+    "ye_lo": 1300,
+    "ye_hi": 1345,
+    "m6_lo": 1280,
+    "m6_hi": 1370,
+    "m12_lo": 1270,
+    "m12_hi": 1390,
+    "trigger": "Current-account surplus holds in the $40B range a month, year-end exporter dollar sales, one Fed hike in December then a pause"
+   },
+   {
+    "scenario": "Further KRW strength",
+    "prob": 0.2,
+    "ye_lo": 1270,
+    "ye_hi": 1300,
+    "m6_lo": 1220,
+    "m6_hi": 1300,
+    "m12_lo": 1200,
+    "m12_hi": 1290,
+    "trigger": "Fed on hold and 2027 cut expectations, dollar index below 99, foreigners turn net buyers, Samsung special dividend + high conversion"
+   },
+   {
+    "scenario": "Reversal",
+    "prob": 0.25,
+    "ye_lo": 1360,
+    "ye_hi": 1420,
+    "m6_lo": 1380,
+    "m6_hi": 1450,
+    "m12_lo": 1380,
+    "m12_hi": 1470,
+    "trigger": "AI credit risk and memory peak-out, US 10-year yield spike, concentrated dividend repatriation, corporates stop converting"
+   }
+  ]
+ },
+ "macro": {
+  "title": "External variables",
+  "description": "Fed, BOK and BOJ rates, US 10-year, FOMC probabilities, oil. Each row has its date and source.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "var": "Fed funds rate (upper bound)",
+    "value": 4.0,
+    "unit": "%",
+    "asof": "Hiked 2026-09-16",
+    "impact": "Pressure toward KRW weakness",
+    "src": "Financial News 2026-10-08"
+   },
+   {
+    "var": "Dot plot median, end-2026",
+    "value": 4.1,
+    "unit": "%",
+    "asof": "2026-09 SEP",
+    "impact": "Signals one more hike this year",
+    "src": "Eden Post 2026-09"
+   },
+   {
+    "var": "October FOMC hold probability",
+    "value": 84.5,
+    "unit": "%",
+    "asof": "2026-10-18~19",
+    "impact": "Eases near-term pressure",
+    "src": "TokenPost 2026-10-19"
+   },
+   {
+    "var": "December FOMC hike probability",
+    "value": null,
+    "unit": "%",
+    "asof": "\u2014",
+    "impact": "Unconfirmed (most major IBs expect a December hike)",
+    "src": "Reuters (capital.com)"
+   },
+   {
+    "var": "US 10-year (intraday high)",
+    "value": 5.36,
+    "unit": "%",
+    "asof": "2026-10-07",
+    "impact": "Highest since 2002; supports the dollar",
+    "src": "Blockmedia 2026-10-08"
+   },
+   {
+    "var": "BOK base rate",
+    "value": 3.0,
+    "unit": "%",
+    "asof": "Hiked 2026-08-27",
+    "impact": "Decision on 10/22; a hold is more likely",
+    "src": "skyatlastreasure 2026-10"
+   },
+   {
+    "var": "BOJ policy rate",
+    "value": 1.25,
+    "unit": "%",
+    "asof": "Decided 2026-09-18",
+    "impact": "Yen stays weak; KRW/JPY falls",
+    "src": "KBR 2026-09-21"
+   },
+   {
+    "var": "WTI November contract",
+    "value": 101.79,
+    "unit": "$",
+    "asof": "2026-10-20",
+    "impact": "Pulled back after topping $110 intraday; burden on import payments",
+    "src": "Etoday \u00b7 News1 2026-10-21"
+   }
+  ]
+ },
+ "indicators": {
+  "title": "Leading indicators and reversal thresholds",
+  "description": "Latest readings of leading indicators and this analysis's reversal-signal thresholds.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "ind": "Corporate FX deposit balance",
+    "latest": "$98.99B",
+    "asof": "End-2026-06 (Jul\u2013Sep unconfirmed)",
+    "flip": "Rises by +$2B or more a month for 2 straight months",
+    "meaning": "Companies start hoarding dollars again \u2192 supply slows",
+    "src": "Bank of Korea (SBS Biz 2026-07-27)"
+   },
+   {
+    "ind": "Chip exports (Customs, 10-day preliminary)",
+    "latest": "+170.9% (YoY)",
+    "asof": "Oct 1\u201310",
+    "flip": "Growth below +50%, or 10-day trade surplus under $2B",
+    "meaning": "The source of dollar inflows weakens",
+    "src": "Korea Customs Service (KDI 2026-10-12)"
+   },
+   {
+    "ind": "Dollar index",
+    "latest": "101.757",
+    "asof": "2026-10-20",
+    "flip": "Stays above 103",
+    "meaning": "Dollar strength overwhelms flows",
+    "src": "Herald Economy 2026-10-20"
+   },
+   {
+    "ind": "US 10-year yield",
+    "latest": "5.36% intraday",
+    "asof": "2026-10-07",
+    "flip": "Closes above 5.40%",
+    "meaning": "Global dollar strength and risk-off spread",
+    "src": "Blockmedia 2026-10-08"
+   },
+   {
+    "ind": "Foreign selling vs. FX co-movement",
+    "latest": "Rate -2.2 won despite KRW 500 billion of net selling",
+    "asof": "2026-10-20",
+    "flip": "Rate rises on foreign net-selling days for 3 straight sessions",
+    "meaning": "Decoupling ends \u2192 repatriation shows up in the price",
+    "src": "Herald Economy 2026-10-20"
+   }
+  ]
+ },
+ "levels": {
+  "title": "Current FX levels",
+  "description": "USD/KRW close and year high, dollar index, KRW/JPY, KRW/CNY. Each row has its date and source.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "metric": "Latest close",
+    "value": 1328.1,
+    "unit": "KRW",
+    "asof": "2026-10-20 15:30",
+    "note": "Year low for 3 straight sessions, lowest since 2024-10-02",
+    "src": "Herald Economy 2026-10-20"
+   },
+   {
+    "metric": "Intraday low",
+    "value": 1325.4,
+    "unit": "KRW",
+    "asof": "2026-10-20 09:52",
+    "note": "",
+    "src": "Herald Economy 2026-10-20"
+   },
+   {
+    "metric": "Today's posted rate",
+    "value": 1327.6,
+    "unit": "KRW",
+    "asof": "2026-10-21 11:00",
+    "note": "Hana Bank base rate",
+    "src": "Job Post 2026-10-21"
+   },
+   {
+    "metric": "Year high (intraday)",
+    "value": 1561.5,
+    "unit": "KRW",
+    "asof": "2026-06-06 overnight",
+    "note": "Highest since 2009-03",
+    "src": "Financial News 2026-06-06"
+   },
+   {
+    "metric": "Dollar index",
+    "value": 101.757,
+    "unit": "pt",
+    "asof": "2026-10-20",
+    "note": "",
+    "src": "Herald Economy 2026-10-20"
+   },
+   {
+    "metric": "KRW/JPY (100 yen)",
+    "value": 840.2,
+    "unit": "KRW",
+    "asof": "2026-10-20",
+    "note": "Lowest since 2008-01",
+    "src": "Herald Economy 2026-10-20"
+   },
+   {
+    "metric": "KRW/CNY",
+    "value": 198.31,
+    "unit": "KRW",
+    "asof": "2026-10-21 09:43",
+    "note": "Intraday",
+    "src": "Tour Korea 2026-10-21"
+   }
+  ]
+ },
+ "fx_path": {
+  "title": "FX path: actuals",
+  "description": "2026 quarterly averages, October average and latest close. Based on iM Securities, Seoul Economic TV and Herald Economy reports.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "point": "2026Q1",
+    "date": "2026-02-15",
+    "label": "Q1 average",
+    "usdkrw": 1466.9,
+    "src": "iM Securities report (BusinessPost 2026-10-06)"
+   },
+   {
+    "point": "2026Q2",
+    "date": "2026-05-15",
+    "label": "Q2 average",
+    "usdkrw": 1501.64,
+    "src": "iM Securities report (BusinessPost 2026-10-06)"
+   },
+   {
+    "point": "2026Q3",
+    "date": "2026-08-15",
+    "label": "Q3 average",
+    "usdkrw": 1418.62,
+    "src": "iM Securities report (BusinessPost 2026-10-06)"
+   },
+   {
+    "point": "2026-10avg",
+    "date": "2026-10-09",
+    "label": "October average (as reported on the 18th)",
+    "usdkrw": 1342.6,
+    "src": "Seoul Economic TV 2026-10-18"
+   },
+   {
+    "point": "2026-10-20",
+    "date": "2026-10-20",
+    "label": "10/20 day-session close",
+    "usdkrw": 1328.1,
+    "src": "Herald Economy \u00b7 SBS 2026-10-20"
+   }
+  ]
+ },
+ "assumptions": {
+  "title": "Analysis assumptions",
+  "description": "This analysis's assumptions, such as conversion and repatriation ratios (including subjective judgment), and SK hynix's foreign ownership.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "key": "conv_base",
+    "value": 0.4,
+    "label": "Base conversion ratio of export proceeds",
+    "note": "Low end between the NH (40\u201350%) and Sangsangin (50\u201360%) estimates"
+   },
+   {
+    "key": "repat_sell",
+    "value": 0.5,
+    "label": "Repatriation ratio of foreign selling proceeds",
+    "note": "Subjective assumption"
+   },
+   {
+    "key": "fx",
+    "value": 1330,
+    "label": "Conversion exchange rate",
+    "note": "KRW per USD"
+   },
+   {
+    "key": "os_days",
+    "value": 19,
+    "label": "Days of foreign-stock observations",
+    "note": "Oct 1\u201319"
+   },
+   {
+    "key": "month_days",
+    "value": 31,
+    "label": "Days for monthly scaling",
+    "note": "October"
+   },
+   {
+    "key": "repat_div",
+    "value": 0.9,
+    "label": "Foreign repatriation ratio of shareholder returns",
+    "note": "Subjective assumption"
+   },
+   {
+    "key": "hynix_foreign",
+    "value": 0.5116,
+    "label": "SK hynix foreign ownership",
+    "note": "As of 2026-08-19 close (Wikitree)"
+   },
+   {
+    "key": "samsung_div",
+    "value": 30,
+    "label": "Samsung Q3 cash dividend (KRW trillion)",
+    "note": "Board approval expected at end-Oct"
+   },
+   {
+    "key": "samsung_foreign",
+    "value": 0.5,
+    "label": "Assumed Samsung foreign ownership",
+    "note": "Subjective assumption"
+   }
+  ]
+ },
+ "consensus": {
+  "title": "Comparison of institutional forecasts",
+  "description": "Public forecasts by banks and brokers with publication dates. Based on press reports.",
+  "updated": "2026-10-21T15:50:00+09:00",
+  "rows": [
+   {
+    "inst": "Hana Bank (Seo Jung-hoon)",
+    "horizon": "End-2026",
+    "view": "Around 1,320",
+    "lo": 1320,
+    "hi": 1320,
+    "pub": "2026-10-19",
+    "gap": "Same view that export-proceeds inflows are the key",
+    "src": "Etoday (Nate) 2026-10-19"
+   },
+   {
+    "inst": "Hana Bank (Lee Yu-jeong)",
+    "horizon": "End-2026",
+    "view": "Around the 1,320 level",
+    "lo": 1320,
+    "hi": 1320,
+    "pub": "2026-10-18",
+    "gap": "Same direction",
+    "src": "Seoul Economic TV 2026-10-18"
+   },
+   {
+    "inst": "Woori Bank (Lim Hwan-yeol)",
+    "horizon": "Within October",
+    "view": "1,330\u20131,370",
+    "lo": 1330,
+    "hi": 1370,
+    "pub": "2026-10-18",
+    "gap": "Sees a higher near-term top (oil, Fed)",
+    "src": "Seoul Economic TV 2026-10-18"
+   },
+   {
+    "inst": "Sangsangin Sec. (Choi Ye-chan)",
+    "horizon": "Next 12 months",
+    "view": "1,325\u20131,400",
+    "lo": 1325,
+    "hi": 1400,
+    "pub": "2026-08-21",
+    "gap": "Rate was in the 1,390s when written; reflects a repatriation pullback",
+    "src": "Financial News 2026-08-21"
+   },
+   {
+    "inst": "NH Investment & Sec.",
+    "horizon": "Near term",
+    "view": "Support at 1,340\u20131,350",
+    "lo": 1340,
+    "hi": 1350,
+    "pub": "2026-08-26",
+    "gap": "Already broken to the downside (different writing date)",
+    "src": "Bloomingbit 2026-08-26"
+   },
+   {
+    "inst": "iM Securities (Park Sang-hyun)",
+    "horizon": "2027",
+    "view": "1,200\u20131,450, average 1,280",
+    "lo": 1200,
+    "hi": 1450,
+    "pub": "2026-10-06",
+    "gap": "Builds in more dollar weakness; more KRW-bullish than this analysis",
+    "src": "BusinessPost 2026-10-06"
+   }
+  ]
+ }
+}
