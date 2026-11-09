@@ -510,5 +510,37 @@
    "es": "El IPC del 10/11 es el mayor evento confirmado de la semana; el rebote de SpaceX del 8,62% hasta casi su precio de salida es el dato nuevo más relevante; el informe del 7/11 aún no había salido aquí. Fuera: el vuelo 15 de Starship de hoy (fecha estimada), el índice de crisis en 34,4 (desde 36,2) y las ventas forzosas en Corea (ya tratadas ayer).",
    "ja": "今週最大の確定日程である11/10のCPIを1番目に、11/6に+8.62%で公募価格目前まで戻したスペースXを2番目に、まだ3行に載っていない11/7の新リサーチを3番目に選びました。本日(11/8)のスターシップ15回目の飛行は日付が「推定」のため除外、危機近接度は34.4(前回36.2)で50未満・変動5点未満、反対売買は昨日扱ったため除外しました。"
   }
+ },
+ {
+  "date": "2026-11-09",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>내일 11/10, 미국 10월 CPI.</b> 22:30(한국시간·확정). 같은 날 앤트로픽 IPO 로드쇼 시작 가능(보도), 이튿날 11/11엔 MSCI 11월 정기 리뷰 발표(확정). <a href=\"#schedule\">일정</a>",
+    "en": "<b>US October CPI tomorrow.</b> 11/10, 22:30 KST (confirmed). Anthropic roadshow may start (reported); MSCI review 11/11 (confirmed). <a href=\"#schedule\">Calendar</a>",
+    "es": "<b>Mañana, IPC de EE. UU.</b> 10/11, 22:30 (Corea), confirmado. Posible inicio del roadshow de Anthropic (informes); MSCI revisa el 11/11. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>あす11/10、米10月CPI。</b>22:30(韓国時間・確定)。同日アンソロピックのIPOロードショー開始の可能性(報道)、翌11/11にはMSCI 11月定期見直し発表(確定)。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#rank",
+    "ko": "<b>애플, 엔비디아 제치고 시총 1위.</b> 11/5 기준 애플 5조 790억 달러, 엔비디아 4조 8,320억 달러로 순위가 바뀌었고, 엔비디아는 11/17 실적 발표(장 마감 후). <a href=\"#rank\">시총 순위</a>",
+    "en": "<b>Apple passes Nvidia for No. 1.</b> As of 11/5: Apple $5,079B, Nvidia $4,832B. Nvidia reports 11/17 after the US close. <a href=\"#rank\">Market-cap rank</a>",
+    "es": "<b>Apple supera a Nvidia.</b> Al 5/11: Apple US$5.079 mil M, Nvidia US$4.832 mil M. Nvidia publica el 17/11 tras el cierre. <a href=\"#rank\">Ranking</a>",
+    "ja": "<b>アップル、エヌビディアを抜き時価総額1位に。</b>11/5時点でアップル5.079兆ドル、エヌビディア4.832兆ドル。エヌビディアは11/17(米国引け後)に決算発表。<a href=\"#rank\">時価総額</a>"
+   },
+   {
+    "href": "#radar",
+    "ko": "<b>위기 근접도 34.4로 소폭 하락.</b> 11/6 리포트 기준 직전 36.2에서 하락해 '관찰' 구간, 적신호 3개는 그대로. 버핏지수는 229.15%(추정, 상위 99.7%). <a href=\"#radar\">위기 레이더</a>",
+    "en": "<b>Crisis proximity eases to 34.4.</b> 11/6 report: down from 36.2, still 'watch', 3 red flags. Buffett Index 229.15% (estimate, 99.7th pct). <a href=\"#radar\">Radar</a>",
+    "es": "<b>Proximidad de crisis: 34,4.</b> Informe del 6/11: baja desde 36,2, sigue en 'vigilancia' con 3 alertas. Índice Buffett 229,15% (estimado). <a href=\"#radar\">Radar</a>",
+    "ja": "<b>危機接近度34.4に低下。</b>11/6レポート時点で前回36.2から下がり「観察」圏、赤信号3つは変わらず。バフェット指数は229.15%(推計、上位99.7%)。<a href=\"#radar\">危機レーダー</a>"
+   }
+  ],
+  "why": {
+   "ko": "CPI가 '모레'에서 '내일'이 됐고 앤트로픽 로드쇼(보도)·MSCI 리뷰가 붙어 1순위로 유지했습니다. 시총 1위 교체는 최근 3일 3줄에 없던 변화라 넣었고, 위기 근접도는 50 미만·1.8점 하락이지만 3일간 다루지 않아 기준일(11/6)을 밝혀 넣었습니다. 스페이스X는 11/6 이후 새 종가가 없어(D-31만 변동) 이번엔 뺐고, 새 리서치도 없었습니다.",
+   "en": "CPI moved from 'in two days' to 'tomorrow', joined by Anthropic's roadshow (reported) and the MSCI review, so it stays first. The change at No. 1 by market cap had not appeared in recent briefs, and crisis proximity (under 50, down 1.8) gets its first mention in three days, dated 11/6. SpaceX was left out because there is no new close since 11/6 (only D-31 changed), and there was no new research.",
+   "es": "El IPC pasó de 'en dos días' a 'mañana', junto con el roadshow de Anthropic (informes) y la revisión de MSCI, así que sigue primero. El cambio en el n.º 1 por capitalización no había salido en los resúmenes recientes, y la proximidad de crisis (bajo 50, -1,8) aparece por primera vez en tres días, con fecha del 6/11. SpaceX quedó fuera: no hay cierre nuevo desde el 6/11 (solo cambió el D-31), y no hubo informes nuevos.",
+   "ja": "CPIが「あさって」から「あす」になり、アンソロピックのロードショー(報道)とMSCI見直しが重なるため1番目に据えました。時価総額1位の交代は直近3日の3行になかった変化、危機接近度は50未満・1.8ポイント低下ですが3日間取り上げておらず基準日(11/6)を明記して入れました。スペースXは11/6以降の新しい終値がなく(D-31のみ変化)今回は外し、新リサーチもありませんでした。"
+  }
  }
 ]
