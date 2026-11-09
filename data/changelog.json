@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-09",
-      "commit": "HEAD",
+      "commit": "b5993ac",
       "message": "Research menu: tapping Research now opens All research (the full library) first; below it, the SpaceX pages sit under SpaceX analysis and Berkshire under its own heading"
     },
     {
