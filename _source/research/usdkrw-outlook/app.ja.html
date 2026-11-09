@@ -361,7 +361,7 @@ html,body{margin:0;background:#0A0C10;color:#EEF0F5}
       const k = decomp.find(r => r.series === 'ウォン/ドル');
       const d = decomp.find(r => r.series === 'ドル指数');
       return [
-        { series: 'ウォンの価値（対ドル）', chg: k.start / k.end - 1 },
+        { series: 'ウォン価値(対ドル)', chg: k.start / k.end - 1 },
         { series: 'ドル指数', chg: d.end / d.start - 1 }
       ];
     }
@@ -441,7 +441,7 @@ html,body{margin:0;background:#0A0C10;color:#EEF0F5}
     description: 'シナリオ別の下限〜上限をウォン単位の文字列に。',
     fn: (scenarios) => {
       const n = v => v.toLocaleString('en-US');
-      return scenarios.map(r => ({ scenario: r.scenario, ye: n(r.ye_lo) + '〜' + n(r.ye_hi), m6: n(r.m6_lo) + '〜' + n(r.m6_hi), m12: n(r.m12_lo) + '〜' + n(r.m12_hi) }));
+      return scenarios.map(r => ({ scenario: r.scenario, ye: n(r.ye_lo) + '~' + n(r.ye_hi), m6: n(r.m6_lo) + '~' + n(r.m6_hi), m12: n(r.m12_lo) + '~' + n(r.m12_hi) }));
     }
   });
 
@@ -593,7 +593,7 @@ html,body{margin:0;background:#0A0C10;color:#EEF0F5}
       s.data.forEach((r, i) => {
         const lo = r[h.k + '_lo'], hi = r[h.k + '_hi'];
         svg.append('rect').attr('x', x(h.d) + (i - 1) * off - bw / 2).attr('width', bw).attr('y', y(hi)).attr('height', Math.max(2, y(lo) - y(hi))).attr('rx', 3).style('fill', col[r.scenario]).attr('opacity', .9)
-          .on('mousemove', ev => T.show(ev, h.n + ' · ' + r.scenario, [F0(lo) + '〜' + F0(hi) + 'ウォン', '確率 ' + P0(r.prob) + '（主観的判断）'])).on('mouseleave', () => T.hide());
+          .on('mousemove', ev => T.show(ev, h.n + ' · ' + r.scenario, [F0(lo) + '~' + F0(hi) + 'ウォン', '確率 ' + P0(r.prob) + '（主観的判断）'])).on('mouseleave', () => T.hide());
       });
     });
   }
