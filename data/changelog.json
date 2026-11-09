@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-09",
+      "commit": "HEAD",
+      "message": "New BERKSHIRE page under Research, next to SpaceX: a Claude probe tracks Berkshire Hathaway like SpaceX, with 14 milestones on 5 axes, scenarios and a value band, a disruption watch for each moat, every SEC filing graded, and the latest report. Synced from univertrix every 3 hours in 4 languages; also at /data/berkshire.json"
+    },
+    {
+      "date": "2026-11-09",
       "commit": "34a63b8",
       "message": "New research: The 90-Day Clause and Chamath's Math. A fact-check of 20 claims about the SpaceX–Anthropic compute deal against SEC filings, with unit economics, a disruptive-innovation reading of Chamath's logic, scenario odds and 15 cards"
     },

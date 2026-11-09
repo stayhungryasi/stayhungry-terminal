@@ -1,6 +1,7 @@
 name: univertrix-sync
 # univertrix.com (universe-dominator, public) -> hub, every 3 hours. The hub re-judges nothing.
 #  - SpaceX overnight research agent: live/agent-*.json, data/agent.json (agent_export.py runs universe-dominator's own cockpit builder)
+#  - Berkshire probe: live/brk-*.json, data/berkshire.json (brk_export.py runs universe-dominator's own brk_cockpit.export)
 #  - market-cap Top 20 and earnings dates: live/rank.json, live/earnings.json, data/rank.json, data/earnings.json (uv_export.py)
 on:
   schedule:
@@ -25,13 +26,16 @@ jobs:
           fetch-depth: 1
       - name: Export the agent cockpit
         run: python3 -B _source/agent_export.py --ud _ud --out .
+      - name: Export the Berkshire probe
+        run: python3 -B _source/brk_export.py --ud _ud --out .
+        continue-on-error: true   # a Berkshire export failure keeps the last good files and must not stop the other syncs
       - name: Export market-cap rank and earnings dates
         run: python3 -B _source/uv_export.py --ud _ud --out .
       - name: Commit if changed
         run: |
-          git add live/agent-*.json data/agent.json live/rank.json live/earnings.json data/rank.json data/earnings.json
+          git add live/agent-*.json data/agent.json live/brk-*.json data/berkshire.json live/rank.json live/earnings.json data/rank.json data/earnings.json
           if git diff --cached --quiet; then echo "no change"; exit 0; fi
-          MSG=$(python3 -c "import json;a=json.load(open('live/agent-ko.json'))['run']['id'];r=json.load(open('live/rank.json'))['asof'];print(f'agent {a} · rank {r}')")
+          MSG=$(python3 -c "import json;a=json.load(open('live/agent-ko.json'))['run']['id'];b=json.load(open('live/brk-ko.json'))['run']['id'];r=json.load(open('live/rank.json'))['asof'];print(f'agent {a} · brk {b} · rank {r}')")
           git -c user.name="stayhungryasi" -c user.email="shaferwine@gmail.com" commit -q -m "data(univertrix): ${MSG} [sync]"
           for i in 1 2 3; do
             git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
