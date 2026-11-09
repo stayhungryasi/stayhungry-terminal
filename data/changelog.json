@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-09",
+      "commit": "HEAD",
+      "message": "The SpaceX–Anthropic 90-day-clause report's 15 card-news images now use the hub's dark navy look like every other report (all four languages); the orange highlights, bars and numbers are unchanged"
+    },
+    {
+      "date": "2026-11-09",
       "commit": "b5993ac",
       "message": "Research menu: tapping Research now opens All research (the full library) first; below it, the SpaceX pages sit under SpaceX analysis and Berkshire under its own heading"
     },
