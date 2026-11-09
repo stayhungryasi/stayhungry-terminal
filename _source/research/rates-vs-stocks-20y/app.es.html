@@ -211,7 +211,7 @@ function rolling(k,w){return CH[k].map((_,i)=>{if(i<w)return null;const a=[],b=[
   h+=eqRow('KOSPI (en dólares)','--s-ksp',RAW.KSU,1);
   h+='<tr class="grp"><td colspan="7">Tasas del Tesoro</td></tr>';
   YD.forEach(s=>{const v=RAW[s.k],a=v[0],b=v[N-1];let mx=-1,mxi=0,mn=99,mni=0;v.forEach((x,i)=>{if(x>mx){mx=x;mxi=i}if(x<mn){mn=x;mni=i}});
-    h+=`<tr><td><span class="sw" style="background:var(${s.col})"></span>${s.name}</td><td class="num">${fmt(a,2)}%</td><td class="num">${fmt(b,2)}%</td><td class="num">${b-a>=0?'+':''}${fmt((b-a)*100)}bp</td><td class="num" style="color:var(--ink-3)">Mín. ${fmt(mn,2)}% (${lbl(months[mni])})</td><td class="num">${fmt(mx,2)}% <span style="color:var(--ink-3)">(${lbl(months[mxi])})</span></td><td class="num">${fmt(100-pctOf(s.k),1)}% más alto</td></tr>`});
+    h+=`<tr><td><span class="sw" style="background:var(${s.col})"></span>${s.name}</td><td class="num">${fmt(a,2)}%</td><td class="num">${fmt(b,2)}%</td><td class="num">${b-a>=0?'+':''}${fmt((b-a)*100)}pb</td><td class="num" style="color:var(--ink-3)">Mín. ${fmt(mn,2)}% (${lbl(months[mni])})</td><td class="num">${fmt(mx,2)}% <span style="color:var(--ink-3)">(${lbl(months[mxi])})</span></td><td class="num">${fmt(100-pctOf(s.k),1)}% más alto</td></tr>`});
   h+='<tr class="grp"><td colspan="7">Tipo de cambio</td></tr>';
   FX.forEach(s=>{const v=RAW[s.k],a=v[0],b=v[N-1],d=s.k==='DXY'?2:0;let mx=-1,mxi=0,mn=1e9,mni=0;v.forEach((x,i)=>{if(x>mx){mx=x;mxi=i}if(x<mn){mn=x;mni=i}});
     h+=`<tr><td><span class="sw" style="background:var(${s.col})"></span>${s.name}</td><td class="num">${fmt(a,d)}</td><td class="num">${fmt(b,d)}</td><td class="num">${b>=a?'+':''}${fmt((b/a-1)*100,1)}%</td><td class="num" style="color:var(--ink-3)">Mín. ${fmt(mn,d)} (${lbl(months[mni])})</td><td class="num">${fmt(mx,d)} <span style="color:var(--ink-3)">(${lbl(months[mxi])})</span></td><td class="num">${fmt(100-pctOf(s.k),1)}% más alto</td></tr>`});
@@ -221,7 +221,7 @@ function rolling(k,w){return CH[k].map((_,i)=>{if(i<w)return null;const a=[],b=[
 // ---------- data table ----------
 (function(){
   let h='<thead><tr><th>Mes</th>'+S.map(s=>`<th>${s.short}</th>`).join('')+'<th>30–10y</th><th>USD/KRW</th><th>DXY</th></tr></thead><tbody>';
-  for(let i=N-1;i>=0;i--){h+=`<tr><td class="num">${lbl(months[i])}</td>`+S.map(s=>`<td class="num">${s.type==='eq'?fmt(RAW[s.k][i]):fmt(RAW[s.k][i],2)}</td>`).join('')+`<td class="num">${fmt((RAW.TYX[i]-RAW.TNX[i])*100)}bp</td><td class="num">${fmt(RAW.KRW[i])}</td><td class="num">${fmt(RAW.DXY[i],2)}</td></tr>`}
+  for(let i=N-1;i>=0;i--){h+=`<tr><td class="num">${lbl(months[i])}</td>`+S.map(s=>`<td class="num">${s.type==='eq'?fmt(RAW[s.k][i]):fmt(RAW[s.k][i],2)}</td>`).join('')+`<td class="num">${fmt((RAW.TYX[i]-RAW.TNX[i])*100)}pb</td><td class="num">${fmt(RAW.KRW[i])}</td><td class="num">${fmt(RAW.DXY[i],2)}</td></tr>`}
   document.getElementById('datatbl').innerHTML=h+'</tbody>';
 })();
 
@@ -330,8 +330,8 @@ function showAt(clientX){
   const row=(s,v)=>`<div class="r"><span><i style="background:var(${s.col})"></i>${s.name}</span><b>${v}</b></div>`;
   let h=`<div class="d">${lbl(months[i])}${i===N-1?' (intramensual)':''}</div>`;
   EQ.forEach(s=>{const ch=CH[eqKey(s)][i];h+=row(s.k==='KS11'&&state.ks==='usd'?{...s,name:'KOSPI (cambio en $)'}:s,`${fmt(RAW[s.k][i])} <span style="color:var(--ink-3);font-weight:400">${ch==null?'':(ch>=0?'+':'')+fmt((Math.exp(ch)-1)*100,1)+'%'}</span>`)});
-  h+='<hr>';YD.forEach(s=>{const ch=CH[s.k][i];h+=row(s,`${fmt(RAW[s.k][i],2)}% <span style="color:var(--ink-3);font-weight:400">${ch==null?'':(ch>=0?'+':'')+fmt(ch)+'bp'}</span>`)});
-  h+=`<div class="r"><span>30 años−10 años</span><b>${fmt((RAW.TYX[i]-RAW.TNX[i])*100)}bp</b></div>`;
+  h+='<hr>';YD.forEach(s=>{const ch=CH[s.k][i];h+=row(s,`${fmt(RAW[s.k][i],2)}% <span style="color:var(--ink-3);font-weight:400">${ch==null?'':(ch>=0?'+':'')+fmt(ch)+'pb'}</span>`)});
+  h+=`<div class="r"><span>30 años−10 años</span><b>${fmt((RAW.TYX[i]-RAW.TNX[i])*100)}pb</b></div>`;
   h+='<hr>';FX.forEach(s=>{const ch=CH[s.k][i];h+=row(s,`${fmt(RAW[s.k][i],s.k==='DXY'?2:0)} <span style="color:var(--ink-3);font-weight:400">${ch==null?'':(ch>=0?'+':'')+fmt((Math.exp(ch)-1)*100,1)+'%'}</span>`)});
   if(geo.RC.GSPC[i]!=null){h+='<hr>';EQ.forEach(s=>{h+=`<div class="r"><span>Corr. ${eqName(s)} (${state.win}M)</span><b>${(geo.RC[s.k][i]>0?'+':'')+fmt(geo.RC[s.k][i],2)}</b></div>`})}
   tip.innerHTML=h;tip.hidden=false;
