@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-09",
+      "commit": "HEAD",
+      "message": "New research: The 90-Day Clause and Chamath's Math. A fact-check of 20 claims about the SpaceX–Anthropic compute deal against SEC filings, with unit economics, a disruptive-innovation reading of Chamath's logic, scenario odds and 15 cards"
+    },
+    {
       "date": "2026-11-08",
       "commit": "f483b80",
       "message": "Fortune Danji grows to five live tools plus Madang: 2027 My Year (your twelve months of 2027), Chaltteok (name game and a saju match two people open together) and Ireum Seodang (name reports and exhaustive naming) are now live, and Madang, a 3D yard where you walk between the jars, gets its own spot"
@@ -277,7 +282,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }

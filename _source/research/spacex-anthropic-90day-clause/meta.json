@@ -1,0 +1,112 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "date": "2026-11-09",
+ "asof": "2026-11-09 KST: SEC filings to Nov 2 S-1/A, market data to Nov 5 US close",
+ "category": "ai",
+ "title": {
+  "ko": "90일 조항과 챠마스의 계산법: SpaceX–앤트로픽 컴퓨트 계약 전수검증",
+  "en": "The 90-Day Clause and Chamath's Math: Fact-Checking the SpaceX–Anthropic Compute Deal",
+  "es": "La cláusula de 90 días y las cuentas de Chamath: verificación del contrato de cómputo SpaceX–Anthropic",
+  "ja": "90日条項とチャマスの計算法:SpaceX–アンソロピックのコンピュート契約を全数検証"
+ },
+ "dek": {
+  "ko": "챠마스 팔리하피티야는 11월 8일 All-In 방송에서 SpaceX가 앤트로픽 계약의 90일 해지 조항으로 컴퓨트 가격을 다시 매길 수 있다고 봤다. 한국에 번역돼 퍼진 기사의 주장 20개를 SEC 공시와 주요 외신으로 대조했다. 조항은 실재하지만 해지는 2027년 1월·3월 비해지 기간이 끝나야 가능하고, 계약가는 이미 시장가의 약 2배다. 그의 사고 구조를 파괴적 혁신 관점으로 읽고 시나리오 확률과 일정을 제시한다.",
+  "en": "On the Nov 8 All-In episode, Chamath Palihapitiya argued that SpaceX could use the 90-day termination clause in its Anthropic contract to reprice compute. We checked 20 claims from a translated article circulating in Korea against SEC filings and major outlets. The clause is real, but termination opens only after non-cancellable periods end in January and March 2027, and the contract already pays about twice the market rate. We read his thinking through a disruptive-innovation lens and put odds and dates on what comes next.",
+  "es": "En el episodio de All-In del 8 de noviembre, Chamath Palihapitiya sostuvo que SpaceX podría usar la cláusula de rescisión de 90 días de su contrato con Anthropic para volver a fijar el precio del cómputo. Contrastamos 20 afirmaciones de un artículo traducido que circuló en Corea con documentos de la SEC y medios principales. La cláusula existe, pero la rescisión solo se abre cuando terminan los periodos no cancelables en enero y marzo de 2027, y el contrato ya paga cerca del doble del precio de mercado. Leemos su razonamiento con el lente de la innovación disruptiva y asignamos probabilidades y fechas.",
+  "ja": "チャマス・パリハピティヤは11月8日のAll-In配信で、SpaceXがアンソロピックとの契約にある90日解約条項を使ってコンピュート価格を付け直せると論じた。韓国で翻訳・拡散した記事の主張20件をSEC提出書類と主要メディアで照合した。条項は実在するが、解約は2027年1月・3月の解約不能期間が終わってからで、契約単価はすでに市場の約2倍だ。彼の思考を破壊的イノベーションの視点で読み解き、シナリオ確率と日程を示す。"
+ },
+ "key": {
+  "value": "2027 Q2",
+  "label": {
+   "ko": "SpaceX가 해지를 통보해도 컴퓨트가 실제로 돌아오는 가장 이른 시점(2027년 4~6월). 비해지 기간이 2027년 1월·3월에 끝난다",
+   "en": "Earliest point (April to June 2027) at which a SpaceX termination could actually take compute back; the non-cancellable periods end in January and March 2027",
+   "es": "Momento más temprano (abril a junio de 2027) en que una rescisión de SpaceX recuperaría el cómputo; los periodos no cancelables terminan en enero y marzo de 2027",
+   "ja": "SpaceXが解約を通知しても、実際にコンピュートが戻る最も早い時期(2027年4〜6月)。解約不能期間は2027年1月・3月に終わる"
+  }
+ },
+ "points": {
+  "ko": [
+   "검증: 20개 주장 중 사실 6, 과장 8, 오류 4, 확인불가 2. '언제든 해지'와 '숨은 조항'은 오류다. 조항은 5월 SpaceX S-1에 공시됐고 머스크가 180일 임대 후 90일 상호 해지 구조를 직접 밝혔다. CEO '달리오'는 다리오 아모데이의 오역이고 피델리티 로드쇼 일화는 확인되지 않는다.",
+   "숫자: 계약가는 GPU 1장당 시간당 약 7.8달러(추정)로 시장 중위가의 약 1.6~2배다. 앤트로픽의 명시 약정 약 5,579억 달러 중 해지 가능한 것은 SpaceX 계약(약 22%)뿐이다. 11월 5일 미국 증시 하루 손실은 2.9~3.2조 달러로 원문의 4조 달러보다 작다.",
+   "챠마스의 사고: 컴퓨트는 원자재, 공급은 정치, 계약은 옵션, 이익은 병목으로 이동, 관계보다 계산표. 시나리오(작성자 판단)는 현상 유지 50%, 갱신 시 대폭 인상 35%, 해지 후 현물 재계약 10%, 앤트로픽 이탈 5%다."
+  ],
+  "en": [
+   "Verdict: of 20 claims, 6 true, 8 overstated, 4 wrong, 2 unverifiable. 'Terminable at any time' and 'hidden clause' are wrong: the clause was disclosed in SpaceX's May S-1, and Musk himself described a 180-day lease followed by 90-day mutual termination. CEO 'Dalio' is a mistranslation of Dario Amodei, and the Fidelity roadshow anecdote could not be confirmed.",
+   "Numbers: the contract works out to about $7.8 per GPU-hour (estimate), roughly 1.6 to 2 times market medians. Of Anthropic's named compute commitments of about $557.9B, only the SpaceX deal (about 22%) is cancellable. The one-day US loss on Nov 5 was $2.9T to $3.2T, below the article's $4T.",
+   "Chamath's logic: compute is a commodity, supply is set by politics, contracts are options, profit migrates to the bottleneck, and the spreadsheet beats the relationship. Scenarios (author's judgment): status quo 50%, sharp repricing at renewal 35%, termination and spot re-contract 10%, Anthropic walks 5%."
+  ],
+  "es": [
+   "Veredicto: de 20 afirmaciones, 6 ciertas, 8 exageradas, 4 erróneas y 2 no verificables. 'Rescindible en cualquier momento' y 'cláusula oculta' son falsas: la cláusula figuraba en el S-1 de SpaceX de mayo y el propio Musk describió un arrendamiento de 180 días seguido de rescisión mutua con 90 días de aviso. El 'CEO Dalio' es un error de traducción de Dario Amodei, y la anécdota del roadshow de Fidelity no pudo confirmarse.",
+   "Cifras: el contrato equivale a unos US$7.8 por GPU-hora (estimación), cerca de 1.6 a 2 veces la mediana del mercado. De los compromisos de cómputo nombrados de Anthropic, unos US$557.900 millones, solo el contrato con SpaceX (cerca de 22%) es cancelable. La pérdida de un día en EE. UU. el 5 de noviembre fue de US$2.9 a 3.2 billones, menor que los US$4 billones del artículo.",
+   "La lógica de Chamath: el cómputo es una materia prima, la oferta la fija la política, los contratos son opciones, la ganancia migra al cuello de botella y la hoja de cálculo pesa más que la relación. Escenarios (juicio del autor): statu quo 50%, alza fuerte en la renovación 35%, rescisión y nuevo contrato a precio spot 10%, salida de Anthropic 5%."
+  ],
+  "ja": [
+   "判定:主張20件のうち事実6、誇張8、誤り4、確認不能2。「いつでも解約」と「隠れた条項」は誤りで、条項は5月のSpaceXのS-1で開示済み、マスク氏自身が180日リース後に90日の相互解約という構造を明かしていた。CEO「ダリオ」の表記はダリオ・アモデイの誤訳で、フィデリティのロードショーの逸話は確認できない。",
+   "数字:契約単価はGPU1枚1時間あたり約7.8ドル(推計)で、市場中央値の約1.6〜2倍。アンソロピックの明示コンピュート契約約5,579億ドルのうち解約可能なのはSpaceX契約(約22%)だけだ。11月5日の米国株の1日の損失は2.9〜3.2兆ドルで、記事の4兆ドルより小さい。",
+   "チャマスの思考:コンピュートは原材料、供給は政治が決める、契約はオプション、利益はボトルネックへ移る、関係より計算表。シナリオ(筆者の判断)は現状維持50%、更新時の大幅値上げ35%、解約とスポットでの再契約10%、アンソロピックの離脱5%。"
+  ]
+ },
+ "tickers": [
+  "SPCX",
+  "AVGO",
+  "GOOGL",
+  "AMZN",
+  "MSFT",
+  "CRWV"
+ ],
+ "tags": {
+  "ko": [
+   "AI 인프라",
+   "컴퓨트 계약",
+   "파괴적 혁신",
+   "전수검증"
+  ],
+  "en": [
+   "AI infrastructure",
+   "Compute contracts",
+   "Disruptive innovation",
+   "Fact-checked"
+  ],
+  "es": [
+   "Infraestructura de IA",
+   "Contratos de cómputo",
+   "Innovación disruptiva",
+   "Verificado"
+  ],
+  "ja": [
+   "AIインフラ",
+   "コンピュート契約",
+   "破壊的イノベーション",
+   "全数検証"
+  ]
+ },
+ "checkpoints": [
+  {
+   "date": "2026-11-10",
+   "text": {
+    "ko": "앤트로픽 공식 로드쇼 시작 가능 시점(빨라야)",
+    "en": "Earliest possible start of Anthropic's formal roadshow",
+    "es": "Inicio más temprano posible del roadshow formal de Anthropic",
+    "ja": "アンソロピック正式ロードショー開始の最も早い時期"
+   }
+  },
+  {
+   "date": "2027-01-03",
+   "text": {
+    "ko": "새 의회 개원",
+    "en": "New Congress convenes",
+    "es": "Se instala el nuevo Congreso",
+    "ja": "新議会が開会"
+   }
+  },
+  {
+   "date": "2027-01-19",
+   "text": {
+    "ko": "히노호사 텍사스 주지사 취임",
+    "en": "Hinojosa sworn in as Texas governor",
+    "es": "Hinojosa asume como gobernadora de Texas",
+    "ja": "イノホサ氏がテキサス州知事に就任"
+   }
+  }
+ ]
+}
