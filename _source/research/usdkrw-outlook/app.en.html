@@ -442,7 +442,7 @@ html,body{margin:0;background:#0A0C10;color:#EEF0F5}
     description: 'Low–high range for each scenario as a string in won.',
     fn: (scenarios) => {
       const n = v => v.toLocaleString('en-US');
-      return scenarios.map(r => ({ scenario: r.scenario, ye: n(r.ye_lo) + '–' + n(r.ye_hi), m6: n(r.m6_lo) + '–' + n(r.m6_hi), m12: n(r.m12_lo) + '–' + n(r.m12_hi) }));
+      return scenarios.map(r => ({ scenario: r.scenario, ye: n(r.ye_lo) + '\u2060–\u2060' + n(r.ye_hi), m6: n(r.m6_lo) + '\u2060–\u2060' + n(r.m6_hi), m12: n(r.m12_lo) + '\u2060–\u2060' + n(r.m12_hi) }));
     }
   });
 
