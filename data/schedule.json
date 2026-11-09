@@ -1,7 +1,7 @@
 {
  "kind": "schedule",
  "schema": 1,
- "generated_kst": "2026-11-06 09:21",
+ "generated_kst": "2026-11-09 12:10",
  "data_updated": "2026-11-06",
  "last_sent_kst": "2026-11-06 09:21",
  "next_send": "2026-11-10",
@@ -37,128 +37,8 @@
    "LG전자"
   ]
  },
- "count": 105,
+ "count": 102,
  "events": [
-  {
-   "id": "hana-q3",
-   "date": "2026-10-23",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "",
-   "title": "하나금융지주 3분기 실적",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "086790"
-   ],
-   "imp": 2,
-   "status": "report",
-   "country": "kr",
-   "source": "https://www.mt.co.kr/finance/2026/10/06/2026100615103372264",
-   "updated": "2026-10-10",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Hana Financial Group Q3 results",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "es": {
-     "t": "Resultados del 3T de Hana Financial Group",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "ja": {
-     "t": "ハナ金融グループ 第3四半期決算",
-     "p": "",
-     "l": "",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "kia-q3",
-   "date": "2026-10-23",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "",
-   "title": "기아 3분기 실적",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "000270"
-   ],
-   "imp": 2,
-   "status": "estimated",
-   "country": "kr",
-   "source": "https://www.hyundaimotorgroup.com/ko/news/kia-2026-q2-earnings",
-   "updated": "2026-10-10",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Kia Q3 results",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "es": {
-     "t": "Resultados del 3T de Kia",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "ja": {
-     "t": "起亜 第3四半期決算",
-     "p": "",
-     "l": "",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "anth-s1",
-   "date": "2026-10-25",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "미국 현지 날짜",
-   "title": "Anthropic S-1 공개본 제출 예상 시한",
-   "point": "",
-   "cat": "IPO",
-   "tickers": [
-    "AVGO"
-   ],
-   "imp": 3,
-   "status": "estimated",
-   "country": "us",
-   "source": "https://www.sec.gov/",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Anthropic public S-1 filing: expected deadline",
-     "p": "",
-     "l": "US local date",
-     "c": ""
-    },
-    "es": {
-     "t": "Plazo previsto para la presentación pública del S-1 de Anthropic",
-     "p": "",
-     "l": "fecha local de EE. UU.",
-     "c": ""
-    },
-    "ja": {
-     "t": "Anthropic S-1公開版 提出予想期限",
-     "p": "",
-     "l": "米国現地日付",
-     "c": ""
-    }
-   }
-  },
   {
    "id": "spcx-lock135",
    "date": "2026-10-26",
@@ -4147,8 +4027,8 @@
   "ja": "https://stayhungryasi.com/data/schedule.ja.ics"
  },
  "telegram": "https://t.me/stayhungryasi",
- "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+ "credit": "stayhungryasi.com",
  "note": "Written by the key-dates bot (schedule-bot) after each refresh. Schedule information, not investment advice. Dates can change.",
- "updated": "2026-11-06",
+ "updated": "2026-11-09",
  "live": "https://stayhungryasi.com/live/schedule.json"
 }
