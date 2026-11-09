@@ -1,0 +1,244 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-04.webp",
+ "boxes": "card-en-04.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "boxes": [
+    2,
+    3
+   ],
+   "text": {
+    "es": "\"¿Es la IA una burbuja?\" es, de entrada, la pregunta equivocada",
+    "ja": "「AIはバブルか」は\n問いからして間違っている"
+   },
+   "weight": "bold",
+   "color": "#f2f3f7",
+   "size": 58,
+   "lh": 70,
+   "expand": [
+    0,
+    0,
+    295,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    4,
+    5
+   ],
+   "text": {
+    "es": "Vista como un solo bloque, no tiene respuesta. Dividida en tres capas, se ve.",
+    "ja": "ひとかたまりで見ると答えがない。\n三つの層に分ければ見えてくる。"
+   },
+   "color": "#d3d6dc",
+   "size": 34,
+   "lh": 50,
+   "expand": [
+    0,
+    0,
+    27,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "Tecnología y demanda",
+    "ja": "技術・需要"
+   },
+   "weight": "bold",
+   "color": "#f4f5f9",
+   "size": 40,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "Real",
+    "ja": "実体"
+   },
+   "weight": "black",
+   "color": "#3091df",
+   "size": 70,
+   "align": "right",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    330,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Ingresos de Nvidia en el 2T: $96.2 mil millones, +106% interanual",
+    "ja": "エヌビディア第2四半期売上高962億ドル、前年比+106%"
+   },
+   "color": "#d5d7dd",
+   "size": 26,
+   "expand": [
+    0,
+    0,
+    331,
+    40
+   ],
+   "lh": 36
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "text": {
+    "es": "Rentabilidad",
+    "ja": "収益性"
+   },
+   "weight": "bold",
+   "color": "#f4f5f9",
+   "size": 40,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "Probada en parte",
+    "ja": "一部立証"
+   },
+   "weight": "black",
+   "color": "#32a97f",
+   "size": 70,
+   "align": "right",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    218,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "text": {
+    "es": "OpenAI en el 2T: ingresos de $6.7 mil millones, pérdida operativa de $12.3 mil millones",
+    "ja": "オープンAI第2四半期売上高67億ドル、\n営業損失123億ドル"
+   },
+   "color": "#d5d7dd",
+   "size": 26,
+   "expand": [
+    0,
+    0,
+    -35,
+    40
+   ],
+   "lh": 36
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "text": {
+    "es": "Precios y fondos",
+    "ja": "価格・資金"
+   },
+   "weight": "bold",
+   "color": "#f4f5f9",
+   "size": 40,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "Con burbuja",
+    "ja": "バブル成分"
+   },
+   "weight": "black",
+   "color": "#f46523",
+   "size": 70,
+   "align": "right",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    288,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "es": "CDS de CoreWeave sobre 1,000bp; crece el financiamiento de proveedores",
+    "ja": "コアウィーブのCDSが1,000bp突破、ベンダーファイナンス拡大"
+   },
+   "color": "#d5d7dd",
+   "size": 26,
+   "expand": [
+    0,
+    0,
+    216,
+    40
+   ],
+   "lh": 36
+  }
+ ]
+}

@@ -1,0 +1,943 @@
+{
+ "slug": "us-midterms-2026-redteam",
+ "src": "card-en-07.webp",
+ "boxes": "card-en-07.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "MATRIZ SECTORIAL",
+    "ja": "セクター・マトリクス"
+   },
+   "weight": "medium",
+   "size": 26,
+   "color": "#e06a33",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "Cambian el ritmo y las reglas.",
+    "ja": "選挙が変えるのは需要ではなく"
+   },
+   "weight": "black",
+   "size": 64,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    180,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "es": "La demanda, no.",
+    "ja": "スピードと規制だ。"
+   },
+   "weight": "black",
+   "size": 64,
+   "color": "#f46420",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "Sector",
+    "ja": "セクター"
+   },
+   "size": 19,
+   "color": "#aeb1bb",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    150,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "es": "Barrida dem.",
+    "ja": "民主両院制覇"
+   },
+   "weight": "bold",
+   "size": 24,
+   "color": "#eff1f5",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    20,
+    0,
+    20,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "Dividido",
+    "ja": "ねじれ議会"
+   },
+   "weight": "bold",
+   "size": 24,
+   "color": "#eff1f5",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    70,
+    0,
+    70,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "Barrida rep.",
+    "ja": "共和両院制覇"
+   },
+   "weight": "bold",
+   "size": 24,
+   "color": "#eff1f5",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    18,
+    0,
+    18,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Chips de IA",
+    "ja": "AI半導体"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    257,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "Nueva infraestructura de IA",
+    "ja": "AIインフラ（新規）"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    92,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    17
+   ],
+   "text": {
+    "es": "Centros de datos existentes",
+    "ja": "既存データセンター"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    97,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    21
+   ],
+   "text": {
+    "es": "Servicios públicos",
+    "ja": "公益事業"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    265,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    25
+   ],
+   "text": {
+    "es": "Espacio",
+    "ja": "宇宙"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    279,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    29
+   ],
+   "text": {
+    "es": "Cripto",
+    "ja": "暗号資産"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    272,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    33
+   ],
+   "text": {
+    "es": "Biotecnología y farmacéuticas",
+    "ja": "バイオ・製薬"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    123,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    37
+   ],
+   "text": {
+    "es": "Defensa",
+    "ja": "防衛"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    254,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    41
+   ],
+   "text": {
+    "es": "Financieras",
+    "ja": "金融"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    232,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    45
+   ],
+   "text": {
+    "es": "Megacaps de larga duración",
+    "ja": "長期成長メガキャップ"
+   },
+   "size": 25,
+   "color": "#eef1f5",
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    3,
+    44,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "▼ En contra",
+    "ja": "▼ 不利"
+   },
+   "size": 21,
+   "color": "#f9b7bc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    6,
+    3,
+    6,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "text": {
+    "es": "— Neutral",
+    "ja": "— 中立"
+   },
+   "size": 21,
+   "color": "#acb1be",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    20,
+    3,
+    22,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    16,
+    3,
+    16,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "▼ En contra",
+    "ja": "▼ 不利"
+   },
+   "size": 21,
+   "color": "#f9b7bc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    6,
+    3,
+    6,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "text": {
+    "es": "— Neutral",
+    "ja": "— 中立"
+   },
+   "size": 21,
+   "color": "#acb1be",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    20,
+    3,
+    22,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    16,
+    3,
+    16,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    17,
+    3,
+    17,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "— Neutral",
+    "ja": "— 中立"
+   },
+   "size": 21,
+   "color": "#acb1be",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    20,
+    3,
+    22,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "— Neutral",
+    "ja": "— 中立"
+   },
+   "size": 21,
+   "color": "#acb1be",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    21,
+    3,
+    22,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    22
+   ],
+   "text": {
+    "es": "▼ En contra",
+    "ja": "▼ 不利"
+   },
+   "size": 21,
+   "color": "#f9b7bc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    6,
+    3,
+    6,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    23
+   ],
+   "text": {
+    "es": "▼ En contra",
+    "ja": "▼ 不利"
+   },
+   "size": 21,
+   "color": "#f9b7bc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    6,
+    3,
+    6,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    24
+   ],
+   "text": {
+    "es": "— Neutral",
+    "ja": "— 中立"
+   },
+   "size": 21,
+   "color": "#acb1be",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    21,
+    3,
+    22,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    26
+   ],
+   "text": {
+    "es": "▼ En contra",
+    "ja": "▼ 不利"
+   },
+   "size": 21,
+   "color": "#f9b7bc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    6,
+    3,
+    6,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    27
+   ],
+   "text": {
+    "es": "— Neutral",
+    "ja": "— 中立"
+   },
+   "size": 21,
+   "color": "#acb1be",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    20,
+    3,
+    22,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    28
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    16,
+    3,
+    16,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    30
+   ],
+   "text": {
+    "es": "▼ En contra",
+    "ja": "▼ 不利"
+   },
+   "size": 21,
+   "color": "#f9b7bc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    6,
+    3,
+    6,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    31
+   ],
+   "text": {
+    "es": "— Neutral",
+    "ja": "— 中立"
+   },
+   "size": 21,
+   "color": "#acb1be",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    20,
+    3,
+    22,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    32
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    16,
+    3,
+    16,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    34
+   ],
+   "text": {
+    "es": "± Mixto",
+    "ja": "± 混在"
+   },
+   "size": 21,
+   "color": "#eed59e",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    34,
+    3,
+    33,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    35
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    16,
+    3,
+    16,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    36
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    16,
+    3,
+    16,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    38
+   ],
+   "text": {
+    "es": "▼ En contra",
+    "ja": "▼ 不利"
+   },
+   "size": 21,
+   "color": "#f9b7bc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    6,
+    3,
+    6,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    39
+   ],
+   "text": {
+    "es": "— Neutral",
+    "ja": "— 中立"
+   },
+   "size": 21,
+   "color": "#acb1be",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    20,
+    3,
+    22,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    40
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    16,
+    3,
+    16,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    42
+   ],
+   "text": {
+    "es": "▼ En contra",
+    "ja": "▼ 不利"
+   },
+   "size": 21,
+   "color": "#f9b7bc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    6,
+    3,
+    6,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    43
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    16,
+    3,
+    16,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    44
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    16,
+    3,
+    16,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    46
+   ],
+   "text": {
+    "es": "▲ A favor",
+    "ja": "▲ 有利"
+   },
+   "size": 21,
+   "color": "#9adcc0",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    17,
+    3,
+    17,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    47
+   ],
+   "text": {
+    "es": "— Neutral",
+    "ja": "— 中立"
+   },
+   "size": 21,
+   "color": "#acb1be",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    20,
+    3,
+    22,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    48
+   ],
+   "text": {
+    "es": "▼ En contra",
+    "ja": "▼ 不利"
+   },
+   "size": 21,
+   "color": "#f9b7bc",
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    6,
+    3,
+    5,
+    3
+   ]
+  },
+  {
+   "boxes": [
+    49,
+    50
+   ],
+   "text": {
+    "es": "Juicio del autor sobre la dirección relativa a corto plazo, no un modelo cuantitativo.==\n==± Mixto = la regulación perjudica, las tasas más bajas ayudan. No es una recomendación de inversión.",
+    "ja": "短期の相対的な方向性についての作成者の判断（定量モデルではない）。\n± 混在 = 規制は不利、金利低下は有利。投資勧誘ではない。"
+   },
+   "size": 22,
+   "color": "#adb0bc",
+   "expand": [
+    0,
+    0,
+    80,
+    40
+   ]
+  },
+  {
+   "boxes": [
+    53
+   ],
+   "text": {
+    "es": "Fuentes: informe completo",
+    "ja": "出典：レポート本文"
+   },
+   "size": 18,
+   "color": "#abafb9",
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    200,
+    2,
+    0,
+    2
+   ]
+  }
+ ]
+}

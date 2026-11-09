@@ -1,0 +1,340 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "card-09.webp",
+ "boxes": "card-09.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "text": {
+    "en": "==08== Lessons of disruptive innovation",
+    "es": "==08== Lecciones de la innovación disruptiva",
+    "ja": "==08== 破壊的イノベーションの教訓"
+   },
+   "weight": "bold",
+   "color": "#cad3e2",
+   "accent": "#f3b541",
+   "size": 25,
+   "expand": [
+    0,
+    0,
+    330,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "en": "Checkpoints",
+    "es": "Puntos de control",
+    "ja": "チェックポイント"
+   },
+   "align": "right",
+   "color": "#8e98a8",
+   "size": 23,
+   "expand": [
+    200,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "en": "What railroads left for AI:",
+    "es": "Del ferrocarril a la IA:",
+    "ja": "鉄道がAIに"
+   },
+   "weight": "black",
+   "color": "#f2f6fd",
+   "size": 63,
+   "expand": [
+    0,
+    0,
+    560,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "en": "==four lessons==",
+    "es": "==cuatro lecciones==",
+    "ja": "残した==4つの教訓=="
+   },
+   "weight": "black",
+   "color": "#f2f5fb",
+   "accent": "#f3b541",
+   "size": 63,
+   "expand": [
+    0,
+    0,
+    560,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    7,
+    8,
+    9,
+    11,
+    12
+   ],
+   "text": {
+    "en": "The rhythm repeats",
+    "es": "El ritmo se repite",
+    "ja": "リズムは繰り返す"
+   },
+   "expand": [
+    0,
+    0,
+    420,
+    0
+   ],
+   "weight": "bold",
+   "color": "#f2f7ff",
+   "size": 29,
+   "nowrap": true,
+   "minscale": 0.85
+  },
+  {
+   "boxes": [
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "text": {
+    "en": "30~50% corrections inside a bull market are the rule, not the exception",
+    "es": "En un mercado alcista, las correcciones de 30~50% son la regla, no la excepción",
+    "ja": "強気相場での30~50%の調整は例外ではなく規則だ"
+   },
+   "expand": [
+    0,
+    0,
+    330,
+    0
+   ],
+   "color": "#c8d1e1",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.85
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "en": "Index recovery ≠ everyone survives",
+    "es": "Recuperación del índice ≠ supervivencia de todos",
+    "ja": "指数の回復 ≠ 全員の生存"
+   },
+   "expand": [
+    0,
+    0,
+    540,
+    0
+   ],
+   "weight": "bold",
+   "color": "#f2f7ff",
+   "size": 29,
+   "nowrap": true,
+   "minscale": 0.85
+  },
+  {
+   "boxes": [
+    19,
+    20,
+    21,
+    22
+   ],
+   "text": {
+    "en": "Those built on debt fall first",
+    "es": "Primero caen los construidos con deuda",
+    "ja": "負債で建てた側から倒れる"
+   },
+   "expand": [
+    0,
+    0,
+    530,
+    0
+   ],
+   "color": "#c8d1e1",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.85
+  },
+  {
+   "boxes": [
+    23
+   ],
+   "text": {
+    "en": "The real peak is \"network completion\"",
+    "es": "El verdadero pico es \"la red completa\"",
+    "ja": "本当のピークは「網の完成」"
+   },
+   "expand": [
+    0,
+    0,
+    570,
+    0
+   ],
+   "weight": "bold",
+   "color": "#f2f7ff",
+   "size": 29,
+   "nowrap": true,
+   "minscale": 0.85
+  },
+  {
+   "boxes": [
+    24,
+    25,
+    26,
+    27
+   ],
+   "text": {
+    "en": "With nowhere left to build, growth stocks become a regulated industry",
+    "es": "Sin vías por tender, la acción de crecimiento se vuelve industria regulada",
+    "ja": "敷く場所がなくなると、成長株は規制産業になる"
+   },
+   "expand": [
+    0,
+    0,
+    360,
+    0
+   ],
+   "color": "#c8d1e1",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.85
+  },
+  {
+   "boxes": [
+    28
+   ],
+   "text": {
+    "en": "Innovators, too, are disrupted by the next innovation",
+    "es": "La próxima innovación también destruye al innovador",
+    "ja": "革新者も次の革新に破壊される"
+   },
+   "expand": [
+    0,
+    0,
+    460,
+    0
+   ],
+   "weight": "bold",
+   "color": "#f2f7ff",
+   "size": 29,
+   "nowrap": true,
+   "minscale": 0.85
+  },
+  {
+   "boxes": [
+    29,
+    30,
+    31,
+    32
+   ],
+   "text": {
+    "en": "The railroads' place was split among cars, trucks and airlines",
+    "es": "Autos, camiones y aviación se repartieron el lugar del ferrocarril",
+    "ja": "鉄道の地位は自動車・トラック・航空が分け合った"
+   },
+   "expand": [
+    0,
+    0,
+    330,
+    0
+   ],
+   "color": "#c8d1e1",
+   "size": 27,
+   "nowrap": true,
+   "minscale": 0.85
+  },
+  {
+   "boxes": [
+    33
+   ],
+   "text": {
+    "en": "Next checkpoints",
+    "es": "Próximos puntos de control",
+    "ja": "次のチェックポイント"
+   },
+   "color": "#8c98b1",
+   "size": 23,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    34,
+    35
+   ],
+   "text": {
+    "en": "11/17 Nvidia earnings · Big Tech 2027 capex guidance · neocloud credit · data center regulation bills · whether SOX holds its 11/5 close of 9,011",
+    "es": "Resultados de Nvidia del 17 de nov. · guía de capex 2027 de las big tech · crédito de neoclouds · leyes sobre centros de datos · si el SOX defiende 9,011 (cierre del 5 de nov.)",
+    "ja": "11/17 エヌビディア決算 · ビッグテックの2027年設備投資ガイダンス · ネオクラウドの信用 · データセンター規制の立法 · SOXが11/5終値9,011を守れるか"
+   },
+   "color": "#c4d0e4",
+   "size": 28,
+   "lh": 45,
+   "expand": [
+    0,
+    0,
+    10,
+    14
+   ]
+  },
+  {
+   "boxes": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "text": {
+    "en": "For information only, not a buy or sell recommendation. Past patterns do not guarantee future returns.",
+    "es": "Solo con fines informativos; no es una recomendación de compra o venta. Los patrones pasados no garantizan rendimientos futuros.",
+    "ja": "情報提供を目的としたものであり、売買の推奨ではない。過去のパターンは将来の収益を保証しない。"
+   },
+   "color": "#8e98a8",
+   "size": 19,
+   "lh": 27,
+   "expand": [
+    0,
+    0,
+    85,
+    36
+   ]
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-02.webp",
+ "boxes": "card-en-02.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "boxes": [
+    3,
+    4
+   ],
+   "text": {
+    "es": "Índice de semiconductores de Filadelfia, solo el 5 de noviembre. Al día siguiente, el KOSPI cerró en −6.02% tras activarse el cortacircuitos.",
+    "ja": "フィラデルフィア半導体指数、11月5日の1日だけで。\n翌日、KOSPIはサーキットブレーカー発動の末に−6.02%で引けた。"
+   },
+   "color": "#d5d8de",
+   "expand": [
+    0,
+    0,
+    70,
+    45
+   ]
+  },
+  {
+   "rect": [
+    150,
+    646,
+    313,
+    668
+   ],
+   "text": {
+    "es": "Semis de Filadelfia (SOX)",
+    "ja": "フィラデルフィア半導体"
+   },
+   "align": "right",
+   "size": 20,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "expand": [
+    230,
+    -4,
+    0,
+    6
+   ],
+   "weight": "medium"
+  },
+  {
+   "rect": [
+    212,
+    693,
+    313,
+    715
+   ],
+   "text": {
+    "es": "Qualcomm",
+    "ja": "クアルコム"
+   },
+   "align": "right",
+   "size": 20,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "expand": [
+    230,
+    -4,
+    0,
+    6
+   ],
+   "weight": "medium"
+  },
+  {
+   "rect": [
+    254,
+    741,
+    313,
+    763
+   ],
+   "text": {
+    "es": "Nvidia",
+    "ja": "エヌビディア"
+   },
+   "align": "right",
+   "size": 20,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "expand": [
+    230,
+    -4,
+    0,
+    6
+   ],
+   "weight": "medium"
+  },
+  {
+   "rect": [
+    201,
+    788,
+    313,
+    810
+   ],
+   "text": {
+    "es": "KOSPI 6 nov.",
+    "ja": "KOSPI 11月6日"
+   },
+   "align": "right",
+   "size": 20,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "expand": [
+    230,
+    -4,
+    0,
+    6
+   ],
+   "weight": "medium"
+  },
+  {
+   "rect": [
+    243,
+    836,
+    313,
+    858
+   ],
+   "text": {
+    "es": "Nasdaq",
+    "ja": "ナスダック"
+   },
+   "align": "right",
+   "size": 20,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "expand": [
+    230,
+    -4,
+    0,
+    6
+   ],
+   "weight": "medium"
+  },
+  {
+   "rect": [
+    201,
+    883,
+    313,
+    905
+   ],
+   "text": {
+    "es": "KOSPI 5 nov.",
+    "ja": "KOSPI 11月5日"
+   },
+   "align": "right",
+   "size": 20,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "expand": [
+    230,
+    -4,
+    0,
+    6
+   ],
+   "weight": "medium"
+  },
+  {
+   "rect": [
+    180,
+    931,
+    313,
+    953
+   ],
+   "text": {
+    "es": "KOSDAQ 6 nov.",
+    "ja": "KOSDAQ 11月6日"
+   },
+   "align": "right",
+   "size": 20,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "expand": [
+    230,
+    -4,
+    0,
+    6
+   ],
+   "weight": "medium"
+  },
+  {
+   "rect": [
+    271,
+    1026,
+    313,
+    1048
+   ],
+   "text": {
+    "es": "Dow",
+    "ja": "ダウ"
+   },
+   "align": "right",
+   "size": 20,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "expand": [
+    230,
+    -4,
+    0,
+    6
+   ],
+   "weight": "medium"
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "Fuentes: CNBC, NBC News (5 nov.); Financial News, Topstar News (6 nov.). Azul EE. UU., naranja Corea",
+    "ja": "出所：CNBC・NBC News（11月5日）、Financial News・Topstar News（11月6日）。青は米国、オレンジは韓国"
+   },
+   "color": "#aaadb4",
+   "expand": [
+    0,
+    0,
+    115,
+    0
+   ],
+   "nowrap": true,
+   "minscale": 0.8
+  }
+ ]
+}

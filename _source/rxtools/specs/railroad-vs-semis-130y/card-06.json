@@ -1,0 +1,728 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "card-06.webp",
+ "boxes": "card-06.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "en": "==05== Three layers",
+    "es": "==05== Tres capas",
+    "ja": "==05== 3層構造"
+   },
+   "weight": "bold",
+   "color": "#cad3e2",
+   "accent": "#f3b541",
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    0,
+    1
+   ],
+   "text": {
+    "en": "Drawdown from peak",
+    "es": "Caída desde el máximo",
+    "ja": "高値からの下落率"
+   },
+   "align": "right",
+   "expand": [
+    260,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    3,
+    4
+   ],
+   "text": {
+    "en": "This time, the shovels",
+    "es": "Esta vez, picos y palas",
+    "ja": "今回はツルハシが"
+   },
+   "weight": "black",
+   "color": "#f4f6fd",
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "en": "got hit first",
+    "es": "cayeron primero",
+    "ja": "先に打撃を受けた"
+   },
+   "weight": "black",
+   "color": "#ff5a61",
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    8,
+    9
+   ],
+   "text": {
+    "en": "The three layers of the AI railroad: who got hit hardest",
+    "es": "Las tres capas del ferrocarril de la IA: ¿quién cayó más?",
+    "ja": "AI鉄道の3層構造：誰が最も深く打撃を受けたか"
+   },
+   "weight": "bold",
+   "color": "#f0f7ff",
+   "expand": [
+    0,
+    0,
+    480,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    10,
+    11,
+    12
+   ],
+   "text": {
+    "en": "Drawdown from each one's own peak, closes as of 2026.11.6",
+    "es": "Caída desde el máximo propio de cada uno, al cierre del 2026.11.6",
+    "ja": "各自の高値からの下落率、2026.11.6終値基準"
+   },
+   "color": "#a1aab9",
+   "size": 16,
+   "expand": [
+    0,
+    0,
+    560,
+    0
+   ]
+  },
+  {
+   "rect": [
+    163,
+    449,
+    352,
+    464
+   ],
+   "text": {
+    "en": "New railroads built on debt (neoclouds)",
+    "es": "Vías nuevas con deuda (neoclouds)",
+    "ja": "負債で敷く新興鉄道（ネオクラウド）"
+   },
+   "color": "#b5becc",
+   "size": 11,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    2,
+    16,
+    2
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    163,
+    468,
+    310,
+    483
+   ],
+   "text": {
+    "en": "Steel & locomotives (chip supply chain)",
+    "es": "Acero y locomotoras (cadena de chips)",
+    "ja": "鉄鋼・機関車（半導体供給網）"
+   },
+   "color": "#b5becc",
+   "size": 11,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    2,
+    58,
+    2
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    409,
+    449,
+    622,
+    464
+   ],
+   "text": {
+    "en": "Large railroads built with cash (hyperscalers)",
+    "es": "Grandes vías con efectivo (hiperescaladores)",
+    "ja": "現金で敷く大手鉄道（ハイパースケーラー）"
+   },
+   "color": "#b5becc",
+   "size": 11,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    2,
+    300,
+    2
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    409,
+    468,
+    460,
+    483
+   ],
+   "text": {
+    "en": "Whole market",
+    "es": "Mercado total",
+    "ja": "市場全体"
+   },
+   "color": "#b5becc",
+   "size": 11,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    2,
+    200,
+    2
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    215,
+    509,
+    350,
+    526
+   ],
+   "text": {
+    "en": "CoreWeave (neocloud)",
+    "es": "CoreWeave (neocloud)",
+    "ja": "CoreWeave（ネオクラウド）"
+   },
+   "align": "right",
+   "color": "#aab3c2",
+   "size": 13,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    80,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    228,
+    559,
+    350,
+    576
+   ],
+   "text": {
+    "en": "IREN (neocloud)",
+    "es": "IREN (neocloud)",
+    "ja": "IREN（ネオクラウド）"
+   },
+   "align": "right",
+   "color": "#aab3c2",
+   "size": 13,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    80,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    215,
+    609,
+    350,
+    626
+   ],
+   "text": {
+    "en": "Nebius (neocloud)",
+    "es": "Nebius (neocloud)",
+    "ja": "Nebius（ネオクラウド）"
+   },
+   "align": "right",
+   "color": "#aab3c2",
+   "size": 13,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    80,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    260,
+    659,
+    350,
+    676
+   ],
+   "text": {
+    "en": "Semiconductor index SOX",
+    "es": "Índice de semiconductores SOX",
+    "ja": "半導体指数 SOX"
+   },
+   "align": "right",
+   "color": "#aab3c2",
+   "size": 13,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    150,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    298,
+    709,
+    350,
+    726
+   ],
+   "text": {
+    "en": "Nvidia",
+    "es": "Nvidia",
+    "ja": "エヌビディア"
+   },
+   "align": "right",
+   "color": "#aab3c2",
+   "size": 13,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    100,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    192,
+    759,
+    350,
+    776
+   ],
+   "text": {
+    "en": "5 hyperscalers, equal-weighted",
+    "es": "5 hiperescaladores, igual ponderación",
+    "ja": "ハイパースケーラー5社 均等加重"
+   },
+   "align": "right",
+   "color": "#aab3c2",
+   "size": 13,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    100,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    288,
+    809,
+    350,
+    826
+   ],
+   "text": {
+    "en": "Nasdaq 100",
+    "es": "Nasdaq 100",
+    "ja": "ナスダック100"
+   },
+   "align": "right",
+   "color": "#aab3c2",
+   "size": 13,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    100,
+    0,
+    0,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    821,
+    510,
+    910,
+    525
+   ],
+   "text": {
+    "en": "from 2025.6 peak",
+    "es": "desde máx. 2025.6",
+    "ja": "2025.6高値比"
+   },
+   "color": "#7a8596",
+   "size": 12,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    0,
+    80,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    821,
+    560,
+    912,
+    575
+   ],
+   "text": {
+    "en": "from 2025.11 peak",
+    "es": "desde máx. 2025.11",
+    "ja": "2025.11高値比"
+   },
+   "color": "#7a8596",
+   "size": 12,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    0,
+    80,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    821,
+    610,
+    910,
+    625
+   ],
+   "text": {
+    "en": "from 2026.6 peak",
+    "es": "desde máx. 2026.6",
+    "ja": "2026.6高値比"
+   },
+   "color": "#7a8596",
+   "size": 12,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    0,
+    80,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    821,
+    660,
+    925,
+    675
+   ],
+   "text": {
+    "en": "from 2026.6.22 peak",
+    "es": "desde máx. 2026.6.22",
+    "ja": "2026.6.22高値比"
+   },
+   "color": "#7a8596",
+   "size": 12,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    0,
+    70,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    821,
+    710,
+    925,
+    725
+   ],
+   "text": {
+    "en": "from 2026.10.6 peak",
+    "es": "desde máx. 2026.10.6",
+    "ja": "2026.10.6高値比"
+   },
+   "color": "#7a8596",
+   "size": 12,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    0,
+    70,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    821,
+    760,
+    920,
+    775
+   ],
+   "text": {
+    "en": "from 2026.6.1 peak",
+    "es": "desde máx. 2026.6.1",
+    "ja": "2026.6.1高値比"
+   },
+   "color": "#7a8596",
+   "size": 12,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    0,
+    70,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    821,
+    810,
+    925,
+    825
+   ],
+   "text": {
+    "en": "from 2026.10.6 peak",
+    "es": "desde máx. 2026.10.6",
+    "ja": "2026.10.6高値比"
+   },
+   "color": "#7a8596",
+   "size": 12,
+   "nowrap": true,
+   "pad": 1,
+   "expand": [
+    0,
+    0,
+    70,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "rect": [
+    112,
+    882,
+    682,
+    901
+   ],
+   "text": {
+    "en": "**Source:** Yahoo Finance adjusted closes. Hyperscalers = MSFT·AMZN·GOOGL·META·ORCL equal-weighted (daily rebalancing)",
+    "es": "**Fuente:** cierres ajustados de Yahoo Finance. Hiperescaladores = MSFT·AMZN·GOOGL·META·ORCL, igual ponderación (rebalanceo diario)",
+    "ja": "**出所：**Yahoo Finance調整後終値。ハイパースケーラー = MSFT·AMZN·GOOGL·META·ORCL 均等加重（日次リバランス）"
+   },
+   "weight": "medium",
+   "color": "#b5becd",
+   "size": 12,
+   "nowrap": true,
+   "minscale": 0.7,
+   "expand": [
+    0,
+    0,
+    162,
+    0
+   ]
+  },
+  {
+   "rect": [
+    136,
+    947,
+    566,
+    980
+   ],
+   "text": {
+    "en": "New railroads built on debt: -55%~-75%",
+    "es": "Vías nuevas con deuda: -55%~-75%",
+    "ja": "負債で敷く新興鉄道：-55%~-75%"
+   },
+   "weight": "bold",
+   "color": "#f1f7ff",
+   "size": 30,
+   "expand": [
+    0,
+    0,
+    420,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    46
+   ],
+   "text": {
+    "en": "Neoclouds. The path of the bankrupt railroads of the 1890s",
+    "es": "Neoclouds: el camino de los ferrocarriles quebrados de la década de 1890",
+    "ja": "ネオクラウド。1890年代に破綻した鉄道の道"
+   },
+   "color": "#c7d0df",
+   "size": 26,
+   "expand": [
+    0,
+    0,
+    440,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    47
+   ],
+   "text": {
+    "en": "Steel & locomotives: SOX -36%",
+    "es": "Acero y locomotoras: SOX -36%",
+    "ja": "鉄鋼・機関車：SOX -36%"
+   },
+   "weight": "bold",
+   "color": "#f1f7ff",
+   "size": 30,
+   "expand": [
+    0,
+    0,
+    420,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    48
+   ],
+   "text": {
+    "en": "Taking the full force of fears of a capex cut",
+    "es": "Recibe de lleno el temor a un recorte del capex",
+    "ja": "設備投資減少への恐怖を正面から受けている"
+   },
+   "color": "#c8d1e1",
+   "size": 26,
+   "expand": [
+    0,
+    0,
+    440,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    49
+   ],
+   "text": {
+    "en": "Cash-rich large railroads: -14%",
+    "es": "Grandes vías ricas en efectivo: -14%",
+    "ja": "現金豊富な大手鉄道：-14%"
+   },
+   "weight": "bold",
+   "color": "#f1f7ff",
+   "size": 30,
+   "expand": [
+    0,
+    0,
+    420,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    50,
+    51,
+    52,
+    53
+   ],
+   "text": {
+    "en": "Hyperscalers fell only as much as the market",
+    "es": "Los hiperescaladores cayeron solo lo que el mercado",
+    "ja": "ハイパースケーラーの下落は市場並みにとどまった"
+   },
+   "color": "#c8d1e1",
+   "size": 26,
+   "expand": [
+    0,
+    0,
+    440,
+    0
+   ]
+  },
+  {
+   "rect": [
+    80,
+    1263,
+    684,
+    1294
+   ],
+   "text": {
+    "en": "Hyperscalers = MSFT·AMZN·GOOGL·META·ORCL, equal-weighted",
+    "es": "Hiperescaladores = MSFT·AMZN·GOOGL·META·ORCL, igual ponderación",
+    "ja": "ハイパースケーラー = MSFT·AMZN·GOOGL·META·ORCL 均等加重"
+   },
+   "color": "#8d97a7",
+   "size": 22,
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  }
+ ]
+}

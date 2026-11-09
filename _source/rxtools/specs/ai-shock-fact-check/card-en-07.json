@@ -1,0 +1,105 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-07.webp",
+ "boxes": "card-en-07.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    1
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "boxes": [
+    4,
+    5
+   ],
+   "text": {
+    "es": "Crecimiento de la inversión de capital de los 4 grandes hiperescaladores (%), de la guía 2026 al consenso 2027. El gasto sigue subiendo, pero el ritmo se quiebra.",
+    "ja": "4大ハイパースケーラーの設備投資増加率(%)、2026年ガイダンスから2027年コンセンサスへ。金額は増えても、伸びは失速する。"
+   },
+   "expand": [
+    0,
+    0,
+    137,
+    45
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "2027E consenso",
+    "ja": "2027E コンセンサス"
+   },
+   "align": "center",
+   "expand": [
+    30,
+    0,
+    30,
+    0
+   ],
+   "size": 18
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "El alza de la DRAM también se reduce a la mitad: 80%, 40%, 15–20%.",
+    "ja": "DRAM契約価格の上昇率も四半期ごとに半減：80%、40%、15〜20%。"
+   },
+   "weight": "medium",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    105,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    21
+   ],
+   "text": {
+    "es": "Fuentes: ValueAddVC (sep.), YieldTheory (oct.), TrendForce y DigiTimes (nov.)",
+    "ja": "出所：ValueAddVC（9月）、YieldTheory（10月）、TrendForce・DigiTimes（11月）"
+   },
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ]
+  }
+ ],
+ "erase": [
+  [
+   878,
+   1150,
+   910,
+   1192
+  ]
+ ]
+}

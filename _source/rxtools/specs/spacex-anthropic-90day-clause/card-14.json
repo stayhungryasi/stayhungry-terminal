@@ -1,0 +1,435 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-14.webp",
+ "boxes": "card-14.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    3
+   ],
+   "weight": "bold",
+   "size": 26,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ],
+   "text": {
+    "en": "Checkpoints for the next 6 months",
+    "es": "Puntos de control de los próximos 6 meses",
+    "ja": "今後6カ月のチェックポイント"
+   }
+  },
+  {
+   "rect": [
+    86,
+    236,
+    995,
+    309
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#08090b",
+   "nowrap": true,
+   "text": {
+    "en": "Watch the dates when",
+    "es": "",
+    "ja": "レバレッジが実行される"
+   }
+  },
+  {
+   "rect": [
+    86,
+    324,
+    995,
+    397
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#ef631f",
+   "nowrap": true,
+   "text": {
+    "en": "the leverage kicks in",
+    "es": "",
+    "ja": "日付を見よ"
+   }
+  },
+  {
+   "rect": [
+    86,
+    236,
+    995,
+    309
+   ],
+   "size": 68,
+   "weight": "black",
+   "color": "#08090b",
+   "nowrap": true,
+   "valign": "middle",
+   "text": {
+    "en": "",
+    "es": "Atención a las fechas",
+    "ja": ""
+   }
+  },
+  {
+   "rect": [
+    86,
+    324,
+    995,
+    397
+   ],
+   "size": 68,
+   "weight": "black",
+   "color": "#ef631f",
+   "nowrap": true,
+   "valign": "middle",
+   "text": {
+    "en": "",
+    "es": "en que se activa la palanca",
+    "ja": ""
+   }
+  },
+  {
+   "rect": [
+    337,
+    444,
+    995,
+    472
+   ],
+   "size": 30,
+   "weight": "black",
+   "color": "#030404",
+   "nowrap": true,
+   "text": {
+    "en": "Anthropic's official roadshow",
+    "es": "Roadshow oficial de Anthropic",
+    "ja": "Anthropic公式ロードショー"
+   }
+  },
+  {
+   "rect": [
+    337,
+    484,
+    995,
+    508
+   ],
+   "size": 24,
+   "color": "#393b46",
+   "nowrap": true,
+   "text": {
+    "en": "IPO price range filing (S-1/A)",
+    "es": "Divulgación del rango de precio de la OPI (S-1/A)",
+    "ja": "公募価格レンジの開示（S-1/A）"
+   }
+  },
+  {
+   "rect": [
+    337,
+    549,
+    995,
+    577
+   ],
+   "size": 30,
+   "weight": "black",
+   "color": "#030404",
+   "nowrap": true,
+   "text": {
+    "en": "IPO pricing·listing target",
+    "es": "Fijación del precio·meta de cotización",
+    "ja": "公募価格確定・上場目標"
+   }
+  },
+  {
+   "rect": [
+    337,
+    589,
+    995,
+    611
+   ],
+   "size": 24,
+   "color": "#393b46",
+   "nowrap": true,
+   "text": {
+    "en": "Reported target: before Thanksgiving",
+    "es": "Meta reportada: antes de Acción de Gracias",
+    "ja": "感謝祭前が目標と報道"
+   }
+  },
+  {
+   "rect": [
+    337,
+    654,
+    995,
+    682
+   ],
+   "size": 30,
+   "weight": "black",
+   "color": "#030404",
+   "nowrap": true,
+   "text": {
+    "en": "New Congress convenes",
+    "es": "Se instala el nuevo Congreso",
+    "ja": "新議会が開会"
+   }
+  },
+  {
+   "rect": [
+    337,
+    694,
+    995,
+    716
+   ],
+   "size": 24,
+   "color": "#393b46",
+   "nowrap": true,
+   "text": {
+    "en": "Democrats control both chambers",
+    "es": "Los demócratas controlan ambas cámaras",
+    "ja": "民主党が上下両院を掌握"
+   }
+  },
+  {
+   "rect": [
+    337,
+    759,
+    995,
+    787
+   ],
+   "size": 30,
+   "weight": "black",
+   "color": "#030404",
+   "nowrap": true,
+   "text": {
+    "en": "Hinojosa sworn in as Texas governor",
+    "es": "Hinojosa asume la gubernatura de Texas",
+    "ja": "ヒノホサがテキサス州知事に就任"
+   }
+  },
+  {
+   "rect": [
+    337,
+    799,
+    995,
+    821
+   ],
+   "size": 24,
+   "color": "#393b46",
+   "nowrap": true,
+   "text": {
+    "en": "Whether a moratorium follows",
+    "es": "Si habrá una moratoria",
+    "ja": "モラトリアム措置の有無"
+   }
+  },
+  {
+   "rect": [
+    337,
+    864,
+    995,
+    892
+   ],
+   "size": 30,
+   "weight": "black",
+   "color": "#030404",
+   "nowrap": true,
+   "text": {
+    "en": "Non-termination periods end",
+    "es": "Fin de los periodos sin rescisión",
+    "ja": "解約不可期間の終了"
+   }
+  },
+  {
+   "rect": [
+    337,
+    904,
+    995,
+    926
+   ],
+   "size": 24,
+   "color": "#393b46",
+   "nowrap": true,
+   "text": {
+    "en": "Watch for termination/renegotiation filings",
+    "es": "Atención a avisos de rescisión o renegociación",
+    "ja": "解約・再交渉の開示に注目"
+   }
+  },
+  {
+   "rect": [
+    337,
+    969,
+    995,
+    997
+   ],
+   "size": 30,
+   "weight": "black",
+   "color": "#030404",
+   "nowrap": true,
+   "text": {
+    "en": "First effective termination window",
+    "es": "Primera ventana de rescisión efectiva",
+    "ja": "最初の解約発効期間"
+   }
+  },
+  {
+   "rect": [
+    337,
+    1009,
+    995,
+    1031
+   ],
+   "size": 24,
+   "color": "#393b46",
+   "nowrap": true,
+   "text": {
+    "en": "When the renewal price becomes clear",
+    "es": "Cuando se conoce el precio de renovación",
+    "ja": "更新単価が判明する時点"
+   }
+  },
+  {
+   "rect": [
+    337,
+    1074,
+    995,
+    1102
+   ],
+   "size": 30,
+   "weight": "black",
+   "color": "#030404",
+   "nowrap": true,
+   "text": {
+    "en": "Anthropic lock-up expires",
+    "es": "Vence el lock-up de Anthropic",
+    "ja": "Anthropicのロックアップ解除"
+   }
+  },
+  {
+   "rect": [
+    337,
+    1114,
+    995,
+    1136
+   ],
+   "size": 24,
+   "color": "#393b46",
+   "nowrap": true,
+   "text": {
+    "en": "Based on 180 days after listing",
+    "es": "A 180 días de la cotización",
+    "ja": "上場180日基準"
+   }
+  },
+  {
+   "rect": [
+    100,
+    566,
+    300,
+    593
+   ],
+   "size": 25,
+   "weight": "bold",
+   "color": "#9f4112",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "text": {
+    "en": "Before 11/26",
+    "es": "Antes del 11/26",
+    "ja": "11/26 前"
+   }
+  },
+  {
+   "rect": [
+    248,
+    881,
+    270,
+    907
+   ],
+   "size": 24,
+   "weight": "bold",
+   "color": "#9f4112",
+   "valign": "middle",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    10,
+    0
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "月"
+   },
+   "pad": 0
+  },
+  {
+   "rect": [
+    248,
+    986,
+    270,
+    1012
+   ],
+   "size": 24,
+   "weight": "bold",
+   "color": "#9f4112",
+   "valign": "middle",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    10,
+    0
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "月"
+   },
+   "pad": 0
+  },
+  {
+   "rect": [
+    100,
+    1090,
+    300,
+    1118
+   ],
+   "size": 25,
+   "weight": "bold",
+   "color": "#9f4112",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "text": {
+    "en": "Around 2027.5",
+    "es": "Hacia 2027.5",
+    "ja": "2027.5 前後"
+   }
+  },
+  {
+   "rect": [
+    86,
+    1172,
+    995,
+    1198
+   ],
+   "size": 22.5,
+   "color": "#80818b",
+   "nowrap": true,
+   "text": {
+    "en": "Solid = filed/reported dates · Dashed = estimated date",
+    "es": "Continua = fechas divulgadas o reportadas · Punteada = fecha estimada",
+    "ja": "実線＝開示・報道日程、点線＝推定日程"
+   }
+  }
+ ]
+}

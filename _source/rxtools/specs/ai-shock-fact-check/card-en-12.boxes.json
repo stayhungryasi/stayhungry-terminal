@@ -1,0 +1,158 @@
+[
+{
+"i": 0,
+"rect": [
+84,
+76,
+395,
+97
+],
+"ocr": "Al shock fact-check Nov 6, 2026",
+"bg": "#0a0c10",
+"fg": "#cdd0d6",
+"h": 21
+},
+{
+"i": 1,
+"rect": [
+943,
+77,
+994,
+97
+],
+"ocr": "12/12",
+"bg": "#0a0c10",
+"fg": "#afb1b8",
+"h": 20
+},
+{
+"i": 2,
+"rect": [
+86,
+248,
+814,
+330
+],
+"ocr": "The tech can be",
+"bg": "#0a0c10",
+"fg": "#eff1f5",
+"h": 82
+},
+{
+"i": 3,
+"rect": [
+90,
+355,
+696,
+467
+],
+"ocr": "right and the",
+"bg": "#0a0c10",
+"fg": "#eff1f5",
+"h": 112
+},
+{
+"i": 4,
+"rect": [
+90,
+469,
+676,
+576
+],
+"ocr": "price wrong.",
+"bg": "#0a0c10",
+"fg": "#eff1f5",
+"h": 107
+},
+{
+"i": 5,
+"rect": [
+84,
+632,
+709,
+664
+],
+"ocr": "The internet changed the world as promised.",
+"bg": "#0a0c10",
+"fg": "#d2d5dc",
+"h": 32
+},
+{
+"i": 6,
+"rect": [
+86,
+678,
+845,
+709
+],
+"ocr": "Buyers at the March 2000 Nasdaq peak waited 15 years",
+"bg": "#0a0c10",
+"fg": "#d2d5dc",
+"h": 31
+},
+{
+"i": 7,
+"rect": [
+85,
+1016,
+574,
+1072
+],
+"ocr": "stayhungryasi.com",
+"bg": "#0a0c10",
+"fg": "#f3f5f9",
+"h": 56
+},
+{
+"i": 8,
+"rect": [
+84,
+1116,
+897,
+1136
+],
+"ocr": "Analysis based on public reporting, filings and research, not a recommendation to buy or sell",
+"bg": "#0a0c10",
+"fg": "#abafb6",
+"h": 20
+},
+{
+"i": 9,
+"rect": [
+85,
+1144,
+826,
+1168
+],
+"ocr": "any security. Scenario odds are the author's judgment; some figures are secondhand",
+"bg": "#0a0c10",
+"fg": "#a7aab2",
+"h": 24
+},
+{
+"i": 10,
+"rect": [
+84,
+1178,
+163,
+1192
+],
+"ocr": "citations.",
+"bg": "#0b0d11",
+"fg": "#b2b5bd",
+"h": 14
+},
+{
+"i": 11,
+"rect": [
+84,
+1260,
+282,
+1282
+],
+"ocr": "stayhungryasi.com",
+"bg": "#0a0c10",
+"fg": "#e3743e",
+"h": 22
+}
+]

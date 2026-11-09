@@ -1,0 +1,26 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "chart-1.webp",
+ "boxes": "chart-1.boxes.json",
+ "langs": ["en", "es", "ja"],
+ "regions": [
+  {"boxes": [1], "weight": "bold", "size": 39, "nowrap": true, "minscale": 0.75, "expand": [0, 0, 480, 0],
+   "text": {"en": "AI-era railroads: chips also suffered three 30~50% corrections in a bull market",
+            "es": "Ferrocarriles de la IA: los chips también corrigieron 30~50% tres veces en plena alza",
+            "ja": "AI版の鉄道株：半導体も強気相場で30~50%の調整を3回経験した"}},
+  {"boxes": [13, 14, 15, 16], "size": 27, "nowrap": true, "expand": [0, 0, 500, 0],
+   "text": {"en": "Philadelphia Semiconductor Index (SOX), weekly closes, log scale, 2020.1 ~ 2026.11.6",
+            "es": "Índice de Semiconductores de Filadelfia (SOX), cierres semanales, escala logarítmica, 2020.1 ~ 2026.11.6",
+            "ja": "フィラデルフィア半導体指数（SOX）、週足終値・対数目盛、2020.1 ~ 2026.11.6"}},
+  {"rect": [217, 204, 506, 230], "size": 23, "nowrap": true, "pad": 2, "color": "#e4edf6", "expand": [0, 0, 300, 0],
+   "text": {"en": "Philadelphia Semiconductor Index (SOX)",
+            "es": "Índice de Semiconductores de Filadelfia (SOX)",
+            "ja": "フィラデルフィア半導体指数（SOX）"}},
+  {"boxes": [22], "size": 21, "nowrap": true, "pad": 2, "color": "#ed666d", "expand": [0, 0, 32, 0],
+   "text": {"en": "ongoing", "es": "en curso", "ja": "進行中"}},
+  {"boxes": [49, 50, 51, 53], "weight": "bold", "size": 21, "nowrap": true, "expand": [0, 0, 560, 0],
+   "text": {"en": "Source: Nasdaq PHLX Semiconductor Index closes (Yahoo Finance); peaks and troughs on daily closes",
+            "es": "Fuente: cierres del Nasdaq PHLX Semiconductor Index (Yahoo Finance); máximos y mínimos con cierres diarios",
+            "ja": "出所：Nasdaq PHLX Semiconductor Index 終値（Yahoo Finance）、高値・安値は日次終値ベース"}}
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-03.webp",
+ "boxes": "card-en-03.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "boxes": [
+    2,
+    3
+   ],
+   "text": {
+    "es": "La demanda no se derrumbó.",
+    "ja": "需要が崩れた\nわけではない。"
+   },
+   "weight": "black",
+   "color": "#eff1f5",
+   "size": 92,
+   "lh": 102,
+   "expand": [
+    0,
+    0,
+    370,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    4,
+    5
+   ],
+   "text": {
+    "es": "El dinero y los permisos se trabaron primero.",
+    "ja": "資金と許認可が\n先に詰まった。"
+   },
+   "weight": "black",
+   "color": "#f46523",
+   "size": 92,
+   "lh": 102,
+   "expand": [
+    0,
+    0,
+    400,
+    130
+   ]
+  },
+  {
+   "boxes": [
+    8,
+    10
+   ],
+   "text": {
+    "es": "Economía real: alquiler de GPU B200, alza en 3 meses",
+    "ja": "実物：B200 GPU賃料、\n3カ月上昇率"
+   },
+   "color": "#d6d8dd",
+   "size": 28,
+   "lh": 39,
+   "expand": [
+    0,
+    0,
+    75,
+    40
+   ]
+  },
+  {
+   "boxes": [
+    9,
+    11
+   ],
+   "text": {
+    "es": "Finanzas: CDS a 5 años de CoreWeave, 15 de octubre",
+    "ja": "金融：コアウィーブ5年CDS、\n10月15日"
+   },
+   "color": "#d6d8dd",
+   "size": 28,
+   "lh": 39,
+   "expand": [
+    0,
+    0,
+    140,
+    40
+   ]
+  }
+ ]
+}

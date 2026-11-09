@@ -1,0 +1,534 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-07.webp",
+ "boxes": "card-07.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "erase": [
+  [
+   101,
+   188,
+   144,
+   211
+  ],
+  [
+   175,
+   189,
+   404,
+   214
+  ]
+ ],
+ "regions": [
+  {
+   "rect": [
+    128,
+    176,
+    221,
+    232
+   ],
+   "text": {
+    "en": "██",
+    "es": "",
+    "ja": ""
+   },
+   "size": 46,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    195,
+    183,
+    228,
+    222
+   ],
+   "text": {
+    "en": "█",
+    "es": "",
+    "ja": ""
+   },
+   "size": 32,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    212,
+    175,
+    229,
+    194
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    212,
+    206,
+    229,
+    225
+   ],
+   "text": {
+    "en": "●",
+    "es": "",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    84,
+    175,
+    228,
+    221
+   ],
+   "text": {
+    "en": "Overstated",
+    "es": "",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#ba8618",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    122,
+    176,
+    215,
+    232
+   ],
+   "text": {
+    "en": "",
+    "es": "██",
+    "ja": ""
+   },
+   "size": 46,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    189,
+    183,
+    222,
+    222
+   ],
+   "text": {
+    "en": "",
+    "es": "█",
+    "ja": ""
+   },
+   "size": 32,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    206,
+    175,
+    223,
+    194
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    206,
+    206,
+    223,
+    225
+   ],
+   "text": {
+    "en": "",
+    "es": "●",
+    "ja": ""
+   },
+   "size": 16,
+   "align": "right",
+   "valign": "top",
+   "nowrap": true,
+   "color": "#fcf0d9",
+   "pad": -1000,
+   "minscale": 0.99
+  },
+  {
+   "rect": [
+    84,
+    175,
+    222,
+    221
+   ],
+   "text": {
+    "en": "",
+    "es": "Exagerado",
+    "ja": ""
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#ba8618",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    84,
+    175,
+    160,
+    221
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "誇張"
+   },
+   "size": 21,
+   "weight": "bold",
+   "align": "center",
+   "valign": "middle",
+   "nowrap": true,
+   "color": "#ba8618",
+   "pad": -1000
+  },
+  {
+   "rect": [
+    243,
+    189,
+    995,
+    214
+   ],
+   "text": {
+    "en": "\"$4T in market cap wiped out\"",
+    "es": "",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 25,
+   "nowrap": true,
+   "color": "#dc652a",
+   "pad": -1000,
+   "minscale": 0.8
+  },
+  {
+   "rect": [
+    237,
+    189,
+    995,
+    214
+   ],
+   "text": {
+    "en": "",
+    "es": "\"Se esfumaron US$4 billones en capitalización\"",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 25,
+   "nowrap": true,
+   "color": "#dc652a",
+   "pad": -1000,
+   "minscale": 0.8
+  },
+  {
+   "rect": [
+    175,
+    189,
+    995,
+    214
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "\"時価総額4兆ドルが蒸発\""
+   },
+   "weight": "bold",
+   "size": 25,
+   "nowrap": true,
+   "color": "#dc652a",
+   "pad": -1000,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    5,
+    6,
+    7
+   ],
+   "text": {
+    "en": "US one-day loss:",
+    "es": "EE.UU. perdió en un día",
+    "ja": "米国の1日の損失は"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.7
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "en": "$2.9~3.2 trillion",
+    "es": "US$2.9~3.2 billones",
+    "ja": "2.9~3.2兆ドル"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    420,
+    0
+   ],
+   "minscale": 0.75
+  },
+  {
+   "boxes": [
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "text": {
+    "en": "Market cap lost on Nov 5 · $ trillion",
+    "es": "Capitalización perdida el 5 de noviembre · billones de US$",
+    "ja": "11月5日の1日の時価総額損失・兆ドル"
+   },
+   "size": 23,
+   "nowrap": true,
+   "color": "#80828e",
+   "expand": [
+    0,
+    0,
+    560,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    15,
+    17
+   ],
+   "text": {
+    "en": "Original claim",
+    "es": "Afirmación original",
+    "ja": "原文の主張"
+   },
+   "expand": [
+    0,
+    0,
+    118,
+    0
+   ],
+   "color": "#383c49",
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "en": "FT: all Wall Street",
+    "es": "FT: Wall Street total",
+    "ja": "FT ウォール街全体"
+   },
+   "expand": [
+    0,
+    0,
+    79,
+    0
+   ],
+   "color": "#343945",
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    22
+   ],
+   "text": {
+    "en": "Reuters S&P500",
+    "es": "Reuters S&P500",
+    "ja": "ロイター S&P500"
+   },
+   "expand": [
+    0,
+    0,
+    40,
+    0
+   ],
+   "color": "#343845",
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    28
+   ],
+   "text": {
+    "en": "Nasdaq 100",
+    "es": "Nasdaq 100",
+    "ja": "ナスダック100"
+   },
+   "expand": [
+    0,
+    0,
+    110,
+    0
+   ],
+   "color": "#373c49",
+   "weight": "medium",
+   "size": 28,
+   "nowrap": true,
+   "minscale": 0.8
+  },
+  {
+   "boxes": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+   ],
+   "text": {
+    "en": "The S&P500's loss of about $2.9T is ==**the largest one-day loss ever**==. $4T is approached only in a global total that adds Asian markets (estimate).",
+    "es": "",
+    "ja": ""
+   },
+   "size": 29,
+   "lh": 48,
+   "color": "#323643",
+   "accent": "#0c0d0f",
+   "expand": [
+    0,
+    0,
+    30,
+    4
+   ]
+  },
+  {
+   "boxes": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+   ],
+   "text": {
+    "en": "",
+    "es": "La pérdida del S&P500, de unos US$2.9 billones, es ==**la mayor en un día de la historia**==. Los US$4 billones solo se alcanzan en un total global que suma las bolsas de Asia (estimación).",
+    "ja": ""
+   },
+   "size": 26,
+   "lh": 39,
+   "color": "#323643",
+   "accent": "#0c0d0f",
+   "expand": [
+    0,
+    12,
+    30,
+    20
+   ]
+  },
+  {
+   "boxes": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "S&P500の損失約2.9兆ドルは==**1日として過去最大**==だ。4兆ドルはアジア市場まで加えたグローバル合計の場合にのみ近い(推定)。"
+   },
+   "size": 29,
+   "lh": 48,
+   "color": "#323643",
+   "accent": "#0c0d0f",
+   "expand": [
+    0,
+    0,
+    30,
+    4
+   ]
+  }
+ ]
+}

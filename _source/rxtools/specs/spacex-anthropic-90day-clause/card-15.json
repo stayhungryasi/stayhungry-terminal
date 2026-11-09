@@ -1,0 +1,267 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-15.webp",
+ "boxes": "card-15.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "rect": [
+    85,
+    228,
+    700,
+    253
+   ],
+   "weight": "bold",
+   "size": 26,
+   "color": "#df6427",
+   "text": {
+    "en": "Summary",
+    "es": "Resumen",
+    "ja": ""
+   }
+  },
+  {
+   "rect": [
+    86,
+    287,
+    995,
+    360
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#08090a",
+   "nowrap": true,
+   "text": {
+    "en": "Leverage is real.",
+    "es": "La palanca es real.",
+    "ja": ""
+   }
+  },
+  {
+   "rect": [
+    85,
+    316,
+    700,
+    341
+   ],
+   "weight": "bold",
+   "size": 26,
+   "color": "#df6427",
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "まとめ"
+   }
+  },
+  {
+   "rect": [
+    86,
+    375,
+    995,
+    448
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#f26421",
+   "nowrap": true,
+   "text": {
+    "en": "But it has timing",
+    "es": "Pero hay un plazo",
+    "ja": ""
+   }
+  },
+  {
+   "rect": [
+    86,
+    463,
+    995,
+    536
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#f26421",
+   "nowrap": true,
+   "text": {
+    "en": "and a threshold.",
+    "es": "y un umbral.",
+    "ja": ""
+   }
+  },
+  {
+   "rect": [
+    86,
+    375,
+    995,
+    448
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#08090a",
+   "nowrap": true,
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "レバレッジは実在する。"
+   }
+  },
+  {
+   "rect": [
+    86,
+    463,
+    995,
+    536
+   ],
+   "size": 78,
+   "weight": "black",
+   "color": "#f26421",
+   "nowrap": true,
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "ただし時期と閾値がある。"
+   }
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "size": 35,
+   "weight": "black",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ],
+   "text": {
+    "en": "Timing",
+    "es": "Momento",
+    "ja": "時期"
+   }
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "size": 35,
+   "weight": "black",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ],
+   "text": {
+    "en": "Threshold",
+    "es": "Umbral",
+    "ja": "閾値"
+   }
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "size": 35,
+   "weight": "black",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ],
+   "text": {
+    "en": "Symmetry",
+    "es": "Simetría",
+    "ja": "対称性"
+   }
+  },
+  {
+   "rect": [
+    183,
+    666,
+    995,
+    691
+   ],
+   "size": 27,
+   "color": "#383b47",
+   "nowrap": true,
+   "text": {
+    "en": "Termination takes effect in Apr~Jun 2027 at the earliest",
+    "es": "La rescisión surte efecto, como pronto, en abril~junio de 2027",
+    "ja": "解約の発効は早くても2027年4~6月"
+   }
+  },
+  {
+   "rect": [
+    183,
+    780,
+    995,
+    808
+   ],
+   "size": 27,
+   "color": "#383b47",
+   "nowrap": true,
+   "text": {
+    "en": "Contract already about 1.6~2x market; 2x spot is the trigger",
+    "es": "Contrato ya a cerca de 1.6~2 veces el mercado; el detonante: spot a 2 veces",
+    "ja": "契約価格は既に市場の約1.6~2倍、現物2倍が発動ライン"
+   }
+  },
+  {
+   "rect": [
+    183,
+    894,
+    995,
+    919
+   ],
+   "size": 27,
+   "color": "#383b47",
+   "nowrap": true,
+   "text": {
+    "en": "In a downturn, the same clause is Anthropic's exit",
+    "es": "En una recesión, la misma cláusula es la salida de Anthropic",
+    "ja": "同じ条項が不況時にはAnthropicの脱出口"
+   }
+  },
+  {
+   "rect": [
+    85,
+    988,
+    995,
+    1044
+   ],
+   "size": 22,
+   "lh": 31,
+   "color": "#7f818a",
+   "text": {
+    "en": "Source: SpaceX·Anthropic S-1 and S-1/A, Bloomberg, CNBC, Reuters, FT, MarketWatch, All-In podcast",
+    "es": "Fuentes: S-1 y S-1/A de SpaceX y Anthropic, Bloomberg, CNBC, Reuters, FT, MarketWatch, podcast All-In",
+    "ja": "出所：SpaceX・Anthropic S-1およびS-1/A、ブルームバーグ、CNBC、ロイター、FT、MarketWatch、All-Inポッドキャスト"
+   }
+  },
+  {
+   "rect": [
+    85,
+    1058,
+    995,
+    1112
+   ],
+   "size": 22,
+   "lh": 31,
+   "color": "#80818b",
+   "valign": "top",
+   "text": {
+    "en": "This material verifies and organizes public information and is not a recommendation to buy or sell any specific security.",
+    "es": "Este material verifica y organiza información pública y no constituye una recomendación de compra o venta de ningún valor específico.",
+    "ja": "本資料は公開情報を検証・整理したもので、特定銘柄の売買を推奨するものではない。"
+   }
+  }
+ ]
+}

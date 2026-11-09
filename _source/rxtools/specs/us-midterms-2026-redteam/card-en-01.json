@@ -1,0 +1,204 @@
+{
+ "slug": "us-midterms-2026-redteam",
+ "src": "card-en-01.webp",
+ "boxes": "card-en-01.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2,
+    3
+   ],
+   "text": {
+    "es": "ELECCIONES INTERMEDIAS DE EE. UU. 2026 · 3 DE NOVIEMBRE",
+    "ja": "2026年 米中間選挙 · 11月3日"
+   },
+   "weight": "medium",
+   "size": 26,
+   "color": "#d86e3b",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    420,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "text": {
+    "es": "Más que el voto: ==financiamiento de la IA, petróleo y la Fed==",
+    "ja": "選挙より\n大きいのは\n==AIの資金調達・\n原油・FRB=="
+   },
+   "weight": "black",
+   "size": 102,
+   "lh": 112,
+   "color": "#eff1f5",
+   "accent": "#f46523",
+   "expand": [
+    0,
+    0,
+    320,
+    50
+   ]
+  },
+  {
+   "boxes": [
+    8,
+    9
+   ],
+   "text": {
+    "es": "El mercado asigna un 71% de probabilidad a que los demócratas ganen ambas cámaras. Pero no fue la elección lo que sacudió a las acciones a fines de octubre.",
+    "ja": "市場は民主党の両院制覇に71%の確率を織り込んでいる。だが10月末に株式を揺らしたのは選挙ではなかった。"
+   },
+   "size": 34,
+   "lh": 54,
+   "color": "#c5c9d3",
+   "expand": [
+    0,
+    0,
+    20,
+    90
+   ]
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "VERIFICACIÓN",
+    "ja": "検証"
+   },
+   "size": 19,
+   "color": "#aeb1bc",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    160,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    12,
+    13
+   ],
+   "text": {
+    "es": "DATOS AL (KST)",
+    "ja": "データ基準（韓国時間）"
+   },
+   "size": 19,
+   "color": "#aeb1bc",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "PRIMER CIERRE DE URNAS",
+    "ja": "最初の投票締め切り"
+   },
+   "size": 19,
+   "color": "#aeb1bc",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "text": {
+    "es": "Equipo rojo ×2",
+    "ja": "レッドチーム2回"
+   },
+   "weight": "bold",
+   "size": 32,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    17
+   ],
+   "text": {
+    "es": "2 nov 16:30",
+    "ja": "11月2日 16:30"
+   },
+   "weight": "bold",
+   "size": 32,
+   "color": "#f1f2f6",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    50,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "es": "7 p. m. ET",
+    "ja": "米東部 午後7時"
+   },
+   "weight": "bold",
+   "size": 32,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    110,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    21
+   ],
+   "text": {
+    "es": "Desliza →",
+    "ja": "スワイプ →"
+   },
+   "size": 20,
+   "color": "#abafb8",
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    80,
+    0,
+    0,
+    0
+   ]
+  }
+ ]
+}

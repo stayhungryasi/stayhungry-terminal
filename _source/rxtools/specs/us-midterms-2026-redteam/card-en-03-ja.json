@@ -1,0 +1,333 @@
+{
+ "slug": "us-midterms-2026-redteam",
+ "src": "card-en-03.webp",
+ "boxes": "card-en-03.boxes.json",
+ "langs": [
+  "ja"
+ ],
+ "erase": [
+  [
+   80,
+   573,
+   274,
+   609
+  ],
+  [
+   80,
+   681,
+   537,
+   717
+  ],
+  [
+   80,
+   789,
+   273,
+   825
+  ],
+  [
+   80,
+   897,
+   530,
+   933
+  ],
+  [
+   80,
+   1005,
+   294,
+   1041
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "5 CONTIENDAS CLAVE DEL SENADO",
+    "ja": "上院の激戦州5つ"
+   },
+   "weight": "medium",
+   "size": 26,
+   "color": "#db6c39",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    3,
+    4
+   ],
+   "text": {
+    "es": "Solo uno favorece a los republicanos: ==Iowa.==",
+    "ja": "共和党優勢は\n==アイオワだけ。=="
+   },
+   "weight": "black",
+   "size": 68,
+   "lh": 83,
+   "color": "#eef0f4",
+   "accent": "#f36424",
+   "expand": [
+    0,
+    0,
+    200,
+    10
+   ]
+  },
+  {
+   "boxes": [
+    5,
+    6
+   ],
+   "text": {
+    "es": "Para ganar el Senado, los demócratas necesitan arrebatar a los republicanos otros 4 escaños.",
+    "ja": "民主党が上院を握るには、\n共和党が持つ議席をさらに4つ獲得する必要がある。"
+   },
+   "size": 30,
+   "lh": 46,
+   "color": "#c5c8d2",
+   "expand": [
+    0,
+    0,
+    40,
+    10
+   ]
+  },
+  {
+   "boxes": [
+    7,
+    9
+   ],
+   "text": {
+    "es": "Estado · cierre de urnas (ET)",
+    "ja": "州 · 投票締め切り（米東部時間）"
+   },
+   "size": 22,
+   "color": "#aeb1bd",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    10,
+    11
+   ],
+   "text": {
+    "es": "Prob. de victoria demócrata · Kalshi",
+    "ja": "民主党の勝率 · Kalshi"
+   },
+   "size": 22,
+   "color": "#aeb1bd",
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    220,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    29,
+    30
+   ],
+   "text": {
+    "es": "Línea blanca = 50%. En cuatro de estas contiendas, el promedio final de encuestas está a 1–3 puntos, dentro del margen de error.",
+    "ja": "白線=50%。このうち4州では、最終世論調査平均の差が1〜3ポイントで誤差の範囲内にある。"
+   },
+   "size": 26,
+   "lh": 39,
+   "color": "#adb1bd",
+   "expand": [
+    0,
+    0,
+    25,
+    10
+   ]
+  },
+  {
+   "boxes": [
+    33
+   ],
+   "text": {
+    "es": "2 nov",
+    "ja": "11月2日"
+   },
+   "size": 20,
+   "color": "#adb0bb",
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    60,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "rect": [
+    82,
+    572,
+    220,
+    603
+   ],
+   "text": {
+    "ja": "アイオワ"
+   },
+   "weight": "bold",
+   "size": 34,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "pad": 0
+  },
+  {
+   "rect": [
+    226,
+    581,
+    326,
+    603
+   ],
+   "text": {
+    "ja": "午後9:00"
+   },
+   "size": 24,
+   "color": "#a9adb7",
+   "nowrap": true,
+   "pad": 0
+  },
+  {
+   "rect": [
+    82,
+    680,
+    221,
+    711
+   ],
+   "text": {
+    "ja": "カンザス"
+   },
+   "weight": "bold",
+   "size": 34,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "pad": 0
+  },
+  {
+   "rect": [
+    227,
+    689,
+    435,
+    711
+   ],
+   "text": {
+    "ja": "午後8:00  ·  取引薄"
+   },
+   "size": 24,
+   "color": "#a9adb7",
+   "nowrap": true,
+   "pad": 0
+  },
+  {
+   "rect": [
+    82,
+    788,
+    221,
+    819
+   ],
+   "text": {
+    "ja": "オハイオ"
+   },
+   "weight": "bold",
+   "size": 34,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "pad": 0
+  },
+  {
+   "rect": [
+    227,
+    797,
+    327,
+    819
+   ],
+   "text": {
+    "ja": "午後7:30"
+   },
+   "size": 24,
+   "color": "#a9adb7",
+   "nowrap": true,
+   "pad": 0
+  },
+  {
+   "rect": [
+    82,
+    896,
+    188,
+    927
+   ],
+   "text": {
+    "ja": "メイン"
+   },
+   "weight": "bold",
+   "size": 34,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "pad": 0
+  },
+  {
+   "rect": [
+    194,
+    905,
+    473,
+    927
+   ],
+   "text": {
+    "ja": "午後8:00  ·  順位選択投票"
+   },
+   "size": 24,
+   "color": "#a9adb7",
+   "nowrap": true,
+   "pad": 0
+  },
+  {
+   "rect": [
+    82,
+    1004,
+    221,
+    1035
+   ],
+   "text": {
+    "ja": "テキサス"
+   },
+   "weight": "bold",
+   "size": 34,
+   "color": "#eff1f5",
+   "nowrap": true,
+   "pad": 0
+  },
+  {
+   "rect": [
+    227,
+    1013,
+    327,
+    1035
+   ],
+   "text": {
+    "ja": "午後8:00"
+   },
+   "size": 24,
+   "color": "#a9adb7",
+   "nowrap": true,
+   "pad": 0
+  }
+ ]
+}

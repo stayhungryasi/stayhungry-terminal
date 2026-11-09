@@ -1,0 +1,790 @@
+{
+ "slug": "spacex-anthropic-90day-clause",
+ "src": "card-10.webp",
+ "boxes": "card-10.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "erase": [
+  [
+   80,
+   246,
+   100,
+   316
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "en": "Reading Chamath's mind",
+    "es": "Leer la mente de Chamath",
+    "ja": "チャマスの思考を読む"
+   },
+   "weight": "bold",
+   "size": 26,
+   "nowrap": true,
+   "color": "#de662c",
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "en": "Inside his head:",
+    "es": "En su cabeza:",
+    "ja": "彼の頭の中の"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    5,
+    0,
+    500,
+    0
+   ],
+   "minscale": 0.75
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "en": "a five-step calculation",
+    "es": "un cálculo en cinco pasos",
+    "ja": "5段階の計算"
+   },
+   "weight": "black",
+   "size": 77,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    470,
+    0
+   ],
+   "minscale": 0.7
+  },
+  {
+   "boxes": [
+    7,
+    8,
+    9,
+    11
+   ],
+   "text": {
+    "en": "Compute is a commodity",
+    "es": "",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    7,
+    8,
+    9,
+    11
+   ],
+   "text": {
+    "en": "",
+    "es": "El cómputo es una materia prima",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    7,
+    8,
+    9,
+    11
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "コンピュートはコモディティだ"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "en": "Politics sets supply",
+    "es": "",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "en": "",
+    "es": "La política define la oferta",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "供給は政治が決める"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    22,
+    23,
+    24,
+    25
+   ],
+   "text": {
+    "en": "Contracts are options",
+    "es": "",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    22,
+    23,
+    24,
+    25
+   ],
+   "text": {
+    "en": "",
+    "es": "Los contratos son opciones",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    22,
+    23,
+    24,
+    25
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "契約はオプションだ"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "text": {
+    "en": "Profits move to the bottleneck",
+    "es": "",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "text": {
+    "en": "",
+    "es": "Las ganancias migran al cuello de botella",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "利益はボトルネックへ移る"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    36
+   ],
+   "text": {
+    "en": "Spreadsheets over relationships",
+    "es": "",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    36
+   ],
+   "text": {
+    "en": "",
+    "es": "La hoja de cálculo antes que la relación",
+    "ja": ""
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    36
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "関係より計算表"
+   },
+   "weight": "bold",
+   "size": 34,
+   "nowrap": true,
+   "color": "#020304",
+   "expand": [
+    0,
+    0,
+    600,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "text": {
+    "en": "Prices are set by the marginal spot price, not long-term contracts",
+    "es": "",
+    "ja": ""
+   },
+   "size": 24.9,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "text": {
+    "en": "",
+    "es": "El precio lo fija el spot marginal, no los contratos de largo plazo",
+    "ja": ""
+   },
+   "size": 23.7,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "価格を決めるのは長期契約ではなく限界的なスポット価格だ"
+   },
+   "size": 24.2,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "text": {
+    "en": "GW-scale data center: about $50B. Amid uncertainty, no one can build",
+    "es": "",
+    "ja": ""
+   },
+   "size": 24.9,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "text": {
+    "en": "",
+    "es": "Centro GW: unos US$50 mil millones; con incertidumbre, nadie construye",
+    "ja": ""
+   },
+   "size": 23.7,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "GW級データセンターは約500億ドル、不確実性の中では誰も建てられない"
+   },
+   "size": 24.2,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "text": {
+    "en": "Short, terminable contracts are spot call options held by the supplier",
+    "es": "",
+    "ja": ""
+   },
+   "size": 24.9,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "text": {
+    "en": "",
+    "es": "Contratos cortos y rescindibles: calls spot en manos del proveedor",
+    "ja": ""
+   },
+   "size": 23.7,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "短期・解約可能な契約は供給者が持つスポットのコールオプション"
+   },
+   "size": 24.2,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    35
+   ],
+   "text": {
+    "en": "Whoever holds operating capacity collects the rent",
+    "es": "",
+    "ja": ""
+   },
+   "size": 24.9,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    35
+   ],
+   "text": {
+    "en": "",
+    "es": "Quien tiene capacidad en operación se queda con la renta",
+    "ja": ""
+   },
+   "size": 23.7,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    35
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "稼働中の容量を持つ側がレントを得る"
+   },
+   "size": 24.2,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+   ],
+   "text": {
+    "en": "Partnership loyalty is not a variable",
+    "es": "",
+    "ja": ""
+   },
+   "size": 24.9,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+   ],
+   "text": {
+    "en": "",
+    "es": "La lealtad entre socios no es una variable",
+    "ja": ""
+   },
+   "size": 23.7,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+   ],
+   "text": {
+    "en": "",
+    "es": "",
+    "ja": "パートナーシップの義理は変数ではない"
+   },
+   "size": 24.2,
+   "nowrap": true,
+   "color": "#373a46",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "minscale": 0.95
+  },
+  {
+   "boxes": [
+    43,
+    44,
+    45,
+    46
+   ],
+   "text": {
+    "en": "Reconstructed from remarks on the 10/17 and 11/8 All-In episodes",
+    "es": "Reconstruido a partir de lo dicho en All-In el 17 de octubre y el 8 de noviembre",
+    "ja": "10/17・11/8のAll-In放送での発言をもとに再構成"
+   },
+   "size": 22,
+   "nowrap": true,
+   "color": "#7b7d87",
+   "expand": [
+    0,
+    0,
+    470,
+    0
+   ],
+   "minscale": 0.8
+  }
+ ]
+}

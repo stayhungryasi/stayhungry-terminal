@@ -1,0 +1,233 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-11.webp",
+ "boxes": "card-en-11.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Vigila estas fechas y cifras",
+    "ja": "この日付と数字を見よ"
+   },
+   "weight": "black",
+   "color": "#f1f2f6",
+   "size": 64
+  },
+  {
+   "weight": "light",
+   "size": 69,
+   "color": "#f3f5f9",
+   "nowrap": true,
+   "minscale": 0.8,
+   "rect": [
+    92,
+    322,
+    362,
+    381
+   ],
+   "text": {
+    "es": "17 nov",
+    "ja": "11月17日"
+   }
+  },
+  {
+   "weight": "light",
+   "size": 69,
+   "color": "#f3f5f9",
+   "nowrap": true,
+   "minscale": 0.8,
+   "rect": [
+    92,
+    513,
+    362,
+    572
+   ],
+   "text": {
+    "es": "9 dic",
+    "ja": "12月9日"
+   }
+  },
+  {
+   "weight": "light",
+   "size": 69,
+   "color": "#f3f5f9",
+   "nowrap": true,
+   "minscale": 0.8,
+   "rect": [
+    92,
+    704,
+    362,
+    763
+   ],
+   "text": {
+    "es": "fin de ene.",
+    "ja": "1月末"
+   }
+  },
+  {
+   "weight": "bold",
+   "size": 33,
+   "color": "#f8f9fd",
+   "nowrap": true,
+   "minscale": 0.85,
+   "rect": [
+    376,
+    353,
+    995,
+    388
+   ],
+   "text": {
+    "es": "Resultados del 3T de Nvidia",
+    "ja": "エヌビディア第3四半期決算"
+   }
+  },
+  {
+   "size": 24,
+   "color": "#d5d8de",
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "Fecha oficial de la empresa",
+    "ja": "会社の公式日程"
+   }
+  },
+  {
+   "weight": "bold",
+   "size": 33,
+   "color": "#f8f9fd",
+   "nowrap": true,
+   "minscale": 0.85,
+   "rect": [
+    376,
+    544,
+    995,
+    578
+   ],
+   "text": {
+    "es": "FOMC y gráfico de puntos",
+    "ja": "FOMCとドットチャート"
+   }
+  },
+  {
+   "size": 24,
+   "color": "#d5d8de",
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Si habrá otra subida",
+    "ja": "追加利上げの有無"
+   }
+  },
+  {
+   "weight": "bold",
+   "size": 33,
+   "color": "#f8f9fd",
+   "nowrap": true,
+   "minscale": 0.85,
+   "rect": [
+    376,
+    735,
+    995,
+    770
+   ],
+   "text": {
+    "es": "Inversión 2027 de las grandes tecnológicas",
+    "ja": "ビッグテックの2027年設備投資"
+   }
+  },
+  {
+   "size": 24,
+   "color": "#d5d8de",
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "boxes": [
+    11
+   ],
+   "text": {
+    "es": "Si recortan la guía",
+    "ja": "ガイダンス下方修正の有無"
+   }
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "text": {
+    "es": "Si esto pasa, no es una corrección sino un colapso",
+    "ja": "こうなれば調整ではなく崩壊だ"
+   },
+   "weight": "bold",
+   "size": 23,
+   "color": "#e7713a",
+   "expand": [
+    0,
+    45,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    13,
+    14
+   ],
+   "text": {
+    "es": "Cuando el alquiler de GPU cae más de 30% en tres meses. Cuando el precio por contrato de DRAM empieza a bajar. Cuando una neocloud no puede pagar su deuda.",
+    "ja": "GPU賃料が3カ月で30%超下落したとき。\nDRAM契約価格が下落に転じたとき。\nネオクラウドが借金を返せなくなったとき。"
+   },
+   "size": 30,
+   "lh": 45,
+   "color": "#f8f9fd",
+   "expand": [
+    0,
+    45,
+    50,
+    5
+   ]
+  }
+ ]
+}

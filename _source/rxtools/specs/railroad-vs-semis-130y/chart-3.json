@@ -1,0 +1,487 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "chart-3.webp",
+ "boxes": "chart-3.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "weight": "bold",
+   "size": 39,
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    820,
+    0
+   ],
+   "text": {
+    "en": "The three tiers of the AI railroad: who got hit hardest",
+    "es": "Los tres niveles del ferrocarril de la IA: quién recibió el golpe más duro",
+    "ja": "AI鉄道の3層構造：最も深い打撃を受けたのは誰か"
+   }
+  },
+  {
+   "boxes": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "size": 27,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    900,
+    0
+   ],
+   "text": {
+    "en": "Decline from each one's own peak, 2026.11.6 close",
+    "es": "Caída desde el máximo propio de cada uno, cierre del 2026.11.6",
+    "ja": "各自の高値からの下落率、2026.11.6終値ベース"
+   }
+  },
+  {
+   "rect": [
+    142,
+    209,
+    490,
+    237
+   ],
+   "size": 19,
+   "nowrap": true,
+   "pad": 2,
+   "valign": "middle",
+   "color": "#f0f7ff",
+   "expand": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "New railroads built on debt (neoclouds)",
+    "es": "Ferrocarril nuevo con deuda (neoclouds)",
+    "ja": "負債で築く新興鉄道（ネオクラウド）"
+   }
+  },
+  {
+   "rect": [
+    142,
+    243,
+    490,
+    269
+   ],
+   "size": 19,
+   "nowrap": true,
+   "pad": 2,
+   "valign": "middle",
+   "color": "#e9f0fb",
+   "expand": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "Steel & locomotives (chip supply chain)",
+    "es": "Acero y locomotoras (cadena de chips)",
+    "ja": "鉄鋼・機関車（半導体供給網）"
+   }
+  },
+  {
+   "rect": [
+    572,
+    209,
+    938,
+    239
+   ],
+   "size": 19,
+   "nowrap": true,
+   "pad": 2,
+   "valign": "middle",
+   "color": "#ebf2fd",
+   "expand": [
+    0,
+    0,
+    500,
+    0
+   ],
+   "text": {
+    "en": "Big railroads built with cash (hyperscalers)",
+    "es": "Gran ferrocarril con caja propia (hiperescaladores)",
+    "ja": "現金で築く大型鉄道（ハイパースケーラー）"
+   }
+  },
+  {
+   "rect": [
+    572,
+    243,
+    655,
+    267
+   ],
+   "size": 19,
+   "nowrap": true,
+   "pad": 2,
+   "valign": "middle",
+   "color": "#f6feff",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "text": {
+    "en": "Overall market",
+    "es": "Mercado en general",
+    "ja": "市場全体"
+   }
+  },
+  {
+   "rect": [
+    242,
+    314,
+    467,
+    344
+   ],
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "align": "right",
+   "valign": "middle",
+   "color": "#bcc5d4",
+   "expand": [
+    183,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "CoreWeave (neocloud)",
+    "es": "CoreWeave (neocloud)",
+    "ja": "CoreWeave（ネオクラウド）"
+   }
+  },
+  {
+   "rect": [
+    263,
+    400,
+    467,
+    430
+   ],
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "align": "right",
+   "valign": "middle",
+   "color": "#bcc5d4",
+   "expand": [
+    204,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "IREN (neocloud)",
+    "es": "IREN (neocloud)",
+    "ja": "IREN（ネオクラウド）"
+   }
+  },
+  {
+   "rect": [
+    243,
+    486,
+    467,
+    516
+   ],
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "align": "right",
+   "valign": "middle",
+   "color": "#bcc5d4",
+   "expand": [
+    184,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "Nebius (neocloud)",
+    "es": "Nebius (neocloud)",
+    "ja": "Nebius（ネオクラウド）"
+   }
+  },
+  {
+   "rect": [
+    318,
+    573,
+    467,
+    603
+   ],
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "align": "right",
+   "valign": "middle",
+   "color": "#bcc5d4",
+   "expand": [
+    259,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "Semiconductor index SOX",
+    "es": "Índice de semiconductores SOX",
+    "ja": "半導体指数 SOX"
+   }
+  },
+  {
+   "rect": [
+    385,
+    659,
+    467,
+    689
+   ],
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "align": "right",
+   "valign": "middle",
+   "color": "#bcc5d4",
+   "expand": [
+    326,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "Nvidia",
+    "es": "Nvidia",
+    "ja": "エヌビディア"
+   }
+  },
+  {
+   "rect": [
+    199,
+    745,
+    467,
+    775
+   ],
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "align": "right",
+   "valign": "middle",
+   "color": "#bcc5d4",
+   "expand": [
+    140,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "5 hyperscalers, equal-weighted",
+    "es": "5 hiperescaladores, ponderación igual",
+    "ja": "ハイパースケーラー5社 均等加重"
+   }
+  },
+  {
+   "rect": [
+    369,
+    832,
+    467,
+    862
+   ],
+   "size": 21,
+   "nowrap": true,
+   "pad": 1,
+   "align": "right",
+   "valign": "middle",
+   "color": "#bcc5d4",
+   "expand": [
+    310,
+    0,
+    0,
+    0
+   ],
+   "text": {
+    "en": "Nasdaq 100",
+    "es": "Nasdaq 100",
+    "ja": "ナスダック100"
+   }
+  },
+  {
+   "boxes": [
+    17
+   ],
+   "size": 20,
+   "nowrap": true,
+   "pad": 2,
+   "color": "#939dad",
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "text": {
+    "en": "vs 2025.6 peak",
+    "es": "vs. máximo de 2025.6",
+    "ja": "2025.6高値比"
+   }
+  },
+  {
+   "boxes": [
+    21
+   ],
+   "size": 20,
+   "nowrap": true,
+   "pad": 2,
+   "color": "#939dad",
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "text": {
+    "en": "vs 2025.11 peak",
+    "es": "vs. máximo de 2025.11",
+    "ja": "2025.11高値比"
+   }
+  },
+  {
+   "boxes": [
+    24
+   ],
+   "size": 20,
+   "nowrap": true,
+   "pad": 2,
+   "color": "#939dad",
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "text": {
+    "en": "vs 2026.6 peak",
+    "es": "vs. máximo de 2026.6",
+    "ja": "2026.6高値比"
+   }
+  },
+  {
+   "boxes": [
+    27
+   ],
+   "size": 20,
+   "nowrap": true,
+   "pad": 2,
+   "color": "#939dad",
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "text": {
+    "en": "vs 2026.6.22 peak",
+    "es": "vs. máximo de 2026.6.22",
+    "ja": "2026.6.22高値比"
+   }
+  },
+  {
+   "boxes": [
+    30
+   ],
+   "size": 20,
+   "nowrap": true,
+   "pad": 2,
+   "color": "#939dad",
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "text": {
+    "en": "vs 2026.10.6 peak",
+    "es": "vs. máximo de 2026.10.6",
+    "ja": "2026.10.6高値比"
+   }
+  },
+  {
+   "boxes": [
+    33
+   ],
+   "size": 20,
+   "nowrap": true,
+   "pad": 2,
+   "color": "#939dad",
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "text": {
+    "en": "vs 2026.6.1 peak",
+    "es": "vs. máximo de 2026.6.1",
+    "ja": "2026.6.1高値比"
+   }
+  },
+  {
+   "boxes": [
+    36
+   ],
+   "size": 20,
+   "nowrap": true,
+   "pad": 2,
+   "color": "#939dad",
+   "expand": [
+    0,
+    0,
+    140,
+    0
+   ],
+   "text": {
+    "en": "vs 2026.10.6 peak",
+    "es": "vs. máximo de 2026.10.6",
+    "ja": "2026.10.6高値比"
+   }
+  },
+  {
+   "boxes": [
+    37,
+    38,
+    39,
+    41
+   ],
+   "weight": "bold",
+   "size": 21,
+   "nowrap": true,
+   "minscale": 0.8,
+   "expand": [
+    0,
+    0,
+    290,
+    0
+   ],
+   "text": {
+    "en": "Source: Yahoo Finance adjusted closes. Hyperscalers = MSFT·AMZN·GOOGL·META·ORCL, equal-weighted (daily rebalancing)",
+    "es": "Fuente: cierres ajustados de Yahoo Finance. Hiperescaladores = MSFT·AMZN·GOOGL·META·ORCL, peso igual (rebalanceo diario)",
+    "ja": "出所：Yahoo Finance 調整後終値。ハイパースケーラー = MSFT・AMZN・GOOGL・META・ORCL 均等加重（日次リバランス）"
+   }
+  }
+ ]
+}

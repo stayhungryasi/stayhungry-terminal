@@ -1,0 +1,249 @@
+[
+{
+"i": 0,
+"rect": [
+83,
+76,
+396,
+97
+],
+"ocr": "Al shock fact-check 1406, 2026",
+"bg": "#0a0c10",
+"fg": "#cdd0d5",
+"h": 21
+},
+{
+"i": 1,
+"rect": [
+942,
+76,
+995,
+97
+],
+"ocr": "06/12",
+"bg": "#0a0c10",
+"fg": "#aeb1b8",
+"h": 21
+},
+{
+"i": 2,
+"rect": [
+107,
+194,
+719,
+415
+],
+"ocr": "1,038:",
+"bg": "#0a0c10",
+"fg": "#f06624",
+"h": 221
+},
+{
+"i": 3,
+"rect": [
+85,
+410,
+957,
+439
+],
+"ocr": "CoreWeave's 5-year CDS spread on Oct 15: 2.6 times a year earlier, and",
+"bg": "#0a0c10",
+"fg": "#d5d7dd",
+"h": 29
+},
+{
+"i": 4,
+"rect": [
+85,
+449,
+538,
+478
+],
+"ocr": "past the line usually read as distress.",
+"bg": "#0a0c11",
+"fg": "#d6d9df",
+"h": 29
+},
+{
+"i": 5,
+"rect": [
+801,
+565,
+886,
+588
+],
+"ocr": "1,140bp",
+"bg": "#0a0c10",
+"fg": "#fbfdff",
+"h": 23
+},
+{
+"i": 6,
+"rect": [
+497,
+593,
+582,
+616
+],
+"ocr": "1,038bp",
+"bg": "#0a0c10",
+"fg": "#fbfdff",
+"h": 23
+},
+{
+"i": 7,
+"rect": [
+85,
+610,
+309,
+628
+],
+"ocr": "1,000bp: typical distress line",
+"bg": "#0a0c10",
+"fg": "#ca7751",
+"h": 18
+},
+{
+"i": 8,
+"rect": [
+84,
+625,
+454,
+639
+],
+"ocr": "fie tee fre freee 2 Swe ire fr nef eee Se Fee re Ee Fe emo ee Ree ime fe fre Se Fn Tee we Lee 그",
+"bg": "#0a0c10",
+"fg": "#51332b",
+"h": 14
+},
+{
+"i": 9,
+"rect": [
+631,
+625,
+751,
+639
+],
+"ocr": "CR ot fo ot fed Ed Ce Et",
+"bg": "#0a0c10",
+"fg": "#4d3129",
+"h": 14
+},
+{
+"i": 10,
+"rect": [
+202,
+773,
+268,
+796
+],
+"ocr": "39360",
+"bg": "#0a0c10",
+"fg": "#fafcff",
+"h": 23
+},
+{
+"i": 11,
+"rect": [
+169,
+930,
+302,
+948
+],
+"ocr": "1yrago (implied)",
+"bg": "#0b0c10",
+"fg": "#cccfd5",
+"h": 18
+},
+{
+"i": 12,
+"rect": [
+169,
+930,
+920,
+948
+],
+"ocr": "1yrago (implied) Oct 15 close Oct 15 intraday high",
+"bg": "#0a0c10",
+"fg": "#bcbfc5",
+"h": 18
+},
+{
+"i": 13,
+"rect": [
+493,
+930,
+586,
+944
+],
+"ocr": "Oct 15 close",
+"bg": "#0a0c10",
+"fg": "#d0d2d8",
+"h": 14
+},
+{
+"i": 14,
+"rect": [
+766,
+930,
+920,
+948
+],
+"ocr": "Oct 15 intraday high",
+"bg": "#0a0c11",
+"fg": "#cdd1d6",
+"h": 18
+},
+{
+"i": 15,
+"rect": [
+86,
+1073,
+971,
+1108
+],
+"ocr": "Its 2031 bonds yielded 15.78%. The high-yield market was",
+"bg": "#0a0c10",
+"fg": "#f8f9fd",
+"h": 35
+},
+{
+"i": 16,
+"rect": [
+85,
+1122,
+737,
+1157
+],
+"ocr": "effectively shut until the election was over.",
+"bg": "#0b0d11",
+"fg": "#f8f9fd",
+"h": 35
+},
+{
+"i": 17,
+"rect": [
+84,
+1179,
+783,
+1198
+],
+"ocr": "Source: CNBC (Oct 15, Oct 21). The year-ago value is implied from the +164% change",
+"bg": "#0a0c11",
+"fg": "#aaadb4",
+"h": 19
+},
+{
+"i": 18,
+"rect": [
+84,
+1260,
+282,
+1282
+],
+"ocr": "stayhungryasi.com",
+"bg": "#0a0c10",
+"fg": "#e3733e",
+"h": 22
+}
+]

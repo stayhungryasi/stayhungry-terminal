@@ -23,7 +23,7 @@ today = datetime.date.today().isoformat()
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import research
 _RS = research.load()
-_KEEP = ('slug', 'date', 'asof', 'category', 'kind', 'minutes', 'title', 'dek', 'key', 'tickers', 'tags', 'checkpoints')
+_KEEP = ('slug', 'date', 'asof', 'category', 'kind', 'minutes', 'title', 'dek', 'key', 'tickers', 'tags', 'checkpoints', 'langs')
 rs_inline = json.dumps({'categories': research.CAT, 'reports': [{k: m[k] for k in _KEEP if k in m} for m in _RS]},
                        ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 if os.path.exists(out): shutil.rmtree(out)

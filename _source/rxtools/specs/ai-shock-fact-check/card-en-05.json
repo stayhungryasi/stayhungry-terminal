@@ -1,0 +1,192 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-05.webp",
+ "boxes": "card-en-05.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "boxes": [
+    3,
+    4
+   ],
+   "text": {
+    "es": "Alquiler medio de la GPU B200, tres meses hasta fines de septiembre. Si hubiera exceso de oferta, este precio tendría que haber caído primero.",
+    "ja": "B200 GPUの平均賃料、9月末までの3カ月。\n供給過剰なら真っ先に下がるはずの価格だ。"
+   },
+   "color": "#d5d8de",
+   "expand": [
+    0,
+    0,
+    30,
+    45
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "Alquiler medio B200",
+    "ja": "B200平均賃料"
+   },
+   "weight": "medium",
+   "color": "#f6f8fb",
+   "size": 22,
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    161,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "3 meses → $8.01/h",
+    "ja": "3カ月 → $8.01/時間"
+   },
+   "color": "#a8acb1",
+   "size": 17,
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    151,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Índice H100, contrato a 1 año",
+    "ja": "H100 1年契約指数"
+   },
+   "weight": "medium",
+   "color": "#f6f8fb",
+   "size": 22,
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    73,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "text": {
+    "es": "Nebius H100, precio de lista",
+    "ja": "ネビウスH100定価"
+   },
+   "weight": "medium",
+   "color": "#f6f8fb",
+   "size": 22,
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    101,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "$3.85 → $4.50, 1 oct.",
+    "ja": "$3.85 → $4.50、10月1日"
+   },
+   "color": "#a8acb1",
+   "size": 17,
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    158,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    14,
+    15
+   ],
+   "text": {
+    "es": "En la burbuja de las telecomunicaciones de 2001, el precio del ancho de banda se desplomó primero. **Hoy esa señal no existe.**",
+    "ja": "2001年の通信バブルでは帯域幅の価格が先に崩れた。\n**今はそのシグナルがない。**"
+   },
+   "weight": "medium",
+   "color": "#f8f9fd",
+   "size": 33,
+   "lh": 50,
+   "valign": "bottom",
+   "expand": [
+    0,
+    60,
+    30,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "es": "Fuentes: índice SemiAnalysis (vía Shattered, 25 oct.), Uvik GPU Price Index (nov.)",
+    "ja": "出所：SemiAnalysis指数（Shattered引用、10月25日）、Uvik GPU Price Index（11月）"
+   },
+   "color": "#aaadb4",
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ],
+   "nowrap": true
+  }
+ ],
+ "erase": [
+  [
+   962,
+   1085,
+   990,
+   1112
+  ]
+ ]
+}

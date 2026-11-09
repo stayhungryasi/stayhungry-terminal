@@ -1,0 +1,403 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "card-07.webp",
+ "boxes": "card-07.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    1
+   ],
+   "text": {
+    "en": "==06== Railroads afterward ①",
+    "es": "==06== Los ferrocarriles después ①",
+    "ja": "==06== 鉄道のその後 ①"
+   },
+   "weight": "bold",
+   "color": "#c8d1e1",
+   "accent": "#f3b541",
+   "size": 25,
+   "expand": [
+    0,
+    0,
+    330,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "en": "Cowles-Shiller monthly average",
+    "es": "Cowles-Shiller, promedio mensual",
+    "ja": "コウルズ-シラー月平均"
+   },
+   "align": "right",
+   "color": "#8791a2",
+   "size": 24,
+   "valign": "middle",
+   "expand": [
+    280,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "en": "Rally 4: ==+60%==,",
+    "es": "Alza 4: ==+60%==,",
+    "ja": "第4次上昇 ==+60%==、"
+   },
+   "weight": "black",
+   "color": "#f2f5fb",
+   "accent": "#f3b543",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    480,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "en": "and in 1907, ==-38%==",
+    "es": "y en 1907, ==-38%==",
+    "ja": "そして1907年 ==-38%=="
+   },
+   "weight": "black",
+   "color": "#f3f5fb",
+   "accent": "#ff5a63",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    360,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "en": "Railroads afterward: rally 4 +60%, and -38% in 1907",
+    "es": "Los ferrocarriles después: alza 4 de +60% y -38% en 1907",
+    "ja": "鉄道のその後：第4次上昇 +60%、そして1907年 -38%"
+   },
+   "weight": "bold",
+   "color": "#eef5ff",
+   "size": 22,
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "text": {
+    "en": "Cowles-Shiller stock index, monthly average · log scale, 1871~1915",
+    "es": "Índice bursátil Cowles-Shiller, promedio mensual · escala logarítmica, 1871~1915",
+    "ja": "コウルズ-シラー株価指数、月平均・対数目盛、1871~1915"
+   },
+   "color": "#a8b1c0",
+   "size": 16,
+   "expand": [
+    0,
+    0,
+    480,
+    0
+   ]
+  },
+  {
+   "rect": [
+    188,
+    461,
+    368,
+    477
+   ],
+   "text": {
+    "en": "Period shown in the BofA chart (~1903)",
+    "es": "Periodo del gráfico de BofA (~1903)",
+    "ja": "BofAチャートが示した区間（~1903）"
+   },
+   "color": "#4e5a74",
+   "size": 12,
+   "valign": "middle",
+   "nowrap": true,
+   "pad": 2,
+   "expand": [
+    0,
+    0,
+    120,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "en": "Rally 4 +60%",
+    "es": "Alza 4 +60%",
+    "ja": "第4次 +60%"
+   },
+   "weight": "bold",
+   "color": "#e8b85a",
+   "size": 15,
+   "nowrap": true,
+   "valign": "middle",
+   "expand": [
+    0,
+    0,
+    60,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "en": "Drop 4 -38%",
+    "es": "Caída 4 -38%",
+    "ja": "第4次 -38%"
+   },
+   "weight": "bold",
+   "color": "#ec5f68",
+   "size": 15,
+   "nowrap": true,
+   "valign": "middle",
+   "expand": [
+    0,
+    0,
+    90,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "en": "1907 panic",
+    "es": "Pánico de 1907",
+    "ja": "1907年恐慌"
+   },
+   "color": "#d0606b",
+   "size": 12.5,
+   "nowrap": true,
+   "valign": "middle",
+   "expand": [
+    26,
+    2,
+    0,
+    2
+   ],
+   "align": "center"
+  },
+  {
+   "boxes": [
+    22
+   ],
+   "text": {
+    "en": "Around 1910",
+    "es": "Hacia 1910",
+    "ja": "1910年前後"
+   },
+   "color": "#c5cedb",
+   "size": 12,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "rect": [
+    870,
+    715,
+    958,
+    731
+   ],
+   "text": {
+    "en": "rail build-out ends",
+    "es": "fin de la expansión",
+    "ja": "鉄道網の拡張が終了"
+   },
+   "color": "#c5cedb",
+   "size": 12,
+   "nowrap": true,
+   "minscale": 0.85,
+   "pad": 1,
+   "expand": [
+    0,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "rect": [
+    870,
+    731,
+    958,
+    747
+   ],
+   "text": {
+    "en": "",
+    "es": "de la red",
+    "ja": ""
+   },
+   "color": "#c5cedb",
+   "size": 12,
+   "nowrap": true,
+   "pad": 0,
+   "expand": [
+    0,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "rect": [
+    814,
+    829,
+    956,
+    845
+   ],
+   "text": {
+    "en": "Cowles-Shiller index (monthly avg.)",
+    "es": "Índice Cowles-Shiller (prom. mensual)",
+    "ja": "コウルズ-シラー指数（月平均）"
+   },
+   "color": "#d8e0ee",
+   "size": 12,
+   "nowrap": true,
+   "minscale": 0.8,
+   "valign": "middle",
+   "pad": 2,
+   "expand": [
+    0,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    35
+   ],
+   "text": {
+    "en": "**Source:** Shiller/Cowles (effectively a railroad index before 1900; more industrials added after), GFD. Monthly averages, so the swings are smaller than between daily highs and lows",
+    "es": "**Fuente:** Shiller/Cowles (en la práctica un índice ferroviario antes de 1900; después se sumaron más industriales), GFD. Al ser promedios mensuales, las oscilaciones son menores que entre máximos y mínimos diarios",
+    "ja": "**出所：**Shiller/Cowles（1900年以前は事実上の鉄道指数、以降は産業株の組み入れが増加）、GFD。月平均のため日次の高値・安値より変動幅が小さく出る"
+   },
+   "weight": "medium",
+   "color": "#b5becd",
+   "size": 11.5,
+   "lh": 15,
+   "expand": [
+    0,
+    4,
+    75,
+    10
+   ]
+  },
+  {
+   "boxes": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+   ],
+   "text": {
+    "en": "The rhythm repeated once more after 1903, where the BofA chart ends. The 1906 Hepburn Act let the government cap railroad rates, and a panic came the following year. The index regained a new high in 1909.",
+    "es": "El ritmo se repitió una vez más después de 1903, donde termina el gráfico de BofA. En 1906, la Ley Hepburn permitió al gobierno fijar topes a las tarifas ferroviarias, y al año siguiente llegó el pánico. El índice recuperó un máximo histórico en 1909.",
+    "ja": "BofAのチャートが終わる1903年以降も、リズムはもう一度繰り返された。1906年のヘップバーン法で政府が鉄道運賃の上限を定められるようになり、翌年に恐慌が来た。指数は1909年に新高値を回復した。"
+   },
+   "color": "#c4d1e5",
+   "size": 28,
+   "lh": 45,
+   "expand": [
+    0,
+    0,
+    10,
+    20
+   ]
+  },
+  {
+   "boxes": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ],
+   "text": {
+    "en": "After 1900, industrials grew fast in the Cowles index, so it is hard to read as a pure railroad record.",
+    "es": "Después de 1900, los valores industriales crecieron rápido en el índice Cowles; es difícil leerlo como un desempeño puramente ferroviario.",
+    "ja": "1900年以降のコウルズ指数は産業株が急速に増え、純粋な鉄道の成績とは見なしにくい。"
+   },
+   "color": "#8e98a8",
+   "size": 22,
+   "valign": "middle",
+   "expand": [
+    0,
+    14,
+    130,
+    14
+   ]
+  },
+  {
+   "boxes": [
+    49
+   ],
+   "text": {
+    "en": "Source: Shiller/Cowles, GFD",
+    "es": "Fuente: Shiller/Cowles, GFD",
+    "ja": "出所：Shiller/Cowles, GFD"
+   },
+   "color": "#8e98a8",
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ]
+  }
+ ],
+ "erase": [
+  [
+   862,
+   1178,
+   876,
+   1197
+  ]
+ ]
+}

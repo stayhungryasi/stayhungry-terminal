@@ -12,6 +12,9 @@ Reads every _source/research/<slug>/ folder:
 
 Writes into <outdir>:
   r/<slug>/index.html   one page per report (4-language brief + full Korean original)
+  r/<slug>/<lang>/      the full report in English / Spanish / Japanese when body.<lang>.html (or app.<lang>.html) exists
+                        (translations: see _source/rxtools/TRANSLATE.md; the Korean page sends readers who prefer a
+                        translated language there, search engines get hreflang links)
   r/index.html          static library index (for search engines and no-JS readers)
   r/feed.xml            RSS feed, newest first
   data/research.json    open data: every report's metadata + upcoming checkpoints
@@ -33,6 +36,11 @@ CAT = {
     'sector': {'en': 'Sectors', 'ko': '섹터', 'es': 'Sectores', 'ja': 'セクター'},
     'crypto': {'en': 'Crypto', 'ko': '크립토', 'es': 'Cripto', 'ja': 'クリプト'},
     'masters': {'en': 'Investors', 'ko': '투자 거장', 'es': 'Inversionistas', 'ja': '投資家'},
+}
+TR = {
+    'en': dict(orig='TRANSLATED FROM KOREAN', note='This is a translation of the Korean original. If anything differs, the Korean original prevails.', link='Read the Korean original →'),
+    'es': dict(orig='TRADUCIDO DEL COREANO', note='Esta es una traducción del original en coreano. Si algo difiere, prevalece el original.', link='Leer el original en coreano →'),
+    'ja': dict(orig='韓国語原文からの翻訳', note='この記事は韓国語原文の翻訳です。内容に差異がある場合は韓国語原文が優先されます。', link='韓国語の原文を読む →'),
 }
 UI = {
     'en': dict(back='← Research library', orig='ORIGINAL IN KOREAN', brief='BRIEF', key='KEY NUMBER', checks='CHECKPOINTS', related='MORE RESEARCH', read='Read the full report ↓', minutes='{n} min read', sources='{n} sources', asof='Data as of {d}', date='Published {d}', open='Open the interactive report in a new tab ↗', note='AI-assisted research from stayhungryasi.com. Written on the date shown; numbers may have changed since. Not investment advice.'),
@@ -75,6 +83,14 @@ def load():
         check(slug, body_text, json.dumps(m, ensure_ascii=False))
         m['_body'] = body
         m['_dir'] = d
+        m['_tr'] = {}
+        for c in ('en', 'es', 'ja'):
+            p = os.path.join(d, ('body' if m['kind'] == 'doc' else 'app') + f'.{c}.html')
+            if os.path.exists(p):
+                tb = open(p, encoding='utf-8').read()
+                check(slug, text_of(tb))
+                m['_tr'][c] = tb
+        m['langs'] = ['ko'] + list(m['_tr'])
         chars = len(re.sub(r'\s', '', body_text))
         m['minutes'] = max(2, round(chars / 600))          # ~600 Korean characters a minute
         extra = open(os.path.join(d, 'datasets.json'), encoding='utf-8').read() if os.path.exists(os.path.join(d, 'datasets.json')) else ''
@@ -137,12 +153,16 @@ footer .fr{display:flex;flex-direction:column;align-items:flex-end;gap:8px}.soc{
 '''
 
 LANG_JS = '''<script>
-(function(){var L=['en','ko','es','ja'],p=null;try{p=JSON.parse(localStorage.getItem('sha-lang'))}catch(e){}
+(function(){var L=['en','ko','es','ja'],H=document.documentElement,fix=H.getAttribute('data-fix'),av=(H.getAttribute('data-langs')||'ko').split(','),home=H.getAttribute('data-home')||'',p=null;
+try{p=JSON.parse(localStorage.getItem('sha-lang'))}catch(e){}
 if(L.indexOf(p)<0){var n=(navigator.language||'en').toLowerCase().slice(0,2);p=L.indexOf(n)>=0?n:'en'}
+if(!fix&&home&&p!=='ko'&&av.indexOf(p)>=0&&!/[?&]ko\b/.test(location.search)&&!/bot|crawl|spider|slurp|preview/i.test(navigator.userAgent)){location.replace(home+p+'/'+location.hash);return;}
+if(fix)p=fix;
+function go(c){if(!home||av.indexOf(c)<0||c===(fix||'ko'))return false;location.href=c==='ko'?home+'?ko':home+c+'/';return true;}
 function set(c){document.querySelectorAll('[data-l]').forEach(function(e){e.hidden=e.getAttribute('data-l')!==c});
 document.querySelectorAll('.lt button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-set')===c)});
 document.querySelectorAll('a[data-lib]').forEach(function(a){a.href='/'+c+'/#library'});}
-document.addEventListener('click',function(e){var b=e.target.closest('[data-set]');if(b){set(b.getAttribute('data-set'));try{localStorage.setItem('sha-lang',JSON.stringify(b.getAttribute('data-set')))}catch(x){}}});
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set]');if(b){var c=b.getAttribute('data-set');try{localStorage.setItem('sha-lang',JSON.stringify(c))}catch(x){}if(!go(c))set(c);}});
 set(p);})();
 </script>'''
 
@@ -152,9 +172,9 @@ f.addEventListener('load',function(){fit();try{new ResizeObserver(fit).observe(f
 </script>'''
 
 
-def head(title, desc, url, lang='ko', extra=''):
+def head(title, desc, url, lang='ko', extra='', hattr=''):
     return f'''<!doctype html>
-<html lang="{lang}">
+<html lang="{lang}"{hattr}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -173,9 +193,9 @@ def head(title, desc, url, lang='ko', extra=''):
 '''
 
 
-def topbar():
+def topbar(cur='en'):
     return ('<header class="top"><div class="in"><a class="brand" href="/"><i></i>STAY HUNGRY.ASI</a>'
-            + ''.join(f'<a class="back" data-l="{c}" data-lib href="/{c}/#library"{"" if c == "en" else " hidden"}>{E(UI[c]["back"])}</a>' for c in LANGS)
+            + ''.join(f'<a class="back" data-l="{c}" data-lib href="/{c}/#library"{"" if c == cur else " hidden"}>{E(UI[c]["back"])}</a>' for c in LANGS)
             + '</div></header>')
 
 
@@ -192,9 +212,9 @@ FOOT = ('<footer><span>Not investment advice. 투자 권유 아님.</span>'
         '<span class="fr">' + SOC_ROW + '<a href="https://stayhungryasi.com/" target="_blank" rel="noopener">stayhungryasi.com</a></span></footer>')
 
 
-def brief(m):
+def brief(m, cur='en'):
     tabs = '<div class="lt" role="tablist">' + ''.join(
-        f'<button data-set="{c}" class="{"on" if c == "en" else ""}">{ {"en": "EN", "ko": "한국어", "es": "ES", "ja": "日本語"}[c] }</button>' for c in LANGS) + '</div>'
+        f'<button data-set="{c}" class="{"on" if c == cur else ""}">{ {"en": "EN", "ko": "한국어", "es": "ES", "ja": "日本語"}[c] }</button>' for c in LANGS) + '</div>'
     panes = []
     for c in LANGS:
         u = UI[c]
@@ -204,7 +224,7 @@ def brief(m):
                 f'<li><time datetime="{E(x["date"])}">{E(x["date"])}</time>{E(x["text"][c])}</li>' for x in m['checkpoints']) + '</ul>'
         tags = m.get('tags', {}).get(c, [])
         chips = ''.join(f'<span>{E(t)}</span>' for t in dict.fromkeys(m.get('tickers', [])[:10] + tags))
-        panes.append(f'''<div class="bp" data-l="{c}"{"" if c == "en" else " hidden"}>
+        panes.append(f'''<div class="bp" data-l="{c}"{"" if c == cur else " hidden"}>
 <p class="dek">{E(m["dek"][c])}</p>
 <div class="kg"><div class="kv"><small>{E(u["key"])}</small><b>{E(m["key"]["value"])}</b><small style="letter-spacing:.04em;text-transform:none">{E(m["key"]["label"][c])}</small></div>
 <div><p class="lbl">{E(u["brief"])}</p><ul class="pts">{"".join(f"<li>{E(p)}</li>" for p in m["points"][c])}</ul>{ck}</div></div>
@@ -224,26 +244,76 @@ def cards_html(m, c):
             f'<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:10px 0 6px">{cells}</div>')
 
 
-def meta_line(m):
+def meta_line(m, cur='en'):
     out = []
     for c in LANGS:
         u = UI[c]
         bits = [CAT[m['category']][c], u['date'].format(d=m['date']), u['asof'].format(d=m['asof']), u['minutes'].format(n=m['minutes'])]
         if m['sources']:
             bits.append(u['sources'].format(n=m['sources']))
-        out.append(f'<div class="meta" data-l="{c}"{"" if c == "en" else " hidden"}>' + ''.join(f'<span>{E(b)}</span>' for b in bits) + '</div>')
+        out.append(f'<div class="meta" data-l="{c}"{"" if c == cur else " hidden"}>' + ''.join(f'<span>{E(b)}</span>' for b in bits) + '</div>')
     return ''.join(out)
 
 
-def related(m, allm):
+def rlink(x, c):
+    return f'/r/{x["slug"]}/' + (f'{c}/' if c != 'ko' and c in x['_tr'] else '')
+
+
+def related(m, allm, cur='en'):
     others = [x for x in allm if x['slug'] != m['slug']]
     same = [x for x in others if x['category'] == m['category']]
     pick = (same + [x for x in others if x not in same])[:3]
     blocks = []
     for c in LANGS:
-        blocks.append(f'<div data-l="{c}"{"" if c == "en" else " hidden"}><p class="lbl" style="margin-top:40px">{E(UI[c]["related"])}</p><div class="rel">' + ''.join(
-            f'<a href="/r/{x["slug"]}/"><small>{E(CAT[x["category"]][c])} · {E(x["date"])}</small><b>{E(x["title"][c])}</b></a>' for x in pick) + '</div></div>')
+        blocks.append(f'<div data-l="{c}"{"" if c == cur else " hidden"}><p class="lbl" style="margin-top:40px">{E(UI[c]["related"])}</p><div class="rel">' + ''.join(
+            f'<a href="{rlink(x, c)}"><small>{E(CAT[x["category"]][c])} · {E(x["date"])}</small><b>{E(x["title"][c])}</b></a>' for x in pick) + '</div></div>')
     return ''.join(blocks)
+
+
+def alternates(m, base):
+    home = f'{base}r/{m["slug"]}/'
+    out = f'<link rel="alternate" hreflang="ko" href="{home}">'
+    for c in m['_tr']:
+        out += f'<link rel="alternate" hreflang="{HTML_LANG[c]}" href="{home}{c}/">'
+    if 'en' in m['_tr']:
+        out += f'<link rel="alternate" hreflang="x-default" href="{home}en/">'
+    return out
+
+
+def img_links(h):
+    """A link wrapped around an image opens that same (localized) image, not the Korean original."""
+    return re.sub(r'(<a\b[^>]*\bhref=")[^"]+\.(?:webp|jpe?g|png)("[^>]*>\s*<img\b[^>]*\bsrc="([^"]+)")', r'\1\3\2', h)
+
+
+def rel_up(h):
+    """Relative src/href in a translated body point one folder up (the files live next to the Korean page)."""
+    h = img_links(h)
+    return re.sub(r'\b(src|href)="(?!https?:|//|/|#|mailto:|data:|javascript:)([^"]+)"', r'\1="../\2"', h)
+
+
+def page_tr(m, allm, base, c):
+    home = f'/r/{m["slug"]}/'
+    url = f'{base}r/{m["slug"]}/{c}/'
+    title = f'{m["title"][c]} · Stayhungry.ASI'
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": m['title'][c], "inLanguage": HTML_LANG[c],
+          "datePublished": m['date'], "description": m['dek'][c], "url": url, "translationOfWork": {"@type": "Article", "url": f'{base}r/{m["slug"]}/', "inLanguage": "ko"},
+          "author": {"@type": "Organization", "name": "Stayhungry.ASI", "url": base},
+          "publisher": {"@type": "Organization", "name": "Stayhungry.ASI", "url": base}}
+    extra = alternates(m, base) + '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>'
+    hattr = f' data-fix="{c}" data-langs="{",".join(m["langs"])}" data-home="{home}"'
+    eb = f'<p class="eb">RESEARCH · {E(CAT[m["category"]][c])} · {E(TR[c]["orig"])}</p>'
+    trn = f'<p class="note" style="margin:0 0 26px">{E(TR[c]["note"])} <a href="{home}?ko" hreflang="ko">{E(TR[c]["link"])}</a></p>'
+    if m['kind'] == 'doc':
+        body = f'<article class="doc" id="full" lang="{HTML_LANG[c]}">{rel_up(m["_tr"][c])}</article>'
+        wide = ''
+    else:
+        body = (f'<p id="full"><a href="../app.{c}.html" target="_blank" rel="noopener">{E(UI[c]["open"])}</a></p>'
+                f'<iframe id="app" class="frame" src="../app.{c}.html" title="{E(m["title"][c])}" loading="lazy"></iframe>{FRAME_JS}')
+        wide = ' class="wide"'
+    return (head(title, m['dek'][c], url, HTML_LANG[c], extra, hattr).replace('<body>', '<body class="w">' if wide else '<body>') + topbar(c) + f'<main{wide}>' + eb
+            + f'<h1 class="t">{E(m["title"][c])}</h1>'
+            + f'<p class="meta" style="font-size:15px;color:var(--ink2);font-family:inherit" lang="ko">{E(m["title"]["ko"])}</p>'
+            + meta_line(m, c) + brief(m, c) + trn + body + related(m, allm, c) + '</main>' + FOOT + LANG_JS + '</body></html>\n')
 
 
 def page(m, allm, base):
@@ -254,7 +324,8 @@ def page(m, allm, base):
           "inLanguage": "ko", "datePublished": m['date'], "description": m['dek']['en'], "url": url,
           "author": {"@type": "Organization", "name": "Stayhungry.ASI", "url": base},
           "publisher": {"@type": "Organization", "name": "Stayhungry.ASI", "url": base}}
-    extra = '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>'
+    extra = alternates(m, base) + '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>'
+    hattr = f' data-langs="{",".join(m["langs"])}" data-home="/r/{m["slug"]}/"'
     eb = ''.join(f'<p class="eb" data-l="{c}"{"" if c == "en" else " hidden"}>RESEARCH · {E(CAT[m["category"]][c])} · {E(UI[c]["orig"])}</p>' for c in LANGS)
     if m['kind'] == 'doc':
         body = f'<article class="doc" id="full" lang="ko">{m["_body"]}</article>'
@@ -263,7 +334,7 @@ def page(m, allm, base):
         body = (f'<p id="full"><a href="app.html" target="_blank" rel="noopener">{E(UI["ko"]["open"])}</a></p>'
                 f'<iframe id="app" class="frame" src="app.html" title="{E(m["title"]["ko"])}" loading="lazy"></iframe>{FRAME_JS}')
         wide = ' class="wide"'
-    return (head(title, desc, url, 'ko', extra).replace('<body>', '<body class="w">' if wide else '<body>') + topbar() + f'<main{wide}>' + eb
+    return (head(title, desc, url, 'ko', extra, hattr).replace('<body>', '<body class="w">' if wide else '<body>') + topbar() + f'<main{wide}>' + eb
             + f'<h1 class="t" lang="ko">{E(m["title"]["ko"])}</h1>'
             + ''.join(f'<p class="meta" data-l="{c}" style="font-size:15px;color:var(--ink2);font-family:inherit"{"" if c == "en" else " hidden"} lang="{HTML_LANG[c]}">{E(m["title"][c])}</p>' for c in LANGS if c != 'ko')
             + meta_line(m) + brief(m) + body + related(m, allm) + '</main>' + FOOT + LANG_JS + '</body></html>\n')
@@ -271,18 +342,18 @@ def page(m, allm, base):
 
 def index_page(allm, base):
     url = f'{base}r/'
-    rows = ''.join(f'''<a href="/r/{m["slug"]}/"><small>{E(CAT[m["category"]]["en"])} · {E(m["date"])}</small><b>{E(m["title"]["en"])}</b><span lang="ko">{E(m["title"]["ko"])}</span><p>{E(m["dek"]["en"])}</p></a>''' for m in allm)
+    rows = ''.join(f'''<a href="{rlink(m, 'en')}"><small>{E(CAT[m["category"]]["en"])} · {E(m["date"])}</small><b>{E(m["title"]["en"])}</b><span lang="ko">{E(m["title"]["ko"])}</span><p>{E(m["dek"]["en"])}</p></a>''' for m in allm)
     css = '<style>.rel a span{display:block;font-size:14px;color:var(--ink2);margin-top:2px}.rel a p{margin:8px 0 0;font-size:14px;color:var(--mute);line-height:1.55}</style>'
     return (head('Research library · Stayhungry.ASI', f'{len(allm)} research reports on stayhungryasi.com: AI infrastructure, macro, sectors, crypto, great investors. Korean originals with briefs in 4 languages.', url, 'en', css)
             + topbar() + f'<main><p class="eb">RESEARCH LIBRARY · {len(allm)}</p><h1 class="t">Research, in full.</h1>'
-            + '<p>Every report is hosted here in its Korean original, with a brief in English, Korean, Spanish and Japanese. Interactive version: <a href="/en/#library">open the library</a> · RSS: <a href="/r/feed.xml">/r/feed.xml</a> · JSON: <a href="/data/research.json">/data/research.json</a></p>'
+            + '<p>Every report is hosted here in its Korean original with full translations in English, Spanish and Japanese where available, and a brief in all four languages. Interactive version: <a href="/en/#library">open the library</a> · RSS: <a href="/r/feed.xml">/r/feed.xml</a> · JSON: <a href="/data/research.json">/data/research.json</a></p>'
             + f'<div class="rel">{rows}</div></main>' + FOOT + '</body></html>\n')
 
 
 def rss(allm, base):
     def d(s):
         return datetime.datetime.strptime(s, '%Y-%m-%d').strftime('%a, %d %b %Y 00:00:00 +0900')
-    items = ''.join(f'''<item><title>{E(m["title"]["en"])} · {E(m["title"]["ko"])}</title><link>{base}r/{m["slug"]}/</link><guid>{base}r/{m["slug"]}/</guid><pubDate>{d(m["date"])}</pubDate><description>{E(m["dek"]["en"] + " " + m["dek"]["ko"])}</description></item>''' for m in allm)
+    items = ''.join(f'''<item><title>{E(m["title"]["en"])} · {E(m["title"]["ko"])}</title><link>{base.rstrip("/")}{rlink(m, "en")}</link><guid>{base}r/{m["slug"]}/</guid><pubDate>{d(m["date"])}</pubDate><description>{E(m["dek"]["en"] + " " + m["dek"]["ko"])}</description></item>''' for m in allm)
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel><title>Stayhungry.ASI research</title><link>{base}r/</link><description>Research from https://stayhungryasi.com. Not investment advice.</description>{items}</channel></rss>
 '''
@@ -297,17 +368,21 @@ def build(out, base='https://stayhungryasi.com/'):
         d = os.path.join(out, 'r', m['slug'])
         os.makedirs(d, exist_ok=True)
         for f in os.listdir(m['_dir']):
-            if f not in ('meta.json', 'body.html'):
+            if f != 'meta.json' and not re.fullmatch(r'body(\.\w\w)?\.html', f):
                 shutil.copy(os.path.join(m['_dir'], f), os.path.join(d, f))
         open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(page(m, allm, base))
         urls.append(f'{base}r/{m["slug"]}/')
+        for c in m['_tr']:
+            os.makedirs(os.path.join(d, c), exist_ok=True)
+            open(os.path.join(d, c, 'index.html'), 'w', encoding='utf-8').write(page_tr(m, allm, base, c))
+            urls.append(f'{base}r/{m["slug"]}/{c}/')
     open(os.path.join(out, 'r', 'index.html'), 'w', encoding='utf-8').write(index_page(allm, base))
     open(os.path.join(out, 'r', 'feed.xml'), 'w', encoding='utf-8').write(rss(allm, base))
     today = datetime.date.today().isoformat()
-    pub = [{k: v for k, v in m.items() if not k.startswith('_')} | {'url': f'{base}r/{m["slug"]}/'} for m in allm]
+    pub = [{k: v for k, v in m.items() if not k.startswith('_')} | {'url': f'{base}r/{m["slug"]}/', 'urls': {c: f'{base.rstrip("/")}{rlink(m, c)}' for c in m['langs']}} for m in allm]
     upcoming = sorted([dict(c, slug=m['slug']) for m in allm for c in m.get('checkpoints', []) if c['date'] >= today], key=lambda c: c['date'])
     doc = {'name': 'Stayhungry.ASI research library', 'updated': today, 'count': len(pub), 'feed': f'{base}r/feed.xml',
-           'rule': 'Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.',
+           'rule': 'Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals (full translations in en/es/ja where listed in langs); briefs in 4 languages. Not investment advice.',
            'credit': 'stayhungryasi.com', 'categories': CAT, 'reports': pub, 'upcoming_checkpoints': upcoming}
     open(os.path.join(out, 'data', 'research.json'), 'w', encoding='utf-8').write(json.dumps(doc, ensure_ascii=False, indent=1) + '\n')
     urls.append(f'{base}r/')

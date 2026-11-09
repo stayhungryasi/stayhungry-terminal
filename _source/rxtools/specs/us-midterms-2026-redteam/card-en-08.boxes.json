@@ -1,0 +1,418 @@
+[
+{
+"i": 0,
+"rect": [
+80,
+84,
+408,
+105
+],
+"ocr": "© STAY HUNGRY.ASI",
+"bg": "#0a0c10",
+"fg": "#eff1f5",
+"h": 21
+},
+{
+"i": 1,
+"rect": [
+859,
+83,
+993,
+114
+],
+"ocr": "08 / 09",
+"bg": "#0a0c10",
+"fg": "#aaafba",
+"h": 31
+},
+{
+"i": 2,
+"rect": [
+82,
+146,
+374,
+167
+],
+"ocr": "ELECTION NIGHT",
+"bg": "#0a0c10",
+"fg": "#d86d3b",
+"h": 21
+},
+{
+"i": 3,
+"rect": [
+444,
+146,
+543,
+167
+],
+"ocr": "NOV 3",
+"bg": "#0a0c10",
+"fg": "#d56e3c",
+"h": 21
+},
+{
+"i": 4,
+"rect": [
+616,
+146,
+651,
+167
+],
+"ocr": "El",
+"bg": "#0b0c10",
+"fg": "#dc6d39",
+"h": 21
+},
+{
+"i": 5,
+"rect": [
+81,
+207,
+526,
+255
+],
+"ocr": "What to watch",
+"bg": "#0a0c10",
+"fg": "#eff1f5",
+"h": 48
+},
+{
+"i": 6,
+"rect": [
+81,
+281,
+512,
+341
+],
+"ocr": "as polis close.",
+"bg": "#0a0c10",
+"fg": "#f46423",
+"h": 60
+},
+{
+"i": 7,
+"rect": [
+82,
+392,
+205,
+415
+],
+"ocr": "7:00 PM",
+"bg": "#0a0c10",
+"fg": "#ea672a",
+"h": 23
+},
+{
+"i": 8,
+"rect": [
+275,
+392,
+615,
+421
+],
+"ocr": "Georgia - South Carolina",
+"bg": "#0a0c10",
+"fg": "#eff1f5",
+"h": 29
+},
+{
+"i": 9,
+"rect": [
+276,
+433,
+852,
+456
+],
+"ocr": "If South Carolina is close, read it as a “wave” signal",
+"bg": "#0a0c10",
+"fg": "#adb0bc",
+"h": 23
+},
+{
+"i": 10,
+"rect": [
+82,
+492,
+205,
+516
+],
+"ocr": "7:30 PM",
+"bg": "#0a0c10",
+"fg": "#e9682a",
+"h": 24
+},
+{
+"i": 11,
+"rect": [
+275,
+492,
+567,
+515
+],
+"ocr": "Ohio :- North Carolina",
+"bg": "#0a0c10",
+"fg": "#f1f2f6",
+"h": 23
+},
+{
+"i": 12,
+"rect": [
+275,
+533,
+944,
+556
+],
+"ocr": "Ohio Senate: markets 70.5% vs model 55%, the widest gap",
+"bg": "#0a0c10",
+"fg": "#adb0bc",
+"h": 23
+},
+{
+"i": 13,
+"rect": [
+275,
+591,
+595,
+614
+],
+"ocr": "Texas - Maine - Kansas",
+"bg": "#0a0c10",
+"fg": "#eff1f5",
+"h": 23
+},
+{
+"i": 14,
+"rect": [
+82,
+592,
+205,
+614
+],
+"ocr": "8:00 PM",
+"bg": "#0a0c10",
+"fg": "#ec672b",
+"h": 22
+},
+{
+"i": 15,
+"rect": [
+276,
+632,
+936,
+655
+],
+"ocr": "If the GOP holds 2+ battlegrounds, the Senate is a coin flip",
+"bg": "#0a0d10",
+"fg": "#adb0bd",
+"h": 23
+},
+{
+"i": 16,
+"rect": [
+81,
+692,
+205,
+714
+],
+"ocr": "9:00 PM",
+"bg": "#0a0c10",
+"fg": "#ed6729",
+"h": 22
+},
+{
+"i": 17,
+"rect": [
+275,
+692,
+339,
+714
+],
+"ocr": "lowa",
+"bg": "#0a0c10",
+"fg": "#f1f2f6",
+"h": 22
+},
+{
+"i": 18,
+"rect": [
+275,
+732,
+800,
+755
+],
+"ocr": "A Democratic win here all but locks in a sweep",
+"bg": "#0a0c10",
+"fg": "#adb1bc",
+"h": 23
+},
+{
+"i": 19,
+"rect": [
+81,
+792,
+205,
+814
+],
+"ocr": "9:30 AM",
+"bg": "#0a0c10",
+"fg": "#ec672a",
+"h": 22
+},
+{
+"i": 20,
+"rect": [
+275,
+792,
+604,
+820
+],
+"ocr": "Nov 4 - US market open",
+"bg": "#0a0c10",
+"fg": "#eff1f5",
+"h": 28
+},
+{
+"i": 21,
+"rect": [
+275,
+832,
+908,
+855
+],
+"ocr": "S&P beyond *1.5% or the 10-year back at 5% = markets",
+"bg": "#0a0c10",
+"fg": "#adb0bb",
+"h": 23
+},
+{
+"i": 22,
+"rect": [
+276,
+865,
+477,
+883
+],
+"ocr": "misread the result",
+"bg": "#0a0c11",
+"fg": "#aeb1bd",
+"h": 18
+},
+{
+"i": 23,
+"rect": [
+81,
+924,
+205,
+947
+],
+"ocr": "~1 week",
+"bg": "#0a0c10",
+"fg": "#e8682b",
+"h": 23
+},
+{
+"i": 24,
+"rect": [
+275,
+924,
+485,
+947
+],
+"ocr": "Maine final call",
+"bg": "#0a0c10",
+"fg": "#f1f2f6",
+"h": 23
+},
+{
+"i": 25,
+"rect": [
+276,
+965,
+792,
+988
+],
+"ocr": "Ranked-choice tabulation can delay the result",
+"bg": "#0b0d11",
+"fg": "#adb1bd",
+"h": 23
+},
+{
+"i": 26,
+"rect": [
+106,
+1067,
+926,
+1091
+],
+"ocr": "Where early votes are counted first, early Democratic leads can look",
+"bg": "#13161e",
+"fg": "#e9ecf3",
+"h": 24
+},
+{
+"i": 27,
+"rect": [
+107,
+1103,
+971,
+1127
+],
+"ocr": "inflated. Options imply +£1.3-1.5% for the S&P. In Seoul, the count lands in",
+"bg": "#13161e",
+"fg": "#edf0f7",
+"h": 24
+},
+{
+"i": 28,
+"rect": [
+108,
+1139,
+373,
+1158
+],
+"ocr": "KOSPI hours on Nov 4.",
+"bg": "#14171f",
+"fg": "#edf0f7",
+"h": 19
+},
+{
+"i": 29,
+"rect": [
+80,
+1250,
+247,
+1269
+],
+"ocr": "@stayhungryasi",
+"bg": "#0a0c10",
+"fg": "#acafb9",
+"h": 19
+},
+{
+"i": 30,
+"rect": [
+286,
+1250,
+596,
+1269
+],
+"ocr": "https://t.me/stayhungryasi",
+"bg": "#0a0c10",
+"fg": "#adafb9",
+"h": 19
+},
+{
+"i": 31,
+"rect": [
+723,
+1250,
+998,
+1269
+],
+"ocr": "Times: The Green Papers",
+"bg": "#0a0c10",
+"fg": "#acb0ba",
+"h": 19
+}
+]

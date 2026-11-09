@@ -1,0 +1,171 @@
+[
+{
+"i": 0,
+"rect": [
+80,
+93,
+396,
+111
+],
+"ocr": "Al DELEVERAGING CHECK",
+"bg": "#0e1726",
+"fg": "#eab859",
+"h": 18
+},
+{
+"i": 1,
+"rect": [
+80,
+93,
+998,
+115
+],
+"ocr": "Al DELEVERAGING CHECK Nov 6, 2026",
+"bg": "#0e1726",
+"fg": "#e2b55f",
+"h": 22
+},
+{
+"i": 2,
+"rect": [
+863,
+93,
+998,
+111
+],
+"ocr": "Nov 6, 2026",
+"bg": "#0e1726",
+"fg": "#9ca6b5",
+"h": 18
+},
+{
+"i": 3,
+"rect": [
+82,
+180,
+519,
+212
+],
+"ocr": "US chip index (SOX) overnight",
+"bg": "#0e1726",
+"fg": "#edb651",
+"h": 32
+},
+{
+"i": 4,
+"rect": [
+91,
+343,
+964,
+518
+],
+"ocr": "-12.25%",
+"bg": "#0e1726",
+"fg": "#ff5a5f",
+"h": 175
+},
+{
+"i": 5,
+"rect": [
+81,
+554,
+800,
+592
+],
+"ocr": "Worst drop since March 2020 (closing basis)",
+"bg": "#0e1726",
+"fg": "#c7d0df",
+"h": 38
+},
+{
+"i": 6,
+"rect": [
+79,
+722,
+627,
+784
+],
+"ocr": "Al didn't break",
+"bg": "#0e1726",
+"fg": "#f3f6fc",
+"h": 62
+},
+{
+"i": 7,
+"rect": [
+82,
+813,
+685,
+892
+],
+"ocr": "The leverage did",
+"bg": "#0e1726",
+"fg": "#f3b541",
+"h": 79
+},
+{
+"i": 8,
+"rect": [
+83,
+925,
+852,
+959
+],
+"ocr": "Fund liquidations and restructurings, how leveraged",
+"bg": "#0e1726",
+"fg": "#c8d2e1",
+"h": 34
+},
+{
+"i": 9,
+"rect": [
+81,
+975,
+779,
+1009
+],
+"ocr": "selling chains together, and the next two weeks",
+"bg": "#0e1726",
+"fg": "#c8d2e1",
+"h": 34
+},
+{
+"i": 10,
+"rect": [
+81,
+1274,
+271,
+1296
+],
+"ocr": "stayhungryasi.com",
+"bg": "#0e1726",
+"fg": "#7f899a",
+"h": 22
+},
+{
+"i": 11,
+"rect": [
+81,
+1273,
+999,
+1296
+],
+"ocr": "stayhungryasi.com 01/10",
+"bg": "#0e1726",
+"fg": "#677082",
+"h": 23
+},
+{
+"i": 12,
+"rect": [
+930,
+1273,
+999,
+1295
+],
+"ocr": "01/10",
+"bg": "#0e1726",
+"fg": "#f1f7ff",
+"h": 22
+}
+]

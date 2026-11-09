@@ -1,0 +1,305 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "card-05.webp",
+ "boxes": "card-05.boxes.json",
+ "langs": [
+  "en",
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "rect": [
+    81,
+    96,
+    218,
+    120
+   ],
+   "text": {
+    "en": "==04== Choosing the gauge",
+    "es": "==04== Elección del indicador",
+    "ja": "==04== 指標の選択"
+   },
+   "weight": "bold",
+   "size": 24,
+   "color": "#cad3e1",
+   "accent": "#f3b541",
+   "expand": [
+    0,
+    0,
+    380,
+    0
+   ]
+  },
+  {
+   "rect": [
+    730,
+    94,
+    1000,
+    122
+   ],
+   "text": {
+    "en": "From each one's own peak · 11/6 close",
+    "es": "Desde el máximo de cada uno · cierre del 6 de nov.",
+    "ja": "各自の高値比 · 11/6終値"
+   },
+   "size": 23,
+   "color": "#8c96a6",
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    250,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "rect": [
+    82,
+    150,
+    668,
+    307
+   ],
+   "text": {
+    "en": "Don't watch Nvidia —====\nwatch the ==chip index==",
+    "es": "No hay que mirar a Nvidia,====\nsino al ==índice de chips==",
+    "ja": "エヌビディアではなく\n==半導体指数==で見るべきだ"
+   },
+   "weight": "black",
+   "size": 62,
+   "lh": 82,
+   "color": "#f3f6fc",
+   "accent": "#ff5a61",
+   "expand": [
+    0,
+    0,
+    320,
+    0
+   ]
+  },
+  {
+   "rect": [
+    82,
+    350,
+    975,
+    426
+   ],
+   "text": {
+    "en": "BofA's original is a sector index, not individual stocks. Chart a single leader and you only see the winner that already survived.",
+    "es": "El original de BofA es un índice sectorial, no acciones sueltas. Con un solo líder, solo se ve al ganador que ya sobrevivió.",
+    "ja": "BofAの原典は個別株ではなく業種指数だ。リーダー株1銘柄で描けば、すでに生き残った勝者だけを見ることになる。"
+   },
+   "size": 28,
+   "lh": 48,
+   "color": "#c8d1e1",
+   "expand": [
+    0,
+    0,
+    20,
+    4
+   ]
+  },
+  {
+   "rect": [
+    106,
+    494,
+    196,
+    520
+   ],
+   "text": {
+    "en": "Nvidia",
+    "es": "Nvidia",
+    "ja": "エヌビディア"
+   },
+   "size": 23.5,
+   "color": "#8c98b2",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    180,
+    0
+   ]
+  },
+  {
+   "rect": [
+    418,
+    494,
+    582,
+    524
+   ],
+   "text": {
+    "en": "Semiconductor index SOX",
+    "es": "Índice de chips SOX",
+    "ja": "半導体指数 SOX"
+   },
+   "size": 23.5,
+   "color": "#8c98b0",
+   "nowrap": true,
+   "minscale": 0.7,
+   "expand": [
+    0,
+    0,
+    105,
+    0
+   ]
+  },
+  {
+   "rect": [
+    730,
+    494,
+    838,
+    524
+   ],
+   "text": {
+    "en": "Nasdaq 100",
+    "es": "Nasdaq 100",
+    "ja": "ナスダック100"
+   },
+   "size": 23.5,
+   "color": "#8b97b0",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    150,
+    0
+   ]
+  },
+  {
+   "rect": [
+    107,
+    602,
+    206,
+    627
+   ],
+   "text": {
+    "en": "10/6 peak",
+    "es": "máx. del 6 de oct.",
+    "ja": "10/6高値"
+   },
+   "size": 24,
+   "color": "#8c98b1",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    160,
+    0
+   ]
+  },
+  {
+   "rect": [
+    418,
+    602,
+    518,
+    627
+   ],
+   "text": {
+    "en": "6/22 peak",
+    "es": "máx. del 22 de jun.",
+    "ja": "6/22高値"
+   },
+   "size": 24,
+   "color": "#8c98b1",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    160,
+    0
+   ]
+  },
+  {
+   "rect": [
+    730,
+    602,
+    830,
+    627
+   ],
+   "text": {
+    "en": "10/6 peak",
+    "es": "máx. del 6 de oct.",
+    "ja": "10/6高値"
+   },
+   "size": 24,
+   "color": "#8c98b0",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    160,
+    0
+   ]
+  },
+  {
+   "rect": [
+    115,
+    712,
+    935,
+    792
+   ],
+   "text": {
+    "en": "The sector had already turned in June, but the leader held out until October. As of 11/5, 28 of the 30 SOXX stocks were in a bear market, and 15 were down by half or more.",
+    "es": "El sector ya había girado en junio, pero el líder resistió hasta octubre. Al 5 de noviembre, 28 de las 30 acciones del SOXX estaban en mercado bajista y 15 habían caído a la mitad o más.",
+    "ja": "業種は6月にすでに崩れていたが、リーダーは10月まで持ちこたえた。\n11/5時点でSOXX構成30銘柄のうち28銘柄が弱気相場、\n15銘柄は半値以下。"
+   },
+   "size": 27,
+   "lh": 42,
+   "color": "#c6d2e7",
+   "valign": "middle",
+   "expand": [
+    0,
+    18,
+    30,
+    18
+   ]
+  },
+  {
+   "rect": [
+    115,
+    876,
+    950,
+    966
+   ],
+   "text": {
+    "en": "In 1900, railroads were **==63%==** of US stock market value: the railroad index was both a sector and the market.====\nSo today we watch **SOX (sector) + Nasdaq 100 (market)** together.",
+    "es": "En 1900, los ferrocarriles eran el **==63%==** de la capitalización bursátil de EE. UU.: el índice ferroviario era a la vez sector y mercado. Por eso hoy se miran juntos **SOX (sector) + Nasdaq 100 (mercado)**.",
+    "ja": "1900年、鉄道は米国株式時価総額の**==63%==**を占めた。\n鉄道指数は業種であり市場でもあったわけだ。\nだから今は**SOX（業種）+ ナスダック100（市場）**を併せて見る。"
+   },
+   "size": 27,
+   "lh": 42,
+   "color": "#cbd6ea",
+   "accent": "#f3b541",
+   "valign": "middle",
+   "expand": [
+    0,
+    18,
+    20,
+    16
+   ]
+  },
+  {
+   "rect": [
+    81,
+    1263,
+    632,
+    1288
+   ],
+   "text": {
+    "en": "Source: Yahoo Finance, Benzinga, Credit Suisse Yearbook",
+    "es": "Fuente: Yahoo Finance, Benzinga, Credit Suisse Yearbook",
+    "ja": "出所：Yahoo Finance, Benzinga, Credit Suisse Yearbook"
+   },
+   "size": 23,
+   "color": "#8d98a7",
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ]
+  }
+ ]
+}

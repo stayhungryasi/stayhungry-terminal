@@ -1,0 +1,459 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "src": "card-en-05.webp",
+ "boxes": "card-en-05.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "keep": [
+  [
+   78,
+   88,
+   113,
+   121
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "Vías de contagio",
+    "ja": "伝染経路"
+   },
+   "size": 24.5,
+   "color": "#9da7b4",
+   "expand": [
+    -36,
+    0,
+    260,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Nivel de riesgo: juicio del autor",
+    "ja": "リスク度は筆者の判断"
+   },
+   "size": 24.5,
+   "align": "right",
+   "expand": [
+    120,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "¿Hacia dónde ==podría extenderse==?",
+    "ja": "どこへ==波及し得る==のか"
+   },
+   "weight": "black",
+   "size": 60,
+   "color": "#f3f5fb",
+   "accent": "#ff5a61",
+   "expand": [
+    3,
+    0,
+    270,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    4,
+    9
+   ],
+   "text": {
+    "es": "ETF apalancados",
+    "ja": "レバレッジETF"
+   },
+   "weight": "bold",
+   "size": 37,
+   "lh": 48,
+   "color": "#f3f7fe",
+   "expand": [
+    2,
+    0,
+    70,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "boxes": [
+    6,
+    10
+   ],
+   "text": {
+    "es": "Ventas mecánicas al cierre en cada día de caída",
+    "ja": "下落日ごとに引け際の機械的売り"
+   },
+   "size": 27,
+   "lh": 38,
+   "color": "#c8d1e0",
+   "expand": [
+    0,
+    0,
+    38,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "Muy alto",
+    "ja": "非常に高い"
+   },
+   "weight": "bold",
+   "size": 25,
+   "color": "#f0626a",
+   "align": "right",
+   "expand": [
+    60,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "rect": [
+    82,
+    476,
+    347,
+    514
+   ],
+   "text": {
+    "es": "Prime brokers",
+    "ja": "プライムブローカー"
+   },
+   "weight": "bold",
+   "size": 37,
+   "color": "#f1f6fc",
+   "expand": [
+    2,
+    0,
+    -12,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    11,
+    15
+   ],
+   "rect": [
+    351,
+    481,
+    757,
+    511
+   ],
+   "text": {
+    "es": "El 16% del crédito prime de Goldman, ligado a memorias de IA (fin de junio). Apalancamiento ~310%",
+    "ja": "ゴールドマンのプライム融資の\n16%がAIメモリー株に連動（6月末）。\nレバレッジ約310%"
+   },
+   "size": 27,
+   "lh": 38,
+   "color": "#c8d1e0",
+   "expand": [
+    0,
+    0,
+    46,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "Alto",
+    "ja": "高い"
+   },
+   "weight": "bold",
+   "size": 25,
+   "color": "#f26168",
+   "align": "right",
+   "expand": [
+    60,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    18
+   ],
+   "text": {
+    "es": "Concentración",
+    "ja": "クラウディング"
+   },
+   "weight": "bold",
+   "size": 37,
+   "color": "#f3f7fe",
+   "expand": [
+    2,
+    0,
+    75,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    17,
+    21
+   ],
+   "text": {
+    "es": "Los hedge funds revirtieron en 5 días toda la compra neta de IA desde 2025",
+    "ja": "ヘッジファンドが5日間で\n2025年以降のAI買い越しを全て解消"
+   },
+   "size": 27,
+   "lh": 38,
+   "color": "#c8d1e0",
+   "expand": [
+    0,
+    0,
+    56,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "Alto",
+    "ja": "高い"
+   },
+   "weight": "bold",
+   "size": 25,
+   "color": "#f36066",
+   "align": "right",
+   "expand": [
+    60,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    22,
+    27
+   ],
+   "text": {
+    "es": "Crédito en Taiwán",
+    "ja": "台湾信用取引"
+   },
+   "weight": "bold",
+   "size": 37,
+   "lh": 51,
+   "color": "#f3f8ff",
+   "expand": [
+    2,
+    0,
+    125,
+    0
+   ],
+   "valign": "middle"
+  },
+  {
+   "boxes": [
+    24,
+    28
+   ],
+   "text": {
+    "es": "El crédito apenas bajó pese a la caída del índice: margen para más ventas forzadas",
+    "ja": "指数下落でも信用残高の減少が\n小さく、追加売りの余地"
+   },
+   "size": 27,
+   "lh": 38,
+   "color": "#c8d1e1",
+   "expand": [
+    0,
+    0,
+    20,
+    36
+   ]
+  },
+  {
+   "boxes": [
+    26
+   ],
+   "text": {
+    "es": "Alto",
+    "ja": "高い"
+   },
+   "weight": "bold",
+   "size": 25,
+   "color": "#f36067",
+   "align": "right",
+   "expand": [
+    60,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    31
+   ],
+   "text": {
+    "es": "Crédito bancario",
+    "ja": "銀行信用"
+   },
+   "weight": "bold",
+   "size": 37,
+   "color": "#f4f7fe",
+   "expand": [
+    2,
+    0,
+    45,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    29,
+    34
+   ],
+   "text": {
+    "es": "Límites de crédito a centros de datos agotados; intentos de vender préstamos",
+    "ja": "データセンター融資枠が枯渇、\n融資の売却を模索"
+   },
+   "size": 27,
+   "lh": 38,
+   "color": "#c8d1e1",
+   "expand": [
+    0,
+    0,
+    57,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    33
+   ],
+   "text": {
+    "es": "Medio",
+    "ja": "中程度"
+   },
+   "weight": "bold",
+   "size": 25,
+   "color": "#edb755",
+   "align": "right",
+   "expand": [
+    40,
+    3,
+    0,
+    3
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    38
+   ],
+   "text": {
+    "es": "Crédito en Corea",
+    "ja": "韓国信用取引"
+   },
+   "weight": "bold",
+   "size": 37,
+   "color": "#f2f7fe",
+   "expand": [
+    2,
+    0,
+    12,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    36
+   ],
+   "rect": [
+    351,
+    1097,
+    560,
+    1127
+   ],
+   "text": {
+    "es": "El crédito ya bajó de ₩34.3 billones a ₩28.6 billones",
+    "ja": "信用残高は34.3兆→28.6兆ウォンと、すでに相当部分を整理"
+   },
+   "size": 27,
+   "lh": 38,
+   "color": "#c8d1e1",
+   "expand": [
+    0,
+    0,
+    64,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    40
+   ],
+   "text": {
+    "es": "Medio",
+    "ja": "中程度"
+   },
+   "weight": "bold",
+   "size": 25,
+   "color": "#ecb751",
+   "align": "right",
+   "expand": [
+    40,
+    3,
+    0,
+    3
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    41
+   ],
+   "text": {
+    "es": "Fuentes: FT, Goldman Sachs PB (vía prensa), Taiwan News, Seoul Economic Daily",
+    "ja": "出所：FT、Goldman Sachs PB（報道経由）、Taiwan News、ソウル経済新聞"
+   },
+   "size": 22,
+   "color": "#7f8999",
+   "expand": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "nowrap": true
+  }
+ ]
+}

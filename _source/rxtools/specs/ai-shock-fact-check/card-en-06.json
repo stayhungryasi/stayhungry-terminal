@@ -1,0 +1,183 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-06.webp",
+ "boxes": "card-en-06.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "boxes": [
+    3,
+    4
+   ],
+   "text": {
+    "es": "Spread del CDS a 5 años de CoreWeave, 15 de octubre. Se multiplicó por 2.6 en un año y superó la línea que suele considerarse de crédito en dificultades.",
+    "ja": "コアウィーブの5年CDSスプレッド、10月15日。\n1年で2.6倍になり、通常ディストレスとみなされる水準を超えた。"
+   },
+   "color": "#d5d8de",
+   "expand": [
+    0,
+    0,
+    40,
+    45
+   ]
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "1,000bp: umbral habitual de dificultades",
+    "ja": "1,000bp 通常のディストレス水準"
+   },
+   "color": "#ec6a2c",
+   "size": 18,
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    120,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "text": {
+    "es": "Hace 1 año (implícito)",
+    "ja": "1年前（逆算）"
+   },
+   "color": "#d0d3d9",
+   "size": 18,
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    40,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "Cierre del 15 oct.",
+    "ja": "10月15日終値"
+   },
+   "color": "#d0d3d9",
+   "size": 18,
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    50,
+    0,
+    50,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "Máximo intradía del 15 oct.",
+    "ja": "10月15日日中高値"
+   },
+   "color": "#d0d3d9",
+   "size": 18,
+   "align": "center",
+   "nowrap": true,
+   "expand": [
+    40,
+    0,
+    40,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    15,
+    16
+   ],
+   "text": {
+    "es": "El rendimiento de sus bonos con vencimiento en 2031 fue de 15.78%. El mercado de alto rendimiento estuvo prácticamente paralizado hasta que terminó la elección.",
+    "ja": "2031年満期債の利回りは15.78%。ハイイールド市場は\n選挙が終わるまで事実上止まっていた。"
+   },
+   "weight": "medium",
+   "color": "#f8f9fd",
+   "size": 33,
+   "lh": 50,
+   "valign": "bottom",
+   "expand": [
+    0,
+    60,
+    25,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    17
+   ],
+   "text": {
+    "es": "Fuente: CNBC (15 oct., 21 oct.). El valor de hace 1 año se deriva del +164% interanual",
+    "ja": "出所：CNBC（10月15日、10月21日）。1年前の値は前年比+164%から逆算"
+   },
+   "color": "#aaadb4",
+   "expand": [
+    0,
+    0,
+    200,
+    0
+   ],
+   "nowrap": true
+  }
+ ],
+ "keep": [
+  [
+   198,
+   370,
+   252,
+   409
+  ]
+ ],
+ "erase": [
+  [
+   700,
+   404,
+   968,
+   444
+  ],
+  [
+   880,
+   446,
+   968,
+   482
+  ]
+ ]
+}

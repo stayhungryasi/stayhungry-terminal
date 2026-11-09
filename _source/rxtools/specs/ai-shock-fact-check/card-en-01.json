@@ -1,0 +1,94 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-01.webp",
+ "boxes": "card-en-01.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    1
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "boxes": [
+    3,
+    4,
+    5
+   ],
+   "text": {
+    "es": "¿Es la IA una ilusión?",
+    "ja": "AIは\n幻想\nなのか"
+   },
+   "weight": "black",
+   "color": "#eff1f5",
+   "size": 120,
+   "lh": 128,
+   "expand": [
+    0,
+    0,
+    150,
+    30
+   ]
+  },
+  {
+   "boxes": [
+    7,
+    9,
+    10
+   ],
+   "text": {
+    "es": "Verificamos cifra por cifra el choque de la IA del 5 de noviembre",
+    "ja": "11月5日のAIショックを\n数字で全件検証した"
+   },
+   "color": "#d5d8e0",
+   "size": 32,
+   "lh": 50,
+   "expand": [
+    0,
+    0,
+    70,
+    50
+   ]
+  },
+  {
+   "boxes": [
+    17,
+    18,
+    19
+   ],
+   "text": {
+    "es": "De 100 dados de la oblea, ==**44**== están quemados: el 44.2% que el KOSPI ha perdido desde su máximo del 18 de junio.",
+    "ja": "ウェハーのダイ100個のうち==**44個**==を焼いた。\nKOSPIが6月18日の高値から失った44.2%だ。"
+   },
+   "color": "#d7dae0",
+   "accent": "#f06021",
+   "size": 23,
+   "lh": 36,
+   "expand": [
+    0,
+    0,
+    20,
+    0
+   ]
+  }
+ ],
+ "_note": "Rendered with a wrapper that restores the wafer under the English '?' (x455-610,y445-588) from the Korean card-01.webp after erasing; plain img_render.py leaves a smudge there."
+}

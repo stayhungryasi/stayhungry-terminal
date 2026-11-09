@@ -1,0 +1,236 @@
+[
+{
+"i": 0,
+"rect": [
+83,
+76,
+395,
+97
+],
+"ocr": "Al shock fact-check Nov 6, 2026",
+"bg": "#0a0c10",
+"fg": "#cdd0d5",
+"h": 21
+},
+{
+"i": 1,
+"rect": [
+942,
+77,
+994,
+97
+],
+"ocr": "05/12",
+"bg": "#0a0c10",
+"fg": "#aeb1b8",
+"h": 20
+},
+{
+"i": 2,
+"rect": [
+93,
+189,
+649,
+377
+],
+"ocr": "+ 799%",
+"bg": "#0a0c10",
+"fg": "#3090dc",
+"h": 188
+},
+{
+"i": 3,
+"rect": [
+83,
+411,
+964,
+439
+],
+"ocr": "Average B200 GPU rental over the three months to late September. In a",
+"bg": "#0a0c10",
+"fg": "#d5d8de",
+"h": 28
+},
+{
+"i": 4,
+"rect": [
+85,
+449,
+511,
+478
+],
+"ocr": "glut, this is the price that falls first.",
+"bg": "#0b0c11",
+"fg": "#d5d9df",
+"h": 29
+},
+{
+"i": 5,
+"rect": [
+245,
+565,
+396,
+588
+],
+"ocr": "B200 avg rental",
+"bg": "#0a0c10",
+"fg": "#fbfdff",
+"h": 23
+},
+{
+"i": 6,
+"rect": [
+245,
+565,
+949,
+608
+],
+"ocr": "Dr A",
+"bg": "#0a0c11",
+"fg": "#2f8fde",
+"h": 43
+},
+{
+"i": 7,
+"rect": [
+235,
+592,
+397,
+609
+],
+"ocr": "3 months — $8.01/hr",
+"bg": "#0a0c11",
+"fg": "#a8acb1",
+"h": 17
+},
+{
+"i": 8,
+"rect": [
+157,
+655,
+698,
+701
+],
+"ocr": "H100 1-yr contract index | | 0",
+"bg": "#0a0c10",
+"fg": "#2f8fde",
+"h": 46
+},
+{
+"i": 9,
+"rect": [
+157,
+656,
+397,
+678
+],
+"ocr": "H100 1-yr contract index",
+"bg": "#0a0c10",
+"fg": "#fbfdff",
+"h": 22
+},
+{
+"i": 10,
+"rect": [
+290,
+683,
+396,
+699
+],
+"ocr": "$1.70 > $2.35",
+"bg": "#0a0c11",
+"fg": "#a5a6ad",
+"h": 16
+},
+{
+"i": 11,
+"rect": [
+185,
+747,
+397,
+769
+],
+"ocr": "Nebius H100 list price",
+"bg": "#0a0c10",
+"fg": "#fafcff",
+"h": 22
+},
+{
+"i": 12,
+"rect": [
+407,
+748,
+582,
+790
+],
+"ocr": "I ar",
+"bg": "#0a0c13",
+"fg": "#4195de",
+"h": 42
+},
+{
+"i": 13,
+"rect": [
+242,
+774,
+396,
+791
+],
+"ocr": "$3.85 — $4.50, Oct 1",
+"bg": "#0a0c11",
+"fg": "#a7a9b0",
+"h": 17
+},
+{
+"i": 14,
+"rect": [
+86,
+1072,
+968,
+1107
+],
+"ocr": "In the 2001 telecom bust, bandwidth prices collapsed first",
+"bg": "#0a0c10",
+"fg": "#f8f9fd",
+"h": 35
+},
+{
+"i": 15,
+"rect": [
+84,
+1122,
+496,
+1157
+],
+"ocr": "That signal isn't here yet.",
+"bg": "#0a0c10",
+"fg": "#f8f9fd",
+"h": 35
+},
+{
+"i": 16,
+"rect": [
+84,
+1179,
+740,
+1198
+],
+"ocr": "Sources: SemiAnalysis index (via Shattered, Oct 25), Uvik GPU Price Index (Nov)",
+"bg": "#0a0c11",
+"fg": "#aaadb4",
+"h": 19
+},
+{
+"i": 17,
+"rect": [
+84,
+1260,
+282,
+1282
+],
+"ocr": "stayhungryasi.com",
+"bg": "#0a0c10",
+"fg": "#e3733f",
+"h": 22
+}
+]

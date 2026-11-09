@@ -1,0 +1,376 @@
+{
+ "slug": "ai-deleveraging-2026-11",
+ "src": "card-en-06.webp",
+ "boxes": "card-en-06.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "keep": [
+  [
+   78,
+   86,
+   113,
+   121
+  ],
+  [
+   80,
+   484,
+   102,
+   507
+  ],
+  [
+   608,
+   484,
+   630,
+   507
+  ]
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "Tecnología vs. financiamiento",
+    "ja": "技術 vs 資金"
+   },
+   "size": 24.5,
+   "color": "#9da7b3",
+   "expand": [
+    -36,
+    0,
+    260,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "Registro S-1 de Anthropic",
+    "ja": "Anthropic S-1開示"
+   },
+   "size": 24.5,
+   "align": "right",
+   "expand": [
+    160,
+    0,
+    0,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "Pérdida neta de US$80,700 M,",
+    "ja": "純損失807億ドル、"
+   },
+   "weight": "black",
+   "size": 64,
+   "color": "#f2f6fc",
+   "expand": [
+    0,
+    0,
+    350,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    4
+   ],
+   "text": {
+    "es": "en su mayoría contable",
+    "ja": "大半は帳簿上の損失"
+   },
+   "weight": "black",
+   "size": 64,
+   "color": "#f2b542",
+   "expand": [
+    4,
+    0,
+    420,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "Composición de la pérdida neta del primer semestre de 2026",
+    "ja": "2026年上半期の純損失の内訳"
+   },
+   "size": 26,
+   "expand": [
+    0,
+    0,
+    480,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "rect": [
+    100,
+    398,
+    885,
+    434
+   ],
+   "text": {
+    "es": "Pérdida no monetaria por valoración US$72,400 M",
+    "ja": "非現金の評価損 724億ドル"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#f5f7fb",
+   "align": "center",
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "Valor razonable de convertibles y SAFE (90%)",
+    "ja": "転換社債・SAFEの公正価値変動（90%）"
+   },
+   "size": 23.5,
+   "color": "#c8d1e1",
+   "expand": [
+    -30,
+    0,
+    12,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "Otros (10%)",
+    "ja": "その他（10%）"
+   },
+   "size": 23.5,
+   "color": "#c8d1e1",
+   "expand": [
+    -30,
+    0,
+    150,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "Ingresos del primer semestre",
+    "ja": "上半期売上高"
+   },
+   "size": 24.3,
+   "expand": [
+    0,
+    0,
+    280,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "Utilidad operativa del 2T",
+    "ja": "第2四半期営業利益"
+   },
+   "size": 24.5,
+   "expand": [
+    0,
+    0,
+    160,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    11
+   ],
+   "text": {
+    "es": "US$16,290 M",
+    "ja": "162.9億ドル"
+   },
+   "weight": "bold",
+   "size": 58,
+   "color": "#3fcba0",
+   "expand": [
+    0,
+    0,
+    165,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    12
+   ],
+   "text": {
+    "es": "+US$974 M",
+    "ja": "+9.74億ドル"
+   },
+   "weight": "bold",
+   "size": 58,
+   "color": "#3fcb9f",
+   "expand": [
+    0,
+    0,
+    175,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "Año anterior: US$1,160 M → ~14 veces",
+    "ja": "前年同期11.6億ドル → 約14倍"
+   },
+   "size": 22.5,
+   "color": "#c4d0e5",
+   "expand": [
+    0,
+    0,
+    70,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "Flujo operativo del semestre +US$3,900 M",
+    "ja": "上半期営業キャッシュフロー +39億ドル"
+   },
+   "size": 23,
+   "color": "#c4d1e5",
+   "expand": [
+    0,
+    0,
+    90,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    15
+   ],
+   "text": {
+    "es": "La carga del otro lado",
+    "ja": "反対側の負担"
+   },
+   "size": 24.7,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    16
+   ],
+   "text": {
+    "es": "Compras y arrendamientos: ~US$895,400 M",
+    "ja": "購入・リース契約 約8,954億ドル"
+   },
+   "weight": "bold",
+   "size": 45,
+   "color": "#ff5a61",
+   "expand": [
+    0,
+    0,
+    62,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    17
+   ],
+   "text": {
+    "es": "A fines de septiembre. La base del riesgo financiero",
+    "ja": "9月末時点。金融リスクの根拠"
+   },
+   "size": 22.6,
+   "color": "#c4d0e5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true
+  },
+  {
+   "boxes": [
+    18,
+    19
+   ],
+   "text": {
+    "es": "La demanda es real. Lo que hoy se tambalea no es la tecnología, sino el apalancamiento y el financiamiento.",
+    "ja": "需要は本物だ。いま揺らいでいるのは\n技術ではなく、レバレッジと資金調達だ。"
+   },
+   "weight": "bold",
+   "size": 32,
+   "lh": 45,
+   "color": "#0e1621",
+   "expand": [
+    0,
+    16,
+    186,
+    16
+   ],
+   "valign": "middle"
+  },
+  {
+   "boxes": [
+    20
+   ],
+   "text": {
+    "es": "Fuentes: SEC EDGAR S-1, Yahoo Finance, TradingKey",
+    "ja": "出所：SEC EDGAR S-1、Yahoo Finance、TradingKey"
+   },
+   "size": 22,
+   "color": "#7e8899",
+   "expand": [
+    0,
+    0,
+    250,
+    0
+   ],
+   "nowrap": true
+  }
+ ]
+}

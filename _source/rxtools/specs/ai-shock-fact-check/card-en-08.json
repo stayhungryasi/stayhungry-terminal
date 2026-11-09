@@ -1,0 +1,119 @@
+{
+ "slug": "ai-shock-fact-check",
+ "src": "card-en-08.webp",
+ "boxes": "card-en-08.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    0
+   ],
+   "text": {
+    "es": "**Verificación del choque de la IA** ==6 nov 2026==",
+    "ja": "**AIショック検証ノート** ==2026年11月6日=="
+   },
+   "weight": "medium",
+   "color": "#dee1e7",
+   "accent": "#babdc5",
+   "expand": [
+    0,
+    0,
+    400,
+    0
+   ],
+   "nowrap": true,
+   "size": 21
+  },
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "El éxito de la IA",
+    "ja": "AIの成功が"
+   },
+   "weight": "black",
+   "color": "#f2f3f7",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    270,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    3
+   ],
+   "text": {
+    "es": "fabrica su propio freno",
+    "ja": "ブレーキを生む"
+   },
+   "weight": "black",
+   "color": "#f2f3f7",
+   "size": 64,
+   "expand": [
+    0,
+    0,
+    270,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    12,
+    15,
+    17,
+    19
+   ],
+   "text": {
+    "es": "Parte de la capacidad planeada de centros de datos en EE. UU. que está en estados que, desde enero, controlarán demócratas a favor de la moratoria",
+    "ja": "米国で計画中のデータセンター\n容量のうち、モラトリアムを\n支持する民主党が来年1月から\n掌握する州の割合"
+   },
+   "expand": [
+    0,
+    0,
+    15,
+    150
+   ]
+  },
+  {
+   "boxes": [
+    20,
+    21,
+    22
+   ],
+   "text": {
+    "es": "Las facturas de luz y el temor por el empleo se volvieron votos. De 41 consultas sobre centros de datos, todas las que tienen resultado, salvo una, se inclinaron por restringirlos.",
+    "ja": "電気料金と雇用不安が票になった。\n41件のデータセンター住民投票は、結果が出たうち\n1件を除いてすべて制限の側に傾いた。"
+   },
+   "weight": "medium",
+   "valign": "bottom",
+   "expand": [
+    0,
+    60,
+    70,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    23
+   ],
+   "text": {
+    "es": "Fuentes: Goldman Sachs (vía CNN, 5 nov.), CNBC (4 nov.)",
+    "ja": "出所：ゴールドマン・サックス（CNN引用、11月5日）、CNBC（11月4日）"
+   },
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  }
+ ]
+}

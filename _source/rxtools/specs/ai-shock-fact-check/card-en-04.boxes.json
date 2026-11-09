@@ -1,0 +1,236 @@
+[
+{
+"i": 0,
+"rect": [
+83,
+76,
+395,
+97
+],
+"ocr": "Al shock fact-check 1106, 2026",
+"bg": "#0a0c10",
+"fg": "#cdd0d6",
+"h": 21
+},
+{
+"i": 1,
+"rect": [
+942,
+77,
+994,
+97
+],
+"ocr": "04/12",
+"bg": "#0a0c10",
+"fg": "#afb1b9",
+"h": 20
+},
+{
+"i": 2,
+"rect": [
+88,
+162,
+560,
+211
+],
+"ocr": "\"Is Al a bubble?\"",
+"bg": "#0a0c10",
+"fg": "#f2f3f7",
+"h": 49
+},
+{
+"i": 3,
+"rect": [
+87,
+231,
+700,
+296
+],
+"ocr": "15 the wrong question",
+"bg": "#0a0c10",
+"fg": "#f2f3f7",
+"h": 65
+},
+{
+"i": 4,
+"rect": [
+83,
+328,
+968,
+362
+],
+"ocr": "As one lump it has no answer. Split it into three layers and",
+"bg": "#0a0c10",
+"fg": "#d2d4dc",
+"h": 34
+},
+{
+"i": 5,
+"rect": [
+86,
+378,
+194,
+405
+],
+"ocr": "it does.",
+"bg": "#0a0c10",
+"fg": "#d3d6dc",
+"h": 27
+},
+{
+"i": 6,
+"rect": [
+84,
+497,
+995,
+557
+],
+"ocr": "Tech & demand Real",
+"bg": "#0a0c10",
+"fg": "#e6e8ec",
+"h": 60
+},
+{
+"i": 7,
+"rect": [
+846,
+497,
+997,
+557
+],
+"ocr": "Real",
+"bg": "#0a0c10",
+"fg": "#3091df",
+"h": 60
+},
+{
+"i": 8,
+"rect": [
+84,
+524,
+383,
+557
+],
+"ocr": "Tech & demand",
+"bg": "#0a0c10",
+"fg": "#f8f9fd",
+"h": 33
+},
+{
+"i": 9,
+"rect": [
+86,
+594,
+664,
+621
+],
+"ocr": "Nvidia Q2 revenue $96.2B, up 106% year on year",
+"bg": "#0a0c10",
+"fg": "#d5d7dd",
+"h": 27
+},
+{
+"i": 10,
+"rect": [
+578,
+757,
+993,
+832
+],
+"ocr": "Half-proven",
+"bg": "#0a0c10",
+"fg": "#32a97f",
+"h": 75
+},
+{
+"i": 11,
+"rect": [
+87,
+785,
+321,
+826
+],
+"ocr": "Profitability",
+"bg": "#0b0d11",
+"fg": "#f9fafe",
+"h": 41
+},
+{
+"i": 12,
+"rect": [
+85,
+855,
+660,
+883
+],
+"ocr": "OpenAl Q2 revenue $6.7B, operating loss $12.3B",
+"bg": "#0a0c10",
+"fg": "#d4d7dc",
+"h": 28
+},
+{
+"i": 13,
+"rect": [
+87,
+1019,
+997,
+1094
+],
+"ocr": "Prices & funding Bubbly",
+"bg": "#0a0c10",
+"fg": "#f2bec2",
+"h": 75
+},
+{
+"i": 14,
+"rect": [
+748,
+1019,
+997,
+1094
+],
+"ocr": "Bubbly",
+"bg": "#0a0c10",
+"fg": "#f46523",
+"h": 75
+},
+{
+"i": 15,
+"rect": [
+87,
+1046,
+404,
+1088
+],
+"ocr": "Prices & funding",
+"bg": "#0a0c10",
+"fg": "#f6f8fc",
+"h": 42
+},
+{
+"i": 16,
+"rect": [
+85,
+1116,
+779,
+1144
+],
+"ocr": "CoreWeave CDS above 1,000bp, vendor financing growing",
+"bg": "#0a0c10",
+"fg": "#d5d8dd",
+"h": 28
+},
+{
+"i": 17,
+"rect": [
+84,
+1260,
+282,
+1282
+],
+"ocr": "stayhungryasi.com",
+"bg": "#0a0c10",
+"fg": "#e3733d",
+"h": 22
+}
+]

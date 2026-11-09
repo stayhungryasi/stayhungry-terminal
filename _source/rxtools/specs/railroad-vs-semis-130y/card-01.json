@@ -1,0 +1,31 @@
+{
+ "slug": "railroad-vs-semis-130y",
+ "src": "card-01.webp",
+ "boxes": "card-01.boxes.json",
+ "langs": ["en", "es", "ja"],
+ "erase": [[408, 690, 450, 778]],
+ "regions": [
+  {"rect": [81, 96, 236, 119],
+   "text": {"en": "Railroads vs Chips", "es": "Ferrocarriles vs semiconductores", "ja": "鉄道 vs 半導体"},
+   "weight": "bold", "size": 24, "color": "#cbd4e3", "expand": [0, 0, 400, 0]},
+  {"rect": [82, 167, 482, 207],
+   "text": {"en": "Three corrections, 130 years apart", "es": "Tres correcciones con 130 años de distancia", "ja": "130年を隔てた3度の調整"},
+   "weight": "bold", "size": 32, "color": "#ebb754", "expand": [0, 0, 500, 0]},
+  {"rect": [82, 492, 908, 534],
+   "text": {"en": "Semiconductor index (SOX), 11/5 close vs 6/22 peak · third correction in progress",
+            "es": "Índice de semiconductores (SOX), cierre del 5 de nov. vs. máximo del 22 de jun. · tercera corrección en curso",
+            "ja": "半導体指数（SOX）6/22高値比・11/5終値 · 3度目の調整が進行中"},
+   "size": 31, "lh": 46, "color": "#c8d1df", "expand": [0, 0, 92, 60]},
+  {"rect": [85, 683, 411, 763],
+   "text": {"en": "130 years apart,", "es": "130 años de distancia,", "ja": "130年の隔たり、"},
+   "weight": "black", "size": 74, "color": "#f3f6fd", "expand": [0, 0, 580, 0], "nowrap": true},
+  {"rect": [82, 778, 362, 852],
+   "text": {"en": "the same rhythm", "es": "el mismo ritmo", "ja": "同じリズム"},
+   "weight": "black", "size": 74, "color": "#f3b541", "expand": [0, 0, 580, 0], "nowrap": true},
+  {"rect": [82, 894, 868, 976],
+   "text": {"en": "The three collapses 19th-century railroad stocks suffered inside a bull market, replayed with actual semiconductor index closes, then followed to how the railroads ended up.",
+            "es": "Se reproducen con cierres reales del índice de semiconductores los tres derrumbes que sufrieron las acciones ferroviarias del siglo XIX dentro de un mercado alcista, y se sigue a los ferrocarriles hasta su desenlace.",
+            "ja": "19世紀の鉄道株が強気相場の中で経験した3度の崩落を半導体指数の実際の終値で再現し、鉄道の結末まで追う。"},
+   "size": 31, "lh": 48, "color": "#c8d1df", "expand": [0, 0, 130, 120]}
+ ]
+}

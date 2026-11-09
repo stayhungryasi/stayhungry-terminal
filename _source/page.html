@@ -1857,7 +1857,8 @@ LANGS.forEach(c=>Object.assign(L[c],BRX[c]));
 /* research library: window.SHA_RESEARCH is injected by build.py from _source/research/; the artifact copy fetches /data/research.json */
 let RS=window.SHA_RESEARCH||null,rsState=RS?'ok':'load',rsCat='all',rsQ='',rsAll=false;
 const RSMAX=8;
-const rUrl=s=>(window.SHA_PATHS?'../r/':'https://stayhungryasi.com/r/')+s+'/';
+/* research link: the full report in the reader's language when a translation exists, else the Korean original */
+const rUrl=s=>{const b=(window.SHA_PATHS?'../r/':'https://stayhungryasi.com/r/')+s+'/',r=RS&&RS.reports&&RS.reports.find(x=>x.slug===s);return r&&lang!=='ko'&&(r.langs||[]).includes(lang)?b+lang+'/':b;};
 const rsToday=()=>new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
 function rsApply(){if(!RS||!RS.reports||!RS.reports.length)return;const r=RS.reports[0];LANGS.forEach(c=>{L[c].sum[2]=fmt(L[c].lib_sum,{n:RS.reports.length,t:`<a href="${rUrl(r.slug)}">${esc(r.title[c]||r.title.en)}</a>`});});}
 rsApply();

@@ -1,0 +1,486 @@
+{
+ "slug": "us-midterms-2026-redteam",
+ "src": "card-en-09.webp",
+ "boxes": "card-en-09.boxes.json",
+ "langs": [
+  "es",
+  "ja"
+ ],
+ "regions": [
+  {
+   "boxes": [
+    2
+   ],
+   "text": {
+    "es": "LO QUE VIENE DESPUÉS IMPORTA MÁS",
+    "ja": "選挙の後のほうが重要だ"
+   },
+   "weight": "medium",
+   "size": 26,
+   "color": "#dc6b38",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    300,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    3,
+    4
+   ],
+   "text": {
+    "es": "Diez días tras la elección:**\n**==empleo, IPC, plazo con China.==",
+    "ja": "選挙後の10日間に\n==雇用・CPI・米中の期限。=="
+   },
+   "weight": "black",
+   "size": 64,
+   "lh": 73,
+   "color": "#eff1f5",
+   "accent": "#f36522",
+   "nowrap": true,
+   "expand": [
+    0,
+    0,
+    94,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    5
+   ],
+   "text": {
+    "es": "4 nov",
+    "ja": "11月4日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    71,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    6
+   ],
+   "text": {
+    "es": "Plan trimestral de refinanciamiento del Tesoro",
+    "ja": "米財務省の四半期国債発行計画"
+   },
+   "weight": "regular",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    273,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    7
+   ],
+   "text": {
+    "es": "6 nov",
+    "ja": "11月6日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    72,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    8
+   ],
+   "text": {
+    "es": "Informe de empleo de octubre en EE. UU.",
+    "ja": "米10月雇用統計"
+   },
+   "weight": "regular",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    419,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    9
+   ],
+   "text": {
+    "es": "9 nov",
+    "ja": "11月9日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    72,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    10
+   ],
+   "text": {
+    "es": "Vencen 178 exclusiones de la Sección 301 para China",
+    "ja": "通商法301条の対中適用除外178件が失効"
+   },
+   "weight": "regular",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    184,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    11,
+    12
+   ],
+   "text": {
+    "es": "10 nov",
+    "ja": "11月10日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    54,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    13
+   ],
+   "text": {
+    "es": "IPC de octubre en EE. UU.",
+    "ja": "米10月CPI"
+   },
+   "weight": "regular",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    526,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    15,
+    16
+   ],
+   "text": {
+    "es": "17 nov",
+    "ja": "11月17日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    54,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    14
+   ],
+   "text": {
+    "es": "Resultados de Nvidia (próxima prueba del gasto en IA)",
+    "ja": "エヌビディア決算（AI投資の次の試金石）"
+   },
+   "weight": "bold",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    154,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    17,
+    18
+   ],
+   "text": {
+    "es": "26 nov",
+    "ja": "11月26日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    53,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    19
+   ],
+   "text": {
+    "es": "Decisión de tasas del Banco de Corea",
+    "ja": "韓国銀行の金融政策決定"
+   },
+   "weight": "regular",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    358,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    20,
+    21
+   ],
+   "text": {
+    "es": "9 dic",
+    "ja": "12月9日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    72,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    22
+   ],
+   "text": {
+    "es": "FOMC (¿alza en diciembre o no?)",
+    "ja": "FOMC（12月利上げの有無）"
+   },
+   "weight": "bold",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    315,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    23,
+    24
+   ],
+   "text": {
+    "es": "11 dic",
+    "ja": "12月11日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    53,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    25
+   ],
+   "text": {
+    "es": "Plazo de financiamiento en EE. UU. (riesgo de cierre)",
+    "ja": "米予算期限（政府閉鎖リスク）"
+   },
+   "weight": "regular",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    232,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    26,
+    27
+   ],
+   "text": {
+    "es": "31 dic",
+    "ja": "12月31日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    53,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    28
+   ],
+   "text": {
+    "es": "Plazo de inicio de obras para el crédito fiscal CHIPS 48D",
+    "ja": "CHIPS 48D税額控除の着工期限"
+   },
+   "weight": "regular",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    132,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    29,
+    30
+   ],
+   "text": {
+    "es": "10 ene",
+    "ja": "1月10日"
+   },
+   "weight": "bold",
+   "size": 28,
+   "color": "#ee6728",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    54,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    31
+   ],
+   "text": {
+    "es": "Vence la tregua entre EE. UU. y China",
+    "ja": "米中休戦の期限切れ"
+   },
+   "weight": "regular",
+   "size": 29,
+   "color": "#eef0f4",
+   "nowrap": true,
+   "minscale": 0.75,
+   "expand": [
+    0,
+    0,
+    416,
+    0
+   ]
+  },
+  {
+   "boxes": [
+    32
+   ],
+   "text": {
+    "es": "Investigación completa con 8 gráficos",
+    "ja": "チャート8点を収めたフルレポート"
+   },
+   "size": 22,
+   "color": "#adb2bf",
+   "nowrap": true,
+   "expand": [
+    0,
+    2,
+    400,
+    2
+   ]
+  },
+  {
+   "boxes": [
+    36
+   ],
+   "text": {
+    "es": "No es recomendación de inversión",
+    "ja": "投資勧誘ではない"
+   },
+   "size": 18,
+   "color": "#adb1ba",
+   "align": "right",
+   "nowrap": true,
+   "expand": [
+    200,
+    2,
+    0,
+    2
+   ]
+  }
+ ]
+}

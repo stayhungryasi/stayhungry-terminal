@@ -1,0 +1,288 @@
+[
+{
+"i": 0,
+"rect": [
+81,
+92,
+232,
+111
+],
+"ocr": "07 Scenarios",
+"bg": "#0e1726",
+"fg": "#b4aba9",
+"h": 19
+},
+{
+"i": 1,
+"rect": [
+682,
+92,
+998,
+111
+],
+"ocr": "Odds are author estimates",
+"bg": "#0e1726",
+"fg": "#9ca5b5",
+"h": 19
+},
+{
+"i": 2,
+"rect": [
+81,
+145,
+639,
+208
+],
+"ocr": "Three paths ahead",
+"bg": "#0e1726",
+"fg": "#f1f5fa",
+"h": 63
+},
+{
+"i": 3,
+"rect": [
+828,
+299,
+965,
+349
+],
+"ocr": "55%",
+"bg": "#15213b",
+"fg": "#f3b542",
+"h": 50
+},
+{
+"i": 4,
+"rect": [
+115,
+318,
+504,
+356
+],
+"ocr": "Base: pain, then done",
+"bg": "#15213b",
+"fg": "#f2f7fe",
+"h": 38
+},
+{
+"i": 5,
+"rect": [
+114,
+382,
+930,
+408
+],
+"ocr": "Deleveraging ends after 2-4 weeks of volatility. Triggers: Taiwan margin",
+"bg": "#15213b",
+"fg": "#c5d2e4",
+"h": 26
+},
+{
+"i": 6,
+"rect": [
+113,
+418,
+570,
+444
+],
+"ocr": "falls, solid Nvidia results, Anthropic lists",
+"bg": "#17223c",
+"fg": "#c5d2e5",
+"h": 26
+},
+{
+"i": 7,
+"rect": [
+112,
+462,
+582,
+484
+],
+"ocr": "J",
+"bg": "#15213a",
+"fg": "#f2b541",
+"h": 22
+},
+{
+"i": 8,
+"rect": [
+828,
+584,
+965,
+634
+],
+"ocr": "25%",
+"bg": "#15213b",
+"fg": "#ff5a61",
+"h": 50
+},
+{
+"i": 9,
+"rect": [
+115,
+603,
+533,
+642
+],
+"ocr": "Bear: margin-call chain",
+"bg": "#15213b",
+"fg": "#f2f7fe",
+"h": 39
+},
+{
+"i": 10,
+"rect": [
+112,
+667,
+926,
+693
+],
+"ocr": "Triggers: a big fund's forced sale confirmed, IPO delayed, VIX above 35,",
+"bg": "#15213b",
+"fg": "#c5d1e5",
+"h": 26
+},
+{
+"i": 11,
+"rect": [
+113,
+703,
+549,
+729
+],
+"ocr": "state data-center moratoriums spread",
+"bg": "#15223b",
+"fg": "#c5d1e4",
+"h": 26
+},
+{
+"i": 12,
+"rect": [
+112,
+747,
+326,
+769
+],
+"ocr": "=",
+"bg": "#172037",
+"fg": "#ff5a5f",
+"h": 22
+},
+{
+"i": 13,
+"rect": [
+828,
+869,
+965,
+919
+],
+"ocr": "20%",
+"bg": "#15213b",
+"fg": "#40cc9f",
+"h": 50
+},
+{
+"i": 14,
+"rect": [
+115,
+889,
+599,
+926
+],
+"ocr": "Bull: a July-style snapback",
+"bg": "#15213b",
+"fg": "#f2f7ff",
+"h": 37
+},
+{
+"i": 15,
+"rect": [
+112,
+952,
+839,
+978
+],
+"ocr": "Triggers: forced sellers confirmed out, Nvidia beats. After July's",
+"bg": "#15213b",
+"fg": "#c5d2e5",
+"h": 26
+},
+{
+"i": 16,
+"rect": [
+114,
+986,
+713,
+1016
+],
+"ocr": "liquidation many Al names jumped 15-25% intraday",
+"bg": "#15213b",
+"fg": "#c5d1e5",
+"h": 30
+},
+{
+"i": 17,
+"rect": [
+110,
+1030,
+283,
+1063
+],
+"ocr": "SLE CL",
+"bg": "#15213b",
+"fg": "#3ecc9d",
+"h": 33
+},
+{
+"i": 18,
+"rect": [
+82,
+1107,
+955,
+1134
+],
+"ocr": "Relative strength candidates: power, utilities, defensives / relative weakness: memory,",
+"bg": "#0e1726",
+"fg": "#7d8898",
+"h": 27
+},
+{
+"i": 19,
+"rect": [
+82,
+1142,
+643,
+1165
+],
+"ocr": "neoclouds, Korean and Taiwanese chips (author's view)",
+"bg": "#0f1827",
+"fg": "#7e8899",
+"h": 23
+},
+{
+"i": 20,
+"rect": [
+82,
+1273,
+449,
+1296
+],
+"ocr": "Not a recommendation on any stock",
+"bg": "#0e1726",
+"fg": "#7e8899",
+"h": 23
+},
+{
+"i": 21,
+"rect": [
+930,
+1273,
+999,
+1295
+],
+"ocr": "08/10",
+"bg": "#0e1726",
+"fg": "#f1f7ff",
+"h": 22
+}
+]
