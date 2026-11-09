@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
  "updated": "2026-11-09",
- "count": 16,
+ "count": 17,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals; briefs in 4 languages. Not investment advice.",
  "credit": "stayhungryasi.com",
@@ -153,6 +153,104 @@
    "minutes": 10,
    "sources": 25,
    "url": "https://stayhungryasi.com/r/spacex-anthropic-90day-clause/"
+  },
+  {
+   "slug": "railroad-vs-semis-130y",
+   "date": "2026-11-09",
+   "asof": "2026-11-06 US close (written 2026-11-09 KST)",
+   "category": "ai",
+   "title": {
+    "ko": "130년 차이, 같은 리듬: 19세기 철도주로 본 반도체 사이클",
+    "en": "130 Years Apart, Same Rhythm: The Chip Cycle Through 19th-Century Railroads",
+    "es": "130 años de diferencia, el mismo ritmo: el ciclo de los chips a través de los ferrocarriles del siglo XIX",
+    "ja": "130年の差、同じリズム:19世紀の鉄道株で見る半導体サイクル"
+   },
+   "dek": {
+    "ko": "BofA가 보여준 19세기 철도주의 세 차례 조정(-50%, -45%, -30%)을 코울스-실러 데이터로 교차검증하고, 반도체지수(SOX) 실제 종가로 AI 시대에 재현했다. SOX는 +214% → -46%, +173% → -40%, +311% → -38%로 같은 리듬을 보였다. 이번엔 부채형 네오클라우드와 반도체가 먼저 맞았고, 철도는 1903년 이후 한 번 더 반복한 뒤 망이 완성되자 규제산업이 됐다.",
+    "en": "BofA showed three big drawdowns in late-1800s railroad stocks (-50%, -45%, -30%). We cross-checked them against Cowles-Shiller data and replayed the pattern for the AI era with actual closes of the Philadelphia chip index (SOX): +214% then -46%, +173% then -40%, +311% then -38%. This time debt-funded neoclouds and chipmakers were hit first. Railroads repeated the rhythm once more after 1903, then became a regulated industry once the network was built.",
+    "es": "BofA mostró tres grandes caídas de los ferrocarriles a fines del siglo XIX (-50%, -45%, -30%). Las verificamos con los datos de Cowles-Shiller y repetimos el patrón para la era de la IA con cierres reales del índice de chips de Filadelfia (SOX): +214% y luego -46%, +173% y luego -40%, +311% y luego -38%. Esta vez los neoclouds endeudados y los fabricantes de chips cayeron primero. Los ferrocarriles repitieron el ritmo una vez más después de 1903 y, con la red terminada, se convirtieron en una industria regulada.",
+    "ja": "BofAが示した19世紀後半の鉄道株の3度の大幅調整(-50%、-45%、-30%)をカウルズ・シラーのデータで検証し、フィラデルフィア半導体指数(SOX)の実際の終値でAI時代に再現した。SOXは+214%→-46%、+173%→-40%、+311%→-38%と同じリズムを示した。今回は借金で建てるネオクラウドと半導体が先に打撃を受けた。鉄道は1903年以降もう一度同じリズムを繰り返し、路線網が完成すると規制産業になった。"
+   },
+   "key": {
+    "value": "-38%",
+    "label": {
+     "ko": "반도체지수(SOX) 6/22 고점 대비 11/5 종가 하락률. 철도의 세 번째 조정(-30%)보다 깊다",
+     "en": "The Philadelphia chip index (SOX) from its June 22 peak to the Nov 5 close, deeper than the railroads' third drawdown (-30%)",
+     "es": "Caída del índice de chips de Filadelfia (SOX) desde su máximo del 22 de junio hasta el cierre del 5 de noviembre, más profunda que la tercera caída de los ferrocarriles (-30%)",
+     "ja": "フィラデルフィア半導体指数(SOX)の6/22高値から11/5終値までの下落率。鉄道の3度目の調整(-30%)より深い"
+    }
+   },
+   "points": {
+    "ko": [
+     "검증: BofA의 철도 조정 -50%, -45%, -30%는 코울스-실러 월간 데이터로 -47%, -42%, -29%가 나와 3%포인트 이내에서 재현된다. 1900년 이전 이 지수는 사실상 철도 단일 업종지수다.",
+     "재현: AI판 철도주는 엔비디아가 아니라 SOX다. SOX는 +214% → -46%, +173% → -40%, +311% → -38%였고, 엔비디아는 10월 고점 대비 -24%에 그쳐 업종 붕괴를 가렸다. 1900년 철도는 미국 증시 시총의 63%였다.",
+     "결말: 3층 구조로 보면 네오클라우드(코어위브 -74.7%, 아이렌 -71.7%, 네비우스 -54.8%)가 가장 깊고 하이퍼스케일러는 -14.1%다. 철도는 1903년 이후 +60% → -38%를 한 번 더 반복했고, 망이 완성된 뒤 1929~32년 -90% 이상 폭락했지만 장기 수익률은 배당 포함 연 8.3%였다."
+    ],
+    "en": [
+     "Check: BofA's railroad drawdowns of -50%, -45% and -30% come out at -47%, -42% and -29% on monthly Cowles-Shiller data, within 3 percentage points. Before 1900 that index was in effect a railroad-only index.",
+     "Replay: the AI-era railroad is the chip index (SOX), not Nvidia. SOX went +214% then -46%, +173% then -40%, +311% then -38%, while Nvidia was only -24% from its October peak and hid the sector's slide. In 1900 railroads were 63% of US market value.",
+     "Ending: in a three-layer view, neoclouds fell most (CoreWeave -74.7%, IREN -71.7%, Nebius -54.8%) and hyperscalers only -14.1%. Railroads repeated +60% then -38% after 1903; once the network was built they crashed more than 90% in 1929-32, yet returned 8.3% a year with dividends over the long run."
+    ],
+    "es": [
+     "Verificación: las caídas ferroviarias de BofA de -50%, -45% y -30% salen en -47%, -42% y -29% con los datos mensuales de Cowles-Shiller, dentro de 3 puntos porcentuales. Antes de 1900 ese índice era en la práctica un índice solo de ferrocarriles.",
+     "Réplica: el ferrocarril de la era de la IA es el índice de chips (SOX), no Nvidia. El SOX hizo +214% y -46%, +173% y -40%, +311% y -38%, mientras Nvidia cedía solo -24% desde su máximo de octubre y ocultaba la caída del sector. En 1900 los ferrocarriles eran el 63% del valor bursátil de EE. UU.",
+     "Desenlace: en tres capas, los neoclouds cayeron más (CoreWeave -74.7%, IREN -71.7%, Nebius -54.8%) y los hiperescaladores solo -14.1%. Los ferrocarriles repitieron +60% y -38% después de 1903; con la red terminada se desplomaron más de 90% en 1929-32, pero a largo plazo rindieron 8.3% anual con dividendos."
+    ],
+    "ja": [
+     "検証:BofAの鉄道調整-50%、-45%、-30%は、カウルズ・シラー月次データで-47%、-42%、-29%となり3ポイント以内で再現される。1900年以前のこの指数は事実上、鉄道単一業種の指数だ。",
+     "再現:AI時代の鉄道株はエヌビディアではなくSOXだ。SOXは+214%→-46%、+173%→-40%、+311%→-38%で、エヌビディアは10月高値から-24%にとどまり業種の崩れを隠した。1900年の鉄道は米国株式時価総額の63%だった。",
+     "結末:3層で見るとネオクラウド(コアウィーブ-74.7%、アイレン-71.7%、ネビウス-54.8%)が最も深く、ハイパースケーラーは-14.1%。鉄道は1903年以降+60%→-38%をもう一度繰り返し、路線網の完成後1929~32年に90%超暴落したが、長期リターンは配当込みで年8.3%だった。"
+    ]
+   },
+   "tickers": [
+    "SOX",
+    "NDX",
+    "NVDA",
+    "CRWV",
+    "NBIS",
+    "IREN"
+   ],
+   "tags": {
+    "ko": [
+     "철도 vs 반도체",
+     "역사적 비유",
+     "파괴적 혁신",
+     "실데이터 재현"
+    ],
+    "en": [
+     "Railroads vs chips",
+     "Historical analogy",
+     "Disruptive innovation",
+     "Rebuilt from real data"
+    ],
+    "es": [
+     "Ferrocarriles vs chips",
+     "Analogía histórica",
+     "Innovación disruptiva",
+     "Reconstruido con datos reales"
+    ],
+    "ja": [
+     "鉄道vs半導体",
+     "歴史的アナロジー",
+     "破壊的イノベーション",
+     "実データで再現"
+    ]
+   },
+   "checkpoints": [
+    {
+     "date": "2026-11-17",
+     "text": {
+      "ko": "엔비디아 3분기 실적",
+      "en": "Nvidia third-quarter earnings",
+      "es": "Resultados del tercer trimestre de Nvidia",
+      "ja": "エヌビディア第3四半期決算"
+     }
+    }
+   ],
+   "kind": "doc",
+   "minutes": 7,
+   "sources": 13,
+   "url": "https://stayhungryasi.com/r/railroad-vs-semis-130y/"
   },
   {
    "slug": "ai-shock-fact-check",
@@ -2083,6 +2181,16 @@
     "ja": "アンソロピックの公募価格決定が可能な最初の日"
    },
    "slug": "ai-deleveraging-2026-11"
+  },
+  {
+   "date": "2026-11-17",
+   "text": {
+    "ko": "엔비디아 3분기 실적",
+    "en": "Nvidia third-quarter earnings",
+    "es": "Resultados del tercer trimestre de Nvidia",
+    "ja": "エヌビディア第3四半期決算"
+   },
+   "slug": "railroad-vs-semis-130y"
   },
   {
    "date": "2026-11-17",

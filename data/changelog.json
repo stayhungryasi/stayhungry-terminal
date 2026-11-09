@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-09",
+      "commit": "HEAD",
+      "message": "New research: 130 Years Apart, Same Rhythm. BofA's three late-1800s railroad drawdowns cross-checked with Cowles-Shiller data and replayed on actual chip-index (SOX) closes, a three-layer view of who fell hardest, what happened to railroads after 1903, 4 charts and 9 cards"
+    },
+    {
+      "date": "2026-11-09",
       "commit": "09bcc43",
       "message": "New BERKSHIRE page under Research, next to SpaceX: a Claude probe tracks Berkshire Hathaway like SpaceX, with 14 milestones on 5 axes, scenarios and a value band, a disruption watch for each moat, every SEC filing graded, and the latest report. Synced from univertrix every 3 hours in 4 languages; also at /data/berkshire.json"
     },
