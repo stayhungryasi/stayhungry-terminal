@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
  "updated": "2026-11-10",
- "count": 17,
+ "count": 18,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals (full translations in en/es/ja where listed in langs); briefs in 4 languages. Not investment advice.",
  "credit": "stayhungryasi.com",
@@ -38,6 +38,109 @@
   }
  },
  "reports": [
+  {
+   "date": "2026-11-10",
+   "asof": "2026-11-10 KST: Tesla and SpaceX Q3 calls, Nikkei report of Nov 9",
+   "category": "ai",
+   "title": {
+    "ko": "테라팹 딥다이브: 칩 공장에서 메모리 회사로, 숫자 33개 전수검증",
+    "en": "Terafab Deep Dive: From Chip Plant to Memory Company, 33 Claims Rechecked",
+    "es": "Terafab a fondo: de planta de chips a empresa de memoria, 33 afirmaciones revisadas",
+    "ja": "テラファブ徹底分析:半導体工場からメモリ企業へ、33項目を全数検証"
+   },
+   "dek": {
+    "ko": "11월 9일 닛케이 보도로 테라팹 목표는 2032년 이후 월 100만 장, 그중 70만 장이 메모리로 커졌다. 삼성전자 D램 전체와 비슷한 규모다. 장비 발주는 시작됐지만 메모리 기술의 출처, 수율, 테슬라·스페이스X의 비용 분담은 아직 정해지지 않았다. 파괴적 혁신 이론으로 진단하고 직전 분석의 주장 33건을 원출처와 다시 대조했다.",
+    "en": "A Nikkei report on Nov 9 raised Terafab's target to 1 million wafers a month after 2032, 700K of them memory, about the size of Samsung Electronics' entire DRAM operation. Tool orders have started, but the source of the memory technology, the yield and the Tesla–SpaceX cost split are still undecided. This piece applies disruption theory and rechecks 33 claims from the earlier analysis against their original sources.",
+    "es": "Un reporte de Nikkei del 9 de noviembre elevó la meta de Terafab a 1 millón de obleas al mes después de 2032, 700 mil de ellas de memoria, más o menos el tamaño de toda la DRAM de Samsung Electronics. Ya empezaron los pedidos de equipos, pero la fuente de la tecnología de memoria, el rendimiento y el reparto de costos entre Tesla y SpaceX siguen sin definirse. Aplicamos la teoría de la disrupción y revisamos con su fuente original 33 afirmaciones del análisis previo.",
+    "ja": "11月9日の日経報道で、テラファブの目標は2032年以降に月100万枚、うち70万枚がメモリへと膨らんだ。サムスン電子のDRAM全体に匹敵する規模だ。装置発注は始まったが、メモリ技術の出所、歩留まり、テスラとスペースXの費用分担はまだ決まっていない。破壊的イノベーション理論で診断し、前回分析の主張33件を原典と照合し直した。"
+   },
+   "key": {
+    "value": "700K",
+    "label": {
+     "ko": "2032년 이후 테라팹의 월 메모리 웨이퍼 목표(닛케이 보도). 삼성전자 D램 전체(65~70만 장 추정)와 비슷하다",
+     "en": "Terafab's monthly memory wafer target after 2032 (Nikkei report), close to Samsung's entire DRAM output (650–700K estimate)",
+     "es": "Meta mensual de obleas de memoria de Terafab después de 2032 (reporte de Nikkei), cercana a toda la DRAM de Samsung (estimación de 650–700 mil)",
+     "ja": "2032年以降のテラファブの月間メモリウエハー目標(日経報道)。サムスン電子のDRAM全体(65万~70万枚推計)に近い"
+    }
+   },
+   "points": {
+    "ko": [
+     "규모: 목표가 이뤄지면 2025년 기준 전 세계 첨단 로직의 42.4%, D램의 37.8%를 한 부지에서 만든다(작성자 계산). 필요한 EUV는 약 95대로 ASML의 2027년 계획의 112%다(작성자 추정).",
+     "빈칸: 로직은 인텔 14A라는 기술원이 있지만, 메모리 70만 장의 D램 공정 기술은 출처가 공개된 적이 없다. 수율과 테라팹 실제 집행액도 미공개다. 일정은 2027년 5~6월 첫 테스트 칩, 2028년 3분기 양산 목표다.",
+     "판정: 우주용 칩은 신시장 파괴, 메모리는 존속적 정면 공격이다. 시나리오는 Base 60%·Bear 25%·Bull 15%(작성자 판단). 33건 검증 결과 확인 19, 부분수정 8, 보도 유지 2, 미검증 2, 강등 2건이다."
+    ],
+    "en": [
+     "Scale: if the target holds, one site would make 42.4% of the world's leading-edge logic and 37.8% of its DRAM on a 2025 base (author calculation). It would need about 95 EUV tools, 112% of ASML's 2027 plan (author estimate).",
+     "The gap: logic has a source in Intel 14A, but no source has been disclosed for the DRAM process behind 700K memory wafers. Yield and actual Terafab spending are also undisclosed. The schedule targets a first test chip in May–June 2027 and mass production in Q3 2028.",
+     "Verdict: space chips are new-market disruption; memory is a sustaining head-on attack. Scenarios are Base 60%, Bear 25%, Bull 15% (author view). Of 33 claims rechecked, 19 were confirmed, 8 partly corrected, 2 report only, 2 unverified and 2 downgraded."
+    ],
+    "es": [
+     "Escala: si la meta se cumple, un solo sitio haría el 42.4% de la lógica avanzada mundial y el 37.8% de la DRAM con base en 2025 (cálculo del autor). Necesitaría unos 95 equipos EUV, el 112% del plan de ASML para 2027 (estimación del autor).",
+     "El vacío: la lógica tiene una fuente en Intel 14A, pero no se ha divulgado la fuente del proceso de DRAM detrás de 700 mil obleas de memoria. El rendimiento y el gasto real en Terafab tampoco se han divulgado. El calendario apunta a un primer chip de prueba en mayo–junio de 2027 y producción masiva en el 3T de 2028.",
+     "Veredicto: los chips espaciales son disrupción de nuevo mercado; la memoria es un ataque frontal sostenido. Escenarios: Base 60%, Bear 25%, Bull 15% (opinión del autor). De 33 afirmaciones revisadas, 19 confirmadas, 8 corregidas en parte, 2 solo prensa, 2 no verificadas y 2 degradadas."
+    ],
+    "ja": [
+     "規模:目標どおりなら、2025年基準で世界の先端ロジックの42.4%、DRAMの37.8%を1か所でつくる(筆者計算)。必要なEUVは約95台で、ASMLの2027年計画の112%にあたる(筆者推定)。",
+     "空白:ロジックにはインテル14Aという技術の出所があるが、メモリ70万枚のDRAM工程技術は出所が公表されたことがない。歩留まりとテラファブへの実際の投資額も非公表だ。日程は2027年5~6月に最初のテストチップ、2028年第3四半期に量産が目標だ。",
+     "判定:宇宙用チップは新市場型破壊、メモリは持続的な正面攻撃だ。シナリオはBase 60%・Bear 25%・Bull 15%(筆者判断)。33件の検証結果は確認19、一部修正8、報道のみ2、未検証2、格下げ2件だ。"
+    ]
+   },
+   "tickers": [
+    "ASML",
+    "Intel",
+    "TSMC",
+    "삼성전자",
+    "SK하이닉스",
+    "Micron",
+    "HPSP",
+    "Tesla",
+    "SpaceX"
+   ],
+   "checkpoints": [],
+   "tags": {
+    "ko": [
+     "테라팹",
+     "파괴적 혁신",
+     "메모리",
+     "전수검증"
+    ],
+    "en": [
+     "Terafab",
+     "Disruption",
+     "Memory",
+     "Fact check"
+    ],
+    "es": [
+     "Terafab",
+     "Disrupción",
+     "Memoria",
+     "Verificación"
+    ],
+    "ja": [
+     "テラファブ",
+     "破壊的イノベーション",
+     "メモリ",
+     "全数検証"
+    ]
+   },
+   "slug": "terafab-deep-dive-2026-11",
+   "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
+   "minutes": 14,
+   "sources": 31,
+   "url": "https://stayhungryasi.com/r/terafab-deep-dive-2026-11/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/terafab-deep-dive-2026-11/",
+    "en": "https://stayhungryasi.com/r/terafab-deep-dive-2026-11/en/",
+    "es": "https://stayhungryasi.com/r/terafab-deep-dive-2026-11/es/",
+    "ja": "https://stayhungryasi.com/r/terafab-deep-dive-2026-11/ja/"
+   }
+  },
   {
    "slug": "spacex-anthropic-90day-clause",
    "date": "2026-11-09",
