@@ -1,8 +1,8 @@
 {
  "kind": "spcx_lock",
  "schema": 1,
- "generated_kst": "2026-11-09 11:43",
- "asof": "2026-11-09",
+ "generated_kst": "2026-11-10 13:40",
+ "asof": "2026-11-10",
  "source": "SpaceX Form 424(b)(4) final prospectus, 2026-06-11 (Shares Eligible for Future Sale / Lock-up Agreements)",
  "units": "shares_m = millions of shares, maximum eligible to sell (up to), not actual sales",
  "ipo": {
@@ -11,10 +11,10 @@
   "float_m": 638.9
  },
  "price": {
-  "last": 134.27,
-  "last_date": "2026-11-06",
-  "chg_pct": 8.62,
-  "vs_ipo_pct": -0.5,
+  "last": 142.07,
+  "last_date": "2026-11-09",
+  "chg_pct": 5.81,
+  "vs_ipo_pct": 5.2,
   "series": [
    [
     "2026-06-12",
@@ -427,6 +427,10 @@
    [
     "2026-11-06",
     134.27
+   ],
+   [
+    "2026-11-09",
+    142.07
    ]
   ],
   "source": "Yahoo Finance daily close"
@@ -454,7 +458,7 @@
   "trade": "2026-12-09",
   "open_utc": "2026-12-09T14:30:00Z",
   "done": false,
-  "dday": 30,
+  "dday": 29,
   "estimated": false,
   "est_text": null,
   "rule": "date",
@@ -464,7 +468,7 @@
   "void": false,
   "void_m": null,
   "vs_eligible_pct": 17.6,
-  "usd_b": 107.1
+  "usd_b": 113.3
  },
  "tranches": [
   {
@@ -476,7 +480,7 @@
    "trade": "2026-08-06",
    "open_utc": "2026-08-06T13:30:00Z",
    "done": true,
-   "dday": -95,
+   "dday": -96,
    "estimated": false,
    "est_text": null,
    "rule": "earnings",
@@ -486,7 +490,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 20.1,
-   "usd_b": 122.4
+   "usd_b": 129.5
   },
   {
    "id": "bonus",
@@ -497,7 +501,7 @@
    "trade": "2026-08-06",
    "open_utc": "2026-08-06T13:30:00Z",
    "done": true,
-   "dday": -95,
+   "dday": -96,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -516,7 +520,7 @@
    "trade": "2026-08-20",
    "open_utc": "2026-08-20T13:30:00Z",
    "done": true,
-   "dday": -81,
+   "dday": -82,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -526,7 +530,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.0,
-   "usd_b": 42.8
+   "usd_b": 45.3
   },
   {
    "id": "d90",
@@ -537,7 +541,7 @@
    "trade": "2026-09-09",
    "open_utc": "2026-09-09T13:30:00Z",
    "done": true,
-   "dday": -61,
+   "dday": -62,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -547,7 +551,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.0,
-   "usd_b": 42.8
+   "usd_b": 45.3
   },
   {
    "id": "aff",
@@ -558,7 +562,7 @@
    "trade": "2026-09-10",
    "open_utc": "2026-09-10T13:30:00Z",
    "done": true,
-   "dday": -60,
+   "dday": -61,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -568,7 +572,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 1.0,
-   "usd_b": 6.1
+   "usd_b": 6.5
   },
   {
    "id": "d105",
@@ -579,7 +583,7 @@
    "trade": "2026-09-24",
    "open_utc": "2026-09-24T13:30:00Z",
    "done": true,
-   "dday": -46,
+   "dday": -47,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -589,7 +593,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.3,
-   "usd_b": 44.1
+   "usd_b": 46.7
   },
   {
    "id": "d120",
@@ -600,7 +604,7 @@
    "trade": "2026-10-09",
    "open_utc": "2026-10-09T13:30:00Z",
    "done": true,
-   "dday": -31,
+   "dday": -32,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -610,7 +614,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.3,
-   "usd_b": 44.1
+   "usd_b": 46.7
   },
   {
    "id": "q3",
@@ -621,7 +625,7 @@
    "trade": "2026-10-22",
    "open_utc": "2026-10-22T13:30:00Z",
    "done": true,
-   "dday": -18,
+   "dday": -19,
    "estimated": false,
    "est_text": null,
    "rule": "earnings",
@@ -631,7 +635,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 28.9,
-   "usd_b": 175.9
+   "usd_b": 186.1
   },
   {
    "id": "d135",
@@ -642,7 +646,7 @@
    "trade": "2026-10-26",
    "open_utc": "2026-10-26T13:30:00Z",
    "done": true,
-   "dday": -14,
+   "dday": -15,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -652,7 +656,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.3,
-   "usd_b": 44.1
+   "usd_b": 46.7
   },
   {
    "id": "d180",
@@ -663,7 +667,7 @@
    "trade": "2026-12-09",
    "open_utc": "2026-12-09T14:30:00Z",
    "done": false,
-   "dday": 30,
+   "dday": 29,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -673,7 +677,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 17.6,
-   "usd_b": 107.1
+   "usd_b": 113.3
   },
   {
    "id": "x_q4",
@@ -684,7 +688,7 @@
    "trade": "2027-02-03",
    "open_utc": "2027-02-03T14:30:00Z",
    "done": false,
-   "dday": 86,
+   "dday": 85,
    "estimated": true,
    "est_text": "'27.1~2월",
    "rule": "earnings",
@@ -694,7 +698,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.8,
-   "usd_b": 47.2
+   "usd_b": 50.0
   },
   {
    "id": "x_d280",
@@ -705,7 +709,7 @@
    "trade": "2027-03-18",
    "open_utc": "2027-03-18T13:30:00Z",
    "done": false,
-   "dday": 129,
+   "dday": 128,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -715,7 +719,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 3.9,
-   "usd_b": 23.6
+   "usd_b": 25.0
   },
   {
    "id": "x_q1",
@@ -726,7 +730,7 @@
    "trade": "2027-04-28",
    "open_utc": "2027-04-28T13:30:00Z",
    "done": false,
-   "dday": 170,
+   "dday": 169,
    "estimated": true,
    "est_text": "'27.4~5월",
    "rule": "earnings",
@@ -736,7 +740,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.8,
-   "usd_b": 47.2
+   "usd_b": 50.0
   },
   {
    "id": "x_d340",
@@ -747,7 +751,7 @@
    "trade": "2027-05-17",
    "open_utc": "2027-05-17T13:30:00Z",
    "done": false,
-   "dday": 189,
+   "dday": 188,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -757,7 +761,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 3.9,
-   "usd_b": 23.6
+   "usd_b": 25.0
   },
   {
    "id": "x_d366",
@@ -768,7 +772,7 @@
    "trade": "2027-06-14",
    "open_utc": "2027-06-14T13:30:00Z",
    "done": false,
-   "dday": 217,
+   "dday": 216,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -778,7 +782,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.8,
-   "usd_b": 47.2
+   "usd_b": 50.0
   },
   {
    "id": "musk",
@@ -789,7 +793,7 @@
    "trade": "2027-06-14",
    "open_utc": "2027-06-14T13:30:00Z",
    "done": false,
-   "dday": 217,
+   "dday": 216,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -799,7 +803,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 141.3,
-   "usd_b": 859.3
+   "usd_b": 909.2
   },
   {
    "id": "x_q2",
@@ -810,7 +814,7 @@
    "trade": "2027-07-28",
    "open_utc": "2027-07-28T13:30:00Z",
    "done": false,
-   "dday": 261,
+   "dday": 260,
    "estimated": true,
    "est_text": "'27.7~8월",
    "rule": "earnings",
@@ -820,7 +824,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.8,
-   "usd_b": 47.2
+   "usd_b": 50.0
   }
  ],
  "notes": [
@@ -840,12 +844,12 @@
  ],
  "cards_kst": "2026-11-09 11:43",
  "message_html": "🛰 <b>주간 스페이스X 락업 레이더</b> | 11/9(월)\n\n▶ <b>다음 해제 12.09 수 (D-30)</b>\n   최대 <b>8.0억주</b> ≈ 1,071억 달러 — 180일 만료 잔여 17%\n   현재 유통가능 물량 대비 <b>+18%</b>\n\n📅 <b>이어지는 해제</b>\n · '27.1~2월 추정 — 3.5억주 (확장투자자 20% · 4Q실적)\n · '27.3.18 목 — 1.8억주 (확장투자자 10% · 280일)\n · '27.4~5월 추정 — 3.5억주 (확장투자자 20% · 1Q실적)\n · '27.5.17 월 — 1.8억주 (확장투자자 10% · 340일)\n\n🔒 <b>남은 잠금 물량 89.6억주</b> (전체의 66%)\n   2026 잔여 8.0억 · 2027 확장투자자 17.6억 · 머스크 64.0억\n✅ 해제 완료 8회 38.9억주 → 유통가능 33.6%\n💵 SPCX $134.27 (11/06 종가, 공모가 대비 -0.5%)\n\n<i>※ 모두 '최대 매도 가능' 물량이며 실제 매도량이 아닙니다. 주관사 조기면제·회사 매매창구에 따라 달라질 수 있음. 출처: SpaceX 424B4 투자설명서</i>\n\n📡 Stay hungry.ASI · t.me/stayhungryasi",
- "sent": true,
+ "sent": false,
  "mode": null,
  "last_sent_kst": "2026-11-09 11:43",
  "schedule": "Mondays + the day before each unlock, 08:17 KST",
  "telegram": "https://t.me/stayhungryasi",
- "credit": "@stayhungryasi · https://t.me/stayhungryasi",
+ "credit": "stayhungryasi.com",
  "note": "All share counts are the maximum that may be sold (up to), not actual sales. The underwriter can waive lock-ups early and company trading windows apply. Not investment advice.",
  "live": "https://stayhungryasi.com/live/spcx-lock.json",
  "note_api": "Written by the SpaceX lock-up radar bot (spcx_lock_bot). All share counts are the maximum that may be sold (up to), not actual sales. The underwriter can waive lock-ups early and company trading windows apply. Not investment advice."
