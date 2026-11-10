@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-10",
+      "commit": "HEAD",
+      "message": "Railroad vs. chips report: added the original 19th-century railroad chart (Cowles-Shiller monthly, 1871~1903, same format as the SOX chart) to section 1, and rebuilt card 2 as that chart with BofA and Cowles figures side by side, so it reads next to the SOX card"
+    },
+    {
+      "date": "2026-11-10",
       "commit": "6977d3b",
       "message": "Berkshire page headline simplified to \"Tracking Berkshire Hathaway.\" (the \"like SpaceX\" comparison is gone from the page and its hub card)"
     },
