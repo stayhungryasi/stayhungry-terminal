@@ -461,5 +461,5 @@
  "method": "Each indicator: green 0 / yellow 50 / red 100 → layer average → weighted (25/25/20/15/15%). 0-30 calm, 30-50 watch, 50-70 stress, 70+ crisis. Rule-based; not investment advice.",
  "sources": "FRED, Yahoo Finance, Cboe, Bank of Korea ECOS",
  "telegram": "https://t.me/stayhungryasi",
- "credit": "@stayhungryasi · https://t.me/stayhungryasi"
+ "credit": "stayhungryasi.com"
 }
