@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-10",
+      "commit": "HEAD",
+      "message": "Berkshire page headline simplified to \"Tracking Berkshire Hathaway.\" (the \"like SpaceX\" comparison is gone from the page and its hub card)"
+    },
+    {
       "date": "2026-11-09",
       "commit": "71db5ed",
       "message": "The SpaceX–Anthropic 90-day-clause report's 15 card-news images now use the hub's dark navy look like every other report (all four languages); the orange highlights, bars and numbers are unchanged"
@@ -312,7 +317,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }
