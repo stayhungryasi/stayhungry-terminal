@@ -217,14 +217,30 @@ page = head + "\n" + body
 page = page.replace("/*__DATA__*/null", json.dumps(d, ensure_ascii=False, separators=(",", ":")), 1)
 page = page.replace("/*__TEXT__*/null", json.dumps(X, ensure_ascii=False, separators=(",", ":")), 1)
 # --overlay FILE : apply [[public, private], ...] replacements (private artifact build; overlay file is NOT in the public repo)
-# --hub         : wrap as a full document for the hub iframe (noindex)
+# --page        : full standalone document for stayhungryasi.com/p/ai-models/ (title, canonical, og)
+# --hub         : (legacy) wrap as a full document for an iframe (noindex)
 args = sys.argv[1:]
 out = "model-effort-matrix.html"
 if "--out" in args: out = args[args.index("--out") + 1]
 if "--overlay" in args:
     for pub_s, priv_s in json.load(open(args[args.index("--overlay") + 1], encoding="utf-8")):
         page = page.replace(json.dumps(pub_s, ensure_ascii=False)[1:-1], json.dumps(priv_s, ensure_ascii=False)[1:-1]).replace(pub_s, priv_s)
-if "--hub" in args:
+if "--page" in args:
+    # standalone page for https://stayhungryasi.com/p/ai-models/ (the hub's BUILT menu, "AI models" page)
+    import html as _h
+    nm, nc = len(d["models"]), sum(len(v) for v in C.values())
+    desc = _h.escape(f"현존 주요 AI 모델 {nm}종 × 노력 단계 = 조합 {nc}개를 Artificial Analysis 지수 v5.0.1 한 잣대로 실무 5대 업무에 매핑한 대시보드. 기준일 {d['asof']}, 매월 갱신.")
+    url = "https://stayhungryasi.com/p/ai-models/"
+    fav = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0B0F'/%3E%3Cpath d='M5 22c7 5 16 4 21-9' stroke='%234FE0EF' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='26' cy='12' r='3' fill='%234FE0EF'/%3E%3C/svg%3E"
+    meta = (f'<!doctype html>\n<html lang="ko">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
+            f'<meta name="description" content="{desc}">\n<link rel="canonical" href="{url}">\n'
+            f'<meta property="og:type" content="website">\n<meta property="og:title" content="AI 모델·노력 매트릭스 · stayhungryasi.com">\n'
+            f'<meta property="og:description" content="{desc}">\n<meta property="og:url" content="{url}">\n'
+            f'<meta name="twitter:card" content="summary">\n<meta name="twitter:site" content="@shaferwineX">\n<meta name="theme-color" content="#0A0B0F">\n'
+            f'<link rel="icon" href="{fav}">\n')
+    i = page.index("</style>") + len("</style>")
+    page = meta + page[:i].replace("<title>AI 모델·노력 매트릭스</title>", "<title>AI 모델·노력 매트릭스 · stayhungryasi.com</title>", 1) + "\n</head>\n<body>\n" + page[i:] + "\n</body>\n</html>\n"
+elif "--hub" in args:
     page = '<!doctype html><html><head><meta name="robots" content="noindex"><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body>\n' + page + "\n</body></html>\n"
 open(out, "w", encoding="utf-8").write(page)
 print("built", len(page), "hero", hero)

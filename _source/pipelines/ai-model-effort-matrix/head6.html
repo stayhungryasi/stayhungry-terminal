@@ -1,7 +1,7 @@
 <title>AI 모델·노력 매트릭스</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Nanum+Brush+Script&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: one-column command deck — brand strip, sticky tab rail, one filter row, then the active panel. Cards only for charts, picks and the kit form. Dark-first (UnivertriX night), light = UnivertriX day. */
 :root{
@@ -53,12 +53,9 @@ button,select,input,textarea{font:inherit;color:inherit}
 
 /* brand strip */
 .brandbar{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px 24px;padding-bottom:16px;border-bottom:1px solid var(--line)}
-.lockup{display:flex;align-items:center;gap:14px}
-.wm{position:relative;display:inline-block;padding:6px 2px 8px}
-.wm b{font-family:var(--font-ui);font-weight:700;font-size:22px;letter-spacing:.2em;background:linear-gradient(90deg,var(--brand-a),var(--brand-b));-webkit-background-clip:text;background-clip:text;color:transparent}
-.wm svg{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none}
-.vdiv{width:1px;height:30px;background:var(--line)}
-.brush{font-family:var(--font-brush);font-size:30px;line-height:1;color:var(--brand-b)}
+.lockup{display:inline-flex;align-items:center;text-decoration:none;border-radius:6px}
+.lockup:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.shlogo{display:block;height:46px;width:auto;overflow:visible}
 .titleblock{display:grid;gap:4px;min-width:0}
 .titleblock .sub{color:var(--ink-2);font-size:13px}
 .metaline{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:12px;color:var(--ink-3)}
@@ -186,7 +183,7 @@ details.tv[open] summary{margin-bottom:8px}
 .ev{display:grid;gap:6px;font-size:12.5px}
 .ev .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:10px;border-bottom:1px dashed var(--line);padding-bottom:5px}
 .ev .row .num{text-align:right}
-@media (max-width:520px){.wm b{font-size:17px;letter-spacing:.14em}.brush{font-size:24px;white-space:nowrap}.lockup{gap:10px}.herofig{font-size:48px}}
+@media (max-width:520px){.shlogo{height:36px}.herofig{font-size:48px}}
 
 /* kit */
 .form{display:grid;gap:12px}

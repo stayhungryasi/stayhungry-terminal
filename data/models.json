@@ -1,0 +1,430 @@
+{
+ "asof": "2026-11-11",
+ "ruler": "Artificial Analysis Intelligence Index v5.0.1",
+ "update": "monthly",
+ "page": "https://stayhungryasi.com/p/ai-models/",
+ "n_models": 27,
+ "n_combos": 62,
+ "leader": {
+  "id": "fable52",
+  "model": "Claude Fable 5.2",
+  "vendor": "Anthropic",
+  "level": "max",
+  "index": 65,
+  "cost_usd": 26.54,
+  "minutes": 44.4
+ },
+ "switch": {
+  "from": {
+   "id": "fable51",
+   "model": "Claude Fable 5.1",
+   "vendor": "Anthropic",
+   "level": "xhigh",
+   "index": 50,
+   "cost_usd": 10.85,
+   "minutes": 19.4
+  },
+  "to": {
+   "id": "fable52",
+   "model": "Claude Fable 5.2",
+   "vendor": "Anthropic",
+   "level": "low",
+   "index": 54,
+   "cost_usd": 3.1,
+   "minutes": 6.5
+  },
+  "cost_pct": 29,
+  "higher_on_all_tasks": true
+ },
+ "outside_anthropic": {
+  "id": "carbon",
+  "model": "Gemini 4 Carbon",
+  "vendor": "Google",
+  "level": "high",
+  "index": 60,
+  "cost_usd": 7.76,
+  "minutes": 24.9
+ },
+ "cheapest_index_55": {
+  "id": "sol61",
+  "model": "GPT-6.1 Sol",
+  "vendor": "OpenAI",
+  "level": "max",
+  "index": 55,
+  "cost_usd": 1.27,
+  "minutes": 20.1
+ },
+ "open_weights": {
+  "id": "kimi",
+  "model": "Kimi K3.1 Pro",
+  "vendor": "Moonshot",
+  "level": "max",
+  "index": 46,
+  "cost_usd": 3.68,
+  "minutes": 37.1
+ },
+ "top": [
+  {
+   "id": "fable52",
+   "model": "Claude Fable 5.2",
+   "vendor": "Anthropic",
+   "level": "max",
+   "index": 65,
+   "cost_usd": 26.54,
+   "minutes": 44.4
+  },
+  {
+   "id": "carbon",
+   "model": "Gemini 4 Carbon",
+   "vendor": "Google",
+   "level": "high",
+   "index": 60,
+   "cost_usd": 7.76,
+   "minutes": 24.9
+  },
+  {
+   "id": "opus55",
+   "model": "Claude Opus 5.5",
+   "vendor": "Anthropic",
+   "level": "max",
+   "index": 59,
+   "cost_usd": 10.04,
+   "minutes": 25.1
+  },
+  {
+   "id": "astra",
+   "model": "GPT-6 Astra",
+   "vendor": "OpenAI",
+   "level": "max",
+   "index": 57,
+   "cost_usd": 6.24,
+   "minutes": 23.0
+  },
+  {
+   "id": "sonnet55",
+   "model": "Claude Sonnet 5.5",
+   "vendor": "Anthropic",
+   "level": "max",
+   "index": 55,
+   "cost_usd": 10.02,
+   "minutes": 31.4
+  },
+  {
+   "id": "sol61",
+   "model": "GPT-6.1 Sol",
+   "vendor": "OpenAI",
+   "level": "max",
+   "index": 55,
+   "cost_usd": 1.27,
+   "minutes": 20.1
+  },
+  {
+   "id": "terra61",
+   "model": "GPT-6.1 Terra",
+   "vendor": "OpenAI",
+   "level": "max",
+   "index": 51,
+   "cost_usd": 0.96,
+   "minutes": 13.5
+  },
+  {
+   "id": "fable51",
+   "model": "Claude Fable 5.1",
+   "vendor": "Anthropic",
+   "level": "xhigh",
+   "index": 50,
+   "cost_usd": 10.85,
+   "minutes": 19.4
+  },
+  {
+   "id": "argon",
+   "model": "Gemini 4 Argon",
+   "vendor": "Google",
+   "level": "high",
+   "index": 50,
+   "cost_usd": 9.95,
+   "minutes": 28.6
+  },
+  {
+   "id": "musefull",
+   "model": "Muse Wonder Full",
+   "vendor": "Meta",
+   "level": "max",
+   "index": 50,
+   "cost_usd": null,
+   "minutes": null
+  }
+ ],
+ "tasks": [
+  {
+   "id": "t1",
+   "name_ko": "시스템 고도화",
+   "weights": {
+    "tb4": 0.35,
+    "fc": 0.35,
+    "auto": 0.2,
+    "omni": 0.1
+   },
+   "top": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "max",
+    "index": 65,
+    "cost_usd": 26.54,
+    "minutes": 44.4,
+    "score": 9.55
+   },
+   "value_all": {
+    "id": "carbon",
+    "model": "Gemini 4 Carbon",
+    "vendor": "Google",
+    "level": "high",
+    "index": 60,
+    "cost_usd": 7.76,
+    "minutes": 24.9
+   },
+   "value_claude": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "high",
+    "index": 62,
+    "cost_usd": 9.08,
+    "minutes": 17.9
+   }
+  },
+  {
+   "id": "t2",
+   "name_ko": "기업분석",
+   "weights": {
+    "brief": 0.3,
+    "omni": 0.25,
+    "gdppdf": 0.2,
+    "hled": 0.15,
+    "auto": 0.1
+   },
+   "top": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "max",
+    "index": 65,
+    "cost_usd": 26.54,
+    "minutes": 44.4,
+    "score": 9.4
+   },
+   "value_all": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "medium",
+    "index": 56,
+    "cost_usd": 3.8,
+    "minutes": 8.3
+   },
+   "value_claude": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "medium",
+    "index": 56,
+    "cost_usd": 3.8,
+    "minutes": 8.3
+   }
+  },
+  {
+   "id": "t3",
+   "name_ko": "리서치",
+   "weights": {
+    "omni": 0.3,
+    "hled": 0.3,
+    "crit": 0.15,
+    "brief": 0.15,
+    "gdppdf": 0.1
+   },
+   "top": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "max",
+    "index": 65,
+    "cost_usd": 26.54,
+    "minutes": 44.4,
+    "score": 9.71
+   },
+   "value_all": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "high",
+    "index": 62,
+    "cost_usd": 9.08,
+    "minutes": 17.9
+   },
+   "value_claude": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "high",
+    "index": 62,
+    "cost_usd": 9.08,
+    "minutes": 17.9
+   }
+  },
+  {
+   "id": "t4",
+   "name_ko": "게임 개발",
+   "weights": {
+    "fc": 0.45,
+    "tb4": 0.35,
+    "tbsci": 0.2
+   },
+   "top": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "max",
+    "index": 65,
+    "cost_usd": 26.54,
+    "minutes": 44.4,
+    "score": 9.58
+   },
+   "value_all": {
+    "id": "opus55",
+    "model": "Claude Opus 5.5",
+    "vendor": "Anthropic",
+    "level": "xhigh",
+    "index": 57,
+    "cost_usd": 6.05,
+    "minutes": 16.4
+   },
+   "value_claude": {
+    "id": "opus55",
+    "model": "Claude Opus 5.5",
+    "vendor": "Anthropic",
+    "level": "xhigh",
+    "index": 57,
+    "cost_usd": 6.05,
+    "minutes": 16.4
+   }
+  },
+  {
+   "id": "t5",
+   "name_ko": "프로그램 개발",
+   "weights": {
+    "fc": 0.4,
+    "tb4": 0.4,
+    "auto": 0.2
+   },
+   "top": {
+    "id": "fable52",
+    "model": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "level": "max",
+    "index": 65,
+    "cost_usd": 26.54,
+    "minutes": 44.4,
+    "score": 9.49
+   },
+   "value_all": {
+    "id": "astra",
+    "model": "GPT-6 Astra",
+    "vendor": "OpenAI",
+    "level": "xhigh",
+    "index": 55,
+    "cost_usd": 3.66,
+    "minutes": 11.4
+   },
+   "value_claude": {
+    "id": "opus55",
+    "model": "Claude Opus 5.5",
+    "vendor": "Anthropic",
+    "level": "xhigh",
+    "index": 57,
+    "cost_usd": 6.05,
+    "minutes": 16.4
+   }
+  }
+ ],
+ "new": [
+  {
+   "id": "fable52",
+   "model": "Claude Fable 5.2",
+   "vendor": "Anthropic",
+   "release": "2026-11-09"
+  },
+  {
+   "id": "ember",
+   "model": "Muse Ember",
+   "vendor": "Meta",
+   "release": "2026-11-09"
+  },
+  {
+   "id": "inkling",
+   "model": "Inkling 2 Small",
+   "vendor": "Thinking Machines",
+   "release": "2026-11-05"
+  },
+  {
+   "id": "hy4",
+   "model": "Tencent Hy4",
+   "vendor": "Tencent",
+   "release": "2026-11-03"
+  },
+  {
+   "id": "mistral",
+   "model": "Mistral Large 4",
+   "vendor": "Mistral",
+   "release": "2026-10-29"
+  },
+  {
+   "id": "carbon",
+   "model": "Gemini 4 Carbon",
+   "vendor": "Google",
+   "release": "2026-10-28"
+  },
+  {
+   "id": "terra61",
+   "model": "GPT-6.1 Terra",
+   "vendor": "OpenAI",
+   "release": "2026-10-26"
+  },
+  {
+   "id": "kimi",
+   "model": "Kimi K3.1 Pro",
+   "vendor": "Moonshot",
+   "release": "2026-10-23"
+  },
+  {
+   "id": "musefull",
+   "model": "Muse Wonder Full",
+   "vendor": "Meta",
+   "release": "2026-10-12"
+  },
+  {
+   "id": "haiku55",
+   "model": "Claude Haiku 5.5",
+   "vendor": "Anthropic",
+   "release": "2026-10-07"
+  },
+  {
+   "id": "sol61",
+   "model": "GPT-6.1 Sol",
+   "vendor": "OpenAI",
+   "release": "2026-09-29"
+  },
+  {
+   "id": "sonnet55",
+   "model": "Claude Sonnet 5.5",
+   "vendor": "Anthropic",
+   "release": "2026-09-28"
+  }
+ ],
+ "notes": {
+  "scores": "Task scores (0-10) are the author's estimate: a weighted mix of AA benchmarks. Index, cost and time are read from Artificial Analysis.",
+  "value": "value = cheapest combination within 90% of the best task score; levels: low, medium, high, xhigh, max."
+ },
+ "source": "https://artificialanalysis.ai/",
+ "credit": "stayhungryasi.com"
+}

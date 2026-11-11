@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-11",
+      "commit": "HEAD",
+      "message": "AI models moves to BUILT: a new AI models page (27 models × effort levels = 62 combinations on the Artificial Analysis index v5.0.1) with the top 10, the five work tasks and the cost switch, and the full dashboard at /p/ai-models/ with the new stayhungryasi.com logo, refreshed every month; the research-library copy is retired and /data/models.json joins the open data"
+    },
+    {
+      "date": "2026-11-11",
       "commit": "81c3911",
       "message": "New research: AI Models × Effort Matrix, updated monthly. 27 models from Anthropic, OpenAI, Google, Meta and other labs, 62 model-and-effort combinations, scored on one yardstick (Artificial Analysis index v5.0.1); Claude Fable 5.2 leads"
     },
