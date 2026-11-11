@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-11",
+      "commit": "HEAD",
+      "message": "Today page: the VIX number now takes the same level color as on the Radar page (green under 20, gold 20~30, red 30 and above) instead of plain white"
+    },
+    {
+      "date": "2026-11-11",
       "commit": "244455d",
       "message": "The stayhungryasi.com logo now reads as one word: STAYHUNGRY joined to asi.com, with the orbit sweeping under the whole name (AI models page, dashboard and brand files)"
     },
