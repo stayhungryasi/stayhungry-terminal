@@ -1,8 +1,8 @@
 {
  "kind": "spcx_lock",
  "schema": 1,
- "generated_kst": "2026-11-10 13:40",
- "asof": "2026-11-10",
+ "generated_kst": "2026-11-11 11:50",
+ "asof": "2026-11-11",
  "source": "SpaceX Form 424(b)(4) final prospectus, 2026-06-11 (Shares Eligible for Future Sale / Lock-up Agreements)",
  "units": "shares_m = millions of shares, maximum eligible to sell (up to), not actual sales",
  "ipo": {
@@ -11,10 +11,10 @@
   "float_m": 638.9
  },
  "price": {
-  "last": 142.07,
-  "last_date": "2026-11-09",
-  "chg_pct": 5.81,
-  "vs_ipo_pct": 5.2,
+  "last": 143.09,
+  "last_date": "2026-11-10",
+  "chg_pct": 0.72,
+  "vs_ipo_pct": 6.0,
   "series": [
    [
     "2026-06-12",
@@ -431,6 +431,10 @@
    [
     "2026-11-09",
     142.07
+   ],
+   [
+    "2026-11-10",
+    143.09
    ]
   ],
   "source": "Yahoo Finance daily close"
@@ -458,7 +462,7 @@
   "trade": "2026-12-09",
   "open_utc": "2026-12-09T14:30:00Z",
   "done": false,
-  "dday": 29,
+  "dday": 28,
   "estimated": false,
   "est_text": null,
   "rule": "date",
@@ -468,7 +472,7 @@
   "void": false,
   "void_m": null,
   "vs_eligible_pct": 17.6,
-  "usd_b": 113.3
+  "usd_b": 114.1
  },
  "tranches": [
   {
@@ -480,7 +484,7 @@
    "trade": "2026-08-06",
    "open_utc": "2026-08-06T13:30:00Z",
    "done": true,
-   "dday": -96,
+   "dday": -97,
    "estimated": false,
    "est_text": null,
    "rule": "earnings",
@@ -490,7 +494,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 20.1,
-   "usd_b": 129.5
+   "usd_b": 130.4
   },
   {
    "id": "bonus",
@@ -501,7 +505,7 @@
    "trade": "2026-08-06",
    "open_utc": "2026-08-06T13:30:00Z",
    "done": true,
-   "dday": -96,
+   "dday": -97,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -520,7 +524,7 @@
    "trade": "2026-08-20",
    "open_utc": "2026-08-20T13:30:00Z",
    "done": true,
-   "dday": -82,
+   "dday": -83,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -530,7 +534,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.0,
-   "usd_b": 45.3
+   "usd_b": 45.6
   },
   {
    "id": "d90",
@@ -541,7 +545,7 @@
    "trade": "2026-09-09",
    "open_utc": "2026-09-09T13:30:00Z",
    "done": true,
-   "dday": -62,
+   "dday": -63,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -551,7 +555,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.0,
-   "usd_b": 45.3
+   "usd_b": 45.6
   },
   {
    "id": "aff",
@@ -562,7 +566,7 @@
    "trade": "2026-09-10",
    "open_utc": "2026-09-10T13:30:00Z",
    "done": true,
-   "dday": -61,
+   "dday": -62,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -583,7 +587,7 @@
    "trade": "2026-09-24",
    "open_utc": "2026-09-24T13:30:00Z",
    "done": true,
-   "dday": -47,
+   "dday": -48,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -593,7 +597,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.3,
-   "usd_b": 46.7
+   "usd_b": 47.0
   },
   {
    "id": "d120",
@@ -604,7 +608,7 @@
    "trade": "2026-10-09",
    "open_utc": "2026-10-09T13:30:00Z",
    "done": true,
-   "dday": -32,
+   "dday": -33,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -614,7 +618,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.3,
-   "usd_b": 46.7
+   "usd_b": 47.0
   },
   {
    "id": "q3",
@@ -625,7 +629,7 @@
    "trade": "2026-10-22",
    "open_utc": "2026-10-22T13:30:00Z",
    "done": true,
-   "dday": -19,
+   "dday": -20,
    "estimated": false,
    "est_text": null,
    "rule": "earnings",
@@ -635,7 +639,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 28.9,
-   "usd_b": 186.1
+   "usd_b": 187.4
   },
   {
    "id": "d135",
@@ -646,7 +650,7 @@
    "trade": "2026-10-26",
    "open_utc": "2026-10-26T13:30:00Z",
    "done": true,
-   "dday": -15,
+   "dday": -16,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -656,7 +660,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.3,
-   "usd_b": 46.7
+   "usd_b": 47.0
   },
   {
    "id": "d180",
@@ -667,7 +671,7 @@
    "trade": "2026-12-09",
    "open_utc": "2026-12-09T14:30:00Z",
    "done": false,
-   "dday": 29,
+   "dday": 28,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -677,7 +681,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 17.6,
-   "usd_b": 113.3
+   "usd_b": 114.1
   },
   {
    "id": "x_q4",
@@ -688,7 +692,7 @@
    "trade": "2027-02-03",
    "open_utc": "2027-02-03T14:30:00Z",
    "done": false,
-   "dday": 85,
+   "dday": 84,
    "estimated": true,
    "est_text": "'27.1~2월",
    "rule": "earnings",
@@ -698,7 +702,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.8,
-   "usd_b": 50.0
+   "usd_b": 50.4
   },
   {
    "id": "x_d280",
@@ -709,7 +713,7 @@
    "trade": "2027-03-18",
    "open_utc": "2027-03-18T13:30:00Z",
    "done": false,
-   "dday": 128,
+   "dday": 127,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -719,7 +723,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 3.9,
-   "usd_b": 25.0
+   "usd_b": 25.2
   },
   {
    "id": "x_q1",
@@ -730,7 +734,7 @@
    "trade": "2027-04-28",
    "open_utc": "2027-04-28T13:30:00Z",
    "done": false,
-   "dday": 169,
+   "dday": 168,
    "estimated": true,
    "est_text": "'27.4~5월",
    "rule": "earnings",
@@ -740,7 +744,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.8,
-   "usd_b": 50.0
+   "usd_b": 50.4
   },
   {
    "id": "x_d340",
@@ -751,7 +755,7 @@
    "trade": "2027-05-17",
    "open_utc": "2027-05-17T13:30:00Z",
    "done": false,
-   "dday": 188,
+   "dday": 187,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -761,7 +765,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 3.9,
-   "usd_b": 25.0
+   "usd_b": 25.2
   },
   {
    "id": "x_d366",
@@ -772,7 +776,7 @@
    "trade": "2027-06-14",
    "open_utc": "2027-06-14T13:30:00Z",
    "done": false,
-   "dday": 216,
+   "dday": 215,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -782,7 +786,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.8,
-   "usd_b": 50.0
+   "usd_b": 50.4
   },
   {
    "id": "musk",
@@ -793,7 +797,7 @@
    "trade": "2027-06-14",
    "open_utc": "2027-06-14T13:30:00Z",
    "done": false,
-   "dday": 216,
+   "dday": 215,
    "estimated": false,
    "est_text": null,
    "rule": "date",
@@ -803,7 +807,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 141.3,
-   "usd_b": 909.2
+   "usd_b": 915.8
   },
   {
    "id": "x_q2",
@@ -814,7 +818,7 @@
    "trade": "2027-07-28",
    "open_utc": "2027-07-28T13:30:00Z",
    "done": false,
-   "dday": 260,
+   "dday": 259,
    "estimated": true,
    "est_text": "'27.7~8월",
    "rule": "earnings",
@@ -824,7 +828,7 @@
    "void": false,
    "void_m": null,
    "vs_eligible_pct": 7.8,
-   "usd_b": 50.0
+   "usd_b": 50.4
   }
  ],
  "notes": [
