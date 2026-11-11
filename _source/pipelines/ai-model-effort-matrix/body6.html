@@ -1,0 +1,645 @@
+<style>
+/* v6 additions */
+.vbar{position:relative;height:10px;background:var(--surface-2);border-radius:3px;min-width:90px}
+.vbar i{position:absolute;left:0;top:0;bottom:0;border-radius:3px}
+.grp{font-size:11.5px;color:var(--ink-3);letter-spacing:.04em}
+.newtag{font-size:10.5px;font-weight:600;color:var(--accent-ink);background:var(--accent);border-radius:4px;padding:0 5px;margin-left:4px}
+.ow{font-size:10.5px;color:var(--ink-3);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:4px}
+.mrow{display:flex;flex-wrap:wrap;gap:6px}
+.xm td{min-width:118px}
+.taskcard{align-content:start}
+.delta{display:grid;grid-template-columns:150px minmax(0,1fr) 64px;gap:8px;align-items:center;font-size:12.5px;padding:4px 0;border-bottom:1px dashed var(--line)}
+.delta .bar{position:relative;height:12px;background:var(--surface-2);border-radius:3px}
+.delta .bar i{position:absolute;top:0;bottom:0;border-radius:3px}
+.delta .bar .mid{position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--axis)}
+</style>
+
+<div class="wrap">
+  <header class="brandbar">
+    <div class="lockup" aria-label="UnivertriX 우주지배자">
+      <span class="wm">
+        <b>UNIVERTRIX</b>
+        <svg viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="orb" x1="0" x2="1"><stop offset="0" stop-color="var(--brand-a)"/><stop offset="1" stop-color="var(--brand-b)"/></linearGradient></defs>
+          <path d="M4 34 C 60 44, 150 40, 196 12" fill="none" stroke="url(#orb)" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="196" cy="12" r="3" fill="var(--brand-b)"/>
+        </svg>
+      </span>
+      <span class="vdiv" aria-hidden="true"></span>
+      <span class="brush">우주지배자</span>
+    </div>
+    <div class="titleblock">
+      <h1>AI 모델·노력 매트릭스</h1>
+      <p class="sub" id="subline">실무 5대 업무 기준 · 현존 주요 모델 전체 × 노력 단계 · 한 잣대(AA 지수 v5.0.1)</p>
+      <div class="metaline">
+        <span>기준일 2026-11-11 (전면 재구축)</span>
+        <span><span class="bdg v">검증</span> 출처 수치 그대로</span>
+        <span><span class="bdg e">추정</span> 벤치→업무 매핑</span>
+        <span><span class="bdg u">미확인</span> 데이터 없음</span>
+        <span><span class="bdg m">실측</span> 직접 측정</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="rail" aria-label="보기 전환">
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab" role="tab" data-tab="summary" aria-selected="true">결론</button>
+      <button class="tab" role="tab" data-tab="all" aria-selected="false">전체 모델</button>
+      <button class="tab" role="tab" data-tab="effort" aria-selected="false">노력 단계</button>
+      <button class="tab" role="tab" data-tab="heat" aria-selected="false">히트맵</button>
+      <button class="tab" role="tab" data-tab="cross" aria-selected="false">크로스오버</button>
+      <button class="tab" role="tab" data-tab="gen" aria-selected="false">세대 비교</button>
+      <button class="tab" role="tab" data-tab="kit" aria-selected="false">실측 키트</button>
+      <button class="tab" role="tab" data-tab="src" aria-selected="false">출처·방법론</button>
+    </div>
+    <div class="filters">
+      <div class="fgroup" id="fTask" hidden><span class="flabel">업무</span></div>
+      <div class="fgroup" id="fEffort" hidden><span class="flabel">노력</span></div>
+      <div class="fgroup" id="fModel" hidden><span class="flabel">모델</span></div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SUMMARY -->
+    <section class="panel" id="p-summary">
+      <div class="callout" id="bigShift"></div>
+      <div class="card hero">
+        <div>
+          <div class="swap" id="heroSwap"></div>
+          <div class="herofig" id="heroFig">–</div>
+          <p class="herocap"><span id="heroCap"></span> <span class="bdg v">AA 실측 비용</span> <span class="bdg e">업무 점수 추정</span></p>
+        </div>
+        <div class="grid5" id="heroTiles"></div>
+      </div>
+
+      <div class="sec">
+        <div class="sechead"><h2>업무별 추천 조합</h2><span class="faint" style="font-size:12px">최고품질 = 최고점의 97% 이상 중 과제당 비용 최소 · 가성비 = 90% 이상 중 비용 최소 · 속도 = 75% 이상 중 과제당 시간 최소 · 모든 후보가 AA 실측 조합</span></div>
+        <div class="grid3" id="picks"></div>
+      </div>
+
+      <div class="grid2">
+        <div class="card sec">
+          <h2>공개 데이터로 확인된 사실</h2>
+          <ul class="findings" id="findings"></ul>
+        </div>
+        <div class="card sec">
+          <h2>가장 불확실한 판단</h2>
+          <p class="lede">추정이 틀릴 수 있는 지점과, 그걸 확인할 실측 번호입니다.</p>
+          <div class="unc" id="uncert"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL MODELS -->
+    <section class="panel" id="p-all" hidden>
+      <div class="sec" style="gap:4px">
+        <h2 id="allTitle">전체 모델 순위</h2>
+        <p class="lede">Anthropic·OpenAI·Google·Meta·중국 연구소까지, Artificial Analysis(AA)가 같은 시험 환경에서 잰 값만으로 매긴 업무 점수입니다. 모든 행이 그 모델·노력 조합의 실측입니다.</p>
+      </div>
+      <div class="callout" id="allCallout"></div>
+      <div class="tscroll" id="allTable"></div>
+      <div class="sec">
+        <h2 id="allScTitle">가성비 지도</h2>
+        <p class="lede">가로 = 과제당 비용(로그 눈금), 세로 = 업무 점수. 선은 효율적 프론티어(같은 비용에 더 높은 점수가 없는 조합)입니다.</p>
+        <div class="legend" id="allLegend"></div>
+        <div class="card min0"><div class="chartbox" style="height:400px"><canvas id="allS" role="img" aria-label="과제당 비용 대비 업무 점수 산점도"></canvas></div></div>
+        <div class="tscroll" id="allFrontier"></div>
+      </div>
+      <div class="sec">
+        <h2>벤더별 라인업</h2>
+        <div class="tscroll" id="lineup"></div>
+      </div>
+      <div class="sec">
+        <h2>10/24 이후 새로 나온 모델</h2>
+        <div class="tscroll" id="newRel"></div>
+      </div>
+    </section>
+
+    <!-- EFFORT -->
+    <section class="panel" id="p-effort" hidden>
+      <div class="sec" style="gap:4px">
+        <h2 id="effTitle">노력 단계</h2>
+        <p class="lede">같은 모델 안에서 노력만 바꿨을 때 무엇이 얼마나 달라지는지입니다. 단계별 값은 전부 AA가 단계마다 따로 잰 실측이고, 업무 점수는 그 값을 5대 업무에 매핑한 추정입니다.</p>
+      </div>
+      <div class="ladder" id="effLadder"></div>
+      <div class="callout" id="effCallout"></div>
+      <div class="sec">
+        <div class="sechead"><h2>업무별 권장 노력</h2><span class="faint" style="font-size:12px">가볍게 = 이 모델 최고점의 75%에 처음 닿는 단계 · 기본 = 90% · 최종본 = 97% · 최고 = 최고점 단계</span></div>
+        <div class="tscroll" id="effRecs"></div>
+      </div>
+      <div class="grid2">
+        <div class="card min0"><h3>업무 점수 (0–10)</h3><div class="legend" id="effQLegend"></div><div class="chartbox"><canvas id="effQ" role="img" aria-label="노력 단계별 업무 점수"></canvas></div><p class="chartnote">AA 단계별 실측을 업무에 매핑. <span class="bdg e">추정</span></p></div>
+        <div class="card min0"><h3>과제당 비용·시간 (로그 눈금)</h3><div class="legend" id="effULegend"></div><div class="chartbox"><canvas id="effU" role="img" aria-label="노력 단계별 비용과 시간"></canvas></div><p class="chartnote">AA 과제당 평균 비용(USD)과 시간(분). <span class="bdg v">검증</span></p></div>
+      </div>
+      <div class="sec">
+        <h3>벤치별 원자료 <span class="bdg v">검증</span></h3>
+        <p class="lede">각 행의 최고값은 굵게, 바로 아래 단계보다 떨어진 값에는 ↓를 붙였습니다(과잉사고 구간).</p>
+        <div class="tscroll" id="effRaw"></div>
+      </div>
+      <div class="sec">
+        <h3>한 단계 올릴 때 얻는 것과 치르는 것</h3>
+        <div class="tscroll" id="effStep"></div>
+      </div>
+    </section>
+
+    <!-- HEATMAP -->
+    <section class="panel" id="p-heat" hidden>
+      <div class="sechead">
+        <div class="sec" style="gap:4px"><h2 id="heatTitle">모델 × 업무</h2><p class="lede">칸 숫자는 업무 점수(0–10, 모든 모델·노력 중 벤치 최고=10), 아래는 과제당 비용. ‘모델별 최고’는 각 모델에서 그 업무 점수가 가장 높은 단계를 보여줍니다. 실선 강조는 직접 실측이 있는 칸입니다.</p></div>
+        <div class="scale"><span>0</span><span class="scalebar" id="scalebar"></span><span>10</span></div>
+      </div>
+      <div class="tscroll" id="heatwrap"></div>
+    </section>
+
+    <!-- CROSSOVER -->
+    <section class="panel" id="p-cross" hidden>
+      <div class="sec" style="gap:4px"><h2>크로스오버: 이 조합으로 저 조합을 대체할 수 있나</h2><p class="lede">칸마다 이긴 쪽, 점수 차(왼쪽 − 오른쪽), 비용 비(왼쪽 ÷ 오른쪽)입니다. 점수 차 0.2 미만은 동급으로 봅니다.</p></div>
+      <div class="tscroll" id="xmatrix"></div>
+    </section>
+
+    <!-- GENERATION -->
+    <section class="panel" id="p-gen" hidden>
+      <div class="sec" style="gap:4px"><h2>세대 비교: 같은 노력 단계끼리</h2><p class="lede">막대 오른쪽은 개선, 왼쪽은 후퇴입니다. 같은 노력 단계의 AA 실측끼리만 비교했습니다.</p></div>
+      <div class="sec">
+        <div class="sechead"><h3>Fable 5.1 → Fable 5.2</h3><div class="mrow" id="genLv"></div></div>
+        <div class="card" id="genFable"></div>
+      </div>
+      <div class="grid2">
+        <div class="sec min0"><h3>Opus 5 → Opus 5.5 (최대)</h3><div class="card" id="genOpus"></div></div>
+        <div class="sec min0"><h3>Haiku 5.5 vs Muse Ember (경량급, 최대)</h3><div class="card" id="genLite"></div></div>
+      </div>
+      <div class="sec"><h3>구버전을 쓸 이유가 있는가</h3><div class="tscroll" id="verdicts"></div></div>
+    </section>
+
+    <!-- KIT -->
+    <section class="panel" id="p-kit" hidden>
+      <div class="sechead">
+        <div class="sec" style="gap:4px"><h2>실측 벤치마크 키트</h2><p class="lede">실제 업무 그대로 5개 표준 과제를 돌리고 점수를 넣으면, 히트맵·노력 단계·크로스오버에 실측 레이어로 바로 붙습니다. 이전 기록도 그대로 이어집니다.</p></div>
+        <span class="status" id="dbStatus"><i></i><span>저장소 연결 확인 중</span></span>
+      </div>
+      <div class="grid2">
+        <div class="card sec min0">
+          <h3>1. 결과 입력</h3>
+          <div class="form" id="kitForm">
+            <div class="frow">
+              <label class="f" for="kTask">과제<select id="kTask"></select></label>
+              <label class="f" for="kModel">모델<select id="kModel"></select></label>
+              <label class="f" for="kEffort">노력<select id="kEffort"></select></label>
+            </div>
+            <div id="kCrit" class="form"></div>
+            <div class="frow">
+              <label class="f" for="kMin">소요시간 (분)<input type="number" id="kMin" min="0" step="1" value="10"></label>
+              <label class="f" for="kRework">재작업 횟수<input type="number" id="kRework" min="0" step="1" value="0"></label>
+              <label class="f" for="kFeel">사용량 체감 (1–5)<input type="number" id="kFeel" min="1" max="5" step="1" value="3"></label>
+              <label class="f" for="kMode">채점 방식<select id="kMode"><option value="avg">블라인드+본인 평균</option><option value="blind">블라인드만</option><option value="self">본인 체감만</option></select></label>
+            </div>
+            <label class="f" for="kNote">메모<input type="text" id="kNote" maxlength="300" placeholder="예: 테스트 1개 수정 후 통과"></label>
+            <div class="btnrow" style="justify-content:space-between">
+              <div><span class="faint" style="font-size:12px">실측 점수</span><div class="scorebig num" id="kScore">–</div></div>
+              <button class="btn pri" id="kSave" type="button">결과 저장</button>
+            </div>
+          </div>
+        </div>
+        <div class="card sec min0">
+          <div class="sechead"><h3>2. 과제 프롬프트</h3><button class="btn sm" id="kCopy" type="button">프롬프트 복사</button></div>
+          <pre class="prompt" id="kPrompt"></pre>
+          <h3>블라인드 채점 순서</h3>
+          <ol class="steps">
+            <li>과제마다 새 대화에서 실행합니다. 프롬프트·첨부·웹검색 설정은 모두 같게 둡니다.</li>
+            <li>결과물 파일명을 무작위 코드(A–Z)로 바꿉니다.</li>
+            <li>별도 대화에 코드명 파일만 넣고 아래 루브릭으로 채점만 맡깁니다.</li>
+            <li>블라인드 점수와 본인 체감의 평균을 입력합니다.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="sechead"><h3>3. 실측 계획 (우선순위 순)</h3><span class="faint" style="font-size:12px" id="planProg"></span></div>
+        <p class="lede" id="planLede"></p>
+        <div class="tscroll" id="plan"></div>
+      </div>
+      <div class="grid2">
+        <div class="sec min0"><h3>4. 추정 vs 실측</h3><div class="tscroll" id="estVsMeas"></div></div>
+        <div class="sec min0">
+          <div class="sechead"><h3>5. 기록</h3><div class="btnrow"><button class="btn sm" id="kExport" type="button">JSON 복사</button><button class="btn sm ghost" id="kImportToggle" type="button">JSON 붙여넣기</button></div></div>
+          <div id="importBox" class="form" hidden>
+            <label class="f" for="kImport">내보낸 JSON을 붙여넣으세요<textarea id="kImport"></textarea></label>
+            <div class="btnrow"><button class="btn sm pri" id="kImportGo" type="button">가져오기</button></div>
+          </div>
+          <div class="tscroll" id="runs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="panel" id="p-src" hidden>
+      <div class="callout" id="v5note"></div>
+      <div class="sec">
+        <h2>벤치마크 → 업무 매핑 <span class="bdg e">추정</span></h2>
+        <p class="lede">어떤 AA 벤치를 어느 업무의 대리 지표로 썼는지, 가중치는 얼마인지입니다. 매핑 자체가 판단이므로 전부 추정입니다. 게임 개발은 직접 대응하는 벤치가 없어 가장 약한 매핑입니다.</p>
+        <div class="tscroll" id="mapTable"></div>
+      </div>
+      <div class="sec"><h2>점수 산출식</h2><ol class="steps" id="formula"></ol></div>
+      <div class="sec">
+        <h2>원자료 전체 (AA v5.0.1) <span class="bdg v">검증</span></h2>
+        <p class="lede">Elo는 원래 단위, 나머지는 %(AA-Omniscience는 순점수). 시간·속도는 AA 실시간 값이라 같은 날에도 페이지마다 조금씩 다릅니다.</p>
+        <div class="tscroll" id="rawFull"></div>
+      </div>
+      <div class="sec"><h2>Claude 노력 단계 지원·기본값 <span class="bdg v">검증</span></h2><div class="tscroll" id="support"></div></div>
+      <div class="sec"><h2>출처 (확인일 2026-11-11)</h2><div class="tscroll" id="sources"></div></div>
+    </section>
+  </main>
+
+  <footer class="foot"><span id="credit">stayhungryasi.com · 정보 제공 목적.</span><span>모든 수치는 공급사·평가기관 발표값이며 재현하지 않았습니다. 시간·속도는 AA 실시간 값(2026-11-11)입니다.</span></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+<script>
+(function(){
+"use strict";
+const D = /*__DATA__*/null;
+const X = /*__TEXT__*/null;
+const LV = D.levels;
+const LVK = {low:"낮음",medium:"중간",high:"높음",xhigh:"엑스트라",max:"최대"};
+const M = D.models, MB = {}; M.forEach(m => MB[m.id] = m);
+const T = D.tasks, TB = {}; T.forEach(t => TB[t.id] = t);
+const TC = {t1:"T1",t2:"T2",t3:"T3",t4:"T4",t5:"T5"};
+const BN = {}; D.benches.forEach(b => BN[b.k] = b);
+const GROUPS = [["claude","Claude 주력"],["claudeold","Claude 이전 세대"],["openai","OpenAI"],["google","Google"],["meta","Meta"],["other","그 밖의 연구소"]];
+const GVAR = {claude:"--s1", claudeold:"--s1", openai:"--g1", google:"--s3", meta:"--s2", other:"--s0"};
+const VVAR = {Anthropic:"--s1", OpenAI:"--g1", Google:"--s3", Meta:"--s2"};
+const LADDER_IDS = Object.keys(D.ladders);
+const S = {tab:"summary", task:"t1", effort:"best", model: LADDER_IDS.includes("fable52") ? "fable52" : LADDER_IDS[0], genLv:"high", runs:[], db:null, dbState:"loading", charts:{}};
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const f1 = x => x == null ? "—" : Number(x).toFixed(1);
+const f2 = x => x == null ? "—" : Number(x).toFixed(2);
+const money = v => v == null ? "—" : "$" + v.toFixed(2);
+const mins = s => s == null ? "—" : (s/60 < 10 ? (s/60).toFixed(1) : Math.round(s/60)) + "분";
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isFixed = mid => MB[mid] && MB[mid].levels.length === 1;
+const cellOf = (mid, lv) => (D.cells[mid] || {})[lv] || null;
+const sOf = (mid, lv, tid) => { const c = cellOf(mid, lv); return c ? c.s[tid] : null; };
+const shortLab = mid => MB[mid] ? MB[mid].label.replace(/^Claude /, "") : mid;
+const lvName = (mid, lv) => isFixed(mid) ? (lv === "max" ? "최대" : LVK[lv] || lv) : (LVK[lv] || lv);
+const combo = (mid, lv) => `${esc(shortLab(mid))} <span class="lvl">${esc(lvName(mid, lv))}</span>`;
+const colorOf = mid => css(MB[mid].group === "claudeold" ? "--s0" : (VVAR[MB[mid].vendor] || GVAR[MB[mid].group] || "--s0"));
+const bestLv = (mid, tid) => { const d = D.cells[mid]; let b = null; Object.keys(d).forEach(l => { if(!b || d[l].s[tid] > d[b].s[tid]) b = l; }); return b; };
+const allCombos = () => { const out = []; M.forEach(m => Object.keys(D.cells[m.id]).forEach(l => out.push([m.id, l, D.cells[m.id][l]]))); return out; };
+
+function hexToRgb(h){ h = h.replace("#",""); if(h.length===3) h = h.split("").map(c=>c+c).join(""); const n = parseInt(h,16); return [(n>>16)&255,(n>>8)&255,n&255]; }
+function rgba(h, a){ const [r,g,b] = hexToRgb(h); return `rgba(${r},${g},${b},${a})`; }
+function lum([r,g,b]){ const f = v => { v/=255; return v<=0.03928 ? v/12.92 : Math.pow((v+0.055)/1.055,2.4); }; return 0.2126*f(r)+0.7152*f(g)+0.0722*f(b); }
+function heat(s){
+  const stops = ["--h0","--h1","--h2","--h3","--h4"].map(v => hexToRgb(css(v)));
+  const x = Math.max(0, Math.min(1, (s||0)/10)) * 4, i = Math.min(3, Math.floor(x)), t = x - i;
+  const c = stops[i].map((v,k) => Math.round(v + (stops[i+1][k]-v)*t));
+  const bg = `rgb(${c.join(",")})`; const fg = lum(c) > 0.32 ? "#16181D" : "#F4F6FB";
+  return {bg, fg};
+}
+
+/* measured layer (kit runs) */
+function measured(mid, tid, lv){
+  const rs = S.runs.filter(r => r.model === mid && r.task === tid && (isFixed(mid) || r.effort === lv));
+  if(!rs.length) return null;
+  return {s: rs.reduce((a,r) => a + Number(r.score||0), 0) / rs.length, n: rs.length};
+}
+
+/* filters & tabs */
+const TAB_FILTERS = {summary:[], all:["task"], effort:["model"], heat:["effort"], cross:[], gen:[], kit:[], src:[]};
+function buildFilters(){
+  const ft = $("#fTask"), fe = $("#fEffort"), fm = $("#fModel");
+  T.forEach(t => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.dataset.task = t.id; b.innerHTML = `${esc(t.name)}<span class="mono">${TC[t.id]}</span>`; b.onclick = () => { S.task = t.id; syncChips(); renderActive(); }; ft.appendChild(b); });
+  [["best","모델별 최고"]].concat(LV.map(l => [l, LVK[l]])).forEach(([l, n]) => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.dataset.eff = l; b.textContent = n; b.onclick = () => { S.effort = l; syncChips(); renderActive(); }; fe.appendChild(b); });
+  LADDER_IDS.forEach(id => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.dataset.mid = id; b.innerHTML = `<i class="dot" style="background:${colorOf(id)}"></i> ${esc(shortLab(id))}`; b.onclick = () => { S.model = id; syncChips(); renderActive(); }; fm.appendChild(b); });
+  syncChips();
+}
+function syncChips(){
+  $$("#fTask .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.task === S.task));
+  $$("#fEffort .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.eff === S.effort));
+  $$("#fModel .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.mid === S.model));
+}
+function setTab(tab){
+  S.tab = tab;
+  $$(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
+  $$("main > section").forEach(s => s.hidden = s.id !== "p-" + tab);
+  $("#fTask").hidden = !TAB_FILTERS[tab].includes("task");
+  $("#fEffort").hidden = !TAB_FILTERS[tab].includes("effort");
+  $("#fModel").hidden = !TAB_FILTERS[tab].includes("model");
+  try { if(/^[a-z]+$/.test(tab)) history.replaceState(null, "", "#" + tab); } catch(e) {}
+  renderActive();
+}
+function renderActive(){
+  const r = {summary:renderSummary, all:renderAll, effort:renderEffort, heat:renderHeat, cross:renderCross, gen:renderGen, kit:renderKit, src:renderSources}[S.tab];
+  if(r) r();
+}
+
+/* chart helpers */
+const hasChart = () => typeof window.Chart !== "undefined";
+function chartBase(){ Chart.defaults.font.family = css("--font-ui"); Chart.defaults.font.size = 12; Chart.defaults.color = css("--ink-2"); Chart.defaults.borderColor = css("--grid"); }
+function kill(key){ if(S.charts[key]){ S.charts[key].destroy(); delete S.charts[key]; } }
+function noChart(id){ const c = document.getElementById(id); if(c && c.parentElement) c.parentElement.innerHTML = `<p class="chartnote">차트 라이브러리를 불러오지 못했습니다. 아래 표로 확인하세요.</p>`; }
+function tooltipStyle(){ return {backgroundColor: css("--surface-2"), titleColor: css("--ink"), bodyColor: css("--ink-2"), borderColor: css("--line"), borderWidth: 1, padding: 10, displayColors: true, boxPadding: 4, filter: i => i.raw != null}; }
+function axis(extra){ return Object.assign({grid:{color:css("--grid"), drawTicks:false}, border:{color:css("--axis")}, ticks:{color:css("--ink-3"), padding:6}}, extra||{}); }
+function frontier(pts){ const s = [...pts].sort((a,b) => a.x - b.x || b.y - a.y); const fr = []; let best = -1; s.forEach(p => { if(p.y > best){ fr.push(p); best = p.y; } }); return fr; }
+
+/* ---------------- SUMMARY ---------------- */
+function renderSummary(){
+  const H = X.hero; const from = H.from, to = H.to;
+  $("#bigShift").innerHTML = X.bigShift;
+  $("#heroSwap").innerHTML = `<span class="pill"><i class="dot" style="background:${colorOf(from[0])}"></i>${esc(shortLab(from[0]))} · ${LVK[from[1]]}</span><span class="faint">→</span><span class="pill"><i class="dot" style="background:${colorOf(to[0])}"></i>${esc(shortLab(to[0]))} · ${LVK[to[1]]}</span>`;
+  const cf = cellOf(...from), ct = cellOf(...to);
+  const pct = Math.round(ct.cost / cf.cost * 100);
+  $("#heroFig").innerHTML = `${pct}<small>%</small>`;
+  let higher = 0, tie = 0;
+  $("#heroTiles").innerHTML = T.map(t => { const d = ct.s[t.id] - cf.s[t.id]; if(d >= 0.2) higher++; else if(d > -0.2) tie++; return `<div class="tile"><span class="k">${esc(t.name)}</span><span class="v num ${d>=0.2?"up":d<=-0.2?"dn":""}">${d>=0?"+":""}${f1(d)}</span><span class="d">점수 ${f1(cf.s[t.id])} → ${f1(ct.s[t.id])}</span></div>`; }).join("");
+  $("#heroCap").textContent = `기준 설정인 ${shortLab(from[0])} ${LVK[from[1]]}를 ${shortLab(to[0])} ${LVK[to[1]]}로 바꿀 때의 과제당 비용입니다 (AA ${money(ct.cost)} vs ${money(cf.cost)}, 시간 ${mins(ct.time)} vs ${mins(cf.time)}). 추정 품질은 ${higher===5?"5개 업무 모두 높습니다":`${higher}개 업무에서 높고 ${tie}개 업무에서 동급입니다`}.`;
+
+  $("#picks").innerHTML = T.map(t => {
+    const rc = D.recs.claude[t.id], ra = D.recs.all[t.id];
+    const row = (role, k, r, why, scope) => { const [mid, lv] = r[k]; const c = cellOf(mid, lv); const ms = measured(mid, t.id, lv);
+      return `<div class="pick"><span class="role">${role}</span><div><div class="combo"><i class="dot" style="background:${colorOf(mid)}"></i>${combo(mid, lv)}${ms?`<span class="bdg m">실측 ${f1(ms.s)}</span>`:""}</div><div class="stats num">점수 ${f1(c.s[t.id])} (${Math.round(c.s[t.id]/r.top*100)}%) · ${money(c.cost)}/과제 · ${mins(c.time)}${scope?` · ${scope}`:""}</div></div>${why?`<p class="why">${esc(why)}</p>`:""}</div>`; };
+    const W = X.reasons[t.id] || {};
+    const allV = ra.value.join() !== rc.value.join() ? row("전 벤더 가성비", "value", ra, W.allValue, "Claude 밖") : "";
+    return `<div class="card taskcard"><h3><span class="tcode">${TC[t.id]}</span> ${esc(t.name)} <span class="bdg e">추정</span></h3>${row("최고품질","quality",rc,W.quality)}${row("가성비","value",rc,W.value)}${row("속도","speed",rc,W.speed)}${allV}</div>`;
+  }).join("");
+  $("#findings").innerHTML = X.findings.map(([b, lab, txt]) => `<li><span class="bdg ${b}">${esc(lab)}</span><span>${esc(txt)}</span></li>`).join("");
+  $("#uncert").innerHTML = X.uncert.map(([h, b, n]) => `<div class="item"><b>${esc(h)}</b><span class="muted">${esc(b)}</span><span class="faint" style="font-size:12px">확인할 실측: ${esc(n)}</span></div>`).join("");
+}
+
+/* ---------------- ALL MODELS ---------------- */
+function renderAll(){
+  const tid = S.task, tn = TB[tid].name;
+  $("#allTitle").textContent = `전체 모델 순위 · ${tn}`;
+  const rows = allCombos().map(([mid, lv, c]) => ({mid, lv, c, s: c.s[tid]})).sort((a,b) => b.s - a.s);
+  const top = rows[0].s;
+  const bestPer = {}; rows.forEach(r => { if(!bestPer[r.mid]) bestPer[r.mid] = r; });
+  const vend = Object.values(bestPer).sort((a,b) => b.s - a.s);
+  const nonClaude = vend.find(r => MB[r.mid].vendor !== "Anthropic");
+  const cheap90 = rows.filter(r => r.s >= 0.9 * top && r.c.cost != null).sort((a,b) => a.c.cost - b.c.cost)[0];
+  $("#allCallout").innerHTML = `<span><b>${esc(tn)} 1위는 ${esc(shortLab(rows[0].mid))} ${lvName(rows[0].mid, rows[0].lv)}(${f1(top)}점).</b> Anthropic 밖 최고는 ${esc(MB[nonClaude.mid].label)} ${lvName(nonClaude.mid, nonClaude.lv)}(${f1(nonClaude.s)}점, ${money(nonClaude.c.cost)}/과제)입니다. 1위 점수의 90% 이상을 가장 싸게 내는 조합은 ${esc(shortLab(cheap90.mid))} ${lvName(cheap90.mid, cheap90.lv)}(${money(cheap90.c.cost)})입니다.</span>`;
+  const head = `<table><thead><tr><th class="r">#</th><th>모델 · 노력</th><th>벤더</th><th style="min-width:160px">업무 점수</th><th class="r">AA 지수</th><th class="r">과제당 비용</th><th class="r">과제당 시간</th><th class="r">점수/$</th></tr></thead><tbody>`;
+  $("#allTable").innerHTML = head + rows.slice(0, 40).map((r, i) => { const m = MB[r.mid]; const ms = measured(r.mid, tid, r.lv);
+    return `<tr><td class="r num">${i+1}</td><td><i class="dot" style="background:${colorOf(r.mid)}"></i> <b>${esc(m.label)}</b> <span class="lvl">${esc(lvName(r.mid, r.lv))}</span>${m.open?`<span class="ow">오픈 웨이트</span>`:""}${X.newIds.includes(r.mid)?`<span class="newtag">NEW</span>`:""}${ms?` <span class="bdg m">실측 ${f1(ms.s)}</span>`:""}</td><td class="muted">${esc(m.vendor)}</td><td><div style="display:flex;align-items:center;gap:8px"><div class="vbar" style="flex:1"><i style="width:${(r.s/10*100).toFixed(1)}%;background:${colorOf(r.mid)}"></i></div><span class="num">${f1(r.s)}</span></div></td><td class="r num">${r.c.ii}</td><td class="r num">${money(r.c.cost)}</td><td class="r num">${mins(r.c.time)}</td><td class="r num">${r.c.cost ? f1(r.s / r.c.cost) : "—"}</td></tr>`; }).join("") + `</tbody></table><p class="chartnote" style="padding:0 10px 10px">상위 40개 조합. 점수/$는 과제당 1달러로 얻는 업무 점수(높을수록 가성비). Muse Wonder Full은 공개 API가 없어 비용이 없습니다.</p>`;
+
+  // scatter
+  $("#allScTitle").textContent = `가성비 지도 · ${tn}`;
+  const vgroups = [["Anthropic","Anthropic"],["OpenAI","OpenAI"],["Google","Google"],["Meta","Meta"],["other","그 밖"]];
+  $("#allLegend").innerHTML = vgroups.map(([k, n]) => `<span><i class="dot" style="background:${css(VVAR[k] || "--s0")}"></i>${n}</span>`).join("") + `<span><i class="lk" style="background:${css("--ink-2")}"></i>효율적 프론티어</span>`;
+  const pts = rows.filter(r => r.c.cost != null).map(r => ({x: r.c.cost, y: r.s, mid: r.mid, lv: r.lv}));
+  const fr = frontier(pts);
+  $("#allFrontier").innerHTML = `<table><thead><tr><th>프론티어 위 조합 (싼 순)</th><th class="r">과제당 비용</th><th class="r">점수</th><th class="r">한 단계 위로 갈 때 +$1당 점수</th></tr></thead><tbody>${fr.map((p,i) => `<tr><td><i class="dot" style="background:${colorOf(p.mid)}"></i> ${combo(p.mid, p.lv)}</td><td class="r num">${money(p.x)}</td><td class="r num">${f1(p.y)}</td><td class="r num">${i < fr.length-1 ? f2((fr[i+1].y - p.y)/(fr[i+1].x - p.x)) : "—"}</td></tr>`).join("")}</tbody></table>`;
+  if(!hasChart()) { noChart("allS"); } else {
+    chartBase(); kill("allS");
+    const frSet = new Set(fr.map(p => p.mid + p.lv));
+    const ds = vgroups.map(([k, n]) => { const col = css(VVAR[k] || "--s0"); const P = pts.filter(p => (VVAR[MB[p.mid].vendor] ? MB[p.mid].vendor : "other") === k);
+      return {type:"scatter", label:n, data:P, pointRadius:P.map(p => frSet.has(p.mid+p.lv) ? 6 : 4.5), pointBackgroundColor:P.map(p => frSet.has(p.mid+p.lv) ? col : rgba(col, .45)), pointBorderColor:css("--surface"), pointBorderWidth:2, pointHoverRadius:7}; });
+    ds.push({type:"line", label:"프론티어", data:fr, borderColor:css("--ink-2"), borderWidth:1.5, pointRadius:0, fill:false, tension:0});
+    S.charts.allS = new Chart($("#allS"), {type:"scatter", data:{datasets:ds}, options:{responsive:true, maintainAspectRatio:false, animation:false,
+      scales:{x:axis({type:"logarithmic", title:{display:true, text:"과제당 비용 (USD, 로그 눈금)", color:css("--ink-3")}, ticks:{color:css("--ink-3"), callback:(v)=>[0.03,0.1,0.3,1,3,10,30].includes(+(+v).toFixed(2))?"$"+v:""}}), y:axis({min:0, max:10, title:{display:true, text:"업무 점수", color:css("--ink-3")}})},
+      plugins:{legend:{display:false}, tooltip:Object.assign(tooltipStyle(), {callbacks:{label:(c)=> c.raw.mid ? `${shortLab(c.raw.mid)} ${lvName(c.raw.mid, c.raw.lv)}: ${f1(c.raw.y)}점 · ${money(c.raw.x)}` : ""}})}}});
+  }
+  // lineup
+  $("#lineup").innerHTML = `<table><thead><tr><th>모델</th><th>벤더</th><th>출시</th><th class="r">입력/출력 단가 ($/1M)</th><th>측정된 노력</th><th class="r">최고 AA 지수</th><th>메모</th></tr></thead><tbody>${GROUPS.map(([g, gn]) => { const ms = M.filter(m => m.group === g); if(!ms.length) return ""; return `<tr class="sep-row"><td colspan="7" class="grp">${esc(gn)}</td></tr>` + ms.map(m => { const iis = Object.values(D.cells[m.id]).map(c => c.ii); return `<tr><td><i class="dot" style="background:${colorOf(m.id)}"></i> <b>${esc(m.label)}</b>${m.open?`<span class="ow">오픈 웨이트</span>`:""}${X.newIds.includes(m.id)?`<span class="newtag">NEW</span>`:""}</td><td class="muted">${esc(m.vendor)}</td><td class="num">${esc(m.release)}</td><td class="r num">${m.price ? "$"+m.price[0]+" / $"+m.price[1] : `<span class="unk">—</span>`}</td><td>${m.levels.map(l => LVK[l]).join("·")}</td><td class="r num">${Math.max(...iis)}</td><td class="muted">${esc(m.note||"")}</td></tr>`; }).join(""); }).join("")}</tbody></table>`;
+  $("#newRel").innerHTML = `<table><thead><tr><th>날짜</th><th>모델</th><th>핵심</th></tr></thead><tbody>${X.newRel.map(([d, n, t, u]) => `<tr><td class="num">${esc(d)}</td><td><b>${esc(n)}</b></td><td class="muted">${esc(t)}${u?` · <a href="${esc(u)}" target="_blank" rel="noopener">출처</a>`:""}</td></tr>`).join("")}</tbody></table>`;
+}
+
+/* ---------------- EFFORT ---------------- */
+function renderEffort(){
+  const mid = S.model, L = D.ladders[mid], R = D.rows[mid], lvs = L.levels;
+  $("#effTitle").textContent = `노력 단계 · ${MB[mid].label}`;
+  const dflt = MB[mid].appDefault;
+  $("#effLadder").innerHTML = lvs.map(l => { const r = R[l]; return `<div class="rung${l===dflt?" def":""}"><div class="lv"><span>${LVK[l]}</span>${l===dflt?`<span class="tag">기본값</span>`:`<span class="mono">${l}</span>`}</div><div class="ii num">${r.ii}<small>AA 지수</small></div><dl><dt>과제당 비용</dt><dd>${money(r.cost)}</dd><dt>과제당 시간</dt><dd>${mins(r.time)}</dd><dt>출력 토큰</dt><dd>${r.out!=null?Math.round(r.out)+"k":"—"}</dd><dt>출력 속도</dt><dd>${r.speed!=null?Math.round(r.speed)+" tok/s":"—"}</dd></dl></div>`; }).join("");
+  const lo = R[lvs[0]], hi = R[lvs[lvs.length-1]];
+  const avgS = l => T.reduce((a,t) => a + D.cells[mid][l].s[t.id], 0) / T.length;
+  const bestAvg = lvs.reduce((b,l) => avgS(l) > avgS(b) ? l : b, lvs[0]);
+  const drops = D.benches.filter(b => { const v = lvs.map(l => R[l][b.k]); return v[v.length-1] < Math.max(...v); }).map(b => b.name.replace(/ \(.*\)/, ""));
+  $("#effCallout").innerHTML = `<span><b>${esc(shortLab(mid))}: 가장 낮은 단계에서 가장 높은 단계까지 비용 ×${f1(hi.cost/lo.cost)}, 시간 ×${f1(hi.time/lo.time)}, AA 지수 ${lo.ii} → ${hi.ii}.</b> 5개 업무 평균 점수가 가장 높은 단계는 ${LVK[bestAvg]}입니다.${drops.length ? ` 최고 단계에서 오히려 떨어지는 벤치: ${esc(drops.join(", "))}.` : ""}${X.effNotes[mid] ? " " + esc(X.effNotes[mid]) : ""}</span>`;
+  $("#effRecs").innerHTML = `<table><thead><tr><th>업무</th><th>가볍게 (75%)</th><th>기본 (90%)</th><th>최종본 (97%)</th><th>최고</th><th class="r">최고점</th></tr></thead><tbody>${T.map(t => { const x = L.tasks[t.id]; const cc = l => `<span class="lvl">${LVK[l]}</span> <span class="faint num">${money(R[l].cost)}</span>`; return `<tr><td><span class="tcode">${TC[t.id]}</span> ${esc(t.name)}</td><td>${cc(x.p75)}</td><td>${cc(x.p90)}</td><td>${cc(x.p97)}</td><td>${cc(x.argmax)}</td><td class="r num">${f1(x.max)}</td></tr>`; }).join("")}</tbody></table>`;
+  // raw
+  let raw = `<table><thead><tr><th>벤치</th>${lvs.map(l => `<th class="r">${LVK[l]}</th>`).join("")}</tr></thead><tbody>`;
+  [["ii","AA 지수"]].concat(D.benches.map(b => [b.k, b.name])).forEach(([k, n]) => { const v = lvs.map(l => R[l][k]); const mx = Math.max(...v.filter(x => x != null));
+    raw += `<tr><td>${esc(n)}</td>${v.map((x,i) => `<td class="r num">${x==null?"—":(x===mx?`<b>${x}</b>`:x)}${i>0 && x!=null && v[i-1]!=null && x < v[i-1] ? ` <span class="dn">↓</span>` : ""}</td>`).join("")}</tr>`; });
+  raw += `<tr><td>과제당 비용</td>${lvs.map(l => `<td class="r num">${money(R[l].cost)}</td>`).join("")}</tr><tr><td>과제당 시간</td>${lvs.map(l => `<td class="r num">${mins(R[l].time)}</td>`).join("")}</tr></tbody></table>`;
+  $("#effRaw").innerHTML = raw;
+  // steps
+  let st = `<table><thead><tr><th>전환</th>${T.map(t => `<th class="r">${TC[t.id]}</th>`).join("")}<th class="r">비용</th><th class="r">시간</th></tr></thead><tbody>`;
+  for(let i = 0; i < lvs.length-1; i++){ const a = lvs[i], b = lvs[i+1]; st += `<tr><td>${LVK[a]} → ${LVK[b]}</td>${T.map(t => { const d = D.cells[mid][b].s[t.id] - D.cells[mid][a].s[t.id]; return `<td class="r num ${d>=0?"":"dn"}">${d>=0?"+":""}${f2(d)}</td>`; }).join("")}<td class="r num">×${f2(R[b].cost/R[a].cost)}</td><td class="r num">×${f2(R[b].time/R[a].time)}</td></tr>`; }
+  $("#effStep").innerHTML = st + `</tbody></table>`;
+  // charts
+  const TV = ["--s1","--s2","--s3","--g1","--g2"];
+  $("#effQLegend").innerHTML = T.map((t,i) => `<span><i class="lk" style="background:${css(TV[i])}"></i>${esc(t.name)}</span>`).join("");
+  $("#effULegend").innerHTML = `<span><i class="lk" style="background:${css("--s1")}"></i>과제당 비용</span><span><i class="lk" style="background:${css("--s2")}"></i>과제당 시간(분)</span>`;
+  if(!hasChart()){ noChart("effQ"); noChart("effU"); return; }
+  chartBase(); kill("effQ"); kill("effU");
+  S.charts.effQ = new Chart($("#effQ"), {type:"line", data:{labels: lvs.map(l => LVK[l]), datasets: T.map((t,i) => ({label:t.name, data: lvs.map(l => D.cells[mid][l].s[t.id]), borderColor:css(TV[i]), backgroundColor:css(TV[i]), borderWidth:2, pointRadius:4, pointBorderColor:css("--surface"), pointBorderWidth:2, tension:0}))},
+    options:{responsive:true, maintainAspectRatio:false, animation:false, interaction:{mode:"index", intersect:false}, scales:{x:axis(), y:axis({min:0, max:10})}, plugins:{legend:{display:false}, tooltip:Object.assign(tooltipStyle(), {callbacks:{label:(c)=>`${c.dataset.label}: ${f2(c.raw)}`}})}}});
+  S.charts.effU = new Chart($("#effU"), {type:"line", data:{labels: lvs.map(l => LVK[l]), datasets:[
+      {label:"과제당 비용", data: lvs.map(l => R[l].cost), borderColor:css("--s1"), backgroundColor:css("--s1"), borderWidth:2, pointRadius:4, pointBorderColor:css("--surface"), pointBorderWidth:2},
+      {label:"과제당 시간(분)", data: lvs.map(l => R[l].time ? R[l].time/60 : null), borderColor:css("--s2"), backgroundColor:css("--s2"), borderWidth:2, pointRadius:4, pointBorderColor:css("--surface"), pointBorderWidth:2}]},
+    options:{responsive:true, maintainAspectRatio:false, animation:false, interaction:{mode:"index", intersect:false}, scales:{x:axis(), y:axis({type:"logarithmic", ticks:{color:css("--ink-3"), callback:(v)=>[0.03,0.1,0.3,1,3,10,30,100].includes(+(+v).toFixed(2))?v:""}})}, plugins:{legend:{display:false}, tooltip:Object.assign(tooltipStyle(), {callbacks:{label:(c)=> c.datasetIndex===0 ? `비용 ${money(c.raw)}` : `시간 ${f1(c.raw)}분`}})}}});
+}
+
+/* ---------------- HEATMAP ---------------- */
+function renderHeat(){
+  const e = S.effort;
+  $("#heatTitle").textContent = `모델 × 업무 · ${e === "best" ? "모델별 최고 단계" : LVK[e]}`;
+  const bar = $("#scalebar"); bar.style.background = `linear-gradient(90deg, ${["--h0","--h1","--h2","--h3","--h4"].map(v => css(v)).join(",")})`;
+  let h = `<table class="heat"><thead><tr><th></th>${T.map(t => `<th><span class="tcode">${TC[t.id]}</span> ${esc(t.name)}</th>`).join("")}</tr></thead><tbody>`;
+  GROUPS.forEach(([g, gn]) => { const ms = M.filter(m => m.group === g); if(!ms.length) return;
+    h += `<tr class="sep-row"><td class="mlabel"><span class="grouplabel">${esc(gn)}</span></td>${T.map(()=>"<td></td>").join("")}</tr>`;
+    ms.forEach(m => {
+      h += `<tr><td class="mlabel"><div class="mname"><i class="dot" style="background:${colorOf(m.id)}"></i>${esc(shortLab(m.id))}${X.newIds.includes(m.id)?`<span class="newtag">NEW</span>`:""}</div><div class="mii">${m.price?`$${m.price[0]}/$${m.price[1]}`:"API 없음"} · ${m.levels.map(l => LVK[l]).join("·")}</div></td>`;
+      T.forEach(t => {
+        const lv = e === "best" ? bestLv(m.id, t.id) : (isFixed(m.id) ? m.levels[0] : e);
+        const c = cellOf(m.id, lv);
+        if(!c){ h += `<td><div class="hc na">미측정</div></td>`; return; }
+        const col = heat(c.s[t.id]); const ms2 = measured(m.id, t.id, lv);
+        const tip = `${m.label} · ${lvName(m.id, lv)} · ${t.name}: 점수 ${f2(c.s[t.id])}, ${money(c.cost)}/과제, ${mins(c.time)} (업무 점수는 추정)`;
+        h += `<td><div class="hc${ms2?" meas":""}" style="background:${col.bg};color:${col.fg}" title="${esc(tip)}"><span class="sv num">${f1(c.s[t.id])}</span><span class="uv num">${e==="best"||isFixed(m.id)?esc(lvName(m.id, lv))+" · ":""}${money(c.cost)}</span>${ms2?`<span class="mv">실측 ${f1(ms2.s)}</span>`:""}</div></td>`;
+      });
+      h += `</tr>`;
+    });
+  });
+  $("#heatwrap").innerHTML = h + `</tbody></table>`;
+}
+
+/* ---------------- CROSSOVER ---------------- */
+function renderCross(){
+  let h = `<table class="xm"><thead><tr><th>대결</th>${T.map(t => `<th><span class="tcode">${TC[t.id]}</span> ${esc(t.name)}</th>`).join("")}<th>판정</th></tr></thead><tbody>`;
+  X.pairs.forEach(([a, b, q, verdict]) => {
+    const ca = cellOf(...a), cb = cellOf(...b); if(!ca || !cb) return;
+    h += `<tr><td><div class="pairq"><b>${esc(q)}</b><span>${combo(...a)} <span class="faint">vs</span> ${combo(...b)}</span><span class="faint" style="font-size:12px">${money(ca.cost)} vs ${money(cb.cost)} · ${mins(ca.time)} vs ${mins(cb.time)}</span></div></td>`;
+    T.forEach(t => { const d = ca.s[t.id] - cb.s[t.id]; const tie = Math.abs(d) < 0.2; const w = tie ? "동급" : (d > 0 ? shortLab(a[0]) + " " + lvName(...a) : shortLab(b[0]) + " " + lvName(...b));
+      h += `<td><div class="xw${tie?" tie":""}"><span class="w">${esc(w)}</span><span class="d num">${d>=0?"+":""}${f2(d)} · 비용 ×${ca.cost&&cb.cost?f2(ca.cost/cb.cost):"—"}</span></div></td>`; });
+    h += `<td class="muted" style="min-width:170px;font-size:12.5px">${esc(verdict)}</td></tr>`;
+  });
+  $("#xmatrix").innerHTML = h + `</tbody></table>`;
+}
+
+/* ---------------- GENERATION ---------------- */
+function deltaRows(ra, rb){
+  return [["ii","AA 지수"]].concat(D.benches.map(b => [b.k, b.name])).map(([k, n]) => {
+    const a = ra[k], b = rb[k]; if(a == null || b == null) return "";
+    const scale = k === "brief" ? 300 : 30; const d = b - a; const w = Math.min(50, Math.abs(d)/scale*50);
+    const col = d >= 0 ? css("--good") : css("--crit");
+    return `<div class="delta"><span>${esc(n)}</span><div class="bar"><span class="mid"></span><i style="${d>=0?`left:50%`:`left:${50-w}%`};width:${w}%;background:${col}"></i></div><span class="num r ${d>=0?"up":"dn"}">${d>=0?"+":""}${Number.isInteger(d)?d:d.toFixed(1)}</span></div>`;
+  }).join("") + `<div class="delta"><span>과제당 비용</span><span class="faint num">${money(ra.cost)} → ${money(rb.cost)}</span><span class="num r">×${ra.cost&&rb.cost?f2(rb.cost/ra.cost):"—"}</span></div><div class="delta"><span>과제당 시간</span><span class="faint num">${mins(ra.time)} → ${mins(rb.time)}</span><span class="num r">×${ra.time&&rb.time?f2(rb.time/ra.time):"—"}</span></div>`;
+}
+function renderGen(){
+  $("#genLv").innerHTML = LV.map(l => `<button class="chip" type="button" data-glv="${l}" aria-pressed="${l===S.genLv}">${LVK[l]}</button>`).join("");
+  $$("#genLv [data-glv]").forEach(b => b.onclick = () => { S.genLv = b.dataset.glv; renderGen(); });
+  const l = S.genLv;
+  $("#genFable").innerHTML = D.rows.fable51 && D.rows.fable52 ? deltaRows(D.rows.fable51[l], D.rows.fable52[l]) + `<p class="chartnote">${esc(X.genNote)}</p>` : "";
+  $("#genOpus").innerHTML = D.rows.opus5 ? deltaRows(D.rows.opus5.max, D.rows.opus55.max) : "";
+  $("#genLite").innerHTML = D.rows.ember ? deltaRows(D.rows.haiku55.max, D.rows.ember.max) + `<p class="chartnote">왼쪽 = Haiku 5.5 최대, 오른쪽 = Muse Ember 최대. 오른쪽이 높으면 초록.</p>` : "";
+  $("#verdicts").innerHTML = `<table><thead><tr><th>구버전</th><th>쓸 이유</th><th>근거</th></tr></thead><tbody>${X.verdicts.map(([n, r, w]) => `<tr><td><b>${esc(n)}</b></td><td>${esc(r)}</td><td class="muted">${esc(w)}</td></tr>`).join("")}</tbody></table>`;
+}
+
+/* ---------------- KIT ---------------- */
+const KIT_IDS = M.filter(m => ["claude","claudeold","openai","google"].includes(m.group) && m.price).map(m => m.id);
+let kitBuilt = false;
+function buildKit(){
+  if(kitBuilt) return; kitBuilt = true;
+  $("#kTask").innerHTML = T.map(t => `<option value="${t.id}">${TC[t.id]} ${esc(t.name)}</option>`).join("");
+  $("#kModel").innerHTML = GROUPS.map(([g, gn]) => { const ids = KIT_IDS.filter(id => MB[id].group === g); return ids.length ? `<optgroup label="${esc(gn)}">${ids.map(id => `<option value="${id}">${esc(MB[id].label)}</option>`).join("")}</optgroup>` : ""; }).join("");
+  $("#kModel").value = KIT_IDS.includes("fable52") ? "fable52" : KIT_IDS[0];
+  $("#kTask").onchange = () => { buildCrit(); $("#kPrompt").textContent = X.prompts[$("#kTask").value]; kitScore(); };
+  $("#kModel").onchange = () => { buildEffortSel(); };
+  buildEffortSel(); buildCrit(); $("#kPrompt").textContent = X.prompts[$("#kTask").value];
+  $("#kCopy").onclick = () => copyText($("#kPrompt").textContent, $("#kPrompt"));
+  $("#kSave").onclick = saveFromForm;
+  $("#kExport").onclick = () => { const clean = S.runs.map(({id, ...r}) => r); copyText(JSON.stringify(clean, null, 1), null, "기록 JSON을 복사했습니다"); };
+  $("#kImportToggle").onclick = () => { $("#importBox").hidden = !$("#importBox").hidden; };
+  $("#kImportGo").onclick = importJson;
+}
+function buildEffortSel(){
+  const mid = $("#kModel").value; const ls = MB[mid].levels;
+  $("#kEffort").innerHTML = ls.map(l => `<option value="${l}">${LVK[l]} (${l})</option>`).join("");
+  $("#kEffort").value = ls.includes("high") ? "high" : ls[0];
+}
+function buildCrit(){
+  const tid = $("#kTask").value;
+  $("#kCrit").innerHTML = X.rubric[tid].map(c => {
+    const id = "kc-" + c.k;
+    if(c.type === "toggle") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<select id="${id}" data-k="${c.k}" data-t="toggle"><option value="10">예</option><option value="0">아니오</option></select></label><span class="val"></span></div>`;
+    if(c.type === "slider") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<input type="range" id="${id}" data-k="${c.k}" data-t="slider" min="0" max="10" step="0.5" value="7"></label><span class="val num" data-for="${id}">7.0</span></div>`;
+    if(c.type === "count5") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<input type="number" id="${id}" data-k="${c.k}" data-t="count5" min="0" max="5" step="1" value="5"></label><span class="val num" data-for="${id}"></span></div>`;
+    if(c.type === "errors") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<input type="number" id="${id}" data-k="${c.k}" data-t="errors" min="0" step="1" value="0"></label><span class="val num" data-for="${id}"></span></div>`;
+    if(c.type === "pct") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<input type="number" id="${id}" data-k="${c.k}" data-t="pct" min="0" max="100" step="5" value="80"></label><span class="val num" data-for="${id}"></span></div>`;
+    return "";
+  }).join("");
+  $$("#kCrit [data-k]").forEach(el => el.addEventListener("input", kitScore));
+  kitScore();
+}
+function critValue(el){
+  const t = el.dataset.t, v = Number(el.value);
+  if(t==="toggle"||t==="slider") return Math.max(0, Math.min(10, v));
+  if(t==="count5") return Math.max(0, Math.min(5, v)) * 2;
+  if(t==="errors") return Math.max(0, 10 - 2*Math.max(0, v));
+  if(t==="pct") return Math.max(0, Math.min(100, v)) / 10;
+  return 0;
+}
+function kitScore(){
+  const els = $$("#kCrit [data-k]"); if(!els.length) return {s:0, crit:{}};
+  let sum = 0; const crit = {};
+  els.forEach(el => { const cv = critValue(el); sum += cv; crit[el.dataset.k] = {raw:Number(el.value), score:cv}; const out = $(`.val[data-for="${el.id}"]`); if(out) out.textContent = cv.toFixed(1); });
+  const s = sum / els.length; $("#kScore").textContent = s.toFixed(1);
+  return {s, crit};
+}
+async function saveFromForm(){
+  const {s, crit} = kitScore();
+  const rec = {task: $("#kTask").value, model: $("#kModel").value, effort: $("#kEffort").value, score: Math.round(s*100)/100, crit,
+    minutes: Number($("#kMin").value)||0, rework: Number($("#kRework").value)||0, feel: Number($("#kFeel").value)||3, mode: $("#kMode").value,
+    note: ($("#kNote").value||"").slice(0,300), at: new Date().toISOString()};
+  await saveRun(rec);
+}
+async function saveRun(rec){
+  if(S.db){
+    try { await S.db.collection("runs").add(rec); toast("저장했습니다. 모든 표에 실측으로 반영됩니다."); }
+    catch(e){ toast(e && e.code === "invalid_argument" ? "이 보기에서는 저장 권한이 없습니다." : e && e.code === "quota_exceeded" ? "저장 공간이 가득 찼습니다. 오래된 기록을 지워주세요." : "저장하지 못했습니다. 잠시 후 다시 시도하세요."); }
+  } else {
+    S.runs.push(Object.assign({id:"local-"+Date.now()+Math.random().toString(36).slice(2,6)}, rec)); onRunsChanged();
+    toast("이 화면에만 임시 저장했습니다. JSON 복사로 보관하세요.");
+  }
+}
+async function deleteRun(id){
+  if(S.db && !String(id).startsWith("local-")){ try { await S.db.doc("runs/"+id).delete(); toast("삭제했습니다."); } catch(e){ toast("삭제하지 못했습니다."); } }
+  else { S.runs = S.runs.filter(r => r.id !== id); onRunsChanged(); }
+}
+async function importJson(){
+  let arr; try { arr = JSON.parse($("#kImport").value); } catch(e){ toast("JSON 형식이 올바르지 않습니다."); return; }
+  if(!Array.isArray(arr)) arr = [arr];
+  const ok = arr.filter(r => r && TB[r.task] && typeof r.score === "number");
+  for(const r of ok){ const {id, ...rest} = r; await saveRun(rest); }
+  toast(`${ok.length}건을 가져왔습니다${arr.length>ok.length?` (${arr.length-ok.length}건은 형식 오류로 제외)`:""}.`);
+  $("#kImport").value = ""; $("#importBox").hidden = true;
+}
+function renderKit(){
+  buildKit(); updateDbStatus();
+  const P = X.plan;
+  $("#planLede").textContent = X.planLede;
+  const done = P.map(([mid,lv,tid]) => S.runs.some(r => r.model===mid && r.task===tid && r.effort===lv));
+  $("#planProg").textContent = `${done.filter(Boolean).length} / ${P.length} 완료`;
+  $("#plan").innerHTML = `<table><thead><tr><th class="r">#</th><th>과제</th><th>조합</th><th>확인하려는 것</th><th class="r">추정 점수</th><th>상태</th><th></th></tr></thead><tbody>${P.map(([mid,lv,tid,why],i)=>{ const s = sOf(mid,lv,tid); const ms = measured(mid,tid,lv); return `<tr><td class="r num">${i+1}</td><td><span class="tcode">${TC[tid]}</span> ${esc(TB[tid].name)}</td><td><i class="dot" style="background:${colorOf(mid)}"></i> ${combo(mid,lv)}</td><td class="muted">${esc(why)}</td><td class="r num">${f1(s)}</td><td>${done[i]?`<span class="done">실측 ${f1(ms.s)}</span>`:`<span class="faint">대기</span>`}</td><td><button class="btn sm ghost" type="button" data-plan="${i}">입력</button></td></tr>`; }).join("")}</tbody></table>`;
+  $$("#plan [data-plan]").forEach(b => b.onclick = () => { const [mid,lv,tid] = P[+b.dataset.plan]; $("#kTask").value = tid; $("#kModel").value = mid; buildEffortSel(); $("#kEffort").value = lv; buildCrit(); $("#kPrompt").textContent = X.prompts[tid]; $("#kitForm").scrollIntoView({behavior:"smooth", block:"start"}); });
+  const agg = {};
+  S.runs.forEach(r => { const k = [r.model, r.effort, r.task].join("|"); (agg[k] = agg[k] || []).push(Number(r.score)||0); });
+  const keys = Object.keys(agg);
+  $("#estVsMeas").innerHTML = keys.length ? `<table><thead><tr><th>조합</th><th class="r">추정</th><th class="r">실측</th><th class="r">차이</th></tr></thead><tbody>${keys.map(k => { const [mid,lv,tid] = k.split("|"); if(!TB[tid]) return ""; const s = MB[mid] ? sOf(mid, lv, tid) : null; const m = agg[k].reduce((a,b)=>a+b,0)/agg[k].length; const d = s == null ? null : m - s; return `<tr><td><span class="tcode">${TC[tid]}</span> ${esc(MB[mid]?shortLab(mid):mid)} ${esc(LVK[lv]||lv)}${MB[mid]?"":` <span class="faint">(v5 미측정 모델)</span>`}</td><td class="r num">${f1(s)}</td><td class="r num">${f1(m)}${agg[k].length>1?` <span class="faint">n${agg[k].length}</span>`:""}</td><td class="r num ${d==null?"":d>=0?"up":"dn"}">${d==null?"—":(d>=0?"+":"")+f1(d)}</td></tr>`; }).join("")}</tbody></table>` : `<p class="chartnote" style="padding:12px">아직 실측이 없습니다. 계획표 1번부터 시작하세요.</p>`;
+  const runs = [...S.runs].sort((a,b) => String(b.at).localeCompare(String(a.at)));
+  $("#runs").innerHTML = runs.length ? `<table><thead><tr><th>일시</th><th>과제</th><th>조합</th><th class="r">점수</th><th class="r">분</th><th></th></tr></thead><tbody>${runs.map(r => `<tr><td class="num faint">${esc(String(r.at||"").slice(0,16).replace("T"," "))}</td><td>${TB[r.task]?TC[r.task]:"?"}</td><td>${esc(MB[r.model]?shortLab(r.model):r.model)} ${r.effort==="fixed"?"고정":esc(LVK[r.effort]||r.effort)}</td><td class="r num">${f1(r.score)}</td><td class="r num">${esc(r.minutes)}</td><td><button class="btn sm ghost" type="button" data-del="${esc(r.id)}">삭제</button></td></tr>`).join("")}</tbody></table>` : `<p class="chartnote" style="padding:12px">저장된 기록이 없습니다.</p>`;
+  $$("#runs [data-del]").forEach(b => b.onclick = () => deleteRun(b.dataset.del));
+}
+function updateDbStatus(){
+  const el = $("#dbStatus"); if(!el) return;
+  el.className = "status " + (S.dbState === "on" ? "on" : S.dbState === "loading" ? "" : "off");
+  el.querySelector("span").textContent = S.dbState === "on" ? "실측 기록이 이 문서에 영구 저장됩니다" : S.dbState === "loading" ? "저장소 연결 확인 중" : "저장소 없음: 이 화면에만 임시 저장 (JSON 복사로 보관)";
+}
+function onRunsChanged(){ renderActive(); }
+
+/* ---------------- SOURCES ---------------- */
+function renderSources(){
+  $("#v5note").innerHTML = X.v5note;
+  const bk = D.benches.map(b => b.k);
+  $("#mapTable").innerHTML = `<table><thead><tr><th>AA 벤치</th><th>무엇을 재나</th><th class="r">AA 지수 비중</th>${T.map(t => `<th class="r">${TC[t.id]} ${esc(t.name)}</th>`).join("")}</tr></thead><tbody>${D.benches.map(b => `<tr><td>${esc(b.name)}</td><td class="muted">${esc(b.why)}</td><td class="r num">${b.w}%</td>${T.map(t => `<td class="r num">${t.weights[b.k] ? Math.round(t.weights[b.k]*100)+"%" : `<span class="unk">·</span>`}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  $("#formula").innerHTML = X.formula.map(x => `<li>${esc(x)}</li>`).join("");
+  let rf = `<table><thead><tr><th>모델 · 노력</th><th class="r">지수</th>${D.benches.map(b => `<th class="r">${esc(b.name.replace(/ \(.*\)/,"").replace("AA-",""))}</th>`).join("")}<th class="r">$/과제</th><th class="r">분/과제</th><th class="r">tok/s</th></tr></thead><tbody>`;
+  M.forEach(m => Object.keys(D.rows[m.id]).forEach(l => { const r = D.rows[m.id][l]; rf += `<tr><td><i class="dot" style="background:${colorOf(m.id)}"></i> ${esc(m.label)} <span class="lvl">${esc(lvName(m.id, l))}</span></td><td class="r num">${r.ii}</td>${bk.map(k => `<td class="r num">${r[k]==null?"—":r[k]}</td>`).join("")}<td class="r num">${money(r.cost)}</td><td class="r num">${r.time?f1(r.time/60):"—"}</td><td class="r num">${r.speed==null?"—":Math.round(r.speed)}</td></tr>`; }));
+  $("#rawFull").innerHTML = rf + `</tbody></table>`;
+  $("#support").innerHTML = `<table><thead><tr><th>모델</th>${LV.map(l => `<th>${LVK[l]}</th>`).join("")}<th>API 기본</th><th>앱 기본</th><th>단가 ($/1M)</th></tr></thead><tbody>${X.support.map(([n, sup, api, app, pr]) => `<tr><td><b>${esc(n)}</b></td>${LV.map(l => `<td>${sup.includes(l) ? "✓" : `<span class="unk">—</span>`}</td>`).join("")}<td>${esc(api)}</td><td>${esc(app)}</td><td class="num">${esc(pr)}</td></tr>`).join("")}</tbody></table><p class="chartnote" style="padding:0 10px 10px">${esc(X.supportNote)}</p>`;
+  $("#sources").innerHTML = `<table><thead><tr><th>기관</th><th>자료</th></tr></thead><tbody>${X.sources.map(([o,t,u]) => `<tr><td>${esc(o)}</td><td><a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a></td></tr>`).join("")}</tbody></table>`;
+}
+
+/* ---------------- utils & boot ---------------- */
+let toastTimer = null;
+function toast(msg){ const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.hidden = true; }, 3200); }
+function copyText(txt, selEl, okMsg){
+  const fallback = () => { if(selEl){ const r = document.createRange(); r.selectNodeContents(selEl); const s = window.getSelection(); s.removeAllRanges(); s.addRange(r); toast("선택했습니다. Ctrl/⌘+C로 복사하세요."); } else { $("#importBox").hidden = false; $("#kImport").value = txt; $("#kImport").select(); toast("아래 칸에 JSON을 띄웠습니다. 전체 복사하세요."); } };
+  try { navigator.clipboard.writeText(txt).then(() => toast(okMsg || "복사했습니다"), fallback); } catch(e){ fallback(); }
+}
+if(X.subline) $("#subline").textContent = X.subline;
+if(X.credit) $("#credit").textContent = X.credit;
+buildFilters();
+$$(".tab").forEach(b => b.onclick = () => setTab(b.dataset.tab));
+const h0 = (location.hash || "").replace("#","");
+setTab(TAB_FILTERS[h0] ? h0 : "summary");
+const rerender = () => renderActive();
+try { window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", rerender); } catch(e) {}
+try { new MutationObserver(rerender).observe(document.documentElement, {attributes:true, attributeFilter:["data-theme"]}); } catch(e) {}
+(async () => {
+  try {
+    if(!window.claude || typeof window.claude.use !== "function"){ S.dbState = "off"; updateDbStatus(); return; }
+    const db = await window.claude.use("db");
+    if(!db){ S.dbState = "off"; updateDbStatus(); return; }
+    S.db = db; S.dbState = "on"; updateDbStatus();
+    db.collection("runs").onSnapshot(snap => {
+      const local = S.runs.filter(r => String(r.id).startsWith("local-"));
+      S.runs = snap.docs.map(d => Object.assign({id:d.id}, d.data())).concat(local);
+      onRunsChanged();
+    }, err => { S.dbState = "off"; updateDbStatus(); });
+  } catch(e){ S.dbState = "off"; updateDbStatus(); }
+})();
+})();
+</script>

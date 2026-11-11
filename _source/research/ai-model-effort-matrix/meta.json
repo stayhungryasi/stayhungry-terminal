@@ -1,0 +1,77 @@
+{
+  "slug": "ai-model-effort-matrix",
+  "date": "2026-11-11",
+  "asof": "2026-11-11 (Artificial Analysis v5.0.1)",
+  "category": "ai",
+  "title": {
+    "ko": "AI 모델 × 노력 매트릭스",
+    "en": "AI Models × Effort Matrix",
+    "es": "Matriz de modelos de IA × esfuerzo",
+    "ja": "AIモデル × 思考量マトリクス"
+  },
+  "dek": {
+    "ko": "Artificial Analysis 지수 v5.0.1 한 잣대로 27개 모델의 노력 단계별 조합 62개를 5대 업무에 매핑했다. 1위는 Fable 5.2 최대(지수 65). 매월 갱신한다.",
+    "en": "27 models and 62 model-and-effort combinations mapped to five work tasks on one yardstick, the Artificial Analysis index v5.0.1. The leader is Fable 5.2 at max (index 65). Updated monthly.",
+    "es": "27 modelos y 62 combinaciones de modelo y esfuerzo, aplicadas a cinco tareas con una sola vara: el índice v5.0.1 de Artificial Analysis. Lidera Fable 5.2 máximo (índice 65). Se actualiza cada mes.",
+    "ja": "Artificial Analysis指数v5.0.1という一つの物差しで、27モデル・思考量別62通りの組み合わせを5つの業務に当てはめた。首位はFable 5.2 最大（指数65）。毎月更新。"
+  },
+  "key": {
+    "value": "29%",
+    "label": {
+      "ko": "Fable 5.1 엑스트라 → Fable 5.2 낮음로 바꿀 때의 과제당 비용 (AA $3.10 vs $10.85, 5개 업무 모두 점수 상승)",
+      "en": "Cost per task when switching Fable 5.1 at extra high to Fable 5.2 at low (AA $3.10 vs $10.85; higher on all 5 tasks)",
+      "es": "Costo por tarea al pasar de Fable 5.1 extra alto a Fable 5.2 bajo (AA $3.10 vs $10.85; mejor en las 5 tareas)",
+      "ja": "Fable 5.1「エクストラ」からFable 5.2 低に替えたときのタスク当たりコスト（AA $3.10 vs $10.85、5業務すべてで上昇）"
+    }
+  },
+  "points": {
+    "ko": [
+      "Anthropic 밖 최고는 Gemini 4 Carbon 높음(지수 60, 과제당 $7.76).",
+      "지수 55 이상을 가장 싸게 내는 조합은 GPT-6.1 Sol 최대(지수 55, 과제당 $1.27).",
+      "업무 점수는 AA 벤치를 5대 업무(시스템 고도화·기업분석·리서치·게임·프로그램 개발)에 가중합한 작성자 추정이다."
+    ],
+    "en": [
+      "The best model outside Anthropic is Gemini 4 Carbon at high (index 60, $7.76 per task).",
+      "The cheapest way to an index of 55 or more is GPT-6.1 Sol at max (index 55, $1.27 per task).",
+      "Task scores are the author's estimate: a weighted mix of AA benchmarks for systems work, company analysis, research, game and program development."
+    ],
+    "es": [
+      "El mejor modelo fuera de Anthropic es Gemini 4 Carbon en alto (índice 60, $7.76 por tarea).",
+      "La forma más barata de llegar a un índice de 55 o más es GPT-6.1 Sol en máximo (índice 55, $1.27 por tarea).",
+      "Las puntuaciones por tarea son una estimación del autor: una mezcla ponderada de pruebas de AA para sistemas, análisis de empresas, investigación, juegos y programas."
+    ],
+    "ja": [
+      "Anthropic以外の最上位はGemini 4 Carbon「高」（指数60、タスク当たり$7.76）。",
+      "指数55以上を最も安く出すのはGPT-6.1 Sol「最大」（指数55、タスク当たり$1.27）。",
+      "業務スコアはAAのベンチマークを5業務（システム高度化・企業分析・リサーチ・ゲーム・プログラム開発）に加重した筆者の推定。"
+    ]
+  },
+  "tickers": [],
+  "checkpoints": [],
+  "tags": {
+    "ko": [
+      "AI 모델",
+      "노력 설정",
+      "월간 갱신",
+      "벤치마크"
+    ],
+    "en": [
+      "AI models",
+      "Effort settings",
+      "Monthly",
+      "Benchmarks"
+    ],
+    "es": [
+      "Modelos de IA",
+      "Niveles de esfuerzo",
+      "Mensual",
+      "Benchmarks"
+    ],
+    "ja": [
+      "AIモデル",
+      "思考量設定",
+      "月次更新",
+      "ベンチマーク"
+    ]
+  }
+}

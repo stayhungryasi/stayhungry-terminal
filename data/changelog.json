@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-11",
+      "commit": "HEAD",
+      "message": "New research: AI Models × Effort Matrix, updated monthly. 27 models from Anthropic, OpenAI, Google, Meta and other labs, 62 model-and-effort combinations, scored on one yardstick (Artificial Analysis index v5.0.1); Claude Fable 5.2 leads"
+    },
+    {
+      "date": "2026-11-11",
       "commit": "efaef74",
       "message": "Terafab Deep Dive: the 9 card-news images in all four languages are redesigned on one ink background, with color carried by the labels, bars, blocks and numbers. Content and figures unchanged; the cover line now reads \"70% of 1 million in total\""
     },
