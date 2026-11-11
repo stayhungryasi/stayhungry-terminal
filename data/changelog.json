@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-11",
-      "commit": "HEAD",
+      "commit": "81c3911",
       "message": "New research: AI Models × Effort Matrix, updated monthly. 27 models from Anthropic, OpenAI, Google, Meta and other labs, 62 model-and-effort combinations, scored on one yardstick (Artificial Analysis index v5.0.1); Claude Fable 5.2 leads"
     },
     {
