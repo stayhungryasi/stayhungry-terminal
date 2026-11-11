@@ -9,8 +9,11 @@ draft.json:
   "lines": [ {"href": "#spcxlock", "ko": "...", "en": "...", "es": "...", "ja": "..."}, x3 ],
   "checkpoints": [ {"d": {"ko": "10/26(월)", ...}, "x": {...}, "y": {...}}, up to 3 ],
   "why": {"ko": "...", "en": "...", "es": "...", "ja": "..."},
-  "facts": ["every number used, with the feed it came from", ...]
+  "facts": ["every number used, with the feed it came from", ...],
+  "x": {"order": [2, 3, 1], "hook": "one English line, no tags, <= 200 chars"}     (optional, for the daily X post)
 }
+"x" steers _source/xpost.py (21:37 KST, English card + hook + link): "order" puts the line a global reader cares about
+first (SpaceX, AI, US markets before Korea-only items); "hook" replaces the default hook (the first line's text).
 Lines may use only <b>…</b> and <a href="#page">…</a> (hub pages). Pure public data: no affiliation, client,
 internal-review or buy/sell wording (same rule as the research library). Run from the repo root.
 stayhungryasi.com
@@ -153,6 +156,12 @@ def publish(path):
     for c in LANGS:
         if not (d.get("why") or {}).get(c):
             errs.append(f"why.{c} missing")
+    x = d.get("x")
+    if x is not None:
+        if x.get("order") and sorted(x["order"]) != [1, 2, 3]:
+            errs.append("x.order must be a permutation of [1, 2, 3]")
+        if x.get("hook") and (len(x["hook"]) > 200 or "<" in x["hook"]):
+            errs.append("x.hook: plain text, 200 characters at most")
     blob = json.dumps(d, ensure_ascii=False)
     m = FORBIDDEN.search(blob)
     if m:
@@ -162,7 +171,7 @@ def publish(path):
     now = dt.datetime.now(KST)
     doc = dict(kind="brief", schema=1, date=today().isoformat(), generated_kst=now.strftime("%Y-%m-%d %H:%M"),
                editor="Claude", lines=lines, checkpoints=(d.get("checkpoints") or [])[:3], why=d["why"],
-               facts=d.get("facts") or [], credit="stayhungryasi.com",
+               facts=d.get("facts") or [], **({"x": x} if x else {}), credit="stayhungryasi.com",
                note="Picked from the hub's live feeds. Not investment advice.")
     (ROOT / "live").mkdir(exist_ok=True)
     (ROOT / "live" / "brief.json").write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

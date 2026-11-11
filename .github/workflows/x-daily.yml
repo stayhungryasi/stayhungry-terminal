@@ -1,0 +1,60 @@
+name: x-daily
+# The day's 3-line brief, in English, to X: one card image + a one-line hook + the hub link.
+# 21:37 KST every day = US pre-market (07:37 ET in winter, 08:37 ET in summer). _source/xpost.py holds the rules:
+# only today's brief, once a day (live/x-post.json), global-first order, publishing-rule check.
+# Secrets (repo Settings -> Secrets and variables -> Actions): X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET
+# (X developer app with Read and Write permission; OAuth 1.0a keys of the account that posts).
+# Without the secrets the scheduled run only builds the card (artifact) and posts nothing.
+on:
+  schedule:
+    - cron: '37 12 * * *'   # 21:37 KST
+  workflow_dispatch:
+    inputs:
+      post:
+        description: 'Really post to X (off = dry run: build the text and the card only)'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: x-daily
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      X_API_KEY: ${{ secrets.X_API_KEY }}
+      X_API_SECRET: ${{ secrets.X_API_SECRET }}
+      X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+      X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+      LINK: ${{ vars.X_POST_LINK || '1' }}   # repo variable X_POST_LINK=0 drops the link from the post text
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fonts and Pillow
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-inter >/dev/null || true
+          python3 -m pip install -q pillow
+      - name: Build and post
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.post }}" != "true" ]; then DRY=--dry
+          elif [ -z "$X_API_KEY" ] || [ -z "$X_ACCESS_TOKEN" ]; then DRY=--dry; echo "::notice::X secrets are not set: dry run only"
+          else DRY=; fi
+          python3 -B _source/xpost.py $DRY --out x-card.png | tee x-post.log
+          { echo '### X daily'; echo '```'; cat x-post.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: x-card
+          path: |
+            x-card.png
+            x-post.log
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Remember the post
+        run: |
+          git add live/x-post.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git -c user.name="x-daily-bot" -c user.email="actions@users.noreply.github.com" commit -q -m "data(x): daily brief posted $(date -u +%F) [bot]"
+            for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break || sleep 5; done
+          fi
