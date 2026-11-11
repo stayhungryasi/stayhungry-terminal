@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-11",
-      "commit": "HEAD",
+      "commit": "68a67ea",
       "message": "Today page: the VIX number now takes the same level color as on the Radar page (green under 20, gold 20~30, red 30 and above) instead of plain white"
     },
     {
