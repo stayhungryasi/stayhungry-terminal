@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-11",
+      "commit": "HEAD",
+      "message": "Terafab Deep Dive: the 9 card-news images in all four languages are redesigned on one ink background, with color carried by the labels, bars, blocks and numbers. Content and figures unchanged; the cover line now reads \"70% of 1 million in total\""
+    },
+    {
       "date": "2026-11-10",
       "commit": "f6ea759",
       "message": "New research: Terafab Deep Dive. The 700K-memory-wafer target, EUV and capital math, the missing DRAM technology source, a disruption-theory verdict, base rates, scenarios, a value-chain map and a 24-month checklist, with 33 earlier claims rechecked against their sources (Hanmi Semiconductor order now marked as conflicting reports). Full report and 9 card-news images in all four languages"
@@ -327,7 +332,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }

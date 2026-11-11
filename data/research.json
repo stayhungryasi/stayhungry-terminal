@@ -1,6 +1,6 @@
 {
  "name": "Stayhungry.ASI research library",
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "count": 18,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals (full translations in en/es/ja where listed in langs); briefs in 4 languages. Not investment advice.",
@@ -2419,36 +2419,6 @@
   }
  ],
  "upcoming_checkpoints": [
-  {
-   "date": "2026-11-10",
-   "text": {
-    "ko": "앤트로픽 공식 로드쇼 시작 가능 시점(빨라야)",
-    "en": "Earliest possible start of Anthropic's formal roadshow",
-    "es": "Inicio más temprano posible del roadshow formal de Anthropic",
-    "ja": "アンソロピック正式ロードショー開始の最も早い時期"
-   },
-   "slug": "spacex-anthropic-90day-clause"
-  },
-  {
-   "date": "2026-11-10",
-   "text": {
-    "ko": "앤트로픽 로드쇼 시작 가능 최초일",
-    "en": "Earliest possible start of Anthropic's roadshow",
-    "es": "Primer día posible del roadshow de Anthropic",
-    "ja": "アンソロピックのロードショー開始が可能な最初の日"
-   },
-   "slug": "ai-deleveraging-2026-11"
-  },
-  {
-   "date": "2026-11-10",
-   "text": {
-    "ko": "미국 10월 CPI",
-    "en": "US October CPI",
-    "es": "IPC de octubre en EE. UU.",
-    "ja": "米10月CPI"
-   },
-   "slug": "us-midterms-2026-redteam"
-  },
   {
    "date": "2026-11-11",
    "text": {
