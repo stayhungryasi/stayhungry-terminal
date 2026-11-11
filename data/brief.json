@@ -1,53 +1,33 @@
 {
  "kind": "brief",
  "schema": 1,
- "date": "2026-11-10",
- "generated_kst": "2026-11-10 10:11",
+ "date": "2026-11-11",
+ "generated_kst": "2026-11-11 10:16",
  "editor": "Claude",
  "lines": [
   {
    "href": "#schedule",
-   "ko": "<b>오늘 밤 22:30, 미국 10월 CPI.</b> 한국시간·확정. 앤트로픽 IPO 로드쇼 시작 가능일(보도)이고, 코어위브 실적은 회사 공지로 11/11 07:00로 확정됐습니다. <a href=\"#schedule\">일정</a>",
-   "en": "<b>US October CPI tonight, 22:30 KST.</b> Confirmed. Anthropic roadshow may start (reported); CoreWeave Q3 set for 11/11 07:00. <a href=\"#schedule\">Calendar</a>",
-   "es": "<b>IPC de EE. UU. hoy, 22:30 (Corea).</b> Confirmado. Posible roadshow de Anthropic (informes); CoreWeave, el 11/11 a las 07:00. <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>今夜22:30、米10月CPI。</b>韓国時間・確定。アンソロピックIPOロードショー開始の可能性(報道)、コアウィーブ決算は会社告知で11/11 07:00に確定。<a href=\"#schedule\">日程</a>"
+   "ko": "<b>오늘 MSCI 11월 정기 리뷰 발표.</b> 확정·11/30 종가 반영. 코어위브 3분기 실적은 오늘 07:00(확정), 내일은 SK스퀘어·삼성생명 실적(추정). <a href=\"#schedule\">일정</a>",
+   "en": "<b>MSCI November review today.</b> Confirmed, effective 11/30 close. CoreWeave Q3 at 07:00 (confirmed); SK Square, Samsung Life 11/12 (est.). <a href=\"#schedule\">Dates</a>",
+   "es": "<b>Hoy, revisión de MSCI.</b> Confirmada, efectiva el 30/11. CoreWeave 3T hoy a las 07:00; el 12/11, SK Square y Samsung Life (estimado). <a href=\"#schedule\">Agenda</a>",
+   "ja": "<b>本日、MSCI 11月定期見直し発表。</b>確定・11/30終値で反映。コアウィーブ3Q決算は本日07:00(確定)、あすはSKスクエア・サムスン生命(推定)。<a href=\"#schedule\">日程</a>"
   },
   {
    "href": "#spcxlock",
-   "ko": "<b>스페이스X 락업 해제 D-30.</b> 12/9 7.976억주(≈1,071억 달러, 유통 주식의 +17.6%) 해제. 11/6 8-K로 Class B 이사 1인 사임(11/4) 공시. <a href=\"#spcxlock\">락업 레이더</a>",
-   "en": "<b>SpaceX lock-up: D-30.</b> 797.6M shares (≈$107.1B, +17.6% vs tradable) unlock 12/9. 11/6 8-K: a Class B director left 11/4. <a href=\"#spcxlock\">Radar</a>",
-   "es": "<b>SpaceX: lock-up en 30 días.</b> El 9/12 se liberan 797,6 M de acciones (≈US$107,1 mil M). Un 8-K (6/11) reveló la salida de un consejero. <a href=\"#spcxlock\">Radar</a>",
-   "ja": "<b>スペースX、ロックアップ解除までD-30。</b>12/9に7.976億株(約1,071億ドル、流通株の+17.6%)解除。11/6の8-KでClass B取締役1名の辞任(11/4)を開示。<a href=\"#spcxlock\">ロックアップ</a>"
+   "ko": "<b>스페이스X, 공모가 위로.</b> 11/9 종가 $142.07(+5.81%)로 공모가 $135 대비 +5.2%. 12/9 7.976억주(≈1,133억 달러) 락업 해제까지 D-29. <a href=\"#spcxlock\">락업 레이더</a>",
+   "en": "<b>SpaceX back above its IPO price.</b> $142.07 on 11/9 (+5.81%), +5.2% vs $135. 797.6M shares (≈$113.3B) unlock 12/9, D-29. <a href=\"#spcxlock\">Lock-up radar</a>",
+   "es": "<b>SpaceX supera la OPV.</b> US$142,07 el 9/11 (+5,81 %), +5,2 % vs US$135. D-29: el 9/12 se liberan 797,6 M de acciones (≈US$113,3 mil M). <a href=\"#spcxlock\">Radar</a>",
+   "ja": "<b>スペースX、公募価格を上回る。</b>11/9終値$142.07(+5.81%)、公募価格$135比+5.2%。12/9に7.976億株(約1,133億ドル)のロックアップ解除まであと29日。<a href=\"#spcxlock\">ロックアップ</a>"
   },
   {
    "href": "#library",
-   "ko": "<b>새 리서치: 90일 조항과 챠마스의 계산법.</b> 스페이스X–앤트로픽 컴퓨트 계약을 전수검증, 핵심 시점은 2027년 2분기라는 작성자 분석(11/9). <a href=\"#library\">리서치</a>",
-   "en": "<b>New research: the 90-day clause.</b> A full check of the SpaceX–Anthropic compute deal; author sees 2027 Q2 as key (11/9). <a href=\"#library\">Research</a>",
-   "es": "<b>Nuevo informe: la cláusula de 90 días.</b> Revisión del contrato SpaceX–Anthropic; el autor señala el 2T de 2027 (9/11). <a href=\"#library\">Biblioteca</a>",
-   "ja": "<b>新リサーチ:90日条項とチャマスの計算法。</b>スペースX–アンソロピックのコンピュート契約を全件検証、鍵は2027年第2四半期という筆者分析(11/9)。<a href=\"#library\">リサーチ</a>"
+   "ko": "<b>새 리서치: 테라팹 딥다이브.</b> 메모리 웨이퍼 70만 장 목표와 EUV·자본 계산을 따지고, 기존 주장 33개를 출처와 대조해 재검증(11/10). <a href=\"#library\">리서치</a>",
+   "en": "<b>New research: Terafab deep dive.</b> The 700K memory-wafer target, EUV and capital math; 33 earlier claims rechecked (11/10). <a href=\"#library\">Research</a>",
+   "es": "<b>Nueva investigación: Terafab.</b> La meta de 700.000 obleas de memoria, EUV y capital; 33 afirmaciones revisadas con fuentes (10/11). <a href=\"#library\">Biblioteca</a>",
+   "ja": "<b>新リサーチ：テラファブ徹底分析。</b>メモリウェハー70万枚目標とEUV・資本の計算を検証し、既存の主張33件を出典と照合(11/10)。<a href=\"#library\">リサーチ</a>"
   }
  ],
  "checkpoints": [
-  {
-   "d": {
-    "ko": "11/10(화)",
-    "en": "Tue 11/10",
-    "es": "mar 10/11",
-    "ja": "11/10(火)"
-   },
-   "x": {
-    "ko": "22:30 미국 10월 CPI",
-    "en": "22:30 US October CPI",
-    "es": "22:30 IPC de EE. UU.",
-    "ja": "22:30 米10月CPI"
-   },
-   "y": {
-    "ko": "확정 · 앤트로픽 로드쇼 시작 가능(보도)",
-    "en": "Confirmed · Anthropic roadshow may start (reported)",
-    "es": "Confirmado · posible roadshow de Anthropic (informes)",
-    "ja": "確定・アンソロピックのロードショー開始可能(報道)"
-   }
-  },
   {
    "d": {
     "ko": "11/11(수)",
@@ -70,41 +50,61 @@
   },
   {
    "d": {
-    "ko": "11/17(화)",
-    "en": "Tue 11/17",
-    "es": "mar 17/11",
-    "ja": "11/17(火)"
+    "ko": "11/18(수)",
+    "en": "Wed 11/18",
+    "es": "mié 18/11",
+    "ja": "11/18(水)"
    },
    "x": {
-    "ko": "엔비디아 실적(미국 장 마감 후)",
-    "en": "Nvidia earnings (after US close)",
-    "es": "Resultados de Nvidia (tras el cierre)",
-    "ja": "エヌビディア決算(米国引け後)"
+    "ko": "06:20 엔비디아 FQ3 실적",
+    "en": "06:20 Nvidia FQ3 earnings",
+    "es": "06:20 resultados FQ3 de Nvidia",
+    "ja": "06:20 エヌビディアFQ3決算"
    },
    "y": {
-    "ko": "실적 캘린더 · 시총 2위",
-    "en": "Earnings calendar · No. 2 by market cap",
-    "es": "Calendario de resultados · n.º 2 en capitalización",
-    "ja": "決算カレンダー・時価総額2位"
+    "ko": "한국시간 · 확정 · 시총 2위",
+    "en": "KST · Confirmed · No. 2 by market cap",
+    "es": "Hora de Corea · confirmado · n.º 2 en capitalización",
+    "ja": "韓国時間・確定・時価総額2位"
+   }
+  },
+  {
+   "d": {
+    "ko": "12/9(수)",
+    "en": "Wed 12/9",
+    "es": "mié 9/12",
+    "ja": "12/9(水)"
+   },
+   "x": {
+    "ko": "스페이스X 180일 락업 해제",
+    "en": "SpaceX 180-day lock-up expiry",
+    "es": "Fin del lock-up de 180 días de SpaceX",
+    "ja": "スペースX 180日ロックアップ解除"
+   },
+   "y": {
+    "ko": "7.976억주 · 유통 주식의 +17.6%",
+    "en": "797.6M shares · +17.6% vs tradable",
+    "es": "797,6 M de acciones · +17,6 % del flotante",
+    "ja": "7.976億株・流通株の+17.6%"
    }
   }
  ],
  "why": {
-  "ko": "CPI가 '내일'에서 '오늘 밤'이 됐고 코어위브 일정 변경(11/11 07:00 확정)이 새로 생겨 1순위로 유지했습니다. 스페이스X는 D-30과 11/6 8-K 이사 사임이라는 새 사실이 있어 다시 넣었고, 3일간 다루지 않은 11/9 새 리서치를 넣었습니다. 위기 근접도는 34.4로 변화가 없고, VIX·K-레버리지는 11/6 기준이라 뺐습니다.",
-  "en": "CPI moved from 'tomorrow' to 'tonight' and CoreWeave's date changed (now 11/11 07:00), so it stays first. SpaceX returns with D-30 and a new 8-K director exit; the 11/9 research had not been featured. Crisis proximity is flat at 34.4, and VIX and K-leverage data date from 11/6, so they were left out.",
-  "es": "El IPC pasó de 'mañana' a 'esta noche' y CoreWeave cambió de fecha (11/11, 07:00), así que sigue primero. SpaceX vuelve con 30 días al lock-up y un 8-K nuevo; la investigación del 9/11 no se había destacado. La proximidad de crisis sigue en 34,4 y los datos de VIX y apalancamiento son del 6/11, por eso quedaron fuera.",
-  "ja": "CPIが「あす」から「今夜」になり、コアウィーブの日程変更(11/11 07:00確定)も加わったため1位を維持。スペースXはD-30と11/6の8-Kによる取締役辞任という新事実があり再掲、11/9の新リサーチも初めて取り上げました。危機接近度は34.4で横ばい、VIX・Kレバレッジは11/6時点のため外しました。"
+  "ko": "오늘 실제로 나오는 MSCI 리뷰(확정)와 코어위브 실적을 1순위로, 스페이스X는 공모가 회복(+5.2%)과 D-29라는 새 숫자가 있어 다시 넣었고, 아직 다루지 않은 11/10 새 리서치를 넣었습니다. 위기 근접도는 34.4로 변화가 없고, VIX(11/9 19.92)·버핏지수(추정)는 큰 변화가 없어 뺐습니다. Flight 15(11/13)는 날짜가 미확정이라 넣지 않았습니다.",
+  "en": "Today's confirmed MSCI review and CoreWeave results come first. SpaceX returns with new numbers: back above its IPO price (+5.2%) and D-29. The 11/10 research had not been featured. Crisis proximity is flat at 34.4, VIX (19.92 on 11/9) and the estimated Buffett Index barely moved, and Flight 15 (11/13) is still unconfirmed, so they were left out.",
+  "es": "La revisión de MSCI y los resultados de CoreWeave, confirmados para hoy, van primero. SpaceX vuelve con datos nuevos: supera su precio de salida (+5,2 %) y faltan 29 días. La investigación del 10/11 no se había destacado. La proximidad de crisis sigue en 34,4, el VIX (19,92 el 9/11) y el índice Buffett estimado apenas cambiaron, y el vuelo 15 (13/11) no está confirmado, por eso quedaron fuera.",
+  "ja": "本日確定のMSCI見直しとコアウィーブ決算を1位に。スペースXは公募価格回復(+5.2%)とD-29という新しい数字があり再掲、11/10の新リサーチは初掲載です。危機接近度は34.4で横ばい、VIX(11/9 19.92)と推定バフェット指数は大きな変化がなく、Flight 15(11/13)は日程未確定のため外しました。"
  },
  "facts": [
-  "US October CPI 2026-11-10 22:30 KST confirmed — key dates bot",
-  "Anthropic IPO roadshow may start 2026-11-10 [report] — key dates bot",
-  "CoreWeave Q3 changed to 2026-11-11 07:00 KST, confirmed by company notice — key dates bot",
-  "MSCI November review 2026-11-11, effective 11/30 close [confirmed] — key dates bot",
-  "SpaceX lock-up: trade 2026-12-09, D-30, 797.6M shares, +17.6% vs tradable, ≈$107.1B — spcx-lock asof 2026-11-09",
-  "8-K 11/06: Class B director resigned 11/4 — SpaceX overnight agent run 2026-11-09",
-  "Research 2026-11-09 '90일 조항과 챠마스의 계산법', key 2027 Q2 — research library",
-  "Nvidia earnings 2026-11-17 amc; NVDA #2 market cap 2026-11-09 — univertrix",
-  "Crisis score 34.4 unchanged (report 2026-11-09) — crisis bot (not used in lines)"
+  "MSCI November review 2026-11-11 KST confirmed, effective 11/30 close — key dates bot",
+  "CoreWeave Q3 2026-11-11 07:00 KST, confirmed by company notice — key dates bot (CHANGED)",
+  "SK Square Q3 2026-11-12 estimated; Samsung Life Q3 2026-11-12 14:00 estimated — key dates bot",
+  "Nvidia FQ3 2026-11-18 06:20 KST confirmed — key dates bot; NVDA #2 4314bn — univertrix 2026-11-10",
+  "SPCX $142.07 2026-11-09 close, +5.81% d/d, +5.2% vs IPO $135 — spcx-lock asof 2026-11-10",
+  "Lock-up 2026-12-09 trade, D-29, 797.6M shares, +17.6% vs tradable, ≈$113.3B — spcx-lock asof 2026-11-10",
+  "Terafab deep dive 2026-11-10, 700K memory-wafer target, 33 claims rechecked — research library / changelog",
+  "Crisis 34.4 (prev 34.4) report 2026-11-09; VIX 19.92 as of 2026-11-09; Buffett 235.74% estimated — omitted",
+  "Flight 15 NET 11/13 'To Be Confirmed' — SpaceX agent, omitted"
  ],
  "credit": "stayhungryasi.com",
  "note": "Picked from the hub's live feeds. Not investment advice.",

@@ -574,5 +574,37 @@
    "es": "El IPC pasó de 'mañana' a 'esta noche' y CoreWeave cambió de fecha (11/11, 07:00), así que sigue primero. SpaceX vuelve con 30 días al lock-up y un 8-K nuevo; la investigación del 9/11 no se había destacado. La proximidad de crisis sigue en 34,4 y los datos de VIX y apalancamiento son del 6/11, por eso quedaron fuera.",
    "ja": "CPIが「あす」から「今夜」になり、コアウィーブの日程変更(11/11 07:00確定)も加わったため1位を維持。スペースXはD-30と11/6の8-Kによる取締役辞任という新事実があり再掲、11/9の新リサーチも初めて取り上げました。危機接近度は34.4で横ばい、VIX・Kレバレッジは11/6時点のため外しました。"
   }
+ },
+ {
+  "date": "2026-11-11",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>오늘 MSCI 11월 정기 리뷰 발표.</b> 확정·11/30 종가 반영. 코어위브 3분기 실적은 오늘 07:00(확정), 내일은 SK스퀘어·삼성생명 실적(추정). <a href=\"#schedule\">일정</a>",
+    "en": "<b>MSCI November review today.</b> Confirmed, effective 11/30 close. CoreWeave Q3 at 07:00 (confirmed); SK Square, Samsung Life 11/12 (est.). <a href=\"#schedule\">Dates</a>",
+    "es": "<b>Hoy, revisión de MSCI.</b> Confirmada, efectiva el 30/11. CoreWeave 3T hoy a las 07:00; el 12/11, SK Square y Samsung Life (estimado). <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>本日、MSCI 11月定期見直し発表。</b>確定・11/30終値で反映。コアウィーブ3Q決算は本日07:00(確定)、あすはSKスクエア・サムスン生命(推定)。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X, 공모가 위로.</b> 11/9 종가 $142.07(+5.81%)로 공모가 $135 대비 +5.2%. 12/9 7.976억주(≈1,133억 달러) 락업 해제까지 D-29. <a href=\"#spcxlock\">락업 레이더</a>",
+    "en": "<b>SpaceX back above its IPO price.</b> $142.07 on 11/9 (+5.81%), +5.2% vs $135. 797.6M shares (≈$113.3B) unlock 12/9, D-29. <a href=\"#spcxlock\">Lock-up radar</a>",
+    "es": "<b>SpaceX supera la OPV.</b> US$142,07 el 9/11 (+5,81 %), +5,2 % vs US$135. D-29: el 9/12 se liberan 797,6 M de acciones (≈US$113,3 mil M). <a href=\"#spcxlock\">Radar</a>",
+    "ja": "<b>スペースX、公募価格を上回る。</b>11/9終値$142.07(+5.81%)、公募価格$135比+5.2%。12/9に7.976億株(約1,133億ドル)のロックアップ解除まであと29日。<a href=\"#spcxlock\">ロックアップ</a>"
+   },
+   {
+    "href": "#library",
+    "ko": "<b>새 리서치: 테라팹 딥다이브.</b> 메모리 웨이퍼 70만 장 목표와 EUV·자본 계산을 따지고, 기존 주장 33개를 출처와 대조해 재검증(11/10). <a href=\"#library\">리서치</a>",
+    "en": "<b>New research: Terafab deep dive.</b> The 700K memory-wafer target, EUV and capital math; 33 earlier claims rechecked (11/10). <a href=\"#library\">Research</a>",
+    "es": "<b>Nueva investigación: Terafab.</b> La meta de 700.000 obleas de memoria, EUV y capital; 33 afirmaciones revisadas con fuentes (10/11). <a href=\"#library\">Biblioteca</a>",
+    "ja": "<b>新リサーチ：テラファブ徹底分析。</b>メモリウェハー70万枚目標とEUV・資本の計算を検証し、既存の主張33件を出典と照合(11/10)。<a href=\"#library\">リサーチ</a>"
+   }
+  ],
+  "why": {
+   "ko": "오늘 실제로 나오는 MSCI 리뷰(확정)와 코어위브 실적을 1순위로, 스페이스X는 공모가 회복(+5.2%)과 D-29라는 새 숫자가 있어 다시 넣었고, 아직 다루지 않은 11/10 새 리서치를 넣었습니다. 위기 근접도는 34.4로 변화가 없고, VIX(11/9 19.92)·버핏지수(추정)는 큰 변화가 없어 뺐습니다. Flight 15(11/13)는 날짜가 미확정이라 넣지 않았습니다.",
+   "en": "Today's confirmed MSCI review and CoreWeave results come first. SpaceX returns with new numbers: back above its IPO price (+5.2%) and D-29. The 11/10 research had not been featured. Crisis proximity is flat at 34.4, VIX (19.92 on 11/9) and the estimated Buffett Index barely moved, and Flight 15 (11/13) is still unconfirmed, so they were left out.",
+   "es": "La revisión de MSCI y los resultados de CoreWeave, confirmados para hoy, van primero. SpaceX vuelve con datos nuevos: supera su precio de salida (+5,2 %) y faltan 29 días. La investigación del 10/11 no se había destacado. La proximidad de crisis sigue en 34,4, el VIX (19,92 el 9/11) y el índice Buffett estimado apenas cambiaron, y el vuelo 15 (13/11) no está confirmado, por eso quedaron fuera.",
+   "ja": "本日確定のMSCI見直しとコアウィーブ決算を1位に。スペースXは公募価格回復(+5.2%)とD-29という新しい数字があり再掲、11/10の新リサーチは初掲載です。危機接近度は34.4で横ばい、VIX(11/9 19.92)と推定バフェット指数は大きな変化がなく、Flight 15(11/13)は日程未確定のため外しました。"
+  }
  }
 ]
