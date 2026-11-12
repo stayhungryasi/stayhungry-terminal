@@ -1,53 +1,33 @@
 {
  "kind": "brief",
  "schema": 1,
- "date": "2026-11-11",
- "generated_kst": "2026-11-11 10:16",
+ "date": "2026-11-12",
+ "generated_kst": "2026-11-12 10:16",
  "editor": "Claude",
  "lines": [
   {
-   "href": "#schedule",
-   "ko": "<b>오늘 MSCI 11월 정기 리뷰 발표.</b> 확정·11/30 종가 반영. 코어위브 3분기 실적은 오늘 07:00(확정), 내일은 SK스퀘어·삼성생명 실적(추정). <a href=\"#schedule\">일정</a>",
-   "en": "<b>MSCI November review today.</b> Confirmed, effective 11/30 close. CoreWeave Q3 at 07:00 (confirmed); SK Square, Samsung Life 11/12 (est.). <a href=\"#schedule\">Dates</a>",
-   "es": "<b>Hoy, revisión de MSCI.</b> Confirmada, efectiva el 30/11. CoreWeave 3T hoy a las 07:00; el 12/11, SK Square y Samsung Life (estimado). <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>本日、MSCI 11月定期見直し発表。</b>確定・11/30終値で反映。コアウィーブ3Q決算は本日07:00(確定)、あすはSKスクエア・サムスン生命(推定)。<a href=\"#schedule\">日程</a>"
+   "href": "#earnings",
+   "ko": "<b>엔비디아 실적, 11/18 06:20(한국시간·확정).</b> 미국 11/17 장 마감 후, D-6. 11/18 텐센트·11/19 월마트가 뒤따르고, 오늘은 SK스퀘어·삼성생명 3분기 실적(추정). <a href=\"#earnings\">실적</a>",
+   "en": "<b>Nvidia reports 11/17 after the close.</b> 06:20 KST 11/18 (confirmed), D-6. Tencent 11/18 and Walmart 11/19 follow. <a href=\"#earnings\">Earnings</a>",
+   "es": "<b>Nvidia presenta el 17/11 tras el cierre.</b> 06:20 KST del 18/11 (confirmado), D-6. Le siguen Tencent el 18/11 y Walmart el 19/11. <a href=\"#earnings\">Resultados</a>",
+   "ja": "<b>エヌビディア決算、11/18 06:20(韓国時間・確定)。</b>米国11/17引け後、あと6日。11/18テンセント、11/19ウォルマートが続き、本日はSKスクエア・サムスン生命3Q決算(推定)。<a href=\"#earnings\">決算</a>"
+  },
+  {
+   "href": "#leverage",
+   "ko": "<b>신용융자 하루 새 1.5조 원 감소.</b> 11/10 기준 26.549조 원(−1.521조), 반대매매 630억 원(1년 평균의 2.75배), 예탁금은 한 달 −14.9%. <a href=\"#leverage\">레버리지</a>",
+   "en": "<b>Korean margin loans fall ₩1.5tn in a day.</b> ₩26.549tn on 11/10; forced selling 2.75x the 1y avg; deposits −14.9% in a month. <a href=\"#leverage\">Leverage</a>",
+   "es": "<b>Corea: el crédito bursátil cae ₩1,5 billones.</b> ₩26,549 billones el 10/11; ventas forzadas 2,75x la media anual. <a href=\"#leverage\">Apalancamiento</a>",
+   "ja": "<b>信用融資、1日で1.5兆ウォン減少。</b>11/10時点26.549兆ウォン(−1.521兆)、反対売買630億ウォン(1年平均の2.75倍)、預託金は1カ月で−14.9%。<a href=\"#leverage\">レバレッジ</a>"
   },
   {
    "href": "#spcxlock",
-   "ko": "<b>스페이스X, 공모가 위로.</b> 11/9 종가 $142.07(+5.81%)로 공모가 $135 대비 +5.2%. 12/9 7.976억주(≈1,133억 달러) 락업 해제까지 D-29. <a href=\"#spcxlock\">락업 레이더</a>",
-   "en": "<b>SpaceX back above its IPO price.</b> $142.07 on 11/9 (+5.81%), +5.2% vs $135. 797.6M shares (≈$113.3B) unlock 12/9, D-29. <a href=\"#spcxlock\">Lock-up radar</a>",
-   "es": "<b>SpaceX supera la OPV.</b> US$142,07 el 9/11 (+5,81 %), +5,2 % vs US$135. D-29: el 9/12 se liberan 797,6 M de acciones (≈US$113,3 mil M). <a href=\"#spcxlock\">Radar</a>",
-   "ja": "<b>スペースX、公募価格を上回る。</b>11/9終値$142.07(+5.81%)、公募価格$135比+5.2%。12/9に7.976億株(約1,133億ドル)のロックアップ解除まであと29日。<a href=\"#spcxlock\">ロックアップ</a>"
-  },
-  {
-   "href": "#library",
-   "ko": "<b>새 리서치: 테라팹 딥다이브.</b> 메모리 웨이퍼 70만 장 목표와 EUV·자본 계산을 따지고, 기존 주장 33개를 출처와 대조해 재검증(11/10). <a href=\"#library\">리서치</a>",
-   "en": "<b>New research: Terafab deep dive.</b> The 700K memory-wafer target, EUV and capital math; 33 earlier claims rechecked (11/10). <a href=\"#library\">Research</a>",
-   "es": "<b>Nueva investigación: Terafab.</b> La meta de 700.000 obleas de memoria, EUV y capital; 33 afirmaciones revisadas con fuentes (10/11). <a href=\"#library\">Biblioteca</a>",
-   "ja": "<b>新リサーチ：テラファブ徹底分析。</b>メモリウェハー70万枚目標とEUV・資本の計算を検証し、既存の主張33件を出典と照合(11/10)。<a href=\"#library\">リサーチ</a>"
+   "ko": "<b>스페이스X 락업 해제 D-28.</b> 12/9 7.976억주(≈1,141억 달러) 해제. 11/10 종가 $143.09, 공모가 대비 +6.0%. 국방부는 경쟁사 2곳에 각 1.5억 달러 조건부 대출 확약(보도). <a href=\"#spcxlock\">락업 레이더</a>",
+   "en": "<b>SpaceX unlock in 28 days.</b> 797.6M shares (≈$114.1B) free up 12/9. Closed at $143.09 on 11/10, +6.0% vs the $135 IPO. <a href=\"#spcxlock\">Lock-up radar</a>",
+   "es": "<b>SpaceX: D-28 para el desbloqueo.</b> El 9/12 se liberan 797,6 M de acciones (≈US$114,1 mil M). US$143,09 el 10/11, +6,0 % vs OPV. <a href=\"#spcxlock\">Radar</a>",
+   "ja": "<b>スペースX、ロックアップ解除まで28日。</b>12/9に7.976億株(約1,141億ドル)解除。11/10終値$143.09、公募価格比+6.0%。国防総省は競合2社に各1.5億ドルの条件付き融資を確約(報道)。<a href=\"#spcxlock\">ロックアップ</a>"
   }
  ],
  "checkpoints": [
-  {
-   "d": {
-    "ko": "11/11(수)",
-    "en": "Wed 11/11",
-    "es": "mié 11/11",
-    "ja": "11/11(水)"
-   },
-   "x": {
-    "ko": "MSCI 11월 정기 리뷰 발표 · 07:00 코어위브 3분기 실적",
-    "en": "MSCI November review · 07:00 CoreWeave Q3",
-    "es": "Revisión MSCI · 07:00 CoreWeave 3T",
-    "ja": "MSCI 11月定期見直し・07:00 コアウィーブ決算"
-   },
-   "y": {
-    "ko": "확정 · 리뷰는 11/30 종가 반영",
-    "en": "Confirmed · review effective 11/30 close",
-    "es": "Confirmado · efectiva al cierre del 30/11",
-    "ja": "確定・見直しは11/30終値で反映"
-   }
-  },
   {
    "d": {
     "ko": "11/18(수)",
@@ -56,16 +36,36 @@
     "ja": "11/18(水)"
    },
    "x": {
-    "ko": "06:20 엔비디아 FQ3 실적",
-    "en": "06:20 Nvidia FQ3 earnings",
-    "es": "06:20 resultados FQ3 de Nvidia",
-    "ja": "06:20 エヌビディアFQ3決算"
+    "ko": "06:20 엔비디아 FQ3 실적(확정)",
+    "en": "06:20 KST Nvidia FQ3 (confirmed)",
+    "es": "06:20 KST resultados de Nvidia FQ3 (confirmado)",
+    "ja": "06:20 エヌビディアFQ3決算(確定)"
    },
    "y": {
-    "ko": "한국시간 · 확정 · 시총 2위",
-    "en": "KST · Confirmed · No. 2 by market cap",
-    "es": "Hora de Corea · confirmado · n.º 2 en capitalización",
-    "ja": "韓国時間・確定・時価総額2位"
+    "ko": "미국 11/17 장 마감 후 · 텐센트도 같은 날",
+    "en": "US 11/17 after close · Tencent same day",
+    "es": "17/11 tras el cierre en EE. UU. · Tencent el mismo día",
+    "ja": "米国11/17引け後・テンセントも同日"
+   }
+  },
+  {
+   "d": {
+    "ko": "11/19(목)",
+    "en": "Thu 11/19",
+    "es": "jue 19/11",
+    "ja": "11/19(木)"
+   },
+   "x": {
+    "ko": "월마트 실적",
+    "en": "Walmart earnings",
+    "es": "Resultados de Walmart",
+    "ja": "ウォルマート決算"
+   },
+   "y": {
+    "ko": "글로벌 시총 15위 · 시간 미정",
+    "en": "Global #15 by market cap · time n/a",
+    "es": "N.º 15 mundial por capitalización · hora por confirmar",
+    "ja": "世界時価総額15位・時刻未定"
    }
   },
   {
@@ -76,10 +76,10 @@
     "ja": "12/9(水)"
    },
    "x": {
-    "ko": "스페이스X 180일 락업 해제",
-    "en": "SpaceX 180-day lock-up expiry",
-    "es": "Fin del lock-up de 180 días de SpaceX",
-    "ja": "スペースX 180日ロックアップ解除"
+    "ko": "스페이스X 180일 락업 만료",
+    "en": "SpaceX 180-day lock-up ends",
+    "es": "Vence el bloqueo de 180 días de SpaceX",
+    "ja": "スペースX 180日ロックアップ満了"
    },
    "y": {
     "ko": "7.976억주 · 유통 주식의 +17.6%",
@@ -90,22 +90,27 @@
   }
  ],
  "why": {
-  "ko": "오늘 실제로 나오는 MSCI 리뷰(확정)와 코어위브 실적을 1순위로, 스페이스X는 공모가 회복(+5.2%)과 D-29라는 새 숫자가 있어 다시 넣었고, 아직 다루지 않은 11/10 새 리서치를 넣었습니다. 위기 근접도는 34.4로 변화가 없고, VIX(11/9 19.92)·버핏지수(추정)는 큰 변화가 없어 뺐습니다. Flight 15(11/13)는 날짜가 미확정이라 넣지 않았습니다.",
-  "en": "Today's confirmed MSCI review and CoreWeave results come first. SpaceX returns with new numbers: back above its IPO price (+5.2%) and D-29. The 11/10 research had not been featured. Crisis proximity is flat at 34.4, VIX (19.92 on 11/9) and the estimated Buffett Index barely moved, and Flight 15 (11/13) is still unconfirmed, so they were left out.",
-  "es": "La revisión de MSCI y los resultados de CoreWeave, confirmados para hoy, van primero. SpaceX vuelve con datos nuevos: supera su precio de salida (+5,2 %) y faltan 29 días. La investigación del 10/11 no se había destacado. La proximidad de crisis sigue en 34,4, el VIX (19,92 el 9/11) y el índice Buffett estimado apenas cambiaron, y el vuelo 15 (13/11) no está confirmado, por eso quedaron fuera.",
-  "ja": "本日確定のMSCI見直しとコアウィーブ決算を1位に。スペースXは公募価格回復(+5.2%)とD-29という新しい数字があり再掲、11/10の新リサーチは初掲載です。危機接近度は34.4で横ばい、VIX(11/9 19.92)と推定バフェット指数は大きな変化がなく、Flight 15(11/13)は日程未確定のため外しました。"
+  "ko": "다음 주 확정 일정 중 가장 큰 엔비디아 실적을 맨 앞에, 하루 만에 크게 바뀐 신용융자·반대매매 숫자를 둘째로, D-day와 주가가 바뀐 스페이스X 락업을 셋째로 골랐습니다. 위기 근접도(34.4, 변화 없음)와 버핏지수·VIX는 숫자가 그대로라 뺐고, SK스퀘어·삼성생명 실적은 날짜가 추정이라 줄 끝에만 적었습니다.",
+  "en": "Nvidia, the biggest confirmed event next week, leads; Korean margin loans and forced selling moved sharply in a day; the SpaceX unlock has a new D-day and price. The crisis score (34.4, unchanged), Buffett Index and VIX were left out as nothing moved.",
+  "es": "Nvidia, el evento confirmado más grande de la próxima semana, va primero; el crédito bursátil coreano y las ventas forzadas cambiaron mucho en un día; el desbloqueo de SpaceX tiene nuevo D-day y precio. Se omitieron el índice de crisis (34,4, sin cambios), el índice Buffett y el VIX porque no se movieron.",
+  "ja": "来週の確定日程で最大のエヌビディア決算を先頭に、1日で大きく動いた信用融資・反対売買を2番目に、カウントダウンと株価が更新されたスペースXのロックアップを3番目に選びました。危機近接度(34.4、変化なし)とバフェット指数・VIXは数字が変わらないため外しました。"
  },
  "facts": [
-  "MSCI November review 2026-11-11 KST confirmed, effective 11/30 close — key dates bot",
-  "CoreWeave Q3 2026-11-11 07:00 KST, confirmed by company notice — key dates bot (CHANGED)",
-  "SK Square Q3 2026-11-12 estimated; Samsung Life Q3 2026-11-12 14:00 estimated — key dates bot",
-  "Nvidia FQ3 2026-11-18 06:20 KST confirmed — key dates bot; NVDA #2 4314bn — univertrix 2026-11-10",
-  "SPCX $142.07 2026-11-09 close, +5.81% d/d, +5.2% vs IPO $135 — spcx-lock asof 2026-11-10",
-  "Lock-up 2026-12-09 trade, D-29, 797.6M shares, +17.6% vs tradable, ≈$113.3B — spcx-lock asof 2026-11-10",
-  "Terafab deep dive 2026-11-10, 700K memory-wafer target, 33 claims rechecked — research library / changelog",
-  "Crisis 34.4 (prev 34.4) report 2026-11-09; VIX 19.92 as of 2026-11-09; Buffett 235.74% estimated — omitted",
-  "Flight 15 NET 11/13 'To Be Confirmed' — SpaceX agent, omitted"
+  "NVDA FQ3 2026-11-18 06:20 KST confirmed (Key dates bot); 2026-11-17 amc (Earnings calendar)",
+  "TCEHY 2026-11-18, WMT 2026-11-19 time n/a (Earnings calendar); WMT #15 (Global Top 20)",
+  "SK Square, Samsung Life Q3 2026-11-12 estimated (Key dates bot)",
+  "margin loans 26.549 tn KRW, d/d -1.521; forced selling 630 x100m KRW, 2.75x 1y avg; deposits -14.9% 1m; data as of 2026-11-10 (K-leverage monitor)",
+  "SpaceX lock-up 2026-12-09, D-28, 797.6M shares, +17.6% vs tradable, ≈$114.1B; SPCX $143.09 11/10 close, +6.0% vs IPO $135 (lock-up radar asof 2026-11-11)",
+  "DoD OSC conditional loan commitments $150M each to Stoke Space and Rocket Lab, reported (SpaceX overnight agent 2026-11-11)"
  ],
+ "x": {
+  "order": [
+   3,
+   1,
+   2
+  ],
+  "hook": "SpaceX's 797.6M-share unlock is 28 days out, and Nvidia reports next Tuesday after the close."
+ },
  "credit": "stayhungryasi.com",
  "note": "Picked from the hub's live feeds. Not investment advice.",
  "live": "https://stayhungryasi.com/live/brief.json"
