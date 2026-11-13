@@ -638,5 +638,37 @@
    "es": "Nvidia, el evento confirmado más grande de la próxima semana, va primero; el crédito bursátil coreano y las ventas forzadas cambiaron mucho en un día; el desbloqueo de SpaceX tiene nuevo D-day y precio. Se omitieron el índice de crisis (34,4, sin cambios), el índice Buffett y el VIX porque no se movieron.",
    "ja": "来週の確定日程で最大のエヌビディア決算を先頭に、1日で大きく動いた信用融資・反対売買を2番目に、カウントダウンと株価が更新されたスペースXのロックアップを3番目に選びました。危機近接度(34.4、変化なし)とバフェット指数・VIXは数字が変わらないため外しました。"
   }
+ },
+ {
+  "date": "2026-11-13",
+  "lines": [
+   {
+    "href": "#earnings",
+    "ko": "<b>엔비디아 실적 D-5.</b> 11/18 06:20(한국시간·확정), 미국 11/17 장 마감 후. 11/18 텐센트·11/19 월마트가 이어지고, 11/16 SK 3분기 실적은 16:00 예상(추정). <a href=\"#earnings\">실적</a>",
+    "en": "<b>Nvidia reports in 5 days.</b> 11/17 after the US close (06:20 KST 11/18, confirmed). Tencent 11/18 and Walmart 11/19 follow. <a href=\"#earnings\">Earnings</a>",
+    "es": "<b>Nvidia presenta en 5 días.</b> El 17/11 tras el cierre (06:20 KST del 18/11, confirmado). Siguen Tencent (18/11) y Walmart (19/11). <a href=\"#earnings\">Resultados</a>",
+    "ja": "<b>エヌビディア決算まであと5日。</b>11/18 06:20(韓国時間・確定)、米国11/17引け後。11/18テンセント、11/19ウォルマートが続き、11/16はSK 3Q決算16:00予想(推定)。<a href=\"#earnings\">決算</a>"
+   },
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X, 공모가 대비 +3.5%로 후퇴.</b> 11/11 종가 $139.75(−2.33%). 12/9 7.976억주(≈1,115억 달러) 락업 해제 D-27. 스타십 15차 비행 NET 11/14 07:45(한국시간)은 미확정. <a href=\"#spcxlock\">락업 레이더</a>",
+    "en": "<b>SpaceX slips to +3.5% vs its IPO.</b> $139.75 on 11/11 (−2.33%). 797.6M shares (≈$111.5B) unlock 12/9, D-27. Starship Flight 15 TBC. <a href=\"#spcxlock\">Lock-up</a>",
+    "es": "<b>SpaceX cede a +3,5 % sobre la OPV.</b> US$139,75 el 11/11 (−2,33 %). 797,6 M de acciones (≈US$111,5 mil M) se liberan el 9/12, D-27. <a href=\"#spcxlock\">Radar</a>",
+    "ja": "<b>スペースX、公募価格比+3.5%まで後退。</b>11/11終値$139.75(−2.33%)。12/9に7.976億株(約1,115億ドル)ロックアップ解除、あと27日。スターシップ15号機はNET 11/14 07:45(韓国時間)、未確定。<a href=\"#spcxlock\">ロックアップ</a>"
+   },
+   {
+    "href": "#leverage",
+    "ko": "<b>신용융자 이틀째 감소, 반대매매는 진정.</b> 11/11 기준 25.928조 원(−0.621조), 반대매매 116억 원(1년 평균의 0.51배), 예탁금은 한 달 −12.3%. <a href=\"#leverage\">레버리지</a>",
+    "en": "<b>Korean margin loans fall again.</b> ₩25.928tn on 11/11 (−₩0.621tn); forced selling eases to 0.51x the 1y avg. <a href=\"#leverage\">Leverage</a>",
+    "es": "<b>Corea: el crédito bursátil vuelve a caer.</b> ₩25,928 billones el 11/11 (−0,621); ventas forzadas en 0,51x la media anual. <a href=\"#leverage\">Apalancamiento</a>",
+    "ja": "<b>信用融資2日連続減少、反対売買は沈静化。</b>11/11時点25.928兆ウォン(−0.621兆)、反対売買116億ウォン(1年平均の0.51倍)、預託金は1カ月で−12.3%。<a href=\"#leverage\">レバレッジ</a>"
+   }
+  ],
+  "why": {
+   "ko": "확정 일정 중 가장 큰 엔비디아 실적 주간(D-5)을 맨 위에, 종가·D-day가 바뀐 스페이스X를 두 번째로, 이틀 연속 줄어든 신용융자와 2.75배→0.51배로 꺾인 반대매매를 세 번째로 골랐습니다. 위기 근접도(34.4, 변화 없음)·버핏지수·VIX는 숫자가 그대로라 뺐고, 새 리서치는 없었습니다. 스타십 15차 비행 일정은 11/11 에이전트 기준 FAA 면허 대기라 '미확정'으로만 적었습니다(작성자 판단).",
+   "en": "Nvidia's earnings week (D-5) is the biggest confirmed event, so it leads; SpaceX is second because its close and countdown changed; Korean leverage is third as margin loans fell a second day and forced selling dropped from 2.75x to 0.51x the 1y average. The crisis score (34.4, unchanged), Buffett Index and VIX were left out because they did not move, and there was no new research. Starship Flight 15 is marked unconfirmed: as of the 11/11 agent run it was awaiting an FAA licence (editor's call).",
+   "es": "La semana de resultados de Nvidia (D-5) es el mayor evento confirmado y va primero; SpaceX va segundo porque cambiaron su cierre y la cuenta atrás; el apalancamiento coreano va tercero: el crédito cayó por segundo día y las ventas forzadas bajaron de 2,75x a 0,51x la media anual. El índice de crisis (34,4, sin cambios), el índice Buffett y el VIX quedan fuera porque no se movieron, y no hubo investigación nueva. El vuelo 15 de Starship figura sin confirmar: según el agente del 11/11 esperaba la licencia de la FAA (criterio del editor).",
+   "ja": "確定日程で最大のエヌビディア決算週(あと5日)を首位に、終値とカウントダウンが変わったスペースXを2番目に、信用融資が2日連続で減り反対売買が2.75倍→0.51倍に低下した韓国レバレッジを3番目に選びました。危機接近度(34.4、変化なし)・バフェット指数・VIXは数値が動かず外し、新しいリサーチもありませんでした。スターシップ15号機は11/11エージェント時点でFAA免許待ちのため「未確定」とだけ記しました(編集者判断)。"
+  }
  }
 ]
