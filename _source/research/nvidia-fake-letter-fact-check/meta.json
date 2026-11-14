@@ -1,0 +1,60 @@
+{
+ "slug": "nvidia-fake-letter-fact-check",
+ "date": "2026-11-14",
+ "asof": "2026-11-14 KST: US close of Nov 13",
+ "category": "ai",
+ "title": {
+  "ko": "엔비디아 직원 연판장은 가짜다: X에서 퍼진 이사회 앞 서한 10단계 전수검증",
+  "en": "The Nvidia Employee Letter Is Fake: A 10-Step Check of the Viral Letter to the Board",
+  "es": "La carta de empleados de Nvidia es falsa: verificación en 10 pasos del documento viral",
+  "ja": "エヌビディア社員の連判状は偽物:Xで拡散した取締役会宛て書簡を10段階で検証"
+ },
+ "dek": {
+  "ko": "젠슨 황을 복귀시키지 않으면 스페이스X 테라팹으로 집단 이직하겠다는 '엔비디아 직원 서한'이 X에서 약 23만 회 조회됐다. 명단에 오른 부사장 본인이 부인했고, 문장은 2023년 OpenAI 직원 서한에서 이름만 바꾼 것이며, '해임'이라는 표현은 사임 수리를 밝힌 8-K와 어긋난다. 서한은 가짜지만 황의 사임, 사내 복귀 여론, 머스크의 지지는 사실이다. 무엇이 사실이고 무엇이 서한에만 있는 주장인지 나눠 정리했다.",
+  "en": "A letter from 'Nvidia employees' threatening a mass move to SpaceX Terafab unless Jensen Huang is reinstated drew about 230K views on X. A vice president named on it denied signing, the text is the 2023 OpenAI employee letter with the names swapped, and its word 'terminated' contradicts the 8-K, which says the board accepted a resignation. The letter is fake, but Huang's exit, staff support for his return and Musk's backing are real. This check separates what is confirmed from what exists only in the letter.",
+  "es": "Una carta de 'empleados de Nvidia' que amenaza con una salida masiva a SpaceX Terafab si no restituyen a Jensen Huang sumó unas 230 mil vistas en X. Un vicepresidente que aparece en ella negó haber firmado, el texto es la carta de empleados de OpenAI de 2023 con los nombres cambiados y la palabra 'despido' contradice el 8-K, que habla de una renuncia aceptada. La carta es falsa, pero la salida de Huang, el apoyo interno a su regreso y el respaldo de Musk son reales. Esta verificación separa lo confirmado de lo que solo existe en la carta.",
+  "ja": "ジェンスン・フアン氏を復帰させなければスペースXテラファブへ集団で移るという「エヌビディア社員の書簡」が、Xで約23万回閲覧された。名簿に載った副社長本人が署名を否定し、文章は2023年のOpenAI社員書簡の名前を入れ替えたもので、「解任」という表現は辞任の受理を記した8-Kと食い違う。書簡は偽物だが、フアン氏の辞任、社内の復帰要望、マスク氏の支持は事実だ。確認できた事実と書簡にしかない主張を切り分けた。"
+ },
+ "key": {
+  "value": "97%",
+  "label": {
+   "ko": "서한이 가짜라는 판정의 확신도(작성자 판단). 남은 3%는 명단의 나머지 인물이 아직 입장을 내지 않았다는 점",
+   "en": "Confidence that the letter is fake (author's judgment). The other 3%: the remaining listed names have not spoken yet",
+   "es": "Confianza en que la carta es falsa (juicio del autor). El 3% restante: los demás nombres de la lista aún no hablan",
+   "ja": "書簡が偽物だという判定の確信度(筆者の判断)。残り3%は、名簿のほかの人物がまだ発言していない点"
+  }
+ },
+ "points": {
+  "ko": [
+   "근거: 명단 3번인 브라이언 카탄자로 부사장이 서명을 부인하고 이사회를 지지했다. 서한은 OpenAI 직원 770명 중 738명이 서명한 2023년 서한에서 이름만 바꾼 것이고, X는 그런 서명 서한을 확인한 보도가 없다는 커뮤니티 노트를 붙였다.",
+   "사실과 주장 분리: 황의 사임과 콜렛 크레스 임시 CEO 선임, 사내 복귀 요구 글의 댓글 1,600건 이상, 머스크의 복귀 청원 서명은 사실이다. 핵심 임원의 실명 연판장, 집단 사직 예고, 머스크의 전 직원 채용 보장은 서한에만 있다.",
+   "주가와 일정: 11월 13일 종가는 162.85달러(-2.01%), 주간 낙폭은 12.75%였다. 같은 날 AMD -8.8%, 브로드컴 -4.9%로 함께 밀려 서한만의 영향은 분리할 수 없다. 다음 확인 지점은 11월 17일 실적과 12월 1일 하원 소환이다."
+  ],
+  "en": [
+   "Evidence: Bryan Catanzaro, the third name on the list, denied signing and backed the board. The text is the 2023 letter signed by 738 of 770 OpenAI employees with the names swapped, and X attached a Community Note saying no reports confirm such a signed letter.",
+   "Fact versus claim: Huang's resignation and Colette Kress as interim CEO, the 1,600+ comments on an internal post asking for his return, and Musk signing a reinstatement petition are real. A signed letter from top executives, a mass walkout and a Musk job guarantee for all staff exist only in the letter.",
+   "Price and calendar: Nvidia closed Nov 13 at $162.85 (-2.01%), down 12.75% on the week. AMD fell 8.8% and Broadcom 4.9% the same day, so the letter's own effect cannot be isolated. Next: earnings on Nov 17 and the House request for Dec 1."
+  ],
+  "es": [
+   "Evidencia: Bryan Catanzaro, tercer nombre de la lista, negó haber firmado y respaldó a la junta. El texto es la carta de 2023 que firmaron 738 de 770 empleados de OpenAI con los nombres cambiados, y X añadió una Nota de la Comunidad: ningún reporte confirma esa carta firmada.",
+   "Hechos frente a afirmaciones: son reales la renuncia de Huang y Colette Kress como CEO interina, los más de 1,600 comentarios en un post interno que pedía su regreso y la firma de Musk en una petición de restitución. La carta firmada por altos ejecutivos, la salida masiva y la garantía de empleo de Musk para todos solo existen en la carta.",
+   "Precio y calendario: Nvidia cerró el 13 de noviembre en $162.85 (-2.01%), con una caída semanal de 12.75%. Ese día AMD cayó 8.8% y Broadcom 4.9%, así que el efecto propio de la carta no se puede aislar. Lo próximo: resultados el 17 de noviembre y la citación de la Cámara para el 1 de diciembre."
+  ],
+  "ja": [
+   "根拠:名簿3番目のブライアン・カタンザロ副社長が署名を否定し、取締役会を支持した。文章はOpenAI社員770人のうち738人が署名した2023年の書簡の名前を入れ替えたもので、Xは「そのような署名書簡を裏づける報道はない」とのコミュニティノートを付けた。",
+   "事実と主張の切り分け:フアン氏の辞任とコレット・クレス氏の暫定CEO就任、復帰を求める社内投稿へのコメント1,600件超、マスク氏の復帰請願への署名は事実。幹部の実名による連判状、集団退職の予告、マスク氏による全社員の雇用保証は書簡にしかない。",
+   "株価と日程:11月13日の終値は162.85ドル(-2.01%)、週間下落率は12.75%。同じ日にAMDは8.8%安、ブロードコムは4.9%安で、書簡だけの影響は切り分けられない。次の確認点は11月17日の決算と12月1日の下院の出席要請。"
+  ]
+ },
+ "tickers": ["NVDA", "AMD", "AVGO"],
+ "tags": {
+  "ko": ["엔비디아", "가짜 문서 검증", "젠슨 황", "전수검증"],
+  "en": ["Nvidia", "Fake document check", "Jensen Huang", "Fact-checked"],
+  "es": ["Nvidia", "Documento falso", "Jensen Huang", "Verificado"],
+  "ja": ["エヌビディア", "偽文書の検証", "ジェンスン・フアン", "全数検証"]
+ },
+ "checkpoints": [
+  {"date": "2026-11-17", "text": {"ko": "엔비디아 3분기 실적 발표, 크레스 임시 CEO의 첫 콜", "en": "Nvidia Q3 earnings; first call led by interim CEO Kress", "es": "Resultados del 3T de Nvidia; primera llamada de la CEO interina Kress", "ja": "エヌビディア第3四半期決算。クレス暫定CEOによる初の説明会"}},
+  {"date": "2026-12-01", "text": {"ko": "하원 위원회의 젠슨 황 출석 요구일", "en": "House committees ask Huang to appear", "es": "Comités de la Cámara citan a Huang", "ja": "下院委員会がフアン氏に出席を要請した日"}}
+ ]
+}
