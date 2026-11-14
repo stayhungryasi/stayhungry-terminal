@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-14",
+      "commit": "HEAD",
+      "message": "New research: Is the LNG Shock Global? Asia and Europe pay about $30 per MMBtu while the US pays about $3; the IEA sees global LNG supply down 3% in 2026. Structural loss is 17% of Qatar's capacity (about 3 years to repair), the rest can return once Hormuz reopens. Winners checked against Q3 numbers (US exporters, equipment makers, shipyards), three corrections from the fact-check, and 8 cards in Korean, English, Spanish and Japanese"
+    },
+    {
+      "date": "2026-11-14",
       "commit": "ec18cce",
       "message": "AI model × effort dashboard now in four languages: full English, Spanish and Japanese editions at /p/ai-models/en/, /es/ and /ja/ (all 8 tabs, charts, notes and the test kit), a language bar on the dashboard, and the hub opens the edition that matches your language"
     },

@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
  "updated": "2026-11-14",
- "count": 21,
+ "count": 22,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals (full translations in en/es/ja where listed in langs); briefs in 4 languages. Not investment advice.",
  "credit": "stayhungryasi.com",
@@ -376,6 +376,104 @@
     "en": "https://stayhungryasi.com/r/nvidia-after-jensen-huang/en/",
     "es": "https://stayhungryasi.com/r/nvidia-after-jensen-huang/es/",
     "ja": "https://stayhungryasi.com/r/nvidia-after-jensen-huang/ja/"
+   }
+  },
+  {
+   "slug": "lng-shock-2026-11",
+   "date": "2026-11-14",
+   "asof": "2026-11-14 KST",
+   "category": "sector",
+   "title": {
+    "ko": "LNG 쇼크는 전세계 이슈인가: 9배 가격 차와 수혜 구조 전수검증",
+    "en": "Is the LNG Shock Global? The 9x Price Gap and Who Benefits, Fact-Checked",
+    "es": "¿Es global el choque del GNL? La brecha de 9 veces y quién gana, verificado",
+    "ja": "LNGショックは世界的な問題か:9倍の価格差と恩恵の構造を全数検証"
+   },
+   "dek": {
+    "ko": "중동 전쟁으로 호르무즈가 막히면서 아시아와 유럽 가스 가격은 MMBtu당 30달러 안팎, 미국은 3달러대다. IEA는 2026년 세계 LNG 공급이 3% 줄 것으로 본다. 구조적 손실은 카타르 수출능력의 17%이고 나머지는 해협이 열리면 돌아올 수 있다. 미국 수출사, 장비, 조선의 수혜를 수치로 검증하고 정정 내역과 확인 신호를 정리했다.",
+    "en": "With Hormuz closed by the Middle East war, gas costs about $30 per MMBtu in Asia and Europe and about $3 in the US. The IEA expects global LNG supply to fall 3% in 2026. The structural loss is 17% of Qatar's export capacity; the rest can return once the strait reopens. We check the gains for US exporters, equipment makers and shipyards against the numbers, and list corrections and the signals to watch.",
+    "es": "Con Ormuz cerrado por la guerra en Medio Oriente, el gas cuesta cerca de $30 por MMBtu en Asia y Europa y cerca de $3 en EE. UU. La AIE prevé que la oferta mundial de GNL caiga 3% en 2026. La pérdida estructural es 17% de la capacidad exportadora de Catar; el resto puede volver cuando se reabra el estrecho. Se contrastan con cifras las ganancias de exportadores de EE. UU., fabricantes de equipos y astilleros, con las correcciones y las señales a vigilar.",
+    "ja": "中東の戦争でホルムズ海峡が閉ざされ、ガス価格はアジアと欧州でMMBtu当たり30ドル前後、米国は3ドル台である。IEAは2026年の世界LNG供給が3%減ると見ている。構造的な損失はカタール輸出能力の17%で、残りは海峡が開けば戻り得る。米国の輸出企業、機器、造船の恩恵を数値で検証し、修正点と確認すべきシグナルを整理した。"
+   },
+   "key": {
+    "value": "-3%",
+    "label": {
+     "ko": "IEA가 본 2026년 세계 LNG 공급 변화. 약 20bcm, 연간 기준 사상 최대 감소폭",
+     "en": "The IEA's forecast change in global LNG supply for 2026: about 20 bcm, the steepest annual drop on record",
+     "es": "Cambio previsto por la AIE en la oferta mundial de GNL para 2026: unos 20 bcm, la mayor caída anual registrada",
+     "ja": "IEAが見る2026年の世界LNG供給の変化。約20bcm、年間で過去最大の減少幅"
+    }
+   },
+   "points": {
+    "ko": [
+     "IEA는 호르무즈 차질이 연말까지 이어진다는 전제로 2026년 세계 LNG 공급이 3%(약 20bcm) 줄 것으로 본다. 연간 기준 사상 최대 감소폭이다. 11월 12일 아시아 JKM은 29.67달러, 유럽 TTF는 28.33달러인데 미국 헨리허브는 3.25달러다(MMBtu당).",
+     "구조적 손실은 카타르 수출능력의 17%(연 1,280만 톤)이고 복구에 약 3년이 걸린다. 나머지 12개 설비는 해협이 안전해지면 약 2개월 내 복구할 수 있다는 것이 QatarEnergy의 예상이다. 10월 걸프 LNG선 출항은 31척으로 전쟁 후 최다였다.",
+     "미국 LNG 수출사의 2026년 이익은 이미 확정 단계다. Venture Global은 가이던스를 100~103억 달러로, Cheniere는 87.5~92.5억 달러로 올렸다. 가스 가격이 내려도 수주잔고가 남는 장비 기업(Baker Hughes IET 수주잔고 394억 달러)이 더 구조적이라는 것이 작성자 판단이다."
+    ],
+    "en": [
+     "The IEA expects global LNG supply to fall 3% (about 20 bcm) in 2026, assuming the Hormuz disruption lasts through year-end. That would be the steepest annual drop on record. On Nov 12 Asia's JKM was $29.67 and Europe's TTF $28.33, while US Henry Hub was $3.25 (per MMBtu).",
+     "The structural loss is 17% of Qatar's export capacity (12.8 million tonnes a year) and takes about 3 years to repair. QatarEnergy expects the other 12 trains back in about 2 months once the strait is safe. In October 31 LNG tankers left the Gulf, the most since the war began.",
+     "US LNG exporters' 2026 earnings are largely locked in. Venture Global raised guidance to $10.0–10.3 billion and Cheniere to $8.75–9.25 billion. In the author's judgment, equipment makers whose backlog stays even if gas prices fall (Baker Hughes IET backlog: $39.4 billion) are the more structural winners."
+    ],
+    "es": [
+     "La AIE prevé que la oferta mundial de GNL caiga 3% (unos 20 bcm) en 2026, bajo el supuesto de que la interrupción en Ormuz dure hasta fin de año. Sería la mayor caída anual registrada. El 12 de noviembre el JKM de Asia estaba en $29.67 y el TTF de Europa en $28.33, mientras el Henry Hub de EE. UU. estaba en $3.25 (por MMBtu).",
+     "La pérdida estructural es 17% de la capacidad exportadora de Catar (12.8 millones de toneladas al año) y su reparación toma unos 3 años. QatarEnergy espera recuperar los otros 12 trenes en unos 2 meses cuando el estrecho sea seguro. En octubre salieron del Golfo 31 buques de GNL, el máximo desde el inicio de la guerra.",
+     "Las utilidades de 2026 de los exportadores de GNL de EE. UU. ya están prácticamente aseguradas. Venture Global elevó su guía a US$10,000–10,300 millones y Cheniere a US$8,750–9,250 millones. A juicio del autor, los fabricantes de equipos, cuya cartera permanece aunque baje el gas (cartera IET de Baker Hughes: US$39,400 millones), son los ganadores más estructurales."
+    ],
+    "ja": [
+     "IEAは、ホルムズ海峡の混乱が年末まで続くという前提で、2026年の世界LNG供給が3%(約20bcm)減ると見ている。年間では過去最大の減少幅である。11月12日のアジアJKMは29.67ドル、欧州TTFは28.33ドルだが、米ヘンリーハブは3.25ドルだ(MMBtu当たり)。",
+     "構造的な損失はカタール輸出能力の17%(年1,280万トン)で、復旧に約3年かかる。残る12系列は海峡が安全になれば約2か月で復旧できるというのがQatarEnergyの見通しである。10月の湾岸発LNG船は31隻で開戦後最多だった。",
+     "米国のLNG輸出企業の2026年利益はすでにほぼ確定している。Venture Globalはガイダンスを100〜103億ドルに、Cheniereは87.5〜92.5億ドルに引き上げた。ガス価格が下がっても受注残が残る機器メーカー(Baker HughesのIET受注残は394億ドル)のほうが構造的だというのが筆者の判断である。"
+    ]
+   },
+   "tickers": [
+    "LNG",
+    "VG",
+    "BKR",
+    "GEV"
+   ],
+   "tags": {
+    "ko": [
+     "LNG",
+     "에너지",
+     "파괴적 혁신",
+     "전수검증"
+    ],
+    "en": [
+     "LNG",
+     "Energy",
+     "Disruptive innovation",
+     "Fact-checked"
+    ],
+    "es": [
+     "GNL",
+     "Energía",
+     "Innovación disruptiva",
+     "Verificado"
+    ],
+    "ja": [
+     "LNG",
+     "エネルギー",
+     "破壊的イノベーション",
+     "全数検証"
+    ]
+   },
+   "checkpoints": [],
+   "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
+   "minutes": 6,
+   "sources": 24,
+   "url": "https://stayhungryasi.com/r/lng-shock-2026-11/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/lng-shock-2026-11/",
+    "en": "https://stayhungryasi.com/r/lng-shock-2026-11/en/",
+    "es": "https://stayhungryasi.com/r/lng-shock-2026-11/es/",
+    "ja": "https://stayhungryasi.com/r/lng-shock-2026-11/ja/"
    }
   },
   {
