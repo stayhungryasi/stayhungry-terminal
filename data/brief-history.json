@@ -670,5 +670,37 @@
    "es": "La semana de resultados de Nvidia (D-5) es el mayor evento confirmado y va primero; SpaceX va segundo porque cambiaron su cierre y la cuenta atrás; el apalancamiento coreano va tercero: el crédito cayó por segundo día y las ventas forzadas bajaron de 2,75x a 0,51x la media anual. El índice de crisis (34,4, sin cambios), el índice Buffett y el VIX quedan fuera porque no se movieron, y no hubo investigación nueva. El vuelo 15 de Starship figura sin confirmar: según el agente del 11/11 esperaba la licencia de la FAA (criterio del editor).",
    "ja": "確定日程で最大のエヌビディア決算週(あと5日)を首位に、終値とカウントダウンが変わったスペースXを2番目に、信用融資が2日連続で減り反対売買が2.75倍→0.51倍に低下した韓国レバレッジを3番目に選びました。危機接近度(34.4、変化なし)・バフェット指数・VIXは数値が動かず外し、新しいリサーチもありませんでした。スターシップ15号機は11/11エージェント時点でFAA免許待ちのため「未確定」とだけ記しました(編集者判断)。"
   }
+ },
+ {
+  "date": "2026-11-14",
+  "lines": [
+   {
+    "href": "#radar",
+    "ko": "<b>위기 근접도 34.4 → 28.1, 6.3점 하락.</b> 11/13 보고 기준 '평온' 구간. 빨간불은 CCC 관련 지표 2개만 남았고, VIX는 18.7(11/12 기준). <a href=\"#radar\">위기 레이더</a>",
+    "en": "<b>Crisis score drops 6.3 pts, 34.4 → 28.1.</b> Calm zone in the 11/13 report; only 2 red lights left (CCC spreads). VIX 18.7 (11/12). <a href=\"#radar\">Radar</a>",
+    "es": "<b>El índice de crisis cae 6,3 pts: 34,4 → 28,1.</b> Zona de calma (informe del 13/11); solo 2 alertas rojas (diferenciales CCC). VIX 18,7. <a href=\"#radar\">Radar</a>",
+    "ja": "<b>危機近接度34.4→28.1、6.3ポイント低下。</b>11/13報告で「平穏」圏。赤信号はCCC関連の2指標だけ、VIXは18.7(11/12時点)。<a href=\"#radar\">危機レーダー</a>"
+   },
+   {
+    "href": "#earnings",
+    "ko": "<b>엔비디아 실적 D-4.</b> 11/18 06:20(한국시간·확정), 미국 11/17 장 마감 후. 같은 날 텐센트, 11/19 월마트. 월요일 11/16 SK 3분기 실적은 16:00 예상(추정). <a href=\"#earnings\">실적</a>",
+    "en": "<b>Nvidia reports in 4 days.</b> 11/17 after the US close (06:20 KST 11/18, confirmed). Tencent the same day, Walmart 11/19. <a href=\"#earnings\">Earnings</a>",
+    "es": "<b>Nvidia presenta en 4 días.</b> El 17/11 tras el cierre (06:20 KST del 18/11, confirmado). Tencent el mismo día y Walmart el 19/11. <a href=\"#earnings\">Resultados</a>",
+    "ja": "<b>エヌビディア決算まであと4日。</b>11/18 06:20(韓国時間・確定)、米国11/17引け後。同日テンセント、11/19ウォルマート。11/16のSK 3Q決算は16:00予想(推定)。<a href=\"#earnings\">決算</a>"
+   },
+   {
+    "href": "#rank",
+    "ko": "<b>시총 순위 교대: 브로드컴 8위, AMD 16위.</b> 11/13 스냅샷 브로드컴 1.739조 달러로 아람코(1.702조) 추월, AMD 9,600억 달러로 마이크론(9,030억) 앞질러. <a href=\"#rank\">순위</a>",
+    "en": "<b>Top-20 shuffle: Broadcom #8, AMD #16.</b> On 11/13 Broadcom ($1,739B) passed Aramco ($1,702B); AMD ($960B) passed Micron ($903B). <a href=\"#rank\">Rank</a>",
+    "es": "<b>Cambios en el Top 20: Broadcom 8.º, AMD 16.º.</b> El 13/11 Broadcom (US$1.739 mil M) superó a Aramco y AMD (US$960 mil M) a Micron. <a href=\"#rank\">Ranking</a>",
+    "ja": "<b>時価総額順位入れ替え:ブロードコム8位、AMD16位。</b>11/13時点でブロードコム1.739兆ドルがアラムコ(1.702兆)を、AMD 9,600億ドルがマイクロン(9,030億)を上回る。<a href=\"#rank\">ランキング</a>"
+   }
+  ],
+  "why": {
+   "ko": "위기 근접도가 직전 34.4에서 28.1로 5점 넘게 움직여 규칙대로 1순위에 올렸습니다. 확정 일정 중 가장 큰 엔비디아 실적(D-4)을 두 번째로, 11/13 스냅샷에서 바뀐 시총 순위(브로드컴·AMD 각 +1·+2계단)를 세 번째로 골랐습니다. 스페이스X 락업(D-26)은 사흘 연속 다뤄 숫자 변화가 작아 뺐고, 신용융자(25.773조, −0.156조)도 변화 폭이 작아 뺐습니다. 새 리서치는 없었습니다. 스타십 15차 비행 결과는 피드에 없어 쓰지 않았습니다.",
+   "en": "The crisis score moved more than 5 points (34.4 → 28.1), so by rule it leads. Nvidia's earnings (D-4) is the biggest confirmed event and comes second; the 11/13 market-cap shuffle (Broadcom +1, AMD +2) is third because it is new. The SpaceX lock-up (D-26) ran three days in a row with little change and Korean margin loans (₩25.773tn, −₩0.156tn) barely moved, so both were left out. No new research. Starship Flight 15's outcome is not in the feeds, so it is not mentioned.",
+   "es": "El índice de crisis se movió más de 5 puntos (34,4 → 28,1), así que por regla va primero. Los resultados de Nvidia (D-4) son el mayor evento confirmado y van segundos; el cambio en el ranking del 13/11 (Broadcom +1, AMD +2) va tercero por ser nuevo. El desbloqueo de SpaceX (D-26) ya salió tres días seguidos con pocos cambios y el crédito bursátil coreano (₩25,773 billones, −0,156) apenas se movió, así que quedan fuera. Sin investigación nueva. El resultado del vuelo 15 de Starship no está en los datos y no se menciona.",
+   "ja": "危機近接度が34.4→28.1と5ポイント超動いたため、ルールどおり首位に。確定日程で最大のエヌビディア決算(あと4日)を2番目、11/13スナップショットで変わった時価総額順位(ブロードコム+1、AMD+2)を3番目にしました。スペースXのロックアップ(あと26日)は3日連続で変化が小さく、韓国の信用融資(25.773兆ウォン、−0.156兆)も動きが小さいため外しました。新しいリサーチはなし。スターシップ15号機の結果はフィードにないため記載していません。"
+  }
  }
 ]
