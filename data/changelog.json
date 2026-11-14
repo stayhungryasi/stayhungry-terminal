@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-14",
-      "commit": "HEAD",
+      "commit": "ec18cce",
       "message": "AI model × effort dashboard now in four languages: full English, Spanish and Japanese editions at /p/ai-models/en/, /es/ and /ja/ (all 8 tabs, charts, notes and the test kit), a language bar on the dashboard, and the hub opens the edition that matches your language"
     },
     {
