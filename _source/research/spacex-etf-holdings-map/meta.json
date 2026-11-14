@@ -1,0 +1,83 @@
+{
+ "slug": "spacex-etf-holdings-map",
+ "date": "2026-11-14",
+ "asof": "2026-11-13 KST (Korea-listed) · Nov 9–12 (overseas-listed)",
+ "category": "sector",
+ "title": {
+  "ko": "스페이스X를 담은 ETF 지도: 한국 상장 13종과 해외 622개 전수 점검",
+  "en": "The Map of ETFs That Hold SpaceX: 13 in Korea and 622 Overseas, Checked One by One",
+  "es": "El mapa de los ETF con SpaceX: 13 en Corea y 622 en el exterior, revisados uno por uno",
+  "ja": "スペースXを組み入れるETFの地図:韓国上場13本と海外622本の全数点検"
+ },
+ "dek": {
+  "ko": "스페이스X(SPCX)가 어느 ETF에 얼마나 들어 있는지 구성종목 공시로 확인했다. 한국 상장 ETF는 13종이 상위 10종목에 담고 있고 최고 비중은 29.65%다. 해외에서는 622개 ETF가 보유하며 최고 비중은 36.95%다. 금액으로는 QQQ 하나가 약 $12.8B로 가장 크다. 표시 비중과 실제 노출이 다른 SPV 구조, 단일종목 상품, 한 종목 편입 한도도 정리했다.",
+  "en": "We used disclosed holdings to check which ETFs hold SpaceX (SPCX) and how much. In Korea, 13 listed ETFs have it in their top 10, with a highest weight of 29.65%. Overseas, 622 ETFs hold it, with a highest weight of 36.95%. By amount, QQQ alone is the largest holder at about $12.8B. We also cover the SPV structure that makes shown weights differ from real exposure, single-stock products and the single-stock limit.",
+  "es": "Se usaron las carteras publicadas para revisar qué ETF tienen SpaceX (SPCX) y cuánto. En Corea, 13 ETF listados lo tienen entre sus 10 mayores posiciones, con un peso máximo de 29.65%. En el exterior lo tienen 622 ETF, con un peso máximo de 36.95%. Por monto, solo QQQ es el mayor tenedor con cerca de $12.8B. También se explican la estructura SPV que hace que el peso mostrado difiera de la exposición real, los productos de una sola acción y el límite por acción.",
+  "ja": "スペースX(SPCX)がどのETFにどれだけ入っているかを、組入銘柄の開示で確認した。韓国上場ETFは13本が上位10銘柄に組み入れ、最高比率は29.65%だ。海外では622本のETFが保有し、最高比率は36.95%である。金額ではQQQ1本が約$12.8Bで最大だ。表示比率と実際のエクスポージャーが異なるSPVの仕組み、単一銘柄商品、1銘柄の組入上限も整理した。"
+ },
+ "key": {
+  "value": "29.65%",
+  "label": {
+   "ko": "한국 상장 ETF의 스페이스X 최고 편입 비중. RISE 미국우주위성통신(0227K0), 11월 13일 구성종목 기준",
+   "en": "Highest SpaceX weight in a Korea-listed ETF: RISE US Space & Satellite Comm (0227K0), holdings as of Nov 13",
+   "es": "Mayor peso de SpaceX en un ETF listado en Corea: RISE US Space & Satellite Comm (0227K0), cartera al 13 de noviembre",
+   "ja": "韓国上場ETFのスペースX最高組入比率。RISE US Space & Satellite Comm(0227K0)、11月13日の組入銘柄基準"
+  }
+ },
+ "points": {
+  "ko": [
+   "한국 상장 ETF 가운데 상위 10종목 안에 스페이스X(SPCX)를 담은 상품은 13종이다. 비중 1위는 8월 상장한 RISE 미국우주위성통신(0227K0)으로 29.65%이고, 7월 29.91%로 1위였던 ACE 미국우주테크액티브(0180V0)는 20.59%로 내려왔다.",
+   "해외에서는 622개 ETF가 스페이스X를 보유하고, 69개가 상위 10종목에 담고 있다. 비중 1위는 우주 ETF가 아니라 성장주 액티브 RONB(36.95%)다. NASA와 XOVR은 상장 전 확보한 SPV 지분을 더하면 24.51%, 19.21%다.",
+   "금액으로는 나스닥100 ETF가 가장 크다. QQQ 한 종목의 보유액이 약 $12.8B로 해외 테마·액티브 상위 20종 합계($2.45B)의 약 5.2배다. 한국에서도 TIGER·KODEX 미국나스닥100의 추정 보유액(약 5,250억원)이 편입 확인 13종 합계(약 5,092억원)보다 많다."
+  ],
+  "en": [
+   "Thirteen Korea-listed ETFs hold SpaceX (SPCX) among their top 10 positions. The highest weight is 29.65% at RISE US Space & Satellite Comm (0227K0), listed in August. ACE US Space Tech Active (0180V0), the leader in July at 29.91%, is down to 20.59%.",
+   "Overseas, 622 ETFs hold SpaceX and 69 have it in their top 10. The highest weight is not at a space ETF but at RONB, an active growth fund (36.95%). NASA and XOVR reach 24.51% and 19.21% once the SPV stakes they bought before the IPO are added.",
+   "By dollar amount, Nasdaq-100 ETFs are the largest holders. QQQ alone holds about $12.8B, roughly 5.2 times the top 20 overseas thematic and active ETFs combined ($2.45B). In Korea, the estimated holdings of TIGER and KODEX US Nasdaq 100 (about ₩525.0B) exceed the 13 confirmed ETFs combined (about ₩509.2B)."
+  ],
+  "es": [
+   "Trece ETF listados en Corea tienen a SpaceX (SPCX) entre sus 10 mayores posiciones. El mayor peso es 29.65% en RISE US Space & Satellite Comm (0227K0), listado en agosto. ACE US Space Tech Active (0180V0), líder en julio con 29.91%, bajó a 20.59%.",
+   "En el exterior, 622 ETF tienen SpaceX y 69 lo incluyen entre sus 10 mayores posiciones. El mayor peso no está en un ETF espacial sino en RONB, un fondo activo de crecimiento (36.95%). NASA y XOVR llegan a 24.51% y 19.21% al sumar las participaciones vía SPV compradas antes de la OPI.",
+   "Por monto, los ETF del Nasdaq-100 son los mayores tenedores. Solo QQQ tiene cerca de $12.8B, unas 5.2 veces la suma de los 20 principales ETF temáticos y activos del exterior ($2.45B). En Corea, las tenencias estimadas de TIGER y KODEX US Nasdaq 100 (cerca de ₩525.0 mil M) superan la suma de los 13 ETF confirmados (cerca de ₩509.2 mil M)."
+  ],
+  "ja": [
+   "韓国上場ETFのうち、上位10銘柄にスペースX(SPCX)を組み入れているのは13本である。比率1位は8月上場のRISE US Space & Satellite Comm(0227K0)の29.65%で、7月に29.91%で1位だったACE US Space Tech Active(0180V0)は20.59%に下がった。",
+   "海外では622本のETFがスペースXを保有し、69本が上位10銘柄に組み入れている。比率1位は宇宙ETFではなくグロース・アクティブのRONB(36.95%)だ。NASAとXOVRは上場前に確保したSPV持分を加えると24.51%、19.21%になる。",
+   "金額ではナスダック100ETFが最大だ。QQQ1本の保有額は約$12.8Bで、海外のテーマ・アクティブ上位20本の合計($2.45B)の約5.2倍である。韓国でもTIGER・KODEX US Nasdaq 100の推定保有額(約5,250億ウォン)が、組入れを確認した13本の合計(約5,092億ウォン)を上回る。"
+  ]
+ },
+ "tickers": [
+  "SPCX",
+  "QQQ",
+  "RONB",
+  "NASA",
+  "XOVR"
+ ],
+ "tags": {
+  "ko": [
+   "스페이스X",
+   "ETF",
+   "우주 산업",
+   "전수검증"
+  ],
+  "en": [
+   "SpaceX",
+   "ETF",
+   "Space industry",
+   "Fact-checked"
+  ],
+  "es": [
+   "SpaceX",
+   "ETF",
+   "Industria espacial",
+   "Verificado"
+  ],
+  "ja": [
+   "スペースX",
+   "ETF",
+   "宇宙産業",
+   "全数検証"
+  ]
+ },
+ "checkpoints": []
+}
