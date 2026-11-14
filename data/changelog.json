@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-14",
-      "commit": "HEAD",
+      "commit": "d5e04c5",
       "message": "Research pages: card news now opens in a swipe viewer (swipe, arrow keys, counter, Save as JPG; on phones Share card / Share all sends the images to any app), a share bar on every report (Share, X, Telegram, Copy link; LINE on Japanese pages), and link previews now show the cover card"
     },
     {
