@@ -192,13 +192,91 @@ document.addEventListener('click',function(e){var b=e.target.closest('[data-set]
 set(p);})();
 </script>'''
 
+SHARE_CSS = '''
+.shr{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0 4px}.shr span{font:600 12px var(--mono);letter-spacing:.08em;color:var(--mute);margin-right:2px}
+.shr button,.shr a{font-size:13px;font-weight:600;line-height:1;font-family:inherit;color:var(--ink2);background:var(--card);border:1px solid var(--line2);border-radius:999px;padding:9px 14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.shr button:hover,.shr a:hover{color:#fff;border-color:var(--or)}.shr .pri{background:var(--or);border-color:var(--or);color:#fff}
+.lb{position:fixed;inset:0;z-index:200;background:#06080c;display:flex;flex-direction:column}.lb[hidden]{display:none}
+.lbh{display:flex;align-items:center;gap:8px;padding:10px 14px;flex:none}.lbh b{font:600 14px var(--mono);color:var(--ink2);margin-right:auto}
+.lbh button{font-size:13px;font-weight:600;line-height:1;font-family:inherit;color:var(--ink);background:#161b25;border:1px solid var(--line2);border-radius:999px;padding:9px 13px;cursor:pointer}.lbh button:hover{border-color:var(--or)}.lbh .pri{background:var(--or);border-color:var(--or);color:#fff}
+.lbt{flex:1;min-height:0;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior:contain}.lbt::-webkit-scrollbar{display:none}
+.lbt div{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;display:grid;place-items:center;padding:4px 10px 14px;min-width:0}
+.lbt img{max-width:100%;max-height:calc(100vh - 84px);max-height:calc(100dvh - 84px);width:auto;height:auto;object-fit:contain;border-radius:10px;margin:0}
+.lbn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid var(--line2);background:rgba(18,22,30,.85);color:#fff;font-size:22px;cursor:pointer}.lbn.p{left:14px}.lbn.n{right:14px}.lbn[disabled]{opacity:.25;cursor:default}
+@media(max-width:700px){.lbn{display:none}.lbh{padding:8px 10px;gap:6px}.lbh button{padding:9px 11px}}
+.tst{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:300;background:#fff;color:#0A0C10;font-size:14px;font-weight:700;line-height:1;padding:12px 18px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.4)}
+'''
+
+SHARE_JS = r'''<script>
+(function(){var H=document.documentElement,lg=H.getAttribute('data-fix')||'ko',
+T={ko:{lbl:'공유',sh:'공유하기',cp:'링크 복사',ok:'링크를 복사했습니다',sv:'저장',all:'전체 공유',one:'이 장 공유',x:'닫기',fail:'이 기기에서는 이미지 공유가 안 됩니다. 저장을 눌러 주세요'},
+en:{lbl:'SHARE',sh:'Share',cp:'Copy link',ok:'Link copied',sv:'Save',all:'Share all',one:'Share card',x:'Close',fail:'Image sharing is not available on this device. Use Save'},
+es:{lbl:'COMPARTIR',sh:'Compartir',cp:'Copiar enlace',ok:'Enlace copiado',sv:'Guardar',all:'Compartir todo',one:'Compartir tarjeta',x:'Cerrar',fail:'Este dispositivo no permite compartir imágenes. Usa Guardar'},
+ja:{lbl:'共有',sh:'共有する',cp:'リンクをコピー',ok:'リンクをコピーしました',sv:'保存',all:'すべて共有',one:'この1枚を共有',x:'閉じる',fail:'この端末では画像を共有できません。保存をお使いください'}}[lg],
+url=location.origin+location.pathname,h1=document.querySelector('h1'),title=(h1?h1.textContent.trim():document.title)+' · Stayhungry.ASI',enc=encodeURIComponent;
+function toast(s){var t=document.createElement('div');t.className='tst';t.textContent=s;document.body.appendChild(t);setTimeout(function(){t.remove()},2200)}
+function copy(){function ok(){toast(T.ok)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(ok,fb)}else fb();
+function fb(){var a=document.createElement('textarea');a.value=url;a.style.cssText='position:fixed;opacity:0';document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){}a.remove()}}
+document.querySelectorAll('.shr').forEach(function(b){var h='<span>'+T.lbl+'</span>';
+if(navigator.share)h+='<button type="button" class="pri" data-sh="native">'+T.sh+'</button>';
+h+='<a href="https://twitter.com/intent/tweet?text='+enc(title)+'&url='+enc(url)+'" target="_blank" rel="noopener">X</a>'
++'<a href="https://t.me/share/url?url='+enc(url)+'&text='+enc(title)+'" target="_blank" rel="noopener">Telegram</a>'
++(lg==='ja'?'<a href="https://social-plugins.line.me/lineit/share?url='+enc(url)+'" target="_blank" rel="noopener">LINE</a>':'')
++'<button type="button" data-sh="copy">'+T.cp+'</button>';b.innerHTML=h});
+document.addEventListener('click',function(e){var b=e.target.closest('[data-sh]');if(!b)return;
+if(b.getAttribute('data-sh')==='copy')copy();else navigator.share({title:title,url:url}).catch(function(){})});
+/* card viewer: image links that sit together become one swipeable set */
+var links=[].slice.call(document.querySelectorAll('main a[href]')).filter(function(a){return /\.(webp|png|jpe?g)(\?|$)/i.test(a.getAttribute('href'))&&a.querySelector('img')});
+if(!links.length)return;
+var sets=[],lone=[];links.forEach(function(a){var p=a.parentNode,n=[].filter.call(p.children,function(c){return links.indexOf(c)>=0}).length;
+if(n>1){var s=sets.filter(function(x){return x.p===p})[0];if(!s){s={p:p,a:[]};sets.push(s)}s.a.push(a);a._set=s.a}else{lone.push(a);a._set=lone}});
+var lb=document.createElement('div');lb.className='lb';lb.hidden=true;lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');
+lb.innerHTML='<div class="lbh"><b></b><button type="button" class="pri" data-lb="one">'+T.one+'</button><button type="button" data-lb="all">'+T.all+'</button><button type="button" data-lb="save">'+T.sv+'</button><button type="button" data-lb="x" aria-label="'+T.x+'">✕</button></div><div class="lbt"></div><button type="button" class="lbn p" data-lb="p" aria-label="prev">‹</button><button type="button" class="lbn n" data-lb="n" aria-label="next">›</button>';
+document.body.appendChild(lb);
+var tr=lb.querySelector('.lbt'),cnt=lb.querySelector('b'),cur=[],i=0,pushed=false;
+var canFiles=false;try{canFiles=!!(navigator.canShare&&navigator.canShare({files:[new File([''],'a.jpg',{type:'image/jpeg'})]}))}catch(e){}
+lb.querySelector('[data-lb=one]').hidden=!canFiles;lb.querySelector('[data-lb=all]').hidden=!canFiles;
+function upd(){i=Math.max(0,Math.min(cur.length-1,Math.round(tr.scrollLeft/Math.max(1,tr.clientWidth))));cnt.textContent=(i+1)+' / '+cur.length;
+lb.querySelector('.p').disabled=i===0;lb.querySelector('.n').disabled=i===cur.length-1;lb.querySelector('[data-lb=all]').style.display=cur.length>1?'':'none'}
+function go(k,smooth){tr.scrollTo({left:k*tr.clientWidth,behavior:smooth?'smooth':'auto'})}
+function open(set,k){cur=set;tr.innerHTML=set.map(function(a){var m=a.querySelector('img');return '<div><img src="'+a.href+'" alt="'+(m.alt||'').replace(/"/g,'&quot;')+'" decoding="async"></div>'}).join('');
+lb.hidden=false;document.body.style.overflow='hidden';go(k);i=k;upd();try{history.pushState({lb:1},'');pushed=true}catch(e){}}
+function close(fromPop){if(lb.hidden)return;lb.hidden=true;document.body.style.overflow='';tr.innerHTML='';if(pushed&&!fromPop){pushed=false;history.back()}pushed=false}
+function jpg(src){return new Promise(function(ok,no){var m=new Image();m.onload=function(){var c=document.createElement('canvas');c.width=m.naturalWidth;c.height=m.naturalHeight;c.getContext('2d').drawImage(m,0,0);c.toBlob(function(b){b?ok(b):no()},'image/jpeg',.93)};m.onerror=no;m.src=src})}
+function name(k){var s=(location.pathname.match(/\/r\/([^\/]+)/)||[0,'stayhungryasi'])[1];return s+'-'+('0'+(k+1)).slice(-2)+'.jpg'}
+function shareFiles(ks){Promise.all(ks.map(function(k){return jpg(cur[k].href).then(function(b){return new File([b],name(k),{type:'image/jpeg'})})})).then(function(fs){
+if(navigator.canShare&&navigator.canShare({files:fs}))return navigator.share({files:fs,title:title,text:title+'\n'+url});toast(T.fail)}).catch(function(e){if(!e||e.name!=='AbortError')toast(T.fail)})}
+function save(k){jpg(cur[k].href).then(function(b){var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=name(k);document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},4000)})}
+links.forEach(function(a){a.addEventListener('click',function(e){if(e.ctrlKey||e.metaKey||e.shiftKey||e.button)return;e.preventDefault();open(a._set,a._set.indexOf(a))})});
+var raf;tr.addEventListener('scroll',function(){cancelAnimationFrame(raf);raf=requestAnimationFrame(upd)});
+lb.addEventListener('click',function(e){var b=e.target.closest('[data-lb]');if(!b){if(e.target===tr||e.target.parentNode===tr)close();return}var k=b.getAttribute('data-lb');
+if(k==='x')close();else if(k==='p')go(i-1,1);else if(k==='n')go(i+1,1);else if(k==='save')save(i);else if(k==='one')shareFiles([i]);else if(k==='all')shareFiles(cur.map(function(_,j){return j}))});
+document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')go(i-1,1);else if(e.key==='ArrowRight')go(i+1,1)});
+window.addEventListener('popstate',function(){close(true)});window.addEventListener('resize',function(){if(!lb.hidden)go(i)});
+})();
+</script>'''
+
+
+SHR = '<div class="shr"></div>'
+
 FRAME_JS = '''<script>
 (function(){var f=document.getElementById('app');function fit(){try{var d=f.contentDocument;if(d&&d.body){f.style.height=Math.max(600,d.documentElement.scrollHeight)+'px'}}catch(e){}}
 f.addEventListener('load',function(){fit();try{new ResizeObserver(fit).observe(f.contentDocument.body)}catch(e){setInterval(fit,1000)}});})();
 </script>'''
 
 
+def og_tags(m, base, c='ko'):
+    """Link-preview image (og.jpg / og.<lang>.jpg, made by rxtools/og.py from the first card) when the report has one."""
+    for f in ([f'og.{c}.jpg'] if c != 'ko' else []) + ['og.jpg']:
+        if os.path.exists(os.path.join(m['_dir'], f)):
+            u = f'{base}r/{m["slug"]}/{f}'
+            return f'<meta property="og:image" content="{u}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:image" content="{u}">'
+    return ''
+
+
 def head(title, desc, url, lang='ko', extra='', hattr=''):
+    if 'og:image' in extra:
+        extra += '<meta name="twitter:card" content="summary_large_image">'
     return f'''<!doctype html>
 <html lang="{lang}"{hattr}>
 <head>
@@ -208,12 +286,12 @@ def head(title, desc, url, lang='ko', extra='', hattr=''):
 <meta name="description" content="{E(desc)}">
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="article"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}">
-<meta name="twitter:card" content="summary"><meta name="twitter:site" content="@shaferwineX">
+{"" if "summary_large_image" in extra else '<meta name="twitter:card" content="summary">'}<meta name="twitter:site" content="@shaferwineX">
 <meta name="theme-color" content="#0A0C10"><link rel="icon" href="{FAV}">
 <link rel="alternate" type="application/rss+xml" title="Stayhungry.ASI research" href="/r/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-<style>{CSS}</style>{extra}
+<style>{CSS}{SHARE_CSS}</style>{extra}
 </head>
 <body>
 '''
@@ -326,7 +404,7 @@ def page_tr(m, allm, base, c):
           "datePublished": m['date'], "description": m['dek'][c], "url": url, "translationOfWork": {"@type": "Article", "url": f'{base}r/{m["slug"]}/', "inLanguage": "ko"},
           "author": {"@type": "Organization", "name": "Stayhungry.ASI", "url": base},
           "publisher": {"@type": "Organization", "name": "Stayhungry.ASI", "url": base}}
-    extra = alternates(m, base) + '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>'
+    extra = alternates(m, base) + og_tags(m, base, c) + '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>'
     hattr = f' data-fix="{c}" data-langs="{",".join(m["langs"])}" data-home="{home}"'
     eb = f'<p class="eb">RESEARCH · {E(CAT[m["category"]][c])} · {E(TR[c]["orig"])}</p>'
     trn = f'<p class="note" style="margin:0 0 26px">{E(TR[c]["note"])} <a href="{home}?ko" hreflang="ko">{E(TR[c]["link"])}</a></p>'
@@ -340,7 +418,7 @@ def page_tr(m, allm, base, c):
     return (head(title, m['dek'][c], url, HTML_LANG[c], extra, hattr).replace('<body>', '<body class="w">' if wide else '<body>') + topbar(c) + f'<main{wide}>' + eb
             + f'<h1 class="t">{E(m["title"][c])}</h1>'
             + f'<p class="meta" style="font-size:15px;color:var(--ink2);font-family:inherit" lang="ko">{E(m["title"]["ko"])}</p>'
-            + meta_line(m, c) + rel_up(brief(m, c), links=False) + trn + body + related(m, allm, c) + '</main>' + FOOT + LANG_JS + '</body></html>\n')
+            + meta_line(m, c) + SHR + rel_up(brief(m, c), links=False) + trn + body + SHR + related(m, allm, c) + '</main>' + FOOT + LANG_JS + SHARE_JS + '</body></html>\n')
 
 
 def page(m, allm, base):
@@ -351,7 +429,7 @@ def page(m, allm, base):
           "inLanguage": "ko", "datePublished": m['date'], "description": m['dek']['en'], "url": url,
           "author": {"@type": "Organization", "name": "Stayhungry.ASI", "url": base},
           "publisher": {"@type": "Organization", "name": "Stayhungry.ASI", "url": base}}
-    extra = alternates(m, base) + '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>'
+    extra = alternates(m, base) + og_tags(m, base) + '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>'
     hattr = f' data-langs="{",".join(m["langs"])}" data-home="/r/{m["slug"]}/"'
     eb = ''.join(f'<p class="eb" data-l="{c}"{"" if c == "en" else " hidden"}>RESEARCH · {E(CAT[m["category"]][c])} · {E(UI[c]["orig"])}</p>' for c in LANGS)
     if m['kind'] == 'doc':
@@ -364,7 +442,7 @@ def page(m, allm, base):
     return (head(title, desc, url, 'ko', extra, hattr).replace('<body>', '<body class="w">' if wide else '<body>') + topbar() + f'<main{wide}>' + eb
             + f'<h1 class="t" lang="ko">{E(m["title"]["ko"])}</h1>'
             + ''.join(f'<p class="meta" data-l="{c}" style="font-size:15px;color:var(--ink2);font-family:inherit"{"" if c == "en" else " hidden"} lang="{HTML_LANG[c]}">{E(m["title"][c])}</p>' for c in LANGS if c != 'ko')
-            + meta_line(m) + brief(m) + body + related(m, allm) + '</main>' + FOOT + LANG_JS + '</body></html>\n')
+            + meta_line(m) + SHR + brief(m) + body + SHR + related(m, allm) + '</main>' + FOOT + LANG_JS + SHARE_JS + '</body></html>\n')
 
 
 def index_page(allm, base):

@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-14",
+      "commit": "HEAD",
+      "message": "Research pages: card news now opens in a swipe viewer (swipe, arrow keys, counter, Save as JPG; on phones Share card / Share all sends the images to any app), a share bar on every report (Share, X, Telegram, Copy link; LINE on Japanese pages), and link previews now show the cover card"
+    },
+    {
+      "date": "2026-11-14",
       "commit": "fcef3dd",
       "message": "Research: The Nvidia Employee Letter Is Fake, a 10-step check of the viral letter to the board (a named signer denies it, the text is the 2023 OpenAI letter with names swapped, it contradicts the 8-K; author's confidence 97%). Full report and 11 cards in Korean, English, Spanish and Japanese"
     },
