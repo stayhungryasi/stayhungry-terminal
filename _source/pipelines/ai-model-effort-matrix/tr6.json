@@ -1,0 +1,2007 @@
+{
+"현존 주요 AI 모델 27종 × 노력 단계 = 조합 62개를 Artificial Analysis 지수 v5.0.1 한 잣대로 실무 5대 업무에 매핑한 대시보드. 기준일 2026-11-11, 매월 갱신.": {
+"en": "Dashboard mapping 27 current major AI models × effort levels = 62 combinations onto five work areas, all on one yardstick, the Artificial Analysis index v5.0.1. As of 2026-11-11, updated monthly.",
+"es": "Panel que aplica 27 modelos de IA actuales × niveles de esfuerzo = 62 combinaciones a cinco áreas de trabajo con una sola vara, el índice de Artificial Analysis v5.0.1. Al 2026-11-11, se actualiza cada mes.",
+"ja": "現行の主要AIモデル27種 × 思考量 = 62通りを、Artificial Analysis指数 v5.0.1という一つの物差しで5つの業務に当てはめたダッシュボード。基準日 2026-11-11、毎月更新。"
+},
+"AI 모델·노력 매트릭스 · stayhungryasi.com": {
+"en": "AI Model × Effort Matrix · stayhungryasi.com",
+"es": "Matriz de modelos de IA × esfuerzo · stayhungryasi.com",
+"ja": "AIモデル × 思考量マトリクス · stayhungryasi.com"
+},
+"AI 모델·노력 매트릭스": {
+"en": "AI Model × Effort Matrix",
+"es": "Matriz de modelos de IA × esfuerzo",
+"ja": "AIモデル × 思考量マトリクス"
+},
+"실무 5대 업무 기준 · 현존 주요 모델 전체 × 노력 단계 · 한 잣대(AA 지수 v5.0.1)": {
+"en": "Five work areas · every current major model × effort level · one yardstick (AA index v5.0.1)",
+"es": "Cinco áreas de trabajo · todos los modelos principales actuales × nivel de esfuerzo · una sola vara (índice AA v5.0.1)",
+"ja": "5つの業務が基準 · 現行の主要モデルすべて × 思考量 · 一つの物差し（AA指数 v5.0.1）"
+},
+"기준일 2026-11-11 (전면 재구축)": {
+"en": "As of 2026-11-11 (full rebuild)",
+"es": "Al 2026-11-11 (reconstrucción completa)",
+"ja": "基準日 2026-11-11（全面再構築）"
+},
+"검증": {
+"en": "Verified",
+"es": "Verificado",
+"ja": "検証済み"
+},
+"출처 수치 그대로": {
+"en": "source figures as published",
+"es": "cifras de la fuente tal cual",
+"ja": "出典の数値そのまま"
+},
+"추정": {
+"en": "Estimate",
+"es": "Estimación",
+"ja": "推定"
+},
+"벤치→업무 매핑": {
+"en": "benchmark → work mapping",
+"es": "prueba → área de trabajo",
+"ja": "ベンチ→業務の対応付け"
+},
+"미확인": {
+"en": "Unconfirmed",
+"es": "Sin confirmar",
+"ja": "未確認"
+},
+"데이터 없음": {
+"en": "no data",
+"es": "sin datos",
+"ja": "データなし"
+},
+"실측": {
+"en": "Measured",
+"es": "Medido",
+"ja": "実測"
+},
+"직접 측정": {
+"en": "tested directly",
+"es": "medición propia",
+"ja": "自分で測定"
+},
+"보기 전환": {
+"en": "Switch view",
+"es": "Cambiar de vista",
+"ja": "表示の切り替え"
+},
+"결론": {
+"en": "Verdict",
+"es": "Conclusión",
+"ja": "結論"
+},
+"전체 모델": {
+"en": "All models",
+"es": "Todos los modelos",
+"ja": "全モデル"
+},
+"노력 단계": {
+"en": "Effort levels",
+"es": "Niveles de esfuerzo",
+"ja": "思考量"
+},
+"히트맵": {
+"en": "Heatmap",
+"es": "Mapa de calor",
+"ja": "ヒートマップ"
+},
+"크로스오버": {
+"en": "Crossover",
+"es": "Cruces",
+"ja": "クロスオーバー"
+},
+"세대 비교": {
+"en": "Generations",
+"es": "Generaciones",
+"ja": "世代比較"
+},
+"실측 키트": {
+"en": "Test kit",
+"es": "Kit de pruebas",
+"ja": "実測キット"
+},
+"출처·방법론": {
+"en": "Sources & method",
+"es": "Fuentes y método",
+"ja": "出典・方法論"
+},
+"업무": {
+"en": "Work area",
+"es": "Área",
+"ja": "業務"
+},
+"노력": {
+"en": "Effort",
+"es": "Esfuerzo",
+"ja": "思考量"
+},
+"모델": {
+"en": "Model",
+"es": "Modelo",
+"ja": "モデル"
+},
+"AA 실측 비용": {
+"en": "AA measured cost",
+"es": "Costo medido por AA",
+"ja": "AA実測コスト"
+},
+"업무 점수 추정": {
+"en": "Work score is an estimate",
+"es": "La puntuación por área es una estimación",
+"ja": "業務スコアは推定"
+},
+"업무별 추천 조합": {
+"en": "Recommended combinations by work area",
+"es": "Combinaciones recomendadas por área",
+"ja": "業務別のおすすめ"
+},
+"최고품질 = 최고점의 97% 이상 중 과제당 비용 최소 · 가성비 = 90% 이상 중 비용 최소 · 속도 = 75% 이상 중 과제당 시간 최소 · 모든 후보가 AA 실측 조합": {
+"en": "Top quality = cheapest per task among combinations at 97%+ of the best score · Value = cheapest at 90%+ · Speed = fastest per task at 75%+ · every candidate is a combination AA measured",
+"es": "Máxima calidad = la más barata por tarea entre las que alcanzan el 97%+ de la mejor puntuación · Valor = la más barata con 90%+ · Velocidad = la más rápida por tarea con 75%+ · todas las candidatas son combinaciones medidas por AA",
+"ja": "最高品質 = 最高点の97%以上のうちタスク当たりコストが最小 · コスパ = 90%以上のうちコスト最小 · 速度 = 75%以上のうちタスク当たり時間が最小 · 候補はすべてAAが実測した組み合わせ"
+},
+"공개 데이터로 확인된 사실": {
+"en": "Facts confirmed by public data",
+"es": "Hechos confirmados con datos públicos",
+"ja": "公開データで確認できた事実"
+},
+"가장 불확실한 판단": {
+"en": "The most uncertain calls",
+"es": "Los juicios más inciertos",
+"ja": "最も不確かな判断"
+},
+"추정이 틀릴 수 있는 지점과, 그걸 확인할 실측 번호입니다.": {
+"en": "Where the estimates could be wrong, and the test numbers that would check them.",
+"es": "Dónde pueden fallar las estimaciones y los números de prueba que lo comprobarían.",
+"ja": "推定が外れうる点と、それを確かめる実測の番号です。"
+},
+"전체 모델 순위": {
+"en": "Full model ranking",
+"es": "Clasificación de todos los modelos",
+"ja": "全モデル順位"
+},
+"Anthropic·OpenAI·Google·Meta·중국 연구소까지, Artificial Analysis(AA)가 같은 시험 환경에서 잰 값만으로 매긴 업무 점수입니다. 모든 행이 그 모델·노력 조합의 실측입니다.": {
+"en": "Work scores built only from values Artificial Analysis (AA) measured in the same test setup, across Anthropic, OpenAI, Google, Meta and Chinese labs. Every row is a measurement of that model and effort combination.",
+"es": "Puntuaciones por área hechas solo con valores que Artificial Analysis (AA) midió en el mismo entorno de prueba, de Anthropic, OpenAI, Google, Meta y laboratorios chinos. Cada fila es una medición de esa combinación de modelo y esfuerzo.",
+"ja": "Anthropic・OpenAI・Google・Meta・中国の研究所まで、Artificial Analysis（AA）が同じ試験環境で測った値だけで付けた業務スコアです。すべての行が、そのモデル・思考量の組み合わせの実測です。"
+},
+"가성비 지도": {
+"en": "Value map",
+"es": "Mapa de valor",
+"ja": "コスパマップ"
+},
+"가로 = 과제당 비용(로그 눈금), 세로 = 업무 점수. 선은 효율적 프론티어(같은 비용에 더 높은 점수가 없는 조합)입니다.": {
+"en": "Horizontal = cost per task (log scale), vertical = work score. The line is the efficient frontier (combinations with no higher score at the same cost).",
+"es": "Horizontal = costo por tarea (escala logarítmica), vertical = puntuación por área. La línea es la frontera eficiente (combinaciones sin una puntuación mayor al mismo costo).",
+"ja": "横 = タスク当たりコスト（対数目盛）、縦 = 業務スコア。線は効率的フロンティア（同じコストでより高いスコアがない組み合わせ）です。"
+},
+"과제당 비용 대비 업무 점수 산점도": {
+"en": "Scatter plot of work score against cost per task",
+"es": "Diagrama de dispersión de puntuación por área frente a costo por tarea",
+"ja": "タスク当たりコストと業務スコアの散布図"
+},
+"벤더별 라인업": {
+"en": "Lineup by vendor",
+"es": "Gama por proveedor",
+"ja": "ベンダー別ラインナップ"
+},
+"10/24 이후 새로 나온 모델": {
+"en": "Models released since Oct 24",
+"es": "Modelos lanzados desde el 24 oct",
+"ja": "10/24以降に出た新モデル"
+},
+"같은 모델 안에서 노력만 바꿨을 때 무엇이 얼마나 달라지는지입니다. 단계별 값은 전부 AA가 단계마다 따로 잰 실측이고, 업무 점수는 그 값을 5대 업무에 매핑한 추정입니다.": {
+"en": "What changes, and by how much, when only the effort is changed within one model. Every per-level value is measured by AA separately at each level; the work scores are estimates that map those values onto the five work areas.",
+"es": "Qué cambia, y cuánto, al variar solo el esfuerzo dentro de un mismo modelo. Todos los valores por nivel los midió AA por separado en cada nivel; las puntuaciones por área son estimaciones que aplican esos valores a las cinco áreas.",
+"ja": "同じモデルの中で思考量だけを変えたとき、何がどれだけ変わるかです。段階ごとの値はすべてAAが段階別に測った実測で、業務スコアはその値を5つの業務に対応付けた推定です。"
+},
+"업무별 권장 노력": {
+"en": "Recommended effort by work area",
+"es": "Esfuerzo recomendado por área",
+"ja": "業務別の推奨思考量"
+},
+"가볍게 = 이 모델 최고점의 75%에 처음 닿는 단계 · 기본 = 90% · 최종본 = 97% · 최고 = 최고점 단계": {
+"en": "Light = the first level reaching 75% of this model's best score · Default = 90% · Final draft = 97% · Best = the level with the best score",
+"es": "Ligero = el primer nivel que llega al 75% de la mejor puntuación de este modelo · Base = 90% · Versión final = 97% · Mejor = el nivel con la mejor puntuación",
+"ja": "軽く = このモデルの最高点の75%に最初に届く段階 · 標準 = 90% · 最終版 = 97% · 最高 = 最高点の段階"
+},
+"업무 점수 (0–10)": {
+"en": "Work score (0–10)",
+"es": "Puntuación por área (0–10)",
+"ja": "業務スコア（0–10）"
+},
+"노력 단계별 업무 점수": {
+"en": "Work score by effort level",
+"es": "Puntuación por área según el nivel de esfuerzo",
+"ja": "思考量別の業務スコア"
+},
+"AA 단계별 실측을 업무에 매핑.": {
+"en": "AA per-level measurements mapped to work areas.",
+"es": "Mediciones de AA por nivel aplicadas a las áreas.",
+"ja": "AAの段階別実測を業務に対応付け。"
+},
+"과제당 비용·시간 (로그 눈금)": {
+"en": "Cost and time per task (log scale)",
+"es": "Costo y tiempo por tarea (escala logarítmica)",
+"ja": "タスク当たりコスト・時間（対数目盛）"
+},
+"노력 단계별 비용과 시간": {
+"en": "Cost and time by effort level",
+"es": "Costo y tiempo según el nivel de esfuerzo",
+"ja": "思考量別のコストと時間"
+},
+"AA 과제당 평균 비용(USD)과 시간(분).": {
+"en": "AA average cost (USD) and time (minutes) per task.",
+"es": "Costo medio (USD) y tiempo (minutos) por tarea según AA.",
+"ja": "AAのタスク当たり平均コスト（USD）と時間（分）。"
+},
+"벤치별 원자료": {
+"en": "Raw data by benchmark",
+"es": "Datos brutos por prueba",
+"ja": "ベンチ別の元データ"
+},
+"각 행의 최고값은 굵게, 바로 아래 단계보다 떨어진 값에는 ↓를 붙였습니다(과잉사고 구간).": {
+"en": "The best value in each row is bold; a value lower than the level just below it is marked ↓ (overthinking zone).",
+"es": "El mejor valor de cada fila va en negrita; un valor menor que el del nivel inmediatamente inferior lleva ↓ (zona de exceso de razonamiento).",
+"ja": "各行の最高値は太字、すぐ下の段階より下がった値には↓を付けました（考えすぎ区間）。"
+},
+"한 단계 올릴 때 얻는 것과 치르는 것": {
+"en": "What one level up buys and costs",
+"es": "Qué se gana y qué se paga al subir un nivel",
+"ja": "一段上げて得るものと払うもの"
+},
+"모델 × 업무": {
+"en": "Model × work area",
+"es": "Modelo × área",
+"ja": "モデル × 業務"
+},
+"칸 숫자는 업무 점수(0–10, 모든 모델·노력 중 벤치 최고=10), 아래는 과제당 비용. ‘모델별 최고’는 각 모델에서 그 업무 점수가 가장 높은 단계를 보여줍니다. 실선 강조는 직접 실측이 있는 칸입니다.": {
+"en": "Each cell shows the work score (0–10, best benchmark result across all models and efforts = 10) with cost per task below. ‘Best per model’ shows the level where each model scores highest for that work area. A solid outline marks cells that have a direct measurement.",
+"es": "Cada celda muestra la puntuación por área (0–10, mejor resultado de la prueba entre todos los modelos y esfuerzos = 10) y debajo el costo por tarea. ‘Mejor por modelo’ muestra el nivel en que cada modelo puntúa más en esa área. El contorno sólido marca las celdas con medición propia.",
+"ja": "マスの数字は業務スコア（0–10、全モデル・全思考量の中でベンチ最高 = 10）、その下はタスク当たりコスト。「モデル別最高」は各モデルでその業務のスコアが最も高い段階を示します。実線の強調は自分の実測があるマスです。"
+},
+"크로스오버: 이 조합으로 저 조합을 대체할 수 있나": {
+"en": "Crossover: can this combination replace that one",
+"es": "Cruces: ¿puede esta combinación sustituir a aquella?",
+"ja": "クロスオーバー：この組み合わせであの組み合わせを置き換えられるか"
+},
+"칸마다 이긴 쪽, 점수 차(왼쪽 − 오른쪽), 비용 비(왼쪽 ÷ 오른쪽)입니다. 점수 차 0.2 미만은 동급으로 봅니다.": {
+"en": "Each cell shows the winner, the score gap (left − right) and the cost ratio (left ÷ right). A gap under 0.2 counts as on par.",
+"es": "Cada celda muestra quién gana, la diferencia de puntuación (izquierda − derecha) y la razón de costo (izquierda ÷ derecha). Una diferencia menor de 0.2 cuenta como empate.",
+"ja": "マスごとに勝った側、スコア差（左 − 右）、コスト比（左 ÷ 右）です。スコア差0.2未満は同等とみなします。"
+},
+"세대 비교: 같은 노력 단계끼리": {
+"en": "Generations: same effort level against same effort level",
+"es": "Generaciones: mismo nivel de esfuerzo contra mismo nivel",
+"ja": "世代比較：同じ思考量どうし"
+},
+"막대 오른쪽은 개선, 왼쪽은 후퇴입니다. 같은 노력 단계의 AA 실측끼리만 비교했습니다.": {
+"en": "Bars to the right are improvements, to the left regressions. Only AA measurements at the same effort level are compared.",
+"es": "Las barras a la derecha son mejora y a la izquierda retroceso. Solo se comparan mediciones de AA en el mismo nivel de esfuerzo.",
+"ja": "バーの右は改善、左は後退です。同じ思考量のAA実測どうしだけを比べました。"
+},
+"Opus 5 → Opus 5.5 (최대)": {
+"en": "Opus 5 → Opus 5.5 (Max)",
+"es": "Opus 5 → Opus 5.5 (máximo)",
+"ja": "Opus 5 → Opus 5.5（最大）"
+},
+"Haiku 5.5 vs Muse Ember (경량급, 최대)": {
+"en": "Haiku 5.5 vs Muse Ember (lightweight class, Max)",
+"es": "Haiku 5.5 vs Muse Ember (clase ligera, máximo)",
+"ja": "Haiku 5.5 vs Muse Ember（軽量級、最大）"
+},
+"구버전을 쓸 이유가 있는가": {
+"en": "Is there a reason to use an older version",
+"es": "¿Hay motivo para usar una versión anterior?",
+"ja": "旧バージョンを使う理由はあるか"
+},
+"실측 벤치마크 키트": {
+"en": "Hands-on benchmark kit",
+"es": "Kit de pruebas propias",
+"ja": "実測ベンチマークキット"
+},
+"실제 업무 그대로 5개 표준 과제를 돌리고 점수를 넣으면, 히트맵·노력 단계·크로스오버에 실측 레이어로 바로 붙습니다. 이전 기록도 그대로 이어집니다.": {
+"en": "Run five standard tasks exactly as you do real work and enter the scores; they attach straight to the heatmap, effort levels and crossover as a measured layer. Earlier records carry over.",
+"es": "Ejecuta cinco tareas estándar tal como en tu trabajo real e introduce las puntuaciones: se añaden al instante como capa medida al mapa de calor, a los niveles de esfuerzo y a los cruces. Los registros anteriores se conservan.",
+"ja": "実際の業務そのままに標準課題5つを回してスコアを入れると、ヒートマップ・思考量・クロスオーバーに実測レイヤーとしてすぐ反映されます。以前の記録もそのまま引き継がれます。"
+},
+"저장소 연결 확인 중": {
+"en": "Checking storage connection",
+"es": "Comprobando la conexión del almacenamiento",
+"ja": "保存先の接続を確認中"
+},
+"1. 결과 입력": {
+"en": "1. Enter results",
+"es": "1. Introducir resultados",
+"ja": "1. 結果の入力"
+},
+"과제": {
+"en": "Task",
+"es": "Tarea",
+"ja": "課題"
+},
+"소요시간 (분)": {
+"en": "Time taken (min)",
+"es": "Tiempo empleado (min)",
+"ja": "所要時間（分）"
+},
+"재작업 횟수": {
+"en": "Number of reworks",
+"es": "Número de repeticiones",
+"ja": "やり直し回数"
+},
+"사용량 체감 (1–5)": {
+"en": "Usage feel (1–5)",
+"es": "Sensación de consumo (1–5)",
+"ja": "使用量の体感（1–5）"
+},
+"채점 방식": {
+"en": "Scoring method",
+"es": "Forma de puntuar",
+"ja": "採点方法"
+},
+"블라인드+본인 평균": {
+"en": "Average of blind and own",
+"es": "Promedio de ciega y propia",
+"ja": "ブラインド＋本人の平均"
+},
+"블라인드만": {
+"en": "Blind only",
+"es": "Solo ciega",
+"ja": "ブラインドのみ"
+},
+"본인 체감만": {
+"en": "Own impression only",
+"es": "Solo impresión propia",
+"ja": "本人の体感のみ"
+},
+"메모": {
+"en": "Notes",
+"es": "Notas",
+"ja": "メモ"
+},
+"예: 테스트 1개 수정 후 통과": {
+"en": "e.g. passed after fixing 1 test",
+"es": "p. ej.: aprobó tras corregir 1 prueba",
+"ja": "例：テスト1件を修正して通過"
+},
+"실측 점수": {
+"en": "Measured score",
+"es": "Puntuación medida",
+"ja": "実測スコア"
+},
+"결과 저장": {
+"en": "Save result",
+"es": "Guardar resultado",
+"ja": "結果を保存"
+},
+"2. 과제 프롬프트": {
+"en": "2. Task prompts",
+"es": "2. Instrucciones de las tareas",
+"ja": "2. 課題プロンプト"
+},
+"프롬프트 복사": {
+"en": "Copy prompt",
+"es": "Copiar instrucción",
+"ja": "プロンプトをコピー"
+},
+"블라인드 채점 순서": {
+"en": "Blind scoring steps",
+"es": "Pasos de la puntuación ciega",
+"ja": "ブラインド採点の手順"
+},
+"과제마다 새 대화에서 실행합니다. 프롬프트·첨부·웹검색 설정은 모두 같게 둡니다.": {
+"en": "Run each task in a new conversation. Keep the prompt, attachments and web-search setting identical.",
+"es": "Ejecuta cada tarea en una conversación nueva. Mantén iguales la instrucción, los adjuntos y la búsqueda web.",
+"ja": "課題ごとに新しい会話で実行します。プロンプト・添付・ウェブ検索の設定はすべて同じにします。"
+},
+"결과물 파일명을 무작위 코드(A–Z)로 바꿉니다.": {
+"en": "Rename the output files to random codes (A–Z).",
+"es": "Cambia los nombres de los archivos resultantes por códigos al azar (A–Z).",
+"ja": "成果物のファイル名をランダムなコード（A–Z）に変えます。"
+},
+"별도 대화에 코드명 파일만 넣고 아래 루브릭으로 채점만 맡깁니다.": {
+"en": "In a separate conversation, give only the code-named files and ask for scoring against the rubric below.",
+"es": "En otra conversación, entrega solo los archivos con código y pide que se puntúen con la rúbrica de abajo.",
+"ja": "別の会話にコード名のファイルだけを渡し、下のルーブリックで採点だけを任せます。"
+},
+"블라인드 점수와 본인 체감의 평균을 입력합니다.": {
+"en": "Enter the average of the blind score and your own impression.",
+"es": "Introduce el promedio de la puntuación ciega y tu propia impresión.",
+"ja": "ブラインドの点数と本人の体感の平均を入力します。"
+},
+"3. 실측 계획 (우선순위 순)": {
+"en": "3. Test plan (in priority order)",
+"es": "3. Plan de pruebas (por prioridad)",
+"ja": "3. 実測計画（優先順）"
+},
+"4. 추정 vs 실측": {
+"en": "4. Estimate vs measured",
+"es": "4. Estimación vs medición",
+"ja": "4. 推定 vs 実測"
+},
+"5. 기록": {
+"en": "5. Records",
+"es": "5. Registros",
+"ja": "5. 記録"
+},
+"JSON 복사": {
+"en": "Copy JSON",
+"es": "Copiar JSON",
+"ja": "JSONをコピー"
+},
+"JSON 붙여넣기": {
+"en": "Paste JSON",
+"es": "Pegar JSON",
+"ja": "JSONを貼り付け"
+},
+"내보낸 JSON을 붙여넣으세요": {
+"en": "Paste the exported JSON here",
+"es": "Pega aquí el JSON exportado",
+"ja": "書き出したJSONを貼り付けてください"
+},
+"가져오기": {
+"en": "Import",
+"es": "Importar",
+"ja": "取り込む"
+},
+"벤치마크 → 업무 매핑": {
+"en": "Benchmark → work mapping",
+"es": "Prueba → área de trabajo",
+"ja": "ベンチマーク → 業務の対応付け"
+},
+"어떤 AA 벤치를 어느 업무의 대리 지표로 썼는지, 가중치는 얼마인지입니다. 매핑 자체가 판단이므로 전부 추정입니다. 게임 개발은 직접 대응하는 벤치가 없어 가장 약한 매핑입니다.": {
+"en": "Which AA benchmarks stand in for which work area, and with what weights. The mapping itself is a judgment, so all of it is an estimate. Game development has no directly matching benchmark, so it is the weakest mapping.",
+"es": "Qué pruebas de AA representan a cada área y con qué peso. La asignación en sí es un juicio, así que todo es estimación. El desarrollo de juegos no tiene una prueba que le corresponda directamente y es la asignación más débil.",
+"ja": "どのAAベンチをどの業務の代理指標に使い、重みをいくつにしたかです。対応付けそのものが判断なので、すべて推定です。ゲーム開発は直接対応するベンチがなく、最も弱い対応付けです。"
+},
+"점수 산출식": {
+"en": "Score formula",
+"es": "Fórmula de la puntuación",
+"ja": "スコアの算出式"
+},
+"원자료 전체 (AA v5.0.1)": {
+"en": "Full raw data (AA v5.0.1)",
+"es": "Datos brutos completos (AA v5.0.1)",
+"ja": "元データ全体（AA v5.0.1）"
+},
+"Elo는 원래 단위, 나머지는 %(AA-Omniscience는 순점수). 시간·속도는 AA 실시간 값이라 같은 날에도 페이지마다 조금씩 다릅니다.": {
+"en": "Elo is in its own unit, the rest in % (AA-Omniscience is a net score). Time and speed are live AA values, so they differ slightly from page to page even on the same day.",
+"es": "Elo va en su propia unidad y el resto en % (AA-Omniscience es una puntuación neta). Tiempo y velocidad son valores en vivo de AA y varían un poco de una página a otra incluso el mismo día.",
+"ja": "Eloは元の単位、ほかは%（AA-Omniscienceは純スコア）。時間・速度はAAのリアルタイム値のため、同じ日でもページごとに少しずつ違います。"
+},
+"Claude 노력 단계 지원·기본값": {
+"en": "Claude effort level support and defaults",
+"es": "Niveles de esfuerzo de Claude: compatibilidad y valores por defecto",
+"ja": "Claudeの思考量の対応状況・既定値"
+},
+"출처 (확인일 2026-11-11)": {
+"en": "Sources (checked 2026-11-11)",
+"es": "Fuentes (consultadas el 2026-11-11)",
+"ja": "出典（確認日 2026-11-11）"
+},
+"stayhungryasi.com · 정보 제공 목적.": {
+"en": "stayhungryasi.com · For information only.",
+"es": "stayhungryasi.com · Solo informativo.",
+"ja": "stayhungryasi.com · 情報提供が目的です。"
+},
+"모든 수치는 공급사·평가기관 발표값이며 재현하지 않았습니다. 시간·속도는 AA 실시간 값(2026-11-11)입니다.": {
+"en": "All figures are as published by vendors and evaluators and were not reproduced. Time and speed are live AA values (2026-11-11).",
+"es": "Todas las cifras son las publicadas por proveedores y evaluadores y no se reprodujeron. Tiempo y velocidad son valores en vivo de AA (2026-11-11).",
+"ja": "数値はすべて提供元・評価機関の発表値で、再現はしていません。時間・速度はAAのリアルタイム値（2026-11-11）です。"
+},
+"실제 지식업무 산출물(보고서·분석) 블라인드 비교": {
+"en": "Blind comparison of real knowledge-work outputs (reports, analysis)",
+"es": "Comparación ciega de trabajos reales de conocimiento (informes, análisis)",
+"ja": "実際の知識業務の成果物（レポート・分析）のブラインド比較"
+},
+"여러 앱을 잇는 업무 자동화": {
+"en": "Work automation across multiple apps",
+"es": "Automatización del trabajo entre varias aplicaciones",
+"ja": "複数のアプリをつなぐ業務自動化"
+},
+"긴 전문 문서(PDF) 읽고 답하기": {
+"en": "Reading and answering from long professional documents (PDF)",
+"es": "Leer documentos profesionales largos (PDF) y responder",
+"ja": "長い専門文書（PDF）を読んで答える"
+},
+"범위 밖 수정 없이 병합 가능한 코드": {
+"en": "Mergeable code with no out-of-scope edits",
+"es": "Código fusionable sin cambios fuera del alcance",
+"ja": "範囲外の修正なしでマージできるコード"
+},
+"장시간 터미널 에이전트 작업 완수": {
+"en": "Completing long-running terminal agent tasks",
+"es": "Completar tareas largas de agente en terminal",
+"ja": "長時間のターミナルエージェント作業の完遂"
+},
+"과학 계산·시뮬레이션 에이전트": {
+"en": "Scientific computing and simulation agents",
+"es": "Agentes de cálculo científico y simulación",
+"ja": "科学計算・シミュレーションのエージェント"
+},
+"연구 수준 물리 추론": {
+"en": "Research-level physics reasoning",
+"es": "Razonamiento de física a nivel de investigación",
+"ja": "研究レベルの物理推論"
+},
+"점": {
+"en": " pts",
+"es": " pts",
+"ja": "点"
+},
+"모르면 모른다고 하는 정도(환각 억제, 순점수)": {
+"en": "How readily it says it does not know (hallucination control, net score)",
+"es": "Hasta qué punto dice que no sabe cuando no sabe (control de alucinaciones, puntuación neta)",
+"ja": "知らないことを知らないと言える度合い（ハルシネーション抑制、純スコア）"
+},
+"최고 난도 전문 지식 문제": {
+"en": "Hardest expert-knowledge questions",
+"es": "Preguntas de conocimiento experto de máxima dificultad",
+"ja": "最高難度の専門知識問題"
+},
+"시스템 고도화": {
+"en": "System upgrades",
+"es": "Mejora de sistemas",
+"ja": "システム高度化"
+},
+"기업분석": {
+"en": "Company analysis",
+"es": "Análisis de empresas",
+"ja": "企業分析"
+},
+"리서치": {
+"en": "Research",
+"es": "Investigación",
+"ja": "リサーチ"
+},
+"게임 개발": {
+"en": "Game development",
+"es": "Desarrollo de juegos",
+"ja": "ゲーム開発"
+},
+"프로그램 개발": {
+"en": "Software development",
+"es": "Desarrollo de programas",
+"ja": "プログラム開発"
+},
+"앱·Claude Code 기본 중간, API 기본 높음": {
+"en": "Default Medium in the app and Claude Code, High on the API",
+"es": "Por defecto medio en la app y Claude Code, alto en la API",
+"ja": "アプリ・Claude Codeの既定は中、APIの既定は高"
+},
+"API 기본 중간": {
+"en": "API default Medium",
+"es": "API por defecto medio",
+"ja": "APIの既定は中"
+},
+"앱 기본 중간, API 기본 높음": {
+"en": "App default Medium, API default High",
+"es": "App por defecto medio, API por defecto alto",
+"ja": "アプリの既定は中、APIの既定は高"
+},
+"API 기본 중간, 10만 토큰 이하 단가": {
+"en": "API default Medium; price for up to 100K tokens",
+"es": "API por defecto medio; precio hasta 100K tokens",
+"ja": "APIの既定は中、10万トークン以下の単価"
+},
+"현재 설정(엑스트라)": {
+"en": "Current setting (Extra)",
+"es": "Ajuste actual (extra alto)",
+"ja": "現在の設定（エクストラ）"
+},
+"v5 지수는 최대만 측정": {
+"en": "v5 index measured at Max only",
+"es": "El índice v5 solo se midió en máximo",
+"ja": "v5指数は最大のみ測定"
+},
+"GPT-6.1 Astra는 출시 취소(보도)": {
+"en": "GPT-6.1 Astra release cancelled (reported)",
+"es": "Lanzamiento de GPT-6.1 Astra cancelado (según la prensa)",
+"ja": "GPT-6.1 Astraは発売中止（報道）"
+},
+"API 기본 중간, ChatGPT는 Work·Codex만": {
+"en": "API default Medium; in ChatGPT only in Work and Codex",
+"es": "API por defecto medio; en ChatGPT solo en Work y Codex",
+"ja": "APIの既定は中、ChatGPTではWork・Codexのみ"
+},
+"10/7부터 ChatGPT 일반 Chat": {
+"en": "General Chat in ChatGPT since Oct 7",
+"es": "Chat general de ChatGPT desde el 7 oct",
+"ja": "10/7からChatGPTの一般チャット"
+},
+"ChatGPT 무료 기본 모델": {
+"en": "Default model on ChatGPT Free",
+"es": "Modelo por defecto de ChatGPT gratis",
+"ja": "ChatGPT無料版の既定モデル"
+},
+"출시 기념가 $2/$10, 제한 공개": {
+"en": "Launch price $2/$10, limited release",
+"es": "Precio de lanzamiento $2/$10, acceso limitado",
+"ja": "発売記念価格 $2/$10、限定公開"
+},
+"공개 API 없음": {
+"en": "No public API",
+"es": "Sin API pública",
+"ja": "公開APIなし"
+},
+"오픈 웨이트 1위": {
+"en": "No. 1 open-weights model",
+"es": "N.º 1 de pesos abiertos",
+"ja": "オープンウェイト1位"
+},
+"웨이트 공개 예정": {
+"en": "Weights to be released",
+"es": "Pesos por publicar",
+"ja": "ウェイト公開予定"
+},
+"1017 버전": {
+"en": "Version 1017",
+"es": "Versión 1017",
+"ja": "1017版"
+},
+"<span><b>10/24 이후 바뀐 것 두 가지.</b> ① 11월 9일 출시된 <b>Claude Fable 5.2</b>가 AA 지수 65로 1위가 됐습니다. 토큰 단가는 $8/$40로 Fable 5.1보다 20% 낮고, 가장 낮은 단계(54, 과제당 $3.10)가 Opus 5.5 높음(52, $3.46)보다 높고 쌉니다. 10/24판의 결론(‘Opus 5.5가 전 영역 최고’)은 이제 틀렸습니다. ② Artificial Analysis가 10월 27일 지수를 v5로 바꿔 GDPval·SciCode·AA-LCR·HLE를 빼고 FrontierCode 2.0·Terminal-Bench-Science·HLE-Diamond를 넣었습니다. 그래서 점수 체계와 업무 매핑을 새로 짰고, 10/24판 숫자와는 직접 비교할 수 없습니다.</span>": {
+"en": "<span><b>Two things changed since Oct 24.</b> ① <b>Claude Fable 5.2</b>, released Nov 9, took first place with an AA index of 65. Its token price is $8/$40, 20% below Fable 5.1, and its lowest level (54, $3.10 per task) is both higher and cheaper than Opus 5.5 High (52, $3.46). The Oct 24 edition's conclusion (‘Opus 5.5 is best in every area’) no longer holds. ② On Oct 27 Artificial Analysis moved its index to v5, dropping GDPval, SciCode, AA-LCR and HLE and adding FrontierCode 2.0, Terminal-Bench-Science and HLE-Diamond. The scoring and work mapping were rebuilt accordingly, and the numbers cannot be compared directly with the Oct 24 edition.</span>",
+"es": "<span><b>Dos cambios desde el 24 oct.</b> ① <b>Claude Fable 5.2</b>, lanzado el 9 nov, pasó al primer lugar con un índice AA de 65. Su precio por token es $8/$40, un 20% menos que Fable 5.1, y su nivel más bajo (54, $3.10 por tarea) es más alto y más barato que Opus 5.5 alto (52, $3.46). La conclusión de la edición del 24 oct (‘Opus 5.5 es el mejor en todo’) ya no es válida. ② El 27 oct Artificial Analysis pasó su índice a v5: quitó GDPval, SciCode, AA-LCR y HLE y añadió FrontierCode 2.0, Terminal-Bench-Science y HLE-Diamond. Por eso se rehicieron el sistema de puntuación y la asignación a áreas, y las cifras no se pueden comparar directamente con la edición del 24 oct.</span>",
+"ja": "<span><b>10/24以降に変わったことは2つ。</b> ① 11月9日に出た<b>Claude Fable 5.2</b>がAA指数65で1位になりました。トークン単価は$8/$40でFable 5.1より20%安く、最も低い段階（54、タスク当たり$3.10）がOpus 5.5の高（52、$3.46）より高くて安い。10/24版の結論（「Opus 5.5が全領域で最高」）はもう当てはまりません。② Artificial Analysisが10月27日に指数をv5に替え、GDPval・SciCode・AA-LCR・HLEを外してFrontierCode 2.0・Terminal-Bench-Science・HLE-Diamondを入れました。そのためスコア体系と業務の対応付けを作り直しており、10/24版の数字とは直接比べられません。</span>"
+},
+"최고점(Fable 5.2 최대, 9.6)의 98%를 과제당 $9.08로. Fable 5.2는 높음에서 FrontierCode 2.0 49.1%·Terminal-Bench 4.0 59.6%로 크게 뛰고, 그 위 단계는 비용만 늘어납니다.": {
+"en": "98% of the best score (Fable 5.2 Max, 9.6) at $9.08 per task. Fable 5.2 jumps at High to 49.1% on FrontierCode 2.0 and 59.6% on Terminal-Bench 4.0; levels above that only add cost.",
+"es": "98% de la mejor puntuación (Fable 5.2 máximo, 9.6) a $9.08 por tarea. En alto, Fable 5.2 salta a 49.1% en FrontierCode 2.0 y 59.6% en Terminal-Bench 4.0; los niveles superiores solo suman costo.",
+"ja": "最高点（Fable 5.2 最大、9.6）の98%をタスク当たり$9.08で。Fable 5.2は高でFrontierCode 2.0 49.1%・Terminal-Bench 4.0 59.6%へ大きく伸び、その上の段階はコストが増えるだけです。"
+},
+"최고점(Fable 5.2 최대, 9.6)의 98%를 과제당 $9.08로. 가성비 기준(90%)에서도 같은 조합이 가장 쌉니다.": {
+"en": "98% of the best score (Fable 5.2 Max, 9.6) at $9.08 per task. The same combination is also the cheapest under the value threshold (90%).",
+"es": "98% de la mejor puntuación (Fable 5.2 máximo, 9.6) a $9.08 por tarea. Con el criterio de valor (90%) la misma combinación también es la más barata.",
+"ja": "最高点（Fable 5.2 最大、9.6）の98%をタスク当たり$9.08で。コスパ基準（90%）でも同じ組み合わせが最安です。"
+},
+"최고점의 86%를 과제당 6.5분에.": {
+"en": "86% of the best score in 6.5 minutes per task.",
+"es": "86% de la mejor puntuación en 6.5 minutos por tarea.",
+"ja": "最高点の86%をタスク当たり6.5分で。"
+},
+"최고점(Fable 5.2 최대, 9.6)의 95%를 과제당 $7.76로. Gemini 4 Carbon 높음: Terminal-Bench 4.0 65.2%로 측정 모델 중 상위권. 다만 일반 공개 전(사이버 방어 기관·Fairwind 프로그램 먼저)이라 지금 바로 쓰기 어렵습니다.": {
+"en": "95% of the best score (Fable 5.2 Max, 9.6) at $7.76 per task. Gemini 4 Carbon High: 65.2% on Terminal-Bench 4.0, near the top of measured models. But it is not generally available yet (cyber-defense organizations and the Fairwind program first), so it is hard to use right now.",
+"es": "95% de la mejor puntuación (Fable 5.2 máximo, 9.6) a $7.76 por tarea. Gemini 4 Carbon alto: 65.2% en Terminal-Bench 4.0, entre los mejores medidos. Pero aún no está disponible para el público general (primero organismos de ciberdefensa y el programa Fairwind), así que es difícil usarlo ahora mismo.",
+"ja": "最高点（Fable 5.2 最大、9.6）の95%をタスク当たり$7.76で。Gemini 4 Carbon 高：Terminal-Bench 4.0 65.2%で測定モデルの上位。ただし一般公開前（サイバー防衛機関・Fairwindプログラムが先）のため、今すぐ使うのは難しい。"
+},
+"업무 점수 1위(9.4). 과제당 $26.54, 44분. 환각 억제(AA-Omniscience) 67로 측정 모델 중 최고. 단 GDP.pdf(긴 전문 문서)는 24.2%로 Opus 5.5 높음(28.8%)·GPT-6 Astra(30–32%)보다 낮습니다.": {
+"en": "No. 1 work score (9.4). $26.54 and 44 minutes per task. Hallucination control (AA-Omniscience) of 67 is the best of any measured model. But GDP.pdf (long professional documents) is 24.2%, below Opus 5.5 High (28.8%) and GPT-6 Astra (30–32%).",
+"es": "N.º 1 en puntuación por área (9.4). $26.54 y 44 minutos por tarea. Su control de alucinaciones (AA-Omniscience) de 67 es el mejor de los modelos medidos. Pero en GDP.pdf (documentos profesionales largos) logra 24.2%, menos que Opus 5.5 alto (28.8%) y GPT-6 Astra (30–32%).",
+"ja": "業務スコア1位（9.4）。タスク当たり$26.54、44分。ハルシネーション抑制（AA-Omniscience）67は測定モデルで最高。ただしGDP.pdf（長い専門文書）は24.2%で、Opus 5.5 高（28.8%）・GPT-6 Astra（30–32%）より低い。"
+},
+"최고점(Fable 5.2 최대, 9.4)의 91%를 과제당 $3.80로. 앱 기본값(중간) 그대로. 환각 억제 64로 Opus 5.5 최대(48)보다 높습니다.": {
+"en": "91% of the best score (Fable 5.2 Max, 9.4) at $3.80 per task. This is the app default (Medium) as is. Hallucination control of 64 is higher than Opus 5.5 Max (48).",
+"es": "91% de la mejor puntuación (Fable 5.2 máximo, 9.4) a $3.80 por tarea. Es el valor por defecto de la app (medio) tal cual. Su control de alucinaciones de 64 supera a Opus 5.5 máximo (48).",
+"ja": "最高点（Fable 5.2 最大、9.4）の91%をタスク当たり$3.80で。アプリの既定値（中）のまま。ハルシネーション抑制64はOpus 5.5 最大（48）より高い。"
+},
+"최고점의 90%를 과제당 6.5분에.": {
+"en": "90% of the best score in 6.5 minutes per task.",
+"es": "90% de la mejor puntuación en 6.5 minutos por tarea.",
+"ja": "最高点の90%をタスク当たり6.5分で。"
+},
+"최고점(Fable 5.2 최대, 9.4)의 91%를 과제당 $3.80로.": {
+"en": "91% of the best score (Fable 5.2 Max, 9.4) at $3.80 per task.",
+"es": "91% de la mejor puntuación (Fable 5.2 máximo, 9.4) a $3.80 por tarea.",
+"ja": "最高点（Fable 5.2 最大、9.4）の91%をタスク当たり$3.80で。"
+},
+"업무 점수 1위(9.7). 과제당 $26.54, 44분. HLE-Diamond 80.2%, CritPt v2 76.5%로 리서치 지표는 최대까지 계속 오릅니다. 대신 과제당 44분.": {
+"en": "No. 1 work score (9.7). $26.54 and 44 minutes per task. With HLE-Diamond at 80.2% and CritPt v2 at 76.5%, research metrics keep rising all the way to Max. The price is 44 minutes per task.",
+"es": "N.º 1 en puntuación por área (9.7). $26.54 y 44 minutos por tarea. Con HLE-Diamond en 80.2% y CritPt v2 en 76.5%, los indicadores de investigación siguen subiendo hasta máximo. El precio son 44 minutos por tarea.",
+"ja": "業務スコア1位（9.7）。タスク当たり$26.54、44分。HLE-Diamond 80.2%、CritPt v2 76.5%と、リサーチ指標は最大まで上がり続けます。代わりにタスク当たり44分。"
+},
+"최고점(Fable 5.2 최대, 9.7)의 93%를 과제당 $9.08로. 중간→높음에서 HLE-Diamond 66.3→73.8%로 가장 크게 뜁니다.": {
+"en": "93% of the best score (Fable 5.2 Max, 9.7) at $9.08 per task. The biggest jump is Medium → High, where HLE-Diamond goes 66.3 → 73.8%.",
+"es": "93% de la mejor puntuación (Fable 5.2 máximo, 9.7) a $9.08 por tarea. El mayor salto es de medio → alto, donde HLE-Diamond pasa de 66.3 → 73.8%.",
+"ja": "最高点（Fable 5.2 最大、9.7）の93%をタスク当たり$9.08で。中→高でHLE-Diamondが66.3→73.8%と最も大きく伸びます。"
+},
+"최고점(Fable 5.2 최대, 9.7)의 93%를 과제당 $9.08로.": {
+"en": "93% of the best score (Fable 5.2 Max, 9.7) at $9.08 per task.",
+"es": "93% de la mejor puntuación (Fable 5.2 máximo, 9.7) a $9.08 por tarea.",
+"ja": "最高点（Fable 5.2 最大、9.7）の93%をタスク当たり$9.08で。"
+},
+"최고점(Fable 5.2 최대, 9.6)의 99%를 과제당 $9.08로. 직접 대응 벤치가 없어 근거가 가장 약한 업무입니다(FrontierCode 비중 45%).": {
+"en": "99% of the best score (Fable 5.2 Max, 9.6) at $9.08 per task. This is the work area with the weakest evidence because no benchmark matches it directly (FrontierCode carries 45% of the weight).",
+"es": "99% de la mejor puntuación (Fable 5.2 máximo, 9.6) a $9.08 por tarea. Es el área con la base más débil porque ninguna prueba le corresponde directamente (FrontierCode pesa un 45%).",
+"ja": "最高点（Fable 5.2 最大、9.6）の99%をタスク当たり$9.08で。直接対応するベンチがなく、根拠が最も弱い業務です（FrontierCodeの比重45%）。"
+},
+"최고점(Fable 5.2 최대, 9.6)의 92%를 과제당 $6.05로. Fable 5.2 중간은 최고점의 87%로 기준선 아래. 엑스트라 Opus가 Fable 5.2 높음보다 33% 쌉니다.": {
+"en": "92% of the best score (Fable 5.2 Max, 9.6) at $6.05 per task. Fable 5.2 Medium is at 87% of the best score, below the threshold. Opus at Extra is 33% cheaper than Fable 5.2 High.",
+"es": "92% de la mejor puntuación (Fable 5.2 máximo, 9.6) a $6.05 por tarea. Fable 5.2 medio queda en el 87% de la mejor puntuación, por debajo del umbral. Opus en extra alto es un 33% más barato que Fable 5.2 alto.",
+"ja": "最高点（Fable 5.2 最大、9.6）の92%をタスク当たり$6.05で。Fable 5.2 中は最高点の87%で基準線の下。エクストラのOpusはFable 5.2 高より33%安い。"
+},
+"최고점의 82%를 과제당 6.5분에.": {
+"en": "82% of the best score in 6.5 minutes per task.",
+"es": "82% de la mejor puntuación en 6.5 minutos por tarea.",
+"ja": "最高点の82%をタスク当たり6.5分で。"
+},
+"최고점(Fable 5.2 최대, 9.6)의 92%를 과제당 $6.05로.": {
+"en": "92% of the best score (Fable 5.2 Max, 9.6) at $6.05 per task.",
+"es": "92% de la mejor puntuación (Fable 5.2 máximo, 9.6) a $6.05 por tarea.",
+"ja": "最高点（Fable 5.2 最大、9.6）の92%をタスク当たり$6.05で。"
+},
+"최고점(Fable 5.2 최대, 9.5)의 99%를 과제당 $9.08로. 높음 이후로는 점수가 거의 안 오릅니다(높음 9.4 → 최대 9.5, 비용 ×2.9).": {
+"en": "99% of the best score (Fable 5.2 Max, 9.5) at $9.08 per task. Past High the score barely rises (High 9.4 → Max 9.5, cost ×2.9).",
+"es": "99% de la mejor puntuación (Fable 5.2 máximo, 9.5) a $9.08 por tarea. Después de alto la puntuación casi no sube (alto 9.4 → máximo 9.5, costo ×2.9).",
+"ja": "最高点（Fable 5.2 最大、9.5）の99%をタスク当たり$9.08で。高より上ではスコアがほとんど上がりません（高 9.4 → 最大 9.5、コスト ×2.9）。"
+},
+"최고점(Fable 5.2 최대, 9.5)의 93%를 과제당 $6.05로. Fable 5.2 중간은 최고점의 89%로 기준선에 살짝 못 미칩니다.": {
+"en": "93% of the best score (Fable 5.2 Max, 9.5) at $6.05 per task. Fable 5.2 Medium is at 89% of the best score, just short of the threshold.",
+"es": "93% de la mejor puntuación (Fable 5.2 máximo, 9.5) a $6.05 por tarea. Fable 5.2 medio queda en el 89% de la mejor puntuación, apenas por debajo del umbral.",
+"ja": "最高点（Fable 5.2 最大、9.5）の93%をタスク当たり$6.05で。Fable 5.2 中は最高点の89%で、基準線にわずかに届きません。"
+},
+"최고점(Fable 5.2 최대, 9.5)의 91%를 과제당 $3.66로. GPT-6 Astra 엑스트라: Claude 가성비 조합보다 40% 쌉니다. ChatGPT 구독이 있으면 대안.": {
+"en": "91% of the best score (Fable 5.2 Max, 9.5) at $3.66 per task. GPT-6 Astra Extra: 40% cheaper than the Claude value pick. An alternative if you have a ChatGPT subscription.",
+"es": "91% de la mejor puntuación (Fable 5.2 máximo, 9.5) a $3.66 por tarea. GPT-6 Astra extra alto: un 40% más barato que la opción de valor de Claude. Una alternativa si tienes suscripción a ChatGPT.",
+"ja": "最高点（Fable 5.2 最大、9.5）の91%をタスク当たり$3.66で。GPT-6 Astra エクストラ：Claudeのコスパの組み合わせより40%安い。ChatGPTを契約していれば代替になります。"
+},
+"Fable 5.2(11/9): 토큰 단가 $8/$40(Fable 5.1 $10/$50에서 20% 인하), 5단계 모두 지원, 앱·Claude Code 기본 중간·API 기본 높음. AA 지수 54 → 56 → 62 → 62 → 65, 과제당 $3.10 → $3.80 → $9.08 → $14.83 → $26.54.": {
+"en": "Fable 5.2 (Nov 9): token price $8/$40 (20% below Fable 5.1's $10/$50), all 5 levels supported, default Medium in the app and Claude Code and High on the API. AA index 54 → 56 → 62 → 62 → 65, cost per task $3.10 → $3.80 → $9.08 → $14.83 → $26.54.",
+"es": "Fable 5.2 (9 nov): precio por token $8/$40 (un 20% menos que los $10/$50 de Fable 5.1), admite los 5 niveles, por defecto medio en la app y Claude Code y alto en la API. Índice AA 54 → 56 → 62 → 62 → 65, costo por tarea $3.10 → $3.80 → $9.08 → $14.83 → $26.54.",
+"ja": "Fable 5.2（11/9）：トークン単価 $8/$40（Fable 5.1の$10/$50から20%値下げ）、5段階すべてに対応、アプリ・Claude Codeの既定は中・APIの既定は高。AA指数 54 → 56 → 62 → 62 → 65、タスク当たり $3.10 → $3.80 → $9.08 → $14.83 → $26.54。"
+},
+"같은 비용대 비교: Fable 5.2 낮음(지수 54, $3.10)이 Opus 5.5 높음(52, $3.46)보다 높고 싸고, Fable 5.2 높음(62, $9.08)이 Opus 5.5 최대(59, $10.04)보다 높고 쌉니다. 단 벤치별로는 Opus 5.5 높음이 AA-Briefcase(1682 vs 1563)·Terminal-Bench 4.0(56.6% vs 54.5%)·GDP.pdf(28.8% vs 26.8%)에서 앞섭니다.": {
+"en": "At similar cost: Fable 5.2 Low (index 54, $3.10) is higher and cheaper than Opus 5.5 High (52, $3.46), and Fable 5.2 High (62, $9.08) is higher and cheaper than Opus 5.5 Max (59, $10.04). By benchmark, though, Opus 5.5 High leads on AA-Briefcase (1682 vs 1563), Terminal-Bench 4.0 (56.6% vs 54.5%) and GDP.pdf (28.8% vs 26.8%).",
+"es": "A costo parecido: Fable 5.2 bajo (índice 54, $3.10) es más alto y más barato que Opus 5.5 alto (52, $3.46), y Fable 5.2 alto (62, $9.08) es más alto y más barato que Opus 5.5 máximo (59, $10.04). Eso sí, por prueba Opus 5.5 alto gana en AA-Briefcase (1682 vs 1563), Terminal-Bench 4.0 (56.6% vs 54.5%) y GDP.pdf (28.8% vs 26.8%).",
+"ja": "同じコスト帯の比較：Fable 5.2 低（指数54、$3.10）がOpus 5.5 高（52、$3.46）より高くて安く、Fable 5.2 高（62、$9.08）がOpus 5.5 最大（59、$10.04）より高くて安い。ただしベンチ別ではOpus 5.5 高がAA-Briefcase（1682 vs 1563）・Terminal-Bench 4.0（56.6% vs 54.5%）・GDP.pdf（28.8% vs 26.8%）で上回ります。"
+},
+"가장 큰 격차는 환각 억제(AA-Omniscience v1.1): Fable 5.2 63–67 vs Opus 5.5 39–48, Gemini 4 Carbon 높음 54, GPT-6 Astra 40–45. 숫자를 다루는 기업분석·리서치에서 Fable 5.2가 앞서는 주된 이유입니다.": {
+"en": "The widest gap is hallucination control (AA-Omniscience v1.1): Fable 5.2 63–67 vs Opus 5.5 39–48, Gemini 4 Carbon High 54, GPT-6 Astra 40–45. This is the main reason Fable 5.2 leads in company analysis and research, which deal with numbers.",
+"es": "La mayor diferencia está en el control de alucinaciones (AA-Omniscience v1.1): Fable 5.2 63–67 vs Opus 5.5 39–48, Gemini 4 Carbon alto 54, GPT-6 Astra 40–45. Es la razón principal de la ventaja de Fable 5.2 en análisis de empresas e investigación, donde se manejan cifras.",
+"ja": "最も差が大きいのはハルシネーション抑制（AA-Omniscience v1.1）：Fable 5.2 63–67 vs Opus 5.5 39–48、Gemini 4 Carbon 高 54、GPT-6 Astra 40–45。数字を扱う企業分析・リサーチでFable 5.2が上回る主な理由です。"
+},
+"Fable 5.2의 약점: 긴 전문 문서(GDP.pdf)는 노력을 올릴수록 오히려 26.8% → 21.4%로 떨어지고(최대 24.2%), 최고는 GPT-6 Astra 엑스트라 32.2%입니다. Terminal-Bench 4.0도 최대 59.6%로 Opus 5.5 최대와 같고, Kimi K3.1 Pro 67.2%·Gemini 4 Carbon 65.2%보다 낮습니다.": {
+"en": "Fable 5.2's weak spots: on long professional documents (GDP.pdf) it actually falls from 26.8% → 21.4% as effort rises (Max 24.2%), and the best is GPT-6 Astra Extra at 32.2%. Terminal-Bench 4.0 also tops out at 59.6% at Max, equal to Opus 5.5 Max and below Kimi K3.1 Pro (67.2%) and Gemini 4 Carbon (65.2%).",
+"es": "Puntos débiles de Fable 5.2: en documentos profesionales largos (GDP.pdf) baja de 26.8% → 21.4% al subir el esfuerzo (máximo 24.2%), y el mejor es GPT-6 Astra extra alto con 32.2%. En Terminal-Bench 4.0 llega como mucho a 59.6% en máximo, igual que Opus 5.5 máximo y por debajo de Kimi K3.1 Pro (67.2%) y Gemini 4 Carbon (65.2%).",
+"ja": "Fable 5.2の弱点：長い専門文書（GDP.pdf）は思考量を上げるほどかえって26.8% → 21.4%に下がり（最大は24.2%）、最高はGPT-6 Astra エクストラの32.2%です。Terminal-Bench 4.0も最大で59.6%とOpus 5.5 最大と同じで、Kimi K3.1 Pro 67.2%・Gemini 4 Carbon 65.2%より低い。"
+},
+"Fable 5.2 높음 이상은 토큰을 많이 써서 과제당 비용이 Fable 5.1보다 비쌉니다(높음 $9.08 vs $7.54, 최대 $26.54 vs $12.99). 낮음·중간은 더 쌉니다($3.10 vs $4.47, $3.80 vs $5.56).": {
+"en": "At High and above, Fable 5.2 uses so many tokens that cost per task exceeds Fable 5.1 (High $9.08 vs $7.54, Max $26.54 vs $12.99). Low and Medium are cheaper ($3.10 vs $4.47, $3.80 vs $5.56).",
+"es": "Desde alto, Fable 5.2 gasta tantos tokens que el costo por tarea supera al de Fable 5.1 (alto $9.08 vs $7.54, máximo $26.54 vs $12.99). Bajo y medio son más baratos ($3.10 vs $4.47, $3.80 vs $5.56).",
+"ja": "Fable 5.2の高以上はトークンを多く使うため、タスク当たりコストがFable 5.1より高くなります（高 $9.08 vs $7.54、最大 $26.54 vs $12.99）。低・中は安くなります（$3.10 vs $4.47、$3.80 vs $5.56）。"
+},
+"Google Gemini 4 Carbon(10/28): Anthropic 밖 1위, 높음 지수 60·과제당 $7.76. AutomationBench 77.8%로 Fable 5.2 최대(76.4%)보다 높습니다. 다만 일반 공개 전이라 사이버 방어 기관·Fairwind 프로그램부터 열립니다.": {
+"en": "Google Gemini 4 Carbon (Oct 28): first outside Anthropic, index 60 at High and $7.76 per task. Its AutomationBench score of 77.8% is higher than Fable 5.2 Max (76.4%). But it is not generally available yet and opens first to cyber-defense organizations and the Fairwind program.",
+"es": "Google Gemini 4 Carbon (28 oct): n.º 1 fuera de Anthropic, índice 60 en alto y $7.76 por tarea. Su 77.8% en AutomationBench supera a Fable 5.2 máximo (76.4%). Pero aún no está disponible para el público general y se abre primero a organismos de ciberdefensa y al programa Fairwind.",
+"ja": "Google Gemini 4 Carbon（10/28）：Anthropic以外の1位、高で指数60・タスク当たり$7.76。AutomationBench 77.8%はFable 5.2 最大（76.4%）より高い。ただし一般公開前で、サイバー防衛機関・Fairwindプログラムから順に開放されます。"
+},
+"OpenAI 가성비: GPT-6.1 Sol 최대(지수 55, $1.27)가 Opus 5.5 중간(48, $2.45)보다 5개 업무 중 5개에서 높고 비용은 절반입니다. 새 GPT-6.1 Terra(10/26, $1/$5)는 최대 51·$0.96. 둘 다 ChatGPT에선 Work·Codex에서만 쓸 수 있고 일반 채팅엔 없습니다.": {
+"en": "OpenAI value: GPT-6.1 Sol Max (index 55, $1.27) scores higher than Opus 5.5 Medium (48, $2.45) in 5 of 5 work areas at half the cost. The new GPT-6.1 Terra (Oct 26, $1/$5) reaches 51 at Max for $0.96. In ChatGPT both are available only in Work and Codex, not in general chat.",
+"es": "Valor en OpenAI: GPT-6.1 Sol máximo (índice 55, $1.27) supera a Opus 5.5 medio (48, $2.45) en 5 de 5 áreas a la mitad del costo. El nuevo GPT-6.1 Terra (26 oct, $1/$5) alcanza 51 en máximo por $0.96. En ChatGPT ambos solo están en Work y Codex, no en el chat general.",
+"ja": "OpenAIのコスパ：GPT-6.1 Sol 最大（指数55、$1.27）はOpus 5.5 中（48、$2.45）より5業務中5業務で高く、コストは半分です。新しいGPT-6.1 Terra（10/26、$1/$5）は最大で51・$0.96。どちらもChatGPTではWork・Codexでしか使えず、一般チャットにはありません。"
+},
+"경량급: Meta Muse Ember(11/9, $0.10/$0.50)가 지수 36·과제당 $0.14로 Claude Haiku 5.5 최대(36, $0.41)와 지수가 같고 비용은 3분의 1입니다. 업무 점수는 2개 우위·1개 동급·2개 열위.": {
+"en": "Lightweight class: Meta Muse Ember (Nov 9, $0.10/$0.50) has an index of 36 at $0.14 per task, matching Claude Haiku 5.5 Max (36, $0.41) on the index at a third of the cost. On work scores it is ahead in 2, on par in 1 and behind in 2.",
+"es": "Clase ligera: Meta Muse Ember (9 nov, $0.10/$0.50) tiene índice 36 a $0.14 por tarea: iguala en índice a Claude Haiku 5.5 máximo (36, $0.41) con un tercio del costo. En puntuación por área gana en 2, empata en 1 y pierde en 2.",
+"ja": "軽量級：Meta Muse Ember（11/9、$0.10/$0.50）は指数36・タスク当たり$0.14で、Claude Haiku 5.5 最大（36、$0.41）と指数が同じでコストは3分の1。業務スコアは2つで優位・1つで同等・2つで劣位。"
+},
+"오픈 웨이트 1위는 Kimi K3.1 Pro(지수 46, $3.68, Terminal-Bench 4.0 67.2%). 다만 과제당 37분로 가장 느린 축입니다.": {
+"en": "The No. 1 open-weights model is Kimi K3.1 Pro (index 46, $3.68, Terminal-Bench 4.0 67.2%). But at 37 minutes per task it is among the slowest.",
+"es": "El n.º 1 de pesos abiertos es Kimi K3.1 Pro (índice 46, $3.68, Terminal-Bench 4.0 67.2%). Pero con 37 minutos por tarea está entre los más lentos.",
+"ja": "オープンウェイト1位はKimi K3.1 Pro（指数46、$3.68、Terminal-Bench 4.0 67.2%）。ただしタスク当たり37分と最も遅い部類です。"
+},
+"Sonnet 5.5는 곡선이 가장 가파릅니다: 지수 26 → 31 → 42 → 50 → 55. 최대는 과제당 $10.02로 Opus 5.5 최대($10.04)와 비슷한데 점수는 낮습니다.": {
+"en": "Sonnet 5.5 has the steepest curve: index 26 → 31 → 42 → 50 → 55. Max costs $10.02 per task, about the same as Opus 5.5 Max ($10.04), with a lower score.",
+"es": "Sonnet 5.5 tiene la curva más empinada: índice 26 → 31 → 42 → 50 → 55. Máximo cuesta $10.02 por tarea, parecido a Opus 5.5 máximo ($10.04), con menor puntuación.",
+"ja": "Sonnet 5.5は曲線が最も急です：指数 26 → 31 → 42 → 50 → 55。最大はタスク当たり$10.02でOpus 5.5 最大（$10.04）とほぼ同じなのに、スコアは低い。"
+},
+"정정": {
+"en": "Correction",
+"es": "Corrección",
+"ja": "訂正"
+},
+"10/24판의 ‘Fable 5.1 엑스트라 → Opus 5.5 높음이면 비용 30%’는 옛 지수(v4.3) 기준입니다. v5 기준으로는 $3.46 vs $10.85로 32%이고, 지금은 Fable 5.2 낮음이 더 싸고(29%) 5개 업무 모두 더 높습니다.": {
+"en": "The Oct 24 edition's ‘Fable 5.1 Extra → Opus 5.5 High costs 30%’ was based on the old index (v4.3). On v5 it is $3.46 vs $10.85, or 32%, and Fable 5.2 Low is now cheaper still (29%) and higher in all 5 work areas.",
+"es": "El ‘Fable 5.1 extra alto → Opus 5.5 alto cuesta el 30%’ de la edición del 24 oct se basaba en el índice anterior (v4.3). Con v5 es $3.46 vs $10.85, un 32%, y ahora Fable 5.2 bajo es aún más barato (29%) y más alto en las 5 áreas.",
+"ja": "10/24版の「Fable 5.1 エクストラ → Opus 5.5 高ならコスト30%」は旧指数（v4.3）基準です。v5基準では$3.46 vs $10.85で32%、今はFable 5.2 低のほうがさらに安く（29%）、5業務すべてで高い。"
+},
+"AA 지수 v5로 같은 모델의 점수도 바뀌었습니다(예: Fable 5.1 최대 53 → 49, Haiku 5.5 최대 43 → 36, Opus 5.5 최대 58 → 59). 과제 구성이 바뀌어 과제당 비용도 대체로 두 배 가까이 올랐습니다(Opus 5.5 최대 $5.98 → $10.04). 모델이 나빠진 게 아니라 잣대가 바뀐 것입니다.": {
+"en": "AA index v5 also changed the scores of the same models (e.g. Fable 5.1 Max 53 → 49, Haiku 5.5 Max 43 → 36, Opus 5.5 Max 58 → 59). With the task mix changed, cost per task roughly doubled as well (Opus 5.5 Max $5.98 → $10.04). The models did not get worse; the yardstick changed.",
+"es": "El índice AA v5 también cambió las puntuaciones de los mismos modelos (p. ej. Fable 5.1 máximo 53 → 49, Haiku 5.5 máximo 43 → 36, Opus 5.5 máximo 58 → 59). Al cambiar la composición de tareas, el costo por tarea casi se duplicó (Opus 5.5 máximo $5.98 → $10.04). No empeoraron los modelos: cambió la vara.",
+"ja": "AA指数v5で同じモデルのスコアも変わりました（例：Fable 5.1 最大 53 → 49、Haiku 5.5 最大 43 → 36、Opus 5.5 最大 58 → 59）。課題構成が変わり、タスク当たりコストもおおむね2倍近くに上がりました（Opus 5.5 最大 $5.98 → $10.04）。モデルが悪くなったのではなく、物差しが変わったのです。"
+},
+"Fable 5.2 우위의 상당 부분은 환각 억제 점수입니다": {
+"en": "Much of Fable 5.2's lead comes from the hallucination-control score",
+"es": "Buena parte de la ventaja de Fable 5.2 viene de la puntuación de control de alucinaciones",
+"ja": "Fable 5.2の優位のかなりの部分はハルシネーション抑制のスコアです"
+},
+"AA-Omniscience를 빼고 다시 계산하면 기업분석·리서치에서 Fable 5.2 낮음은 Fable 5.1 엑스트라와 동급이 되고, 기업분석은 Opus 5.5 높음이 앞섭니다. 코딩 3개 업무의 우위는 그대로입니다. ‘모르면 모른다고 하는 성향’이 실제 업무에서 얼마나 중요한지가 결론을 좌우합니다.": {
+"en": "Recalculated without AA-Omniscience, Fable 5.2 Low is on par with Fable 5.1 Extra in company analysis and research, and Opus 5.5 High leads in company analysis. The lead in the 3 coding work areas is unchanged. How much ‘saying it does not know when it does not know’ matters in real work decides the conclusion.",
+"es": "Si se recalcula sin AA-Omniscience, Fable 5.2 bajo empata con Fable 5.1 extra alto en análisis de empresas e investigación, y en análisis de empresas gana Opus 5.5 alto. La ventaja en las 3 áreas de programación se mantiene. La conclusión depende de cuánto importa en el trabajo real ‘decir que no sabe cuando no sabe’.",
+"ja": "AA-Omniscienceを除いて計算し直すと、企業分析・リサーチでFable 5.2 低はFable 5.1 エクストラと同等になり、企業分析はOpus 5.5 高が上回ります。コーディング3業務の優位は変わりません。「知らないことを知らないと言う性向」が実務でどれだけ重要かが結論を左右します。"
+},
+"실측 #2·#3·#7·#8·#16": {
+"en": "Tests #2·#3·#7·#8·#16",
+"es": "Pruebas #2·#3·#7·#8·#16",
+"ja": "実測 #2·#3·#7·#8·#16"
+},
+"구독 사용량은 API 비용과 다릅니다": {
+"en": "Subscription usage is not the same as API cost",
+"es": "El consumo de la suscripción no es lo mismo que el costo de la API",
+"ja": "サブスクの使用量はAPIコストとは別物です"
+},
+"Anthropic은 출시 프로모션으로 Fable을 Pro·Team 표준 좌석 주간 한도의 최대 50%까지 쓸 수 있게 했다고 밝혔습니다. 과제당 비용이 싸도 앱에서 Fable 5.2를 쓰면 한도가 더 빨리 찰 수 있고, 앱 메뉴에 Fable 5.2가 언제 보이는지도 확인하지 못했습니다.": {
+"en": "Anthropic said that, as a launch promotion, Fable can be used for up to 50% of the weekly limit on Pro and Team standard seats. Even with a low cost per task, using Fable 5.2 in the app may fill the limit faster, and when Fable 5.2 appears in the app menu could not be confirmed either.",
+"es": "Anthropic dijo que, como promoción de lanzamiento, Fable puede usarse hasta el 50% del límite semanal de los asientos estándar de Pro y Team. Aunque el costo por tarea sea bajo, usar Fable 5.2 en la app puede agotar antes el límite, y tampoco se pudo confirmar cuándo aparece Fable 5.2 en el menú de la app.",
+"ja": "Anthropicは発売プロモーションとして、FableをPro・Teamの標準シートの週間上限の最大50%まで使えるようにしたと発表しました。タスク当たりコストが安くても、アプリでFable 5.2を使うと上限に早く達する可能性があり、アプリのメニューにFable 5.2がいつ出るかも確認できていません。"
+},
+"실측 #1–10 (사용량 체감 칸)": {
+"en": "Tests #1–10 (usage-feel field)",
+"es": "Pruebas #1–10 (campo de sensación de consumo)",
+"ja": "実測 #1–10（使用量の体感欄）"
+},
+"업무 매핑은 제 판단입니다": {
+"en": "The work mapping is my own judgment",
+"es": "La asignación a áreas es mi propio juicio",
+"ja": "業務の対応付けは筆者の判断です"
+},
+"AA v5의 9개 벤치를 5대 업무에 가중합했습니다. 게임 개발은 직접 대응 벤치가 없어 가장 약하고, 한국어·국내 종목 맥락은 어느 벤치도 재지 않습니다.": {
+"en": "The 9 AA v5 benchmarks were combined with weights into 5 work areas. Game development is the weakest because no benchmark matches it directly, and no benchmark measures Korean-language or Korean-stock context.",
+"es": "Las 9 pruebas de AA v5 se combinaron con pesos en 5 áreas de trabajo. El desarrollo de juegos es la más débil porque ninguna prueba le corresponde directamente, y ninguna prueba mide el contexto del idioma coreano ni de las acciones coreanas.",
+"ja": "AA v5の9つのベンチを5つの業務に加重合算しました。ゲーム開発は直接対応するベンチがなく最も弱く、韓国語・韓国株の文脈はどのベンチも測っていません。"
+},
+"실측 #2·#3·#7·#8·#11·#12": {
+"en": "Tests #2·#3·#7·#8·#11·#12",
+"es": "Pruebas #2·#3·#7·#8·#11·#12",
+"ja": "実測 #2·#3·#7·#8·#11·#12"
+},
+"독립 평가 교차 확인을 못 했습니다": {
+"en": "Independent evaluations could not be cross-checked",
+"es": "No se pudo contrastar con evaluaciones independientes",
+"ja": "独立評価との照合ができていません"
+},
+"이번엔 Vals AI 페이지에 접근하지 못해 최신 Vals 순위를 반영하지 않았습니다. 10/24엔 Vals 1위가 Sonnet 5.5였고, Fable 5.2는 Vals 결과를 아직 보지 못했습니다.": {
+"en": "The Vals AI pages could not be reached this time, so the latest Vals ranking is not reflected. On Oct 24 the Vals No. 1 was Sonnet 5.5, and no Vals result for Fable 5.2 has been seen yet.",
+"es": "Esta vez no se pudo acceder a las páginas de Vals AI, así que no se refleja la clasificación más reciente de Vals. El 24 oct el n.º 1 de Vals era Sonnet 5.5, y aún no se ha visto un resultado de Vals para Fable 5.2.",
+"ja": "今回はVals AIのページにアクセスできず、最新のVals順位を反映していません。10/24時点のVals 1位はSonnet 5.5で、Fable 5.2のVals結果はまだ見ていません。"
+},
+"실측 #16·#18": {
+"en": "Tests #16·#18",
+"es": "Pruebas #16·#18",
+"ja": "実測 #16·#18"
+},
+"현재 설정을 대체할 수 있나": {
+"en": "Can it replace the current setting",
+"es": "¿Puede sustituir al ajuste actual?",
+"ja": "現在の設定を置き換えられるか"
+},
+"왼쪽이 같거나 높음(5개 우위·0개 동급), 비용 0.29배 → 대체 가능": {
+"en": "Left is equal or higher (ahead in 5, on par in 0), cost ×0.29 → can replace",
+"es": "La izquierda iguala o supera (gana en 5, empata en 0), costo ×0.29 → puede sustituir",
+"ja": "左が同等以上（5つで優位・0で同等）、コスト0.29倍 → 置き換え可能"
+},
+"앱 기본값 vs Opus 권장 기본": {
+"en": "App default vs recommended Opus default",
+"es": "Valor por defecto de la app vs Opus recomendado",
+"ja": "アプリの既定値 vs Opusの推奨既定"
+},
+"왼쪽이 같거나 높음(5개 우위·0개 동급), 비용 1.10배 → 대체 가능": {
+"en": "Left is equal or higher (ahead in 5, on par in 0), cost ×1.10 → can replace",
+"es": "La izquierda iguala o supera (gana en 5, empata en 0), costo ×1.10 → puede sustituir",
+"ja": "左が同等以上（5つで優位・0で同等）、コスト1.10倍 → 置き換え可能"
+},
+"Fable 5.2 높음이 Opus 최대를 대체하나": {
+"en": "Does Fable 5.2 High replace Opus Max",
+"es": "¿Sustituye Fable 5.2 alto a Opus máximo?",
+"ja": "Fable 5.2 高はOpus 最大を置き換えるか"
+},
+"왼쪽이 같거나 높음(4개 우위·1개 동급), 비용 0.90배 → 대체 가능": {
+"en": "Left is equal or higher (ahead in 4, on par in 1), cost ×0.90 → can replace",
+"es": "La izquierda iguala o supera (gana en 4, empata en 1), costo ×0.90 → puede sustituir",
+"ja": "左が同等以上（4つで優位・1つで同等）、コスト0.90倍 → 置き換え可能"
+},
+"Opus를 올릴까, Fable을 기본으로 쓸까": {
+"en": "Raise Opus, or make Fable the default",
+"es": "¿Subir Opus o usar Fable por defecto?",
+"ja": "Opusを上げるか、Fableを既定にするか"
+},
+"2개 우위·1개 동급·2개 열위, 비용 1.59배 → 업무별로 갈림": {
+"en": "Ahead in 2, on par in 1, behind in 2, cost ×1.59 → depends on the work area",
+"es": "Gana en 2, empata en 1, pierde en 2, costo ×1.59 → depende del área",
+"ja": "2つで優位・1つで同等・2つで劣位、コスト1.59倍 → 業務によって分かれる"
+},
+"Sonnet 엑스트라 vs Opus 높음": {
+"en": "Sonnet Extra vs Opus High",
+"es": "Sonnet extra alto vs Opus alto",
+"ja": "Sonnet エクストラ vs Opus 高"
+},
+"오른쪽이 같거나 높음(3개 우위·2개 동급), 비용 비 1.18 → 오른쪽 유지": {
+"en": "Right is equal or higher (ahead in 3, on par in 2), cost ratio 1.18 → keep the right",
+"es": "La derecha iguala o supera (gana en 3, empata en 2), razón de costo 1.18 → mantener la derecha",
+"ja": "右が同等以上（3つで優位・2つで同等）、コスト比 1.18 → 右を維持"
+},
+"구글 최상위 vs Fable 5.2 높음": {
+"en": "Google's top model vs Fable 5.2 High",
+"es": "Lo mejor de Google vs Fable 5.2 alto",
+"ja": "Google最上位 vs Fable 5.2 高"
+},
+"오른쪽이 같거나 높음(3개 우위·2개 동급), 비용 비 0.85 → 왼쪽이 싸면 절약용": {
+"en": "Right is equal or higher (ahead in 3, on par in 2), cost ratio 0.85 → left is the saver if cheaper",
+"es": "La derecha iguala o supera (gana en 3, empata en 2), razón de costo 0.85 → la izquierda sirve para ahorrar si es más barata",
+"ja": "右が同等以上（3つで優位・2つで同等）、コスト比 0.85 → 左が安ければ節約用"
+},
+"GPT 최상위 vs Opus 권장 기본": {
+"en": "GPT's top model vs recommended Opus default",
+"es": "Lo mejor de GPT vs Opus recomendado",
+"ja": "GPT最上位 vs Opusの推奨既定"
+},
+"왼쪽이 같거나 높음(4개 우위·1개 동급), 비용 1.06배 → 대체 가능": {
+"en": "Left is equal or higher (ahead in 4, on par in 1), cost ×1.06 → can replace",
+"es": "La izquierda iguala o supera (gana en 4, empata en 1), costo ×1.06 → puede sustituir",
+"ja": "左が同等以上（4つで優位・1つで同等）、コスト1.06倍 → 置き換え可能"
+},
+"GPT 가성비 vs Opus 기본값": {
+"en": "GPT value pick vs Opus default",
+"es": "Valor de GPT vs Opus por defecto",
+"ja": "GPTのコスパ vs Opusの既定値"
+},
+"왼쪽이 같거나 높음(5개 우위·0개 동급), 비용 0.52배 → 대체 가능": {
+"en": "Left is equal or higher (ahead in 5, on par in 0), cost ×0.52 → can replace",
+"es": "La izquierda iguala o supera (gana en 5, empata en 0), costo ×0.52 → puede sustituir",
+"ja": "左が同等以上（5つで優位・0で同等）、コスト0.52倍 → 置き換え可能"
+},
+"GPT 가성비 vs Fable 5.2 최저": {
+"en": "GPT value pick vs Fable 5.2 lowest level",
+"es": "Valor de GPT vs Fable 5.2 en su nivel más bajo",
+"ja": "GPTのコスパ vs Fable 5.2の最低段階"
+},
+"2개 우위·1개 동급·2개 열위, 비용 0.41배 → 업무별로 갈림": {
+"en": "Ahead in 2, on par in 1, behind in 2, cost ×0.41 → depends on the work area",
+"es": "Gana en 2, empata en 1, pierde en 2, costo ×0.41 → depende del área",
+"ja": "2つで優位・1つで同等・2つで劣位、コスト0.41倍 → 業務によって分かれる"
+},
+"새 Terra vs 6.1 Sol": {
+"en": "New Terra vs 6.1 Sol",
+"es": "Nuevo Terra vs 6.1 Sol",
+"ja": "新しいTerra vs 6.1 Sol"
+},
+"오른쪽이 같거나 높음(2개 우위·3개 동급), 비용 비 0.76 → 왼쪽이 싸면 절약용": {
+"en": "Right is equal or higher (ahead in 2, on par in 3), cost ratio 0.76 → left is the saver if cheaper",
+"es": "La derecha iguala o supera (gana en 2, empata en 3), razón de costo 0.76 → la izquierda sirve para ahorrar si es más barata",
+"ja": "右が同等以上（2つで優位・3つで同等）、コスト比 0.76 → 左が安ければ節約用"
+},
+"오픈 웨이트 1위 vs Opus 기본값": {
+"en": "No. 1 open-weights model vs Opus default",
+"es": "N.º 1 de pesos abiertos vs Opus por defecto",
+"ja": "オープンウェイト1位 vs Opusの既定値"
+},
+"2개 우위·2개 동급·1개 열위, 비용 1.50배 → 업무별로 갈림": {
+"en": "Ahead in 2, on par in 2, behind in 1, cost ×1.50 → depends on the work area",
+"es": "Gana en 2, empata en 2, pierde en 1, costo ×1.50 → depende del área",
+"ja": "2つで優位・2つで同等・1つで劣位、コスト1.50倍 → 業務によって分かれる"
+},
+"경량급: Meta vs Anthropic": {
+"en": "Lightweight class: Meta vs Anthropic",
+"es": "Clase ligera: Meta vs Anthropic",
+"ja": "軽量級：Meta vs Anthropic"
+},
+"2개 우위·1개 동급·2개 열위, 비용 0.34배 → 업무별로 갈림": {
+"en": "Ahead in 2, on par in 1, behind in 2, cost ×0.34 → depends on the work area",
+"es": "Gana en 2, empata en 1, pierde en 2, costo ×0.34 → depende del área",
+"ja": "2つで優位・1つで同等・2つで劣位、コスト0.34倍 → 業務によって分かれる"
+},
+"지수가 가장 크게 뛰는 구간은 중간→높음(+6, 비용 ×2.4)이고, 엑스트라는 높음과 지수가 같습니다.": {
+"en": "The biggest index jump is Medium → High (+6, cost ×2.4); Extra has the same index as High.",
+"es": "El mayor salto del índice es de medio → alto (+6, costo ×2.4); extra alto tiene el mismo índice que alto.",
+"ja": "指数が最も大きく伸びるのは中→高（+6、コスト ×2.4）で、エクストラは高と指数が同じです。"
+},
+"엑스트라에서 지수 +5(비용 ×1.7). Terminal-Bench 4.0은 엑스트라부터 59.6%로 멈춥니다.": {
+"en": "Extra adds +5 to the index (cost ×1.7). Terminal-Bench 4.0 stops at 59.6% from Extra on.",
+"es": "En extra alto el índice sube +5 (costo ×1.7). Terminal-Bench 4.0 se queda en 59.6% desde extra alto.",
+"ja": "エクストラで指数 +5（コスト ×1.7）。Terminal-Bench 4.0はエクストラから59.6%で止まります。"
+},
+"낮음·중간은 다른 모델의 낮음보다도 약해, Sonnet은 엑스트라 이상에서만 쓸 만합니다.": {
+"en": "Low and Medium are weaker than even other models' Low, so Sonnet is only worth using at Extra and above.",
+"es": "Bajo y medio son más débiles incluso que el nivel bajo de otros modelos: Sonnet solo vale la pena desde extra alto.",
+"ja": "低・中はほかのモデルの低よりも弱く、Sonnetはエクストラ以上でしか実用になりません。"
+},
+"최대(지수 49)가 엑스트라(50)보다 낮은 과잉사고 구간이 있습니다. CritPt v2는 60.0% → 52.5%로 떨어집니다.": {
+"en": "There is an overthinking zone where Max (index 49) is below Extra (50). CritPt v2 falls from 60.0% → 52.5%.",
+"es": "Hay una zona de exceso de razonamiento en la que máximo (índice 49) queda por debajo de extra alto (50). CritPt v2 baja de 60.0% → 52.5%.",
+"ja": "最大（指数49）がエクストラ（50）より低い、考えすぎ区間があります。CritPt v2は60.0% → 52.5%に下がります。"
+},
+"최대에서도 Terminal-Bench 4.0 32.8%라 코딩 에이전트 주력으로는 부족합니다.": {
+"en": "Even at Max, Terminal-Bench 4.0 is 32.8%, not enough to be the main coding agent.",
+"es": "Incluso en máximo, Terminal-Bench 4.0 es 32.8%: no alcanza para ser el agente de programación principal.",
+"ja": "最大でもTerminal-Bench 4.0は32.8%で、コーディングエージェントの主力には足りません。"
+},
+"최대는 엑스트라보다 비용 ×1.7에 지수 +2뿐입니다.": {
+"en": "Max costs ×1.7 over Extra for only +2 on the index.",
+"es": "Máximo cuesta ×1.7 frente a extra alto y solo suma +2 al índice.",
+"ja": "最大はエクストラよりコスト ×1.7で、指数は+2だけです。"
+},
+"최대(과제당 $1.27)까지 올려도 Claude Opus 5.5 중간($2.45)보다 쌉니다.": {
+"en": "Even raised to Max ($1.27 per task) it is cheaper than Claude Opus 5.5 Medium ($2.45).",
+"es": "Incluso en máximo ($1.27 por tarea) es más barato que Claude Opus 5.5 medio ($2.45).",
+"ja": "最大（タスク当たり$1.27）まで上げても、Claude Opus 5.5 中（$2.45）より安い。"
+},
+"최대에서 지수가 45 → 51로 크게 뛰지만 비용도 ×2.4입니다.": {
+"en": "At Max the index jumps from 45 → 51, but cost is also ×2.4.",
+"es": "En máximo el índice salta de 45 → 51, pero el costo también es ×2.4.",
+"ja": "最大で指数が45 → 51へ大きく伸びますが、コストも ×2.4です。"
+},
+"$8/$40, AA 지수 1위(65). Mythos 5.2는 검증된 기관만, AA 미측정": {
+"en": "$8/$40, No. 1 on the AA index (65). Mythos 5.2 is for verified organizations only, not measured by AA",
+"es": "$8/$40, n.º 1 del índice AA (65). Mythos 5.2 es solo para organizaciones verificadas, no medido por AA",
+"ja": "$8/$40、AA指数1位（65）。Mythos 5.2は認証済みの機関のみ、AA未測定"
+},
+"$0.10/$0.50, AA 36 · 과제당 $0.14": {
+"en": "$0.10/$0.50, AA 36 · $0.14 per task",
+"es": "$0.10/$0.50, AA 36 · $0.14 por tarea",
+"ja": "$0.10/$0.50、AA 36 · タスク当たり$0.14"
+},
+"594B/17B 활성, AA 31, 웨이트 공개 예정": {
+"en": "594B/17B active, AA 31, weights to be released",
+"es": "594B/17B activos, AA 31, pesos por publicar",
+"ja": "594B/17B アクティブ、AA 31、ウェイト公開予定"
+},
+"보안 전용, 승인제($20/$100). AA 미측정": {
+"en": "Security only, approval required ($20/$100). Not measured by AA",
+"es": "Solo seguridad, con aprobación ($20/$100). No medido por AA",
+"ja": "セキュリティ専用、承認制（$20/$100）。AA未測定"
+},
+"770B/49B 활성, AA 35, 웨이트 공개 예정": {
+"en": "770B/49B active, AA 35, weights to be released",
+"es": "770B/49B activos, AA 35, pesos por publicar",
+"ja": "770B/49B アクティブ、AA 35、ウェイト公開予定"
+},
+"생명과학 전용, 승인제($15/$75). AA 미측정": {
+"en": "Life sciences only, approval required ($15/$75). Not measured by AA",
+"es": "Solo ciencias de la vida, con aprobación ($15/$75). No medido por AA",
+"ja": "生命科学専用、承認制（$15/$75）。AA未測定"
+},
+"Mistral Large 4 (오픈 웨이트)": {
+"en": "Mistral Large 4 (open weights)",
+"es": "Mistral Large 4 (pesos abiertos)",
+"ja": "Mistral Large 4（オープンウェイト）"
+},
+"GPT-6 Luna 동작 업데이트": {
+"en": "GPT-6 Luna behavior update",
+"es": "Actualización de comportamiento de GPT-6 Luna",
+"ja": "GPT-6 Lunaの動作アップデート"
+},
+"ChatGPT 무료 기본 모델, 답변 간결화(사실 오류율은 OpenAI 부록상 상승)": {
+"en": "Default model on ChatGPT Free, shorter answers (factual error rate up per OpenAI's appendix)",
+"es": "Modelo por defecto de ChatGPT gratis, respuestas más breves (la tasa de errores de hecho sube según el apéndice de OpenAI)",
+"ja": "ChatGPT無料版の既定モデル、回答を簡潔化（事実誤り率はOpenAIの付録上では上昇）"
+},
+"AA 60(높음), 출시가 $2/$10 → 이후 $4/$20, 제한 공개": {
+"en": "AA 60 (High), launch price $2/$10 → later $4/$20, limited release",
+"es": "AA 60 (alto), precio de lanzamiento $2/$10 → después $4/$20, acceso limitado",
+"ja": "AA 60（高）、発売価格 $2/$10 → その後 $4/$20、限定公開"
+},
+"벤치 구성 변경(현재 v5.0.1). 이 대시보드 전면 재계산의 이유": {
+"en": "Benchmark mix changed (now v5.0.1). The reason for this dashboard's full recalculation",
+"es": "Cambio en la composición de pruebas (ahora v5.0.1). El motivo del recálculo completo de este panel",
+"ja": "ベンチ構成の変更（現在 v5.0.1）。このダッシュボードを全面再計算した理由"
+},
+"$1/$0.05/$5, AA 최대 51 · $0.96, ChatGPT는 Work·Codex만": {
+"en": "$1/$0.05/$5, AA 51 at Max · $0.96, in ChatGPT only in Work and Codex",
+"es": "$1/$0.05/$5, AA 51 en máximo · $0.96, en ChatGPT solo en Work y Codex",
+"ja": "$1/$0.05/$5、AA 最大 51 · $0.96、ChatGPTではWork・Codexのみ"
+},
+"없음": {
+"en": "None",
+"es": "Ninguno",
+"ja": "なし"
+},
+"Fable 5.2가 같은 단계 5개 전부에서 AA 지수가 높고(낮음 39→54, 중간 43→56, 높음 47→62, 엑스트라 50→62, 최대 49→65), 토큰 단가도 20% 낮음.": {
+"en": "Fable 5.2 has a higher AA index at all 5 matching levels (Low 39→54, Medium 43→56, High 47→62, Extra 50→62, Max 49→65), and a token price 20% lower.",
+"es": "Fable 5.2 tiene un índice AA más alto en los 5 niveles equivalentes (bajo 39→54, medio 43→56, alto 47→62, extra alto 50→62, máximo 49→65) y un precio por token un 20% menor.",
+"ja": "Fable 5.2が同じ段階5つすべてでAA指数が高く（低 39→54、中 43→56、高 47→62、エクストラ 50→62、最大 49→65）、トークン単価も20%安い。"
+},
+"v5 기준 최대 지수 44 vs Opus 5.5 최대 59, 과제당 $11.82 vs $10.04.": {
+"en": "On v5, Max index 44 vs Opus 5.5 Max 59, cost per task $11.82 vs $10.04.",
+"es": "Con v5, índice en máximo 44 vs Opus 5.5 máximo 59, costo por tarea $11.82 vs $10.04.",
+"ja": "v5基準の最大指数 44 vs Opus 5.5 最大 59、タスク当たり $11.82 vs $10.04。"
+},
+"v5 지수 미측정(AA가 Opus 4.8로 대체 실행). 옛 지수(v4.3) 50으로 Fable 5.1보다 낮았음.": {
+"en": "Not measured on the v5 index (AA ran Opus 4.8 in its place). On the old index (v4.3) it scored 50, below Fable 5.1.",
+"es": "Sin medir en el índice v5 (AA ejecutó Opus 4.8 en su lugar). En el índice anterior (v4.3) tenía 50, por debajo de Fable 5.1.",
+"ja": "v5指数は未測定（AAはOpus 4.8で代替実行）。旧指数（v4.3）は50で、Fable 5.1より低かった。"
+},
+"v5 지수 미측정. 옛 지수 기준 42 · 41(추정) · 32(추정) · 9(추정).": {
+"en": "Not measured on the v5 index. On the old index: 42 · 41 (estimate) · 32 (estimate) · 9 (estimate).",
+"es": "Sin medir en el índice v5. Con el índice anterior: 42 · 41 (estimación) · 32 (estimación) · 9 (estimación).",
+"ja": "v5指数は未測定。旧指数基準で 42 · 41（推定）· 32（推定）· 9（推定）。"
+},
+"v5 지수 미측정. 옛 지수 38 · 30으로 Sonnet 5.5(옛 지수 56)에 크게 뒤짐.": {
+"en": "Not measured on the v5 index. Old index 38 · 30, far behind Sonnet 5.5 (old index 56).",
+"es": "Sin medir en el índice v5. Índice anterior 38 · 30, muy por detrás de Sonnet 5.5 (índice anterior 56).",
+"ja": "v5指数は未測定。旧指数 38 · 30で、Sonnet 5.5（旧指数56）に大きく劣る。"
+},
+"Haiku 5.5가 토큰 단가 90% 저렴($0.10/$0.50, 10만 토큰 이하). Anthropic 문서상 퇴역 예정일(10/15 이후)은 지났지만 아직 사용 가능으로 표시.": {
+"en": "Haiku 5.5 is 90% cheaper per token ($0.10/$0.50, up to 100K tokens). The planned retirement date in Anthropic's docs (after Oct 15) has passed, but it is still listed as available.",
+"es": "Haiku 5.5 es un 90% más barato por token ($0.10/$0.50, hasta 100K tokens). La fecha de retirada prevista en la documentación de Anthropic (después del 15 oct) ya pasó, pero sigue figurando como disponible.",
+"ja": "Haiku 5.5のほうがトークン単価が90%安い（$0.10/$0.50、10万トークン以下）。Anthropicの文書上の退役予定日（10/15以降）は過ぎたが、まだ利用可能と表示。"
+},
+"높음": {
+"en": "High",
+"es": "alto",
+"ja": "高"
+},
+"중간": {
+"en": "Medium",
+"es": "medio",
+"ja": "中"
+},
+"노력 미지원": {
+"en": "No effort setting",
+"es": "Sin ajuste de esfuerzo",
+"ja": "思考量の設定なし"
+},
+"API 기본값은 Anthropic 노력 문서(11/11), 앱 기본값은 각 모델 발표문 기준. Fable은 출시 프로모션으로 Pro·Team 표준 좌석 주간 사용 한도의 최대 50%까지 쓸 수 있습니다(Anthropic 발표). 단계명은 영문 도움말 ‘Extra high (xhigh)’, 한국어 도움말 ‘매우 높음(xhigh)’, 앱 화면은 ‘엑스트라’입니다.": {
+"en": "API defaults follow Anthropic's effort documentation (Nov 11); app defaults follow each model's announcement. As a launch promotion, Fable can be used for up to 50% of the weekly usage limit on Pro and Team standard seats (Anthropic announcement). The level this dashboard calls Extra is ‘Extra high (xhigh)’ in the English help.",
+"es": "Los valores por defecto de la API siguen la documentación de esfuerzo de Anthropic (11 nov); los de la app, el anuncio de cada modelo. Como promoción de lanzamiento, Fable puede usarse hasta el 50% del límite semanal de uso de los asientos estándar de Pro y Team (anuncio de Anthropic). El nivel que este panel llama extra alto es ‘Extra high (xhigh)’ en la ayuda en inglés.",
+"ja": "APIの既定値はAnthropicの思考量ドキュメント（11/11）、アプリの既定値は各モデルの発表文に基づきます。Fableは発売プロモーションとして、Pro・Teamの標準シートの週間使用上限の最大50%まで使えます（Anthropic発表）。このダッシュボードでエクストラと呼ぶ段階は、英語ヘルプでは「Extra high (xhigh)」です。"
+},
+"벤치 원점수를 백분율로 통일: AA-Briefcase Elo는 (Elo − 500) ÷ 20, AA-Omniscience 음수는 0.": {
+"en": "Raw benchmark scores are unified as percentages: AA-Briefcase Elo is (Elo − 500) ÷ 20, negative AA-Omniscience is 0.",
+"es": "Las puntuaciones brutas se unifican en porcentajes: el Elo de AA-Briefcase es (Elo − 500) ÷ 20 y los valores negativos de AA-Omniscience cuentan como 0.",
+"ja": "ベンチの素点を百分率に統一：AA-BriefcaseのEloは (Elo − 500) ÷ 20、AA-Omniscienceの負の値は0。"
+},
+"벤치마다 측정된 모든 모델·노력 조합 중 최고값을 10으로 정규화.": {
+"en": "For each benchmark, the best value among all measured model and effort combinations is normalized to 10.",
+"es": "En cada prueba, el mejor valor entre todas las combinaciones de modelo y esfuerzo medidas se normaliza a 10.",
+"ja": "ベンチごとに、測定された全モデル・思考量の組み合わせの最高値を10に正規化。"
+},
+"업무 점수 = 정규화 점수의 업무별 가중합(가중치는 위 표).": {
+"en": "Work score = weighted sum of normalized scores per work area (weights in the table above).",
+"es": "Puntuación por área = suma ponderada de las puntuaciones normalizadas por área (pesos en la tabla de arriba).",
+"ja": "業務スコア = 正規化スコアの業務別加重和（重みは上の表）。"
+},
+"모든 점수는 AA Intelligence Index v5.0.1이 그 모델·노력 조합을 직접 잰 값에서만 나옵니다. 다른 모델 곡선을 빌리거나 보간한 값은 없습니다(10/24판과 다른 점).": {
+"en": "Every score comes only from values AA Intelligence Index v5.0.1 measured directly for that model and effort combination. Nothing is borrowed from another model's curve or interpolated (unlike the Oct 24 edition).",
+"es": "Todas las puntuaciones salen solo de valores que AA Intelligence Index v5.0.1 midió directamente para esa combinación de modelo y esfuerzo. No hay valores tomados de la curva de otro modelo ni interpolados (a diferencia de la edición del 24 oct).",
+"ja": "すべてのスコアは、AA Intelligence Index v5.0.1がそのモデル・思考量の組み合わせを直接測った値だけから出しています。ほかのモデルの曲線を借りたり補間したりした値はありません（10/24版との違い）。"
+},
+"추천: 최고품질 = 최고점의 97% 이상 중 과제당 비용 최소, 가성비 = 90% 이상 중 비용 최소, 속도 = 75% 이상 중 과제당 시간 최소. ‘Claude’ 추천은 Claude 모델만, ‘전 벤더’는 전부를 후보로 씁니다.": {
+"en": "Picks: Top quality = cheapest per task at 97%+ of the best score, Value = cheapest at 90%+, Speed = fastest per task at 75%+. ‘Claude’ picks consider Claude models only; ‘all vendors’ considers everything.",
+"es": "Recomendaciones: Máxima calidad = la más barata por tarea con 97%+ de la mejor puntuación, Valor = la más barata con 90%+, Velocidad = la más rápida por tarea con 75%+. Las de ‘Claude’ solo consideran modelos Claude; ‘todos los proveedores’ los considera todos.",
+"ja": "おすすめ：最高品質 = 最高点の97%以上のうちタスク当たりコスト最小、コスパ = 90%以上のうちコスト最小、速度 = 75%以上のうちタスク当たり時間最小。「Claude」のおすすめはClaudeモデルだけ、「全ベンダー」はすべてを候補にします。"
+},
+"과제당 비용·시간은 AA가 지수 전체 과제를 돌릴 때의 평균입니다. 구독 앱의 사용량 소모와 비례한다는 보장은 없습니다.": {
+"en": "Cost and time per task are averages over AA's full index run. There is no guarantee they are proportional to usage consumed in subscription apps.",
+"es": "El costo y el tiempo por tarea son promedios de la ejecución de todas las tareas del índice de AA. No hay garantía de que sean proporcionales al consumo en las apps de suscripción.",
+"ja": "タスク当たりコスト・時間は、AAが指数の全課題を回したときの平均です。サブスクアプリの使用量消費に比例する保証はありません。"
+},
+"Gemini 4 Carbon 중간(지수 58, 과제당 $6.59)은 벤치별 값을 확보하지 못해 업무 점수에서 뺐습니다.": {
+"en": "Gemini 4 Carbon Medium (index 58, $6.59 per task) was left out of the work scores because per-benchmark values were not available.",
+"es": "Gemini 4 Carbon medio (índice 58, $6.59 por tarea) quedó fuera de las puntuaciones por área porque no se obtuvieron los valores por prueba.",
+"ja": "Gemini 4 Carbon 中（指数58、タスク当たり$6.59）はベンチ別の値を確保できず、業務スコアから外しました。"
+},
+"<span><b>왜 10/24판과 숫자가 다른가.</b> Artificial Analysis가 10월 27일 지수를 v5로 바꿨습니다(현재 v5.0.1). 빠진 벤치: GDPval-AA·SciCode·AA-LCR·HLE. 새로 들어온 벤치: FrontierCode 2.0·Terminal-Bench-Science 0.1·HLE-Diamond. 바뀐 벤치: CritPt → CritPt v2(Hard), AA-Omniscience → v1.1. 과제 구성이 달라 같은 모델도 지수와 과제당 비용이 바뀌었습니다. 이 대시보드는 v5 벤치만으로 업무 매핑을 새로 짰습니다. 또 v5에선 CursorBench·FrontierCode 1.1 같은 공급사 자체 측정값을 쓰지 않습니다. FrontierCode 2.0을 AA가 직접 재기 때문입니다.</span>": {
+"en": "<span><b>Why the numbers differ from the Oct 24 edition.</b> On Oct 27 Artificial Analysis moved its index to v5 (now v5.0.1). Benchmarks dropped: GDPval-AA, SciCode, AA-LCR, HLE. Benchmarks added: FrontierCode 2.0, Terminal-Bench-Science 0.1, HLE-Diamond. Benchmarks changed: CritPt → CritPt v2 (Hard), AA-Omniscience → v1.1. Because the task mix differs, the same model's index and cost per task changed too. This dashboard rebuilt the work mapping from v5 benchmarks only. v5 also no longer uses vendor-reported values such as CursorBench or FrontierCode 1.1, because AA measures FrontierCode 2.0 itself.</span>",
+"es": "<span><b>Por qué las cifras difieren de la edición del 24 oct.</b> El 27 oct Artificial Analysis pasó su índice a v5 (ahora v5.0.1). Pruebas retiradas: GDPval-AA, SciCode, AA-LCR, HLE. Pruebas nuevas: FrontierCode 2.0, Terminal-Bench-Science 0.1, HLE-Diamond. Pruebas modificadas: CritPt → CritPt v2 (Hard), AA-Omniscience → v1.1. Como la composición de tareas es distinta, el índice y el costo por tarea del mismo modelo también cambiaron. Este panel rehízo la asignación a áreas solo con pruebas de v5. Además, v5 ya no usa mediciones de los propios proveedores como CursorBench o FrontierCode 1.1, porque AA mide FrontierCode 2.0 directamente.</span>",
+"ja": "<span><b>なぜ10/24版と数字が違うのか。</b> Artificial Analysisが10月27日に指数をv5に替えました（現在 v5.0.1）。外れたベンチ：GDPval-AA・SciCode・AA-LCR・HLE。新しく入ったベンチ：FrontierCode 2.0・Terminal-Bench-Science 0.1・HLE-Diamond。変わったベンチ：CritPt → CritPt v2（Hard）、AA-Omniscience → v1.1。課題構成が違うため、同じモデルでも指数とタスク当たりコストが変わりました。このダッシュボードはv5のベンチだけで業務の対応付けを作り直しました。またv5ではCursorBench・FrontierCode 1.1のような提供元の自社測定値を使いません。FrontierCode 2.0をAAが直接測るためです。</span>"
+},
+"Effort — 단계·기본값": {
+"en": "Effort — levels and defaults",
+"es": "Effort — niveles y valores por defecto",
+"ja": "Effort — 段階・既定値"
+},
+"Intelligence Index v5 발표 (2026-10-27)": {
+"en": "Intelligence Index v5 announcement (2026-10-27)",
+"es": "Anuncio de Intelligence Index v5 (2026-10-27)",
+"ja": "Intelligence Index v5 の発表（2026-10-27）"
+},
+"방법론 — v5.0.1 벤치·가중치": {
+"en": "Methodology — v5.0.1 benchmarks and weights",
+"es": "Metodología — pruebas y pesos de v5.0.1",
+"ja": "方法論 — v5.0.1のベンチ・重み"
+},
+"모델 순위표": {
+"en": "Model leaderboard",
+"es": "Clasificación de modelos",
+"ja": "モデル順位表"
+},
+"Fable 5.2 vs Opus 5.5 (최대)": {
+"en": "Fable 5.2 vs Opus 5.5 (Max)",
+"es": "Fable 5.2 vs Opus 5.5 (máximo)",
+"ja": "Fable 5.2 vs Opus 5.5（最大）"
+},
+"Opus 5.5 · Sonnet 5.5 · Fable 5.1 · Haiku 5.5 노력별 비교 페이지": {
+"en": "Opus 5.5 · Sonnet 5.5 · Fable 5.1 · Haiku 5.5 comparison pages by effort",
+"es": "Opus 5.5 · Sonnet 5.5 · Fable 5.1 · Haiku 5.5: páginas de comparación por esfuerzo",
+"ja": "Opus 5.5 · Sonnet 5.5 · Fable 5.1 · Haiku 5.5 思考量別の比較ページ"
+},
+"GPT-6 Astra vs GPT-6.1 Sol 노력별 비교 페이지": {
+"en": "GPT-6 Astra vs GPT-6.1 Sol comparison pages by effort",
+"es": "GPT-6 Astra vs GPT-6.1 Sol: páginas de comparación por esfuerzo",
+"ja": "GPT-6 Astra vs GPT-6.1 Sol 思考量別の比較ページ"
+},
+"GPT-6.1 Terra 모델 문서": {
+"en": "GPT-6.1 Terra model documentation",
+"es": "Documentación del modelo GPT-6.1 Terra",
+"ja": "GPT-6.1 Terra モデルドキュメント"
+},
+"GPT-6.1 Terra 시스템 카드 부록": {
+"en": "GPT-6.1 Terra system card appendix",
+"es": "Apéndice de la ficha de sistema de GPT-6.1 Terra",
+"ja": "GPT-6.1 Terra システムカード付録"
+},
+"모델 출시 일지 (출시일 교차 확인)": {
+"en": "Model release log (release dates cross-checked)",
+"es": "Registro de lanzamientos de modelos (fechas contrastadas)",
+"ja": "モデル発売記録（発売日の照合）"
+},
+"첨부한 [파일명].py는 종목 스캐너 모듈이다.\\n룰북의 다음 규칙 1개를 새 함수로 반영하라: [규칙 원문].\\n\\n조건\\n- 기존 함수의 시그니처·반환형·기존 규칙 로직은 한 줄도 바꾸지 말 것\\n- pytest 단위테스트 5개(정상 2, 경계 2, 예외 1)를 함께 작성\\n- 변경 diff와 테스트 실행 결과만 제시": {
+"en": "The attached [filename].py is a stock scanner module.\\nAdd the following 1 rule from the rulebook as a new function: [rule text].\\n\\nConditions\\n- Do not change a single line of existing function signatures, return types or existing rule logic\\n- Write 5 pytest unit tests as well (2 normal, 2 boundary, 1 exception)\\n- Show only the change diff and the test run output",
+"es": "El archivo adjunto [nombre].py es un módulo de escáner de acciones.\\nAñade como función nueva la siguiente 1 regla del reglamento: [texto de la regla].\\n\\nCondiciones\\n- No cambies ni una línea de las firmas, los tipos de retorno ni la lógica de las reglas existentes\\n- Escribe además 5 pruebas unitarias de pytest (2 normales, 2 de límite, 1 de excepción)\\n- Muestra solo el diff del cambio y el resultado de las pruebas",
+"ja": "添付の[ファイル名].pyは銘柄スキャナーのモジュールだ。\\nルールブックの次のルール1つを新しい関数として反映せよ：[ルール原文]。\\n\\n条件\\n- 既存関数のシグネチャ・戻り値の型・既存ルールのロジックは1行も変えないこと\\n- pytestの単体テスト5つ（正常2、境界2、例外1）も書くこと\\n- 変更のdiffとテスト実行結果だけを示すこと"
+},
+"첨부한 [종목] 재무데이터(최근 8분기)로 기업분석을 작성하라.\\n1) 밸류에이션: PER·PBR·EV/EBITDA, 동종 3사 비교\\n2) 표면 내러티브 → 숨은 의도 → 게임이론 프레이밍\\n3) 가장 강력한 반론을 포함한 Bull 케이스\\n4) 한 줄 결론\\n\\n모든 수치는 첨부 데이터에서만 인용하고 출처 행을 표시하라.": {
+"en": "Write a company analysis from the attached financial data for [ticker] (last 8 quarters).\\n1) Valuation: PER, PBR, EV/EBITDA, compared with 3 peers\\n2) Surface narrative → hidden intent → game-theory framing\\n3) A bull case that includes the strongest counterargument\\n4) One-line conclusion\\n\\nQuote every figure only from the attached data and cite the source row.",
+"es": "Escribe un análisis de empresa con los datos financieros adjuntos de [empresa] (últimos 8 trimestres).\\n1) Valoración: PER, PBR, EV/EBITDA, comparación con 3 pares\\n2) Narrativa superficial → intención oculta → marco de teoría de juegos\\n3) Caso alcista que incluya el contraargumento más fuerte\\n4) Conclusión en una línea\\n\\nCita todas las cifras solo de los datos adjuntos e indica la fila de origen.",
+"ja": "添付の[銘柄]の財務データ（直近8四半期）で企業分析を書け。\\n1) バリュエーション：PER・PBR・EV/EBITDA、同業3社との比較\\n2) 表面のナラティブ → 隠れた意図 → ゲーム理論のフレーミング\\n3) 最も強い反論を含むBullケース\\n4) 一行の結論\\n\\n数値はすべて添付データからのみ引用し、出典の行を示せ。"
+},
+"웹검색으로 '2027년 HBM 공급과잉 리스크'를 리서치하라.\\n- 최근 6개월 이내 1차 출처 위주\\n- 모든 주장에 원문 링크\\n- 반대 시나리오 포함\\n- 결론은 3줄": {
+"en": "Research '2027 HBM oversupply risk' with web search.\\n- Mainly primary sources from the last 6 months\\n- A link to the original for every claim\\n- Include the opposite scenario\\n- Conclusion in 3 lines",
+"es": "Investiga con búsqueda web el 'riesgo de sobreoferta de HBM en 2027'.\\n- Sobre todo fuentes primarias de los últimos 6 meses\\n- Enlace al original en cada afirmación\\n- Incluye el escenario contrario\\n- Conclusión en 3 líneas",
+"ja": "ウェブ検索で「2027年のHBM供給過剰リスク」をリサーチせよ。\\n- 直近6か月以内の一次情報を中心に\\n- すべての主張に原文リンク\\n- 反対シナリオを含める\\n- 結論は3行"
+},
+"단일 HTML 파일로 우주선 슈팅 게임을 만들어라.\\n- 방향키 이동, 스페이스 발사\\n- 적 3종, 충돌판정\\n- 점수·레벨업, 게임오버와 재시작\\n- requestAnimationFrame 게임 루프\\n- 외부 라이브러리 금지": {
+"en": "Build a spaceship shooter game as a single HTML file.\\n- Arrow keys to move, space to fire\\n- 3 enemy types, collision detection\\n- Score and level-ups, game over and restart\\n- requestAnimationFrame game loop\\n- No external libraries",
+"es": "Crea un juego de disparos de naves en un único archivo HTML.\\n- Flechas para moverse, espacio para disparar\\n- 3 tipos de enemigos, detección de colisiones\\n- Puntuación y subida de nivel, fin de partida y reinicio\\n- Bucle de juego con requestAnimationFrame\\n- Sin bibliotecas externas",
+"ja": "単一のHTMLファイルで宇宙船シューティングゲームを作れ。\\n- 矢印キーで移動、スペースで発射\\n- 敵3種、当たり判定\\n- スコア・レベルアップ、ゲームオーバーと再スタート\\n- requestAnimationFrameのゲームループ\\n- 外部ライブラリ禁止"
+},
+"첨부 CSV(종목·등락률·거래대금)를 읽어 상위 20종목 표와 막대차트를 담은 A4 PDF를 WeasyPrint로 만들고, 텔레그램 봇 API로 지정 채팅에 전송하는 Python 스크립트를 작성하라.\\n- 설정은 .env\\n- 실패 시 재시도 3회와 로그\\n- 실행 방법을 README로": {
+"en": "Write a Python script that reads the attached CSV (ticker, % change, trading value), builds an A4 PDF with a top-20 table and a bar chart using WeasyPrint, and sends it to a given chat through the Telegram bot API.\\n- Settings in .env\\n- 3 retries and logging on failure\\n- How to run it in a README",
+"es": "Escribe un script de Python que lea el CSV adjunto (valor, variación %, importe negociado), genere con WeasyPrint un PDF A4 con una tabla de los 20 primeros y un gráfico de barras, y lo envíe a un chat indicado con la API de bots de Telegram.\\n- Configuración en .env\\n- 3 reintentos y registro si falla\\n- Cómo ejecutarlo, en un README",
+"ja": "添付のCSV（銘柄・騰落率・売買代金）を読み、上位20銘柄の表と棒グラフを載せたA4のPDFをWeasyPrintで作り、TelegramのBot APIで指定のチャットに送るPythonスクリプトを書け。\\n- 設定は.env\\n- 失敗時は再試行3回とログ\\n- 実行方法はREADMEに"
+},
+"실행 성공": {
+"en": "Runs successfully",
+"es": "Se ejecuta correctamente",
+"ja": "実行成功"
+},
+"기존 규칙·시그니처 보존": {
+"en": "Existing rules and signatures preserved",
+"es": "Reglas y firmas existentes intactas",
+"ja": "既存ルール・シグネチャの維持"
+},
+"엣지케이스 처리": {
+"en": "Edge cases handled",
+"es": "Casos límite tratados",
+"ja": "エッジケースの処理"
+},
+"테스트 통과 수 (0–5)": {
+"en": "Tests passed (0–5)",
+"es": "Pruebas aprobadas (0–5)",
+"ja": "テスト通過数（0–5）"
+},
+"수치 오류 개수 (직접 셈)": {
+"en": "Number of numeric errors (count them yourself)",
+"es": "Número de errores numéricos (contados a mano)",
+"ja": "数値誤りの個数（自分で数える）"
+},
+"논리 깊이 (숨은 의도·게임이론)": {
+"en": "Depth of reasoning (hidden intent, game theory)",
+"es": "Profundidad del razonamiento (intención oculta, teoría de juegos)",
+"ja": "論理の深さ（隠れた意図・ゲーム理論）"
+},
+"반론의 강도": {
+"en": "Strength of the counterargument",
+"es": "Fuerza del contraargumento",
+"ja": "反論の強さ"
+},
+"한 줄 클로저": {
+"en": "One-line closer",
+"es": "Cierre en una línea",
+"ja": "一行の締め"
+},
+"원문이 확인되는 인용 비율 (%)": {
+"en": "Share of citations whose source can be verified (%)",
+"es": "Proporción de citas con original comprobable (%)",
+"ja": "原文を確認できる引用の割合（%）"
+},
+"소스 신선도": {
+"en": "Source freshness",
+"es": "Actualidad de las fuentes",
+"ja": "情報源の新しさ"
+},
+"통찰": {
+"en": "Insight",
+"es": "Perspicacia",
+"ja": "洞察"
+},
+"첫 실행 작동": {
+"en": "Works on first run",
+"es": "Funciona a la primera",
+"ja": "初回実行で動作"
+},
+"버그 수": {
+"en": "Number of bugs",
+"es": "Número de errores",
+"ja": "バグの数"
+},
+"조작감": {
+"en": "Controls feel",
+"es": "Sensación de control",
+"ja": "操作感"
+},
+"비주얼": {
+"en": "Visuals",
+"es": "Aspecto visual",
+"ja": "ビジュアル"
+},
+"첫 실행 성공": {
+"en": "Succeeds on first run",
+"es": "Funciona a la primera ejecución",
+"ja": "初回実行で成功"
+},
+"요구사항 충족률 (%)": {
+"en": "Requirements met (%)",
+"es": "Requisitos cumplidos (%)",
+"ja": "要件の充足率（%）"
+},
+"디버깅 왕복 횟수": {
+"en": "Debugging round trips",
+"es": "Idas y vueltas de depuración",
+"ja": "デバッグの往復回数"
+},
+"기준선: Fable 5.1 엑스트라": {
+"en": "Baseline: Fable 5.1 Extra",
+"es": "Línea base: Fable 5.1 extra alto",
+"ja": "基準線：Fable 5.1 エクストラ"
+},
+"대체 후보 (비용 29%)": {
+"en": "Replacement candidate (29% of the cost)",
+"es": "Candidato a sustituto (29% del costo)",
+"ja": "置き換え候補（コスト29%）"
+},
+"앱 기본값으로 분석이 충분한가": {
+"en": "Is the app default enough for analysis",
+"es": "¿Basta el valor por defecto de la app para el análisis?",
+"ja": "アプリの既定値で分析は十分か"
+},
+"앱 기본값으로 리서치가 충분한가": {
+"en": "Is the app default enough for research",
+"es": "¿Basta el valor por defecto de la app para investigar?",
+"ja": "アプリの既定値でリサーチは十分か"
+},
+"고도화 최종본": {
+"en": "Final version of an upgrade",
+"es": "Versión final de una mejora",
+"ja": "高度化の最終版"
+},
+"게임 최종본": {
+"en": "Final version of a game",
+"es": "Versión final de un juego",
+"ja": "ゲームの最終版"
+},
+"Opus 엑스트라가 Fable 5.2를 대신하나": {
+"en": "Can Opus Extra stand in for Fable 5.2",
+"es": "¿Puede Opus extra alto reemplazar a Fable 5.2?",
+"ja": "OpusのエクストラはFable 5.2の代わりになるか"
+},
+"Opus 권장 기본 vs Fable 5.2": {
+"en": "Recommended Opus default vs Fable 5.2",
+"es": "Opus recomendado vs Fable 5.2",
+"ja": "Opusの推奨既定 vs Fable 5.2"
+},
+"Sonnet 엑스트라로 스크립트 충분한가": {
+"en": "Is Sonnet Extra enough for scripts",
+"es": "¿Basta Sonnet extra alto para scripts?",
+"ja": "Sonnetのエクストラでスクリプトは十分か"
+},
+"GPT 가성비 교차 확인 (API·Codex)": {
+"en": "GPT value pick cross-check (API, Codex)",
+"es": "Contraste del valor de GPT (API, Codex)",
+"ja": "GPTのコスパの照合（API・Codex）"
+},
+"바닥선: 최저가 Claude": {
+"en": "Floor: the cheapest Claude",
+"es": "Suelo: el Claude más barato",
+"ja": "下限：最安のClaude"
+},
+"최대까지 올릴 가치": {
+"en": "Is going up to Max worth it",
+"es": "¿Vale la pena subir hasta máximo?",
+"ja": "最大まで上げる価値"
+},
+"1–10번이 가장 중요합니다. Fable 5.1 엑스트라 설정을 Fable 5.2 낮음이 대체할 수 있는지 5개 업무 전부에서 확인하고, 사용량 체감 칸으로 구독 한도 소모도 함께 기록합니다.": {
+"en": "Tests 1–10 matter most. Check in all 5 work areas whether Fable 5.2 Low can replace the Fable 5.1 Extra setting, and use the usage-feel field to record subscription-limit consumption as well.",
+"es": "Las pruebas 1–10 son las más importantes. Comprueba en las 5 áreas si Fable 5.2 bajo puede sustituir al ajuste Fable 5.1 extra alto y anota también, en el campo de sensación de consumo, cuánto límite de la suscripción gasta.",
+"ja": "1–10番が最も重要です。Fable 5.1 エクストラの設定をFable 5.2 低で置き換えられるかを5業務すべてで確かめ、使用量の体感欄でサブスク上限の消費も一緒に記録します。"
+},
+"같은 노력 단계의 AA 실측끼리 비교. 단계 버튼으로 바꿔 보세요.": {
+"en": "AA measurements at the same effort level compared. Switch levels with the buttons.",
+"es": "Se comparan mediciones de AA en el mismo nivel de esfuerzo. Cambia de nivel con los botones.",
+"ja": "同じ思考量のAA実測どうしを比較。段階ボタンで切り替えてください。"
+},
+"실무 5대 업무 기준 · 현존 주요 모델 27종 × 노력 단계 = 조합 62개 · 한 잣대(AA 지수 v5.0.1)": {
+"en": "Five work areas · 27 current major models × effort levels = 62 combinations · one yardstick (AA index v5.0.1)",
+"es": "Cinco áreas de trabajo · 27 modelos principales actuales × niveles de esfuerzo = 62 combinaciones · una sola vara (índice AA v5.0.1)",
+"ja": "5つの業務が基準 · 現行の主要モデル27種 × 思考量 = 62通り · 一つの物差し（AA指数 v5.0.1）"
+},
+"낮음": {
+"en": "Low",
+"es": "bajo",
+"ja": "低"
+},
+"엑스트라": {
+"en": "Extra",
+"es": "extra alto",
+"ja": "エクストラ"
+},
+"최대": {
+"en": "Max",
+"es": "máximo",
+"ja": "最大"
+},
+"Claude 주력": {
+"en": "Claude main lineup",
+"es": "Claude, gama principal",
+"ja": "Claude主力"
+},
+"Claude 이전 세대": {
+"en": "Claude previous generation",
+"es": "Claude, generación anterior",
+"ja": "Claude前世代"
+},
+"그 밖의 연구소": {
+"en": "Other labs",
+"es": "Otros laboratorios",
+"ja": "そのほかの研究所"
+},
+"분": {
+"en": " min",
+"es": " min",
+"ja": "分"
+},
+"모델별 최고": {
+"en": "Best per model",
+"es": "Mejor por modelo",
+"ja": "モデル別最高"
+},
+"차트 라이브러리를 불러오지 못했습니다. 아래 표로 확인하세요.": {
+"en": "The chart library could not be loaded. Use the table below.",
+"es": "No se pudo cargar la biblioteca de gráficos. Consulta la tabla de abajo.",
+"ja": "チャートライブラリを読み込めませんでした。下の表でご確認ください。"
+},
+"점수": {
+"en": "Score",
+"es": "Puntuación",
+"ja": "スコア"
+},
+"기준 설정인 ${shortLab(from[0])} ${LVK[from[1]]}를 ${shortLab(to[0])} ${LVK[to[1]]}로 바꿀 때의 과제당 비용입니다 (AA ${money(ct.cost)} vs ${money(cf.cost)}, 시간 ${mins(ct.time)} vs ${mins(cf.time)}). 추정 품질은 ${higher===5?\"5개 업무 모두 높습니다\":`${higher}개 업무에서 높고 ${tie}개 업무에서 동급입니다`}.": {
+"en": "Cost per task after switching the baseline setting, ${shortLab(from[0])} ${LVK[from[1]]}, to ${shortLab(to[0])} ${LVK[to[1]]} (AA ${money(ct.cost)} vs ${money(cf.cost)}, time ${mins(ct.time)} vs ${mins(cf.time)}). Estimated quality is ${higher===5?\"higher in all 5 work areas\":`higher in ${higher} work areas and on par in ${tie}`}.",
+"es": "Costo por tarea al cambiar el ajuste base, ${shortLab(from[0])} ${LVK[from[1]]}, por ${shortLab(to[0])} ${LVK[to[1]]} (AA ${money(ct.cost)} vs ${money(cf.cost)}, tiempo ${mins(ct.time)} vs ${mins(cf.time)}). La calidad estimada es ${higher===5?\"mayor en las 5 áreas\":`mayor en ${higher} áreas e igual en ${tie}`}.",
+"ja": "基準設定の${shortLab(from[0])} ${LVK[from[1]]}を${shortLab(to[0])} ${LVK[to[1]]}に替えたときのタスク当たりコストです（AA ${money(ct.cost)} vs ${money(cf.cost)}、時間 ${mins(ct.time)} vs ${mins(cf.time)}）。推定品質は${higher===5?\"5業務すべてで高い\":`${higher}業務で高く、${tie}業務で同等`}です。"
+},
+"/과제 ·": {
+"en": "/task ·",
+"es": "/tarea ·",
+"ja": "/タスク ·"
+},
+"전 벤더 가성비": {
+"en": "Best value, all vendors",
+"es": "Valor entre todos los proveedores",
+"ja": "全ベンダーのコスパ"
+},
+"Claude 밖": {
+"en": "Outside Claude",
+"es": "Fuera de Claude",
+"ja": "Claude以外"
+},
+"최고품질": {
+"en": "Top quality",
+"es": "Máxima calidad",
+"ja": "最高品質"
+},
+"가성비": {
+"en": "Value",
+"es": "Valor",
+"ja": "コスパ"
+},
+"속도": {
+"en": "Speed",
+"es": "Velocidad",
+"ja": "速度"
+},
+"확인할 실측:": {
+"en": "Test to check:",
+"es": "Prueba para comprobarlo:",
+"ja": "確かめる実測："
+},
+"전체 모델 순위 ·": {
+"en": "Full model ranking ·",
+"es": "Clasificación de todos los modelos ·",
+"ja": "全モデル順位 ·"
+},
+"<span><b>${esc(tn)} 1위는 ${esc(shortLab(rows[0].mid))} ${lvName(rows[0].mid, rows[0].lv)}(${f1(top)}점).</b> Anthropic 밖 최고는 ${esc(MB[nonClaude.mid].label)} ${lvName(nonClaude.mid, nonClaude.lv)}(${f1(nonClaude.s)}점, ${money(nonClaude.c.cost)}/과제)입니다. 1위 점수의 90% 이상을 가장 싸게 내는 조합은 ${esc(shortLab(cheap90.mid))} ${lvName(cheap90.mid, cheap90.lv)}(${money(cheap90.c.cost)})입니다.</span>": {
+"en": "<span><b>No. 1 in ${esc(tn)} is ${esc(shortLab(rows[0].mid))} ${lvName(rows[0].mid, rows[0].lv)} (${f1(top)} pts).</b> The best outside Anthropic is ${esc(MB[nonClaude.mid].label)} ${lvName(nonClaude.mid, nonClaude.lv)} (${f1(nonClaude.s)} pts, ${money(nonClaude.c.cost)}/task). The cheapest combination reaching 90%+ of the top score is ${esc(shortLab(cheap90.mid))} ${lvName(cheap90.mid, cheap90.lv)} (${money(cheap90.c.cost)}).</span>",
+"es": "<span><b>El n.º 1 en ${esc(tn)} es ${esc(shortLab(rows[0].mid))} ${lvName(rows[0].mid, rows[0].lv)} (${f1(top)} pts).</b> El mejor fuera de Anthropic es ${esc(MB[nonClaude.mid].label)} ${lvName(nonClaude.mid, nonClaude.lv)} (${f1(nonClaude.s)} pts, ${money(nonClaude.c.cost)}/tarea). La combinación más barata con el 90%+ de la puntuación del n.º 1 es ${esc(shortLab(cheap90.mid))} ${lvName(cheap90.mid, cheap90.lv)} (${money(cheap90.c.cost)}).</span>",
+"ja": "<span><b>${esc(tn)}の1位は${esc(shortLab(rows[0].mid))} ${lvName(rows[0].mid, rows[0].lv)}（${f1(top)}点）。</b> Anthropic以外の最高は${esc(MB[nonClaude.mid].label)} ${lvName(nonClaude.mid, nonClaude.lv)}（${f1(nonClaude.s)}点、${money(nonClaude.c.cost)}/タスク）です。1位のスコアの90%以上を最も安く出す組み合わせは${esc(shortLab(cheap90.mid))} ${lvName(cheap90.mid, cheap90.lv)}（${money(cheap90.c.cost)}）です。</span>"
+},
+"모델 · 노력": {
+"en": "Model · effort",
+"es": "Modelo · esfuerzo",
+"ja": "モデル · 思考量"
+},
+"벤더": {
+"en": "Vendor",
+"es": "Proveedor",
+"ja": "ベンダー"
+},
+"업무 점수": {
+"en": "Work score",
+"es": "Puntuación por área",
+"ja": "業務スコア"
+},
+"AA 지수": {
+"en": "AA index",
+"es": "Índice AA",
+"ja": "AA指数"
+},
+"과제당 비용": {
+"en": "Cost per task",
+"es": "Costo por tarea",
+"ja": "タスク当たりコスト"
+},
+"과제당 시간": {
+"en": "Time per task",
+"es": "Tiempo por tarea",
+"ja": "タスク当たり時間"
+},
+"점수/$": {
+"en": "Score/$",
+"es": "Puntos/$",
+"ja": "スコア/$"
+},
+"오픈 웨이트": {
+"en": "Open weights",
+"es": "Pesos abiertos",
+"ja": "オープンウェイト"
+},
+"상위 40개 조합. 점수/$는 과제당 1달러로 얻는 업무 점수(높을수록 가성비). Muse Wonder Full은 공개 API가 없어 비용이 없습니다.": {
+"en": "Top 40 combinations. Score/$ is the work score per $1 of task cost (higher is better value). Muse Wonder Full has no public API, so no cost.",
+"es": "Las 40 mejores combinaciones. Puntos/$ es la puntuación por área que se obtiene por cada $1 de costo por tarea (cuanto más alto, mejor valor). Muse Wonder Full no tiene API pública, así que no tiene costo.",
+"ja": "上位40通り。スコア/$はタスク当たり$1で得られる業務スコア（高いほどコスパが良い）。Muse Wonder Fullは公開APIがなく、コストがありません。"
+},
+"가성비 지도 ·": {
+"en": "Value map ·",
+"es": "Mapa de valor ·",
+"ja": "コスパマップ ·"
+},
+"그 밖": {
+"en": "Others",
+"es": "Otros",
+"ja": "そのほか"
+},
+"효율적 프론티어": {
+"en": "Efficient frontier",
+"es": "Frontera eficiente",
+"ja": "効率的フロンティア"
+},
+"프론티어 위 조합 (싼 순)": {
+"en": "Combinations on the frontier (cheapest first)",
+"es": "Combinaciones en la frontera (de más barata a más cara)",
+"ja": "フロンティア上の組み合わせ（安い順）"
+},
+"한 단계 위로 갈 때 +$1당 점수": {
+"en": "Score per +$1 when moving one step up",
+"es": "Puntos por cada +$1 al subir un escalón",
+"ja": "一段上に行くときの+$1当たりスコア"
+},
+"프론티어": {
+"en": "Frontier",
+"es": "Frontera",
+"ja": "フロンティア"
+},
+"과제당 비용 (USD, 로그 눈금)": {
+"en": "Cost per task (USD, log scale)",
+"es": "Costo por tarea (USD, escala logarítmica)",
+"ja": "タスク当たりコスト（USD、対数目盛）"
+},
+"점 ·": {
+"en": " pts ·",
+"es": " pts ·",
+"ja": "点 ·"
+},
+"출시": {
+"en": "Released",
+"es": "Lanzamiento",
+"ja": "発売"
+},
+"입력/출력 단가 ($/1M)": {
+"en": "Input/output price ($/1M)",
+"es": "Precio de entrada/salida ($/1M)",
+"ja": "入力/出力単価（$/1M）"
+},
+"측정된 노력": {
+"en": "Efforts measured",
+"es": "Esfuerzos medidos",
+"ja": "測定済みの思考量"
+},
+"최고 AA 지수": {
+"en": "Best AA index",
+"es": "Mejor índice AA",
+"ja": "最高AA指数"
+},
+"날짜": {
+"en": "Date",
+"es": "Fecha",
+"ja": "日付"
+},
+"핵심": {
+"en": "Highlights",
+"es": "Clave",
+"ja": "要点"
+},
+"출처": {
+"en": "Source",
+"es": "Fuente",
+"ja": "出典"
+},
+"노력 단계 ·": {
+"en": "Effort levels ·",
+"es": "Niveles de esfuerzo ·",
+"ja": "思考量 ·"
+},
+"기본값": {
+"en": "Default",
+"es": "Por defecto",
+"ja": "既定値"
+},
+"출력 토큰": {
+"en": "Output tokens",
+"es": "Tokens de salida",
+"ja": "出力トークン"
+},
+"출력 속도": {
+"en": "Output speed",
+"es": "Velocidad de salida",
+"ja": "出力速度"
+},
+"<span><b>${esc(shortLab(mid))}: 가장 낮은 단계에서 가장 높은 단계까지 비용 ×${f1(hi.cost/lo.cost)}, 시간 ×${f1(hi.time/lo.time)}, AA 지수 ${lo.ii} → ${hi.ii}.</b> 5개 업무 평균 점수가 가장 높은 단계는 ${LVK[bestAvg]}입니다.${drops.length ? ` 최고 단계에서 오히려 떨어지는 벤치: ${esc(drops.join(\", \"))}.` : \"\"}${X.effNotes[mid] ? \" \" + esc(X.effNotes[mid]) : \"\"}</span>": {
+"en": "<span><b>${esc(shortLab(mid))}: from the lowest to the highest level, cost ×${f1(hi.cost/lo.cost)}, time ×${f1(hi.time/lo.time)}, AA index ${lo.ii} → ${hi.ii}.</b> The level with the highest average score across the 5 work areas is ${LVK[bestAvg]}.${drops.length ? ` Benchmarks that fall at the top level: ${esc(drops.join(\", \"))}.` : \"\"}${X.effNotes[mid] ? \" \" + esc(X.effNotes[mid]) : \"\"}</span>",
+"es": "<span><b>${esc(shortLab(mid))}: del nivel más bajo al más alto, costo ×${f1(hi.cost/lo.cost)}, tiempo ×${f1(hi.time/lo.time)}, índice AA ${lo.ii} → ${hi.ii}.</b> El nivel con la mayor puntuación media en las 5 áreas es ${LVK[bestAvg]}.${drops.length ? ` Pruebas que bajan en el nivel más alto: ${esc(drops.join(\", \"))}.` : \"\"}${X.effNotes[mid] ? \" \" + esc(X.effNotes[mid]) : \"\"}</span>",
+"ja": "<span><b>${esc(shortLab(mid))}：最も低い段階から最も高い段階までで、コスト ×${f1(hi.cost/lo.cost)}、時間 ×${f1(hi.time/lo.time)}、AA指数 ${lo.ii} → ${hi.ii}。</b> 5業務の平均スコアが最も高い段階は${LVK[bestAvg]}です。${drops.length ? ` 最高段階でかえって下がるベンチ：${esc(drops.join(\", \"))}。` : \"\"}${X.effNotes[mid] ? \" \" + esc(X.effNotes[mid]) : \"\"}</span>"
+},
+"가볍게 (75%)": {
+"en": "Light (75%)",
+"es": "Ligero (75%)",
+"ja": "軽く（75%）"
+},
+"기본 (90%)": {
+"en": "Default (90%)",
+"es": "Base (90%)",
+"ja": "標準（90%）"
+},
+"최종본 (97%)": {
+"en": "Final draft (97%)",
+"es": "Versión final (97%)",
+"ja": "最終版（97%）"
+},
+"최고": {
+"en": "Best",
+"es": "Mejor",
+"ja": "最高"
+},
+"최고점": {
+"en": "Best score",
+"es": "Mejor puntuación",
+"ja": "最高点"
+},
+"벤치": {
+"en": "Benchmark",
+"es": "Prueba",
+"ja": "ベンチ"
+},
+"전환": {
+"en": "Switch",
+"es": "Cambio",
+"ja": "切り替え"
+},
+"비용": {
+"en": "Cost",
+"es": "Costo",
+"ja": "コスト"
+},
+"시간": {
+"en": "Time",
+"es": "Tiempo",
+"ja": "時間"
+},
+"과제당 시간(분)": {
+"en": "Time per task (min)",
+"es": "Tiempo por tarea (min)",
+"ja": "タスク当たり時間（分）"
+},
+"모델 × 업무 ·": {
+"en": "Model × work area ·",
+"es": "Modelo × área ·",
+"ja": "モデル × 業務 ·"
+},
+"모델별 최고 단계": {
+"en": "best level per model",
+"es": "mejor nivel por modelo",
+"ja": "モデル別の最高段階"
+},
+"API 없음": {
+"en": "No API",
+"es": "Sin API",
+"ja": "APIなし"
+},
+"미측정": {
+"en": "Not measured",
+"es": "Sin medir",
+"ja": "未測定"
+},
+": 점수": {
+"en": ": score",
+"es": ": puntuación",
+"ja": "：スコア"
+},
+"/과제,": {
+"en": "/task,",
+"es": "/tarea,",
+"ja": "/タスク、"
+},
+"(업무 점수는 추정)": {
+"en": "(work scores are estimates)",
+"es": "(las puntuaciones por área son estimaciones)",
+"ja": "（業務スコアは推定）"
+},
+"대결": {
+"en": "Matchup",
+"es": "Duelo",
+"ja": "対決"
+},
+"판정": {
+"en": "Verdict",
+"es": "Veredicto",
+"ja": "判定"
+},
+"동급": {
+"en": "On par",
+"es": "Empate",
+"ja": "同等"
+},
+"· 비용 ×": {
+"en": "· cost ×",
+"es": "· costo ×",
+"ja": "· コスト ×"
+},
+"왼쪽 = Haiku 5.5 최대, 오른쪽 = Muse Ember 최대. 오른쪽이 높으면 초록.": {
+"en": "Left = Haiku 5.5 Max, right = Muse Ember Max. Green when the right is higher.",
+"es": "Izquierda = Haiku 5.5 máximo, derecha = Muse Ember máximo. Verde si la derecha es más alta.",
+"ja": "左 = Haiku 5.5 最大、右 = Muse Ember 最大。右が高ければ緑。"
+},
+"구버전": {
+"en": "Older version",
+"es": "Versión anterior",
+"ja": "旧バージョン"
+},
+"쓸 이유": {
+"en": "Reason to use",
+"es": "Motivo para usarla",
+"ja": "使う理由"
+},
+"근거": {
+"en": "Basis",
+"es": "Fundamento",
+"ja": "根拠"
+},
+"기록 JSON을 복사했습니다": {
+"en": "Records JSON copied",
+"es": "JSON de registros copiado",
+"ja": "記録のJSONをコピーしました"
+},
+"예": {
+"en": "Yes",
+"es": "Sí",
+"ja": "はい"
+},
+"아니오": {
+"en": "No",
+"es": "No",
+"ja": "いいえ"
+},
+"저장했습니다. 모든 표에 실측으로 반영됩니다.": {
+"en": "Saved. It now shows as measured in every table.",
+"es": "Guardado. Ya aparece como medición en todas las tablas.",
+"ja": "保存しました。すべての表に実測として反映されます。"
+},
+"이 보기에서는 저장 권한이 없습니다.": {
+"en": "This view has no permission to save.",
+"es": "Esta vista no tiene permiso para guardar.",
+"ja": "この表示では保存する権限がありません。"
+},
+"저장 공간이 가득 찼습니다. 오래된 기록을 지워주세요.": {
+"en": "Storage is full. Please delete old records.",
+"es": "El almacenamiento está lleno. Borra registros antiguos.",
+"ja": "保存領域がいっぱいです。古い記録を消してください。"
+},
+"저장하지 못했습니다. 잠시 후 다시 시도하세요.": {
+"en": "Could not save. Try again shortly.",
+"es": "No se pudo guardar. Inténtalo de nuevo en un momento.",
+"ja": "保存できませんでした。しばらくしてからもう一度お試しください。"
+},
+"이 화면에만 임시 저장했습니다. JSON 복사로 보관하세요.": {
+"en": "Saved temporarily on this screen only. Keep a copy with Copy JSON.",
+"es": "Guardado solo de forma temporal en esta pantalla. Consérvalo con Copiar JSON.",
+"ja": "この画面にだけ一時保存しました。JSONをコピーして保管してください。"
+},
+"삭제했습니다.": {
+"en": "Deleted.",
+"es": "Borrado.",
+"ja": "削除しました。"
+},
+"삭제하지 못했습니다.": {
+"en": "Could not delete.",
+"es": "No se pudo borrar.",
+"ja": "削除できませんでした。"
+},
+"JSON 형식이 올바르지 않습니다.": {
+"en": "The JSON format is not valid.",
+"es": "El formato del JSON no es válido.",
+"ja": "JSONの形式が正しくありません。"
+},
+"건을 가져왔습니다": {
+"en": " records imported",
+"es": " registros importados",
+"ja": "件を取り込みました"
+},
+"건은 형식 오류로 제외)": {
+"en": " skipped for format errors)",
+"es": " excluidos por error de formato)",
+"ja": "件は形式エラーで除外）"
+},
+"완료": {
+"en": "done",
+"es": "completadas",
+"ja": "完了"
+},
+"조합": {
+"en": "Combination",
+"es": "Combinación",
+"ja": "組み合わせ"
+},
+"확인하려는 것": {
+"en": "What it checks",
+"es": "Qué se quiere comprobar",
+"ja": "確かめたいこと"
+},
+"추정 점수": {
+"en": "Estimated score",
+"es": "Puntuación estimada",
+"ja": "推定スコア"
+},
+"상태": {
+"en": "Status",
+"es": "Estado",
+"ja": "状態"
+},
+"대기": {
+"en": "Pending",
+"es": "Pendiente",
+"ja": "待機"
+},
+"입력": {
+"en": "Enter",
+"es": "Introducir",
+"ja": "入力"
+},
+"차이": {
+"en": "Gap",
+"es": "Diferencia",
+"ja": "差"
+},
+"(v5 미측정 모델)": {
+"en": "(model not measured on v5)",
+"es": "(modelo sin medir en v5)",
+"ja": "（v5未測定のモデル）"
+},
+"아직 실측이 없습니다. 계획표 1번부터 시작하세요.": {
+"en": "No measurements yet. Start from No. 1 in the plan.",
+"es": "Aún no hay mediciones. Empieza por la n.º 1 del plan.",
+"ja": "まだ実測がありません。計画表の1番から始めてください。"
+},
+"일시": {
+"en": "Date and time",
+"es": "Fecha y hora",
+"ja": "日時"
+},
+"고정": {
+"en": "Fixed",
+"es": "Fijo",
+"ja": "固定"
+},
+"삭제": {
+"en": "Delete",
+"es": "Borrar",
+"ja": "削除"
+},
+"저장된 기록이 없습니다.": {
+"en": "No saved records.",
+"es": "No hay registros guardados.",
+"ja": "保存された記録はありません。"
+},
+"실측 기록이 이 문서에 영구 저장됩니다": {
+"en": "Test records are saved permanently in this document",
+"es": "Los registros de pruebas se guardan de forma permanente en este documento",
+"ja": "実測の記録はこの文書に永続保存されます"
+},
+"저장소 없음: 이 화면에만 임시 저장 (JSON 복사로 보관)": {
+"en": "No storage: saved temporarily on this screen only (keep a copy with Copy JSON)",
+"es": "Sin almacenamiento: guardado temporal solo en esta pantalla (consérvalo con Copiar JSON)",
+"ja": "保存先なし：この画面にだけ一時保存（JSONをコピーして保管）"
+},
+"AA 벤치": {
+"en": "AA benchmark",
+"es": "Prueba de AA",
+"ja": "AAベンチ"
+},
+"무엇을 재나": {
+"en": "What it measures",
+"es": "Qué mide",
+"ja": "何を測るか"
+},
+"AA 지수 비중": {
+"en": "Weight in AA index",
+"es": "Peso en el índice AA",
+"ja": "AA指数での比重"
+},
+"지수": {
+"en": "Index",
+"es": "Índice",
+"ja": "指数"
+},
+"$/과제": {
+"en": "$/task",
+"es": "$/tarea",
+"ja": "$/タスク"
+},
+"분/과제": {
+"en": "min/task",
+"es": "min/tarea",
+"ja": "分/タスク"
+},
+"API 기본": {
+"en": "API default",
+"es": "API por defecto",
+"ja": "APIの既定"
+},
+"앱 기본": {
+"en": "App default",
+"es": "App por defecto",
+"ja": "アプリの既定"
+},
+"단가 ($/1M)": {
+"en": "Price ($/1M)",
+"es": "Precio ($/1M)",
+"ja": "単価（$/1M）"
+},
+"기관": {
+"en": "Organization",
+"es": "Organización",
+"ja": "機関"
+},
+"자료": {
+"en": "Material",
+"es": "Material",
+"ja": "資料"
+},
+"선택했습니다. Ctrl/⌘+C로 복사하세요.": {
+"en": "Selected. Copy with Ctrl/⌘+C.",
+"es": "Seleccionado. Copia con Ctrl/⌘+C.",
+"ja": "選択しました。Ctrl/⌘+Cでコピーしてください。"
+},
+"아래 칸에 JSON을 띄웠습니다. 전체 복사하세요.": {
+"en": "The JSON is shown in the box below. Copy all of it.",
+"es": "El JSON aparece en el cuadro de abajo. Cópialo entero.",
+"ja": "下の欄にJSONを表示しました。全体をコピーしてください。"
+},
+"복사했습니다": {
+"en": "Copied",
+"es": "Copiado",
+"ja": "コピーしました"
+}
+}

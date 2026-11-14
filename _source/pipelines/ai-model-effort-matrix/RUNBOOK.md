@@ -33,3 +33,19 @@ Outputs (repo root): `p/ai-models/index.html` (full Korean dashboard, standalone
 - Never publish numbers that were not read from an AA page this run. If a model's page cannot be fetched, keep last month's row only if AA still lists the same values on its leaderboard; otherwise drop the model and say so.
 - Scores are a weighted mapping of AA benchmarks (estimates); say so on the page.
 - Credit line: stayhungryasi.com
+
+## Four languages (since 2026-11-14)
+
+The dashboard is published in Korean (`/p/ai-models/`) plus English, Spanish and Japanese (`/p/ai-models/en/`, `/es/`, `/ja/`).
+
+After step 7 (build + check), always run:
+
+```
+python3 translate6.py ../../../p/ai-models/index.html
+```
+
+- `seg6.py` finds every piece of Korean text in the built page; `tr6.json` maps each piece to `{en, es, ja}`.
+- A piece with no translation stops the run and is listed. Add it to `tr6.json` and run again. Sentences that carry this month's numbers are new every month, so expect a few dozen. Rules: same numbers, same `${...}` expressions and `\n` escapes, no raw double quotes inside a translation, hub wording (ja 思考量 / 業務 / コスパ, es esfuerzo / área / valor, levels as in `tr6.json`).
+- The script also adds the language bar, hreflang links and the language redirect to the Korean page (safe to run twice).
+- Check: open all 8 tabs in each language, no Korean left, no console errors, charts drawn.
+- The hub links to the edition of the reader's language (`mdUrl()` in `_source/page.html`); the sitemap lists all four (`_source/build.py`).

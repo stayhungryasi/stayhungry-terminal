@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Dashboard mapping 27 current major AI models × effort levels = 62 combinations onto five work areas, all on one yardstick, the Artificial Analysis index v5.0.1. As of 2026-11-11, updated monthly.">
+<link rel="canonical" href="https://stayhungryasi.com/p/ai-models/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Model × Effort Matrix · stayhungryasi.com">
+<meta property="og:description" content="Dashboard mapping 27 current major AI models × effort levels = 62 combinations onto five work areas, all on one yardstick, the Artificial Analysis index v5.0.1. As of 2026-11-11, updated monthly.">
+<meta property="og:url" content="https://stayhungryasi.com/p/ai-models/en/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@shaferwineX">
+<meta name="theme-color" content="#0A0B0F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0B0F'/%3E%3Cpath d='M5 22c7 5 16 4 21-9' stroke='%234FE0EF' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='26' cy='12' r='3' fill='%234FE0EF'/%3E%3C/svg%3E">
+<title>AI Model × Effort Matrix · stayhungryasi.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one-column command deck — brand strip, sticky tab rail, one filter row, then the active panel. Cards only for charts, picks and the kit form. Dark-first (UnivertriX night), light = UnivertriX day. */
+:root{
+  color-scheme:dark;
+  --bg:#0A0B0F; --surface:#111319; --surface-2:#171A22; --line:#252935; --grid:#1F222B; --axis:#353947;
+  --ink:#EDEFF5; --ink-2:#A8ADBB; --ink-3:#7C8293;
+  --brand-a:#8B93FF; --brand-b:#4FE0EF; --accent:#8B93FF; --accent-ink:#0A0B0F; --accent-wash:rgba(139,147,255,.14);
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s0:#6C7182; --g1:#d55181; --g2:#c98500;
+  --h0:#141A27; --h1:#173763; --h2:#1C5CAB; --h3:#3987E5; --h4:#93BFF3;
+  --good:#0ca30c; --warn:#fab219; --crit:#d03b3b;
+  --font-ui:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --font-brush:"Nanum Brush Script","Nanum Pen Script",cursive;
+  --r:10px;
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  color-scheme:light;
+  --bg:#FBFBFC; --surface:#FFFFFF; --surface-2:#F2F3F7; --line:#E1E3EA; --grid:#ECEEF2; --axis:#C8CBD4;
+  --ink:#16181D; --ink-2:#4A4F5E; --ink-3:#727786;
+  --brand-a:#565CE8; --brand-b:#3EC8D8; --accent:#565CE8; --accent-ink:#FFFFFF; --accent-wash:rgba(86,92,232,.10);
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s0:#9A9EAB; --g1:#e87ba4; --g2:#eda100;
+  --h0:#EEF4FD; --h1:#B7D3F6; --h2:#6DA7EC; --h3:#2A78D6; --h4:#184F95;
+}}
+:root[data-theme="light"]{
+  color-scheme:light;
+  --bg:#FBFBFC; --surface:#FFFFFF; --surface-2:#F2F3F7; --line:#E1E3EA; --grid:#ECEEF2; --axis:#C8CBD4;
+  --ink:#16181D; --ink-2:#4A4F5E; --ink-3:#727786;
+  --brand-a:#565CE8; --brand-b:#3EC8D8; --accent:#565CE8; --accent-ink:#FFFFFF; --accent-wash:rgba(86,92,232,.10);
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s0:#9A9EAB; --g1:#e87ba4; --g2:#eda100;
+  --h0:#EEF4FD; --h1:#B7D3F6; --h2:#6DA7EC; --h3:#2A78D6; --h4:#184F95;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-ui);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:18px 40px}
+@media (max-width:520px){.wrap{padding-inline:16px}}
+h1,h2,h3{margin:0;text-wrap:balance;line-height:1.3}
+h1{font-size:24px;font-weight:700;letter-spacing:-.01em}
+h2{font-size:18px;font-weight:600}
+h3{font-size:15px;font-weight:600}
+p{margin:0}
+a{color:var(--accent)}
+.muted{color:var(--ink-2)}
+.faint{color:var(--ink-3)}
+.mono{font-family:var(--font-mono)}
+.num{font-variant-numeric:tabular-nums}
+button,select,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+/* brand strip */
+.brandbar{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px 24px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.lockup{display:inline-flex;align-items:center;text-decoration:none;border-radius:6px}
+.lockup:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.shlogo{display:block;height:46px;width:auto;overflow:visible}
+.titleblock{display:grid;gap:4px;min-width:0}
+.titleblock .sub{color:var(--ink-2);font-size:13px}
+.metaline{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:12px;color:var(--ink-3)}
+
+/* badges */
+.bdg{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:500;line-height:1;padding:4px 7px;border-radius:999px;white-space:nowrap;vertical-align:middle}
+.bdg.v{background:var(--surface-2);color:var(--ink);border:1px solid var(--ink-3)}
+.bdg.v::before{content:"✓";font-size:10px}
+.bdg.e{color:var(--ink-2);border:1px dashed var(--ink-3);opacity:.9}
+.bdg.e::before{content:"≈";font-size:11px}
+.bdg.u{background:var(--surface-2);color:var(--ink-3);border:1px solid var(--line)}
+.bdg.u::before{content:"?";font-size:10px}
+.bdg.m{background:var(--accent);color:var(--accent-ink);border:1px solid var(--accent)}
+.bdg.x{color:var(--ink);border:1px solid var(--accent);background:var(--accent-wash)}
+.bdg.x::before{content:"!";font-size:10px;font-weight:700}
+.bdg.m::before{content:"●";font-size:8px}
+
+/* tabs + filters */
+.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px 10px;border-bottom:1px solid var(--line);margin-bottom:18px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px}
+.tab{border:1px solid var(--line);background:var(--surface);padding:7px 12px;border-radius:999px;cursor:pointer;font-size:13px;color:var(--ink-2)}
+.tab:hover{border-color:var(--ink-3);color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:600}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:10px;align-items:center}
+.fgroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.flabel{font-size:12px;color:var(--ink-3);margin-right:2px}
+.chip{border:1px solid var(--line);background:transparent;padding:5px 10px;border-radius:8px;cursor:pointer;font-size:12.5px;color:var(--ink-2)}
+.chip:hover{color:var(--ink);border-color:var(--ink-3)}
+.chip[aria-pressed="true"]{background:var(--accent-wash);border-color:var(--accent);color:var(--ink);font-weight:600}
+.chip .mono{font-size:11px;color:var(--ink-3);margin-left:4px}
+
+.panel{display:grid;gap:22px}
+.sec{display:grid;gap:12px;align-content:start}
+.sechead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
+.lede{color:var(--ink-2);max-width:70ch}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
+.grid5{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+.min0{min-width:0}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:22px;align-items:center}
+@media (max-width:820px){.hero{grid-template-columns:1fr}}
+.herofig{font-size:56px;font-weight:700;line-height:1;letter-spacing:-.02em}
+.herofig small{font-size:20px;font-weight:600;color:var(--ink-2);margin-left:4px}
+.herocap{margin-top:8px;color:var(--ink-2);max-width:42ch}
+.swap{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px;font-size:13px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);font-weight:600;font-size:13px;white-space:nowrap}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none;box-shadow:0 0 0 2px var(--surface)}
+.tile{border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;gap:2px;background:var(--surface-2)}
+.tile .k{font-size:12px;color:var(--ink-2)}
+.tile .v{font-size:20px;font-weight:600}
+.tile .d{font-size:12px;color:var(--ink-3)}
+.up{color:var(--good)} .dn{color:var(--crit)}
+
+/* pick cards */
+.taskcard{display:grid;gap:10px}
+.taskcard h3{display:flex;align-items:center;gap:8px}
+.tcode{font-family:var(--font-mono);font-size:11px;color:var(--ink-3);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+.pick{display:grid;grid-template-columns:74px minmax(0,1fr);gap:4px 10px;padding-top:10px;border-top:1px solid var(--line)}
+.pick .role{font-size:12px;color:var(--ink-3);padding-top:3px}
+.pick .combo{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:600}
+.lvl{font-size:11.5px;font-weight:600;padding:2px 7px;border-radius:5px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink)}
+.pick .stats{font-size:12px;color:var(--ink-2)}
+.pick .why{grid-column:2;font-size:12.5px;color:var(--ink-2)}
+.findings{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.findings li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}
+.findings li:first-child{border-top:0;padding-top:0}
+.unc{display:grid;gap:10px}
+.unc .item{display:grid;gap:4px;padding:10px 12px;border:1px dashed var(--ink-3);border-radius:8px}
+.unc .item b{font-weight:600}
+
+/* tables */
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-weight:600;color:var(--ink-2);font-size:12px;background:var(--surface-2);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.r,th.r{text-align:right}
+.est{font-style:italic;color:var(--ink-2)}
+.unk{color:var(--ink-3)}
+
+/* heatmap */
+.heat{border-collapse:separate;border-spacing:3px;min-width:760px;background:var(--surface)}
+.heat th{background:transparent;border:0;padding:6px 6px;vertical-align:bottom}
+.heat td{border:0;padding:0}
+.heat td.mlabel{padding:6px 8px;white-space:nowrap}
+.mname{font-weight:600;display:flex;align-items:center;gap:6px}
+.mtag{font-size:10.5px;font-weight:500;color:var(--ink-3);border:1px solid var(--line);border-radius:4px;padding:0 4px}
+.mii{font-size:11px;color:var(--ink-3)}
+.hc{position:relative;display:grid;gap:1px;align-content:center;min-height:54px;padding:6px 8px;border-radius:6px;border:1.5px dashed rgba(127,127,127,.45)}
+.hc .sv{font-size:17px;font-weight:600;line-height:1.1}
+.hc .uv{font-size:11px;opacity:.85}
+.hc.na{background:var(--surface-2);color:var(--ink-3);border:1px solid var(--line);font-size:12px;text-align:center}
+.hc.meas{border:2px solid var(--accent)}
+.hc .mv{font-size:10.5px;font-weight:600;background:var(--accent);color:var(--accent-ink);border-radius:4px;padding:0 4px;justify-self:start;margin-top:2px}
+.hc .fx{position:absolute;top:4px;right:6px;font-size:10px;opacity:.8}
+.scale{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-2)}
+.scalebar{height:10px;width:180px;border-radius:5px;border:1px solid var(--line)}
+.sep-row td{padding-top:10px}
+.grouplabel{font-size:11.5px;color:var(--ink-3);letter-spacing:.06em}
+
+/* charts */
+.chartbox{position:relative;height:320px}
+.chartbox.sm{height:230px}
+.chartnote{font-size:12.5px;color:var(--ink-2);margin-top:8px}
+details.tv{margin-top:10px}
+details.tv summary{cursor:pointer;font-size:12.5px;color:var(--ink-2)}
+details.tv[open] summary{margin-bottom:8px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.lk{width:16px;height:2px;border-radius:1px;display:inline-block}
+.tri{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid var(--accent);display:inline-block}
+.knees{display:grid;gap:4px;font-size:12.5px;color:var(--ink-2);margin-top:8px}
+
+/* crossover */
+.xm td{min-width:150px}
+.xw{display:grid;gap:2px}
+.xw .w{font-weight:600;font-size:13px}
+.xw .d{font-size:11.5px;color:var(--ink-2)}
+.xw.tie .w{color:var(--ink-2)}
+.pairq{display:grid;gap:3px;min-width:220px}
+.pairq b{font-weight:600}
+.ev{display:grid;gap:6px;font-size:12.5px}
+.ev .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:10px;border-bottom:1px dashed var(--line);padding-bottom:5px}
+.ev .row .num{text-align:right}
+@media (max-width:520px){.shlogo{height:36px}.herofig{font-size:48px}}
+
+/* kit */
+.form{display:grid;gap:12px}
+.frow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:10px}
+label.f{display:grid;gap:4px;font-size:12.5px;color:var(--ink-2)}
+select,input[type=number],input[type=text],textarea{background:var(--surface-2);border:1px solid var(--line);border-radius:7px;padding:7px 9px;color:var(--ink);width:100%}
+textarea{min-height:90px;resize:vertical;font-family:var(--font-mono);font-size:12px}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.crit{display:grid;grid-template-columns:minmax(0,1fr) 52px;gap:6px 12px;align-items:center}
+.crit .val{font-family:var(--font-mono);text-align:right;font-size:13px}
+.btn{border:1px solid var(--line);background:var(--surface-2);padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:600;font-size:13px}
+.btn:hover{border-color:var(--ink-3)}
+.btn.pri{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.ghost{background:transparent}
+.btn.sm{padding:5px 10px;font-size:12px}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.scorebig{font-size:30px;font-weight:700;line-height:1}
+pre.prompt{white-space:pre-wrap;word-break:break-word;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:12px;font-family:var(--font-mono);font-size:12px;line-height:1.55;margin:0;max-height:260px;overflow:auto}
+.status{font-size:12px;display:inline-flex;align-items:center;gap:6px;color:var(--ink-2)}
+.status i{width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--ink-3)}
+.status.on i{background:var(--good)}
+.status.off i{background:var(--warn)}
+.done{font-weight:600}
+.done::before{content:"✓ ";color:var(--good)}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 14px;border-radius:8px;font-size:13px;z-index:20;max-width:calc(100% - 32px)}
+ol.steps{margin:0;padding-left:20px;display:grid;gap:4px;color:var(--ink-2)}
+/* opus effort tab */
+.ladder{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+@media (max-width:820px){.ladder{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))}}
+.rung{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:12px;display:grid;gap:6px;align-content:start}
+.rung.def{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.rung .lv{display:flex;align-items:center;justify-content:space-between;gap:6px;font-weight:600}
+.rung .lv .mono{font-size:11px;color:var(--ink-3);font-weight:400}
+.rung .ii{font-size:30px;font-weight:700;line-height:1}
+.rung .ii small{font-size:12px;font-weight:500;color:var(--ink-3);margin-left:4px}
+.rung dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:2px 8px;font-size:12px}
+.rung dt{color:var(--ink-3)}
+.rung dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
+.rung .tag{font-size:10.5px;font-weight:600;color:var(--accent-ink);background:var(--accent);border-radius:4px;padding:1px 5px}
+.callout{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;background:var(--surface);padding:12px 14px;display:grid;gap:4px}
+.callout b{font-weight:600}
+.rec3{display:grid;gap:8px}
+.rec3 .row{display:grid;grid-template-columns:62px minmax(0,1fr);gap:4px 10px;padding-top:8px;border-top:1px solid var(--line)}
+.rec3 .row .role{font-size:12px;color:var(--ink-3);padding-top:2px}
+.rec3 .row .what{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-weight:600}
+.rec3 .row p{grid-column:2;font-size:12.5px;color:var(--ink-2)}
+.ohc{display:grid;gap:1px;align-content:center;min-height:56px;padding:6px 8px;border-radius:6px;position:relative}
+.ohc .sv{font-size:16px;font-weight:600;line-height:1.1}
+.ohc .uv{font-size:11px;opacity:.85}
+.ohc .lab{justify-self:start;font-size:10px;font-weight:600;padding:0 4px;border-radius:4px;background:rgba(0,0,0,.35);color:#fff;line-height:1.5}
+.ohc.def{outline:2px solid var(--accent);outline-offset:-2px}
+.ohc .mv{font-size:10.5px;font-weight:600;background:var(--accent);color:var(--accent-ink);border-radius:4px;padding:0 4px;justify-self:start;margin-top:2px}
+.oheat{border-collapse:separate;border-spacing:3px;min-width:520px;background:var(--surface)}
+.oheat th{background:transparent;border:0;padding:4px 6px}
+.oheat td{border:0;padding:0}
+.oheat td.tl{padding:6px 8px;white-space:nowrap;font-weight:600}
+#esInputs input{width:64px;padding:4px 6px}
+#esInputs td:first-child{white-space:nowrap}
+#esInputs td,#esInputs th{padding:6px 6px}
+.save{font-weight:600}
+.cols3 h3{display:flex;align-items:center;gap:6px}
+.evlist{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--ink-2);font-size:13px}
+/* gpt tab */
+.gbar{position:relative;height:12px;background:var(--surface-2);border-radius:3px;min-width:140px}
+.gbar i{position:absolute;top:0;bottom:0;border-radius:3px}
+.gbar .mid{position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--axis)}
+.gtag{font-size:11px;color:var(--ink-3);white-space:nowrap}
+.ghc{display:grid;gap:1px;align-content:center;min-height:46px;padding:5px 8px;border-radius:6px;position:relative}
+.ghc .sv{font-size:15px;font-weight:600;line-height:1.1}
+.ghc .uv{font-size:11px;opacity:.85}
+.ghc.gpick{outline:2px solid var(--accent);outline-offset:-2px}
+.ghc .mv{font-size:10.5px;font-weight:600;background:var(--accent);color:var(--accent-ink);border-radius:4px;padding:0 4px;justify-self:start}
+.gheat{border-collapse:separate;border-spacing:3px;min-width:720px;background:var(--surface)}
+.gheat th{background:transparent;border:0;padding:4px 6px}
+.gheat td{border:0;padding:0}
+.gheat td.gl{padding:4px 8px;white-space:nowrap}
+.gheat tr.grp td{padding-top:10px}
+.foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3);display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<!--langbar--><link rel="alternate" hreflang="ko" href="https://stayhungryasi.com/p/ai-models/"><link rel="alternate" hreflang="en" href="https://stayhungryasi.com/p/ai-models/en/"><link rel="alternate" hreflang="es" href="https://stayhungryasi.com/p/ai-models/es/"><link rel="alternate" hreflang="ja" href="https://stayhungryasi.com/p/ai-models/ja/"><link rel="alternate" hreflang="x-default" href="https://stayhungryasi.com/p/ai-models/en/"><!--langbar--></head>
+<body>
+
+<style>
+/* v6 additions */
+.vbar{position:relative;height:10px;background:var(--surface-2);border-radius:3px;min-width:90px}
+.vbar i{position:absolute;left:0;top:0;bottom:0;border-radius:3px}
+.grp{font-size:11.5px;color:var(--ink-3);letter-spacing:.04em}
+.newtag{font-size:10.5px;font-weight:600;color:var(--accent-ink);background:var(--accent);border-radius:4px;padding:0 5px;margin-left:4px}
+.ow{font-size:10.5px;color:var(--ink-3);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:4px}
+.mrow{display:flex;flex-wrap:wrap;gap:6px}
+.xm td{min-width:118px}
+.taskcard{align-content:start}
+.delta{display:grid;grid-template-columns:150px minmax(0,1fr) 64px;gap:8px;align-items:center;font-size:12.5px;padding:4px 0;border-bottom:1px dashed var(--line)}
+.delta .bar{position:relative;height:12px;background:var(--surface-2);border-radius:3px}
+.delta .bar i{position:absolute;top:0;bottom:0;border-radius:3px}
+.delta .bar .mid{position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--axis)}
+</style>
+
+<div class="wrap">
+  <!--langbar--><style>.lgbar{display:flex;gap:6px;justify-content:flex-end;margin:0 0 10px;flex-wrap:wrap}.lgbar a{font-size:12.5px;line-height:1;padding:7px 11px;border-radius:999px;border:1px solid var(--line,#2a2f3a);color:var(--ink-2,#c3c9d6);text-decoration:none}.lgbar a.on{background:var(--ink,#fff);color:var(--bg,#0A0B0F);border-color:var(--ink,#fff);font-weight:600}</style><nav class="lgbar" aria-label="Language"><a href="https://stayhungryasi.com/p/ai-models/en/" data-lg="en" hreflang="en" class=on>English</a><a href="https://stayhungryasi.com/p/ai-models/?ko" data-lg="ko" hreflang="ko">한국어</a><a href="https://stayhungryasi.com/p/ai-models/es/" data-lg="es" hreflang="es">Español</a><a href="https://stayhungryasi.com/p/ai-models/ja/" data-lg="ja" hreflang="ja">日本語</a></nav><script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest(".lgbar a");if(a){try{localStorage.setItem("sha-lang",JSON.stringify(a.getAttribute("data-lg")))}catch(x){}}});</script><!--langbar--><header class="brandbar">
+    <a class="lockup" href="https://stayhungryasi.com/" target="_top" rel="noopener" aria-label="stayhungryasi.com">
+      <svg class="shlogo" viewBox="0 0 404 66" role="img" aria-label="stayhungryasi.com"><defs><linearGradient id="shg" x1="6" x2="261.78" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:var(--brand-a)"/><stop offset="1" style="stop-color:var(--brand-b)"/></linearGradient><linearGradient id="sho" x1="6" x2="397.7" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:var(--brand-a)"/><stop offset="1" style="stop-color:var(--brand-b)"/></linearGradient></defs>
+<path d="M15.09 41.36Q12.33 41.36 10.41 40.415Q8.49 39.47 7.14 37.97L10.14 34.94Q12.27 37.34 15.389999999999999 37.34Q17.07 37.34 17.88 36.650000000000006Q18.689999999999998 35.96 18.689999999999998 34.82Q18.689999999999998 33.95 18.21 33.365Q17.73 32.78 16.259999999999998 32.57L14.19 32.3Q10.86 31.880000000000003 9.315 30.290000000000003Q7.77 28.700000000000003 7.77 26.060000000000002Q7.77 24.650000000000002 8.309999999999999 23.480000000000004Q8.85 22.310000000000002 9.855 21.47Q10.86 20.63 12.315 20.165Q13.77 19.7 15.629999999999999 19.7Q18.0 19.7 19.8 20.45Q21.6 21.2 22.89 22.64L19.86 25.700000000000003Q19.11 24.830000000000002 18.045 24.275Q16.98 23.72 15.36 23.72Q13.83 23.72 13.08 24.259999999999998Q12.33 24.8 12.33 25.759999999999998Q12.33 26.84 12.915 27.32Q13.5 27.8 14.82 28.009999999999998L16.89 28.34Q20.13 28.85 21.689999999999998 30.335Q23.25 31.82 23.25 34.55Q23.25 36.05 22.71 37.31Q22.169999999999998 38.57 21.134999999999998 39.47Q20.1 40.37 18.57 40.864999999999995Q17.04 41.36 15.09 41.36ZM41.76 24.11V41.0H37.199999999999996V24.11H31.529999999999998V20.060000000000002H47.43V24.11ZM69.44999999999999 41.0 67.94999999999999 36.02H60.959999999999994L59.459999999999994 41.0H54.839999999999996L61.739999999999995 20.060000000000002H67.38L74.19 41.0ZM64.5 24.2H64.35L62.03999999999999 32.15H66.83999999999999ZM88.22999999999999 41.0V32.81L81.05999999999999 20.060000000000002H86.16L90.66 28.4H90.72L95.03999999999999 20.060000000000002H99.99L92.82 32.78V41.0ZM121.10999999999999 32.42H113.13V41.0H108.57V20.060000000000002H113.13V28.4H121.10999999999999V20.060000000000002H125.66999999999999V41.0H121.10999999999999ZM140.60999999999999 20.060000000000002V32.9Q140.60999999999999 35.12 141.48 36.215Q142.35 37.31 144.39 37.31Q146.42999999999998 37.31 147.29999999999998 36.215Q148.17 35.12 148.17 32.9V20.060000000000002H152.60999999999999V32.42Q152.60999999999999 34.730000000000004 152.17499999999998 36.425Q151.73999999999998 38.12 150.75 39.215Q149.76 40.31 148.2 40.835Q146.64 41.36 144.39 41.36Q142.14 41.36 140.57999999999998 40.835Q139.01999999999998 40.31 138.02999999999997 39.215Q137.04 38.12 136.605 36.425Q136.17 34.730000000000004 136.17 32.42V20.060000000000002ZM169.49999999999997 31.1 167.48999999999998 26.9H167.39999999999998V41.0H163.10999999999999V20.060000000000002H168.08999999999997L173.82 29.96L175.82999999999998 34.16H175.92V20.060000000000002H180.20999999999998V41.0H175.23ZM204.11999999999998 37.67H203.96999999999997Q203.73 39.26 202.34999999999997 40.31Q200.96999999999997 41.36 198.6 41.36Q196.79999999999998 41.36 195.23999999999998 40.67Q193.67999999999998 39.98 192.51 38.629999999999995Q191.33999999999997 37.28 190.67999999999998 35.269999999999996Q190.01999999999998 33.26 190.01999999999998 30.62Q190.01999999999998 27.98 190.70999999999998 25.94Q191.39999999999998 23.900000000000002 192.64499999999998 22.520000000000003Q193.89 21.14 195.63 20.42Q197.36999999999998 19.7 199.49999999999997 19.7Q202.32 19.7 204.35999999999999 20.915Q206.39999999999998 22.13 207.57 24.560000000000002L203.85 26.69Q203.36999999999998 25.46 202.34999999999997 24.605Q201.32999999999998 23.75 199.49999999999997 23.75Q197.36999999999998 23.75 196.10999999999999 24.98Q194.85 26.21 194.85 28.85V32.21Q194.85 34.82 196.10999999999999 36.065Q197.36999999999998 37.31 199.49999999999997 37.31Q200.33999999999997 37.31 201.08999999999997 37.115Q201.83999999999997 36.92 202.40999999999997 36.515Q202.98 36.11 203.295 35.54Q203.60999999999999 34.97 203.60999999999999 34.19V33.14H199.70999999999998V29.33H207.95999999999998V41.0H204.11999999999998ZM222.95999999999998 41.0H218.39999999999998V20.060000000000002H228.32999999999998Q229.76999999999998 20.060000000000002 230.94 20.54Q232.10999999999999 21.02 232.93499999999997 21.905Q233.75999999999996 22.79 234.20999999999998 24.02Q234.65999999999997 25.25 234.65999999999997 26.75Q234.65999999999997 28.880000000000003 233.71499999999997 30.470000000000002Q232.76999999999998 32.06 230.84999999999997 32.78L234.95999999999998 41.0H229.89L226.22999999999996 33.32H222.95999999999998ZM227.75999999999996 29.48Q228.77999999999997 29.48 229.36499999999998 28.955Q229.95 28.43 229.95 27.41V26.09Q229.95 25.07 229.36499999999998 24.545Q228.77999999999997 24.02 227.75999999999996 24.02H222.95999999999998V29.48ZM249.74999999999997 41.0V32.81L242.57999999999998 20.060000000000002H247.67999999999998L252.17999999999998 28.4H252.23999999999998L256.55999999999995 20.060000000000002H261.51L254.33999999999997 32.78V41.0Z" fill="url(#shg)"/>
+<path d="M281.57599999999996 26.648Q281.95599999999996 26.648 282.46899999999994 26.781Q282.98199999999997 26.914 283.4 27.123Q283.818 27.332 284.10299999999995 27.560000000000002Q284.388 27.788 284.388 27.978Q283.628 29.573999999999998 282.98199999999997 31.189Q282.33599999999996 32.804 281.88 34.286Q281.424 35.768 281.17699999999996 37.06Q280.92999999999995 38.352000000000004 280.92999999999995 39.302Q280.92999999999995 40.366 281.15799999999996 41.069Q281.38599999999997 41.772 281.91799999999995 42.076Q281.462 42.38 280.74 42.57Q280.018 42.76 279.448 42.76Q277.39599999999996 42.76 277.39599999999996 39.948Q277.39599999999996 37.782 278.84 34.02Q278.08 35.768 277.092 37.307Q276.104 38.846000000000004 275.078 40.024Q274.05199999999996 41.202 273.00699999999995 41.943Q271.962 42.684 271.08799999999997 42.836Q269.68199999999996 42.76 268.808 41.486999999999995Q267.93399999999997 40.214 267.93399999999997 38.238Q267.93399999999997 36.11 268.846 33.754Q269.758 31.398 271.183 29.384Q272.60799999999995 27.37 274.28 26.021Q275.952 24.672 277.51 24.596Q277.89 24.71 278.365 25.052Q278.84 25.394000000000002 279.277 25.85Q279.714 26.306 280.018 26.781Q280.32199999999995 27.256 280.35999999999996 27.598Q278.84 27.826 277.22499999999997 29.08Q275.60999999999996 30.334 274.299 32.101Q272.988 33.868 272.152 35.882000000000005Q271.316 37.896 271.316 39.644Q271.316 40.366 271.84799999999996 40.556Q272.95 40.328 274.394 38.675Q275.83799999999997 37.022 277.89 33.564Q278.27 32.88 278.745 32.044Q279.21999999999997 31.208 279.71399999999994 30.296Q280.20799999999997 29.384 280.683 28.453Q281.15799999999996 27.522 281.57599999999996 26.648ZM299.436 26.876Q299.39799999999997 27.598 299.18899999999996 28.377Q298.97999999999996 29.156 298.67599999999993 29.783Q298.37199999999996 30.41 298.03 30.828000000000003Q297.688 31.246000000000002 297.384 31.246000000000002Q296.966 31.208 296.89 30.676000000000002Q296.89 30.562 296.985 30.314999999999998Q297.08 30.067999999999998 297.19399999999996 29.764Q297.308 29.46 297.403 29.156Q297.498 28.852 297.498 28.624000000000002Q297.498 28.092 297.251 27.731Q297.00399999999996 27.37 296.586 27.37Q295.066 27.37 294.268 29.270000000000003Q293.46999999999997 31.17 293.46999999999997 34.856Q293.46999999999997 35.236 293.508 35.312Q294.306 35.274 294.933 35.254999999999995Q295.56 35.236 296.168 35.236Q296.20599999999996 35.312 296.20599999999996 35.54Q296.20599999999996 35.882 296.054 36.034Q295.18 36.224000000000004 294.66700000000003 36.357Q294.154 36.49 293.888 36.604Q293.62199999999996 36.718 293.56499999999994 36.851Q293.508 36.984 293.508 37.212Q293.508 37.516 293.527 37.82Q293.546 38.124 293.546 38.58Q293.546 41.772 291.817 43.709999999999994Q290.08799999999997 45.647999999999996 287.01 45.952Q286.478 45.914 285.908 45.647999999999996Q285.33799999999997 45.382 284.825 44.964Q284.312 44.546 283.932 44.033Q283.55199999999996 43.52 283.4 42.988Q283.4 41.544 284.008 40.233Q284.616 38.922 285.66099999999994 37.915Q286.70599999999996 36.908 288.131 36.281Q289.556 35.653999999999996 291.228 35.54Q291.228 34.59 291.038 33.678Q290.848 32.766 290.639 31.911Q290.43 31.056 290.24 30.239Q290.05 29.422 290.05 28.624000000000002Q290.05 27.598 290.46799999999996 26.591Q290.88599999999997 25.584 291.56999999999994 24.729Q292.25399999999996 23.874 293.16599999999994 23.266Q294.078 22.658 295.066 22.43Q295.484 22.544 296.187 23.095Q296.89 23.646 297.57399999999996 24.33Q298.258 25.014 298.78999999999996 25.717Q299.322 26.42 299.436 26.876ZM286.89599999999996 44.204Q287.808 43.824 288.625 43.102000000000004Q289.442 42.38 290.05 41.468Q290.658 40.556 291.019 39.53Q291.38 38.504 291.38 37.516Q290.62 37.63 289.70799999999997 38.219Q288.796 38.808 287.998 39.625Q287.2 40.442 286.668 41.316Q286.13599999999997 42.19 286.13599999999997 42.836Q286.13599999999997 43.672 286.89599999999996 44.204ZM299.512 39.454Q299.512 39.112 299.569 38.599000000000004Q299.62600000000003 38.086 299.778 37.230999999999995Q299.93 36.376 300.177 35.16Q300.42400000000004 33.944 300.80400000000003 32.234Q300.88 31.854 301.146 31.018Q301.41200000000003 30.182000000000002 301.84900000000005 29.251Q302.286 28.32 302.913 27.446Q303.54 26.572000000000003 304.414 26.154Q305.06 26.306 306.124 26.933Q307.188 27.560000000000002 307.94800000000004 28.662Q307.074 29.65 306.485 30.637999999999998Q305.896 31.625999999999998 305.42100000000005 32.69Q304.946 33.754 304.547 34.894Q304.148 36.034 303.654 37.288Q303.236 38.352000000000004 302.894 39.473Q302.552 40.594 302.514 41.43Q302.514 42.114 302.495 42.399Q302.476 42.684 302.286 42.684Q302.134 42.684 301.678 42.494Q301.22200000000004 42.304 300.747 41.905Q300.272 41.506 299.892 40.897999999999996Q299.512 40.29 299.512 39.454ZM306.77 22.962Q306.77 22.734 306.884 22.278000000000002Q306.694 22.088 306.56100000000004 21.708Q306.428 21.328 306.428 21.024Q306.428 20.682000000000002 306.523 20.093000000000004Q306.618 19.504 306.77 18.82Q306.922 18.136 307.15 17.395Q307.378 16.654 307.606 16.046Q308.062 16.046 308.727 16.293Q309.392 16.54 310.076 16.939Q310.76 17.338 311.33000000000004 17.813000000000002Q311.90000000000003 18.288 312.204 18.706Q311.786 19.124000000000002 311.102 19.865000000000002Q310.418 20.606 309.77200000000005 21.423000000000002Q309.12600000000003 22.240000000000002 308.59400000000005 22.962000000000003Q308.062 23.684 307.91 23.988Q307.454 23.912 307.11199999999997 23.589Q306.77 23.266000000000002 306.77 22.962ZM309.50600000000003 43.444Q308.898 43.368 308.23300000000006 42.931Q307.56800000000004 42.494 307.37800000000004 41.962Q307.37800000000004 41.506 307.511 40.784Q307.644 40.062 307.834 39.321Q308.024 38.58 308.21400000000006 37.915Q308.40400000000005 37.25 308.48 36.908Q308.93600000000004 36.908 309.639 37.135999999999996Q310.34200000000004 37.364 311.083 37.763Q311.824 38.162 312.48900000000003 38.675Q313.15400000000005 39.188 313.49600000000004 39.72Q313.15400000000005 40.48 312.62200000000007 41.164Q312.09000000000003 41.848 311.50100000000003 42.361000000000004Q310.91200000000003 42.874 310.38 43.159000000000006Q309.848 43.444 309.50600000000003 43.444ZM317.82800000000003 35.312Q317.82800000000003 33.146 318.721 31.113Q319.61400000000003 29.08 321.077 27.503Q322.54 25.926000000000002 324.42100000000005 24.957Q326.302 23.988 328.31600000000003 23.988Q330.29200000000003 23.988 331.35600000000005 24.976Q332.4200000000001 25.964 332.4200000000001 27.788Q332.4200000000001 28.662 332.17300000000006 29.479Q331.92600000000004 30.296 331.52700000000004 30.942Q331.12800000000004 31.588 330.596 31.987000000000002Q330.064 32.386 329.53200000000004 32.386Q329.076 32.386 328.601 32.101Q328.12600000000003 31.816000000000003 327.82200000000006 31.36Q330.36800000000005 29.042 330.36800000000005 27.142000000000003Q330.36800000000005 26.04 329.494 26.04Q328.73400000000004 26.04 327.59400000000005 26.762Q326.45400000000006 27.484 325.39000000000004 28.662Q323.75600000000003 30.486 322.90100000000007 32.709Q322.04600000000005 34.932 322.04600000000005 37.364Q322.04600000000005 40.442 323.41400000000004 41.05Q323.98400000000004 40.974 324.744 40.708Q325.504 40.442 326.37800000000004 40.004999999999995Q327.25200000000007 39.568 328.18300000000005 38.998Q329.11400000000003 38.428 329.98800000000006 37.782Q330.14000000000004 37.896 330.254 38.124Q330.36800000000005 38.352000000000004 330.36800000000005 38.542Q329.72200000000004 39.34 328.8860000000001 40.1Q328.05000000000007 40.86 327.13800000000003 41.486999999999995Q326.22600000000006 42.114 325.37100000000004 42.551Q324.516 42.988 323.87000000000006 43.102Q322.61600000000004 42.988 321.514 42.323Q320.41200000000003 41.658 319.595 40.594Q318.778 39.53 318.303 38.162Q317.82800000000003 36.794 317.82800000000003 35.312ZM338.04400000000004 43.33Q335.87800000000004 43.102 334.586 41.43Q333.29400000000004 39.758 333.29400000000004 37.174Q333.29400000000004 35.653999999999996 333.75 34.019999999999996Q334.206 32.386 335.04200000000003 30.847Q335.87800000000004 29.308 337.01800000000003 27.94Q338.158 26.572000000000003 339.488 25.584Q341.57800000000003 24.026 343.40200000000004 24.026Q344.61800000000005 24.672 345.79600000000005 26.724Q345.98600000000005 26.724 346.13800000000003 26.705Q346.29 26.686 346.48 26.686Q348.494 26.686 348.494 30.258000000000003Q348.494 32.652 347.71500000000003 34.799Q346.93600000000004 36.946 345.54900000000004 38.694Q344.16200000000003 40.442 342.24300000000005 41.638999999999996Q340.324 42.836 338.04400000000004 43.33ZM339.982 31.36Q339.336 32.234 338.766 33.260000000000005Q338.196 34.286 337.778 35.331Q337.36 36.376 337.132 37.345Q336.904 38.314 336.904 39.074Q336.904 39.986 337.20799999999997 40.822Q337.512 41.658 337.89200000000005 41.772Q339.60200000000003 41.392 341.02700000000004 40.347Q342.452 39.302 343.497 37.744Q344.54200000000003 36.186 345.13100000000003 34.21Q345.72 32.234 345.72 29.992Q345.72 29.003999999999998 345.606 28.433999999999997Q345.492 27.864 345.226 27.445999999999998Q343.55400000000003 27.939999999999998 342.24300000000005 29.041999999999998Q340.932 30.144 339.982 31.36ZM372.282 30.334Q371.674 30.372 370.79999999999995 31.113Q369.926 31.854 368.919 33.013Q367.91200000000003 34.172 366.829 35.578Q365.746 36.984 364.73900000000003 38.371Q363.732 39.758 362.858 40.974000000000004Q361.984 42.19 361.376 42.912Q360.54 42.57 359.932 41.905Q359.324 41.24 359.058 40.252Q359.248 39.074 359.59000000000003 37.801Q359.932 36.528 360.483 35.16Q361.034 33.792 361.851 32.291Q362.668 30.79 363.846 29.118000000000002Q363.276 29.156 362.288 29.935Q361.3 30.714 360.15999999999997 31.948999999999998Q359.02 33.184 357.804 34.723Q356.588 36.262 355.524 37.744Q354.118 39.72 353.187 41.202Q352.25600000000003 42.684 351.838 42.95Q350.85 42.228 350.47 41.391999999999996Q350.09000000000003 40.556 349.9 39.53Q349.938 38.618 350.185 37.25Q350.432 35.882 350.88800000000003 34.438Q351.762 31.664 353.149 28.928Q354.536 26.192 355.82800000000003 23.912Q356.892 24.14 357.74699999999996 24.634Q358.602 25.128 359.552 26.078000000000003Q359.172 27.256 358.374 28.567Q357.576 29.878 356.702 31.322Q355.82800000000003 32.766 355.106 34.286Q354.384 35.806 354.156 37.364Q355.22 35.844 356.683 33.868Q358.146 31.892 359.685 30.144Q361.224 28.396 362.744 27.18Q364.264 25.964 365.48 25.964Q365.936 25.964 366.46799999999996 26.116Q367.0 26.268 367.456 26.496000000000002Q367.91200000000003 26.724 368.216 26.933Q368.52 27.142000000000003 368.558 27.256Q368.368 28.016 367.66499999999996 29.326999999999998Q366.962 30.637999999999998 366.164 32.081999999999994Q365.366 33.525999999999996 364.682 34.875Q363.998 36.224000000000004 363.884 37.022Q365.746 34.476 367.38 32.405Q369.014 30.334 370.45799999999997 28.852Q371.902 27.37 373.137 26.572000000000003Q374.372 25.774 375.474 25.774Q376.234 25.774 376.899 26.173000000000002Q377.564 26.572000000000003 377.83 27.332Q377.488 28.472 376.709 30.068Q375.93 31.664 375.132 33.431Q374.334 35.198 373.707 36.908Q373.08 38.618 373.08 39.986Q373.08 40.784 373.308 41.031Q373.536 41.278 373.954 41.278Q374.41 41.278 374.809 41.107Q375.208 40.936 375.398 40.936Q375.626 41.088 375.664 41.316Q375.702 41.544 375.702 41.734Q374.942 42.342 374.144 42.741Q373.346 43.14 372.358 43.14Q371.446 43.14 370.857 42.836Q370.26800000000003 42.532 369.88800000000003 42.0Q369.508 41.468 369.356 40.784000000000006Q369.204 40.1 369.204 39.302Q369.204 38.01 369.54600000000005 36.736999999999995Q369.88800000000003 35.464 370.36300000000006 34.305Q370.838 33.146 371.37 32.138999999999996Q371.902 31.131999999999998 372.282 30.334Z" style="fill:var(--brand-b)"/>
+<path d="M4 51 C 146 64, 335.7 60, 380.7 50 C 394.7 47, 399.7 30, 397.7 13" fill="none" stroke="url(#sho)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="397.7" cy="13" r="3.6" style="fill:var(--brand-b)"/></svg>
+    </a>
+    <div class="titleblock">
+      <h1>AI Model × Effort Matrix</h1>
+      <p class="sub" id="subline">Five work areas · every current major model × effort level · one yardstick (AA index v5.0.1)</p>
+      <div class="metaline">
+        <span>As of 2026-11-11 (full rebuild)</span>
+        <span><span class="bdg v">Verified</span> source figures as published</span>
+        <span><span class="bdg e">Estimate</span> benchmark → work mapping</span>
+        <span><span class="bdg u">Unconfirmed</span> no data</span>
+        <span><span class="bdg m">Measured</span> tested directly</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="rail" aria-label="Switch view">
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab" role="tab" data-tab="summary" aria-selected="true">Verdict</button>
+      <button class="tab" role="tab" data-tab="all" aria-selected="false">All models</button>
+      <button class="tab" role="tab" data-tab="effort" aria-selected="false">Effort levels</button>
+      <button class="tab" role="tab" data-tab="heat" aria-selected="false">Heatmap</button>
+      <button class="tab" role="tab" data-tab="cross" aria-selected="false">Crossover</button>
+      <button class="tab" role="tab" data-tab="gen" aria-selected="false">Generations</button>
+      <button class="tab" role="tab" data-tab="kit" aria-selected="false">Test kit</button>
+      <button class="tab" role="tab" data-tab="src" aria-selected="false">Sources & method</button>
+    </div>
+    <div class="filters">
+      <div class="fgroup" id="fTask" hidden><span class="flabel">Work area</span></div>
+      <div class="fgroup" id="fEffort" hidden><span class="flabel">Effort</span></div>
+      <div class="fgroup" id="fModel" hidden><span class="flabel">Model</span></div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SUMMARY -->
+    <section class="panel" id="p-summary">
+      <div class="callout" id="bigShift"></div>
+      <div class="card hero">
+        <div>
+          <div class="swap" id="heroSwap"></div>
+          <div class="herofig" id="heroFig">–</div>
+          <p class="herocap"><span id="heroCap"></span> <span class="bdg v">AA measured cost</span> <span class="bdg e">Work score is an estimate</span></p>
+        </div>
+        <div class="grid5" id="heroTiles"></div>
+      </div>
+
+      <div class="sec">
+        <div class="sechead"><h2>Recommended combinations by work area</h2><span class="faint" style="font-size:12px">Top quality = cheapest per task among combinations at 97%+ of the best score · Value = cheapest at 90%+ · Speed = fastest per task at 75%+ · every candidate is a combination AA measured</span></div>
+        <div class="grid3" id="picks"></div>
+      </div>
+
+      <div class="grid2">
+        <div class="card sec">
+          <h2>Facts confirmed by public data</h2>
+          <ul class="findings" id="findings"></ul>
+        </div>
+        <div class="card sec">
+          <h2>The most uncertain calls</h2>
+          <p class="lede">Where the estimates could be wrong, and the test numbers that would check them.</p>
+          <div class="unc" id="uncert"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL MODELS -->
+    <section class="panel" id="p-all" hidden>
+      <div class="sec" style="gap:4px">
+        <h2 id="allTitle">Full model ranking</h2>
+        <p class="lede">Work scores built only from values Artificial Analysis (AA) measured in the same test setup, across Anthropic, OpenAI, Google, Meta and Chinese labs. Every row is a measurement of that model and effort combination.</p>
+      </div>
+      <div class="callout" id="allCallout"></div>
+      <div class="tscroll" id="allTable"></div>
+      <div class="sec">
+        <h2 id="allScTitle">Value map</h2>
+        <p class="lede">Horizontal = cost per task (log scale), vertical = work score. The line is the efficient frontier (combinations with no higher score at the same cost).</p>
+        <div class="legend" id="allLegend"></div>
+        <div class="card min0"><div class="chartbox" style="height:400px"><canvas id="allS" role="img" aria-label="Scatter plot of work score against cost per task"></canvas></div></div>
+        <div class="tscroll" id="allFrontier"></div>
+      </div>
+      <div class="sec">
+        <h2>Lineup by vendor</h2>
+        <div class="tscroll" id="lineup"></div>
+      </div>
+      <div class="sec">
+        <h2>Models released since Oct 24</h2>
+        <div class="tscroll" id="newRel"></div>
+      </div>
+    </section>
+
+    <!-- EFFORT -->
+    <section class="panel" id="p-effort" hidden>
+      <div class="sec" style="gap:4px">
+        <h2 id="effTitle">Effort levels</h2>
+        <p class="lede">What changes, and by how much, when only the effort is changed within one model. Every per-level value is measured by AA separately at each level; the work scores are estimates that map those values onto the five work areas.</p>
+      </div>
+      <div class="ladder" id="effLadder"></div>
+      <div class="callout" id="effCallout"></div>
+      <div class="sec">
+        <div class="sechead"><h2>Recommended effort by work area</h2><span class="faint" style="font-size:12px">Light = the first level reaching 75% of this model's best score · Default = 90% · Final draft = 97% · Best = the level with the best score</span></div>
+        <div class="tscroll" id="effRecs"></div>
+      </div>
+      <div class="grid2">
+        <div class="card min0"><h3>Work score (0–10)</h3><div class="legend" id="effQLegend"></div><div class="chartbox"><canvas id="effQ" role="img" aria-label="Work score by effort level"></canvas></div><p class="chartnote">AA per-level measurements mapped to work areas. <span class="bdg e">Estimate</span></p></div>
+        <div class="card min0"><h3>Cost and time per task (log scale)</h3><div class="legend" id="effULegend"></div><div class="chartbox"><canvas id="effU" role="img" aria-label="Cost and time by effort level"></canvas></div><p class="chartnote">AA average cost (USD) and time (minutes) per task. <span class="bdg v">Verified</span></p></div>
+      </div>
+      <div class="sec">
+        <h3>Raw data by benchmark <span class="bdg v">Verified</span></h3>
+        <p class="lede">The best value in each row is bold; a value lower than the level just below it is marked ↓ (overthinking zone).</p>
+        <div class="tscroll" id="effRaw"></div>
+      </div>
+      <div class="sec">
+        <h3>What one level up buys and costs</h3>
+        <div class="tscroll" id="effStep"></div>
+      </div>
+    </section>
+
+    <!-- HEATMAP -->
+    <section class="panel" id="p-heat" hidden>
+      <div class="sechead">
+        <div class="sec" style="gap:4px"><h2 id="heatTitle">Model × work area</h2><p class="lede">Each cell shows the work score (0–10, best benchmark result across all models and efforts = 10) with cost per task below. ‘Best per model’ shows the level where each model scores highest for that work area. A solid outline marks cells that have a direct measurement.</p></div>
+        <div class="scale"><span>0</span><span class="scalebar" id="scalebar"></span><span>10</span></div>
+      </div>
+      <div class="tscroll" id="heatwrap"></div>
+    </section>
+
+    <!-- CROSSOVER -->
+    <section class="panel" id="p-cross" hidden>
+      <div class="sec" style="gap:4px"><h2>Crossover: can this combination replace that one</h2><p class="lede">Each cell shows the winner, the score gap (left − right) and the cost ratio (left ÷ right). A gap under 0.2 counts as on par.</p></div>
+      <div class="tscroll" id="xmatrix"></div>
+    </section>
+
+    <!-- GENERATION -->
+    <section class="panel" id="p-gen" hidden>
+      <div class="sec" style="gap:4px"><h2>Generations: same effort level against same effort level</h2><p class="lede">Bars to the right are improvements, to the left regressions. Only AA measurements at the same effort level are compared.</p></div>
+      <div class="sec">
+        <div class="sechead"><h3>Fable 5.1 → Fable 5.2</h3><div class="mrow" id="genLv"></div></div>
+        <div class="card" id="genFable"></div>
+      </div>
+      <div class="grid2">
+        <div class="sec min0"><h3>Opus 5 → Opus 5.5 (Max)</h3><div class="card" id="genOpus"></div></div>
+        <div class="sec min0"><h3>Haiku 5.5 vs Muse Ember (lightweight class, Max)</h3><div class="card" id="genLite"></div></div>
+      </div>
+      <div class="sec"><h3>Is there a reason to use an older version</h3><div class="tscroll" id="verdicts"></div></div>
+    </section>
+
+    <!-- KIT -->
+    <section class="panel" id="p-kit" hidden>
+      <div class="sechead">
+        <div class="sec" style="gap:4px"><h2>Hands-on benchmark kit</h2><p class="lede">Run five standard tasks exactly as you do real work and enter the scores; they attach straight to the heatmap, effort levels and crossover as a measured layer. Earlier records carry over.</p></div>
+        <span class="status" id="dbStatus"><i></i><span>Checking storage connection</span></span>
+      </div>
+      <div class="grid2">
+        <div class="card sec min0">
+          <h3>1. Enter results</h3>
+          <div class="form" id="kitForm">
+            <div class="frow">
+              <label class="f" for="kTask">Task<select id="kTask"></select></label>
+              <label class="f" for="kModel">Model<select id="kModel"></select></label>
+              <label class="f" for="kEffort">Effort<select id="kEffort"></select></label>
+            </div>
+            <div id="kCrit" class="form"></div>
+            <div class="frow">
+              <label class="f" for="kMin">Time taken (min)<input type="number" id="kMin" min="0" step="1" value="10"></label>
+              <label class="f" for="kRework">Number of reworks<input type="number" id="kRework" min="0" step="1" value="0"></label>
+              <label class="f" for="kFeel">Usage feel (1–5)<input type="number" id="kFeel" min="1" max="5" step="1" value="3"></label>
+              <label class="f" for="kMode">Scoring method<select id="kMode"><option value="avg">Average of blind and own</option><option value="blind">Blind only</option><option value="self">Own impression only</option></select></label>
+            </div>
+            <label class="f" for="kNote">Notes<input type="text" id="kNote" maxlength="300" placeholder="e.g. passed after fixing 1 test"></label>
+            <div class="btnrow" style="justify-content:space-between">
+              <div><span class="faint" style="font-size:12px">Measured score</span><div class="scorebig num" id="kScore">–</div></div>
+              <button class="btn pri" id="kSave" type="button">Save result</button>
+            </div>
+          </div>
+        </div>
+        <div class="card sec min0">
+          <div class="sechead"><h3>2. Task prompts</h3><button class="btn sm" id="kCopy" type="button">Copy prompt</button></div>
+          <pre class="prompt" id="kPrompt"></pre>
+          <h3>Blind scoring steps</h3>
+          <ol class="steps">
+            <li>Run each task in a new conversation. Keep the prompt, attachments and web-search setting identical.</li>
+            <li>Rename the output files to random codes (A–Z).</li>
+            <li>In a separate conversation, give only the code-named files and ask for scoring against the rubric below.</li>
+            <li>Enter the average of the blind score and your own impression.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="sechead"><h3>3. Test plan (in priority order)</h3><span class="faint" style="font-size:12px" id="planProg"></span></div>
+        <p class="lede" id="planLede"></p>
+        <div class="tscroll" id="plan"></div>
+      </div>
+      <div class="grid2">
+        <div class="sec min0"><h3>4. Estimate vs measured</h3><div class="tscroll" id="estVsMeas"></div></div>
+        <div class="sec min0">
+          <div class="sechead"><h3>5. Records</h3><div class="btnrow"><button class="btn sm" id="kExport" type="button">Copy JSON</button><button class="btn sm ghost" id="kImportToggle" type="button">Paste JSON</button></div></div>
+          <div id="importBox" class="form" hidden>
+            <label class="f" for="kImport">Paste the exported JSON here<textarea id="kImport"></textarea></label>
+            <div class="btnrow"><button class="btn sm pri" id="kImportGo" type="button">Import</button></div>
+          </div>
+          <div class="tscroll" id="runs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="panel" id="p-src" hidden>
+      <div class="callout" id="v5note"></div>
+      <div class="sec">
+        <h2>Benchmark → work mapping <span class="bdg e">Estimate</span></h2>
+        <p class="lede">Which AA benchmarks stand in for which work area, and with what weights. The mapping itself is a judgment, so all of it is an estimate. Game development has no directly matching benchmark, so it is the weakest mapping.</p>
+        <div class="tscroll" id="mapTable"></div>
+      </div>
+      <div class="sec"><h2>Score formula</h2><ol class="steps" id="formula"></ol></div>
+      <div class="sec">
+        <h2>Full raw data (AA v5.0.1) <span class="bdg v">Verified</span></h2>
+        <p class="lede">Elo is in its own unit, the rest in % (AA-Omniscience is a net score). Time and speed are live AA values, so they differ slightly from page to page even on the same day.</p>
+        <div class="tscroll" id="rawFull"></div>
+      </div>
+      <div class="sec"><h2>Claude effort level support and defaults <span class="bdg v">Verified</span></h2><div class="tscroll" id="support"></div></div>
+      <div class="sec"><h2>Sources (checked 2026-11-11)</h2><div class="tscroll" id="sources"></div></div>
+    </section>
+  </main>
+
+  <footer class="foot"><span id="credit">stayhungryasi.com · For information only.</span><span>All figures are as published by vendors and evaluators and were not reproduced. Time and speed are live AA values (2026-11-11).</span></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+<script>
+(function(){
+"use strict";
+const D = {"asof":"2026-11-11","levels":["low","medium","high","xhigh","max"],"benches":[{"k":"brief","name":"AA-Briefcase (Elo)","unit":"Elo","why":"Blind comparison of real knowledge-work outputs (reports, analysis)","w":15},{"k":"auto","name":"AutomationBench-AA","unit":"%","why":"Work automation across multiple apps","w":5},{"k":"gdppdf","name":"GDP.pdf","unit":"%","why":"Reading and answering from long professional documents (PDF)","w":5},{"k":"fc","name":"FrontierCode 2.0","unit":"%","why":"Mergeable code with no out-of-scope edits","w":15},{"k":"tb4","name":"Terminal-Bench 4.0","unit":"%","why":"Completing long-running terminal agent tasks","w":10},{"k":"tbsci","name":"Terminal-Bench-Science 0.1","unit":"%","why":"Scientific computing and simulation agents","w":15},{"k":"crit","name":"CritPt v2 (Hard)","unit":"%","why":"Research-level physics reasoning","w":10},{"k":"omni","name":"AA-Omniscience v1.1","unit":" pts","why":"How readily it says it does not know (hallucination control, net score)","w":15},{"k":"hled","name":"HLE-Diamond","unit":"%","why":"Hardest expert-knowledge questions","w":10}],"tasks":[{"id":"t1","name":"System upgrades","weights":{"tb4":0.35,"fc":0.35,"auto":0.2,"omni":0.1}},{"id":"t2","name":"Company analysis","weights":{"brief":0.3,"omni":0.25,"gdppdf":0.2,"hled":0.15,"auto":0.1}},{"id":"t3","name":"Research","weights":{"omni":0.3,"hled":0.3,"crit":0.15,"brief":0.15,"gdppdf":0.1}},{"id":"t4","name":"Game development","weights":{"fc":0.45,"tb4":0.35,"tbsci":0.2}},{"id":"t5","name":"Software development","weights":{"fc":0.4,"tb4":0.4,"auto":0.2}}],"models":[{"id":"fable52","label":"Claude Fable 5.2","vendor":"Anthropic","group":"claude","price":[8,40],"open":false,"release":"2026-11-09","appDefault":"medium","note":"Default Medium in the app and Claude Code, High on the API","levels":["low","medium","high","xhigh","max"]},{"id":"opus55","label":"Claude Opus 5.5","vendor":"Anthropic","group":"claude","price":[4,20],"open":false,"release":"2026-09-22","appDefault":"medium","note":"API default Medium","levels":["low","medium","high","xhigh","max"]},{"id":"sonnet55","label":"Claude Sonnet 5.5","vendor":"Anthropic","group":"claude","price":[2,10],"open":false,"release":"2026-09-28","appDefault":"medium","note":"App default Medium, API default High","levels":["low","medium","high","xhigh","max"]},{"id":"haiku55","label":"Claude Haiku 5.5","vendor":"Anthropic","group":"claude","price":[0.1,0.5],"open":false,"release":"2026-10-07","appDefault":"medium","note":"API default Medium; price for up to 100K tokens","levels":["low","medium","high","xhigh","max"]},{"id":"fable51","label":"Claude Fable 5.1","vendor":"Anthropic","group":"claudeold","price":[10,50],"open":false,"release":"2026-09","appDefault":"medium","note":"Current setting (Extra)","levels":["low","medium","high","xhigh","max"]},{"id":"opus5","label":"Claude Opus 5","vendor":"Anthropic","group":"claudeold","price":[5,25],"open":false,"release":"2026","appDefault":null,"note":"v5 index measured at Max only","levels":["max"]},{"id":"astra","label":"GPT-6 Astra","vendor":"OpenAI","group":"openai","price":[10,50],"open":false,"release":"2026-09-03","appDefault":null,"note":"GPT-6.1 Astra release cancelled (reported)","levels":["low","medium","high","xhigh","max"]},{"id":"sol61","label":"GPT-6.1 Sol","vendor":"OpenAI","group":"openai","price":[2,10],"open":false,"release":"2026-09-29","appDefault":"medium","note":"API default Medium; in ChatGPT only in Work and Codex","levels":["low","medium","high","xhigh","max"]},{"id":"terra61","label":"GPT-6.1 Terra","vendor":"OpenAI","group":"openai","price":[1,5],"open":false,"release":"2026-10-26","appDefault":"medium","note":"API default Medium; in ChatGPT only in Work and Codex","levels":["low","medium","high","xhigh","max"]},{"id":"sol6","label":"GPT-6 Sol","vendor":"OpenAI","group":"openai","price":[2,10],"open":false,"release":"2026-09-22","appDefault":null,"note":"General Chat in ChatGPT since Oct 7","levels":["max"]},{"id":"luna","label":"GPT-6 Luna","vendor":"OpenAI","group":"openai","price":[0.1,0.5],"open":false,"release":"2026-09-22","appDefault":null,"note":"Default model on ChatGPT Free","levels":["medium","max"]},{"id":"carbon","label":"Gemini 4 Carbon","vendor":"Google","group":"google","price":[4,20],"open":false,"release":"2026-10-28","appDefault":null,"note":"Launch price $2/$10, limited release","levels":["low","high"]},{"id":"argon","label":"Gemini 4 Argon","vendor":"Google","group":"google","price":[4,20],"open":false,"release":"2026-09","appDefault":null,"note":"","levels":["high"]},{"id":"flash38","label":"Gemini 3.8 Flash","vendor":"Google","group":"google","price":[0.75,3.75],"open":false,"release":"2026-09","appDefault":null,"note":"","levels":["high"]},{"id":"musefull","label":"Muse Wonder Full","vendor":"Meta","group":"meta","price":null,"open":false,"release":"2026-10-12","appDefault":null,"note":"No public API","levels":["max"]},{"id":"muse","label":"Muse Wonder","vendor":"Meta","group":"meta","price":[4,20],"open":false,"release":"2026-10","appDefault":null,"note":"","levels":["max"]},{"id":"ember","label":"Muse Ember","vendor":"Meta","group":"meta","price":[0.1,0.5],"open":false,"release":"2026-11-09","appDefault":null,"note":"","levels":["max"]},{"id":"kimi","label":"Kimi K3.1 Pro","vendor":"Moonshot","group":"other","price":[2,10],"open":true,"release":"2026-10-23","appDefault":null,"note":"No. 1 open-weights model","levels":["max"]},{"id":"grok","label":"Grok 4.7","vendor":"xAI","group":"other","price":[2,6],"open":false,"release":"2026-09","appDefault":null,"note":"","levels":["low","xhigh"]},{"id":"hy4","label":"Tencent Hy4","vendor":"Tencent","group":"other","price":[0.83,2.5],"open":false,"release":"2026-11-03","appDefault":null,"note":"Weights to be released","levels":["max"]},{"id":"qwen","label":"Qwen3.8 Max","vendor":"Alibaba","group":"other","price":[2,6],"open":false,"release":"2026-09","appDefault":null,"note":"","levels":["max"]},{"id":"deepseek","label":"DeepSeek V4.1 Flash","vendor":"DeepSeek","group":"other","price":[0.3,1.2],"open":true,"release":"2026-10","appDefault":null,"note":"Version 1017","levels":["max"]},{"id":"glm","label":"GLM-5.3","vendor":"Z AI","group":"other","price":[1.4,4.4],"open":true,"release":"2026-08","appDefault":null,"note":"","levels":["max"]},{"id":"mimo","label":"MiMo-V2.6-Pro","vendor":"Xiaomi","group":"other","price":[0.43,0.87],"open":true,"release":"2026-09-21","appDefault":null,"note":"","levels":["max"]},{"id":"minimax","label":"MiniMax-M3.1-Flash","vendor":"MiniMax","group":"other","price":[0.15,0.6],"open":true,"release":"2026-10","appDefault":null,"note":"","levels":["max"]},{"id":"inkling","label":"Inkling 2 Small","vendor":"Thinking Machines","group":"other","price":[0.3,1.0],"open":false,"release":"2026-11-05","appDefault":null,"note":"Weights to be released","levels":["max"]},{"id":"mistral","label":"Mistral Large 4","vendor":"Mistral","group":"other","price":[0.7,2.1],"open":true,"release":"2026-10-29","appDefault":null,"note":"","levels":["high"]}],"rows":{"fable52":{"low":{"ii":54,"brief":1563,"auto":68.0,"gdppdf":26.8,"fc":38.4,"tb4":54.5,"tbsci":53.8,"crit":60.0,"omni":63,"hled":60.8,"cost":3.1,"out":35.9,"reas":16.5,"speed":91,"e2e":80.31,"time":390.0},"medium":{"ii":56,"brief":1622,"auto":68.8,"gdppdf":23.8,"fc":41.3,"tb4":55.1,"tbsci":60.5,"crit":61.5,"omni":64,"hled":66.3,"cost":3.8,"out":43.1,"reas":20.7,"speed":86,"e2e":46.29,"time":498.0},"high":{"ii":62,"brief":1677,"auto":71.4,"gdppdf":21.8,"fc":49.1,"tb4":59.6,"tbsci":70.0,"crit":73.0,"omni":64,"hled":73.8,"cost":9.08,"out":97.8,"reas":58.2,"speed":91,"e2e":126.68,"time":1074.0},"xhigh":{"ii":62,"brief":1738,"auto":74.2,"gdppdf":21.4,"fc":47.6,"tb4":61.6,"tbsci":67.6,"crit":73.5,"omni":65,"hled":75.8,"cost":14.83,"out":162,"reas":106,"speed":102,"e2e":145.2,"time":1584.0},"max":{"ii":65,"brief":1785,"auto":76.4,"gdppdf":24.2,"fc":48.8,"tb4":59.6,"tbsci":73.3,"crit":76.5,"omni":67,"hled":80.2,"cost":26.54,"out":274,"reas":193,"speed":103,"e2e":429.9,"time":2664.0}},"opus55":{"low":{"ii":35,"brief":1279,"auto":52.9,"gdppdf":25.6,"fc":15.8,"tb4":31.3,"tbsci":24.3,"crit":36.0,"omni":39,"hled":41.7,"cost":0.98,"out":19.1,"reas":6.86,"speed":106,"e2e":49.5,"time":180.0},"medium":{"ii":48,"brief":1620,"auto":61.2,"gdppdf":25.6,"fc":33.1,"tb4":52.5,"tbsci":43.3,"crit":54.0,"omni":40,"hled":51.4,"cost":2.45,"out":43.8,"reas":20.7,"speed":103,"e2e":77.19,"time":426.0},"high":{"ii":52,"brief":1682,"auto":63.2,"gdppdf":28.8,"fc":35.9,"tb4":56.6,"tbsci":49.0,"crit":59.5,"omni":42,"hled":55.6,"cost":3.46,"out":60.1,"reas":31.6,"speed":105,"e2e":106.77,"time":570.0},"xhigh":{"ii":57,"brief":1760,"auto":65.0,"gdppdf":26.6,"fc":43.8,"tb4":59.6,"tbsci":61.9,"crit":67.5,"omni":43,"hled":64.0,"cost":6.05,"out":103,"reas":63.8,"speed":105,"e2e":208.26,"time":984.0},"max":{"ii":59,"brief":1801,"auto":69.5,"gdppdf":26.2,"fc":46.4,"tb4":59.6,"tbsci":59.0,"crit":68.0,"omni":48,"hled":67.9,"cost":10.04,"out":173,"reas":120,"speed":115,"e2e":759.92,"time":1506.0}},"sonnet55":{"low":{"ii":26,"brief":1268,"auto":49.4,"gdppdf":16.0,"fc":7.1,"tb4":20.7,"tbsci":10.5,"crit":26.0,"omni":20,"hled":20.6,"cost":0.51,"out":20.9,"reas":8.56,"speed":131,"e2e":26.9,"time":162.0},"medium":{"ii":31,"brief":1439,"auto":54.9,"gdppdf":20.2,"fc":11.0,"tb4":29.8,"tbsci":16.2,"crit":33.5,"omni":19,"hled":23.8,"cost":0.78,"out":30.7,"reas":14.4,"speed":139,"e2e":25.97,"time":222.0},"high":{"ii":42,"brief":1634,"auto":59.4,"gdppdf":25.2,"fc":25.7,"tb4":43.9,"tbsci":34.3,"crit":51.5,"omni":19,"hled":33.8,"cost":1.64,"out":58.4,"reas":31.7,"speed":136,"e2e":40.76,"time":432.0},"xhigh":{"ii":50,"brief":1742,"auto":65.5,"gdppdf":24.6,"fc":35.6,"tb4":57.1,"tbsci":52.4,"crit":57.5,"omni":21,"hled":44.1,"cost":4.09,"out":122,"reas":79,"speed":134,"e2e":93.83,"time":912.0},"max":{"ii":55,"brief":1816,"auto":71.8,"gdppdf":25.8,"fc":41.7,"tb4":63.6,"tbsci":53.3,"crit":59.0,"omni":30,"hled":53.3,"cost":10.02,"out":285,"reas":206,"speed":151,"e2e":517.11,"time":1884.0}},"fable51":{"low":{"ii":39,"brief":1478,"auto":52.2,"gdppdf":28.0,"fc":22.8,"tb4":40.4,"tbsci":21.4,"crit":49.5,"omni":34,"hled":37.4,"cost":4.47,"out":37.8,"reas":15.5,"speed":83,"e2e":56.37,"time":456.0},"medium":{"ii":43,"brief":1525,"auto":54.7,"gdppdf":26.8,"fc":28.8,"tb4":44.9,"tbsci":29.0,"crit":58.5,"omni":36,"hled":45.0,"cost":5.56,"out":48.5,"reas":22.4,"speed":88,"e2e":82.1,"time":552.0},"high":{"ii":47,"brief":1577,"auto":55.3,"gdppdf":26.8,"fc":30.3,"tb4":52.0,"tbsci":39.5,"crit":62.0,"omni":40,"hled":50.4,"cost":7.54,"out":66,"reas":34,"speed":87,"e2e":96.87,"time":756.0},"xhigh":{"ii":50,"brief":1649,"auto":57.8,"gdppdf":26.2,"fc":35.7,"tb4":55.1,"tbsci":40.5,"crit":60.0,"omni":44,"hled":58.8,"cost":10.85,"out":97.1,"reas":55.9,"speed":83,"e2e":188.56,"time":1164.0},"max":{"ii":49,"brief":1669,"auto":59.4,"gdppdf":26.2,"fc":31.6,"tb4":52.0,"tbsci":43.3,"crit":52.5,"omni":46,"hled":60.1,"cost":12.99,"out":118,"reas":71.4,"speed":88,"e2e":383.26,"time":1344.0}},"haiku55":{"low":{"ii":19,"brief":1114,"auto":22.9,"gdppdf":11.2,"fc":8.0,"tb4":12.6,"tbsci":1.9,"crit":21.5,"omni":2,"hled":14.1,"cost":0.04,"out":28.2,"reas":15.3,"speed":219,"e2e":23.28,"time":126.0},"medium":{"ii":25,"brief":1367,"auto":28.6,"gdppdf":15.2,"fc":16.1,"tb4":15.2,"tbsci":7.1,"crit":30.5,"omni":4,"hled":16.8,"cost":0.09,"out":53.3,"reas":32.1,"speed":225,"e2e":29.51,"time":234.0},"high":{"ii":30,"brief":1441,"auto":33.7,"gdppdf":17.2,"fc":23.2,"tb4":21.7,"tbsci":10.0,"crit":45.0,"omni":5,"hled":23.7,"cost":0.16,"out":88.1,"reas":57.5,"speed":228,"e2e":48.48,"time":384.0},"xhigh":{"ii":35,"brief":1523,"auto":36.0,"gdppdf":18.2,"fc":29.9,"tb4":29.3,"tbsci":18.1,"crit":47.5,"omni":8,"hled":28.8,"cost":0.25,"out":136,"reas":97.3,"speed":237,"e2e":112.19,"time":576.0},"max":{"ii":36,"brief":1573,"auto":35.4,"gdppdf":20.8,"fc":34.9,"tb4":32.8,"tbsci":20.0,"crit":43.5,"omni":12,"hled":29.6,"cost":0.41,"out":226,"reas":173,"speed":254,"e2e":334.37,"time":888.0}},"opus5":{"max":{"ii":44,"brief":1655,"auto":56.6,"gdppdf":21.6,"fc":31.2,"tb4":49.0,"tbsci":28.6,"crit":50.0,"omni":38,"hled":44.8,"cost":11.82,"out":118,"reas":72.8,"speed":80,"e2e":222.5,"time":1476.0}},"carbon":{"low":{"ii":54,"brief":1567,"auto":63.5,"gdppdf":28.6,"fc":29.6,"tb4":62.6,"tbsci":61.9,"crit":65.0,"omni":39,"hled":61.9,"cost":7.19,"out":86.2,"reas":null,"speed":64,"e2e":43.69,"time":1338},"high":{"ii":60,"brief":1611,"auto":77.8,"gdppdf":28.4,"fc":40.6,"tb4":65.2,"tbsci":64.8,"crit":69.0,"omni":54,"hled":69.1,"cost":7.76,"out":123,"reas":null,"speed":82,"e2e":157.33,"time":1494}},"argon":{"high":{"ii":50,"brief":1484,"auto":77.5,"gdppdf":21.8,"fc":25.7,"tb4":57.1,"tbsci":52.9,"crit":52.5,"omni":46,"hled":56.7,"cost":9.95,"out":116,"reas":null,"speed":68,"e2e":112.62,"time":1716}},"flash38":{"high":{"ii":31,"brief":1203,"auto":59.9,"gdppdf":21.0,"fc":18.7,"tb4":19.7,"tbsci":10.0,"crit":46.5,"omni":23,"hled":33.1,"cost":7.77,"out":98.9,"reas":null,"speed":112,"e2e":50.94,"time":882}},"musefull":{"max":{"ii":50,"brief":1729,"auto":71.3,"gdppdf":32.6,"fc":37.8,"tb4":57.1,"tbsci":37.1,"crit":56.5,"omni":31,"hled":48.5,"cost":null,"out":88.5,"reas":null,"speed":null,"e2e":null,"time":null}},"muse":{"max":{"ii":44,"brief":1659,"auto":68.1,"gdppdf":30.6,"fc":27.9,"tb4":52.0,"tbsci":25.7,"crit":50.5,"omni":25,"hled":39.0,"cost":6.95,"out":96.1,"reas":null,"speed":122,"e2e":60.71,"time":786}},"ember":{"max":{"ii":36,"brief":1521,"auto":68.1,"gdppdf":22.8,"fc":27.2,"tb4":40.9,"tbsci":20.0,"crit":39.0,"omni":7,"hled":25.1,"cost":0.14,"out":84.5,"reas":null,"speed":455,"e2e":12.78,"time":186}},"kimi":{"max":{"ii":46,"brief":1674,"auto":73.3,"gdppdf":31.4,"fc":25.5,"tb4":67.2,"tbsci":34.3,"crit":49.5,"omni":30,"hled":37.3,"cost":3.68,"out":72.2,"reas":null,"speed":32,"e2e":414.61,"time":2226}},"grok":{"low":{"ii":31,"brief":1493,"auto":56.7,"gdppdf":21.4,"fc":21.8,"tb4":16.2,"tbsci":4.8,"crit":43.5,"omni":27,"hled":18.5,"cost":2.92,"out":42.7,"reas":null,"speed":65,"e2e":38.93,"time":660},"xhigh":{"ii":35,"brief":1636,"auto":65.6,"gdppdf":20.0,"fc":28.7,"tb4":25.8,"tbsci":11.4,"crit":33.5,"omni":31,"hled":23.2,"cost":7.77,"out":105,"reas":null,"speed":72,"e2e":141.56,"time":1632.0}},"hy4":{"max":{"ii":35,"brief":1447,"auto":65.6,"gdppdf":21.6,"fc":31.4,"tb4":37.4,"tbsci":12.9,"crit":39.0,"omni":5,"hled":32.7,"cost":1.03,"out":78.1,"reas":null,"speed":null,"e2e":null,"time":null}},"qwen":{"max":{"ii":34,"brief":1605,"auto":56.2,"gdppdf":22.8,"fc":23.4,"tb4":38.9,"tbsci":11.9,"crit":29.5,"omni":10,"hled":24.0,"cost":10.02,"out":171,"reas":null,"speed":47,"e2e":334.82,"time":3348.0}},"deepseek":{"max":{"ii":33,"brief":1570,"auto":66.6,"gdppdf":17.2,"fc":28.5,"tb4":33.8,"tbsci":12.9,"crit":25.0,"omni":1,"hled":25.3,"cost":0.6,"out":139,"reas":null,"speed":138,"e2e":101.94,"time":1008}},"glm":{"max":{"ii":32,"brief":1503,"auto":62.2,"gdppdf":11.2,"fc":21.6,"tb4":41.9,"tbsci":9.5,"crit":33.5,"omni":6,"hled":17.9,"cost":5.01,"out":119,"reas":null,"speed":68,"e2e":167.64,"time":1734.0}},"mimo":{"max":{"ii":30,"brief":1512,"auto":58.6,"gdppdf":19.2,"fc":24.0,"tb4":34.8,"tbsci":5.7,"crit":34.0,"omni":-4,"hled":15.2,"cost":0.26,"out":121,"reas":null,"speed":51,"e2e":105.04,"time":2376}},"minimax":{"max":{"ii":29,"brief":1474,"auto":72.5,"gdppdf":20.8,"fc":20.8,"tb4":25.8,"tbsci":3.3,"crit":32.5,"omni":-6,"hled":28.1,"cost":0.49,"out":138,"reas":null,"speed":107,"e2e":149.77,"time":864.0}},"inkling":{"max":{"ii":31,"brief":1527,"auto":45.6,"gdppdf":25.2,"fc":25.4,"tb4":13.1,"tbsci":5.7,"crit":35.0,"omni":16,"hled":28.7,"cost":1.18,"out":150,"reas":null,"speed":155,"e2e":84.27,"time":966}},"mistral":{"high":{"ii":26,"brief":1348,"auto":57.8,"gdppdf":17.6,"fc":15.0,"tb4":24.7,"tbsci":4.3,"crit":27.0,"omni":5,"hled":17.3,"cost":2.06,"out":82,"reas":null,"speed":112,"e2e":68.44,"time":732}},"astra":{"low":{"ii":43,"brief":1256,"auto":59.1,"gdppdf":30.4,"fc":26.2,"tb4":41.9,"tbsci":37.1,"crit":63.0,"omni":40,"hled":45.1,"cost":1.42,"out":9.13,"reas":null,"speed":40,"e2e":109.34,"time":228.0},"medium":{"ii":52,"brief":1461,"auto":64.6,"gdppdf":30.4,"fc":36.6,"tb4":49.5,"tbsci":53.3,"crit":72.0,"omni":41,"hled":52.7,"cost":2.73,"out":18.1,"reas":null,"speed":43,"e2e":122.02,"time":426.0},"high":{"ii":55,"brief":1505,"auto":66.6,"gdppdf":31.0,"fc":40.1,"tb4":54.0,"tbsci":59.5,"crit":71.5,"omni":45,"hled":59.3,"cost":3.24,"out":23.1,"reas":null,"speed":39,"e2e":251.69,"time":588.0},"xhigh":{"ii":55,"brief":1544,"auto":67.2,"gdppdf":32.2,"fc":41.4,"tb4":59.6,"tbsci":54.8,"crit":71.0,"omni":44,"hled":61.5,"cost":3.66,"out":26.7,"reas":null,"speed":39,"e2e":329.51,"time":684.0},"max":{"ii":57,"brief":1569,"auto":68.5,"gdppdf":31.0,"fc":42.4,"tb4":59.1,"tbsci":63.3,"crit":70.5,"omni":42,"hled":63.8,"cost":6.24,"out":52,"reas":null,"speed":38,"e2e":575.32,"time":1380.0}},"sol61":{"low":{"ii":35,"brief":1114,"auto":52.6,"gdppdf":27.0,"fc":20.2,"tb4":30.8,"tbsci":11.0,"crit":62.5,"omni":38,"hled":38.2,"cost":0.16,"out":5.84,"reas":null,"speed":56,"e2e":65.86,"time":102.0},"medium":{"ii":46,"brief":1360,"auto":62.6,"gdppdf":30.0,"fc":33.4,"tb4":48.0,"tbsci":37.1,"crit":67.0,"omni":40,"hled":46.0,"cost":0.36,"out":13.5,"reas":null,"speed":59,"e2e":79.77,"time":228.0},"high":{"ii":50,"brief":1469,"auto":64.5,"gdppdf":32.0,"fc":36.7,"tb4":51.5,"tbsci":46.2,"crit":68.5,"omni":41,"hled":51.9,"cost":0.59,"out":22.6,"reas":null,"speed":57,"e2e":138.97,"time":396.0},"xhigh":{"ii":52,"brief":1503,"auto":66.6,"gdppdf":31.8,"fc":38.5,"tb4":54.0,"tbsci":50.5,"crit":69.5,"omni":42,"hled":55.8,"cost":0.76,"out":30.2,"reas":null,"speed":56,"e2e":195.13,"time":540.0},"max":{"ii":55,"brief":1555,"auto":64.9,"gdppdf":31.0,"fc":40.6,"tb4":56.1,"tbsci":58.1,"crit":69.5,"omni":42,"hled":58.8,"cost":1.27,"out":67.8,"reas":null,"speed":56,"e2e":369.71,"time":1206.0}},"terra61":{"low":{"ii":29,"brief":1031,"auto":56.2,"gdppdf":25.6,"fc":24.5,"tb4":15.2,"tbsci":7.6,"crit":50.5,"omni":23,"hled":24.9,"cost":0.07,"out":4.42,"reas":null,"speed":68,"e2e":19.42,"time":66.0},"medium":{"ii":38,"brief":1190,"auto":57.8,"gdppdf":28.4,"fc":34.5,"tb4":32.3,"tbsci":24.8,"crit":56.5,"omni":27,"hled":31.3,"cost":0.17,"out":10.9,"reas":null,"speed":69,"e2e":25.55,"time":156.0},"high":{"ii":42,"brief":1264,"auto":58.5,"gdppdf":28.0,"fc":37.5,"tb4":41.9,"tbsci":33.3,"crit":61.5,"omni":28,"hled":35.4,"cost":0.26,"out":16.7,"reas":null,"speed":69,"e2e":40.19,"time":240.0},"xhigh":{"ii":45,"brief":1333,"auto":59.9,"gdppdf":26.6,"fc":36.9,"tb4":46.5,"tbsci":41.9,"crit":60.5,"omni":29,"hled":42.3,"cost":0.4,"out":26.2,"reas":null,"speed":72,"e2e":79.48,"time":366.0},"max":{"ii":51,"brief":1403,"auto":60.2,"gdppdf":28.6,"fc":42.3,"tb4":55.6,"tbsci":57.6,"crit":68.0,"omni":30,"hled":47.3,"cost":0.96,"out":59.9,"reas":null,"speed":74,"e2e":300.35,"time":810.0}},"sol6":{"max":{"ii":44,"brief":1476,"auto":61.6,"gdppdf":25.2,"fc":35.6,"tb4":43.9,"tbsci":30.0,"crit":66.5,"omni":21,"hled":45.2,"cost":2.47,"out":53.9,"reas":null,"speed":121,"e2e":95.81,"time":444.0}},"luna":{"medium":{"ii":18,"brief":1096,"auto":40.5,"gdppdf":13.8,"fc":12.8,"tb4":2.5,"tbsci":1.4,"crit":27.5,"omni":-14,"hled":15.1,"cost":0.04,"out":19.8,"reas":null,"speed":100,"e2e":27.52,"time":198.0},"max":{"ii":28,"brief":1337,"auto":53.2,"gdppdf":22.8,"fc":25.2,"tb4":12.6,"tbsci":8.6,"crit":42.5,"omni":-8,"hled":22.2,"cost":0.15,"out":75.3,"reas":null,"speed":109,"e2e":171.72,"time":690.0}}},"best":{"brief":65.8,"auto":77.8,"gdppdf":32.6,"fc":49.1,"tb4":67.2,"tbsci":73.3,"crit":76.5,"omni":67.0,"hled":80.2},"cells":{"fable52":{"low":{"s":{"t1":8.26,"t2":8.43,"t3":8.31,"t4":7.83,"t5":8.12},"cost":3.1,"time":390.0,"ii":54},"medium":{"s":{"t1":8.54,"t2":8.53,"t3":8.56,"t4":8.31,"t5":8.41},"cost":3.8,"time":498.0,"ii":56},"high":{"s":{"t1":9.39,"t2":8.71,"t3":9.07,"t4":9.51,"t5":9.38},"cost":9.08,"time":1074.0,"ii":62},"xhigh":{"s":{"t1":9.48,"t2":8.93,"t3":9.25,"t4":9.42,"t5":9.45},"cost":14.83,"time":1584.0,"ii":62},"max":{"s":{"t1":9.55,"t2":9.4,"t3":9.71,"t4":9.58,"t5":9.49},"cost":26.54,"time":2664.0,"ii":65}},"opus55":{"low":{"s":{"t1":4.7,"t2":6.26,"t3":5.69,"t4":3.74,"t5":4.51},"cost":0.98,"time":180.0,"ii":35},"medium":{"s":{"t1":7.26,"t2":7.36,"t3":6.83,"t4":6.95,"t5":7.39},"cost":2.45,"time":426.0,"ii":48},"high":{"s":{"t1":7.76,"t2":7.88,"t3":7.36,"t4":7.58,"t5":7.92},"cost":3.46,"time":570.0,"ii":52},"xhigh":{"s":{"t1":8.54,"t2":8.14,"t3":7.9,"t4":8.81,"t5":8.79},"cost":6.05,"time":984.0,"ii":57},"max":{"s":{"t1":8.91,"t2":8.53,"t3":8.31,"t4":8.97,"t5":9.11},"cost":10.04,"time":1506.0,"ii":59}},"sonnet55":{"low":{"s":{"t1":3.15,"t2":4.5,"t3":3.54,"t4":2.02,"t5":3.08},"cost":0.51,"time":162.0,"ii":26},"medium":{"s":{"t1":4.03,"t2":5.24,"t3":4.09,"t4":3.0,"t5":4.08},"cost":0.78,"time":222.0,"ii":31},"high":{"s":{"t1":5.93,"t2":6.24,"t3":5.19,"t4":5.58,"t5":6.23},"cost":1.64,"time":432.0,"ii":42},"xhigh":{"s":{"t1":7.51,"t2":6.79,"t3":5.89,"t4":7.67,"t5":7.98},"cost":4.09,"time":912.0,"ii":50},"max":{"s":{"t1":8.58,"t2":7.62,"t3":6.79,"t4":8.59,"t5":9.03},"cost":10.02,"time":1884.0,"ii":55}},"fable51":{"low":{"s":{"t1":5.58,"t2":6.59,"t3":5.87,"t4":4.78,"t5":5.6},"cost":4.47,"time":456.0,"ii":39},"medium":{"s":{"t1":6.33,"t2":6.87,"t3":6.43,"t4":5.77,"t5":6.43},"cost":5.56,"time":552.0,"ii":43},"high":{"s":{"t1":6.89,"t2":7.25,"t3":6.94,"t4":6.56,"t5":6.99},"cost":7.54,"time":756.0,"ii":47},"xhigh":{"s":{"t1":7.56,"t2":7.71,"t3":7.46,"t4":7.25,"t5":7.67},"cost":10.85,"time":1164.0,"ii":50},"max":{"s":{"t1":7.17,"t2":7.88,"t3":7.47,"t4":6.79,"t5":7.2},"cost":12.99,"time":1344.0,"ii":49}},"haiku55":{"low":{"s":{"t1":1.85,"t2":2.72,"t3":2.08,"t4":1.44,"t5":1.99},"cost":0.04,"time":126.0,"ii":19},"medium":{"s":{"t1":2.73,"t2":3.74,"t3":2.86,"t4":2.46,"t5":2.95},"cost":0.09,"time":234.0,"ii":25},"high":{"s":{"t1":3.72,"t2":4.26,"t3":3.59,"t4":3.53,"t5":4.05},"cost":0.16,"time":384.0,"ii":30},"xhigh":{"s":{"t1":4.7,"t2":4.75,"t3":4.09,"t4":4.76,"t5":5.11},"cost":0.25,"time":576.0,"ii":35},"max":{"s":{"t1":5.29,"t2":5.18,"t3":4.36,"t4":5.45,"t5":5.71},"cost":0.41,"time":888.0,"ii":36}},"opus5":{"max":{"s":{"t1":6.8,"t2":6.94,"t3":6.34,"t4":6.19,"t5":6.91},"cost":11.82,"time":1476.0,"ii":44}},"carbon":{"low":{"s":{"t1":7.58,"t2":7.62,"t3":7.43,"t4":7.66,"t5":7.77},"cost":7.19,"time":1338,"ii":54},"high":{"s":{"t1":9.1,"t2":8.58,"t3":8.49,"t4":8.88,"t5":9.19},"cost":7.76,"time":1494,"ii":60}},"argon":{"high":{"s":{"t1":7.48,"t2":7.35,"t3":7.0,"t4":6.77,"t5":7.48},"cost":9.95,"time":1716,"ii":50}},"flash38":{"high":{"s":{"t1":4.24,"t2":5.14,"t3":4.63,"t4":3.01,"t5":4.24},"cost":7.77,"time":882,"ii":31}},"musefull":{"max":{"s":{"t1":7.96,"t2":7.78,"t3":6.71,"t4":7.45,"t5":8.31},"cost":null,"time":null,"ii":50}},"muse":{"max":{"s":{"t1":6.82,"t2":7.06,"t3":5.83,"t4":5.97,"t5":7.12},"cost":6.95,"time":786,"ii":44}},"ember":{"max":{"s":{"t1":5.92,"t2":5.33,"t3":3.88,"t4":5.17,"t5":6.4},"cost":0.14,"time":186,"ii":36}},"kimi":{"max":{"s":{"t1":7.65,"t2":7.36,"t3":6.01,"t4":6.77,"t5":7.96},"cost":3.68,"time":2226,"ii":46}},"grok":{"low":{"s":{"t1":4.26,"t2":5.66,"t3":4.54,"t4":2.97,"t5":4.2},"cost":2.92,"time":660,"ii":31},"xhigh":{"s":{"t1":5.54,"t2":6.25,"t3":4.82,"t4":4.29,"t5":5.56},"cost":7.77,"time":1632.0,"ii":35}},"hy4":{"max":{"s":{"t1":5.95,"t2":5.13,"t3":3.95,"t4":5.18,"t5":6.47},"cost":1.03,"time":null,"ii":35}},"qwen":{"max":{"s":{"t1":5.29,"t2":5.46,"t3":3.88,"t4":4.5,"t5":5.67},"cost":10.02,"time":3348.0,"ii":34}},"deepseek":{"max":{"s":{"t1":5.52,"t2":4.86,"t3":3.23,"t4":4.72,"t5":6.05},"cost":0.6,"time":1008,"ii":33}},"glm":{"max":{"s":{"t1":5.41,"t2":4.33,"t3":3.08,"t4":4.42,"t5":5.85},"cost":5.01,"time":1734.0,"ii":32}},"mimo":{"max":{"s":{"t1":5.03,"t2":4.52,"t3":2.98,"t4":4.17,"t5":5.53},"cost":0.26,"time":2376,"ii":30}},"minimax":{"max":{"s":{"t1":4.69,"t2":4.95,"t3":3.44,"t4":3.34,"t5":5.09},"cost":0.49,"time":864.0,"ii":29}},"inkling":{"max":{"s":{"t1":3.9,"t2":5.61,"t3":4.42,"t4":3.17,"t5":4.02},"cost":1.18,"time":966,"ii":31}},"mistral":{"high":{"s":{"t1":3.92,"t2":4.27,"t3":2.91,"t4":2.78,"t5":4.18},"cost":2.06,"time":732,"ii":26}},"astra":{"low":{"s":{"t1":6.17,"t2":6.68,"t3":6.51,"t4":5.6,"t5":6.15},"cost":1.42,"time":228.0,"ii":43},"medium":{"s":{"t1":7.46,"t2":7.4,"t3":7.25,"t4":7.39,"t5":7.59},"cost":2.73,"time":426.0,"ii":52},"high":{"s":{"t1":8.05,"t2":7.84,"t3":7.73,"t4":8.11,"t5":8.19},"cost":3.24,"time":588.0,"ii":55},"xhigh":{"s":{"t1":8.44,"t2":8.01,"t3":7.84,"t4":8.39,"t5":8.65},"cost":3.66,"time":684.0,"ii":55},"max":{"s":{"t1":8.49,"t2":7.98,"t3":7.82,"t4":8.69,"t5":8.73},"cost":6.24,"time":1380.0,"ii":57}},"sol61":{"low":{"s":{"t1":4.96,"t2":5.86,"t3":5.88,"t4":3.76,"t5":4.83},"cost":0.16,"time":102.0,"ii":35},"medium":{"s":{"t1":7.09,"t2":6.96,"t3":6.73,"t4":6.57,"t5":7.19},"cost":0.36,"time":228.0,"ii":46},"high":{"s":{"t1":7.57,"t2":7.5,"t3":7.21,"t4":7.31,"t5":7.71},"cost":0.59,"time":396.0,"ii":50},"xhigh":{"s":{"t1":7.9,"t2":7.7,"t3":7.45,"t4":7.72,"t5":8.06},"cost":0.76,"time":540.0,"ii":52},"max":{"s":{"t1":8.11,"t2":7.81,"t3":7.6,"t4":8.23,"t5":8.32},"cost":1.27,"time":1206.0,"ii":55}},"terra61":{"low":{"s":{"t1":4.33,"t2":4.83,"t3":4.34,"t4":3.24,"t5":4.35},"cost":0.07,"time":66.0,"ii":29},"medium":{"s":{"t1":6.03,"t2":5.65,"t3":5.15,"t4":5.52,"t5":6.22},"cost":0.17,"time":156.0,"ii":38},"high":{"s":{"t1":6.78,"t2":5.92,"t3":5.51,"t4":6.53,"t5":7.05},"cost":0.26,"time":240.0,"ii":42},"xhigh":{"s":{"t1":7.02,"t2":6.17,"t3":5.83,"t4":6.95,"t5":7.31},"cost":0.4,"time":366.0,"ii":45},"max":{"s":{"t1":7.91,"t2":6.59,"t3":6.35,"t4":8.34,"t5":8.3},"cost":0.96,"time":810.0,"ii":51}},"sol6":{"max":{"s":{"t1":6.72,"t2":6.19,"t3":5.82,"t4":6.37,"t5":7.1},"cost":2.47,"time":444.0,"ii":44}},"luna":{"medium":{"s":{"t1":2.08,"t2":3.01,"t3":2.21,"t4":1.34,"t5":2.23},"cost":0.04,"time":198.0,"ii":18},"max":{"s":{"t1":3.82,"t2":4.41,"t3":3.32,"t4":3.2,"t5":4.17},"cost":0.15,"time":690.0,"ii":28}}},"recs":{"claude":{"t1":{"top":9.55,"topCombo":["fable52","max"],"quality":["fable52","high"],"value":["fable52","high"],"speed":["fable52","low"]},"t2":{"top":9.4,"topCombo":["fable52","max"],"quality":["fable52","max"],"value":["fable52","medium"],"speed":["fable52","low"]},"t3":{"top":9.71,"topCombo":["fable52","max"],"quality":["fable52","max"],"value":["fable52","high"],"speed":["fable52","low"]},"t4":{"top":9.58,"topCombo":["fable52","max"],"quality":["fable52","high"],"value":["opus55","xhigh"],"speed":["fable52","low"]},"t5":{"top":9.49,"topCombo":["fable52","max"],"quality":["fable52","high"],"value":["opus55","xhigh"],"speed":["fable52","low"]}},"all":{"t1":{"top":9.55,"topCombo":["fable52","max"],"quality":["fable52","high"],"value":["carbon","high"],"speed":["fable52","low"]},"t2":{"top":9.4,"topCombo":["fable52","max"],"quality":["fable52","max"],"value":["fable52","medium"],"speed":["fable52","low"]},"t3":{"top":9.71,"topCombo":["fable52","max"],"quality":["fable52","max"],"value":["fable52","high"],"speed":["fable52","low"]},"t4":{"top":9.58,"topCombo":["fable52","max"],"quality":["fable52","high"],"value":["opus55","xhigh"],"speed":["fable52","low"]},"t5":{"top":9.49,"topCombo":["fable52","max"],"quality":["fable52","high"],"value":["astra","xhigh"],"speed":["sol61","medium"]}}},"ladders":{"fable52":{"levels":["low","medium","high","xhigh","max"],"tasks":{"t1":{"s":[8.26,8.54,9.39,9.48,9.55],"max":9.55,"argmax":"max","p97":"high","p90":"high","p75":"low"},"t2":{"s":[8.43,8.53,8.71,8.93,9.4],"max":9.4,"argmax":"max","p97":"max","p90":"medium","p75":"low"},"t3":{"s":[8.31,8.56,9.07,9.25,9.71],"max":9.71,"argmax":"max","p97":"max","p90":"high","p75":"low"},"t4":{"s":[7.83,8.31,9.51,9.42,9.58],"max":9.58,"argmax":"max","p97":"high","p90":"high","p75":"low"},"t5":{"s":[8.12,8.41,9.38,9.45,9.49],"max":9.49,"argmax":"max","p97":"high","p90":"high","p75":"low"}}},"opus55":{"levels":["low","medium","high","xhigh","max"],"tasks":{"t1":{"s":[4.7,7.26,7.76,8.54,8.91],"max":8.91,"argmax":"max","p97":"max","p90":"xhigh","p75":"medium"},"t2":{"s":[6.26,7.36,7.88,8.14,8.53],"max":8.53,"argmax":"max","p97":"max","p90":"high","p75":"medium"},"t3":{"s":[5.69,6.83,7.36,7.9,8.31],"max":8.31,"argmax":"max","p97":"max","p90":"xhigh","p75":"medium"},"t4":{"s":[3.74,6.95,7.58,8.81,8.97],"max":8.97,"argmax":"max","p97":"xhigh","p90":"xhigh","p75":"medium"},"t5":{"s":[4.51,7.39,7.92,8.79,9.11],"max":9.11,"argmax":"max","p97":"max","p90":"xhigh","p75":"medium"}}},"sonnet55":{"levels":["low","medium","high","xhigh","max"],"tasks":{"t1":{"s":[3.15,4.03,5.93,7.51,8.58],"max":8.58,"argmax":"max","p97":"max","p90":"max","p75":"xhigh"},"t2":{"s":[4.5,5.24,6.24,6.79,7.62],"max":7.62,"argmax":"max","p97":"max","p90":"max","p75":"high"},"t3":{"s":[3.54,4.09,5.19,5.89,6.79],"max":6.79,"argmax":"max","p97":"max","p90":"max","p75":"high"},"t4":{"s":[2.02,3.0,5.58,7.67,8.59],"max":8.59,"argmax":"max","p97":"max","p90":"max","p75":"xhigh"},"t5":{"s":[3.08,4.08,6.23,7.98,9.03],"max":9.03,"argmax":"max","p97":"max","p90":"max","p75":"xhigh"}}},"fable51":{"levels":["low","medium","high","xhigh","max"],"tasks":{"t1":{"s":[5.58,6.33,6.89,7.56,7.17],"max":7.56,"argmax":"xhigh","p97":"xhigh","p90":"high","p75":"medium"},"t2":{"s":[6.59,6.87,7.25,7.71,7.88],"max":7.88,"argmax":"max","p97":"xhigh","p90":"high","p75":"low"},"t3":{"s":[5.87,6.43,6.94,7.46,7.47],"max":7.47,"argmax":"max","p97":"xhigh","p90":"high","p75":"low"},"t4":{"s":[4.78,5.77,6.56,7.25,6.79],"max":7.25,"argmax":"xhigh","p97":"xhigh","p90":"high","p75":"medium"},"t5":{"s":[5.6,6.43,6.99,7.67,7.2],"max":7.67,"argmax":"xhigh","p97":"xhigh","p90":"high","p75":"medium"}}},"haiku55":{"levels":["low","medium","high","xhigh","max"],"tasks":{"t1":{"s":[1.85,2.73,3.72,4.7,5.29],"max":5.29,"argmax":"max","p97":"max","p90":"max","p75":"xhigh"},"t2":{"s":[2.72,3.74,4.26,4.75,5.18],"max":5.18,"argmax":"max","p97":"max","p90":"xhigh","p75":"high"},"t3":{"s":[2.08,2.86,3.59,4.09,4.36],"max":4.36,"argmax":"max","p97":"max","p90":"xhigh","p75":"high"},"t4":{"s":[1.44,2.46,3.53,4.76,5.45],"max":5.45,"argmax":"max","p97":"max","p90":"max","p75":"xhigh"},"t5":{"s":[1.99,2.95,4.05,5.11,5.71],"max":5.71,"argmax":"max","p97":"max","p90":"max","p75":"xhigh"}}},"astra":{"levels":["low","medium","high","xhigh","max"],"tasks":{"t1":{"s":[6.17,7.46,8.05,8.44,8.49],"max":8.49,"argmax":"max","p97":"xhigh","p90":"high","p75":"medium"},"t2":{"s":[6.68,7.4,7.84,8.01,7.98],"max":8.01,"argmax":"xhigh","p97":"high","p90":"medium","p75":"low"},"t3":{"s":[6.51,7.25,7.73,7.84,7.82],"max":7.84,"argmax":"xhigh","p97":"high","p90":"medium","p75":"low"},"t4":{"s":[5.6,7.39,8.11,8.39,8.69],"max":8.69,"argmax":"max","p97":"max","p90":"high","p75":"medium"},"t5":{"s":[6.15,7.59,8.19,8.65,8.73],"max":8.73,"argmax":"max","p97":"xhigh","p90":"high","p75":"medium"}}},"sol61":{"levels":["low","medium","high","xhigh","max"],"tasks":{"t1":{"s":[4.96,7.09,7.57,7.9,8.11],"max":8.11,"argmax":"max","p97":"xhigh","p90":"high","p75":"medium"},"t2":{"s":[5.86,6.96,7.5,7.7,7.81],"max":7.81,"argmax":"max","p97":"xhigh","p90":"high","p75":"low"},"t3":{"s":[5.88,6.73,7.21,7.45,7.6],"max":7.6,"argmax":"max","p97":"xhigh","p90":"high","p75":"low"},"t4":{"s":[3.76,6.57,7.31,7.72,8.23],"max":8.23,"argmax":"max","p97":"max","p90":"xhigh","p75":"medium"},"t5":{"s":[4.83,7.19,7.71,8.06,8.32],"max":8.32,"argmax":"max","p97":"max","p90":"high","p75":"medium"}}},"terra61":{"levels":["low","medium","high","xhigh","max"],"tasks":{"t1":{"s":[4.33,6.03,6.78,7.02,7.91],"max":7.91,"argmax":"max","p97":"max","p90":"max","p75":"medium"},"t2":{"s":[4.83,5.65,5.92,6.17,6.59],"max":6.59,"argmax":"max","p97":"max","p90":"xhigh","p75":"medium"},"t3":{"s":[4.34,5.15,5.51,5.83,6.35],"max":6.35,"argmax":"max","p97":"max","p90":"xhigh","p75":"medium"},"t4":{"s":[3.24,5.52,6.53,6.95,8.34],"max":8.34,"argmax":"max","p97":"max","p90":"max","p75":"high"},"t5":{"s":[4.35,6.22,7.05,7.31,8.3],"max":8.3,"argmax":"max","p97":"max","p90":"max","p75":"high"}}}},"lbOnly":[["carbon","medium",58,6.59,23.7]]};
+const X = {"hero":{"from":["fable51","xhigh"],"to":["fable52","low"]},"bigShift":"<span><b>Two things changed since Oct 24.</b> ① <b>Claude Fable 5.2</b>, released Nov 9, took first place with an AA index of 65. Its token price is $8/$40, 20% below Fable 5.1, and its lowest level (54, $3.10 per task) is both higher and cheaper than Opus 5.5 High (52, $3.46). The Oct 24 edition's conclusion (‘Opus 5.5 is best in every area’) no longer holds. ② On Oct 27 Artificial Analysis moved its index to v5, dropping GDPval, SciCode, AA-LCR and HLE and adding FrontierCode 2.0, Terminal-Bench-Science and HLE-Diamond. The scoring and work mapping were rebuilt accordingly, and the numbers cannot be compared directly with the Oct 24 edition.</span>","reasons":{"t1":{"quality":"98% of the best score (Fable 5.2 Max, 9.6) at $9.08 per task. Fable 5.2 jumps at High to 49.1% on FrontierCode 2.0 and 59.6% on Terminal-Bench 4.0; levels above that only add cost.","value":"98% of the best score (Fable 5.2 Max, 9.6) at $9.08 per task. The same combination is also the cheapest under the value threshold (90%).","speed":"86% of the best score in 6.5 minutes per task. ","allValue":"95% of the best score (Fable 5.2 Max, 9.6) at $7.76 per task. Gemini 4 Carbon High: 65.2% on Terminal-Bench 4.0, near the top of measured models. But it is not generally available yet (cyber-defense organizations and the Fairwind program first), so it is hard to use right now."},"t2":{"quality":"No. 1 work score (9.4). $26.54 and 44 minutes per task. Hallucination control (AA-Omniscience) of 67 is the best of any measured model. But GDP.pdf (long professional documents) is 24.2%, below Opus 5.5 High (28.8%) and GPT-6 Astra (30–32%).","value":"91% of the best score (Fable 5.2 Max, 9.4) at $3.80 per task. This is the app default (Medium) as is. Hallucination control of 64 is higher than Opus 5.5 Max (48).","speed":"90% of the best score in 6.5 minutes per task. ","allValue":"91% of the best score (Fable 5.2 Max, 9.4) at $3.80 per task. "},"t3":{"quality":"No. 1 work score (9.7). $26.54 and 44 minutes per task. With HLE-Diamond at 80.2% and CritPt v2 at 76.5%, research metrics keep rising all the way to Max. The price is 44 minutes per task.","value":"93% of the best score (Fable 5.2 Max, 9.7) at $9.08 per task. The biggest jump is Medium → High, where HLE-Diamond goes 66.3 → 73.8%.","speed":"86% of the best score in 6.5 minutes per task. ","allValue":"93% of the best score (Fable 5.2 Max, 9.7) at $9.08 per task. "},"t4":{"quality":"99% of the best score (Fable 5.2 Max, 9.6) at $9.08 per task. This is the work area with the weakest evidence because no benchmark matches it directly (FrontierCode carries 45% of the weight).","value":"92% of the best score (Fable 5.2 Max, 9.6) at $6.05 per task. Fable 5.2 Medium is at 87% of the best score, below the threshold. Opus at Extra is 33% cheaper than Fable 5.2 High.","speed":"82% of the best score in 6.5 minutes per task. ","allValue":"92% of the best score (Fable 5.2 Max, 9.6) at $6.05 per task. "},"t5":{"quality":"99% of the best score (Fable 5.2 Max, 9.5) at $9.08 per task. Past High the score barely rises (High 9.4 → Max 9.5, cost ×2.9).","value":"93% of the best score (Fable 5.2 Max, 9.5) at $6.05 per task. Fable 5.2 Medium is at 89% of the best score, just short of the threshold.","speed":"86% of the best score in 6.5 minutes per task. ","allValue":"91% of the best score (Fable 5.2 Max, 9.5) at $3.66 per task. GPT-6 Astra Extra: 40% cheaper than the Claude value pick. An alternative if you have a ChatGPT subscription."}},"findings":[["v","Verified","Fable 5.2 (Nov 9): token price $8/$40 (20% below Fable 5.1's $10/$50), all 5 levels supported, default Medium in the app and Claude Code and High on the API. AA index 54 → 56 → 62 → 62 → 65, cost per task $3.10 → $3.80 → $9.08 → $14.83 → $26.54."],["v","Verified","At similar cost: Fable 5.2 Low (index 54, $3.10) is higher and cheaper than Opus 5.5 High (52, $3.46), and Fable 5.2 High (62, $9.08) is higher and cheaper than Opus 5.5 Max (59, $10.04). By benchmark, though, Opus 5.5 High leads on AA-Briefcase (1682 vs 1563), Terminal-Bench 4.0 (56.6% vs 54.5%) and GDP.pdf (28.8% vs 26.8%)."],["v","Verified","The widest gap is hallucination control (AA-Omniscience v1.1): Fable 5.2 63–67 vs Opus 5.5 39–48, Gemini 4 Carbon High 54, GPT-6 Astra 40–45. This is the main reason Fable 5.2 leads in company analysis and research, which deal with numbers."],["v","Verified","Fable 5.2's weak spots: on long professional documents (GDP.pdf) it actually falls from 26.8% → 21.4% as effort rises (Max 24.2%), and the best is GPT-6 Astra Extra at 32.2%. Terminal-Bench 4.0 also tops out at 59.6% at Max, equal to Opus 5.5 Max and below Kimi K3.1 Pro (67.2%) and Gemini 4 Carbon (65.2%)."],["v","Verified","At High and above, Fable 5.2 uses so many tokens that cost per task exceeds Fable 5.1 (High $9.08 vs $7.54, Max $26.54 vs $12.99). Low and Medium are cheaper ($3.10 vs $4.47, $3.80 vs $5.56)."],["v","Verified","Google Gemini 4 Carbon (Oct 28): first outside Anthropic, index 60 at High and $7.76 per task. Its AutomationBench score of 77.8% is higher than Fable 5.2 Max (76.4%). But it is not generally available yet and opens first to cyber-defense organizations and the Fairwind program."],["v","Verified","OpenAI value: GPT-6.1 Sol Max (index 55, $1.27) scores higher than Opus 5.5 Medium (48, $2.45) in 5 of 5 work areas at half the cost. The new GPT-6.1 Terra (Oct 26, $1/$5) reaches 51 at Max for $0.96. In ChatGPT both are available only in Work and Codex, not in general chat."],["v","Verified","Lightweight class: Meta Muse Ember (Nov 9, $0.10/$0.50) has an index of 36 at $0.14 per task, matching Claude Haiku 5.5 Max (36, $0.41) on the index at a third of the cost. On work scores it is ahead in 2, on par in 1 and behind in 2."],["v","Verified","The No. 1 open-weights model is Kimi K3.1 Pro (index 46, $3.68, Terminal-Bench 4.0 67.2%). But at 37 minutes per task it is among the slowest."],["v","Verified","Sonnet 5.5 has the steepest curve: index 26 → 31 → 42 → 50 → 55. Max costs $10.02 per task, about the same as Opus 5.5 Max ($10.04), with a lower score."],["x","Correction","The Oct 24 edition's ‘Fable 5.1 Extra → Opus 5.5 High costs 30%’ was based on the old index (v4.3). On v5 it is $3.46 vs $10.85, or 32%, and Fable 5.2 Low is now cheaper still (29%) and higher in all 5 work areas."],["x","Correction","AA index v5 also changed the scores of the same models (e.g. Fable 5.1 Max 53 → 49, Haiku 5.5 Max 43 → 36, Opus 5.5 Max 58 → 59). With the task mix changed, cost per task roughly doubled as well (Opus 5.5 Max $5.98 → $10.04). The models did not get worse; the yardstick changed."]],"uncert":[["Much of Fable 5.2's lead comes from the hallucination-control score","Recalculated without AA-Omniscience, Fable 5.2 Low is on par with Fable 5.1 Extra in company analysis and research, and Opus 5.5 High leads in company analysis. The lead in the 3 coding work areas is unchanged. How much ‘saying it does not know when it does not know’ matters in real work decides the conclusion.","Tests #2·#3·#7·#8·#16"],["Subscription usage is not the same as API cost","Anthropic said that, as a launch promotion, Fable can be used for up to 50% of the weekly limit on Pro and Team standard seats. Even with a low cost per task, using Fable 5.2 in the app may fill the limit faster, and when Fable 5.2 appears in the app menu could not be confirmed either.","Tests #1–10 (usage-feel field)"],["The work mapping is my own judgment","The 9 AA v5 benchmarks were combined with weights into 5 work areas. Game development is the weakest because no benchmark matches it directly, and no benchmark measures Korean-language or Korean-stock context.","Tests #2·#3·#7·#8·#11·#12"],["Independent evaluations could not be cross-checked","The Vals AI pages could not be reached this time, so the latest Vals ranking is not reflected. On Oct 24 the Vals No. 1 was Sonnet 5.5, and no Vals result for Fable 5.2 has been seen yet.","Tests #16·#18"]],"pairs":[[["fable52","low"],["fable51","xhigh"],"Can it replace the current setting","Left is equal or higher (ahead in 5, on par in 0), cost ×0.29 → can replace"],[["fable52","medium"],["opus55","high"],"App default vs recommended Opus default","Left is equal or higher (ahead in 5, on par in 0), cost ×1.10 → can replace"],[["fable52","high"],["opus55","max"],"Does Fable 5.2 High replace Opus Max","Left is equal or higher (ahead in 4, on par in 1), cost ×0.90 → can replace"],[["opus55","xhigh"],["fable52","medium"],"Raise Opus, or make Fable the default","Ahead in 2, on par in 1, behind in 2, cost ×1.59 → depends on the work area"],[["sonnet55","xhigh"],["opus55","high"],"Sonnet Extra vs Opus High","Right is equal or higher (ahead in 3, on par in 2), cost ratio 1.18 → keep the right"],[["carbon","high"],["fable52","high"],"Google's top model vs Fable 5.2 High","Right is equal or higher (ahead in 3, on par in 2), cost ratio 0.85 → left is the saver if cheaper"],[["astra","xhigh"],["opus55","high"],"GPT's top model vs recommended Opus default","Left is equal or higher (ahead in 4, on par in 1), cost ×1.06 → can replace"],[["sol61","max"],["opus55","medium"],"GPT value pick vs Opus default","Left is equal or higher (ahead in 5, on par in 0), cost ×0.52 → can replace"],[["sol61","max"],["fable52","low"],"GPT value pick vs Fable 5.2 lowest level","Ahead in 2, on par in 1, behind in 2, cost ×0.41 → depends on the work area"],[["terra61","max"],["sol61","max"],"New Terra vs 6.1 Sol","Right is equal or higher (ahead in 2, on par in 3), cost ratio 0.76 → left is the saver if cheaper"],[["kimi","max"],["opus55","medium"],"No. 1 open-weights model vs Opus default","Ahead in 2, on par in 2, behind in 1, cost ×1.50 → depends on the work area"],[["ember","max"],["haiku55","max"],"Lightweight class: Meta vs Anthropic","Ahead in 2, on par in 1, behind in 2, cost ×0.34 → depends on the work area"]],"effNotes":{"fable52":"The biggest index jump is Medium → High (+6, cost ×2.4); Extra has the same index as High.","opus55":"Extra adds +5 to the index (cost ×1.7). Terminal-Bench 4.0 stops at 59.6% from Extra on.","sonnet55":"Low and Medium are weaker than even other models' Low, so Sonnet is only worth using at Extra and above.","fable51":"There is an overthinking zone where Max (index 49) is below Extra (50). CritPt v2 falls from 60.0% → 52.5%.","haiku55":"Even at Max, Terminal-Bench 4.0 is 32.8%, not enough to be the main coding agent.","astra":"Max costs ×1.7 over Extra for only +2 on the index.","sol61":"Even raised to Max ($1.27 per task) it is cheaper than Claude Opus 5.5 Medium ($2.45).","terra61":"At Max the index jumps from 45 → 51, but cost is also ×2.4."},"newRel":[["2026-11-09","Claude Fable 5.2 · Mythos 5.2","$8/$40, No. 1 on the AA index (65). Mythos 5.2 is for verified organizations only, not measured by AA","https://www.anthropic.com/claude-fable-and-mythos-5-2"],["2026-11-09","Meta Muse Ember","$0.10/$0.50, AA 36 · $0.14 per task","https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"],["2026-11-05","Inkling 2 Small (Thinking Machines)","594B/17B active, AA 31, weights to be released",""],["2026-11-05","GPT-6-Cyber","Security only, approval required ($20/$100). Not measured by AA","https://deploymentsafety.openai.com/gpt-6-cyber"],["2026-11-03","Tencent Hy4","770B/49B active, AA 35, weights to be released","https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"],["2026-10-30","GPT-6 Rosalind","Life sciences only, approval required ($15/$75). Not measured by AA",""],["2026-10-29","Mistral Large 4 (open weights)","$0.70/$2.10, AA 26","https://mistral.ai/news/mistral-large-4-oss/"],["2026-10-29","GPT-6 Luna behavior update","Default model on ChatGPT Free, shorter answers (factual error rate up per OpenAI's appendix)","https://deploymentsafety.openai.com/gpt-6-luna-october-28-2026-addendum"],["2026-10-28","Google Gemini 4 Carbon","AA 60 (High), launch price $2/$10 → later $4/$20, limited release","https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"],["2026-10-27","AA Intelligence Index v5","Benchmark mix changed (now v5.0.1). The reason for this dashboard's full recalculation","https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5"],["2026-10-26","GPT-6.1 Terra","$1/$0.05/$5, AA 51 at Max · $0.96, in ChatGPT only in Work and Codex","https://developers.openai.com/api/docs/models/gpt-6.1-terra"]],"newIds":["fable52","ember","inkling","hy4","mistral","carbon","terra61"],"verdicts":[["Claude Fable 5.1","None","Fable 5.2 has a higher AA index at all 5 matching levels (Low 39→54, Medium 43→56, High 47→62, Extra 50→62, Max 49→65), and a token price 20% lower."],["Claude Opus 5","None","On v5, Max index 44 vs Opus 5.5 Max 59, cost per task $11.82 vs $10.04."],["Claude Fable 5","None","Not measured on the v5 index (AA ran Opus 4.8 in its place). On the old index (v4.3) it scored 50, below Fable 5.1."],["Claude Opus 4.8 · 4.7 · 4.6 · Opus 3","None","Not measured on the v5 index. On the old index: 42 · 41 (estimate) · 32 (estimate) · 9 (estimate)."],["Claude Sonnet 5 · Sonnet 4.6","None","Not measured on the v5 index. Old index 38 · 30, far behind Sonnet 5.5 (old index 56)."],["Claude Haiku 4.5","None","Haiku 5.5 is 90% cheaper per token ($0.10/$0.50, up to 100K tokens). The planned retirement date in Anthropic's docs (after Oct 15) has passed, but it is still listed as available."]],"support":[["Fable 5.2",["low","medium","high","xhigh","max"],"High","Medium","$8 / $40"],["Opus 5.5",["low","medium","high","xhigh","max"],"Medium","Unconfirmed","$4 / $20"],["Sonnet 5.5",["low","medium","high","xhigh","max"],"High","Medium","$2 / $10"],["Haiku 5.5",["low","medium","high","xhigh","max"],"Medium","Unconfirmed","$0.10 / $0.50"],["Fable 5.1",["low","medium","high","xhigh","max"],"High","Medium","$10 / $50"],["Opus 4.6 · Sonnet 4.6",["low","medium","high","max"],"High","—","$5/$25 · $3/$15"],["Haiku 4.5",[],"No effort setting","—","$1 / $5"]],"supportNote":"API defaults follow Anthropic's effort documentation (Nov 11); app defaults follow each model's announcement. As a launch promotion, Fable can be used for up to 50% of the weekly usage limit on Pro and Team standard seats (Anthropic announcement). The level this dashboard calls Extra is ‘Extra high (xhigh)’ in the English help.","formula":["Raw benchmark scores are unified as percentages: AA-Briefcase Elo is (Elo − 500) ÷ 20, negative AA-Omniscience is 0.","For each benchmark, the best value among all measured model and effort combinations is normalized to 10.","Work score = weighted sum of normalized scores per work area (weights in the table above).","Every score comes only from values AA Intelligence Index v5.0.1 measured directly for that model and effort combination. Nothing is borrowed from another model's curve or interpolated (unlike the Oct 24 edition).","Picks: Top quality = cheapest per task at 97%+ of the best score, Value = cheapest at 90%+, Speed = fastest per task at 75%+. ‘Claude’ picks consider Claude models only; ‘all vendors’ considers everything.","Cost and time per task are averages over AA's full index run. There is no guarantee they are proportional to usage consumed in subscription apps.","Gemini 4 Carbon Medium (index 58, $6.59 per task) was left out of the work scores because per-benchmark values were not available."],"v5note":"<span><b>Why the numbers differ from the Oct 24 edition.</b> On Oct 27 Artificial Analysis moved its index to v5 (now v5.0.1). Benchmarks dropped: GDPval-AA, SciCode, AA-LCR, HLE. Benchmarks added: FrontierCode 2.0, Terminal-Bench-Science 0.1, HLE-Diamond. Benchmarks changed: CritPt → CritPt v2 (Hard), AA-Omniscience → v1.1. Because the task mix differs, the same model's index and cost per task changed too. This dashboard rebuilt the work mapping from v5 benchmarks only. v5 also no longer uses vendor-reported values such as CursorBench or FrontierCode 1.1, because AA measures FrontierCode 2.0 itself.</span>","sources":[["Anthropic","Claude Fable 5.2 and Mythos 5.2 (2026-11-09)","https://www.anthropic.com/claude-fable-and-mythos-5-2"],["Claude Platform Docs","Pricing — Fable 5.2 $8/$40","https://platform.claude.com/docs/en/about-claude/pricing"],["Claude Platform Docs","Effort — levels and defaults","https://platform.claude.com/docs/en/build-with-claude/effort"],["Claude Platform Docs","Models overview","https://platform.claude.com/docs/en/about-claude/models/overview"],["Claude Platform Docs","Model deprecations","https://platform.claude.com/docs/en/about-claude/model-deprecations"],["Artificial Analysis","Intelligence Index v5 announcement (2026-10-27)","https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5"],["Artificial Analysis","Methodology — v5.0.1 benchmarks and weights","https://artificialanalysis.ai/methodology/intelligence-benchmarking"],["Artificial Analysis","Model leaderboard","https://artificialanalysis.ai/leaderboards/models"],["Artificial Analysis","Fable 5.2 vs Opus 5.5 (Max)","https://artificialanalysis.ai/models/comparisons/claude-fable-5-2-vs-claude-opus-5-5"],["Artificial Analysis","Opus 5.5 · Sonnet 5.5 · Fable 5.1 · Haiku 5.5 comparison pages by effort","https://artificialanalysis.ai/models/comparisons/claude-opus-5-5-low-vs-claude-opus-5-5-xhigh"],["Artificial Analysis","GPT-6 Astra vs GPT-6.1 Sol comparison pages by effort","https://artificialanalysis.ai/models/comparisons/gpt-6-astra-high-vs-gpt-6-1-sol-high"],["Artificial Analysis","Gemini 4 Carbon vs Argon","https://artificialanalysis.ai/models/comparisons/gemini-4-carbon-vs-gemini-4-argon"],["Artificial Analysis","Muse Wonder Full vs Kimi K3.1 Pro","https://artificialanalysis.ai/models/comparisons/muse-wonder-full-vs-kimi-k3-1-pro"],["OpenAI Developers","GPT-6.1 Terra model documentation","https://developers.openai.com/api/docs/models/gpt-6.1-terra"],["OpenAI Developers","API Pricing","https://developers.openai.com/api/docs/pricing"],["OpenAI","GPT-6.1 Terra system card appendix","https://deploymentsafety.openai.com/gpt-6-1-terra"],["Google","Introducing Gemini 4 Carbon","https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"],["TechCrunch","Meta releases Muse Ember","https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"],["Tencent","Tencent launches Hy4","https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"],["Mistral","Mistral Large 4 open weights","https://mistral.ai/news/mistral-large-4-oss/"],["Opper","Model release log (release dates cross-checked)","https://opper.ai/model-releases"]],"prompts":{"t1":"The attached [filename].py is a stock scanner module.\nAdd the following 1 rule from the rulebook as a new function: [rule text].\n\nConditions\n- Do not change a single line of existing function signatures, return types or existing rule logic\n- Write 5 pytest unit tests as well (2 normal, 2 boundary, 1 exception)\n- Show only the change diff and the test run output","t2":"Write a company analysis from the attached financial data for [ticker] (last 8 quarters).\n1) Valuation: PER, PBR, EV/EBITDA, compared with 3 peers\n2) Surface narrative → hidden intent → game-theory framing\n3) A bull case that includes the strongest counterargument\n4) One-line conclusion\n\nQuote every figure only from the attached data and cite the source row.","t3":"Research '2027 HBM oversupply risk' with web search.\n- Mainly primary sources from the last 6 months\n- A link to the original for every claim\n- Include the opposite scenario\n- Conclusion in 3 lines","t4":"Build a spaceship shooter game as a single HTML file.\n- Arrow keys to move, space to fire\n- 3 enemy types, collision detection\n- Score and level-ups, game over and restart\n- requestAnimationFrame game loop\n- No external libraries","t5":"Write a Python script that reads the attached CSV (ticker, % change, trading value), builds an A4 PDF with a top-20 table and a bar chart using WeasyPrint, and sends it to a given chat through the Telegram bot API.\n- Settings in .env\n- 3 retries and logging on failure\n- How to run it in a README"},"rubric":{"t1":[{"k":"run","l":"Runs successfully","type":"toggle"},{"k":"keep","l":"Existing rules and signatures preserved","type":"slider"},{"k":"edge","l":"Edge cases handled","type":"slider"},{"k":"tests","l":"Tests passed (0–5)","type":"count5"}],"t2":[{"k":"errs","l":"Number of numeric errors (count them yourself)","type":"errors"},{"k":"depth","l":"Depth of reasoning (hidden intent, game theory)","type":"slider"},{"k":"counter","l":"Strength of the counterargument","type":"slider"},{"k":"closer","l":"One-line closer","type":"slider"}],"t3":[{"k":"cite","l":"Share of citations whose source can be verified (%)","type":"pct"},{"k":"fresh","l":"Source freshness","type":"slider"},{"k":"insight","l":"Insight","type":"slider"}],"t4":[{"k":"run","l":"Works on first run","type":"toggle"},{"k":"bugs","l":"Number of bugs","type":"errors"},{"k":"feel","l":"Controls feel","type":"slider"},{"k":"visual","l":"Visuals","type":"slider"}],"t5":[{"k":"run","l":"Succeeds on first run","type":"toggle"},{"k":"req","l":"Requirements met (%)","type":"pct"},{"k":"loops","l":"Debugging round trips","type":"errors"}]},"plan":[["fable51","xhigh","t1","Baseline: Fable 5.1 Extra"],["fable51","xhigh","t2","Baseline: Fable 5.1 Extra"],["fable51","xhigh","t3","Baseline: Fable 5.1 Extra"],["fable51","xhigh","t4","Baseline: Fable 5.1 Extra"],["fable51","xhigh","t5","Baseline: Fable 5.1 Extra"],["fable52","low","t1","Replacement candidate (29% of the cost)"],["fable52","low","t2","Replacement candidate (29% of the cost)"],["fable52","low","t3","Replacement candidate (29% of the cost)"],["fable52","low","t4","Replacement candidate (29% of the cost)"],["fable52","low","t5","Replacement candidate (29% of the cost)"],["fable52","medium","t2","Is the app default enough for analysis"],["fable52","medium","t3","Is the app default enough for research"],["fable52","high","t1","Final version of an upgrade"],["fable52","high","t4","Final version of a game"],["opus55","xhigh","t5","Can Opus Extra stand in for Fable 5.2"],["opus55","high","t2","Recommended Opus default vs Fable 5.2"],["sonnet55","xhigh","t5","Is Sonnet Extra enough for scripts"],["sol61","max","t2","GPT value pick cross-check (API, Codex)"],["haiku55","max","t5","Floor: the cheapest Claude"],["fable52","max","t3","Is going up to Max worth it"]],"planLede":"Tests 1–10 matter most. Check in all 5 work areas whether Fable 5.2 Low can replace the Fable 5.1 Extra setting, and use the usage-feel field to record subscription-limit consumption as well.","genNote":"AA measurements at the same effort level compared. Switch levels with the buttons.","subline":"Five work areas · 27 current major models × effort levels = 62 combinations · one yardstick (AA index v5.0.1)","credit":"stayhungryasi.com · For information only."};
+const LV = D.levels;
+const LVK = {low:"Low",medium:"Medium",high:"High",xhigh:"Extra",max:"Max"};
+const M = D.models, MB = {}; M.forEach(m => MB[m.id] = m);
+const T = D.tasks, TB = {}; T.forEach(t => TB[t.id] = t);
+const TC = {t1:"T1",t2:"T2",t3:"T3",t4:"T4",t5:"T5"};
+const BN = {}; D.benches.forEach(b => BN[b.k] = b);
+const GROUPS = [["claude","Claude main lineup"],["claudeold","Claude previous generation"],["openai","OpenAI"],["google","Google"],["meta","Meta"],["other","Other labs"]];
+const GVAR = {claude:"--s1", claudeold:"--s1", openai:"--g1", google:"--s3", meta:"--s2", other:"--s0"};
+const VVAR = {Anthropic:"--s1", OpenAI:"--g1", Google:"--s3", Meta:"--s2"};
+const LADDER_IDS = Object.keys(D.ladders);
+const S = {tab:"summary", task:"t1", effort:"best", model: LADDER_IDS.includes("fable52") ? "fable52" : LADDER_IDS[0], genLv:"high", runs:[], db:null, dbState:"loading", charts:{}};
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const f1 = x => x == null ? "—" : Number(x).toFixed(1);
+const f2 = x => x == null ? "—" : Number(x).toFixed(2);
+const money = v => v == null ? "—" : "$" + v.toFixed(2);
+const mins = s => s == null ? "—" : (s/60 < 10 ? (s/60).toFixed(1) : Math.round(s/60)) + " min";
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isFixed = mid => MB[mid] && MB[mid].levels.length === 1;
+const cellOf = (mid, lv) => (D.cells[mid] || {})[lv] || null;
+const sOf = (mid, lv, tid) => { const c = cellOf(mid, lv); return c ? c.s[tid] : null; };
+const shortLab = mid => MB[mid] ? MB[mid].label.replace(/^Claude /, "") : mid;
+const lvName = (mid, lv) => isFixed(mid) ? (lv === "max" ? "Max" : LVK[lv] || lv) : (LVK[lv] || lv);
+const combo = (mid, lv) => `${esc(shortLab(mid))} <span class="lvl">${esc(lvName(mid, lv))}</span>`;
+const colorOf = mid => css(MB[mid].group === "claudeold" ? "--s0" : (VVAR[MB[mid].vendor] || GVAR[MB[mid].group] || "--s0"));
+const bestLv = (mid, tid) => { const d = D.cells[mid]; let b = null; Object.keys(d).forEach(l => { if(!b || d[l].s[tid] > d[b].s[tid]) b = l; }); return b; };
+const allCombos = () => { const out = []; M.forEach(m => Object.keys(D.cells[m.id]).forEach(l => out.push([m.id, l, D.cells[m.id][l]]))); return out; };
+
+function hexToRgb(h){ h = h.replace("#",""); if(h.length===3) h = h.split("").map(c=>c+c).join(""); const n = parseInt(h,16); return [(n>>16)&255,(n>>8)&255,n&255]; }
+function rgba(h, a){ const [r,g,b] = hexToRgb(h); return `rgba(${r},${g},${b},${a})`; }
+function lum([r,g,b]){ const f = v => { v/=255; return v<=0.03928 ? v/12.92 : Math.pow((v+0.055)/1.055,2.4); }; return 0.2126*f(r)+0.7152*f(g)+0.0722*f(b); }
+function heat(s){
+  const stops = ["--h0","--h1","--h2","--h3","--h4"].map(v => hexToRgb(css(v)));
+  const x = Math.max(0, Math.min(1, (s||0)/10)) * 4, i = Math.min(3, Math.floor(x)), t = x - i;
+  const c = stops[i].map((v,k) => Math.round(v + (stops[i+1][k]-v)*t));
+  const bg = `rgb(${c.join(",")})`; const fg = lum(c) > 0.32 ? "#16181D" : "#F4F6FB";
+  return {bg, fg};
+}
+
+/* measured layer (kit runs) */
+function measured(mid, tid, lv){
+  const rs = S.runs.filter(r => r.model === mid && r.task === tid && (isFixed(mid) || r.effort === lv));
+  if(!rs.length) return null;
+  return {s: rs.reduce((a,r) => a + Number(r.score||0), 0) / rs.length, n: rs.length};
+}
+
+/* filters & tabs */
+const TAB_FILTERS = {summary:[], all:["task"], effort:["model"], heat:["effort"], cross:[], gen:[], kit:[], src:[]};
+function buildFilters(){
+  const ft = $("#fTask"), fe = $("#fEffort"), fm = $("#fModel");
+  T.forEach(t => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.dataset.task = t.id; b.innerHTML = `${esc(t.name)}<span class="mono">${TC[t.id]}</span>`; b.onclick = () => { S.task = t.id; syncChips(); renderActive(); }; ft.appendChild(b); });
+  [["best","Best per model"]].concat(LV.map(l => [l, LVK[l]])).forEach(([l, n]) => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.dataset.eff = l; b.textContent = n; b.onclick = () => { S.effort = l; syncChips(); renderActive(); }; fe.appendChild(b); });
+  LADDER_IDS.forEach(id => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.dataset.mid = id; b.innerHTML = `<i class="dot" style="background:${colorOf(id)}"></i> ${esc(shortLab(id))}`; b.onclick = () => { S.model = id; syncChips(); renderActive(); }; fm.appendChild(b); });
+  syncChips();
+}
+function syncChips(){
+  $$("#fTask .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.task === S.task));
+  $$("#fEffort .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.eff === S.effort));
+  $$("#fModel .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.mid === S.model));
+}
+function setTab(tab){
+  S.tab = tab;
+  $$(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
+  $$("main > section").forEach(s => s.hidden = s.id !== "p-" + tab);
+  $("#fTask").hidden = !TAB_FILTERS[tab].includes("task");
+  $("#fEffort").hidden = !TAB_FILTERS[tab].includes("effort");
+  $("#fModel").hidden = !TAB_FILTERS[tab].includes("model");
+  try { if(/^[a-z]+$/.test(tab)) history.replaceState(null, "", "#" + tab); } catch(e) {}
+  renderActive();
+}
+function renderActive(){
+  const r = {summary:renderSummary, all:renderAll, effort:renderEffort, heat:renderHeat, cross:renderCross, gen:renderGen, kit:renderKit, src:renderSources}[S.tab];
+  if(r) r();
+}
+
+/* chart helpers */
+const hasChart = () => typeof window.Chart !== "undefined";
+function chartBase(){ Chart.defaults.font.family = css("--font-ui"); Chart.defaults.font.size = 12; Chart.defaults.color = css("--ink-2"); Chart.defaults.borderColor = css("--grid"); }
+function kill(key){ if(S.charts[key]){ S.charts[key].destroy(); delete S.charts[key]; } }
+function noChart(id){ const c = document.getElementById(id); if(c && c.parentElement) c.parentElement.innerHTML = `<p class="chartnote">The chart library could not be loaded. Use the table below.</p>`; }
+function tooltipStyle(){ return {backgroundColor: css("--surface-2"), titleColor: css("--ink"), bodyColor: css("--ink-2"), borderColor: css("--line"), borderWidth: 1, padding: 10, displayColors: true, boxPadding: 4, filter: i => i.raw != null}; }
+function axis(extra){ return Object.assign({grid:{color:css("--grid"), drawTicks:false}, border:{color:css("--axis")}, ticks:{color:css("--ink-3"), padding:6}}, extra||{}); }
+function frontier(pts){ const s = [...pts].sort((a,b) => a.x - b.x || b.y - a.y); const fr = []; let best = -1; s.forEach(p => { if(p.y > best){ fr.push(p); best = p.y; } }); return fr; }
+
+/* ---------------- SUMMARY ---------------- */
+function renderSummary(){
+  const H = X.hero; const from = H.from, to = H.to;
+  $("#bigShift").innerHTML = X.bigShift;
+  $("#heroSwap").innerHTML = `<span class="pill"><i class="dot" style="background:${colorOf(from[0])}"></i>${esc(shortLab(from[0]))} · ${LVK[from[1]]}</span><span class="faint">→</span><span class="pill"><i class="dot" style="background:${colorOf(to[0])}"></i>${esc(shortLab(to[0]))} · ${LVK[to[1]]}</span>`;
+  const cf = cellOf(...from), ct = cellOf(...to);
+  const pct = Math.round(ct.cost / cf.cost * 100);
+  $("#heroFig").innerHTML = `${pct}<small>%</small>`;
+  let higher = 0, tie = 0;
+  $("#heroTiles").innerHTML = T.map(t => { const d = ct.s[t.id] - cf.s[t.id]; if(d >= 0.2) higher++; else if(d > -0.2) tie++; return `<div class="tile"><span class="k">${esc(t.name)}</span><span class="v num ${d>=0.2?"up":d<=-0.2?"dn":""}">${d>=0?"+":""}${f1(d)}</span><span class="d">Score ${f1(cf.s[t.id])} → ${f1(ct.s[t.id])}</span></div>`; }).join("");
+  $("#heroCap").textContent = `Cost per task after switching the baseline setting, ${shortLab(from[0])} ${LVK[from[1]]}, to ${shortLab(to[0])} ${LVK[to[1]]} (AA ${money(ct.cost)} vs ${money(cf.cost)}, time ${mins(ct.time)} vs ${mins(cf.time)}). Estimated quality is ${higher===5?"higher in all 5 work areas":`higher in ${higher} work areas and on par in ${tie}`}.`;
+
+  $("#picks").innerHTML = T.map(t => {
+    const rc = D.recs.claude[t.id], ra = D.recs.all[t.id];
+    const row = (role, k, r, why, scope) => { const [mid, lv] = r[k]; const c = cellOf(mid, lv); const ms = measured(mid, t.id, lv);
+      return `<div class="pick"><span class="role">${role}</span><div><div class="combo"><i class="dot" style="background:${colorOf(mid)}"></i>${combo(mid, lv)}${ms?`<span class="bdg m">Measured ${f1(ms.s)}</span>`:""}</div><div class="stats num">Score ${f1(c.s[t.id])} (${Math.round(c.s[t.id]/r.top*100)}%) · ${money(c.cost)}/task · ${mins(c.time)}${scope?` · ${scope}`:""}</div></div>${why?`<p class="why">${esc(why)}</p>`:""}</div>`; };
+    const W = X.reasons[t.id] || {};
+    const allV = ra.value.join() !== rc.value.join() ? row("Best value, all vendors", "value", ra, W.allValue, "Outside Claude") : "";
+    return `<div class="card taskcard"><h3><span class="tcode">${TC[t.id]}</span> ${esc(t.name)} <span class="bdg e">Estimate</span></h3>${row("Top quality","quality",rc,W.quality)}${row("Value","value",rc,W.value)}${row("Speed","speed",rc,W.speed)}${allV}</div>`;
+  }).join("");
+  $("#findings").innerHTML = X.findings.map(([b, lab, txt]) => `<li><span class="bdg ${b}">${esc(lab)}</span><span>${esc(txt)}</span></li>`).join("");
+  $("#uncert").innerHTML = X.uncert.map(([h, b, n]) => `<div class="item"><b>${esc(h)}</b><span class="muted">${esc(b)}</span><span class="faint" style="font-size:12px">Test to check: ${esc(n)}</span></div>`).join("");
+}
+
+/* ---------------- ALL MODELS ---------------- */
+function renderAll(){
+  const tid = S.task, tn = TB[tid].name;
+  $("#allTitle").textContent = `Full model ranking · ${tn}`;
+  const rows = allCombos().map(([mid, lv, c]) => ({mid, lv, c, s: c.s[tid]})).sort((a,b) => b.s - a.s);
+  const top = rows[0].s;
+  const bestPer = {}; rows.forEach(r => { if(!bestPer[r.mid]) bestPer[r.mid] = r; });
+  const vend = Object.values(bestPer).sort((a,b) => b.s - a.s);
+  const nonClaude = vend.find(r => MB[r.mid].vendor !== "Anthropic");
+  const cheap90 = rows.filter(r => r.s >= 0.9 * top && r.c.cost != null).sort((a,b) => a.c.cost - b.c.cost)[0];
+  $("#allCallout").innerHTML = `<span><b>No. 1 in ${esc(tn)} is ${esc(shortLab(rows[0].mid))} ${lvName(rows[0].mid, rows[0].lv)} (${f1(top)} pts).</b> The best outside Anthropic is ${esc(MB[nonClaude.mid].label)} ${lvName(nonClaude.mid, nonClaude.lv)} (${f1(nonClaude.s)} pts, ${money(nonClaude.c.cost)}/task). The cheapest combination reaching 90%+ of the top score is ${esc(shortLab(cheap90.mid))} ${lvName(cheap90.mid, cheap90.lv)} (${money(cheap90.c.cost)}).</span>`;
+  const head = `<table><thead><tr><th class="r">#</th><th>Model · effort</th><th>Vendor</th><th style="min-width:160px">Work score</th><th class="r">AA index</th><th class="r">Cost per task</th><th class="r">Time per task</th><th class="r">Score/$</th></tr></thead><tbody>`;
+  $("#allTable").innerHTML = head + rows.slice(0, 40).map((r, i) => { const m = MB[r.mid]; const ms = measured(r.mid, tid, r.lv);
+    return `<tr><td class="r num">${i+1}</td><td><i class="dot" style="background:${colorOf(r.mid)}"></i> <b>${esc(m.label)}</b> <span class="lvl">${esc(lvName(r.mid, r.lv))}</span>${m.open?`<span class="ow">Open weights</span>`:""}${X.newIds.includes(r.mid)?`<span class="newtag">NEW</span>`:""}${ms?` <span class="bdg m">Measured ${f1(ms.s)}</span>`:""}</td><td class="muted">${esc(m.vendor)}</td><td><div style="display:flex;align-items:center;gap:8px"><div class="vbar" style="flex:1"><i style="width:${(r.s/10*100).toFixed(1)}%;background:${colorOf(r.mid)}"></i></div><span class="num">${f1(r.s)}</span></div></td><td class="r num">${r.c.ii}</td><td class="r num">${money(r.c.cost)}</td><td class="r num">${mins(r.c.time)}</td><td class="r num">${r.c.cost ? f1(r.s / r.c.cost) : "—"}</td></tr>`; }).join("") + `</tbody></table><p class="chartnote" style="padding:0 10px 10px">Top 40 combinations. Score/$ is the work score per $1 of task cost (higher is better value). Muse Wonder Full has no public API, so no cost.</p>`;
+
+  // scatter
+  $("#allScTitle").textContent = `Value map · ${tn}`;
+  const vgroups = [["Anthropic","Anthropic"],["OpenAI","OpenAI"],["Google","Google"],["Meta","Meta"],["other","Others"]];
+  $("#allLegend").innerHTML = vgroups.map(([k, n]) => `<span><i class="dot" style="background:${css(VVAR[k] || "--s0")}"></i>${n}</span>`).join("") + `<span><i class="lk" style="background:${css("--ink-2")}"></i>Efficient frontier</span>`;
+  const pts = rows.filter(r => r.c.cost != null).map(r => ({x: r.c.cost, y: r.s, mid: r.mid, lv: r.lv}));
+  const fr = frontier(pts);
+  $("#allFrontier").innerHTML = `<table><thead><tr><th>Combinations on the frontier (cheapest first)</th><th class="r">Cost per task</th><th class="r">Score</th><th class="r">Score per +$1 when moving one step up</th></tr></thead><tbody>${fr.map((p,i) => `<tr><td><i class="dot" style="background:${colorOf(p.mid)}"></i> ${combo(p.mid, p.lv)}</td><td class="r num">${money(p.x)}</td><td class="r num">${f1(p.y)}</td><td class="r num">${i < fr.length-1 ? f2((fr[i+1].y - p.y)/(fr[i+1].x - p.x)) : "—"}</td></tr>`).join("")}</tbody></table>`;
+  if(!hasChart()) { noChart("allS"); } else {
+    chartBase(); kill("allS");
+    const frSet = new Set(fr.map(p => p.mid + p.lv));
+    const ds = vgroups.map(([k, n]) => { const col = css(VVAR[k] || "--s0"); const P = pts.filter(p => (VVAR[MB[p.mid].vendor] ? MB[p.mid].vendor : "other") === k);
+      return {type:"scatter", label:n, data:P, pointRadius:P.map(p => frSet.has(p.mid+p.lv) ? 6 : 4.5), pointBackgroundColor:P.map(p => frSet.has(p.mid+p.lv) ? col : rgba(col, .45)), pointBorderColor:css("--surface"), pointBorderWidth:2, pointHoverRadius:7}; });
+    ds.push({type:"line", label:"Frontier", data:fr, borderColor:css("--ink-2"), borderWidth:1.5, pointRadius:0, fill:false, tension:0});
+    S.charts.allS = new Chart($("#allS"), {type:"scatter", data:{datasets:ds}, options:{responsive:true, maintainAspectRatio:false, animation:false,
+      scales:{x:axis({type:"logarithmic", title:{display:true, text:"Cost per task (USD, log scale)", color:css("--ink-3")}, ticks:{color:css("--ink-3"), callback:(v)=>[0.03,0.1,0.3,1,3,10,30].includes(+(+v).toFixed(2))?"$"+v:""}}), y:axis({min:0, max:10, title:{display:true, text:"Work score", color:css("--ink-3")}})},
+      plugins:{legend:{display:false}, tooltip:Object.assign(tooltipStyle(), {callbacks:{label:(c)=> c.raw.mid ? `${shortLab(c.raw.mid)} ${lvName(c.raw.mid, c.raw.lv)}: ${f1(c.raw.y)} pts · ${money(c.raw.x)}` : ""}})}}});
+  }
+  // lineup
+  $("#lineup").innerHTML = `<table><thead><tr><th>Model</th><th>Vendor</th><th>Released</th><th class="r">Input/output price ($/1M)</th><th>Efforts measured</th><th class="r">Best AA index</th><th>Notes</th></tr></thead><tbody>${GROUPS.map(([g, gn]) => { const ms = M.filter(m => m.group === g); if(!ms.length) return ""; return `<tr class="sep-row"><td colspan="7" class="grp">${esc(gn)}</td></tr>` + ms.map(m => { const iis = Object.values(D.cells[m.id]).map(c => c.ii); return `<tr><td><i class="dot" style="background:${colorOf(m.id)}"></i> <b>${esc(m.label)}</b>${m.open?`<span class="ow">Open weights</span>`:""}${X.newIds.includes(m.id)?`<span class="newtag">NEW</span>`:""}</td><td class="muted">${esc(m.vendor)}</td><td class="num">${esc(m.release)}</td><td class="r num">${m.price ? "$"+m.price[0]+" / $"+m.price[1] : `<span class="unk">—</span>`}</td><td>${m.levels.map(l => LVK[l]).join("·")}</td><td class="r num">${Math.max(...iis)}</td><td class="muted">${esc(m.note||"")}</td></tr>`; }).join(""); }).join("")}</tbody></table>`;
+  $("#newRel").innerHTML = `<table><thead><tr><th>Date</th><th>Model</th><th>Highlights</th></tr></thead><tbody>${X.newRel.map(([d, n, t, u]) => `<tr><td class="num">${esc(d)}</td><td><b>${esc(n)}</b></td><td class="muted">${esc(t)}${u?` · <a href="${esc(u)}" target="_blank" rel="noopener">Source</a>`:""}</td></tr>`).join("")}</tbody></table>`;
+}
+
+/* ---------------- EFFORT ---------------- */
+function renderEffort(){
+  const mid = S.model, L = D.ladders[mid], R = D.rows[mid], lvs = L.levels;
+  $("#effTitle").textContent = `Effort levels · ${MB[mid].label}`;
+  const dflt = MB[mid].appDefault;
+  $("#effLadder").innerHTML = lvs.map(l => { const r = R[l]; return `<div class="rung${l===dflt?" def":""}"><div class="lv"><span>${LVK[l]}</span>${l===dflt?`<span class="tag">Default</span>`:`<span class="mono">${l}</span>`}</div><div class="ii num">${r.ii}<small>AA index</small></div><dl><dt>Cost per task</dt><dd>${money(r.cost)}</dd><dt>Time per task</dt><dd>${mins(r.time)}</dd><dt>Output tokens</dt><dd>${r.out!=null?Math.round(r.out)+"k":"—"}</dd><dt>Output speed</dt><dd>${r.speed!=null?Math.round(r.speed)+" tok/s":"—"}</dd></dl></div>`; }).join("");
+  const lo = R[lvs[0]], hi = R[lvs[lvs.length-1]];
+  const avgS = l => T.reduce((a,t) => a + D.cells[mid][l].s[t.id], 0) / T.length;
+  const bestAvg = lvs.reduce((b,l) => avgS(l) > avgS(b) ? l : b, lvs[0]);
+  const drops = D.benches.filter(b => { const v = lvs.map(l => R[l][b.k]); return v[v.length-1] < Math.max(...v); }).map(b => b.name.replace(/ \(.*\)/, ""));
+  $("#effCallout").innerHTML = `<span><b>${esc(shortLab(mid))}: from the lowest to the highest level, cost ×${f1(hi.cost/lo.cost)}, time ×${f1(hi.time/lo.time)}, AA index ${lo.ii} → ${hi.ii}.</b> The level with the highest average score across the 5 work areas is ${LVK[bestAvg]}.${drops.length ? ` Benchmarks that fall at the top level: ${esc(drops.join(", "))}.` : ""}${X.effNotes[mid] ? " " + esc(X.effNotes[mid]) : ""}</span>`;
+  $("#effRecs").innerHTML = `<table><thead><tr><th>Work area</th><th>Light (75%)</th><th>Default (90%)</th><th>Final draft (97%)</th><th>Best</th><th class="r">Best score</th></tr></thead><tbody>${T.map(t => { const x = L.tasks[t.id]; const cc = l => `<span class="lvl">${LVK[l]}</span> <span class="faint num">${money(R[l].cost)}</span>`; return `<tr><td><span class="tcode">${TC[t.id]}</span> ${esc(t.name)}</td><td>${cc(x.p75)}</td><td>${cc(x.p90)}</td><td>${cc(x.p97)}</td><td>${cc(x.argmax)}</td><td class="r num">${f1(x.max)}</td></tr>`; }).join("")}</tbody></table>`;
+  // raw
+  let raw = `<table><thead><tr><th>Benchmark</th>${lvs.map(l => `<th class="r">${LVK[l]}</th>`).join("")}</tr></thead><tbody>`;
+  [["ii","AA index"]].concat(D.benches.map(b => [b.k, b.name])).forEach(([k, n]) => { const v = lvs.map(l => R[l][k]); const mx = Math.max(...v.filter(x => x != null));
+    raw += `<tr><td>${esc(n)}</td>${v.map((x,i) => `<td class="r num">${x==null?"—":(x===mx?`<b>${x}</b>`:x)}${i>0 && x!=null && v[i-1]!=null && x < v[i-1] ? ` <span class="dn">↓</span>` : ""}</td>`).join("")}</tr>`; });
+  raw += `<tr><td>Cost per task</td>${lvs.map(l => `<td class="r num">${money(R[l].cost)}</td>`).join("")}</tr><tr><td>Time per task</td>${lvs.map(l => `<td class="r num">${mins(R[l].time)}</td>`).join("")}</tr></tbody></table>`;
+  $("#effRaw").innerHTML = raw;
+  // steps
+  let st = `<table><thead><tr><th>Switch</th>${T.map(t => `<th class="r">${TC[t.id]}</th>`).join("")}<th class="r">Cost</th><th class="r">Time</th></tr></thead><tbody>`;
+  for(let i = 0; i < lvs.length-1; i++){ const a = lvs[i], b = lvs[i+1]; st += `<tr><td>${LVK[a]} → ${LVK[b]}</td>${T.map(t => { const d = D.cells[mid][b].s[t.id] - D.cells[mid][a].s[t.id]; return `<td class="r num ${d>=0?"":"dn"}">${d>=0?"+":""}${f2(d)}</td>`; }).join("")}<td class="r num">×${f2(R[b].cost/R[a].cost)}</td><td class="r num">×${f2(R[b].time/R[a].time)}</td></tr>`; }
+  $("#effStep").innerHTML = st + `</tbody></table>`;
+  // charts
+  const TV = ["--s1","--s2","--s3","--g1","--g2"];
+  $("#effQLegend").innerHTML = T.map((t,i) => `<span><i class="lk" style="background:${css(TV[i])}"></i>${esc(t.name)}</span>`).join("");
+  $("#effULegend").innerHTML = `<span><i class="lk" style="background:${css("--s1")}"></i>Cost per task</span><span><i class="lk" style="background:${css("--s2")}"></i>Time per task (min)</span>`;
+  if(!hasChart()){ noChart("effQ"); noChart("effU"); return; }
+  chartBase(); kill("effQ"); kill("effU");
+  S.charts.effQ = new Chart($("#effQ"), {type:"line", data:{labels: lvs.map(l => LVK[l]), datasets: T.map((t,i) => ({label:t.name, data: lvs.map(l => D.cells[mid][l].s[t.id]), borderColor:css(TV[i]), backgroundColor:css(TV[i]), borderWidth:2, pointRadius:4, pointBorderColor:css("--surface"), pointBorderWidth:2, tension:0}))},
+    options:{responsive:true, maintainAspectRatio:false, animation:false, interaction:{mode:"index", intersect:false}, scales:{x:axis(), y:axis({min:0, max:10})}, plugins:{legend:{display:false}, tooltip:Object.assign(tooltipStyle(), {callbacks:{label:(c)=>`${c.dataset.label}: ${f2(c.raw)}`}})}}});
+  S.charts.effU = new Chart($("#effU"), {type:"line", data:{labels: lvs.map(l => LVK[l]), datasets:[
+      {label:"Cost per task", data: lvs.map(l => R[l].cost), borderColor:css("--s1"), backgroundColor:css("--s1"), borderWidth:2, pointRadius:4, pointBorderColor:css("--surface"), pointBorderWidth:2},
+      {label:"Time per task (min)", data: lvs.map(l => R[l].time ? R[l].time/60 : null), borderColor:css("--s2"), backgroundColor:css("--s2"), borderWidth:2, pointRadius:4, pointBorderColor:css("--surface"), pointBorderWidth:2}]},
+    options:{responsive:true, maintainAspectRatio:false, animation:false, interaction:{mode:"index", intersect:false}, scales:{x:axis(), y:axis({type:"logarithmic", ticks:{color:css("--ink-3"), callback:(v)=>[0.03,0.1,0.3,1,3,10,30,100].includes(+(+v).toFixed(2))?v:""}})}, plugins:{legend:{display:false}, tooltip:Object.assign(tooltipStyle(), {callbacks:{label:(c)=> c.datasetIndex===0 ? `Cost ${money(c.raw)}` : `Time ${f1(c.raw)} min`}})}}});
+}
+
+/* ---------------- HEATMAP ---------------- */
+function renderHeat(){
+  const e = S.effort;
+  $("#heatTitle").textContent = `Model × work area · ${e === "best" ? "best level per model" : LVK[e]}`;
+  const bar = $("#scalebar"); bar.style.background = `linear-gradient(90deg, ${["--h0","--h1","--h2","--h3","--h4"].map(v => css(v)).join(",")})`;
+  let h = `<table class="heat"><thead><tr><th></th>${T.map(t => `<th><span class="tcode">${TC[t.id]}</span> ${esc(t.name)}</th>`).join("")}</tr></thead><tbody>`;
+  GROUPS.forEach(([g, gn]) => { const ms = M.filter(m => m.group === g); if(!ms.length) return;
+    h += `<tr class="sep-row"><td class="mlabel"><span class="grouplabel">${esc(gn)}</span></td>${T.map(()=>"<td></td>").join("")}</tr>`;
+    ms.forEach(m => {
+      h += `<tr><td class="mlabel"><div class="mname"><i class="dot" style="background:${colorOf(m.id)}"></i>${esc(shortLab(m.id))}${X.newIds.includes(m.id)?`<span class="newtag">NEW</span>`:""}</div><div class="mii">${m.price?`$${m.price[0]}/$${m.price[1]}`:"No API"} · ${m.levels.map(l => LVK[l]).join("·")}</div></td>`;
+      T.forEach(t => {
+        const lv = e === "best" ? bestLv(m.id, t.id) : (isFixed(m.id) ? m.levels[0] : e);
+        const c = cellOf(m.id, lv);
+        if(!c){ h += `<td><div class="hc na">Not measured</div></td>`; return; }
+        const col = heat(c.s[t.id]); const ms2 = measured(m.id, t.id, lv);
+        const tip = `${m.label} · ${lvName(m.id, lv)} · ${t.name}: score ${f2(c.s[t.id])}, ${money(c.cost)}/task, ${mins(c.time)} (work scores are estimates)`;
+        h += `<td><div class="hc${ms2?" meas":""}" style="background:${col.bg};color:${col.fg}" title="${esc(tip)}"><span class="sv num">${f1(c.s[t.id])}</span><span class="uv num">${e==="best"||isFixed(m.id)?esc(lvName(m.id, lv))+" · ":""}${money(c.cost)}</span>${ms2?`<span class="mv">Measured ${f1(ms2.s)}</span>`:""}</div></td>`;
+      });
+      h += `</tr>`;
+    });
+  });
+  $("#heatwrap").innerHTML = h + `</tbody></table>`;
+}
+
+/* ---------------- CROSSOVER ---------------- */
+function renderCross(){
+  let h = `<table class="xm"><thead><tr><th>Matchup</th>${T.map(t => `<th><span class="tcode">${TC[t.id]}</span> ${esc(t.name)}</th>`).join("")}<th>Verdict</th></tr></thead><tbody>`;
+  X.pairs.forEach(([a, b, q, verdict]) => {
+    const ca = cellOf(...a), cb = cellOf(...b); if(!ca || !cb) return;
+    h += `<tr><td><div class="pairq"><b>${esc(q)}</b><span>${combo(...a)} <span class="faint">vs</span> ${combo(...b)}</span><span class="faint" style="font-size:12px">${money(ca.cost)} vs ${money(cb.cost)} · ${mins(ca.time)} vs ${mins(cb.time)}</span></div></td>`;
+    T.forEach(t => { const d = ca.s[t.id] - cb.s[t.id]; const tie = Math.abs(d) < 0.2; const w = tie ? "On par" : (d > 0 ? shortLab(a[0]) + " " + lvName(...a) : shortLab(b[0]) + " " + lvName(...b));
+      h += `<td><div class="xw${tie?" tie":""}"><span class="w">${esc(w)}</span><span class="d num">${d>=0?"+":""}${f2(d)} · cost ×${ca.cost&&cb.cost?f2(ca.cost/cb.cost):"—"}</span></div></td>`; });
+    h += `<td class="muted" style="min-width:170px;font-size:12.5px">${esc(verdict)}</td></tr>`;
+  });
+  $("#xmatrix").innerHTML = h + `</tbody></table>`;
+}
+
+/* ---------------- GENERATION ---------------- */
+function deltaRows(ra, rb){
+  return [["ii","AA index"]].concat(D.benches.map(b => [b.k, b.name])).map(([k, n]) => {
+    const a = ra[k], b = rb[k]; if(a == null || b == null) return "";
+    const scale = k === "brief" ? 300 : 30; const d = b - a; const w = Math.min(50, Math.abs(d)/scale*50);
+    const col = d >= 0 ? css("--good") : css("--crit");
+    return `<div class="delta"><span>${esc(n)}</span><div class="bar"><span class="mid"></span><i style="${d>=0?`left:50%`:`left:${50-w}%`};width:${w}%;background:${col}"></i></div><span class="num r ${d>=0?"up":"dn"}">${d>=0?"+":""}${Number.isInteger(d)?d:d.toFixed(1)}</span></div>`;
+  }).join("") + `<div class="delta"><span>Cost per task</span><span class="faint num">${money(ra.cost)} → ${money(rb.cost)}</span><span class="num r">×${ra.cost&&rb.cost?f2(rb.cost/ra.cost):"—"}</span></div><div class="delta"><span>Time per task</span><span class="faint num">${mins(ra.time)} → ${mins(rb.time)}</span><span class="num r">×${ra.time&&rb.time?f2(rb.time/ra.time):"—"}</span></div>`;
+}
+function renderGen(){
+  $("#genLv").innerHTML = LV.map(l => `<button class="chip" type="button" data-glv="${l}" aria-pressed="${l===S.genLv}">${LVK[l]}</button>`).join("");
+  $$("#genLv [data-glv]").forEach(b => b.onclick = () => { S.genLv = b.dataset.glv; renderGen(); });
+  const l = S.genLv;
+  $("#genFable").innerHTML = D.rows.fable51 && D.rows.fable52 ? deltaRows(D.rows.fable51[l], D.rows.fable52[l]) + `<p class="chartnote">${esc(X.genNote)}</p>` : "";
+  $("#genOpus").innerHTML = D.rows.opus5 ? deltaRows(D.rows.opus5.max, D.rows.opus55.max) : "";
+  $("#genLite").innerHTML = D.rows.ember ? deltaRows(D.rows.haiku55.max, D.rows.ember.max) + `<p class="chartnote">Left = Haiku 5.5 Max, right = Muse Ember Max. Green when the right is higher.</p>` : "";
+  $("#verdicts").innerHTML = `<table><thead><tr><th>Older version</th><th>Reason to use</th><th>Basis</th></tr></thead><tbody>${X.verdicts.map(([n, r, w]) => `<tr><td><b>${esc(n)}</b></td><td>${esc(r)}</td><td class="muted">${esc(w)}</td></tr>`).join("")}</tbody></table>`;
+}
+
+/* ---------------- KIT ---------------- */
+const KIT_IDS = M.filter(m => ["claude","claudeold","openai","google"].includes(m.group) && m.price).map(m => m.id);
+let kitBuilt = false;
+function buildKit(){
+  if(kitBuilt) return; kitBuilt = true;
+  $("#kTask").innerHTML = T.map(t => `<option value="${t.id}">${TC[t.id]} ${esc(t.name)}</option>`).join("");
+  $("#kModel").innerHTML = GROUPS.map(([g, gn]) => { const ids = KIT_IDS.filter(id => MB[id].group === g); return ids.length ? `<optgroup label="${esc(gn)}">${ids.map(id => `<option value="${id}">${esc(MB[id].label)}</option>`).join("")}</optgroup>` : ""; }).join("");
+  $("#kModel").value = KIT_IDS.includes("fable52") ? "fable52" : KIT_IDS[0];
+  $("#kTask").onchange = () => { buildCrit(); $("#kPrompt").textContent = X.prompts[$("#kTask").value]; kitScore(); };
+  $("#kModel").onchange = () => { buildEffortSel(); };
+  buildEffortSel(); buildCrit(); $("#kPrompt").textContent = X.prompts[$("#kTask").value];
+  $("#kCopy").onclick = () => copyText($("#kPrompt").textContent, $("#kPrompt"));
+  $("#kSave").onclick = saveFromForm;
+  $("#kExport").onclick = () => { const clean = S.runs.map(({id, ...r}) => r); copyText(JSON.stringify(clean, null, 1), null, "Records JSON copied"); };
+  $("#kImportToggle").onclick = () => { $("#importBox").hidden = !$("#importBox").hidden; };
+  $("#kImportGo").onclick = importJson;
+}
+function buildEffortSel(){
+  const mid = $("#kModel").value; const ls = MB[mid].levels;
+  $("#kEffort").innerHTML = ls.map(l => `<option value="${l}">${LVK[l]} (${l})</option>`).join("");
+  $("#kEffort").value = ls.includes("high") ? "high" : ls[0];
+}
+function buildCrit(){
+  const tid = $("#kTask").value;
+  $("#kCrit").innerHTML = X.rubric[tid].map(c => {
+    const id = "kc-" + c.k;
+    if(c.type === "toggle") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<select id="${id}" data-k="${c.k}" data-t="toggle"><option value="10">Yes</option><option value="0">No</option></select></label><span class="val"></span></div>`;
+    if(c.type === "slider") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<input type="range" id="${id}" data-k="${c.k}" data-t="slider" min="0" max="10" step="0.5" value="7"></label><span class="val num" data-for="${id}">7.0</span></div>`;
+    if(c.type === "count5") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<input type="number" id="${id}" data-k="${c.k}" data-t="count5" min="0" max="5" step="1" value="5"></label><span class="val num" data-for="${id}"></span></div>`;
+    if(c.type === "errors") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<input type="number" id="${id}" data-k="${c.k}" data-t="errors" min="0" step="1" value="0"></label><span class="val num" data-for="${id}"></span></div>`;
+    if(c.type === "pct") return `<div class="crit"><label class="f" for="${id}">${esc(c.l)}<input type="number" id="${id}" data-k="${c.k}" data-t="pct" min="0" max="100" step="5" value="80"></label><span class="val num" data-for="${id}"></span></div>`;
+    return "";
+  }).join("");
+  $$("#kCrit [data-k]").forEach(el => el.addEventListener("input", kitScore));
+  kitScore();
+}
+function critValue(el){
+  const t = el.dataset.t, v = Number(el.value);
+  if(t==="toggle"||t==="slider") return Math.max(0, Math.min(10, v));
+  if(t==="count5") return Math.max(0, Math.min(5, v)) * 2;
+  if(t==="errors") return Math.max(0, 10 - 2*Math.max(0, v));
+  if(t==="pct") return Math.max(0, Math.min(100, v)) / 10;
+  return 0;
+}
+function kitScore(){
+  const els = $$("#kCrit [data-k]"); if(!els.length) return {s:0, crit:{}};
+  let sum = 0; const crit = {};
+  els.forEach(el => { const cv = critValue(el); sum += cv; crit[el.dataset.k] = {raw:Number(el.value), score:cv}; const out = $(`.val[data-for="${el.id}"]`); if(out) out.textContent = cv.toFixed(1); });
+  const s = sum / els.length; $("#kScore").textContent = s.toFixed(1);
+  return {s, crit};
+}
+async function saveFromForm(){
+  const {s, crit} = kitScore();
+  const rec = {task: $("#kTask").value, model: $("#kModel").value, effort: $("#kEffort").value, score: Math.round(s*100)/100, crit,
+    minutes: Number($("#kMin").value)||0, rework: Number($("#kRework").value)||0, feel: Number($("#kFeel").value)||3, mode: $("#kMode").value,
+    note: ($("#kNote").value||"").slice(0,300), at: new Date().toISOString()};
+  await saveRun(rec);
+}
+async function saveRun(rec){
+  if(S.db){
+    try { await S.db.collection("runs").add(rec); toast("Saved. It now shows as measured in every table."); }
+    catch(e){ toast(e && e.code === "invalid_argument" ? "This view has no permission to save." : e && e.code === "quota_exceeded" ? "Storage is full. Please delete old records." : "Could not save. Try again shortly."); }
+  } else {
+    S.runs.push(Object.assign({id:"local-"+Date.now()+Math.random().toString(36).slice(2,6)}, rec)); onRunsChanged();
+    toast("Saved temporarily on this screen only. Keep a copy with Copy JSON.");
+  }
+}
+async function deleteRun(id){
+  if(S.db && !String(id).startsWith("local-")){ try { await S.db.doc("runs/"+id).delete(); toast("Deleted."); } catch(e){ toast("Could not delete."); } }
+  else { S.runs = S.runs.filter(r => r.id !== id); onRunsChanged(); }
+}
+async function importJson(){
+  let arr; try { arr = JSON.parse($("#kImport").value); } catch(e){ toast("The JSON format is not valid."); return; }
+  if(!Array.isArray(arr)) arr = [arr];
+  const ok = arr.filter(r => r && TB[r.task] && typeof r.score === "number");
+  for(const r of ok){ const {id, ...rest} = r; await saveRun(rest); }
+  toast(`${ok.length} records imported${arr.length>ok.length?` (${arr.length-ok.length} skipped for format errors)`:""}.`);
+  $("#kImport").value = ""; $("#importBox").hidden = true;
+}
+function renderKit(){
+  buildKit(); updateDbStatus();
+  const P = X.plan;
+  $("#planLede").textContent = X.planLede;
+  const done = P.map(([mid,lv,tid]) => S.runs.some(r => r.model===mid && r.task===tid && r.effort===lv));
+  $("#planProg").textContent = `${done.filter(Boolean).length} / ${P.length} done`;
+  $("#plan").innerHTML = `<table><thead><tr><th class="r">#</th><th>Task</th><th>Combination</th><th>What it checks</th><th class="r">Estimated score</th><th>Status</th><th></th></tr></thead><tbody>${P.map(([mid,lv,tid,why],i)=>{ const s = sOf(mid,lv,tid); const ms = measured(mid,tid,lv); return `<tr><td class="r num">${i+1}</td><td><span class="tcode">${TC[tid]}</span> ${esc(TB[tid].name)}</td><td><i class="dot" style="background:${colorOf(mid)}"></i> ${combo(mid,lv)}</td><td class="muted">${esc(why)}</td><td class="r num">${f1(s)}</td><td>${done[i]?`<span class="done">Measured ${f1(ms.s)}</span>`:`<span class="faint">Pending</span>`}</td><td><button class="btn sm ghost" type="button" data-plan="${i}">Enter</button></td></tr>`; }).join("")}</tbody></table>`;
+  $$("#plan [data-plan]").forEach(b => b.onclick = () => { const [mid,lv,tid] = P[+b.dataset.plan]; $("#kTask").value = tid; $("#kModel").value = mid; buildEffortSel(); $("#kEffort").value = lv; buildCrit(); $("#kPrompt").textContent = X.prompts[tid]; $("#kitForm").scrollIntoView({behavior:"smooth", block:"start"}); });
+  const agg = {};
+  S.runs.forEach(r => { const k = [r.model, r.effort, r.task].join("|"); (agg[k] = agg[k] || []).push(Number(r.score)||0); });
+  const keys = Object.keys(agg);
+  $("#estVsMeas").innerHTML = keys.length ? `<table><thead><tr><th>Combination</th><th class="r">Estimate</th><th class="r">Measured</th><th class="r">Gap</th></tr></thead><tbody>${keys.map(k => { const [mid,lv,tid] = k.split("|"); if(!TB[tid]) return ""; const s = MB[mid] ? sOf(mid, lv, tid) : null; const m = agg[k].reduce((a,b)=>a+b,0)/agg[k].length; const d = s == null ? null : m - s; return `<tr><td><span class="tcode">${TC[tid]}</span> ${esc(MB[mid]?shortLab(mid):mid)} ${esc(LVK[lv]||lv)}${MB[mid]?"":` <span class="faint">(model not measured on v5)</span>`}</td><td class="r num">${f1(s)}</td><td class="r num">${f1(m)}${agg[k].length>1?` <span class="faint">n${agg[k].length}</span>`:""}</td><td class="r num ${d==null?"":d>=0?"up":"dn"}">${d==null?"—":(d>=0?"+":"")+f1(d)}</td></tr>`; }).join("")}</tbody></table>` : `<p class="chartnote" style="padding:12px">No measurements yet. Start from No. 1 in the plan.</p>`;
+  const runs = [...S.runs].sort((a,b) => String(b.at).localeCompare(String(a.at)));
+  $("#runs").innerHTML = runs.length ? `<table><thead><tr><th>Date and time</th><th>Task</th><th>Combination</th><th class="r">Score</th><th class="r"> min</th><th></th></tr></thead><tbody>${runs.map(r => `<tr><td class="num faint">${esc(String(r.at||"").slice(0,16).replace("T"," "))}</td><td>${TB[r.task]?TC[r.task]:"?"}</td><td>${esc(MB[r.model]?shortLab(r.model):r.model)} ${r.effort==="fixed"?"Fixed":esc(LVK[r.effort]||r.effort)}</td><td class="r num">${f1(r.score)}</td><td class="r num">${esc(r.minutes)}</td><td><button class="btn sm ghost" type="button" data-del="${esc(r.id)}">Delete</button></td></tr>`).join("")}</tbody></table>` : `<p class="chartnote" style="padding:12px">No saved records.</p>`;
+  $$("#runs [data-del]").forEach(b => b.onclick = () => deleteRun(b.dataset.del));
+}
+function updateDbStatus(){
+  const el = $("#dbStatus"); if(!el) return;
+  el.className = "status " + (S.dbState === "on" ? "on" : S.dbState === "loading" ? "" : "off");
+  el.querySelector("span").textContent = S.dbState === "on" ? "Test records are saved permanently in this document" : S.dbState === "loading" ? "Checking storage connection" : "No storage: saved temporarily on this screen only (keep a copy with Copy JSON)";
+}
+function onRunsChanged(){ renderActive(); }
+
+/* ---------------- SOURCES ---------------- */
+function renderSources(){
+  $("#v5note").innerHTML = X.v5note;
+  const bk = D.benches.map(b => b.k);
+  $("#mapTable").innerHTML = `<table><thead><tr><th>AA benchmark</th><th>What it measures</th><th class="r">Weight in AA index</th>${T.map(t => `<th class="r">${TC[t.id]} ${esc(t.name)}</th>`).join("")}</tr></thead><tbody>${D.benches.map(b => `<tr><td>${esc(b.name)}</td><td class="muted">${esc(b.why)}</td><td class="r num">${b.w}%</td>${T.map(t => `<td class="r num">${t.weights[b.k] ? Math.round(t.weights[b.k]*100)+"%" : `<span class="unk">·</span>`}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  $("#formula").innerHTML = X.formula.map(x => `<li>${esc(x)}</li>`).join("");
+  let rf = `<table><thead><tr><th>Model · effort</th><th class="r">Index</th>${D.benches.map(b => `<th class="r">${esc(b.name.replace(/ \(.*\)/,"").replace("AA-",""))}</th>`).join("")}<th class="r">$/task</th><th class="r">min/task</th><th class="r">tok/s</th></tr></thead><tbody>`;
+  M.forEach(m => Object.keys(D.rows[m.id]).forEach(l => { const r = D.rows[m.id][l]; rf += `<tr><td><i class="dot" style="background:${colorOf(m.id)}"></i> ${esc(m.label)} <span class="lvl">${esc(lvName(m.id, l))}</span></td><td class="r num">${r.ii}</td>${bk.map(k => `<td class="r num">${r[k]==null?"—":r[k]}</td>`).join("")}<td class="r num">${money(r.cost)}</td><td class="r num">${r.time?f1(r.time/60):"—"}</td><td class="r num">${r.speed==null?"—":Math.round(r.speed)}</td></tr>`; }));
+  $("#rawFull").innerHTML = rf + `</tbody></table>`;
+  $("#support").innerHTML = `<table><thead><tr><th>Model</th>${LV.map(l => `<th>${LVK[l]}</th>`).join("")}<th>API default</th><th>App default</th><th>Price ($/1M)</th></tr></thead><tbody>${X.support.map(([n, sup, api, app, pr]) => `<tr><td><b>${esc(n)}</b></td>${LV.map(l => `<td>${sup.includes(l) ? "✓" : `<span class="unk">—</span>`}</td>`).join("")}<td>${esc(api)}</td><td>${esc(app)}</td><td class="num">${esc(pr)}</td></tr>`).join("")}</tbody></table><p class="chartnote" style="padding:0 10px 10px">${esc(X.supportNote)}</p>`;
+  $("#sources").innerHTML = `<table><thead><tr><th>Organization</th><th>Material</th></tr></thead><tbody>${X.sources.map(([o,t,u]) => `<tr><td>${esc(o)}</td><td><a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a></td></tr>`).join("")}</tbody></table>`;
+}
+
+/* ---------------- utils & boot ---------------- */
+let toastTimer = null;
+function toast(msg){ const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.hidden = true; }, 3200); }
+function copyText(txt, selEl, okMsg){
+  const fallback = () => { if(selEl){ const r = document.createRange(); r.selectNodeContents(selEl); const s = window.getSelection(); s.removeAllRanges(); s.addRange(r); toast("Selected. Copy with Ctrl/⌘+C."); } else { $("#importBox").hidden = false; $("#kImport").value = txt; $("#kImport").select(); toast("The JSON is shown in the box below. Copy all of it."); } };
+  try { navigator.clipboard.writeText(txt).then(() => toast(okMsg || "Copied"), fallback); } catch(e){ fallback(); }
+}
+if(X.subline) $("#subline").textContent = X.subline;
+if(X.credit) $("#credit").textContent = X.credit;
+buildFilters();
+$$(".tab").forEach(b => b.onclick = () => setTab(b.dataset.tab));
+const h0 = (location.hash || "").replace("#","");
+setTab(TAB_FILTERS[h0] ? h0 : "summary");
+const rerender = () => renderActive();
+try { window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", rerender); } catch(e) {}
+try { new MutationObserver(rerender).observe(document.documentElement, {attributes:true, attributeFilter:["data-theme"]}); } catch(e) {}
+(async () => {
+  try {
+    if(!window.claude || typeof window.claude.use !== "function"){ S.dbState = "off"; updateDbStatus(); return; }
+    const db = await window.claude.use("db");
+    if(!db){ S.dbState = "off"; updateDbStatus(); return; }
+    S.db = db; S.dbState = "on"; updateDbStatus();
+    db.collection("runs").onSnapshot(snap => {
+      const local = S.runs.filter(r => String(r.id).startsWith("local-"));
+      S.runs = snap.docs.map(d => Object.assign({id:d.id}, d.data())).concat(local);
+      onRunsChanged();
+    }, err => { S.dbState = "off"; updateDbStatus(); });
+  } catch(e){ S.dbState = "off"; updateDbStatus(); }
+})();
+})();
+</script>
+
+</body>
+</html>
