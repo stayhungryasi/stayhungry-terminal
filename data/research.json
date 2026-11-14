@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
- "updated": "2026-11-11",
- "count": 18,
+ "updated": "2026-11-14",
+ "count": 19,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals (full translations in en/es/ja where listed in langs); briefs in 4 languages. Not investment advice.",
  "credit": "stayhungryasi.com",
@@ -38,6 +38,131 @@
   }
  },
  "reports": [
+  {
+   "slug": "nvidia-after-jensen-huang",
+   "date": "2026-11-14",
+   "asof": "2026-11-14 KST: US close of Nov 13",
+   "category": "ai",
+   "title": {
+    "ko": "젠슨 황 없는 엔비디아: 사임 이틀 뒤 숫자로 다시 검증한 방향성과 주가",
+    "en": "Nvidia Without Jensen Huang: Re-Checking the Numbers Two Days After the Exit",
+    "es": "Nvidia sin Jensen Huang: las cifras, verificadas dos días después de la salida",
+    "ja": "ジェンスン・フアンなきエヌビディア:辞任2日後に数字で検証し直す"
+   },
+   "dek": {
+    "ko": "33년간 회사를 이끈 창업자 젠슨 황이 11월 12일 물러났다. 이틀 뒤 종가는 162.85달러로 사상 최고 종가보다 31.9% 낮다. 애널리스트 이익 추정치는 그대로이고 하락은 전부 배수에서 나왔다. 주가는 FY28 예상 이익의 10.3배다. 경쟁사 반사이익 논리는 13일 동반 급락으로 깨졌다. 리스크, 시나리오, 확인 일정을 정리했다.",
+    "en": "Jensen Huang, the founder who led Nvidia for 33 years, stepped down on Nov 12. Two days later the stock closed at $162.85, 31.9% below its record close. Analyst earnings estimates are intact and the whole decline came from the multiple: the stock trades at 10.3 times expected FY28 earnings. The idea that rivals would benefit broke when they fell harder on Nov 13. We map the risks, scenarios and dates to watch.",
+    "es": "Jensen Huang, el fundador que dirigió Nvidia durante 33 años, dejó el cargo el 12 de noviembre. Dos días después la acción cerró en $162.85, 31.9% por debajo de su cierre récord. Las estimaciones de utilidades siguen intactas y toda la caída vino del múltiplo: la acción cotiza a 10.3 veces las utilidades esperadas de FY28. La idea de que los rivales se beneficiarían se rompió cuando cayeron más el 13 de noviembre. Se ordenan los riesgos, los escenarios y las fechas a vigilar.",
+    "ja": "33年間会社を率いた創業者ジェンスン・フアン氏が11月12日に退いた。2日後の終値は162.85ドルで、最高値(終値)を31.9%下回る。アナリストの利益予想は変わらず、下落はすべて倍率から生じた。株価はFY28予想利益の10.3倍だ。競合に追い風という見方は13日の同時急落で崩れた。リスク、シナリオ、確認日程を整理した。"
+   },
+   "key": {
+    "value": "10.3×",
+    "label": {
+     "ko": "FY28 예상 이익 대비 주가 배수. 11월 13일 종가 162.85달러 ÷ 컨센서스 EPS 15.85달러",
+     "en": "Price to expected FY28 earnings: the $162.85 close on Nov 13 divided by consensus EPS of $15.85",
+     "es": "Precio sobre utilidades esperadas de FY28: cierre de $162.85 del 13 de noviembre entre la UPA de consenso de $15.85",
+     "ja": "FY28予想利益に対する株価倍率。11月13日終値162.85ドル ÷ コンセンサスEPS 15.85ドル"
+    }
+   },
+   "points": {
+    "ko": [
+     "엔비디아 이사회는 11월 12일, 33년간 회사를 이끈 창업자 젠슨 황이 사장, CEO, 이사직에서 즉시 물러났다고 발표했다. 콜레트 크레스 CFO가 임시 CEO를 맡았다. 주가는 11월 13일 162.85달러로 마감해 10월 6일 사상 최고 종가 239.24달러보다 31.9% 낮다.",
+     "애널리스트의 FY28 EPS 컨센서스는 15.85달러 안팎에서 유지됐다. 하락은 이익이 아니라 배수에서 나왔고, 주가는 FY28 예상 이익의 10.3배다. 시장이 반영한 EPS는 12.53달러(작성자 계산)로 가장 낮은 애널리스트 추정치 12.85달러보다 낮다.",
+     "이틀 전 관측된 경쟁사 반사이익은 사라졌다. 11월 13일 AMD는 8.75%, 브로드컴은 4.76% 내려 엔비디아(2.01% 하락)보다 더 빠졌다. 시나리오(작성자 가정)는 강세 25%, 기본 45%, 약세 30%다."
+    ],
+    "en": [
+     "On Nov 12 Nvidia's board said Jensen Huang, the founder who led the company for 33 years, had resigned as president, CEO and director, effective immediately. CFO Colette Kress became interim CEO. The stock closed at $162.85 on Nov 13, 31.9% below the record close of $239.24 on Oct 6.",
+     "The analyst consensus for FY28 EPS held at about $15.85. The decline came from the multiple, not from earnings; the stock trades at 10.3 times expected FY28 earnings. Market-implied EPS is $12.53 (author's calculation), below the lowest analyst estimate of $12.85.",
+     "The boost to rivals seen two days earlier is gone. On Nov 13 AMD fell 8.75% and Broadcom 4.76%, more than Nvidia (down 2.01%). Scenarios (author's assumptions): bull 25%, base 45%, bear 30%."
+    ],
+    "es": [
+     "El 12 de noviembre el consejo de Nvidia informó que Jensen Huang, el fundador que dirigió la empresa durante 33 años, renunció como presidente, CEO y consejero, con efecto inmediato. La directora financiera Colette Kress asumió como CEO interina. La acción cerró en $162.85 el 13 de noviembre, 31.9% por debajo del cierre récord de $239.24 del 6 de octubre.",
+     "El consenso de analistas para la UPA FY28 se mantuvo cerca de $15.85. La caída vino del múltiplo, no de las utilidades; la acción cotiza a 10.3 veces las utilidades esperadas de FY28. La UPA implícita es $12.53 (cálculo del autor), por debajo de la estimación más baja de $12.85.",
+     "El impulso a los rivales observado dos días antes desapareció. El 13 de noviembre AMD cayó 8.75% y Broadcom 4.76%, más que Nvidia (baja de 2.01%). Escenarios (supuestos del autor): alcista 25%, base 45%, bajista 30%."
+    ],
+    "ja": [
+     "エヌビディアの取締役会は11月12日、33年間会社を率いた創業者ジェンスン・フアン氏が社長、CEO、取締役を即日辞任したと発表した。コレット・クレスCFOが暫定CEOに就いた。株価は11月13日に162.85ドルで引け、10月6日の最高値(終値)239.24ドルを31.9%下回る。",
+     "アナリストのFY28 EPSコンセンサスは15.85ドル前後で維持された。下落は利益ではなく倍率から生じ、株価はFY28予想利益の10.3倍である。 市場織り込みEPSは12.53ドル(筆者計算)で、最も低いアナリスト予想12.85ドルを下回る。",
+     "2日前に見られた競合への追い風は消えた。11月13日にAMDは8.75%、ブロードコムは4.76%下げ、エヌビディア(2.01%安)より下落幅が大きかった。 シナリオ(筆者の仮定)は強気25%、基本45%、弱気30%。"
+    ]
+   },
+   "tickers": [
+    "NVDA",
+    "AMD",
+    "AVGO"
+   ],
+   "tags": {
+    "ko": [
+     "AI 반도체",
+     "리더십 리스크",
+     "파괴적 혁신",
+     "전수검증"
+    ],
+    "en": [
+     "AI chips",
+     "Leadership risk",
+     "Disruptive innovation",
+     "Fact-checked"
+    ],
+    "es": [
+     "Chips de IA",
+     "Riesgo de liderazgo",
+     "Innovación disruptiva",
+     "Verificado"
+    ],
+    "ja": [
+     "AI半導体",
+     "リーダーシップリスク",
+     "破壊的イノベーション",
+     "全数検証"
+    ]
+   },
+   "checkpoints": [
+    {
+     "date": "2026-11-17",
+     "text": {
+      "ko": "엔비디아 3분기 실적 발표(가이던스 1,080억 달러)",
+      "en": "Nvidia Q3 earnings (guidance: $108 billion)",
+      "es": "Resultados del 3T de Nvidia (guía: US$108,000 millones)",
+      "ja": "エヌビディア第3四半期決算(ガイダンス1,080億ドル)"
+     }
+    },
+    {
+     "date": "2026-12-01",
+     "text": {
+      "ko": "하원 위원회의 젠슨 황 출석 요구일(12월 1~2일)",
+      "en": "House committees ask Huang to appear (Dec 1–2)",
+      "es": "Comités de la Cámara citan a Huang (1–2 de diciembre)",
+      "ja": "下院委員会がフアン氏に出席を要請した日(12月1〜2日)"
+     }
+    },
+    {
+     "date": "2026-12-03",
+     "text": {
+      "ko": "상원 은행위원회 청문회: 젠슨 황, 러트닉 상무장관",
+      "en": "Senate Banking Committee hearing: Huang and Commerce Secretary Lutnick",
+      "es": "Audiencia del Comité Bancario del Senado: Huang y el secretario de Comercio Lutnick",
+      "ja": "上院銀行委員会の公聴会:フアン氏とラトニック商務長官"
+     }
+    }
+   ],
+   "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
+   "minutes": 6,
+   "sources": 28,
+   "url": "https://stayhungryasi.com/r/nvidia-after-jensen-huang/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/nvidia-after-jensen-huang/",
+    "en": "https://stayhungryasi.com/r/nvidia-after-jensen-huang/en/",
+    "es": "https://stayhungryasi.com/r/nvidia-after-jensen-huang/es/",
+    "ja": "https://stayhungryasi.com/r/nvidia-after-jensen-huang/ja/"
+   }
+  },
   {
    "date": "2026-11-10",
    "asof": "2026-11-10 KST: Tesla and SpaceX Q3 calls, Nikkei report of Nov 9",
@@ -2420,44 +2545,14 @@
  ],
  "upcoming_checkpoints": [
   {
-   "date": "2026-11-11",
+   "date": "2026-11-17",
    "text": {
-    "ko": "지멘스에너지 연간 실적·2030 목표: 가스터빈 사이클 정점 여부",
-    "en": "Siemens Energy full-year results and 2030 targets: is the gas-turbine cycle peaking?",
-    "es": "Resultados anuales y metas 2030 de Siemens Energy: ¿llega a su pico el ciclo de turbinas de gas?",
-    "ja": "シーメンス・エナジー通期決算と2030年目標:ガスタービンのサイクルはピークか"
+    "ko": "엔비디아 3분기 실적 발표(가이던스 1,080억 달러)",
+    "en": "Nvidia Q3 earnings (guidance: $108 billion)",
+    "es": "Resultados del 3T de Nvidia (guía: US$108,000 millones)",
+    "ja": "エヌビディア第3四半期決算(ガイダンス1,080億ドル)"
    },
-   "slug": "asi-bet-meta-googl"
-  },
-  {
-   "date": "2026-11-11",
-   "text": {
-    "ko": "알테오젠 3분기 실적과 큐렉스 판매 마일스톤 진행",
-    "en": "Alteogen Q3 results and progress on Keytruda Qlex sales milestones",
-    "es": "Resultados del 3T de Alteogen y avance de los hitos de ventas de Keytruda Qlex",
-    "ja": "アルテオジェンの7~9月期決算とキイトルーダ・キューレックス販売マイルストーンの進捗"
-   },
-   "slug": "ai-uncorrelated-growth"
-  },
-  {
-   "date": "2026-11-12",
-   "text": {
-    "ko": "피델리티 ETF 5종 마지막 거래일",
-    "en": "Last trading day for five Fidelity ETFs",
-    "es": "Último día de negociación de cinco ETF de Fidelity",
-    "ja": "フィデリティETF5本の最終取引日"
-   },
-   "slug": "ai-deleveraging-2026-11"
-  },
-  {
-   "date": "2026-11-13",
-   "text": {
-    "ko": "앤트로픽 공모가 결정 가능 최초일",
-    "en": "Earliest possible Anthropic IPO pricing",
-    "es": "Primera fecha posible para fijar el precio de la OPV de Anthropic",
-    "ja": "アンソロピックの公募価格決定が可能な最初の日"
-   },
-   "slug": "ai-deleveraging-2026-11"
+   "slug": "nvidia-after-jensen-huang"
   },
   {
    "date": "2026-11-17",
@@ -2532,12 +2627,32 @@
   {
    "date": "2026-12-01",
    "text": {
+    "ko": "하원 위원회의 젠슨 황 출석 요구일(12월 1~2일)",
+    "en": "House committees ask Huang to appear (Dec 1–2)",
+    "es": "Comités de la Cámara citan a Huang (1–2 de diciembre)",
+    "ja": "下院委員会がフアン氏に出席を要請した日(12月1〜2日)"
+   },
+   "slug": "nvidia-after-jensen-huang"
+  },
+  {
+   "date": "2026-12-01",
+   "text": {
     "ko": "안랩 에이전틱 AI 플랫폼 출시 (온프레미스·SaaS)",
     "en": "AhnLab launches its agentic AI platform (on-premises and SaaS)",
     "es": "AhnLab lanza su plataforma de IA agéntica (local y SaaS)",
     "ja": "アンラボがエージェント型AIプラットフォームを発売（オンプレミス・SaaS）"
    },
    "slug": "cybersecurity-ai-era"
+  },
+  {
+   "date": "2026-12-03",
+   "text": {
+    "ko": "상원 은행위원회 청문회: 젠슨 황, 러트닉 상무장관",
+    "en": "Senate Banking Committee hearing: Huang and Commerce Secretary Lutnick",
+    "es": "Audiencia del Comité Bancario del Senado: Huang y el secretario de Comercio Lutnick",
+    "ja": "上院銀行委員会の公聴会:フアン氏とラトニック商務長官"
+   },
+   "slug": "nvidia-after-jensen-huang"
   },
   {
    "date": "2026-12-08",

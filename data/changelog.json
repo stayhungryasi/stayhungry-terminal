@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-14",
+      "commit": "HEAD",
+      "message": "Research: Nvidia Without Jensen Huang, re-checked two days after the exit (Nov 13 close $162.85, 10.3x expected FY28 earnings, estimates intact, rivals fell harder on Nov 13). Full report and 11 cards in Korean, English, Spanish and Japanese"
+    },
+    {
       "date": "2026-11-11",
       "commit": "ee84105",
       "message": "Daily X post of the brief (English): a workflow builds one card with the 3 lines, a one-line hook and the hub link at 21:37 KST (US pre-market), global-reader items first; it posts only today's brief, once a day, and stays in dry run until the X keys are added"
@@ -357,7 +362,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-11",
+  "updated": "2026-11-14",
   "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }
