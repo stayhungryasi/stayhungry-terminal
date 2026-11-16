@@ -734,5 +734,37 @@
    "es": "Primero, el hecho real de ayer (vuelo 15 de Starship); segundo, Nvidia en 3 días y SK mañana; tercero, la nueva investigación sobre GNL. El índice de crisis (28,1) es el mismo informe del 13/11, por eso queda fuera; el veredicto R2 sigue pendiente (1 de 2 fuentes), así que solo se cuenta el resultado. Ranking y apalancamiento apenas cambiaron.",
    "ja": "昨日(11/14)実際に起きたスターシップ15号機の結果を1位、今週のエヌビディア決算(あと3日)と明日のSK決算を2位、新しいLNGリサーチを3位に選んだ。危機近接度28.1は昨日と同じ11/13報告なので除外、エージェントのR2判定は根拠1/2で保留中のため結果の事実のみ記載。時価総額順位とレバレッジは新しい変化が小さく除外。"
   }
+ },
+ {
+  "date": "2026-11-16",
+  "lines": [
+   {
+    "href": "#earnings",
+    "ko": "<b>엔비디아 실적 D-2, 오늘 오후엔 SK.</b> 11/18 06:20(한국시간·확정), 같은 날 텐센트, 11/19 월마트. SK 3분기 실적은 오늘 16:00 예상(추정). <a href=\"#earnings\">실적</a>",
+    "en": "<b>Nvidia in 2 days; SK today.</b> Nvidia 06:20 KST 11/18 (confirmed), Walmart 11/19. SK Q3 ~16:00 KST today (estimated). <a href=\"#earnings\">Earnings</a>",
+    "es": "<b>Nvidia en 2 días; SK, hoy.</b> Nvidia 18/11 06:20 KST (confirmado), Walmart 19/11. SK 3T: hoy ~16:00 KST (estimado). <a href=\"#earnings\">Resultados</a>",
+    "ja": "<b>エヌビディア決算まで2日、今日午後はSK。</b>11/18 06:20(韓国時間・確定)、同日テンセント、11/19ウォルマート。SK 3Q決算は本日16:00予想(推定)。<a href=\"#earnings\">決算</a>"
+   },
+   {
+    "href": "#agent",
+    "ko": "<b>스페이스X 에이전트, 캐치 반영해 강세 확률 25→30%.</b> 확률가중 가정 가치 $32→$36(목표가 아님), 11/13 종가 $139.11. 12/9 락업 해제 D-24, 7.976억 주. <a href=\"#agent\">에이전트</a>",
+    "en": "<b>SpaceX agent: bull odds 25→30% after the catch.</b> Weighted assumed value $32→$36 (not a target); close $139.11. Lock-up D-24. <a href=\"#agent\">Agent</a>",
+    "es": "<b>Agente SpaceX: alcista 25→30% tras la captura.</b> Valor supuesto US$32→US$36 (no es objetivo); cierre US$139,11. Lock-up: D-24. <a href=\"#agent\">Agente</a>",
+    "ja": "<b>スペースXエージェント、キャッチ反映で強気確率25→30%。</b>確率加重の想定価値$32→$36(目標株価ではない)、11/13終値$139.11。12/9ロックアップ解除まで24日、7.976億株。<a href=\"#agent\">エージェント</a>"
+   },
+   {
+    "href": "#library",
+    "ko": "<b>새 리서치: 스페이스X를 담은 ETF 지도.</b> 상위 10종목에 담은 한국 상장 ETF 13종(최고 비중 29.65%), 해외 622개(최고 36.95%), QQQ 보유액만 약 128억 달러. <a href=\"#library\">라이브러리</a>",
+    "en": "<b>New research: ETFs holding SpaceX.</b> 13 Korea-listed ETFs in top 10 (max 29.65%); 622 overseas (max 36.95%); QQQ ~$12.8B. <a href=\"#library\">Library</a>",
+    "es": "<b>Investigación: ETF con SpaceX.</b> 13 ETF coreanos la tienen en su top 10 (máx. 29,65%); 622 fuera (máx. 36,95%). <a href=\"#library\">Biblioteca</a>",
+    "ja": "<b>新リサーチ:スペースXを組み入れたETFマップ。</b>上位10銘柄に入れる韓国上場ETFは13本(最大29.65%)、海外622本(最大36.95%)、QQQだけで約128億ドル。<a href=\"#library\">ライブラリ</a>"
+   }
+  ],
+  "why": {
+   "ko": "이번 주 가장 큰 실제 일정인 엔비디아 실적(D-2)과 오늘 SK(추정)를 1순위로, 스타십 캐치 뒤 새로 바뀐 에이전트 확률·가정 가치를 2순위로, 아직 3줄에 안 쓴 ETF 지도 리서치를 3순위로 골랐다. 위기 근접도 28.1(11/13 보고)·레버리지(11/12 기준)는 오래됐고 변화가 없어 뺐다.",
+   "en": "Nvidia's results (D-2) and SK today (estimated) are this week's biggest real events; the SpaceX agent's odds and assumed value changed after the catch; the ETF-map research hadn't been featured yet. Crisis score 28.1 (11/13 report) and leverage (11/12 data) are stale and unchanged, so they were left out.",
+   "es": "Los resultados de Nvidia (D-2) y SK hoy (estimado) son los eventos reales clave de la semana; el agente de SpaceX cambió probabilidades y valor supuesto tras la captura; el mapa de ETF aún no había salido. El índice de crisis 28,1 (informe 13/11) y el apalancamiento (datos 12/11) están desfasados y sin cambios, así que quedan fuera.",
+   "ja": "今週最大の実イベントであるエヌビディア決算(あと2日)と本日のSK(推定)を首位に、キャッチ後に更新されたスペースXエージェントの確率・想定価値を2位に、まだ取り上げていないETFマップのリサーチを3位に選んだ。危機近接度28.1(11/13報告)とレバレッジ(11/12基準)は古く変化もないため外した。"
+  }
  }
 ]
