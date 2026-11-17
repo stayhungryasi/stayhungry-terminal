@@ -766,5 +766,37 @@
    "es": "Los resultados de Nvidia (D-2) y SK hoy (estimado) son los eventos reales clave de la semana; el agente de SpaceX cambió probabilidades y valor supuesto tras la captura; el mapa de ETF aún no había salido. El índice de crisis 28,1 (informe 13/11) y el apalancamiento (datos 12/11) están desfasados y sin cambios, así que quedan fuera.",
    "ja": "今週最大の実イベントであるエヌビディア決算(あと2日)と本日のSK(推定)を首位に、キャッチ後に更新されたスペースXエージェントの確率・想定価値を2位に、まだ取り上げていないETFマップのリサーチを3位に選んだ。危機近接度28.1(11/13報告)とレバレッジ(11/12基準)は古く変化もないため外した。"
   }
+ },
+ {
+  "date": "2026-11-17",
+  "lines": [
+   {
+    "href": "#earnings",
+    "ko": "<b>엔비디아 실적, 내일 새벽 06:20.</b> 11/18 06:20(한국시간·확정), 미국 11/17 장 마감 후. 같은 날 텐센트, 11/19 월마트. <a href=\"#earnings\">실적</a>",
+    "en": "<b>Nvidia reports tomorrow, 06:20 KST.</b> 11/18 06:20 KST (confirmed), after the US close on 11/17. Tencent same day, Walmart 11/19. <a href=\"#earnings\">Earnings</a>",
+    "es": "<b>Nvidia presenta mañana, 06:20 KST.</b> 18/11 06:20 KST (confirmado), tras el cierre del 17/11 en EE. UU.; Tencent el mismo día. <a href=\"#earnings\">Resultados</a>",
+    "ja": "<b>エヌビディア決算、明日早朝06:20。</b>11/18 06:20(韓国時間・確定)、米国11/17引け後。同日テンセント、11/19ウォルマート。<a href=\"#earnings\">決算</a>"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<b>Anthropic 나스닥 상장, 11/25→11/19로 당겨져.</b> 거래 개시 11/19 23:30(한국시간), 공모가 결정은 11/18(미국) — 수정 S-1·보도 기준. <a href=\"#schedule\">일정</a>",
+    "en": "<b>Anthropic's Nasdaq debut moves to 11/19 (was 11/25).</b> Trading 23:30 KST 11/19; pricing 11/18 US, per amended S-1/reports. <a href=\"#schedule\">Schedule</a>",
+    "es": "<b>Anthropic adelanta su debut en Nasdaq al 19/11 (antes 25/11).</b> Cotiza el 19/11 23:30 KST; precio el 18/11, según informes. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>Anthropicのナスダック上場、11/25→11/19に前倒し。</b>取引開始11/19 23:30(韓国時間)、公開価格決定は11/18(米国)— 修正S-1・報道ベース。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#agent",
+    "ko": "<b>경쟁사 ULA 벌컨 발사 실패, Amazon Leo 위성 40기 손실.</b> 11/15 17:40 UTC, Amazon이 산 38회 중 첫 비행. 스페이스X 에이전트 확률 30/50/20은 그대로. <a href=\"#agent\">에이전트</a>",
+    "en": "<b>ULA's Vulcan fails; 40 Amazon Leo satellites lost.</b> 11/15, first of 38 Amazon-bought flights. SpaceX agent odds stay 30/50/20. <a href=\"#agent\">Agent</a>",
+    "es": "<b>Falla el Vulcan de ULA: 40 satélites Amazon Leo perdidos.</b> 15/11, 1.º de 38 vuelos de Amazon. Agente SpaceX: 30/50/20 sin cambios. <a href=\"#agent\">Agente</a>",
+    "ja": "<b>競合ULAのバルカン打ち上げ失敗、Amazon Leo衛星40基を喪失。</b>11/15 17:40 UTC、Amazonが買った38回中の初飛行。スペースXエージェントの確率30/50/20は据え置き。<a href=\"#agent\">エージェント</a>"
+   }
+  ],
+  "why": {
+   "ko": "오늘·내일 실제로 일어나는 엔비디아 실적(D-1)을 1순위로, 이번 주 새로 확정·변경된 Anthropic 상장 일정(11/25→11/19)을 2순위로, 스페이스X 경쟁 구도에 새로 생긴 사건(벌컨 실패)을 3순위로 골랐다. 위기 근접도는 28.1→25.0(3.1점 하락, 평온)으로 기준 미달이라 뺐고, 락업 D-23은 날짜만 줄어 일정표로 돌렸다. 어제 쓴 ETF 리서치는 반복하지 않았다.",
+   "en": "Nvidia's results (tomorrow) lead as the event actually happening; Anthropic's newly moved listing date (11/25→11/19) is this week's biggest schedule change; Vulcan's failure is the new event in SpaceX's competitive picture. The crisis score fell 28.1→25.0 (calm, a 3.1-point move), below the threshold, so it was left out; the lock-up (D-23) only ticked down, so it sits in the checkpoints. Yesterday's ETF research is not repeated.",
+   "es": "Los resultados de Nvidia (mañana) van primero por ser lo que realmente ocurre; el adelanto del debut de Anthropic (25/11→19/11) es el mayor cambio de agenda de la semana; la falla del Vulcan es lo nuevo en el panorama competitivo de SpaceX. El índice de crisis bajó de 28,1 a 25,0 (calma, 3,1 puntos), por debajo del umbral, así que quedó fuera; el lock-up (D-23) solo avanzó un día y va en los hitos. No se repite la investigación de ETF de ayer.",
+   "ja": "実際に起きる明日のエヌビディア決算(D-1)を1位に、今週新たに前倒しされたAnthropic上場日(11/25→11/19)を2位に、スペースXの競争環境で新たに起きたバルカン失敗を3位に選んだ。危機近接度は28.1→25.0(3.1ポイント低下、平穏)で基準未満のため外し、ロックアップD-23は日数が減っただけなのでチェックポイントへ回した。昨日のETFリサーチは繰り返さない。"
+  }
  }
 ]
