@@ -1,10 +1,10 @@
 {
  "kind": "schedule",
  "schema": 1,
- "generated_kst": "2026-11-13 09:22",
- "data_updated": "2026-11-13",
- "last_sent_kst": "2026-11-13 09:22",
- "next_send": "2026-11-17",
+ "generated_kst": "2026-11-17 09:23",
+ "data_updated": "2026-11-17",
+ "last_sent_kst": "2026-11-17 09:23",
+ "next_send": "2026-11-20",
  "schedule": "Tue & Fri 10:00 KST",
  "window": {
   "past_days": 14,
@@ -37,204 +37,8 @@
    "LG전자"
   ]
  },
- "count": 84,
+ "count": 80,
  "events": [
-  {
-   "id": "amzn-q",
-   "date": "2026-10-30",
-   "time": "05:05",
-   "approx": true,
-   "end": null,
-   "local": "미국 10/29(목) 장 마감 후",
-   "title": "아마존 3분기 실적",
-   "point": "AWS·capex",
-   "cat": "실적",
-   "tickers": [
-    "AMZN"
-   ],
-   "imp": 3,
-   "status": "confirmed",
-   "country": "us",
-   "source": "https://ir.aboutamazon.com/events/event-details/2026/Q3-2026-Amazoncom-Inc-Earnings-Conference-Call/default.aspx",
-   "updated": "2026-10-27",
-   "change": "회사 공지로 확정, 날짜 동일(10/29 콜 17:00 ET)",
-   "i18n": {
-    "en": {
-     "t": "Amazon Q3 results",
-     "p": "AWS, capex",
-     "l": "US Oct 29 (Thu), after the close",
-     "c": "Confirmed by company notice; date unchanged (Oct 29 call, 5:00 pm ET)"
-    },
-    "es": {
-     "t": "Resultados del 3T de Amazon",
-     "p": "AWS, capex",
-     "l": "EE. UU., 29 oct (jue), tras el cierre",
-     "c": "Confirmado por la empresa; fecha sin cambios (llamada 29 oct, 17:00 ET)"
-    },
-    "ja": {
-     "t": "アマゾン 第3四半期決算",
-     "p": "AWS・capex",
-     "l": "米国 10/29(木) 引け後",
-     "c": "会社発表で確定、日付は変更なし(10/29 コール 17:00 ET)"
-    }
-   }
-  },
-  {
-   "id": "intc-q",
-   "date": "2026-10-30",
-   "time": "05:05",
-   "approx": true,
-   "end": null,
-   "local": "미국 10/29(목) 장 마감 후",
-   "title": "인텔 3분기 실적",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "INTC"
-   ],
-   "imp": 1,
-   "status": "confirmed",
-   "country": "us",
-   "source": "https://www.intc.com/",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Intel Q3 results",
-     "p": "",
-     "l": "US Oct 29 (Thu), after the close",
-     "c": ""
-    },
-    "es": {
-     "t": "Resultados del 3T de Intel",
-     "p": "",
-     "l": "EE. UU., 29 oct (jue), tras el cierre",
-     "c": ""
-    },
-    "ja": {
-     "t": "インテル 第3四半期決算",
-     "p": "",
-     "l": "米国 10/29(木) 引け後",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "sndk-q",
-   "date": "2026-10-30",
-   "time": "05:05",
-   "approx": true,
-   "end": null,
-   "local": "미국 10/29(목) 장 마감 후",
-   "title": "샌디스크 FQ1 실적",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "SNDK"
-   ],
-   "imp": 2,
-   "status": "confirmed",
-   "country": "us",
-   "source": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-09-29-sandisk-to-report-first-quarter-fiscal-year-2027-results-on-october-29-2026",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "SanDisk FQ1 results",
-     "p": "",
-     "l": "US Oct 29 (Thu), after the close",
-     "c": ""
-    },
-    "es": {
-     "t": "Resultados del FQ1 de SanDisk",
-     "p": "",
-     "l": "EE. UU., 29 oct (jue), tras el cierre",
-     "c": ""
-    },
-    "ja": {
-     "t": "サンディスク FQ1決算",
-     "p": "",
-     "l": "米国 10/29(木) 引け後",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "boj-oct",
-   "date": "2026-10-30",
-   "time": "12:00",
-   "approx": false,
-   "end": null,
-   "local": "",
-   "title": "일본은행 금융정책 결정(전망보고서 포함)",
-   "point": "",
-   "cat": "글로벌 매크로",
-   "tickers": [],
-   "imp": 2,
-   "status": "confirmed",
-   "country": "jp",
-   "source": "https://www.boj.or.jp/mopo/mpmsche_minu/index.htm",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Bank of Japan policy decision (incl. Outlook Report)",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "es": {
-     "t": "Decisión de política monetaria del Banco de Japón (incluye Informe de Perspectivas)",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "ja": {
-     "t": "日本銀行 金融政策決定(展望レポート含む)",
-     "p": "",
-     "l": "",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "kr-exp-oct",
-   "date": "2026-11-01",
-   "time": "09:00",
-   "approx": false,
-   "end": null,
-   "local": "",
-   "title": "한국 10월 수출입동향",
-   "point": "",
-   "cat": "한국 매크로",
-   "tickers": [],
-   "imp": 2,
-   "status": "estimated",
-   "country": "kr",
-   "source": "https://www.motie.go.kr/",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Korea October trade data",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "es": {
-     "t": "Comercio exterior de Corea de octubre",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "ja": {
-     "t": "韓国 10月輸出入動向",
-     "p": "",
-     "l": "",
-     "c": ""
-    }
-   }
-  },
   {
    "id": "us-midterm",
    "date": "2026-11-03",
@@ -1298,6 +1102,46 @@
    }
   },
   {
+   "id": "anth-price",
+   "date": "2026-11-19",
+   "time": null,
+   "approx": false,
+   "end": null,
+   "local": "미국 11/18(수) 장 마감 후",
+   "title": "Anthropic IPO 공모가 결정 예정",
+   "point": "범위 $70~78 대비 최종 가격·배정 규모",
+   "cat": "IPO",
+   "tickers": [
+    "AVGO"
+   ],
+   "imp": 3,
+   "status": "report",
+   "country": "us",
+   "source": "https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx",
+   "updated": "2026-11-17",
+   "change": "신규: 공모가 결정 11/18(미국) 보도",
+   "i18n": {
+    "en": {
+     "t": "Anthropic IPO pricing expected",
+     "p": "Final price vs. $70–78 range and allocation size",
+     "l": "US Nov 18 (Wed) after close",
+     "c": "New: pricing reported for Nov 18 (US)"
+    },
+    "es": {
+     "t": "Fijación de precio de la OPI de Anthropic prevista",
+     "p": "Precio final vs. rango $70–78 y tamaño de la asignación",
+     "l": "EE. UU. 18 nov (mié) tras el cierre",
+     "c": "Nuevo: precio previsto el 18 nov (EE. UU.) según reportes"
+    },
+    "ja": {
+     "t": "Anthropic IPO 公募価格決定予定",
+     "p": "レンジ$70~78に対する最終価格と配分規模",
+     "l": "米国 11/18(水) 引け後",
+     "c": "新規:公募価格決定11/18(米国)との報道"
+    }
+   }
+  },
+  {
    "id": "fomc-min-oct",
    "date": "2026-11-19",
    "time": "04:00",
@@ -1332,6 +1176,46 @@
      "p": "",
      "l": "米国 11/18(水) 14:00",
      "c": ""
+    }
+   }
+  },
+  {
+   "id": "anth-list",
+   "date": "2026-11-19",
+   "time": "23:30",
+   "approx": true,
+   "end": null,
+   "local": "미국 11/19(목) 개장",
+   "title": "Anthropic 나스닥 상장·거래 시작 예정(ANT)",
+   "point": "공모가 범위 $70~78, 825백만 주",
+   "cat": "IPO",
+   "tickers": [
+    "AVGO"
+   ],
+   "imp": 3,
+   "status": "report",
+   "country": "us",
+   "source": "https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx",
+   "updated": "2026-11-17",
+   "change": "수정 S-1·보도로 거래 개시 11/19 예정, 11/25 → 11/19",
+   "i18n": {
+    "en": {
+     "t": "Anthropic Nasdaq listing, trading expected to begin (ANT)",
+     "p": "Price range $70–78, 825M shares",
+     "l": "US Nov 19 (Thu) market open",
+     "c": "Amended S-1 and reports point to trading on Nov 19; Nov 25 → Nov 19"
+    },
+    "es": {
+     "t": "Cotización de Anthropic en Nasdaq, inicio de operaciones previsto (ANT)",
+     "p": "Rango de precio $70–78, 825M acciones",
+     "l": "EE. UU. 19 nov (jue) apertura",
+     "c": "S-1 enmendado e informes apuntan a operar el 19 nov; 25 nov → 19 nov"
+    },
+    "ja": {
+     "t": "Anthropic ナスダック上場・取引開始予定(ANT)",
+     "p": "公募価格レンジ $70~78、8.25億株",
+     "l": "米国 11/19(木) 寄り付き",
+     "c": "修正S-1と報道で取引開始11/19予定、11/25 → 11/19"
     }
    }
   },
@@ -1409,46 +1293,6 @@
      "t": "ビットマイン FY26通期決算・10-K",
      "p": "",
      "l": "米国 11/20(金) 寄り付き前",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "anth-list",
-   "date": "2026-11-25",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "미국 현지 날짜",
-   "title": "Anthropic 나스닥 상장 목표 시한",
-   "point": "",
-   "cat": "IPO",
-   "tickers": [
-    "AVGO"
-   ],
-   "imp": 3,
-   "status": "report",
-   "country": "us",
-   "source": "https://finance.yahoo.com/markets/stocks/articles/anthropic-targets-2-trillion-ipo-150408036.html",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Anthropic Nasdaq listing target deadline",
-     "p": "",
-     "l": "US local date",
-     "c": ""
-    },
-    "es": {
-     "t": "Fecha límite objetivo para la cotización de Anthropic en Nasdaq",
-     "p": "",
-     "l": "fecha local de EE. UU.",
-     "c": ""
-    },
-    "ja": {
-     "t": "Anthropic ナスダック上場 目標期限",
-     "p": "",
-     "l": "米国現地日付",
      "c": ""
     }
    }
@@ -3315,6 +3159,6 @@
  "telegram": "https://t.me/stayhungryasi",
  "credit": "stayhungryasi.com",
  "note": "Written by the key-dates bot (schedule-bot) after each refresh. Schedule information, not investment advice. Dates can change.",
- "updated": "2026-11-13",
+ "updated": "2026-11-17",
  "live": "https://stayhungryasi.com/live/schedule.json"
 }
