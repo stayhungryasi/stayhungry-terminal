@@ -798,5 +798,37 @@
    "es": "Los resultados de Nvidia (mañana) van primero por ser lo que realmente ocurre; el adelanto del debut de Anthropic (25/11→19/11) es el mayor cambio de agenda de la semana; la falla del Vulcan es lo nuevo en el panorama competitivo de SpaceX. El índice de crisis bajó de 28,1 a 25,0 (calma, 3,1 puntos), por debajo del umbral, así que quedó fuera; el lock-up (D-23) solo avanzó un día y va en los hitos. No se repite la investigación de ETF de ayer.",
    "ja": "実際に起きる明日のエヌビディア決算(D-1)を1位に、今週新たに前倒しされたAnthropic上場日(11/25→11/19)を2位に、スペースXの競争環境で新たに起きたバルカン失敗を3位に選んだ。危機近接度は28.1→25.0(3.1ポイント低下、平穏)で基準未満のため外し、ロックアップD-23は日数が減っただけなのでチェックポイントへ回した。昨日のETFリサーチは繰り返さない。"
   }
+ },
+ {
+  "date": "2026-11-18",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>Anthropic, 오늘 밤(미국) 공모가 결정·내일 나스닥 데뷔.</b> 공모가 11/18(미국), 거래 개시 11/19 23:30(한국시간·ANT) — 수정 S-1·보도 기준. <a href=\"#schedule\">일정</a>",
+    "en": "<b>Anthropic prices tonight (US), debuts on Nasdaq tomorrow.</b> Pricing 11/18 US, trading 23:30 KST 11/19 (ANT), per amended S-1/reports. <a href=\"#schedule\">Schedule</a>",
+    "es": "<b>Anthropic fija precio hoy (EE. UU.) y debuta mañana en Nasdaq.</b> Cotiza el 19/11 23:30 KST (ANT), según S-1 e informes. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>Anthropic、今夜(米国)公開価格決定・明日ナスダック上場。</b>価格決定11/18(米国)、取引開始11/19 23:30(韓国時間・ANT)— 修正S-1・報道ベース。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#rank",
+    "ko": "<b>스페이스X, 세계 시총 6위로 한 계단 올라 TSMC 추월.</b> 11/18 스냅샷 1조 9,240억 달러. 12/9 락업 해제는 D-22, 7.976억 주(≈1,096억 달러). <a href=\"#rank\">순위</a>",
+    "en": "<b>SpaceX rises to No. 6 by market cap, passing TSMC.</b> $1.924T (11/18). Lock-up expiry 12/9, D-22: 797.6M shares (≈$109.6B). <a href=\"#rank\">Ranking</a>",
+    "es": "<b>SpaceX sube al 6.º puesto mundial y supera a TSMC.</b> US$1.924 mil M (18/11). Lock-up 9/12, D-22: 797,6 M acciones. <a href=\"#rank\">Ranking</a>",
+    "ja": "<b>スペースX、世界時価総額6位に浮上しTSMCを抜く。</b>11/18時点で1兆9,240億ドル。12/9ロックアップ解除はD-22、7.976億株(≈1,096億ドル)。<a href=\"#rank\">ランキング</a>"
+   },
+   {
+    "href": "#earnings",
+    "ko": "<b>실적 이어달리기: 오늘 텐센트, 내일 월마트.</b> 월마트는 11/19 미국 장 전. 다음 주 11/25 22:30(한국시간·확정) 미국 3분기 GDP 잠정치와 10월 PCE. <a href=\"#earnings\">실적</a>",
+    "en": "<b>Earnings relay: Tencent today, Walmart tomorrow.</b> Walmart 11/19 before the open; US Q3 GDP + Oct PCE 11/25 22:30 KST (confirmed). <a href=\"#earnings\">Earnings</a>",
+    "es": "<b>Resultados: Tencent hoy, Walmart mañana.</b> Walmart el 19/11 antes de la apertura; PIB 3T y PCE de EE. UU. el 25/11 22:30 KST. <a href=\"#earnings\">Resultados</a>",
+    "ja": "<b>決算リレー:今日テンセント、明日ウォルマート。</b>ウォルマートは11/19米国寄り前。来週11/25 22:30(韓国時間・確定)に米7-9月期GDP速報値と10月PCE。<a href=\"#earnings\">決算</a>"
+   }
+  ],
+  "why": {
+   "ko": "내일 실제로 일어나는 Anthropic 상장을 1순위로, 순위 피드에서 새로 바뀐 숫자(스페이스X 6위, +1)를 2순위로, 이번 주·다음 주 확정 일정을 3순위로 골랐다. 엔비디아 실적은 오늘 06:20 발표됐지만 허브 피드에 결과 숫자가 아직 없어 뺐고, 위기 점수 25.0(평온, 전일 28.1)·VIX 22.91은 큰 변화가 없어 뺐다. 비트마인 실적(11/20)은 날짜가 추정이라 제외.",
+   "en": "Anthropic's listing happens tomorrow, so it leads; SpaceX's new No. 6 rank (+1) is the freshest number change; confirmed dates this week and next fill line three. Nvidia reported at 06:20 KST today, but no result numbers are in the hub feeds yet, so it was left out; crisis score 25.0 (calm, from 28.1) and VIX 22.91 barely moved. Bitmine (11/20) is only an estimated date.",
+   "es": "La salida a bolsa de Anthropic es mañana y encabeza; el nuevo 6.º puesto de SpaceX (+1) es el cambio de cifra más reciente; la tercera línea recoge fechas confirmadas. Nvidia publicó hoy a las 06:20 KST, pero aún no hay cifras en los datos del hub; el índice de crisis 25,0 (calma, desde 28,1) y el VIX 22,91 apenas se movieron. Bitmine (20/11) es solo una fecha estimada.",
+   "ja": "明日実際に起きるAnthropic上場を1位に、ランキングで新たに変わった数字(スペースX 6位、+1)を2位に、今週・来週の確定日程を3位に選んだ。エヌビディア決算は今日06:20に発表されたがハブのフィードに結果の数字がまだないため外し、危機スコア25.0(平穏、前日28.1)・VIX 22.91は大きな変化がなく外した。ビットマイン決算(11/20)は日付が推定のため除外。"
+  }
  }
 ]
