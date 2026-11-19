@@ -830,5 +830,37 @@
    "es": "La salida a bolsa de Anthropic es mañana y encabeza; el nuevo 6.º puesto de SpaceX (+1) es el cambio de cifra más reciente; la tercera línea recoge fechas confirmadas. Nvidia publicó hoy a las 06:20 KST, pero aún no hay cifras en los datos del hub; el índice de crisis 25,0 (calma, desde 28,1) y el VIX 22,91 apenas se movieron. Bitmine (20/11) es solo una fecha estimada.",
    "ja": "明日実際に起きるAnthropic上場を1位に、ランキングで新たに変わった数字(スペースX 6位、+1)を2位に、今週・来週の確定日程を3位に選んだ。エヌビディア決算は今日06:20に発表されたがハブのフィードに結果の数字がまだないため外し、危機スコア25.0(平穏、前日28.1)・VIX 22.91は大きな変化がなく外した。ビットマイン決算(11/20)は日付が推定のため除外。"
   }
+ },
+ {
+  "date": "2026-11-19",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>Anthropic, 오늘 밤 나스닥 데뷔.</b> 거래 개시 11/19 23:30(한국시간·ANT), 공모가는 11/18(미국) 결정 — 수정 S-1·보도 기준. <a href=\"#schedule\">일정</a>",
+    "en": "<b>Anthropic debuts on Nasdaq tonight.</b> Trading starts 23:30 KST 11/19 (ANT) after pricing on 11/18 US, per amended S-1/reports. <a href=\"#schedule\">Schedule</a>",
+    "es": "<b>Anthropic debuta hoy en Nasdaq.</b> Cotiza desde el 19/11 23:30 KST (ANT), tras fijar precio el 18/11 (EE. UU.), según S-1 e informes. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>Anthropic、今夜ナスダック上場。</b>取引開始11/19 23:30(韓国時間・ANT)、公開価格は11/18(米国)決定 — 修正S-1・報道ベース。<a href=\"#schedule\">日程</a>"
+   },
+   {
+    "href": "#buffett",
+    "ko": "<b>VIX 25.46, 어제 브리프 22.91에서 올라 '주의' 구간.</b> 11/17 기준, VIX/VIX3M 1.019. 버핏지수 228.94%(추정, 백분위 99.7). <a href=\"#buffett\">버핏지수×VIX</a>",
+    "en": "<b>VIX climbs to 25.46 from 22.91: 'watch' zone.</b> As of 11/17, VIX/VIX3M 1.019. Buffett Index 228.94% (estimated, 99.7th pct). <a href=\"#buffett\">Buffett × VIX</a>",
+    "es": "<b>El VIX sube a 25,46 desde 22,91: zona de vigilancia.</b> Al 17/11, VIX/VIX3M 1,019. Índice Buffett 228,94% (estimado, pct. 99,7). <a href=\"#buffett\">Buffett × VIX</a>",
+    "ja": "<b>VIX、22.91から25.46に上昇し「注意」水準。</b>11/17時点、VIX/VIX3M 1.019。バフェット指数は228.94%(推定、パーセンタイル99.7)。<a href=\"#buffett\">バフェット指数×VIX</a>"
+   },
+   {
+    "href": "#earnings",
+    "ko": "<b>오늘 밤 월마트 실적, 다음 주는 거시 일정.</b> 월마트 11/19 미국 장 전. 11/26 10:00 한국은행 금통위 올해 마지막 기준금리 결정(확정). <a href=\"#earnings\">실적</a>",
+    "en": "<b>Walmart reports tonight; BoK next week.</b> Walmart 11/19 before the US open. Bank of Korea's last 2026 rate call 11/26 10:00 KST. <a href=\"#earnings\">Earnings</a>",
+    "es": "<b>Walmart publica hoy; luego, el BoK.</b> Walmart el 19/11 antes de la apertura. Banco de Corea decide tipos el 26/11 10:00 KST. <a href=\"#earnings\">Resultados</a>",
+    "ja": "<b>今夜ウォルマート決算、来週はマクロ日程。</b>ウォルマートは11/19米国寄り前。11/26 10:00 韓国銀行が年内最後の政策金利決定(確定)。<a href=\"#earnings\">決算</a>"
+   }
+  ],
+  "why": {
+   "ko": "오늘 밤 실제로 일어나는 Anthropic 상장을 1순위로, 어제 브리프의 22.91에서 25.46으로 뛴 VIX(새로 바뀐 숫자)를 2순위로, 오늘 밤 월마트 실적과 다음 주 확정 거시 일정을 3순위로 골랐다. 위기 점수 25.0(평온)은 11/16 보고 이후 변화가 없어 뺐고, 스페이스X 락업(D-21)은 어제 다룬 주제라 검증 일정으로만 남겼다. 비트마인 실적(11/20)은 날짜가 추정이라 제외.",
+   "en": "Anthropic's listing happens tonight, so it leads; VIX jumping from 22.91 to 25.46 is the freshest number change; Walmart tonight and next week's confirmed macro dates fill line three. The crisis score 25.0 (calm) has not changed since the 11/16 report, and the SpaceX lock-up (D-21) was covered yesterday, so it stays in the checkpoints only. Bitmine (11/20) is only an estimated date.",
+   "es": "La salida a bolsa de Anthropic es esta noche y encabeza; el salto del VIX de 22,91 a 25,46 es el cambio de cifra más reciente; Walmart hoy y las fechas macro confirmadas de la próxima semana completan la tercera línea. El índice de crisis 25,0 (calma) no cambia desde el informe del 16/11, y el lock-up de SpaceX (D-21) ya se trató ayer, así que queda solo en el calendario. Bitmine (20/11) es solo una fecha estimada.",
+   "ja": "今夜実際に起きるAnthropic上場を1位に、前日22.91から25.46に上昇したVIX(新たに変わった数字)を2位に、今夜のウォルマート決算と来週の確定マクロ日程を3位に選んだ。危機スコア25.0(平穏)は11/16の報告以降変化がなく外し、スペースXロックアップ(D-21)は昨日扱ったため検証日程にのみ残した。ビットマイン決算(11/20)は日付が推定のため除外。"
+  }
  }
 ]
