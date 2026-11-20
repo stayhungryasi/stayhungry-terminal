@@ -1,30 +1,30 @@
 {
  "kind": "brief",
  "schema": 1,
- "date": "2026-11-19",
- "generated_kst": "2026-11-19 10:09",
+ "date": "2026-11-20",
+ "generated_kst": "2026-11-20 10:09",
  "editor": "Claude",
  "lines": [
   {
-   "href": "#schedule",
-   "ko": "<b>Anthropic, 오늘 밤 나스닥 데뷔.</b> 거래 개시 11/19 23:30(한국시간·ANT), 공모가는 11/18(미국) 결정 — 수정 S-1·보도 기준. <a href=\"#schedule\">일정</a>",
-   "en": "<b>Anthropic debuts on Nasdaq tonight.</b> Trading starts 23:30 KST 11/19 (ANT) after pricing on 11/18 US, per amended S-1/reports. <a href=\"#schedule\">Schedule</a>",
-   "es": "<b>Anthropic debuta hoy en Nasdaq.</b> Cotiza desde el 19/11 23:30 KST (ANT), tras fijar precio el 18/11 (EE. UU.), según S-1 e informes. <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>Anthropic、今夜ナスダック上場。</b>取引開始11/19 23:30(韓国時間・ANT)、公開価格は11/18(米国)決定 — 修正S-1・報道ベース。<a href=\"#schedule\">日程</a>"
+   "href": "#spcxlock",
+   "ko": "<b>스페이스X 락업 해제 D-20.</b> 12/9 거래분 7.976억 주(≈1,145억 달러), 거래 가능 물량 대비 +17.6%. SPCX 11/18 종가 $143.5(공모가 대비 +6.3%). <a href=\"#spcxlock\">락업</a>",
+   "en": "<b>SpaceX lock-up expiry: D-20.</b> 797.6M shares (≈$114.5B) tradable 12/9, +17.6% vs float. SPCX $143.5 on 11/18, +6.3% vs IPO. <a href=\"#spcxlock\">Lock-up</a>",
+   "es": "<b>Lock-up de SpaceX: D-20.</b> 797,6 M de acciones (≈US$114,5 mil M) el 9/12, +17,6% vs. flotante. SPCX $143,5 (18/11), +6,3% vs. OPV. <a href=\"#spcxlock\">Lock-up</a>",
+   "ja": "<b>スペースXロックアップ解除まであと20日。</b>12/9に7.976億株(約1,145億ドル)、取引可能株数比+17.6%。SPCXは11/18終値$143.5(公開価格比+6.3%)。<a href=\"#spcxlock\">ロックアップ</a>"
   },
   {
    "href": "#buffett",
-   "ko": "<b>VIX 25.46, 어제 브리프 22.91에서 올라 '주의' 구간.</b> 11/17 기준, VIX/VIX3M 1.019. 버핏지수 228.94%(추정, 백분위 99.7). <a href=\"#buffett\">버핏지수×VIX</a>",
-   "en": "<b>VIX climbs to 25.46 from 22.91: 'watch' zone.</b> As of 11/17, VIX/VIX3M 1.019. Buffett Index 228.94% (estimated, 99.7th pct). <a href=\"#buffett\">Buffett × VIX</a>",
-   "es": "<b>El VIX sube a 25,46 desde 22,91: zona de vigilancia.</b> Al 17/11, VIX/VIX3M 1,019. Índice Buffett 228,94% (estimado, pct. 99,7). <a href=\"#buffett\">Buffett × VIX</a>",
-   "ja": "<b>VIX、22.91から25.46に上昇し「注意」水準。</b>11/17時点、VIX/VIX3M 1.019。バフェット指数は228.94%(推定、パーセンタイル99.7)。<a href=\"#buffett\">バフェット指数×VIX</a>"
+   "ko": "<b>VIX 24.56, 하루 만에 25.46에서 내렸지만 여전히 '주의'.</b> 11/18 기준, VIX/VIX3M 1.011. 버핏지수 228.49%(추정, 백분위 99.7). <a href=\"#buffett\">버핏지수×VIX</a>",
+   "en": "<b>VIX eases to 24.56 from 25.46, still in 'watch'.</b> As of 11/18, VIX/VIX3M 1.011. Buffett Index 228.49% (estimated, 99.7th pct). <a href=\"#buffett\">Buffett × VIX</a>",
+   "es": "<b>El VIX baja a 24,56 desde 25,46, aún en vigilancia.</b> Al 18/11, VIX/VIX3M 1,011. Índice Buffett 228,49% (estimado, pct. 99,7). <a href=\"#buffett\">Buffett × VIX</a>",
+   "ja": "<b>VIX、25.46から24.56に低下も「注意」水準のまま。</b>11/18時点、VIX/VIX3M 1.011。バフェット指数は228.49%(推定、パーセンタイル99.7)。<a href=\"#buffett\">バフェット指数×VIX</a>"
   },
   {
-   "href": "#earnings",
-   "ko": "<b>오늘 밤 월마트 실적, 다음 주는 거시 일정.</b> 월마트 11/19 미국 장 전. 11/26 10:00 한국은행 금통위 올해 마지막 기준금리 결정(확정). <a href=\"#earnings\">실적</a>",
-   "en": "<b>Walmart reports tonight; BoK next week.</b> Walmart 11/19 before the US open. Bank of Korea's last 2026 rate call 11/26 10:00 KST. <a href=\"#earnings\">Earnings</a>",
-   "es": "<b>Walmart publica hoy; luego, el BoK.</b> Walmart el 19/11 antes de la apertura. Banco de Corea decide tipos el 26/11 10:00 KST. <a href=\"#earnings\">Resultados</a>",
-   "ja": "<b>今夜ウォルマート決算、来週はマクロ日程。</b>ウォルマートは11/19米国寄り前。11/26 10:00 韓国銀行が年内最後の政策金利決定(確定)。<a href=\"#earnings\">決算</a>"
+   "href": "#leverage",
+   "ko": "<b>K-빚투, 빚 줄이는 중.</b> 신용융자 26.266조 원(11/18, 전일 대비 −0.067조), 예탁금 84.185조 원(1개월 −6.1%). 국면 '안정', 빚 규모 34.4·청산 압력 33.2. <a href=\"#leverage\">빚투</a>",
+   "en": "<b>Korean margin debt keeps shrinking.</b> Loans KRW 26.266tn (11/18, −0.067tn d/d), deposits KRW 84.185tn (−6.1% in 1m). Regime: stable. <a href=\"#leverage\">K-Debt</a>",
+   "es": "<b>Corea reduce su deuda de margen.</b> Préstamos ₩26,266 billones (18/11, −0,067 d/d), depósitos ₩84,185 billones (−6,1% 1 mes). <a href=\"#leverage\">K-Deuda</a>",
+   "ja": "<b>韓国の信用取引、縮小続く。</b>信用融資26.266兆ウォン(11/18、前日比−0.067兆)、預託金84.185兆ウォン(1カ月−6.1%)。局面は「安定」、34.4・33.2(基準60)。<a href=\"#leverage\">K-信用</a>"
   }
  ],
  "checkpoints": [
@@ -76,32 +76,33 @@
     "ja": "12/9(水)"
    },
    "x": {
-    "ko": "스페이스X 180일 락업 해제(D-21)",
-    "en": "SpaceX 180-day lock-up expiry (D-21)",
-    "es": "Fin del lock-up de 180 días de SpaceX (D-21)",
-    "ja": "スペースX 180日ロックアップ解除(D-21)"
+    "ko": "스페이스X 180일 락업 해제분 거래 시작 · 브로드컴 실적(장 마감 후)",
+    "en": "SpaceX 180-day lock-up shares tradable · Broadcom earnings (after close)",
+    "es": "Acciones del lock-up de 180 días de SpaceX negociables · resultados de Broadcom (tras el cierre)",
+    "ja": "スペースX 180日ロックアップ解除分の取引開始・ブロードコム決算(引け後)"
    },
    "y": {
-    "ko": "7.976억 주(≈1,130억 달러) · 거래 가능 물량 대비 +17.6%",
-    "en": "797.6M shares (≈$113.0B) · +17.6% vs tradable float",
-    "es": "797,6 M de acciones (≈US$113 mil M) · +17,6% vs. flotante negociable",
-    "ja": "7.976億株(≈1,130億ドル)・取引可能株数比+17.6%"
+    "ko": "D-20 · 7.976억 주",
+    "en": "D-20 · 797.6M shares",
+    "es": "D-20 · 797,6 M de acciones",
+    "ja": "D-20・7.976億株"
    }
   }
  ],
  "why": {
-  "ko": "오늘 밤 실제로 일어나는 Anthropic 상장을 1순위로, 어제 브리프의 22.91에서 25.46으로 뛴 VIX(새로 바뀐 숫자)를 2순위로, 오늘 밤 월마트 실적과 다음 주 확정 거시 일정을 3순위로 골랐다. 위기 점수 25.0(평온)은 11/16 보고 이후 변화가 없어 뺐고, 스페이스X 락업(D-21)은 어제 다룬 주제라 검증 일정으로만 남겼다. 비트마인 실적(11/20)은 날짜가 추정이라 제외.",
-  "en": "Anthropic's listing happens tonight, so it leads; VIX jumping from 22.91 to 25.46 is the freshest number change; Walmart tonight and next week's confirmed macro dates fill line three. The crisis score 25.0 (calm) has not changed since the 11/16 report, and the SpaceX lock-up (D-21) was covered yesterday, so it stays in the checkpoints only. Bitmine (11/20) is only an estimated date.",
-  "es": "La salida a bolsa de Anthropic es esta noche y encabeza; el salto del VIX de 22,91 a 25,46 es el cambio de cifra más reciente; Walmart hoy y las fechas macro confirmadas de la próxima semana completan la tercera línea. El índice de crisis 25,0 (calma) no cambia desde el informe del 16/11, y el lock-up de SpaceX (D-21) ya se trató ayer, así que queda solo en el calendario. Bitmine (20/11) es solo una fecha estimada.",
-  "ja": "今夜実際に起きるAnthropic上場を1位に、前日22.91から25.46に上昇したVIX(新たに変わった数字)を2位に、今夜のウォルマート決算と来週の確定マクロ日程を3位に選んだ。危機スコア25.0(平穏)は11/16の報告以降変化がなく外し、スペースXロックアップ(D-21)は昨日扱ったため検証日程にのみ残した。ビットマイン決算(11/20)は日付が推定のため除外。"
+  "ko": "오늘·내일 확정된 큰 일정이 없어 새로 바뀐 숫자를 골랐다. D-20이 된 스페이스X 락업(새 주가·금액 포함)을 1순위로, 어제 브리프의 25.46에서 24.56으로 내린 VIX를 2순위로, 11/4 이후 처음 다루는 K-빚투 디레버리징(신용 26.266조)을 3순위로 올렸다. 비트마인 실적(11/20)은 날짜가 추정이라, Anthropic은 상장 후 숫자가 피드에 아직 없어서, 위기 점수 25.0(평온)은 11/16 이후 변화가 없어서, 야간 에이전트는 11/17 회차라 뺐다.",
+  "en": "No confirmed headline event today or tomorrow, so the pick goes to numbers that changed. SpaceX's lock-up is now D-20 with a fresh price and value; VIX slipped from 25.46 in yesterday's brief to 24.56; and Korean margin debt (KRW 26.266tn) keeps deleveraging. Left out: Bitmine's results (11/20, date estimated), Anthropic (no post-listing numbers in the feeds yet), the crisis score 25.0 (calm, unchanged since 11/16) and the overnight agent (last run 11/17).",
+  "es": "Hoy y mañana no hay un evento clave confirmado, así que elegimos cifras que cambiaron: el lock-up de SpaceX ya está a D-20 con precio y valor nuevos; el VIX bajó de 25,46 (resumen de ayer) a 24,56; y la deuda de margen coreana (₩26,266 billones) sigue bajando. Quedan fuera: resultados de Bitmine (20/11, fecha estimada), Anthropic (aún sin cifras tras la salida a bolsa en los datos), la puntuación de crisis 25,0 (calma, sin cambios desde el 16/11) y el agente nocturno (última ejecución 17/11).",
+  "ja": "今日・明日に確定した大きな予定がないため、新しく動いた数字を選んだ。残り20日となったスペースXのロックアップ(最新株価・金額)を1番目に、前日のブリーフの25.46から24.56へ下がったVIXを2番目に、縮小が続く韓国の信用融資(26.266兆ウォン)を3番目にした。ビットマイン決算(11/20)は日付が推定のため、Anthropicは上場後の数字がまだフィードにないため、危機スコア25.0(平穏)は11/16以降変化がないため、夜間エージェントは11/17の回のため外した。"
  },
  "facts": [
-  "Anthropic trading 2026-11-19 23:30 KST (ANT), pricing 11/18 US [report] — Key dates bot (#schedule), data 2026-11-17",
-  "VIX 25.46 (watch, as of 2026-11-17, VIX/VIX3M 1.019); Buffett 228.94% (estimated, pct 99.7) — Buffett x VIX check run 2026-11-18 12:09; prior VIX 22.91 as cited in 2026-11-18 brief",
-  "WMT earnings 2026-11-19 bmo — univertrix calendar (#earnings)",
-  "BoK rate decision 2026-11-26 10:00 KST [confirmed]; US Q3 GDP + Oct PCE 2026-11-25 22:30 KST [confirmed] — Key dates bot",
-  "SpaceX lock-up trade 2026-12-09, D-21, 797.6M shares, ≈$113.0B, +17.6% vs tradable — spcx-lock asof 2026-11-18",
-  "Crisis score 25.0 (calm), report 2026-11-16 — crisis bot"
+  "SpaceX lock-up radar asof 2026-11-19: next 180-day expiry, trade 2026-12-09, D-20, 797.6M shares, +17.6% vs tradable, ≈$114.5B; SPCX $143.5 (2026-11-18 close), +6.3% vs IPO $135",
+  "Buffett x VIX bot sent 2026-11-19: VIX 24.56 (watch, as of 2026-11-18), VIX/VIX3M 1.011; Buffett 228.49% (estimated, pct 99.7)",
+  "Previous brief 2026-11-19: VIX 25.46",
+  "K-leverage monitor data as of 2026-11-18: regime stable, fuel 34.4, fire 33.2 (60 line), margin loans 26.266 tn KRW (d/d -0.067), deposits 84.185 tn (-6.1% 1m), verdict delever",
+  "Key dates bot data 2026-11-20: 11/25 22:30 KST US Q3 GDP + Oct PCE (confirmed); 11/26 10:00 KST BoK rate decision, last of year (confirmed); Bitmine FY26 11/20 (estimated)",
+  "Earnings calendar: 2026-12-09 AVGO amc",
+  "Crisis bot report 2026-11-16: score 25.0 calm"
  ],
  "x": {
   "order": [
@@ -109,7 +110,7 @@
    2,
    3
   ],
-  "hook": "Anthropic starts trading on Nasdaq tonight (23:30 KST, ANT), while the VIX climbs to 25.46 from 22.91."
+  "hook": "SpaceX lock-up D-20: 797.6M shares (~$114.5B) become tradable 12/9. VIX eases to 24.56, Korean margin debt keeps shrinking."
  },
  "credit": "stayhungryasi.com",
  "note": "Picked from the hub's live feeds. Not investment advice.",
