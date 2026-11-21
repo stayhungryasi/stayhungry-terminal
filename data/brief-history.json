@@ -894,5 +894,37 @@
    "es": "Hoy y mañana no hay un evento clave confirmado, así que elegimos cifras que cambiaron: el lock-up de SpaceX ya está a D-20 con precio y valor nuevos; el VIX bajó de 25,46 (resumen de ayer) a 24,56; y la deuda de margen coreana (₩26,266 billones) sigue bajando. Quedan fuera: resultados de Bitmine (20/11, fecha estimada), Anthropic (aún sin cifras tras la salida a bolsa en los datos), la puntuación de crisis 25,0 (calma, sin cambios desde el 16/11) y el agente nocturno (última ejecución 17/11).",
    "ja": "今日・明日に確定した大きな予定がないため、新しく動いた数字を選んだ。残り20日となったスペースXのロックアップ(最新株価・金額)を1番目に、前日のブリーフの25.46から24.56へ下がったVIXを2番目に、縮小が続く韓国の信用融資(26.266兆ウォン)を3番目にした。ビットマイン決算(11/20)は日付が推定のため、Anthropicは上場後の数字がまだフィードにないため、危機スコア25.0(平穏)は11/16以降変化がないため、夜間エージェントは11/17の回のため外した。"
   }
+ },
+ {
+  "date": "2026-11-21",
+  "lines": [
+   {
+    "href": "#radar",
+    "ko": "<b>위기 근접도 34.4, 지난 보고 대비 +9.4점 '경계'.</b> CCC 가산금리 1,353bp로 방어선 1,300bp 돌파, 10년물 텀프리미엄 0.99% 빨강. VIX 28.44(11/19).",
+    "en": "<b>Crisis score up 9.4 to 34.4 (\"watch\").</b> CCC spreads at 1,353bp break the 1,300bp defense line; 10Y term premium 0.99% red. VIX 28.44.",
+    "es": "<b>Puntuación de crisis: +9,4, a 34,4 («vigilancia»).</b> El diferencial CCC (1.353 pb) rompe la línea de 1.300 pb. VIX 28,44 (19/11).",
+    "ja": "<b>危機接近度34.4、前回比+9.4で「警戒」。</b>CCC格スプレッド1,353bpが防衛線1,300bpを突破、10年債タームプレミアム0.99%が赤に。VIX 28.44(11/19)。"
+   },
+   {
+    "href": "#rank",
+    "ko": "<b>Anthropic, 상장 직후 세계 시총 Top 20 진입.</b> 11/20 스냅샷 12위, 1조 2,710억 달러. 스페이스X는 6위(1조 8,800억 달러) 유지.",
+    "en": "<b>Anthropic enters the global market-cap Top 20 right after listing.</b> #12 at $1.271T in the 11/20 snapshot; SpaceX holds #6 at $1.88T.",
+    "es": "<b>Anthropic entra en el Top 20 mundial por capitalización.</b> Puesto 12 con US$1.271 mil M (20/11); SpaceX sigue 6.ª con US$1.880 mil M.",
+    "ja": "<b>Anthropic、上場直後に世界時価総額トップ20入り。</b>11/20時点で12位、1兆2,710億ドル。スペースXは6位(1兆8,800億ドル)を維持。"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<b>다음 주 거시 이틀 연속.</b> 11/25 22:30 미국 3분기 GDP 잠정치+10월 PCE, 11/26 10:00 한국은행 올해 마지막 기준금리 결정(모두 확정, 한국시간).",
+    "en": "<b>Two macro days next week.</b> 11/25 22:30 KST US Q3 GDP + October PCE; 11/26 10:00 KST Bank of Korea's last rate call of 2026 (confirmed).",
+    "es": "<b>Dos días macro la próxima semana.</b> 25/11 22:30 KST: PIB 3T y PCE de EE. UU.; 26/11 10:00 KST: última decisión de tipos del Banco de Corea.",
+    "ja": "<b>来週はマクロが2日連続。</b>11/25 22:30 米7-9月期GDP速報値+10月PCE、11/26 10:00 韓国銀行の年内最後の政策金利決定(いずれも確定・韓国時間)。"
+   }
+  ],
+  "why": {
+   "ko": "위기 근접도가 지난 보고(11/16) 25.0에서 34.4로 5점 넘게 올라 규칙대로 1순위. 2순위는 피드에 처음 잡힌 Anthropic의 Top 20 진입(12위), 3순위는 다음 주 확정된 거시 일정 이틀. 스페이스X 락업(D-19)은 어제와 숫자만 하루 줄어 체크포인트로 내렸고, K-빚투(국면 '안정' 유지)와 야간 에이전트(이정표 변화 없음)는 뺐다.",
+   "en": "The crisis score rose from 25.0 (11/16 report) to 34.4, more than 5 points, so it leads by rule. Second: Anthropic's first appearance in the Top 20 (#12). Third: two confirmed macro days next week. The SpaceX lock-up (D-19) only moved a day, so it sits in the checkpoints; Korean margin debt (still \"stable\") and the overnight agent (no milestone changes) were left out.",
+   "es": "La puntuación de crisis pasó de 25,0 (informe del 16/11) a 34,4, más de 5 puntos, así que va primero por regla. Segundo: la primera aparición de Anthropic en el Top 20 (puesto 12). Tercero: dos días macro confirmados la próxima semana. El lock-up de SpaceX (D-19) solo avanzó un día y queda en las fechas clave; la deuda de margen coreana (sigue «estable») y el agente nocturno (sin cambios en hitos) quedan fuera.",
+   "ja": "危機接近度が前回(11/16)の25.0から34.4へ5ポイント超上昇したため、ルール通り1位。2位はフィードに初登場したAnthropicのトップ20入り(12位)、3位は来週の確定マクロ日程2日。スペースXのロックアップ(D-19)は1日進んだだけなのでチェックポイントへ、韓国の信用取引残高(「安定」継続)と夜間エージェント(マイルストーン変化なし)は外した。"
+  }
  }
 ]
