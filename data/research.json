@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
- "updated": "2026-11-14",
- "count": 22,
+ "updated": "2026-11-22",
+ "count": 23,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals (full translations in en/es/ja where listed in langs); briefs in 4 languages. Not investment advice.",
  "credit": "stayhungryasi.com",
@@ -38,6 +38,109 @@
   }
  },
  "reports": [
+  {
+   "slug": "ust-curve-efficiency-2026-11",
+   "date": "2026-11-22",
+   "asof": "2026-11-20 US close",
+   "category": "macro",
+   "title": {
+    "ko": "미국채, 어느 만기가 가장 효율적인가: 2년 이내의 조건부 우위 전수검증",
+    "en": "Which Treasury Maturity Pays Most per Unit of Risk? The Conditional Edge at 2 Years and Under, Fact-Checked",
+    "es": "¿Qué plazo del Tesoro paga más por unidad de riesgo? La ventaja condicional hasta 2 años, verificada",
+    "ja": "米国債、どの年限が最も効率的か:2年以内の条件付き優位を全数検証"
+   },
+   "dek": {
+    "ko": "11월 20일 종가 기준으로 미국채 만기별 위험 1단위당 보상을 계산했다. 2년물이 0.23으로 가장 높고 20년물의 1.8배다. 30년물은 금리, 듀레이션, 롤다운 모두 20년물에 밀린다. 다만 2년물의 쿠션은 일주일 사이 72bp에서 44bp로 줄었고, 금리가 그보다 더 오르면 현금에 진다.",
+    "en": "We computed reward per unit of risk for each Treasury maturity on the Nov 20 close. The 2-year is highest at 0.23, 1.8x the 20-year. The 30-year trails the 20-year on yield, duration and rolldown. But the 2-year's cushion fell from 72bp to 44bp in one week, and it loses to cash if yields rise more than that.",
+    "es": "Se calculó la recompensa por unidad de riesgo de cada plazo del Tesoro de EE. UU. al cierre del 20 de noviembre. El bono a 2 años es el más alto, 0.23, 1.8 veces el de 20 años. El de 30 años queda detrás del de 20 en tasa, duración y rolldown. Pero el colchón del bono a 2 años bajó de 72bp a 44bp en una semana, y pierde frente al efectivo si las tasas suben más que eso.",
+    "ja": "11月20日終値を基準に、米国債の年限別にリスク1単位当たりの報酬を計算した。2年債が0.23で最も高く、20年債の1.8倍である。30年債は金利、デュレーション、ロールダウンのすべてで20年債に劣る。ただし2年債のクッションは1週間で72bpから44bpに縮み、金利がそれ以上に上がれば現金に負ける。"
+   },
+   "key": {
+    "value": "1.8x",
+    "label": {
+     "ko": "2년물의 위험 1단위당 보상은 20년물의 1.8배(0.23 대 0.12). 11월 20일 종가 기준 작성자 계산",
+     "en": "The 2-year's reward per unit of risk is 1.8x the 20-year's (0.23 vs 0.12). Author's calculation on the Nov 20 close",
+     "es": "La recompensa por unidad de riesgo del bono a 2 años es 1.8 veces la del de 20 años (0.23 frente a 0.12). Cálculo del autor al cierre del 20 de noviembre",
+     "ja": "2年債のリスク1単位当たりの報酬は20年債の1.8倍(0.23対0.12)。11月20日終値に基づく筆者計算"
+    }
+   },
+   "points": {
+    "ko": [
+     "11월 20일 종가 기준으로 위험 1단위당 보상(3개월물 대비 초과수익 ÷ 수정듀레이션)은 2년물이 0.23으로 가장 높다. 20년물 0.12의 1.8배, 30년물 0.06의 3.6배다. 커브가 그대로라는 가정의 계산이며 예측이 아니다.",
+     "30년물은 20년물에 세 항목 모두 밀린다. 금리는 5.31% 대 5.34%, 수정듀레이션은 14.92 대 12.20, 롤다운은 −0.04%p 대 +0.50%p다. 절대 기대수익은 20년물이 5.84%로 전 구간에서 가장 높다.",
+     "우위는 조건부다. 2년물의 손익분기 쿠션은 일주일 사이 72bp에서 44bp로 줄었고, 금리가 44bp 넘게 오르면 현금에 진다. 현금 기준을 1년물로 바꾸면 20년물 대비 우위는 1.2배로 줄어든다."
+    ],
+    "en": [
+     "On the Nov 20 close, reward per unit of risk (excess return over the 3-month bill ÷ modified duration) is highest for the 2-year at 0.23. That is 1.8x the 20-year's 0.12 and 3.6x the 30-year's 0.06. It is a calculation that assumes an unchanged curve, not a forecast.",
+     "The 30-year trails the 20-year on all three measures. Yield is 5.31% vs 5.34%, modified duration 14.92 vs 12.20, and rolldown −0.04pp vs +0.50pp. In absolute terms the 20-year has the highest expected return on the curve at 5.84%.",
+     "The edge is conditional. The 2-year's breakeven cushion fell from 72bp to 44bp in one week, and it loses to cash if yields rise more than 44bp. With the 1-year as the cash benchmark, the edge over the 20-year shrinks to 1.2x."
+    ],
+    "es": [
+     "Al cierre del 20 de noviembre, la recompensa por unidad de riesgo (exceso de rendimiento sobre la letra a 3 meses ÷ duración modificada) es mayor en el bono a 2 años, 0.23. Es 1.8 veces el 0.12 del bono a 20 años y 3.6 veces el 0.06 del de 30 años. Es un cálculo que supone una curva sin cambios, no un pronóstico.",
+     "El bono a 30 años queda detrás del de 20 en las tres medidas. La tasa es 5.31% frente a 5.34%, la duración modificada 14.92 frente a 12.20 y el rolldown −0.04pp frente a +0.50pp. En términos absolutos, el bono a 20 años tiene el mayor rendimiento esperado de la curva, 5.84%.",
+     "La ventaja es condicional. El colchón de equilibrio del bono a 2 años bajó de 72bp a 44bp en una semana, y pierde frente al efectivo si las tasas suben más de 44bp. Con el bono a 1 año como referencia de efectivo, la ventaja sobre el de 20 años se reduce a 1.2 veces."
+    ],
+    "ja": [
+     "11月20日終値を基準にすると、リスク1単位当たりの報酬(3か月物に対する超過収益 ÷ 修正デュレーション)は2年債が0.23で最も高い。20年債0.12の1.8倍、30年債0.06の3.6倍である。カーブが変わらないという仮定の計算であり、予測ではない。",
+     "30年債は20年債に3項目すべてで劣る。金利は5.31%対5.34%、修正デュレーションは14.92対12.20、ロールダウンは−0.04%p対+0.50%pである。絶対的な期待収益は20年債が5.84%で全年限で最も高い。",
+     "優位は条件付きである。2年債の損益分岐クッションは1週間で72bpから44bpに縮み、金利が44bpを超えて上がれば現金に負ける。現金の基準を1年債に変えると、20年債に対する優位は1.2倍に縮む。"
+    ]
+   },
+   "tickers": [],
+   "tags": {
+    "ko": [
+     "미국채",
+     "일드커브",
+     "금리",
+     "전수검증"
+    ],
+    "en": [
+     "US Treasuries",
+     "Yield curve",
+     "Rates",
+     "Fact-checked"
+    ],
+    "es": [
+     "Tesoro de EE. UU.",
+     "Curva de rendimientos",
+     "Tasas",
+     "Verificado"
+    ],
+    "ja": [
+     "米国債",
+     "イールドカーブ",
+     "金利",
+     "全数検証"
+    ]
+   },
+   "checkpoints": [
+    {
+     "date": "2026-12-09",
+     "text": {
+      "ko": "FOMC 금리 결정(목표 범위 3.75~4.00%)",
+      "en": "FOMC rate decision (target range 3.75–4.00%)",
+      "es": "Decisión de tasas del FOMC (rango objetivo 3.75–4.00%)",
+      "ja": "FOMCの金利決定(目標レンジ3.75~4.00%)"
+     }
+    }
+   ],
+   "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
+   "minutes": 5,
+   "sources": 7,
+   "url": "https://stayhungryasi.com/r/ust-curve-efficiency-2026-11/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/ust-curve-efficiency-2026-11/",
+    "en": "https://stayhungryasi.com/r/ust-curve-efficiency-2026-11/en/",
+    "es": "https://stayhungryasi.com/r/ust-curve-efficiency-2026-11/es/",
+    "ja": "https://stayhungryasi.com/r/ust-curve-efficiency-2026-11/ja/"
+   }
+  },
   {
    "slug": "spacex-etf-holdings-map",
    "date": "2026-11-14",
@@ -2858,86 +2961,6 @@
  ],
  "upcoming_checkpoints": [
   {
-   "date": "2026-11-17",
-   "text": {
-    "ko": "엔비디아 3분기 실적 발표, 크레스 임시 CEO의 첫 콜",
-    "en": "Nvidia Q3 earnings; first call led by interim CEO Kress",
-    "es": "Resultados del 3T de Nvidia; primera llamada de la CEO interina Kress",
-    "ja": "エヌビディア第3四半期決算。クレス暫定CEOによる初の説明会"
-   },
-   "slug": "nvidia-fake-letter-fact-check"
-  },
-  {
-   "date": "2026-11-17",
-   "text": {
-    "ko": "엔비디아 3분기 실적 발표(가이던스 1,080억 달러)",
-    "en": "Nvidia Q3 earnings (guidance: $108 billion)",
-    "es": "Resultados del 3T de Nvidia (guía: US$108,000 millones)",
-    "ja": "エヌビディア第3四半期決算(ガイダンス1,080億ドル)"
-   },
-   "slug": "nvidia-after-jensen-huang"
-  },
-  {
-   "date": "2026-11-17",
-   "text": {
-    "ko": "엔비디아 3분기 실적",
-    "en": "Nvidia third-quarter earnings",
-    "es": "Resultados del tercer trimestre de Nvidia",
-    "ja": "エヌビディア第3四半期決算"
-   },
-   "slug": "railroad-vs-semis-130y"
-  },
-  {
-   "date": "2026-11-17",
-   "text": {
-    "ko": "엔비디아 3분기 실적(미국 장 마감 후)",
-    "en": "Nvidia third-quarter earnings (after the US close)",
-    "es": "Resultados del tercer trimestre de Nvidia (tras el cierre en EE. UU.)",
-    "ja": "エヌビディア第3四半期決算(米国市場終了後)"
-   },
-   "slug": "ai-shock-fact-check"
-  },
-  {
-   "date": "2026-11-17",
-   "text": {
-    "ko": "엔비디아 3분기 실적(미국 장 마감 후)",
-    "en": "Nvidia third-quarter earnings (after the US close)",
-    "es": "Resultados del tercer trimestre de Nvidia (tras el cierre en EE. UU.)",
-    "ja": "エヌビディア第3四半期決算(米国市場終了後)"
-   },
-   "slug": "ai-deleveraging-2026-11"
-  },
-  {
-   "date": "2026-11-17",
-   "text": {
-    "ko": "엔비디아 3분기 실적",
-    "en": "Nvidia third-quarter earnings",
-    "es": "Resultados del tercer trimestre de Nvidia",
-    "ja": "エヌビディア第3四半期決算"
-   },
-   "slug": "us-midterms-2026-redteam"
-  },
-  {
-   "date": "2026-11-19",
-   "text": {
-    "ko": "피델리티 ETF 청산 예정일",
-    "en": "Planned liquidation date for the Fidelity ETFs",
-    "es": "Fecha prevista de liquidación de los ETF de Fidelity",
-    "ja": "フィデリティETFの清算予定日"
-   },
-   "slug": "ai-deleveraging-2026-11"
-  },
-  {
-   "date": "2026-11-19",
-   "text": {
-    "ko": "하이닉스 자사주 매입 종료",
-    "en": "SK hynix share buyback ends",
-    "es": "Termina la recompra de acciones de SK hynix",
-    "ja": "SKハイニックスの自社株買い終了"
-   },
-   "slug": "usdkrw-outlook"
-  },
-  {
    "date": "2026-11-26",
    "text": {
     "ko": "한은 금통위 (연내 마지막 결정)",
@@ -2996,6 +3019,16 @@
     "ja": "SpaceX(SPCX)のロックアップ解除"
    },
    "slug": "ai-capital-flow-map"
+  },
+  {
+   "date": "2026-12-09",
+   "text": {
+    "ko": "FOMC 금리 결정(목표 범위 3.75~4.00%)",
+    "en": "FOMC rate decision (target range 3.75–4.00%)",
+    "es": "Decisión de tasas del FOMC (rango objetivo 3.75–4.00%)",
+    "ja": "FOMCの金利決定(目標レンジ3.75~4.00%)"
+   },
+   "slug": "ust-curve-efficiency-2026-11"
   },
   {
    "date": "2026-12-09",

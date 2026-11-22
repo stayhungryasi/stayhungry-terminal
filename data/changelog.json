@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-22",
+      "commit": "HEAD",
+      "message": "New research: Which Treasury maturity pays most per unit of risk? On the Nov 20 close the 2-year is highest at 0.23, 1.8x the 20-year; the 30-year trails the 20-year on yield, duration and rolldown. The edge is conditional: the 2-year's cushion fell from 72bp to 44bp in a week. Includes scenarios, a counter-case, a verification log with two corrections, and 8 cards in Korean, English, Spanish and Japanese"
+    },
+    {
       "date": "2026-11-14",
       "commit": "473cf29",
       "message": "New research: Is the LNG Shock Global? Asia and Europe pay about $30 per MMBtu while the US pays about $3; the IEA sees global LNG supply down 3% in 2026. Structural loss is 17% of Qatar's capacity (about 3 years to repair), the rest can return once Hormuz reopens. Winners checked against Q3 numbers (US exporters, equipment makers, shipyards), three corrections from the fact-check, and 8 cards in Korean, English, Spanish and Japanese"
@@ -387,7 +392,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-14",
+  "updated": "2026-11-22",
   "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }
