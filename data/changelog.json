@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-22",
+      "commit": "HEAD",
+      "message": "Hub card copy: Super Meju Games now reads “Just five minutes,” they said. Then the sun came up"
+    },
+    {
+      "date": "2026-11-22",
       "commit": "4a0328f",
       "message": "New on the hub: Super Meju Games (supermeju.com), a one-person AI game studio for light strategy and simulation games that start in the browser, in five languages. Listed on the hub page and in the developer view README"
     },
