@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-22",
-      "commit": "HEAD",
+      "commit": "d3c5513",
       "message": "New page: Super Meju Games in the Made menu. The studio in one screen: three live games you can open (Unis Friends Block Drop, Super Meju Factory, Just Launch It) with screens, what is in development, the four-rule recipe and the five-step pipeline. The Super Meju card on the hub page now opens this page; also in the developer view (SUPER-MEJU.md), the `games` command and /data/games.json"
     },
     {
