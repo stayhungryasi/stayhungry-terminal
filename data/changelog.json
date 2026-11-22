@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-23",
-      "commit": "HEAD",
+      "commit": "d149df6",
       "message": "Research pages: Esc now opens the developer view, as on every hub page (it lands on the research library file), and a </> DEV button sits in the top bar. With the card viewer open, Esc still just closes the viewer"
     },
     {
