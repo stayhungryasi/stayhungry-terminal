@@ -1,0 +1,397 @@
+{
+  "note": "Super Meju Games (supermeju.com): the one-person AI game studio run by the hub owner. Game list, status and copy mirror the studio site as of 2026-11-22; the studio site also has Chinese.",
+  "studio": {
+    "name": "Super Meju Games",
+    "url": "https://supermeju.com",
+    "asof": "2026-11-22",
+    "langs": [
+      "ko",
+      "en",
+      "ja",
+      "zh",
+      "es"
+    ],
+    "home": "assets/games/home.webp",
+    "games": [
+      {
+        "id": "blockdrop",
+        "status": "live",
+        "url": "https://supermeju.com/blockdrop/",
+        "shot": "assets/games/blockdrop.webp",
+        "title": {
+          "ko": "유니스프렌즈 블록드롭",
+          "en": "Unis Friends Block Drop",
+          "es": "Unis Friends Block Drop",
+          "ja": "ユニスフレンズ ブロックドロップ"
+        },
+        "desc": {
+          "ko": "떨어지는 블록을 맞춰 줄을 지우는 클래식 퍼즐. 효과음과 배경음, 모바일 터치 조작을 지원합니다.",
+          "en": "The classic falling-block puzzle. Sound effects, music and touch controls on mobile.",
+          "es": "El clásico puzle de bloques que caen. Con efectos de sonido, música y controles táctiles en el móvil.",
+          "ja": "落ちてくるブロックをそろえてラインを消す定番パズル。効果音とBGM、スマホのタッチ操作に対応。"
+        }
+      },
+      {
+        "id": "factory",
+        "status": "live",
+        "url": "https://supermeju.com/factory/",
+        "shot": "assets/games/factory.webp",
+        "title": {
+          "ko": "슈퍼메주 공장",
+          "en": "Super Meju Factory",
+          "es": "Fábrica Super Meju",
+          "ja": "スーパーメジュ工場"
+        },
+        "desc": {
+          "ko": "콩 삶고 메주 띄워 장맛 제국을 세우는 방치형 타이쿤. 자는 동안에도 발효는 멈추지 않습니다.",
+          "en": "An idle tycoon: boil beans, ferment meju, build a sauce empire. Fermentation never stops — even while you sleep.",
+          "es": "Un tycoon incremental: hierve soja, fermenta meju y levanta un imperio del sabor. La fermentación no se detiene ni mientras duermes.",
+          "ja": "豆を煮てメジュを仕込み、味の帝国を築く放置系タイクーン。寝ている間も発酵は止まりません。"
+        }
+      },
+      {
+        "id": "galaxy",
+        "status": "live",
+        "url": "https://supermeju.com/galaxy/",
+        "shot": "assets/games/galaxy.webp",
+        "title": {
+          "ko": "일단 쏴 봐",
+          "en": "Just Launch It",
+          "es": "Tú Lánzalo",
+          "ja": "とりあえず飛ばせ"
+        },
+        "desc": {
+          "ko": "차고에서 우주문명까지 가는 광폭 시뮬레이션. 터져도 데이터는 남습니다.",
+          "en": "Weld a rocket in a garage, then reach the Moon, Mars and beyond the solar system. A one-tap-per-year space civilization sim. Korean only for now.",
+          "es": "Suelda un cohete en un garaje y llega a la Luna, Marte y más allá del sistema solar. Un simulador de civilización espacial de un toque por año. Por ahora solo en coreano.",
+          "ja": "ガレージでロケットを溶接し、月、火星、そして太陽系の外へ。1年に1タップの宇宙文明建設シム。現在は韓国語のみ。"
+        }
+      },
+      {
+        "id": "merge",
+        "status": "dev",
+        "title": {
+          "ko": "주가 머지",
+          "en": "Stock Merge",
+          "es": "Fusión Bursátil",
+          "ja": "株価マージ"
+        },
+        "desc": {
+          "ko": "같은 숫자를 합쳐 상한가까지. 다섯 줄로 떨어지는 머지 퍼즐.",
+          "en": "Merge matching numbers all the way to limit-up. A five-column drop puzzle.",
+          "es": "Fusiona números iguales hasta tocar el límite de subida. Un puzle de caída en cinco columnas.",
+          "ja": "同じ数字を合体させてストップ高へ。5列の落ち物マージパズル。"
+        }
+      },
+      {
+        "id": "ceo",
+        "status": "dev",
+        "title": {
+          "ko": "1인 대표 키우기",
+          "en": "Solo CEO",
+          "es": "CEO en Solitario",
+          "ja": "ひとり社長育成"
+        },
+        "desc": {
+          "ko": "혼자 하던 일이 자동으로 돌아가기 시작하는 방치형 경영 게임.",
+          "en": "An idle business game about the moment your one-person job starts running itself.",
+          "es": "Un juego de gestión incremental sobre el momento en que tu trabajo empieza a funcionar solo.",
+          "ja": "ひとりでやっていた仕事が自動で回りはじめる放置系経営ゲーム。"
+        }
+      },
+      {
+        "id": "pet",
+        "status": "lab",
+        "title": {
+          "ko": "PetScene (가칭)",
+          "en": "PetScene (working title)",
+          "es": "PetScene (título provisional)",
+          "ja": "PetScene（仮称）"
+        },
+        "desc": {
+          "ko": "나를 기억하고 반응하는 3D 강아지와 고양이. 본제작에 앞서 검증 실험 중입니다.",
+          "en": "3D dogs and cats that remember you and respond. In a validation experiment before full production.",
+          "es": "Perros y gatos en 3D que te recuerdan y responden. En fase de experimento antes de la producción.",
+          "ja": "あなたを覚えて反応する3Dの犬と猫。本制作の前に検証実験中。"
+        }
+      }
+    ],
+    "t": {
+      "hero_eyebrow": {
+        "ko": "잘 익은 전략 · 시뮬레이션 게임",
+        "en": "WELL-FERMENTED STRATEGY & SIMULATION",
+        "es": "ESTRATEGIA Y SIMULACIÓN BIEN FERMENTADAS",
+        "ja": "じっくり発酵 ストラテジー＆シミュレーション"
+      },
+      "hero_h1a": {
+        "ko": "딱 5분만 하려고 했는데,",
+        "en": "Just five minutes, you said.",
+        "es": "Iba a jugar cinco minutos.",
+        "ja": "5分だけのつもりが、"
+      },
+      "hero_h1b": {
+        "ko": "해가 떴습니다.",
+        "en": "Then the sun came up.",
+        "es": "Y amaneció.",
+        "ja": "朝になっていました。"
+      },
+      "hero_sub": {
+        "ko": "슈퍼메주는 시작은 가볍고 끊기는 어려운 전략·시뮬레이션 게임을 빚습니다. 설치 없이 브라우저에서, 다섯 가지 언어로. 수면 시간은 책임지지 않습니다.",
+        "en": "Super Meju brews strategy and simulation games that are light to start and hard to quit. No install, right in your browser, in five languages. We take no responsibility for your sleep.",
+        "es": "Super Meju fermenta juegos de estrategia y simulación fáciles de empezar y difíciles de dejar. Sin instalar nada, en tu navegador y en cinco idiomas. No nos hacemos responsables de tu sueño.",
+        "ja": "Super Mejuは、始めるのは気軽、やめるのは難しいストラテジー・シミュレーションゲームを仕込んでいます。インストール不要、ブラウザですぐ、5つの言語で。睡眠時間の責任は負いかねます。"
+      },
+      "tally_live": {
+        "ko": "출시",
+        "en": "Live",
+        "es": "Publicado",
+        "ja": "公開中"
+      },
+      "tally_dev": {
+        "ko": "개발 중",
+        "en": "In development",
+        "es": "En desarrollo",
+        "ja": "開発中"
+      },
+      "tally_lab": {
+        "ko": "실험 중",
+        "en": "In the lab",
+        "es": "En laboratorio",
+        "ja": "実験中"
+      },
+      "tally_langs": {
+        "ko": "지원 언어",
+        "en": "Languages",
+        "es": "Idiomas",
+        "ja": "対応言語"
+      },
+      "games_title": {
+        "ko": "게임",
+        "en": "Games",
+        "es": "Juegos",
+        "ja": "ゲーム"
+      },
+      "games_sub": {
+        "ko": "지금 할 수 있는 게임과 만들고 있는 게임",
+        "en": "What you can play now and what we are building",
+        "es": "Lo que ya puedes jugar y lo que estamos creando",
+        "ja": "今遊べるゲームと、作っているゲーム"
+      },
+      "chip_live": {
+        "ko": "출시",
+        "en": "LIVE",
+        "es": "PUBLICADO",
+        "ja": "公開中"
+      },
+      "chip_dev": {
+        "ko": "개발 중",
+        "en": "IN DEVELOPMENT",
+        "es": "EN DESARROLLO",
+        "ja": "開発中"
+      },
+      "chip_lab": {
+        "ko": "실험 중",
+        "en": "IN THE LAB",
+        "es": "EN LABORATORIO",
+        "ja": "実験中"
+      },
+      "play": {
+        "ko": "지금 플레이",
+        "en": "Play now",
+        "es": "Jugar ahora",
+        "ja": "今すぐプレイ"
+      },
+      "rules_title": {
+        "ko": "우리 집 장맛의 비결 네 가지",
+        "en": "Four secrets in our recipe",
+        "es": "Los cuatro secretos de la casa",
+        "ja": "うちの味の秘伝、4つ"
+      },
+      "rules": {
+        "ko": [
+          [
+            "누르면 바로 시작",
+            "설치 없음, 가입 없음. 핑계도 없음."
+          ],
+          [
+            "규칙은 금방, 고민은 오래",
+            "규칙은 라면 물이 끓기 전에 익힙니다. 수 싸움은 라면이 다 불 때까지 합니다."
+          ],
+          [
+            "선택이 쌓인다",
+            "어제의 선택이 오늘의 발목을 잡거나, 날개가 됩니다."
+          ],
+          [
+            "처음부터 5개 언어",
+            "한국어, 영어, 일본어, 중국어, 스페인어. 전 세계가 같이 밤을 샙니다."
+          ]
+        ],
+        "en": [
+          [
+            "Click and it starts",
+            "No install. No sign-up. No excuses."
+          ],
+          [
+            "Quick to learn, slow to put down",
+            "You learn the rules before the kettle boils. You are still plotting long after the tea has gone cold."
+          ],
+          [
+            "Your choices pile up",
+            "Yesterday's decision is today's trap. Or today's wings."
+          ],
+          [
+            "Five languages from day one",
+            "Korean, English, Japanese, Chinese and Spanish. The whole world gets to stay up together."
+          ]
+        ],
+        "es": [
+          [
+            "Un clic y empieza",
+            "Sin instalar. Sin registro. Sin excusas."
+          ],
+          [
+            "Rápido de aprender, difícil de soltar",
+            "Aprendes las reglas antes de que hierva el agua. Sigues tramando la jugada cuando el té ya está frío."
+          ],
+          [
+            "Tus decisiones se acumulan",
+            "La decisión de ayer es la trampa de hoy. O tus alas."
+          ],
+          [
+            "Cinco idiomas desde el primer día",
+            "Coreano, inglés, japonés, chino y español. Todo el mundo trasnocha junto."
+          ]
+        ],
+        "ja": [
+          [
+            "押したらすぐ始まる",
+            "インストールなし。登録なし。言い訳もなし。"
+          ],
+          [
+            "ルールはすぐ、悩みは長く",
+            "ルールはお湯が沸く前に覚えられます。次の一手は、お茶が冷めても考えています。"
+          ],
+          [
+            "選択が積み重なる",
+            "昨日の選択が、今日の足かせにも翼にもなります。"
+          ],
+          [
+            "最初から5言語",
+            "韓国語、英語、日本語、中国語、スペイン語。世界中で一緒に夜更かしできます。"
+          ]
+        ]
+      },
+      "pipe_title": {
+        "ko": "한 편이 익기까지",
+        "en": "How a game ripens",
+        "es": "Cómo madura un juego",
+        "ja": "一本が熟すまで"
+      },
+      "pipe_sub": {
+        "ko": "아이디어에서 판정까지 다섯 단계",
+        "en": "Five steps for every game",
+        "es": "Cinco pasos para cada juego",
+        "ja": "アイデアから判定までの5ステップ"
+      },
+      "pipe": {
+        "ko": [
+          [
+            "아이디어",
+            "조작은 한 가지, 새 규칙은 한 줄."
+          ],
+          [
+            "프로토타입",
+            "AI와 함께 며칠 안에 손에 잡히게."
+          ],
+          [
+            "어린이 테스트",
+            "설명서를 절대 안 읽는 최고의 심사위원."
+          ],
+          [
+            "출시",
+            "웹에 먼저 올립니다."
+          ],
+          [
+            "14일 판정",
+            "접기, 유지, 키우기. 정이 들어도 숫자대로."
+          ]
+        ],
+        "en": [
+          [
+            "Idea",
+            "One control, one new rule."
+          ],
+          [
+            "Prototype",
+            "Playable within days, built with AI."
+          ],
+          [
+            "Kid test",
+            "The toughest judges: they never read instructions."
+          ],
+          [
+            "Launch",
+            "The web comes first."
+          ],
+          [
+            "Day-14 verdict",
+            "End it, keep it, or grow it. The numbers decide, however attached we are."
+          ]
+        ],
+        "es": [
+          [
+            "Idea",
+            "Un solo control y una regla nueva."
+          ],
+          [
+            "Prototipo",
+            "Jugable en pocos días, hecho con IA."
+          ],
+          [
+            "Prueba con niños",
+            "El jurado más duro: jamás leen las instrucciones."
+          ],
+          [
+            "Lanzamiento",
+            "Primero en la web."
+          ],
+          [
+            "Veredicto del día 14",
+            "Cerrar, mantener o hacer crecer. Mandan los números, por mucho cariño que le tengamos."
+          ]
+        ],
+        "ja": [
+          [
+            "アイデア",
+            "操作はひとつ、新ルールは一行。"
+          ],
+          [
+            "プロトタイプ",
+            "AIと一緒に、数日で遊べる形に。"
+          ],
+          [
+            "子どもテスト",
+            "説明書を絶対に読まない、最強の審査員。"
+          ],
+          [
+            "公開",
+            "まずウェブで公開します。"
+          ],
+          [
+            "14日判定",
+            "終了、維持、育成。情が移っても数字で決めます。"
+          ]
+        ]
+      },
+      "footer_note": {
+        "ko": "메주는 모든 장맛의 시작입니다. 우리는 재미의 시작을 빚습니다.",
+        "en": "Meju is the fermented soybean block every Korean sauce starts from. We make the block that fun starts from.",
+        "es": "El meju es el bloque de soja fermentada del que nacen las salsas coreanas. Nosotros fermentamos el origen de la diversión.",
+        "ja": "メジュは韓国の味噌や醤油のもとになる大豆のかたまり。私たちは「面白い」のもとを仕込みます。"
+      }
+    }
+  },
+  "updated": "2026-11-22",
+  "credit": "stayhungryasi.com",
+  "disclaimer": "Not investment advice."
+}
