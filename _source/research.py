@@ -135,6 +135,7 @@ a{color:var(--or)}
 .top .in{max-width:980px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
 .brand{font-family:var(--mono);font-size:13px;letter-spacing:.2em;color:var(--ink);text-decoration:none;font-weight:600;white-space:nowrap}
 .brand i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--or);margin-right:10px;vertical-align:1px}
+.top a.back{margin-left:auto}.top a.devb{font-family:var(--mono);font-size:12px;color:var(--or);text-decoration:none;border:1px solid var(--line2);border-radius:8px;padding:6px 9px;white-space:nowrap;flex:none}.top a.devb:hover{border-color:var(--or)}@media(max-width:560px){.top a.devb{display:none}}
 .top a.back{font-family:var(--mono);font-size:12.5px;color:var(--or);text-decoration:none;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
 main{max-width:980px;margin:0 auto;padding:30px 20px 60px}
 .eb{font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;color:var(--or);text-transform:uppercase}
@@ -191,6 +192,14 @@ document.querySelectorAll('a[data-lib]').forEach(function(a){a.href='/'+c+'/#lib
 document.addEventListener('click',function(e){var b=e.target.closest('[data-set]');if(b){var c=b.getAttribute('data-set');try{localStorage.setItem('sha-lang',JSON.stringify(c))}catch(x){}if(!go(c))set(c);}});
 set(p);})();
 </script>'''
+ESC_JS = r'''<script>
+/* Esc (or the DEV button) opens the hub's developer view on the research library, like every hub page does. */
+(function(){function go(){var b=document.querySelector('.top a.back:not([hidden])'),h=b?b.getAttribute('href'):'/#library';try{localStorage.setItem('sha-file','"library"')}catch(e){}location.href=h.replace(/#.*$/,'')+'#dev'}
+document.addEventListener('keydown',function(e){if(e.key!=='Escape'||e.defaultPrevented||e.ctrlKey||e.metaKey||e.altKey)return;var t=e.target,lb=document.querySelector('.lb');
+if((lb&&!lb.hidden)||(t&&/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))||(t&&t.isContentEditable))return;e.preventDefault();go()});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-dev]');if(a){e.preventDefault();go()}})})();
+</script>'''
+LANG_JS += ESC_JS
 
 SHARE_CSS = '''
 .shr{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0 4px}.shr span{font:600 12px var(--mono);letter-spacing:.08em;color:var(--mute);margin-right:2px}
@@ -300,7 +309,7 @@ def head(title, desc, url, lang='ko', extra='', hattr=''):
 def topbar(cur='en'):
     return ('<header class="top"><div class="in"><a class="brand" href="/"><i></i>STAY HUNGRY.ASI</a>'
             + ''.join(f'<a class="back" data-l="{c}" data-lib href="/{c}/#library"{"" if c == cur else " hidden"}>{E(UI[c]["back"])}</a>' for c in LANGS)
-            + '</div></header>')
+            + '<a class="devb" href="/#dev" data-dev title="Esc">&lt;/&gt; DEV</a></div></header>')
 
 
 SOC = [('YouTube', '@futurefieldtrip', 'https://www.youtube.com/@futurefieldtrip', '<path d="M8.5 5.5v13l10.5-6.5z" fill="currentColor"/>'),
@@ -452,7 +461,7 @@ def index_page(allm, base):
     return (head('Research library · Stayhungry.ASI', f'{len(allm)} research reports on stayhungryasi.com: AI infrastructure, macro, sectors, crypto, great investors. Korean originals with briefs in 4 languages.', url, 'en', css)
             + topbar() + f'<main><p class="eb">RESEARCH LIBRARY · {len(allm)}</p><h1 class="t">Research, in full.</h1>'
             + '<p>Every report is hosted here in its Korean original with full translations in English, Spanish and Japanese where available, and a brief in all four languages. Interactive version: <a href="/en/#library">open the library</a> · RSS: <a href="/r/feed.xml">/r/feed.xml</a> · JSON: <a href="/data/research.json">/data/research.json</a></p>'
-            + f'<div class="rel">{rows}</div></main>' + FOOT + '</body></html>\n')
+            + f'<div class="rel">{rows}</div></main>' + FOOT + ESC_JS + '</body></html>\n')
 
 
 def rss(allm, base):

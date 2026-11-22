@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-23",
+      "commit": "HEAD",
+      "message": "Research pages: Esc now opens the developer view, as on every hub page (it lands on the research library file), and a </> DEV button sits in the top bar. With the card viewer open, Esc still just closes the viewer"
+    },
+    {
       "date": "2026-11-22",
       "commit": "d3c5513",
       "message": "New page: Super Meju Games in the Made menu. The studio in one screen: three live games you can open (Unis Friends Block Drop, Super Meju Factory, Just Launch It) with screens, what is in development, the four-rule recipe and the five-step pipeline. The Super Meju card on the hub page now opens this page; also in the developer view (SUPER-MEJU.md), the `games` command and /data/games.json"
@@ -417,7 +422,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }
