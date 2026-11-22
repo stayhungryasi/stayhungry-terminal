@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
  "updated": "2026-11-22",
- "count": 23,
+ "count": 24,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals (full translations in en/es/ja where listed in langs); briefs in 4 languages. Not investment advice.",
  "credit": "stayhungryasi.com",
@@ -139,6 +139,123 @@
     "en": "https://stayhungryasi.com/r/ust-curve-efficiency-2026-11/en/",
     "es": "https://stayhungryasi.com/r/ust-curve-efficiency-2026-11/es/",
     "ja": "https://stayhungryasi.com/r/ust-curve-efficiency-2026-11/ja/"
+   }
+  },
+  {
+   "slug": "sp500-2018-analog-check-2026-11",
+   "date": "2026-11-22",
+   "asof": "2026-11-21 KST: US close of Nov 20",
+   "category": "macro",
+   "title": {
+    "ko": "지금은 2018년과 닮았나: S&P 500 유사론 전수검증과 세 가지 경로",
+    "en": "Does This Look Like 2018? A Full Check of the S&P 500 Analog and Three Paths Ahead",
+    "es": "¿Se parece a 2018? Verificación completa de la analogía del S&P 500 y tres rutas posibles",
+    "ja": "今は2018年に似ているのか:S&P 500アナロジーの全数検証と3つの経路"
+   },
+   "dek": {
+    "ko": "S&P 500이 10월 6일 고점에서 11.6% 내려 조정에 들어서자 '2018년 중간선거 직후와 같다'는 비교가 돌고 있다. 일별 종가로 대조하니 하락의 모양은 닮았지만 인용되는 숫자 두 개가 틀렸고, 속도는 2018년의 두 배였다. 2018년 반등을 만든 연준의 정책 전환은 지금 없다. 과거 세 경로(2018·2022·2000년)를 현재 고점에 대입하고 경로를 가르는 지표를 정리했다.",
+    "en": "With the S&P 500 down 11.6% from its Oct 6 peak and in a correction, a comparison with the aftermath of the 2018 midterms is circulating. Checked against daily closes, the shape of the decline matches, but two of the quoted numbers are wrong and the pace is twice that of 2018. The Fed policy shift that produced the 2018 rebound is absent today. This report maps three past paths (2018, 2022, 2000) onto the current peak and lists the signals that separate them.",
+    "es": "Con el S&P 500 11.6% abajo de su máximo del 6 de octubre y en corrección, circula la comparación con lo que siguió a las elecciones de medio mandato de 2018. Contrastada con cierres diarios, la forma de la caída coincide, pero dos de las cifras citadas están mal y el ritmo es el doble que en 2018. El giro de la Fed que produjo el rebote de 2018 hoy no está. El informe aplica tres rutas pasadas (2018, 2022, 2000) al máximo actual y enumera las señales que las separan.",
+    "ja": "S&P 500が10月6日の高値から11.6%下げて調整入りし、「2018年の中間選挙直後と同じだ」という比較が出回っている。日次終値で照合すると、下落の形は似ているが、引用される数字のうち2つは誤りで、速度は2018年の2倍だった。2018年の反発を生んだFRBの政策転換は今はない。過去の3つの経路(2018・2022・2000年)を現在の高値に当てはめ、経路を分ける指標を整理した。"
+   },
+   "key": {
+    "value": "-11.6%",
+    "label": {
+     "ko": "S&P 500의 10월 6일 사상 최고 종가 7,818.93 대비 낙폭(11월 20일 종가 6,910.39). 고점 후 33거래일로, 같은 시점의 2018년은 -6.0%였다",
+     "en": "S&P 500 decline from its record close of 7,818.93 on Oct 6 (Nov 20 close 6,910.39). That is 33 trading days after the peak; at the same point 2018 was at -6.0%",
+     "es": "Caída del S&P 500 desde su cierre récord de 7,818.93 del 6 de octubre (cierre del 20 de noviembre: 6,910.39). Son 33 días hábiles tras el máximo; en ese punto 2018 estaba en -6.0%",
+     "ja": "S&P 500の10月6日の最高値終値7,818.93からの下落率(11月20日終値6,910.39)。高値後33営業日で、同じ時点の2018年は-6.0%だった"
+    }
+   },
+   "points": {
+    "ko": [
+     "판정: 2018년 4분기와 닮았다는 방향은 맞다. 다만 '중간선거 후 20% 하락'의 20%는 2018년 9월 20일 고점 기준(-19.8%)이고 선거일 기준으로는 -14.7%였다. '다음해 2월 7일까지 45% 상승'은 틀렸다. 그날은 저점 대비 +15.1%였고 +44.0%는 14개월 뒤인 2020년 2월 19일이었다.",
+     "차이: 고점 후 같은 33거래일에 2018년은 -6.0%, 지금은 -11.6%다. 2018년 V자 반등의 출발점은 2019년 1월 4일 연준의 정책 전환이었는데, 지금은 12월 인상 확률이 약 97%다. 10년물은 3.24% 대 4.94%다.",
+     "경로(작성자 판단): 2018형 30%(2027년 1월 초 6,272 저점), 2022형 40%(2027년 7월 중순 5,831 저점), 2000형 30%. 세 경로 모두 중간에 크게 반등하므로 반등만으로는 구분할 수 없고, 7,818.93 돌파 여부로 갈린다."
+    ],
+    "en": [
+     "Verdict: the direction is right; this does resemble the fourth quarter of 2018. But the 20% in 'down 20% after the midterms' is from the Sep 20, 2018 peak (-19.8%); from Election Day it was -14.7%. 'Up 45% by Feb 7 of the next year' is false: that day was +15.1% from the low, and +44.0% came 14 months later, on Feb 19, 2020.",
+     "Differences: at the same 33 trading days after the peak, 2018 was at -6.0% and today is at -11.6%. The 2018 V started with the Fed's policy shift on Jan 4, 2019; today the odds of a December hike are about 97%. The 10-year yield is 3.24% then versus 4.94% now.",
+     "Paths (author's judgment): 2018 path 30% (low of 6,272 in early January 2027), 2022 path 40% (low of 5,831 in mid-July 2027), 2000 path 30%. All three rebound sharply midway, so a rebound alone cannot separate them; a close above 7,818.93 does."
+    ],
+    "es": [
+     "Veredicto: la dirección es correcta; sí se parece al cuarto trimestre de 2018. Pero el 20% de 'cayó 20% tras las elecciones de medio mandato' es desde el máximo del 20 de septiembre de 2018 (-19.8%); desde el día de la elección fue -14.7%. 'Subió 45% hasta el 7 de febrero del año siguiente' es falso: ese día estaba +15.1% sobre el mínimo, y el +44.0% llegó 14 meses después, el 19 de febrero de 2020.",
+     "Diferencias: con los mismos 33 días hábiles tras el máximo, 2018 estaba en -6.0% y hoy en -11.6%. La V de 2018 empezó con el giro de la Fed del 4 de enero de 2019; hoy la probabilidad de un alza en diciembre es cercana a 97%. El bono a 10 años: 3.24% entonces frente a 4.94% ahora.",
+     "Rutas (juicio del autor): ruta 2018 30% (mínimo de 6,272 a inicios de enero de 2027), ruta 2022 40% (mínimo de 5,831 a mediados de julio de 2027), ruta 2000 30%. Las tres rebotan fuerte a mitad de camino, así que un rebote no basta para distinguirlas; lo define un cierre sobre 7,818.93."
+    ],
+    "ja": [
+     "判定:2018年10-12月期に似ているという方向は正しい。ただし「中間選挙後に20%下落」の20%は2018年9月20日の高値基準(-19.8%)で、選挙日基準では-14.7%だった。「翌年2月7日までに45%上昇」は誤りだ。その日は安値比+15.1%で、+44.0%は14カ月後の2020年2月19日だった。",
+     "違い:高値後の同じ33営業日で、2018年は-6.0%、今は-11.6%だ。2018年のV字反発の出発点は2019年1月4日のFRBの政策転換だったが、今は12月利上げの確率が約97%だ。10年債利回りは3.24%対4.94%。",
+     "経路(筆者の判断):2018年型30%(2027年1月初めに6,272で安値)、2022年型40%(2027年7月中旬に5,831で安値)、2000年型30%。3つとも途中で大きく反発するため、反発だけでは区別できず、7,818.93を上抜けるかどうかで分かれる。"
+    ]
+   },
+   "tickers": [
+    "SPX",
+    "NDX",
+    "SOX",
+    "VIX"
+   ],
+   "tags": {
+    "ko": [
+     "S&P 500",
+     "2018년 비교",
+     "시나리오",
+     "전수검증"
+    ],
+    "en": [
+     "S&P 500",
+     "2018 analog",
+     "Scenarios",
+     "Fact-checked"
+    ],
+    "es": [
+     "S&P 500",
+     "Analogía 2018",
+     "Escenarios",
+     "Verificado"
+    ],
+    "ja": [
+     "S&P 500",
+     "2018年との比較",
+     "シナリオ",
+     "全数検証"
+    ]
+   },
+   "checkpoints": [
+    {
+     "date": "2026-12-09",
+     "text": {
+      "ko": "FOMC 결정(12월 8~9일 회의): 인상 폭과 추가 인상 문구",
+      "en": "FOMC decision (Dec 8-9 meeting): size of the hike and wording on further hikes",
+      "es": "Decisión del FOMC (reunión del 8-9 de diciembre): tamaño del alza y lenguaje sobre más alzas",
+      "ja": "FOMCの決定(12月8~9日会合):利上げ幅と追加利上げの文言"
+     }
+    },
+    {
+     "date": "2027-01-08",
+     "text": {
+      "ko": "2018형 경로를 대입했을 때의 저점 시점(고점 후 94일, 6,272)",
+      "en": "Low date if the 2018 path repeats (94 days after the peak, 6,272)",
+      "es": "Fecha del mínimo si se repite la ruta 2018 (94 días tras el máximo, 6,272)",
+      "ja": "2018年型の経路を当てはめた場合の安値の時期(高値後94日、6,272)"
+     }
+    }
+   ],
+   "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
+   "minutes": 6,
+   "sources": 14,
+   "url": "https://stayhungryasi.com/r/sp500-2018-analog-check-2026-11/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/sp500-2018-analog-check-2026-11/",
+    "en": "https://stayhungryasi.com/r/sp500-2018-analog-check-2026-11/en/",
+    "es": "https://stayhungryasi.com/r/sp500-2018-analog-check-2026-11/es/",
+    "ja": "https://stayhungryasi.com/r/sp500-2018-analog-check-2026-11/ja/"
    }
   },
   {
@@ -3033,6 +3150,16 @@
   {
    "date": "2026-12-09",
    "text": {
+    "ko": "FOMC 결정(12월 8~9일 회의): 인상 폭과 추가 인상 문구",
+    "en": "FOMC decision (Dec 8-9 meeting): size of the hike and wording on further hikes",
+    "es": "Decisión del FOMC (reunión del 8-9 de diciembre): tamaño del alza y lenguaje sobre más alzas",
+    "ja": "FOMCの決定(12月8~9日会合):利上げ幅と追加利上げの文言"
+   },
+   "slug": "sp500-2018-analog-check-2026-11"
+  },
+  {
+   "date": "2026-12-09",
+   "text": {
     "ko": "FOMC 결정과 점도표",
     "en": "FOMC decision and dot plot",
     "es": "Decisión de la Fed y gráfico de puntos",
@@ -3109,6 +3236,16 @@
     "ja": "新議会が開会"
    },
    "slug": "spacex-anthropic-90day-clause"
+  },
+  {
+   "date": "2027-01-08",
+   "text": {
+    "ko": "2018형 경로를 대입했을 때의 저점 시점(고점 후 94일, 6,272)",
+    "en": "Low date if the 2018 path repeats (94 days after the peak, 6,272)",
+    "es": "Fecha del mínimo si se repite la ruta 2018 (94 días tras el máximo, 6,272)",
+    "ja": "2018年型の経路を当てはめた場合の安値の時期(高値後94日、6,272)"
+   },
+   "slug": "sp500-2018-analog-check-2026-11"
   },
   {
    "date": "2027-01-10",

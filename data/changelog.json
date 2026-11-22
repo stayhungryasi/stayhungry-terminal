@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-22",
+      "commit": "HEAD",
+      "message": "New research: Does This Look Like 2018? The S&P 500 is 11.6% below its Oct 6 record and the 2018 midterm comparison is circulating. Checked against daily closes: the 20% drop was from the Sep 20, 2018 peak (-14.7% from Election Day), and +44% took 14 months, not weeks. At 33 trading days after the peak 2018 was at -6.0% versus -11.6% now. Three past paths (2018, 2022, 2000) mapped onto today's peak with author-judged odds of 30/40/30, and 10 cards in Korean, English, Spanish and Japanese"
+    },
+    {
+      "date": "2026-11-22",
       "commit": "02b26e5",
       "message": "New research: Which Treasury maturity pays most per unit of risk? On the Nov 20 close the 2-year is highest at 0.23, 1.8x the 20-year; the 30-year trails the 20-year on yield, duration and rolldown. The edge is conditional: the 2-year's cushion fell from 72bp to 44bp in a week. Includes scenarios, a counter-case, a verification log with two corrections, and 8 cards in Korean, English, Spanish and Japanese"
     },
