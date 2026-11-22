@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-22",
-      "commit": "HEAD",
+      "commit": "02b26e5",
       "message": "New research: Which Treasury maturity pays most per unit of risk? On the Nov 20 close the 2-year is highest at 0.23, 1.8x the 20-year; the 30-year trails the 20-year on yield, duration and rolldown. The edge is conditional: the 2-year's cushion fell from 72bp to 44bp in a week. Includes scenarios, a counter-case, a verification log with two corrections, and 8 cards in Korean, English, Spanish and Japanese"
     },
     {
