@@ -1,0 +1,61 @@
+{
+ "slug": "dual-class-fact-check-2026-11",
+ "date": "2026-11-22",
+ "asof": "2026-11-22 KST",
+ "category": "ai",
+ "title": {
+  "ko": "차등의결권이 정말 운명을 갈랐나: 기사 주장 19개 전수검증과 시총 Top10 지배구조",
+  "en": "Did Dual-Class Shares Really Decide Their Fate? 19 Claims Checked and Who Controls the Top 10",
+  "es": "¿De verdad la doble clase decidió su destino? 19 afirmaciones verificadas y quién controla el top 10",
+  "ja": "複数議決権は本当に運命を分けたのか:主張19件の全数検証と時価総額トップ10の支配構造"
+ },
+ "dek": {
+  "ko": "젠슨 황의 사임과 저커버그의 무의결권 주식 계획을 차등의결권으로 설명한 기사의 주장 19개를 원자료와 대조했다. 14개는 사실이고 3개는 과장이거나 맥락이 빠졌으며 2개는 발행 뒤 상황이 바뀌었다. 포브스 추산으로는 주당 10표 구조였어도 황의 의결권은 약 26%로 과반이 아니다. 지분과 의결권의 간격, 엔비디아 종가, 시총 Top10의 지배 유형을 그림으로 정리했다.",
+  "en": "A news story explained Jensen Huang's resignation and Zuckerberg's non-voting share plan through dual-class voting rights. We checked its 19 claims against primary sources: 14 hold, 3 are overstated or missing context, and 2 changed after publication. By a Forbes estimate, Huang would hold about 26% of votes even with 10 votes per share, short of a majority. Charts cover the gap between ownership and votes, Nvidia's closes, and who controls the top 10 by market cap.",
+  "es": "Un artículo explicó la renuncia de Jensen Huang y el plan de acciones sin voto de Zuckerberg por los derechos de voto diferenciados. Contrastamos sus 19 afirmaciones con fuentes primarias: 14 son correctas, 3 están exageradas o sin contexto y 2 cambiaron tras la publicación. Según una estimación de Forbes, Huang tendría cerca de 26% de los votos aun con 10 votos por acción, sin mayoría. Los gráficos cubren la brecha entre propiedad y votos, los cierres de Nvidia y quién controla las 10 mayores por capitalización.",
+  "ja": "ジェンスン・フアン氏の辞任とザッカーバーグ氏の無議決権株式計画を複数議決権で説明した記事の主張19件を一次資料と照合した。14件は事実、3件は誇張または文脈不足、2件は掲載後に状況が変わった。フォーブスの試算では1株10票の構造でもフアン氏の議決権は約26%で過半数ではない。持株と議決権の差、エヌビディアの終値、時価総額トップ10の支配タイプを図で整理した。"
+ },
+ "key": {
+  "value": "14/19",
+  "label": {
+   "ko": "기사 주장 19개 중 사실로 확인된 수. 과장·맥락 누락 3개, 발행 뒤 변경 2개",
+   "en": "Claims confirmed out of 19 in the article. 3 are overstated or missing context, and 2 changed after publication",
+   "es": "Afirmaciones confirmadas de las 19 del artículo. 3 están exageradas o sin contexto y 2 cambiaron tras la publicación",
+   "ja": "記事の主張19件のうち事実と確認できた数。誇張・文脈不足が3件、掲載後の変更が2件"
+  }
+ },
+ "points": {
+  "ko": [
+   "판정: 헤드라인의 인과는 과장이다. 지분 3.6%인 젠슨 황은 주당 10표 구조였어도 의결권이 약 26%다(포브스 추산). 저커버그의 지분 13.4%·의결권 60.6%, 머스크의 스페이스X 의결권 약 85%는 차등 구조와 두 자릿수 지분이 결합한 결과다.",
+   "발행 뒤 변경: 메타는 11월 18일 소송 중 클래스C를 발행하지 않기로 합의했고 재판은 2027년 4월 19~23일이다. 스페이스X·테슬라 합병 발표는 이르면 12월이라는 후속 보도가 나왔다.",
+   "가격과 구조: 엔비디아 11월 17일 종가 $155.46은 10월 6일 고점 $239.24보다 35.0% 낮고, 같은 날 발표한 3분기 매출 $115.8B는 사상 최대였다. 11월 12일 기준 시총 Top10에서 분산형 6곳이 합계의 69%, 창업자 지배 3곳이 25%, 국가 지배 1곳이 6%다."
+  ],
+  "en": [
+   "Verdict: the headline causation is overstated. With a 3.6% stake, Jensen Huang would hold about 26% of votes even with 10 votes per share (Forbes estimate). Zuckerberg's 13.4% ownership with 60.6% of votes and Musk's roughly 85% of SpaceX votes come from dual-class shares combined with double-digit stakes.",
+   "Changed after publication: on Nov 18 Meta agreed not to issue Class C during the litigation, with trial set for Apr 19–23, 2027. A follow-up report says a SpaceX-Tesla merger could be announced as soon as December.",
+   "Price and structure: Nvidia's Nov 17 close of $155.46 is 35.0% below its Oct 6 peak of $239.24, even though third-quarter revenue reported that day was a record $115.8B. In the Nov 12 top 10 by market cap, 6 dispersed companies hold 69% of the total, 3 founder-controlled hold 25%, and 1 state-controlled holds 6%."
+  ],
+  "es": [
+   "Veredicto: la causalidad del titular está exagerada. Con 3.6% de participación, Jensen Huang tendría cerca de 26% de los votos aun con 10 votos por acción (estimación de Forbes). El 13.4% de propiedad con 60.6% de los votos de Zuckerberg y el cerca de 85% de los votos de SpaceX de Musk resultan de la doble clase combinada con participaciones de dos dígitos.",
+   "Cambió tras la publicación: el 18 de noviembre Meta aceptó no emitir Clase C durante el litigio, con juicio del 19 al 23 de abril de 2027. Un reporte posterior dice que la fusión SpaceX-Tesla podría anunciarse ya en diciembre.",
+   "Precio y estructura: el cierre de Nvidia del 17 de noviembre, $155.46, está 35.0% por debajo de su máximo del 6 de octubre, $239.24, aunque los ingresos del tercer trimestre publicados ese día fueron un récord de $115.8B. En el top 10 por capitalización del 12 de noviembre, 6 empresas dispersas suman 69% del total, 3 controladas por fundadores 25% y 1 estatal 6%."
+  ],
+  "ja": [
+   "判定:見出しの因果は誇張だ。持株3.6%のジェンスン・フアン氏は1株10票の構造でも議決権が約26%にとどまる(フォーブス試算)。ザッカーバーグ氏の持株13.4%・議決権60.6%、マスク氏のスペースX議決権約85%は、複数議決権と2桁の持株が組み合わさった結果だ。",
+   "掲載後の変更:メタは11月18日、訴訟中はクラスCを発行しないことに合意し、審理は2027年4月19~23日。スペースXとテスラの合併発表は早ければ12月との続報が出た。",
+   "価格と構造:エヌビディアの11月17日終値$155.46は10月6日の高値$239.24を35.0%下回り、同日発表の第3四半期売上高$115.8Bは過去最高だった。11月12日時点の時価総額トップ10では、分散型6社が合計の69%、創業者支配3社が25%、国家支配1社が6%を占める。"
+  ]
+ },
+ "tickers": ["NVDA", "META", "TSLA", "SPCX", "035900"],
+ "tags": {
+  "ko": ["차등의결권", "지배구조", "시총 Top10", "전수검증"],
+  "en": ["Dual-class shares", "Governance", "Top 10 market cap", "Fact-checked"],
+  "es": ["Doble clase", "Gobierno corporativo", "Top 10 por capitalización", "Verificado"],
+  "ja": ["複数議決権", "ガバナンス", "時価総額トップ10", "全数検証"]
+ },
+ "checkpoints": [
+  {"date": "2026-12-03", "text": {"ko": "테슬라 정기 주주총회", "en": "Tesla annual meeting", "es": "Asamblea anual de Tesla", "ja": "テスラ定時株主総会"}},
+  {"date": "2027-01-19", "text": {"ko": "메타 새 정관 발효(클래스C 배정은 보류)", "en": "Meta's new charter takes effect (Class C distribution on hold)", "es": "Entra en vigor el nuevo estatuto de Meta (reparto de Clase C en pausa)", "ja": "メタの新定款が発効(クラスCの割当は保留)"}},
+  {"date": "2027-04-19", "text": {"ko": "메타 클래스C 델라웨어 재판 시작(4월 23일까지)", "en": "Meta Class C trial begins in Delaware (through Apr 23)", "es": "Comienza en Delaware el juicio sobre la Clase C de Meta (hasta el 23 de abril)", "ja": "メタのクラスCをめぐるデラウェア州での審理開始(4月23日まで)"}}
+ ]
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>차등의결권이 정말 운명을 갈랐나</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* layout: 한 열 스크롤 리포트. 요약(판정) → 구조(지분·의결권) → 가격 → 시총 → 일정 → 한미 대비 */
+:root{
+  color-scheme: dark; /* 허브(stayhungryasi.com) 단일 다크 테마 */
+  --page:#0A0C10; --surface:#12161E; --ink:#EEF0F5; --ink2:#C7CCD8; --muted:#7C8499;
+  --grid:#1D2330; --axis:#2A3142; --ring:#1D2330;
+  --acc:#F26522; --acc2:#FF8A4C;
+  --s1:#2F8FDD; --s2:#d95926; --s3:#2EA87A;
+  --good:#2EA87A; --warn:#F2B33D; --serious:#FF8A4C;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,"Noto Sans KR",monospace;
+  --display:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--page);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6;-webkit-text-size-adjust:100%}
+main{max-width:720px;margin:0 auto;padding:28px 16px 48px;display:flex;flex-direction:column;gap:20px}
+header .kicker{font-family:var(--mono);font-size:12px;color:var(--acc2);letter-spacing:.06em}
+h1{font-family:var(--display);font-weight:900;font-size:28px;line-height:1.25;margin:6px 0 10px;text-wrap:balance}
+header p{margin:0;color:var(--ink2);max-width:60ch}
+.lede{margin-top:14px;padding:14px 16px;border-left:3px solid var(--acc);background:var(--surface);font-weight:600}
+section{background:var(--surface);border:1px solid var(--ring);border-radius:18px;padding:20px 16px}
+h2{font-family:var(--display);font-weight:700;font-size:18px;margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--ink2);font-size:13px;margin:0 0 14px}
+.note{color:var(--muted);font-size:12px;margin:12px 0 0}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+body{word-break:keep-all;overflow-wrap:anywhere}
+
+/* 판정 */
+.tally{display:flex;gap:2px;height:14px;border-radius:4px;overflow:hidden;margin-bottom:10px}
+.tally i{display:block}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink2);margin-bottom:14px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.g{background:var(--good)} .w{background:var(--warn)} .c{background:var(--serious)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:6px}
+.tile{appearance:none;border:0;border-radius:8px;padding:8px 0 6px;font:inherit;color:#0b0b0b;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:0;line-height:1.2}
+.tile b{font-size:15px}
+.tile small{font-size:12px}
+.tile[aria-pressed="true"]{outline:3px solid var(--ink);outline-offset:2px}
+.tile:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+.detail{margin-top:14px;padding:12px 14px;border:1px solid var(--grid);border-radius:10px;min-height:118px}
+.detail .tag{font-size:12px;font-weight:700;display:inline-flex;align-items:center;gap:6px;margin-bottom:4px}
+.detail .claim{font-weight:600;margin:0 0 4px}
+.detail .find{margin:0;color:var(--ink2);font-size:14px}
+
+/* 덤벨 */
+.db{display:flex;flex-direction:column;gap:14px;position:relative}
+.db-row .top{display:flex;justify-content:space-between;gap:10px;font-size:13px;align-items:baseline;flex-wrap:wrap}
+.db-row .who{font-weight:600}
+.db-row .vals{color:var(--ink2)}
+.track{position:relative;height:18px;margin-top:4px}
+.track::before{content:"";position:absolute;left:0;right:0;top:8px;height:2px;background:var(--grid)}
+.track .half{position:absolute;left:50%;top:-2px;bottom:-2px;width:0;border-left:1px dashed var(--axis)}
+.track .link{position:absolute;top:7px;height:4px;background:var(--acc);opacity:.45;border-radius:2px}
+.dot{position:absolute;top:2px;width:14px;height:14px;margin-left:-7px;border-radius:50%;border:2px solid var(--surface)}
+.dot.own{background:var(--surface);border:3px solid var(--ink2)}
+.dot.vote{background:var(--acc)}
+.dot.ghost{background:transparent;border:2px dashed var(--muted)}
+.scale{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:2px}
+
+/* 주가 */
+.readout{font-size:14px;margin:0 0 8px;min-height:44px}
+.readout b{font-size:26px;font-family:var(--mono);color:var(--acc)}
+svg{display:block;width:100%;height:auto}
+svg text{font-family:var(--mono);fill:var(--muted);font-size:10px}
+svg .lab{fill:var(--ink);font-size:11px;font-weight:600}
+.pt{cursor:pointer}
+
+/* 시총 */
+.share{display:flex;gap:2px;height:22px;border-radius:5px;overflow:hidden;margin-bottom:8px}
+.share i{display:block}
+.t1{background:var(--s1)} .t2{background:var(--s2)} .t3{background:var(--s3)}
+.caps{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.cap .top{display:flex;gap:8px;align-items:baseline;font-size:13px}
+.cap .rk{color:var(--muted);width:18px;flex:none;text-align:right}
+.cap .nm{font-weight:600}
+.cap .ctl{color:var(--ink2);font-size:12px;flex:1;min-width:0}
+.cap .v{margin-left:auto;font-weight:600;flex:none}
+.bar{height:10px;margin:3px 0 0 26px;background:transparent}
+.bar i{display:block;height:100%;border-radius:0 4px 4px 0}
+.bar i.pf{background:repeating-linear-gradient(45deg,var(--s2) 0 4px,transparent 4px 8px);border:1px solid var(--s2)}
+.cap.sep{border-top:1px dashed var(--axis);padding-top:10px}
+
+/* 타임라인 */
+.tl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:78px 16px 1fr;gap:8px;align-items:start;padding:6px 0;font-size:14px}
+.tl time{color:var(--muted);font-size:12px;padding-top:2px;text-align:right}
+.tl .mk{width:12px;height:12px;border-radius:50%;background:var(--ink);margin-top:5px;justify-self:center}
+.tl .next .mk{background:var(--surface);border:2px solid var(--acc2)}
+.tl .next time{color:var(--acc2);font-weight:600}
+.tl .div{grid-column:1/-1;font-size:12px;color:var(--muted);border-top:1px dashed var(--axis);padding-top:8px;margin-top:4px}
+
+/* 한미 */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.vs>div{border:1px solid var(--grid);border-radius:10px;padding:12px}
+.vs h3{margin:0 0 6px;font-size:14px;font-family:var(--display)}
+.vs ul{margin:0;padding-left:18px;font-size:13px;color:var(--ink2)}
+.vs .arrow{font-size:12px;font-weight:700;color:var(--ink);margin-top:8px}
+@media (max-width:480px){.vs{grid-template-columns:1fr} h1{font-size:24px}}
+.open{margin:0;padding-left:18px;font-size:14px;color:var(--ink2)}
+footer{color:var(--muted);font-size:12px;text-align:center}
+@media (prefers-reduced-motion:no-preference){.tile{transition:transform .12s}.tile:active{transform:scale(.96)}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="kicker" data-t="kicker"></div><h1><span data-t="h1a"></span><br><span style="color:var(--acc)" data-t="h1b"></span></h1><p data-t="intro"></p><div class="lede" data-t="lede"></div></header>
+<section><h2 data-t="v_h"></h2><p class="sub" data-t="v_sub"></p><div class="tally" id="tally"></div><div class="legend" id="vlegend"></div><div class="tiles" id="tiles"></div><div class="detail" id="detail" aria-live="polite"></div></section>
+<section><h2 data-t="d_h"></h2><p class="sub" data-t="d_sub"></p><div class="legend" id="dlegend"></div><div class="db" id="db"></div><div class="scale num"><span>0%</span><span>25</span><span>50</span><span>75</span><span>100%</span></div><p class="note" data-t="d_note"></p></section>
+<section><h2 data-t="p_h"></h2><p class="sub" data-t="p_sub"></p><p class="readout" id="readout"></p><svg id="px" viewBox="0 0 340 230" role="img"></svg><p class="note" data-t="p_note"></p></section>
+<section><h2 data-t="c_h"></h2><p class="sub" data-t="c_sub"></p><div class="share" id="share"></div><div class="legend" id="share-legend"></div><div class="caps" id="caps"></div><p class="note" data-t="c_note"></p></section>
+<section><h2 data-t="t_h"></h2><p class="sub" data-t="t_sub"></p><ol class="tl" id="tl"></ol></section>
+<section><h2 data-t="s_h"></h2><p class="sub" data-t="s_sub"></p><div class="vs"><div><h3 data-t="us"></h3><ul id="us_l"></ul><div class="arrow" data-t="us_a"></div></div><div><h3 data-t="kr"></h3><ul id="kr_l"></ul><div class="arrow" data-t="kr_a"></div></div></div></section>
+<section><h2 data-t="o_h"></h2><ul class="open" id="o_l"></ul></section>
+<footer data-t="foot"></footer>
+</main>
+<script>
+const LANG="ko", T={"title": "차등의결권이 정말 운명을 갈랐나", "kicker": "기사 전수검증 · 2026-11-22 기준", "h1a": "차등의결권이 정말", "h1b": "운명을 갈랐나", "intro": "2026년 11월 19일자 국내 일간지 경제면 기사 「젠슨 황·저커버그 운명 가른 차등의결권」의 주장 19개를 원자료와 대조했습니다.", "lede": "숫자는 거의 다 맞습니다. 헤드라인의 인과는 과장이고, 2건은 발행 뒤 상황이 바뀌었습니다.", "v_h": "19개 주장 판정", "v_sub": "번호를 누르면 주장과 검증 결과가 나옵니다.", "vn": ["사실 확인", "과장·맥락 누락", "발행 뒤 변경"], "no": "번", "d_h": "지분과 의결권의 간격", "d_sub": "간격이 벌어질수록 적은 지분으로 회사를 지배합니다. 점선은 과반(50%)입니다.", "lg": ["지분", "의결권", "가정"], "d_note": "젠슨 황의 '가정' 점은 포브스 추산입니다. 주당 10표 구조였어도 의결권은 약 26%로 과반에 못 미칩니다. 합병 법인 수치는 스페이스X가 테슬라를 인수한다는 가정의 바클레이스 추정치이며 조건은 미확정입니다. 스페이스X 지분율은 재검증하지 못해 의결권만 표시했습니다.", "db": [["젠슨 황 · 엔비디아", "지분 3.6% = 의결권 3.6%"], ["저커버그 · 메타", "지분 13.4% → 의결권 60.6%"], ["머스크 · 테슬라", "지분 ≈ 의결권 약 20%"], ["머스크 · 스페이스X", "의결권 약 85%"], ["머스크 · 합병 법인(추정)", "지분 37% → 의결권 56%"], ["박진영 측 · JYP", "지분 15.8% = 의결권 15.8%"]], "p_h": "엔비디아 종가, 고점에서 사임 이후까지", "p_sub": "점을 누르면 그날 종가와 고점 대비 하락률이 나옵니다. 단위: 달러.", "p_note": "10/6~11/6 사이 종가는 생략했습니다(점선). 11/18은 \"약 $151\"로 보도된 근사치라 빈 점으로 표시했습니다. 11/17 장 마감 뒤 발표한 3분기 매출은 $115.8B(전년 대비 +103%)로 사상 최대였습니다.", "peak": "고점", "resign": "사임", "approx": "약 ", "vs_peak": "고점 대비", "close": "종가", "px": ["사상 최고 종가", "이사회 성명 전 마지막 종가", "장중 마이크로소프트에 시총 역전", "사임 공시 전 마지막 종가", "젠슨 황 사임", "사임 다음 날", "실적 발표 전날", "장 마감 뒤 3분기 실적", "보도상 근사치"], "c_h": "시총 Top10의 지배구조", "c_sub": "2026-11-12 스냅샷. 단위: 조 달러. 색은 지배 유형입니다.", "types": ["분산형", "창업자 지배", "국가 지배"], "c_note": "엔비디아는 이후 더 내려 11/16 종가 기준 약 $3.76T입니다. 2~4위 순서는 바뀌었을 수 있습니다. 빗금 막대는 스페이스X와 테슬라 시총의 단순 합산이며 합병 조건은 정해지지 않았습니다. ※ 표시는 기존 공시 기준으로 이번에 재검증하지 않은 값입니다.", "caps": [["애플", "기관 분산"], ["엔비디아", "창업자 3.6%, 사임"], ["마이크로소프트", "기관 분산"], ["알파벳", "페이지·브린 과반 ※"], ["아마존", "베이조스 한 자릿수 ※"], ["TSMC", "대만 국가기금 약 6% ※"], ["스페이스X", "머스크 약 85%"], ["브로드컴", "기관 분산"], ["사우디 아람코", "사우디 정부 ※"], ["메타", "저커버그 60.6%"], ["테슬라", "머스크 약 20%"], ["스페이스X + 테슬라", "합병 시 머스크 56%(추정)"]], "t_h": "일어난 일과 남은 일정", "t_sub": "밝은 점은 확인된 사건, 주황 테두리는 예정입니다.", "t_next": "여기부터 예정", "tl": ["엔비디아 사상 최고 종가 $239.24", "메타 이사회, 무의결권 클래스C 승인", "머스크, 스페이스X·테슬라 특별위원회 구성 공개", "일본계 투자그룹, JYP 공개매수 검토 발표. JYP는 부인", "메타 주주, 델라웨어 법원에 소송", "엔비디아 이사회, 독립조사 개시", "젠슨 황 사임", "한국 대통령, 적대적 M&A 저해 제도 전수조사 지시", "엔비디아 3분기 실적: 매출 $115.8B", "메타, 소송 중 클래스C 발행 중단에 합의"], "tf": [["12/3", "테슬라 정기 주주총회"], ["12월", "스페이스X·테슬라 합병 발표 가능(블룸버그)"], ["27/1/19", "메타 새 정관 발효. 클래스C 배정은 보류"], ["27/4/19~23", "메타 클래스C 델라웨어 재판"]], "s_h": "미국과 한국은 반대로 간다", "s_sub": "같은 '경영권' 이슈지만 제도 방향이 다릅니다.", "us": "미국", "kr": "한국", "us_l": ["메타, 무의결권 클래스C로 AI 투자 재원 조달 추진", "스페이스X 주당 10표, 머스크 의결권 약 85%", "견제 수단은 사실상 주주 소송"], "us_a": "→ 창업자 지배 강화", "kr_l": ["자사주 1년 내 소각, 집중투표제 의무화", "대통령, 적대적 M&A 저해 제도 전수조사 지시", "차등의결권·포이즌필 법안은 국회 계류"], "kr_a": "→ 경영권 경쟁 활성화", "o_h": "아직 확인하지 못한 것", "o_l": ["JYP 공개매수가 목표일(11/20)에 실제 시작됐다는 보도는 찾지 못했습니다.", "엔비디아 독립조사 결과와 정식 CEO 선임 시점은 공개되지 않았습니다.", "알파벳·아마존·TSMC·아람코의 지배 비율은 이번에 재검증하지 않았습니다."], "foot": "stayhungryasi.com · 사실 정리이며 투자 권유가 아닙니다", "claims": [["젠슨 황, 11/12 CEO·이사직 사임", "엔비디아 8-K로 확인. CFO 콜렛 크레스가 임시 CEO, 하비 존스가 초대 이사회 의장."], ["젠슨 황 지분 3.6%, 보통주 1종류", "3월 기준 3.58%. 1주 1표 단일 구조."], ["사생활·안보 의혹 보도 뒤 이사회 소집, 이튿날 사임", "11/8 독립조사 개시, 11/11 심야 이사회, 11/12 사임. 조사 결과는 미공개."], ["\"운명을 가른 건 지분이 아니라 의결권\"", "과장. 포브스 추산으로 10표 구조였어도 의결권 약 26%. 지분 3.6%로는 어떤 구조로도 과반이 안 됩니다."], ["저커버그 지분 13.4%, 의결권 60.6%", "10/1 기준 SEC 정보설명서. 클래스B 약 3.41억 주(주당 10표)."], ["메타 이사회, 10/19 무의결권 클래스C 승인", "10/21 3분기 실적과 함께 공시."], ["내년 1/19 기존 주주에 1주당 1주 배정", "변경. 11/18 법원 합의명령으로 소송 중 발행 중단. 정관은 1/19 발효 가능하나 배정은 보류. 재판 2027-04-19~23."], ["10/27 일부 주주가 델라웨어 법원에 소송", "현재 10건. 원고에 CalSTRS, 덴마크 PFA 포함."], ["\"표 없는 주식을 팔아 개인 현금 마련\"", "맞지만 맥락 누락. 즉시 매각 가능분 약 $238억, 캘리포니아 부유세 대응이 배경, 회사 명분은 AI 투자 재원. 2017년 같은 시도를 재판 직전 철회."], ["스페이스X 클래스B 주당 10표, 머스크 의결권 약 85%", "스페이스X 10-Q도 머스크를 지배주주로 명시."], ["머스크의 테슬라 의결권 약 20%", "6/16 2018년 옵션 전량 행사로 13%에서 약 20%로 상승."], ["2024년 \"의결권 25% 없이는 불편\" 발언", "2024년 1월 X 게시글."], ["10/20 양사 이사회가 특별위원회 구성", "스페이스X 3분기 실적콜에서 머스크가 공개. 본인은 이해상충으로 논의에서 빠짐."], ["블룸버그: 내년 상반기 합병 발표", "10/22 보도 기준으로는 맞음. 11/12 후속 보도는 이르면 12월 발표 가능."], ["바클레이스: 합병 시 지분 37%, 의결권 56%", "스페이스X가 테슬라를 인수한다는 가정의 추정치."], ["쿠팡 주당 29표", "클래스B 주당 29표."], ["일본계 그룹이 JYP 25~50% 공개매수 검토, 시간외 +14%", "숫자는 맞음. JYP는 제안받은 적 없다고 공시, 금융감독원은 \"매우 이례적\"이라 평가, 매수 주체의 신고 매출은 $100만~500만 구간."], ["야당, 1월 차등의결권·포이즌필 법안 3건 발의", "국회 법제사법위원회 계류."], ["대통령 11/13 전수조사 지시, 자사주 1년 내 소각", "한국거래소 간담회 발언. 3차 상법 개정은 3월 시행."]]};
+const $=id=>document.getElementById(id), esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+document.querySelectorAll('[data-t]').forEach(e=>e.textContent=T[e.dataset.t]);
+['us_l','kr_l','o_l'].forEach(k=>$(k).innerHTML=T[k].map(x=>'<li>'+esc(x)+'</li>').join(''));
+const MON={en:{6:'Jun',10:'Oct',11:'Nov'},es:{6:'jun',10:'oct',11:'nov'}};
+const fd=(m,d)=>LANG==='en'?MON.en[m]+' '+d:LANG==='es'?d+' '+MON.es[m]:m+'/'+d;
+const VK=['g','w','c'], VI=['✓','!','↻'];
+const verdict=[0,0,0,1,0,0,2,0,1,0,0,0,0,2,0,0,1,0,0];
+const count=[0,0,0]; verdict.forEach(v=>count[v]++);
+$('tally').innerHTML=VK.map((k,i)=>'<i class="'+k+'" style="flex:'+count[i]+'"></i>').join('');
+$('vlegend').innerHTML=VK.map((k,i)=>'<span><i class="sw '+k+'"></i>'+VI[i]+' '+esc(T.vn[i])+' <b class="num">'+count[i]+'</b></span>').join('');
+const tiles=$('tiles');
+verdict.forEach((v,i)=>{const b=document.createElement('button');b.className='tile '+VK[v];b.type='button';b.setAttribute('aria-label',(i+1)+' '+T.vn[v]);b.innerHTML='<b class="num">'+(i+1)+'</b><small>'+VI[v]+'</small>';b.onclick=()=>show(i);tiles.appendChild(b);});
+function show(i){const v=verdict[i];[...tiles.children].forEach((t,j)=>t.setAttribute('aria-pressed',j===i));
+ const n=LANG==='ko'||LANG==='ja'?(i+1)+T.no:T.no+(i+1);
+ $('detail').innerHTML='<div class="tag"><i class="sw '+VK[v]+'"></i>'+n+' · '+VI[v]+' '+esc(T.vn[v])+'</div><p class="claim">'+esc(T.claims[i][0])+'</p><p class="find">'+esc(T.claims[i][1])+'</p>';}
+show(3);
+$('dlegend').innerHTML=['own','vote','ghost'].map((c,i)=>'<span><i class="dot '+c+'" style="position:static;margin:0"></i>'+esc(T.lg[i])+'</span>').join('');
+const db=[{own:3.6,vote:3.6,ghost:26},{own:13.4,vote:60.6},{own:20,vote:20},{vote:85},{own:37,vote:56},{own:15.8,vote:15.8}];
+$('db').innerHTML=db.map((d,i)=>{let m='<span class="half"></span>';
+ if(d.own!=null&&d.vote!==d.own)m+='<span class="link" style="left:'+d.own+'%;width:'+(d.vote-d.own)+'%"></span>';
+ if(d.ghost)m+='<span class="dot ghost" style="left:'+d.ghost+'%"></span>';
+ m+='<span class="dot vote" style="left:'+d.vote+'%"></span>';
+ if(d.own!=null)m+='<span class="dot own" style="left:'+d.own+'%"></span>';
+ return '<div class="db-row"><div class="top"><span class="who">'+esc(T.db[i][0])+'</span><span class="vals num">'+esc(T.db[i][1])+'</span></div><div class="track">'+m+'</div></div>';}).join('');
+const px=[[10,6,239.24],[11,6,186.64],[11,10,168.89],[11,11,173.73],[11,12,166.19],[11,13,162.85],[11,16,156.14],[11,17,155.46],[11,18,151,1]];
+const PEAK=239.24,W=340,H=230,L=30,R=20,TP=22,B=30,lo=140,hi=250;
+const xs=px.map((_,i)=>i===0?0:i+0.8),xmax=xs[xs.length-1];
+const X=i=>L+xs[i]/xmax*(W-L-R),Y=v=>TP+(hi-v)/(hi-lo)*(H-TP-B);
+let s='';
+[150,175,200,225,250].forEach(v=>{s+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="var(--grid)" stroke-width="1"/><text x="'+(L-5)+'" y="'+(Y(v)+3)+'" text-anchor="end">'+v+'</text>';});
+s+='<line x1="'+X(0)+'" y1="'+Y(px[0][2])+'" x2="'+X(1)+'" y2="'+Y(px[1][2])+'" stroke="var(--acc)" stroke-width="2" stroke-dasharray="4 4"/>';
+s+='<polyline fill="none" stroke="var(--acc)" stroke-width="2" stroke-linejoin="round" points="'+px.slice(1,8).map((p,i)=>X(i+1)+','+Y(p[2])).join(' ')+'"/>';
+s+='<line x1="'+X(7)+'" y1="'+Y(px[7][2])+'" x2="'+X(8)+'" y2="'+Y(px[8][2])+'" stroke="var(--acc)" stroke-width="2" stroke-dasharray="2 3"/>';
+px.forEach((p,i)=>{s+='<text x="'+X(i)+'" y="'+(H-10)+'" text-anchor="middle">'+(i<2?fd(p[0],p[1]):p[1])+'</text>';
+ s+='<circle cx="'+X(i)+'" cy="'+Y(p[2])+'" r="5" fill="'+(p[3]?'var(--surface)':'var(--acc)')+'" stroke="'+(p[3]?'var(--acc)':'var(--surface)')+'" stroke-width="2"/>';
+ s+='<circle class="pt" data-i="'+i+'" cx="'+X(i)+'" cy="'+Y(p[2])+'" r="14" fill="transparent"/>';});
+s+='<text class="lab" x="'+(X(0)+9)+'" y="'+(Y(px[0][2])+4)+'">$239.24 '+esc(T.peak)+'</text>';
+s+='<text class="lab" x="'+(X(4)-6)+'" y="'+(Y(px[4][2])+18)+'" text-anchor="end">'+fd(11,12)+' '+esc(T.resign)+' $166.19</text>';
+s+='<text class="lab" x="'+X(8)+'" y="'+(Y(px[8][2])+18)+'" text-anchor="end">'+esc(T.approx)+'$151</text>';
+const svg=$('px');svg.innerHTML=s;svg.setAttribute('aria-label',T.p_h);
+function read(i){const p=px[i],dd=(p[2]/PEAK-1)*100;
+ $('readout').innerHTML='<b class="num">'+(i===0?esc(T.peak):dd.toFixed(1)+'%')+'</b> '+(i===0?'':esc(T.vs_peak)+' · ')+fd(p[0],p[1])+' '+esc(T.close)+' '+(p[3]?esc(T.approx):'')+'$'+(p[3]?p[2]:p[2].toFixed(2))+'<br><span style="color:var(--ink2)">'+esc(T.px[i])+'</span>';}
+read(7);
+['click','mouseover'].forEach(ev=>svg.addEventListener(ev,e=>{const i=e.target.dataset&&e.target.dataset.i;if(i!=null)read(+i);}));
+const TC=['t1','t2','t3'];
+const caps=[[1,5.17,0],[2,3.94,0],[3,3.89,0],[4,3.64,1],[5,2.90,0],[6,2.11,0],[7,1.92,1],[8,1.73,0],[9,1.70,2],[10,1.59,1]];
+const MAX=5.17,sum=[0,0,0];caps.forEach(c=>sum[c[2]]+=c[1]);const tot=sum[0]+sum[1]+sum[2];
+$('share').innerHTML=TC.map((c,i)=>'<i class="'+c+'" style="flex:'+sum[i]+'"></i>').join('');
+$('share-legend').innerHTML=TC.map((c,i)=>'<span><i class="sw '+c+'"></i>'+esc(T.types[i])+' <b class="num">'+(sum[i]/tot*100).toFixed(0)+'%</b></span>').join('');
+const row=(rk,i,v,k,x)=>'<div class="cap'+(x&&x.sep?' sep':'')+'"><div class="top"><span class="rk num">'+rk+'</span><span class="nm">'+esc(T.caps[i][0])+'</span><span class="ctl">'+esc(T.types[k])+' · '+esc(T.caps[i][1])+'</span><span class="v num">$'+v.toFixed(2)+'T</span></div><div class="bar"><i class="'+(x&&x.pf?'pf':TC[k])+'" style="width:'+(v/MAX*100)+'%"></i></div></div>';
+$('caps').innerHTML=caps.map((c,i)=>row(c[0],i,c[1],c[2])).join('')+row(11,10,1.54,0,{sep:true})+row('+',11,1.92+1.54,1,{pf:true});
+const tld=[[10,6],[10,19],[10,20],[10,26],[10,27],[11,8],[11,12],[11,13],[11,17],[11,18]];
+$('tl').innerHTML=tld.map((d,i)=>'<li><time class="num">'+fd(d[0],d[1])+'</time><span class="mk"></span><span>'+esc(T.tl[i])+'</span></li>').join('')
+ +'<li><span class="div">'+esc(T.t_next)+'</span></li>'
+ +T.tf.map(f=>'<li class="next"><time class="num">'+esc(f[0])+'</time><span class="mk"></span><span>'+esc(f[1])+'</span></li>').join('');
+</script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿De verdad las acciones de doble clase decidieron su destino?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* layout: 한 열 스크롤 리포트. 요약(판정) → 구조(지분·의결권) → 가격 → 시총 → 일정 → 한미 대비 */
+:root{
+  color-scheme: dark; /* 허브(stayhungryasi.com) 단일 다크 테마 */
+  --page:#0A0C10; --surface:#12161E; --ink:#EEF0F5; --ink2:#C7CCD8; --muted:#7C8499;
+  --grid:#1D2330; --axis:#2A3142; --ring:#1D2330;
+  --acc:#F26522; --acc2:#FF8A4C;
+  --s1:#2F8FDD; --s2:#d95926; --s3:#2EA87A;
+  --good:#2EA87A; --warn:#F2B33D; --serious:#FF8A4C;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,"Noto Sans KR",monospace;
+  --display:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--page);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6;-webkit-text-size-adjust:100%}
+main{max-width:720px;margin:0 auto;padding:28px 16px 48px;display:flex;flex-direction:column;gap:20px}
+header .kicker{font-family:var(--mono);font-size:12px;color:var(--acc2);letter-spacing:.06em}
+h1{font-family:var(--display);font-weight:900;font-size:28px;line-height:1.25;margin:6px 0 10px;text-wrap:balance}
+header p{margin:0;color:var(--ink2);max-width:60ch}
+.lede{margin-top:14px;padding:14px 16px;border-left:3px solid var(--acc);background:var(--surface);font-weight:600}
+section{background:var(--surface);border:1px solid var(--ring);border-radius:18px;padding:20px 16px}
+h2{font-family:var(--display);font-weight:700;font-size:18px;margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--ink2);font-size:13px;margin:0 0 14px}
+.note{color:var(--muted);font-size:12px;margin:12px 0 0}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+body{word-break:keep-all;overflow-wrap:anywhere}
+
+/* 판정 */
+.tally{display:flex;gap:2px;height:14px;border-radius:4px;overflow:hidden;margin-bottom:10px}
+.tally i{display:block}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink2);margin-bottom:14px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.g{background:var(--good)} .w{background:var(--warn)} .c{background:var(--serious)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:6px}
+.tile{appearance:none;border:0;border-radius:8px;padding:8px 0 6px;font:inherit;color:#0b0b0b;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:0;line-height:1.2}
+.tile b{font-size:15px}
+.tile small{font-size:12px}
+.tile[aria-pressed="true"]{outline:3px solid var(--ink);outline-offset:2px}
+.tile:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+.detail{margin-top:14px;padding:12px 14px;border:1px solid var(--grid);border-radius:10px;min-height:118px}
+.detail .tag{font-size:12px;font-weight:700;display:inline-flex;align-items:center;gap:6px;margin-bottom:4px}
+.detail .claim{font-weight:600;margin:0 0 4px}
+.detail .find{margin:0;color:var(--ink2);font-size:14px}
+
+/* 덤벨 */
+.db{display:flex;flex-direction:column;gap:14px;position:relative}
+.db-row .top{display:flex;justify-content:space-between;gap:10px;font-size:13px;align-items:baseline;flex-wrap:wrap}
+.db-row .who{font-weight:600}
+.db-row .vals{color:var(--ink2)}
+.track{position:relative;height:18px;margin-top:4px}
+.track::before{content:"";position:absolute;left:0;right:0;top:8px;height:2px;background:var(--grid)}
+.track .half{position:absolute;left:50%;top:-2px;bottom:-2px;width:0;border-left:1px dashed var(--axis)}
+.track .link{position:absolute;top:7px;height:4px;background:var(--acc);opacity:.45;border-radius:2px}
+.dot{position:absolute;top:2px;width:14px;height:14px;margin-left:-7px;border-radius:50%;border:2px solid var(--surface)}
+.dot.own{background:var(--surface);border:3px solid var(--ink2)}
+.dot.vote{background:var(--acc)}
+.dot.ghost{background:transparent;border:2px dashed var(--muted)}
+.scale{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:2px}
+
+/* 주가 */
+.readout{font-size:14px;margin:0 0 8px;min-height:44px}
+.readout b{font-size:26px;font-family:var(--mono);color:var(--acc)}
+svg{display:block;width:100%;height:auto}
+svg text{font-family:var(--mono);fill:var(--muted);font-size:10px}
+svg .lab{fill:var(--ink);font-size:11px;font-weight:600}
+.pt{cursor:pointer}
+
+/* 시총 */
+.share{display:flex;gap:2px;height:22px;border-radius:5px;overflow:hidden;margin-bottom:8px}
+.share i{display:block}
+.t1{background:var(--s1)} .t2{background:var(--s2)} .t3{background:var(--s3)}
+.caps{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.cap .top{display:flex;gap:8px;align-items:baseline;font-size:13px}
+.cap .rk{color:var(--muted);width:18px;flex:none;text-align:right}
+.cap .nm{font-weight:600}
+.cap .ctl{color:var(--ink2);font-size:12px;flex:1;min-width:0}
+.cap .v{margin-left:auto;font-weight:600;flex:none}
+.bar{height:10px;margin:3px 0 0 26px;background:transparent}
+.bar i{display:block;height:100%;border-radius:0 4px 4px 0}
+.bar i.pf{background:repeating-linear-gradient(45deg,var(--s2) 0 4px,transparent 4px 8px);border:1px solid var(--s2)}
+.cap.sep{border-top:1px dashed var(--axis);padding-top:10px}
+
+/* 타임라인 */
+.tl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:78px 16px 1fr;gap:8px;align-items:start;padding:6px 0;font-size:14px}
+.tl time{color:var(--muted);font-size:12px;padding-top:2px;text-align:right}
+.tl .mk{width:12px;height:12px;border-radius:50%;background:var(--ink);margin-top:5px;justify-self:center}
+.tl .next .mk{background:var(--surface);border:2px solid var(--acc2)}
+.tl .next time{color:var(--acc2);font-weight:600}
+.tl .div{grid-column:1/-1;font-size:12px;color:var(--muted);border-top:1px dashed var(--axis);padding-top:8px;margin-top:4px}
+
+/* 한미 */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.vs>div{border:1px solid var(--grid);border-radius:10px;padding:12px}
+.vs h3{margin:0 0 6px;font-size:14px;font-family:var(--display)}
+.vs ul{margin:0;padding-left:18px;font-size:13px;color:var(--ink2)}
+.vs .arrow{font-size:12px;font-weight:700;color:var(--ink);margin-top:8px}
+@media (max-width:480px){.vs{grid-template-columns:1fr} h1{font-size:24px}}
+.open{margin:0;padding-left:18px;font-size:14px;color:var(--ink2)}
+footer{color:var(--muted);font-size:12px;text-align:center}
+@media (prefers-reduced-motion:no-preference){.tile{transition:transform .12s}.tile:active{transform:scale(.96)}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="kicker" data-t="kicker"></div><h1><span data-t="h1a"></span><br><span style="color:var(--acc)" data-t="h1b"></span></h1><p data-t="intro"></p><div class="lede" data-t="lede"></div></header>
+<section><h2 data-t="v_h"></h2><p class="sub" data-t="v_sub"></p><div class="tally" id="tally"></div><div class="legend" id="vlegend"></div><div class="tiles" id="tiles"></div><div class="detail" id="detail" aria-live="polite"></div></section>
+<section><h2 data-t="d_h"></h2><p class="sub" data-t="d_sub"></p><div class="legend" id="dlegend"></div><div class="db" id="db"></div><div class="scale num"><span>0%</span><span>25</span><span>50</span><span>75</span><span>100%</span></div><p class="note" data-t="d_note"></p></section>
+<section><h2 data-t="p_h"></h2><p class="sub" data-t="p_sub"></p><p class="readout" id="readout"></p><svg id="px" viewBox="0 0 340 230" role="img"></svg><p class="note" data-t="p_note"></p></section>
+<section><h2 data-t="c_h"></h2><p class="sub" data-t="c_sub"></p><div class="share" id="share"></div><div class="legend" id="share-legend"></div><div class="caps" id="caps"></div><p class="note" data-t="c_note"></p></section>
+<section><h2 data-t="t_h"></h2><p class="sub" data-t="t_sub"></p><ol class="tl" id="tl"></ol></section>
+<section><h2 data-t="s_h"></h2><p class="sub" data-t="s_sub"></p><div class="vs"><div><h3 data-t="us"></h3><ul id="us_l"></ul><div class="arrow" data-t="us_a"></div></div><div><h3 data-t="kr"></h3><ul id="kr_l"></ul><div class="arrow" data-t="kr_a"></div></div></div></section>
+<section><h2 data-t="o_h"></h2><ul class="open" id="o_l"></ul></section>
+<footer data-t="foot"></footer>
+</main>
+<script>
+const LANG="es", T={"title": "¿De verdad las acciones de doble clase decidieron su destino?", "kicker": "VERIFICACIÓN DE ARTÍCULO · AL 2026-11-22", "h1a": "¿De verdad la doble clase", "h1b": "decidió su destino?", "intro": "Un diario coreano publicó el 19 de noviembre de 2026, en su sección de economía, que los derechos de voto diferenciados decidieron el destino de Jensen Huang y Mark Zuckerberg. Contrastamos sus 19 afirmaciones con fuentes primarias.", "lede": "Casi todas las cifras son correctas. La causalidad del titular está exagerada y 2 puntos cambiaron después de la publicación.", "v_h": "Veredicto sobre 19 afirmaciones", "v_sub": "Toque un número para ver la afirmación y el resultado.", "vn": ["Confirmado", "Exagerado o sin contexto", "Cambió tras la publicación"], "no": "n.º ", "d_h": "La brecha entre propiedad y votos", "d_sub": "Cuanto mayor es la brecha, menos participación hace falta para controlar la empresa. La línea punteada es la mayoría (50%).", "lg": ["Propiedad", "Votos", "Hipotético"], "d_note": "El punto hipotético de Huang es una estimación de Forbes: aun con 10 votos por acción tendría cerca de 26% de los votos, sin mayoría. Las cifras de la empresa fusionada son una estimación de Barclays que supone que SpaceX compra Tesla; no hay términos definidos. La propiedad de Musk en SpaceX no se volvió a verificar, por eso solo se muestran los votos.", "db": [["Jensen Huang · Nvidia", "Propiedad 3.6% = votos 3.6%"], ["Zuckerberg · Meta", "Propiedad 13.4% → votos 60.6%"], ["Musk · Tesla", "Propiedad ≈ votos, cerca de 20%"], ["Musk · SpaceX", "Votos cerca de 85%"], ["Musk · empresa fusionada (est.)", "Propiedad 37% → votos 56%"], ["Entorno de Park Jin-young · JYP", "Propiedad 15.8% = votos 15.8%"]], "p_h": "Cierres de Nvidia, del máximo a después de la renuncia", "p_sub": "Toque un punto para ver el cierre de ese día y la caída desde el máximo. Unidad: dólares.", "p_note": "Se omiten los cierres entre el 6 de octubre y el 6 de noviembre (línea punteada). El 18 de noviembre es una cifra aproximada, reportada como \"cerca de $151\", y se muestra como punto hueco. Los ingresos del tercer trimestre, publicados tras el cierre del 17 de noviembre, fueron un récord de $115.8B (+103% interanual).", "peak": "máximo", "resign": "renuncia", "approx": "cerca de ", "vs_peak": "desde el máximo", "close": "cierre", "px": ["Cierre récord", "Último cierre antes del comunicado del consejo", "Microsoft lo superó en capitalización durante la sesión", "Último cierre antes del aviso de renuncia", "Renuncia de Jensen Huang", "Día siguiente a la renuncia", "Día previo a resultados", "Resultados del tercer trimestre tras el cierre", "Aproximado, según prensa"], "c_h": "Quién controla las 10 mayores por capitalización", "c_sub": "Corte del 2026-11-12. Unidad: billones de dólares (10^12). El color indica el tipo de control.", "types": ["Dispersa", "Control del fundador", "Control estatal"], "c_note": "Nvidia siguió cayendo y valía cerca de $3.76T al cierre del 16 de noviembre, así que los puestos 2 a 4 pueden haber cambiado. La barra rayada es la suma simple de SpaceX y Tesla; no hay términos de fusión. ※ indica valores de reportes anteriores que no se volvieron a verificar aquí.", "caps": [["Apple", "instituciones"], ["Nvidia", "fundador 3.6%, renunció"], ["Microsoft", "instituciones"], ["Alphabet", "mayoría de Page y Brin ※"], ["Amazon", "Bezos, un dígito ※"], ["TSMC", "fondo estatal de Taiwán, cerca de 6% ※"], ["SpaceX", "Musk cerca de 85%"], ["Broadcom", "instituciones"], ["Saudi Aramco", "gobierno saudí ※"], ["Meta", "Zuckerberg 60.6%"], ["Tesla", "Musk cerca de 20%"], ["SpaceX + Tesla", "Musk 56% si se fusionan (est.)"]], "t_h": "Qué pasó y qué sigue", "t_sub": "Los puntos claros son hechos confirmados. Los aros naranjas son fechas previstas.", "t_next": "Previsto a partir de aquí", "tl": ["Cierre récord de Nvidia: $239.24", "El consejo de Meta aprueba la Clase C sin voto", "Musk revela comités especiales en SpaceX y Tesla", "Un grupo vinculado a Japón dice que evalúa una oferta pública por JYP; JYP lo niega", "Accionistas de Meta demandan en Delaware", "El consejo de Nvidia abre una revisión independiente", "Renuncia Jensen Huang", "El presidente de Corea del Sur ordena revisar las reglas que frenan las adquisiciones hostiles", "Resultados del tercer trimestre de Nvidia: ingresos de $115.8B", "Meta acepta no emitir Clase C durante el litigio"], "tf": [["3 dic", "Asamblea anual de Tesla"], ["dic", "Posible anuncio de la fusión SpaceX-Tesla (Bloomberg)"], ["19 ene 2027", "Entra en vigor el nuevo estatuto de Meta; reparto de Clase C en pausa"], ["19–23 abr 2027", "Juicio en Delaware sobre la Clase C de Meta"]], "s_h": "Estados Unidos y Corea del Sur van en direcciones opuestas", "s_sub": "La misma cuestión de control, dos rumbos regulatorios distintos.", "us": "Estados Unidos", "kr": "Corea del Sur", "us_l": ["Meta planea la Clase C sin voto para financiar su gasto en IA", "SpaceX: 10 votos por acción, Musk cerca de 85% de los votos", "El contrapeso real son las demandas de accionistas"], "us_a": "→ Más control del fundador", "kr_l": ["Acciones en tesorería canceladas en 1 año; voto acumulativo obligatorio", "El presidente ordena revisar las reglas que frenan las adquisiciones hostiles", "Proyectos de doble clase y píldora venenosa, pendientes en el parlamento"], "kr_a": "→ Más disputas por el control", "o_h": "Aún sin confirmar", "o_l": ["No encontramos reportes de que la oferta por JYP haya comenzado en su fecha objetivo del 20 de noviembre.", "Nvidia no ha publicado los resultados de la revisión ni una fecha para un CEO permanente.", "Las participaciones de control en Alphabet, Amazon, TSMC y Aramco no se volvieron a verificar aquí."], "foot": "stayhungryasi.com · Resumen de hechos, no es asesoría de inversión", "claims": [["Jensen Huang renunció como CEO y consejero el 12 de noviembre", "Confirmado por el 8-K de Nvidia. La CFO Colette Kress es CEO interina; Harvey Jones es el primer presidente del consejo."], ["Huang tenía 3.6%, una sola clase de acciones comunes", "3.58% a marzo. Clase única, una acción un voto."], ["El consejo se reunió tras reportes sobre su vida privada y dudas de seguridad; se fue al día siguiente", "Revisión independiente abierta el 8 de noviembre, reunión nocturna del consejo el 11, renuncia el 12. Los resultados no son públicos."], ["\"Su destino lo decidieron los votos, no la propiedad\"", "Exagerado. Forbes estima cerca de 26% de los votos aun con acciones de 10 votos. Con 3.6% no hay mayoría bajo ninguna estructura."], ["Zuckerberg: 13.4% de propiedad, 60.6% de los votos", "Declaración informativa ante la SEC al 1 de octubre. Cerca de 341 millones de acciones Clase B con 10 votos cada una."], ["El consejo de Meta aprobó la Clase C sin voto el 19 de octubre", "Divulgado el 21 de octubre con los resultados del tercer trimestre."], ["El 19 de enero se repartirá una acción Clase C por cada acción", "Cambió. Por una orden judicial del 18 de noviembre, Meta no emitirá Clase C durante el litigio. El estatuto puede entrar en vigor el 19 de enero; el reparto está en pausa. Juicio: 19–23 de abril de 2027."], ["Algunos accionistas demandaron en Delaware el 27 de octubre", "Ya son 10 demandas. Entre los demandantes están CalSTRS y el fondo danés PFA."], ["\"Vender acciones sin voto para obtener efectivo personal\"", "Cierto pero incompleto. Cerca de $23.8B podrían venderse de inmediato; el trasfondo es el impuesto a la riqueza propuesto en California; la razón declarada por la empresa es financiar la IA. Un plan similar se retiró en 2017 justo antes del juicio."], ["La Clase B de SpaceX tiene 10 votos; Musk tiene cerca de 85% de los votos", "El 10-Q de SpaceX también nombra a Musk como accionista controlador."], ["Musk tiene cerca de 20% de los votos de Tesla", "Al ejercer todas sus opciones de 2018 el 16 de junio pasó de 13% a cerca de 20%."], ["Comentario de 2024: incómodo sin 25% de los votos", "Publicado en X en enero de 2024."], ["Ambos consejos formaron comités especiales (revelado el 20 de octubre)", "Musk lo reveló en la llamada del tercer trimestre de SpaceX y se abstuvo de participar."], ["Bloomberg: anuncio de la fusión en la primera mitad del próximo año", "Correcto según el reporte del 22 de octubre. Un seguimiento del 12 de noviembre dice que podría llegar ya en diciembre."], ["Barclays: 37% de propiedad y 56% de los votos tras una fusión", "Estimación que supone que SpaceX compra Tesla."], ["Coupang: 29 votos por acción", "La Clase B tiene 29 votos por acción."], ["Un grupo vinculado a Japón evalúa una oferta por 25–50% de JYP; la acción sube +14% fuera de horario", "Las cifras son correctas. Se omite: JYP informó que no recibió ninguna propuesta, el regulador financiero calificó el anuncio de \"muy inusual\" y la entidad compradora reportó ingresos de $1–5 millones."], ["La oposición presentó en enero 3 proyectos sobre doble clase y píldora venenosa", "Pendientes en la comisión de justicia del parlamento."], ["El presidente ordenó una revisión el 13 de noviembre; acciones en tesorería canceladas en 1 año", "Lo dijo en una reunión en la Bolsa de Corea. La tercera reforma de la ley mercantil entró en vigor en marzo."]]};
+const $=id=>document.getElementById(id), esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+document.querySelectorAll('[data-t]').forEach(e=>e.textContent=T[e.dataset.t]);
+['us_l','kr_l','o_l'].forEach(k=>$(k).innerHTML=T[k].map(x=>'<li>'+esc(x)+'</li>').join(''));
+const MON={en:{6:'Jun',10:'Oct',11:'Nov'},es:{6:'jun',10:'oct',11:'nov'}};
+const fd=(m,d)=>LANG==='en'?MON.en[m]+' '+d:LANG==='es'?d+' '+MON.es[m]:m+'/'+d;
+const VK=['g','w','c'], VI=['✓','!','↻'];
+const verdict=[0,0,0,1,0,0,2,0,1,0,0,0,0,2,0,0,1,0,0];
+const count=[0,0,0]; verdict.forEach(v=>count[v]++);
+$('tally').innerHTML=VK.map((k,i)=>'<i class="'+k+'" style="flex:'+count[i]+'"></i>').join('');
+$('vlegend').innerHTML=VK.map((k,i)=>'<span><i class="sw '+k+'"></i>'+VI[i]+' '+esc(T.vn[i])+' <b class="num">'+count[i]+'</b></span>').join('');
+const tiles=$('tiles');
+verdict.forEach((v,i)=>{const b=document.createElement('button');b.className='tile '+VK[v];b.type='button';b.setAttribute('aria-label',(i+1)+' '+T.vn[v]);b.innerHTML='<b class="num">'+(i+1)+'</b><small>'+VI[v]+'</small>';b.onclick=()=>show(i);tiles.appendChild(b);});
+function show(i){const v=verdict[i];[...tiles.children].forEach((t,j)=>t.setAttribute('aria-pressed',j===i));
+ const n=LANG==='ko'||LANG==='ja'?(i+1)+T.no:T.no+(i+1);
+ $('detail').innerHTML='<div class="tag"><i class="sw '+VK[v]+'"></i>'+n+' · '+VI[v]+' '+esc(T.vn[v])+'</div><p class="claim">'+esc(T.claims[i][0])+'</p><p class="find">'+esc(T.claims[i][1])+'</p>';}
+show(3);
+$('dlegend').innerHTML=['own','vote','ghost'].map((c,i)=>'<span><i class="dot '+c+'" style="position:static;margin:0"></i>'+esc(T.lg[i])+'</span>').join('');
+const db=[{own:3.6,vote:3.6,ghost:26},{own:13.4,vote:60.6},{own:20,vote:20},{vote:85},{own:37,vote:56},{own:15.8,vote:15.8}];
+$('db').innerHTML=db.map((d,i)=>{let m='<span class="half"></span>';
+ if(d.own!=null&&d.vote!==d.own)m+='<span class="link" style="left:'+d.own+'%;width:'+(d.vote-d.own)+'%"></span>';
+ if(d.ghost)m+='<span class="dot ghost" style="left:'+d.ghost+'%"></span>';
+ m+='<span class="dot vote" style="left:'+d.vote+'%"></span>';
+ if(d.own!=null)m+='<span class="dot own" style="left:'+d.own+'%"></span>';
+ return '<div class="db-row"><div class="top"><span class="who">'+esc(T.db[i][0])+'</span><span class="vals num">'+esc(T.db[i][1])+'</span></div><div class="track">'+m+'</div></div>';}).join('');
+const px=[[10,6,239.24],[11,6,186.64],[11,10,168.89],[11,11,173.73],[11,12,166.19],[11,13,162.85],[11,16,156.14],[11,17,155.46],[11,18,151,1]];
+const PEAK=239.24,W=340,H=230,L=30,R=20,TP=22,B=30,lo=140,hi=250;
+const xs=px.map((_,i)=>i===0?0:i+0.8),xmax=xs[xs.length-1];
+const X=i=>L+xs[i]/xmax*(W-L-R),Y=v=>TP+(hi-v)/(hi-lo)*(H-TP-B);
+let s='';
+[150,175,200,225,250].forEach(v=>{s+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="var(--grid)" stroke-width="1"/><text x="'+(L-5)+'" y="'+(Y(v)+3)+'" text-anchor="end">'+v+'</text>';});
+s+='<line x1="'+X(0)+'" y1="'+Y(px[0][2])+'" x2="'+X(1)+'" y2="'+Y(px[1][2])+'" stroke="var(--acc)" stroke-width="2" stroke-dasharray="4 4"/>';
+s+='<polyline fill="none" stroke="var(--acc)" stroke-width="2" stroke-linejoin="round" points="'+px.slice(1,8).map((p,i)=>X(i+1)+','+Y(p[2])).join(' ')+'"/>';
+s+='<line x1="'+X(7)+'" y1="'+Y(px[7][2])+'" x2="'+X(8)+'" y2="'+Y(px[8][2])+'" stroke="var(--acc)" stroke-width="2" stroke-dasharray="2 3"/>';
+px.forEach((p,i)=>{s+='<text x="'+X(i)+'" y="'+(H-10)+'" text-anchor="middle">'+(i<2?fd(p[0],p[1]):p[1])+'</text>';
+ s+='<circle cx="'+X(i)+'" cy="'+Y(p[2])+'" r="5" fill="'+(p[3]?'var(--surface)':'var(--acc)')+'" stroke="'+(p[3]?'var(--acc)':'var(--surface)')+'" stroke-width="2"/>';
+ s+='<circle class="pt" data-i="'+i+'" cx="'+X(i)+'" cy="'+Y(p[2])+'" r="14" fill="transparent"/>';});
+s+='<text class="lab" x="'+(X(0)+9)+'" y="'+(Y(px[0][2])+4)+'">$239.24 '+esc(T.peak)+'</text>';
+s+='<text class="lab" x="'+(X(4)-6)+'" y="'+(Y(px[4][2])+18)+'" text-anchor="end">'+fd(11,12)+' '+esc(T.resign)+' $166.19</text>';
+s+='<text class="lab" x="'+X(8)+'" y="'+(Y(px[8][2])+18)+'" text-anchor="end">'+esc(T.approx)+'$151</text>';
+const svg=$('px');svg.innerHTML=s;svg.setAttribute('aria-label',T.p_h);
+function read(i){const p=px[i],dd=(p[2]/PEAK-1)*100;
+ $('readout').innerHTML='<b class="num">'+(i===0?esc(T.peak):dd.toFixed(1)+'%')+'</b> '+(i===0?'':esc(T.vs_peak)+' · ')+fd(p[0],p[1])+' '+esc(T.close)+' '+(p[3]?esc(T.approx):'')+'$'+(p[3]?p[2]:p[2].toFixed(2))+'<br><span style="color:var(--ink2)">'+esc(T.px[i])+'</span>';}
+read(7);
+['click','mouseover'].forEach(ev=>svg.addEventListener(ev,e=>{const i=e.target.dataset&&e.target.dataset.i;if(i!=null)read(+i);}));
+const TC=['t1','t2','t3'];
+const caps=[[1,5.17,0],[2,3.94,0],[3,3.89,0],[4,3.64,1],[5,2.90,0],[6,2.11,0],[7,1.92,1],[8,1.73,0],[9,1.70,2],[10,1.59,1]];
+const MAX=5.17,sum=[0,0,0];caps.forEach(c=>sum[c[2]]+=c[1]);const tot=sum[0]+sum[1]+sum[2];
+$('share').innerHTML=TC.map((c,i)=>'<i class="'+c+'" style="flex:'+sum[i]+'"></i>').join('');
+$('share-legend').innerHTML=TC.map((c,i)=>'<span><i class="sw '+c+'"></i>'+esc(T.types[i])+' <b class="num">'+(sum[i]/tot*100).toFixed(0)+'%</b></span>').join('');
+const row=(rk,i,v,k,x)=>'<div class="cap'+(x&&x.sep?' sep':'')+'"><div class="top"><span class="rk num">'+rk+'</span><span class="nm">'+esc(T.caps[i][0])+'</span><span class="ctl">'+esc(T.types[k])+' · '+esc(T.caps[i][1])+'</span><span class="v num">$'+v.toFixed(2)+'T</span></div><div class="bar"><i class="'+(x&&x.pf?'pf':TC[k])+'" style="width:'+(v/MAX*100)+'%"></i></div></div>';
+$('caps').innerHTML=caps.map((c,i)=>row(c[0],i,c[1],c[2])).join('')+row(11,10,1.54,0,{sep:true})+row('+',11,1.92+1.54,1,{pf:true});
+const tld=[[10,6],[10,19],[10,20],[10,26],[10,27],[11,8],[11,12],[11,13],[11,17],[11,18]];
+$('tl').innerHTML=tld.map((d,i)=>'<li><time class="num">'+fd(d[0],d[1])+'</time><span class="mk"></span><span>'+esc(T.tl[i])+'</span></li>').join('')
+ +'<li><span class="div">'+esc(T.t_next)+'</span></li>'
+ +T.tf.map(f=>'<li class="next"><time class="num">'+esc(f[0])+'</time><span class="mk"></span><span>'+esc(f[1])+'</span></li>').join('');
+</script>
+</body>
+</html>
