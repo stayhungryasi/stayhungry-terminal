@@ -926,5 +926,37 @@
    "es": "La puntuación de crisis pasó de 25,0 (informe del 16/11) a 34,4, más de 5 puntos, así que va primero por regla. Segundo: la primera aparición de Anthropic en el Top 20 (puesto 12). Tercero: dos días macro confirmados la próxima semana. El lock-up de SpaceX (D-19) solo avanzó un día y queda en las fechas clave; la deuda de margen coreana (sigue «estable») y el agente nocturno (sin cambios en hitos) quedan fuera.",
    "ja": "危機接近度が前回(11/16)の25.0から34.4へ5ポイント超上昇したため、ルール通り1位。2位はフィードに初登場したAnthropicのトップ20入り(12位)、3位は来週の確定マクロ日程2日。スペースXのロックアップ(D-19)は1日進んだだけなのでチェックポイントへ、韓国の信用取引残高(「安定」継続)と夜間エージェント(マイルストーン変化なし)は外した。"
   }
+ },
+ {
+  "date": "2026-11-22",
+  "lines": [
+   {
+    "href": "#buffett",
+    "ko": "<b>VIX 35.89, '공포' 구간.</b> 11/20 기준, 11/19 28.44에서 하루 새 급등. VIX/VIX3M 1.16(역전). 버핏지수 216.12%(추정, 백분위 99.0). <a href=\"#buffett\">버핏지수×VIX</a>",
+    "en": "<b>VIX 35.89, 'fear' zone.</b> 11/20, up from 28.44 a day earlier; VIX/VIX3M 1.16 (inverted). <a href=\"#buffett\">Buffett Index</a> 216.12% (est., pct 99.0).",
+    "es": "<b>VIX en 35,89, zona de 'miedo'.</b> 20/11, desde 28,44 un día antes; VIX/VIX3M 1,16 (invertido). <a href=\"#buffett\">Índice Buffett</a> 216,12% (est.).",
+    "ja": "<b>VIX 35.89、「恐怖」ゾーン。</b>11/20時点、11/19の28.44から1日で急騰。VIX/VIX3M 1.16(逆転)。バフェット指数216.12%(推計、百分位99.0)。<a href=\"#buffett\">バフェット指数×VIX</a>"
+   },
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X 락업 해제 D-18, 주가는 공모가 아래.</b> 12/9 거래분 7.976억 주(≈1,019억 달러). SPCX 11/20 종가 $127.79(−7.69%, 공모가 $135 대비 −5.3%). <a href=\"#spcxlock\">락업</a>",
+    "en": "<b>SpaceX lock-up D-18, stock below IPO.</b> 797.6M shares tradable 12/9 (≈$101.9B). <a href=\"#spcxlock\">SPCX</a> $127.79 on 11/20 (−7.69%, −5.3% vs $135).",
+    "es": "<b>Lock-up de SpaceX en D-18, bajo la OPV.</b> 797,6 M de acciones el 9/12 (≈US$101,9 mil M). <a href=\"#spcxlock\">SPCX</a> $127,79 el 20/11 (−5,3% vs. $135).",
+    "ja": "<b>スペースXロックアップ解除まであと18日、株価は公開価格割れ。</b>12/9から7.976億株(約1,019億ドル)が売却可能に。SPCX 11/20終値$127.79(−7.69%、公開価格$135比−5.3%)。<a href=\"#spcxlock\">ロックアップ</a>"
+   },
+   {
+    "href": "#agent",
+    "ko": "<b>GPU 금융, 약 440억 달러로 증액.</b> Apollo·Goldman 11/20 발표, 초과 청약으로 400억 달러에서 늘어남. 스페이스X 체결 8-K는 아직 없음(야간 에이전트 기준). <a href=\"#agent\">야간 에이전트</a>",
+    "en": "<b>GPU financing upsized to ~$44B.</b> Apollo and Goldman, 11/20: up from $40B, oversubscribed. No SpaceX 8-K yet (<a href=\"#agent\">overnight agent</a>).",
+    "es": "<b>Financiación de GPU: ~US$44 mil M.</b> Apollo y Goldman, 20/11: desde US$40 mil M. Aún sin 8-K de SpaceX (<a href=\"#agent\">agente nocturno</a>).",
+    "ja": "<b>GPU金融、約440億ドルに増額。</b>Apollo・Goldmanが11/20に発表、応募超過で400億ドルから拡大。スペースXの締結8-Kはまだない(夜間エージェント基準)。<a href=\"#agent\">夜間エージェント</a>"
+   }
+  ],
+  "why": {
+   "ko": "VIX가 하루 만에 28.44→35.89로 '공포'에 들어서고 VIX/VIX3M이 역전돼 1순위. 락업은 D-20→D-18에 주가가 공모가 아래로 내려가 다시 씀. GPU 금융 증액은 11/20 새 발표. 위기 근접도(34.4)는 새 보고가 없어 어제와 같아 뺐고, 11/25·11/26 거시 일정은 어제 줄과 같아 검증 일정으로 옮김. Anthropic 시총 순위(12→14위)와 K-빚투(11/19 기준)는 뺌.",
+   "en": "VIX jumped from 28.44 to 35.89 in a day into 'fear' with VIX/VIX3M inverted, so it leads. The lock-up moved from D-20 to D-18 with shares now below the IPO price. The GPU financing upsize is a new 11/20 announcement. Crisis proximity (34.4) has no new report and repeats yesterday, so it is out; the 11/25 and 11/26 macro dates repeat yesterday's line and moved to checkpoints. Anthropic's rank change (12th to 14th) and K-leverage (as of 11/19) were left out.",
+   "es": "El VIX saltó de 28,44 a 35,89 en un día, entró en 'miedo' y el VIX/VIX3M se invirtió: va primero. El lock-up pasó de D-20 a D-18 con la acción ya bajo el precio de salida. La ampliación de la financiación de GPU es un anuncio nuevo del 20/11. La proximidad de crisis (34,4) no tiene informe nuevo y repite ayer, así que queda fuera; las fechas macro del 25/11 y 26/11 repiten la línea de ayer y pasan a los puntos de control. Se dejaron fuera el cambio de puesto de Anthropic (del 12.º al 14.º) y el apalancamiento coreano (al 19/11).",
+   "ja": "VIXが1日で28.44→35.89と「恐怖」入りし、VIX/VIX3Mも逆転したため1位。ロックアップはD-20→D-18となり株価が公開価格を割ったため再掲。GPU金融の増額は11/20の新発表。危機接近度(34.4)は新しいレポートがなく昨日と同じため除外、11/25・11/26のマクロ日程は昨日の行と同じため検証日程へ移動。Anthropicの時価総額順位(12位→14位)と韓国信用取引(11/19時点)は除外。"
+  }
  }
 ]
