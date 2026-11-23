@@ -958,5 +958,37 @@
    "es": "El VIX saltó de 28,44 a 35,89 en un día, entró en 'miedo' y el VIX/VIX3M se invirtió: va primero. El lock-up pasó de D-20 a D-18 con la acción ya bajo el precio de salida. La ampliación de la financiación de GPU es un anuncio nuevo del 20/11. La proximidad de crisis (34,4) no tiene informe nuevo y repite ayer, así que queda fuera; las fechas macro del 25/11 y 26/11 repiten la línea de ayer y pasan a los puntos de control. Se dejaron fuera el cambio de puesto de Anthropic (del 12.º al 14.º) y el apalancamiento coreano (al 19/11).",
    "ja": "VIXが1日で28.44→35.89と「恐怖」入りし、VIX/VIX3Mも逆転したため1位。ロックアップはD-20→D-18となり株価が公開価格を割ったため再掲。GPU金融の増額は11/20の新発表。危機接近度(34.4)は新しいレポートがなく昨日と同じため除外、11/25・11/26のマクロ日程は昨日の行と同じため検証日程へ移動。Anthropicの時価総額順位(12位→14位)と韓国信用取引(11/19時点)は除外。"
   }
+ },
+ {
+  "date": "2026-11-23",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>거시 이틀, D-2·D-3.</b> 11/25 22:30 미국 3분기 GDP 잠정치+10월 PCE, 11/26 10:00 한국은행 올해 마지막 기준금리 결정(모두 확정, 한국시간). <a href=\"#schedule\">핵심 일정</a>",
+    "en": "<b>Two macro days, D-2 and D-3.</b> 11/25 22:30 KST US Q3 GDP (2nd est.) + Oct PCE; 11/26 10:00 KST Bank of Korea's last rate call of 2026. <a href=\"#schedule\">Agenda</a>",
+    "es": "<b>Dos días macro, D-2 y D-3.</b> 25/11 22:30 KST PIB 3T y PCE de EE. UU.; 26/11 10:00 KST última decisión de tipos del Banco de Corea. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>マクロ2日連続、あと2日・3日。</b>11/25 22:30 米7-9月期GDP改定値+10月PCE、11/26 10:00 韓国銀行の年内最後の金利決定(いずれも確定、韓国時間)。<a href=\"#schedule\">主要日程</a>"
+   },
+   {
+    "href": "#library",
+    "ko": "<b>S&P 500, 고점 대비 −11.6%.</b> 10/6 7,818.93 → 11/20 6,910.39. 고점 후 33거래일, 같은 시점 2018년은 −6.0%로 속도가 두 배. <a href=\"#library\">2018 유사론 검증</a>",
+    "en": "<b>S&P 500 down 11.6% from its peak.</b> 7,818.93 on 10/6 to 6,910.39 on 11/20; 33 trading days in, 2018 was at −6.0%. <a href=\"#library\">The 2018 analog, checked</a>",
+    "es": "<b>S&P 500, −11,6% desde su máximo.</b> De 7.818,93 (6/10) a 6.910,39 (20/11); a 33 sesiones, 2018 iba en −6,0%. <a href=\"#library\">La analogía con 2018</a>",
+    "ja": "<b>S&P 500、高値から−11.6%。</b>10/6の7,818.93→11/20の6,910.39。高値後33営業日、同時点の2018年は−6.0%で速度は2倍。<a href=\"#library\">2018年アナロジー検証</a>"
+   },
+   {
+    "href": "#rank",
+    "ko": "<b>Anthropic, 시총 12위→14위.</b> 11/22 스냅샷 1조 1,750억 달러(11/20 1조 2,710억). 스페이스X는 6위 유지, 1조 7,350억 달러(1조 8,800억에서). <a href=\"#rank\">시총 순위</a>",
+    "en": "<b>Anthropic slips from #12 to #14.</b> $1.175T in the 11/22 snapshot (vs $1.271T on 11/20). SpaceX holds #6 at $1.735T. <a href=\"#rank\">Rank</a>",
+    "es": "<b>Anthropic baja del puesto 12 al 14.</b> US$1.175 mil M en la foto del 22/11 (US$1.271 mil M el 20/11). SpaceX sigue 6.ª: US$1.735 mil M. <a href=\"#rank\">Ranking</a>",
+    "ja": "<b>Anthropic、時価総額12位→14位。</b>11/22スナップショットで1兆1,750億ドル(11/20は1兆2,710億)。スペースXは6位維持、1兆7,350億ドル(1兆8,800億から)。<a href=\"#rank\">時価総額ランキング</a>"
+   }
+  ],
+  "why": {
+   "ko": "주말이라 새 미국 종가·위기 보고가 없어, 이번 주 확정 일정(GDP·PCE와 한국은행)을 1순위로, 새 리서치의 S&P 500 낙폭과 새로 바뀐 시총 순위를 이어 실었다. 어제 쓴 VIX 35.89와 락업 D-17(같은 종가 기준)은 반복이라 뺐다.",
+   "en": "No new US close or crisis report over the weekend, so this week's confirmed dates (GDP/PCE, Bank of Korea) lead, followed by the new research's S&P 500 drawdown and the freshly changed market-cap ranks. Yesterday's VIX 35.89 and the lock-up countdown (same close) were left out as repeats.",
+   "es": "Sin nuevo cierre en EE. UU. ni informe de crisis durante el fin de semana, primero van las fechas confirmadas de esta semana (PIB/PCE, Banco de Corea), luego la caída del S&P 500 del nuevo informe y el cambio en el ranking. El VIX de 35,89 y la cuenta atrás del lock-up (mismo cierre) se omitieron por repetidos.",
+   "ja": "週末で新しい米国終値も危機レポートもないため、今週の確定日程(GDP・PCE、韓国銀行)を1番目に、新しいリサーチのS&P 500下落率と新たに変わった時価総額順位を続けた。昨日のVIX 35.89とロックアップ(同じ終値)は繰り返しになるので外した。"
+  }
  }
 ]
