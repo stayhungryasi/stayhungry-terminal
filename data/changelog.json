@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-23",
-      "commit": "HEAD",
+      "commit": "6f5e338",
       "message": "New research: Damodaran’s models re-run for Nvidia, SpaceX and Tesla. His three valuations reproduced within 0.04%, all 36 cells of his Nvidia breakeven table checked, scenario re-runs and price-implied assumptions on the Nov 20 close, 8 cards. In the RESEARCH tab, the research library and /data/research.json"
     },
     {
