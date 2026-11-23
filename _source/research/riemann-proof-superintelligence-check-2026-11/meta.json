@@ -1,0 +1,77 @@
+{
+ "slug": "riemann-proof-superintelligence-check-2026-11",
+ "date": "2026-11-23",
+ "asof": "2026-11-23 KST",
+ "category": "ai",
+ "title": {
+  "ko": "사람과 AI가 리만가설을 풀었다: ‘초지능 도래’ 주장 전수검증, 무너지는 건 지능의 희소성이다",
+  "en": "A Human and an AI Proved the Riemann Hypothesis: Fact-Checking the ‘Superintelligence Is Arriving’ Claim",
+  "es": "Un humano y una IA demostraron la hipótesis de Riemann: verificación de la tesis «la superinteligencia está llegando»",
+  "ja": "人とAIがリーマン予想を解いた:「超知能の到来」主張を全数検証、崩れるのは知能の希少性だ"
+ },
+ "dek": {
+  "ko": "11월 20일 Anthropic 수학자 Levent Alpöge가 Claude와 함께 찾은 리만가설 증명을 Lean 코드 1,700만 줄로 공개했고, 하루 뒤 Lean·Mathlib 커뮤니티가 옳다고 인증했다. Meta의 알렉산더 왕은 이를 근거로 초지능이 오고 있다고 썼다. 증명은 실재하지만 검증 범위는 디리클레 L-함수까지이고, 수학은 정답을 즉시 채점할 수 있는 드문 분야다. 확인된 것과 남은 것을 나누고, 왕의 논증에서 가장 약한 고리를 짚는다.",
+  "en": "On Nov 20 Anthropic mathematician Levent Alpöge released a proof of the Riemann hypothesis found with Claude, as 17 million lines of Lean code; a day later the Lean and Mathlib communities certified it as correct. Meta's Alexandr Wang took it as evidence that superintelligence is arriving. The proof is real, but its verified scope stops at Dirichlet L-functions, and mathematics is a rare field where answers can be graded instantly. This report separates what is confirmed from what is still open and points to the weakest link in Wang's argument.",
+  "es": "El 20 de noviembre, el matemático de Anthropic Levent Alpöge publicó una demostración de la hipótesis de Riemann hallada junto con Claude, en 17 millones de líneas de código Lean; un día después, las comunidades de Lean y Mathlib la certificaron como correcta. Alexandr Wang, de Meta, la tomó como prueba de que la superinteligencia está llegando. La demostración es real, pero el alcance verificado llega solo hasta las funciones L de Dirichlet, y las matemáticas son un campo poco común donde las respuestas se califican al instante. El informe separa lo confirmado de lo pendiente y señala el eslabón más débil del argumento de Wang.",
+  "ja": "11月20日、Anthropicの数学者Levent AlpögeがClaudeとともに見つけたリーマン予想の証明をLeanコード1,700万行で公開し、翌日にLean・Mathlibコミュニティが正しいと認証した。Metaのアレクサンダー・ワンはこれを根拠に超知能が到来しつつあると書いた。証明は実在するが、検証範囲はディリクレL関数までで、数学は答えを即座に採点できる珍しい分野だ。確認されたことと残る課題を分け、ワンの論証で最も弱い環を指摘する。"
+ },
+ "key": {
+  "value": "167",
+  "label": {
+   "ko": "리만이 가설을 낸 1859년부터 증명 공개까지 걸린 햇수",
+   "en": "Years from Riemann's 1859 conjecture to the release of the proof",
+   "es": "Años desde la conjetura de Riemann de 1859 hasta la publicación de la demostración",
+   "ja": "リーマンが予想を示した1859年から証明公開までの年数"
+  }
+ },
+ "points": {
+  "ko": [
+   "사실: Alpöge는 4쪽 노트와 Lean 코드 1,700만 줄로 증명을 공개했다. 175,187개 모듈이 오류 없이 컴파일됐고 Lean·Mathlib 커뮤니티가 11월 21일 인증했다. 사람 말로 풀어 쓴 초안은 25만 쪽을 넘어 공개되지 않았고, Clay 연구소 목록은 미해결로 남아 있다.",
+   "범위와 한계: 검증된 것은 리만가설과 디리클레 L-함수까지다. 데데킨트 제타, 헤케, 자동형식 L-함수는 대상이 아니다. 전략은 사람이 골랐고 증명을 이해한 사람은 아직 없다. 같은 날 나온 사람의 940쪽 증명 초안은 핵심 정리에 반례가 보고됐다.",
+   "판정: 증명이 실재한다는 왕의 전제는 튼튼하지만 ‘역량 문제는 풀렸다’는 결론에는 약한 고리가 있다. 수학은 기계가 즉시 채점하지만 AI 연구, 신약, 경제는 실험을 기다려야 한다(작성자 판단). 무너지는 것은 최상위 지능의 희소성이고, 가치는 검증·실험·문제 선택·설명으로 옮겨간다."
+  ],
+  "en": [
+   "Facts: Alpöge released the proof as a 4-page note plus 17 million lines of Lean code. All 175,187 modules compiled without errors, and the Lean and Mathlib communities certified it on Nov 21. The plain-language draft ran past 250,000 pages and was not released; the Clay Institute still lists the problem as unsolved.",
+   "Scope and limits: what was verified is the Riemann hypothesis and its extension to Dirichlet L-functions. Dedekind zeta, Hecke and general automorphic L-functions are not covered. A human chose the strategy, and no one yet understands the proof. A 940-page all-human draft released the same day has a reported counterexample to its main theorem.",
+   "Verdict: Wang's premise that the proof is real holds up, but his conclusion that the capability problem is solved has a weak link. Mathematics is graded instantly by a machine; AI research, drug discovery and economics must wait for experiments (author's judgment). What is breaking is the scarcity of top-level intelligence, and value moves to verification, experiments, problem selection and explanation."
+  ],
+  "es": [
+   "Hechos: Alpöge publicó la demostración como una nota de 4 páginas más 17 millones de líneas de código Lean. Los 175,187 módulos compilaron sin errores y las comunidades de Lean y Mathlib la certificaron el 21 de noviembre. El borrador en lenguaje llano superó las 250,000 páginas y no se publicó; el Instituto Clay sigue listando el problema como no resuelto.",
+   "Alcance y límites: lo verificado es la hipótesis de Riemann y su extensión a las funciones L de Dirichlet. No cubre la zeta de Dedekind, las funciones L de Hecke ni las automorfas en general. La estrategia la eligió una persona y nadie entiende aún la demostración. Un borrador de 940 páginas hecho solo por humanos y publicado el mismo día tiene un contraejemplo reportado contra su teorema principal.",
+   "Veredicto: la premisa de Wang de que la demostración es real se sostiene, pero su conclusión de que el problema de capacidad está resuelto tiene un eslabón débil. Las matemáticas las califica una máquina al instante; la investigación en IA, los fármacos y la economía deben esperar a los experimentos (juicio del autor). Lo que se rompe es la escasez de inteligencia de primer nivel, y el valor se desplaza a la verificación, los experimentos, la elección de problemas y la explicación."
+  ],
+  "ja": [
+   "事実:Alpögeは4ページのノートとLeanコード1,700万行で証明を公開した。175,187個のモジュールがエラーなくコンパイルされ、Lean・Mathlibコミュニティが11月21日に認証した。人の言葉で書き下した草稿は25万ページを超えて公開されず、クレイ研究所のリストは未解決のままだ。",
+   "範囲と限界:検証されたのはリーマン予想とディリクレL関数までだ。デデキントゼータ、ヘッケ、保型L関数一般は対象外。戦略を選んだのは人間で、証明を理解した人はまだいない。同じ日に出た人間による940ページの証明草稿は、中心定理に反例が報告された。",
+   "判定:証明は実在するというワンの前提は堅いが、「能力の問題は解けた」という結論には弱い環がある。数学は機械が即座に採点するが、AI研究、創薬、経済は実験を待たねばならない(筆者の判断)。崩れるのは最上位の知能の希少性で、価値は検証・実験・問題選択・説明へ移る。"
+  ]
+ },
+ "tickers": [],
+ "tags": {
+  "ko": [
+   "리만가설",
+   "초지능 논쟁",
+   "AI와 수학",
+   "전수검증"
+  ],
+  "en": [
+   "Riemann hypothesis",
+   "Superintelligence debate",
+   "AI and mathematics",
+   "Fact-checked"
+  ],
+  "es": [
+   "Hipótesis de Riemann",
+   "Debate sobre la superinteligencia",
+   "IA y matemáticas",
+   "Verificado"
+  ],
+  "ja": [
+   "リーマン予想",
+   "超知能論争",
+   "AIと数学",
+   "全数検証"
+  ]
+ },
+ "checkpoints": []
+}

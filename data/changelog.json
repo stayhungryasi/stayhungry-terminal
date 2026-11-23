@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-23",
+      "commit": "HEAD",
+      "message": "New research: a human and an AI proved the Riemann hypothesis, and we fact-check the ‘superintelligence is arriving’ claim. What is confirmed and what is still open, the verified scope (Dirichlet L-functions), the weak link in the argument, 10 cards and 6 charts. In the RESEARCH tab, the research library and /data/research.json"
+    },
+    {
+      "date": "2026-11-23",
       "commit": "d149df6",
       "message": "Research pages: Esc now opens the developer view, as on every hub page (it lands on the research library file), and a </> DEV button sits in the top bar. With the card viewer open, Esc still just closes the viewer"
     },
