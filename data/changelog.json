@@ -3,6 +3,11 @@
   "items": [
     {
       "date": "2026-11-23",
+      "commit": "HEAD",
+      "message": "New research: Damodaran’s models re-run for Nvidia, SpaceX and Tesla. His three valuations reproduced within 0.04%, all 36 cells of his Nvidia breakeven table checked, scenario re-runs and price-implied assumptions on the Nov 20 close, 8 cards. In the RESEARCH tab, the research library and /data/research.json"
+    },
+    {
+      "date": "2026-11-23",
       "commit": "58f01ff",
       "message": "New research: a human and an AI proved the Riemann hypothesis, and we fact-check the ‘superintelligence is arriving’ claim. What is confirmed and what is still open, the verified scope (Dirichlet L-functions), the weak link in the argument, 10 cards and 6 charts. In the RESEARCH tab, the research library and /data/research.json"
     },

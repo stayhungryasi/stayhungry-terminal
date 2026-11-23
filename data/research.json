@@ -1,7 +1,7 @@
 {
  "name": "Stayhungry.ASI research library",
  "updated": "2026-11-23",
- "count": 26,
+ "count": 27,
  "feed": "https://stayhungryasi.com/r/feed.xml",
  "rule": "Pure research only: no affiliation, client or internal-review content, no buy/sell instructions. Korean originals (full translations in en/es/ja where listed in langs); briefs in 4 languages. Not investment advice.",
  "credit": "stayhungryasi.com",
@@ -123,6 +123,111 @@
    "url": "https://stayhungryasi.com/r/riemann-proof-superintelligence-check-2026-11/",
    "urls": {
     "ko": "https://stayhungryasi.com/r/riemann-proof-superintelligence-check-2026-11/"
+   }
+  },
+  {
+   "slug": "damodaran-nvda-spcx-tsla-fair-value-2026-11",
+   "date": "2026-11-23",
+   "asof": "2026-11-20 US close",
+   "category": "masters",
+   "title": {
+    "ko": "다모다란 모델을 다시 돌렸다: 엔비디아·스페이스X·테슬라 적정가 전수검증",
+    "en": "Re-Running Damodaran’s Models: A Fair-Value Check on Nvidia, SpaceX and Tesla",
+    "es": "Los modelos de Damodaran, recalculados: valor razonable de Nvidia, SpaceX y Tesla",
+    "ja": "ダモダランのモデルを再実行:エヌビディア・スペースX・テスラの適正価格を全数検証"
+   },
+   "dek": {
+    "ko": "애스워스 다모다란 교수의 공표 밸류에이션 세 개를 다시 만들어 주당 가치를 0.04% 이내로 재현한 뒤, 발표 이후 변수로 다시 돌렸다. 11월 20일 종가 기준으로 엔비디아 $125.53은 그의 손익분기표에서 가장 나쁜 칸($125)과 같고, 스페이스X $127.79는 그의 종착 매출의 1.35배를, 테슬라 $345.82는 영업이익률 39%를 요구한다. 밴드는 작성자 계산이다.",
+    "en": "We rebuilt three valuations published by Professor Aswath Damodaran, reproduced his value per share within 0.04%, then re-ran them with newer inputs. On the Nov 20 close, Nvidia at $125.53 matches the worst cell of his breakeven table ($125), SpaceX at $127.79 needs 1.35x his end revenue, and Tesla at $345.82 needs a 39% operating margin. The bands are the author’s calculation.",
+    "es": "Se reconstruyeron tres valoraciones publicadas por el profesor Aswath Damodaran, se reprodujo su valor por acción dentro de 0.04% y se recalcularon con datos más recientes. Al cierre del 20 de noviembre, Nvidia en $125.53 coincide con la peor celda de su tabla de equilibrio ($125), SpaceX en $127.79 exige 1.35 veces sus ingresos finales y Tesla en $345.82 exige un margen operativo de 39%. Las bandas son cálculo del autor.",
+    "ja": "アスワス・ダモダラン教授が公表したバリュエーション3つを作り直し、1株価値を0.04%以内で再現したうえで、公表後の変数で再実行した。11月20日終値を基準にすると、エヌビディアの$125.53は彼の損益分岐表で最も悪いマス($125)と同じで、スペースXの$127.79は彼の最終売上の1.35倍を、テスラの$345.82は営業利益率39%を要求する。バンドは筆者計算である。"
+   },
+   "key": {
+    "value": "$125",
+    "label": {
+     "ko": "엔비디아 종가 $125.53은 다모다란 손익분기표에서 가장 나쁜 칸의 가치 $125와 같다. 11월 20일 종가 기준",
+     "en": "Nvidia’s $125.53 close equals the $125 value of the worst cell in Damodaran’s breakeven table. Nov 20 close",
+     "es": "El cierre de Nvidia, $125.53, equivale a los $125 de la peor celda de la tabla de equilibrio de Damodaran. Cierre del 20 de noviembre",
+     "ja": "エヌビディアの終値$125.53は、ダモダランの損益分岐表で最も悪いマスの価値$125と同じである。11月20日終値"
+    }
+   },
+   "points": {
+    "ko": [
+     "애스워스 다모다란 교수의 공표 밸류에이션 세 개를 다시 만들어 주당 가치를 0.04% 이내로 재현했다. 엔비디아 $199.49, 스페이스X $97.83, 테슬라 $148.23이다. 엔비디아 손익분기표 36칸도 최대 오차 0.005%p로 일치한다.",
+     "11월 20일 종가 기준으로 엔비디아 $125.53은 그의 표에서 가장 나쁜 칸($125)과 같다. 성장률이 매년 5%p 낮고 목표 마진이 40%인 경우다. 재실행 밴드 $132~$190의 하단보다 5% 아래다.",
+     "스페이스X $127.79는 그의 종착 매출의 1.35배를 요구하고, 테슬라 $345.82는 매출 $5,000억에서 영업이익률 39%를 요구한다. 2025년 테슬라의 실제 이익률은 4.6%였다. 밴드와 시나리오는 작성자 계산이며 그가 제시한 범위가 아니다."
+    ],
+    "en": [
+     "We rebuilt three valuations published by Professor Aswath Damodaran and reproduced his value per share within 0.04%: Nvidia $199.49, SpaceX $97.83, Tesla $148.23. All 36 cells of his Nvidia breakeven table match as well, with a largest gap of 0.005pp.",
+     "On the Nov 20 close, Nvidia at $125.53 matches the worst cell in his table ($125): growth 5pp lower each year and a 40% target margin. That is 5% below the low end of the re-run band of $132~$190.",
+     "SpaceX at $127.79 needs 1.35x his end revenue, and Tesla at $345.82 needs a 39% operating margin at $500 billion of revenue. Tesla’s actual 2025 margin was 4.6%. The bands and scenarios are the author’s calculations, not ranges he published."
+    ],
+    "es": [
+     "Se reconstruyeron tres valoraciones publicadas por el profesor Aswath Damodaran y se reprodujo su valor por acción dentro de 0.04%: Nvidia $199.49, SpaceX $97.83, Tesla $148.23. Las 36 celdas de su tabla de equilibrio de Nvidia también coinciden, con una diferencia máxima de 0.005pp.",
+     "Al cierre del 20 de noviembre, Nvidia en $125.53 coincide con la peor celda de su tabla ($125): 5pp menos de crecimiento cada año y un margen objetivo de 40%. Está 5% por debajo del piso de la banda recalculada de $132~$190.",
+     "SpaceX en $127.79 exige 1.35 veces sus ingresos finales, y Tesla en $345.82 exige un margen operativo de 39% con ingresos de 500 mil millones de dólares. El margen real de Tesla en 2025 fue 4.6%. Las bandas y los escenarios son cálculos del autor, no rangos que él haya publicado."
+    ],
+    "ja": [
+     "アスワス・ダモダラン教授が公表したバリュエーション3つを作り直し、1株価値を0.04%以内で再現した。エヌビディア$199.49、スペースX$97.83、テスラ$148.23である。エヌビディアの損益分岐表36マスも最大誤差0.005%pで一致する。",
+     "11月20日終値を基準にすると、エヌビディアの$125.53は彼の表で最も悪いマス($125)と同じである。成長率が毎年5%p低く、目標マージンが40%の場合だ。再実行バンド$132~$190の下限より5%下にある。",
+     "スペースXの$127.79は彼の最終売上の1.35倍を要求し、テスラの$345.82は売上5,000億ドルで営業利益率39%を要求する。2025年のテスラの実際の利益率は4.6%だった。バンドとシナリオは筆者計算であり、彼が示した範囲ではない。"
+    ]
+   },
+   "tickers": [
+    "NVDA",
+    "SPCX",
+    "TSLA"
+   ],
+   "tags": {
+    "ko": [
+     "다모다란",
+     "밸류에이션",
+     "엔비디아",
+     "스페이스X",
+     "테슬라",
+     "전수검증"
+    ],
+    "en": [
+     "Damodaran",
+     "Valuation",
+     "Nvidia",
+     "SpaceX",
+     "Tesla",
+     "Fact-checked"
+    ],
+    "es": [
+     "Damodaran",
+     "Valoración",
+     "Nvidia",
+     "SpaceX",
+     "Tesla",
+     "Verificado"
+    ],
+    "ja": [
+     "ダモダラン",
+     "バリュエーション",
+     "エヌビディア",
+     "スペースX",
+     "テスラ",
+     "全数検証"
+    ]
+   },
+   "checkpoints": [],
+   "kind": "doc",
+   "langs": [
+    "ko",
+    "en",
+    "es",
+    "ja"
+   ],
+   "minutes": 6,
+   "sources": 4,
+   "url": "https://stayhungryasi.com/r/damodaran-nvda-spcx-tsla-fair-value-2026-11/",
+   "urls": {
+    "ko": "https://stayhungryasi.com/r/damodaran-nvda-spcx-tsla-fair-value-2026-11/",
+    "en": "https://stayhungryasi.com/r/damodaran-nvda-spcx-tsla-fair-value-2026-11/en/",
+    "es": "https://stayhungryasi.com/r/damodaran-nvda-spcx-tsla-fair-value-2026-11/es/",
+    "ja": "https://stayhungryasi.com/r/damodaran-nvda-spcx-tsla-fair-value-2026-11/ja/"
    }
   },
   {
