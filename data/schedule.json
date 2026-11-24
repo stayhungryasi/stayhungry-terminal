@@ -1,10 +1,10 @@
 {
  "kind": "schedule",
  "schema": 1,
- "generated_kst": "2026-11-20 09:22",
- "data_updated": "2026-11-20",
- "last_sent_kst": "2026-11-20 09:21",
- "next_send": "2026-11-24",
+ "generated_kst": "2026-11-24 09:22",
+ "data_updated": "2026-11-24",
+ "last_sent_kst": "2026-11-24 09:22",
+ "next_send": "2026-11-27",
  "schedule": "Tue & Fri 10:00 KST",
  "window": {
   "past_days": 14,
@@ -37,126 +37,8 @@
    "LG전자"
   ]
  },
- "count": 72,
+ "count": 69,
  "events": [
-  {
-   "id": "ceg-q",
-   "date": "2026-11-06",
-   "time": "21:00",
-   "approx": true,
-   "end": null,
-   "local": "미국 11/6(금) 장 시작 전",
-   "title": "컨스텔레이션에너지 3분기 실적",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "CEG"
-   ],
-   "imp": 1,
-   "status": "estimated",
-   "country": "us",
-   "source": "https://nextearningsdate.com/constellation-energy.html",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Constellation Energy Q3 results",
-     "p": "",
-     "l": "US Nov 6 (Fri), before the open",
-     "c": ""
-    },
-    "es": {
-     "t": "Resultados del 3T de Constellation Energy",
-     "p": "",
-     "l": "EE. UU., 6 nov (vie), antes de la apertura",
-     "c": ""
-    },
-    "ja": {
-     "t": "コンステレーション・エナジー 第3四半期決算",
-     "p": "",
-     "l": "米国 11/6(金) 寄り付き前",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "us-jobs-oct",
-   "date": "2026-11-06",
-   "time": "22:30",
-   "approx": false,
-   "end": null,
-   "local": "미국 11/6(금) 08:30",
-   "title": "미국 10월 고용보고서",
-   "point": "",
-   "cat": "미국 매크로",
-   "tickers": [],
-   "imp": 3,
-   "status": "confirmed",
-   "country": "us",
-   "source": "https://www.bls.gov/schedule/news_release/empsit.htm",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "US October jobs report",
-     "p": "",
-     "l": "US Nov 6 (Fri) 08:30",
-     "c": ""
-    },
-    "es": {
-     "t": "Informe de empleo de EE. UU. de octubre",
-     "p": "",
-     "l": "EE. UU., 6 nov (vie) 08:30",
-     "c": ""
-    },
-    "ja": {
-     "t": "米国 10月雇用統計",
-     "p": "",
-     "l": "米国 11/6(金) 08:30",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "starship15",
-   "date": "2026-11-08",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "미국 현지 날짜",
-   "title": "스타십 15차 비행 NET",
-   "point": "",
-   "cat": "우주",
-   "tickers": [
-    "SPCX"
-   ],
-   "imp": 2,
-   "status": "estimated",
-   "country": "us",
-   "source": "https://spiketoday.com/starship-flight-15-launch-date/",
-   "updated": "2026-10-16",
-   "change": "10/19 → 11/8 (일정 지연 보도, 공식 미발표)",
-   "i18n": {
-    "en": {
-     "t": "Starship Flight 15 NET",
-     "p": "",
-     "l": "US local date",
-     "c": "Oct 19 → Nov 8 (reported delay; not officially announced)"
-    },
-    "es": {
-     "t": "Vuelo 15 de Starship NET",
-     "p": "",
-     "l": "fecha local de EE. UU.",
-     "c": "19 oct → 8 nov (retraso reportado; sin anuncio oficial)"
-    },
-    "ja": {
-     "t": "スターシップ 第15回飛行 NET",
-     "p": "",
-     "l": "米国現地日付",
-     "c": "10/19 → 11/8(日程遅延の報道、公式発表なし)"
-    }
-   }
-  },
   {
    "id": "anth-road",
    "date": "2026-11-10",
@@ -2843,6 +2725,6 @@
  "telegram": "https://t.me/stayhungryasi",
  "credit": "stayhungryasi.com",
  "note": "Written by the key-dates bot (schedule-bot) after each refresh. Schedule information, not investment advice. Dates can change.",
- "updated": "2026-11-20",
+ "updated": "2026-11-24",
  "live": "https://stayhungryasi.com/live/schedule.json"
 }
