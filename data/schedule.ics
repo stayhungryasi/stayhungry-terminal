@@ -667,6 +667,21 @@ URL:https://www.motie.go.kr/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:us-congress-120@stayhungryasi.com
+DTSTAMP:20261126T000000Z
+DTSTART:20270103T170000Z
+DTEND:20270103T173000Z
+SUMMARY:미국 제120대 의회 출범 (추정)
+DESCRIPTION:하원의장 선출·의원 선서\n미국 1/3(일) 정오 ET\n
+ ≈ 02:00 KST\nhttps://bipartisanpolicy.org/article/the-2026-midterms-key-
+ dates-and-events/\n한국시간 기준 일정 정보이며 투자 권유
+ 가 아닙니다.\nstayhungryasi.com
+CATEGORIES:정치
+URL:https://bipartisanpolicy.org/article/the-2026-midterms-key-dates-and-ev
+ ents/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:ces27@stayhungryasi.com
 DTSTAMP:20261126T000000Z
 DTSTART;VALUE=DATE:20270106
@@ -701,6 +716,20 @@ DESCRIPTION:미국 1/8(금) 08:30\n22:30 KST\nhttps://www.bls.gov/schedule/
  권유가 아닙니다.\nstayhungryasi.com
 CATEGORIES:미국 매크로
 URL:https://www.bls.gov/schedule/news_release/empsit.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:jpm-hc-2027@stayhungryasi.com
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270115
+SUMMARY:JP모건 헬스케어 콘퍼런스(샌프란시스코) (추정)
+DESCRIPTION:미국 현지 날짜\nhttps://www.bcg.com/industries/health-car
+ e/jp-morgan-health-care-conference\n한국시간 기준 일정 정보이
+ 며 투자 권유가 아닙니다.\nstayhungryasi.com
+CATEGORIES:시장
+URL:https://www.bcg.com/industries/health-care/jp-morgan-health-care-confer
+ ence
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

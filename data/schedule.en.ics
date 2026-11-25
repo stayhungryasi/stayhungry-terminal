@@ -651,6 +651,21 @@ URL:https://www.motie.go.kr/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:us-congress-120@stayhungryasi.com
+DTSTAMP:20261126T000000Z
+DTSTART:20270103T170000Z
+DTEND:20270103T173000Z
+SUMMARY:120th US Congress convenes (est.)
+DESCRIPTION:Speaker election and swearing-in\nUS Jan 3 (Sun)\, noon ET\n≈
+  02:00 KST\nhttps://bipartisanpolicy.org/article/the-2026-midterms-key-dat
+ es-and-events/\nSchedule information\, not investment advice.\nstayhungrya
+ si.com
+CATEGORIES:정치
+URL:https://bipartisanpolicy.org/article/the-2026-midterms-key-dates-and-ev
+ ents/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:ces27@stayhungryasi.com
 DTSTAMP:20261126T000000Z
 DTSTART;VALUE=DATE:20270106
@@ -685,6 +700,20 @@ DESCRIPTION:US Jan 8 (Fri) 08:30\n22:30 KST\nhttps://www.bls.gov/schedule/n
  yhungryasi.com
 CATEGORIES:미국 매크로
 URL:https://www.bls.gov/schedule/news_release/empsit.htm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:jpm-hc-2027@stayhungryasi.com
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270115
+SUMMARY:J.P. Morgan Healthcare Conference (San Francisco) (est.)
+DESCRIPTION:US local dates\nhttps://www.bcg.com/industries/health-care/jp-m
+ organ-health-care-conference\nSchedule information\, not investment advice
+ .\nstayhungryasi.com
+CATEGORIES:시장
+URL:https://www.bcg.com/industries/health-care/jp-morgan-health-care-confer
+ ence
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

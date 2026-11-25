@@ -1,7 +1,7 @@
 {
  "kind": "schedule",
  "schema": 1,
- "generated_kst": "2026-11-26 08:33",
+ "generated_kst": "2026-11-26 08:35",
  "data_updated": "2026-11-26",
  "last_sent_kst": "2026-11-24 09:22",
  "next_send": "2026-11-27",
@@ -37,7 +37,7 @@
    "LG전자"
   ]
  },
- "count": 63,
+ "count": 65,
  "events": [
   {
    "id": "kr-opt-nov",
@@ -1980,6 +1980,44 @@
    }
   },
   {
+   "id": "us-congress-120",
+   "date": "2027-01-04",
+   "time": "02:00",
+   "approx": true,
+   "end": null,
+   "local": "미국 1/3(일) 정오 ET",
+   "title": "미국 제120대 의회 출범",
+   "point": "하원의장 선출·의원 선서",
+   "cat": "정치",
+   "tickers": [],
+   "imp": 2,
+   "status": "estimated",
+   "country": "us",
+   "source": "https://bipartisanpolicy.org/article/the-2026-midterms-key-dates-and-events/",
+   "updated": "2026-11-26",
+   "change": "신규: 미국 제120대 의회 출범 1/4(월) 02:00",
+   "i18n": {
+    "en": {
+     "t": "120th US Congress convenes",
+     "p": "Speaker election and swearing-in",
+     "l": "US Jan 3 (Sun), noon ET",
+     "c": "New: 120th US Congress convenes, Jan 4 (Mon) 02:00 KST"
+    },
+    "es": {
+     "t": "Inicio del 120.º Congreso de EE. UU.",
+     "p": "Elección del presidente de la Cámara y juramento",
+     "l": "EE. UU., 3 ene (dom), mediodía ET",
+     "c": "Nuevo: inicio del 120.º Congreso de EE. UU., 4 ene (lun) 02:00 KST"
+    },
+    "ja": {
+     "t": "米国 第120議会 開会",
+     "p": "下院議長選出・議員宣誓",
+     "l": "米国 1/3(日) 正午 ET",
+     "c": "新規:米国 第120議会 開会 1/4(月) 02:00"
+    }
+   }
+  },
+  {
    "id": "ces27",
    "date": "2027-01-06",
    "time": null,
@@ -2092,6 +2130,44 @@
      "p": "",
      "l": "米国 1/8(金) 08:30",
      "c": ""
+    }
+   }
+  },
+  {
+   "id": "jpm-hc-2027",
+   "date": "2027-01-11",
+   "time": null,
+   "approx": false,
+   "end": "2027-01-14",
+   "local": "미국 현지 날짜",
+   "title": "JP모건 헬스케어 콘퍼런스(샌프란시스코)",
+   "point": "",
+   "cat": "시장",
+   "tickers": [],
+   "imp": 2,
+   "status": "estimated",
+   "country": "us",
+   "source": "https://www.bcg.com/industries/health-care/jp-morgan-health-care-conference",
+   "updated": "2026-11-26",
+   "change": "신규: JP모건 헬스케어 콘퍼런스 1/11~14",
+   "i18n": {
+    "en": {
+     "t": "J.P. Morgan Healthcare Conference (San Francisco)",
+     "p": "",
+     "l": "US local dates",
+     "c": "New: J.P. Morgan Healthcare Conference, Jan 11–14"
+    },
+    "es": {
+     "t": "Conferencia de salud de J.P. Morgan (San Francisco)",
+     "p": "",
+     "l": "Fechas locales de EE. UU.",
+     "c": "Nuevo: conferencia de salud de J.P. Morgan, 11–14 ene"
+    },
+    "ja": {
+     "t": "JPモルガン・ヘルスケア・カンファレンス(サンフランシスコ)",
+     "p": "",
+     "l": "米国現地日付",
+     "c": "新規:JPモルガン・ヘルスケア・カンファレンス 1/11〜14"
     }
    }
   },
