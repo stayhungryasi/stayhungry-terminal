@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-25",
-      "commit": "HEAD",
+      "commit": "0db6ec2",
       "message": "Radar: crisis proximity now has history, as two rulers that are deliberately not joined. Precise ruler: the report's full 20 indicators over the last three years, the only period with public credit-spread data. Long ruler: since 1997 on the 9 indicators that mean the same in every era, without the credit layer, to show how high real crises went. Each chart states where the latest value ranks and what it cannot see; also in /data/crisis-history.json, refreshed weekly"
     },
     {
