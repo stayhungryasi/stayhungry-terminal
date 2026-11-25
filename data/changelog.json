@@ -3,7 +3,7 @@
   "items": [
     {
       "date": "2026-11-25",
-      "commit": "HEAD",
+      "commit": "0747ea8",
       "message": "Radar: VIX now has a long chart, since 1990, next to the two-year one (weekly highs, zoom and crosshair as usual), with a line of context: how often VIX has been at 20, 30 and 40 or higher, the highest closes on record, and where the latest value ranks"
     },
     {
