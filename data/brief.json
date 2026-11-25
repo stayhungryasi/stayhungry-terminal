@@ -1,30 +1,30 @@
 {
  "kind": "brief",
  "schema": 1,
- "date": "2026-11-24",
- "generated_kst": "2026-11-24 10:09",
+ "date": "2026-11-25",
+ "generated_kst": "2026-11-25 10:09",
  "editor": "Claude",
  "lines": [
   {
-   "href": "#radar",
-   "ko": "<b>위기 근접도 40.6, 직전 보고 대비 +6.2점.</b> 11/23 보고 '경계', 빨강 5개. CCC 가산금리 1,361bp(방어선 1,300bp), BDC 낙폭 −20.8%. <a href=\"#radar\">위기 레이더</a>",
-   "en": "<b>Crisis proximity 40.6, up 6.2 points.</b> 11/23 report, 'watch', 5 reds: CCC spread 1,361bp (line 1,300bp), BDC drawdown −20.8%. <a href=\"#radar\">Radar</a>",
-   "es": "<b>Cercanía a crisis: 40,6, +6,2 puntos.</b> Informe del 23/11, 'vigilancia', 5 rojos: diferencial CCC 1.361 pb (umbral 1.300), BDC −20,8%. <a href=\"#radar\">Radar</a>",
-   "ja": "<b>危機接近度40.6、前回比+6.2点。</b>11/23レポートで「警戒」、赤5つ。CCCスプレッド1,361bp(防衛線1,300bp)、BDC下落率−20.8%。<a href=\"#radar\">危機レーダー</a>"
-  },
-  {
    "href": "#schedule",
-   "ko": "<b>내일 밤 미국 GDP·PCE, 모레 금통위.</b> 11/25 22:30 3분기 GDP 잠정치+10월 PCE(D-1), 11/26 10:00 한국은행 올해 마지막 금리 결정(D-2), 모두 확정. <a href=\"#schedule\">핵심 일정</a>",
-   "en": "<b>US GDP and PCE tomorrow, BOK next.</b> 11/25 22:30 KST Q3 GDP (2nd est.) + Oct PCE; 11/26 10:00 KST last BOK rate call of 2026. <a href=\"#schedule\">Agenda</a>",
-   "es": "<b>Mañana PIB y PCE de EE. UU.</b> 25/11 22:30 KST PIB 3T y PCE de octubre; 26/11 10:00 KST última decisión de tipos del Banco de Corea. <a href=\"#schedule\">Agenda</a>",
-   "ja": "<b>明晩に米GDP・PCE、明後日に韓国金融通貨委。</b>11/25 22:30 7-9月期GDP改定値+10月PCE、11/26 10:00 韓国銀行の年内最後の金利決定(いずれも確定)。<a href=\"#schedule\">主要日程</a>"
+   "ko": "<b>오늘 밤 미국 GDP·PCE, 내일 아침 금통위.</b> 11/25 22:30 3분기 GDP 잠정치+10월 PCE(D-0), 11/26 10:00 한국은행 올해 마지막 금리 결정(D-1), 모두 확정. <a href=\"#schedule\">핵심 일정</a>",
+   "en": "<b>US GDP and PCE tonight, BOK tomorrow.</b> 11/25 22:30 KST Q3 GDP (2nd est.) + Oct PCE; 11/26 10:00 KST last BOK rate call of 2026. <a href=\"#schedule\">Agenda</a>",
+   "es": "<b>Hoy PIB y PCE de EE. UU.</b> 25/11 22:30 KST PIB 3T y PCE de octubre; 26/11 10:00 KST última decisión de tipos del Banco de Corea. <a href=\"#schedule\">Agenda</a>",
+   "ja": "<b>今夜米GDP・PCE、明朝韓国金融通貨委。</b>11/25 22:30 7-9月期GDP改定値+10月PCE、11/26 10:00 韓国銀行の年内最後の金利決定(いずれも確定)。<a href=\"#schedule\">主要日程</a>"
   },
   {
-   "href": "#library",
-   "ko": "<b>엔비디아, 다모다란 표의 가장 나쁜 칸.</b> 11/20 종가 $125.53 ≈ 손익분기표 최악 칸 $125. 스페이스X $127.79는 그의 종착 매출 1.35배 필요(작성자 재실행). <a href=\"#library\">다모다란 재검증</a>",
-   "en": "<b>Nvidia hits Damodaran's worst cell.</b> $125.53 (11/20 close) vs his $125 floor; SpaceX at $127.79 needs 1.35x his end revenue. <a href=\"#library\">Re-run</a>",
-   "es": "<b>Nvidia, en la peor celda de Damodaran.</b> $125,53 (cierre 20/11) vs. su piso de $125; SpaceX a $127,79 exige 1,35x su ingreso final. <a href=\"#library\">Ver</a>",
-   "ja": "<b>エヌビディア、ダモダラン表の最悪のマスに。</b>11/20終値$125.53は損益分岐表の最悪マス$125と同水準。スペースX$127.79は最終売上の1.35倍が必要(筆者再計算)。<a href=\"#library\">ダモダラン再検証</a>"
+   "href": "#agent",
+   "ko": "<b>스페이스X, 주 법무장관 2곳에 피소.</b> 버지니아(11/23)·오리건(11/22)이 Grok 이미지 생성 건으로 제소, 청구액 비공개. 10-Q 전체 소송 충당금 $350M. 락업 해제 D-15. <a href=\"#agent\">야간 에이전트</a>",
+   "en": "<b>SpaceX sued by 2 state AGs.</b> Virginia (11/23), Oregon (11/22), over Grok images; no amount given. Total 10-Q reserve $350M. <a href=\"#agent\">Agent</a>",
+   "es": "<b>Dos fiscales demandan a SpaceX.</b> Virginia (23/11) y Oregón (22/11), por Grok; sin monto. Provisión total 10-Q: US$350 M. <a href=\"#agent\">Agente</a>",
+   "ja": "<b>スペースX、2州の司法長官が提訴。</b>バージニア(11/23)・オレゴン(11/22)がGrokの画像生成を問題視、請求額は非公表。10-Qの訴訟引当金総額$350M。ロックアップ解除D-15。<a href=\"#agent\">夜間エージェント</a>"
+  },
+  {
+   "href": "#buffett",
+   "ko": "<b>VIX 26.62, '공포'에서 '경계'로.</b> 11/23 기준, 11/20 35.89에서 하락. VIX/VIX3M 1.044로 역전은 여전. 버핏지수 225.81%(추정, 백분위 99.7). <a href=\"#buffett\">버핏지수×VIX</a>",
+   "en": "<b>VIX 26.62, back from 'fear' to 'watch'.</b> 11/23, vs 35.89 on 11/20. VIX/VIX3M 1.044, still inverted. Buffett Index 225.81% (est.). <a href=\"#buffett\">Buffett×VIX</a>",
+   "es": "<b>VIX 26,62: de 'miedo' a 'vigilancia'.</b> Al 23/11, desde 35,89 (20/11). VIX/VIX3M 1,044, aún invertido. Buffett 225,81% (est.). <a href=\"#buffett\">Buffett×VIX</a>",
+   "ja": "<b>VIX 26.62、「恐怖」から「警戒」へ。</b>11/23時点、11/20の35.89から低下。VIX/VIX3Mは1.044で逆転は継続。バフェット指数225.81%(推定、百分位99.7)。<a href=\"#buffett\">バフェット指数×VIX</a>"
   }
  ],
  "checkpoints": [
@@ -70,45 +70,45 @@
   },
   {
    "d": {
-    "ko": "11/30(월)",
-    "en": "Mon 11/30",
-    "es": "lun 30/11",
-    "ja": "11/30(月)"
+    "ko": "12/9(수)",
+    "en": "Wed 12/9",
+    "es": "mié 9/12",
+    "ja": "12/9(水)"
    },
    "x": {
-    "ko": "AWS re:Invent(라스베이거스)",
-    "en": "AWS re:Invent (Las Vegas)",
-    "es": "AWS re:Invent (Las Vegas)",
-    "ja": "AWS re:Invent(ラスベガス)"
+    "ko": "스페이스X 180일 락업 해제분 거래 시작(7.976억 주)",
+    "en": "SpaceX 180-day lock-up shares start trading (797.6M)",
+    "es": "Empiezan a cotizar las acciones del lock-up de 180 días de SpaceX (797,6 M)",
+    "ja": "スペースX 180日ロックアップ解除分の取引開始(7.976億株)"
    },
    "y": {
-    "ko": "확정 · AI·산업",
-    "en": "Confirmed · AI & industry",
-    "es": "Confirmado · IA e industria",
-    "ja": "確定・AI・産業"
+    "ko": "락업 레이더 · ≈1,064억 달러",
+    "en": "Lock-up radar · ≈$106.4B",
+    "es": "Radar de lock-up · ≈US$106,4 mil M",
+    "ja": "ロックアップレーダー・≈1,064億ドル"
    }
   }
  ],
  "why": {
-  "ko": "위기 근접도가 한 번에 5점 넘게(+6.2) 올라 규칙대로 1순위, 이어 내일·모레 확정 거시 일정(D-1·D-2)과 아직 3줄에 안 쓴 새 리서치(다모다란 재검증)를 실었다. 락업 D-16·VIX 35.89(11/20 기준)는 이미 쓴 숫자라 뺐다.",
-  "en": "Crisis proximity jumped more than 5 points in one report (+6.2), so it leads by rule; then the confirmed macro dates tomorrow and the day after, and new research not yet featured (the Damodaran re-run). The lock-up countdown and VIX 35.89 (as of 11/20) were left out as repeats.",
-  "es": "La cercanía a crisis subió más de 5 puntos en un informe (+6,2), así que va primero por regla; luego las fechas macro confirmadas de mañana y pasado, y un informe nuevo aún no destacado (el recálculo de Damodaran). La cuenta atrás del lock-up y el VIX de 35,89 (al 20/11) se omitieron por repetidos.",
-  "ja": "危機接近度が1回で5点超(+6.2)上昇したためルール通り1番目に、続いて明日・明後日の確定マクロ日程と、まだ取り上げていない新リサーチ(ダモダラン再検証)を載せた。ロックアップのカウントダウンとVIX 35.89(11/20時点)は繰り返しになるので外した。"
+  "ko": "오늘 밤·내일 아침 실제로 일어나는 확정 거시 일정(D-0·D-1)을 1순위로, 이어 야간 에이전트가 새로 잡은 스페이스X 주 법무장관 소송, 이틀 만에 크게 바뀐 VIX(35.89→26.62)를 실었다. 위기 근접도 40.6은 같은 11/23 보고라 숫자가 바뀌지 않아 뺐고, 다모다란 재검증도 어제 썼다.",
+  "en": "Tonight's and tomorrow morning's confirmed macro events lead (D-0, D-1), followed by the new SpaceX state-AG lawsuits flagged by the overnight agent and a sharply changed VIX (35.89 to 26.62). Crisis proximity 40.6 was dropped because it is the same 11/23 report, unchanged; the Damodaran re-run ran yesterday.",
+  "es": "Primero, los eventos macro confirmados de esta noche y mañana (D-0, D-1); luego, las nuevas demandas de fiscales estatales contra SpaceX detectadas por el agente nocturno y un VIX muy distinto (de 35,89 a 26,62). Se omitió la cercanía a crisis de 40,6 porque es el mismo informe del 23/11, sin cambios; el recálculo de Damodaran salió ayer.",
+  "ja": "今夜・明朝に実際に起きる確定マクロ日程(D-0・D-1)を1番目に、続いて夜間エージェントが新たに捉えたスペースXへの州司法長官の提訴、2日で大きく変わったVIX(35.89→26.62)を載せた。危機接近度40.6は同じ11/23レポートで数値が変わっていないため外し、ダモダラン再検証は昨日取り上げた。"
  },
  "facts": [
-  "Crisis proximity 40.6 (watch), prev 34.4 (+6.2), 5 reds, report 2026-11-23 10:59 KST; CCC OAS 1,361bp vs 1,300bp line; BIZD -20.8% from 52w high — Crisis bot (live/crisis.json)",
-  "11/25 22:30 KST US Q3 GDP second estimate + Oct PCE, confirmed — Key dates bot",
-  "11/26 10:00 KST Bank of Korea rate decision (last of year), confirmed — Key dates bot",
-  "11/30 AWS re:Invent, confirmed — Key dates bot",
-  "Nvidia 11/20 close $125.53 vs $125 worst cell of Damodaran breakeven table; SpaceX $127.79 needs 1.35x his end revenue; bands are author's calculation — Research library (damodaran-nvda-spcx-tsla-fair-value-2026-11)"
+  "11/25 22:30 KST US Q3 GDP second estimate + Oct PCE, confirmed; 11/26 10:00 KST BOK rate decision (last of year), confirmed — Key dates bot (data 2026-11-24)",
+  "Virginia AG suit 11/23 (Richmond Circuit Court), Oregon AG suit 11/22 (Multnomah), Grok image generation, amount not disclosed; 10-Q litigation reserve $350M — SpaceX overnight agent run 2026-11-24-event",
+  "Lock-up next tranche trade 2026-12-09, D-15, 797.6M shares, ≈$106.4B — SpaceX lock-up radar asof 2026-11-24",
+  "VIX 26.62 (watch) as of 2026-11-23, VIX/VIX3M 1.044; Buffett Index 225.81% (estimated, pct 99.7) — Buffett×VIX bot sent 2026-11-24 14:34",
+  "VIX 35.89 as of 11/20 — previous brief 2026-11-22 (Buffett×VIX bot)"
  ],
  "x": {
   "order": [
+   2,
    3,
-   1,
-   2
+   1
   ],
-  "hook": "Nvidia's $125.53 close now sits in the worst cell of Damodaran's own breakeven table, and our crisis gauge just jumped 6.2 points to 40.6."
+  "hook": "Two US state attorneys general sued SpaceX over Grok image generation, 15 days before 797.6M lock-up shares start trading."
  },
  "credit": "stayhungryasi.com",
  "note": "Picked from the hub's live feeds. Not investment advice.",

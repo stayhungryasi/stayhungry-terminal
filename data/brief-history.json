@@ -1022,5 +1022,37 @@
    "es": "La cercanía a crisis subió más de 5 puntos en un informe (+6,2), así que va primero por regla; luego las fechas macro confirmadas de mañana y pasado, y un informe nuevo aún no destacado (el recálculo de Damodaran). La cuenta atrás del lock-up y el VIX de 35,89 (al 20/11) se omitieron por repetidos.",
    "ja": "危機接近度が1回で5点超(+6.2)上昇したためルール通り1番目に、続いて明日・明後日の確定マクロ日程と、まだ取り上げていない新リサーチ(ダモダラン再検証)を載せた。ロックアップのカウントダウンとVIX 35.89(11/20時点)は繰り返しになるので外した。"
   }
+ },
+ {
+  "date": "2026-11-25",
+  "lines": [
+   {
+    "href": "#schedule",
+    "ko": "<b>오늘 밤 미국 GDP·PCE, 내일 아침 금통위.</b> 11/25 22:30 3분기 GDP 잠정치+10월 PCE(D-0), 11/26 10:00 한국은행 올해 마지막 금리 결정(D-1), 모두 확정. <a href=\"#schedule\">핵심 일정</a>",
+    "en": "<b>US GDP and PCE tonight, BOK tomorrow.</b> 11/25 22:30 KST Q3 GDP (2nd est.) + Oct PCE; 11/26 10:00 KST last BOK rate call of 2026. <a href=\"#schedule\">Agenda</a>",
+    "es": "<b>Hoy PIB y PCE de EE. UU.</b> 25/11 22:30 KST PIB 3T y PCE de octubre; 26/11 10:00 KST última decisión de tipos del Banco de Corea. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>今夜米GDP・PCE、明朝韓国金融通貨委。</b>11/25 22:30 7-9月期GDP改定値+10月PCE、11/26 10:00 韓国銀行の年内最後の金利決定(いずれも確定)。<a href=\"#schedule\">主要日程</a>"
+   },
+   {
+    "href": "#agent",
+    "ko": "<b>스페이스X, 주 법무장관 2곳에 피소.</b> 버지니아(11/23)·오리건(11/22)이 Grok 이미지 생성 건으로 제소, 청구액 비공개. 10-Q 전체 소송 충당금 $350M. 락업 해제 D-15. <a href=\"#agent\">야간 에이전트</a>",
+    "en": "<b>SpaceX sued by 2 state AGs.</b> Virginia (11/23), Oregon (11/22), over Grok images; no amount given. Total 10-Q reserve $350M. <a href=\"#agent\">Agent</a>",
+    "es": "<b>Dos fiscales demandan a SpaceX.</b> Virginia (23/11) y Oregón (22/11), por Grok; sin monto. Provisión total 10-Q: US$350 M. <a href=\"#agent\">Agente</a>",
+    "ja": "<b>スペースX、2州の司法長官が提訴。</b>バージニア(11/23)・オレゴン(11/22)がGrokの画像生成を問題視、請求額は非公表。10-Qの訴訟引当金総額$350M。ロックアップ解除D-15。<a href=\"#agent\">夜間エージェント</a>"
+   },
+   {
+    "href": "#buffett",
+    "ko": "<b>VIX 26.62, '공포'에서 '경계'로.</b> 11/23 기준, 11/20 35.89에서 하락. VIX/VIX3M 1.044로 역전은 여전. 버핏지수 225.81%(추정, 백분위 99.7). <a href=\"#buffett\">버핏지수×VIX</a>",
+    "en": "<b>VIX 26.62, back from 'fear' to 'watch'.</b> 11/23, vs 35.89 on 11/20. VIX/VIX3M 1.044, still inverted. Buffett Index 225.81% (est.). <a href=\"#buffett\">Buffett×VIX</a>",
+    "es": "<b>VIX 26,62: de 'miedo' a 'vigilancia'.</b> Al 23/11, desde 35,89 (20/11). VIX/VIX3M 1,044, aún invertido. Buffett 225,81% (est.). <a href=\"#buffett\">Buffett×VIX</a>",
+    "ja": "<b>VIX 26.62、「恐怖」から「警戒」へ。</b>11/23時点、11/20の35.89から低下。VIX/VIX3Mは1.044で逆転は継続。バフェット指数225.81%(推定、百分位99.7)。<a href=\"#buffett\">バフェット指数×VIX</a>"
+   }
+  ],
+  "why": {
+   "ko": "오늘 밤·내일 아침 실제로 일어나는 확정 거시 일정(D-0·D-1)을 1순위로, 이어 야간 에이전트가 새로 잡은 스페이스X 주 법무장관 소송, 이틀 만에 크게 바뀐 VIX(35.89→26.62)를 실었다. 위기 근접도 40.6은 같은 11/23 보고라 숫자가 바뀌지 않아 뺐고, 다모다란 재검증도 어제 썼다.",
+   "en": "Tonight's and tomorrow morning's confirmed macro events lead (D-0, D-1), followed by the new SpaceX state-AG lawsuits flagged by the overnight agent and a sharply changed VIX (35.89 to 26.62). Crisis proximity 40.6 was dropped because it is the same 11/23 report, unchanged; the Damodaran re-run ran yesterday.",
+   "es": "Primero, los eventos macro confirmados de esta noche y mañana (D-0, D-1); luego, las nuevas demandas de fiscales estatales contra SpaceX detectadas por el agente nocturno y un VIX muy distinto (de 35,89 a 26,62). Se omitió la cercanía a crisis de 40,6 porque es el mismo informe del 23/11, sin cambios; el recálculo de Damodaran salió ayer.",
+   "ja": "今夜・明朝に実際に起きる確定マクロ日程(D-0・D-1)を1番目に、続いて夜間エージェントが新たに捉えたスペースXへの州司法長官の提訴、2日で大きく変わったVIX(35.89→26.62)を載せた。危機接近度40.6は同じ11/23レポートで数値が変わっていないため外し、ダモダラン再検証は昨日取り上げた。"
+  }
  }
 ]
