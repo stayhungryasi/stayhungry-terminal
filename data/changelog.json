@@ -2,6 +2,11 @@
   "repo": "https://github.com/stayhungryasi/stayhungry-terminal",
   "items": [
     {
+      "date": "2026-11-25",
+      "commit": "HEAD",
+      "message": "Radar: VIX now has a long chart, since 1990, next to the two-year one (weekly highs, zoom and crosshair as usual), with a line of context: how often VIX has been at 20, 30 and 40 or higher, the highest closes on record, and where the latest value ranks"
+    },
+    {
       "date": "2026-11-23",
       "commit": "6f5e338",
       "message": "New research: Damodaran’s models re-run for Nvidia, SpaceX and Tesla. His three valuations reproduced within 0.04%, all 36 cells of his Nvidia breakeven table checked, scenario re-runs and price-implied assumptions on the Nov 20 close, 8 cards. In the RESEARCH tab, the research library and /data/research.json"
@@ -432,7 +437,7 @@
       "message": "Launch in English, Korean, Spanish and Japanese"
     }
   ],
-  "updated": "2026-11-23",
+  "updated": "2026-11-25",
   "credit": "stayhungryasi.com",
   "disclaimer": "Not investment advice."
 }
