@@ -1317,6 +1317,7 @@ function apiData(today){
     'software.json':Object.assign({note:'Software the hub owner builds with Claude. Facts, numbers and screenshots come from each product\'s own site; speeds are the maker\'s development-build measurements.',items:SOFTWARE},base),
     'earnings.json':{note:'Earnings dates of the global market-cap Top 20 from univertrix.com (universe-dominator calendar, Finnhub), refreshed by .github/workflows/univertrix-sync.yml: upcoming items (date, session bmo/amc), reports of the last 45 days and companies with no date yet. Dates only, not investment advice.',live:'https://stayhungryasi.com/live/earnings.json',bot_owned:true},
     'rank.json':{note:'Global market-cap Top 20 from univertrix.com daily snapshots: every day since the first snapshot, rank and market cap (USD billions) per company, names in 4 languages. Refreshed by .github/workflows/univertrix-sync.yml. Market data, not investment advice.',live:'https://stayhungryasi.com/live/rank.json',bot_owned:true},
+    'crisis-history.json':{note:'Crisis proximity since 1997: the regular report\'s own definitions, thresholds and layer weights applied to every Friday, with six era-dependent indicators left out (see `method`, `indicators_excluded`). Written weekly by the crisis bot\'s backfill; not the same number as the 20-indicator report score. Live copy: https://stayhungryasi.com/live/crisis-history.json',live:'https://stayhungryasi.com/live/crisis-history.json',bot_owned:true},
     'vix-history.json':{note:'VIX daily closes since 1990 reduced to the highest close of each week, with summary shares and yearly peaks. A static file made from FRED VIXCLS; the page adds the recent daily series from fear.json. Live copy: https://stayhungryasi.com/live/vix-history.json',live:'https://stayhungryasi.com/live/vix-history.json',bot_owned:true},
     'fear.json':{note:'Written by the Buffett Index x VIX bot after each Telegram report. Live copy: https://stayhungryasi.com/live/fear.json',live:'https://stayhungryasi.com/live/fear.json',bot_owned:true},
     'brief.json':{note:'The daily brief: three lines and checkpoints picked each morning by Claude from every live feed on the hub, in 4 languages, with the reason for the pick. History: brief-history.json.',live:'https://stayhungryasi.com/live/brief.json',bot_owned:true},
@@ -1979,6 +1980,8 @@ const GMX={"en":{"gm_eb":"SUPER MEJU GAMES · ONE-PERSON AI GAME STUDIO","gm_ope
 LANGS.forEach(c=>Object.assign(L[c],GMX[c]));
 const VHX={"en":{"fr_vlc":"VIX since {y} · weekly high","fr_vls":"Since {y} ({n} trading days): median {m}. At 20 or higher on {a}% of days, 30 or higher on {b}%, 40 or higher on {c}%. Highest closes: {pk}. The latest {v} is above {p}% of all days. Chart points are the highest daily close of each week."},"ko":{"fr_vlc":"VIX · {y}년 이후 (주간 최고 종가)","fr_vls":"{y}년 이후 {n}거래일 기준: 중앙값 {m}. 20 이상이었던 날 {a}%, 30 이상 {b}%, 40 이상 {c}%. 역대 최고 종가: {pk}. 최근 값 {v}는 전체 날의 {p}%보다 높습니다. 차트의 점은 각 주의 최고 종가입니다."},"es":{"fr_vlc":"VIX desde {y} · máximo semanal","fr_vls":"Desde {y} ({n} sesiones): mediana {m}. En 20 o más el {a}% de los días, 30 o más el {b}%, 40 o más el {c}%. Cierres más altos: {pk}. El último valor, {v}, supera al {p}% de todos los días. Cada punto del gráfico es el cierre diario más alto de la semana."},"ja":{"fr_vlc":"VIX · {y}年以降(週間の最高終値)","fr_vls":"{y}年以降の{n}営業日:中央値 {m}。20以上の日は{a}%、30以上は{b}%、40以上は{c}%。過去最高の終値:{pk}。直近の{v}は全営業日の{p}%より高い水準です。チャートの点は各週の最高終値です。"}};
 LANGS.forEach(c=>Object.assign(L[c],VHX[c]));
+const CHX={"en":{"cr_hc":"Crisis proximity since {y} · today's rules applied to the past","cr_hrow":"Score","cr_hn":"{n} indicators","cr_hnote":"Today's traffic-light rules applied to every Friday since {y}. {x} indicators whose level meant something different in the past (bank reserves, SOFR–IORB, the Fed repo facility, term premium, jobless claims, USD/KRW) are left out, so this uses {k} indicators and is not the same number as the regular report ({o}). On these {k}, today scores {s}, higher than {p}% of all weeks. Median {m}; 30 or higher in {a}% of weeks, 50 or higher in {b}%, 70 or higher in {c}%. Highest: {ep}. Early years have fewer indicators (hover to see the count)."},"ko":{"cr_hc":"위기 근접도 · {y}년 이후 (지금 규칙을 과거에 적용)","cr_hrow":"점수","cr_hn":"지표 {n}개","cr_hnote":"지금의 신호등 규칙을 {y}년 이후 매주 금요일에 적용한 값입니다. 과거에는 수준의 의미가 달랐던 지표 {x}개(지급준비금, SOFR–IORB, Fed 상설레포, 텀프리미엄, 실업수당 청구, 원/달러)는 빼고 {k}개로 계산해서, 정기 보고 점수({o})와는 다른 숫자입니다. 같은 {k}개 기준으로 오늘은 {s}점이고, 전체 주의 {p}%보다 높습니다. 중앙값 {m}. 30 이상이었던 주 {a}%, 50 이상 {b}%, 70 이상 {c}%. 가장 높았던 시기: {ep}. 초기 연도는 쓰인 지표 수가 더 적습니다(차트에서 확인)."},"es":{"cr_hc":"Proximidad de crisis desde {y} · reglas de hoy aplicadas al pasado","cr_hrow":"Puntuación","cr_hn":"{n} indicadores","cr_hnote":"Las reglas de semáforo de hoy aplicadas a cada viernes desde {y}. Se excluyen {x} indicadores cuyo nivel significaba otra cosa en el pasado (reservas bancarias, SOFR–IORB, la facilidad de repos de la Fed, prima por plazo, solicitudes de desempleo, USD/KRW), así que se usan {k} y no es la misma cifra que el informe regular ({o}). Con estos {k}, hoy marca {s}, por encima del {p}% de todas las semanas. Mediana {m}; 30 o más en el {a}% de las semanas, 50 o más en el {b}%, 70 o más en el {c}%. Máximos: {ep}. Los primeros años tienen menos indicadores (el gráfico muestra cuántos)."},"ja":{"cr_hc":"危機近接度 · {y}年以降(現在のルールを過去に適用)","cr_hrow":"スコア","cr_hn":"指標{n}個","cr_hnote":"現在の信号ルールを{y}年以降の毎週金曜日に当てはめた値です。過去には水準の意味が違った指標{x}個(準備預金、SOFR–IORB、FRBの常設レポ、タームプレミアム、失業保険申請、ドル/ウォン)を除き{k}個で計算しているため、定期レポートのスコア({o})とは別の数字です。同じ{k}個の基準で今日は{s}点、全期間の週の{p}%より高い水準です。中央値 {m}。30以上の週は{a}%、50以上は{b}%、70以上は{c}%。最も高かった時期:{ep}。初期の年は使える指標が少なくなります(チャートで確認できます)。"}};
+LANGS.forEach(c=>Object.assign(L[c],CHX[c]));
 const BRX={
 en:{br_lock:'<a href="#spcxlock"><b>SpaceX lock-up {d}.</b></a> From the US open on {w}, up to {v} unlock (+{p}% vs shares tradable now).',br_week:'<a href="#schedule"><b>{n} key dates in 7 days.</b></a> {l}.',br_risk:'<a href="#radar"><b>Crisis proximity {s}</b></a> ({z}, {r} red lights) · Buffett Index {b}% ({q}).',br_rs:'<a href="#library"><b>Latest research:</b></a> {t}',br_auto:'AUTO-PICKED FROM LIVE DATA',br_ed:'PICKED BY CLAUDE · {t} KST',br_why:'Why these three',br_src:'Brief: picked each morning by Claude from every live feed on this hub (crisis bot, Buffett × VIX bot, key-dates bot, lock-up radar, research library); if that pick is missing, the page picks from live data itself. Not investment advice.'},
 ko:{br_lock:'<a href="#spcxlock"><b>스페이스X 락업 {d}.</b></a> {w} 미국장 개장부터 최대 {v} 해제(현재 유통가능 물량 대비 +{p}%).',br_week:'<a href="#schedule"><b>7일 안 핵심 일정 {n}건.</b></a> {l}.',br_risk:'<a href="#radar"><b>위기 근접도 {s}</b></a>({z}, 빨간불 {r}개) · 버핏지수 {b}%({q}).',br_rs:'<a href="#library"><b>최신 리서치:</b></a> {t}',br_auto:'실시간 데이터 자동 선정',br_ed:'Claude 선정 · {t} KST',br_why:'이 3줄을 고른 이유',br_src:'BRIEF: 매일 아침 Claude가 허브의 모든 실시간 데이터(위기 봇·버핏지수×VIX 봇·일정 봇·락업 레이더·리서치 라이브러리)에서 가장 중요한 3가지를 고릅니다. 선정본이 없으면 페이지가 실시간 데이터로 직접 고릅니다. 투자 권유 아님.'},
@@ -2066,7 +2069,7 @@ function weekHTML(){
     wk+=`<div class="wd ${isT?'today':''}"><span class="dn">${esc(dn.format(d).toUpperCase())}${isT?' · '+esc(t.today):''}</span><span class="dd">${d.getDate()}</span>${ev.join('')}</div>`;}
   return `<div class="week">${wk}</div>`;
 }
-let CR=null,crState='load',FR=null,frState='load',crTab='crisis',VH=null;
+let CR=null,crState='load',FR=null,frState='load',crTab='crisis',VH=null,CH=null;
 function crTabs(){const t=T();return `<div class="crtabs" role="tablist">${[['crisis',t.tab_cr],['fear',t.tab_fr]].map(([k,l])=>`<button class="crtab${crTab===k?' on':''}" role="tab" aria-selected="${crTab===k}" data-crtab="${k}">${esc(l)}</button>`).join('')}</div>`;}
 const frKey=Q=>Q&&Q.high_valuation!=null&&Q.mood?(Q.high_valuation?'h_':'f_')+Q.mood:null;
 const frBCol=k=>k==='very_high'?'var(--red)':k==='high'?'var(--gold)':'var(--green)';
@@ -2102,6 +2105,13 @@ function frChartB(t,W,H){const b=FR&&FR.buffett;if(!b)return '';const hl=(b.hist
   const pts=[...(b.hist||[]),...(b.daily||[]).filter(d=>!hl||d[0]>hl)];
   return lineSVG('fb',pts,{color:'var(--or)',dot:'#F27A2E',fy:(y,d)=>y.toFixed(d||0)+'%',floor:0,refs:[[b.mean,t.fr_avg+' '+Math.round(b.mean)+'%','#8C8C8C'],[b.p95,'p95','#F2B33D']],aria:fmt(t.fr_hc,{y:b.start_year}),
     rows:p=>{const k=frBKey(b,p[1]);return [[t.fr_zb,p[1].toFixed(1)+'%','#F27A2E'],['',t.fr_bq[k]||'',frBCol(k)]].concat(b.estimated&&hl&&p[0]>hl?[['',t.fr_zest,'#8D95A8']]:[]);}},W,H);}
+/* Crisis proximity since 1997: live/crisis-history.json, written weekly by the crisis bot's backfill (today's rules applied to the past, 14 era-independent indicators). */
+const crZKey=v=>v<30?'calm':v<50?'watch':v<70?'stress':'crisis';
+function crChartH(t,W,H){if(!CH)return '';const w=CH.weekly,wl=w[w.length-1][0],la=CH.latest,pts=w.map(r=>[r[0],r[1],r[2]]);if(la.score!=null&&la.date>wl)pts.push([la.date,la.score,la.n]);
+  return lineSVG('fch',pts,{color:'#F2B33D',fy:(y,d)=>y.toFixed(d||0),floor:0,ld:1,refs:[[30,'30','#8C8C8C'],[50,'50','#F2B33D'],[70,'70','#FF4438']],aria:fmt(t.cr_hc,{y:CH.start.slice(0,4)}),
+    rows:p=>[[t.cr_hrow,p[1].toFixed(1),'#F2B33D'],['',t.cr_z[crZKey(p[1])]||'',crLCol(p[1])],['',fmt(t.cr_hn,{n:p[2]}),'#8D95A8']]},W,H);}
+const crHNote=t=>{if(!CH)return '';const la=CH.latest,ep=(CH.episodes||[]).slice().sort((a,b)=>b[1]-a[1]).slice(0,4).map(e=>e[1].toFixed(0)+' ('+e[0].slice(0,7)+')').join(' · ');
+  return `<p class="note" style="margin-top:8px">${esc(fmt(t.cr_hnote,{y:CH.start.slice(0,4),k:CH.indicators_used.length,x:CH.indicators_excluded.length,o:CR&&CR.score!=null?crS(CR.score):'—',s:la.score!=null?la.score.toFixed(1):'—',p:la.pct!=null?Math.round(la.pct):'—',m:CH.median.toFixed(1),a:CH.share['30'],b:CH.share['50'],c:CH.share['70'],ep}))}</p>`;};
 /* VIX since 1990: live/vix-history.json (weekly highs of the daily close, a static file) + the bot's daily series for the days after it */
 function frChartVL(t,W,H){const v=FR&&FR.vix;if(!VH||!v)return '';const w=VH.weekly,wl=w[w.length-1][0],pts=[...w,...(v.series||[]).filter(d=>d[0]>wl)];
   return lineSVG('fvl',pts,{color:'#2F8FDD',fy:(y,d)=>y.toFixed(d||0),floor:0,ld:1,refs:[[20,'20','#F2B33D'],[30,'30','#FF4438']],aria:fmt(t.fr_vlc,{y:VH.start.slice(0,4)}),rows:p=>[['VIX',p[1].toFixed(1),'#2F8FDD'],['',T().fr_vq&&T().fr_vq[frVKey(p[1])]||'',frVCol(frVKey(p[1]))]]},W,H);}
@@ -2134,7 +2144,7 @@ function rFear(t){const F=FR;
    +(q?`<p class="sub">${esc(q[1])}</p>`:'')+meta+`<div class="frg">${bc}${vc}</div>`+mx+ch
    +`<p class="lbl" style="margin-top:24px">${esc(imgs?(F.sent?t.cr_charts:t.fr_chk):t.fr_hist)}</p><div class="crC${imgs?'':' crN'}">${imgs?`<div><div class="crimgs" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:420px">${imgs}</div>${t.cr_kochart?`<p class="crnote">${esc(t.cr_kochart)}</p>`:''}</div>`:''}
      <div class="crside"><div>${imgs?`<p class="lbl" style="margin:0 0 8px">${esc(t.fr_hist)}</p>`:''}<div class="crhist">${hist}</div></div>${msg}<a class="crtg" href="${TG}" target="_blank" rel="noopener">${esc(t.cr_tg.replace(/월·금|Mon & Fri|lunes y viernes|月・金/,m=>({'월·금':'화·목','Mon & Fri':'Tue & Thu','lunes y viernes':'martes y jueves','月・金':'火・木'})[m]))}</a></div></div>`
-   +src(t.fr_src,'radar');if(zOpen==='fb'||zOpen==='fv')zShow(zOpen);}
+   +src(t.fr_src,'radar');if(zOpen==='fb'||zOpen==='fv'||zOpen==='fvl')zShow(zOpen);}
 function frApply(){if(!FR||!FR.buffett)return;const b=FR.buffett;LANGS.forEach(c=>{const t=L[c];t.chk[3]=[t.chk[3][0],b.value.toFixed(0)+'%',(t.fr_bq[b.key]||'')+' · '+frRank(b,t),b.pct>=75?'fail':'ok'];});}
 const crUrl=p=>(window.SHA_PATHS?'../':'https://stayhungryasi.com/')+p;
 function crNum(k,v){if(v==null)return '—';const f=CR_FMT[k]||[2,0,0];let x=Number(v).toLocaleString('en-US',{minimumFractionDigits:f[0],maximumFractionDigits:f[0],useGrouping:!!f[2]});if(f[1]&&v>0)x='+'+x;return x;}
@@ -2159,10 +2169,10 @@ function rRadar(){
   const hist=(CR.history||[]).slice(-8).reverse().map(h=>`<span>${esc(h.t.slice(5,10).replace('-','/'))}<b>${crS(h.score)}</b></span>`).join('');
   const msg=CR.message_html?`<details class="crmsg"><summary>${esc(t.cr_msg)}</summary><div>${esc(CR.message_html).replace(/&lt;(\/?)(b|i)&gt;/g,'<$1$2>')}</div></details>`:'';
   $('radar').innerHTML=head('radar',t.cr_eb)+crTabs()+hd(esc(fmt(t.cr_h1,{s:crS(sc)})),esc(fmt(t.cr_h2,{z,r})))
-   +`<div class="crA">${gauge}${lay}</div>`+cols
+   +`<div class="crA">${gauge}${lay}</div>`+(CH?`<div class="frch frch1" style="margin-top:18px">${frZBox(t,'fch',fmt(t.cr_hc,{y:CH.start.slice(0,4)}),crChartH(t,1200,300))}</div>${crHNote(t)}`:'')+cols
    +`<p class="lbl" style="margin-top:24px">${esc(imgs?t.cr_charts:t.cr_hist)}</p><div class="crC${imgs?'':' crN'}">${imgs?`<div><div class="crimgs">${imgs}</div>${t.cr_kochart?`<p class="crnote">${esc(t.cr_kochart)}</p>`:''}</div>`:''}
      <div class="crside"><div>${imgs?`<p class="lbl" style="margin:0 0 8px">${esc(t.cr_hist)}</p>`:''}<div class="crhist">${hist}</div></div>${msg}<a class="crtg" href="${TG}" target="_blank" rel="noopener">${esc(t.cr_tg)}</a></div></div>`
-   +src(t.cr_src,'radar');
+   +src(t.cr_src,'radar');if(zOpen==='fch')zShow(zOpen);
 }
 const md=k=>String(k||'').slice(5,10).replace('-','/');
 /* DATA TRUTH: every TODAY number carries its as-of date; LIVE only when nothing newer can exist yet.
@@ -2188,7 +2198,7 @@ function crApply(){if(!CR)return;const s=crS(CR.score),r=crCount(),by=k=>CR.indi
       [t.chk[3][0],t.chk[3][1].replace(/ · .*$/,'')+' · '+t.sample,t.chk[3][2],t.chk[3][3]]];
     t.sum=[fmt(t.cr_sum,{s,z,r}),...t.sum.slice(1)];});}
 async function crLoad(){const g=async p=>{try{const r=await fetch(crUrl(p),{cache:'no-cache'});if(!r.ok)throw 0;return await r.json();}catch(e){return null;}};
-  const [c,f,vh]=await Promise.all([g('live/crisis.json'),g('live/fear.json'),g('live/vix-history.json')]);if(vh&&vh.weekly)VH=vh;
+  const [c,f,vh,chh]=await Promise.all([g('live/crisis.json'),g('live/fear.json'),g('live/vix-history.json'),g('live/crisis-history.json')]);if(vh&&vh.weekly)VH=vh;if(chh&&chh.weekly&&chh.latest)CH=chh;
   if(c&&c.indicators){CR=c;crState='ok';crApply();}else crState='fail';
   if(f&&(f.buffett||f.vix)){FR=f;frState='ok';frApply();if(CR)crApply();}else frState='fail';
   const deep=/^#(buffett|vix|valuation|fear)$/.test(location.hash);if(deep)crTab='fear';
@@ -2805,7 +2815,7 @@ function lvMap(t,W=360,H=300){const P=(LV.series&&LV.series.path)||[],L=50,R=16,
 const ZD={};function zReg(id,W,H,o){const k=id+'@'+Math.round(W)+'x'+Math.round(H);ZD[k]=Object.assign({W,H},o);return k;}
 const zDate=k=>{const D=new Date(String(k).slice(0,10)+'T12:00:00Z');return isNaN(D)?String(k):new Intl.DateTimeFormat(T().loc,{timeZone:'UTC',year:'numeric',month:'numeric',day:'numeric',weekday:'short'}).format(D);};
 const ZCH={c1:['lv_c1',(t,W,H)=>lvC1(t,W,H)],c2:['lv_c2',(t,W,H)=>lvC2(t,W,H)],c3:['lv_c3',(t,W,H)=>lvC3(t,W,H)],map:['lv_map',(t,W,H)=>lvMap(t,W,H)],
- fb:[t=>fmt(t.fr_hc,{y:FR.buffett.start_year}),(t,W,H)=>frChartB(t,W,H),()=>FR&&FR.buffett],fv:['fr_vc',(t,W,H)=>frChartV(t,W,H),()=>FR&&FR.vix],fvl:[t=>fmt(t.fr_vlc,{y:VH.start.slice(0,4)}),(t,W,H)=>frChartVL(t,W,H),()=>FR&&FR.vix&&VH]};
+ fb:[t=>fmt(t.fr_hc,{y:FR.buffett.start_year}),(t,W,H)=>frChartB(t,W,H),()=>FR&&FR.buffett],fv:['fr_vc',(t,W,H)=>frChartV(t,W,H),()=>FR&&FR.vix],fvl:[t=>fmt(t.fr_vlc,{y:VH.start.slice(0,4)}),(t,W,H)=>frChartVL(t,W,H),()=>FR&&FR.vix&&VH],fch:[t=>fmt(t.cr_hc,{y:CH.start.slice(0,4)}),(t,W,H)=>crChartH(t,W,H),()=>CH]};
 let zOpen=null;
 function zShow(id){const c=ZCH[id];if(!c||!(c[2]?c[2]():LV))return;const t=T(),bx=$('zbox');zOpen=id;bx.hidden=false;document.body.style.overflow='hidden';
   $('zttl').textContent=typeof c[0]==='function'?c[0](t):t[c[0]];$('zhint').textContent=t.lv_zh2;$('zcls').setAttribute('aria-label',t.cr_close||'Close');
