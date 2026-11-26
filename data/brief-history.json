@@ -1054,5 +1054,37 @@
    "es": "Primero, los eventos macro confirmados de esta noche y mañana (D-0, D-1); luego, las nuevas demandas de fiscales estatales contra SpaceX detectadas por el agente nocturno y un VIX muy distinto (de 35,89 a 26,62). Se omitió la cercanía a crisis de 40,6 porque es el mismo informe del 23/11, sin cambios; el recálculo de Damodaran salió ayer.",
    "ja": "今夜・明朝に実際に起きる確定マクロ日程(D-0・D-1)を1番目に、続いて夜間エージェントが新たに捉えたスペースXへの州司法長官の提訴、2日で大きく変わったVIX(35.89→26.62)を載せた。危機接近度40.6は同じ11/23レポートで数値が変わっていないため外し、ダモダラン再検証は昨日取り上げた。"
   }
+ },
+ {
+  "date": "2026-11-26",
+  "lines": [
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X, 공모가 아래로·락업 D-14.</b> SPCX 11/24 종가 $125.81(−5.65%), 공모가 $135 대비 −6.8%. 12/9 거래 시작 7.976억 주(≈$1,003억). <a href=\"#spcxlock\">락업 레이더</a>",
+    "en": "<b>SpaceX below IPO price, lock-up D-14.</b> SPCX $125.81 on 11/24 (−5.65%), −6.8% vs $135 IPO. 797.6M shares (≈$100.3B) trade from 12/9. <a href=\"#spcxlock\">Lock-up</a>",
+    "es": "<b>SpaceX bajo su OPV; lock-up D-14.</b> SPCX US$125,81 el 24/11 (−5,65%), −6,8% vs US$135. Desde 9/12, 797,6 M acciones (≈US$100,3 mil M). <a href=\"#spcxlock\">Lock-up</a>",
+    "ja": "<b>スペースX、公開価格割れ・ロックアップD-14。</b>SPCXは11/24終値$125.81(−5.65%)、公開価格$135比−6.8%。12/9から7.976億株(≈$1,003億)が売買可能に。<a href=\"#spcxlock\">ロックアップ・レーダー</a>"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<b>오늘 10:00 금통위, 올해 마지막 금리 결정.</b> 한국은행 기준금리 결정(D-0, 확정). 결정 내용은 이 글 작성 시점 피드에 아직 없다. <a href=\"#schedule\">핵심 일정</a>",
+    "en": "<b>Bank of Korea decides today, 10:00 KST.</b> Last rate call of 2026 (D-0, confirmed); outcome not yet in the feed at writing. <a href=\"#schedule\">Agenda</a>",
+    "es": "<b>Banco de Corea decide hoy, 10:00 KST.</b> Última decisión de 2026 (D-0, confirmada); resultado aún no en el feed. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>本日10:00、韓国銀行が年内最後の金利決定。</b>金融通貨委員会(D-0、確定)。執筆時点で結果はまだフィードにない。<a href=\"#schedule\">主要日程</a>"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<b>다음 주 AI 일정 몰림.</b> 11/30 AWS re:Invent, 12/2 04:00 엔비디아 GTC DC 젠슨 황 기조연설, 같은 날 06:05 크레도·06:30 마벨 실적(모두 확정, 한국시간). <a href=\"#schedule\">핵심 일정</a>",
+    "en": "<b>AI-heavy week ahead.</b> 11/30 AWS re:Invent; 12/2 04:00 KST Nvidia GTC DC keynote, then Credo and Marvell earnings, all confirmed. <a href=\"#schedule\">Agenda</a>",
+    "es": "<b>Semana de IA.</b> 30/11 AWS re:Invent; 2/12 04:00 KST Nvidia GTC DC, luego resultados de Credo y Marvell, todo confirmado. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>来週はAI日程が集中。</b>11/30 AWS re:Invent、12/2 04:00 エヌビディアGTC DCでジェンスン・フアン基調講演、同日06:05クレド・06:30マーベル決算(いずれも確定、韓国時間)。<a href=\"#schedule\">主要日程</a>"
+   }
+  ],
+  "why": {
+   "ko": "새로 바뀐 숫자(SPCX 공모가 하회, 락업 D-14)를 1순위로, 오늘 실제로 열리는 금통위를 2순위, 다음 주 확정 AI 일정을 3순위로 골랐다. 위기 근접도 40.6은 50 미만이고 새 보고가 없어, VIX 26.36·버핏지수는 어제와 큰 변화가 없어 뺐다. 12/1 수출입동향은 날짜가 추정이라 제외.",
+   "en": "New numbers first (SPCX below its IPO price, lock-up D-14), then today's BOK decision, then next week's confirmed AI dates. Crisis proximity 40.6 is under 50 with no new report, and VIX 26.36 and the Buffett Index barely moved, so they were left out. The 12/1 Korea trade data date is estimated, so it was skipped.",
+   "es": "Primero las cifras nuevas (SPCX bajo su precio de OPV, lock-up en D-14), luego la decisión del Banco de Corea de hoy y las fechas de IA confirmadas de la próxima semana. La proximidad de crisis (40,6) sigue bajo 50 sin informe nuevo, y el VIX (26,36) y el índice Buffett apenas cambiaron, así que quedaron fuera. El comercio exterior coreano del 1/12 tiene fecha estimada y se omitió.",
+   "ja": "新しく動いた数字(SPCXの公開価格割れ、ロックアップD-14)を最優先に、本日の韓国銀行の金利決定、来週の確定AI日程の順に選んだ。危機接近度40.6は50未満で新しいレポートがなく、VIX 26.36とバフェット指数もほぼ横ばいのため外した。12/1の韓国輸出入動向は日付が推定のため除外。"
+  }
  }
 ]
