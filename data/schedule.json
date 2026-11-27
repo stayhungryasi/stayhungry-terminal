@@ -1,10 +1,10 @@
 {
  "kind": "schedule",
  "schema": 1,
- "generated_kst": "2026-11-26 08:35",
- "data_updated": "2026-11-26",
- "last_sent_kst": "2026-11-24 09:22",
- "next_send": "2026-11-27",
+ "generated_kst": "2026-11-27 09:22",
+ "data_updated": "2026-11-27",
+ "last_sent_kst": "2026-11-27 09:21",
+ "next_send": "2026-12-01",
  "schedule": "Tue & Fri 10:00 KST",
  "window": {
   "past_days": 14,
@@ -37,126 +37,8 @@
    "LG전자"
   ]
  },
- "count": 65,
+ "count": 62,
  "events": [
-  {
-   "id": "kr-opt-nov",
-   "date": "2026-11-12",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "",
-   "title": "코스피200 옵션 만기",
-   "point": "",
-   "cat": "시장",
-   "tickers": [],
-   "imp": 1,
-   "status": "confirmed",
-   "country": "kr",
-   "source": "https://www.krx.co.kr/",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "KOSPI 200 options expiration",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "es": {
-     "t": "Vencimiento de opciones del KOSPI 200",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "ja": {
-     "t": "KOSPI200 オプション満期",
-     "p": "",
-     "l": "",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "sksq-q3",
-   "date": "2026-11-12",
-   "time": null,
-   "approx": false,
-   "end": null,
-   "local": "",
-   "title": "SK스퀘어 3분기 실적",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "402340"
-   ],
-   "imp": 2,
-   "status": "estimated",
-   "country": "kr",
-   "source": "https://dealsite.co.kr/articles/151452",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "SK Square Q3 results",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "es": {
-     "t": "Resultados del 3T de SK Square",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "ja": {
-     "t": "SKスクエア 第3四半期決算",
-     "p": "",
-     "l": "",
-     "c": ""
-    }
-   }
-  },
-  {
-   "id": "sl-q3",
-   "date": "2026-11-12",
-   "time": "14:00",
-   "approx": true,
-   "end": null,
-   "local": "",
-   "title": "삼성생명 3분기 실적",
-   "point": "",
-   "cat": "실적",
-   "tickers": [
-    "032830"
-   ],
-   "imp": 2,
-   "status": "estimated",
-   "country": "kr",
-   "source": "https://www.mt.co.kr/finance/2026/08/13/2026081314090042887",
-   "updated": "2026-10-09",
-   "change": "",
-   "i18n": {
-    "en": {
-     "t": "Samsung Life Q3 results",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "es": {
-     "t": "Resultados del 3T de Samsung Life",
-     "p": "",
-     "l": "",
-     "c": ""
-    },
-    "ja": {
-     "t": "サムスン生命 第3四半期決算",
-     "p": "",
-     "l": "",
-     "c": ""
-    }
-   }
-  },
   {
    "id": "us-ppi-oct",
    "date": "2026-11-13",
@@ -2565,6 +2447,6 @@
  "telegram": "https://t.me/stayhungryasi",
  "credit": "stayhungryasi.com",
  "note": "Written by the key-dates bot (schedule-bot) after each refresh. Schedule information, not investment advice. Dates can change.",
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "live": "https://stayhungryasi.com/live/schedule.json"
 }
