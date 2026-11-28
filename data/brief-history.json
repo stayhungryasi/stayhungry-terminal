@@ -1118,5 +1118,37 @@
    "es": "El lock-up baja a D-13 con nuevas cifras de precio y tamaño, y coincide con los resultados de Broadcom. El VIX subió desde el 23/11 y su inversión se profundizó. La próxima semana gira en torno al empleo de EE. UU. y la junta de Tesla recién confirmada. Quedan fuera: proximidad de crisis 40,6 (informe del 23/11, 4 días), la semana de IA ya tratada ayer, el comercio exterior coreano del 1/12 (fecha estimada) y el monitor de apalancamiento (estable).",
    "ja": "ロックアップはD-13となり株価・規模の数字が更新され、同日にブロードコム決算が重なる。VIXは11/23から上昇し逆転が深まった。来週は米雇用統計と新たに確定したテスラ総会が焦点。除外：危機接近度40.6(11/23報告、4日経過)、昨日扱ったAI日程、日付が推定の12/1韓国輸出入、レバレッジ監視(安定)。"
   }
+ },
+ {
+  "date": "2026-11-28",
+  "lines": [
+   {
+    "href": "#radar",
+    "ko": "<b>위기 근접도 40.6→31.9, 8.7점 하락.</b> 11/27 보고 '경계' 유지. 변동성·국채는 낮아졌지만 CCC 가산금리·CCC–BB 격차 2개는 여전히 빨간불. VIX 26.8(11/26). <a href=\"#radar\">위기 레이더</a>",
+    "en": "<b>Crisis proximity 40.6→31.9, down 8.7.</b> Still 'watch' on 11/27. Two reds remain: CCC spread and CCC–BB gap. VIX 26.8 (11/26). <a href=\"#radar\">Radar</a>",
+    "es": "<b>Proximidad de crisis 40,6→31,9, −8,7.</b> Sigue en 'vigilancia' (27/11). Dos rojos: diferencial CCC y brecha CCC–BB. VIX 26,8 (26/11). <a href=\"#radar\">Radar</a>",
+    "ja": "<b>危機接近度40.6→31.9、8.7ポイント低下。</b>11/27報告で「警戒」維持。CCCスプレッドとCCC–BB格差の2つは依然赤信号。VIX 26.8(11/26)。<a href=\"#radar\">危機レーダー</a>"
+   },
+   {
+    "href": "#spcxlock",
+    "ko": "<b>스페이스X, 12/1 점검 후 락업 D-12.</b> 12/1 Grok 소송(T18)·아마존 레오(T4) 확인점, 12/9 7.976억 주(≈$1,016억) 거래 시작 시 거래 가능 물량 +17.6%. <a href=\"#spcxlock\">락업 레이더</a>",
+    "en": "<b>SpaceX: 12/1 checkpoint, then lock-up D-12.</b> Grok suits (T18), Amazon Leo (T4) on 12/1; 797.6M shares (≈$101.6B) trade 12/9. <a href=\"#spcxlock\">Lock-up</a>",
+    "es": "<b>SpaceX: control 1/12, lock-up D-12.</b> Grok (T18) y Amazon Leo (T4) el 1/12; el 9/12 cotizan 797,6 M acciones (≈US$101,6 mil M). <a href=\"#spcxlock\">Lock-up</a>",
+    "ja": "<b>スペースX、12/1点検の後ロックアップD-12。</b>12/1にGrok訴訟(T18)・アマゾンLeo(T4)を確認、12/9に7.976億株(≈$1,016億)売買開始で流通株+17.6%。<a href=\"#spcxlock\">ロックアップ</a>"
+   },
+   {
+    "href": "#schedule",
+    "ko": "<b>이번 주 AI·매크로 일정 확정.</b> 11/30 AWS re:Invent → 12/2 04:00 젠슨 황 GTC DC 기조연설, 06:05 크레도·06:30 마벨 실적 → 12/4 22:30 미국 고용보고서(한국시간). <a href=\"#schedule\">핵심 일정</a>",
+    "en": "<b>This week: AI and macro.</b> 11/30 AWS re:Invent; 12/2 04:00 KST Huang at GTC DC, then Credo, Marvell results; 12/4 22:30 KST US jobs. <a href=\"#schedule\">Agenda</a>",
+    "es": "<b>Semana de IA y macro.</b> 30/11 AWS re:Invent; 2/12 04:00 KST Huang en GTC DC, luego Credo y Marvell; 4/12 22:30 KST empleo EE. UU. <a href=\"#schedule\">Agenda</a>",
+    "ja": "<b>今週のAI・マクロ日程が確定。</b>11/30 AWS re:Invent → 12/2 04:00 フアンGTC DC基調講演、06:05クレド・06:30マーベル決算 → 12/4 22:30 米雇用統計(韓国時間)。<a href=\"#schedule\">主要日程</a>"
+   }
+  ],
+  "why": {
+   "ko": "위기 근접도가 지난 보고 대비 8.7점(5점 초과) 움직여 1순위로 올렸다. 스페이스X는 주가가 어제와 같아(11/25 종가) 빼고, 새로 다가온 12/1 확인점과 D-12만 썼다. 일정은 이번 주 확정 일정만 묶었고, 날짜 추정인 12/1 수출입동향과 11/25 기준인 신용융자·버핏지수(변화 없음)는 뺐다.",
+   "en": "Crisis proximity moved 8.7 points (over 5) since the last report, so it leads. SpaceX's price is unchanged from yesterday (11/25 close), so only the new 12/1 checkpoint and D-12 are used. The agenda line keeps only this week's confirmed dates; the estimated 12/1 Korea trade data and the 11/25 leverage data and unchanged Buffett index were left out.",
+   "es": "La proximidad de crisis se movió 8,7 puntos (más de 5) desde el último informe, así que va primero. El precio de SpaceX no cambió desde ayer (cierre del 25/11), así que solo se usan el control del 1/12 y el D-12. La agenda recoge solo fechas confirmadas de esta semana; se omiten el comercio exterior coreano del 1/12 (fecha estimada), los datos de apalancamiento del 25/11 y el índice Buffett sin cambios.",
+   "ja": "危機接近度が前回報告から8.7ポイント(5超)動いたため首位に。スペースXは株価が昨日と同じ(11/25終値)なので外し、新たに近づいた12/1確認点とD-12のみ記載。日程は今週の確定分だけをまとめ、日付推定の12/1韓国輸出入動向、11/25時点の信用融資データ、変化のないバフェット指数は外した。"
+  }
  }
 ]
